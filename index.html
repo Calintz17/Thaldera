@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thaldera — Factions de l'Univers</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg:           #07090f;
+      --card-bg:      #0c0f1c;
+      --card-border:  rgba(255,255,255,0.07);
+      --text:         #e4ddd0;
+      --muted:        #6a6050;
+      --gold:         #c9a84c;
+
+      --consortium:   #c9a84c;
+      --istra:        #d96a28;
+      --agran:        #1e4f9c;
+      --altera:       #4a8fd9;
+      --feywild:      #b84a74;
+      --pyrrah:       #7c1818;
+      --dominion:     #c44510;
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--bg);
+      background-image:
+        radial-gradient(ellipse 100% 30% at 50% 0%,   rgba(201,168,76,0.06)  0%, transparent 55%),
+        radial-gradient(ellipse 60%  50% at  8% 90%,  rgba(30,79,156,0.05)   0%, transparent 50%),
+        radial-gradient(ellipse 60%  50% at 92% 90%,  rgba(124,24,24,0.05)   0%, transparent 50%);
+      color: var(--text);
+      font-family: 'EB Garamond', Georgia, serif;
+      min-height: 100vh;
+      padding: 60px 40px 90px;
+    }
+
+    /* ============================
+       HEADER
+    ============================ */
+
+    header {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+
+    .header-pre {
+      font-family: 'EB Garamond', serif;
+      font-style: italic;
+      font-size: 14px;
+      letter-spacing: 0.45em;
+      color: var(--muted);
+      text-transform: uppercase;
+      display: block;
+      margin-bottom: 18px;
+    }
+
+    h1 {
+      font-family: 'Cinzel', serif;
+      font-size: 68px;
+      font-weight: 700;
+      letter-spacing: 0.32em;
+      color: var(--gold);
+      text-transform: uppercase;
+      line-height: 1;
+      text-shadow: 0 0 80px rgba(201,168,76,0.2);
+      margin-bottom: 14px;
+    }
+
+    .subtitle {
+      font-family: 'EB Garamond', serif;
+      font-style: italic;
+      font-size: 19px;
+      color: var(--muted);
+      letter-spacing: 0.18em;
+    }
+
+    .header-rule {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 14px;
+      margin-top: 22px;
+    }
+
+    .header-rule::before,
+    .header-rule::after {
+      content: '';
+      display: block;
+      width: 90px;
+      height: 1px;
+    }
+
+    .header-rule::before {
+      background: linear-gradient(to right, transparent, var(--gold));
+    }
+
+    .header-rule::after {
+      background: linear-gradient(to left, transparent, var(--gold));
+    }
+
+    .diamond {
+      width: 6px;
+      height: 6px;
+      background: var(--gold);
+      transform: rotate(45deg);
+      opacity: 0.65;
+      flex-shrink: 0;
+    }
+
+    /* ============================
+       GRID
+    ============================ */
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      max-width: 1180px;
+      margin: 0 auto;
+    }
+
+    /* ============================
+       CARD
+    ============================ */
+
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-top: 3px solid var(--accent, #888);
+      padding: 26px 22px 22px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      transition: transform 0.22s ease, box-shadow 0.22s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 14px 44px rgba(0,0,0,0.55), 0 0 0 1px rgba(255,255,255,0.04);
+    }
+
+    /* Crest */
+    .crest-wrap {
+      width: 88px;
+      height: 88px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 16px;
+      flex-shrink: 0;
+    }
+
+    .crest-img {
+      max-width: 88px;
+      max-height: 88px;
+      object-fit: contain;
+    }
+
+    .crest-ph {
+      display: none;
+      width: 60px;
+      height: 60px;
+      align-items: center;
+      justify-content: center;
+      border: 1.5px solid var(--accent, #888);
+      opacity: 0.3;
+    }
+
+    .crest-ph svg {
+      width: 36px;
+      height: 36px;
+      fill: none;
+      stroke: var(--accent, #888);
+      stroke-width: 1.4;
+    }
+
+    /* Faction name */
+    .faction-name {
+      font-family: 'Cinzel', serif;
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: #f2ead8;
+      margin-bottom: 12px;
+      line-height: 1.3;
+    }
+
+    /* Dividers */
+    .div-gold {
+      width: 100%;
+      height: 1px;
+      background: linear-gradient(to right, transparent, var(--accent, #888), transparent);
+      opacity: 0.4;
+      margin-bottom: 11px;
+      flex-shrink: 0;
+    }
+
+    .div-soft {
+      width: 48%;
+      height: 1px;
+      background: rgba(255,255,255,0.08);
+      margin: 8px auto 9px;
+      flex-shrink: 0;
+    }
+
+    /* Ruler */
+    .ruler-title {
+      display: block;
+      font-family: 'Cinzel', serif;
+      font-size: 8.5px;
+      font-weight: 400;
+      letter-spacing: 0.24em;
+      text-transform: uppercase;
+      color: var(--accent, #888);
+      opacity: 0.85;
+      margin-bottom: 5px;
+    }
+
+    .ruler-name {
+      font-family: 'EB Garamond', serif;
+      font-style: italic;
+      font-size: 13px;
+      color: #9a9080;
+      line-height: 1.45;
+    }
+
+    /* Themes */
+    .themes {
+      font-family: 'EB Garamond', serif;
+      font-style: italic;
+      font-size: 11px;
+      color: var(--accent, #888);
+      opacity: 0.75;
+      letter-spacing: 0.04em;
+      line-height: 1.6;
+    }
+
+    /* Description */
+    .description {
+      font-family: 'EB Garamond', serif;
+      font-size: 13.5px;
+      line-height: 1.72;
+      color: #9e9484;
+      text-align: justify;
+      flex-grow: 1;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <span class="header-pre">Univers de</span>
+  <h1>Thaldera</h1>
+  <p class="subtitle">Factions de l'Univers</p>
+  <div class="header-rule">
+    <div class="diamond"></div>
+  </div>
+</header>
+
+<div class="grid">
+
+  <!-- ============================================================
+       ROW 1 — LE CONSORTIUM
+  ============================================================ -->
+
+  <!-- Rivegard -->
+  <div class="card" style="--accent: var(--consortium)">
+    <div class="crest-wrap">
+      <img class="crest-img" src="crests/Crest_Rivegard.png" alt="Rivegard">
+      <div class="crest-ph"><svg viewBox="0 0 40 46"><path d="M20 2 L38 10 L38 26 C38 36 30 43 20 46 C10 43 2 36 2 26 L2 10 Z"/></svg></div>
+    </div>
+    <div class="faction-name">Rivegard</div>
+    <div class="div-gold"></div>
+    <span class="ruler-title">Seigneur Pirate</span>
+    <div class="ruler-name">Zoltran</div>
+    <div class="div-soft"></div>
+    <div class="themes">Pouvoir · Politique · Complot · Intrigues · Venise</div>
+    <div class="div-soft"></div>
+    <div class="description">Centre diplomatique et politique de Thaldera, Rivegard est gouvernée par un seigneur qu'on ne voit jamais, retranché dans le Palais Bleu. C'est ici que se négocient les alliances, les traités et les guerres qui n'auront jamais lieu.</div>
+  </div>
+
+  <!-- Havre-Noir -->
+  <div class="card" style="--accent: var(--consortium)">
+    <div class="crest-wrap">
+      <img class="crest-img" src="crests/Crest_Havre Noir.png" alt="Havre-Noir">
+      <div class="crest-ph"><svg viewBox="0 0 40 46"><path d="M20 2 L38 10 L38 26 C38 36 30 43 20 46 C10 43 2 36 2 26 L2 10 Z"/></svg></div>
+    </div>
+    <div class="faction-name">Havre-Noir</div>
+    <div class="div-gold"></div>
+    <span class="ruler-title">Seigneur Pirate</span>
+    <div class="ruler-name">Sycomore Brise-Pavois</div>
+    <div class="div-soft"></div>
+    <div class="themes">Force · Piraterie · Liberté · Tortuga</div>
+    <div class="div-soft"></div>
+    <div class="description">Depuis l'Assemblage, un palais construit avec les coques des navires vaincus au fil des siècles, Sycomore Brise-Pavois dirige la Flotte Goudron, la plus grande force de frappe maritime de Thaldera. Ici, la loyauté s'achète, la trahison se punit, et la mer appartient à ceux qui osent la prendre.</div>
+  </div>
+
+  <!-- Port Doëlan -->
+  <div class="card" style="--accent: var(--consortium)">
+    <div class="crest-wrap">
+      <img class="crest-img" src="crests/Crest_Port Doelan.png" alt="Port Doëlan">
+      <div class="crest-ph"><svg viewBox="0 0 40 46"><path d="M20 2 L38 10 L38 26 C38 36 30 43 20 46 C10 43 2 36 2 26 L2 10 Z"/></svg></div>
+    </div>
+    <div class="faction-name">Port Do&euml;lan</div>
+    <div class="div-gold"></div>
+    <span class="ruler-title">Seigneur Pirate</span>
+    <div class="ruler-name">Poste Vacant</div>
+    <div class="div-soft"></div>
+    <div class="themes">Commerce · N&eacute;goce · Flotte Marchande · C&ocirc;te Amalfitaine</div>
+    <div class="div-soft"></div>
+    <div class="description">Autrefois la ville de commerce la plus prosp&egrave;re du Consortium, Port Do&euml;lan n'est plus que l'ombre de ce qu'elle &eacute;tait. Ses quais &agrave; moiti&eacute; effondr&eacute;s et ses entrep&ocirc;ts pill&eacute;s t&eacute;moignent d'une chute rapide. Le vide de pouvoir qui r&egrave;gne ici attire d&eacute;sormais les ambitieux de tout le continent.</div>
+  </div>
+
+  <!-- ============================================================
+       ROW 2 — ISTRA-BELIG
+  ============================================================ -->
+
+  <!-- Keras Taurok -->
+  <div class="card" style="--accent: var(--istra)">
+    <div class="crest-wrap">
+      <img class="crest-img" src="crests/Crest_Keras Tauroc.png" alt="Keras Taurok">
+      <div class="crest-ph"><svg viewBox="0 0 40 46"><path d="M20 2 L38 10 L38 26 C38 36 30 43 20 46 C10 43 2 36 2 26 L2 10 Z"/></svg></div>
+    </div>
+    <div class="faction-name">Keras Taurok</div>
+    <div class="div-gold"></div>
+    <span class="ruler-title">Consul</span>
+    <div class="ruler-name">Draval Tauroc</div>
+    <div class="div-soft"></div>
+    <div class="themes">Combat · Honneur · Gladiature · Rome</div>
+    <div class="div-soft"></div>
+    <div class="description">Une cit&eacute; minotaure gouvern&eacute;e &agrave; la romaine, enrichie par les mines de pierres pr&eacute;cieuses des collines et les cultures des Steppes Rouges. Militaire, guerri&egrave;re, fi&egrave;re. Le statut social s'obtient uniquement par le combat dans l'ar&egrave;ne.</div>
+  </div>
+
+  <!-- Roshen Buru -->
+  <div class="card" style="--accent: var(--istra)">
+    <div class="crest-wrap">
+      <img class="crest-img" src="crests/Crest_Roshen Buru.png" alt="Roshen Buru">
+      <div class="crest-ph"><svg viewBox="0 0 40 46"><path d="M20 2 L38 10 L38 26 C38 36 30 43 20 46 C10 43 2 36 2 26 L2 10 Z"/></svg></div>
+    </div>
+    <div class="faction-name">Roshen Buru</div>
+    <div class="div-gold"></div>
+    <span class="ruler-title">Gardienne</span>
+    <div class="ruler-name">Anaru Miren-Buru</div>
+    <div class="div-soft"></div>
+    <div class="themes">For&ecirc;t rose · Japon · Elfe</div>
+    <div class="div-soft"></div>
+    <div class="description">Une nation foresti&egrave;re gouvern&eacute;e par une lign&eacute;e en communion directe avec Silvanus. Ses plus grands guerriers ne combattent pas seuls&nbsp;: ils entrent en communion profonde avec la for&ecirc;t et sont li&eacute;s &agrave; un esprit qui les guide au combat. On les appelle les Mirens.</div>
+  </div>
+
+  <!-- Tzalanar -->
+  <div class="card" style="--accent: var(--istra)">
+    <div class="crest-wrap">
+      <img class="crest-img" src="crests/Crest_Tzalanar.png" alt="Tzalanar">
+      <div class="crest-ph"><svg viewBox="0 0 40 46"><path d="M20 2 L38 10 L38 26 C38 36 30 43 20 46 C10 43 2 36 2 26 L2 10 Z"/></svg></div>
+    </div>
+    <div class="faction-name">Tzalanar</div>
+    <div class="div-gold"></div>
+    <span class="ruler-title">Grand-Pr&ecirc;tre</span>
+    <div class="ruler-name">Ajaw Tzobal</div>
+    <div class="div-soft"></div>
+    <div class="themes">Sacrifice · Marais · Poison · Aztec · Voodoo</div>
+    <div class="div-soft"></div>
+    <div class="description">Des cit&eacute;s-temples perdues dans la jungle, &agrave; moiti&eacute; d&eacute;vor&eacute;es par les racines et les marais occultes. Un clerg&eacute; de pr&ecirc;tres-guerriers qui c&eacute;l&egrave;brent Balam, dieu de la chasse et du sacrifice.</div>
+  </div>
+
+  <!-- ============================================================
+       ROW 3 — ISTRA (suite) + EMPIRE + DOMINION
+  ============================================================ -->
+
+  <!-- There'Duun -->
+  <div class="card" style="--accent: var(--istra)">
+    <div class="crest-wrap">
+      <img class="crest-img" src="crests/Crest_There'duun.png" alt="There'Duun">
+      <div class="crest-ph"><svg viewBox="0 0 40 46"><path d="M20 2 L38 10 L38 26 C38 36 30 43 20 46 C10 43 2 36 2 26 L2 10 Z"/></svg></div>
+    </div>
+    <div class="faction-name">There'Duun</div>
+    <div class="div-gold"></div>
+    <span class="ruler-title">Roi Nain</span>
+    <div class="ruler-name">Valdain There'Duun</div>
+    <div class="div-soft"></div>
+    <div class="themes">Montagne · Sous-terrain · Isolationnisme · Technologie</div>
+    <div class="div-soft"></div>
+    <div class="description">Un royaume nain ferm&eacute; au monde, prot&eacute;g&eacute; derri&egrave;re une cha&icirc;ne de montagnes blanches. Le roi Valdain a scell&eacute; les portes il y a longtemps. Personne ne sait vraiment pourquoi.</div>
+  </div>
+
+  <!-- Empire d'Altéra -->
+  <div class="card" style="--accent: var(--altera)">
+    <div class="crest-wrap">
+      <img class="crest-img" src="crests/Crest_Altéra.png" alt="Empire d'Altéra">
+      <div class="crest-ph"><svg viewBox="0 0 40 46"><path d="M20 2 L38 10 L38 26 C38 36 30 43 20 46 C10 43 2 36 2 26 L2 10 Z"/></svg></div>
+    </div>
+    <div class="faction-name">Empire d'Alt&eacute;ra</div>
+    <div class="div-gold"></div>
+    <span class="ruler-title">Imp&eacute;ratrice</span>
+    <div class="ruler-name">Eryndel d'Alt&eacute;ra</div>
+    <div class="div-soft"></div>
+    <div class="themes">Classicisme · R&eacute;pression Religieuse · Culte de l'Arbre</div>
+    <div class="div-soft"></div>
+    <div class="description">Un empire continental gouvern&eacute; par une Imp&eacute;ratrice immortelle et mill&eacute;naire et une foi d'&Eacute;tat qui v&eacute;n&egrave;re Nyrrh, l'Arbre des &Eacute;toiles, entit&eacute; primordiale dont les racines sont cens&eacute;es soutenir le monde. L'Imp&eacute;ratrice Eryndel r&egrave;gne depuis Altenheim, o&ugrave; sa cour et le clerg&eacute; forment un bloc ins&eacute;parable. Toute d&eacute;viance religieuse est trait&eacute;e comme une trahison politique.</div>
+  </div>
+
+  <!-- Dominion Sol -->
+  <div class="card" style="--accent: var(--dominion)">
+    <div class="crest-wrap">
+      <img class="crest-img" src="crests/Crest_Dominion Sol.png" alt="Dominion Sol">
+      <div class="crest-ph"><svg viewBox="0 0 40 46"><path d="M20 2 L38 10 L38 26 C38 36 30 43 20 46 C10 43 2 36 2 26 L2 10 Z"/></svg></div>
+    </div>
+    <div class="faction-name">Dominion Sol</div>
+    <div class="div-gold"></div>
+    <span class="ruler-title">Roi</span>
+    <div class="ruler-name">Sol Regem</div>
+    <div class="div-soft"></div>
+    <div class="themes">D&eacute;sert · Foi d'&Eacute;tat · Expansion · Secte</div>
+    <div class="div-soft"></div>
+    <div class="description">Un vaste territoire d&eacute;sertique uni sous la banni&egrave;re d'un soleil aveuglant. Sol Regem est jeune, mais son r&egrave;gne s'&eacute;tend vite&nbsp;: le Dominion a r&eacute;cemment entam&eacute; une expansion agressive, absorbant villes et territoires voisins. La foi est une obligation sociale. Dans l'ombre du roi, une secte discr&egrave;te et influente, la Lumi&egrave;re Noire, murmure &agrave; son oreille des conseils &eacute;tranges.</div>
+  </div>
+
+  <!-- ============================================================
+       ROW 4 — PLANS & ABYSSES
+  ============================================================ -->
+
+  <!-- Agran -->
+  <div class="card" style="--accent: var(--agran)">
+    <div class="crest-wrap">
+      <img class="crest-img" src="crests/Crest_Agran.png" alt="Agran">
+      <div class="crest-ph"><svg viewBox="0 0 40 46"><path d="M20 2 L38 10 L38 26 C38 36 30 43 20 46 C10 43 2 36 2 26 L2 10 Z"/></svg></div>
+    </div>
+    <div class="faction-name">Agran</div>
+    <div class="div-gold"></div>
+    <span class="ruler-title">Suraal</span>
+    <div class="ruler-name">Suuraal</div>
+    <div class="div-soft"></div>
+    <div class="themes">Atlantide · Culte de Kataron</div>
+    <div class="div-soft"></div>
+    <div class="description">Une cit&eacute; engloutie au fond de la Mer d'&Eacute;meraude, hors d'atteinte de toute lumi&egrave;re naturelle. Ses habitants vivent sous la bienveillance de Kataron, divinit&eacute; des profondeurs, et illuminent leurs corridors de corail bioluminescent. Le monde de surface les fascine&nbsp;: les Agrans fouillent r&eacute;guli&egrave;rement les &eacute;paves &agrave; la recherche d'objets et de traces de la vie au-dessus. Kataron prot&egrave;ge jalousement sa cit&eacute; - les courants qu'elle g&eacute;n&egrave;re rendent l'approche presque impossible.</div>
+  </div>
+
+  <!-- Feywild -->
+  <div class="card" style="--accent: var(--feywild)">
+    <div class="crest-wrap">
+      <img class="crest-img" src="crests/Crest_Feywild.png" alt="Feywild">
+      <div class="crest-ph"><svg viewBox="0 0 40 46"><path d="M20 2 L38 10 L38 26 C38 36 30 43 20 46 C10 43 2 36 2 26 L2 10 Z"/></svg></div>
+    </div>
+    <div class="faction-name">Feywild</div>
+    <div class="div-gold"></div>
+    <span class="ruler-title">Structure bipolaire</span>
+    <div class="ruler-name">Cour Seelie &amp; Cour Unseelie</div>
+    <div class="div-soft"></div>
+    <div class="themes">F&eacute;e · &Eacute;trange · Magique</div>
+    <div class="div-soft"></div>
+    <div class="description">Le Feywild est un reflet du monde mat&eacute;riel - plus vif, plus cruel, plus beau. Deux cours rivales se partagent ce plan&nbsp;: la Cour Seelie, qui r&egrave;gne sur les lumi&egrave;res de l'&eacute;t&eacute; et accorde sa faveur avec autant de facilit&eacute; qu'elle la retire, et la Cour Unseelie, dont les intrigues hivernales broient ceux qui s'y aventurent sans protection. Le temps y est &eacute;lastique, les &eacute;motions amplifi&eacute;es, et la magie coule comme une eau trop vive.</div>
+  </div>
+
+  <!-- Pyrrah -->
+  <div class="card" style="--accent: var(--pyrrah)">
+    <div class="crest-wrap">
+      <img class="crest-img" src="crests/Crest_Pyrrah.png" alt="Pyrrah">
+      <div class="crest-ph"><svg viewBox="0 0 40 46"><path d="M20 2 L38 10 L38 26 C38 36 30 43 20 46 C10 43 2 36 2 26 L2 10 Z"/></svg></div>
+    </div>
+    <div class="faction-name">Pyrrah</div>
+    <div class="div-gold"></div>
+    <span class="ruler-title">Incarnat</span>
+    <div class="ruler-name">L'Incarnat de la Flamme</div>
+    <div class="div-soft"></div>
+    <div class="themes">Plan du Feu · Civilisation Ancienne · Hospitalit&eacute;</div>
+    <div class="div-soft"></div>
+    <div class="description">Le Plan du Feu est un territoire d'une beaut&eacute; violente, hostile &agrave; toute vie qui n'y est pas n&eacute;e. L'Incarnat de la Flamme gouverne une civilisation ancienne, stable, et &eacute;tonnamment ouverte aux &eacute;trangers. C'est lui qui maintient le d&ocirc;me de feu qui enveloppe la cit&eacute; - seul rempart habitable contre un environnement qui consumerait tout le reste.</div>
+  </div>
+
+</div>
+
+<script>
+  document.querySelectorAll('.crest-img').forEach(function(img) {
+    img.addEventListener('error', function() {
+      this.style.display = 'none';
+      this.nextElementSibling.style.display = 'flex';
+    });
+  });
+</script>
+
+</body>
+</html>
