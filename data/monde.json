@@ -1,0 +1,659 @@
+[
+ {
+  "id": "harfang-tsuren",
+  "type": "pj",
+  "nom": "Harfang Tsuren",
+  "titre": "Homme-chouette, espion de Roshen Buru",
+  "parent": null,
+  "onglet": "groupe",
+  "img": "img/groupe/harfang-tsuren.webp",
+  "statut": "vivant",
+  "tags": [
+   "harfang",
+   "joueur",
+   "espion",
+   "tsuren",
+   "marchand"
+  ],
+  "resume": "Noble du clan Tsuren et espion de la Protectrice. Devenu marchand.",
+  "relations": [
+   {
+    "cible": "neryn-yosa",
+    "type": "Employeuse",
+    "lien": 2,
+    "ton": "negatif",
+    "note": "Elle le surveille"
+   },
+   {
+    "cible": "thibwick-rumple",
+    "type": "Ami",
+    "lien": 4,
+    "ton": "positif",
+    "note": ""
+   }
+  ]
+ },
+ {
+  "id": "jane-merigold",
+  "type": "pj",
+  "nom": "Jane Merigold",
+  "titre": "Membre du groupe",
+  "parent": null,
+  "onglet": "groupe",
+  "img": "img/groupe/jane-merigold.webp",
+  "statut": "vivant",
+  "tags": [
+   "jane",
+   "joueur"
+  ],
+  "resume": "Membre du groupe."
+ },
+ {
+  "id": "philippa-rougetoison",
+  "type": "pj",
+  "nom": "Philippa Rougetoison",
+  "titre": "Championne",
+  "parent": null,
+  "onglet": "groupe",
+  "img": "img/groupe/philippa-rougetoison.webp",
+  "statut": "vivant",
+  "tags": [
+   "philippa",
+   "joueur",
+   "championne"
+  ],
+  "resume": "Membre du groupe. Gran Brijit déclare qu'elle est une championne.",
+  "relations": [
+   {
+    "cible": "gran-brijit",
+    "type": "Désignée championne",
+    "lien": 3,
+    "ton": "neutre",
+    "note": ""
+   }
+  ]
+ },
+ {
+  "id": "istra",
+  "type": "continent",
+  "nom": "Istra",
+  "titre": "Le continent de Roshen Buru",
+  "parent": null,
+  "tags": [
+   "continent",
+   "istra"
+  ],
+  "resume": "Continent isolé, séparé de Thaldera par la mer d'Émeraude."
+ },
+ {
+  "id": "thaldera",
+  "type": "continent",
+  "nom": "Thaldera",
+  "titre": "Le continent voisin",
+  "parent": null,
+  "tags": [
+   "continent",
+   "thaldera"
+  ],
+  "resume": "Continent voisin d'Istra, au-delà de la mer d'Émeraude. Langue différente.",
+  "blocs": [
+   {
+    "portee": "groupe",
+    "titre": "Ce que vous savez",
+    "points": [
+     "Thaldera est séparée d'Istra par la mer d'Émeraude.",
+     "Des tempêtes gigantesques rendent la traversée impossible. Elles viennent de l'arbre d'un titan, faisceau de sa puissance disparue sous l'océan.",
+     "Vous y avez au moins trois factions : le Dominion Sol, Altéra et Havre Noir.",
+     "Vous avez visité Port Doëlan, une ville rasée.",
+     "Ses habitants parlent une autre langue qu'Istra."
+    ]
+   },
+   {
+    "portee": "harfang",
+    "titre": "Ce qui a changé pour toi",
+    "points": [
+     "Tu n'avais jamais entendu parler de Thaldera avant aujourd'hui.",
+     "Tu pensais Istra isolée. Tu découvres que des proches du gouvernement le savaient depuis longtemps, et s'y rendent.",
+     "Tu as bien fait de ne pas ouvrir le portail entre Cap Cornes et Havre Noir."
+    ]
+   }
+  ]
+ },
+ {
+  "id": "dominion-sol",
+  "type": "faction",
+  "nom": "Dominion Sol",
+  "titre": "Faction de Thaldera",
+  "parent": "thaldera",
+  "onglet": "factions",
+  "tags": [
+   "faction"
+  ],
+  "resume": "Faction de Thaldera qui semble mener une guerre.",
+  "blocs": [
+   {
+    "portee": "groupe",
+    "titre": "Ce que vous savez",
+    "points": [
+     "Le Dominion Sol semble mener une guerre sur Thaldera."
+    ]
+   }
+  ]
+ },
+ {
+  "id": "altera",
+  "type": "faction",
+  "nom": "Altéra",
+  "titre": "Faction de Thaldera",
+  "parent": "thaldera",
+  "onglet": "factions",
+  "tags": [
+   "faction",
+   "eryndel"
+  ],
+  "resume": "Faction dirigée par l'impératrice Eryndel. La Gardienne envisage une alliance.",
+  "blocs": [
+   {
+    "portee": "groupe",
+    "titre": "Ce que vous savez",
+    "points": [
+     "Altéra est dirigée par l'impératrice Eryndel.",
+     "La Protectrice la décrit comme « une pétasse ».",
+     "La Gardienne envisage une alliance avec elle."
+    ]
+   }
+  ]
+ },
+ {
+  "id": "havre-noir",
+  "type": "faction",
+  "nom": "Havre Noir",
+  "titre": "Faction de Thaldera",
+  "parent": "thaldera",
+  "onglet": "factions",
+  "tags": [
+   "faction",
+   "geant en armure"
+  ],
+  "resume": "Faction dont « le géant en armure » menace Roshen Buru.",
+  "blocs": [
+   {
+    "portee": "groupe",
+    "titre": "Ce que vous savez",
+    "points": [
+     "La Protectrice parle d'un « géant en armure » qui serait une menace pour Roshen Buru.",
+     "Un portail relie Cap Cornes à Havre Noir. Vous ne l'avez pas ouvert."
+    ]
+   }
+  ]
+ },
+ {
+  "id": "port-doelan",
+  "type": "ville",
+  "nom": "Port Doëlan",
+  "titre": "Ville rasée en pleine reconstruction",
+  "parent": "thaldera",
+  "onglet": "lieux",
+  "tags": [
+   "ville",
+   "reconstruction",
+   "tieffelin"
+  ],
+  "resume": "Ville rasée par le géant en armure, dirigée de fortune par une tieffeline rouge. Alliée du groupe.",
+  "blocs": [
+   {
+    "portee": "groupe",
+    "titre": "Ce que vous savez",
+    "points": [
+     "La ville a été rasée par la main du géant en armure.",
+     "Une tieffeline rouge, à cornes et légèrement vêtue, dirige les ruines de fortune.",
+     "Le temps y est doux et la reconstruction est en cours.",
+     "Ce sont des alliés du groupe."
+    ]
+   }
+  ]
+ },
+ {
+  "id": "istra-belig",
+  "type": "region",
+  "nom": "Istra-Belig",
+  "titre": "Région de Roshen Buru",
+  "parent": "istra",
+  "tags": [
+   "region",
+   "istra belig"
+  ],
+  "resume": "Région où se trouve Roshen Buru."
+ },
+ {
+  "id": "roshen-buru",
+  "type": "ville",
+  "nom": "Roshen Buru",
+  "titre": "La ville des cerisiers roses",
+  "parent": "istra-belig",
+  "tags": [
+   "ville",
+   "mirenai",
+   "cerisiers",
+   "magistrature",
+   "gardienne"
+  ],
+  "resume": "Ville des Mirenaï, protégée par Mélora. Magistrature en bas, palais de la Gardienne en haut.",
+  "blocs": [
+   {
+    "portee": "harfang",
+    "titre": "Ce que tu savais",
+    "points": [
+     "C'est ta ville. Elle fonctionne avec deux pouvoirs.",
+     "La Magistrature gère le quotidien avec une ferveur administrative sans égal. Le palais de la Gardienne pilote la politique extérieure et la religion.",
+     "La ville haute abrite les 5 clans nobles, dont le tien. La ville basse rassemble le peuple et les marchands.",
+     "Les nobles regardent le peuple de haut. Tu n'aimes pas ce système."
+    ]
+   },
+   {
+    "portee": "harfang",
+    "titre": "Ce qui a changé",
+    "points": [
+     "C'est pire que ce que tu pensais.",
+     "La Gardienne, et sur son ordre la Magistrature, protège les Clans avant tout le reste. Elle juge leur survie indispensable à l'équilibre de la ville.",
+     "Les Urameï savent qu'ils ne risquent rien. Les Kovacz n'auront aucune répercussion officielle.",
+     "La lettre du chef de clan Kovacz a suffi à clore une enquête, au prix de la mort de plusieurs innocents.",
+     "La Gardienne cautionne et encourage ce système injuste."
+    ]
+   }
+  ]
+ },
+ {
+  "id": "keras-tauroc",
+  "type": "region",
+  "nom": "Keras Tauroc",
+  "titre": "Cité-état du colisée et de la forge",
+  "parent": "istra",
+  "tags": [
+   "region",
+   "tauroc",
+   "kord",
+   "colisee",
+   "consul"
+  ],
+  "resume": "Cité de forgerons et de guerriers, dirigée par le Consul Draval Tauroc. Culte de Kord.",
+  "blocs": [
+   {
+    "portee": "harfang",
+    "titre": "Ce que tu en sais",
+    "points": [
+     "Tu y es allé quatre fois, plusieurs semaines à chaque fois, sous couverture diplomatique.",
+     "Tu connais les quartiers principaux, les habitudes des gardes et les entrées de service des bâtiments officiels.",
+     "La ville exporte du métal travaillé, des armes et du cuir. Elle importe de la nourriture, surtout le poisson de Cap Cornes.",
+     "Le colisée règle les conflits et reste le spectacle central de la culture tauroc. Tu trouves ça barbare. Tu ne l'as jamais dit à voix haute.",
+     "Religion de Kord : force, honneur, combat. Le clergé est très proche du pouvoir militaire."
+    ]
+   },
+   {
+    "portee": "groupe",
+    "titre": "Ce que vous savez",
+    "points": [
+     "Une araignée a pris le contrôle d'un homme du peuple, qui a attaqué le groupe dans la rue.",
+     "Tarcus, l'investigateur de la ville, a retrouvé sa chambre dévastée. Des symboles liés à Balamor étaient gravés dans le bois, à coups d'ongles.",
+     "L'homme semblait avoir perdu la tête lentement."
+    ]
+   }
+  ]
+ },
+ {
+  "id": "cap-cornes",
+  "type": "ville",
+  "nom": "Cap Cornes",
+  "titre": "Port de pêche de Keras Tauroc",
+  "parent": "keras-tauroc",
+  "tags": [
+   "ville",
+   "port",
+   "peche",
+   "aqueduc",
+   "oswin"
+  ],
+  "resume": "Ville côtière de Keras Tauroc, principal fournisseur de poisson. Portail vers Havre Noir.",
+  "blocs": [
+   {
+    "portee": "harfang",
+    "titre": "Ce que tu en sais",
+    "points": [
+     "Tu n'y es jamais allé. Tu la connais par les rapports.",
+     "Ville de pêche sur la côte est du continent. Elle fournit l'essentiel du poisson de Keras Tauroc.",
+     "La population compte des Lutriel (hommes-loutres), des Scalverns (hommes-alligators) et des Ophidiens (hommes-serpents).",
+     "Le chef officiel est Oswin, un vieux Scalvern posé.",
+     "Un grand aqueduc de pierre transporte le poisson vivant vers Keras Tauroc. C'est une infrastructure stratégique.",
+     "Il faut environ 28 jours de trajet depuis Keras Tauroc, par le fleuve et la lande."
+    ]
+   },
+   {
+    "portee": "groupe",
+    "titre": "Ce que vous savez",
+    "points": [
+     "Un portail relie Cap Cornes à Havre Noir. Vous ne l'avez pas ouvert."
+    ]
+   }
+  ]
+ },
+ {
+  "id": "balamor",
+  "type": "region",
+  "nom": "Balamor",
+  "titre": "L'archipel jungle, dit « la Fracture »",
+  "parent": "istra",
+  "tags": [
+   "region",
+   "jungle",
+   "balam",
+   "tzobal",
+   "araignee",
+   "kurakal",
+   "tzalanar"
+  ],
+  "resume": "Archipel jungle au nord-ouest. Théocratie de Balam. Des araignées y corrompent des citoyens.",
+  "blocs": [
+   {
+    "portee": "harfang",
+    "titre": "Ce que tu en sais",
+    "points": [
+     "Archipel jungle au nord-ouest, appelé la Fracture par les marins. Jungle dense, marécages, terrain impraticable. Tout passe par le fleuve Nahur. La plupart des étrangers qui s'y aventurent ne reviennent pas.",
+     "Le Grand Prêtre Ajaw Tzobal réside à Tzalanar, au cœur de la jungle. Il est inaccessible en pratique. Les échanges réels se font à Kurakal, port à l'embouchure du Nahur, que la plupart des étrangers prennent pour la capitale.",
+     "Religion de Balam : la nature est divine mais violente. Chasse, sang, sacrifice, cycle vie-mort. Quatre aspects : Jaguar (guerre), Serpent (connaissance), Aigle (autorité), Crocodile (puissance primordiale).",
+     "Théocratie décentralisée. L'autorité du Grand Prêtre est avant tout religieuse.",
+     "Tu n'as pas réussi à tisser de réseau fiable là-bas. Tes contacts à Kurakal disparaissaient ou restaient superficiels. C'est la lacune la plus frustrante de ton réseau.",
+     "Rumeur persistante : Balamor aurait des espions partout sur le continent. Les étrangers qui s'intéressent de trop près à leurs rituels changent brutalement d'avis, ou disparaissent.",
+     "Avec Roshen Buru, les relations sont formellement neutres, avec une méfiance sourde. Les Mirenaï ont une vision contemplative de la nature, les Tzobal une vision violente et sacrificielle."
+    ]
+   },
+   {
+    "portee": "harfang",
+    "titre": "Ce qui a changé",
+    "points": [
+     "À Roshen Buru, en enquêtant sur Tobiya, tu as trouvé sa trace dans les égouts : des araignées en nombre, des toiles épaisses comme du caoutchouc, et une salle peinte et gravée de symboles de Balamor.",
+     "Tobiya avait commencé une transformation. Il disait servir « la Mère de la toile », à Balamor.",
+     "Il y aurait un grand plan pour corrompre les habitants et conquérir les villes.",
+     "Tu as rapporté tout cela à Urameï et à la Protectrice. Ils semblent sous-estimer le danger.",
+     "Si tu te rends à Balamor, tu pourras enquêter toi-même sur ces araignées."
+    ]
+   },
+   {
+    "portee": "groupe",
+    "titre": "Ce que vous savez",
+    "points": [
+     "Tobiya, l'homme de main de Yureï, a été retrouvé transformé par des araignées dans les égouts de Roshen Buru.",
+     "À Keras Tauroc, un autre homme a été contrôlé par une araignée. Les deux affaires portent des symboles de Balamor."
+    ]
+   }
+  ]
+ },
+ {
+  "id": "there-duun",
+  "type": "region",
+  "nom": "There'Duun",
+  "titre": "Le royaume nain du Val Blanc",
+  "parent": "istra",
+  "tags": [
+   "region",
+   "nains",
+   "moradin",
+   "val blanc",
+   "rhodell",
+   "valdain"
+  ],
+  "resume": "Royaume nain fermé derrière la chaîne Rhodell. Neutralité absolue. Dieu Moradin.",
+  "blocs": [
+   {
+    "portee": "harfang",
+    "titre": "Ce que tu en sais",
+    "points": [
+     "Territoire le plus fermé du continent. La chaîne Rhodell forme un rempart naturel autour du Val Blanc. Personne ne passe la frontière sans invitation, et les invitations n'arrivent jamais.",
+     "Neutralité absolue. Ils n'attaquent pas, n'interviennent pas, n'envoient pas d'armées. Ils échangent avec l'extérieur uniquement via Valedorn, leur seule ville ouverte. Les portes du Val Blanc font 50 mètres de haut et ne s'ouvrent pas.",
+     "Roi Valdain There'Duun, que personne d'extérieur n'a jamais rencontré. Il envoie des représentants à La Rencontre : sobres, peu loquaces, ils concèdent peu.",
+     "Dieu Moradin : forge, connaissance, tradition. There'Duun archive tout depuis des millénaires, avec une mémoire institutionnelle que personne n'égale.",
+     "Rumeur persistante : les nains auraient trouvé quelque chose en creusant très profond, et l'auraient immédiatement scellé. Des érudits trop curieux ont disparu. Tu n'as pas posé la question à Thibwick.",
+     "Avec Roshen Buru : relation neutre et distante, sans conflit historique. Respect mutuel à distance."
+    ]
+   }
+  ]
+ },
+ {
+  "id": "valedorn",
+  "type": "ville",
+  "nom": "Valedorn",
+  "titre": "La porte extérieure de There'Duun",
+  "parent": "there-duun",
+  "tags": [
+   "ville",
+   "frontiere",
+   "nains"
+  ],
+  "resume": "Seule ville ouverte de There'Duun. La capitale reste fermée aux étrangers.",
+  "blocs": [
+   {
+    "portee": "harfang",
+    "titre": "Ce que tu en sais",
+    "points": [
+     "Les nains y reçoivent les étrangers mais n'ouvrent jamais leur capitale.",
+     "Tu y es allé une ou deux fois. C'est là que tu as rencontré ton ami nain."
+    ]
+   }
+  ]
+ },
+ {
+  "id": "dieux",
+  "type": "sujet",
+  "nom": "Les dieux",
+  "titre": "L'ordre du monde",
+  "parent": null,
+  "onglet": "monde",
+  "tags": [
+   "dieux",
+   "melora",
+   "hanare",
+   "fraternite"
+  ],
+  "resume": "Les dieux existent, mais Roshen Buru ne connaît vraiment que Mélora.",
+  "blocs": [
+   {
+    "portee": "groupe",
+    "titre": "Ce que vous savez",
+    "points": [
+     "Vous avez vu Mélora à travers la Gardienne. Des fleurs ont poussé à sa seule présence.",
+     "La Gardienne a appelé Gran Brijit « Hanaré ». Gran Brijit dit que chaque création de Mélora est un cadeau que celle-ci lui envoie.",
+     "Un lien de fraternité unit les dieux."
+    ]
+   },
+   {
+    "portee": "harfang",
+    "titre": "Ce que tu savais",
+    "points": [
+     "Mélora protège spirituellement Roshen Buru. On dit qu'elle l'a fait sortir elle-même du sol.",
+     "Les cerisiers roses, symbole de la ville, sont l'incarnation de son esprit.",
+     "Tu connais mal les autres dieux. Leur présence ne se fait pas sentir à Roshen Buru et tu ne connais aucun de leurs temples ou autels en ville."
+    ]
+   },
+   {
+    "portee": "harfang",
+    "titre": "Ce que tu as ressenti",
+    "points": [
+     "Tu as senti Mélora à travers la Gardienne : la nature elle-même pliait à sa volonté.",
+     "Gran Brijit est froide, dérangeante, un peu effrayante, à l'opposé de cette nature."
+    ]
+   }
+  ]
+ },
+ {
+  "id": "champions",
+  "type": "sujet",
+  "nom": "Les champions",
+  "titre": "L'ordre du monde",
+  "parent": null,
+  "onglet": "monde",
+  "tags": [
+   "champions",
+   "dieux",
+   "pouvoir"
+  ],
+  "resume": "Les dieux agissent sur terre par des champions, vecteurs de leur pouvoir et de leur volonté.",
+  "blocs": [
+   {
+    "portee": "groupe",
+    "titre": "Ce que vous savez",
+    "points": [
+     "Les dieux ne peuvent pas agir directement sur terre auprès des mortels.",
+     "Ils utilisent des champions comme véhicule de leur pouvoir et de leur volonté.",
+     "La Gardienne est une championne de Mélora. Gran Brijit déclare que Philippa en est une aussi.",
+     "Les champions défendent les intérêts de leur dieu. Ils sont bien plus forts que le commun des mortels, sans pouvoir vaincre un dieu."
+    ]
+   },
+   {
+    "portee": "harfang",
+    "titre": "Ce que tu savais",
+    "points": [
+     "Tu ne savais pas grand-chose des champions."
+    ]
+   }
+  ]
+ },
+ {
+  "id": "vassago",
+  "type": "sujet",
+  "nom": "Vassago",
+  "titre": "L'ordre du monde",
+  "parent": null,
+  "onglet": "monde",
+  "tags": [
+   "vassago",
+   "tenraku",
+   "rituel",
+   "demon"
+  ],
+  "resume": "Vassago veut utiliser le rituel du Tenraku à l'envers pour s'élever au rang de dieu.",
+  "blocs": [
+   {
+    "portee": "groupe",
+    "titre": "Ce que vous savez",
+    "points": [
+     "Vassago connaît le rituel du Tenraku, par lequel Roshen Buru fait descendre des Miren sur terre.",
+     "Il prévoit de l'utiliser dans l'autre sens, pour s'élever lui-même au rang de dieu.",
+     "À distance, il a pu fomenter l'attaque du Temple du Tenraku."
+    ]
+   },
+   {
+    "portee": "harfang",
+    "titre": "Ce que tu en penses",
+    "points": [
+     "Tu ne savais pas grand-chose de Vassago.",
+     "C'est un affront à Mélora et à ta cité. Il pervertit le socle de ta civilisation à des fins égoïstes.",
+     "Il montre peu de considération pour la vie humaine. Qui sait ce qu'il ferait en devenant dieu ?"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "demons",
+  "type": "sujet",
+  "nom": "Les démons et les Enfers",
+  "titre": "L'ordre du monde",
+  "parent": null,
+  "onglet": "monde",
+  "tags": [
+   "demons",
+   "diables",
+   "enfers",
+   "loi cosmique",
+   "pacte",
+   "levistus"
+  ],
+  "resume": "Société de dettes et de pactes régie par la loi cosmique. Neuf strates infernales.",
+  "blocs": [
+   {
+    "portee": "groupe",
+    "titre": "Ce que vous savez",
+    "points": [
+     "Les démons sont régis par la loi cosmique. Leur société repose sur les dettes, les pactes, les serments et la servitude.",
+     "Chaque démon répond à son supérieur. Personne, pas même un dieu, ne peut briser un pacte conclu.",
+     "Il existe 9 strates infernales. S'y rendre et passer de l'une à l'autre est difficile et coûteux. Un portail ne suffit pas, les deux mondes sont hermétiques.",
+     "Un démon ne peut accéder qu'à son propre plan.",
+     "Les démons majeurs comme Absalom semblent obéir au maître de leur plan, l'équivalent d'un dieu du plan matériel.",
+     "Les démons qui ont prêté allégeance à Vassago ont trahi leur patron d'origine. Retourner aux Enfers serait presque une condamnation pour eux."
+    ]
+   },
+   {
+    "portee": "harfang",
+    "titre": "Ce que tu savais",
+    "points": [
+     "Les démons vivent aux Enfers. Tu n'en avais jamais rencontré. Ils te préoccupaient peu. On les dit mauvais, tu t'en méfiais."
+    ]
+   },
+   {
+    "portee": "harfang",
+    "titre": "Ce qui a changé",
+    "points": [
+     "Tu en as rencontré deux en peu de temps : Ankou Urameï et Absalom.",
+     "On t'a mis en garde : les Enfers sont dangereux et leurs habitants redoutables."
+    ]
+   }
+  ]
+ },
+ {
+  "id": "melora",
+  "type": "sujet",
+  "nom": "Mélora",
+  "titre": "Déesse de la nature",
+  "parent": null,
+  "onglet": "monde",
+  "tags": [
+   "melora",
+   "dieu",
+   "cerisiers",
+   "gardienne"
+  ],
+  "resume": "Déesse protectrice de Roshen Buru. Sa championne est la Gardienne.",
+  "blocs": [
+   {
+    "portee": "groupe",
+    "titre": "Ce que vous savez",
+    "points": [
+     "Mélora a une championne, la Gardienne Anaru Miren-Buru.",
+     "Son pouvoir fait pousser des fleurs à sa seule présence."
+    ]
+   },
+   {
+    "portee": "harfang",
+    "titre": "Ce que tu sais",
+    "points": [
+     "Les cerisiers roses de Roshen Buru sont l'incarnation de son esprit."
+    ]
+   }
+  ]
+ },
+ {
+  "id": "levistus",
+  "type": "sujet",
+  "nom": "Levistus",
+  "titre": "Archidiable de Stygia, 5ème enfer",
+  "parent": null,
+  "onglet": "monde",
+  "tags": [
+   "levistus",
+   "stygia",
+   "archidiable",
+   "pacte",
+   "neryn"
+  ],
+  "resume": "Archidiable de Stygia, le Prince Gelé. Pactisant de Neryn Yosa.",
+  "blocs": [
+   {
+    "portee": "harfang",
+    "titre": "Ce que tu sais",
+    "points": [
+     "Levistus est l'Archidiable du 5ème enfer, Stygia, le Prince Gelé.",
+     "La Protectrice a passé un pacte avec lui.",
+     "Le Tribunal de chair, qu'elle a envoyé, est composé d'agents de Levistus prêtés à ses ordres."
+    ]
+   }
+  ]
+ }
+]
