@@ -278,6 +278,7 @@ function renderOverlay(layer, sc) {
     svg.addEventListener('click', ev => { const g = ev.target.closest('.reg'); if (g && !g.classList.contains('solo')) location.hash = '#/' + g.dataset.id; });
     ov.querySelectorAll('.rlab').forEach(a => { a.addEventListener('mouseenter', () => hot(a.dataset.id, true)); a.addEventListener('mouseleave', () => hot(a.dataset.id, false)); });
   }
+  if (sc.pins.length > 8) ov.classList.add('many'); else ov.classList.remove('many');
   sc.pins.forEach(p => {
     const a = document.createElement('a');
     a.className = `pin k-${p.kind}${p.dim ? ' dim' : ''}${p.here ? ' here' : ''}${p.x < 0.1 ? ' edge-l' : ''}${p.x > 0.9 ? ' edge-r' : ''}`;

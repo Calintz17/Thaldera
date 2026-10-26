@@ -380,18 +380,30 @@ img { display: block; }
   .search { order: 3; flex: 1 1 100%; max-width: none; }
   .nav { gap: 14px; }
   .scene { display: block; min-height: calc(100dvh - 112px); }
-  .scene.is-world { height: calc(100dvh - 112px); }
-  .world { height: 100%; flex-direction: column; }
+  .scene.is-world { height: auto; min-height: 0; }
+  .world { height: auto; display: block; overflow: visible; }
+  .world::before { display: none; }
+  .wcard { display: block; height: 40dvh; min-height: 260px; }
   .wcard + .wcard { border-left: 0; border-top: 1px solid rgba(201,168,76,.35); }
   .wcard .wtxt { bottom: 8%; }
   .wcard .wdesc { display: none; }
-  .wbar { bottom: 8px; }
+  .wbar { position: relative; bottom: auto; flex-direction: column; align-items: stretch; gap: 10px; padding: 14px 14px 28px; background: #070b14; }
+  .wgroup { flex-wrap: wrap; border-radius: 16px; gap: 6px 14px; padding: 8px 12px; }
+  .wgroup b { flex: 1 1 100%; margin: 0 0 2px; }
+  .wgroup a { white-space: nowrap; }
   .stage { position: sticky; top: 112px; height: 44dvh; z-index: 5; }
   .panel { overflow: visible; border-left: 0; border-top: 1px solid rgba(201,168,76,.3); }
   .pin-pad { padding: 14px 18px 60px; }
   .hero { margin: 0 -18px 10px; }
   .kids { grid-template-columns: 1fr; }
-  .cutout { height: 80%; }
+  .cutout { height: 72%; bottom: 46px; max-width: 70%; }
+  .cutout .cn { display: none; }
+  .mapcap { left: 8px; bottom: 8px; gap: 6px; max-width: calc(100% - 16px); }
+  .mapcap .tab { font-size: 9px; letter-spacing: .1em; padding: 5px 10px; }
+  .mapcap .cap { font-size: 12.5px; padding: 4px 10px; }
+  .rlab .fl { font-size: 9.5px; letter-spacing: .08em; padding: 3px 7px; border-left-width: 3px; }
+  .stage { height: 48dvh; }
+  .stage .upbtn { transform: scale(.85); transform-origin: left top; }
   .gal .gcap .gt { display: none; }
 }
 @media (prefers-reduced-motion: reduce) {
@@ -400,3 +412,6 @@ img { display: block; }
 }
 
 .rlab.hot .fs, .rlab:hover .fs { display: block !important; }
+
+.many .pin:not(.here):not(:hover):not(.hot) .pl { display: none; }
+@media (max-width: 860px) { .pin:not(.here):not(.hot) .pl { display: none; } .pin .in { width: 30px; height: 30px; } }
