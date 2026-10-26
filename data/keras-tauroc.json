@@ -3498,5 +3498,67 @@
    "Rhodell",
    "Val Blanc"
   ]
+ },
+ {
+  "id": "feywild",
+  "type": "continent",
+  "nom": "Feywild",
+  "titre": "Le plan des fées",
+  "sousTitre": "Le plan des fées",
+  "ordre": 2,
+  "cartes": [
+   {
+    "id": "carte",
+    "img": "img/placeholder/carte-noire.svg",
+    "legende": ""
+   }
+  ],
+  "blason": "img/blasons/feywild.webp",
+  "typeLabel": "Plan",
+  "resume": "Reflet plus vif, plus cruel et plus beau du monde matériel. Le temps y est élastique et la magie y coule comme une eau trop vive.",
+  "alias": [
+   "Féerie",
+   "Plan des fées"
+  ]
+ },
+ {
+  "id": "plan-du-feu",
+  "type": "continent",
+  "nom": "Plan du Feu",
+  "titre": "Le plan élémentaire du feu",
+  "sousTitre": "Le plan élémentaire",
+  "ordre": 3,
+  "cartes": [
+   {
+    "id": "carte",
+    "img": "img/placeholder/carte-noire.svg",
+    "legende": ""
+   }
+  ],
+  "blason": "img/blasons/pyrrah.webp",
+  "typeLabel": "Plan",
+  "resume": "Territoire d'une beauté violente, hostile à toute vie qui n'y est pas née. Pyrrah en est la cité connue.",
+  "alias": [
+   "Plan du feu"
+  ]
+ },
+ {
+  "id": "enfers",
+  "type": "continent",
+  "nom": "Les Enfers",
+  "titre": "Verrouillé",
+  "sousTitre": "Verrouillé",
+  "ordre": 5,
+  "cartes": [
+   {
+    "id": "carte",
+    "img": "img/placeholder/carte-noire.svg",
+    "legende": ""
+   }
+  ],
+  "blason": "img/blasons/vide.svg",
+  "locked": true,
+  "typeLabel": "Plan",
+  "resume": ""
  }
 ]

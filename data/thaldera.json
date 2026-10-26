@@ -2229,10 +2229,9 @@
  },
  {
   "id": "agran",
-  "type": "ville",
+  "type": "continent",
   "nom": "Agran",
   "titre": "Cité sous-marine à vingt kilomètres de profondeur",
-  "parent": "thaldera",
   "resume": "Cité de corail au fond d'une faille abyssale, éclairée par la seule bioluminescence qui pulse au rythme de Kataron.",
   "connu": [
    "Aucune surface visible. Des courants létaux coulent au-dessus de la faille.",
@@ -2247,7 +2246,17 @@
   "blason": "img/blasons/agran.webp",
   "alias": [
    "Agran"
-  ]
+  ],
+  "ordre": 4,
+  "sousTitre": "La cité sous les flots",
+  "cartes": [
+   {
+    "id": "carte",
+    "img": "img/placeholder/carte-noire.svg",
+    "legende": ""
+   }
+  ],
+  "typeLabel": "Cité engloutie"
  },
  {
   "id": "thaloor",
@@ -2300,7 +2309,7 @@
   "type": "ville",
   "nom": "Pyrrah",
   "titre": "Cité du Plan du Feu",
-  "parent": "thaldera",
+  "parent": "plan-du-feu",
   "resume": "Ville de forges et de lave, habitée par des tieffelins rouges, drakéides, salamandres et efrits.",
   "connu": [
    "Prophétie : « Les cheveux de flamme éteindront la Flamme éternelle »."

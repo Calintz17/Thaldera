@@ -4,7 +4,7 @@
 (() => {
 'use strict';
 
-const VER = '3';
+const VER = '4';
 const EDIT = new URLSearchParams(location.search).has('edit');
 const $ = (s, r = document) => r.querySelector(s);
 const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
@@ -422,21 +422,16 @@ window.addEventListener('resize', () => {
 /* ---------- vue monde ---------- */
 function buildWorld() {
   const cont = DB.filter(e => e.type === 'continent').sort((a, b) => (a.ordre ?? 0) - (b.ordre ?? 0));
-  worldEl.innerHTML = cont.map(c => `
-    <a class="wcard" id="world-${c.id}" href="#/${c.id}" data-id="${c.id}">
-      <div class="wimg" style="background-image:url('${c.vignette || c.cartes[0].img}')"></div>
-      <div class="wtxt">
-        <div class="wsub">${esc(c.sousTitre || '')}</div>
-        <h2>${esc(c.nom)}</h2>
-        <div class="wrule"><i></i></div>
-        <p class="wdesc">${esc(c.resume || '')}</p>
-        <span class="wgo">Entrer</span>
-      </div>
-    </a>`).join('') + `<div class="wbar">${worldBar()}</div>`;
-  worldEl.querySelectorAll('.wcard').forEach(a => a.addEventListener('click', ev => {
+  worldEl.innerHTML = `<div class="whead"><h1>Thaldera <span>Codex</span></h1><div class="wrule"><i></i></div></div><div class="wgrid">` + cont.map(c => {
+    const inner = `<span class="wcr"><img src="${c.blason || 'img/blasons/vide.svg'}" alt=""></span><span class="wn">${esc(c.nom)}</span><span class="ws">${esc(c.sousTitre || '')}</span>`;
+    return c.locked
+      ? `<div class="wcrest locked" id="world-${c.id}" aria-disabled="true">${inner}</div>`
+      : `<a class="wcrest" id="world-${c.id}" href="#/${c.id}" data-id="${c.id}"${c.accent ? ` style="--accent:${c.accent}"` : ''}>${inner}</a>`;
+  }).join('') + `</div><div class="wbar">${worldBar()}</div>`;
+  worldEl.querySelectorAll('a.wcrest').forEach(a => a.addEventListener('click', ev => {
     ev.preventDefault();
     worldEl.classList.add('leaving'); a.classList.add('chosen');
-    setTimeout(() => { location.hash = '#/' + a.dataset.id; }, 620);
+    setTimeout(() => { location.hash = '#/' + a.dataset.id; }, 480);
   }));
 }
 function worldBar() {
@@ -523,7 +518,7 @@ function renderPanel(e, q) {
   }
   if ((e.type === 'pnj' || e.type === 'pj') && e.img) h += `<div class="cut"><img src="${e.img}" alt="${esc(e.nom)}"></div><div class="sepline"></div>`;
   else if (e.blason) h += `<div class="crest"><img src="${e.blason}" alt=""></div>`;
-  h += `<header class="head"><div class="tp">${esc(TYPES[e.type] || '')}</div><h1>${esc(e.nom)}</h1>${e.titre ? `<div class="ti">${L(e.titre, e.id)}</div>` : ''}${statusPill(e)}<div class="rule"><i></i></div></header>`;
+  h += `<header class="head"><div class="tp">${esc(e.typeLabel || TYPES[e.type] || '')}</div><h1>${esc(e.nom)}</h1>${e.titre ? `<div class="ti">${L(e.titre, e.id)}</div>` : ''}${statusPill(e)}<div class="rule"><i></i></div></header>`;
   if (e.chef) h += `<div class="chef"><span class="rt">${esc(e.chef.titre)}</span><span class="rn">${esc(e.chef.nom)}</span></div>`;
   if (e.themes) h += `<div class="themes">${esc(e.themes)}</div>`;
   if (e.resume) h += `<p class="resume">${L(e.resume, e.id)}</p>`;
@@ -594,6 +589,7 @@ async function route() {
   document.querySelectorAll('.nav a').forEach(a => a.classList.toggle('on', !id && a.dataset.nav === 'monde'));
   if (!id) { showWorld(); return; }
   const e = BY[id];
+  if (e && e.locked) { location.hash = '#/'; return; }
   if (!e) { sceneEl.classList.remove('is-world'); panelEl.innerHTML = '<div class="pin-pad"><nav class="crumbs"><a class="back" href="#/">‹ Monde</a></nav><p class="empty">Cette page n’existe pas encore.</p></div>'; return; }
   sceneEl.classList.remove('is-world');
   measure();
@@ -607,7 +603,7 @@ async function route() {
 /* ---------- recherche ---------- */
 function initSearch() {
   const inp = $('#q'), box = $('#results');
-  const idx = DB.map(e => ({ e, k: norm([e.nom, ...(e.alias || []), e.titre, e.resume, ...(e.tags || [])].filter(Boolean).join(' ')), n: norm(e.nom) }));
+  const idx = DB.filter(e => !e.locked).map(e => ({ e, k: norm([e.nom, ...(e.alias || []), e.titre, e.resume, ...(e.tags || [])].filter(Boolean).join(' ')), n: norm(e.nom) }));
   let sel = -1;
   const run = () => {
     const t = norm(inp.value.trim());

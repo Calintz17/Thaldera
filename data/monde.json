@@ -33,7 +33,8 @@
    "Il débarque à Brakka, les derniers mètres à la nage, et le sous-marin plonge derrière lui.",
    "Il remonte ensuite les steppes rouges jusqu'à Keras Tauroc, gagne le festival des Cornes Rouges, perd un mois de mémoire, puis descend la Khor Selash jusqu'à Cap Cornes.",
    "Un portail est ouvert à Cap Cornes vers Port Doëlan. Le groupe repart vers le nord, traverse la forêt d'Aruzen depuis Azuren Kai et arrive à Roshen Buru."
-  ]
+  ],
+  "blason": "img/blasons/vide.svg"
  },
  {
   "id": "thaldera",
@@ -67,7 +68,8 @@
    "Au moins trois factions s'y distinguent : le Dominion Sol, Altéra et le Consortium.",
    "Le groupe a visité Port Doëlan, une ville rasée en pleine reconstruction.",
    "Un portail relie Cap Cornes, sur Istra, à Port Doëlan. Le groupe ne l'a pas ouvert vers Havre Noir."
-  ]
+  ],
+  "blason": "img/blasons/vide.svg"
  },
  {
   "id": "dieux",
