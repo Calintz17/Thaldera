@@ -851,6 +851,13 @@
      "Il a été retrouvé éventré, les bras en croix, deux plumes de paon spectrales plantées dans les mains.",
      "Sa boutique a été dévalisée par Philippa."
     ]
+   },
+   {
+    "portee": "groupe",
+    "titre": "Ce que vous savez de plus",
+    "points": [
+     "Gran Brijit avait demandé à Philippa de le tuer pour préserver l'équilibre. Il est mort avant, tué par les Anadori."
+    ]
    }
   ]
  },
@@ -995,6 +1002,14 @@
      "Il dit que chaque création de Mélora est un cadeau qu'elle lui envoie.",
      "Il a menacé la Gardienne directement. Elle a reculé et l'a laissé prendre le parchemin.",
      "Il a affronté Ginko Noshi-Buru à Kazad Marunn, et semblait lui vouloir quelque chose."
+    ]
+   },
+   {
+    "portee": "groupe",
+    "titre": "Ce que vous savez de plus",
+    "points": [
+     "Avant de quitter Cap Cornes, vous la rencontrez dans sa cabane. Philippa y a une vision d'une balance désaxée. Vous interrompez sa conversation avec un vieux monsieur inconnu, à qui elle dit que « l'équilibre doit être préservé ».",
+     "Elle donne deux missions à Philippa : ne pas ouvrir de portail entre Cap Cornes et Havre Noir, et trouver puis tuer Oren Sidaï à Roshen Buru pour préserver l'équilibre."
     ]
    },
    {

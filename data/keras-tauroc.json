@@ -1,0 +1,773 @@
+[
+ {
+  "id": "festival-cornes-rouges",
+  "type": "evenement",
+  "nom": "Le Festival des Cornes Rouges",
+  "titre": "Tournoi du colisée de Keras Tauroc",
+  "parent": "keras-tauroc",
+  "onglet": "evenements",
+  "tags": [
+   "festival",
+   "colisee",
+   "arene",
+   "cornes d'or",
+   "tournoi"
+  ],
+  "resume": "Vous gagnez le tournoi et obtenez les Cornes d'Or, clé de la ville.",
+  "blocs": [
+   {
+    "portee": "groupe",
+    "titre": "Ce qui s'est passé",
+    "points": [
+     "Fulvia vous inscrit en backstage et exige un fait d'armes pour que Vitiosa vous présente à la foule. Format : deux combats tirés au sort, puis un grand combat à deux contre un ennemi puissant.",
+     "Avant la victoire, personne ne vous aide. Les marchands refusent poliment, les autorités vous ignorent.",
+     "Dans les catacombes de la cathédrale, vous trouvez un autel secondaire aux armes de Vassago, portant le symbole déjà vu à Brakka et dans les steppes. Le Démon des Mains surgit, vous le combattez et sortez des catacombes.",
+     "Jane bat Hématome, un voleur tabaxi que la ville a fini par mettre dans l'arène. Philippa bat son adversaire.",
+     "Vous gagnez le festival. Les Cornes d'Or vous sont remises par un vieux minotaure, 5 600 po avec elles.",
+     "Dès lors la ville s'ouvre. Fulvia vous parle en aparté d'un ton contractuel et froid : revenez la voir pour la prochaine saison.",
+     "Jane vole à Naevia une « Hache Étrange » : c'est la garde d'une épée brisée."
+    ]
+   }
+  ]
+ },
+ {
+  "id": "mois-perdu",
+  "type": "evenement",
+  "nom": "Le mois perdu",
+  "titre": "L'assassinat de l'ambassadeur Otoba",
+  "parent": "keras-tauroc",
+  "onglet": "evenements",
+  "tags": [
+   "mois perdu",
+   "otoba",
+   "absalom",
+   "ferox",
+   "prison",
+   "modify memory"
+  ],
+  "resume": "Absalom efface un mois de votre mémoire, et vous fait accuser du meurtre d'Otoba.",
+  "blocs": [
+   {
+    "portee": "groupe",
+    "titre": "Ce qui s'est passé",
+    "points": [
+     "Sur les docks, vous tentez d'intercepter Absalom près de sa barge. Elle vous avait anticipées. Elle vous dit que votre pouvoir de nuisance ne peut pas s'exercer ici et que vous ne comprenez pas son plan, puis lance Modify Memory : un son aigu, puis rien.",
+     "Vous vous réveillez en prison, plusieurs semaines plus tard, du sang sur les mains. Vos armes et objets magiques sont confisqués. Le soir du banquet du festival, l'ambassadeur Otoba de Roshen Buru a été assassiné. Vous étiez sur les lieux, couvertes de sang, l'arme du crime à proximité.",
+     "Tarcus vous propose un marché : enquêter sur vous-mêmes.",
+     "Philippa avait une clef du Cornua Fracta dans sa poche. Volusius confirme qu'elle y chantait tous les soirs depuis un mois. Sera, la fille du meunier, venait chaque soir. La veille du meurtre, un vieil homme aux cheveux blancs et au maintien militaire a remis un pli à Philippa pendant qu'elle chantait. Sera l'avait gardé : « À la deuxième cloche après le coucher du soleil. Viens seule. Ne parle à personne. Via Castrum, Quartier de la Caserne, porte de fer. »",
+     "Jane avait un carnet à elle, et une chambre louée chez Capella. Capella lui dit qu'elle rentrait tard et travaillait pour Hématome. Hématome confirme : Jane travaillait pour lui. Son carnet montre que la surveillance de l'ambassadeur a été commandée par un civil, Calvinus Ferox, en liquide.",
+     "Derrière la tannerie, deux soldats en permission payés par Ferox tentent de récupérer le carnet et de vous renvoyer en cellule.",
+     "Chez Ferox, vous trouvez la lettre d'Absalom et la copie de sa réponse. Vous découvrez que vous étiez l'instrument et le coupable désigné du meurtre, avec Ferox comme main armée.",
+     "Le meurtre d'Otoba a fermé les accès à Roshen Buru, Seiran Vale et Azuren Kai compris."
+    ]
+   }
+  ]
+ },
+ {
+  "id": "voyage-cap-cornes",
+  "type": "evenement",
+  "nom": "La descente de la Khor Selash",
+  "titre": "De Keras Tauroc à Cap Cornes",
+  "parent": "keras-tauroc",
+  "onglet": "evenements",
+  "tags": [
+   "voyage",
+   "silas",
+   "gibet",
+   "lande",
+   "yorisa",
+   "tenrai buru"
+  ],
+  "resume": "Traversée sur le Tenrai Buru, combat contre Silas Mort-Dorée et le gibet d'Absalom.",
+  "blocs": [
+   {
+    "portee": "groupe",
+    "titre": "Ce qui s'est passé",
+    "points": [
+     "Capito vous guide jusqu'au Tenrai Buru, navire de Roshen Buru à la coque sombre dorée. Vous embarquez avec deux Rakhs et le capitaine Yorisa, 40 po par tête.",
+     "Vous descendez la Khor Selash. Un voyageur égaré signale depuis la berge, vous le recueillez : c'est Silas Mort-Dorée, envoyé par Vassago pour récupérer le Fragment. Vous le vainquez.",
+     "Sur la lande, un ancien aqueduc en ruine porte des gardes de Keras Tauroc pendus à des chaînes à la place des statues de héros. Absalom l'a laissé comme message. Un charognard fuyait au pied des piliers.",
+     "Vous marchez ensuite vers Cap Cornes. La lande offre une faune paisible : un grand herbivore moussu, une créature reptilienne bleutée qui pourrait servir de monture, un petit rongeur bondissant."
+    ]
+   }
+  ]
+ },
+ {
+  "id": "portail-cap-cornes",
+  "type": "evenement",
+  "nom": "Le portail de Cap Cornes",
+  "titre": "Le cercle d'Eamonn",
+  "parent": "cap-cornes",
+  "onglet": "evenements",
+  "tags": [
+   "portail",
+   "eamonn",
+   "olyssane",
+   "ink",
+   "gran brijit",
+   "teleportation",
+   "ghoules"
+  ],
+  "resume": "Vous aidez Olyssane à obtenir d'Eamonn un cercle de téléportation vers Port Doëlan.",
+  "blocs": [
+   {
+    "portee": "groupe",
+    "titre": "Ce qui s'est passé",
+    "points": [
+     "Vous retrouvez Ink et Olyssane. Oly expose deux problèmes : Kester Tauroc veut la défier en duel, et elle doit convaincre Eamonn d'ouvrir un portail pour un comptoir commercial.",
+     "Jane, déguisée en Olyssane, attire Kester dans une ruelle. Il fuit, apeuré, et jure vengeance.",
+     "Pour les composants : vous obtenez de Fennick de la vesine en le menaçant, vous vainquez des ghoules des marées avec l'aide d'Ink, et rapportez trois cœurs flétris.",
+     "Eamonn négocie contre du suud et ouvre un cercle de téléportation entre sa tour et les ruines du château de Port Doëlan. Philippa trace sa marque de craie sur la porte.",
+     "Chez Gran Brijit, avant votre départ : Philippa a une vision d'une balance désaxée, et Olyssane ouvre le passage en faisant couler son sang. Harfang et Ink rencontrent Brijit pour la première fois, et elle semble déjà les connaître.",
+     "Vous interrompez une conversation entre Brijit et un vieux monsieur inconnu. Elle l'avertit que « l'équilibre doit être préservé ».",
+     "Vous réveillez Nolbrim, dans le coma depuis Malquessar, en le tuant puis en le ressuscitant avec la potion d'Ursinus. Philippa envoie un message à Bourre-Pif.",
+     "Gran Brijit donne deux missions à Philippa : ne pas ouvrir de portail entre Cap Cornes et Havre Noir, et trouver puis tuer Oren Sidaï à Roshen Buru pour préserver l'équilibre."
+    ]
+   }
+  ]
+ },
+ {
+  "id": "fulvia",
+  "type": "pnj",
+  "nom": "Fulvia",
+  "titre": "Organisatrice des combats et annonceuse",
+  "parent": "keras-tauroc",
+  "onglet": "pnj",
+  "statut": "vivant",
+  "tags": [
+   "colisee",
+   "arene",
+   "annonceuse"
+  ],
+  "resume": "Enregistre les combattants et construit leur légende devant la foule.",
+  "blocs": [
+   {
+    "portee": "groupe",
+    "titre": "Ce que vous savez",
+    "points": [
+     "Elle vous reçoit en backstage et exige un fait d'armes pour que Vitiosa vous présente à la foule.",
+     "Elle annonce chaque combattant avec emphase. Après la victoire, en aparté, elle devient froide et contractuelle : si vous voulez plus de combats, revenez la voir."
+    ]
+   }
+  ]
+ },
+ {
+  "id": "pius",
+  "type": "pnj",
+  "nom": "Pius",
+  "titre": "Prêtre de la cathédrale de Kord",
+  "parent": "keras-tauroc",
+  "onglet": "pnj",
+  "statut": "vivant",
+  "tags": [
+   "kord",
+   "cathedrale",
+   "absalom"
+  ],
+  "resume": "Prêtre diminué qui parle d'Absalom comme d'une personne extraordinaire.",
+  "blocs": [
+   {
+    "portee": "groupe",
+    "titre": "Ce que vous savez",
+    "points": [
+     "Il vous reçoit avec un enthousiasme déplacé et parle d'Absalom avec admiration. Il lui a prêté les catacombes pour se reposer et l'a orientée vers Chrysodoros.",
+     "Il est physiquement diminué : « ma pauvre tête », « je n'ai presque plus de vie ». Il pense qu'Absalom est partie vers le nord, vers Roshen Buru."
+    ]
+   }
+  ]
+ },
+ {
+  "id": "chrysodoros",
+  "type": "pnj",
+  "nom": "Chrysodoros",
+  "titre": "Orfèvre",
+  "parent": "keras-tauroc",
+  "onglet": "pnj",
+  "statut": "vivant",
+  "tags": [
+   "orfevre",
+   "absalom",
+   "reliques"
+  ],
+  "resume": "Orfèvre qui ne sert que sur recommandation.",
+  "blocs": [
+   {
+    "portee": "groupe",
+    "titre": "Ce que vous savez",
+    "points": [
+     "Avant les Cornes d'Or, il refuse poliment mais définitivement : revenez quand quelqu'un parlera de vous. Après, accueil chaleureux.",
+     "Absalom lui demandait une relique liée à un pouvoir ancien, peut-être d'avant la grande catastrophe, et posait des questions sur la provenance des pierres précieuses, donc les mines de l'ouest. Il l'a orientée vers la Maison Tauroc.",
+     "Il l'a revue le lendemain près du port, avec l'air d'une femme qui avait pris une décision."
+    ]
+   }
+  ]
+ },
+ {
+  "id": "naevia",
+  "type": "pnj",
+  "nom": "Naevia",
+  "titre": "Vendeuse de dagues sans enseigne",
+  "parent": "keras-tauroc",
+  "onglet": "pnj",
+  "statut": "vivant",
+  "tags": [
+   "dagues",
+   "receleuse",
+   "epee brisee"
+  ],
+  "resume": "Receleuse qui vend exclusivement des dagues, sans poser de questions.",
+  "blocs": [
+   {
+    "portee": "groupe",
+    "titre": "Ce que vous savez",
+    "points": [
+     "Elle n'a ni enseigne ni adresse fixe : un pan de mur différent chaque jour. Vingt dagues, de tailles et d'origines différentes.",
+     "Elle avait une « Hache Étrange » à 2000 po, qu'elle jugeait ratée. Jane l'a volée : c'est la garde d'une épée brisée, aux glyphes non décoratifs, dans un métal non reconnaissable. Elle est toujours sur Jane."
+    ]
+   }
+  ]
+ },
+ {
+  "id": "eshkal",
+  "type": "pnj",
+  "nom": "Eshkal",
+  "titre": "Vendeur de potions ambulant",
+  "parent": "keras-tauroc",
+  "onglet": "pnj",
+  "statut": "vivant",
+  "tags": [
+   "potions",
+   "marche"
+  ],
+  "resume": "Vend des potions aux noms ronflants, dont la moitié seulement sont de sa fabrication.",
+  "blocs": [
+   {
+    "portee": "groupe",
+    "titre": "Ce que vous savez",
+    "points": [
+     "Il parle vite et beaucoup, flatte les clients, et prétend fabriquer ses potions lui-même. C'est vrai pour environ la moitié."
+    ]
+   }
+  ]
+ },
+ {
+  "id": "comatus",
+  "type": "pnj",
+  "nom": "Comatus",
+  "titre": "Brocanteur",
+  "parent": "keras-tauroc",
+  "onglet": "pnj",
+  "statut": "vivant",
+  "tags": [
+   "brocanteur",
+   "architectes"
+  ],
+  "resume": "Il achète tout et revend avec une histoire fabriquée.",
+  "blocs": [
+   {
+    "portee": "groupe",
+    "titre": "Ce que vous savez",
+    "points": [
+     "Son entrepôt ressemble à l'intérieur d'une tête qui n'a jamais rien jeté. Il achète tout sans poser de questions et invente la plupart des provenances.",
+     "Il vend une tablette de pierre gravée de glyphes anciens, que vous pouvez déchiffrer en partie : un fragment sur les Architectes."
+    ]
+   }
+  ]
+ },
+ {
+  "id": "volusius",
+  "type": "pnj",
+  "nom": "Volusius",
+  "titre": "Aubergiste du Cornua Fracta",
+  "parent": "keras-tauroc",
+  "onglet": "pnj",
+  "statut": "vivant",
+  "tags": [
+   "auberge",
+   "cornua fracta",
+   "mois perdu"
+  ],
+  "resume": "Minotaure, frère d'Egnatius. Son nom vaut recommandation auprès de Thessala.",
+  "blocs": [
+   {
+    "portee": "groupe",
+    "titre": "Ce que vous savez",
+    "points": [
+     "Il tient l'auberge pauvre du quartier étranger. Philippa y a chanté tous les soirs pendant votre mois perdu : en la voyant, il s'est arrêté, soulagé, avec une question qu'il n'avait pas posée.",
+     "Son nom sert de recommandation auprès de Thessala."
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "cible": "egnatius",
+    "type": "Frère",
+    "lien": 4,
+    "ton": "positif",
+    "note": ""
+   }
+  ]
+ },
+ {
+  "id": "sera",
+  "type": "pnj",
+  "nom": "Sera",
+  "titre": "Fille du meunier",
+  "parent": "keras-tauroc",
+  "onglet": "pnj",
+  "statut": "vivant",
+  "tags": [
+   "moulins",
+   "mois perdu",
+   "pli"
+  ],
+  "resume": "Elle venait écouter Philippa chaque soir. Elle a gardé le pli de Ferox.",
+  "blocs": [
+   {
+    "portee": "groupe",
+    "titre": "Ce que vous savez",
+    "points": [
+     "Elle reconnaît Philippa de loin et se montre bien trop familière : un mois de souvenirs que Philippa n'a pas.",
+     "Elle a gardé le pli que Philippa avait laissé tomber, la seule pièce matérielle qui relie Ferox à l'affaire."
+    ]
+   }
+  ]
+ },
+ {
+  "id": "capella",
+  "type": "pnj",
+  "nom": "Capella",
+  "titre": "Grand-mère du rez-de-chaussée",
+  "parent": "keras-tauroc",
+  "onglet": "pnj",
+  "statut": "vivant",
+  "tags": [
+   "mois perdu",
+   "jane"
+  ],
+  "resume": "Voisine de la chambre louée par Jane pendant le mois perdu.",
+  "blocs": [
+   {
+    "portee": "groupe",
+    "titre": "Ce que vous savez",
+    "points": [
+     "Jane avait loué une chambre de bonne chez elle, propre mais sans rien de personnel. Capella l'entendait rentrer tard et lui reprochait de travailler pour Hématome. Jane portait ses courses le mardi."
+    ]
+   }
+  ]
+ },
+ {
+  "id": "hematome",
+  "type": "pnj",
+  "nom": "Hématome",
+  "titre": "Chef de bande, tabaxi",
+  "parent": "keras-tauroc",
+  "onglet": "pnj",
+  "statut": "vivant",
+  "tags": [
+   "tannerie",
+   "pegre",
+   "jane",
+   "arene"
+  ],
+  "resume": "Chef de bande de la vieille tannerie. Jane a travaillé pour lui un mois.",
+  "blocs": [
+   {
+    "portee": "groupe",
+    "titre": "Ce que vous savez",
+    "points": [
+     "Trouvé un matin assis sur les murailles de la ville, il y est revenu à chaque expulsion. « Il a neuf vies. » La ville a fini par le mettre dans l'arène. Jane l'a battu.",
+     "Il respecte Jane pour avoir travaillé un mois sans poser de questions. Il vous donne le nom de Calvinus Ferox sans négocier : ce nom est devenu dangereux à garder.",
+     "Son carnet liste d'autres contrats, dont un de Vibia. Il garde les captifs de l'embuscade au fond de la tannerie, à disposition de Tarcus."
+    ]
+   }
+  ]
+ },
+ {
+  "id": "calvinus-ferox",
+  "type": "pnj",
+  "nom": "Calvinus Ferox",
+  "titre": "Grand-Général en disgrâce",
+  "parent": "keras-tauroc",
+  "onglet": "pnj",
+  "statut": "inconnu",
+  "tags": [
+   "general",
+   "absalom",
+   "otoba",
+   "villa"
+  ],
+  "resume": "Général humilié, manipulé par Absalom pour faire tuer l'ambassadeur.",
+  "blocs": [
+   {
+    "portee": "groupe",
+    "titre": "Ce que vous savez",
+    "points": [
+     "Sa villa jaunie et lasse, au bout d'une allée, est connue de tout le quartier. Son bureau contenait la lettre d'Absalom signée du sceau de Vassago, et la copie de sa propre réponse.",
+     "Absalom y promettait de lui rendre sa dignité en lui envoyant deux agents sous son contrôle total, vous, qu'il devait faire surveiller puis lancer sur l'ambassadeur, avant de vous laisser à la garde."
+    ]
+   }
+  ],
+  "question": "Qu'est devenu Calvinus Ferox après votre visite ?"
+ },
+ {
+  "id": "otoba",
+  "type": "pnj",
+  "nom": "Otoba",
+  "titre": "Ambassadeur de Roshen Buru",
+  "parent": "keras-tauroc",
+  "onglet": "pnj",
+  "statut": "mort",
+  "tags": [
+   "ambassadeur",
+   "roshen buru",
+   "assassinat"
+  ],
+  "resume": "Assassiné lors du banquet du festival. Sa mort a fermé les routes vers Roshen Buru.",
+  "blocs": [
+   {
+    "portee": "groupe",
+    "titre": "Ce que vous savez",
+    "points": [
+     "Il a été tué le soir du banquet du festival. Vous étiez sur les lieux, couverts de sang, sans en avoir le souvenir.",
+     "Sa mort a fermé les accès à Roshen Buru, Seiran Vale et Azuren Kai compris."
+    ]
+   }
+  ]
+ },
+ {
+  "id": "silas-mort-doree",
+  "type": "pnj",
+  "nom": "Silas Mort-Dorée",
+  "titre": "Agent de Vassago",
+  "parent": "keras-tauroc",
+  "onglet": "pnj",
+  "statut": "inconnu",
+  "tags": [
+   "vassago",
+   "fragment",
+   "fey"
+  ],
+  "resume": "Fey rogue envoyé par Vassago, vaincu sur le Tenrai Buru.",
+  "blocs": [
+   {
+    "portee": "groupe",
+    "titre": "Ce que vous savez",
+    "points": [
+     "Il se présente comme un marchand en détresse. Il interroge Philippa sur les dettes et l'ingratitude, et tente de lui voler le Fragment la nuit.",
+     "Vous l'avez vaincu sur le pont. Il est vaincu sur le plan matériel : Vassago peut le rappeler."
+    ]
+   }
+  ],
+  "question": "Vassago rappellera-t-il Silas ?"
+ },
+ {
+  "id": "yorisa",
+  "type": "pnj",
+  "nom": "Yorisa",
+  "titre": "Capitaine aveugle du Tenrai Buru",
+  "parent": "keras-tauroc",
+  "onglet": "pnj",
+  "statut": "vivant",
+  "tags": [
+   "capitaine",
+   "tenrai buru",
+   "mirenai"
+  ],
+  "resume": "Capitaine mirenaï, fume la pipe, perçoit plus qu'elle ne le montre.",
+  "blocs": [
+   {
+    "portee": "groupe",
+    "titre": "Ce que vous savez",
+    "points": [
+     "Aveugle, elle navigue par une perception hors du commun. Elle vous a entendus monter avant que vous parliez. Passage : 40 po par tête, ou un service. Un passage se paie, d'une manière ou d'une autre.",
+     "Philippa l'apprécie. Elle est une source d'informations sur Roshen Buru."
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "cible": "saoren",
+    "type": "Mère",
+    "lien": 5,
+    "ton": "positif",
+    "note": ""
+   },
+   {
+    "cible": "capito",
+    "type": "Ami de longue date",
+    "lien": 3,
+    "ton": "positif",
+    "note": ""
+   }
+  ]
+ },
+ {
+  "id": "saoren",
+  "type": "pnj",
+  "nom": "Saoren",
+  "titre": "Seconde du Tenrai Buru",
+  "parent": "keras-tauroc",
+  "onglet": "pnj",
+  "statut": "vivant",
+  "tags": [
+   "mirenai",
+   "equipage"
+  ],
+  "resume": "Fille de Yorisa.",
+  "blocs": [
+   {
+    "portee": "groupe",
+    "titre": "Ce que vous savez",
+    "points": [
+     "Jeune et vive, le portrait de sa mère en plus chaleureux. Elle veille sur Yorisa sans jamais le montrer."
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "cible": "yorisa",
+    "type": "Fille",
+    "lien": 5,
+    "ton": "positif",
+    "note": ""
+   }
+  ]
+ },
+ {
+  "id": "colisee",
+  "type": "lieu",
+  "nom": "Le Colisée",
+  "titre": "Cœur de Keras Tauroc",
+  "parent": "keras-tauroc",
+  "onglet": "lieux",
+  "tags": [
+   "arene",
+   "festival"
+  ],
+  "resume": "Là où se règlent les conflits et où se tient le festival.",
+  "blocs": [
+   {
+    "portee": "groupe",
+    "titre": "Ce que vous savez",
+    "points": [
+     "Backstage où Fulvia enregistre les combattants, gradins, loge d'honneur de Vitiosa, prêtre-guérisseur au bord de l'arène (soins payants), vendeurs de potions.",
+     "Après le festival, il devient son propre fantôme : gradins déserts, détritus partout, une seule lampe allumée dans la loge d'honneur."
+    ]
+   }
+  ]
+ },
+ {
+  "id": "cathedrale-de-kord",
+  "type": "lieu",
+  "nom": "Cathédrale de Kord",
+  "titre": "Place centrale de Keras Tauroc",
+  "parent": "keras-tauroc",
+  "onglet": "lieux",
+  "tags": [
+   "kord",
+   "catacombes",
+   "vassago"
+  ],
+  "resume": "Lieu de culte ouvert sans Cornes d'Or. L'encens y est trop épais.",
+  "blocs": [
+   {
+    "portee": "groupe",
+    "titre": "Ce que vous savez",
+    "points": [
+     "Pierre ancienne, colonnes à bas-reliefs de guerriers. L'encens est trop épais, et on ressent une pression froide derrière les yeux.",
+     "Les catacombes abritent les grands combattants de la lignée Tauroc. Vous y avez trouvé un autel secondaire de Vassago et combattu le Démon des Mains."
+    ]
+   }
+  ]
+ },
+ {
+  "id": "angues-dormientes",
+  "type": "lieu",
+  "nom": "Auberge Angues Dormientes",
+  "titre": "Auberge riche de Keras Tauroc",
+  "parent": "keras-tauroc",
+  "onglet": "lieux",
+  "tags": [
+   "auberge",
+   "vibia"
+  ],
+  "resume": "Tenue par Vibia. Atrium de marbre, bains au sous-sol.",
+  "blocs": [
+   {
+    "portee": "groupe",
+    "titre": "Ce que vous savez",
+    "points": [
+     "Atrium de marbre autour d'un bassin, chambres en galerie, bains au sous-sol. Tout y est ordonné comme un système."
+    ]
+   }
+  ]
+ },
+ {
+  "id": "tour-eamonn",
+  "type": "lieu",
+  "nom": "Tour d'Eamonn",
+  "titre": "Tour du mage de Cap Cornes",
+  "parent": "cap-cornes",
+  "onglet": "lieux",
+  "tags": [
+   "eamonn",
+   "portail"
+  ],
+  "resume": "Quartier général d'Olyssane. Porte marquée de la craie de Philippa.",
+  "blocs": [
+   {
+    "portee": "groupe",
+    "titre": "Ce que vous savez",
+    "points": [
+     "Massive, rongée de lierre, à l'est de la ville. Odeur de tabac froid et de parchemin moisi. Olyssane y passe ses journées.",
+     "Le cercle de téléportation vers Port Doëlan y est installé."
+    ]
+   }
+  ]
+ },
+ {
+  "id": "olyssane-veythar",
+  "type": "pnj",
+  "nom": "Olyssane Veythar",
+  "titre": "Mage, travaille à relier Thaldera et Istra",
+  "parent": "cap-cornes",
+  "onglet": "pnj",
+  "statut": "vivant",
+  "tags": [
+   "portail",
+   "ink",
+   "kester",
+   "sycomore"
+  ],
+  "resume": "Vous la retrouvez à Cap Cornes, avec Ink.",
+  "blocs": [
+   {
+    "portee": "groupe",
+    "titre": "Ce que vous savez",
+    "points": [
+     "Elle passe ses journées dans la tour d'Eamonn à préparer un portail pour établir un comptoir commercial.",
+     "Kester Tauroc veut la défier en duel. Elle veut éviter de le tuer.",
+     "Elle laisse Ink vagabonder librement."
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "cible": "ink",
+    "type": "Protège",
+    "lien": 5,
+    "ton": "positif",
+    "note": ""
+   },
+   {
+    "cible": "eamonn",
+    "type": "Négocie avec",
+    "lien": 3,
+    "ton": "neutre",
+    "note": ""
+   }
+  ]
+ },
+ {
+  "id": "ink",
+  "type": "pnj",
+  "nom": "Ink",
+  "titre": "Jeune compagne d'Olyssane",
+  "parent": "cap-cornes",
+  "onglet": "pnj",
+  "statut": "vivant",
+  "tags": [
+   "olyssane"
+  ],
+  "resume": "Jeune fille qui vagabonde à Cap Cornes.",
+  "blocs": [
+   {
+    "portee": "groupe",
+    "titre": "Ce que vous savez",
+    "points": [
+     "Retrouvée près d'une flaque, elle joue avec des amis. Elle vous a aidés à vaincre les ghoules des marées."
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "cible": "olyssane-veythar",
+    "type": "Protectrice",
+    "lien": 5,
+    "ton": "positif",
+    "note": ""
+   }
+  ]
+ },
+ {
+  "id": "lorcan",
+  "type": "pnj",
+  "nom": "Lorcán",
+  "titre": "Aubergiste, Scalvern",
+  "parent": "cap-cornes",
+  "onglet": "pnj",
+  "statut": "vivant",
+  "tags": [
+   "auberge"
+  ],
+  "resume": "Aubergiste cordial et bavard.",
+  "blocs": [
+   {
+    "portee": "groupe",
+    "titre": "Ce que vous savez",
+    "points": [
+     "Grand Scalvern aux écailles sombres, foulard orange. Il pointe sans hésiter la tour d'Eamonn quand on cherche Olyssane. Chambre humide mais toit solide."
+    ]
+   }
+  ]
+ },
+ {
+  "id": "fennick",
+  "type": "pnj",
+  "nom": "Fennick",
+  "titre": "Petit escroc du marché",
+  "parent": "cap-cornes",
+  "onglet": "pnj",
+  "statut": "vivant",
+  "tags": [
+   "vesine",
+   "drogue"
+  ],
+  "resume": "Il vend de la vesine, drogue qui reviendra à Roshen Buru.",
+  "blocs": [
+   {
+    "portee": "groupe",
+    "titre": "Ce que vous savez",
+    "points": [
+     "Peau grise, sourire trop large, regard fuyant. Vous l'avez menacé pour obtenir de la vesine plutôt que de l'acheter : il a cédé."
+    ]
+   }
+  ]
+ },
+ {
+  "id": "kester-tauroc",
+  "type": "pnj",
+  "nom": "Kester Tauroc",
+  "titre": "Bâtard exilé de la Maison Tauroc",
+  "parent": "cap-cornes",
+  "onglet": "pnj",
+  "statut": "vivant",
+  "tags": [
+   "tauroc",
+   "duel",
+   "vengeance"
+  ],
+  "resume": "Exilé à Cap Cornes pour son caractère. A juré vengeance.",
+  "blocs": [
+   {
+    "portee": "groupe",
+    "titre": "Ce que vous savez",
+    "points": [
+     "Grand, mi-elfe mi-gobelin, cheveux blancs, chemise écarlate ouverte. Il défie à peu près tout le monde. Il voulait un duel avec Olyssane.",
+     "Jane, déguisée en Olyssane, l'a attiré dans une ruelle. Il s'est enfui, apeuré, en jurant vengeance."
+    ]
+   }
+  ]
+ }
+]

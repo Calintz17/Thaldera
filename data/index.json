@@ -2,6 +2,7 @@
  "version": 1,
  "fichiers": [
   "monde.json",
-  "roshen-buru.json"
+  "roshen-buru.json",
+  "keras-tauroc.json"
  ]
 }
