@@ -191,22 +191,22 @@ img { display: block; }
 /* regions : contours traces, animes */
 .regs { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; overflow: visible; }
 .reg path { vector-effect: non-scaling-stroke; stroke-linejoin: round; stroke-linecap: round; }
-.reg .fill { fill: var(--c); fill-opacity: .07; stroke: none; pointer-events: all; cursor: pointer; transition: fill-opacity .3s; }
-.reg .glow { fill: none; stroke: var(--c); stroke-width: 9; stroke-opacity: .22; pointer-events: none; }
-.reg .line { fill: none; stroke: var(--c); stroke-width: 2.6; stroke-dasharray: 16 9; pointer-events: none; animation: marching 2.4s linear infinite; }
-.reg.hot .fill { fill-opacity: .22; }
+.reg .fill { fill: var(--c); fill-opacity: .14; stroke: none; pointer-events: all; cursor: pointer; transition: fill-opacity .3s; }
+.reg .glow { fill: none; stroke: var(--c); stroke-width: 12; stroke-opacity: .32; pointer-events: none; }
+.reg .line { fill: none; stroke: var(--c); stroke-width: 3.6; stroke-dasharray: 18 10; pointer-events: none; animation: marching 2.4s linear infinite; }
+.reg.hot .fill { fill-opacity: .3; }
 .reg.hot .glow { stroke-opacity: .45; }
 .reg.solo .fill { fill-opacity: .05; pointer-events: none; }
 @keyframes marching { to { stroke-dashoffset: -50; } }
 .rlab { position: absolute; width: 0; height: 0; z-index: 4; }
 .rlab .fl {
   position: absolute; left: 0; top: 0; transform: translate(-50%,-50%) scale(calc(1 / var(--s))); white-space: nowrap; text-align: center;
-  font-family: 'Cinzel', serif; font-weight: 700; font-size: 14px; letter-spacing: .16em; text-transform: uppercase;
-  color: #fff6e2; background: rgba(9,11,18,.82); border: 1px solid var(--c); border-left-width: 4px; padding: 5px 12px; border-radius: 3px;
+  font-family: 'Cinzel', serif; font-weight: 700; font-size: 12px; letter-spacing: .14em; text-transform: uppercase;
+  color: #fff6e2; background: rgba(9,11,18,.7); border: 1px solid var(--c); border-left-width: 4px; padding: 4px 10px; border-radius: 3px;
   box-shadow: 0 3px 14px rgba(0,0,0,.6); transition: background .2s;
 }
 .rlab.hot .fl, .rlab:hover .fl { background: var(--c); color: #0b0d14; }
-.rlab .fs { display: block; font-family: 'EB Garamond', serif; font-style: italic; font-weight: 400; font-size: 12.5px; letter-spacing: .04em; text-transform: none; opacity: .85; }
+.rlab .fs { display: none; font-family: 'EB Garamond', serif; font-style: italic; font-weight: 400; font-size: 12.5px; letter-spacing: .04em; text-transform: none; opacity: .85; }
 
 /* points sur carte */
 .pin { position: absolute; width: 0; height: 0; z-index: 3; }
@@ -395,3 +395,5 @@ img { display: block; }
   .reg .line, .fog, .pin .in::before, .wcard .wimg, .gal .sl.act img, .hero img { animation: none !important; }
   .cam { transition-duration: .01s; }
 }
+
+.rlab.hot .fs, .rlab:hover .fs { display: block !important; }
