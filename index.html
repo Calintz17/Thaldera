@@ -1,32 +1,38 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Thaldera Codex</title>
-<meta name="description" content="Codex des joueurs de la campagne Thaldera : lieux, personnages, clans, événements.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/codex.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thaldera Codex</title>
+  <meta name="description" content="Le codex des joueurs de la campagne Thaldera : cartes, lieux, personnages et liens.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/codex.css?v=2">
 </head>
 <body>
 <header class="top">
-  <a class="logo" href="#/">THALDERA <span>CODEX</span></a>
-  <form class="search" role="search" onsubmit="return false">
-    <input id="q" type="search" placeholder="Rechercher un nom, un lieu, un mot-clé" autocomplete="off" aria-label="Recherche">
-  </form>
-  <div class="profil" role="group" aria-label="Vue">
-    <button data-p="groupe">Groupe</button>
-    <button data-p="harfang">Harfang</button>
+  <a class="brand" href="#/" aria-label="Thaldera Codex, accueil">
+    <span class="brand-pre">Univers de</span>
+    <span class="brand-name">Thaldera</span>
+    <span class="brand-codex"><i class="dm"></i><span>Codex</span><i class="dm"></i></span>
+  </a>
+  <div class="search">
+    <input id="q" type="search" placeholder="Rechercher un lieu, un personnage, un clan" autocomplete="off" spellcheck="false">
+    <div id="results" role="listbox" hidden></div>
   </div>
   <nav class="nav">
-    <a href="#/">Monde</a>
-    <a href="#/statut">Statut</a>
+    <a href="#/" data-nav="monde">Monde</a>
     <a href="factions/">Factions</a>
   </nav>
 </header>
-<main id="app" class="wrap"><p class="muted">Chargement du codex...</p></main>
-<footer class="foot">Thaldera Codex. Seules les informations connues des joueurs à ce jour apparaissent ici.</footer>
-<script src="assets/app.js"></script>
+
+<main id="scene" class="scene is-world">
+  <section id="world" class="world" aria-label="Le monde connu"></section>
+  <section id="stage" class="stage" aria-label="Carte"></section>
+  <aside id="panel" class="panel"></aside>
+</main>
+
+<noscript><p style="padding:2rem">Le codex demande JavaScript.</p></noscript>
+<script src="assets/app.js?v=2"></script>
 </body>
 </html>
