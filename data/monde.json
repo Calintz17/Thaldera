@@ -83,7 +83,13 @@
    "continent",
    "istra"
   ],
-  "resume": "Continent isolé, séparé de Thaldera par la mer d'Émeraude."
+  "resume": "Continent isolé, séparé de Thaldera par la mer d'Émeraude.",
+  "cartes": [
+   {
+    "img": "img/cartes/istra.webp",
+    "legende": "Carte d'Istra-Belig"
+   }
+  ]
  },
  {
   "id": "thaldera",
@@ -116,6 +122,12 @@
      "Tu pensais Istra isolée. Tu découvres que des proches du gouvernement le savaient depuis longtemps, et s'y rendent.",
      "Tu as bien fait de ne pas ouvrir le portail entre Cap Cornes et Havre Noir."
     ]
+   }
+  ],
+  "cartes": [
+   {
+    "img": "img/cartes/thaldera.webp",
+    "legende": "Carte de Thalderra"
    }
   ]
  },
@@ -261,6 +273,16 @@
      "La Gardienne cautionne et encourage ce système injuste."
     ]
    }
+  ],
+  "cartes": [
+   {
+    "img": "img/cartes/roshen-buru-ville.webp",
+    "legende": "Plan de la ville"
+   },
+   {
+    "img": "img/cartes/roshen-buru-palais.webp",
+    "legende": "Palais Miren-Buru, Temple du Tenraku et quartier Tenraï"
+   }
   ]
  },
  {
@@ -333,6 +355,12 @@
     "points": [
      "Un portail relie Cap Cornes à Havre Noir. Vous ne l'avez pas ouvert."
     ]
+   }
+  ],
+  "cartes": [
+   {
+    "img": "img/cartes/cap-cornes.webp",
+    "legende": "Plan de Cap Cornes"
    }
   ]
  },
@@ -652,6 +680,434 @@
      "Levistus est l'Archidiable du 5ème enfer, Stygia, le Prince Gelé.",
      "La Protectrice a passé un pacte avec lui.",
      "Le Tribunal de chair, qu'elle a envoyé, est composé d'agents de Levistus prêtés à ses ordres."
+    ]
+   }
+  ]
+ },
+ {
+  "id": "draval-tauroc",
+  "type": "pnj",
+  "nom": "Draval Tauroc",
+  "titre": "Le Consul de Keras Tauroc",
+  "parent": "keras-tauroc",
+  "onglet": "pnj",
+  "statut": "vivant",
+  "tags": [
+   "consul",
+   "tauroc",
+   "pouvoir"
+  ],
+  "resume": "Consul de Keras Tauroc. Autoritaire et pragmatique.",
+  "blocs": [
+   {
+    "portee": "harfang",
+    "titre": "Ce que tu sais",
+    "points": [
+     "Autoritaire, pragmatique.",
+     "Tu ne l'as jamais rencontré directement."
+    ]
+   }
+  ]
+ },
+ {
+  "id": "vitiosa",
+  "type": "pnj",
+  "nom": "Vitiosa",
+  "titre": "Organisatrice du Festival des Cornes Rouges",
+  "parent": "keras-tauroc",
+  "onglet": "pnj",
+  "statut": "vivant",
+  "tags": [
+   "festival",
+   "cornes rouges",
+   "organisatrice"
+  ],
+  "resume": "Souriante et troublante. Tu ne sais pas pourquoi elle te dérange.",
+  "blocs": [
+   {
+    "portee": "harfang",
+    "titre": "Ce que tu sais",
+    "points": [
+     "Tu l'as croisée lors d'événements officiels.",
+     "Elle est souriante, troublante. Elle te dérange sans que tu saches exactement pourquoi."
+    ]
+   }
+  ]
+ },
+ {
+  "id": "capito",
+  "type": "pnj",
+  "nom": "Capito",
+  "titre": "Docker",
+  "parent": "keras-tauroc",
+  "onglet": "pnj",
+  "statut": "vivant",
+  "tags": [
+   "docker",
+   "traversee",
+   "contact"
+  ],
+  "resume": "Docker, contact fiable pour les traversées discrètes.",
+  "blocs": [
+   {
+    "portee": "harfang",
+    "titre": "Ce que tu sais",
+    "points": [
+     "Tu as utilisé ses services pour des traversées discrètes.",
+     "Contact fiable, il ne pose pas de questions."
+    ]
+   }
+  ]
+ },
+ {
+  "id": "vibia",
+  "type": "pnj",
+  "nom": "Vibia",
+  "titre": "Tenancière de l'Angues Dormientes",
+  "parent": "keras-tauroc",
+  "onglet": "pnj",
+  "statut": "vivant",
+  "tags": [
+   "auberge",
+   "angues dormientes",
+   "contact"
+  ],
+  "resume": "Tient l'auberge de référence pour les étrangers de qualité.",
+  "blocs": [
+   {
+    "portee": "harfang",
+    "titre": "Ce que tu sais",
+    "points": [
+     "L'Angues Dormientes est l'auberge de référence pour les étrangers de qualité.",
+     "Contact neutre. Elle mémorise tout."
+    ]
+   }
+  ]
+ },
+ {
+  "id": "egnatius",
+  "type": "pnj",
+  "nom": "Egnatius",
+  "titre": "Forgeron du Malleus Cadens",
+  "parent": "keras-tauroc",
+  "onglet": "pnj",
+  "statut": "vivant",
+  "tags": [
+   "forgeron",
+   "malleus cadens",
+   "armes"
+  ],
+  "resume": "Forgeron de guerre, sourd.",
+  "blocs": [
+   {
+    "portee": "harfang",
+    "titre": "Ce que tu sais",
+    "points": [
+     "Son Malleus Cadens est une forge de guerre.",
+     "Il est sourd. Tu as entendu parler de lui, sans plus."
+    ]
+   }
+  ]
+ },
+ {
+  "id": "ursinus",
+  "type": "pnj",
+  "nom": "Ursinus",
+  "titre": "Vendeur de potions, Mandragora Viridis",
+  "parent": "keras-tauroc",
+  "onglet": "pnj",
+  "statut": "vivant",
+  "tags": [
+   "potions",
+   "homme-ours",
+   "mandragora viridis"
+  ],
+  "resume": "Homme-ours, vendeur de potions.",
+  "blocs": [
+   {
+    "portee": "harfang",
+    "titre": "Ce que tu sais",
+    "points": [
+     "Contact utile pour les consommables."
+    ]
+   }
+  ]
+ },
+ {
+  "id": "thessala",
+  "type": "pnj",
+  "nom": "Thessala",
+  "titre": "Marchande d'objets magiques, Cinis & Caligo",
+  "parent": "keras-tauroc",
+  "onglet": "pnj",
+  "statut": "vivant",
+  "tags": [
+   "objets magiques",
+   "tabaxi",
+   "cinis et caligo"
+  ],
+  "resume": "Tabaxi panthère, un peu snob.",
+  "blocs": [
+   {
+    "portee": "harfang",
+    "titre": "Ce que tu sais",
+    "points": [
+     "Tabaxi panthère, un peu snob.",
+     "Tu joues la carte de la noblesse avec elle."
+    ]
+   }
+  ]
+ },
+ {
+  "id": "tarcus",
+  "type": "pnj",
+  "nom": "Tarcus",
+  "titre": "Investigateur de Keras Tauroc",
+  "parent": "keras-tauroc",
+  "onglet": "pnj",
+  "statut": "vivant",
+  "tags": [
+   "investigateur",
+   "enquete",
+   "araignee"
+  ],
+  "resume": "A enquêté sur l'homme contrôlé par une araignée.",
+  "blocs": [
+   {
+    "portee": "groupe",
+    "titre": "Ce que vous savez",
+    "points": [
+     "Il a enquêté sur l'homme qui vous a attaqués dans la rue.",
+     "Il dit avoir retrouvé sa chambre dévastée et des symboles liés à Balamor gravés dans le bois, à coups d'ongles."
+    ]
+   }
+  ]
+ },
+ {
+  "id": "oswin",
+  "type": "pnj",
+  "nom": "Oswin",
+  "titre": "Chef officiel de Cap Cornes",
+  "parent": "cap-cornes",
+  "onglet": "pnj",
+  "statut": "vivant",
+  "tags": [
+   "scalvern",
+   "chef",
+   "cap cornes"
+  ],
+  "resume": "Vieux Scalvern posé.",
+  "blocs": [
+   {
+    "portee": "harfang",
+    "titre": "Ce que tu sais",
+    "points": [
+     "Chef officiel de Cap Cornes, un vieux Scalvern posé.",
+     "Tu le connais par les rapports."
+    ]
+   }
+  ]
+ },
+ {
+  "id": "ajaw-tzobal",
+  "type": "pnj",
+  "nom": "Ajaw Tzobal",
+  "titre": "Grand Prêtre de Balamor",
+  "parent": "balamor",
+  "onglet": "pnj",
+  "statut": "vivant",
+  "tags": [
+   "grand pretre",
+   "tzalanar",
+   "balam"
+  ],
+  "resume": "Réside à Tzalanar. Inaccessible en pratique.",
+  "blocs": [
+   {
+    "portee": "harfang",
+    "titre": "Ce que tu sais",
+    "points": [
+     "Il réside à Tzalanar, au cœur de la jungle.",
+     "Son autorité est avant tout religieuse."
+    ]
+   }
+  ]
+ },
+ {
+  "id": "tzalanar",
+  "type": "ville",
+  "nom": "Tzalanar",
+  "titre": "Cœur de la jungle de Balamor",
+  "parent": "balamor",
+  "onglet": "lieux",
+  "tags": [
+   "ville",
+   "jungle",
+   "grand pretre"
+  ],
+  "resume": "Résidence du Grand Prêtre.",
+  "blocs": [
+   {
+    "portee": "harfang",
+    "titre": "Ce que tu sais",
+    "points": [
+     "C'est là que vit le Grand Prêtre Ajaw Tzobal.",
+     "Inaccessible en pratique."
+    ]
+   }
+  ]
+ },
+ {
+  "id": "kurakal",
+  "type": "ville",
+  "nom": "Kurakal",
+  "titre": "Port à l'embouchure du Nahur",
+  "parent": "balamor",
+  "onglet": "lieux",
+  "tags": [
+   "port",
+   "nahur",
+   "commerce"
+  ],
+  "resume": "Les échanges réels se font ici. Beaucoup d'étrangers la prennent pour la capitale.",
+  "blocs": [
+   {
+    "portee": "harfang",
+    "titre": "Ce que tu sais",
+    "points": [
+     "Les échanges réels avec l'extérieur passent par Kurakal.",
+     "La plupart des étrangers la prennent naïvement pour la capitale.",
+     "Tes contacts sur place disparaissaient ou restaient superficiels."
+    ]
+   }
+  ]
+ },
+ {
+  "id": "valdain-there-duun",
+  "type": "pnj",
+  "nom": "Valdain There'Duun",
+  "titre": "Roi de There'Duun",
+  "parent": "there-duun",
+  "onglet": "pnj",
+  "statut": "vivant",
+  "tags": [
+   "roi",
+   "nains"
+  ],
+  "resume": "Jamais rencontré par personne d'extérieur.",
+  "blocs": [
+   {
+    "portee": "harfang",
+    "titre": "Ce que tu sais",
+    "points": [
+     "Personne d'extérieur ne l'a jamais rencontré.",
+     "Il envoie des représentants à La Rencontre : sobres, peu loquaces, ils concèdent peu."
+    ]
+   }
+  ]
+ },
+ {
+  "id": "eryndel",
+  "type": "pnj",
+  "nom": "Eryndel",
+  "titre": "Impératrice d'Altéra",
+  "parent": "altera",
+  "onglet": "pnj",
+  "statut": "vivant",
+  "tags": [
+   "imperatrice",
+   "altera",
+   "alliance"
+  ],
+  "resume": "Impératrice d'Altéra. La Gardienne envisage une alliance avec elle.",
+  "relations": [
+   {
+    "cible": "anaru-miren-buru",
+    "type": "Alliance envisagée",
+    "lien": 2,
+    "ton": "neutre",
+    "note": "Projet de la Gardienne"
+   }
+  ],
+  "blocs": [
+   {
+    "portee": "harfang",
+    "titre": "Ce que tu as lu",
+    "points": [
+     "Le journal de la Gardienne montre qu'elle prépare une alliance avec elle.",
+     "La Protectrice la traite de « pétasse »."
+    ]
+   }
+  ]
+ },
+ {
+  "id": "eamonn",
+  "type": "pnj",
+  "nom": "Eamonn",
+  "titre": "Lié au cercle de téléportation",
+  "parent": "thaldera",
+  "onglet": "pnj",
+  "statut": "inconnu",
+  "tags": [
+   "teleportation",
+   "tribunal de chair"
+  ],
+  "resume": "Visé par le Tribunal de chair.",
+  "question": "Eamonn est-il mort ? Le cercle de téléportation est-il détruit ?",
+  "blocs": [
+   {
+    "portee": "harfang",
+    "titre": "Ce que tu sais",
+    "points": [
+     "La Protectrice a envoyé le Tribunal de chair le tuer et détruire le cercle de téléportation, pour préserver l'isolationnisme d'Istra."
+    ]
+   }
+  ]
+ },
+ {
+  "id": "kazad-marunn",
+  "type": "ville",
+  "nom": "Kazad Marunn",
+  "titre": "Ville des sables",
+  "parent": "thaldera",
+  "onglet": "lieux",
+  "tags": [
+   "desert",
+   "ginko",
+   "gran brijit"
+  ],
+  "resume": "Ville où Gran Brijit a affronté Ginko Noshi-Buru.",
+  "blocs": [
+   {
+    "portee": "groupe",
+    "titre": "Ce que vous savez",
+    "points": [
+     "Gran Brijit a affronté Ginko Noshi-Buru dans ses sables."
+    ]
+   }
+  ]
+ },
+ {
+  "id": "tribunal-de-chair",
+  "type": "organisation",
+  "nom": "Le Tribunal de chair",
+  "titre": "Agents de Levistus",
+  "parent": "roshen-buru",
+  "onglet": "gouvernement",
+  "tags": [
+   "tribunal",
+   "levistus",
+   "neryn",
+   "assassins"
+  ],
+  "resume": "Agents de Levistus prêtés à la Protectrice.",
+  "blocs": [
+   {
+    "portee": "harfang",
+    "titre": "Ce que tu sais",
+    "points": [
+     "La Protectrice les a envoyés tuer Eamonn et détruire le cercle de téléportation.",
+     "Ce sont des agents de Levistus, prêtés à la Protectrice pour servir ses méfaits."
     ]
    }
   ]

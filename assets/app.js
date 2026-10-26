@@ -16,8 +16,6 @@ function visible(e){return CONT[e.type]===1||blocs(e).length>0}
 function imgPath(e){
   if(e.img)return e.img;
   if(e.type==='pnj'||e.type==='clan'){
-    var chain=[],p=e;while(p){chain.unshift(p.id);p=BY[p.parent]}
-    // chaine continent/region/ville -> dossier img/<region>/<ville>/pnj
     var v=BY[e.parent];var r=v&&BY[v.parent];
     if(v&&r)return 'img/'+r.id+'/'+v.id+'/pnj/'+e.id+'.webp';
   }
@@ -50,6 +48,12 @@ function renderBlocs(e){
   });
   return h;
 }
+function renderCartes(e){
+  if(!e.cartes||!e.cartes.length)return '';
+  return '<section class="bloc"><h2>Carte'+(e.cartes.length>1?'s':'')+'</h2>'+e.cartes.map(function(c){
+    return '<figure class="carte"><a href="'+esc(c.img)+'" target="_blank" rel="noopener"><img src="'+esc(c.img)+'" alt="'+esc(c.legende||'')+'" loading="lazy"></a><figcaption>'+esc(c.legende||'')+'</figcaption></figure>';
+  }).join('')+'</section>';
+}
 function renderRelations(e){
   var rs=(e.relations||[]).filter(function(r){var t=BY[r.cible];return t&&visible(t)});
   if(!rs.length)return '';
@@ -77,6 +81,7 @@ function viewFiche(id,tab){
   if(e.question&&visible(e))h+='<p class="q">'+esc(e.question)+'</p>';
   h+='</div></div>';
   h+=renderBlocs(e);
+  h+=renderCartes(e);
   if(kids.length){
     var tabs={},order=[];
     kids.forEach(function(k){var o=k.onglet||'autres';if(!tabs[o]){tabs[o]=[];order.push(o)}tabs[o].push(k)});

@@ -64,3 +64,4 @@ table.st{width:100%;border-collapse:collapse}
 table.st td{padding:8px 6px;border-bottom:1px solid var(--line);vertical-align:top}
 .foot{text-align:center;color:var(--muted);font-size:14px;padding:24px 16px}
 @media(max-width:600px){h1{font-size:26px}.portrait{flex-basis:100%;height:300px}}
+.carte{margin:0 0 18px}.carte img{width:100%;height:auto;border:1px solid var(--line);border-radius:8px;display:block}.carte figcaption{color:var(--muted);font-size:14px;margin-top:6px}
