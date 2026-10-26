@@ -1,0 +1,2312 @@
+[
+ {
+  "id": "consortium",
+  "type": "faction",
+  "nom": "Le Consortium",
+  "titre": "Les ports pirates et marchands du sud",
+  "parent": "thaldera",
+  "accent": "#c9a84c",
+  "blason": "img/blasons/havre-noir.webp",
+  "alias": [
+   "consortium",
+   "Consortium"
+  ],
+  "resume": "Réseau de seigneurs pirates et de cités marchandes qui tient les côtes et les fleuves du sud de Thaldera.",
+  "connu": [
+   "Havre Noir, Port Doëlan, Voros, Camont et Port Blanc vivent de son commerce et de ses routes.",
+   "Sycomore Brise-Pavois règne sur Havre Noir. Bartolomeo Spezza régnait sur Port Doëlan avant sa chute.",
+   "La Griffe y organise un trafic d'êtres humains, que le Voile tente de combattre ou d'exploiter selon les villes."
+  ],
+  "relations": [
+   {
+    "cible": "sycomore-brise-pavois",
+    "type": "Seigneur pirate de Havre Noir",
+    "ton": "positif"
+   },
+   {
+    "cible": "spezza",
+    "type": "Seigneur pirate de Port Doëlan",
+    "ton": "negatif"
+   }
+  ],
+  "poly": [
+   [
+    0.156,
+    0.8031
+   ],
+   [
+    0.1542,
+    0.811
+   ],
+   [
+    0.1552,
+    0.8185
+   ],
+   [
+    0.1581,
+    0.8254
+   ],
+   [
+    0.1628,
+    0.8289
+   ],
+   [
+    0.1676,
+    0.8304
+   ],
+   [
+    0.1835,
+    0.8307
+   ],
+   [
+    0.1931,
+    0.8302
+   ],
+   [
+    0.2111,
+    0.8276
+   ],
+   [
+    0.2187,
+    0.8276
+   ],
+   [
+    0.24,
+    0.8342
+   ],
+   [
+    0.2888,
+    0.8392
+   ],
+   [
+    0.3183,
+    0.8384
+   ],
+   [
+    0.3332,
+    0.8392
+   ],
+   [
+    0.3421,
+    0.8411
+   ],
+   [
+    0.3477,
+    0.8447
+   ],
+   [
+    0.3512,
+    0.8485
+   ],
+   [
+    0.3537,
+    0.8527
+   ],
+   [
+    0.3553,
+    0.8579
+   ],
+   [
+    0.3596,
+    0.8629
+   ],
+   [
+    0.3643,
+    0.8661
+   ],
+   [
+    0.3712,
+    0.8673
+   ],
+   [
+    0.381,
+    0.8672
+   ],
+   [
+    0.3922,
+    0.8657
+   ],
+   [
+    0.4036,
+    0.8629
+   ],
+   [
+    0.4144,
+    0.8564
+   ],
+   [
+    0.4208,
+    0.8485
+   ],
+   [
+    0.4257,
+    0.8403
+   ],
+   [
+    0.4336,
+    0.8252
+   ],
+   [
+    0.4399,
+    0.8098
+   ],
+   [
+    0.4448,
+    0.8037
+   ],
+   [
+    0.4515,
+    0.7976
+   ],
+   [
+    0.4782,
+    0.7799
+   ],
+   [
+    0.487,
+    0.7756
+   ],
+   [
+    0.4959,
+    0.7734
+   ],
+   [
+    0.5046,
+    0.7721
+   ],
+   [
+    0.5241,
+    0.7734
+   ],
+   [
+    0.548,
+    0.7802
+   ],
+   [
+    0.554,
+    0.7826
+   ],
+   [
+    0.5575,
+    0.7878
+   ],
+   [
+    0.5615,
+    0.8071
+   ],
+   [
+    0.5655,
+    0.8183
+   ],
+   [
+    0.569,
+    0.8234
+   ],
+   [
+    0.5805,
+    0.832
+   ],
+   [
+    0.595,
+    0.8402
+   ],
+   [
+    0.6234,
+    0.8544
+   ],
+   [
+    0.6337,
+    0.8571
+   ],
+   [
+    0.6615,
+    0.8584
+   ],
+   [
+    0.673,
+    0.861
+   ],
+   [
+    0.6747,
+    0.8623
+   ],
+   [
+    0.6694,
+    0.8811
+   ],
+   [
+    0.6557,
+    0.9062
+   ],
+   [
+    0.6492,
+    0.915
+   ],
+   [
+    0.6416,
+    0.9231
+   ],
+   [
+    0.632,
+    0.931
+   ],
+   [
+    0.621,
+    0.938
+   ],
+   [
+    0.6096,
+    0.9442
+   ],
+   [
+    0.5896,
+    0.9535
+   ],
+   [
+    0.5835,
+    0.9584
+   ],
+   [
+    0.5795,
+    0.9636
+   ],
+   [
+    0.5777,
+    0.9681
+   ],
+   [
+    0.5782,
+    0.9709
+   ],
+   [
+    0.5837,
+    0.9734
+   ],
+   [
+    0.5928,
+    0.9754
+   ],
+   [
+    0.6228,
+    0.9791
+   ],
+   [
+    0.6742,
+    0.981
+   ],
+   [
+    0.6926,
+    0.9807
+   ],
+   [
+    0.7106,
+    0.9786
+   ],
+   [
+    0.7258,
+    0.9746
+   ],
+   [
+    0.7425,
+    0.9685
+   ],
+   [
+    0.7581,
+    0.9616
+   ],
+   [
+    0.7723,
+    0.9532
+   ],
+   [
+    0.7856,
+    0.9437
+   ],
+   [
+    0.7944,
+    0.9335
+   ],
+   [
+    0.8011,
+    0.9239
+   ],
+   [
+    0.8063,
+    0.9142
+   ],
+   [
+    0.8087,
+    0.9057
+   ],
+   [
+    0.8088,
+    0.8973
+   ],
+   [
+    0.8076,
+    0.8882
+   ],
+   [
+    0.8032,
+    0.8689
+   ],
+   [
+    0.7995,
+    0.8591
+   ],
+   [
+    0.7928,
+    0.8475
+   ],
+   [
+    0.7754,
+    0.8229
+   ],
+   [
+    0.7646,
+    0.811
+   ],
+   [
+    0.7532,
+    0.8003
+   ],
+   [
+    0.741,
+    0.7918
+   ],
+   [
+    0.7287,
+    0.7857
+   ],
+   [
+    0.7184,
+    0.784
+   ],
+   [
+    0.7094,
+    0.784
+   ],
+   [
+    0.701,
+    0.7852
+   ],
+   [
+    0.6766,
+    0.7869
+   ],
+   [
+    0.6692,
+    0.7857
+   ],
+   [
+    0.6617,
+    0.7816
+   ],
+   [
+    0.6534,
+    0.7759
+   ],
+   [
+    0.6416,
+    0.7655
+   ],
+   [
+    0.639,
+    0.7613
+   ],
+   [
+    0.6387,
+    0.7572
+   ],
+   [
+    0.6408,
+    0.7546
+   ],
+   [
+    0.6435,
+    0.754
+   ],
+   [
+    0.6711,
+    0.7629
+   ],
+   [
+    0.679,
+    0.7635
+   ],
+   [
+    0.685,
+    0.7623
+   ],
+   [
+    0.6901,
+    0.7591
+   ],
+   [
+    0.6924,
+    0.7529
+   ],
+   [
+    0.6892,
+    0.7429
+   ],
+   [
+    0.6825,
+    0.7326
+   ],
+   [
+    0.6719,
+    0.7228
+   ],
+   [
+    0.6331,
+    0.6948
+   ],
+   [
+    0.6194,
+    0.6871
+   ],
+   [
+    0.5876,
+    0.6773
+   ],
+   [
+    0.5777,
+    0.6752
+   ],
+   [
+    0.5563,
+    0.6728
+   ],
+   [
+    0.5488,
+    0.671
+   ],
+   [
+    0.5428,
+    0.6682
+   ],
+   [
+    0.5343,
+    0.6626
+   ],
+   [
+    0.5283,
+    0.6561
+   ],
+   [
+    0.5242,
+    0.6491
+   ],
+   [
+    0.5196,
+    0.6346
+   ],
+   [
+    0.5045,
+    0.6286
+   ],
+   [
+    0.4888,
+    0.6241
+   ],
+   [
+    0.4752,
+    0.6229
+   ],
+   [
+    0.4603,
+    0.6233
+   ],
+   [
+    0.4441,
+    0.6257
+   ],
+   [
+    0.4277,
+    0.63
+   ],
+   [
+    0.4133,
+    0.6357
+   ],
+   [
+    0.4127,
+    0.6433
+   ],
+   [
+    0.415,
+    0.6513
+   ],
+   [
+    0.4213,
+    0.6594
+   ],
+   [
+    0.445,
+    0.6814
+   ],
+   [
+    0.4583,
+    0.6955
+   ],
+   [
+    0.4622,
+    0.7021
+   ],
+   [
+    0.4621,
+    0.71
+   ],
+   [
+    0.4601,
+    0.7191
+   ],
+   [
+    0.4571,
+    0.7268
+   ],
+   [
+    0.4518,
+    0.733
+   ],
+   [
+    0.4431,
+    0.7379
+   ],
+   [
+    0.4308,
+    0.7419
+   ],
+   [
+    0.418,
+    0.7444
+   ],
+   [
+    0.4073,
+    0.744
+   ],
+   [
+    0.3874,
+    0.7378
+   ],
+   [
+    0.3689,
+    0.7302
+   ],
+   [
+    0.3563,
+    0.7215
+   ],
+   [
+    0.3477,
+    0.7139
+   ],
+   [
+    0.3447,
+    0.7094
+   ],
+   [
+    0.3434,
+    0.7047
+   ],
+   [
+    0.3441,
+    0.6944
+   ],
+   [
+    0.3387,
+    0.6894
+   ],
+   [
+    0.3314,
+    0.6857
+   ],
+   [
+    0.3227,
+    0.6838
+   ],
+   [
+    0.3117,
+    0.6836
+   ],
+   [
+    0.2979,
+    0.6844
+   ],
+   [
+    0.267,
+    0.6902
+   ],
+   [
+    0.2449,
+    0.699
+   ],
+   [
+    0.2352,
+    0.7036
+   ],
+   [
+    0.2277,
+    0.7088
+   ],
+   [
+    0.2219,
+    0.7146
+   ],
+   [
+    0.2108,
+    0.7237
+   ],
+   [
+    0.2063,
+    0.7288
+   ],
+   [
+    0.1994,
+    0.7392
+   ],
+   [
+    0.1941,
+    0.7434
+   ],
+   [
+    0.189,
+    0.7492
+   ],
+   [
+    0.1799,
+    0.7631
+   ],
+   [
+    0.1691,
+    0.7774
+   ],
+   [
+    0.1639,
+    0.786
+   ]
+  ],
+  "lab": [
+   0.285,
+   0.768
+  ],
+  "zone": {
+   "x": 0.154,
+   "y": 0.623,
+   "w": 0.655,
+   "h": 0.358
+  },
+  "couleur": "#c9a84c"
+ },
+ {
+  "id": "repos-des-epees",
+  "type": "region",
+  "nom": "Le Repos des Épées",
+  "titre": "La terre morte au nord de Leyenmil",
+  "parent": "thaldera",
+  "accent": "#c0504d",
+  "alias": [
+   "Repos des Epées",
+   "Repos des Épées",
+   "Wasteland"
+  ],
+  "resume": "Plaine brûlée et vitrifiée, ancienne guerre devenue zone morte. Le repaire d'Argonath s'y ouvre dans la chair du sol.",
+  "connu": [
+   "Le sol est craquelé, vitrifié par la chaleur passée. Des fortifications tordues affleurent sous le sable rouge.",
+   "Des abominations larvaires sortent des fissures dès qu'un souffle ou un battement de cœur passe.",
+   "Olyssane veut y replanter des arbres pour racheter son rôle dans la ruine de ce lieu. Liora fournit les plantes, Philippa finance."
+  ],
+  "histoire": [
+   "Le groupe y descend au repaire d'Argonath et le vainc, avec l'aide d'Olyssane."
+  ],
+  "relations": [
+   {
+    "cible": "olyssane-veythar",
+    "type": "Reboisement",
+    "ton": "positif"
+   },
+   {
+    "cible": "argonath",
+    "type": "Repaire du Passeur",
+    "ton": "negatif"
+   },
+   {
+    "cible": "liora",
+    "type": "Fournit les plantes",
+    "ton": "positif"
+   }
+  ],
+  "poly": [
+   [
+    0.275,
+    0.6777
+   ],
+   [
+    0.2745,
+    0.6856
+   ],
+   [
+    0.2764,
+    0.6875
+   ],
+   [
+    0.2832,
+    0.6845
+   ],
+   [
+    0.2917,
+    0.6825
+   ],
+   [
+    0.3173,
+    0.68
+   ],
+   [
+    0.3295,
+    0.6798
+   ],
+   [
+    0.3405,
+    0.6807
+   ],
+   [
+    0.3496,
+    0.6835
+   ],
+   [
+    0.3576,
+    0.6878
+   ],
+   [
+    0.3673,
+    0.702
+   ],
+   [
+    0.3839,
+    0.7181
+   ],
+   [
+    0.395,
+    0.7257
+   ],
+   [
+    0.4081,
+    0.7322
+   ],
+   [
+    0.4219,
+    0.7366
+   ],
+   [
+    0.4356,
+    0.7381
+   ],
+   [
+    0.4459,
+    0.7364
+   ],
+   [
+    0.4523,
+    0.7333
+   ],
+   [
+    0.4554,
+    0.7263
+   ],
+   [
+    0.4563,
+    0.7178
+   ],
+   [
+    0.4552,
+    0.709
+   ],
+   [
+    0.4518,
+    0.7004
+   ],
+   [
+    0.446,
+    0.6911
+   ],
+   [
+    0.4379,
+    0.6819
+   ],
+   [
+    0.4282,
+    0.673
+   ],
+   [
+    0.4186,
+    0.6672
+   ],
+   [
+    0.3997,
+    0.662
+   ],
+   [
+    0.3791,
+    0.6583
+   ],
+   [
+    0.3589,
+    0.6561
+   ],
+   [
+    0.3395,
+    0.6562
+   ],
+   [
+    0.3203,
+    0.6582
+   ],
+   [
+    0.2856,
+    0.6668
+   ],
+   [
+    0.2786,
+    0.6724
+   ]
+  ],
+  "lab": [
+   0.405,
+   0.694
+  ],
+  "zone": {
+   "x": 0.275,
+   "y": 0.656,
+   "w": 0.182,
+   "h": 0.082
+  },
+  "couleur": "#7fbf7a"
+ },
+ {
+  "id": "repaire-du-passeur",
+  "type": "lieu",
+  "nom": "Le repaire du Passeur",
+  "parent": "repos-des-epees",
+  "resume": "Tunnels de chair et de veines pulsantes sous une plaie du sol, jusqu'à une salle en forme de cage thoracique.",
+  "connu": [
+   "Un arbre d'os soudés veille sur la colline voisine.",
+   "Plus on descend, plus la lumière rouge pulse comme un cœur."
+  ],
+  "alias": [
+   "repaire d'Argonath"
+  ]
+ },
+ {
+  "id": "argonath",
+  "type": "pnj",
+  "nom": "Argonath",
+  "titre": "Le Passeur du Sang Noir",
+  "parent": "repaire-du-passeur",
+  "lieu": "repaire-du-passeur",
+  "statut": "mort",
+  "resume": "Démon qui règne sur le Repos des Épées. Il vole la magie et les objets de ceux qu'il touche.",
+  "connu": [
+   "Il parle par la bouche d'autres créatures. Il se dit d'un autre rang qu'Absalom, qu'il méprise.",
+   "Il a contacté les Épingles de Camont pour un vol chez l'impératrice Eryndel."
+  ],
+  "histoire": [
+   "Le groupe le combat dans sa salle du cœur et le vainc.",
+   "Après ce combat, Olyssane découvre les formes monstrueuses de Jane et Philippa et attaque. Gran Brijit l'arrête net."
+  ],
+  "relations": [
+   {
+    "cible": "absalom",
+    "type": "Mépris",
+    "ton": "negatif"
+   },
+   {
+    "cible": "vassago",
+    "type": "Même camp",
+    "ton": "negatif"
+   }
+  ]
+ },
+ {
+  "id": "camont",
+  "type": "ville",
+  "nom": "Camont",
+  "titre": "Ville fluviale rongée par la Malepeste",
+  "parent": "consortium",
+  "resume": "Ville de la Veyra empoisonnée, coupée entre une Ville Haute barricadée et une Ville Basse sur pilotis.",
+  "connu": [
+   "Le fleuve est gris, huileux et toxique. La population a triplé avec les réfugiés.",
+   "La Ville Haute dorée vit derrière ses remparts, gardée par les Gardes gris, sans laissez-passer d'un propriétaire.",
+   "La Ville Basse et les Planches forment un dédale de pontons. Trois bandes s'y partagent le terrain : les Yeux, les Brûleurs et les Épingles.",
+   "On y vole tout le monde. Les enfants des Planches ont dévalisé Philippa dès l'arrivée."
+  ],
+  "histoire": [
+   "Le groupe arrive par la Veyra à bord du navire d'Olyssane, après une attaque de brigands sur les berges.",
+   "Il récupère ses affaires volées, aide les Yeux contre les Épingles et prend le rubis de la villa Graham.",
+   "Un Landsknecht d'Altéra fonce sur le groupe. Gran Brijit le saisit par un portail et l'emporte.",
+   "Pendant le voyage, Eryndel apparaît en rêve aux deux joueuses dans les Jardins de l'Éternité."
+  ],
+  "pos": {
+   "x": 0.477,
+   "y": 0.683
+  },
+  "accent": "#6fa34a",
+  "alias": [
+   "Camont"
+  ],
+  "relations": [
+   {
+    "cible": "iris",
+    "type": "Alliée de Jane",
+    "ton": "positif"
+   },
+   {
+    "cible": "olyssane-veythar",
+    "type": "Capitaine du voyage",
+    "ton": "positif"
+   },
+   {
+    "cible": "eryndel",
+    "type": "Rêve",
+    "ton": "neutre"
+   }
+  ]
+ },
+ {
+  "id": "l-abattoir",
+  "type": "lieu",
+  "nom": "L'Abattoir",
+  "titre": "Auberge des Planches",
+  "parent": "camont",
+  "resume": "Auberge en ruine tenue debout par obstination, façade lézardée et enseigne pendue à une chaîne.",
+  "connu": [
+   "On y dort sur deux vieux canapés dans l'arrière-boutique. Le poisson de la Veyra rend malade."
+  ],
+  "alias": [
+   "Abattoir"
+  ]
+ },
+ {
+  "id": "teka",
+  "type": "pnj",
+  "nom": "Teka",
+  "titre": "Aubergiste aux tentacules",
+  "parent": "l-abattoir",
+  "lieu": "l-abattoir",
+  "statut": "vivant",
+  "resume": "Aubergiste fière de son auberge, dont les tentacules bougent sous les vêtements.",
+  "connu": [
+   "Elle regrette la basse-ville d'avant la guerre.",
+   "Un poulpe, Mika, vit au bout de ses bras.",
+   "Elle a indiqué aux joueuses le quartier des Planches où vivent les enfants des rues."
+  ]
+ },
+ {
+  "id": "planches-camont",
+  "type": "lieu",
+  "nom": "Les Planches",
+  "titre": "Pontons sur le fleuve empoisonné",
+  "parent": "camont",
+  "resume": "Dédale de passerelles et de cabanes sur pilotis où vivent les enfants sans toit.",
+  "connu": [
+   "Les rues sont des pontons de bois détrempé. Les rats nagent dans les creux."
+  ]
+ },
+ {
+  "id": "eve",
+  "type": "pnj",
+  "nom": "Eve",
+  "titre": "Mère des couvées",
+  "parent": "planches-camont",
+  "lieu": "planches-camont",
+  "statut": "vivant",
+  "resume": "Femme maigre et autoritaire qui veille sur les enfants voleurs.",
+  "connu": [
+   "Elle a fait rendre à Philippa sa bourse et le Bag of Many Things.",
+   "Irna, Tilda et Cleff sont sous sa garde."
+  ],
+  "histoire": [
+   "Elle gronde Irna devant les joueuses et force les enfants à tout restituer."
+  ]
+ },
+ {
+  "id": "irna",
+  "type": "pnj",
+  "nom": "Irna",
+  "titre": "Chef des enfants voleurs",
+  "parent": "planches-camont",
+  "lieu": "planches-camont",
+  "statut": "vivant",
+  "resume": "Adolescente maigre au regard dur, qui a volé le groupe avec Tilda et Cleff.",
+  "connu": [
+   "Elle trouvait que les voyageurs avaient l'air d'en avoir trop."
+  ]
+ },
+ {
+  "id": "ssilik",
+  "type": "pnj",
+  "nom": "Ssilik",
+  "titre": "Vendeur à la sauvette",
+  "parent": "planches-camont",
+  "lieu": "planches-camont",
+  "statut": "vivant",
+  "resume": "Homme-lézard qui vend des bibelots accrochés à la doublure de son manteau.",
+  "connu": [
+   "Presque tout est faux. Un ou deux objets sont réellement magiques, dont un vrai saphir et une vraie perle vendus pour rien."
+  ]
+ },
+ {
+  "id": "silos-camont",
+  "type": "lieu",
+  "nom": "Les Silos",
+  "titre": "Territoire des Yeux",
+  "parent": "camont",
+  "resume": "Silos éventrés au nord de la ville, dans la brume verte et l'odeur de métal brûlé.",
+  "connu": [
+   "Les Yeux y vivent dans des cavernes d'acier, à l'abri des radiations et de la lumière."
+  ]
+ },
+ {
+  "id": "iris",
+  "type": "pnj",
+  "nom": "Iris",
+  "titre": "Cheffe des Yeux",
+  "parent": "silos-camont",
+  "lieu": "silos-camont",
+  "statut": "vivant",
+  "resume": "Ancienne soldate du Consortium qui dirige les mutants des Silos. Alliée de Jane.",
+  "connu": [
+   "Jane a déjà travaillé pour elle, il y a environ cinq ans.",
+   "Elle a envoyé le groupe voler le rubis de la villa Graham avant les Épingles, et conseillé le marchand de potions de la Ville Haute."
+  ],
+  "histoire": [
+   "Le groupe lui rapporte le rubis."
+  ],
+  "relations": [
+   {
+    "cible": "jane-merigold",
+    "type": "Alliée",
+    "ton": "positif"
+   },
+   {
+    "cible": "arin-veyr",
+    "type": "Lui envoie des clients",
+    "ton": "neutre"
+   }
+  ]
+ },
+ {
+  "id": "dome-camont",
+  "type": "lieu",
+  "nom": "Le Dôme",
+  "titre": "Territoire des Brûleurs",
+  "parent": "camont",
+  "resume": "Coque de cuivre fendue à l'ouest de la ville basse, remplie de fumée rouge.",
+  "connu": [
+   "Les Brûleurs y dorment sous drogue. Tous parlent d'une seule voix douce et invitent à les rejoindre.",
+   "Une présence observe à travers eux. Le groupe est parti sans insister."
+  ]
+ },
+ {
+  "id": "usine-camont",
+  "type": "lieu",
+  "nom": "L'usine textile",
+  "titre": "Territoire des Épingles",
+  "parent": "camont",
+  "resume": "Ancienne fabrique barricadée au sud, camp central du gang des Épingles.",
+  "connu": [
+   "Les habitants du quartier paient une contribution aux Épingles pour la paix."
+  ]
+ },
+ {
+  "id": "nix",
+  "type": "pnj",
+  "nom": "Nix",
+  "titre": "Cheffe des Épingles",
+  "parent": "usine-camont",
+  "lieu": "usine-camont",
+  "statut": "vivant",
+  "resume": "Fée au port altier armée d'une épingle géante.",
+  "connu": [
+   "Elle menace de coudre les bottes aux chevilles de ceux qui entrent sans permission.",
+   "Son gang a été contacté pour un vol chez l'impératrice Eryndel."
+  ],
+  "histoire": [
+   "Le groupe se heurte à ses gardes devant l'usine."
+  ]
+ },
+ {
+  "id": "porte-ville-haute",
+  "type": "lieu",
+  "nom": "La porte de la Ville Haute",
+  "parent": "camont",
+  "resume": "Grande porte de métal et de bois clouté, frontière sociale entre la basse et la haute ville.",
+  "connu": [
+   "Les Gardes gris empêchent la basse-ville d'entrer, sur ordre du conseil."
+  ]
+ },
+ {
+  "id": "capitaine-gardes-gris",
+  "type": "pnj",
+  "nom": "Capitaine des Gardes gris",
+  "titre": "Garde de la porte",
+  "parent": "porte-ville-haute",
+  "lieu": "porte-ville-haute",
+  "statut": "vivant",
+  "resume": "Officier sec et procédurier qui refuse tout passage sans laissez-passer.",
+  "connu": [
+   "Un propriétaire de la Ville Haute peut délivrer un laissez-passer."
+  ]
+ },
+ {
+  "id": "potion-shop-camont",
+  "type": "lieu",
+  "nom": "La boutique d'Arin Veyr",
+  "titre": "Potions de la Ville Haute",
+  "parent": "camont",
+  "resume": "Échoppe raffinée, vitraux bleus et verts, étiquettes tracées d'une main régulière.",
+  "connu": [
+   "Remise de 25 % pour qui vient de la part des Yeux."
+  ]
+ },
+ {
+  "id": "arin-veyr",
+  "type": "pnj",
+  "nom": "Arin Veyr",
+  "titre": "Apothicaire",
+  "parent": "potion-shop-camont",
+  "lieu": "potion-shop-camont",
+  "statut": "vivant",
+  "resume": "Apothicaire de la Ville Haute, élégant·e, au genre ambivalent.",
+  "connu": [
+   "Iel doit une dette aux Yeux, sans dire laquelle.",
+   "Iel vend potions de soins, résistances, et quelques raretés comme l'essence de possibilité."
+  ],
+  "histoire": [
+   "Le groupe y achète des potions avec la remise des Yeux."
+  ]
+ },
+ {
+  "id": "villa-graham",
+  "type": "lieu",
+  "nom": "La villa Graham",
+  "titre": "Forteresse déguisée en maison de maître",
+  "parent": "camont",
+  "resume": "Villa piégée sur une butte de pierre claire, à la lisière d'un bosquet, cible du cambriolage.",
+  "connu": [
+   "Pièges mécaniques et magiques. Les coffres sont au sous-sol, avec deux gardes et un cube gélatineux."
+  ]
+ },
+ {
+  "id": "graham-gonn",
+  "type": "pnj",
+  "nom": "Graham Gonn",
+  "titre": "Négociant de la Ville Haute",
+  "parent": "villa-graham",
+  "lieu": "villa-graham",
+  "statut": "vivant",
+  "resume": "Riche négociant qui a piégé sa villa après une série de cambriolages.",
+  "connu": [
+   "Il reçoit des lettres de Leth, un informateur des Épingles."
+  ]
+ },
+ {
+  "id": "vira",
+  "type": "pnj",
+  "nom": "Vira",
+  "titre": "Rôdeuse des Épingles",
+  "parent": "villa-graham",
+  "lieu": "villa-graham",
+  "statut": "vivant",
+  "resume": "Rôdeuse du gang des Épingles, rivale d'équipe dans la villa Graham.",
+  "connu": [
+   "Elle, Nibb et Ash cambriolent la même villa que le groupe."
+  ],
+  "histoire": [
+   "Les Épingles sont arrêtées pour l'effraction."
+  ]
+ },
+ {
+  "id": "nibb",
+  "type": "pnj",
+  "nom": "Nibb",
+  "titre": "Roublard des Épingles",
+  "parent": "villa-graham",
+  "lieu": "villa-graham",
+  "statut": "vivant",
+  "resume": "Roublard du gang des Épingles.",
+  "connu": [
+   "Il agit avec Vira et Ash."
+  ]
+ },
+ {
+  "id": "ash",
+  "type": "pnj",
+  "nom": "Ash",
+  "titre": "Guerrier des Épingles",
+  "parent": "villa-graham",
+  "lieu": "villa-graham",
+  "statut": "vivant",
+  "resume": "Guerrier du gang des Épingles.",
+  "connu": [
+   "Il agit avec Vira et Nibb."
+  ]
+ },
+ {
+  "id": "port-blanc",
+  "type": "ville",
+  "nom": "Port Blanc",
+  "titre": "Le port sans eau, garde-manger du sud",
+  "parent": "consortium",
+  "resume": "Ville d'éleveurs sans port navigable, blanchie par la poussière des troupeaux.",
+  "connu": [
+   "Elle nourrit le Consortium et Altéra. Quatre familles d'éleveurs la dirigent : Varkel, Reth, Holsten et Calderon.",
+   "La Veyra y est morte depuis la guerre. Les quais rouges sentent le sang et la chaux.",
+   "Les betes malades tremblent, les yeux blancs. Personne n'en parle : il vaut mieux ne pas trop regarder.",
+   "Les abattoirs de chaux sont interdits aux étrangers."
+  ],
+  "histoire": [
+   "Des bêtes dorées meurent entourées d'or fondu. Une fausse piste accuse les Reth.",
+   "Au saloon, une prostituée nommée Sadie s'est révélée plus tard être Absalom.",
+   "Le groupe aide Mara Callahan à s'évader de la prison du shérif."
+  ],
+  "pos": {
+   "x": 0.32,
+   "y": 0.716
+  },
+  "accent": "#e9dfc0",
+  "relations": [
+   {
+    "cible": "absalom",
+    "type": "Y est passée déguisée en Sadie",
+    "ton": "negatif"
+   }
+  ]
+ },
+ {
+  "id": "saloon-port-blanc",
+  "type": "lieu",
+  "nom": "Le saloon",
+  "titre": "Cœur social de la ville",
+  "parent": "port-blanc",
+  "resume": "Saloon de Susie, avec poker et bœuf grillé de la région.",
+  "connu": [
+   "Derrière le saloon et la chapelle, une salle des déguisements."
+  ]
+ },
+ {
+  "id": "susie",
+  "type": "pnj",
+  "nom": "Susie",
+  "titre": "Tenancière du saloon",
+  "parent": "saloon-port-blanc",
+  "lieu": "saloon-port-blanc",
+  "statut": "vivant",
+  "resume": "Accueille les voyageurs avec de la bière fraîche et du bœuf grillé.",
+  "connu": [
+   "Elle sert ce que la ville élève, avec fierté."
+  ]
+ },
+ {
+  "id": "boon",
+  "type": "pnj",
+  "nom": "Boon",
+  "titre": "Joueur de poker",
+  "parent": "saloon-port-blanc",
+  "lieu": "saloon-port-blanc",
+  "statut": "vivant",
+  "resume": "Joueur installé qui invite les nouveaux visages à sa table.",
+  "connu": [
+   "Il joue contre des gens qui ne repasseront pas."
+  ]
+ },
+ {
+  "id": "quais-rouges",
+  "type": "lieu",
+  "nom": "Les Quais Rouges",
+  "titre": "Quais de la Veyra",
+  "parent": "port-blanc",
+  "resume": "Bois imbibé de sang et de saumure, barges réfrigérées, dockers jour et nuit.",
+  "connu": [
+   "La viande part vers les flottes pirates et les comptoirs du Consortium. La contrebande y transite."
+  ]
+ },
+ {
+  "id": "june",
+  "type": "pnj",
+  "nom": "June",
+  "titre": "Commerçante des quais",
+  "parent": "quais-rouges",
+  "lieu": "quais-rouges",
+  "statut": "vivant",
+  "resume": "Vend suif, boyaux, laine brute et conserves sur les Quais Rouges.",
+  "connu": [
+   "Elle explique que la pêche n'existe plus. Elle voit tout et ne dénonce personne."
+  ]
+ },
+ {
+  "id": "prison-port-blanc",
+  "type": "lieu",
+  "nom": "La prison de Port Blanc",
+  "parent": "port-blanc",
+  "resume": "Rue principale poussiéreuse, charrette renforcée devant la prison, sheriff sous pression.",
+  "connu": [
+   "Le shérif Wyatt Hale y garde Mara Callahan."
+  ]
+ },
+ {
+  "id": "wyatt-hale",
+  "type": "pnj",
+  "nom": "Wyatt Hale",
+  "titre": "Shérif de Port Blanc",
+  "parent": "prison-port-blanc",
+  "lieu": "prison-port-blanc",
+  "statut": "vivant",
+  "resume": "Shérif qui voulait transférer Mara Callahan. Il laisse les joueuses décider.",
+  "connu": [
+   "Il tournait en rond, visiblement sous pression."
+  ]
+ },
+ {
+  "id": "mara-callahan",
+  "type": "pnj",
+  "nom": "Mara « Red » Callahan",
+  "titre": "Cheffe de gang",
+  "parent": "prison-port-blanc",
+  "lieu": "prison-port-blanc",
+  "statut": "vivant",
+  "resume": "Prisonnière aidée à fuir par le groupe. Elle lui doit 1000 po.",
+  "connu": [
+   "Elle est toujours dans la nature.",
+   "Sa dette n'a jamais été payée."
+  ],
+  "histoire": [
+   "Le groupe l'aide à s'évader."
+  ],
+  "alias": [
+   "Red Callahan"
+  ]
+ },
+ {
+  "id": "enclos-port-blanc",
+  "type": "lieu",
+  "nom": "Les grands enclos",
+  "parent": "port-blanc",
+  "resume": "Fermes de chaque famille, cloisons de bois épais, gardes armés, mugissements continus.",
+  "connu": [
+   "Chaque famille garde son domaine. Les étrangers ne s'approchent pas des bêtes."
+  ]
+ },
+ {
+  "id": "harlan",
+  "type": "pnj",
+  "nom": "Harlan",
+  "titre": "Gardien de pâture",
+  "parent": "enclos-port-blanc",
+  "lieu": "enclos-port-blanc",
+  "statut": "vivant",
+  "resume": "Gardien bègue qui confirme à demi-mot que les bêtes sont malades.",
+  "connu": [
+   "« Moi je garde les pâtures, je pose pas trop de questions. »"
+  ]
+ },
+ {
+  "id": "quatre-familles",
+  "type": "organisation",
+  "nom": "Les quatre familles",
+  "titre": "Éleveurs de Port Blanc",
+  "parent": "port-blanc",
+  "alias": [
+   "Varkel",
+   "Reth",
+   "Holsten",
+   "Calderon"
+  ],
+  "resume": "Varkel (bovins), Reth (moutons, rites de purification), Holsten (chevaux de guerre) et Calderon (grandes plaines).",
+  "connu": [
+   "Elles arbitrent leurs différends ensemble pour que la ville tienne.",
+   "Les Varkel ont accusé publiquement les Reth dans l'affaire des bêtes dorées."
+  ]
+ },
+ {
+  "id": "caravane-port-doelan",
+  "type": "evenement",
+  "nom": "La caravane vers Port Doëlan",
+  "titre": "La route de Port Blanc au sud",
+  "parent": "consortium",
+  "resume": "Longue traversée en caravane, entre un vignoble, des bandits affamés et des gobelins sur wargs.",
+  "connu": [
+   "Des voyageurs de passage : Barok et Almar, le marchand Qadim, Magdalena, Ivy, Solkah Barrow, Constance Brisemousse, Umberto Hevalan."
+  ],
+  "histoire": [
+   "Au vignoble de Dimir et Iulia, le groupe libère l'esclave Spano.",
+   "Ivy est retrouvée morte, empoisonnée.",
+   "Le marchand Qadim, agent de la Lumière Noire, traquait Magdalena. Il s'enfuit une fois découvert."
+  ]
+ },
+ {
+  "id": "qadim-al-makir",
+  "type": "pnj",
+  "nom": "Qadim Al-Makir",
+  "titre": "Marchand en fuite",
+  "parent": "caravane-port-doelan",
+  "lieu": "caravane-port-doelan",
+  "statut": "en fuite",
+  "resume": "Riche marchand de la caravane, en réalité agent de la Lumière Noire.",
+  "connu": [
+   "Il traquait Magdalena pour la tuer.",
+   "Il a empoisonné Ivy à sa place."
+  ],
+  "relations": [
+   {
+    "cible": "magdalena",
+    "type": "Sa cible",
+    "ton": "negatif"
+   }
+  ]
+ },
+ {
+  "id": "magdalena",
+  "type": "pnj",
+  "nom": "Magdalena",
+  "titre": "Survivante de la Lumière Noire",
+  "parent": "caravane-port-doelan",
+  "lieu": "caravane-port-doelan",
+  "statut": "inconnu",
+  "resume": "Humaine aux cristaux dans le dos et aux pouvoirs de glace, déserteuse du front d'Obaline.",
+  "connu": [
+   "Elle partage l'expérience des cristaux de Jane.",
+   "Elle voulait atteindre Port Doëlan."
+  ],
+  "relations": [
+   {
+    "cible": "jane-merigold",
+    "type": "Même expérience des cristaux",
+    "ton": "positif"
+   }
+  ]
+ },
+ {
+  "id": "barok",
+  "type": "pnj",
+  "nom": "Barok",
+  "titre": "Chanteur vedette",
+  "parent": "caravane-port-doelan",
+  "lieu": "caravane-port-doelan",
+  "statut": "vivant",
+  "resume": "Artiste exalté qui voyage sous couverture de garde du corps. Almar joue la chanteuse.",
+  "connu": [
+   "Il doit jouer au théâtre Russconi de Port Doëlan, sur invitation de Bartolomeo Spezza."
+  ],
+  "histoire": [
+   "Le groupe le recroise devant le théâtre Russconi."
+  ]
+ },
+ {
+  "id": "almar",
+  "type": "pnj",
+  "nom": "Almar",
+  "titre": "Protectrice de Barok",
+  "parent": "caravane-port-doelan",
+  "lieu": "caravane-port-doelan",
+  "statut": "vivant",
+  "resume": "Joue la chanteuse pour attirer l'attention. Droite, laconique, le regard toujours en mouvement.",
+  "connu": [
+   "Elle a remarqué trop de gardes autour du théâtre pour un simple spectacle."
+  ]
+ },
+ {
+  "id": "umberto-hevalan",
+  "type": "pnj",
+  "nom": "Umberto Hevalan",
+  "titre": "Érudit de Rivegard",
+  "parent": "caravane-port-doelan",
+  "lieu": "caravane-port-doelan",
+  "statut": "vivant",
+  "resume": "Érudit incorruptible qui refuse de valider la propagande de Spezza.",
+  "connu": [
+   "Il a été invité à Port Doëlan pour un séminaire."
+  ]
+ },
+ {
+  "id": "havre-noir",
+  "type": "ville",
+  "nom": "Havre Noir",
+  "titre": "Port pirate de Sycomore Brise-Pavois",
+  "parent": "consortium",
+  "resume": "Forteresse de navires entrelacés. Discipline stricte, zéro contrebande, chantiers navals réputés.",
+  "connu": [
+   "Sycomore y règne depuis une vingtaine d'années, après avoir tué Veyrann Krag en duel.",
+   "La Griffe n'y a jamais pu s'implanter. Aucun navire lié à l'Île aux Moines n'a accosté ici.",
+   "Sycomore a fait mener une enquête discrète sur Port Doëlan et Titan Inc.",
+   "Un portail relie Cap Cornes à Havre Noir. Le groupe l'a rerouté vers Port Doëlan."
+  ],
+  "histoire": [
+   "Philippa affronte Thargan lors du duel rituel du pont de parade.",
+   "Le groupe résout une série de meurtres déguisés en Malepeste.",
+   "Liora y ouvre sa boutique, le Pavillon Vert."
+  ],
+  "pos": {
+   "x": 0.463,
+   "y": 0.812
+  },
+  "accent": "#c9a84c",
+  "blason": "img/blasons/havre-noir.webp"
+ },
+ {
+  "id": "assemblage",
+  "type": "lieu",
+  "nom": "L'Assemblage",
+  "titre": "Forteresse de navires entrelacés",
+  "parent": "havre-noir",
+  "resume": "Cœur du pouvoir : trophées d'abordage, trône d'os et de poutres, capitainerie sur un ancien navire amiral.",
+  "connu": [
+   "Derrière le trône, des quartiers privés finement meublés.",
+   "Le pont de parade accueille les duels rituels des étrangers."
+  ],
+  "alias": [
+   "Assemblage"
+  ]
+ },
+ {
+  "id": "sycomore-brise-pavois",
+  "type": "pnj",
+  "nom": "Sycomore Brise-Pavois",
+  "titre": "Seigneur pirate de Havre Noir",
+  "parent": "assemblage",
+  "lieu": "assemblage",
+  "statut": "vivant",
+  "resume": "Femme à la crinière sombre, épée massive et bouclier enduit de poix. Alliée du groupe.",
+  "connu": [
+   "Elle ne tolère aucune contrebande et déteste la Griffe, sans partir en croisade tant qu'on ne touche pas à son territoire.",
+   "Elle reçoit une audience polie avec amusement, et répond à une intrusion par l'attaque.",
+   "Olyssane est sa Première-Capitaine."
+  ],
+  "histoire": [
+   "Le groupe passe son duel rituel puis parle avec elle dans ses quartiers."
+  ],
+  "img": "img/thaldera/pnj/sycomore-brise-pavois.webp",
+  "relations": [
+   {
+    "cible": "olyssane-veythar",
+    "type": "Première-Capitaine",
+    "ton": "neutre"
+   },
+   {
+    "cible": "thargan",
+    "type": "Second",
+    "ton": "neutre"
+   }
+  ]
+ },
+ {
+  "id": "thargan",
+  "type": "pnj",
+  "nom": "Thargan l'Écaille",
+  "titre": "Second de Sycomore",
+  "parent": "assemblage",
+  "lieu": "assemblage",
+  "statut": "vivant",
+  "resume": "Triton renégat à la peau striée de cicatrices, cruel et moqueur.",
+  "connu": [
+   "Il cherche avant tout à être vu de Sycomore."
+  ],
+  "histoire": [
+   "Philippa l'affronte sur le pont de parade."
+  ]
+ },
+ {
+  "id": "pavillon-vert",
+  "type": "lieu",
+  "nom": "Le Pavillon Vert",
+  "titre": "Fleuristerie de Liora",
+  "parent": "havre-noir",
+  "resume": "Boutique qui sent la terre humide, le jasmin sauvage et les algues séchées.",
+  "connu": [
+   "Liora y échange des compositions contre des plantes rares.",
+   "Philippa finance son agrandissement. Olyssane reçoit des plantes pour ses reboisements."
+  ]
+ },
+ {
+  "id": "liora",
+  "type": "pnj",
+  "nom": "Liora",
+  "titre": "Fleuriste de Havre Noir",
+  "parent": "pavillon-vert",
+  "lieu": "pavillon-vert",
+  "statut": "vivant",
+  "resume": "Alliée de Philippa, retrouvée esclave à l'Île aux Moines puis installée à Havre Noir.",
+  "connu": [
+   "Elle ouvre une boutique de fleurs et prépare le passage à l'alchimie.",
+   "Elle a donné trois Bandle Scouts au groupe."
+  ],
+  "histoire": [
+   "Philippa la libère à l'Île aux Moines."
+  ],
+  "img": "img/thaldera/pnj/liora.webp"
+ },
+ {
+  "id": "temple-de-thalos",
+  "type": "lieu",
+  "nom": "Le temple de Thalos",
+  "titre": "Temple incendié",
+  "parent": "havre-noir",
+  "resume": "Colonnes effondrées et murs noircis, devenus terrain de défi des jeunes Lapides.",
+  "connu": [
+   "Sycomore a fait incendier le temple et bannir le diacre Malrik Solbrun qui prêchait pour le Dominion."
+  ]
+ },
+ {
+  "id": "wilhelm-der-treue",
+  "type": "pnj",
+  "nom": "Wilhelm der Treue",
+  "titre": "Landsknecht d'Altéra",
+  "parent": "havre-noir",
+  "lieu": "havre-noir",
+  "statut": "mort",
+  "resume": "Chasseur massif à la Zweihander, venu ramener Philippa à l'impératrice.",
+  "connu": [
+   "Il portait l'insigne RadenSiegel."
+  ],
+  "histoire": [
+   "Le groupe le vainc."
+  ]
+ },
+ {
+  "id": "voros",
+  "type": "ville",
+  "nom": "Voros",
+  "titre": "Ville marchande suspendue entre falaise et mer",
+  "parent": "consortium",
+  "resume": "Cité du prince-marchand Gallywix, plaque tournante du commerce du Consortium.",
+  "connu": [
+   "La guilde des marchands y contrôle tout. Le Suud, drogue brune addictive, y est produit et exporté.",
+   "Gallywix ne combat pas la Griffe, qui remplit ses coffres."
+  ],
+  "histoire": [
+   "Jane et Philippa se rencontrent ici.",
+   "Le groupe tue Skrell, relais du Voile et trafiquant de Suud, dans les anciens bains publics.",
+   "Helka von Leyenmil reprend le Voile local et présente Bernard à Philippa."
+  ],
+  "pos": {
+   "x": 0.55,
+   "y": 0.673
+  },
+  "accent": "#4aa7a3"
+ },
+ {
+  "id": "gallywix",
+  "type": "pnj",
+  "nom": "Gallywix",
+  "titre": "Prince-Marchand de Voros",
+  "parent": "voros",
+  "lieu": "voros",
+  "statut": "vivant",
+  "resume": "Assis sur un trône en forme de navire, il traite la neutralité comme une politique commerciale.",
+  "connu": [
+   "Il met la Griffe et le Voile sur le même plan.",
+   "On ne l'obtient que par le calcul d'équilibre, pas par la morale."
+  ]
+ },
+ {
+  "id": "helka-von-leyenmil",
+  "type": "pnj",
+  "nom": "Helka von Leyenmil",
+  "titre": "Cheffe du Voile à Voros",
+  "parent": "voros",
+  "lieu": "voros",
+  "statut": "vivant",
+  "resume": "Ex-landsknecht d'Altéra, repentie, devenue cheffe du Voile local.",
+  "connu": [
+   "Elle décrit la Griffe comme une meute de cinq, soigneur et arcaniste compris : « tu touches à un, t'en as quatre autres. »",
+   "Olyssane garde un ressentiment de guerre contre elle."
+  ]
+ },
+ {
+  "id": "skrell",
+  "type": "pnj",
+  "nom": "Skrell",
+  "titre": "Relais du Voile et trafiquant",
+  "parent": "voros",
+  "lieu": "voros",
+  "statut": "mort",
+  "resume": "Tabaxi au cerveau défoncé par le Suud, qui mâche une racine dans les bains.",
+  "connu": [
+   "Une lettre de Lavande le liait au réseau du Voile."
+  ],
+  "histoire": [
+   "Helka et Philippa le tuent au fond de sa planque."
+  ]
+ },
+ {
+  "id": "bernard",
+  "type": "pnj",
+  "nom": "Bernard",
+  "titre": "Goliath druide symbiotique",
+  "parent": "voros",
+  "lieu": "voros",
+  "statut": "inconnu",
+  "resume": "Goliath couvert de champignons, qui ne parle jamais. Retourné vivre dans les sources chaudes.",
+  "connu": [
+   "Helka l'a présenté à Philippa, avec affection."
+  ]
+ },
+ {
+  "id": "vano-meredzi",
+  "type": "pnj",
+  "nom": "Vano Meredzi",
+  "titre": "Capitaine de l'Aile d'Avalon",
+  "parent": "voros",
+  "lieu": "voros",
+  "statut": "vivant",
+  "resume": "Ancien corsaire de Havre Noir devenu indépendant à Voros.",
+  "connu": [
+   "Son navire a mené le groupe de Lunsk à Voros, en 3 jours et demi, malgré une tempête et des nagas."
+  ]
+ },
+ {
+  "id": "lunsk",
+  "type": "ville",
+  "nom": "Lunsk",
+  "titre": "Ville lacustre sur pilotis",
+  "parent": "dominion-sol",
+  "resume": "Ville des marais, entourée de la Forêt Immobile, depuis annexée par le Dominion Sol.",
+  "connu": [
+   "La Griffe y faisait du trafic humain via Mezzek et Silex.",
+   "Le Dominion n'y était présent que sur le papier avant l'annexion."
+  ],
+  "histoire": [
+   "Philippa se fait passer pour une acheteuse de Sol Novem et infiltre la Griffe.",
+   "Le groupe tue Mezzek et récupère son livre de comptes, qui désigne Voros comme destination."
+  ],
+  "pos": {
+   "x": 0.607,
+   "y": 0.6
+  },
+  "accent": "#7a9a5a"
+ },
+ {
+  "id": "mezzek",
+  "type": "pnj",
+  "nom": "Mezzek",
+  "titre": "Responsable de la Griffe à Lunsk",
+  "parent": "lunsk",
+  "lieu": "lunsk",
+  "statut": "mort",
+  "resume": "Trafiquant local, qui cite « le Berger » comme donneur d'ordres.",
+  "connu": [
+   "Son livre de comptes mentionne de la marchandise vive scellée, déchargée de nuit à Voros."
+  ]
+ },
+ {
+  "id": "silex",
+  "type": "pnj",
+  "nom": "Silex",
+  "titre": "Sbire de la Griffe",
+  "parent": "lunsk",
+  "lieu": "lunsk",
+  "statut": "vivant",
+  "resume": "Sous-fifre de Mezzek, épargné par Philippa."
+ },
+ {
+  "id": "selva",
+  "type": "pnj",
+  "nom": "Selva",
+  "titre": "Relais du Voile à Lunsk",
+  "parent": "lunsk",
+  "lieu": "lunsk",
+  "statut": "en fuite",
+  "resume": "Lagamore logisticienne qui combattait la Griffe. En fuite depuis l'annexion."
+ },
+ {
+  "id": "mirek-trois-pierres",
+  "type": "pnj",
+  "nom": "Mirek « Trois-Pierres »",
+  "titre": "Aubergiste de Lunsk",
+  "parent": "lunsk",
+  "lieu": "lunsk",
+  "statut": "vivant",
+  "resume": "Aubergiste à l'œil de verre. Point de chute et de rumeurs."
+ },
+ {
+  "id": "ile-aux-moines",
+  "type": "ville",
+  "nom": "L'Île aux Moines",
+  "titre": "Monastère de Lathander profané",
+  "parent": "thaldera",
+  "resume": "Ancien monastère de Lathander transformé en prison de la Griffe, où officie Absalom.",
+  "connu": [
+   "Les moines ont quitté l'île pour un temple brumeux dans la jungle, à l'ouest de Port Lagon.",
+   "Une lettre brûlée signée Spezza prouve son financement du trafic."
+  ],
+  "histoire": [
+   "Philippa libère Liora, prisonnière de la Griffe.",
+   "Le groupe affronte Absalom, appelée le Berger, qui s'échappe."
+  ]
+ },
+ {
+  "id": "frere-augustus-carrow",
+  "type": "pnj",
+  "nom": "Frère Augustus Carrow",
+  "titre": "Moine possédé",
+  "parent": "ile-aux-moines",
+  "lieu": "ile-aux-moines",
+  "statut": "mort",
+  "resume": "Moine de Lathander devenu fou. Son journal raconte la présence démoniaque et « le navire qui n'existait pas ».",
+  "histoire": [
+   "Il attaque le groupe, d'abord à l'Île aux Moines puis au Temple Brumeux."
+  ]
+ },
+ {
+  "id": "temple-brumeux",
+  "type": "ville",
+  "nom": "Le Temple Brumeux",
+  "titre": "Retraite des moines de Lathander",
+  "parent": "thaldera",
+  "resume": "Temple de la jungle, à l'ouest de Port Lagon, où les moines se sont repliés. Pentacle malsain au niveau inférieur.",
+  "connu": [
+   "Statue gardienne à l'entrée, deux statues animées au premier sous-sol.",
+   "La grande porte-soleil du second sous-sol cache un pentacle."
+  ],
+  "histoire": [
+   "Le groupe y vainc Barakel, parasite de l'Aube déguisé en prêtre."
+  ],
+  "pos": {
+   "x": 0.313,
+   "y": 0.78
+  }
+ },
+ {
+  "id": "barakel",
+  "type": "pnj",
+  "nom": "Barakel",
+  "titre": "Parasite de l'Aube",
+  "parent": "temple-brumeux",
+  "lieu": "temple-brumeux",
+  "statut": "mort",
+  "resume": "Démon déguisé en prêtre au fond du Temple Brumeux.",
+  "histoire": [
+   "Le groupe le détruit."
+  ]
+ },
+ {
+  "id": "agran",
+  "type": "ville",
+  "nom": "Agran",
+  "titre": "Cité sous-marine à vingt kilomètres de profondeur",
+  "parent": "thaldera",
+  "resume": "Cité de corail au fond d'une faille abyssale, éclairée par la seule bioluminescence qui pulse au rythme de Kataron.",
+  "connu": [
+   "Aucune surface visible. Des courants létaux coulent au-dessus de la faille.",
+   "Genasi d'eau, tritons, sirènes et kuo-toa y vivent. Ils appellent les humains « les Noyés ».",
+   "Kataron, Dame des Marées Profondes, y est vénérée."
+  ],
+  "histoire": [
+   "Le groupe y rencontre Ink, la prend sous son aile, puis parle à Kataron au Cœur Immergé.",
+   "Algari apprend à Philippa à appliquer le thuun sur sa lyre pour que le son porte sous l'eau."
+  ],
+  "accent": "#1e4f9c",
+  "blason": "img/blasons/agran.webp",
+  "alias": [
+   "Agran"
+  ]
+ },
+ {
+  "id": "thaloor",
+  "type": "pnj",
+  "nom": "Thaloor",
+  "titre": "Aubergiste et tuteur d'Ink",
+  "parent": "agran",
+  "lieu": "agran",
+  "statut": "vivant",
+  "resume": "Prudent, il veut protéger Ink du monde extérieur."
+ },
+ {
+  "id": "la-suuraal",
+  "type": "pnj",
+  "nom": "La Suuraal",
+  "titre": "Dirigeante d'Agran",
+  "parent": "agran",
+  "lieu": "agran",
+  "statut": "vivant",
+  "resume": "Autorité spirituelle et temporelle. Kataron parle à travers elle.",
+  "connu": [
+   "Elle donne au groupe une marque liée au Cœur Immergé."
+  ]
+ },
+ {
+  "id": "algari",
+  "type": "pnj",
+  "nom": "Algari",
+  "titre": "Musicien d'Agran",
+  "parent": "agran",
+  "lieu": "agran",
+  "statut": "vivant",
+  "resume": "Joue de la lyre, queue de poisson pendant dans le vide.",
+  "connu": [
+   "Il enseigne le thuun, un gel qui remplace l'air pour transmettre le son."
+  ]
+ },
+ {
+  "id": "glooglugogg",
+  "type": "pnj",
+  "nom": "Glooglugogg",
+  "titre": "Grand prêtre kuo-toa",
+  "parent": "agran",
+  "lieu": "agran",
+  "statut": "vivant",
+  "resume": "Seul à parler la langue commune. Inquiet, il envoie le groupe voir la Suuraal."
+ },
+ {
+  "id": "pyrrah",
+  "type": "ville",
+  "nom": "Pyrrah",
+  "titre": "Cité du Plan du Feu",
+  "parent": "thaldera",
+  "resume": "Ville de forges et de lave, habitée par des tieffelins rouges, drakéides, salamandres et efrits.",
+  "connu": [
+   "Prophétie : « Les cheveux de flamme éteindront la Flamme éternelle »."
+  ],
+  "histoire": [
+   "Philippa refuse de voler la Première Flamme et choisit la voie de la Balance.",
+   "Le groupe nettoie la mine de Pyrrite, bloquée par un portail abyssal.",
+   "Jane tue les trois agents de la Griffe de la taverne."
+  ],
+  "accent": "#e0602a",
+  "blason": "img/blasons/pyrrah.webp",
+  "alias": [
+   "Pyrrah"
+  ]
+ },
+ {
+  "id": "kaldros-emberforge",
+  "type": "pnj",
+  "nom": "Kaldros Emberforge",
+  "titre": "Maître forgeron de Pyrrah",
+  "parent": "pyrrah",
+  "lieu": "pyrrah",
+  "statut": "vivant",
+  "resume": "Allié et crafteur de confiance du groupe, assisté de Fyra.",
+  "connu": [
+   "Il forge avec l'écaille d'Al Batun et la Pyrrite.",
+   "Même lui ne peut reforger la lame brisée."
+  ]
+ },
+ {
+  "id": "l-incarnat",
+  "type": "pnj",
+  "nom": "L'Incarnat",
+  "titre": "Porteur de la Première Flamme",
+  "parent": "pyrrah",
+  "lieu": "pyrrah",
+  "statut": "vivant",
+  "resume": "Adolescent qui garde la Première Flamme. Épargné par le groupe."
+ },
+ {
+  "id": "solemnar",
+  "type": "pnj",
+  "nom": "Solemnar",
+  "titre": "Grand prêtre de la Flamme",
+  "parent": "pyrrah",
+  "lieu": "pyrrah",
+  "statut": "vivant",
+  "resume": "Autorité religieuse du sanctuaire. Les genasi sont interrogés avant d'approcher la chambre solaire."
+ },
+ {
+  "id": "ashur",
+  "type": "pnj",
+  "nom": "Ashur",
+  "titre": "Ami de Gran Brijit",
+  "parent": "kazad-marunn",
+  "lieu": "kazad-marunn",
+  "statut": "vivant",
+  "resume": "Vieil ami de Gran Brijit, dans une maison aux gravures anciennes.",
+  "connu": [
+   "Il confirme l'ancienneté des liens de Gran Brijit dans le désert."
+  ]
+ },
+ {
+  "id": "chateau-spezza",
+  "type": "lieu",
+  "nom": "Le château Spezza",
+  "titre": "Forteresse du seigneur pirate",
+  "parent": "port-doelan",
+  "resume": "Forteresse qui domine la ville, avec chambre forte et trappe vers la crique secrète.",
+  "connu": [
+   "Spezza y vivait enfermé. Des démons rôderaient sous les caves, selon Serna.",
+   "Une crique secrète en dessous abritait le sous-marin en pyrracier."
+  ],
+  "histoire": [
+   "Le groupe donne l'assaut et tue Spezza. Naberoth est renvoyé aux Enfers."
+  ]
+ },
+ {
+  "id": "spezza",
+  "type": "pnj",
+  "nom": "Bartolomeo Spezza",
+  "titre": "Seigneur pirate de Port Doëlan",
+  "parent": "chateau-spezza",
+  "lieu": "chateau-spezza",
+  "statut": "mort",
+  "resume": "Warlock lié à Vassago. Il finançait la Griffe, le trafic humain et le sous-marin via Titan Inc.",
+  "connu": [
+   "Il voulait entrer dans l'Histoire et achetait des historiens.",
+   "Un avis de recherche de 36 000 po visait Jane et Philippa."
+  ],
+  "alias": [
+   "Spezza"
+  ]
+ },
+ {
+  "id": "naberoth",
+  "type": "pnj",
+  "nom": "Naberoth",
+  "titre": "Le Pêcheur, diable ingénieur",
+  "parent": "chateau-spezza",
+  "lieu": "chateau-spezza",
+  "statut": "renvoyé aux Enfers",
+  "resume": "Diable qui a construit le sous-marin et inventé les canons runiques.",
+  "connu": [
+   "Absalom exige sa vraie mort."
+  ],
+  "histoire": [
+   "Le groupe le vainc au château. Il est renvoyé à Dis."
+  ]
+ },
+ {
+  "id": "theatre-russconi",
+  "type": "lieu",
+  "nom": "Le théâtre Russconi",
+  "parent": "port-doelan",
+  "resume": "Façade de pierre claire, colonnes, bannières rouges et gardes sous les arcades.",
+  "connu": [
+   "Places à 15 po. Les gardes sont nombreux pour un simple spectacle."
+  ]
+ },
+ {
+  "id": "russconi",
+  "type": "pnj",
+  "nom": "Russconi",
+  "titre": "Directeur du théâtre",
+  "parent": "theatre-russconi",
+  "lieu": "theatre-russconi",
+  "statut": "vivant",
+  "resume": "Ajuste ses manchettes et laisse entendre que les places sont très demandées."
+ },
+ {
+  "id": "requiem",
+  "type": "lieu",
+  "nom": "Le magasin de musique Requiem",
+  "parent": "port-doelan",
+  "resume": "Boutique du voyant Makandral Toussaint.",
+  "connu": [
+   "Absalom s'y révèle comme Sadie."
+  ]
+ },
+ {
+  "id": "makandral-toussaint",
+  "type": "pnj",
+  "nom": "Makandral Toussaint",
+  "titre": "Voyant",
+  "parent": "requiem",
+  "lieu": "requiem",
+  "statut": "vivant",
+  "resume": "Lit les échos plutôt que l'avenir.",
+  "connu": [
+   "Il sent que le pacte de Spezza avec Vassago n'est pas soldé.",
+   "Il perçoit une distorsion active sous le château, qui venait de Naberoth."
+  ],
+  "histoire": [
+   "C'est chez lui qu'Absalom se révèle aux joueuses."
+  ]
+ },
+ {
+  "id": "maison-de-vespera",
+  "type": "lieu",
+  "nom": "La maison de Vespera",
+  "parent": "port-doelan",
+  "resume": "Maison close dirigée par Madame, base politique de Vespera.",
+  "connu": [
+   "Tina et Nina, les anciennes prostituées que le groupe connaît, gardent désormais Vespera en armure de fortune."
+  ]
+ },
+ {
+  "id": "vespera-merigold",
+  "type": "pnj",
+  "nom": "Vespera Merigold",
+  "titre": "Madame de Port Doëlan, sœur d'orphelinat de Jane",
+  "parent": "maison-de-vespera",
+  "lieu": "maison-de-vespera",
+  "statut": "vivant",
+  "resume": "Tieffeline qui dirige désormais Port Doëlan en ruine. Seule enfant Merigold retrouvée par Jane.",
+  "connu": [
+   "Elle a hérité du pouvoir après la chute de Spezza et reconstruit la ville avec l'aide du groupe.",
+   "Des mercenaires sous pavillon inconnu rôdent. Un de ses hommes n'est pas revenu de Leyenmil.",
+   "Elle attend la livraison de l'Arshen à Cap Cornes pour relancer le commerce.",
+   "Le pacte avec l'Aile d'Argent a apporté des capitaux, très loin de ce qu'il faudrait. Un ambassadeur de Rivegard presse Sycomore de lâcher Port Doëlan."
+  ],
+  "histoire": [
+   "Elle appelle le groupe au chantier de Port Doëlan et propose un roadtrip vers Leyenmil."
+  ],
+  "img": "img/thaldera/pnj/vespera-merigold.webp",
+  "relations": [
+   {
+    "cible": "jane-merigold",
+    "type": "Sœur d'orphelinat",
+    "ton": "positif"
+   },
+   {
+    "cible": "sycomore-brise-pavois",
+    "type": "Contact",
+    "ton": "neutre"
+   },
+   {
+    "cible": "eamonn",
+    "type": "L'a jugé drogué",
+    "ton": "neutre"
+   }
+  ]
+ },
+ {
+  "id": "lirenne",
+  "type": "pnj",
+  "nom": "Lirenne",
+  "titre": "Alchimiste",
+  "parent": "port-doelan",
+  "lieu": "port-doelan",
+  "statut": "vivant",
+  "resume": "Alchimiste de l'Officine, qui travaille aussi sur des explosifs.",
+  "connu": [
+   "Traces de poudre noire sur ses manches et odeur de soufre."
+  ]
+ },
+ {
+  "id": "matthias-holbrekt",
+  "type": "pnj",
+  "nom": "Matthias Holbrekt",
+  "titre": "Landsknecht enquêteur d'Altéra",
+  "parent": "port-doelan",
+  "lieu": "port-doelan",
+  "statut": "mort",
+  "resume": "Retrouvé mort dans une ruelle en pente vers la mer, le corps encore tiède.",
+  "connu": [
+   "Sa lettre de mission montre qu'il surveillait Spezza et les importations de pyrracier, et des rumeurs de navire capable de traverser la mer d'Émeraude.",
+   "Il portait un avis de recherche de Jane et Philippa."
+  ]
+ },
+ {
+  "id": "serna",
+  "type": "pnj",
+  "nom": "Serna",
+  "titre": "Vieille femme du phare",
+  "parent": "port-doelan",
+  "lieu": "port-doelan",
+  "statut": "vivant",
+  "resume": "Vieille femme que tous prennent pour une folle. Elle jure que des démons vivent sous le château."
+ },
+ {
+  "id": "isuun-des-profondeurs",
+  "type": "pnj",
+  "nom": "Isuun des Profondeurs",
+  "titre": "Prêtre aquan de Valkur",
+  "parent": "port-doelan",
+  "lieu": "port-doelan",
+  "statut": "vivant",
+  "resume": "Donne des orbes de respiration sous-marine."
+ },
+ {
+  "id": "leyenmil",
+  "type": "ville",
+  "nom": "Leyenmil",
+  "titre": "Village de l'orphelinat Merigold",
+  "parent": "altera",
+  "resume": "Village sous la pluie et la boue. L'orphelinat Merigold s'y dresse comme un édifice gothique.",
+  "connu": [
+   "Le village sait ce qui se passe à l'orphelinat et détourne les yeux."
+  ],
+  "histoire": [
+   "Jane y revit son passé : sa première mission pour la Rectrice, le meurtre d'Edmund von Kornwald."
+  ],
+  "pos": {
+   "x": 0.32,
+   "y": 0.665
+  },
+  "alias": [
+   "Leyenmill",
+   "Leyemil"
+  ]
+ },
+ {
+  "id": "orphelinat-merigold",
+  "type": "lieu",
+  "nom": "L'orphelinat Merigold",
+  "parent": "leyenmil",
+  "resume": "Bâtiment gothique froid, portail de fer forgé. La salle des déguisements se cache derrière la chapelle.",
+  "connu": [
+   "Les enfants méritants gagnent une chambre. Jane partageait la sienne avec Vespera."
+  ]
+ },
+ {
+  "id": "la-rectrice",
+  "type": "pnj",
+  "nom": "La Rectrice",
+  "titre": "Directrice de l'orphelinat",
+  "parent": "orphelinat-merigold",
+  "lieu": "orphelinat-merigold",
+  "statut": "mort",
+  "resume": "Directrice méthodique qui habillait le meurtre en devoir moral.",
+  "connu": [
+   "Elle distribuait des objets de meurtre silencieux avant les missions.",
+   "Elle a été tuée plus tard par des mercenaires."
+  ]
+ },
+ {
+  "id": "edmund-von-kornwald",
+  "type": "pnj",
+  "nom": "Edmund von Kornwald",
+  "titre": "Première cible de Jane",
+  "parent": "orphelinat-merigold",
+  "lieu": "orphelinat-merigold",
+  "statut": "mort",
+  "resume": "Homme que Jane a tué pour la Rectrice. Il enquêtait en secret pour la faire tomber.",
+  "connu": [
+   "Ses documents décrivaient les sévices de l'orphelinat."
+  ]
+ },
+ {
+  "id": "soren",
+  "type": "pnj",
+  "nom": "Soren",
+  "titre": "Jeune voleur de la Rectrice",
+  "parent": "orphelinat-merigold",
+  "lieu": "orphelinat-merigold",
+  "statut": "inconnu",
+  "resume": "Garçon de quinze ans qui veillait sur Luka. Il a demandé à Jane de chercher sans alerter les adultes."
+ },
+ {
+  "id": "luka",
+  "type": "pnj",
+  "nom": "Luka",
+  "titre": "Enfant de l'orphelinat",
+  "parent": "orphelinat-merigold",
+  "lieu": "orphelinat-merigold",
+  "statut": "inconnu",
+  "resume": "Retrouvé muet, un œil manquant, le visage griffé.",
+  "connu": [
+   "Jane veut le retrouver."
+  ]
+ },
+ {
+  "id": "m-falken",
+  "type": "pnj",
+  "nom": "M. Falken",
+  "titre": "Client de la Rectrice",
+  "parent": "orphelinat-merigold",
+  "lieu": "orphelinat-merigold",
+  "statut": "vivant",
+  "resume": "Client régulier et exigeant, canne à pommeau doré. Il achetait des enfants.",
+  "connu": [
+   "Jane compte le tuer s'il se représente."
+  ]
+ }
+]

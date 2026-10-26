@@ -6,10 +6,10 @@
   "titre": "Le territoire de la maison verte",
   "parent": "istra",
   "zone": {
-   "x": 0.55,
-   "y": 0.21,
-   "w": 0.34,
-   "h": 0.26
+   "x": 0.499,
+   "y": 0.258,
+   "w": 0.372,
+   "h": 0.24
   },
   "blason": "img/blasons/roshen-buru.webp",
   "accent": "#3fae7a",
@@ -28,12 +28,6 @@
    "Le meurtre de l'ambassadeur Otoba à Keras Tauroc a fermé les accès à la cité, Seiran Vale et Azuren Kai compris.",
    "Le rituel du Tenraku donne à chaque guerrier un Miren, esprit céleste lié à lui à vie."
   ],
-  "avis": [
-   {
-    "qui": "Harfang",
-    "texte": "la région est son foyer, mais il ne supporte plus la ségrégation entre nobles et peuple que la Gardienne cautionne."
-   }
-  ],
   "relations": [
    {
     "cible": "melora",
@@ -45,7 +39,194 @@
     "type": "Gardienne",
     "ton": "positif"
    }
-  ]
+  ],
+  "poly": [
+   [
+    0.4993,
+    0.4126
+   ],
+   [
+    0.5144,
+    0.429
+   ],
+   [
+    0.5416,
+    0.4503
+   ],
+   [
+    0.5708,
+    0.4714
+   ],
+   [
+    0.6264,
+    0.486
+   ],
+   [
+    0.6835,
+    0.4972
+   ],
+   [
+    0.7409,
+    0.4975
+   ],
+   [
+    0.7977,
+    0.4957
+   ],
+   [
+    0.8275,
+    0.4874
+   ],
+   [
+    0.8455,
+    0.4718
+   ],
+   [
+    0.8627,
+    0.4554
+   ],
+   [
+    0.8663,
+    0.4336
+   ],
+   [
+    0.8664,
+    0.4125
+   ],
+   [
+    0.8675,
+    0.402
+   ],
+   [
+    0.8714,
+    0.382
+   ],
+   [
+    0.871,
+    0.3715
+   ],
+   [
+    0.8695,
+    0.3605
+   ],
+   [
+    0.8672,
+    0.3514
+   ],
+   [
+    0.864,
+    0.3434
+   ],
+   [
+    0.8587,
+    0.3361
+   ],
+   [
+    0.8494,
+    0.3292
+   ],
+   [
+    0.8353,
+    0.324
+   ],
+   [
+    0.8196,
+    0.3198
+   ],
+   [
+    0.7713,
+    0.3101
+   ],
+   [
+    0.7594,
+    0.3055
+   ],
+   [
+    0.7509,
+    0.301
+   ],
+   [
+    0.7468,
+    0.2949
+   ],
+   [
+    0.7417,
+    0.2803
+   ],
+   [
+    0.7372,
+    0.2728
+   ],
+   [
+    0.7269,
+    0.2662
+   ],
+   [
+    0.7144,
+    0.2615
+   ],
+   [
+    0.7009,
+    0.2583
+   ],
+   [
+    0.6869,
+    0.2579
+   ],
+   [
+    0.6725,
+    0.2597
+   ],
+   [
+    0.6587,
+    0.2636
+   ],
+   [
+    0.648,
+    0.2703
+   ],
+   [
+    0.6424,
+    0.2781
+   ],
+   [
+    0.6349,
+    0.2863
+   ],
+   [
+    0.6258,
+    0.2939
+   ],
+   [
+    0.6169,
+    0.2998
+   ],
+   [
+    0.591,
+    0.3297
+   ],
+   [
+    0.5769,
+    0.3428
+   ],
+   [
+    0.5537,
+    0.3564
+   ],
+   [
+    0.5327,
+    0.3697
+   ],
+   [
+    0.5155,
+    0.3909
+   ]
+  ],
+  "lab": [
+   0.686,
+   0.391
+  ],
+  "couleur": "#3fae6a"
  },
  {
   "id": "azuren-kai",
@@ -188,12 +369,6 @@
   "histoire": [
    "Le groupe l'affronte au Ryokan d'Azuren Kai.",
    "Le combat se poursuit dans une ruelle. Le groupe le tue."
-  ],
-  "avis": [
-   {
-    "qui": "Harfang",
-    "texte": "le groupe ignore si le chef du clan, Caspian, est au courant de la mort de Kirin."
-   }
   ],
   "relations": [
    {
@@ -340,25 +515,12 @@
    "Les cerisiers roses sont l'incarnation de l'esprit de Mélora.",
    "La Gardienne, et sur son ordre la Magistrature, protègent les clans avant tout le reste, jugeant leur survie indispensable à l'équilibre de la ville."
   ],
-  "avis": [
-   {
-    "qui": "Harfang",
-    "texte": "le système est pire qu'il ne le pensait. Les Urameï savent qu'ils ne risquent rien. Les Kovacz n'auront aucune répercussion officielle, car la lettre de leur chef a suffi à clore une enquête, au prix de la mort de plusieurs innocents."
-   },
-   {
-    "qui": "Harfang",
-    "texte": "la Gardienne cautionne et encourage ce système injuste, et que les nobles regardent le peuple de haut."
-   }
-  ],
   "histoire": [
    "Konya Sokabeï, ami de Harfang, vient demander de l'aide : sa fiancée et lui reçoivent des lettres de menace. Le groupe est invité au mariage.",
    "Sumeren Daïko compare l'écriture des invités à celle des lettres. Le papier ne se vend qu'aux clans, dix pièces d'or la feuille.",
    "La première cérémonie tourne mal : le chef cuisinier meurt empoisonné à la vesine et la mariée est enlevée dans la confusion. Saori Velmaka fait office de médecin légiste.",
    "Le groupe interroge Ankou Urameï et Yureï Poison, qui oriente l'enquête vers la vesine.",
-   "Une fouille de la Magistrature livre les rapports d'enquête sur les jeunes femmes mortes, une lettre de Brodek Kovacz et un coffre du clan Urameï.",
-   "Le groupe retrouve Darrek Kovacz dans une garçonnière de la ville basse. Il le tue et délivre Ayano Kaben.",
-   "Une seconde cérémonie est célébrée au Temple du Tenraku. Absalom y brise la Jarre Miren, lit le parchemin sacré et détruit le sommet du temple d'un cri.",
-   "La Gardienne recule devant Gran Brijit, qui emporte le parchemin. Carnage arrive alors au temple et le groupe l'affronte."
+   "Une fouille de la Magistrature livre les rapports d'enquête sur les jeunes femmes mortes, une lettre de Brodek Kovacz et un coffre du clan Urameï."
   ],
   "relations": [
    {
@@ -403,12 +565,6 @@
   "histoire": [
    "Roven Moto reçoit Harfang et lui tire les oreilles sur la qualité de ses rapports.",
    "Le groupe fouille les archives. Il y trouve les rapports d'enquête sur les jeunes femmes mortes, une lettre de Brodek Kovacz au magistrat de l'époque et un coffre du clan Urameï."
-  ],
-  "avis": [
-   {
-    "qui": "Harfang",
-    "texte": "son poste était un travail de gratte-papier ingrat, mais qu'il lui offrait une bonne couverture pour voyager. Il l'a quitté sans regret."
-   }
   ]
  },
  {
@@ -426,12 +582,6 @@
   ],
   "histoire": [
    "Il tire les oreilles de Harfang sur la qualité et la quantité de ses rapports après les mésaventures de Keras Tauroc."
-  ],
-  "avis": [
-   {
-    "qui": "Harfang",
-    "texte": "Roven Moto n'est ni corrompu ni lâche. Il croit sincèrement que les règles empêchent la ville de s'effondrer."
-   }
   ],
   "relations": [
    {
@@ -486,12 +636,6 @@
    "Absalom brise la Jarre Miren, qui était vide, et se saisit du parchemin sacré. En le lisant, elle comprend que Vassago l'a trahie et pousse un cri qui détruit le temple.",
    "La Gardienne fait apparaître des lianes pour empêcher sa destruction totale. Elle recule devant Gran Brijit, qui emporte le parchemin.",
    "Carnage arrive à la fin de la cérémonie. Le groupe l'affronte."
-  ],
-  "avis": [
-   {
-    "qui": "Harfang",
-    "texte": "la Gardienne a tort d'avoir cédé le parchemin. Lui aurait tout fait pour protéger les secrets de son peuple."
-   }
   ]
  },
  {
@@ -577,8 +721,8 @@
   "titre": "Boutique de curiosités",
   "parent": "roshen-buru",
   "pos": {
-   "x": 0.133,
-   "y": 0.497
+   "x": 0.27,
+   "y": 0.42
   },
   "carte": "ville",
   "zoom": 0.2,
@@ -611,7 +755,11 @@
     "type": "Planque",
     "ton": "negatif"
    }
-  ]
+  ],
+  "pos": {
+   "x": 0.25,
+   "y": 0.88
+  }
  },
  {
   "id": "planque-yurei",
@@ -622,7 +770,11 @@
   "resume": "Une pièce petite et trop chaude derrière un comptoir qui n'est pas le sien, caisses jusqu'au plafond.",
   "connu": [
    "Ankou Urameï en donne l'adresse au groupe."
-  ]
+  ],
+  "pos": {
+   "x": 0.1,
+   "y": 0.7
+  }
  },
  {
   "id": "maison-uramei",
@@ -637,7 +789,11 @@
   "connu": [
    "Ankou y reçoit assis, sans table ni bureau, Sabaké à sa gauche et Nyssra à sa droite.",
    "Il fait sombre dans la pièce, et pourtant il n'y a pas d'ombres."
-  ]
+  ],
+  "pos": {
+   "x": 0.2,
+   "y": 0.6
+  }
  },
  {
   "id": "pavillon-mariage",
@@ -653,7 +809,11 @@
   "histoire": [
    "La première cérémonie s'y tient.",
    "Une nuée de phalènes éteint la salle et Ayano Kaben est enlevée par une fenêtre du fond."
-  ]
+  ],
+  "pos": {
+   "x": 0.45,
+   "y": 0.12
+  }
  },
  {
   "id": "egouts",
@@ -670,7 +830,11 @@
   ],
   "histoire": [
    "Harfang suit la trace de Tobiya jusqu'ici."
-  ]
+  ],
+  "pos": {
+   "x": 0.4,
+   "y": 0.8
+  }
  },
  {
   "id": "clan-tsuren",
@@ -684,12 +848,6 @@
    "Havoc Tsuren, son père, est un Grand-Duc respecté.",
    "Rysei Tsuren, sa sœur, a reçu un Tenrai lors du Tenraku.",
    "La famille ignore que Harfang est espion."
-  ],
-  "avis": [
-   {
-    "qui": "Harfang",
-    "texte": "il est objectivement l'un des atouts les plus précieux de Roshen Buru en ce moment, ce que sa famille ne voit pas."
-   }
   ],
   "histoire": [
    "Harfang n'a pas rendu visite à sa famille pendant l'enquête du mariage."
@@ -720,7 +878,8 @@
     "type": "Fils",
     "ton": "neutre"
    }
-  ]
+  ],
+  "lieu": "domaine-tsuren"
  },
  {
   "id": "rysei-tsuren",
@@ -741,7 +900,8 @@
     "type": "Frère",
     "ton": "neutre"
    }
-  ]
+  ],
+  "lieu": "academie-tenraku"
  },
  {
   "id": "kynn-tsuren",
@@ -755,19 +915,14 @@
    "Elle trouve les mots pour que les repas de famille ne finissent pas en silence total.",
    "Elle a toujours regardé Harfang autrement que les autres, sans jamais mettre de mots dessus."
   ],
-  "avis": [
-   {
-    "qui": "Harfang",
-    "texte": "son regard est de la pitié ou de la compréhension, il ne sait pas laquelle."
-   }
-  ],
   "relations": [
    {
     "cible": "harfang-tsuren",
     "type": "Fils",
     "ton": "positif"
    }
-  ]
+  ],
+  "lieu": "domaine-tsuren"
  },
  {
   "id": "clan-kovacz",
@@ -835,7 +990,8 @@
     "type": "Père",
     "ton": "positif"
    }
-  ]
+  ],
+  "lieu": "domaine-kovacz"
  },
  {
   "id": "ayano-kaben",
@@ -892,7 +1048,8 @@
     "type": "Ami",
     "ton": "positif"
    }
-  ]
+  ],
+  "lieu": "maison-sokabei"
  },
  {
   "id": "clan-anadori",
@@ -909,12 +1066,6 @@
    "Caspian, le chef du clan, a commandé deux armes à Tessei Kanaë pour 50 000 pièces d'or.",
    "Le groupe les a volées avant la livraison et a fait accuser Oren Sidaï, un vendeur louche.",
    "Oren a été tué par les Anadori dès le lendemain."
-  ],
-  "avis": [
-   {
-    "qui": "Harfang",
-    "texte": "c'est un clan avec lequel il n'a jamais traité. Il ignore si Caspian sait pour Kirin, si le vol a été remonté jusqu'au groupe et quelles suites le clan prépare."
-   }
   ]
  },
  {
@@ -928,12 +1079,6 @@
    "Ankou Urameï, son chef, est un démon du cercle de Minauros, le troisième des Enfers.",
    "Ses deux femmes, Sabaké et Nyssra, semblent aussi être des démons.",
    "Le clan tient la ville basse et fait commerce de vesine, d'âmes et de contrats."
-  ],
-  "avis": [
-   {
-    "qui": "Harfang",
-    "texte": "la Gardienne ne peut pas ignorer ce qu'ils sont. Qu'elle accepte qu'un des cinq clans soit d'une si mauvaise engeance en dit long sur la partisanerie politique de la ville."
-   }
   ]
  },
  {
@@ -959,12 +1104,6 @@
    "Il fait voler un parchemin qui semble écrit sur de la peau humaine, et un collier orné d'une pièce, dans un coffre de la Magistrature.",
    "Philippa identifie la pièce comme une pièce d'âme, la monnaie des Enfers.",
    "Harfang lui apprend que la Protectrice a un pacte avec Levistus et que Balamor tente de prendre possession de citoyens. Il ne réagit à aucune des deux informations."
-  ],
-  "avis": [
-   {
-    "qui": "Harfang",
-    "texte": "Ankou est menaçant et peu digne de confiance, mais ses compagnes ont l'habitude de composer avec ce genre d'êtres. Il ferme les yeux pour l'instant, et pense que le groupe aura peut-être besoin de lui."
-   }
   ],
   "relations": [
    {
@@ -1073,12 +1212,6 @@
    "Il avait entamé une transformation et disait servir « la Mère de la toile », à Balamor.",
    "Un grand plan viserait à corrompre les habitants pour conquérir les villes."
   ],
-  "avis": [
-   {
-    "qui": "Harfang",
-    "texte": "la Protectrice et Ankou sous-estiment le danger. Il a rapporté ses trouvailles aux deux, et il enquêtera lui-même s'il se rend à Balamor."
-   }
-  ],
   "relations": [
    {
     "cible": "yurei-poison",
@@ -1128,16 +1261,6 @@
    "Le groupe la voit pour la première fois au sommet du Temple du Tenraku. Elle fait apparaître des lianes pour empêcher sa destruction.",
    "Elle recule devant Gran Brijit et la laisse récupérer le parchemin."
   ],
-  "avis": [
-   {
-    "qui": "Harfang",
-    "texte": "elle lui avait toujours semblé juste, bienveillante et belle, mais qu'elle est bien plus puissante et plus calculatrice qu'il ne l'imaginait, avec une vision géopolitique globale et des débuts de manipulation."
-   },
-   {
-    "qui": "Harfang",
-    "texte": "elle a reculé devant Gran Brijit parce qu'elle sait que le plafond de la puissance est plus haut qu'elle."
-   }
-  ],
   "relations": [
    {
     "cible": "neryn-yosa",
@@ -1164,7 +1287,8 @@
     "type": "Alliance envisagée",
     "ton": "neutre"
    }
-  ]
+  ],
+  "lieu": "palais-miren-buru"
  },
  {
   "id": "neryn-yosa",
@@ -1188,16 +1312,6 @@
   ],
   "histoire": [
    "Elle est mise hors d'état de nuire par l'explosion du Temple du Tenraku."
-  ],
-  "avis": [
-   {
-    "qui": "Harfang",
-    "texte": "elle est amoureuse de la Gardienne, d'après son journal, et qu'elle considère les factions de Thaldera comme une menace."
-   },
-   {
-    "qui": "Harfang",
-    "texte": "en voulant faire le bien, elle s'est rapprochée de ce que tout le monde tient pour le mal absolu."
-   }
   ],
   "relations": [
    {
@@ -1225,7 +1339,8 @@
     "type": "Fait espionner",
     "ton": "negatif"
    }
-  ]
+  ],
+  "lieu": "palais-miren-buru"
  },
  {
   "id": "ginko-noshi-buru",
@@ -1245,12 +1360,6 @@
    "Le groupe l'a croisée à Thaldera.",
    "Elle a affronté Gran Brijit dans les sables de Kazad Marunn. Gran Brijit semblait lui vouloir quelque chose."
   ],
-  "avis": [
-   {
-    "qui": "Harfang",
-    "texte": "c'est la première révélation de son épiphanie : des proches du gouvernement savaient depuis longtemps qu'un autre continent existe, et s'y rendent. Il n'a pas de nouvelles d'elle depuis, et pourrait interroger Gran Brijit."
-   }
-  ],
   "relations": [
    {
     "cible": "anaru-miren-buru",
@@ -1262,7 +1371,8 @@
     "type": "Affrontement",
     "ton": "negatif"
    }
-  ]
+  ],
+  "lieu": "palais-miren-buru"
  },
  {
   "id": "thibwick-rumple",
@@ -1280,12 +1390,6 @@
    "Il a participé à construire les mécanismes de défense de Roshen Buru. La Protectrice le fait espionner, et son espion recommande de ne pas le tuer pour cette raison.",
    "Sa capture semble privilégiée."
   ],
-  "avis": [
-   {
-    "qui": "Harfang",
-    "texte": "Thibwick minimise la situation, mais qu'il risque de s'enfermer dans son atelier et de piéger la porte pour se préparer au pire. Il l'a prévenu."
-   }
-  ],
   "relations": [
    {
     "cible": "harfang-tsuren",
@@ -1297,7 +1401,8 @@
     "type": "Surveillé par",
     "ton": "negatif"
    }
-  ]
+  ],
+  "lieu": "atelier-thibwick"
  },
  {
   "id": "tessei-kanae",
@@ -1395,16 +1500,6 @@
    "En lisant le parchemin, elle comprend la supercherie de son maître. Elle pousse un cri de tristesse, de désespoir et de rage qui détruit le temple.",
    "Elle s'effondre sur elle-même, puis part ou est attirée vers les Enfers."
   ],
-  "avis": [
-   {
-    "qui": "Harfang",
-    "texte": "il n'y a pas de titan à Istra, et que la menace lui paraissait peu réelle. Il trouve qu'elle a été arrosée par son propre arrosoir."
-   },
-   {
-    "qui": "Harfang",
-    "texte": "elle est fourbe et capable du pire."
-   }
-  ],
   "relations": [
    {
     "cible": "vassago",
@@ -1450,12 +1545,6 @@
    "Le groupe interrompt sa conversation avec un vieux monsieur inconnu, à qui elle dit que « l'équilibre doit être préservé ».",
    "Elle intervient au Temple du Tenraku et emporte le parchemin sacré."
   ],
-  "avis": [
-   {
-    "qui": "Harfang",
-    "texte": "Gran Brijit est froide et effrayante, mais qu'il pourrait lui demander ce qu'est devenue Ginko."
-   }
-  ],
   "relations": [
    {
     "cible": "anaru-miren-buru",
@@ -1492,5 +1581,494 @@
    "Le groupe l'affronte après la destruction du sommet du temple."
   ],
   "question": "Qui est Carnage, et qu'est devenue la foule du temple ?"
+ },
+ {
+  "id": "domaine-tsuren",
+  "type": "lieu",
+  "nom": "Le domaine Tsuren",
+  "titre": "Maison de la famille de Harfang",
+  "parent": "roshen-buru",
+  "resume": "Grand domaine du quartier noble, foyer de Havoc, Kynn et Rysei.",
+  "connu": [
+   "Le statut Tsuren de Harfang ouvre les ascenseurs et le quartier noble à tout le groupe."
+  ],
+  "pos": {
+   "x": 0.42,
+   "y": 0.17
+  },
+  "carte": "ville",
+  "zoom": 0.12
+ },
+ {
+  "id": "ascenseurs",
+  "type": "lieu",
+  "nom": "Les ascenseurs géants",
+  "titre": "Seul accès au quartier noble",
+  "parent": "roshen-buru",
+  "resume": "Trois cabines plus grandes qu'une maison, tirées par des roues de pierre et de bois, au nord-ouest, au nord-est et au sud du Pillier.",
+  "connu": [
+   "Des gardes filtrent la montée : laissez-passer, convocation ou nom de clan.",
+   "Le nom Tsuren de Harfang suffit à couvrir ses compagnes.",
+   "Depuis la cabine, on voit les quartiers bas bien plus denses qu'ils n'en ont l'air."
+  ],
+  "pos": {
+   "x": 0.52,
+   "y": 0.47
+  },
+  "carte": "ville",
+  "zoom": 0.12
+ },
+ {
+  "id": "academie-tenraku",
+  "type": "lieu",
+  "nom": "L'Académie Tenraku",
+  "titre": "Cour d'entraînement des jeunes Mirenai",
+  "parent": "roshen-buru",
+  "resume": "Grande cour de terre battue ceinte de bâtiments bas, pieds nus et bois contre bois, une trentaine d'élèves.",
+  "pos": {
+   "x": 0.85,
+   "y": 0.85
+  },
+  "carte": "ville",
+  "zoom": 0.12
+ },
+ {
+  "id": "kaoren-mishta",
+  "type": "pnj",
+  "nom": "Maître Kaoren Mishta",
+  "titre": "Instructeur de l'Académie",
+  "parent": "academie-tenraku",
+  "lieu": "academie-tenraku",
+  "statut": "vivant",
+  "resume": "Vieil instructeur calme qui corrige une erreur sur trois.",
+  "connu": [
+   "Rysei s'entraîne seule deux ou trois fois par semaine, à une force qui dépasse déjà son enseignement.",
+   "Il demande à Harfang comment se passe la cohabitation avec Stryge."
+  ]
+ },
+ {
+  "id": "temple-de-melora",
+  "type": "lieu",
+  "nom": "Le temple de Mélora Sylvestre",
+  "titre": "Temple ouvert à la végétation",
+  "parent": "roshen-buru",
+  "resume": "Temple sans porte, mousse sur les colonnes, racines qui soulèvent les dalles et eau qui court sous les pierres.",
+  "connu": [
+   "Les fidèles s'y assoient sans rien dire, et personne ne les dérange."
+  ],
+  "pos": {
+   "x": 0.5,
+   "y": 0.9
+  },
+  "carte": "ville",
+  "zoom": 0.12,
+  "alias": [
+   "temple de Mélora"
+  ]
+ },
+ {
+  "id": "takko-halvaki",
+  "type": "pnj",
+  "nom": "Takko Halvaki",
+  "titre": "Prêtre de Mélora Sylvestre",
+  "parent": "temple-de-melora",
+  "lieu": "temple-de-melora",
+  "statut": "vivant",
+  "resume": "Ami d'enfance de Harfang, taille un rosier en tablier.",
+  "connu": [
+   "Il n'a rien vu et jure que le temple est protégé.",
+   "Il bénit tout le monde, tout le temps."
+  ],
+  "histoire": [
+   "Il célèbre la première cérémonie de mariage, celle de la salle des fêtes."
+  ]
+ },
+ {
+  "id": "domaine-kovacz",
+  "type": "lieu",
+  "nom": "Le domaine Kovacz",
+  "titre": "Un clan qui vend ses biens un à un",
+  "parent": "roshen-buru",
+  "resume": "Portail ouvert, jardins mal tenus, pièces froides où des traces claires marquent les objets disparus.",
+  "connu": [
+   "Un vieux domestique essoufflé s'excuse sans qu'on lui demande rien."
+  ],
+  "pos": {
+   "x": 0.3,
+   "y": 0.16
+  },
+  "carte": "ville",
+  "zoom": 0.12
+ },
+ {
+  "id": "salon-anadori",
+  "type": "lieu",
+  "nom": "Le salon Anadori",
+  "titre": "Quartier noble",
+  "parent": "roshen-buru",
+  "resume": "Salon aux volets clos en plein jour, fumée lourde et deux chiens endormis devant une cheminée éteinte.",
+  "connu": [
+   "On fait attendre vingt minutes dans un vestibule vide."
+  ],
+  "pos": {
+   "x": 0.6,
+   "y": 0.14
+  },
+  "carte": "ville",
+  "zoom": 0.12
+ },
+ {
+  "id": "caspian-anadori",
+  "type": "pnj",
+  "nom": "Caspian Anadori",
+  "titre": "Chef du clan Anadori",
+  "parent": "clan-anadori",
+  "lieu": "salon-anadori",
+  "statut": "vivant",
+  "resume": "Arrogant, oisif, il fume et méprise. Il ne se lève pas.",
+  "connu": [
+   "Il jure qu'un Anadori n'épouserait jamais en dessous de son rang, donc n'aurait aucun motif.",
+   "Il charge Rysei Tsuren sans preuve, par pure méchanceté.",
+   "Il ne nomme jamais Darrek Kovacz."
+  ],
+  "relations": [
+   {
+    "cible": "rysei-tsuren",
+    "type": "Calomnie",
+    "ton": "negatif"
+   },
+   {
+    "cible": "kirin-anadori",
+    "type": "Chef du clan",
+    "ton": "neutre"
+   }
+  ]
+ },
+ {
+  "id": "maison-sokabei",
+  "type": "lieu",
+  "nom": "La maison Sokabeï",
+  "titre": "Marchands de tissus",
+  "parent": "roshen-buru",
+  "resume": "Maison propre, cour minuscule où sèche du linge, caisses et lanternes prêtes pour la fête.",
+  "connu": [
+   "Une lettre de menace est posée sur la table."
+  ],
+  "pos": {
+   "x": 0.3,
+   "y": 0.55
+  },
+  "carte": "ville",
+  "zoom": 0.12
+ },
+ {
+  "id": "kazen-sokabei",
+  "type": "pnj",
+  "nom": "Kazen Sokabeï",
+  "titre": "Marchand de tissus",
+  "parent": "roshen-buru",
+  "lieu": "maison-sokabei",
+  "statut": "vivant",
+  "resume": "Père de Konya, mal à l'aise, il n'ose pas se mêler de l'affaire."
+ },
+ {
+  "id": "wano-sokabei",
+  "type": "pnj",
+  "nom": "Wano Sokabeï",
+  "titre": "Mère de Konya",
+  "parent": "roshen-buru",
+  "lieu": "maison-sokabei",
+  "statut": "vivant",
+  "resume": "Elle coud, écoute et ne dit rien. C'est elle qui a vu quelqu'un rôder dans la rue."
+ },
+ {
+  "id": "domaine-kaben",
+  "type": "lieu",
+  "nom": "La maison Kaben",
+  "titre": "Famille de la mariée",
+  "parent": "roshen-buru",
+  "resume": "Maison où le clan Kaben se referme après l'enlèvement.",
+  "pos": {
+   "x": 0.35,
+   "y": 0.35
+  },
+  "carte": "ville",
+  "zoom": 0.12
+ },
+ {
+  "id": "doryen-kaben",
+  "type": "pnj",
+  "nom": "Doryen Kaben",
+  "titre": "Père d'Ayano",
+  "parent": "roshen-buru",
+  "lieu": "domaine-kaben",
+  "statut": "vivant",
+  "resume": "Courtoisie parfaite qui blesse plus qu'un cri.",
+  "connu": [
+   "Il humilie poliment Konya devant tous pendant le discours.",
+   "Son clan doit quelque chose aux Urameï, dettes de jeu."
+  ],
+  "histoire": [
+   "Après le sauvetage d'Ayano, il sert lui-même les Sokabeï."
+  ]
+ },
+ {
+  "id": "siona-kaben",
+  "type": "pnj",
+  "nom": "Siona Kaben",
+  "titre": "Sœur d'Ayano",
+  "parent": "roshen-buru",
+  "lieu": "domaine-kaben",
+  "statut": "vivant",
+  "resume": "Elle soupçonne les Anadori par préjugé de classe.",
+  "connu": [
+   "Ayano a fréquenté il y a des années un fils de clan de haute noblesse, arrogant et détestable. Elle n'a jamais lâché son nom."
+  ]
+ },
+ {
+  "id": "maison-de-the",
+  "type": "lieu",
+  "nom": "La maison de thé",
+  "titre": "Base du groupe à Roshen Buru",
+  "parent": "roshen-buru",
+  "resume": "Maison de thé où le groupe loge. On y apprend ce que les domestiques racontent quand ils sont fatigués.",
+  "connu": [
+   "Trois pièces le thé, quinze la chambre."
+  ],
+  "pos": {
+   "x": 0.45,
+   "y": 0.62
+  },
+  "carte": "ville",
+  "zoom": 0.12
+ },
+ {
+  "id": "hoshka",
+  "type": "pnj",
+  "nom": "Hoshka",
+  "titre": "Patron de la maison de thé",
+  "parent": "roshen-buru",
+  "lieu": "maison-de-the",
+  "statut": "vivant",
+  "resume": "Ancien, lourd, économe de ses mots. Il ne juge personne.",
+  "connu": [
+   "Les Kovacz déclinent et le fils est un problème connu. Les Urameï tiennent le bas quartier. Les Anadori se battent partout en ville."
+  ]
+ },
+ {
+  "id": "orisa",
+  "type": "pnj",
+  "nom": "Orisa",
+  "titre": "Serveuse de la maison de thé",
+  "parent": "roshen-buru",
+  "lieu": "maison-de-the",
+  "statut": "vivant",
+  "resume": "Jeune, observatrice, bavarde mais prudente.",
+  "connu": [
+   "Le mariage Sokabeï-Kaben fait jaser, scandaleux ou romantique selon la table."
+  ]
+ },
+ {
+  "id": "quartier-des-plaisirs",
+  "type": "lieu",
+  "nom": "Le quartier des plaisirs",
+  "titre": "Maison de Madame Renka",
+  "parent": "roshen-buru",
+  "resume": "Ruelles où l'on vend de l'information autant que du plaisir.",
+  "pos": {
+   "x": 0.2,
+   "y": 0.42
+  },
+  "carte": "ville",
+  "zoom": 0.12
+ },
+ {
+  "id": "madame-renka",
+  "type": "pnj",
+  "nom": "Madame Renka",
+  "titre": "Tenancière du quartier des plaisirs",
+  "parent": "roshen-buru",
+  "lieu": "quartier-des-plaisirs",
+  "statut": "vivant",
+  "resume": "Elle vend l'information et ne ment pas.",
+  "connu": [
+   "Maeko, l'une de ses courtisanes, connaît Darrek, qui ne vient plus depuis des mois."
+  ]
+ },
+ {
+  "id": "curiosites-maven",
+  "type": "lieu",
+  "nom": "Les curiosités de Maven Ako",
+  "titre": "Boutique de curiosités",
+  "parent": "roshen-buru",
+  "resume": "Boutique d'objets étranges du quartier des marchands.",
+  "pos": {
+   "x": 0.33,
+   "y": 0.5
+  },
+  "carte": "ville",
+  "zoom": 0.12
+ },
+ {
+  "id": "maven-ako",
+  "type": "pnj",
+  "nom": "Maven Ako",
+  "titre": "Marchand de curiosités",
+  "parent": "roshen-buru",
+  "lieu": "curiosites-maven",
+  "statut": "vivant",
+  "resume": "Vend des objets étranges et curieux."
+ },
+ {
+  "id": "echoppe-ilvaro",
+  "type": "lieu",
+  "nom": "L'échoppe d'Ilvaro",
+  "titre": "Marchand",
+  "parent": "roshen-buru",
+  "resume": "Échoppe de marchand de la ville basse.",
+  "pos": {
+   "x": 0.7,
+   "y": 0.55
+  },
+  "carte": "ville",
+  "zoom": 0.12
+ },
+ {
+  "id": "ilvaro",
+  "type": "pnj",
+  "nom": "Ilvaro",
+  "titre": "Marchand",
+  "parent": "roshen-buru",
+  "lieu": "echoppe-ilvaro",
+  "statut": "vivant",
+  "resume": "Marchand de la ville basse."
+ },
+ {
+  "id": "atelier-thibwick",
+  "type": "lieu",
+  "nom": "L'atelier de Thibwick",
+  "titre": "Atelier d'inventeur nain",
+  "parent": "roshen-buru",
+  "resume": "Atelier du nain Thibwick Rumple.",
+  "pos": {
+   "x": 0.25,
+   "y": 0.3
+  },
+  "carte": "ville",
+  "zoom": 0.12
+ },
+ {
+  "id": "orashay",
+  "type": "pnj",
+  "nom": "Maître Orashay",
+  "titre": "Grand Officiant du Temple du Tenraku",
+  "parent": "roshen-buru",
+  "lieu": "temple-du-tenraku",
+  "statut": "vivant",
+  "resume": "Se tient au centre de la colonne de lumière et ne parle pas fort. Tout le monde se tait.",
+  "connu": [
+   "Aucune union n'avait été bénie sous cette voûte depuis que la pierre fut ouverte."
+  ],
+  "histoire": [
+   "Il officie la seconde cérémonie de mariage.",
+   "Quand Absalom brise la jarre, il murmure : « Vous venez de briser un objet vieux de neuf cents ans. »"
+  ]
+ },
+ {
+  "id": "tasseren",
+  "type": "pnj",
+  "nom": "Tasseren",
+  "titre": "Assistante du magistrat",
+  "parent": "roshen-buru",
+  "lieu": "magistrature",
+  "statut": "vivant",
+  "resume": "Politesse qui ne promet rien. Elle ferme elle-même les archives chaque soir."
+ },
+ {
+  "id": "oryo-takashen",
+  "type": "pnj",
+  "nom": "Oryo Takashen",
+  "titre": "Chambellan",
+  "parent": "roshen-buru",
+  "lieu": "palais-miren-buru",
+  "statut": "vivant",
+  "resume": "Chambellan du palais de la Gardienne."
+ },
+ {
+  "id": "doku",
+  "type": "pnj",
+  "nom": "Doku",
+  "titre": "Mendiant",
+  "parent": "roshen-buru",
+  "lieu": "roshen-buru",
+  "statut": "vivant",
+  "resume": "Mendiant de la ville."
+ },
+ {
+  "id": "bruska",
+  "type": "pnj",
+  "nom": "Bruska",
+  "titre": "Homme de main de Darrek",
+  "parent": "clan-kovacz",
+  "lieu": "planque-darrek",
+  "statut": "vaincu",
+  "resume": "Il ôte son bandage : dessous, rien, un homme ordinaire. Le bandage servait à acheter la Vésine.",
+  "connu": [
+   "La planque est achetée à son nom, payée comptant il y a quatre ans.",
+   "Yurëi le connaît comme l'acheteur régulier."
+  ],
+  "histoire": [
+   "Le groupe le combat devant la porte de la planque."
+  ]
+ },
+ {
+  "id": "kabo",
+  "type": "pnj",
+  "nom": "Kabo",
+  "titre": "Chef cuisinier",
+  "parent": "roshen-buru",
+  "lieu": "pavillon-mariage",
+  "statut": "mort",
+  "resume": "Retrouvé mort au petit matin, overdose de Vésine d'une pureté impossible à acheter pour son rang."
+ },
+ {
+  "id": "tosha",
+  "type": "pnj",
+  "nom": "Tosha",
+  "titre": "Sous-chef",
+  "parent": "roshen-buru",
+  "lieu": "pavillon-mariage",
+  "statut": "vivant",
+  "resume": "Prend le relais après Kabo. Il sort discrètement par la porte de service."
+ },
+ {
+  "id": "otta",
+  "type": "pnj",
+  "nom": "Otta",
+  "titre": "Ivrogne du bas quartier",
+  "parent": "roshen-buru",
+  "lieu": "pavillon-mariage",
+  "statut": "vivant",
+  "resume": "Tente d'entrer au mariage pour boire à l'œil. Fausse alerte."
+ },
+ {
+  "id": "obumi",
+  "type": "pnj",
+  "nom": "Obumi",
+  "titre": "Fournisseur de lanternes",
+  "parent": "roshen-buru",
+  "lieu": "pavillon-mariage",
+  "statut": "vivant",
+  "resume": "Sa livraison a été remplacée. Il jure n'avoir rien changé."
+ },
+ {
+  "id": "sennai",
+  "type": "pnj",
+  "nom": "Sennaï",
+  "titre": "Livreur de fleurs",
+  "parent": "roshen-buru",
+  "lieu": "pavillon-mariage",
+  "statut": "vivant",
+  "resume": "Payé le double pour aller ailleurs. Il décrit un homme au visage bandé, voix rauque, pièces neuves."
  }
 ]

@@ -6,10 +6,10 @@
   "titre": "Les steppes rouges, terre de Kord",
   "parent": "istra",
   "zone": {
-   "x": 0.38,
-   "y": 0.5,
-   "w": 0.53,
-   "h": 0.38
+   "x": 0.356,
+   "y": 0.59,
+   "w": 0.576,
+   "h": 0.319
   },
   "blason": "img/blasons/keras-tauroc.webp",
   "accent": "#d96a28",
@@ -42,7 +42,322 @@
     "type": "Consul",
     "ton": "neutre"
    }
-  ]
+  ],
+  "poly": [
+   [
+    0.9106,
+    0.6293
+   ],
+   [
+    0.8989,
+    0.6143
+   ],
+   [
+    0.8762,
+    0.6044
+   ],
+   [
+    0.8519,
+    0.5955
+   ],
+   [
+    0.7861,
+    0.5902
+   ],
+   [
+    0.7107,
+    0.5935
+   ],
+   [
+    0.6723,
+    0.6036
+   ],
+   [
+    0.6318,
+    0.6163
+   ],
+   [
+    0.5875,
+    0.6311
+   ],
+   [
+    0.5412,
+    0.6439
+   ],
+   [
+    0.4956,
+    0.6575
+   ],
+   [
+    0.4557,
+    0.6757
+   ],
+   [
+    0.4176,
+    0.6947
+   ],
+   [
+    0.3927,
+    0.7092
+   ],
+   [
+    0.3815,
+    0.7205
+   ],
+   [
+    0.3751,
+    0.7322
+   ],
+   [
+    0.381,
+    0.7532
+   ],
+   [
+    0.3849,
+    0.764
+   ],
+   [
+    0.3921,
+    0.7888
+   ],
+   [
+    0.3985,
+    0.8154
+   ],
+   [
+    0.3989,
+    0.8265
+   ],
+   [
+    0.398,
+    0.8363
+   ],
+   [
+    0.3953,
+    0.8456
+   ],
+   [
+    0.3917,
+    0.8539
+   ],
+   [
+    0.3855,
+    0.861
+   ],
+   [
+    0.3693,
+    0.8702
+   ],
+   [
+    0.3628,
+    0.875
+   ],
+   [
+    0.3582,
+    0.8799
+   ],
+   [
+    0.3565,
+    0.8846
+   ],
+   [
+    0.3582,
+    0.8891
+   ],
+   [
+    0.3625,
+    0.8952
+   ],
+   [
+    0.3699,
+    0.9014
+   ],
+   [
+    0.3789,
+    0.9066
+   ],
+   [
+    0.3887,
+    0.9086
+   ],
+   [
+    0.3989,
+    0.9087
+   ],
+   [
+    0.4091,
+    0.9072
+   ],
+   [
+    0.4184,
+    0.9038
+   ],
+   [
+    0.4391,
+    0.8906
+   ],
+   [
+    0.4493,
+    0.8853
+   ],
+   [
+    0.4596,
+    0.8819
+   ],
+   [
+    0.4707,
+    0.8772
+   ],
+   [
+    0.4919,
+    0.8665
+   ],
+   [
+    0.5116,
+    0.8583
+   ],
+   [
+    0.5229,
+    0.8527
+   ],
+   [
+    0.534,
+    0.8456
+   ],
+   [
+    0.5444,
+    0.84
+   ],
+   [
+    0.5544,
+    0.8358
+   ],
+   [
+    0.5648,
+    0.8326
+   ],
+   [
+    0.5741,
+    0.8314
+   ],
+   [
+    0.5811,
+    0.8336
+   ],
+   [
+    0.5867,
+    0.837
+   ],
+   [
+    0.5927,
+    0.8422
+   ],
+   [
+    0.6086,
+    0.851
+   ],
+   [
+    0.6177,
+    0.8542
+   ],
+   [
+    0.6276,
+    0.8539
+   ],
+   [
+    0.6431,
+    0.851
+   ],
+   [
+    0.6656,
+    0.8453
+   ],
+   [
+    0.7091,
+    0.8324
+   ],
+   [
+    0.7277,
+    0.8251
+   ],
+   [
+    0.7454,
+    0.8174
+   ],
+   [
+    0.763,
+    0.811
+   ],
+   [
+    0.8287,
+    0.7836
+   ],
+   [
+    0.8383,
+    0.7774
+   ],
+   [
+    0.8481,
+    0.7694
+   ],
+   [
+    0.857,
+    0.7592
+   ],
+   [
+    0.8681,
+    0.7412
+   ],
+   [
+    0.8752,
+    0.7355
+   ],
+   [
+    0.8855,
+    0.7307
+   ],
+   [
+    0.914,
+    0.7204
+   ],
+   [
+    0.9223,
+    0.7158
+   ],
+   [
+    0.9293,
+    0.7106
+   ],
+   [
+    0.9327,
+    0.7033
+   ],
+   [
+    0.9306,
+    0.6958
+   ],
+   [
+    0.927,
+    0.6889
+   ],
+   [
+    0.9226,
+    0.6823
+   ],
+   [
+    0.9148,
+    0.6666
+   ],
+   [
+    0.9127,
+    0.6599
+   ]
+  ],
+  "lab": [
+   0.668,
+   0.724
+  ],
+  "couleur": "#d9402f"
  },
  {
   "id": "brakka",
@@ -225,12 +540,6 @@
    "Des Rocs, rapaces géants, tentent régulièrement de se poser sur l'aile ouest.",
    "Le groupe y a emporté un registre rédigé en istran, qui n'a pas été traduit. Il raconte le séjour d'un voyageur sans nom, qui a laissé un nom ancien avant de partir."
   ],
-  "avis": [
-   {
-    "qui": "Harfang",
-    "texte": "il peut lire le registre, puisqu'il lit l'istran, et que ce voyageur est peut-être plus lointain qu'Absalom."
-   }
-  ],
   "relations": [
    {
     "cible": "frere-ossian",
@@ -293,12 +602,6 @@
    "La religion de Kord prône la force, l'honneur, le combat. Le clergé est très proche du pouvoir militaire.",
    "L'ambassadeur de Roshen Buru, Otoba, a été assassiné ici. Les accès à Roshen Buru en ont été fermés.",
    "Une araignée a pris le contrôle d'un homme du peuple, qui a attaqué le groupe dans la rue. Des symboles de Balamor étaient gravés dans le bois de sa chambre."
-  ],
-  "avis": [
-   {
-    "qui": "Harfang",
-    "texte": "le colisée est barbare, une opinion qu'il n'a jamais dite à voix haute. Il connaissait déjà les quartiers principaux, les habitudes des gardes et les entrées de service des bâtiments officiels."
-   }
   ],
   "histoire": [
    "Le groupe arrive en plein festival des Cornes Rouges, sur la piste d'Absalom, passée quelques jours plus tôt.",
@@ -456,7 +759,8 @@
   "resume": "Consul de la Maison Tauroc. Autoritaire et pragmatique.",
   "connu": [
    "Le groupe ne l'a jamais rencontré directement."
-  ]
+  ],
+  "lieu": "keras-tauroc"
  },
  {
   "id": "vitiosa",
@@ -473,12 +777,6 @@
    "Voyant que le groupe restait indifférent à la somme, elle l'a interrogé sur son origine et ses intentions, avec politesse et patience.",
    "Le groupe a découvert qu'elle est une démone de Maladomini. Elle est relativement alliée avec lui.",
    "Elle a fait remettre une missive au groupe par Vibia."
-  ],
-  "avis": [
-   {
-    "qui": "Harfang",
-    "texte": "son sourire est troublant, sans qu'il sache exactement pourquoi. Il l'avait croisée lors d'événements officiels."
-   }
   ],
   "relations": [
    {
@@ -538,7 +836,8 @@
    "Avant les Cornes d'Or, il refuse poliment mais définitivement. Après, il accueille chaleureusement.",
    "Absalom lui demandait une relique liée à un pouvoir ancien, peut-être d'avant la grande catastrophe, et s'informait sur la provenance des pierres précieuses. Il l'a orientée vers la Maison Tauroc.",
    "Il l'a revue le lendemain près du port, avec l'air d'une femme qui avait pris une décision."
-  ]
+  ],
+  "lieu": "keras-tauroc"
  },
  {
   "id": "naevia",
@@ -551,7 +850,8 @@
   "connu": [
    "Elle n'a ni enseigne ni adresse fixe : un pan de mur différent chaque jour.",
    "Jane lui a volé une « Hache Étrange » à 2 000 pièces d'or : la garde d'une épée brisée aux glyphes non décoratifs."
-  ]
+  ],
+  "lieu": "keras-tauroc"
  },
  {
   "id": "eshkal",
@@ -563,7 +863,8 @@
   "resume": "Il parle vite et beaucoup, et prétend fabriquer lui-même ses potions.",
   "connu": [
    "C'est vrai pour environ la moitié."
-  ]
+  ],
+  "lieu": "keras-tauroc"
  },
  {
   "id": "comatus",
@@ -576,7 +877,8 @@
   "connu": [
    "Son entrepôt ressemble à l'intérieur d'une tête qui n'a jamais rien jeté.",
    "Il vend une tablette de pierre gravée de glyphes anciens, déchiffrable en partie : un fragment sur les Architectes."
-  ]
+  ],
+  "lieu": "keras-tauroc"
  },
  {
   "id": "capito",
@@ -591,12 +893,6 @@
    "Avant les Cornes d'Or, il refuse de parler. Après, il parle.",
    "Il raconte qu'une femme en noir a fait modifier une barge, et qu'elle a payé généreusement.",
    "Il conduit le groupe au ponton du Tenrai Buru et se porte garant auprès de Yorisa, qu'il connaît de longue date."
-  ],
-  "avis": [
-   {
-    "qui": "Harfang",
-    "texte": "c'est un contact fiable qui ne pose pas de questions. Il a déjà utilisé ses services pour des traversées discrètes."
-   }
   ]
  },
  {
@@ -663,12 +959,6 @@
   "connu": [
    "Elle refuse tout inconnu sans recommandation. Les Cornes d'Or comptent, comme un mot de Volusius, d'Ursinus ou d'Harak.",
    "Elle a d'abord refusé l'entrée au groupe, avant de le servir."
-  ],
-  "avis": [
-   {
-    "qui": "Harfang",
-    "texte": "il lui faut jouer la carte de la noblesse avec elle."
-   }
   ]
  },
  {
@@ -702,7 +992,8 @@
   "connu": [
    "Elle reconnaît Philippa de loin et se montre bien trop familière : un mois de souvenirs que Philippa n'a pas.",
    "La veille du meurtre, un vieil homme aux cheveux blancs et au maintien militaire a remis un pli à Philippa. Sera l'a gardé : « À la deuxième cloche après le coucher du soleil. Viens seule. Ne parle à personne. Via Castrum, Quartier de la Caserne, porte de fer. »"
-  ]
+  ],
+  "lieu": "keras-tauroc"
  },
  {
   "id": "capella",
@@ -714,7 +1005,8 @@
   "resume": "Voisine de la chambre louée par Jane pendant le mois perdu.",
   "connu": [
    "Jane avait loué une chambre de bonne chez elle, propre mais sans rien de personnel. Capella l'entendait rentrer tard et lui reprochait de travailler pour Hématome. Jane portait ses courses le mardi."
-  ]
+  ],
+  "lieu": "keras-tauroc"
  },
  {
   "id": "hematome",
@@ -801,7 +1093,8 @@
     "type": "Enquête sur",
     "ton": "negatif"
    }
-  ]
+  ],
+  "lieu": "keras-tauroc"
  },
  {
   "id": "otoba",
@@ -814,7 +1107,8 @@
   "connu": [
    "Il a été tué le soir du banquet du festival. Le groupe était sur les lieux, couvert de sang, sans en avoir le souvenir.",
    "Sa mort a fermé les accès à Roshen Buru, Seiran Vale et Azuren Kai compris."
-  ]
+  ],
+  "lieu": "keras-tauroc"
  },
  {
   "id": "yorisa",
@@ -840,7 +1134,8 @@
     "type": "Ami de longue date",
     "ton": "positif"
    }
-  ]
+  ],
+  "lieu": "keras-tauroc"
  },
  {
   "id": "saoren",
@@ -859,7 +1154,8 @@
     "type": "Fille",
     "ton": "positif"
    }
-  ]
+  ],
+  "lieu": "keras-tauroc"
  },
  {
   "id": "festival-cornes-rouges",
@@ -878,8 +1174,7 @@
    "Avant la victoire, personne n'aide le groupe. Les marchands refusent poliment, les autorités l'ignorent.",
    "Dans les catacombes de la cathédrale, il trouve un autel secondaire aux armes de Vassago. Le Démon des Mains surgit.",
    "Jane bat Hématome, un voleur tabaxi que la ville a fini par mettre dans l'arène. Philippa bat son adversaire.",
-   "Le groupe gagne. Les Cornes d'Or lui sont remises par un vieux minotaure, avec 5 600 pièces d'or.",
-   "La ville s'ouvre. Fulvia parle en aparté, d'un ton froid : à revoir pour la prochaine saison."
+   "Le groupe gagne. Les Cornes d'Or lui sont remises par un vieux minotaure, avec 5 600 pièces d'or."
   ]
  },
  {
@@ -894,10 +1189,7 @@
    "Il se réveille en prison, plusieurs semaines plus tard, du sang sur les mains. Ses armes et objets magiques sont confisqués. Otoba a été assassiné le soir du banquet du festival.",
    "Tarcus propose un marché : enquêter sur soi-même.",
    "Philippa avait une clef du Cornua Fracta. Volusius confirme qu'elle y chantait chaque soir. Sera a gardé le pli d'un vieil homme aux cheveux blancs.",
-   "Jane avait un carnet et une chambre chez Capella. Hématome confirme qu'elle travaillait pour lui. Son carnet montre que la surveillance de l'ambassadeur a été commandée par Calvinus Ferox, en liquide.",
-   "Derrière la tannerie, deux soldats payés par Ferox tentent de récupérer le carnet.",
-   "Chez Ferox, le groupe trouve la lettre d'Absalom et la copie de sa réponse. Il était l'instrument et le coupable désigné du meurtre.",
-   "Le meurtre d'Otoba a fermé les accès à Roshen Buru, Seiran Vale et Azuren Kai compris."
+   "Jane avait un carnet et une chambre chez Capella. Hématome confirme qu'elle travaillait pour lui. Son carnet montre que la surveillance de l'ambassadeur a été commandée par Calvinus Ferox, en liquide."
   ]
  },
  {
@@ -1001,12 +1293,6 @@
    "Un grand aqueduc de pierre transporte le poisson vivant vers Keras Tauroc. Il faut environ 28 jours de trajet par le fleuve et la lande.",
    "Une caserne Tauroc s'est installée récemment et pèse sur la ville.",
    "Un portail relie la tour d'Eamonn à Havre Noir, et un cercle de téléportation relie la tour aux ruines du château de Port Doëlan."
-  ],
-  "avis": [
-   {
-    "qui": "Harfang",
-    "texte": "c'est une ville de pêche, pas une ville de guerre, qu'il ne connaissait que par les rapports."
-   }
   ],
   "histoire": [
    "Le groupe retrouve Olyssane et Ink, qui préparent un portail pour établir un comptoir commercial.",
@@ -1122,8 +1408,7 @@
    "Jane, déguisée en Olyssane, attire Kester dans une ruelle. Il fuit, apeuré, et jure vengeance.",
    "Pour les composants, le groupe obtient de Fennick de la vesine en le menaçant, vainc des ghoules des marées avec l'aide d'Ink, et rapporte trois cœurs flétris.",
    "Eamonn négocie contre du suud et ouvre le cercle. Philippa trace sa marque de craie sur la porte.",
-   "Chez Gran Brijit, Philippa a une vision d'une balance désaxée. Harfang et Ink rencontrent Brijit pour la première fois, et elle semble déjà les connaître.",
-   "Le groupe réveille Nolbrim, dans le coma depuis Malquessar, en le tuant puis en le ressuscitant avec la potion d'Ursinus. Philippa envoie un message à Bourre-Pif."
+   "Chez Gran Brijit, Philippa a une vision d'une balance désaxée. Harfang et Ink rencontrent Brijit pour la première fois, et elle semble déjà les connaître."
   ]
  },
  {
@@ -1218,7 +1503,8 @@
   "resume": "Vieux Scalvern posé.",
   "connu": [
    "Il est le chef officiel de la ville."
-  ]
+  ],
+  "lieu": "cap-cornes"
  },
  {
   "id": "lorcan",
@@ -1267,7 +1553,8 @@
   "connu": [
    "Grand, mi-elfe mi-gobelin, cheveux blancs, chemise écarlate ouverte. Il défie à peu près tout le monde, Olyssane en particulier.",
    "Jane, déguisée en Olyssane, l'a attiré dans une ruelle. Il s'est enfui, apeuré, en jurant vengeance."
-  ]
+  ],
+  "lieu": "cap-cornes"
  },
  {
   "id": "balamor",
@@ -1276,10 +1563,10 @@
   "titre": "L'archipel jungle, dit la Fracture",
   "parent": "istra",
   "zone": {
-   "x": 0.07,
-   "y": 0.13,
-   "w": 0.39,
-   "h": 0.28
+   "x": 0.079,
+   "y": 0.152,
+   "w": 0.348,
+   "h": 0.265
   },
   "blason": "img/blasons/tzalanar.webp",
   "accent": "#6b8f3a",
@@ -1298,18 +1585,7 @@
    "Religion de Balam : la nature est divine mais violente. Chasse, sang, sacrifice, cycle vie-mort. Quatre aspects : Jaguar (guerre), Serpent (connaissance), Aigle (autorité), Crocodile (puissance primordiale).",
    "Théocratie décentralisée. L'autorité du Grand Prêtre est avant tout religieuse.",
    "Rumeur persistante : Balamor aurait des espions partout sur le continent. Les étrangers qui s'intéressent de trop près à leurs rituels changent brutalement d'avis, ou disparaissent.",
-   "Avec Roshen Buru, les relations sont formellement neutres, avec une méfiance sourde.",
-   "Tobiya, à Roshen Buru, et un homme du peuple à Keras Tauroc ont été contrôlés par des araignées, avec des symboles de Balamor."
-  ],
-  "avis": [
-   {
-    "qui": "Harfang",
-    "texte": "Balamor est la lacune la plus frustrante de son réseau : ses contacts à Kurakal disparaissaient ou restaient superficiels."
-   },
-   {
-    "qui": "Harfang",
-    "texte": "un grand plan vise à corrompre les habitants pour conquérir les villes, et que la Protectrice et Ankou sous-estiment le danger. S'il se rend à Balamor, il pourra enquêter lui-même."
-   }
+   "Avec Roshen Buru, les relations sont formellement neutres, avec une méfiance sourde."
   ],
   "relations": [
    {
@@ -1322,7 +1598,322 @@
     "type": "Araignées",
     "ton": "negatif"
    }
-  ]
+  ],
+  "poly": [
+   [
+    0.4239,
+    0.4155
+   ],
+   [
+    0.4259,
+    0.4098
+   ],
+   [
+    0.4271,
+    0.4002
+   ],
+   [
+    0.4255,
+    0.3897
+   ],
+   [
+    0.4226,
+    0.3791
+   ],
+   [
+    0.4173,
+    0.3698
+   ],
+   [
+    0.4125,
+    0.3587
+   ],
+   [
+    0.4094,
+    0.3479
+   ],
+   [
+    0.4092,
+    0.3387
+   ],
+   [
+    0.41,
+    0.3322
+   ],
+   [
+    0.4208,
+    0.3054
+   ],
+   [
+    0.4229,
+    0.2981
+   ],
+   [
+    0.4242,
+    0.2903
+   ],
+   [
+    0.4249,
+    0.2743
+   ],
+   [
+    0.4238,
+    0.2572
+   ],
+   [
+    0.4147,
+    0.2229
+   ],
+   [
+    0.4119,
+    0.1938
+   ],
+   [
+    0.4118,
+    0.1844
+   ],
+   [
+    0.4103,
+    0.1742
+   ],
+   [
+    0.4072,
+    0.1649
+   ],
+   [
+    0.4011,
+    0.157
+   ],
+   [
+    0.3911,
+    0.1539
+   ],
+   [
+    0.3792,
+    0.1525
+   ],
+   [
+    0.3673,
+    0.1544
+   ],
+   [
+    0.3519,
+    0.1607
+   ],
+   [
+    0.3377,
+    0.1693
+   ],
+   [
+    0.3248,
+    0.1804
+   ],
+   [
+    0.2831,
+    0.2228
+   ],
+   [
+    0.2722,
+    0.2333
+   ],
+   [
+    0.2598,
+    0.2436
+   ],
+   [
+    0.2457,
+    0.2516
+   ],
+   [
+    0.2319,
+    0.2585
+   ],
+   [
+    0.2199,
+    0.2635
+   ],
+   [
+    0.2069,
+    0.2669
+   ],
+   [
+    0.1979,
+    0.2634
+   ],
+   [
+    0.1911,
+    0.2585
+   ],
+   [
+    0.1775,
+    0.2453
+   ],
+   [
+    0.1526,
+    0.2278
+   ],
+   [
+    0.1469,
+    0.2229
+   ],
+   [
+    0.1422,
+    0.2169
+   ],
+   [
+    0.139,
+    0.2091
+   ],
+   [
+    0.1378,
+    0.2007
+   ],
+   [
+    0.1395,
+    0.191
+   ],
+   [
+    0.1442,
+    0.171
+   ],
+   [
+    0.1443,
+    0.1624
+   ],
+   [
+    0.1425,
+    0.1564
+   ],
+   [
+    0.1402,
+    0.1539
+   ],
+   [
+    0.1368,
+    0.1543
+   ],
+   [
+    0.1244,
+    0.1608
+   ],
+   [
+    0.1159,
+    0.1661
+   ],
+   [
+    0.107,
+    0.1736
+   ],
+   [
+    0.0997,
+    0.1814
+   ],
+   [
+    0.0831,
+    0.2119
+   ],
+   [
+    0.0805,
+    0.2232
+   ],
+   [
+    0.0793,
+    0.2349
+   ],
+   [
+    0.0807,
+    0.2451
+   ],
+   [
+    0.0848,
+    0.2541
+   ],
+   [
+    0.0889,
+    0.261
+   ],
+   [
+    0.0949,
+    0.2675
+   ],
+   [
+    0.1152,
+    0.281
+   ],
+   [
+    0.1414,
+    0.2963
+   ],
+   [
+    0.1738,
+    0.3237
+   ],
+   [
+    0.2047,
+    0.3549
+   ],
+   [
+    0.2186,
+    0.3646
+   ],
+   [
+    0.233,
+    0.3729
+   ],
+   [
+    0.2476,
+    0.3796
+   ],
+   [
+    0.2604,
+    0.3828
+   ],
+   [
+    0.2757,
+    0.3837
+   ],
+   [
+    0.2898,
+    0.3829
+   ],
+   [
+    0.3031,
+    0.3829
+   ],
+   [
+    0.3127,
+    0.3834
+   ],
+   [
+    0.3336,
+    0.3863
+   ],
+   [
+    0.3447,
+    0.3895
+   ],
+   [
+    0.396,
+    0.4117
+   ],
+   [
+    0.4042,
+    0.4157
+   ],
+   [
+    0.4126,
+    0.4172
+   ],
+   [
+    0.4197,
+    0.4171
+   ]
+  ],
+  "lab": [
+   0.325,
+   0.302
+  ],
+  "couleur": "#8a5bd0"
  },
  {
   "id": "tzalanar",
@@ -1352,12 +1943,6 @@
   "resume": "Les échanges réels se font ici. Beaucoup d'étrangers la prennent pour la capitale.",
   "connu": [
    "Les échanges réels avec l'extérieur passent par Kurakal."
-  ],
-  "avis": [
-   {
-    "qui": "Harfang",
-    "texte": "ses contacts sur place disparaissaient ou restaient superficiels."
-   }
   ]
  },
  {
@@ -1370,7 +1955,8 @@
   "resume": "Réside à Tzalanar. Inaccessible en pratique.",
   "connu": [
    "Son autorité est avant tout religieuse."
-  ]
+  ],
+  "lieu": "tzalanar"
  },
  {
   "id": "there-duun",
@@ -1379,10 +1965,10 @@
   "titre": "Le royaume nain du Val Blanc",
   "parent": "istra",
   "zone": {
-   "x": 0.12,
-   "y": 0.46,
-   "w": 0.32,
-   "h": 0.27
+   "x": 0.141,
+   "y": 0.465,
+   "w": 0.315,
+   "h": 0.233
   },
   "blason": "img/blasons/there-duun.webp",
   "accent": "#9fb3c8",
@@ -1402,19 +1988,224 @@
    "Dieu Moradin : forge, connaissance, tradition. There'Duun archive tout depuis des millénaires.",
    "Avec Roshen Buru, la relation est neutre et distante, sans conflit historique."
   ],
-  "avis": [
-   {
-    "qui": "Harfang",
-    "texte": "les nains ont trouvé quelque chose en creusant très profond et l'ont immédiatement scellé, selon une rumeur persistante dont les érudits trop curieux ont disparu. Il n'a pas posé la question à Thibwick."
-   }
-  ],
   "relations": [
    {
     "cible": "valdain-there-duun",
     "type": "Roi",
     "ton": "neutre"
    }
-  ]
+  ],
+  "poly": [
+   [
+    0.4533,
+    0.4966
+   ],
+   [
+    0.4445,
+    0.4797
+   ],
+   [
+    0.4355,
+    0.4645
+   ],
+   [
+    0.428,
+    0.4655
+   ],
+   [
+    0.421,
+    0.4683
+   ],
+   [
+    0.4167,
+    0.4742
+   ],
+   [
+    0.4061,
+    0.4866
+   ],
+   [
+    0.4007,
+    0.4913
+   ],
+   [
+    0.3937,
+    0.4946
+   ],
+   [
+    0.3846,
+    0.4957
+   ],
+   [
+    0.3738,
+    0.4952
+   ],
+   [
+    0.3624,
+    0.4921
+   ],
+   [
+    0.3409,
+    0.4842
+   ],
+   [
+    0.3155,
+    0.4738
+   ],
+   [
+    0.3021,
+    0.4701
+   ],
+   [
+    0.2899,
+    0.4674
+   ],
+   [
+    0.2784,
+    0.4682
+   ],
+   [
+    0.2507,
+    0.4737
+   ],
+   [
+    0.2234,
+    0.4836
+   ],
+   [
+    0.2114,
+    0.4887
+   ],
+   [
+    0.1878,
+    0.5031
+   ],
+   [
+    0.1789,
+    0.5116
+   ],
+   [
+    0.1727,
+    0.522
+   ],
+   [
+    0.1561,
+    0.5531
+   ],
+   [
+    0.1501,
+    0.562
+   ],
+   [
+    0.1427,
+    0.5766
+   ],
+   [
+    0.1407,
+    0.5822
+   ],
+   [
+    0.1414,
+    0.5873
+   ],
+   [
+    0.1459,
+    0.593
+   ],
+   [
+    0.1519,
+    0.598
+   ],
+   [
+    0.16,
+    0.6013
+   ],
+   [
+    0.17,
+    0.6033
+   ],
+   [
+    0.1807,
+    0.6043
+   ],
+   [
+    0.2152,
+    0.6114
+   ],
+   [
+    0.2261,
+    0.6162
+   ],
+   [
+    0.2353,
+    0.6254
+   ],
+   [
+    0.2428,
+    0.6362
+   ],
+   [
+    0.2559,
+    0.6577
+   ],
+   [
+    0.2638,
+    0.6678
+   ],
+   [
+    0.2723,
+    0.6774
+   ],
+   [
+    0.2818,
+    0.6848
+   ],
+   [
+    0.294,
+    0.6885
+   ],
+   [
+    0.3314,
+    0.6978
+   ],
+   [
+    0.3438,
+    0.6956
+   ],
+   [
+    0.3617,
+    0.6888
+   ],
+   [
+    0.3838,
+    0.6732
+   ],
+   [
+    0.4036,
+    0.6569
+   ],
+   [
+    0.4214,
+    0.6252
+   ],
+   [
+    0.4376,
+    0.5916
+   ],
+   [
+    0.4492,
+    0.5554
+   ],
+   [
+    0.4552,
+    0.5233
+   ]
+  ],
+  "lab": [
+   0.327,
+   0.58
+  ],
+  "couleur": "#cfd6e6"
  },
  {
   "id": "valedorn",
@@ -1429,12 +2220,6 @@
   "resume": "Seule ville ouverte de There'Duun. La capitale reste fermée aux étrangers.",
   "connu": [
    "Les nains y reçoivent les étrangers mais n'ouvrent jamais leur capitale."
-  ],
-  "avis": [
-   {
-    "qui": "Harfang",
-    "texte": "c'est là qu'il a rencontré son ami nain Thibwick. Il y est allé une ou deux fois."
-   }
   ]
  },
  {

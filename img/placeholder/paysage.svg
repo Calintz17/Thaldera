@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1200" preserveAspectRatio="xMidYMid slice">
+<defs><linearGradient id="g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1b2338"/><stop offset=".6" stop-color="#2a3149"/><stop offset="1" stop-color="#0d1019"/></linearGradient>
+<radialGradient id="m" cx=".7" cy=".28" r=".18"><stop offset="0" stop-color="#e9dfc0" stop-opacity=".55"/><stop offset="1" stop-color="#e9dfc0" stop-opacity="0"/></radialGradient></defs>
+<rect width="1600" height="1200" fill="url(#g)"/><rect width="1600" height="1200" fill="url(#m)"/>
+<path d="M0 820 L180 640 L330 760 L520 560 L720 780 L900 600 L1100 790 L1300 620 L1600 820 V1200 H0Z" fill="#161b2b"/>
+<path d="M0 940 L240 800 L440 920 L700 760 L960 930 L1200 800 L1600 960 V1200 H0Z" fill="#0f131f"/>
+<text x="800" y="1080" text-anchor="middle" font-family="Cinzel, serif" font-size="30" letter-spacing="10" fill="#c9a84c" fill-opacity=".55">PAYSAGE A VENIR</text>
+</svg>

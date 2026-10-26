@@ -4,7 +4,7 @@
 (() => {
 'use strict';
 
-const VER = '2';
+const VER = '3';
 const EDIT = new URLSearchParams(location.search).has('edit');
 const $ = (s, r = document) => r.querySelector(s);
 const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
@@ -104,6 +104,8 @@ function imgInfo(src) {
 
 /* ---------- scene (carte persistante) ---------- */
 const sceneEl = $('#scene'), stageEl = $('#stage'), panelEl = $('#panel'), worldEl = $('#world');
+const PH_LAND = { img: 'img/placeholder/paysage.svg', legende: '', ph: true };
+const PH_SIL = 'img/placeholder/silhouette.svg';
 const S = { map: null, gal: null, entry: null, key: '', cut: null, W: 0, H: 0 };
 
 function measure() { S.W = stageEl.clientWidth; S.H = stageEl.clientHeight; }
@@ -160,7 +162,7 @@ function sceneOf(e, q, depth = 0) {
       const c = e.cartes[Math.min(tab, e.cartes.length - 1)];
       return {
         kind: 'map', src: c.img, cam: FULL, owner: e, tabs: e.cartes, tab: Math.min(tab, e.cartes.length - 1),
-        frames: kids(e.id).filter(k => k.zone).map(k => ({ id: k.id, ...k.zone, label: k.nom, sub: k.titre })),
+        frames: kids(e.id).filter(k => k.poly).map(k => frameOf(k)),
         pins: kids(e.id).filter(k => k.pos && k.type === 'ville').map(k => ({ id: k.id, ...k.pos, label: k.nom, kind: 'ville' }))
       };
     }
@@ -173,7 +175,7 @@ function sceneOf(e, q, depth = 0) {
       const villes = collectVilles(e);
       return {
         kind: 'map', src: om.carte.img, cam, owner: om.host, tabs: om.host.cartes, tab: om.host.cartes.indexOf(om.carte),
-        frames: [], pins: villes.map(v => ({ id: v.id, ...v.pos, label: v.nom, kind: 'ville' })),
+        frames: e.poly ? [frameOf(e, true)] : [], pins: villes.map(v => ({ id: v.id, ...v.pos, label: v.nom, kind: 'ville' })),
         focus: z ? { x: z.x + z.w / 2, y: z.y + z.h / 2 } : null
       };
     }
@@ -189,10 +191,14 @@ function sceneOf(e, q, depth = 0) {
     }
     case 'lieu': {
       const om = ownerMap(e);
-      if (!om) return sceneOf(BY[e.parent], null, depth + 1);
+      if (!om) {
+        const ps = sceneOf(BY[e.parent], null, depth + 1);
+        if (ps && depth === 0 && ps.kind === 'map') return { ...ps, gallery: (e.galerie && e.galerie.length) ? e.galerie : (ps.gallery || [PH_LAND]) };
+        return ps;
+      }
       const host = om.host, cs = host.cartes;
       const base = {
-        kind: 'map', src: om.carte.img, cam: e.pos ? around(e.pos, e.zoom || 0.2) : FULL, owner: host, tabs: cs, tab: cs.indexOf(om.carte),
+        kind: 'map', src: om.carte.img, cam: e.pos ? around(e.pos, Math.max(e.zoom || 0.2, 0.18)) : FULL, owner: host, tabs: cs, tab: cs.indexOf(om.carte),
         frames: [],
         pins: collectLieux(host).filter(l => (l.carte || cs[0].id) === om.carte.id && l.pos).map(l => ({ id: l.id, ...l.pos, label: l.nom, kind: 'lieu', dim: l.id !== e.id, here: l.id === e.id }))
       };
@@ -203,10 +209,15 @@ function sceneOf(e, q, depth = 0) {
       const lieu = e.lieu ? BY[e.lieu] : null;
       let s = lieu ? sceneOf(lieu, null, depth + 1) : (e.parent ? sceneOf(BY[e.parent], null, depth + 1) : null);
       if (!s && depth === 0) s = sceneOf(BY.istra, null, 1);
-      if (s && (e.type === 'pnj' || e.type === 'pj') && e.img && s.gallery) s = { ...s, cutout: e };
+      if (s && (e.type === 'pnj' || e.type === 'pj') && depth === 0) {
+        s = { ...s, gallery: s.gallery || [PH_LAND], cutout: e };
+      }
       return s;
     }
   }
+}
+function frameOf(k, solo) {
+  return { id: k.id, poly: k.poly, color: k.couleur || k.accent || '#d9402f', lab: k.lab, label: k.nom, sub: k.titre, solo: !!solo };
 }
 function collectVilles(e) {
   const out = [];
@@ -223,7 +234,7 @@ function collectLieux(v) {
 
 function sceneKey(sc) {
   if (!sc) return 'none';
-  return JSON.stringify([sc.src, sc.cam, sc.frames.map(f => f.id), sc.pins.map(p => p.id + (p.dim ? 'd' : '') + (p.here ? 'h' : '')), sc.gallery?.map(g => g.img), sc.cutout?.id, sc.tab]);
+  return JSON.stringify([sc.src, sc.cam, sc.frames.map(f => f.id + (f.solo ? 's' : '')), sc.pins.map(p => p.id + (p.dim ? 'd' : '') + (p.here ? 'h' : '')), sc.gallery?.map(g => g.img), sc.cutout?.id, sc.tab]);
 }
 
 function makeLayer(src, info) {
@@ -233,17 +244,40 @@ function makeLayer(src, info) {
   const o = { el: layer, cam: $('.cam', layer), ovl: $('.ovl', layer), info, src };
   return o;
 }
+function centroid(poly) {
+  let x = 0, y = 0; poly.forEach(p => { x += p[0]; y += p[1]; }); return [x / poly.length, y / poly.length];
+}
 function renderOverlay(layer, sc) {
   const ov = layer.ovl;
   ov.classList.remove('fresh');
   ov.innerHTML = '';
-  sc.frames.forEach(f => {
-    const a = document.createElement('a');
-    a.className = 'frame'; a.href = '#/' + f.id; a.dataset.id = f.id;
-    a.style.cssText = `left:${f.x * 100}%;top:${f.y * 100}%;width:${f.w * 100}%;height:${f.h * 100}%`;
-    a.innerHTML = `<span class="fl">${esc(f.label)}${f.sub ? `<span class="fs">${esc(f.sub)}</span>` : ''}</span>`;
-    ov.appendChild(a);
-  });
+  if (sc.frames.length) {
+    const NS = 'http://www.w3.org/2000/svg';
+    const svg = document.createElementNS(NS, 'svg');
+    svg.setAttribute('class', 'regs'); svg.setAttribute('viewBox', '0 0 1 1'); svg.setAttribute('preserveAspectRatio', 'none');
+    sc.frames.forEach(f => {
+      const d = 'M' + f.poly.map(p => p[0] + ' ' + p[1]).join('L') + 'Z';
+      const g = document.createElementNS(NS, 'g');
+      g.setAttribute('class', 'reg' + (f.solo ? ' solo' : '')); g.dataset.id = f.id; g.style.setProperty('--c', f.color);
+      ['fill', 'glow', 'line'].forEach(c => { const p = document.createElementNS(NS, 'path'); p.setAttribute('d', d); p.setAttribute('class', c); g.appendChild(p); });
+      svg.appendChild(g);
+    });
+    ov.appendChild(svg);
+    sc.frames.forEach(f => {
+      if (f.solo) return;
+      const a = document.createElement('a');
+      a.className = 'rlab'; a.href = '#/' + f.id; a.dataset.id = f.id; a.style.setProperty('--c', f.color);
+      const c = f.lab || centroid(f.poly);
+      a.style.cssText += `;left:${c[0] * 100}%;top:${c[1] * 100}%`;
+      a.innerHTML = `<span class="fl">${esc(f.label)}${f.sub ? `<span class="fs">${esc(f.sub)}</span>` : ''}</span>`;
+      ov.appendChild(a);
+    });
+    const hot = (id, on) => ov.querySelectorAll(`[data-id="${id}"]`).forEach(n => n.classList.toggle('hot', on));
+    svg.addEventListener('mouseover', ev => { const g = ev.target.closest('.reg'); if (g) hot(g.dataset.id, true); });
+    svg.addEventListener('mouseout', ev => { const g = ev.target.closest('.reg'); if (g) hot(g.dataset.id, false); });
+    svg.addEventListener('click', ev => { const g = ev.target.closest('.reg'); if (g && !g.classList.contains('solo')) location.hash = '#/' + g.dataset.id; });
+    ov.querySelectorAll('.rlab').forEach(a => { a.addEventListener('mouseenter', () => hot(a.dataset.id, true)); a.addEventListener('mouseleave', () => hot(a.dataset.id, false)); });
+  }
   sc.pins.forEach(p => {
     const a = document.createElement('a');
     a.className = `pin k-${p.kind}${p.dim ? ' dim' : ''}${p.here ? ' here' : ''}${p.x < 0.1 ? ' edge-l' : ''}${p.x > 0.9 ? ' edge-r' : ''}`;
@@ -323,12 +357,13 @@ function showGallery(imgs, title) {
 }
 function setCutout(e) {
   let c = $('.cutout', stageEl);
-  if (!e || !e.img || !S.gal) { if (c) c.remove(); S.cut = null; return; }
+  if (!e || !S.gal) { if (c) c.remove(); S.cut = null; return; }
   if (S.cut === e.id && c) return;
   if (c) c.remove();
   c = document.createElement('div');
   c.className = 'cutout';
-  c.innerHTML = `<img src="${e.img}" alt="${esc(e.nom)}"><span class="cn">${esc(e.nom)}</span>`;
+  c.className = 'cutout' + (e.img ? '' : ' ph');
+  c.innerHTML = `<img src="${e.img || PH_SIL}" alt="${esc(e.nom)}"><span class="cn">${esc(e.nom)}</span>`;
   stageEl.insertBefore(c, $('.fog', stageEl));
   S.cut = e.id;
 }
@@ -430,7 +465,6 @@ function sec(title, body, cls = '') { return body ? `<section class="sec ${cls}"
 const ul = (arr, id) => arr && arr.length ? '<ul>' + arr.map(t => `<li>${L(t, id)}</li>`).join('') + '</ul>' : '';
 function connuHtml(e) {
   let items = (e.connu || []).map(t => `<li>${L(t, e.id)}</li>`).join('');
-  items += (e.avis || []).map(a => `<li class="avis"><b>${esc(a.qui)} pense que</b> ${L(a.texte, e.id)}</li>`).join('');
   return items ? `<ul>${items}</ul>` : '';
 }
 function crumbs(e) {
