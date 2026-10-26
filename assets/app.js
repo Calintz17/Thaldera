@@ -259,7 +259,7 @@ function renderOverlay(layer, sc) {
       const d = 'M' + f.poly.map(p => p[0] + ' ' + p[1]).join('L') + 'Z';
       const g = document.createElementNS(NS, 'g');
       g.setAttribute('class', 'reg' + (f.solo ? ' solo' : '')); g.dataset.id = f.id; g.style.setProperty('--c', f.color);
-      ['fill', 'glow', 'line'].forEach(c => { const p = document.createElementNS(NS, 'path'); p.setAttribute('d', d); p.setAttribute('class', c); g.appendChild(p); });
+      ['fill', 'glow', 'line', 'run'].forEach(c => { const p = document.createElementNS(NS, 'path'); p.setAttribute('d', d); p.setAttribute('class', c); if (c === 'run') p.setAttribute('pathLength', '1'); g.appendChild(p); });
       svg.appendChild(g);
     });
     ov.appendChild(svg);
