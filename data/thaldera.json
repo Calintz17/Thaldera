@@ -1045,7 +1045,8 @@
   "alias": [
    "Repos des Epées",
    "Repos des Épées",
-   "Wasteland"
+   "Wasteland",
+   "Aven"
   ],
   "resume": "Plaine brûlée et vitrifiée, ancienne guerre devenue zone morte. Le repaire d'Argonath s'y ouvre dans la chair du sol.",
   "connu": [
@@ -1720,7 +1721,8 @@
    "Le groupe l'aide à s'évader."
   ],
   "alias": [
-   "Red Callahan"
+   "Red Callahan",
+   "Mara Callahan"
   ]
  },
  {
@@ -2501,6 +2503,9 @@
     "type": "L'a jugé drogué",
     "ton": "neutre"
    }
+  ],
+  "alias": [
+   "Madame Vespera"
   ]
  },
  {
@@ -2644,5 +2649,2742 @@
   "connu": [
    "Jane compte le tuer s'il se représente."
   ]
+ },
+ {
+  "id": "rocher-aux-noeuds",
+  "type": "lieu",
+  "nom": "Le Rocher aux Nœuds",
+  "titre": "Entrée de la baie",
+  "parent": "havre-noir",
+  "resume": "Immense mât fiché dans la roche, couvert de cordages et de nœuds marins.",
+  "connu": [
+   "Chaque marin qui entre au service de Sycomore y attache son nœud en signe de loyauté.",
+   "La légende dit que les cordes tombées à la mer étranglent les traîtres dans leur sommeil."
+  ],
+  "alias": [
+   "Rocher aux Noeuds"
+  ]
+ },
+ {
+  "id": "quais-de-poix",
+  "type": "lieu",
+  "nom": "Les Quais de Poix",
+  "titre": "Chantier naval permanent",
+  "parent": "havre-noir",
+  "resume": "Quais couverts de chaudrons de poix, où les navires sont enduits et répertoriés par les Lapidès.",
+  "connu": [
+   "Aucune cargaison hors registre n'est tolérée. Un contrebandier pris ici a été enduit de poix et brûlé vif.",
+   "Les navires de Havre Noir à étrave de fer et coque goudronnée s'appellent les Coques-Noires.",
+   "Havre Noir pense que l'Île aux Moines est inhabitée."
+  ]
+ },
+ {
+  "id": "brask-le-clocheur",
+  "type": "pnj",
+  "nom": "Brask le Clocheur",
+  "titre": "Crieur de rue demi-elfe",
+  "parent": "quais-de-poix",
+  "lieu": "quais-de-poix",
+  "statut": "vivant",
+  "resume": "Grand, maigre, œil exorbité, il crie les nouvelles et amplifie les rumeurs.",
+  "connu": [
+   "Il annonce les meurtres de marins à la peau verte et le 7 inversé, ancienne marque de quarantaine de la peste des noyés.",
+   "Il envoie le groupe chez Alrik Crochemer."
+  ]
+ },
+ {
+  "id": "taverne-harpon-rouge",
+  "type": "lieu",
+  "nom": "La Taverne du Harpon Rouge",
+  "titre": "Auberge des Quais",
+  "parent": "havre-noir",
+  "resume": "Auberge sur deux étages avec un foyer en longueur et un harpon rouge sang volé à un navire du Dominion.",
+  "connu": [
+   "On y boit, on y joue, on y complote."
+  ]
+ },
+ {
+  "id": "ergott",
+  "type": "pnj",
+  "nom": "Ergott",
+  "titre": "Tavernier du Harpon Rouge",
+  "parent": "taverne-harpon-rouge",
+  "lieu": "taverne-harpon-rouge",
+  "statut": "vivant",
+  "resume": "Figure de la taverne où Wilhelm der Treue s'attaque à Philippa."
+ },
+ {
+  "id": "maison-crochemer",
+  "type": "lieu",
+  "nom": "La maison Crochemer",
+  "titre": "Quai Est",
+  "parent": "havre-noir",
+  "resume": "Bâtisse de bois humide de sel, avec un 7 inversé gravé sur la porte.",
+  "connu": [
+   "Le marin Crochemer a été retrouvé mort, peau verte, yeux exorbités. Les Lapidès ont emporté le corps au mortuaire."
+  ]
+ },
+ {
+  "id": "alrik-crochemer",
+  "type": "pnj",
+  "nom": "Alrik Crochemer",
+  "titre": "Frère de la victime",
+  "parent": "maison-crochemer",
+  "lieu": "maison-crochemer",
+  "statut": "vivant",
+  "resume": "Humain décharné, terrifié, persuadé que la peste est revenue.",
+  "connu": [
+   "Il brûle les draps de son frère. Il renvoie le groupe vers le médecin du mortuaire."
+  ]
+ },
+ {
+  "id": "crochemer",
+  "type": "pnj",
+  "nom": "Crochemer",
+  "titre": "Marin, première victime citée",
+  "parent": "maison-crochemer",
+  "lieu": "maison-crochemer",
+  "statut": "mort",
+  "resume": "Marin du Brumeux retrouvé mort, peau verdâtre."
+ },
+ {
+  "id": "ruelle-des-cordages",
+  "type": "lieu",
+  "nom": "La ruelle des Cordages",
+  "titre": "Boutique de Calven",
+  "parent": "havre-noir",
+  "resume": "Ruelle qui empeste la corde goudronnée, où un nouveau cadavre vient d'être trouvé.",
+  "connu": [
+   "Le 7 inversé sur la porte est gravé d'un coup de lame sûr, pas d'une main d'enfant."
+  ]
+ },
+ {
+  "id": "calven",
+  "type": "pnj",
+  "nom": "Calven",
+  "titre": "Marchand de cordages",
+  "parent": "ruelle-des-cordages",
+  "lieu": "ruelle-des-cordages",
+  "statut": "mort",
+  "resume": "Nouvelle victime, mêmes symptômes que les précédentes."
+ },
+ {
+  "id": "melior-skarne",
+  "type": "pnj",
+  "nom": "Dr. Melior Skarne",
+  "titre": "Médecin légiste nain",
+  "parent": "ruelle-des-cordages",
+  "lieu": "ruelle-des-cordages",
+  "statut": "vivant",
+  "resume": "Rationaliste calme au milieu de la panique. Il invite le groupe au mortuaire.",
+  "connu": [
+   "Il note peau verdâtre et yeux exorbités, comme chez les précédents."
+  ]
+ },
+ {
+  "id": "registres-du-port",
+  "type": "lieu",
+  "nom": "Les registres du port",
+  "titre": "Bureau du scribe",
+  "parent": "havre-noir",
+  "resume": "Vieux bâtiment de bois sombre, étagères de registres reliés de cuir.",
+  "connu": [
+   "Tous les morts étaient marins du Brumeux, navire disparu il y a vingt ans au large des récifs de Solcarne.",
+   "Le 7 inversé n'apparaît dans aucun registre."
+  ]
+ },
+ {
+  "id": "arvik-denholm",
+  "type": "pnj",
+  "nom": "Arvik Denholm",
+  "titre": "Scribe, gnome des profondeurs",
+  "parent": "registres-du-port",
+  "lieu": "registres-du-port",
+  "statut": "vivant",
+  "resume": "Petit scribe voûté, agacé d'être dérangé mais fasciné par les meurtres.",
+  "connu": [
+   "Il désigne Derek Varn comme seul survivant du Brumeux encore en vie."
+  ]
+ },
+ {
+  "id": "maison-derek-varn",
+  "type": "lieu",
+  "nom": "La maison de Derek Varn",
+  "titre": "Masure du quai Nord",
+  "parent": "havre-noir",
+  "resume": "Masure aux fenêtres barricadées, battue par les embruns. Le 7 inversé est gravé sur la porte.",
+  "histoire": [
+   "Eldran Korr y force la porte à minuit et attaque Derek."
+  ]
+ },
+ {
+  "id": "derek-varn",
+  "type": "pnj",
+  "nom": "Derek Varn",
+  "titre": "Dernier survivant du Brumeux",
+  "parent": "maison-derek-varn",
+  "lieu": "maison-derek-varn",
+  "statut": "vivant",
+  "resume": "Ancien gabier paranoïaque, persuadé d'être la prochaine cible.",
+  "connu": [
+   "Il avoue que l'équipage a jeté Eldran Korr, son timonier, par-dessus bord pendant une mutinerie."
+  ]
+ },
+ {
+  "id": "eldran-korr",
+  "type": "pnj",
+  "nom": "Eldran Korr",
+  "titre": "Le Noyé revenant",
+  "parent": "maison-derek-varn",
+  "lieu": "maison-derek-varn",
+  "statut": "mort",
+  "resume": "Mort-vivant qui tue un par un ses anciens frères d'armes du Brumeux, sous le signe du 7 inversé.",
+  "connu": [
+   "Il masquait sa vengeance en fausse peste pour détourner les soupçons."
+  ],
+  "histoire": [
+   "Le groupe le vainc dans la masure de Derek Varn."
+  ]
+ },
+ {
+  "id": "pont-du-jugement",
+  "type": "lieu",
+  "nom": "Le Pont du Jugement",
+  "titre": "Jetée aux cages",
+  "parent": "havre-noir",
+  "resume": "Jetée battue par les vents, avec des cages de fer où l'on expose traîtres, voleurs et contrebandiers.",
+  "connu": [
+   "Parmi les condamnés, un homme de la Griffe, preuve que la Griffe n'a jamais pris pied à Havre Noir."
+  ]
+ },
+ {
+  "id": "filver-brandepoix",
+  "type": "pnj",
+  "nom": "Filver Brandepoix",
+  "titre": "Halfling de la Griffe, prisonnier",
+  "parent": "pont-du-jugement",
+  "lieu": "pont-du-jugement",
+  "statut": "vivant",
+  "resume": "Prisonnier zozotant qui accuse le Passeur de Camont de l'avoir envoyé à Havre Noir.",
+  "connu": [
+   "Il propose or et contacts en échange de sa libération, et parle d'une brèche dans la coque de l'Assemblage menant à la cale aux vivres."
+  ]
+ },
+ {
+  "id": "caverne-aux-butins",
+  "type": "lieu",
+  "nom": "La Caverne aux Butins",
+  "titre": "Entrepôt neutre",
+  "parent": "havre-noir",
+  "resume": "Entrepôt creusé dans la falaise où passent tous les butins de Havre Noir. Aucune bagarre n'y est tolérée.",
+  "connu": [
+   "Tout y est à vendre : vaisselle d'argent, uniformes, potions, objets magiques."
+  ]
+ },
+ {
+  "id": "marek-le-calfat",
+  "type": "pnj",
+  "nom": "Marek le Calfat",
+  "titre": "Receleur officiel de Sycomore",
+  "parent": "caverne-aux-butins",
+  "lieu": "caverne-aux-butins",
+  "statut": "vivant",
+  "resume": "Vieux receleur tordu, un œil voilé, une oreille en moins, qui appelle tout le monde capitaine.",
+  "connu": [
+   "Ses registres permettent de remonter l'origine d'un objet, à condition de payer."
+  ]
+ },
+ {
+  "id": "gueule-de-feu",
+  "type": "lieu",
+  "nom": "La Gueule de Feu",
+  "titre": "Forge des Lapidès",
+  "parent": "havre-noir",
+  "resume": "Forge qui gronde jour et nuit, où l'on martèle les étraves et entretient les armes.",
+  "connu": [
+   "Toutes les cargaisons forgées viennent de Havre Noir, jamais de l'Île aux Moines.",
+   "Un apprenti laisse échapper qu'un capitaine parlait d'or venant de Port Doëlan."
+  ]
+ },
+ {
+  "id": "korga-brise-lame",
+  "type": "pnj",
+  "nom": "Korga Brise-Lame",
+  "titre": "Forgeronne demi-orque",
+  "parent": "gueule-de-feu",
+  "lieu": "gueule-de-feu",
+  "statut": "vivant",
+  "resume": "Massive, tatouée de vagues, un clou de fer dans l'oreille. Une petite souris, Raisin Sec, dépasse de son tablier.",
+  "connu": [
+   "Elle est loyale à Sycomore sans fanatisme.",
+   "Sa souris s'appelle Raisin Sec."
+  ],
+  "alias": [
+   "Raisin Sec",
+   "Monsieur Moustache"
+  ]
+ },
+ {
+  "id": "ponton-assemblage",
+  "type": "lieu",
+  "nom": "Le ponton de l'Assemblage",
+  "titre": "Entrée de la forteresse",
+  "parent": "assemblage",
+  "resume": "Passerelle unique vers les pontons extérieurs, surveillée par deux gardes Lapidès.",
+  "connu": [
+   "Il faut un laissez-passer signé par Sycomore ou son scribe."
+  ]
+ },
+ {
+  "id": "lapides-garde",
+  "type": "pnj",
+  "nom": "Garde Lapidès",
+  "titre": "Garde de l'Assemblage",
+  "parent": "havre-noir",
+  "lieu": "ponton-assemblage",
+  "statut": "vivant",
+  "resume": "Garde bourru et méfiant qui repousse les curieux.",
+  "alias": [
+   "Lapidès",
+   "Lapidès de garde"
+  ]
+ },
+ {
+  "id": "reserve-armes",
+  "type": "lieu",
+  "nom": "La réserve d'armes",
+  "titre": "Arsenal de l'Assemblage",
+  "parent": "assemblage",
+  "resume": "Ancienne cale transformée en arsenal, mousquets, sabres et barils de poudre.",
+  "connu": [
+   "On y trouve le Sabre Croc-de-Requin, le Filet de poix et l'Arbalète Brise-Flanc."
+  ]
+ },
+ {
+  "id": "salle-des-cartes",
+  "type": "lieu",
+  "nom": "La salle des cartes",
+  "titre": "Stratégie de Sycomore",
+  "parent": "assemblage",
+  "resume": "Ancien gaillard couvert de cartes maritimes volées, où les capitaines Lapidès planifient leurs campagnes.",
+  "connu": [
+   "Aucune carte ne relie l'Île aux Moines à Havre Noir.",
+   "Des annotations pointent vers Port Doëlan et une cargaison mystérieuse."
+  ]
+ },
+ {
+  "id": "cale-aux-vivres",
+  "type": "lieu",
+  "nom": "La cale aux vivres",
+  "titre": "Couloir de réserves",
+  "parent": "assemblage",
+  "resume": "Couloir étroit de tonneaux de sel et de biscuits de mer, gardé par un Lapidès."
+ },
+ {
+  "id": "capitainerie",
+  "type": "lieu",
+  "nom": "La Capitainerie",
+  "titre": "Salle du trône",
+  "parent": "assemblage",
+  "resume": "Salle d'audience bâtie sur un ancien navire amiral, trône de poutres et d'os, trophées d'abordage.",
+  "connu": [
+   "Sycomore y siège entourée de trois lieutenants."
+  ]
+ },
+ {
+  "id": "quartiers-du-capitaine",
+  "type": "lieu",
+  "nom": "Les quartiers du capitaine",
+  "titre": "Quartiers privés de Sycomore",
+  "parent": "assemblage",
+  "resume": "Chambre finement ouvragée, bureau massif gravé de symboles nautiques, hamac richement brodé.",
+  "connu": [
+   "Sycomore y parle plus posément, sans tout livrer. Elle laisse entendre que des fonds viennent d'un seigneur pirate."
+  ]
+ },
+ {
+  "id": "dortoir-des-lapides",
+  "type": "lieu",
+  "nom": "Le dortoir des Lapidès",
+  "titre": "Pont de couchage",
+  "parent": "assemblage",
+  "resume": "Vaste pont de hamacs, de sabres accrochés et de boucliers servant d'assiettes.",
+  "connu": [
+   "Les Lapidès s'y disputent sur l'origine de l'épidémie : flotte, moines ou Dominion."
+  ]
+ },
+ {
+  "id": "pont-de-parade",
+  "type": "lieu",
+  "nom": "Le pont de parade",
+  "titre": "Duel rituel",
+  "parent": "assemblage",
+  "resume": "Passerelle branlante au-dessus de l'eau noire où l'étranger doit vaincre un adversaire désigné par Sycomore.",
+  "connu": [
+   "Victoire ou chute, aucune interruption tolérée."
+  ]
+ },
+ {
+  "id": "gratte-papier",
+  "type": "lieu",
+  "nom": "Le Gratte-papier",
+  "titre": "Bureau du maître-scribe",
+  "parent": "assemblage",
+  "resume": "Salle étroite tapissée de registres reliés de cuir. Seule archive d'ordre de Havre Noir.",
+  "connu": [
+   "Les registres prouvent que Sycomore interdit toute contrebande et qu'aucun navire de l'Île aux Moines n'a accosté.",
+   "Sycomore a commandé une enquête sur Port Doëlan et Titan Inc, la compagnie de Spezza."
+  ]
+ },
+ {
+  "id": "le-gratte-papier",
+  "type": "pnj",
+  "nom": "Le Gratte-papier",
+  "titre": "Maître-scribe de Sycomore",
+  "parent": "gratte-papier",
+  "lieu": "gratte-papier",
+  "statut": "vivant",
+  "resume": "Scribe aux doigts tachés d'encre et de rhum, qui tient les registres avec méticulosité.",
+  "connu": [
+   "Sa note personnelle montre que Sycomore se méfie de Spezza sans preuve."
+  ],
+  "alias": [
+   "Gratte-papier"
+  ]
+ },
+ {
+  "id": "draven-corbeal",
+  "type": "pnj",
+  "nom": "Draven Corbéal",
+  "titre": "Capitaine de fortune",
+  "parent": "havre-noir",
+  "lieu": "rocher-aux-noeuds",
+  "statut": "vivant",
+  "resume": "Opportuniste et cupide. Il ne mène qu'à Port Lagon, contre une lourde somme.",
+  "connu": [
+   "C'est la sortie de secours si le groupe se brouille avec Sycomore."
+  ]
+ },
+ {
+  "id": "malrik-solbrun",
+  "type": "pnj",
+  "nom": "Diacre Malrik Solbrun",
+  "titre": "Prêtre banni de Thalos",
+  "parent": "temple-de-thalos",
+  "lieu": "temple-de-thalos",
+  "statut": "en fuite",
+  "resume": "Il a basculé en prêchant pour le Dominion. Sycomore a brûlé le temple et l'a banni.",
+  "connu": [
+   "Il placardait « la lumière de Sol » et accusait Sycomore d'hérésie."
+  ]
+ },
+ {
+  "id": "brague",
+  "type": "pnj",
+  "nom": "Brague",
+  "titre": "Marin du Brumeux",
+  "parent": "registres-du-port",
+  "lieu": "registres-du-port",
+  "statut": "mort",
+  "resume": "Nom cité par le scribe parmi les marins du Brumeux déjà morts."
+ },
+ {
+  "id": "les-yeux",
+  "type": "organisation",
+  "nom": "Les Yeux",
+  "titre": "Mutants des Silos",
+  "parent": "camont",
+  "resume": "Survivants et mutants installés dans les silos de Camont. Ils ont pour cheffe Iris.",
+  "connu": [
+   "Ils reconnaissent Jane, qui a déjà travaillé pour eux.",
+   "Leurs voleurs, les yeux agiles, étaient à Voros."
+  ],
+  "alias": [
+   "Yeux"
+  ],
+  "relations": [
+   {
+    "cible": "iris",
+    "type": "Dirigés par",
+    "ton": "neutre"
+   }
+  ]
+ },
+ {
+  "id": "les-bruleurs",
+  "type": "organisation",
+  "nom": "Les Brûleurs",
+  "titre": "Gang du Dôme",
+  "parent": "camont",
+  "resume": "Gang drogué qui parle d'une seule voix douce depuis le Dôme.",
+  "connu": [
+   "Une présence les observe à travers eux et invite les voyageurs à « se lier » à l'esprit collectif."
+  ],
+  "alias": [
+   "Brûleurs",
+   "Bruloir"
+  ]
+ },
+ {
+  "id": "les-epingles",
+  "type": "organisation",
+  "nom": "Les Épingles",
+  "titre": "Gang de la Fabrique",
+  "parent": "camont",
+  "resume": "Gang structuré et nerveux qui protège l'ancienne usine textile. Cheffe : Nix.",
+  "connu": [
+   "Les habitants paient une contribution pour la paix.",
+   "Le Passeur leur a demandé un vol chez l'impératrice Eryndel."
+  ],
+  "alias": [
+   "Épingles",
+   "Epingles"
+  ],
+  "relations": [
+   {
+    "cible": "nix",
+    "type": "Dirigés par",
+    "ton": "neutre"
+   }
+  ]
+ },
+ {
+  "id": "gardes-gris",
+  "type": "organisation",
+  "nom": "Les Gardes gris",
+  "titre": "Garde de la Ville Haute",
+  "parent": "camont",
+  "resume": "Gardes secs et procéduriers qui interdisent la Ville Haute à la basse-ville sur ordre du conseil.",
+  "alias": [
+   "Garde gris",
+   "Gardes Gris"
+  ]
+ },
+ {
+  "id": "ville-haute-camont",
+  "type": "lieu",
+  "nom": "La Ville Haute",
+  "titre": "Quartier doré sur la falaise",
+  "parent": "camont",
+  "resume": "Avenues pavées, demeures claires, maisons de patriciens sur un pinacle. Emmurée dans son propre mirage.",
+  "connu": [
+   "Les marchands extérieurs évitent Camont par peur des pillards de la basse-ville.",
+   "Sous la peinture fraîche, les pierres se fendent."
+  ],
+  "alias": [
+   "Ville Haute"
+  ]
+ },
+ {
+  "id": "jardins-de-l-eternite",
+  "type": "lieu",
+  "nom": "Les Jardins de l'Éternité",
+  "titre": "Rêve partagé",
+  "parent": "camont",
+  "resume": "Jardin suspendu au-dessus du vide où Eryndel apparaît aux deux joueuses pendant le voyage.",
+  "connu": [
+   "Eryndel parle de « deux petits soleils » nés des restes d'un Titan et du génie fou d'un homme seul."
+  ],
+  "alias": [
+   "Jardin d'Éternité",
+   "Jardins de l'Eternité"
+  ]
+ },
+ {
+  "id": "marteau-du-brise-pavois",
+  "type": "lieu",
+  "nom": "Le Marteau du Brise-Pavois",
+  "titre": "Navire noir d'Olyssane",
+  "parent": "camont",
+  "resume": "Navire noir aux voiles raides comme des lames, qui mène le groupe de Havre Noir à Camont par la Veyra.",
+  "connu": [
+   "Sycomore commande les marées depuis l'Assemblage pour propulser le navire.",
+   "Au sixième jour, des brigands attaquent depuis les berges."
+  ],
+  "alias": [
+   "Marteau du Brise-Pavois"
+  ]
+ },
+ {
+  "id": "tilda",
+  "type": "pnj",
+  "nom": "Tilda",
+  "titre": "Enfant voleuse",
+  "parent": "planches-camont",
+  "lieu": "planches-camont",
+  "statut": "vivant",
+  "resume": "Gamine accrochée aux jambes d'Irna.",
+  "connu": [
+   "« C'est pas du vol si on le rend, non ? »"
+  ]
+ },
+ {
+  "id": "cleff",
+  "type": "pnj",
+  "nom": "Cleff",
+  "titre": "Enfant voleur",
+  "parent": "planches-camont",
+  "lieu": "planches-camont",
+  "statut": "vivant",
+  "resume": "Gamin qui tient le vieux sac de cuir volé avec Irna et Tilda."
+ },
+ {
+  "id": "mika",
+  "type": "pnj",
+  "nom": "Mika",
+  "titre": "Poulpe de Teka",
+  "parent": "l-abattoir",
+  "lieu": "l-abattoir",
+  "statut": "vivant",
+  "resume": "Petit poulpe qui vit au bout des tentacules de Teka."
+ },
+ {
+  "id": "leth",
+  "type": "pnj",
+  "nom": "Leth",
+  "titre": "Informateur des Épingles",
+  "parent": "les-epingles",
+  "lieu": "usine-camont",
+  "statut": "inconnu",
+  "resume": "Auteur d'une lettre à Graham Gonn pour le prévenir qu'un envoyé du Passeur a commandé un vol chez Eryndel.",
+  "connu": [
+   "Il a éloigné un membre bavard en l'envoyant monter un comptoir à Havre Noir pour la Griffe."
+  ]
+ },
+ {
+  "id": "damian",
+  "type": "pnj",
+  "nom": "Damian",
+  "titre": "Jeune garde de la villa Graham",
+  "parent": "villa-graham",
+  "lieu": "villa-graham",
+  "statut": "vivant",
+  "resume": "Jeune garde qui rêve de prouver sa valeur dans la ville basse."
+ },
+ {
+  "id": "vieux-garde-graham",
+  "type": "pnj",
+  "nom": "Vieux garde de la villa Graham",
+  "titre": "Garde du coffre",
+  "parent": "villa-graham",
+  "lieu": "villa-graham",
+  "statut": "vivant",
+  "resume": "Garde proche de la retraite qui préfère les postes tranquilles."
+ },
+ {
+  "id": "sadie",
+  "type": "pnj",
+  "nom": "Sadie",
+  "titre": "Prostituée du saloon",
+  "parent": "saloon-port-blanc",
+  "lieu": "saloon-port-blanc",
+  "statut": "vivant",
+  "resume": "Elle se présente sous ce nom au saloon. Le groupe apprend plus tard à Port Doëlan que c'était Absalom.",
+  "connu": [
+   "Absalom est passée à Port Blanc sous une identité banale."
+  ],
+  "relations": [
+   {
+    "cible": "absalom",
+    "type": "Identité empruntée",
+    "ton": "negatif"
+   }
+  ]
+ },
+ {
+  "id": "abattoirs-de-chaux",
+  "type": "lieu",
+  "nom": "Les abattoirs de chaux",
+  "titre": "Site central de la viande",
+  "parent": "port-blanc",
+  "resume": "Quartier noyé dans un brouillard blanc et âcre de chaux brûlée. Accès interdit aux étrangers.",
+  "connu": [
+   "Les gardes ne parlent jamais de la viande contaminée, mais leur fermeté trahit l'enjeu.",
+   "Les habitants disent que la chaux absorbe la corruption."
+  ]
+ },
+ {
+  "id": "tiberius",
+  "type": "pnj",
+  "nom": "Tiberius",
+  "titre": "Garde des abattoirs",
+  "parent": "abattoirs-de-chaux",
+  "lieu": "abattoirs-de-chaux",
+  "statut": "vivant",
+  "resume": "Garde calme et inflexible, qui bloque le passage sans chercher le conflit."
+ },
+ {
+  "id": "ezekiel",
+  "type": "pnj",
+  "nom": "Ezekiel",
+  "titre": "Garde des abattoirs",
+  "parent": "abattoirs-de-chaux",
+  "lieu": "abattoirs-de-chaux",
+  "statut": "vivant",
+  "resume": "Garde posté avec Tiberius. « Ordres des Familles. Pas d'étrangers. »"
+ },
+ {
+  "id": "marche-aux-bestiaux",
+  "type": "lieu",
+  "nom": "Le marché aux bestiaux",
+  "titre": "Poumon économique de la ville",
+  "parent": "port-blanc",
+  "resume": "Marché de plein vent poussiéreux, avec estrades d'enchères, maréchaux, selliers, tanneurs.",
+  "connu": [
+   "Les Familles y fixent les rapports de force. Infos, dettes et trahisons y circulent."
+  ]
+ },
+ {
+  "id": "abby",
+  "type": "pnj",
+  "nom": "Abby",
+  "titre": "Agente du Voile à Port Blanc",
+  "parent": "marche-aux-bestiaux",
+  "lieu": "marche-aux-bestiaux",
+  "statut": "vivant",
+  "resume": "Passe ses journées dans les champs et ses nuits à écouter les rumeurs. Elle veut savoir combien de temps Port Blanc tient.",
+  "connu": [
+   "Elle décrit les quatre familles et dit que des cargaisons transitent par la terre depuis que le port est mort."
+  ],
+  "alias": [
+   "Abby du Voile"
+  ]
+ },
+ {
+  "id": "tanneries-port-blanc",
+  "type": "lieu",
+  "nom": "Les tanneries",
+  "titre": "Cuir et peaux",
+  "parent": "marche-aux-bestiaux",
+  "resume": "Rangées d'ateliers de cuir autour du marché aux bestiaux."
+ },
+ {
+  "id": "cornelius",
+  "type": "pnj",
+  "nom": "Cornelius",
+  "titre": "Tanneur",
+  "parent": "tanneries-port-blanc",
+  "lieu": "tanneries-port-blanc",
+  "statut": "vivant",
+  "resume": "Travaille le cuir près du marché, sans boutique fixe. Il sait quand il vaut mieux se taire.",
+  "connu": [
+   "Il est témoin des transactions sous le manteau entre Familles."
+  ]
+ },
+ {
+  "id": "general-store-port-blanc",
+  "type": "lieu",
+  "nom": "Le General Store",
+  "titre": "Quais rouges",
+  "parent": "quais-rouges",
+  "resume": "Comptoir de matériel de voyage : corde, rations, lampes, cartes grossières."
+ },
+ {
+  "id": "royce",
+  "type": "pnj",
+  "nom": "Royce",
+  "titre": "Marchand du General Store",
+  "parent": "general-store-port-blanc",
+  "lieu": "general-store-port-blanc",
+  "statut": "vivant",
+  "resume": "Vend l'équipement de voyage de la frontière sur les Quais Rouges."
+ },
+ {
+  "id": "marechal-ferrant-port-blanc",
+  "type": "lieu",
+  "nom": "Le maréchal-ferrant",
+  "titre": "Quais rouges",
+  "parent": "quais-rouges",
+  "resume": "Forge de ferrage au bord des quais."
+ },
+ {
+  "id": "otis",
+  "type": "pnj",
+  "nom": "Otis",
+  "titre": "Maréchal-ferrant",
+  "parent": "marechal-ferrant-port-blanc",
+  "lieu": "marechal-ferrant-port-blanc",
+  "statut": "vivant",
+  "resume": "Ferre les montures des voyageurs sur les Quais Rouges."
+ },
+ {
+  "id": "cercle-des-eleveurs",
+  "type": "lieu",
+  "nom": "Le Cercle des Éleveurs",
+  "titre": "Siège de l'oligarchie",
+  "parent": "port-blanc",
+  "resume": "Large bâtiment en arc de cercle, un segment aux couleurs de chaque maison. Réunions longues et querelles de quotas.",
+  "connu": [
+   "Accès très limité aux étrangers. Gardes privés nombreux."
+  ]
+ },
+ {
+  "id": "chapelle-des-betes-silencieuses",
+  "type": "lieu",
+  "nom": "La Chapelle des Bêtes Silencieuses",
+  "titre": "Culte local des troupeaux",
+  "parent": "port-blanc",
+  "resume": "Chapelle de bois brut, crânes de bovins aux poutres, et statue d'un homme mi-cerf aux bois brisés.",
+  "connu": [
+   "On y prie pour les troupeaux, jamais pour les hommes.",
+   "Certains y reconnaissent Sylvanus, mais nul n'ose le nommer."
+  ]
+ },
+ {
+  "id": "edrin-boeuf-cendre",
+  "type": "pnj",
+  "nom": "Edrin Bœuf-Cendre",
+  "titre": "Gardien de la chapelle",
+  "parent": "chapelle-des-betes-silencieuses",
+  "lieu": "chapelle-des-betes-silencieuses",
+  "statut": "vivant",
+  "resume": "Il explique que le culte est né quand les bêtes ont commencé à tomber après la guerre.",
+  "connu": [
+   "La terre est abîmée, l'eau aussi, alors ce qu'on invoque l'est forcément."
+  ],
+  "alias": [
+   "Edrin Boeuf-Cendre"
+  ]
+ },
+ {
+  "id": "betes-dorees",
+  "type": "evenement",
+  "nom": "Les Bêtes Dorées",
+  "titre": "Vaches mortes entourées d'or",
+  "parent": "port-blanc",
+  "resume": "Chaque nuit, des vaches sont retrouvées mortes, entourées de pièces d'or fondues ou incrustées de chair.",
+  "connu": [
+   "Les Varkel accusent publiquement les Reth de rituel païen. Les Reth ont demandé l'arbitrage des Quatre Familles.",
+   "Les anciens parlent de « l'or qui pue ».",
+   "Absalom est de passage et relève des bandits marqués par l'Avarice."
+  ],
+  "relations": [
+   {
+    "cible": "absalom",
+    "type": "Responsable des bandits dorés",
+    "ton": "negatif"
+   }
+  ]
+ },
+ {
+  "id": "auberge-des-trois-pins",
+  "type": "lieu",
+  "nom": "L'auberge des Trois Pins",
+  "titre": "Lieu d'échange dans la plaine",
+  "parent": "port-blanc",
+  "resume": "Auberge isolée où le shérif doit remettre Mara Callahan aux autorités de Port Doëlan.",
+  "connu": [
+   "Dans la réserve, deux cadavres : les vrais aubergistes, M. et Mme Turner.",
+   "Le patron et les deux clients sont des hommes de Mara."
+  ]
+ },
+ {
+  "id": "clint-mercer",
+  "type": "pnj",
+  "nom": "Clint Mercer",
+  "titre": "Faux patron de l'auberge",
+  "parent": "auberge-des-trois-pins",
+  "lieu": "auberge-des-trois-pins",
+  "statut": "vaincu",
+  "resume": "Homme de Mara qui joue l'aubergiste."
+ },
+ {
+  "id": "turner",
+  "type": "pnj",
+  "nom": "M. et Mme Turner",
+  "titre": "Aubergiers assassinés",
+  "parent": "auberge-des-trois-pins",
+  "lieu": "auberge-des-trois-pins",
+  "statut": "mort",
+  "resume": "Les véritables aubergistes, retrouvés morts dans la réserve.",
+  "alias": [
+   "Mr Turner",
+   "Mme Turner",
+   "Turner"
+  ]
+ },
+ {
+  "id": "gue-port-blanc",
+  "type": "lieu",
+  "nom": "Le gué",
+  "titre": "Embuscade de Mara",
+  "parent": "port-blanc",
+  "resume": "Gué trop haut, arbre frais abattu en travers : un piège préparé par la bande de Mara.",
+  "connu": [
+   "Mara tente flatterie, charme et pots-de-vin jusqu'à 4000 po pendant le trajet."
+  ]
+ },
+ {
+  "id": "banditos-mara",
+  "type": "organisation",
+  "nom": "La bande de Mara",
+  "titre": "Gang de Mara Callahan",
+  "parent": "port-blanc",
+  "resume": "Bandits qui attaquent au gué pour libérer Mara.",
+  "alias": [
+   "Banditos"
+  ]
+ },
+ {
+  "id": "ecuries-clos-vieux",
+  "type": "lieu",
+  "nom": "Les écuries du Clos Vieux",
+  "titre": "Cour de pierre blonde",
+  "parent": "port-doelan",
+  "resume": "Cour carrée aux arches épaisses, bassin rond et statue équestre. Un avis de recherche visant Philippa et Jane est affiché sur une colonne.",
+  "connu": [
+   "Logement et fourrage : 1 po par jour et par cheval."
+  ]
+ },
+ {
+  "id": "gorok",
+  "type": "pnj",
+  "nom": "Gorok",
+  "titre": "Palefrenier des écuries",
+  "parent": "ecuries-clos-vieux",
+  "lieu": "ecuries-clos-vieux",
+  "statut": "vivant",
+  "resume": "Orc massif, peu bavard, professionnel et direct. Il ne négocie pas.",
+  "alias": [
+   "Gorak"
+  ]
+ },
+ {
+  "id": "portes-doelan",
+  "type": "lieu",
+  "nom": "Les portes de la ville",
+  "titre": "Poste de contrôle routier",
+  "parent": "port-doelan",
+  "resume": "Quatre gardes en livrée bleue contrôlent identités, provenance et cargaisons.",
+  "connu": [
+   "Madalena a disparu en laissant son chariot sur la route."
+  ]
+ },
+ {
+  "id": "garde-de-doelan",
+  "type": "pnj",
+  "nom": "Garde de Doëlan",
+  "titre": "Sergent du poste",
+  "parent": "portes-doelan",
+  "lieu": "portes-doelan",
+  "statut": "vivant",
+  "resume": "« Halte là. La route vers Port Doëlan passe par moi aujourd'hui. »",
+  "alias": [
+   "Garde de Doelan"
+  ]
+ },
+ {
+  "id": "ancre-seche",
+  "type": "lieu",
+  "nom": "L'Ancre Sèche",
+  "titre": "Auberge",
+  "parent": "port-doelan",
+  "resume": "Auberge sur une rue de terrasses sous auvents verts. Chambre 2 po, repas 50 pa.",
+  "connu": [
+   "Tout le monde y loue Spezza, mécène et défenseur de la baie."
+  ]
+ },
+ {
+  "id": "raffaele-orsini",
+  "type": "pnj",
+  "nom": "Raffaele Orsini",
+  "titre": "Patron de l'Ancre Sèche",
+  "parent": "ancre-seche",
+  "lieu": "ancre-seche",
+  "statut": "vivant",
+  "resume": "Patron jovial et fier de sa ville, sincèrement fidèle à Spezza.",
+  "connu": [
+   "La Sentinella et l'Invicta assurent la sécurité maritime."
+  ]
+ },
+ {
+  "id": "comptoir-de-l-ether",
+  "type": "lieu",
+  "nom": "Le Comptoir de l'Éther",
+  "titre": "Objets magiques",
+  "parent": "port-doelan",
+  "resume": "Alcôve lumineuse de pierre claire, vitrines de fioles et d'objets patiemment alignés."
+ },
+ {
+  "id": "korvin-lustracier",
+  "type": "pnj",
+  "nom": "Korvin Lustracier",
+  "titre": "Marchand d'objets magiques",
+  "parent": "comptoir-de-l-ether",
+  "lieu": "comptoir-de-l-ether",
+  "statut": "vivant",
+  "resume": "Gnome flamboyant à la barbe violette, théâtral. Il adore les récits d'aventures extraordinaires.",
+  "alias": [
+   "Korbin Lustracier"
+  ]
+ },
+ {
+  "id": "forge-maison-du-fer",
+  "type": "lieu",
+  "nom": "La Maison du Fer",
+  "titre": "Forge du chantier naval",
+  "parent": "port-doelan",
+  "resume": "Forge ouverte sur la rue, chaleur et résonance de coups de marteau."
+ },
+ {
+  "id": "giorgio-malvento",
+  "type": "pnj",
+  "nom": "Giorgio Malvento",
+  "titre": "Forgeron",
+  "parent": "forge-maison-du-fer",
+  "lieu": "forge-maison-du-fer",
+  "statut": "vivant",
+  "resume": "Humain massif, fier du chantier naval. Il a travaillé sur l'Invicta et la Sentinella.",
+  "connu": [
+   "Il décrit l'Arsenal comme une ancienne caserne devenue dépôt logistique."
+  ]
+ },
+ {
+  "id": "officine",
+  "type": "lieu",
+  "nom": "L'Officine",
+  "titre": "Alchimiste",
+  "parent": "port-doelan",
+  "resume": "Échoppe circulaire autour d'un bassin clair, alambics et étagères de fioles."
+ },
+ {
+  "id": "plage-doelan",
+  "type": "lieu",
+  "nom": "La plage de Port Doëlan",
+  "titre": "Plage et stand de Lina",
+  "parent": "port-doelan",
+  "resume": "Sable blond, parasols bleus et blancs, un stand de bois débordant de tissus."
+ },
+ {
+  "id": "lina",
+  "type": "pnj",
+  "nom": "Lina",
+  "titre": "Marchande de la plage",
+  "parent": "plage-doelan",
+  "lieu": "plage-doelan",
+  "statut": "vivant",
+  "resume": "Jeune femme vive à l'accent chantant, qui aime les aventuriers. Elle ne sait rien des intrigues."
+ },
+ {
+  "id": "port-et-jetee-doelan",
+  "type": "lieu",
+  "nom": "Le port et la jetée",
+  "titre": "Quais de Port Doëlan",
+  "parent": "port-doelan",
+  "resume": "Pierres blondes, coques amarrées et voiles repliées sur l'eau turquoise."
+ },
+ {
+  "id": "falco",
+  "type": "pnj",
+  "nom": "Falco",
+  "titre": "Marin du port",
+  "parent": "port-et-jetee-doelan",
+  "lieu": "port-et-jetee-doelan",
+  "statut": "vivant",
+  "resume": "Il raconte qu'un homme est entré à la cour de Spezza il y a six mois et n'en est jamais ressorti."
+ },
+ {
+  "id": "mirella",
+  "type": "pnj",
+  "nom": "Mirella",
+  "titre": "Marin du port",
+  "parent": "port-et-jetee-doelan",
+  "lieu": "port-et-jetee-doelan",
+  "statut": "vivant",
+  "resume": "Compagne de discussion de Falco. Elle parle des deux femmes que Spezza traquerait."
+ },
+ {
+  "id": "phare-doelan",
+  "type": "lieu",
+  "nom": "Le phare",
+  "titre": "Promontoire face à la mer",
+  "parent": "port-doelan",
+  "resume": "Tour de pierre claire à lanterne stable, escalier extérieur battu par le vent."
+ },
+ {
+  "id": "haute-vigie",
+  "type": "lieu",
+  "nom": "La Haute Vigie",
+  "titre": "Tour d'Amôn",
+  "parent": "port-doelan",
+  "resume": "Tour étroite gravée de symboles discrets, aux fenêtres éclairées à des heures où la ville dort."
+ },
+ {
+  "id": "amon-haute-vigie",
+  "type": "pnj",
+  "nom": "Amôn",
+  "titre": "Vieux tieffelin aveugle",
+  "parent": "haute-vigie",
+  "lieu": "haute-vigie",
+  "statut": "vivant",
+  "resume": "Il perçoit les lignes du monde et sert l'équilibre de la ville. Il recommande de voir Makandral.",
+  "alias": [
+   "Amon"
+  ]
+ },
+ {
+  "id": "cesare-rusconi",
+  "type": "pnj",
+  "nom": "Cesare Rusconi",
+  "titre": "Directeur du théâtre",
+  "parent": "theatre-russconi",
+  "lieu": "theatre-russconi",
+  "statut": "vivant",
+  "resume": "Il réclame 15 po par personne et exige une tenue de circonstance.",
+  "connu": [
+   "Acte I : les Voltigeurs de l'Éclipse. Acte II : Barok."
+  ],
+  "alias": [
+   "Rusconi"
+  ]
+ },
+ {
+  "id": "arkhavel-dorn",
+  "type": "pnj",
+  "nom": "Arkhavel Dorn",
+  "titre": "Intendant des Compagnies Impériales",
+  "parent": "port-doelan",
+  "lieu": "port-doelan",
+  "statut": "inconnu",
+  "resume": "Signataire de la lettre de mission confiée à Matthias Holbrekt, au nom de l'Impératrice Eryndel d'Altéra."
+ },
+ {
+  "id": "rue-marchande-doelan",
+  "type": "lieu",
+  "nom": "La rue marchande",
+  "titre": "Étals, lanternes et terrasses",
+  "parent": "port-doelan",
+  "resume": "Arcades de pierre, odeurs de fruits mûrs, de pain chaud et d'épices."
+ },
+ {
+  "id": "eloi-bonbarique",
+  "type": "pnj",
+  "nom": "Éloi Bonbarique",
+  "titre": "Marchand ruiné de la caravane",
+  "parent": "rue-marchande-doelan",
+  "lieu": "rue-marchande-doelan",
+  "statut": "vivant",
+  "resume": "Ruiné, il mendie contre un mur. Il a voyagé avec le groupe jusqu'à Port Doëlan.",
+  "connu": [
+   "La Griffe achète du pyrracier en quantités absurdes."
+  ],
+  "alias": [
+   "Eloi Bonbarique"
+  ]
+ },
+ {
+  "id": "entrepots-abandonnes-doelan",
+  "type": "lieu",
+  "nom": "Les entrepôts abandonnés",
+  "titre": "Quartier brûlé",
+  "parent": "port-doelan",
+  "resume": "Hangars noircis par un ancien incendie, où certains viennent disparaître."
+ },
+ {
+  "id": "ancien-quartier-brule",
+  "type": "lieu",
+  "nom": "L'ancien quartier brûlé",
+  "titre": "Vestige de la guerre de la Veyra",
+  "parent": "port-doelan",
+  "resume": "Secteur ravagé par l'Empire d'Altéra, jamais reconstruit. Peu de patrouilles.",
+  "connu": [
+   "Officiellement par manque de moyens."
+  ]
+ },
+ {
+  "id": "tomas",
+  "type": "pnj",
+  "nom": "Tomas",
+  "titre": "Bûcheron des ruines",
+  "parent": "ancien-quartier-brule",
+  "lieu": "ancien-quartier-brule",
+  "statut": "vivant",
+  "resume": "Coupe d'anciennes poutres pour se chauffer et en a un peu honte. Il n'a rien contre Spezza."
+ },
+ {
+  "id": "malka",
+  "type": "pnj",
+  "nom": "Malka",
+  "titre": "Rat-folk en exil",
+  "parent": "ancien-quartier-brule",
+  "lieu": "ancien-quartier-brule",
+  "statut": "vivant",
+  "resume": "Sa tribu a été chassée par les mercenaires de Spezza. Elle propose de reprendre le fortin.",
+  "connu": [
+   "« Ramenez-nous le trou. Notre trou. »"
+  ]
+ },
+ {
+  "id": "tina",
+  "type": "pnj",
+  "nom": "Tina",
+  "titre": "Employée de la maison Vespera",
+  "parent": "maison-de-vespera",
+  "lieu": "maison-de-vespera",
+  "statut": "vivant",
+  "resume": "Une des deux sœurs de la maison."
+ },
+ {
+  "id": "nina",
+  "type": "pnj",
+  "nom": "Nina",
+  "titre": "Employée de la maison Vespera",
+  "parent": "maison-de-vespera",
+  "lieu": "maison-de-vespera",
+  "statut": "vivant",
+  "resume": "Une des deux sœurs de la maison."
+ },
+ {
+  "id": "quartier-general-griffe",
+  "type": "lieu",
+  "nom": "Le QG de la Griffe",
+  "titre": "Arrière-boutique de la maison Vespera",
+  "parent": "maison-de-vespera",
+  "resume": "Pièce de cartes et de plans, armes visibles. La Griffe prépare des coups ici."
+ },
+ {
+  "id": "cassiopee-vorn",
+  "type": "pnj",
+  "nom": "Cassiopée Vorn",
+  "titre": "Cheffe de la Griffe",
+  "parent": "quartier-general-griffe",
+  "lieu": "quartier-general-griffe",
+  "statut": "vivant",
+  "resume": "Droite, regard tranchant. Elle propose une alliance temporaire contre Spezza et veut sa part d'or.",
+  "alias": [
+   "Cassiopee Vorn"
+  ]
+ },
+ {
+  "id": "mine-d-argent-doelan",
+  "type": "lieu",
+  "nom": "La vieille mine d'argent",
+  "titre": "Fermée",
+  "parent": "port-doelan",
+  "resume": "Entrée brisée à l'est de la ville. Spezza l'a fait dynamiter."
+ },
+ {
+  "id": "aldo",
+  "type": "pnj",
+  "nom": "Aldo",
+  "titre": "Mineur",
+  "parent": "mine-d-argent-doelan",
+  "lieu": "mine-d-argent-doelan",
+  "statut": "vivant",
+  "resume": "Assis devant l'entrée, bouteille en main. « Fermée. Enfin. Meilleure nouvelle de l'année. »"
+ },
+ {
+  "id": "carriere-de-pierre-doelan",
+  "type": "lieu",
+  "nom": "La carrière de pierre",
+  "titre": "Murailles renforcées",
+  "parent": "port-doelan",
+  "resume": "Paliers de roche, activité au ralenti. Les livraisons ont servi à épaissir les murs."
+ },
+ {
+  "id": "maela",
+  "type": "pnj",
+  "nom": "Maela",
+  "titre": "Ouvrière de la carrière",
+  "parent": "carriere-de-pierre-doelan",
+  "lieu": "carriere-de-pierre-doelan",
+  "statut": "vivant",
+  "resume": "Peu aimable. « Vous voyez les murs en ville ? C'est nous. »"
+ },
+ {
+  "id": "voile-doelan",
+  "type": "lieu",
+  "nom": "Le repaire du Voile",
+  "titre": "Bas-quartiers",
+  "parent": "port-doelan",
+  "resume": "Maison basse aux volets gonflés, foyer de briques et armes contre un mur."
+ },
+ {
+  "id": "korrash",
+  "type": "pnj",
+  "nom": "Korrash",
+  "titre": "Chef du Voile",
+  "parent": "voile-doelan",
+  "lieu": "voile-doelan",
+  "statut": "vivant",
+  "resume": "Orc massif. Il cherche à se rapprocher de Spezza pour l'argent et l'expansion vers l'Ouest."
+ },
+ {
+  "id": "saphir",
+  "type": "pnj",
+  "nom": "Saphir",
+  "titre": "Lieutenante du Voile",
+  "parent": "voile-doelan",
+  "lieu": "voile-doelan",
+  "statut": "vivant",
+  "resume": "Accompagne Korrash."
+ },
+ {
+  "id": "bains-publics-doelan",
+  "type": "lieu",
+  "nom": "Les bains publics",
+  "titre": "Entrée 5 po",
+  "parent": "port-doelan",
+  "resume": "Colonnes blanches, vapeur et bassins chauds. Quelques heures retirent un niveau d'épuisement."
+ },
+ {
+  "id": "octavia",
+  "type": "pnj",
+  "nom": "Octavia",
+  "titre": "Tenancière des bains",
+  "parent": "bains-publics-doelan",
+  "lieu": "bains-publics-doelan",
+  "statut": "vivant",
+  "resume": "Sourire simple et regard attentif. Elle répète les rumeurs de l'accueil.",
+  "connu": [
+   "Des nains recrutés par Spezza ont été vus il y a quelques mois."
+  ]
+ },
+ {
+  "id": "barbier-edouardo",
+  "type": "lieu",
+  "nom": "Chez Edouardo",
+  "titre": "Barbier",
+  "parent": "port-doelan",
+  "resume": "Fauteuil face au miroir, savon chaud et huiles capillaires."
+ },
+ {
+  "id": "edouardo",
+  "type": "pnj",
+  "nom": "Edouardo",
+  "titre": "Barbier",
+  "parent": "barbier-edouardo",
+  "lieu": "barbier-edouardo",
+  "statut": "vivant",
+  "resume": "Il grogne plus qu'il ne discute. 2 po la coupe.",
+  "alias": [
+   "Édouardo"
+  ]
+ },
+ {
+  "id": "boulangerie-rossi",
+  "type": "lieu",
+  "nom": "La boulangerie",
+  "titre": "Pain chaud",
+  "parent": "port-doelan",
+  "resume": "Miches dorées, focaccia et petits pains garnis."
+ },
+ {
+  "id": "bruno-rossi",
+  "type": "pnj",
+  "nom": "Bruno Rossi",
+  "titre": "Boulanger",
+  "parent": "boulangerie-rossi",
+  "lieu": "boulangerie-rossi",
+  "statut": "vivant",
+  "resume": "Large tablier, bras farinés. Il vend à bas prix."
+ },
+ {
+  "id": "fleurs-nicea",
+  "type": "lieu",
+  "nom": "Fleurs Nicea",
+  "titre": "Kiosque face à la mer",
+  "parent": "port-doelan",
+  "resume": "Pots débordants de fleurs sous des pins tordus."
+ },
+ {
+  "id": "nicea",
+  "type": "pnj",
+  "nom": "Nicea",
+  "titre": "Fleuriste",
+  "parent": "fleurs-nicea",
+  "lieu": "fleurs-nicea",
+  "statut": "vivant",
+  "resume": "Vieille dame qui observe beaucoup. Les grands navires restent dans la baie, des barques font la relève."
+ },
+ {
+  "id": "chantier-naval-doelan",
+  "type": "lieu",
+  "nom": "Le chantier naval",
+  "titre": "Cathédrale de bois et de fer",
+  "parent": "port-doelan",
+  "resume": "Coques inachevées sur leurs berceaux, maillets, poulies et fours."
+ },
+ {
+  "id": "enzo",
+  "type": "pnj",
+  "nom": "Enzo",
+  "titre": "Chef d'atelier",
+  "parent": "chantier-naval-doelan",
+  "lieu": "chantier-naval-doelan",
+  "statut": "vivant",
+  "resume": "Maître charpentier massif, attaché à son métier plus qu'à Spezza."
+ },
+ {
+  "id": "fortin-des-mercenaires",
+  "type": "lieu",
+  "nom": "Le fortin des mercenaires",
+  "titre": "Ancien terrier de wererats",
+  "parent": "port-doelan",
+  "resume": "Bâtisse de pierre grossière et palissades récentes, sous-sol d'anciens tunnels."
+ },
+ {
+  "id": "capitaine-krezz",
+  "type": "pnj",
+  "nom": "Capitaine Krezz",
+  "titre": "Commandant du fortin",
+  "parent": "fortin-des-mercenaires",
+  "lieu": "fortin-des-mercenaires",
+  "statut": "vivant",
+  "resume": "Capitaine des mercenaires de Spezza au fortin.",
+  "alias": [
+   "Krezz"
+  ]
+ },
+ {
+  "id": "terrier-de-malka",
+  "type": "lieu",
+  "nom": "Le terrier des wererats",
+  "titre": "Nid de Malka",
+  "parent": "port-doelan",
+  "resume": "Terrier de fortune sous des racines et des ruines de pierre. Le nid est divisé."
+ },
+ {
+  "id": "kralik",
+  "type": "pnj",
+  "nom": "Kralik",
+  "titre": "Guerrier wererat",
+  "parent": "terrier-de-malka",
+  "lieu": "terrier-de-malka",
+  "statut": "vivant",
+  "resume": "Veut attaquer immédiatement et reprendre ce qui est à eux."
+ },
+ {
+  "id": "nesk",
+  "type": "pnj",
+  "nom": "Nesk",
+  "titre": "Guerrier wererat",
+  "parent": "terrier-de-malka",
+  "lieu": "terrier-de-malka",
+  "statut": "vivant",
+  "resume": "Veut du sang, avec Kralik."
+ },
+ {
+  "id": "krelia",
+  "type": "pnj",
+  "nom": "Krelia",
+  "titre": "Guerrière wererat",
+  "parent": "terrier-de-malka",
+  "lieu": "terrier-de-malka",
+  "statut": "vivant",
+  "resume": "Juge l'assaut suicidaire : arbalètes, chiens, pièges."
+ },
+ {
+  "id": "nissek",
+  "type": "pnj",
+  "nom": "Nissek",
+  "titre": "Guerrier wererat",
+  "parent": "terrier-de-malka",
+  "lieu": "terrier-de-malka",
+  "statut": "vivant",
+  "resume": "Préfère attendre une faiblesse, avec Krelia."
+ },
+ {
+  "id": "anquiri-di-velarossa",
+  "type": "pnj",
+  "nom": "Anquiri di Velarossa",
+  "titre": "Maison close",
+  "parent": "maison-de-vespera",
+  "lieu": "maison-de-vespera",
+  "statut": "vivant",
+  "resume": "Visage de la Maison Close de Vespera."
+ },
+ {
+  "id": "bravala-compagnie-navale",
+  "type": "lieu",
+  "nom": "Bravala, compagnie navale",
+  "titre": "Compagnie en déclin",
+  "parent": "port-doelan",
+  "resume": "Petit bureau sombre, cartes jaunies. Spezza la garde sous perfusion commerciale."
+ },
+ {
+  "id": "giovanni-bravala",
+  "type": "pnj",
+  "nom": "Giovanni Bravala",
+  "titre": "Fondateur de la compagnie Bravala",
+  "parent": "bravala-compagnie-navale",
+  "lieu": "bravala-compagnie-navale",
+  "statut": "vivant",
+  "resume": "Amer et direct. Il sait que Titan Inc. détourne des fonds et commerce avec Havre Noir."
+ },
+ {
+  "id": "dario-bravala",
+  "type": "pnj",
+  "nom": "Dario Bravala",
+  "titre": "Fils de Giovanni",
+  "parent": "bravala-compagnie-navale",
+  "lieu": "bravala-compagnie-navale",
+  "statut": "vivant",
+  "resume": "Veut encore croire à un redressement."
+ },
+ {
+  "id": "titan-inc",
+  "type": "lieu",
+  "nom": "Titan Inc.",
+  "titre": "Compagnie de Spezza",
+  "parent": "port-doelan",
+  "resume": "Façade de pierre claire, bannières bleues, hall de marbre. Registres et contrats en circulation."
+ },
+ {
+  "id": "lucio-bellanera",
+  "type": "pnj",
+  "nom": "Lucio Bellanera",
+  "titre": "Le Comptable",
+  "parent": "titan-inc",
+  "lieu": "titan-inc",
+  "statut": "vivant",
+  "resume": "Homme pâle aux lunettes rondes, sans talent martial. Il cède sous pression."
+ },
+ {
+  "id": "l-invicta-sentinella",
+  "type": "evenement",
+  "nom": "L'Invicta et la Sentinella",
+  "titre": "Vaisseaux amiraux de Spezza",
+  "parent": "port-doelan",
+  "resume": "Deux navires d'élite en mouillage permanent dans la baie.",
+  "alias": [
+   "Invicta",
+   "Sentinella"
+  ]
+ },
+ {
+  "id": "prison-de-port-doelan",
+  "type": "lieu",
+  "nom": "La prison de Port Doëlan",
+  "titre": "Bloc de pierre sèche",
+  "parent": "port-doelan",
+  "resume": "Carré massif flanqué de tours trapues, herse encadrée de torches."
+ },
+ {
+  "id": "pam",
+  "type": "pnj",
+  "nom": "Pam",
+  "titre": "Réceptionniste de la prison",
+  "parent": "prison-de-port-doelan",
+  "lieu": "prison-de-port-doelan",
+  "statut": "vivant",
+  "resume": "Jeune femme aux lunettes rondes. Elle aime les conversations polies."
+ },
+ {
+  "id": "monique",
+  "type": "pnj",
+  "nom": "Monique",
+  "titre": "Vieille gobeline",
+  "parent": "prison-de-port-doelan",
+  "lieu": "prison-de-port-doelan",
+  "statut": "vivant",
+  "resume": "Observe la prison depuis sa fenêtre et note les relèves."
+ },
+ {
+  "id": "capitaine-kessler",
+  "type": "pnj",
+  "nom": "Capitaine Kessler",
+  "titre": "Directeur de la prison",
+  "parent": "prison-de-port-doelan",
+  "lieu": "prison-de-port-doelan",
+  "statut": "vivant",
+  "resume": "Incorruptible, moustache impeccable, monocle mécanique.",
+  "alias": [
+   "Kessler"
+  ]
+ },
+ {
+  "id": "bibliotheque-de-port-doelan",
+  "type": "lieu",
+  "nom": "La bibliothèque",
+  "titre": "Presses arcaniques",
+  "parent": "port-doelan",
+  "resume": "Pierres claires, devises savantes. Les presses magiques tournent à l'étage."
+ },
+ {
+  "id": "aurelian-thorex",
+  "type": "pnj",
+  "nom": "Aurelian Thorex",
+  "titre": "Le Libraire",
+  "parent": "bibliotheque-de-port-doelan",
+  "lieu": "bibliotheque-de-port-doelan",
+  "statut": "vivant",
+  "resume": "Fébrile, dévoué à Spezza. Il esquive par omission.",
+  "alias": [
+   "Thorex",
+   "Aurelian"
+  ]
+ },
+ {
+  "id": "crique-du-sous-marin",
+  "type": "lieu",
+  "nom": "La crique",
+  "titre": "Chantier nain sous le château",
+  "parent": "port-doelan",
+  "resume": "Escalier taillé dans la falaise vers une crique souterraine et un sous-marin à coque de pyrracier."
+ },
+ {
+  "id": "borim-brise-montagne",
+  "type": "pnj",
+  "nom": "Borim Brise-Montagne",
+  "titre": "Chef de chantier nain",
+  "parent": "crique-du-sous-marin",
+  "lieu": "crique-du-sous-marin",
+  "statut": "vivant",
+  "resume": "Petit, trapu, lunettes épaisses. Il propose de partir avec le groupe dans le sous-marin."
+ },
+ {
+  "id": "la-faille-d-agran",
+  "type": "lieu",
+  "nom": "La Faille",
+  "titre": "Canyon abyssal d'Agran",
+  "parent": "agran",
+  "resume": "Canyon du fond de l'océan où repose la ville. Les courants passent au-dessus, et en sortir est mortel.",
+  "connu": [
+   "Dans la Faille, les créatures qui respirent sous l'eau ne subissent aucune pénalité de pression.",
+   "Les armes perforantes marchent normalement, les armes tranchantes et contondantes sont gênées."
+  ]
+ },
+ {
+  "id": "sous-marin-borim",
+  "type": "lieu",
+  "nom": "Le sous-marin",
+  "titre": "Coque de pyrracier",
+  "parent": "la-faille-d-agran",
+  "resume": "Vaisseau nain à coque de pyrracier : navigation à la proue, machines au centre, salle commune, soute à l'arrière.",
+  "connu": [
+   "Il a traversé deux tempêtes de courants avant de plonger dans la faille.",
+   "Des créatures de la faille l'ont attaqué pendant la descente."
+  ]
+ },
+ {
+  "id": "reshaar",
+  "type": "pnj",
+  "nom": "Reshaar",
+  "titre": "Garde d'Agran",
+  "parent": "agran",
+  "lieu": "la-faille-d-agran",
+  "statut": "vivant",
+  "resume": "Genasi d'eau à la peau bleu-vert, bâton de corail doré. Elle laisse entrer les voyageurs mais marque une frontière.",
+  "connu": [
+   "« Vous êtes vivants. C'est déjà inhabituel. »"
+  ]
+ },
+ {
+  "id": "ghor",
+  "type": "pnj",
+  "nom": "Ghor",
+  "titre": "Garde d'Agran",
+  "parent": "agran",
+  "lieu": "la-faille-d-agran",
+  "statut": "vivant",
+  "resume": "Roche vivante aux tentacules, coquillages incrustés, yeux orange. Il surveille ce qui vient derrière les voyageurs."
+ },
+ {
+  "id": "auberge-d-agran",
+  "type": "lieu",
+  "nom": "L'auberge d'Agran",
+  "titre": "Salle creusée dans la roche",
+  "parent": "agran",
+  "resume": "Salle taillée dans la faille, coraux bioluminescents le long des poutres. Rouge (viande, rare) ou blanc (poisson).",
+  "connu": [
+   "Les habitants appellent les voyageurs de la surface les Noyés."
+  ]
+ },
+ {
+  "id": "temple-de-kataron",
+  "type": "lieu",
+  "nom": "Le temple de Kataron",
+  "titre": "Cavité de coraux rouges",
+  "parent": "agran",
+  "resume": "Colonnes de roche incrustées de coraux qui brûlent comme des braises, trône en coquille vide, miroirs ovales de métal poli.",
+  "connu": [
+   "Le pupitre central a brillé au contact du groupe.",
+   "Glooglugogg leur a dit d'aller voir la Suuraal sans attendre."
+  ]
+ },
+ {
+  "id": "echoppe-de-peraalys",
+  "type": "lieu",
+  "nom": "L'échoppe de Peraalys",
+  "titre": "Alcôve de corail noir",
+  "parent": "agran",
+  "resume": "Boutique sans devanture, rideau de petits poissons argentés. Objets d'épaves et créations locales."
+ },
+ {
+  "id": "peraalys",
+  "type": "pnj",
+  "nom": "Peraalys",
+  "titre": "Marchande d'Agran",
+  "parent": "echoppe-de-peraalys",
+  "lieu": "echoppe-de-peraalys",
+  "statut": "vivant",
+  "resume": "Professionnelle et directe. Elle rachète honnêtement tout objet de surface, sans poser de question."
+ },
+ {
+  "id": "kel",
+  "type": "pnj",
+  "nom": "Kel",
+  "titre": "Assistant de Peraalys",
+  "parent": "echoppe-de-peraalys",
+  "lieu": "echoppe-de-peraalys",
+  "statut": "vivant",
+  "resume": "Bien intentionné et sans notion du commerce : il donne des potions. Il a offert trois potions mineures au groupe."
+ },
+ {
+  "id": "atelier-de-drisuun",
+  "type": "lieu",
+  "nom": "L'atelier de Drisuun",
+  "titre": "Forge thermique et récupération",
+  "parent": "agran",
+  "resume": "Forge creusée autour d'une colonne d'eau bouillante. Corail compressé, lames de coquille, métal abyssal."
+ },
+ {
+  "id": "drisuun",
+  "type": "pnj",
+  "nom": "Drisuun",
+  "titre": "Armurier et récupérateur",
+  "parent": "atelier-de-drisuun",
+  "lieu": "atelier-de-drisuun",
+  "statut": "vivant",
+  "resume": "Pragmatique et direct. Il paie au poids ce qu'on lui rapporte des épaves de la faille basse."
+ },
+ {
+  "id": "salle-de-l-orant",
+  "type": "lieu",
+  "nom": "La salle de l'Orant",
+  "titre": "Face à la faille",
+  "parent": "agran",
+  "resume": "Couloir de roche vive ouvert sur la faille, sans vitre ni barrière. Les courants se voient comme des rivières translucides."
+ },
+ {
+  "id": "uruukaysal",
+  "type": "pnj",
+  "nom": "Uruukaysal",
+  "titre": "Orant de la faille",
+  "parent": "salle-de-l-orant",
+  "lieu": "salle-de-l-orant",
+  "statut": "vivant",
+  "resume": "Il lit les courants comme des intentions de Kataron. Il bénit les départs d'un chant grave et envoie vers la Suuraal.",
+  "connu": [
+   "Les courants qui mènent à Thaladrassyl ne sont pas des routes, mais des invitations."
+  ]
+ },
+ {
+  "id": "epave-du-grauwacht",
+  "type": "lieu",
+  "nom": "L'épave du Grauwacht",
+  "titre": "Vaisseau d'escorte altéran",
+  "parent": "la-faille-d-agran",
+  "resume": "Coque couchée dans la vase de la faille, anémones pâles, symbole de l'Ordre de la Racine gravé au-dessus du gouvernail.",
+  "connu": [
+   "Une lettre de mission scellée désigne l'Astariel, navire escorté par le Grauwacht.",
+   "Le capitaine du Grauwacht était Edvar Sorn."
+  ]
+ },
+ {
+  "id": "edvar-sorn",
+  "type": "pnj",
+  "nom": "Edvar Sorn",
+  "titre": "Capitaine du Grauwacht",
+  "parent": "epave-du-grauwacht",
+  "lieu": "epave-du-grauwacht",
+  "statut": "mort",
+  "resume": "Commandant du vaisseau d'escorte, chargé de protéger l'Astariel et de récupérer la caisse de pierre en cas de naufrage."
+ },
+ {
+  "id": "epave-de-l-astariel",
+  "type": "lieu",
+  "nom": "L'épave de l'Astariel",
+  "titre": "Vaisseau impérial",
+  "parent": "la-faille-d-agran",
+  "resume": "Épave appuyée contre la paroi de la faille, coraux noirs et eau immobile.",
+  "connu": [
+   "Le journal de bord est signé du capitaine Voryn Kael, commandant de la Troisième Expédition des Profondeurs.",
+   "Un matelot nommé Renault y a signalé un son grave venu des profondeurs."
+  ]
+ },
+ {
+  "id": "voryn-kael",
+  "type": "pnj",
+  "nom": "Voryn Kael",
+  "titre": "Capitaine de l'Astariel",
+  "parent": "epave-de-l-astariel",
+  "lieu": "epave-de-l-astariel",
+  "statut": "mort",
+  "resume": "Commandant de la Troisième Expédition des Profondeurs sous mandat de l'Impératrice Eryndel. Il a consigné la mission de porter le fragment au fond."
+ },
+ {
+  "id": "ossyraal",
+  "type": "pnj",
+  "nom": "Ossyraal",
+  "titre": "Écho des Marées",
+  "parent": "epave-de-l-astariel",
+  "lieu": "epave-de-l-astariel",
+  "statut": "vivant",
+  "resume": "Créature à tentacules bleus et roses qui a pris possession de l'épave. Elle échange, elle ne vend pas.",
+  "connu": [
+   "« Je ne vends pas. J'échange. »"
+  ]
+ },
+ {
+  "id": "fragment-de-nyrrh",
+  "type": "sujet",
+  "nom": "Le fragment de Nyrrh",
+  "titre": "Éclat d'Astaryll",
+  "parent": "agran",
+  "resume": "Relique qui refuse d'appartenir à un seul endroit à la fois. Elle venait de Bollwerk sur l'Astariel.",
+  "connu": [
+   "La Suuraal l'a reconnue immédiatement.",
+   "Altéra l'envoyait comme preuve de bonne foi à Kataron."
+  ],
+  "alias": [
+   "Fragment de Nyrrh",
+   "Astaryl",
+   "Fragment d'Astaryl"
+  ]
+ },
+ {
+  "id": "kataron",
+  "type": "sujet",
+  "nom": "Kataron",
+  "titre": "Dame des Marées, Titan de l'Océan",
+  "parent": "agran",
+  "resume": "Titan de l'océan vénéré à Agran. Ses tempêtes labourent la surface.",
+  "connu": [
+   "Les corails d'Agran réagissent à ses tempêtes.",
+   "Elle protège Thaladrassyl derrière vingt kilomètres d'eau."
+  ]
+ },
+ {
+  "id": "thaladrassyl",
+  "type": "sujet",
+  "nom": "Thaladrassyl",
+  "titre": "La forêt sous l'océan",
+  "parent": "agran",
+  "resume": "Arbre-Titan des profondeurs. Personne ne sait où il se trouve, car les courants qui y mènent changent.",
+  "connu": [
+   "Le groupe l'a vu à la fin de la traversée vers le Cœur Immergé."
+  ]
+ },
+ {
+  "id": "auberge-de-l-etincelle",
+  "type": "lieu",
+  "nom": "L'auberge de l'Étincelle",
+  "titre": "Basalte poli et braises",
+  "parent": "pyrrah",
+  "resume": "Salle commune éclairée de flammes bleutées dans des lanternes de verre fumé, vasque de braises en guise de foyer.",
+  "connu": [
+   "Une procession doit avoir lieu bientôt.",
+   "La sécurité de la ville est étonnamment faible."
+  ]
+ },
+ {
+  "id": "serevya",
+  "type": "pnj",
+  "nom": "Serevya",
+  "titre": "Aubergiste de l'Étincelle",
+  "parent": "auberge-de-l-etincelle",
+  "lieu": "auberge-de-l-etincelle",
+  "statut": "vivant",
+  "resume": "Tient l'auberge principale de Pyrrah."
+ },
+ {
+  "id": "temple-des-ardeurs",
+  "type": "lieu",
+  "nom": "Le Temple des Ardeurs",
+  "titre": "Maison de passe",
+  "parent": "pyrrah",
+  "resume": "Façade de cuivre poli, tentures braise, vapeur de safran. L'information y circule facilement.",
+  "connu": [
+   "Les prêtres du Temple surveillent surtout les Genasi de feu.",
+   "Prophétie : « Les cheveux de flamme éteindront un jour la Flamme éternelle. »"
+  ]
+ },
+ {
+  "id": "kaldon",
+  "type": "pnj",
+  "nom": "Kaldon",
+  "titre": "Employé du Temple des Ardeurs",
+  "parent": "temple-des-ardeurs",
+  "lieu": "temple-des-ardeurs",
+  "statut": "vivant",
+  "resume": "Un des trois compagnons de la maison."
+ },
+ {
+  "id": "koressa",
+  "type": "pnj",
+  "nom": "Kóressa",
+  "titre": "Employée du Temple des Ardeurs",
+  "parent": "temple-des-ardeurs",
+  "lieu": "temple-des-ardeurs",
+  "statut": "vivant",
+  "resume": "Une des trois compagnes de la maison.",
+  "alias": [
+   "Koressa"
+  ]
+ },
+ {
+  "id": "thaleia",
+  "type": "pnj",
+  "nom": "Thaleia",
+  "titre": "Employée du Temple des Ardeurs",
+  "parent": "temple-des-ardeurs",
+  "lieu": "temple-des-ardeurs",
+  "statut": "vivant",
+  "resume": "Une des trois compagnes de la maison."
+ },
+ {
+  "id": "taverne-de-la-griffe-pyrrah",
+  "type": "lieu",
+  "nom": "La taverne du rendez-vous",
+  "titre": "Lisière des forges",
+  "parent": "pyrrah",
+  "resume": "Taverne noircie de suie, arrière-salle cachée par un rideau épais.",
+  "connu": [
+   "Jane y a découvert un message à l'encre invisible de la Griffe.",
+   "Les commandes de pyrracier se sont arrêtées d'un coup, et les dernières caisses sont parties vers Port Doëlan."
+  ]
+ },
+ {
+  "id": "morve",
+  "type": "pnj",
+  "nom": "Morve",
+  "titre": "Agent de la Griffe",
+  "parent": "taverne-de-la-griffe-pyrrah",
+  "lieu": "taverne-de-la-griffe-pyrrah",
+  "statut": "vivant",
+  "resume": "Producteur de la Griffe, inquiet de l'arrêt des commandes."
+ },
+ {
+  "id": "vire",
+  "type": "pnj",
+  "nom": "Vire",
+  "titre": "Agent de la Griffe",
+  "parent": "taverne-de-la-griffe-pyrrah",
+  "lieu": "taverne-de-la-griffe-pyrrah",
+  "statut": "vivant",
+  "resume": "Producteur de la Griffe. Il se demande à qui refourguer sa came."
+ },
+ {
+  "id": "ishra",
+  "type": "pnj",
+  "nom": "Ishra",
+  "titre": "Agente de la Griffe",
+  "parent": "taverne-de-la-griffe-pyrrah",
+  "lieu": "taverne-de-la-griffe-pyrrah",
+  "statut": "vivant",
+  "resume": "Productrice de la Griffe. Elle évoque une association avec le Voile."
+ },
+ {
+  "id": "forge-eternelle-pyrrah",
+  "type": "lieu",
+  "nom": "La Forge éternelle",
+  "titre": "Basalte rouge et métal fondu",
+  "parent": "pyrrah",
+  "resume": "Forge taillée dans le basalte, canaux de métal fondu, enclume circulaire sur un bassin incandescent.",
+  "connu": [
+   "Les livraisons de pyrracier ont cessé : la mine est fermée."
+  ]
+ },
+ {
+  "id": "fyra",
+  "type": "pnj",
+  "nom": "Fyra",
+  "titre": "Apprentie de Kaldros",
+  "parent": "forge-eternelle-pyrrah",
+  "lieu": "forge-eternelle-pyrrah",
+  "statut": "vivant",
+  "resume": "Jeune apprentie volubile. « La forge éternelle est reconnue à travers tous les plans comme la deuxième meilleure. Pardon, la meilleure ! »"
+ },
+ {
+  "id": "mine-de-pyrrah",
+  "type": "lieu",
+  "nom": "La mine de pyrracier",
+  "titre": "Galeries fermées",
+  "parent": "pyrrah",
+  "resume": "Mine silencieuse sous la montagne. Des créatures de feu y ont attaqué les mineurs, et un portail instable s'ouvre au fond.",
+  "connu": [
+   "Trois mineurs ont disparu."
+  ]
+ },
+ {
+  "id": "milos",
+  "type": "pnj",
+  "nom": "Milos",
+  "titre": "Contremaître de la mine",
+  "parent": "mine-de-pyrrah",
+  "lieu": "mine-de-pyrrah",
+  "statut": "vivant",
+  "resume": "Explique que ses hommes refusent de redescendre tant que la menace n'est pas éliminée.",
+  "connu": [
+   "« Trois mineurs ont disparu. Le reste refuse de descendre. »"
+  ]
+ },
+ {
+  "id": "athanor-d-ashkalyon",
+  "type": "lieu",
+  "nom": "L'Athanor d'Ashkalyon",
+  "titre": "Dôme de verre rouge",
+  "parent": "pyrrah",
+  "resume": "Atelier d'arcaniste sous un dôme de verre rouge, cristaux suspendus et rouages enchantés."
+ },
+ {
+  "id": "ashkalyon",
+  "type": "pnj",
+  "nom": "Ashkalyon",
+  "titre": "Arcaniste, le Verracier",
+  "parent": "athanor-d-ashkalyon",
+  "lieu": "athanor-d-ashkalyon",
+  "statut": "vivant",
+  "resume": "Drakéide qui ne jure que par la recherche. Il confirme la prophétie des cheveux de flamme et peut détecter la marque de lumière sur Philippa.",
+  "alias": [
+   "Ashkalyon le Verracier"
+  ]
+ },
+ {
+  "id": "brasero-aux-merveilles",
+  "type": "lieu",
+  "nom": "Le Brasero aux Merveilles",
+  "titre": "Bric-à-brac",
+  "parent": "pyrrah",
+  "resume": "Atelier improvisé sous un dais de toile rouge, objets incandescents ou refroidis, reliques de créatures du feu."
+ },
+ {
+  "id": "krixis",
+  "type": "pnj",
+  "nom": "Krixis",
+  "titre": "Marchand de bric-à-brac",
+  "parent": "brasero-aux-merveilles",
+  "lieu": "brasero-aux-merveilles",
+  "statut": "vivant",
+  "resume": "Vif et débrouillard, il aime les gadgets et ne fait commerce qu'avec une personne à la fois.",
+  "alias": [
+   "Krixis les écailles"
+  ]
+ },
+ {
+  "id": "thermes-solaires",
+  "type": "lieu",
+  "nom": "Les Thermes Solaires",
+  "titre": "Bains sous la cité",
+  "parent": "pyrrah",
+  "resume": "Complexe enterré : rotonde éclairée d'une pluie de lumière dorée, grotte de bassins turquoise, cascades fraîches.",
+  "connu": [
+   "Le bain tempéré retire un niveau d'épuisement lié à la chaleur."
+  ]
+ },
+ {
+  "id": "ephyrion",
+  "type": "pnj",
+  "nom": "Ephyrion",
+  "titre": "Employé des Thermes Solaires",
+  "parent": "thermes-solaires",
+  "lieu": "thermes-solaires",
+  "statut": "vivant",
+  "resume": "Un des trois serviteurs des thermes."
+ },
+ {
+  "id": "pyrokles",
+  "type": "pnj",
+  "nom": "Pyroklès",
+  "titre": "Maître des Thermes Solaires",
+  "parent": "thermes-solaires",
+  "lieu": "thermes-solaires",
+  "statut": "vivant",
+  "resume": "Observe, jauge et conseille les baigneurs. Les prêtres viennent parfois aux thermes.",
+  "alias": [
+   "Pyrokles"
+  ]
+ },
+ {
+  "id": "oresias",
+  "type": "pnj",
+  "nom": "Orésias",
+  "titre": "Employé des Thermes Solaires",
+  "parent": "thermes-solaires",
+  "lieu": "thermes-solaires",
+  "statut": "vivant",
+  "resume": "Un des trois serviteurs des thermes.",
+  "alias": [
+   "Oresias"
+  ]
+ },
+ {
+  "id": "basilique-d-heliandros",
+  "type": "lieu",
+  "nom": "La basilique d'Héliandros",
+  "titre": "Temple de Pyrrah",
+  "parent": "pyrrah",
+  "resume": "Façade flanquée de statues de guerriers solaires, parvis de bassins aux flammes bleues. Nef sous une coupole d'étincelles."
+ },
+ {
+  "id": "pretres-de-la-flamme",
+  "type": "organisation",
+  "nom": "Les prêtres de la Flamme",
+  "titre": "Clergé de la basilique",
+  "parent": "pyrrah",
+  "resume": "Prêtres nerveux, qui interrogent les Genasi avant tout accès à la chambre solaire.",
+  "alias": [
+   "Prêtres de la Flamme"
+  ]
+ },
+ {
+  "id": "gardes-de-pyrrah",
+  "type": "organisation",
+  "nom": "Les gardes de Pyrrah",
+  "titre": "Gardes nains de la cité",
+  "parent": "pyrrah",
+  "resume": "Gardes nains qui observent les voyageurs sans bloquer l'entrée.",
+  "alias": [
+   "Gardes de Pyrrah"
+  ]
+ },
+ {
+  "id": "cabane-de-gran-brijit",
+  "type": "lieu",
+  "nom": "La cabane de Gran Brijit",
+  "titre": "Clairière aux masques effacés",
+  "parent": "thaldera",
+  "resume": "Cabane de bois sombre au fond d'une clairière à la lumière verte stagnante. Masques effacés aux murs, herbes pendues au plafond.",
+  "connu": [
+   "Nolbrim y travaille sur ses prototypes.",
+   "La harpe de chair faite du Landsknecht vaincu y est exposée."
+  ]
+ },
+ {
+  "id": "nolbrim",
+  "type": "pnj",
+  "nom": "Nolbrim",
+  "titre": "Artificier de la cabane",
+  "parent": "cabane-de-gran-brijit",
+  "lieu": "cabane-de-gran-brijit",
+  "statut": "vivant",
+  "resume": "Familier de Gran Brijit comme chez sa tante. Il a diagnostiqué le moteur cristallin de Jane et construit l'arme Horizon Brûlée pour Philippa.",
+  "connu": [
+   "Il a stabilisé Jane avec l'Hexacore."
+  ],
+  "alias": [
+   "Nolbrim Cuivre Rouge"
+  ]
+ },
+ {
+  "id": "harpe-de-chair",
+  "type": "sujet",
+  "nom": "La harpe de chair",
+  "titre": "Restes du Landsknecht",
+  "parent": "cabane-de-gran-brijit",
+  "resume": "Instrument organique tiré du corps du Landsknecht vaincu. Gran Brijit y lit des échos.",
+  "connu": [
+   "Elle y a lu les manipulations du plan par Vassago."
+  ],
+  "alias": [
+   "Landsknecht",
+   "Landsknecht mélomane",
+   "Capitaine Brunhild",
+   "Brunhild"
+  ]
+ },
+ {
+  "id": "hexacore",
+  "type": "sujet",
+  "nom": "L'Hexacore",
+  "titre": "Cœur cristallin du golem",
+  "parent": "kazad-marunn",
+  "resume": "Pièce qui aligne les résonances des cristaux de Jane. Elle était dans le noyau du golem du donjon d'Aram Sharûn.",
+  "alias": [
+   "HexaCore"
+  ]
+ },
+ {
+  "id": "horizon-brulee",
+  "type": "sujet",
+  "nom": "Horizon Brûlée",
+  "titre": "Arme de Philippa",
+  "parent": "cabane-de-gran-brijit",
+  "resume": "Prototype de Nolbrim, censé répondre à l'énergie de Philippa sans exploser.",
+  "alias": [
+   "Horizon Brulée"
+  ]
+ },
+ {
+  "id": "auberge-dans-la-roche",
+  "type": "lieu",
+  "nom": "L'auberge dans la roche",
+  "titre": "Khazad-Marûn",
+  "parent": "kazad-marunn",
+  "resume": "Maison basse adossée à la paroi, comptoir de pierre brute. Un homme du village y a tenté de détrousser le groupe de nuit.",
+  "connu": [
+   "Gran Brijit a demandé au groupe s'il voulait gérer ça seul."
+  ]
+ },
+ {
+  "id": "zababa-mahir",
+  "type": "pnj",
+  "nom": "Zababa Mahir",
+  "titre": "Villageois de Khazad-Marûn",
+  "parent": "auberge-dans-la-roche",
+  "lieu": "auberge-dans-la-roche",
+  "statut": "vivant",
+  "resume": "Un des habitants qui réclament une taxe de protection aux étrangers."
+ },
+ {
+  "id": "ur-kalmesh",
+  "type": "pnj",
+  "nom": "Ur Kalmesh",
+  "titre": "Villageois de Khazad-Marûn",
+  "parent": "auberge-dans-la-roche",
+  "lieu": "auberge-dans-la-roche",
+  "statut": "vivant",
+  "resume": "Un des habitants qui réclament une taxe de protection aux étrangers."
+ },
+ {
+  "id": "herboriste-la-vie-des-dunes",
+  "type": "lieu",
+  "nom": "La Vie des Dunes",
+  "titre": "Herboriste",
+  "parent": "kazad-marunn",
+  "resume": "Échoppe creusée dans la roche, rideau de perles d'argile, fleurs séchées et racines torsadées."
+ },
+ {
+  "id": "ashran",
+  "type": "pnj",
+  "nom": "Ashran",
+  "titre": "Herboriste",
+  "parent": "herboriste-la-vie-des-dunes",
+  "lieu": "herboriste-la-vie-des-dunes",
+  "statut": "vivant",
+  "resume": "Genasi de Terre au visage carré. Il est fier de sa qualité artisanale."
+ },
+ {
+  "id": "tanneur-peau-de-sable",
+  "type": "lieu",
+  "nom": "Peau de Sable",
+  "titre": "Tanneur",
+  "parent": "kazad-marunn",
+  "resume": "Cour intérieure de pierre sèche, peaux qui durcissent au soleil."
+ },
+ {
+  "id": "maara-namtarun",
+  "type": "pnj",
+  "nom": "Maara Namtarûn",
+  "titre": "Tanneuse",
+  "parent": "tanneur-peau-de-sable",
+  "lieu": "tanneur-peau-de-sable",
+  "statut": "vivant",
+  "resume": "Femme fine à la peau ridée par le vent. « Si c'est pour faire joli, allez voir un tisseur. »",
+  "alias": [
+   "Maara Namtarun"
+  ]
+ },
+ {
+  "id": "atelier-sahrim",
+  "type": "lieu",
+  "nom": "L'atelier Sahrim",
+  "titre": "Potier",
+  "parent": "kazad-marunn",
+  "resume": "Façade ouverte sur la ruelle, grandes poteries ocre qui sèchent."
+ },
+ {
+  "id": "sahrim",
+  "type": "pnj",
+  "nom": "Sahrim",
+  "titre": "Potier",
+  "parent": "atelier-sahrim",
+  "lieu": "atelier-sahrim",
+  "statut": "vivant",
+  "resume": "Genasi de Terre massif, convaincu que ses bols vaudraient une fortune à Rivegard.",
+  "alias": [
+   "Hazar"
+  ]
+ },
+ {
+  "id": "bibliotheque-enfouie",
+  "type": "lieu",
+  "nom": "La Bibliothèque Enfouie",
+  "titre": "Semi-ensevelie sous les dunes",
+  "parent": "kazad-marunn",
+  "resume": "Fronton brisé, escaliers à demi submergés, rayonnages effondrés dans le sable.",
+  "connu": [
+   "Les chroniques y décrivent la Bataille des Sables et le mage Aram Sharûn."
+  ]
+ },
+ {
+  "id": "bataille-des-sables",
+  "type": "evenement",
+  "nom": "La Bataille des Sables",
+  "titre": "Guerre des mages du désert",
+  "parent": "kazad-marunn",
+  "resume": "Affrontement de mages près de Khazad-Marûn, il y a dix-sept siècles avant la fondation d'Altenheim. Tous les maîtres en lice périrent.",
+  "connu": [
+   "Les corps et les artefacts brisés furent jetés dans la Fosse des Mille Sables."
+  ]
+ },
+ {
+  "id": "aram-sharun",
+  "type": "pnj",
+  "nom": "Aram Sharûn",
+  "titre": "Dernier gardien de la Clé d'Anachronie",
+  "parent": "kazad-marunn",
+  "resume": "Mage du désert mort lors de la Bataille des Sables. Son corps reposait dans la Fosse, la Clé en main. Il avait bâti la Tour de Résonance.",
+  "statut": "mort",
+  "alias": [
+   "Aram Sharun"
+  ],
+  "lieu": "kazad-marunn"
+ },
+ {
+  "id": "cle-d-anachronie",
+  "type": "sujet",
+  "nom": "La Clé d'Anachronie",
+  "titre": "Prisme qui ouvre les instants",
+  "parent": "kazad-marunn",
+  "resume": "Artefact d'Aram Sharûn, réveillé par Gran Brijit. Elle a mené le groupe dans le passé du donjon, puis s'est brisée.",
+  "statut": "détruit"
+ },
+ {
+  "id": "al-batun",
+  "type": "pnj",
+  "nom": "Al Batun",
+  "titre": "Le Ver des Sables",
+  "parent": "kazad-marunn",
+  "resume": "Ver colossal qui circule sous les dunes et garde la Fosse. L'Anneau des Sables était incrusté dans sa carapace.",
+  "alias": [
+   "Al-Batūn",
+   "Al Batūn"
+  ],
+  "lieu": "kazad-marunn"
+ },
+ {
+  "id": "la-gueule-des-sables",
+  "type": "lieu",
+  "nom": "La Gueule des Sables",
+  "titre": "La Fosse sans Fond",
+  "parent": "kazad-marunn",
+  "resume": "Gouffre aux abords de la ville où furent jetés les mages de la Bataille des Sables.",
+  "alias": [
+   "Fosse des Mille Sables"
+  ]
+ },
+ {
+  "id": "tour-de-resonance",
+  "type": "lieu",
+  "nom": "Le donjon d'Aram Sharûn",
+  "titre": "Tour de Résonance",
+  "parent": "kazad-marunn",
+  "resume": "Ruines d'un complexe arcanique. La Clé ouvre une faille vers la tour telle qu'elle était, gardée par un golem temporel.",
+  "connu": [
+   "Un golem de résonance temporelle y gardait l'Hexacore.",
+   "Des tiques d'arcane, un golem de verre et un golem de bronze en défendaient les salles."
+  ]
+ },
+ {
+  "id": "tique-d-arcane",
+  "type": "pnj",
+  "nom": "Tique d'Arcane",
+  "titre": "Automate du donjon",
+  "parent": "tour-de-resonance",
+  "resume": "Petits automates griffus qui libèrent des décharges d'énergie.",
+  "statut": "détruit",
+  "alias": [
+   "Tique"
+  ],
+  "lieu": "tour-de-resonance"
+ },
+ {
+  "id": "gikyo-noshi-buru",
+  "type": "pnj",
+  "nom": "Gikyo Noshi Buru",
+  "titre": "Ennemie de Gran Brijit",
+  "parent": "kazad-marunn",
+  "resume": "Femme à la peau violette parée de métal et de tissus du désert, qui attendait Gran Brijit dans une ruelle. Elle appelle un djinn d'eau.",
+  "alias": [
+   "Gikyo"
+  ],
+  "lieu": "kazad-marunn"
+ },
+ {
+  "id": "grands-mages-du-desert",
+  "type": "sujet",
+  "nom": "Les mages de la Bataille des Sables",
+  "titre": "Maîtres disparus",
+  "parent": "kazad-marunn",
+  "resume": "Nabû-Meresh, archimage des Cantons d'Ur-Khazad. Ishannar Bel-Kumri, sorcière d'Ansurah. Daramat al-Huzar, mage-guerrier de la Maison Huzarim. Bel-Amdar Tachrir, géomancien de Shad-Zehr.",
+  "alias": [
+   "Nabû-Meresh",
+   "Ishannar Bel-Kumri",
+   "Daramat al-Huzar",
+   "Bel-Amdar Tachrir"
+  ]
+ },
+ {
+  "id": "chapelle-de-l-orphelinat",
+  "type": "lieu",
+  "nom": "La chapelle de l'orphelinat",
+  "titre": "Bureau de la Rectrice",
+  "parent": "orphelinat-merigold",
+  "resume": "Chapelle de l'orphelinat où la Rectrice reçoit. Un bâtiment annexe confortable lui sert de salle à manger."
+ },
+ {
+  "id": "klaus",
+  "type": "pnj",
+  "nom": "Klaus",
+  "titre": "Enfant de l'orphelinat",
+  "parent": "orphelinat-merigold",
+  "lieu": "orphelinat-merigold",
+  "statut": "vivant",
+  "resume": "Choisi par Jane avec Freya pour la mission contre Edmund von Kornwald."
+ },
+ {
+  "id": "freya",
+  "type": "pnj",
+  "nom": "Freya",
+  "titre": "Enfant de l'orphelinat",
+  "parent": "orphelinat-merigold",
+  "lieu": "orphelinat-merigold",
+  "statut": "vivant",
+  "resume": "Choisie par Jane avec Klaus pour la mission contre Edmund von Kornwald."
+ },
+ {
+  "id": "village-de-leyenmil",
+  "type": "lieu",
+  "nom": "Le village",
+  "titre": "Pluie, boue et lanternes",
+  "parent": "leyenmil",
+  "resume": "Village refermé sur lui-même sous la pluie. Seule l'auberge diffuse une chaleur stable."
+ },
+ {
+  "id": "m-weller",
+  "type": "pnj",
+  "nom": "Mr. Weller",
+  "titre": "Vendeur de poisson",
+  "parent": "village-de-leyenmil",
+  "lieu": "village-de-leyenmil",
+  "statut": "vivant",
+  "resume": "Il tend un morceau de poisson salé aux enfants sans poser de question.",
+  "alias": [
+   "Weller"
+  ]
+ },
+ {
+  "id": "mr-kessler-leyenmil",
+  "type": "pnj",
+  "nom": "Mr. Kessler (armurier)",
+  "titre": "Armurier du village",
+  "parent": "village-de-leyenmil",
+  "lieu": "village-de-leyenmil",
+  "statut": "vivant",
+  "resume": "Il ferme la porte aux enfants : « Revenez quand vous serez grands. »"
+ },
+ {
+  "id": "m-copperworth",
+  "type": "pnj",
+  "nom": "Mr. Copperworth",
+  "titre": "Aubergiste",
+  "parent": "village-de-leyenmil",
+  "lieu": "village-de-leyenmil",
+  "statut": "vivant",
+  "resume": "Il abrite les enfants, avec du lait chaud et un feu.",
+  "alias": [
+   "Copperworth"
+  ]
+ },
+ {
+  "id": "otto",
+  "type": "pnj",
+  "nom": "Otto",
+  "titre": "Ivrogne de l'auberge",
+  "parent": "village-de-leyenmil",
+  "lieu": "village-de-leyenmil",
+  "statut": "vivant",
+  "resume": "Il insulte les orphelins. Copperworth le coupe net."
+ },
+ {
+  "id": "maison-kornwald",
+  "type": "lieu",
+  "nom": "La maison Kornwald",
+  "titre": "Grille noire et fontaine",
+  "parent": "leyenmil",
+  "resume": "Maison au fond du village, en hauteur, à l'orée des arbres. Deux gardes à l'entrée."
+ },
+ {
+  "id": "gardes-de-kornwald",
+  "type": "organisation",
+  "nom": "Les gardes de Kornwald",
+  "titre": "Garde de la maison",
+  "parent": "maison-kornwald",
+  "resume": "Deux gardes à l'entrée, possiblement un troisième en patrouille latérale."
+ },
+ {
+  "id": "frere-septim",
+  "type": "pnj",
+  "nom": "Frère Septim",
+  "titre": "Frère supérieur",
+  "parent": "temple-brumeux",
+  "lieu": "temple-brumeux",
+  "statut": "mort",
+  "resume": "Auteur du journal du temple. Il écrit qu'en ramenant tout le monde ici, les moines ont commis une erreur."
+ },
+ {
+  "id": "statues-gardiennes-lathandre",
+  "type": "pnj",
+  "nom": "Les statues de Lathandre",
+  "titre": "Statue Clericalis et Statue Paladinis",
+  "parent": "temple-brumeux",
+  "resume": "Gardiens de pierre qui se relèvent dans la salle cyclopéenne.",
+  "statut": "détruit",
+  "alias": [
+   "Statue Clericalis",
+   "Statue Paladinis"
+  ],
+  "lieu": "temple-brumeux"
+ },
+ {
+  "id": "reliquaire-de-lathandre",
+  "type": "sujet",
+  "nom": "Le Reliquaire de Lathandre",
+  "titre": "Relique du temple",
+  "parent": "temple-brumeux",
+  "resume": "Relique sacrée trouvée intacte au centre du reliquaire après la chute de Barakel."
+ },
+ {
+  "id": "abomination-des-yeux",
+  "type": "pnj",
+  "nom": "L'abomination aux yeux",
+  "titre": "Masse de chair au grand œil",
+  "parent": "repos-des-epees",
+  "resume": "Créature obèse dont le ventre s'ouvre sur un œil gigantesque, née des séquelles de la guerre de la Veyra.",
+  "alias": [
+   "Abomination des yeux"
+  ]
+ },
+ {
+  "id": "guerre-de-la-veyra",
+  "type": "evenement",
+  "nom": "La guerre de la Veyra",
+  "titre": "Guerre totale",
+  "parent": "thaldera",
+  "resume": "Guerre dont le Repos des Épées et l'ancien quartier brûlé de Port Doëlan portent encore les cicatrices.",
+  "alias": [
+   "Veyra",
+   "Guerre des Deux Rives",
+   "Accord de Rivegard"
+  ],
+  "connu": [
+   "Altera et le Consortium se sont affrontés pour le contrôle de la Veyra. Les deux figures de la guerre sont Averoès, colosse béni d'Eryndel, et Veyrann Krag, seigneur pirate de Havre Noir.",
+   "L'accord de Rivegard a mis fin à la guerre : Morven reste à Altera, Leyenmil et Aven deviennent indépendantes, Camont et Port Blanc restent au Consortium."
+  ]
+ },
+ {
+  "id": "vignoble-abandonne",
+  "type": "lieu",
+  "nom": "Le vignoble oublié",
+  "titre": "Corps de ferme dans la clairière",
+  "parent": "caravane-port-doelan",
+  "resume": "Quelques rangs de vignes maigres et un corps de ferme aux pierres instables, entre Camont et Port Doëlan.",
+  "connu": [
+   "Les tonneaux sont anormalement grands pour l'exploitation.",
+   "860 po cachées dans le bureau."
+  ]
+ },
+ {
+  "id": "dimir",
+  "type": "pnj",
+  "nom": "Dimir",
+  "titre": "Vigneron",
+  "parent": "vignoble-abandonne",
+  "lieu": "vignoble-abandonne",
+  "statut": "vivant",
+  "resume": "Vieux paysan au sourire figé, qui retenait un employé enchaîné."
+ },
+ {
+  "id": "iulia",
+  "type": "pnj",
+  "nom": "Iulia",
+  "titre": "Vigneronne",
+  "parent": "vignoble-abandonne",
+  "lieu": "vignoble-abandonne",
+  "statut": "vivant",
+  "resume": "Femme de Dimir, d'une douceur trop insistante."
+ },
+ {
+  "id": "spano",
+  "type": "pnj",
+  "nom": "Spano",
+  "titre": "Employé enchaîné du vignoble",
+  "parent": "vignoble-abandonne",
+  "lieu": "vignoble-abandonne",
+  "statut": "vivant",
+  "resume": "Retenu prisonnier au vignoble, sauvé du loup par le groupe. « Ils souriaient tout le temps, même quand ils fermaient la chaîne. »"
+ },
+ {
+  "id": "ivy",
+  "type": "pnj",
+  "nom": "Ivy",
+  "titre": "La Voyageuse Joyeuse",
+  "parent": "caravane-port-doelan",
+  "lieu": "caravane-port-doelan",
+  "statut": "mort",
+  "resume": "Rôdeuse de Havre Noir, jovial, à cheval sur sa monture Justine. Retrouvée morte une nuit, empoisonnée par un poison qui ne la visait pas.",
+  "alias": [
+   "Justine"
+  ]
+ },
+ {
+  "id": "constance-brisemousse",
+  "type": "pnj",
+  "nom": "Constance Brisemousse",
+  "titre": "Firbolg voyageuse",
+  "parent": "caravane-port-doelan",
+  "lieu": "caravane-port-doelan",
+  "statut": "vivant",
+  "resume": "Seule du convoi sans caravane : un petit chariot tiré par l'âne Plop. Elle voit la pluie comme une bénédiction de Sylvanus.",
+  "alias": [
+   "Plop"
+  ]
+ },
+ {
+  "id": "solkah-barrow",
+  "type": "pnj",
+  "nom": "Solkah Barrow",
+  "titre": "Dresseur de serpents",
+  "parent": "caravane-port-doelan",
+  "lieu": "caravane-port-doelan",
+  "statut": "vivant",
+  "resume": "Drow taciturne qui évite le soleil. Passionné de serpents, il rejette les dogmes de Lolth et veut rejoindre Port Doëlan."
+ },
+ {
+  "id": "seravine",
+  "type": "pnj",
+  "nom": "Seravine",
+  "titre": "Serpent de Solkah",
+  "parent": "caravane-port-doelan",
+  "lieu": "caravane-port-doelan",
+  "statut": "vivant",
+  "resume": "Immense serpent extrêmement venimeux, d'une intelligence notable. Son nom signifie « le Poison » en elfique."
+ },
+ {
+  "id": "sanctuaire-de-la-maree",
+  "type": "lieu",
+  "nom": "Le sanctuaire de la marée",
+  "titre": "Trois pierres noires face à la mer",
+  "parent": "brakka",
+  "resume": "Trois pierres noires en arc de cercle, fissure turquoise sur la pierre centrale. Les Pachidan y vénèrent Ashvûr-tesh, l'horizon d'eau.",
+  "connu": [
+   "Un symbole de Vassago a été gravé sur la pierre de gauche."
+  ]
+ },
+ {
+  "id": "boru-pretre-de-brakka",
+  "type": "pnj",
+  "nom": "Boru",
+  "titre": "Prêtre loxodon de Brakka",
+  "parent": "sanctuaire-de-la-maree",
+  "lieu": "sanctuaire-de-la-maree",
+  "statut": "vivant",
+  "resume": "Prêtre qui médite devant la pierre centrale. Il a soigné Absalom pendant plusieurs jours.",
+  "alias": [
+   "Boru"
+  ]
+ },
+ {
+  "id": "fumerie-de-shoba",
+  "type": "lieu",
+  "nom": "La fumerie de Shoba",
+  "titre": "Fournil naturel dans la falaise",
+  "parent": "brakka",
+  "resume": "Poissons salés sur des perches au-dessus d'un feu de bois vert."
+ },
+ {
+  "id": "campement-detruit-steppes",
+  "type": "lieu",
+  "nom": "Le campement détruit",
+  "titre": "Cinq jeunes nobles",
+  "parent": "gorge-du-mesa",
+  "resume": "Cinq corps de jeunes hommes de bonne famille, un totem de bois sombre planté au centre, un seul coup lourd par victime.",
+  "connu": [
+   "Deux écuelles au feu : quelqu'un de plus petit mangeait avec eux.",
+   "Une bague à armoiries est plantée près du totem."
+  ]
+ },
+ {
+  "id": "szara",
+  "type": "pnj",
+  "nom": "Szara",
+  "titre": "Githyanki voyageuse",
+  "parent": "gorge-du-mesa",
+  "lieu": "gorge-du-mesa",
+  "statut": "vivant",
+  "resume": "Peau bleu nuit tachetée, yeux jaunes. Elle trouve les joueuses intéressantes comme un casse-tête."
+ },
+ {
+  "id": "zyrith",
+  "type": "pnj",
+  "nom": "Zyrith",
+  "titre": "Serpent de Szara",
+  "parent": "gorge-du-mesa",
+  "lieu": "gorge-du-mesa",
+  "statut": "vivant",
+  "resume": "Énorme serpent calme, enroulé autour de ses épaules. Il accepte un morceau d'œuf de la main de Sevik."
+ },
+ {
+  "id": "iku",
+  "type": "pnj",
+  "nom": "Iku",
+  "titre": "Moine de Roshen Buru masqué",
+  "parent": "gorge-du-mesa",
+  "lieu": "gorge-du-mesa",
+  "statut": "vivant",
+  "resume": "Robe gris-vert, masque de bois à longues oreilles. Il ne parle qu'Istran, en phrases très courtes."
+ },
+ {
+  "id": "les-quatre-lames",
+  "type": "organisation",
+  "nom": "Les Quatre Lames",
+  "titre": "Moines-soldats d'Istra Belig",
+  "parent": "monastere-des-steppes",
+  "resume": "Ordre de moines-soldats gardiens de la paix, affilié à aucune nation. Branche principale à Khardun.",
+  "connu": [
+   "Le courrier du monastère était adressé au Frère Supérieur Kimath, à Khardun."
+  ],
+  "alias": [
+   "Khardun",
+   "Kimath"
+  ]
+ },
+ {
+  "id": "oeuf-de-roc",
+  "type": "pnj",
+  "nom": "Le Roc",
+  "titre": "Oiseau colossal du plateau",
+  "parent": "monastere-des-steppes",
+  "resume": "Rapace géant dont le nid, fait de troncs entiers et de toile de voile, couronne le monastère.",
+  "alias": [
+   "Roc",
+   "Œuf de Roc",
+   "Plume de Roc"
+  ],
+  "lieu": "monastere-des-steppes"
+ },
+ {
+  "id": "ashvur-tesh",
+  "type": "sujet",
+  "nom": "Ashvûr-tesh",
+  "titre": "L'horizon d'eau",
+  "parent": "brakka",
+  "resume": "Présence marine vénérée à Brakka, sans que les Pachidan sachent qu'il s'agit de Kataron.",
+  "alias": [
+   "Ashvûr-tesh"
+  ]
+ },
+ {
+  "id": "riminar",
+  "type": "pnj",
+  "nom": "Riminar",
+  "titre": "Conservateur du musée Spezza",
+  "parent": "port-doelan",
+  "resume": "Il a invité Umberto Hevalan à un séminaire de recherche à Port Doëlan.",
+  "statut": "inconnu",
+  "lieu": "port-doelan"
  }
 ]

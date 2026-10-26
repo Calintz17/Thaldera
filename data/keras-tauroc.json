@@ -1450,7 +1450,9 @@
   "alias": [
    "festival",
    "Cornes d'Or",
-   "Cornes Rouges"
+   "Cornes Rouges",
+   "Kresh-Korva",
+   "Orak"
   ],
   "resume": "Le groupe gagne le tournoi et obtient les Cornes d'Or, clé de la ville.",
   "histoire": [
@@ -1859,7 +1861,8 @@
    "Fracture",
    "maison noire",
    "Tzobal",
-   "Balam"
+   "Balam",
+   "Kar-Balam"
   ],
   "ordre": 2,
   "resume": "Archipel jungle au nord-ouest. Théocratie de Balam. Des araignées y corrompent des citoyens.",
@@ -3000,6 +3003,500 @@
   "resume": "Personne d'extérieur ne l'a jamais rencontré.",
   "connu": [
    "Il envoie des représentants à La Rencontre."
+  ]
+ },
+ {
+  "id": "catacombes-de-kord",
+  "type": "lieu",
+  "nom": "Les catacombes de Kord",
+  "titre": "Sous la cathédrale",
+  "parent": "cathedrale-de-kord",
+  "resume": "Galerie basse sous la cathédrale, niches de grands combattants Tauroc. Absalom y a logé et y a bâti un autel secondaire aux armes de Vassago.",
+  "connu": [
+   "Le Démon des Mains a surgi pendant la fouille. Il a été vaincu.",
+   "Un collier a été repéré sur l'autel et mené chez Chrysodoros."
+  ]
+ },
+ {
+  "id": "atelier-de-chrysodoros",
+  "type": "lieu",
+  "nom": "L'orfèvrerie de Chrysodoros",
+  "titre": "Vitrines d'or et de pierres",
+  "parent": "keras-tauroc",
+  "resume": "Boutique d'orfèvrerie. Fermée aux étrangers avant les Cornes d'Or."
+ },
+ {
+  "id": "mine-de-lapidus",
+  "type": "lieu",
+  "nom": "La mine de Lapidus",
+  "titre": "Mine de pierres précieuses à l'ouest",
+  "parent": "keras-tauroc",
+  "resume": "Rubis, quartz et grenats, sans propriété magique, sauf l'arshen, rare.",
+  "connu": [
+   "Le groupe a négocié 10 000 po pour deux tonnes de pierre, livraison à organiser."
+  ]
+ },
+ {
+  "id": "cabinet-de-cordus",
+  "type": "lieu",
+  "nom": "Le cabinet de l'haruspex",
+  "titre": "Adjacent à la caserne",
+  "parent": "keras-tauroc",
+  "resume": "Cabinet de divination militaire, accessible grâce aux Cornes d'Or."
+ },
+ {
+  "id": "hopital-du-colisee",
+  "type": "lieu",
+  "nom": "L'hôpital du Colisée",
+  "titre": "Soins des combattants",
+  "parent": "colisee",
+  "resume": "Lits alignés, herbes séchées. Meditrina y soigne contre paiement."
+ },
+ {
+  "id": "moulins-de-keras-tauroc",
+  "type": "lieu",
+  "nom": "Les moulins de l'ouest",
+  "titre": "Moulins des steppes",
+  "parent": "keras-tauroc",
+  "resume": "Grands moulins où vit Sera, la fille du meunier."
+ },
+ {
+  "id": "scene-de-crime-ambassadeur",
+  "type": "lieu",
+  "nom": "La ruelle du meurtre",
+  "titre": "Scène du meurtre d'Otoba",
+  "parent": "keras-tauroc",
+  "resume": "Ruelle ocre où l'ambassadeur a été tué. Les traces désignent les doubles des joueuses."
+ },
+ {
+  "id": "prison-de-keras-tauroc",
+  "type": "lieu",
+  "nom": "La prison de Keras Tauroc",
+  "titre": "Cellule au collier de fer",
+  "parent": "keras-tauroc",
+  "resume": "Cellules de pierre où le groupe s'est réveillé avec un collier arcanique. Harfang y était détenu."
+ },
+ {
+  "id": "meditrina",
+  "type": "pnj",
+  "nom": "Meditrina",
+  "titre": "Guérisseuse du Colisée",
+  "parent": "hopital-du-colisee",
+  "lieu": "hopital-du-colisee",
+  "statut": "vivant",
+  "resume": "Prêtresse-guérisseuse économe de ses gestes. Elle soigne et vend des potions à prix fixes."
+ },
+ {
+  "id": "vrakul",
+  "type": "pnj",
+  "nom": "Vrakul",
+  "titre": "Le Monolithe, combattant du Colisée",
+  "parent": "colisee",
+  "lieu": "colisee",
+  "statut": "vaincu",
+  "resume": "Force de la nature, né dit-on dans le sud des plaines rouges. Le groupe l'a affronté au tournoi.",
+  "alias": [
+   "Le Monolithe"
+  ]
+ },
+ {
+  "id": "voshara",
+  "type": "pnj",
+  "nom": "Voshara",
+  "titre": "La Cendre du Monastère, combattante",
+  "parent": "colisee",
+  "lieu": "colisee",
+  "statut": "mort",
+  "resume": "Ancienne moniale qui a prié vingt ans avant de sortir seule d'un monastère couvert de cendres. Tuée par Philippa, seul meurtre de l'arène.",
+  "alias": [
+   "Vocharra",
+   "Vosharra",
+   "La Cendre du Monastère"
+  ]
+ },
+ {
+  "id": "peu-importe",
+  "type": "pnj",
+  "nom": "Peu Importe",
+  "titre": "Mirenaï anonyme du Colisée",
+  "parent": "colisee",
+  "lieu": "colisee",
+  "statut": "vaincu",
+  "resume": "Combattant mirenaï qui refuse de donner son nom. Le groupe l'a battu.",
+  "alias": [
+   "Mirenaï anonyme"
+  ]
+ },
+ {
+  "id": "gruel",
+  "type": "pnj",
+  "nom": "Grûl",
+  "titre": "L'Abomination des Cornes Rouges",
+  "parent": "colisee",
+  "lieu": "colisee",
+  "statut": "mort",
+  "resume": "Créature terrifiante qui a exigé deux adversaires comme offrandes. Le groupe l'a vaincue ensemble.",
+  "alias": [
+   "Grûl",
+   "Grul",
+   "L'Abomination des Cornes Rouges"
+  ]
+ },
+ {
+  "id": "cordus",
+  "type": "pnj",
+  "nom": "Cordus",
+  "titre": "Haruspex minotaure",
+  "parent": "cabinet-de-cordus",
+  "lieu": "cabinet-de-cordus",
+  "statut": "vivant",
+  "resume": "Vieux minotaure qui lit les présages. Il a conseillé à Absalom de suivre le fleuve vers le nord.",
+  "alias": [
+   "L'haruspex"
+  ]
+ },
+ {
+  "id": "lapidus",
+  "type": "pnj",
+  "nom": "Lapidus",
+  "titre": "Contremaître de la mine",
+  "parent": "mine-de-lapidus",
+  "lieu": "mine-de-lapidus",
+  "statut": "vivant",
+  "resume": "Contremaître qui a répondu à Absalom que les pierres de Keras Tauroc n'ont aucune propriété magique. Il a conclu un marché de pierre avec le groupe."
+ },
+ {
+  "id": "grixus",
+  "type": "pnj",
+  "nom": "Grixus",
+  "titre": "Voisin gobelin, témoin du meurtre",
+  "parent": "scene-de-crime-ambassadeur",
+  "lieu": "scene-de-crime-ambassadeur",
+  "statut": "vivant",
+  "resume": "Il a vu deux femmes au regard vide guidées par un vieillard aux cheveux blancs. Il parle parce que le groupe porte les Cornes d'Or."
+ },
+ {
+  "id": "goelo",
+  "type": "pnj",
+  "nom": "Goélo",
+  "titre": "Habitant possédé par une araignée",
+  "parent": "keras-tauroc",
+  "lieu": "keras-tauroc",
+  "statut": "mort",
+  "resume": "Homme devenu renfermé, dont le corps a été contrôlé par une araignée pâle et a attaqué le groupe sur le chemin du port.",
+  "alias": [
+   "Le Pisteur Creux",
+   "Passant ivre"
+  ]
+ },
+ {
+  "id": "branak",
+  "type": "pnj",
+  "nom": "Branak",
+  "titre": "Client de Hématome",
+  "parent": "vieille-tannerie",
+  "lieu": "vieille-tannerie",
+  "statut": "vivant",
+  "resume": "Client qui commande des récupérations de colis au quai sud, selon le carnet de Hématome."
+ },
+ {
+  "id": "ossyk",
+  "type": "pnj",
+  "nom": "Ossyk",
+  "titre": "Client de Hématome",
+  "parent": "vieille-tannerie",
+  "lieu": "vieille-tannerie",
+  "statut": "vivant",
+  "resume": "Client qui a commandé une escorte discrète jusqu'à la porte nord, selon le carnet de Hématome."
+ },
+ {
+  "id": "harak",
+  "type": "pnj",
+  "nom": "Harak",
+  "titre": "Marchand de Keras Tauroc",
+  "parent": "keras-tauroc",
+  "lieu": "keras-tauroc",
+  "statut": "vivant",
+  "resume": "Nom dont une recommandation ouvre la boutique de Thessala."
+ },
+ {
+  "id": "hommes-de-main-de-ferox",
+  "type": "pnj",
+  "nom": "Les hommes de main de Ferox",
+  "titre": "Soldats en permission",
+  "parent": "vieille-tannerie",
+  "lieu": "vieille-tannerie",
+  "resume": "Un minotaure et un Pachidan payés par Ferox pour reprendre le carnet de Hématome. Ils ont été battus.",
+  "alias": [
+   "Pachidan soldat",
+   "Gardes de Ferox"
+  ],
+  "statut": "vaincu"
+ },
+ {
+  "id": "arshen",
+  "type": "sujet",
+  "nom": "L'arshen",
+  "titre": "Pierre conductrice de magie",
+  "parent": "keras-tauroc",
+  "resume": "Pierre rare de Keras Tauroc qui prend la magie et la conduit. Idéale pour rituels, cercles d'invocation et portails.",
+  "connu": [
+   "Le groupe a identifié l'arshen en enquêtant sur le collier de l'autel."
+  ]
+ },
+ {
+  "id": "hache-etrange",
+  "type": "sujet",
+  "nom": "La Hache Étrange",
+  "titre": "Arme aux glyphes inconnus",
+  "parent": "naevia",
+  "resume": "Hache de métal non reconnaissable, glyphes non décoratifs, vendue 2000 po par Naevia.",
+  "alias": [
+   "Hache Etrange"
+  ]
+ },
+ {
+  "id": "tablette-de-pierre-gravee",
+  "type": "sujet",
+  "nom": "La Tablette de Pierre Gravée",
+  "titre": "Fragment de glyphes anciens",
+  "parent": "comatus",
+  "resume": "Tablette vendue par Comatus, glyphes anciens à déchiffrer partiellement (Arcana DC 16)."
+ },
+ {
+  "id": "maladomini",
+  "type": "sujet",
+  "nom": "Maladomini",
+  "titre": "Septième cercle des Enfers, la Ruine",
+  "parent": "vitiosa",
+  "resume": "Cercle de la Ruine. Vitiosa en est originaire et s'est révélée démone de ce cercle."
+ },
+ {
+  "id": "sol-regem",
+  "type": "pnj",
+  "nom": "Sol Regem",
+  "titre": "Roi du Dominion Sol",
+  "parent": "dominion-sol",
+  "resume": "Jeune roi, voix du Soleil sur terre. Son règne s'étend vite sur Thaldera."
+ },
+ {
+  "id": "villes-du-dominion",
+  "type": "sujet",
+  "nom": "Les villes du Dominion Sol",
+  "titre": "Du nord au sud",
+  "parent": "dominion-sol",
+  "resume": "Sol Albus, Castel Luz, Grisecroix, Obaline, Teravane, Corvalis, Solarius, Lunsk, Sol Novem (capitale) et Helios.",
+  "connu": [
+   "Grisecroix est le nord du Dominion. Le Grarjord et les clans Sol Draken s'étendent bien plus au nord.",
+   "Obaline est une ville de garnison face au front d'Altera.",
+   "Corvalis et Lunsk ont été annexées récemment."
+  ],
+  "alias": [
+   "Sol Albus",
+   "Castel Luz",
+   "Grisecroix",
+   "Teravane",
+   "Solarius",
+   "Corvalis"
+  ]
+ },
+ {
+  "id": "villes-d-altera",
+  "type": "sujet",
+  "nom": "Les villes d'Altera",
+  "titre": "L'Empire d'Eryndel",
+  "parent": "altera",
+  "resume": "Altenheim (capitale), Bollwerk (port militaire), Erlefort (siège de l'Ordre de l'Aile d'Argent), Landhaus, Lauenburg, Helm, Dusenberg, Brodenwald, Einsenmarch, Holstein, Castel Milten, Altenmarkt, Liesch et Morven.",
+  "connu": [
+   "Einsenmarch et Holstein sont des villes de front face au Dominion."
+  ],
+  "alias": [
+   "Erlefort",
+   "Landhaus",
+   "Lauenburg",
+   "Helm",
+   "Dusenberg",
+   "Brodenwald",
+   "Einsenmarch",
+   "Holstein",
+   "Castel Milten",
+   "Altenmarkt",
+   "Morven"
+  ]
+ },
+ {
+  "id": "nord-sol-draken",
+  "type": "sujet",
+  "nom": "Le nord glacial",
+  "titre": "Clans Sol Draken",
+  "parent": "thaldera",
+  "resume": "Tribus guerrières du nord de Thaldera, qui se croient descendues des dragons. Porte-Hiver est la porte d'entrée du nord, Halsfjord le second point de passage. Le Grarjord est la région la plus au nord.",
+  "alias": [
+   "Sol Draken",
+   "Clans Sol Draken",
+   "Porte-Hiver",
+   "Halsfjord",
+   "Grarjord"
+  ]
+ },
+ {
+  "id": "mers-et-oceans",
+  "type": "sujet",
+  "nom": "Mers et océans",
+  "titre": "Géographie maritime",
+  "parent": "thaldera",
+  "resume": "L'Océan Endormi borde Istra-Belig à l'ouest, puis viennent la Mer d'Émeraude, Thaldera, la Grande Mer de l'Est et la Côte des Épées. La Mer du Milieu est disputée entre pêcheurs tauroc et mirenai. La Fracture désigne l'archipel de Balamor.",
+  "connu": [
+   "Les pêcheurs de Roshen Buru utilisent des sabanis, ceux de Keras Tauroc des galères."
+  ],
+  "alias": [
+   "Océan Endormi",
+   "Ocean Endormi",
+   "Grande Mer de l'Est",
+   "Côte des Épées",
+   "Cote des Epées",
+   "Sabanis",
+   "La Fracture"
+  ]
+ },
+ {
+  "id": "audierne",
+  "type": "ville",
+  "nom": "Audierne",
+  "titre": "Cité des quais rouges",
+  "parent": "consortium",
+  "resume": "Cœur logistique de la Veyra, sous la coupe de Havre-Noir. Toits de tuiles rouges, quais bondés, réfugiés devenus artisans et bateliers.",
+  "connu": [
+   "Un conseil de bateliers et d'armateurs la dirige."
+  ]
+ },
+ {
+  "id": "port-daman",
+  "type": "ville",
+  "nom": "Port Daman",
+  "titre": "Port sous Rivegard",
+  "parent": "consortium",
+  "resume": "Port de la sphère d'influence de Rivegard, avec Voros et Khazad-Marûn."
+ },
+ {
+  "id": "flotte-goudron",
+  "type": "sujet",
+  "nom": "La flotte Goudron",
+  "titre": "Flotte de Sycomore",
+  "parent": "havre-noir",
+  "resume": "La plus grande force de frappe maritime de Thaldera, commandée par Sycomore Brise-Pavois depuis Havre Noir.",
+  "alias": [
+   "Flotte Goudron",
+   "Vaisseaux-Goudron"
+  ]
+ },
+ {
+  "id": "garde-grise",
+  "type": "organisation",
+  "nom": "La Garde Grise",
+  "titre": "Garde de la Ville Haute de Camont",
+  "parent": "camont",
+  "resume": "Garde qui protège la Ville Haute. Jane a dû en abattre plusieurs lors d'un vol dans son passé."
+ },
+ {
+  "id": "larme-et-cils",
+  "type": "pnj",
+  "nom": "Larme et Cils",
+  "titre": "Membres des Yeux connus de Jane",
+  "parent": "les-yeux",
+  "resume": "Deux mutants du clan des Yeux de Camont que Jane connaît.",
+  "alias": [
+   "Larme",
+   "Cils"
+  ]
+ },
+ {
+  "id": "dame-merigold",
+  "type": "pnj",
+  "nom": "Dame Merigold",
+  "titre": "Fondatrice de l'orphelinat",
+  "parent": "leyenmil",
+  "resume": "Noble de Leyenmil qui a fondé l'orphelinat sur ses deniers. Elle est morte peu après avoir engagé la Rectrice.",
+  "statut": "mort",
+  "lieu": "leyenmil"
+ },
+ {
+  "id": "lukas",
+  "type": "pnj",
+  "nom": "Lukas",
+  "titre": "Enfant de l'orphelinat Merigold",
+  "parent": "leyenmil",
+  "resume": "Le plus jeune des garçons, protégé par Soren comme un petit frère.",
+  "lieu": "leyenmil"
+ },
+ {
+  "id": "valar-tauroc",
+  "type": "lieu",
+  "nom": "Le palais Valar Tauroc",
+  "titre": "Palais du Consul",
+  "parent": "keras-tauroc",
+  "resume": "Palais de la Maison Tauroc à Keras Tauroc, résidence du Consul Draval Tauroc.",
+  "alias": [
+   "Valar Taurok"
+  ]
+ },
+ {
+  "id": "longue-vue",
+  "type": "lieu",
+  "nom": "La Longue Vue",
+  "titre": "Tour de surveillance au nord",
+  "parent": "region-roshen-buru",
+  "resume": "Tour de surveillance de Roshen Buru qui guette l'océan et les passages maritimes."
+ },
+ {
+  "id": "port-gorash",
+  "type": "ville",
+  "nom": "Port Gorash",
+  "titre": "Port de pêche tauroc",
+  "parent": "maison-tauroc",
+  "resume": "Point stratégique de pêche de la Maison Tauroc.",
+  "alias": [
+   "Port Goraik"
+  ]
+ },
+ {
+  "id": "ungar-keras",
+  "type": "ville",
+  "nom": "Ungar Keras",
+  "titre": "Village orc allié des Tauroc",
+  "parent": "maison-tauroc",
+  "resume": "Village orc fortifié de la zone la plus aride, au sud, allié de la Maison Tauroc.",
+  "alias": [
+   "Unear Keras"
+  ]
+ },
+ {
+  "id": "rangs-des-mirens",
+  "type": "sujet",
+  "nom": "Les trois rangs de Miren",
+  "titre": "Hikari, Seiran, Tenrai",
+  "parent": "region-roshen-buru",
+  "resume": "Le Miren Hikari est moindre, le Miren Seiran intermédiaire, le Miren Tenrai majeur. Le rang est fixé au moment du Tenraku et ne change jamais.",
+  "alias": [
+   "Miren Hikari",
+   "Miren Seiran",
+   "Miren Tenrai",
+   "Hikari",
+   "Tenrai"
+  ]
+ },
+ {
+  "id": "cites-de-there-duun",
+  "type": "sujet",
+  "nom": "Les villes de There'Duun",
+  "titre": "Royaume nain",
+  "parent": "there-duun",
+  "resume": "Valedorn, seule ville ouverte aux étrangers, porte du Val Blanc. Orimel, ville intérieure d'artisans et d'archives. Belthar, port sur la côte extérieure, au-delà de la chaîne du Rhodell.",
+  "alias": [
+   "Orimel",
+   "Belthar",
+   "Rhodell",
+   "Val Blanc"
   ]
  }
 ]
