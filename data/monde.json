@@ -283,7 +283,8 @@
     "img": "img/cartes/roshen-buru-palais.webp",
     "legende": "Palais Miren-Buru, Temple du Tenraku et quartier Tenraï"
    }
-  ]
+  ],
+  "onglet": "lieux"
  },
  {
   "id": "keras-tauroc",
@@ -298,7 +299,7 @@
    "colisee",
    "consul"
   ],
-  "resume": "Cité de forgerons et de guerriers, dirigée par le Consul Draval Tauroc. Culte de Kord.",
+  "resume": "Capitale de la Maison Tauroc, cité de forgerons et de guerriers où tout se règle au colisée.",
   "blocs": [
    {
     "portee": "harfang",
@@ -319,8 +320,21 @@
      "Tarcus, l'investigateur de la ville, a retrouvé sa chambre dévastée. Des symboles liés à Balamor étaient gravés dans le bois, à coups d'ongles.",
      "L'homme semblait avoir perdu la tête lentement."
     ]
+   },
+   {
+    "portee": "groupe",
+    "titre": "Ce que vous savez",
+    "points": [
+     "La ville est fermée aux étrangers. Sans les Cornes d'Or, trophée des vainqueurs du festival, personne ne vous aide ni ne vous parle. Seuls les lieux de culte ne font pas de distinction.",
+     "Vous êtes arrivés en plein Festival des Cornes Rouges, sur la piste d'Absalom, passée quelques jours plus tôt.",
+     "Vous avez gagné le festival et reçu les Cornes d'Or ainsi que 5 600 po. Les mêmes habitants sont alors devenus chaleureux.",
+     "On y parle le taurokh. Les minotaures ne mangent jamais de bœuf et ne boivent pas de lait : poser la question est une insulte grave.",
+     "L'ambassadeur de Roshen Buru, Otoba, a été assassiné ici. Les accès à Roshen Buru en ont été fermés, Seiran Vale et Azuren Kai compris.",
+     "La Maison Tauroc est dirigée par le Consul Draval Tauroc."
+    ]
    }
-  ]
+  ],
+  "cartes": []
  },
  {
   "id": "cap-cornes",
@@ -335,7 +349,7 @@
    "aqueduc",
    "oswin"
   ],
-  "resume": "Ville côtière de Keras Tauroc, principal fournisseur de poisson. Portail vers Havre Noir.",
+  "resume": "Port de pêche de Keras Tauroc. Eamonn y a ouvert un cercle de téléportation vers Port Doëlan.",
   "blocs": [
    {
     "portee": "harfang",
@@ -355,6 +369,17 @@
     "points": [
      "Un portail relie Cap Cornes à Havre Noir. Vous ne l'avez pas ouvert."
     ]
+   },
+   {
+    "portee": "groupe",
+    "titre": "Ce que vous savez",
+    "points": [
+     "Ville de pêche modeste, maisons de pierre grise aux toits d'ardoise, odeur de poisson, de sel et de goudron. Personne ne fait attention aux étrangers.",
+     "Population de Lutriel, de Scalverns et d'Ophidiens. Une tour de mage domine la ville et l'aqueduc emporte le poisson vivant vers Keras Tauroc.",
+     "Une caserne Tauroc s'est installée récemment et pèse sur la ville.",
+     "Vous y avez retrouvé Olyssane et Ink. Eamonn a ouvert un cercle de téléportation entre sa tour et les ruines du château de Port Doëlan.",
+     "Soupe de poisson légèrement périmée et bière brune locale à l'auberge de Lorcán."
+    ]
    }
   ],
   "cartes": [
@@ -362,7 +387,8 @@
     "img": "img/cartes/cap-cornes.webp",
     "legende": "Plan de Cap Cornes"
    }
-  ]
+  ],
+  "onglet": "lieux"
  },
  {
   "id": "balamor",
@@ -466,7 +492,8 @@
      "Tu y es allé une ou deux fois. C'est là que tu as rencontré ton ami nain."
     ]
    }
-  ]
+  ],
+  "onglet": "lieux"
  },
  {
   "id": "dieux",
@@ -713,7 +740,7 @@
   "id": "vitiosa",
   "type": "pnj",
   "nom": "Vitiosa",
-  "titre": "Organisatrice du Festival des Cornes Rouges",
+  "titre": "Organisatrice du Festival des Cornes Rouges, démone de Maladomini",
   "parent": "keras-tauroc",
   "onglet": "pnj",
   "statut": "vivant",
@@ -722,7 +749,7 @@
    "cornes rouges",
    "organisatrice"
   ],
-  "resume": "Souriante et troublante. Tu ne sais pas pourquoi elle te dérange.",
+  "resume": "Démone de Maladomini qui organise le tournoi. Relativement alliée du groupe.",
   "blocs": [
    {
     "portee": "harfang",
@@ -731,6 +758,25 @@
      "Tu l'as croisée lors d'événements officiels.",
      "Elle est souriante, troublante. Elle te dérange sans que tu saches exactement pourquoi."
     ]
+   },
+   {
+    "portee": "groupe",
+    "titre": "Ce que vous savez",
+    "points": [
+     "Elle remet les 5 600 po aux vainqueurs depuis la loge d'honneur, un cocktail à la main, calme.",
+     "Voyant que vous restiez indifférentes à cette somme, elle vous a interrogées sur votre origine et vos intentions, avec politesse et patience.",
+     "Vous avez découvert qu'elle est une démone de Maladomini. Elle est relativement alliée avec vous.",
+     "Elle vous a fait remettre une missive par Vibia."
+    ]
+   }
+  ],
+  "relations": [
+   {
+    "cible": "fulvia",
+    "type": "Employée",
+    "lien": 3,
+    "ton": "neutre",
+    "note": "Fulvia annonce les combats pour elle"
    }
   ]
  },
@@ -755,6 +801,15 @@
     "points": [
      "Tu as utilisé ses services pour des traversées discrètes.",
      "Contact fiable, il ne pose pas de questions."
+    ]
+   },
+   {
+    "portee": "groupe",
+    "titre": "Ce que vous savez",
+    "points": [
+     "Maître des docks. Avant les Cornes d'Or, il refuse de vous parler. Après, il parle.",
+     "Il vous a raconté qu'une femme en noir avait fait modifier une barge : grand lit, draperies, vaisselle de qualité, vin rouge. Elle a payé généreusement.",
+     "Il vous a conduits au ponton du navire de Roshen Buru, le Tenrai Buru. Il connaît Yorisa de longue date et s'est porté garant."
     ]
    }
   ]
@@ -781,6 +836,16 @@
      "L'Angues Dormientes est l'auberge de référence pour les étrangers de qualité.",
      "Contact neutre. Elle mémorise tout."
     ]
+   },
+   {
+    "portee": "groupe",
+    "titre": "Ce que vous savez",
+    "points": [
+     "Aubergiste lézarde aux écailles sombres. Premier PNJ coopératif de la ville, elle ne donne jamais plus que ce qu'on lui demande.",
+     "Elle se souvient d'Absalom : étrangère tout en noir, restée une nuit, partie au petit matin les mains vides, sans sac. Elle a demandé où se trouvait la cathédrale.",
+     "Elle vous a prévenus : sans arène, pas de respect, et les étrangers finissent mal ici. Plus tard, c'est elle qui vous remet la missive de Vitiosa.",
+     "Le carnet d'Hématome la nomme comme commanditaire d'un contrat, ce qui prouve qu'elle emploie la pègre locale."
+    ]
    }
   ]
  },
@@ -806,6 +871,15 @@
      "Son Malleus Cadens est une forge de guerre.",
      "Il est sourd. Tu as entendu parler de lui, sans plus."
     ]
+   },
+   {
+    "portee": "groupe",
+    "titre": "Ce que vous savez",
+    "points": [
+     "Il est sourd d'une oreille et ne parle que le taurokh. Sa plaque de prix gravée à l'entrée sert de réponse à toute négociation.",
+     "Il est le frère de Volusius, l'aubergiste du Cornua Fracta. Mentionner son frère le fait vous regarder autrement.",
+     "Vous y avez acheté Mâchoire, Caput Tauri et la Cuirasse Aurée."
+    ]
    }
   ]
  },
@@ -829,6 +903,16 @@
     "titre": "Ce que tu sais",
     "points": [
      "Contact utile pour les consommables."
+    ]
+   },
+   {
+    "portee": "groupe",
+    "titre": "Ce que vous savez",
+    "points": [
+     "Homme-ours qui offre un thé chaud à quiconque entre. Chaleureux, bavard, et excellente source sur la ville. Il garde toujours des potions de côté pour ceux qui n'ont pas les moyens.",
+     "Plusieurs de ses clients se plaignent depuis quelques semaines d'une sensation désagréable près de la cathédrale.",
+     "Vous vous êtes liés d'amitié avec lui. Philippa a marqué sa porte d'une craie de voyage : sa boutique est un point de retour vers Keras Tauroc.",
+     "Sa potion a servi à ressusciter Nolbrim."
     ]
    }
   ]
@@ -855,6 +939,14 @@
      "Tabaxi panthère, un peu snob.",
      "Tu joues la carte de la noblesse avec elle."
     ]
+   },
+   {
+    "portee": "groupe",
+    "titre": "Ce que vous savez",
+    "points": [
+     "Tabaxi noire qui ne sourit pas. Elle refuse tout inconnu sans recommandation. Les Cornes d'Or comptent comme recommandation, comme un mot de Volusius, d'Ursinus ou d'Harak.",
+     "Elle vous a d'abord refusé l'entrée, avant de vous servir."
+    ]
    }
   ]
  },
@@ -862,7 +954,7 @@
   "id": "tarcus",
   "type": "pnj",
   "nom": "Tarcus",
-  "titre": "Investigateur de Keras Tauroc",
+  "titre": "Conseiller juridique de la Maison Tauroc",
   "parent": "keras-tauroc",
   "onglet": "pnj",
   "statut": "vivant",
@@ -871,15 +963,33 @@
    "enquete",
    "araignee"
   ],
-  "resume": "A enquêté sur l'homme contrôlé par une araignée.",
+  "resume": "Minotaure juriste qui enquête sur l'assassinat de l'ambassadeur Otoba. Allié du groupe.",
   "blocs": [
    {
     "portee": "groupe",
     "titre": "Ce que vous savez",
     "points": [
-     "Il a enquêté sur l'homme qui vous a attaqués dans la rue.",
-     "Il dit avoir retrouvé sa chambre dévastée et des symboles liés à Balamor gravés dans le bois, à coups d'ongles."
+     "Vous l'avez rencontré à votre réveil en prison. Vieux minotaure en robe de fonction, tablette de cire sous le bras, il vous regarde longtemps avant de parler.",
+     "Il pense qu'on a planifié le crime. Il a fait lancer Greater Restoration sur vous dès l'arrestation parce que vous aviez le regard vide.",
+     "Son accord : un sceau de localisation sur chacune de vous, liberté de mouvement en ville, interdiction de franchir les murailles. En échange, vous enquêtez sur vous-mêmes et lui rapportez des preuves.",
+     "À Keras Tauroc, il a aussi enquêté sur l'homme contrôlé par une araignée qui vous avait attaqués dans la rue. Il a trouvé sa chambre dévastée et des symboles de Balamor gravés dans le bois, à coups d'ongles."
     ]
+   }
+  ],
+  "relations": [
+   {
+    "cible": "calvinus-ferox",
+    "type": "Enquête sur",
+    "lien": 1,
+    "ton": "negatif",
+    "note": "Coupable désigné"
+   },
+   {
+    "cible": "otoba",
+    "type": "Enquête sur sa mort",
+    "lien": 3,
+    "ton": "neutre",
+    "note": ""
    }
   ]
  },
@@ -904,6 +1014,13 @@
     "points": [
      "Chef officiel de Cap Cornes, un vieux Scalvern posé.",
      "Tu le connais par les rapports."
+    ]
+   },
+   {
+    "portee": "groupe",
+    "titre": "Ce que vous savez",
+    "points": [
+     "Il est le chef officiel de la ville."
     ]
    }
   ]
@@ -1044,22 +1161,31 @@
   "id": "eamonn",
   "type": "pnj",
   "nom": "Eamonn",
-  "titre": "Lié au cercle de téléportation",
-  "parent": "thaldera",
+  "titre": "Vieux mage de Cap Cornes",
+  "parent": "cap-cornes",
   "onglet": "pnj",
   "statut": "inconnu",
   "tags": [
    "teleportation",
    "tribunal de chair"
   ],
-  "resume": "Visé par le Tribunal de chair.",
+  "resume": "Mage de la tour de Cap Cornes. A ouvert le cercle de téléportation vers Port Doëlan.",
   "question": "Eamonn est-il mort ? Le cercle de téléportation est-il détruit ?",
   "blocs": [
    {
-    "portee": "harfang",
-    "titre": "Ce que tu sais",
+    "portee": "groupe",
+    "titre": "Ce que vous savez",
     "points": [
-     "La Protectrice a envoyé le Tribunal de chair le tuer et détruire le cercle de téléportation, pour préserver l'isolationnisme d'Istra."
+     "Vieux Mirenaï à la peau grise et violacée, affalé dans un fauteuil trop grand pour lui, longue pipe, paupières lourdes. Fatigué et paresseux, mais pas hostile.",
+     "Il a d'abord résisté, puis a négocié contre du suud. Une fois les composants rapportés (clous rouillés, trois cœurs de ghoules des marées), il a ouvert un cercle de téléportation entre sa tour et les ruines du château de Port Doëlan.",
+     "Philippa a tracé une marque de craie sur sa porte, point de retour permanent. Sa condition : lui envoyer un message avant de débarquer dans son salon."
+    ]
+   },
+   {
+    "portee": "harfang",
+    "titre": "Ce que tu as appris",
+    "points": [
+     "La Protectrice a envoyé le Tribunal de chair pour le tuer et détruire le cercle de téléportation, afin de préserver l'isolationnisme d'Istra."
     ]
    }
   ]

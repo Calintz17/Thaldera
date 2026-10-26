@@ -4,8 +4,8 @@ var DATA=[],BY={},CONT={continent:1,region:1,ville:1,pj:1,faction:0};
 var $app=document.getElementById('app'),$q=document.getElementById('q');
 var profil='groupe';
 try{profil=localStorage.getItem('codex.profil')||'groupe'}catch(e){}
-var TYPES={continent:'Continent',region:'Région',ville:'Ville',pnj:'PNJ',clan:'Clan',faction:'Faction',sujet:'Sujet',organisation:'Organisation',pj:'Joueur'};
-var ONGLETS={pnj:'PNJ',clans:'Clans',gouvernement:'Gouvernement',lieux:'Lieux',factions:'Factions',monde:'Monde',groupe:'Le groupe'};
+var TYPES={continent:'Continent',region:'Région',ville:'Ville',pnj:'PNJ',clan:'Clan',faction:'Faction',sujet:'Sujet',organisation:'Organisation',pj:'Joueur',lieu:'Lieu',evenement:'Événement'};
+var ONGLETS={pnj:'PNJ',clans:'Clans',gouvernement:'Gouvernement',lieux:'Lieux',factions:'Factions',monde:'Monde',groupe:'Le groupe',evenements:'Événements'};
 var SIL='<svg viewBox="0 0 120 150" aria-hidden="true"><circle cx="60" cy="48" r="26" fill="#3a4a54"/><path d="M8 150C8 100 34 82 60 82C86 82 112 100 112 150Z" fill="#3a4a54"/></svg>';
 
 function esc(s){return String(s==null?'':s).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
@@ -85,7 +85,7 @@ function viewFiche(id,tab){
   if(kids.length){
     var tabs={},order=[];
     kids.forEach(function(k){var o=k.onglet||'autres';if(!tabs[o]){tabs[o]=[];order.push(o)}tabs[o].push(k)});
-    var pref=['pnj','clans','gouvernement','lieux','factions','monde','autres'];
+    var pref=['evenements','pnj','clans','gouvernement','lieux','factions','monde','autres'];
     order.sort(function(a,b){return pref.indexOf(a)-pref.indexOf(b)});
     if(!tab||!tabs[tab])tab=order[0];
     if(order.length>1){
