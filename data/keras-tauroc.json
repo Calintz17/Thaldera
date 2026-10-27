@@ -6,10 +6,10 @@
   "titre": "Les steppes rouges, terre de Kord",
   "parent": "istra",
   "zone": {
-   "x": 0.38,
-   "y": 0.5,
-   "w": 0.53,
-   "h": 0.38
+   "x": 0.347,
+   "y": 0.565,
+   "w": 0.582,
+   "h": 0.351
   },
   "blason": "img/blasons/keras-tauroc.webp",
   "accent": "#d96a28",
@@ -42,7 +42,606 @@
     "type": "Consul",
     "ton": "neutre"
    }
-  ]
+  ],
+  "poly": [
+   [
+    0.9091,
+    0.5902
+   ],
+   [
+    0.9042,
+    0.588
+   ],
+   [
+    0.8206,
+    0.5645
+   ],
+   [
+    0.7455,
+    0.5743
+   ],
+   [
+    0.7424,
+    0.5754
+   ],
+   [
+    0.6927,
+    0.6191
+   ],
+   [
+    0.6448,
+    0.6005
+   ],
+   [
+    0.6412,
+    0.6005
+   ],
+   [
+    0.5552,
+    0.635
+   ],
+   [
+    0.4612,
+    0.6639
+   ],
+   [
+    0.4315,
+    0.6803
+   ],
+   [
+    0.3715,
+    0.7071
+   ],
+   [
+    0.3697,
+    0.7098
+   ],
+   [
+    0.3733,
+    0.7164
+   ],
+   [
+    0.3739,
+    0.729
+   ],
+   [
+    0.3848,
+    0.7333
+   ],
+   [
+    0.3903,
+    0.7393
+   ],
+   [
+    0.3915,
+    0.7628
+   ],
+   [
+    0.3964,
+    0.7727
+   ],
+   [
+    0.3964,
+    0.7781
+   ],
+   [
+    0.3939,
+    0.7842
+   ],
+   [
+    0.3939,
+    0.7918
+   ],
+   [
+    0.4012,
+    0.8022
+   ],
+   [
+    0.4018,
+    0.8153
+   ],
+   [
+    0.4085,
+    0.8213
+   ],
+   [
+    0.4115,
+    0.8262
+   ],
+   [
+    0.4133,
+    0.8333
+   ],
+   [
+    0.4164,
+    0.8388
+   ],
+   [
+    0.4164,
+    0.8443
+   ],
+   [
+    0.4152,
+    0.8475
+   ],
+   [
+    0.4103,
+    0.8525
+   ],
+   [
+    0.4036,
+    0.8552
+   ],
+   [
+    0.3964,
+    0.8563
+   ],
+   [
+    0.3903,
+    0.8623
+   ],
+   [
+    0.3855,
+    0.8645
+   ],
+   [
+    0.3836,
+    0.8661
+   ],
+   [
+    0.3824,
+    0.8732
+   ],
+   [
+    0.377,
+    0.8787
+   ],
+   [
+    0.3727,
+    0.8809
+   ],
+   [
+    0.3636,
+    0.8831
+   ],
+   [
+    0.3491,
+    0.8825
+   ],
+   [
+    0.3473,
+    0.8842
+   ],
+   [
+    0.3485,
+    0.8891
+   ],
+   [
+    0.3606,
+    0.894
+   ],
+   [
+    0.3667,
+    0.8984
+   ],
+   [
+    0.38,
+    0.9
+   ],
+   [
+    0.3861,
+    0.9022
+   ],
+   [
+    0.3915,
+    0.9066
+   ],
+   [
+    0.3964,
+    0.9153
+   ],
+   [
+    0.4018,
+    0.9158
+   ],
+   [
+    0.4055,
+    0.9131
+   ],
+   [
+    0.4079,
+    0.9093
+   ],
+   [
+    0.4109,
+    0.8956
+   ],
+   [
+    0.4176,
+    0.8896
+   ],
+   [
+    0.4224,
+    0.888
+   ],
+   [
+    0.4345,
+    0.888
+   ],
+   [
+    0.4436,
+    0.8787
+   ],
+   [
+    0.4479,
+    0.8765
+   ],
+   [
+    0.4558,
+    0.8749
+   ],
+   [
+    0.4624,
+    0.8699
+   ],
+   [
+    0.4673,
+    0.8683
+   ],
+   [
+    0.4733,
+    0.8683
+   ],
+   [
+    0.4818,
+    0.8721
+   ],
+   [
+    0.4855,
+    0.8716
+   ],
+   [
+    0.4891,
+    0.8672
+   ],
+   [
+    0.4927,
+    0.8596
+   ],
+   [
+    0.5115,
+    0.8459
+   ],
+   [
+    0.5194,
+    0.8437
+   ],
+   [
+    0.5315,
+    0.8443
+   ],
+   [
+    0.5345,
+    0.8432
+   ],
+   [
+    0.5424,
+    0.8372
+   ],
+   [
+    0.5564,
+    0.835
+   ],
+   [
+    0.5582,
+    0.8328
+   ],
+   [
+    0.5594,
+    0.8251
+   ],
+   [
+    0.5679,
+    0.818
+   ],
+   [
+    0.5745,
+    0.8164
+   ],
+   [
+    0.5824,
+    0.8164
+   ],
+   [
+    0.5903,
+    0.8186
+   ],
+   [
+    0.5958,
+    0.823
+   ],
+   [
+    0.6055,
+    0.8393
+   ],
+   [
+    0.6048,
+    0.8475
+   ],
+   [
+    0.6006,
+    0.8552
+   ],
+   [
+    0.6012,
+    0.8568
+   ],
+   [
+    0.6067,
+    0.8579
+   ],
+   [
+    0.6109,
+    0.8568
+   ],
+   [
+    0.617,
+    0.8514
+   ],
+   [
+    0.6236,
+    0.8486
+   ],
+   [
+    0.6412,
+    0.8475
+   ],
+   [
+    0.6509,
+    0.8454
+   ],
+   [
+    0.6552,
+    0.8426
+   ],
+   [
+    0.6576,
+    0.8383
+   ],
+   [
+    0.6618,
+    0.8344
+   ],
+   [
+    0.6685,
+    0.8317
+   ],
+   [
+    0.6727,
+    0.8311
+   ],
+   [
+    0.6806,
+    0.8328
+   ],
+   [
+    0.7048,
+    0.8322
+   ],
+   [
+    0.7182,
+    0.8273
+   ],
+   [
+    0.7321,
+    0.8251
+   ],
+   [
+    0.7376,
+    0.8219
+   ],
+   [
+    0.7527,
+    0.8186
+   ],
+   [
+    0.7642,
+    0.812
+   ],
+   [
+    0.7648,
+    0.7989
+   ],
+   [
+    0.7667,
+    0.7962
+   ],
+   [
+    0.7733,
+    0.7913
+   ],
+   [
+    0.7885,
+    0.7874
+   ],
+   [
+    0.7952,
+    0.7874
+   ],
+   [
+    0.8048,
+    0.7918
+   ],
+   [
+    0.8097,
+    0.7923
+   ],
+   [
+    0.8218,
+    0.7874
+   ],
+   [
+    0.8339,
+    0.7847
+   ],
+   [
+    0.8442,
+    0.7743
+   ],
+   [
+    0.8455,
+    0.7667
+   ],
+   [
+    0.8515,
+    0.759
+   ],
+   [
+    0.8515,
+    0.7508
+   ],
+   [
+    0.8527,
+    0.7475
+   ],
+   [
+    0.8576,
+    0.7426
+   ],
+   [
+    0.8667,
+    0.7383
+   ],
+   [
+    0.8679,
+    0.7355
+   ],
+   [
+    0.8667,
+    0.7317
+   ],
+   [
+    0.8673,
+    0.723
+   ],
+   [
+    0.8727,
+    0.7169
+   ],
+   [
+    0.8794,
+    0.7142
+   ],
+   [
+    0.8855,
+    0.7142
+   ],
+   [
+    0.8927,
+    0.7169
+   ],
+   [
+    0.9,
+    0.7224
+   ],
+   [
+    0.9042,
+    0.7235
+   ],
+   [
+    0.9182,
+    0.7224
+   ],
+   [
+    0.9267,
+    0.724
+   ],
+   [
+    0.9297,
+    0.7208
+   ],
+   [
+    0.9297,
+    0.7164
+   ],
+   [
+    0.9273,
+    0.7104
+   ],
+   [
+    0.9273,
+    0.7033
+   ],
+   [
+    0.9297,
+    0.6973
+   ],
+   [
+    0.9297,
+    0.6896
+   ],
+   [
+    0.9285,
+    0.6858
+   ],
+   [
+    0.923,
+    0.6814
+   ],
+   [
+    0.9109,
+    0.6825
+   ],
+   [
+    0.9061,
+    0.6809
+   ],
+   [
+    0.9006,
+    0.6765
+   ],
+   [
+    0.8982,
+    0.6716
+   ],
+   [
+    0.8982,
+    0.6656
+   ],
+   [
+    0.8994,
+    0.6634
+   ],
+   [
+    0.8982,
+    0.6437
+   ],
+   [
+    0.8994,
+    0.6404
+   ],
+   [
+    0.9073,
+    0.6339
+   ],
+   [
+    0.9139,
+    0.6322
+   ],
+   [
+    0.92,
+    0.6322
+   ],
+   [
+    0.9212,
+    0.6311
+   ]
+  ],
+  "lab": [
+   0.668,
+   0.724
+  ],
+  "couleur": "#e0312b"
  },
  {
   "id": "brakka",
@@ -225,12 +824,6 @@
    "Des Rocs, rapaces géants, tentent régulièrement de se poser sur l'aile ouest.",
    "Le groupe y a emporté un registre rédigé en istran, qui n'a pas été traduit. Il raconte le séjour d'un voyageur sans nom, qui a laissé un nom ancien avant de partir."
   ],
-  "avis": [
-   {
-    "qui": "Harfang",
-    "texte": "il peut lire le registre, puisqu'il lit l'istran, et que ce voyageur est peut-être plus lointain qu'Absalom."
-   }
-  ],
   "relations": [
    {
     "cible": "frere-ossian",
@@ -293,12 +886,6 @@
    "La religion de Kord prône la force, l'honneur, le combat. Le clergé est très proche du pouvoir militaire.",
    "L'ambassadeur de Roshen Buru, Otoba, a été assassiné ici. Les accès à Roshen Buru en ont été fermés.",
    "Une araignée a pris le contrôle d'un homme du peuple, qui a attaqué le groupe dans la rue. Des symboles de Balamor étaient gravés dans le bois de sa chambre."
-  ],
-  "avis": [
-   {
-    "qui": "Harfang",
-    "texte": "le colisée est barbare, une opinion qu'il n'a jamais dite à voix haute. Il connaissait déjà les quartiers principaux, les habitudes des gardes et les entrées de service des bâtiments officiels."
-   }
   ],
   "histoire": [
    "Le groupe arrive en plein festival des Cornes Rouges, sur la piste d'Absalom, passée quelques jours plus tôt.",
@@ -456,7 +1043,8 @@
   "resume": "Consul de la Maison Tauroc. Autoritaire et pragmatique.",
   "connu": [
    "Le groupe ne l'a jamais rencontré directement."
-  ]
+  ],
+  "lieu": "keras-tauroc"
  },
  {
   "id": "vitiosa",
@@ -473,12 +1061,6 @@
    "Voyant que le groupe restait indifférent à la somme, elle l'a interrogé sur son origine et ses intentions, avec politesse et patience.",
    "Le groupe a découvert qu'elle est une démone de Maladomini. Elle est relativement alliée avec lui.",
    "Elle a fait remettre une missive au groupe par Vibia."
-  ],
-  "avis": [
-   {
-    "qui": "Harfang",
-    "texte": "son sourire est troublant, sans qu'il sache exactement pourquoi. Il l'avait croisée lors d'événements officiels."
-   }
   ],
   "relations": [
    {
@@ -538,7 +1120,8 @@
    "Avant les Cornes d'Or, il refuse poliment mais définitivement. Après, il accueille chaleureusement.",
    "Absalom lui demandait une relique liée à un pouvoir ancien, peut-être d'avant la grande catastrophe, et s'informait sur la provenance des pierres précieuses. Il l'a orientée vers la Maison Tauroc.",
    "Il l'a revue le lendemain près du port, avec l'air d'une femme qui avait pris une décision."
-  ]
+  ],
+  "lieu": "keras-tauroc"
  },
  {
   "id": "naevia",
@@ -551,7 +1134,8 @@
   "connu": [
    "Elle n'a ni enseigne ni adresse fixe : un pan de mur différent chaque jour.",
    "Jane lui a volé une « Hache Étrange » à 2 000 pièces d'or : la garde d'une épée brisée aux glyphes non décoratifs."
-  ]
+  ],
+  "lieu": "keras-tauroc"
  },
  {
   "id": "eshkal",
@@ -563,7 +1147,8 @@
   "resume": "Il parle vite et beaucoup, et prétend fabriquer lui-même ses potions.",
   "connu": [
    "C'est vrai pour environ la moitié."
-  ]
+  ],
+  "lieu": "keras-tauroc"
  },
  {
   "id": "comatus",
@@ -576,7 +1161,8 @@
   "connu": [
    "Son entrepôt ressemble à l'intérieur d'une tête qui n'a jamais rien jeté.",
    "Il vend une tablette de pierre gravée de glyphes anciens, déchiffrable en partie : un fragment sur les Architectes."
-  ]
+  ],
+  "lieu": "keras-tauroc"
  },
  {
   "id": "capito",
@@ -591,12 +1177,6 @@
    "Avant les Cornes d'Or, il refuse de parler. Après, il parle.",
    "Il raconte qu'une femme en noir a fait modifier une barge, et qu'elle a payé généreusement.",
    "Il conduit le groupe au ponton du Tenrai Buru et se porte garant auprès de Yorisa, qu'il connaît de longue date."
-  ],
-  "avis": [
-   {
-    "qui": "Harfang",
-    "texte": "c'est un contact fiable qui ne pose pas de questions. Il a déjà utilisé ses services pour des traversées discrètes."
-   }
   ]
  },
  {
@@ -663,12 +1243,6 @@
   "connu": [
    "Elle refuse tout inconnu sans recommandation. Les Cornes d'Or comptent, comme un mot de Volusius, d'Ursinus ou d'Harak.",
    "Elle a d'abord refusé l'entrée au groupe, avant de le servir."
-  ],
-  "avis": [
-   {
-    "qui": "Harfang",
-    "texte": "il lui faut jouer la carte de la noblesse avec elle."
-   }
   ]
  },
  {
@@ -702,7 +1276,8 @@
   "connu": [
    "Elle reconnaît Philippa de loin et se montre bien trop familière : un mois de souvenirs que Philippa n'a pas.",
    "La veille du meurtre, un vieil homme aux cheveux blancs et au maintien militaire a remis un pli à Philippa. Sera l'a gardé : « À la deuxième cloche après le coucher du soleil. Viens seule. Ne parle à personne. Via Castrum, Quartier de la Caserne, porte de fer. »"
-  ]
+  ],
+  "lieu": "keras-tauroc"
  },
  {
   "id": "capella",
@@ -714,7 +1289,8 @@
   "resume": "Voisine de la chambre louée par Jane pendant le mois perdu.",
   "connu": [
    "Jane avait loué une chambre de bonne chez elle, propre mais sans rien de personnel. Capella l'entendait rentrer tard et lui reprochait de travailler pour Hématome. Jane portait ses courses le mardi."
-  ]
+  ],
+  "lieu": "keras-tauroc"
  },
  {
   "id": "hematome",
@@ -801,7 +1377,8 @@
     "type": "Enquête sur",
     "ton": "negatif"
    }
-  ]
+  ],
+  "lieu": "keras-tauroc"
  },
  {
   "id": "otoba",
@@ -814,7 +1391,8 @@
   "connu": [
    "Il a été tué le soir du banquet du festival. Le groupe était sur les lieux, couvert de sang, sans en avoir le souvenir.",
    "Sa mort a fermé les accès à Roshen Buru, Seiran Vale et Azuren Kai compris."
-  ]
+  ],
+  "lieu": "keras-tauroc"
  },
  {
   "id": "yorisa",
@@ -840,7 +1418,8 @@
     "type": "Ami de longue date",
     "ton": "positif"
    }
-  ]
+  ],
+  "lieu": "keras-tauroc"
  },
  {
   "id": "saoren",
@@ -859,7 +1438,8 @@
     "type": "Fille",
     "ton": "positif"
    }
-  ]
+  ],
+  "lieu": "keras-tauroc"
  },
  {
   "id": "festival-cornes-rouges",
@@ -870,7 +1450,9 @@
   "alias": [
    "festival",
    "Cornes d'Or",
-   "Cornes Rouges"
+   "Cornes Rouges",
+   "Kresh-Korva",
+   "Orak"
   ],
   "resume": "Le groupe gagne le tournoi et obtient les Cornes d'Or, clé de la ville.",
   "histoire": [
@@ -878,8 +1460,7 @@
    "Avant la victoire, personne n'aide le groupe. Les marchands refusent poliment, les autorités l'ignorent.",
    "Dans les catacombes de la cathédrale, il trouve un autel secondaire aux armes de Vassago. Le Démon des Mains surgit.",
    "Jane bat Hématome, un voleur tabaxi que la ville a fini par mettre dans l'arène. Philippa bat son adversaire.",
-   "Le groupe gagne. Les Cornes d'Or lui sont remises par un vieux minotaure, avec 5 600 pièces d'or.",
-   "La ville s'ouvre. Fulvia parle en aparté, d'un ton froid : à revoir pour la prochaine saison."
+   "Le groupe gagne. Les Cornes d'Or lui sont remises par un vieux minotaure, avec 5 600 pièces d'or."
   ]
  },
  {
@@ -894,10 +1475,7 @@
    "Il se réveille en prison, plusieurs semaines plus tard, du sang sur les mains. Ses armes et objets magiques sont confisqués. Otoba a été assassiné le soir du banquet du festival.",
    "Tarcus propose un marché : enquêter sur soi-même.",
    "Philippa avait une clef du Cornua Fracta. Volusius confirme qu'elle y chantait chaque soir. Sera a gardé le pli d'un vieil homme aux cheveux blancs.",
-   "Jane avait un carnet et une chambre chez Capella. Hématome confirme qu'elle travaillait pour lui. Son carnet montre que la surveillance de l'ambassadeur a été commandée par Calvinus Ferox, en liquide.",
-   "Derrière la tannerie, deux soldats payés par Ferox tentent de récupérer le carnet.",
-   "Chez Ferox, le groupe trouve la lettre d'Absalom et la copie de sa réponse. Il était l'instrument et le coupable désigné du meurtre.",
-   "Le meurtre d'Otoba a fermé les accès à Roshen Buru, Seiran Vale et Azuren Kai compris."
+   "Jane avait un carnet et une chambre chez Capella. Hématome confirme qu'elle travaillait pour lui. Son carnet montre que la surveillance de l'ambassadeur a été commandée par Calvinus Ferox, en liquide."
   ]
  },
  {
@@ -1001,12 +1579,6 @@
    "Un grand aqueduc de pierre transporte le poisson vivant vers Keras Tauroc. Il faut environ 28 jours de trajet par le fleuve et la lande.",
    "Une caserne Tauroc s'est installée récemment et pèse sur la ville.",
    "Un portail relie la tour d'Eamonn à Havre Noir, et un cercle de téléportation relie la tour aux ruines du château de Port Doëlan."
-  ],
-  "avis": [
-   {
-    "qui": "Harfang",
-    "texte": "c'est une ville de pêche, pas une ville de guerre, qu'il ne connaissait que par les rapports."
-   }
   ],
   "histoire": [
    "Le groupe retrouve Olyssane et Ink, qui préparent un portail pour établir un comptoir commercial.",
@@ -1122,8 +1694,7 @@
    "Jane, déguisée en Olyssane, attire Kester dans une ruelle. Il fuit, apeuré, et jure vengeance.",
    "Pour les composants, le groupe obtient de Fennick de la vesine en le menaçant, vainc des ghoules des marées avec l'aide d'Ink, et rapporte trois cœurs flétris.",
    "Eamonn négocie contre du suud et ouvre le cercle. Philippa trace sa marque de craie sur la porte.",
-   "Chez Gran Brijit, Philippa a une vision d'une balance désaxée. Harfang et Ink rencontrent Brijit pour la première fois, et elle semble déjà les connaître.",
-   "Le groupe réveille Nolbrim, dans le coma depuis Malquessar, en le tuant puis en le ressuscitant avec la potion d'Ursinus. Philippa envoie un message à Bourre-Pif."
+   "Chez Gran Brijit, Philippa a une vision d'une balance désaxée. Harfang et Ink rencontrent Brijit pour la première fois, et elle semble déjà les connaître."
   ]
  },
  {
@@ -1218,7 +1789,8 @@
   "resume": "Vieux Scalvern posé.",
   "connu": [
    "Il est le chef officiel de la ville."
-  ]
+  ],
+  "lieu": "cap-cornes"
  },
  {
   "id": "lorcan",
@@ -1267,7 +1839,8 @@
   "connu": [
    "Grand, mi-elfe mi-gobelin, cheveux blancs, chemise écarlate ouverte. Il défie à peu près tout le monde, Olyssane en particulier.",
    "Jane, déguisée en Olyssane, l'a attiré dans une ruelle. Il s'est enfui, apeuré, en jurant vengeance."
-  ]
+  ],
+  "lieu": "cap-cornes"
  },
  {
   "id": "balamor",
@@ -1276,10 +1849,10 @@
   "titre": "L'archipel jungle, dit la Fracture",
   "parent": "istra",
   "zone": {
-   "x": 0.07,
-   "y": 0.13,
-   "w": 0.39,
-   "h": 0.28
+   "x": 0.081,
+   "y": 0.145,
+   "w": 0.355,
+   "h": 0.278
   },
   "blason": "img/blasons/tzalanar.webp",
   "accent": "#6b8f3a",
@@ -1288,7 +1861,8 @@
    "Fracture",
    "maison noire",
    "Tzobal",
-   "Balam"
+   "Balam",
+   "Kar-Balam"
   ],
   "ordre": 2,
   "resume": "Archipel jungle au nord-ouest. Théocratie de Balam. Des araignées y corrompent des citoyens.",
@@ -1298,18 +1872,7 @@
    "Religion de Balam : la nature est divine mais violente. Chasse, sang, sacrifice, cycle vie-mort. Quatre aspects : Jaguar (guerre), Serpent (connaissance), Aigle (autorité), Crocodile (puissance primordiale).",
    "Théocratie décentralisée. L'autorité du Grand Prêtre est avant tout religieuse.",
    "Rumeur persistante : Balamor aurait des espions partout sur le continent. Les étrangers qui s'intéressent de trop près à leurs rituels changent brutalement d'avis, ou disparaissent.",
-   "Avec Roshen Buru, les relations sont formellement neutres, avec une méfiance sourde.",
-   "Tobiya, à Roshen Buru, et un homme du peuple à Keras Tauroc ont été contrôlés par des araignées, avec des symboles de Balamor."
-  ],
-  "avis": [
-   {
-    "qui": "Harfang",
-    "texte": "Balamor est la lacune la plus frustrante de son réseau : ses contacts à Kurakal disparaissaient ou restaient superficiels."
-   },
-   {
-    "qui": "Harfang",
-    "texte": "un grand plan vise à corrompre les habitants pour conquérir les villes, et que la Protectrice et Ankou sous-estiment le danger. S'il se rend à Balamor, il pourra enquêter lui-même."
-   }
+   "Avec Roshen Buru, les relations sont formellement neutres, avec une méfiance sourde."
   ],
   "relations": [
    {
@@ -1322,7 +1885,630 @@
     "type": "Araignées",
     "ton": "negatif"
    }
-  ]
+  ],
+  "poly": [
+   [
+    0.4358,
+    0.4109
+   ],
+   [
+    0.4285,
+    0.4071
+   ],
+   [
+    0.423,
+    0.4011
+   ],
+   [
+    0.4218,
+    0.3934
+   ],
+   [
+    0.4158,
+    0.3858
+   ],
+   [
+    0.4158,
+    0.3612
+   ],
+   [
+    0.4012,
+    0.3552
+   ],
+   [
+    0.3976,
+    0.3519
+   ],
+   [
+    0.3952,
+    0.347
+   ],
+   [
+    0.3952,
+    0.3372
+   ],
+   [
+    0.3982,
+    0.3251
+   ],
+   [
+    0.403,
+    0.3202
+   ],
+   [
+    0.4127,
+    0.3169
+   ],
+   [
+    0.42,
+    0.3115
+   ],
+   [
+    0.42,
+    0.3087
+   ],
+   [
+    0.4145,
+    0.3011
+   ],
+   [
+    0.4139,
+    0.2929
+   ],
+   [
+    0.4176,
+    0.2836
+   ],
+   [
+    0.4164,
+    0.2787
+   ],
+   [
+    0.417,
+    0.2699
+   ],
+   [
+    0.4224,
+    0.2639
+   ],
+   [
+    0.4242,
+    0.259
+   ],
+   [
+    0.4218,
+    0.253
+   ],
+   [
+    0.417,
+    0.2497
+   ],
+   [
+    0.4115,
+    0.2437
+   ],
+   [
+    0.4097,
+    0.2322
+   ],
+   [
+    0.4,
+    0.2224
+   ],
+   [
+    0.4,
+    0.2126
+   ],
+   [
+    0.4067,
+    0.2044
+   ],
+   [
+    0.4109,
+    0.1923
+   ],
+   [
+    0.4121,
+    0.1792
+   ],
+   [
+    0.4018,
+    0.1705
+   ],
+   [
+    0.4006,
+    0.1672
+   ],
+   [
+    0.4012,
+    0.1568
+   ],
+   [
+    0.3921,
+    0.1464
+   ],
+   [
+    0.3891,
+    0.1454
+   ],
+   [
+    0.3764,
+    0.1464
+   ],
+   [
+    0.3515,
+    0.1634
+   ],
+   [
+    0.3442,
+    0.1656
+   ],
+   [
+    0.3358,
+    0.1699
+   ],
+   [
+    0.3321,
+    0.1798
+   ],
+   [
+    0.3273,
+    0.1847
+   ],
+   [
+    0.3212,
+    0.1874
+   ],
+   [
+    0.3139,
+    0.194
+   ],
+   [
+    0.3061,
+    0.1962
+   ],
+   [
+    0.3036,
+    0.1984
+   ],
+   [
+    0.303,
+    0.2033
+   ],
+   [
+    0.3073,
+    0.2126
+   ],
+   [
+    0.3073,
+    0.2191
+   ],
+   [
+    0.3061,
+    0.2224
+   ],
+   [
+    0.3012,
+    0.2273
+   ],
+   [
+    0.2915,
+    0.2306
+   ],
+   [
+    0.2806,
+    0.2306
+   ],
+   [
+    0.2764,
+    0.2317
+   ],
+   [
+    0.2721,
+    0.2383
+   ],
+   [
+    0.257,
+    0.2525
+   ],
+   [
+    0.2521,
+    0.2607
+   ],
+   [
+    0.2442,
+    0.2694
+   ],
+   [
+    0.2376,
+    0.2721
+   ],
+   [
+    0.2224,
+    0.2749
+   ],
+   [
+    0.2152,
+    0.2798
+   ],
+   [
+    0.2103,
+    0.2814
+   ],
+   [
+    0.2,
+    0.2803
+   ],
+   [
+    0.1933,
+    0.2754
+   ],
+   [
+    0.1915,
+    0.2727
+   ],
+   [
+    0.1903,
+    0.265
+   ],
+   [
+    0.1879,
+    0.2628
+   ],
+   [
+    0.18,
+    0.2596
+   ],
+   [
+    0.1733,
+    0.253
+   ],
+   [
+    0.1721,
+    0.2497
+   ],
+   [
+    0.1721,
+    0.2421
+   ],
+   [
+    0.1697,
+    0.2393
+   ],
+   [
+    0.16,
+    0.2366
+   ],
+   [
+    0.1509,
+    0.2301
+   ],
+   [
+    0.143,
+    0.2317
+   ],
+   [
+    0.1333,
+    0.2306
+   ],
+   [
+    0.1303,
+    0.229
+   ],
+   [
+    0.1248,
+    0.223
+   ],
+   [
+    0.1248,
+    0.2126
+   ],
+   [
+    0.1315,
+    0.2044
+   ],
+   [
+    0.1321,
+    0.1978
+   ],
+   [
+    0.1352,
+    0.1902
+   ],
+   [
+    0.1333,
+    0.1831
+   ],
+   [
+    0.1333,
+    0.176
+   ],
+   [
+    0.1345,
+    0.1727
+   ],
+   [
+    0.1406,
+    0.1656
+   ],
+   [
+    0.1436,
+    0.1546
+   ],
+   [
+    0.1436,
+    0.1519
+   ],
+   [
+    0.1418,
+    0.1503
+   ],
+   [
+    0.1345,
+    0.153
+   ],
+   [
+    0.1303,
+    0.1574
+   ],
+   [
+    0.1291,
+    0.1727
+   ],
+   [
+    0.1236,
+    0.1787
+   ],
+   [
+    0.1158,
+    0.182
+   ],
+   [
+    0.0952,
+    0.1842
+   ],
+   [
+    0.0915,
+    0.1863
+   ],
+   [
+    0.0903,
+    0.1896
+   ],
+   [
+    0.0824,
+    0.1989
+   ],
+   [
+    0.0824,
+    0.2033
+   ],
+   [
+    0.0861,
+    0.2126
+   ],
+   [
+    0.0915,
+    0.2202
+   ],
+   [
+    0.0933,
+    0.229
+   ],
+   [
+    0.0927,
+    0.2372
+   ],
+   [
+    0.0861,
+    0.2448
+   ],
+   [
+    0.0806,
+    0.2552
+   ],
+   [
+    0.0848,
+    0.2634
+   ],
+   [
+    0.0873,
+    0.265
+   ],
+   [
+    0.1012,
+    0.2623
+   ],
+   [
+    0.1055,
+    0.2628
+   ],
+   [
+    0.1121,
+    0.2656
+   ],
+   [
+    0.1188,
+    0.2727
+   ],
+   [
+    0.1261,
+    0.2738
+   ],
+   [
+    0.1327,
+    0.2765
+   ],
+   [
+    0.1461,
+    0.2907
+   ],
+   [
+    0.1521,
+    0.3
+   ],
+   [
+    0.1552,
+    0.3082
+   ],
+   [
+    0.1776,
+    0.3153
+   ],
+   [
+    0.1824,
+    0.3202
+   ],
+   [
+    0.1855,
+    0.3284
+   ],
+   [
+    0.1982,
+    0.3361
+   ],
+   [
+    0.2048,
+    0.3421
+   ],
+   [
+    0.2121,
+    0.3448
+   ],
+   [
+    0.2176,
+    0.3492
+   ],
+   [
+    0.22,
+    0.3541
+   ],
+   [
+    0.22,
+    0.3607
+   ],
+   [
+    0.2188,
+    0.3628
+   ],
+   [
+    0.2194,
+    0.3672
+   ],
+   [
+    0.2291,
+    0.3749
+   ],
+   [
+    0.2333,
+    0.382
+   ],
+   [
+    0.2364,
+    0.3831
+   ],
+   [
+    0.2642,
+    0.3836
+   ],
+   [
+    0.2745,
+    0.3852
+   ],
+   [
+    0.2812,
+    0.3787
+   ],
+   [
+    0.3018,
+    0.3694
+   ],
+   [
+    0.3194,
+    0.3694
+   ],
+   [
+    0.3273,
+    0.3716
+   ],
+   [
+    0.3327,
+    0.376
+   ],
+   [
+    0.3345,
+    0.3787
+   ],
+   [
+    0.3358,
+    0.3858
+   ],
+   [
+    0.3376,
+    0.3874
+   ],
+   [
+    0.3485,
+    0.3913
+   ],
+   [
+    0.3527,
+    0.3913
+   ],
+   [
+    0.3594,
+    0.3891
+   ],
+   [
+    0.3667,
+    0.3891
+   ],
+   [
+    0.3752,
+    0.3902
+   ],
+   [
+    0.3818,
+    0.3923
+   ],
+   [
+    0.3879,
+    0.3973
+   ],
+   [
+    0.3921,
+    0.4027
+   ],
+   [
+    0.3988,
+    0.4038
+   ],
+   [
+    0.4048,
+    0.4066
+   ],
+   [
+    0.4103,
+    0.412
+   ],
+   [
+    0.4145,
+    0.4219
+   ],
+   [
+    0.417,
+    0.4235
+   ],
+   [
+    0.423,
+    0.423
+   ]
+  ],
+  "lab": [
+   0.325,
+   0.302
+  ],
+  "couleur": "#9b5de5"
  },
  {
   "id": "tzalanar",
@@ -1352,12 +2538,6 @@
   "resume": "Les échanges réels se font ici. Beaucoup d'étrangers la prennent pour la capitale.",
   "connu": [
    "Les échanges réels avec l'extérieur passent par Kurakal."
-  ],
-  "avis": [
-   {
-    "qui": "Harfang",
-    "texte": "ses contacts sur place disparaissaient ou restaient superficiels."
-   }
   ]
  },
  {
@@ -1370,7 +2550,8 @@
   "resume": "Réside à Tzalanar. Inaccessible en pratique.",
   "connu": [
    "Son autorité est avant tout religieuse."
-  ]
+  ],
+  "lieu": "tzalanar"
  },
  {
   "id": "there-duun",
@@ -1379,10 +2560,10 @@
   "titre": "Le royaume nain du Val Blanc",
   "parent": "istra",
   "zone": {
-   "x": 0.12,
-   "y": 0.46,
-   "w": 0.32,
-   "h": 0.27
+   "x": 0.139,
+   "y": 0.454,
+   "w": 0.338,
+   "h": 0.25
   },
   "blason": "img/blasons/there-duun.webp",
   "accent": "#9fb3c8",
@@ -1402,19 +2583,400 @@
    "Dieu Moradin : forge, connaissance, tradition. There'Duun archive tout depuis des millénaires.",
    "Avec Roshen Buru, la relation est neutre et distante, sans conflit historique."
   ],
-  "avis": [
-   {
-    "qui": "Harfang",
-    "texte": "les nains ont trouvé quelque chose en creusant très profond et l'ont immédiatement scellé, selon une rumeur persistante dont les érudits trop curieux ont disparu. Il n'a pas posé la question à Thibwick."
-   }
-  ],
   "relations": [
    {
     "cible": "valdain-there-duun",
     "type": "Roi",
     "ton": "neutre"
    }
-  ]
+  ],
+  "poly": [
+   [
+    0.4709,
+    0.476
+   ],
+   [
+    0.4685,
+    0.4732
+   ],
+   [
+    0.437,
+    0.4541
+   ],
+   [
+    0.4339,
+    0.4541
+   ],
+   [
+    0.4248,
+    0.4601
+   ],
+   [
+    0.42,
+    0.4678
+   ],
+   [
+    0.42,
+    0.4738
+   ],
+   [
+    0.4242,
+    0.482
+   ],
+   [
+    0.4242,
+    0.4885
+   ],
+   [
+    0.4218,
+    0.4934
+   ],
+   [
+    0.4158,
+    0.4984
+   ],
+   [
+    0.4073,
+    0.5016
+   ],
+   [
+    0.4,
+    0.5016
+   ],
+   [
+    0.3933,
+    0.5
+   ],
+   [
+    0.3855,
+    0.5055
+   ],
+   [
+    0.3758,
+    0.5066
+   ],
+   [
+    0.3618,
+    0.5022
+   ],
+   [
+    0.3515,
+    0.4956
+   ],
+   [
+    0.3467,
+    0.4951
+   ],
+   [
+    0.3376,
+    0.4918
+   ],
+   [
+    0.3285,
+    0.4847
+   ],
+   [
+    0.3224,
+    0.4776
+   ],
+   [
+    0.3176,
+    0.4754
+   ],
+   [
+    0.2988,
+    0.4738
+   ],
+   [
+    0.2885,
+    0.4678
+   ],
+   [
+    0.2745,
+    0.4678
+   ],
+   [
+    0.2618,
+    0.4699
+   ],
+   [
+    0.2594,
+    0.4721
+   ],
+   [
+    0.257,
+    0.4787
+   ],
+   [
+    0.2521,
+    0.4836
+   ],
+   [
+    0.243,
+    0.4863
+   ],
+   [
+    0.2279,
+    0.4945
+   ],
+   [
+    0.22,
+    0.4962
+   ],
+   [
+    0.2055,
+    0.494
+   ],
+   [
+    0.1958,
+    0.5011
+   ],
+   [
+    0.1891,
+    0.5027
+   ],
+   [
+    0.1824,
+    0.5027
+   ],
+   [
+    0.1806,
+    0.5038
+   ],
+   [
+    0.18,
+    0.506
+   ],
+   [
+    0.1818,
+    0.5104
+   ],
+   [
+    0.1812,
+    0.5197
+   ],
+   [
+    0.1788,
+    0.5235
+   ],
+   [
+    0.1709,
+    0.529
+   ],
+   [
+    0.1679,
+    0.5328
+   ],
+   [
+    0.1703,
+    0.541
+   ],
+   [
+    0.1703,
+    0.5486
+   ],
+   [
+    0.1679,
+    0.5557
+   ],
+   [
+    0.1667,
+    0.565
+   ],
+   [
+    0.1648,
+    0.5678
+   ],
+   [
+    0.1582,
+    0.5727
+   ],
+   [
+    0.1467,
+    0.5743
+   ],
+   [
+    0.1406,
+    0.5765
+   ],
+   [
+    0.1388,
+    0.5792
+   ],
+   [
+    0.1394,
+    0.5836
+   ],
+   [
+    0.1436,
+    0.5913
+   ],
+   [
+    0.1521,
+    0.5973
+   ],
+   [
+    0.1564,
+    0.5967
+   ],
+   [
+    0.1642,
+    0.5984
+   ],
+   [
+    0.1739,
+    0.6049
+   ],
+   [
+    0.1758,
+    0.6049
+   ],
+   [
+    0.1806,
+    0.6005
+   ],
+   [
+    0.1873,
+    0.5978
+   ],
+   [
+    0.1939,
+    0.5978
+   ],
+   [
+    0.2048,
+    0.5956
+   ],
+   [
+    0.2127,
+    0.5956
+   ],
+   [
+    0.2176,
+    0.5973
+   ],
+   [
+    0.2236,
+    0.6022
+   ],
+   [
+    0.2309,
+    0.6137
+   ],
+   [
+    0.2412,
+    0.6142
+   ],
+   [
+    0.2479,
+    0.6158
+   ],
+   [
+    0.2558,
+    0.6224
+   ],
+   [
+    0.257,
+    0.6257
+   ],
+   [
+    0.257,
+    0.6328
+   ],
+   [
+    0.26,
+    0.6399
+   ],
+   [
+    0.2606,
+    0.6596
+   ],
+   [
+    0.2594,
+    0.6617
+   ],
+   [
+    0.2594,
+    0.6678
+   ],
+   [
+    0.2636,
+    0.676
+   ],
+   [
+    0.2679,
+    0.6803
+   ],
+   [
+    0.2727,
+    0.6825
+   ],
+   [
+    0.283,
+    0.6825
+   ],
+   [
+    0.2976,
+    0.6863
+   ],
+   [
+    0.3103,
+    0.6858
+   ],
+   [
+    0.3224,
+    0.6902
+   ],
+   [
+    0.3261,
+    0.6902
+   ],
+   [
+    0.3327,
+    0.688
+   ],
+   [
+    0.3394,
+    0.688
+   ],
+   [
+    0.3461,
+    0.6907
+   ],
+   [
+    0.3509,
+    0.6951
+   ],
+   [
+    0.3558,
+    0.7033
+   ],
+   [
+    0.3594,
+    0.7038
+   ],
+   [
+    0.3836,
+    0.6787
+   ],
+   [
+    0.4327,
+    0.6443
+   ],
+   [
+    0.4764,
+    0.5858
+   ],
+   [
+    0.477,
+    0.5792
+   ]
+  ],
+  "lab": [
+   0.327,
+   0.58
+  ],
+  "couleur": "#3b82f6"
  },
  {
   "id": "valedorn",
@@ -1429,12 +2991,6 @@
   "resume": "Seule ville ouverte de There'Duun. La capitale reste fermée aux étrangers.",
   "connu": [
    "Les nains y reçoivent les étrangers mais n'ouvrent jamais leur capitale."
-  ],
-  "avis": [
-   {
-    "qui": "Harfang",
-    "texte": "c'est là qu'il a rencontré son ami nain Thibwick. Il y est allé une ou deux fois."
-   }
   ]
  },
  {
@@ -1448,5 +3004,561 @@
   "connu": [
    "Il envoie des représentants à La Rencontre."
   ]
+ },
+ {
+  "id": "catacombes-de-kord",
+  "type": "lieu",
+  "nom": "Les catacombes de Kord",
+  "titre": "Sous la cathédrale",
+  "parent": "cathedrale-de-kord",
+  "resume": "Galerie basse sous la cathédrale, niches de grands combattants Tauroc. Absalom y a logé et y a bâti un autel secondaire aux armes de Vassago.",
+  "connu": [
+   "Le Démon des Mains a surgi pendant la fouille. Il a été vaincu.",
+   "Un collier a été repéré sur l'autel et mené chez Chrysodoros."
+  ]
+ },
+ {
+  "id": "atelier-de-chrysodoros",
+  "type": "lieu",
+  "nom": "L'orfèvrerie de Chrysodoros",
+  "titre": "Vitrines d'or et de pierres",
+  "parent": "keras-tauroc",
+  "resume": "Boutique d'orfèvrerie. Fermée aux étrangers avant les Cornes d'Or."
+ },
+ {
+  "id": "mine-de-lapidus",
+  "type": "lieu",
+  "nom": "La mine de Lapidus",
+  "titre": "Mine de pierres précieuses à l'ouest",
+  "parent": "keras-tauroc",
+  "resume": "Rubis, quartz et grenats, sans propriété magique, sauf l'arshen, rare.",
+  "connu": [
+   "Le groupe a négocié 10 000 po pour deux tonnes de pierre, livraison à organiser."
+  ]
+ },
+ {
+  "id": "cabinet-de-cordus",
+  "type": "lieu",
+  "nom": "Le cabinet de l'haruspex",
+  "titre": "Adjacent à la caserne",
+  "parent": "keras-tauroc",
+  "resume": "Cabinet de divination militaire, accessible grâce aux Cornes d'Or."
+ },
+ {
+  "id": "hopital-du-colisee",
+  "type": "lieu",
+  "nom": "L'hôpital du Colisée",
+  "titre": "Soins des combattants",
+  "parent": "colisee",
+  "resume": "Lits alignés, herbes séchées. Meditrina y soigne contre paiement."
+ },
+ {
+  "id": "moulins-de-keras-tauroc",
+  "type": "lieu",
+  "nom": "Les moulins de l'ouest",
+  "titre": "Moulins des steppes",
+  "parent": "keras-tauroc",
+  "resume": "Grands moulins où vit Sera, la fille du meunier."
+ },
+ {
+  "id": "scene-de-crime-ambassadeur",
+  "type": "lieu",
+  "nom": "La ruelle du meurtre",
+  "titre": "Scène du meurtre d'Otoba",
+  "parent": "keras-tauroc",
+  "resume": "Ruelle ocre où l'ambassadeur a été tué. Les traces désignent les doubles des joueuses."
+ },
+ {
+  "id": "prison-de-keras-tauroc",
+  "type": "lieu",
+  "nom": "La prison de Keras Tauroc",
+  "titre": "Cellule au collier de fer",
+  "parent": "keras-tauroc",
+  "resume": "Cellules de pierre où le groupe s'est réveillé avec un collier arcanique. Harfang y était détenu."
+ },
+ {
+  "id": "meditrina",
+  "type": "pnj",
+  "nom": "Meditrina",
+  "titre": "Guérisseuse du Colisée",
+  "parent": "hopital-du-colisee",
+  "lieu": "hopital-du-colisee",
+  "statut": "vivant",
+  "resume": "Prêtresse-guérisseuse économe de ses gestes. Elle soigne et vend des potions à prix fixes."
+ },
+ {
+  "id": "vrakul",
+  "type": "pnj",
+  "nom": "Vrakul",
+  "titre": "Le Monolithe, combattant du Colisée",
+  "parent": "colisee",
+  "lieu": "colisee",
+  "statut": "vaincu",
+  "resume": "Force de la nature, né dit-on dans le sud des plaines rouges. Le groupe l'a affronté au tournoi.",
+  "alias": [
+   "Le Monolithe"
+  ]
+ },
+ {
+  "id": "voshara",
+  "type": "pnj",
+  "nom": "Voshara",
+  "titre": "La Cendre du Monastère, combattante",
+  "parent": "colisee",
+  "lieu": "colisee",
+  "statut": "mort",
+  "resume": "Ancienne moniale qui a prié vingt ans avant de sortir seule d'un monastère couvert de cendres. Tuée par Philippa, seul meurtre de l'arène.",
+  "alias": [
+   "Vocharra",
+   "Vosharra",
+   "La Cendre du Monastère"
+  ]
+ },
+ {
+  "id": "peu-importe",
+  "type": "pnj",
+  "nom": "Peu Importe",
+  "titre": "Mirenaï anonyme du Colisée",
+  "parent": "colisee",
+  "lieu": "colisee",
+  "statut": "vaincu",
+  "resume": "Combattant mirenaï qui refuse de donner son nom. Le groupe l'a battu.",
+  "alias": [
+   "Mirenaï anonyme"
+  ]
+ },
+ {
+  "id": "gruel",
+  "type": "pnj",
+  "nom": "Grûl",
+  "titre": "L'Abomination des Cornes Rouges",
+  "parent": "colisee",
+  "lieu": "colisee",
+  "statut": "mort",
+  "resume": "Créature terrifiante qui a exigé deux adversaires comme offrandes. Le groupe l'a vaincue ensemble.",
+  "alias": [
+   "Grûl",
+   "Grul",
+   "L'Abomination des Cornes Rouges"
+  ]
+ },
+ {
+  "id": "cordus",
+  "type": "pnj",
+  "nom": "Cordus",
+  "titre": "Haruspex minotaure",
+  "parent": "cabinet-de-cordus",
+  "lieu": "cabinet-de-cordus",
+  "statut": "vivant",
+  "resume": "Vieux minotaure qui lit les présages. Il a conseillé à Absalom de suivre le fleuve vers le nord.",
+  "alias": [
+   "L'haruspex"
+  ]
+ },
+ {
+  "id": "lapidus",
+  "type": "pnj",
+  "nom": "Lapidus",
+  "titre": "Contremaître de la mine",
+  "parent": "mine-de-lapidus",
+  "lieu": "mine-de-lapidus",
+  "statut": "vivant",
+  "resume": "Contremaître qui a répondu à Absalom que les pierres de Keras Tauroc n'ont aucune propriété magique. Il a conclu un marché de pierre avec le groupe."
+ },
+ {
+  "id": "grixus",
+  "type": "pnj",
+  "nom": "Grixus",
+  "titre": "Voisin gobelin, témoin du meurtre",
+  "parent": "scene-de-crime-ambassadeur",
+  "lieu": "scene-de-crime-ambassadeur",
+  "statut": "vivant",
+  "resume": "Il a vu deux femmes au regard vide guidées par un vieillard aux cheveux blancs. Il parle parce que le groupe porte les Cornes d'Or."
+ },
+ {
+  "id": "goelo",
+  "type": "pnj",
+  "nom": "Goélo",
+  "titre": "Habitant possédé par une araignée",
+  "parent": "keras-tauroc",
+  "lieu": "keras-tauroc",
+  "statut": "mort",
+  "resume": "Homme devenu renfermé, dont le corps a été contrôlé par une araignée pâle et a attaqué le groupe sur le chemin du port.",
+  "alias": [
+   "Le Pisteur Creux",
+   "Passant ivre"
+  ]
+ },
+ {
+  "id": "branak",
+  "type": "pnj",
+  "nom": "Branak",
+  "titre": "Client de Hématome",
+  "parent": "vieille-tannerie",
+  "lieu": "vieille-tannerie",
+  "statut": "vivant",
+  "resume": "Client qui commande des récupérations de colis au quai sud, selon le carnet de Hématome."
+ },
+ {
+  "id": "ossyk",
+  "type": "pnj",
+  "nom": "Ossyk",
+  "titre": "Client de Hématome",
+  "parent": "vieille-tannerie",
+  "lieu": "vieille-tannerie",
+  "statut": "vivant",
+  "resume": "Client qui a commandé une escorte discrète jusqu'à la porte nord, selon le carnet de Hématome."
+ },
+ {
+  "id": "harak",
+  "type": "pnj",
+  "nom": "Harak",
+  "titre": "Marchand de Keras Tauroc",
+  "parent": "keras-tauroc",
+  "lieu": "keras-tauroc",
+  "statut": "vivant",
+  "resume": "Nom dont une recommandation ouvre la boutique de Thessala."
+ },
+ {
+  "id": "hommes-de-main-de-ferox",
+  "type": "pnj",
+  "nom": "Les hommes de main de Ferox",
+  "titre": "Soldats en permission",
+  "parent": "vieille-tannerie",
+  "lieu": "vieille-tannerie",
+  "resume": "Un minotaure et un Pachidan payés par Ferox pour reprendre le carnet de Hématome. Ils ont été battus.",
+  "alias": [
+   "Pachidan soldat",
+   "Gardes de Ferox"
+  ],
+  "statut": "vaincu"
+ },
+ {
+  "id": "arshen",
+  "type": "sujet",
+  "nom": "L'arshen",
+  "titre": "Pierre conductrice de magie",
+  "parent": "keras-tauroc",
+  "resume": "Pierre rare de Keras Tauroc qui prend la magie et la conduit. Idéale pour rituels, cercles d'invocation et portails.",
+  "connu": [
+   "Le groupe a identifié l'arshen en enquêtant sur le collier de l'autel."
+  ]
+ },
+ {
+  "id": "hache-etrange",
+  "type": "sujet",
+  "nom": "La Hache Étrange",
+  "titre": "Arme aux glyphes inconnus",
+  "parent": "naevia",
+  "resume": "Hache de métal non reconnaissable, glyphes non décoratifs, vendue 2000 po par Naevia.",
+  "alias": [
+   "Hache Etrange"
+  ]
+ },
+ {
+  "id": "tablette-de-pierre-gravee",
+  "type": "sujet",
+  "nom": "La Tablette de Pierre Gravée",
+  "titre": "Fragment de glyphes anciens",
+  "parent": "comatus",
+  "resume": "Tablette vendue par Comatus, glyphes anciens à déchiffrer partiellement (Arcana DC 16)."
+ },
+ {
+  "id": "maladomini",
+  "type": "sujet",
+  "nom": "Maladomini",
+  "titre": "Septième cercle des Enfers, la Ruine",
+  "parent": "vitiosa",
+  "resume": "Cercle de la Ruine. Vitiosa en est originaire et s'est révélée démone de ce cercle."
+ },
+ {
+  "id": "sol-regem",
+  "type": "pnj",
+  "nom": "Sol Regem",
+  "titre": "Roi du Dominion Sol",
+  "parent": "dominion-sol",
+  "resume": "Jeune roi, voix du Soleil sur terre. Son règne s'étend vite sur Thaldera."
+ },
+ {
+  "id": "villes-du-dominion",
+  "type": "sujet",
+  "nom": "Les villes du Dominion Sol",
+  "titre": "Du nord au sud",
+  "parent": "dominion-sol",
+  "resume": "Sol Albus, Castel Luz, Grisecroix, Obaline, Teravane, Corvalis, Solarius, Lunsk, Sol Novem (capitale) et Helios.",
+  "connu": [
+   "Grisecroix est le nord du Dominion. Le Grarjord et les clans Sol Draken s'étendent bien plus au nord.",
+   "Obaline est une ville de garnison face au front d'Altera.",
+   "Corvalis et Lunsk ont été annexées récemment."
+  ],
+  "alias": [
+   "Sol Albus",
+   "Castel Luz",
+   "Grisecroix",
+   "Teravane",
+   "Solarius",
+   "Corvalis"
+  ]
+ },
+ {
+  "id": "villes-d-altera",
+  "type": "sujet",
+  "nom": "Les villes d'Altera",
+  "titre": "L'Empire d'Eryndel",
+  "parent": "altera",
+  "resume": "Altenheim (capitale), Bollwerk (port militaire), Erlefort (siège de l'Ordre de l'Aile d'Argent), Landhaus, Lauenburg, Helm, Dusenberg, Brodenwald, Einsenmarch, Holstein, Castel Milten, Altenmarkt, Liesch et Morven.",
+  "connu": [
+   "Einsenmarch et Holstein sont des villes de front face au Dominion."
+  ],
+  "alias": [
+   "Erlefort",
+   "Landhaus",
+   "Lauenburg",
+   "Helm",
+   "Dusenberg",
+   "Brodenwald",
+   "Einsenmarch",
+   "Holstein",
+   "Castel Milten",
+   "Altenmarkt",
+   "Morven"
+  ]
+ },
+ {
+  "id": "nord-sol-draken",
+  "type": "sujet",
+  "nom": "Le nord glacial",
+  "titre": "Clans Sol Draken",
+  "parent": "thaldera",
+  "resume": "Tribus guerrières du nord de Thaldera, qui se croient descendues des dragons. Porte-Hiver est la porte d'entrée du nord, Halsfjord le second point de passage. Le Grarjord est la région la plus au nord.",
+  "alias": [
+   "Sol Draken",
+   "Clans Sol Draken",
+   "Porte-Hiver",
+   "Halsfjord",
+   "Grarjord"
+  ]
+ },
+ {
+  "id": "mers-et-oceans",
+  "type": "sujet",
+  "nom": "Mers et océans",
+  "titre": "Géographie maritime",
+  "parent": "thaldera",
+  "resume": "L'Océan Endormi borde Istra-Belig à l'ouest, puis viennent la Mer d'Émeraude, Thaldera, la Grande Mer de l'Est et la Côte des Épées. La Mer du Milieu est disputée entre pêcheurs tauroc et mirenai. La Fracture désigne l'archipel de Balamor.",
+  "connu": [
+   "Les pêcheurs de Roshen Buru utilisent des sabanis, ceux de Keras Tauroc des galères."
+  ],
+  "alias": [
+   "Océan Endormi",
+   "Ocean Endormi",
+   "Grande Mer de l'Est",
+   "Côte des Épées",
+   "Cote des Epées",
+   "Sabanis",
+   "La Fracture"
+  ]
+ },
+ {
+  "id": "audierne",
+  "type": "ville",
+  "nom": "Audierne",
+  "titre": "Cité des quais rouges",
+  "parent": "consortium",
+  "resume": "Cœur logistique de la Veyra, sous la coupe de Havre-Noir. Toits de tuiles rouges, quais bondés, réfugiés devenus artisans et bateliers.",
+  "connu": [
+   "Un conseil de bateliers et d'armateurs la dirige."
+  ]
+ },
+ {
+  "id": "port-daman",
+  "type": "ville",
+  "nom": "Port Daman",
+  "titre": "Port sous Rivegard",
+  "parent": "consortium",
+  "resume": "Port de la sphère d'influence de Rivegard, avec Voros et Khazad-Marûn."
+ },
+ {
+  "id": "flotte-goudron",
+  "type": "sujet",
+  "nom": "La flotte Goudron",
+  "titre": "Flotte de Sycomore",
+  "parent": "havre-noir",
+  "resume": "La plus grande force de frappe maritime de Thaldera, commandée par Sycomore Brise-Pavois depuis Havre Noir.",
+  "alias": [
+   "Flotte Goudron",
+   "Vaisseaux-Goudron"
+  ]
+ },
+ {
+  "id": "garde-grise",
+  "type": "organisation",
+  "nom": "La Garde Grise",
+  "titre": "Garde de la Ville Haute de Camont",
+  "parent": "camont",
+  "resume": "Garde qui protège la Ville Haute. Jane a dû en abattre plusieurs lors d'un vol dans son passé."
+ },
+ {
+  "id": "larme-et-cils",
+  "type": "pnj",
+  "nom": "Larme et Cils",
+  "titre": "Membres des Yeux connus de Jane",
+  "parent": "les-yeux",
+  "resume": "Deux mutants du clan des Yeux de Camont que Jane connaît.",
+  "alias": [
+   "Larme",
+   "Cils"
+  ]
+ },
+ {
+  "id": "dame-merigold",
+  "type": "pnj",
+  "nom": "Dame Merigold",
+  "titre": "Fondatrice de l'orphelinat",
+  "parent": "leyenmil",
+  "resume": "Noble de Leyenmil qui a fondé l'orphelinat sur ses deniers. Elle est morte peu après avoir engagé la Rectrice.",
+  "statut": "mort",
+  "lieu": "leyenmil"
+ },
+ {
+  "id": "lukas",
+  "type": "pnj",
+  "nom": "Lukas",
+  "titre": "Enfant de l'orphelinat Merigold",
+  "parent": "leyenmil",
+  "resume": "Le plus jeune des garçons, protégé par Soren comme un petit frère.",
+  "lieu": "leyenmil"
+ },
+ {
+  "id": "valar-tauroc",
+  "type": "lieu",
+  "nom": "Le palais Valar Tauroc",
+  "titre": "Palais du Consul",
+  "parent": "keras-tauroc",
+  "resume": "Palais de la Maison Tauroc à Keras Tauroc, résidence du Consul Draval Tauroc.",
+  "alias": [
+   "Valar Taurok"
+  ]
+ },
+ {
+  "id": "longue-vue",
+  "type": "lieu",
+  "nom": "La Longue Vue",
+  "titre": "Tour de surveillance au nord",
+  "parent": "region-roshen-buru",
+  "resume": "Tour de surveillance de Roshen Buru qui guette l'océan et les passages maritimes."
+ },
+ {
+  "id": "port-gorash",
+  "type": "ville",
+  "nom": "Port Gorash",
+  "titre": "Port de pêche tauroc",
+  "parent": "maison-tauroc",
+  "resume": "Point stratégique de pêche de la Maison Tauroc.",
+  "alias": [
+   "Port Goraik"
+  ]
+ },
+ {
+  "id": "ungar-keras",
+  "type": "ville",
+  "nom": "Ungar Keras",
+  "titre": "Village orc allié des Tauroc",
+  "parent": "maison-tauroc",
+  "resume": "Village orc fortifié de la zone la plus aride, au sud, allié de la Maison Tauroc.",
+  "alias": [
+   "Unear Keras"
+  ]
+ },
+ {
+  "id": "rangs-des-mirens",
+  "type": "sujet",
+  "nom": "Les trois rangs de Miren",
+  "titre": "Hikari, Seiran, Tenrai",
+  "parent": "region-roshen-buru",
+  "resume": "Le Miren Hikari est moindre, le Miren Seiran intermédiaire, le Miren Tenrai majeur. Le rang est fixé au moment du Tenraku et ne change jamais.",
+  "alias": [
+   "Miren Hikari",
+   "Miren Seiran",
+   "Miren Tenrai",
+   "Hikari",
+   "Tenrai"
+  ]
+ },
+ {
+  "id": "cites-de-there-duun",
+  "type": "sujet",
+  "nom": "Les villes de There'Duun",
+  "titre": "Royaume nain",
+  "parent": "there-duun",
+  "resume": "Valedorn, seule ville ouverte aux étrangers, porte du Val Blanc. Orimel, ville intérieure d'artisans et d'archives. Belthar, port sur la côte extérieure, au-delà de la chaîne du Rhodell.",
+  "alias": [
+   "Orimel",
+   "Belthar",
+   "Rhodell",
+   "Val Blanc"
+  ]
+ },
+ {
+  "id": "feywild",
+  "type": "continent",
+  "nom": "Feywild",
+  "titre": "Le plan des fées",
+  "sousTitre": "Le plan des fées",
+  "ordre": 2,
+  "cartes": [
+   {
+    "id": "carte",
+    "img": "img/placeholder/carte-noire.svg",
+    "legende": ""
+   }
+  ],
+  "blason": "img/blasons/feywild.webp",
+  "typeLabel": "Plan",
+  "resume": "Reflet plus vif, plus cruel et plus beau du monde matériel. Le temps y est élastique et la magie y coule comme une eau trop vive.",
+  "alias": [
+   "Féerie",
+   "Plan des fées"
+  ]
+ },
+ {
+  "id": "plan-du-feu",
+  "type": "continent",
+  "nom": "Plan du Feu",
+  "titre": "Le plan élémentaire du feu",
+  "sousTitre": "Le plan élémentaire",
+  "ordre": 3,
+  "cartes": [
+   {
+    "id": "carte",
+    "img": "img/placeholder/carte-noire.svg",
+    "legende": ""
+   }
+  ],
+  "blason": "img/blasons/pyrrah.webp",
+  "typeLabel": "Plan",
+  "resume": "Territoire d'une beauté violente, hostile à toute vie qui n'y est pas née. Pyrrah en est la cité connue.",
+  "alias": [
+   "Plan du feu"
+  ]
+ },
+ {
+  "id": "enfers",
+  "type": "continent",
+  "nom": "Les Enfers",
+  "titre": "Verrouillé",
+  "sousTitre": "Verrouillé",
+  "ordre": 5,
+  "cartes": [
+   {
+    "id": "carte",
+    "img": "img/placeholder/carte-noire.svg",
+    "legende": ""
+   }
+  ],
+  "blason": "img/blasons/vide.svg",
+  "locked": true,
+  "typeLabel": "Plan",
+  "resume": ""
  }
 ]

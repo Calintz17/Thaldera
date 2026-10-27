@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 800">
+<defs><linearGradient id="s" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e9dfc0" stop-opacity=".30"/><stop offset="1" stop-color="#e9dfc0" stop-opacity=".08"/></linearGradient></defs>
+<g fill="url(#s)" stroke="#c9a84c" stroke-opacity=".55" stroke-width="3" stroke-dasharray="10 8">
+<circle cx="200" cy="150" r="78"/>
+<path d="M70 800 C70 560 110 400 200 380 C290 400 330 560 330 800Z"/></g>
+<text x="200" y="640" text-anchor="middle" font-family="Cinzel, serif" font-size="26" letter-spacing="6" fill="#c9a84c" fill-opacity=".7">ASSET</text>
+<text x="200" y="680" text-anchor="middle" font-family="Cinzel, serif" font-size="26" letter-spacing="6" fill="#c9a84c" fill-opacity=".7">A VENIR</text>
+</svg>

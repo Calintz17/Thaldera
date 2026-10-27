@@ -28,18 +28,13 @@
    "La langue commune de Thaldera n'est pas parlée ici. Le groupe se débrouille avec l'istran, que Harfang lit et parle.",
    "Les habitants d'Istra ne connaissent pas Thaldera. Seuls quelques proches du pouvoir de Roshen Buru semblent au courant."
   ],
-  "avis": [
-   {
-    "qui": "Harfang",
-    "texte": "c'est inquiétant que des proches de son propre gouvernement aient su depuis longtemps qu'un autre continent existait, et s'y soient rendus. Il pensait Istra isolée."
-   }
-  ],
   "histoire": [
    "Le groupe traverse la mer d'Émeraude à bord d'un sous-marin de coque pyrracier, piloté par des nains de chantier menés par Brise-Montagne.",
    "Il débarque à Brakka, les derniers mètres à la nage, et le sous-marin plonge derrière lui.",
    "Il remonte ensuite les steppes rouges jusqu'à Keras Tauroc, gagne le festival des Cornes Rouges, perd un mois de mémoire, puis descend la Khor Selash jusqu'à Cap Cornes.",
    "Un portail est ouvert à Cap Cornes vers Port Doëlan. Le groupe repart vers le nord, traverse la forêt d'Aruzen depuis Azuren Kai et arrive à Roshen Buru."
-  ]
+  ],
+  "blason": "img/blasons/vide.svg"
  },
  {
   "id": "thaldera",
@@ -70,16 +65,11 @@
   "connu": [
    "Thaldera est séparée d'Istra par la mer d'Émeraude. Des tempêtes gigantesques, nées de l'arbre d'un titan, faisceau de sa puissance disparue sous l'océan, rendent la traversée impossible.",
    "Ses habitants parlent une autre langue qu'Istra.",
-   "Au moins trois factions s'y distinguent : le Dominion Sol, Altéra et Havre Noir.",
+   "Au moins trois factions s'y distinguent : le Dominion Sol, Altéra et le Consortium.",
    "Le groupe a visité Port Doëlan, une ville rasée en pleine reconstruction.",
    "Un portail relie Cap Cornes, sur Istra, à Port Doëlan. Le groupe ne l'a pas ouvert vers Havre Noir."
   ],
-  "avis": [
-   {
-    "qui": "Harfang",
-    "texte": "il a bien fait de ne pas ouvrir le portail entre Cap Cornes et Havre Noir. Il n'avait jamais entendu parler de Thaldera avant de rejoindre ses compagnes."
-   }
-  ]
+  "blason": "img/blasons/vide.svg"
  },
  {
   "id": "dieux",
@@ -99,16 +89,6 @@
    "La Gardienne a appelé Gran Brijit « Hanaré ». Gran Brijit dit que chaque création de Mélora est un cadeau que celle-ci lui envoie.",
    "Un lien de fraternité unit les dieux.",
    "Gran Brijit est la divinité de la Mort."
-  ],
-  "avis": [
-   {
-    "qui": "Harfang",
-    "texte": "Mélora protège spirituellement Roshen Buru et que les cerisiers roses sont l'incarnation de son esprit. Les autres dieux restent pour lui des notions vagues, sans temple ni autel qu'il connaisse en ville."
-   },
-   {
-    "qui": "Harfang",
-    "texte": "Gran Brijit est froide, dérangeante et un peu effrayante, à l'opposé de la nature de Mélora. Il a senti la nature plier à la volonté de Mélora à travers la Gardienne."
-   }
   ],
   "relations": [
    {
@@ -145,12 +125,6 @@
    "Ils utilisent des champions comme véhicule de leur pouvoir et de leur volonté.",
    "La Gardienne est la championne de Mélora. Gran Brijit déclare que Philippa en est une aussi.",
    "Les champions défendent les intérêts de leur dieu. Ils sont bien plus forts que le commun des mortels, sans pouvoir vaincre un dieu."
-  ],
-  "avis": [
-   {
-    "qui": "Harfang",
-    "texte": "les champions sont une notion nouvelle pour lui. Il n'en savait presque rien avant de rencontrer la Gardienne."
-   }
   ]
  },
  {
@@ -165,12 +139,6 @@
    "Il prévoit de l'utiliser dans l'autre sens, pour s'élever lui-même au rang de dieu.",
    "Absalom et d'autres agents agissent pour son compte et collectionnent des fragments de titans.",
    "À distance, il a pu fomenter l'attaque du Temple du Tenraku."
-  ],
-  "avis": [
-   {
-    "qui": "Harfang",
-    "texte": "Vassago commet un affront envers Mélora et envers sa cité en pervertissant le socle de sa civilisation à des fins égoïstes. Il lui semble avoir peu de considération pour la vie humaine, et il se demande ce qu'il ferait en devenant dieu."
-   }
   ],
   "relations": [
    {
@@ -216,14 +184,7 @@
    "Un démon ne peut accéder qu'à son propre plan.",
    "Les démons majeurs comme Absalom semblent obéir au maître de leur plan, l'équivalent d'un dieu du plan matériel.",
    "Les démons qui ont prêté allégeance à Vassago ont trahi leur patron d'origine. Retourner aux Enfers serait presque une condamnation pour eux.",
-   "Les démons sont rares sur le plan matériel et plutôt territoriaux.",
-   "La monnaie des Enfers est la pièce d'âme : une âme damnée, torturée puis compressée jusqu'à former une pièce."
-  ],
-  "avis": [
-   {
-    "qui": "Harfang",
-    "texte": "les démons sont mauvais et qu'il faut s'en méfier. Il n'en avait jamais rencontré avant Ankou Urameï et Absalom, et on l'a mis en garde : les Enfers sont dangereux et leurs habitants redoutables."
-   }
+   "Les démons sont rares sur le plan matériel et plutôt territoriaux."
   ],
   "relations": [
    {
@@ -327,12 +288,6 @@
   ],
   "histoire": [
    "Absalom a brisé la Jarre Miren pendant la seconde cérémonie de mariage, puis a détruit une partie du temple d'un cri de rage."
-  ],
-  "avis": [
-   {
-    "qui": "Harfang",
-    "texte": "le rituel est le socle de sa civilisation, et que l'utiliser à l'envers est une profanation."
-   }
   ]
  },
  {
@@ -361,12 +316,6 @@
    "La religion de Kord est celle de la Maison Tauroc.",
    "Les lieux de culte ne font pas de distinction entre les étrangers, même avant les Cornes d'Or.",
    "Sa cathédrale occupe la place centrale de Keras Tauroc."
-  ],
-  "avis": [
-   {
-    "qui": "Harfang",
-    "texte": "le colisée est barbare, une opinion qu'il n'a jamais dite à voix haute."
-   }
   ],
   "relations": [
    {
@@ -436,22 +385,7 @@
    "Assistant d'un diplomate à la Magistrature, il rédigeait des rapports et voyageait avec une bonne couverture. En réalité, il espionnait pour la Protectrice Neryn Yosa.",
    "Il a quitté la Magistrature après que le grand Magistrat Roven Moto lui a tiré les oreilles sur la qualité de ses rapports. Il est maintenant marchand, avec l'accord de la Protectrice.",
    "Son statut de Tsuren ouvre les ascenseurs et le quartier noble à tout le groupe.",
-   "Il lit et parle l'istran et le mirenaï. Son ami nain est l'inventeur Thibwick Rumple.",
-   "Il connaît bien Keras Tauroc, où il est allé quatre fois sous couverture diplomatique, et ne connaissait Cap Cornes que par les rapports."
-  ],
-  "avis": [
-   {
-    "qui": "Harfang",
-    "texte": "la Protectrice le surveille et sait qu'il lui a menti, mais qu'elle ne semble pas décidée à le faire disparaître tout de suite. Elle l'appelle « l'imbécile d'homme-chouette débonnaire »."
-   },
-   {
-    "qui": "Harfang",
-    "texte": "la Gardienne est plus puissante qu'il ne l'imaginait. Il l'a vue reculer devant Gran Brijit et a compris que le plafond de la puissance dans le monde était plus haut qu'il ne le pensait."
-   },
-   {
-    "qui": "Harfang",
-    "texte": "le système de Roshen Buru protège les clans avant tout, au prix de vies innocentes. Il n'aimait déjà pas la ségrégation entre nobles et peuple, et la trouve maintenant pire."
-   }
+   "Il lit et parle l'istran et le mirenaï. Son ami nain est l'inventeur Thibwick Rumple."
   ],
   "histoire": [
    "Rejoint le groupe de Jane et Philippa à Istra et chasse Absalom avec elles jusqu'à Roshen Buru.",
@@ -617,10 +551,10 @@
   "blason": "img/blasons/altera.webp",
   "accent": "#4a8fd9",
   "zone": {
-   "x": 0.11,
-   "y": 0.24,
-   "w": 0.4,
-   "h": 0.42
+   "x": 0.125,
+   "y": 0.237,
+   "w": 0.516,
+   "h": 0.425
   },
   "alias": [
    "Dynastie d'Altéra",
@@ -633,12 +567,6 @@
    "Altéra est dirigée par l'impératrice Eryndel.",
    "La Gardienne envisage une alliance avec elle, d'après son journal."
   ],
-  "avis": [
-   {
-    "qui": "Harfang",
-    "texte": "la Protectrice parle de l'impératrice comme d'« une pétasse »."
-   }
-  ],
   "relations": [
    {
     "cible": "eryndel",
@@ -650,7 +578,366 @@
     "type": "Alliance envisagée",
     "ton": "neutre"
    }
-  ]
+  ],
+  "poly": [
+   [
+    0.6359,
+    0.2386
+   ],
+   [
+    0.6282,
+    0.2375
+   ],
+   [
+    0.6142,
+    0.238
+   ],
+   [
+    0.522,
+    0.2499
+   ],
+   [
+    0.5058,
+    0.2509
+   ],
+   [
+    0.4833,
+    0.2532
+   ],
+   [
+    0.4639,
+    0.2568
+   ],
+   [
+    0.4405,
+    0.2663
+   ],
+   [
+    0.4314,
+    0.2676
+   ],
+   [
+    0.4018,
+    0.2641
+   ],
+   [
+    0.3927,
+    0.264
+   ],
+   [
+    0.3828,
+    0.2652
+   ],
+   [
+    0.3745,
+    0.2668
+   ],
+   [
+    0.367,
+    0.2697
+   ],
+   [
+    0.3506,
+    0.2803
+   ],
+   [
+    0.3405,
+    0.2839
+   ],
+   [
+    0.2969,
+    0.2955
+   ],
+   [
+    0.2736,
+    0.2996
+   ],
+   [
+    0.2664,
+    0.3042
+   ],
+   [
+    0.2607,
+    0.3099
+   ],
+   [
+    0.255,
+    0.3171
+   ],
+   [
+    0.2365,
+    0.334
+   ],
+   [
+    0.2286,
+    0.3443
+   ],
+   [
+    0.2184,
+    0.3547
+   ],
+   [
+    0.2074,
+    0.3639
+   ],
+   [
+    0.1974,
+    0.375
+   ],
+   [
+    0.1769,
+    0.3917
+   ],
+   [
+    0.1665,
+    0.3984
+   ],
+   [
+    0.1564,
+    0.4033
+   ],
+   [
+    0.142,
+    0.4162
+   ],
+   [
+    0.1352,
+    0.4208
+   ],
+   [
+    0.1294,
+    0.4257
+   ],
+   [
+    0.1259,
+    0.432
+   ],
+   [
+    0.1249,
+    0.4403
+   ],
+   [
+    0.1257,
+    0.4488
+   ],
+   [
+    0.1287,
+    0.4554
+   ],
+   [
+    0.1381,
+    0.4683
+   ],
+   [
+    0.1477,
+    0.4842
+   ],
+   [
+    0.152,
+    0.4949
+   ],
+   [
+    0.1566,
+    0.5113
+   ],
+   [
+    0.1603,
+    0.5213
+   ],
+   [
+    0.1794,
+    0.5512
+   ],
+   [
+    0.1897,
+    0.5739
+   ],
+   [
+    0.2016,
+    0.5883
+   ],
+   [
+    0.2091,
+    0.605
+   ],
+   [
+    0.2314,
+    0.6318
+   ],
+   [
+    0.2385,
+    0.6396
+   ],
+   [
+    0.2609,
+    0.6578
+   ],
+   [
+    0.2669,
+    0.6612
+   ],
+   [
+    0.2729,
+    0.6624
+   ],
+   [
+    0.2848,
+    0.659
+   ],
+   [
+    0.3167,
+    0.6539
+   ],
+   [
+    0.3787,
+    0.6408
+   ],
+   [
+    0.393,
+    0.6365
+   ],
+   [
+    0.4117,
+    0.6226
+   ],
+   [
+    0.4235,
+    0.6159
+   ],
+   [
+    0.4597,
+    0.5982
+   ],
+   [
+    0.4682,
+    0.5926
+   ],
+   [
+    0.4737,
+    0.5857
+   ],
+   [
+    0.4822,
+    0.5659
+   ],
+   [
+    0.4915,
+    0.5524
+   ],
+   [
+    0.4977,
+    0.5459
+   ],
+   [
+    0.4985,
+    0.5411
+   ],
+   [
+    0.4975,
+    0.5369
+   ],
+   [
+    0.4801,
+    0.5178
+   ],
+   [
+    0.4799,
+    0.5142
+   ],
+   [
+    0.4915,
+    0.5076
+   ],
+   [
+    0.4965,
+    0.5027
+   ],
+   [
+    0.5005,
+    0.4967
+   ],
+   [
+    0.4973,
+    0.4799
+   ],
+   [
+    0.4851,
+    0.444
+   ],
+   [
+    0.4822,
+    0.4225
+   ],
+   [
+    0.4963,
+    0.3777
+   ],
+   [
+    0.5002,
+    0.3695
+   ],
+   [
+    0.5094,
+    0.3553
+   ],
+   [
+    0.5293,
+    0.3352
+   ],
+   [
+    0.5388,
+    0.3217
+   ],
+   [
+    0.5609,
+    0.3036
+   ],
+   [
+    0.5686,
+    0.2985
+   ],
+   [
+    0.5751,
+    0.2923
+   ],
+   [
+    0.5821,
+    0.2877
+   ],
+   [
+    0.591,
+    0.283
+   ],
+   [
+    0.5975,
+    0.2778
+   ],
+   [
+    0.6099,
+    0.2656
+   ],
+   [
+    0.6177,
+    0.2596
+   ],
+   [
+    0.6352,
+    0.2508
+   ],
+   [
+    0.6408,
+    0.2466
+   ],
+   [
+    0.6411,
+    0.2423
+   ]
+  ],
+  "lab": [
+   0.319,
+   0.469
+  ],
+  "couleur": "#4a8fd9"
  },
  {
   "id": "dominion-sol",
@@ -661,10 +948,10 @@
   "blason": "img/blasons/dominion-sol.webp",
   "accent": "#c44510",
   "zone": {
-   "x": 0.47,
-   "y": 0.24,
-   "w": 0.38,
-   "h": 0.46
+   "x": 0.49,
+   "y": 0.235,
+   "w": 0.337,
+   "h": 0.459
   },
   "alias": [
    "le Dominion"
@@ -672,46 +959,369 @@
   "resume": "Faction de Thaldera qui semble mener une guerre.",
   "connu": [
    "Le Dominion Sol semble mener une guerre sur Thaldera."
-  ]
- },
- {
-  "id": "havre-noir",
-  "type": "faction",
-  "nom": "Havre Noir",
-  "titre": "Faction de Thaldera",
-  "parent": "thaldera",
-  "blason": "img/blasons/havre-noir.webp",
-  "accent": "#c9a84c",
-  "zone": {
-   "x": 0.34,
-   "y": 0.73,
-   "w": 0.22,
-   "h": 0.15
-  },
-  "pos": {
-   "x": 0.463,
-   "y": 0.812
-  },
-  "resume": "Faction dont « le géant en armure » menace Roshen Buru.",
-  "connu": [
-   "La Protectrice parle d'un « géant en armure » qui serait une menace pour Roshen Buru.",
-   "Un portail relie Cap Cornes à Havre Noir. Le groupe ne l'a pas ouvert.",
-   "Gran Brijit a demandé à Philippa de ne pas ouvrir ce portail."
   ],
-  "relations": [
-   {
-    "cible": "port-doelan",
-    "type": "Ville rasée par le géant en armure",
-    "ton": "negatif"
-   }
-  ]
+  "poly": [
+   [
+    0.6844,
+    0.2371
+   ],
+   [
+    0.6631,
+    0.2409
+   ],
+   [
+    0.6548,
+    0.2447
+   ],
+   [
+    0.6412,
+    0.2552
+   ],
+   [
+    0.6209,
+    0.2687
+   ],
+   [
+    0.6146,
+    0.2736
+   ],
+   [
+    0.6067,
+    0.2837
+   ],
+   [
+    0.6003,
+    0.2882
+   ],
+   [
+    0.5717,
+    0.3055
+   ],
+   [
+    0.5632,
+    0.309
+   ],
+   [
+    0.5554,
+    0.3133
+   ],
+   [
+    0.5513,
+    0.318
+   ],
+   [
+    0.5447,
+    0.3335
+   ],
+   [
+    0.5384,
+    0.3432
+   ],
+   [
+    0.519,
+    0.3631
+   ],
+   [
+    0.5122,
+    0.3722
+   ],
+   [
+    0.5012,
+    0.397
+   ],
+   [
+    0.4964,
+    0.4101
+   ],
+   [
+    0.4951,
+    0.4225
+   ],
+   [
+    0.4958,
+    0.4364
+   ],
+   [
+    0.4981,
+    0.4505
+   ],
+   [
+    0.5016,
+    0.4643
+   ],
+   [
+    0.511,
+    0.4866
+   ],
+   [
+    0.523,
+    0.5085
+   ],
+   [
+    0.5262,
+    0.5167
+   ],
+   [
+    0.527,
+    0.5248
+   ],
+   [
+    0.5267,
+    0.5318
+   ],
+   [
+    0.5244,
+    0.5382
+   ],
+   [
+    0.5213,
+    0.5428
+   ],
+   [
+    0.5159,
+    0.5463
+   ],
+   [
+    0.4978,
+    0.5553
+   ],
+   [
+    0.4931,
+    0.5583
+   ],
+   [
+    0.4905,
+    0.5617
+   ],
+   [
+    0.4919,
+    0.5657
+   ],
+   [
+    0.4964,
+    0.5707
+   ],
+   [
+    0.5171,
+    0.59
+   ],
+   [
+    0.5226,
+    0.5968
+   ],
+   [
+    0.527,
+    0.6044
+   ],
+   [
+    0.5355,
+    0.6349
+   ],
+   [
+    0.5403,
+    0.6418
+   ],
+   [
+    0.5477,
+    0.648
+   ],
+   [
+    0.5561,
+    0.6527
+   ],
+   [
+    0.5887,
+    0.6593
+   ],
+   [
+    0.6015,
+    0.6607
+   ],
+   [
+    0.6087,
+    0.6627
+   ],
+   [
+    0.6244,
+    0.6707
+   ],
+   [
+    0.6333,
+    0.674
+   ],
+   [
+    0.6744,
+    0.6829
+   ],
+   [
+    0.7049,
+    0.6866
+   ],
+   [
+    0.7266,
+    0.6915
+   ],
+   [
+    0.7481,
+    0.6934
+   ],
+   [
+    0.7717,
+    0.6939
+   ],
+   [
+    0.7832,
+    0.6929
+   ],
+   [
+    0.7924,
+    0.6877
+   ],
+   [
+    0.7995,
+    0.6817
+   ],
+   [
+    0.8043,
+    0.6757
+   ],
+   [
+    0.8062,
+    0.669
+   ],
+   [
+    0.8046,
+    0.6536
+   ],
+   [
+    0.8052,
+    0.6393
+   ],
+   [
+    0.8083,
+    0.6337
+   ],
+   [
+    0.8183,
+    0.6199
+   ],
+   [
+    0.8216,
+    0.6111
+   ],
+   [
+    0.8266,
+    0.5894
+   ],
+   [
+    0.8271,
+    0.577
+   ],
+   [
+    0.8179,
+    0.5329
+   ],
+   [
+    0.8133,
+    0.5164
+   ],
+   [
+    0.8079,
+    0.5018
+   ],
+   [
+    0.785,
+    0.4613
+   ],
+   [
+    0.7638,
+    0.4353
+   ],
+   [
+    0.7479,
+    0.4127
+   ],
+   [
+    0.746,
+    0.4004
+   ],
+   [
+    0.7461,
+    0.3896
+   ],
+   [
+    0.7498,
+    0.3798
+   ],
+   [
+    0.7561,
+    0.3685
+   ],
+   [
+    0.7898,
+    0.3356
+   ],
+   [
+    0.7958,
+    0.3245
+   ],
+   [
+    0.7991,
+    0.3132
+   ],
+   [
+    0.7997,
+    0.3028
+   ],
+   [
+    0.7979,
+    0.2953
+   ],
+   [
+    0.7791,
+    0.2777
+   ],
+   [
+    0.768,
+    0.2645
+   ],
+   [
+    0.7575,
+    0.25
+   ],
+   [
+    0.7509,
+    0.2434
+   ],
+   [
+    0.7431,
+    0.2392
+   ],
+   [
+    0.7331,
+    0.2362
+   ],
+   [
+    0.7205,
+    0.2349
+   ],
+   [
+    0.7082,
+    0.2348
+   ]
+  ],
+  "lab": [
+   0.67,
+   0.557
+  ],
+  "couleur": "#c44510"
  },
  {
   "id": "port-doelan",
   "type": "ville",
   "nom": "Port Doëlan",
   "titre": "Ville rasée en pleine reconstruction",
-  "parent": "thaldera",
+  "parent": "consortium",
   "blason": "img/blasons/port-doelan.webp",
   "accent": "#c9a84c",
   "pos": {
