@@ -4,7 +4,7 @@
 (() => {
 'use strict';
 
-const VER = '16';
+const VER = '17';
 const EDIT = new URLSearchParams(location.search).has('edit');
 const $ = (s, r = document) => r.querySelector(s);
 const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
@@ -389,7 +389,7 @@ async function applyMap(sc, dir, focus) {
   const old = S.map;
   if (old && old.src === sc.src) {
     old.info = info;
-    setCam(old, sc.cam, true);
+    if (S.keepCam) S.keepCam = false; else setCam(old, sc.cam, true);
     renderOverlay(old, sc);
     return;
   }
@@ -441,7 +441,7 @@ function showGallery(imgs, title, ent) {
     g.querySelectorAll('.sl').forEach((s, i) => { s.classList.toggle('act', i === cur); });
     g.querySelectorAll('.gdots i').forEach((d, i) => d.classList.toggle('on', i === cur));
     const c = imgs[cur].cut;
-    $('.gt', g).textContent = [imgs[cur].legende, c && ent && ent.formes && ent.formes.length > 1 && c !== ent.formes[0] ? c.label : ''].filter(Boolean).join(' · ');
+    $('.gt', g).textContent = [imgs[cur].legende, c && ent && ent.formes && ent.formes.length > 1 && c !== ent.formes[0] ? c.label : ''].filter(Boolean).join(', ');
     if (ent && c) { S.curForm = c; S.curFormOf = ent.id; setCutout(ent, c); }
   };
   go(0);
@@ -477,7 +477,7 @@ function formeFor(e, ctx) {
 }
 function setCutout(e, form) {
   let c = $('.cutout', stageEl);
-  if (!e || !S.gal) { if (c) c.remove(); S.cut = null; return; }
+  if (!e || !S.gal || !((form && form.img) || e.img)) { if (c) c.remove(); S.cut = null; return; }
   if (!form && e.formes && S.curFormOf === e.id) form = S.curForm;
   const src = (form && form.img) || e.img;
   const ck = e.id + '|' + (src || '');
@@ -488,10 +488,10 @@ function setCutout(e, form) {
   c.className = 'cutout' + (src ? '' : ' ph');
   const tn = (form && form.teinte) || e.teinte || '#3a2a14';
   c.style.setProperty('--tn', tn);
-  c.innerHTML = `<i class="glow"></i><img src="${src || PH_SIL}" alt="${esc(e.nom)}">`;
+  c.innerHTML = `<i class="glow"></i><img src="${src}" alt="${esc(e.nom)}">`;
   stageEl.insertBefore(c, $('.fog', stageEl));
   const ci = $('img', c);
-  const cfit = () => { if (ci.naturalHeight && src) ci.style.maxHeight = Math.min(stageEl.clientHeight * 0.88, ci.naturalHeight * 1.3) + 'px'; };
+  const cfit = () => { if (ci.naturalHeight && src) ci.style.maxHeight = Math.min(stageEl.clientHeight * 0.84, ci.naturalHeight * 1.3) + 'px'; };
   if (ci.complete) cfit(); else ci.addEventListener('load', cfit);
   S.cut = ck;
 }
@@ -662,7 +662,7 @@ function renderPanel(e, q) {
   const sc = sceneOf(e, q);
   const asGallery = sc && sc.gallery;
   // chapeau (paysage 4:3) quand la scene est une carte
-  if (e.galerie && e.galerie.length && !asGallery && ['ville', 'region', 'faction', 'continent'].includes(e.type)) {
+  if (e.galerie && e.galerie.length && !asGallery && !e.blason && ['ville', 'region', 'faction', 'continent'].includes(e.type)) {
     h += `<div class="hero"><img src="${e.galerie[0].img}" alt=""></div>`;
   }
   if (e.type !== 'pnj' && e.type !== 'pj' && e.blason) h += `<div class="crest"><img src="${e.blason}" alt=""></div>`;
@@ -745,8 +745,9 @@ async function route() {
   measure();
   const q = new URLSearchParams(qs || '');
   renderPanel(e, q);
-  document.title = e.nom + ' · Thaldera Codex';
+  document.title = e.nom + ' - Thaldera Codex';
   await applyScene(e, q, my);
+  S.keepCam = false; S.navBusy = false;
   if (S.cut === e.id) { const c = panelEl.querySelector('.cut'); if (c) { const sp = c.nextElementSibling; c.remove(); if (sp && sp.classList.contains('sepline')) sp.remove(); } }
 }
 
@@ -827,7 +828,19 @@ function initEdit() {
     const k = Math.min(1.6, Math.max(0.6, Math.exp(ev.deltaY * 0.0016)));
     const nw = Math.min(1.1, Math.max(0.04, r.w * k)), kk = nw / r.w, nh = r.h * kk;
     const cx = px - kk * (px - (r.x + r.w / 2)), cy = py - kk * (py - (r.y + r.h / 2));
+    L.cam.classList.add('wz'); clearTimeout(L.wzT); L.wzT = setTimeout(() => L.cam.classList.remove('wz'), 450);
     setCam(L, { x: Math.min(1, Math.max(0, cx)) - nw / 2, y: Math.min(1, Math.max(0, cy)) - nh / 2, w: nw, h: nh }, true, L.pad);
+    /* passage fluide continent <-> region a la molette */
+    const ent = S.entry;
+    if (!S.navBusy && ent) {
+      const pip = (pt, poly) => { let ins = false; for (let i = 0, j = poly.length - 1; i < poly.length; j = i++) { const a = poly[i], b2 = poly[j]; if ((a[1] > pt[1]) !== (b2[1] > pt[1]) && pt[0] < (b2[0] - a[0]) * (pt[1] - a[1]) / (b2[1] - a[1]) + a[0]) ins = !ins; } return ins; };
+      if (ent.type === 'continent' && ev.deltaY < 0) {
+        const hit = kids(ent.id).find(k => k.poly && k.zone && nw <= k.zone.w * 1.25 && pip([px, py], k.poly));
+        if (hit) { S.keepCam = true; S.navBusy = true; location.hash = '#/' + hit.id; }
+      } else if ((ent.type === 'region' || ent.type === 'faction') && ent.zone && BY[ent.parent] && BY[ent.parent].type === 'continent' && ev.deltaY > 0 && nw > ent.zone.w * 1.12 * 1.8) {
+        S.keepCam = true; S.navBusy = true; location.hash = '#/' + ent.parent;
+      }
+    }
   }, { passive: false });
   stageEl.addEventListener('pointerdown', ev => { if (!live() || ev.button !== 0) return; drag = { x: ev.clientX, y: ev.clientY, r: { ...S.map.rect } }; moved = false; });
   window.addEventListener('pointermove', ev => {
