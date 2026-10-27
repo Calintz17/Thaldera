@@ -728,7 +728,25 @@
    "Shoba, la fumeuse de poisson, lui parle d'une étrangère nommée Vasha, restée une semaine : Absalom.",
    "Urrak accueille officiellement le groupe, qui repart dans les steppes avec du poisson séché."
   ],
-  "chapeau": "Les falaises ocre et sang tombent droit dans une eau devenue turquoise. En dessous, une plage de sable roux et de galets sombres, et quelques constructions basses en pisé rougeâtre, comme poussées là par la colline. Toits de chaume tressé, une tour au centre qui regarde la mer, une maison sur pilotis au bout d'un ponton. L'odeur est celle du sel, du poisson séché et du bois chauffé par le soleil."
+  "chapeau": "Les falaises ocre et sang tombent droit dans une eau devenue turquoise. En dessous, une plage de sable roux et de galets sombres, et quelques constructions basses en pisé rougeâtre, comme poussées là par la colline. Toits de chaume tressé, une tour au centre qui regarde la mer, une maison sur pilotis au bout d'un ponton. L'odeur est celle du sel, du poisson séché et du bois chauffé par le soleil.",
+  "galerie": [
+   {
+    "img": "img/paysages/brakka/vue-ville.webp",
+    "legende": "Brakka, vue d'ensemble"
+   },
+   {
+    "img": "img/paysages/brakka/baie.webp",
+    "legende": "La baie de Brakka"
+   },
+   {
+    "img": "img/paysages/brakka/maison-de-tembo.webp",
+    "legende": "La maison de Tembo"
+   },
+   {
+    "img": "img/paysages/brakka/maison-d-urrak.webp",
+    "legende": "La maison d'Urrak"
+   }
+  ]
  },
  {
   "id": "tembo",
@@ -749,7 +767,13 @@
   "citation": {
    "texte": "Bienvenue, Philippa. Bienvenue, Jane. Vous êtes à Brakka, en terre d'Istra-Belig.",
    "qui": "Tembo, en istran, traduit"
-  }
+  },
+  "galerie": [
+   {
+    "img": "img/paysages/brakka/maison-de-tembo.webp",
+    "legende": "La maison de Tembo"
+   }
+  ]
  },
  {
   "id": "urrak",
@@ -778,7 +802,13 @@
   "citation": {
    "texte": "Elle est venue. Vous venez. Brakka n'a jamais vu d'étrangers, alors pourquoi maintenant ?",
    "qui": "Urrak, en istran, traduit"
-  }
+  },
+  "galerie": [
+   {
+    "img": "img/paysages/brakka/maison-d-urrak.webp",
+    "legende": "La maison d'Urrak"
+   }
+  ]
  },
  {
   "id": "shoba",
@@ -804,7 +834,15 @@
   "citation": {
    "texte": "Elle est partie. Les steppes. Sans au revoir, sans un mot, et maintenant Brakka respire.",
    "qui": "Shoba, en istran, traduit"
-  }
+  },
+  "galerie": [
+   {
+    "img": "img/paysages/brakka/fumerie-de-shoba.webp",
+    "legende": "La fumerie de Shoba"
+   }
+  ],
+  "img": "img/pnj/brakka-shoba.webp",
+  "teinte": "#753c19"
  },
  {
   "id": "gorge-du-mesa",
@@ -826,7 +864,21 @@
    "Voraan, chef de la caravane, voit dans leur arrivée un signe favorable. Sa fille Sevik, humaine élevée chez les Taurok, est furieuse que des étrangers troublent son rituel de passage.",
    "Le groupe monte à la falaise cueillir les œufs du rituel de Sevik, sous les yeux de la caravane."
   ],
-  "chapeau": "La gorge s'ouvre sans prévenir dans la plaine rouge, comme une blessure dans la terre. Les parois montent à pic, ocre et noires de stries anciennes. Au milieu du passage, une caravane entière installée comme si elle avait toujours été là : tentes de cuir brun et de toile safran, feux bas, et sur une table de pierre naturelle, cinq œufs verts et écailleux. Autour, personne ne parle fort."
+  "chapeau": "La gorge s'ouvre sans prévenir dans la plaine rouge, comme une blessure dans la terre. Les parois montent à pic, ocre et noires de stries anciennes. Au milieu du passage, une caravane entière installée comme si elle avait toujours été là : tentes de cuir brun et de toile safran, feux bas, et sur une table de pierre naturelle, cinq œufs verts et écailleux. Autour, personne ne parle fort.",
+  "galerie": [
+   {
+    "img": "img/paysages/steppes-rouges/garde.webp",
+    "legende": "Le campement de la caravane"
+   },
+   {
+    "img": "img/paysages/steppes-rouges/route.webp",
+    "legende": "La route dans la gorge"
+   },
+   {
+    "img": "img/paysages/steppes-rouges/rituel-du-tier-voyage.webp",
+    "legende": "Le rituel du Tier Voyage"
+   }
+  ]
  },
  {
   "id": "voraan",
@@ -850,7 +902,9 @@
   "citation": {
    "texte": "Vous ne connaissez pas nos rituels. Mais vous y êtes bienvenus, si vous le souhaitez.",
    "qui": "Voraan, en istran, traduit"
-  }
+  },
+  "img": "img/pnj/brakka-voraan.webp",
+  "teinte": "#755219"
  },
  {
   "id": "sevik",
@@ -875,7 +929,9 @@
   "citation": {
    "texte": "Partez, étrangers. Ce rituel n'est pas le vôtre !",
    "qui": "Sevik, en istran, traduit"
-  }
+  },
+  "img": "img/pnj/steppes-rouge-sevik.webp",
+  "teinte": "#755219"
  },
  {
   "id": "thaal",
@@ -893,7 +949,9 @@
   "citation": {
    "texte": "Vous avez marché sur une vieille route. Maintenant, une route de danger. Vous êtes forts, mais peu vivants.",
    "qui": "Thaal, en istran, traduit"
-  }
+  },
+  "img": "img/pnj/steppes-rouge-thaal.webp",
+  "teinte": "#2d2d2d"
  },
  {
   "id": "monastere-des-steppes",
@@ -923,7 +981,17 @@
     "ton": "neutre"
    }
   ],
-  "chapeau": "L'herbe rouge pousse ici plus dense, plus haute, portée par une humidité que les steppes en contrebas ne connaissent pas. Niché sous une voûte naturelle creusée dans la roche comme une mâchoire ouverte vers le ciel, un monastère de pierre ocre aux toits de tuile rouge fissurés. De la végétation partout. Beau et mort depuis longtemps, mais pas vide."
+  "chapeau": "L'herbe rouge pousse ici plus dense, plus haute, portée par une humidité que les steppes en contrebas ne connaissent pas. Niché sous une voûte naturelle creusée dans la roche comme une mâchoire ouverte vers le ciel, un monastère de pierre ocre aux toits de tuile rouge fissurés. De la végétation partout. Beau et mort depuis longtemps, mais pas vide.",
+  "galerie": [
+   {
+    "img": "img/paysages/steppes-rouges/monastere-et-roc.webp",
+    "legende": "Le monastère et le Roc"
+   },
+   {
+    "img": "img/paysages/steppes-rouges/escalade.webp",
+    "legende": "L'escalade"
+   }
+  ]
  },
  {
   "id": "frere-ossian",
@@ -2298,6 +2366,12 @@
     "label": "A Roshen Buru",
     "lieux": [],
     "fond": "img/paysages/roshen-buru/rue.webp",
+    "teinte": "#195275"
+   },
+   {
+    "img": "img/pnj/agran-ink.webp",
+    "label": "A Agran",
+    "lieux": [],
     "teinte": "#195275"
    }
   ],
@@ -3769,7 +3843,9 @@
   "titre": "Enfant de l'orphelinat Merigold",
   "parent": "leyenmil",
   "resume": "Le plus jeune des garçons, protégé par Soren comme un petit frère.",
-  "lieu": "leyenmil"
+  "img": "img/pnj/leyenmil-lukas.webp",
+  "lieu": "leyenmil",
+  "teinte": "#755219"
  },
  {
   "id": "valar-tauroc",
@@ -4217,7 +4293,37 @@
    "y": 0.659
   },
   "typeLabel": "Trajet",
-  "resume": "Lieu du rituel du Tier Voyage."
+  "resume": "Lieu du rituel du Tier Voyage.",
+  "galerie": [
+   {
+    "img": "img/paysages/steppes-rouges/rituel-du-tier-voyage.webp",
+    "legende": "Le rituel du Tier Voyage"
+   },
+   {
+    "img": "img/paysages/steppes-rouges/marque-sur-l-arbre.webp",
+    "legende": "La marque sur l'arbre"
+   },
+   {
+    "img": "img/paysages/steppes-rouges/camps.webp",
+    "legende": "Les camps dans les steppes"
+   },
+   {
+    "img": "img/paysages/steppes-rouges/nuit.webp",
+    "legende": "Les steppes la nuit"
+   },
+   {
+    "img": "img/paysages/steppes-rouges/vue-globale.webp",
+    "legende": "Les steppes rouges la nuit"
+   },
+   {
+    "img": "img/paysages/steppes-rouges/steppes-rakh.webp",
+    "legende": "Les steppes rouges"
+   },
+   {
+    "img": "img/paysages/steppes-rouges/steppes-rakh-2.webp",
+    "legende": "Les steppes rouges, en plein jour"
+   }
+  ]
  },
  {
   "id": "goryo-des-berges",
@@ -4395,5 +4501,129 @@
    "Elle fuit quand on s'avance franchement vers elle."
   ],
   "teinte": "#753c19"
+ },
+ {
+  "id": "temple-de-valkur",
+  "type": "lieu",
+  "nom": "Le temple de Valkur",
+  "titre": "Temple des tempêtes face à la mer",
+  "parent": "port-doelan",
+  "resume": "Façade de pierre sombre percée de hautes verrières bleutées, motifs de vagues et d'éclairs. Isuun des Profondeurs y prêche Valkur.",
+  "connu": [
+   "Isuun remet aux joueuses des orbes de respiration sous-marine.",
+   "Des coquillages et des coraux sont déposés en offrande."
+  ],
+  "chapeau": "Le temple se dresse face à la mer. Une façade de pierre sombre, percée de hautes verrières bleutées. Des motifs de vagues et d'éclairs courent le long des arcs. L'air y est frais, chargé d'embruns. On entend l'eau couler dans un bassin central. Des coquillages et des coraux sont déposés en offrande. Des bougies tremblent sous les courants d'air marins. L'endroit inspire le respect, et une forme d'étrangeté.",
+  "galerie": [
+   {
+    "img": "img/paysages/port-doelan/temple-de-valkur.webp",
+    "legende": "Le temple de Valkur"
+   }
+  ]
+ },
+ {
+  "id": "zombis-dores",
+  "type": "pnj",
+  "nom": "Les zombis dorés",
+  "titre": "Bandits relevés, marqués par l'Avarice",
+  "parent": "betes-dorees",
+  "statut": "inconnu",
+  "resume": "Bandits tués puis relevés par Absalom, marqués par le péché de l'Avarice. De l'or fondu ou incrusté de chair les accompagne.",
+  "connu": [
+   "Les pièces d'or retrouvées autour des vaches mortes viennent d'eux."
+  ],
+  "img": "img/pnj/port-blanc-zombi-dore-1.webp",
+  "formes": [
+   {
+    "img": "img/pnj/port-blanc-zombi-dore-1.webp",
+    "label": "Zombi doré",
+    "lieux": [],
+    "teinte": "#755219"
+   },
+   {
+    "img": "img/pnj/port-blanc-zombi-dore-2.webp",
+    "label": "Zombis dorés",
+    "lieux": [],
+    "teinte": "#755219"
+   }
+  ],
+  "teinte": "#755219"
+ },
+ {
+  "id": "bandits-de-la-faille",
+  "type": "pnj",
+  "nom": "Les bandits de la faille",
+  "titre": "Créatures aquatiques de la Faille",
+  "parent": "la-faille-d-agran",
+  "lieu": "la-faille-d-agran",
+  "statut": "inconnu",
+  "resume": "Mi-tritons, mi-kuo-toa dégénérés, à la peau écailleuse bleutée. Ils pillent les rares voyageurs de la route sous-marine.",
+  "connu": [
+   "Ils attaquent le sous-marin en demi-cercle, par vagues.",
+   "Ils ne communiquent que par gestes et sons gutturaux.",
+   "Ils cherchent à voler et disparaître, pas à tuer."
+  ],
+  "img": "img/pnj/agran-attaque-de-bandits.webp",
+  "teinte": "#195275"
+ },
+ {
+  "id": "dogrun",
+  "type": "pnj",
+  "nom": "Dogrun",
+  "titre": "Nain de l'équipage du sous-marin",
+  "parent": "sous-marin-borim",
+  "lieu": "sous-marin-borim",
+  "statut": "inconnu",
+  "resume": "Nain du chantier de Borim Brise-Montagne, à bord du sous-marin de pyrracier. Il travaille en silence.",
+  "connu": [
+   "Les nains pilotent le sous-marin pour les joueuses.",
+   "Ils distinguent l'ouvrage du commanditaire et restent à bord quoi qu'il arrive."
+  ],
+  "img": "img/pnj/nain-du-sous-marin-dogrun.webp",
+  "teinte": "#755219"
+ },
+ {
+  "id": "thram",
+  "type": "pnj",
+  "nom": "Thram",
+  "titre": "Nain de l'équipage du sous-marin",
+  "parent": "sous-marin-borim",
+  "lieu": "sous-marin-borim",
+  "statut": "inconnu",
+  "resume": "Nain du chantier de Borim Brise-Montagne, à bord du sous-marin de pyrracier. Il travaille en silence.",
+  "connu": [
+   "Les nains pilotent le sous-marin pour les joueuses.",
+   "Ils distinguent l'ouvrage du commanditaire et restent à bord quoi qu'il arrive."
+  ],
+  "img": "img/pnj/nain-du-sous-marin-thram.webp",
+  "teinte": "#753c19"
+ },
+ {
+  "id": "orik",
+  "type": "pnj",
+  "nom": "Orik",
+  "titre": "Nain de l'équipage du sous-marin",
+  "parent": "sous-marin-borim",
+  "lieu": "sous-marin-borim",
+  "statut": "inconnu",
+  "resume": "Nain du chantier de Borim Brise-Montagne, à bord du sous-marin de pyrracier. Il travaille en silence.",
+  "connu": [
+   "Les nains pilotent le sous-marin pour les joueuses.",
+   "Ils distinguent l'ouvrage du commanditaire et restent à bord quoi qu'il arrive."
+  ],
+  "img": "img/pnj/nain-du-sous-marin-orik.webp",
+  "teinte": "#755219"
+ },
+ {
+  "id": "eleanor-holsten",
+  "type": "pnj",
+  "nom": "Eleanor Holsten",
+  "titre": "De la maison Holsten",
+  "parent": "cercle-des-eleveurs",
+  "lieu": "cercle-des-eleveurs",
+  "statut": "inconnu",
+  "resume": "De la maison Holsten, éleveurs de chevaux de trait et de guerre de Port Blanc.",
+  "img": "img/pnj/port-blanc-eleanor-holsten.webp",
+  "teinte": "#751925"
  }
 ]

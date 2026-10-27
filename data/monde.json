@@ -342,6 +342,29 @@
   ],
   "histoire": [
    "À l'aube, deux Rakh attaquent le campement du groupe dans les steppes. Il les dresse avec le poisson séché d'Urrak."
+  ],
+  "galerie": [
+   {
+    "img": "img/paysages/steppes-rouges/steppes-rakh.webp",
+    "legende": "Les steppes rouges"
+   },
+   {
+    "img": "img/paysages/steppes-rouges/steppes-rakh-2.webp",
+    "legende": "Les steppes rouges, en plein jour"
+   }
+  ],
+  "img": "img/pnj/brakka-rakh-carcadonne-appartient-a-philippa.webp",
+  "formes": [
+   {
+    "img": "img/pnj/brakka-rakh-carcadonne-appartient-a-philippa.webp",
+    "label": "Carcadonne, monture de Philippa",
+    "lieux": []
+   },
+   {
+    "img": "img/pnj/brakka-rakh-rashka-appartient-a-jane.webp",
+    "label": "Rashka, monture de Jane",
+    "lieux": []
+   }
   ]
  },
  {
@@ -1396,8 +1419,16 @@
   ],
   "galerie": [
    {
+    "img": "img/paysages/port-doelan/vue-ville.webp",
+    "legende": "Port Doëlan, vue d'ensemble"
+   },
+   {
     "img": "img/paysages/port-doelan/salle-du-trone.webp",
     "legende": "La salle du trône"
+   },
+   {
+    "img": "img/paysages/port-doelan/port.webp",
+    "legende": "Le port"
    }
   ]
  },

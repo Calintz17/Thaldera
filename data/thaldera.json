@@ -1660,6 +1660,16 @@
     "type": "Y est passée déguisée en Sadie",
     "ton": "negatif"
    }
+  ],
+  "galerie": [
+   {
+    "img": "img/paysages/port-blanc/vue-ville.webp",
+    "legende": "Port Blanc, vue d'ensemble"
+   },
+   {
+    "img": "img/paysages/port-blanc/route.webp",
+    "legende": "La route de Port Blanc"
+   }
   ]
  },
  {
@@ -1672,7 +1682,13 @@
   "connu": [
    "Derrière le saloon et la chapelle, une salle des déguisements."
   ],
-  "chapeau": "Ici, la richesse marche sur quatre pattes. Le saloon sert ce qu'on élève : de grosses tranches de bœuf grillées, du pain et des haricots, avec de la bière fraîche et un whisky qui réveille les morts. Une chaise libre à une table de poker."
+  "chapeau": "Ici, la richesse marche sur quatre pattes. Le saloon sert ce qu'on élève : de grosses tranches de bœuf grillées, du pain et des haricots, avec de la bière fraîche et un whisky qui réveille les morts. Une chaise libre à une table de poker.",
+  "galerie": [
+   {
+    "img": "img/paysages/port-blanc/saloon.webp",
+    "legende": "Le saloon"
+   }
+  ]
  },
  {
   "id": "susie",
@@ -1689,7 +1705,15 @@
   "citation": {
    "texte": "Ici on sert ce qu'on élève : du vrai bœuf de Port-Blanc.",
    "qui": "Susie, la patronne du saloon"
-  }
+  },
+  "galerie": [
+   {
+    "img": "img/paysages/port-blanc/saloon.webp",
+    "legende": "Le saloon"
+   }
+  ],
+  "img": "img/pnj/port-blanc-susie.webp",
+  "teinte": "#755219"
  },
  {
   "id": "boon",
@@ -1714,7 +1738,13 @@
   "connu": [
    "La viande part vers les flottes pirates et les comptoirs du Consortium. La contrebande y transite."
   ],
-  "chapeau": "Les quais longent la Veyra comme une cicatrice ouverte. Le bois est sombre, imbibé de sang et de saumure, poli par des années de chargement. Des barges réfrigérées attendent, reliées à des saloirs flottants. L'odeur est si forte qu'elle masque celle du fleuve."
+  "chapeau": "Les quais longent la Veyra comme une cicatrice ouverte. Le bois est sombre, imbibé de sang et de saumure, poli par des années de chargement. Des barges réfrigérées attendent, reliées à des saloirs flottants. L'odeur est si forte qu'elle masque celle du fleuve.",
+  "galerie": [
+   {
+    "img": "img/paysages/port-blanc/quais-rouges.webp",
+    "legende": "Les Quais Rouges"
+   }
+  ]
  },
  {
   "id": "june",
@@ -1727,7 +1757,15 @@
   "resume": "Vend suif, boyaux, laine brute et conserves sur les Quais Rouges.",
   "connu": [
    "Elle explique que la pêche n'existe plus. Elle voit tout et ne dénonce personne."
-  ]
+  ],
+  "galerie": [
+   {
+    "img": "img/paysages/port-blanc/quais-rouges.webp",
+    "legende": "Les Quais Rouges"
+   }
+  ],
+  "img": "img/pnj/port-blanc-june.webp",
+  "teinte": "#753c19"
  },
  {
   "id": "prison-port-blanc",
@@ -1738,7 +1776,13 @@
   "connu": [
    "Le shérif Wyatt Hale y garde Mara Callahan."
   ],
-  "chapeau": "La rue principale de Port Blanc s'étire en pente douce, large et sèche, avec cette poussière fine qui colle aux bottes. Devant la prison, l'air sent le cuir chauffé, la sueur froide et le métal des verrous. Une charrette renforcée attend, lourde, carrée, prête à avaler des lieues dans la plaine."
+  "chapeau": "La rue principale de Port Blanc s'étire en pente douce, large et sèche, avec cette poussière fine qui colle aux bottes. Devant la prison, l'air sent le cuir chauffé, la sueur froide et le métal des verrous. Une charrette renforcée attend, lourde, carrée, prête à avaler des lieues dans la plaine.",
+  "galerie": [
+   {
+    "img": "img/paysages/port-blanc/prison.webp",
+    "legende": "Le bureau du shérif"
+   }
+  ]
  },
  {
   "id": "wyatt-hale",
@@ -1755,7 +1799,15 @@
   "citation": {
    "texte": "Mes deux adjoints ont pas reparu. Ça me plaît pas.",
    "qui": "Wyatt Hale, le shérif"
-  }
+  },
+  "galerie": [
+   {
+    "img": "img/paysages/port-blanc/prison.webp",
+    "legende": "Le bureau du shérif"
+   }
+  ],
+  "img": "img/pnj/port-blanc-wyatt.webp",
+  "teinte": "#753c19"
  },
  {
   "id": "mara-callahan",
@@ -1776,7 +1828,9 @@
   "alias": [
    "Red Callahan",
    "Mara Callahan"
-  ]
+  ],
+  "img": "img/pnj/port-blanc-mara.webp",
+  "teinte": "#753c19"
  },
  {
   "id": "enclos-port-blanc",
@@ -1800,7 +1854,9 @@
   "resume": "Gardien bègue qui confirme à demi-mot que les bêtes sont malades.",
   "connu": [
    "« Moi je garde les pâtures, je pose pas trop de questions. »"
-  ]
+  ],
+  "img": "img/pnj/port-blanc-harlan.webp",
+  "teinte": "#755219"
  },
  {
   "id": "quatre-familles",
@@ -1876,7 +1932,9 @@
     "type": "Même expérience des cristaux",
     "ton": "positif"
    }
-  ]
+  ],
+  "img": "img/pnj/port-doe-lan-magdalena.webp",
+  "teinte": "#752519"
  },
  {
   "id": "barok",
@@ -1892,7 +1950,23 @@
   ],
   "histoire": [
    "Le groupe le recroise devant le théâtre Russconi."
-  ]
+  ],
+  "img": "img/pnj/port-doe-lan-barok-de-guise.webp",
+  "formes": [
+   {
+    "img": "img/pnj/port-doe-lan-barok-de-guise.webp",
+    "label": "Déguisé en garde du corps",
+    "lieux": [],
+    "teinte": "#752519"
+   },
+   {
+    "img": "img/pnj/port-doe-lan-barok-vrai-forme.webp",
+    "label": "Vraie apparence",
+    "lieux": [],
+    "teinte": "#752519"
+   }
+  ],
+  "teinte": "#752519"
  },
  {
   "id": "almar",
@@ -1905,7 +1979,23 @@
   "resume": "Joue la chanteuse pour attirer l'attention. Droite, laconique, le regard toujours en mouvement.",
   "connu": [
    "Elle a remarqué trop de gardes autour du théâtre pour un simple spectacle."
-  ]
+  ],
+  "img": "img/pnj/port-doe-lan-almar-de-guise-e.webp",
+  "formes": [
+   {
+    "img": "img/pnj/port-doe-lan-almar-de-guise-e.webp",
+    "label": "Déguisée en chanteuse",
+    "lieux": [],
+    "teinte": "#756919"
+   },
+   {
+    "img": "img/pnj/port-doe-lan-almar-vrai-forme.webp",
+    "label": "Vraie apparence",
+    "lieux": [],
+    "teinte": "#755219"
+   }
+  ],
+  "teinte": "#756919"
  },
  {
   "id": "umberto-hevalan",
@@ -1918,7 +2008,15 @@
   "resume": "Érudit incorruptible qui refuse de valider la propagande de Spezza.",
   "connu": [
    "Il a été invité à Port Doëlan pour un séminaire."
-  ]
+  ],
+  "galerie": [
+   {
+    "img": "img/paysages/port-doelan/marche.webp",
+    "legende": "Le marché"
+   }
+  ],
+  "img": "img/pnj/port-doe-lan-umberto-hevalan.webp",
+  "teinte": "#753c19"
  },
  {
   "id": "havre-noir",
@@ -1943,7 +2041,13 @@
    "y": 0.812
   },
   "accent": "#c9a84c",
-  "blason": "img/blasons/havre-noir.webp"
+  "blason": "img/blasons/havre-noir.webp",
+  "galerie": [
+   {
+    "img": "img/paysages/havre-noir/pavillon-vert.webp",
+    "legende": "Le Pavillon Vert"
+   }
+  ]
  },
  {
   "id": "assemblage",
@@ -2028,7 +2132,17 @@
    "Liora y échange des compositions contre des plantes rares.",
    "Philippa finance son agrandissement. Olyssane reçoit des plantes pour ses reboisements."
   ],
-  "chapeau": "La boutique encore vide embaume la terre humide et la sève fraîche. La lumière tamisée filtre à travers des volets repeints en vert mousse, quelques fleurs fragiles mais tenaces reposent dans des pots ébréchés. Le bois grince doucement à chaque pas, comme un navire au port. Une odeur de jasmin sauvage se mêle aux algues séchées."
+  "chapeau": "La boutique encore vide embaume la terre humide et la sève fraîche. La lumière tamisée filtre à travers des volets repeints en vert mousse, quelques fleurs fragiles mais tenaces reposent dans des pots ébréchés. Le bois grince doucement à chaque pas, comme un navire au port. Une odeur de jasmin sauvage se mêle aux algues séchées.",
+  "galerie": [
+   {
+    "img": "img/paysages/havre-noir/pavillon-vert-interieur.webp",
+    "legende": "Le Pavillon Vert, la serre"
+   },
+   {
+    "img": "img/paysages/havre-noir/pavillon-vert.webp",
+    "legende": "Le Pavillon Vert"
+   }
+  ]
  },
  {
   "id": "liora",
@@ -2051,6 +2165,12 @@
    "texte": "Si vous trouvez des bourgeons rares dans vos voyages… même un seul… je vous donnerai ce que je peux.",
    "qui": "Liora"
   },
+  "galerie": [
+   {
+    "img": "img/paysages/havre-noir/pavillon-vert-interieur.webp",
+    "legende": "Le Pavillon Vert, la serre"
+   }
+  ],
   "teinte": "#755219"
  },
  {
@@ -2268,7 +2388,15 @@
   "citation": {
    "texte": "Il est en moi… il arrive… il m'a choisi ! Moi et moi seul ! Pas les autres… juste moi !",
    "qui": "Frère Augustus Carrow"
-  }
+  },
+  "galerie": [
+   {
+    "img": "img/paysages/temple-brumeux/frere-augustus.webp",
+    "legende": "Frère Augustus dans le temple"
+   }
+  ],
+  "img": "img/pnj/temple-brumeux-fre-re-augustus.webp",
+  "teinte": "#753c19"
  },
  {
   "id": "temple-brumeux",
@@ -2288,7 +2416,25 @@
    "x": 0.313,
    "y": 0.78
   },
-  "chapeau": "La jungle se resserre et laisse place à une clairière envahie par une brume laiteuse qui colle aux pierres. Entre les lianes et les troncs moussus, la façade effondrée d'un ancien temple, mangé par les racines. L'air sent l'humidité et la moisissure, et seul le ruissellement d'une source invisible trouble le silence."
+  "chapeau": "La jungle se resserre et laisse place à une clairière envahie par une brume laiteuse qui colle aux pierres. Entre les lianes et les troncs moussus, la façade effondrée d'un ancien temple, mangé par les racines. L'air sent l'humidité et la moisissure, et seul le ruissellement d'une source invisible trouble le silence.",
+  "galerie": [
+   {
+    "img": "img/paysages/temple-brumeux/vue-ville.webp",
+    "legende": "Le Temple Brumeux"
+   },
+   {
+    "img": "img/paysages/temple-brumeux/salle-des-statues.webp",
+    "legende": "La salle des statues"
+   },
+   {
+    "img": "img/paysages/temple-brumeux/barakel.webp",
+    "legende": "Barakel dans le temple"
+   },
+   {
+    "img": "img/paysages/temple-brumeux/frere-augustus.webp",
+    "legende": "Frère Augustus dans le temple"
+   }
+  ]
  },
  {
   "id": "barakel",
@@ -2305,7 +2451,15 @@
   "citation": {
    "texte": "J'ai senti la faiblesse des hommes. Leur foi vacillait, et j'ai soufflé dessus, jusqu'à ce que la flamme s'éteigne.",
    "qui": "Barakel, le parasite de l'Aube"
-  }
+  },
+  "galerie": [
+   {
+    "img": "img/paysages/temple-brumeux/barakel.webp",
+    "legende": "Barakel dans le temple"
+   }
+  ],
+  "img": "img/pnj/temple-brumeux-barakel.webp",
+  "teinte": "#196975"
  },
  {
   "id": "agran",
@@ -2336,7 +2490,17 @@
     "legende": ""
    }
   ],
-  "typeLabel": "Cité engloutie"
+  "typeLabel": "Cité engloutie",
+  "galerie": [
+   {
+    "img": "img/paysages/agran/vue-ville.webp",
+    "legende": "Agran, vue d'ensemble"
+   },
+   {
+    "img": "img/paysages/agran/route-vers-la-ville.webp",
+    "legende": "La route vers la ville"
+   }
+  ]
  },
  {
   "id": "thaloor",
@@ -2350,7 +2514,15 @@
   "citation": {
    "texte": "Rouge ou blanc. Le rouge est rare. Il coûte plus.",
    "qui": "Thaloor"
-  }
+  },
+  "galerie": [
+   {
+    "img": "img/paysages/agran/auberge-de-thaloor.webp",
+    "legende": "L'auberge de Thaloor"
+   }
+  ],
+  "img": "img/pnj/agran-thaloor.webp",
+  "teinte": "#755219"
  },
  {
   "id": "la-suuraal",
@@ -2367,7 +2539,15 @@
   "citation": {
    "texte": "Vous avez traversé les courants. Cela ne se fait pas par chance.",
    "qui": "La Suuraal"
-  }
+  },
+  "galerie": [
+   {
+    "img": "img/paysages/agran/la-suuraal.webp",
+    "legende": "La Suuraal"
+   }
+  ],
+  "img": "img/pnj/agran-suuraal.webp",
+  "teinte": "#753c19"
  },
  {
   "id": "algari",
@@ -2384,7 +2564,15 @@
   "citation": {
    "texte": "Tu as essayé de jouer. J'ai senti le silence. C'est une chose particulière, le silence d'une corde qui ne sait pas comment se faire entendre.",
    "qui": "Algari"
-  }
+  },
+  "galerie": [
+   {
+    "img": "img/paysages/agran/algari-et-othuunra.webp",
+    "legende": "Algari et son othuunra"
+   }
+  ],
+  "img": "img/pnj/agran-algari.webp",
+  "teinte": "#755219"
  },
  {
   "id": "glooglugogg",
@@ -2398,7 +2586,9 @@
   "citation": {
    "texte": "Vous offrez à Kataron. Vous recevez sa faveur. C'est la règle.",
    "qui": "Glooglugogg"
-  }
+  },
+  "img": "img/pnj/agran-glooglugoog.webp",
+  "teinte": "#755219"
  },
  {
   "id": "pyrrah",
@@ -2490,7 +2680,25 @@
   "histoire": [
    "Le groupe donne l'assaut et tue Spezza. Naberoth est renvoyé aux Enfers."
   ],
-  "chapeau": "Une forteresse qui domine la ville. La porte est une masse de chêne ferrée, haute comme trois hommes, encadrée de deux tours qui crachent une lumière orange. Elle abrite une chambre forte et une trappe qui mène à la crique secrète."
+  "chapeau": "Une forteresse qui domine la ville. La porte est une masse de chêne ferrée, haute comme trois hommes, encadrée de deux tours qui crachent une lumière orange. Elle abrite une chambre forte et une trappe qui mène à la crique secrète.",
+  "galerie": [
+   {
+    "img": "img/paysages/port-doelan/portes-du-chateau-spezza.webp",
+    "legende": "Les portes du château Spezza"
+   },
+   {
+    "img": "img/paysages/port-doelan/vers-le-chateau-spezza.webp",
+    "legende": "La montée vers le château Spezza"
+   },
+   {
+    "img": "img/paysages/port-doelan/salle-du-trone-p1.webp",
+    "legende": "La salle du trône"
+   },
+   {
+    "img": "img/paysages/port-doelan/salle-du-trone-p2.webp",
+    "legende": "La salle du trône, seconde phase"
+   }
+  ]
  },
  {
   "id": "spezza",
@@ -2507,7 +2715,33 @@
   ],
   "alias": [
    "Spezza"
-  ]
+  ],
+  "galerie": [
+   {
+    "img": "img/paysages/port-doelan/salle-du-trone-p1.webp",
+    "legende": "La salle du trône"
+   },
+   {
+    "img": "img/paysages/port-doelan/salle-du-trone-p2.webp",
+    "legende": "La salle du trône, seconde phase"
+   }
+  ],
+  "img": "img/pnj/port-doe-lan-bartolomeo-spezza-p1.webp",
+  "formes": [
+   {
+    "img": "img/pnj/port-doe-lan-bartolomeo-spezza-p1.webp",
+    "label": "Forme humaine",
+    "lieux": [],
+    "teinte": "#753c19"
+   },
+   {
+    "img": "img/pnj/port-doe-lan-bartolomeo-spezza-p2.webp",
+    "label": "Forme démoniaque",
+    "lieux": [],
+    "teinte": "#753c19"
+   }
+  ],
+  "teinte": "#753c19"
  },
  {
   "id": "naberoth",
@@ -2523,7 +2757,23 @@
   ],
   "histoire": [
    "Le groupe le vainc au château. Il est renvoyé à Dis."
-  ]
+  ],
+  "img": "img/pnj/port-doe-lan-le-pe-cheur-forme-humaine.webp",
+  "formes": [
+   {
+    "img": "img/pnj/port-doe-lan-le-pe-cheur-forme-humaine.webp",
+    "label": "Le Pêcheur, forme humaine",
+    "lieux": [],
+    "teinte": "#753c19"
+   },
+   {
+    "img": "img/pnj/port-doe-lan-naberoth-le-pe-cheur-forme-de-mon-vassago.webp",
+    "label": "Forme démon",
+    "lieux": [],
+    "teinte": "#753c19"
+   }
+  ],
+  "teinte": "#753c19"
  },
  {
   "id": "theatre-russconi",
@@ -2534,7 +2784,13 @@
   "connu": [
    "Places à 15 po. Les gardes sont nombreux pour un simple spectacle."
   ],
-  "chapeau": "La façade se dresse large et solennelle, en pierre claire, avec de hautes colonnes autour de l'arche centrale et deux bannières rouges de part et d'autre du porche. Des gardes à l'ombre des arcades, des nobles qui traversent le parvis d'un pas mesuré. L'air sent la cire, la poussière chaude et le parfum cher."
+  "chapeau": "La façade se dresse large et solennelle, en pierre claire, avec de hautes colonnes autour de l'arche centrale et deux bannières rouges de part et d'autre du porche. Des gardes à l'ombre des arcades, des nobles qui traversent le parvis d'un pas mesuré. L'air sent la cire, la poussière chaude et le parfum cher.",
+  "galerie": [
+   {
+    "img": "img/paysages/port-doelan/theatre-russconi.webp",
+    "legende": "Le théâtre Russconi"
+   }
+  ]
  },
  {
   "id": "russconi",
@@ -2544,7 +2800,13 @@
   "parent": "theatre-russconi",
   "lieu": "theatre-russconi",
   "statut": "vivant",
-  "resume": "Ajuste ses manchettes et laisse entendre que les places sont très demandées."
+  "resume": "Ajuste ses manchettes et laisse entendre que les places sont très demandées.",
+  "galerie": [
+   {
+    "img": "img/paysages/port-doelan/theatre-russconi.webp",
+    "legende": "Le théâtre Russconi"
+   }
+  ]
  },
  {
   "id": "requiem",
@@ -2555,7 +2817,13 @@
   "connu": [
    "Absalom s'y révèle comme Sadie."
   ],
-  "chapeau": "Un magasin de musique où les instruments servent d'autre chose que la musique."
+  "chapeau": "Un magasin de musique où les instruments servent d'autre chose que la musique.",
+  "galerie": [
+   {
+    "img": "img/paysages/port-doelan/requiem.webp",
+    "legende": "Le magasin de musique Requiem"
+   }
+  ]
  },
  {
   "id": "makandral-toussaint",
@@ -2576,7 +2844,15 @@
   "citation": {
    "texte": "Mais pile entre le bien et le mal, il y a une porte, qui mène vers un autre chemin.",
    "qui": "Makandral Toussaint"
-  }
+  },
+  "galerie": [
+   {
+    "img": "img/paysages/port-doelan/requiem.webp",
+    "legende": "Le magasin de musique Requiem"
+   }
+  ],
+  "img": "img/pnj/port-doe-lan-makandral.webp",
+  "teinte": "#753c19"
  },
  {
   "id": "maison-de-vespera",
@@ -2587,7 +2863,13 @@
   "connu": [
    "Tina et Nina, les anciennes prostituées que le groupe connaît, gardent désormais Vespera en armure de fortune."
   ],
-  "chapeau": "La maison respire le velours et la chaleur. Les tentures rouges étouffent les bruits du dehors, la lumière des bougies glisse sur la pierre ancienne, des parfums lourds flottent dans l'air immobile. Les voix sont basses, les regards précis. Ici, le contrôle est absolu."
+  "chapeau": "La maison respire le velours et la chaleur. Les tentures rouges étouffent les bruits du dehors, la lumière des bougies glisse sur la pierre ancienne, des parfums lourds flottent dans l'air immobile. Les voix sont basses, les regards précis. Ici, le contrôle est absolu.",
+  "galerie": [
+   {
+    "img": "img/paysages/port-doelan/maison-de-vespera.webp",
+    "legende": "La maison de Vespera"
+   }
+  ]
  },
  {
   "id": "vespera-merigold",
@@ -2628,6 +2910,12 @@
   "alias": [
    "Madame Vespera"
   ],
+  "galerie": [
+   {
+    "img": "img/paysages/port-doelan/maison-de-vespera.webp",
+    "legende": "La maison de Vespera"
+   }
+  ],
   "formes": [
    {
     "img": "img/thaldera/pnj/vespera-merigold.webp",
@@ -2655,7 +2943,9 @@
   "resume": "Alchimiste de l'Officine, qui travaille aussi sur des explosifs.",
   "connu": [
    "Traces de poudre noire sur ses manches et odeur de soufre."
-  ]
+  ],
+  "img": "img/pnj/port-doe-lan-lirenne.webp",
+  "teinte": "#755219"
  },
  {
   "id": "matthias-holbrekt",
@@ -2669,7 +2959,15 @@
   "connu": [
    "Sa lettre de mission montre qu'il surveillait Spezza et les importations de pyrracier, et des rumeurs de navire capable de traverser la mer d'Émeraude.",
    "Il portait un avis de recherche de Jane et Philippa."
-  ]
+  ],
+  "galerie": [
+   {
+    "img": "img/paysages/port-doelan/ruelle-matthias.webp",
+    "legende": "La ruelle où Matthias est retrouvé"
+   }
+  ],
+  "img": "img/pnj/port-doe-lan-matthias-holbrekt-mort.webp",
+  "teinte": "#753c19"
  },
  {
   "id": "serna",
@@ -2679,17 +2977,27 @@
   "parent": "port-doelan",
   "lieu": "port-doelan",
   "statut": "vivant",
-  "resume": "Vieille femme que tous prennent pour une folle. Elle jure que des démons vivent sous le château."
+  "resume": "Vieille femme que tous prennent pour une folle. Elle jure que des démons vivent sous le château.",
+  "img": "img/pnj/port-doe-lan-serna.webp",
+  "teinte": "#755219"
  },
  {
   "id": "isuun-des-profondeurs",
   "type": "pnj",
   "nom": "Isuun des Profondeurs",
   "titre": "Prêtre aquan de Valkur",
-  "parent": "port-doelan",
-  "lieu": "port-doelan",
+  "parent": "temple-de-valkur",
+  "lieu": "temple-de-valkur",
   "statut": "vivant",
-  "resume": "Donne des orbes de respiration sous-marine."
+  "resume": "Donne des orbes de respiration sous-marine.",
+  "galerie": [
+   {
+    "img": "img/paysages/port-doelan/temple-de-valkur.webp",
+    "legende": "Le temple de Valkur"
+   }
+  ],
+  "img": "img/pnj/port-doe-lan-isuun.webp",
+  "teinte": "#755219"
  },
  {
   "id": "leyenmil",
@@ -2711,6 +3019,12 @@
   "alias": [
    "Leyenmill",
    "Leyemil"
+  ],
+  "galerie": [
+   {
+    "img": "img/paysages/leyenmil/orphelinat.webp",
+    "legende": "L'orphelinat Merigold"
+   }
   ]
  },
  {
@@ -2722,7 +3036,21 @@
   "connu": [
    "Les enfants méritants gagnent une chambre. Jane partageait la sienne avec Vespera."
   ],
-  "chapeau": "Une pluie fine perle sur les barreaux noirs du portail, dont le fer forgé dessine des arabesques sombres au-dessus du nom de l'orphelinat. Au-delà, un bâtiment gothique massif, aux fenêtres hautes comme des juges silencieux. À l'intérieur, la cire froide et l'encens fané, des portraits austères aux murs, et le sol de pierre qui renvoie chaque pas."
+  "chapeau": "Une pluie fine perle sur les barreaux noirs du portail, dont le fer forgé dessine des arabesques sombres au-dessus du nom de l'orphelinat. Au-delà, un bâtiment gothique massif, aux fenêtres hautes comme des juges silencieux. À l'intérieur, la cire froide et l'encens fané, des portraits austères aux murs, et le sol de pierre qui renvoie chaque pas.",
+  "galerie": [
+   {
+    "img": "img/paysages/leyenmil/orphelinat.webp",
+    "legende": "L'orphelinat Merigold"
+   },
+   {
+    "img": "img/paysages/leyenmil/orphelinat-falken.webp",
+    "legende": "L'orphelinat, le bureau de M. Falken"
+   },
+   {
+    "img": "img/paysages/leyenmil/orphelinat-chambre.webp",
+    "legende": "L'orphelinat, la chambre de déguisement"
+   }
+  ]
  },
  {
   "id": "la-rectrice",
@@ -2740,7 +3068,9 @@
   "citation": {
    "texte": "Certaines mauvaises herbes doivent être arrachées avant qu'elles n'étouffent le jardin. Tu comprends cela, n'est-ce pas, Jane ?",
    "qui": "Madame la Rectrice"
-  }
+  },
+  "img": "img/pnj/leyenmil-madame-la-rectrice.webp",
+  "teinte": "#75193c"
  },
  {
   "id": "edmund-von-kornwald",
@@ -2753,7 +3083,15 @@
   "resume": "Homme que Jane a tué pour la Rectrice. Il enquêtait en secret pour la faire tomber.",
   "connu": [
    "Ses documents décrivaient les sévices de l'orphelinat."
-  ]
+  ],
+  "galerie": [
+   {
+    "img": "img/paysages/leyenmil/maison-kornwald.webp",
+    "legende": "La maison Kornwald"
+   }
+  ],
+  "img": "img/pnj/leyenmil-edmund-von-kornwald.webp",
+  "teinte": "#752519"
  },
  {
   "id": "soren",
@@ -2793,7 +3131,15 @@
   "citation": {
    "texte": "C'était très agréable, comme à notre habitude. J'attendrai le même niveau de service à chaque fois.",
    "qui": "Mr. Falken"
-  }
+  },
+  "galerie": [
+   {
+    "img": "img/paysages/leyenmil/orphelinat-falken.webp",
+    "legende": "L'orphelinat, le bureau de M. Falken"
+   }
+  ],
+  "img": "img/pnj/leyenmil-mr-falken.webp",
+  "teinte": "#753c19"
  },
  {
   "id": "rocher-aux-noeuds",
@@ -3498,7 +3844,15 @@
     "type": "Identité empruntée",
     "ton": "negatif"
    }
-  ]
+  ],
+  "galerie": [
+   {
+    "img": "img/paysages/port-blanc/saloon.webp",
+    "legende": "Le saloon"
+   }
+  ],
+  "img": "img/pnj/port-doe-lan-absalom-de-guise-e-en-sadie.webp",
+  "teinte": "#2d2d2d"
  },
  {
   "id": "abattoirs-de-chaux",
@@ -3511,7 +3865,13 @@
    "Les gardes ne parlent jamais de la viande contaminée, mais leur fermeté trahit l'enjeu.",
    "Les habitants disent que la chaux absorbe la corruption."
   ],
-  "chapeau": "Le quartier des abattoirs est enveloppé d'un brouillard blanc et âcre, visible avant même d'en sentir la chaleur. La chaux brûlée recouvre les murs, les sols et parfois les hommes. Les bâtiments sont fermés, lourds, conçus pour contenir le bruit et les odeurs. Ceux qui y travaillent parlent bas, comme si le lieu écoutait."
+  "chapeau": "Le quartier des abattoirs est enveloppé d'un brouillard blanc et âcre, visible avant même d'en sentir la chaleur. La chaux brûlée recouvre les murs, les sols et parfois les hommes. Les bâtiments sont fermés, lourds, conçus pour contenir le bruit et les odeurs. Ceux qui y travaillent parlent bas, comme si le lieu écoutait.",
+  "galerie": [
+   {
+    "img": "img/paysages/port-blanc/abattoirs-de-chaux.webp",
+    "legende": "Les abattoirs de chaux"
+   }
+  ]
  },
  {
   "id": "tiberius",
@@ -3525,7 +3885,15 @@
   "citation": {
    "texte": "Les abattoirs, c'est pas une promenade.",
    "qui": "Tiberius, à l'entrée des abattoirs"
-  }
+  },
+  "galerie": [
+   {
+    "img": "img/paysages/port-blanc/abattoirs-de-chaux.webp",
+    "legende": "Les abattoirs de chaux"
+   }
+  ],
+  "img": "img/pnj/port-blanc-tibe-rius.webp",
+  "teinte": "#755219"
  },
  {
   "id": "ezekiel",
@@ -3535,7 +3903,15 @@
   "parent": "abattoirs-de-chaux",
   "lieu": "abattoirs-de-chaux",
   "statut": "vivant",
-  "resume": "Garde posté avec Tiberius. « Ordres des Familles. Pas d'étrangers. »"
+  "resume": "Garde posté avec Tiberius. « Ordres des Familles. Pas d'étrangers. »",
+  "galerie": [
+   {
+    "img": "img/paysages/port-blanc/abattoirs-de-chaux.webp",
+    "legende": "Les abattoirs de chaux"
+   }
+  ],
+  "img": "img/pnj/port-blanc-ezekiel.webp",
+  "teinte": "#753c19"
  },
  {
   "id": "marche-aux-bestiaux",
@@ -3563,7 +3939,9 @@
   ],
   "alias": [
    "Abby du Voile"
-  ]
+  ],
+  "img": "img/pnj/port-blanc-abby.webp",
+  "teinte": "#755219"
  },
  {
   "id": "tanneries-port-blanc",
@@ -3572,7 +3950,13 @@
   "titre": "Cuir et peaux",
   "parent": "marche-aux-bestiaux",
   "resume": "Rangées d'ateliers de cuir autour du marché aux bestiaux.",
-  "chapeau": "Au bord du marché aux bestiaux, des tanneurs louent de l'espace et travaillent sur place, au rythme du passage constant des bêtes et des marchands. Odeur forte de peau tannée."
+  "chapeau": "Au bord du marché aux bestiaux, des tanneurs louent de l'espace et travaillent sur place, au rythme du passage constant des bêtes et des marchands. Odeur forte de peau tannée.",
+  "galerie": [
+   {
+    "img": "img/paysages/port-blanc/tannerie.webp",
+    "legende": "Les tanneries"
+   }
+  ]
  },
  {
   "id": "cornelius",
@@ -3585,7 +3969,15 @@
   "resume": "Travaille le cuir près du marché, sans boutique fixe. Il sait quand il vaut mieux se taire.",
   "connu": [
    "Il est témoin des transactions sous le manteau entre Familles."
-  ]
+  ],
+  "galerie": [
+   {
+    "img": "img/paysages/port-blanc/tannerie.webp",
+    "legende": "Les tanneries"
+   }
+  ],
+  "img": "img/pnj/port-blanc-corne-lius.webp",
+  "teinte": "#753c19"
  },
  {
   "id": "general-store-port-blanc",
@@ -3594,7 +3986,13 @@
   "titre": "Quais rouges",
   "parent": "quais-rouges",
   "resume": "Comptoir de matériel de voyage : corde, rations, lampes, cartes grossières.",
-  "chapeau": "Les quais longent la Veyra comme une cicatrice ouverte. Le bois est sombre, imbibé de sang et de saumure, et des dockers travaillent jour et nuit, sans poser de questions."
+  "chapeau": "Les quais longent la Veyra comme une cicatrice ouverte. Le bois est sombre, imbibé de sang et de saumure, et des dockers travaillent jour et nuit, sans poser de questions.",
+  "galerie": [
+   {
+    "img": "img/paysages/port-blanc/general-store.webp",
+    "legende": "Le General Store"
+   }
+  ]
  },
  {
   "id": "royce",
@@ -3604,7 +4002,15 @@
   "parent": "general-store-port-blanc",
   "lieu": "general-store-port-blanc",
   "statut": "vivant",
-  "resume": "Vend l'équipement de voyage de la frontière sur les Quais Rouges."
+  "resume": "Vend l'équipement de voyage de la frontière sur les Quais Rouges.",
+  "galerie": [
+   {
+    "img": "img/paysages/port-blanc/general-store.webp",
+    "legende": "Le General Store"
+   }
+  ],
+  "img": "img/pnj/port-blanc-royce.webp",
+  "teinte": "#753c19"
  },
  {
   "id": "marechal-ferrant-port-blanc",
@@ -3613,7 +4019,13 @@
   "titre": "Quais rouges",
   "parent": "quais-rouges",
   "resume": "Forge de ferrage au bord des quais.",
-  "chapeau": "Les quais longent la Veyra comme une cicatrice ouverte. Le bois est sombre, imbibé de sang et de saumure, et des dockers travaillent jour et nuit, sans poser de questions."
+  "chapeau": "Les quais longent la Veyra comme une cicatrice ouverte. Le bois est sombre, imbibé de sang et de saumure, et des dockers travaillent jour et nuit, sans poser de questions.",
+  "galerie": [
+   {
+    "img": "img/paysages/port-blanc/marechal-ferrant.webp",
+    "legende": "Le maréchal-ferrant"
+   }
+  ]
  },
  {
   "id": "otis",
@@ -3623,7 +4035,15 @@
   "parent": "marechal-ferrant-port-blanc",
   "lieu": "marechal-ferrant-port-blanc",
   "statut": "vivant",
-  "resume": "Ferre les montures des voyageurs sur les Quais Rouges."
+  "resume": "Ferre les montures des voyageurs sur les Quais Rouges.",
+  "galerie": [
+   {
+    "img": "img/paysages/port-blanc/marechal-ferrant.webp",
+    "legende": "Le maréchal-ferrant"
+   }
+  ],
+  "img": "img/pnj/port-blanc-otis.webp",
+  "teinte": "#755219"
  },
  {
   "id": "cercle-des-eleveurs",
@@ -3648,7 +4068,13 @@
    "On y prie pour les troupeaux, jamais pour les hommes.",
    "Certains y reconnaissent Sylvanus, mais nul n'ose le nommer."
   ],
-  "chapeau": "Un bâtiment de bois brut, enfoncé dans la poussière et l'odeur animale. De la paille souillée recouvre le sol, des crânes de bovins pendent aux poutres, ornés de symboles gravés à la main. Au centre trône une statue difforme : un homme mi-cerf, tordu, les bois brisés, figé dans une posture de douleur silencieuse."
+  "chapeau": "Un bâtiment de bois brut, enfoncé dans la poussière et l'odeur animale. De la paille souillée recouvre le sol, des crânes de bovins pendent aux poutres, ornés de symboles gravés à la main. Au centre trône une statue difforme : un homme mi-cerf, tordu, les bois brisés, figé dans une posture de douleur silencieuse.",
+  "galerie": [
+   {
+    "img": "img/paysages/port-blanc/chapelle-des-betes.webp",
+    "legende": "La Chapelle des Bêtes Silencieuses"
+   }
+  ]
  },
  {
   "id": "edrin-boeuf-cendre",
@@ -3668,7 +4094,15 @@
   "citation": {
    "texte": "Les gens aiment mettre des noms sur les choses, surtout quand ils ont peur.",
    "qui": "Edrin Bœuf-Cendre"
-  }
+  },
+  "galerie": [
+   {
+    "img": "img/paysages/port-blanc/chapelle-des-betes.webp",
+    "legende": "La Chapelle des Bêtes Silencieuses"
+   }
+  ],
+  "img": "img/pnj/port-blanc-edrin-boeuf-cendre.webp",
+  "teinte": "#755219"
  },
  {
   "id": "betes-dorees",
@@ -3688,6 +4122,12 @@
     "type": "Responsable des bandits dorés",
     "ton": "negatif"
    }
+  ],
+  "galerie": [
+   {
+    "img": "img/paysages/port-blanc/grange-abandonnee.webp",
+    "legende": "La grange abandonnée"
+   }
   ]
  },
  {
@@ -3701,7 +4141,13 @@
    "Dans la réserve, deux cadavres : les vrais aubergistes, M. et Mme Turner.",
    "Le patron et les deux clients sont des hommes de Mara."
   ],
-  "chapeau": "L'auberge se dresse seule dans la plaine, bois sombre, toiture basse, lanternes qui balancent au vent du soir. L'air sent le feu de bois, la graisse froide et la bière renversée. Les chevaux soufflent dans l'enclos, nerveux. La salle commune est étroite, aux planches usées et aux ombres épaisses."
+  "chapeau": "L'auberge se dresse seule dans la plaine, bois sombre, toiture basse, lanternes qui balancent au vent du soir. L'air sent le feu de bois, la graisse froide et la bière renversée. Les chevaux soufflent dans l'enclos, nerveux. La salle commune est étroite, aux planches usées et aux ombres épaisses.",
+  "galerie": [
+   {
+    "img": "img/paysages/port-blanc/auberge-des-trois-pins.webp",
+    "legende": "L'auberge des Trois Pins"
+   }
+  ]
  },
  {
   "id": "clint-mercer",
@@ -3711,7 +4157,15 @@
   "parent": "auberge-des-trois-pins",
   "lieu": "auberge-des-trois-pins",
   "statut": "vaincu",
-  "resume": "Homme de Mara qui joue l'aubergiste."
+  "resume": "Homme de Mara qui joue l'aubergiste.",
+  "galerie": [
+   {
+    "img": "img/paysages/port-blanc/auberge-des-trois-pins.webp",
+    "legende": "L'auberge des Trois Pins"
+   }
+  ],
+  "img": "img/pnj/port-blanc-clint-mercer.webp",
+  "teinte": "#755219"
  },
  {
   "id": "turner",
@@ -3738,7 +4192,13 @@
   "connu": [
    "Mara tente flatterie, charme et pots-de-vin jusqu'à 4000 po pendant le trajet."
   ],
-  "chapeau": "La plaine s'ouvre en larges étendues rouges, striées de roche et d'herbes sèches qui plient sous le vent du soir. La rivière serpente entre les blocs de pierre, gonflée, et charrie une eau trouble. Un arbre massif gît en travers du gué, tronc éclaté, branches encore vertes. Le silence s'installe, dense, attentif."
+  "chapeau": "La plaine s'ouvre en larges étendues rouges, striées de roche et d'herbes sèches qui plient sous le vent du soir. La rivière serpente entre les blocs de pierre, gonflée, et charrie une eau trouble. Un arbre massif gît en travers du gué, tronc éclaté, branches encore vertes. Le silence s'installe, dense, attentif.",
+  "galerie": [
+   {
+    "img": "img/paysages/port-blanc/gue.webp",
+    "legende": "Le gué"
+   }
+  ]
  },
  {
   "id": "banditos-mara",
@@ -3749,7 +4209,8 @@
   "resume": "Bandits qui attaquent au gué pour libérer Mara.",
   "alias": [
    "Banditos"
-  ]
+  ],
+  "img": "img/pnj/port-blanc-banditos.webp"
  },
  {
   "id": "ecuries-clos-vieux",
@@ -3761,7 +4222,13 @@
   "connu": [
    "Logement et fourrage : 1 po par jour et par cheval."
   ],
-  "chapeau": "La cour s'ouvre en carré de pierre blonde, baignée d'un soleil franc. Des arches épaisses soutiennent des toits de tuiles couverts de vigne, et un bassin rond murmure autour d'une statue équestre. Odeur de foin sec, de cuir et de crottin. On travaille tôt, on parle peu, on tient les bêtes droites."
+  "chapeau": "La cour s'ouvre en carré de pierre blonde, baignée d'un soleil franc. Des arches épaisses soutiennent des toits de tuiles couverts de vigne, et un bassin rond murmure autour d'une statue équestre. Odeur de foin sec, de cuir et de crottin. On travaille tôt, on parle peu, on tient les bêtes droites.",
+  "galerie": [
+   {
+    "img": "img/paysages/port-doelan/ecuries.webp",
+    "legende": "Les écuries du Clos Vieux"
+   }
+  ]
  },
  {
   "id": "gorok",
@@ -3774,7 +4241,15 @@
   "resume": "Orc massif, peu bavard, professionnel et direct. Il ne négocie pas.",
   "alias": [
    "Gorak"
-  ]
+  ],
+  "galerie": [
+   {
+    "img": "img/paysages/port-doelan/ecuries.webp",
+    "legende": "Les écuries du Clos Vieux"
+   }
+  ],
+  "img": "img/pnj/port-doe-lan-gorak.webp",
+  "teinte": "#755219"
  },
  {
   "id": "portes-doelan",
@@ -3786,7 +4261,13 @@
   "connu": [
    "Madalena a disparu en laissant son chariot sur la route."
   ],
-  "chapeau": "La route serpente à travers des collines d'herbes sèches et d'oliviers tordus par le vent de mer. Au loin, Port Doëlan s'étage sur la côte comme une cascade de pierres dorées. Avant les premières maisons, quatre gardes en livrée bleue, hallebardes plantées dans la terre, ne laissent personne passer sans être vu."
+  "chapeau": "La route serpente à travers des collines d'herbes sèches et d'oliviers tordus par le vent de mer. Au loin, Port Doëlan s'étage sur la côte comme une cascade de pierres dorées. Avant les premières maisons, quatre gardes en livrée bleue, hallebardes plantées dans la terre, ne laissent personne passer sans être vu.",
+  "galerie": [
+   {
+    "img": "img/paysages/port-doelan/portes-de-la-ville.webp",
+    "legende": "Les portes de la ville"
+   }
+  ]
  },
  {
   "id": "garde-de-doelan",
@@ -3803,7 +4284,15 @@
   "citation": {
    "texte": "Halte là. La route vers Port Doëlan passe par moi aujourd'hui.",
    "qui": "Un garde de Port Doëlan, au poste de contrôle"
-  }
+  },
+  "galerie": [
+   {
+    "img": "img/paysages/port-doelan/portes-de-la-ville.webp",
+    "legende": "Les portes de la ville"
+   }
+  ],
+  "img": "img/pnj/port-doe-lan-gardes.webp",
+  "teinte": "#753c19"
  },
  {
   "id": "ancre-seche",
@@ -3815,7 +4304,13 @@
   "connu": [
    "Tout le monde y loue Spezza, mécène et défenseur de la baie."
   ],
-  "chapeau": "La rue s'étire sous une lumière douce, pavée de pierres chaudes et bordée de terrasses sous des auvents verts. Parfum de pain frais et de vin clair, touche de sel portée par la mer. Des lanternes diffusent une lueur dorée sur les façades couvertes de lierre, et au bout de la rue, l'horizon s'ouvre sur un éclat bleu."
+  "chapeau": "La rue s'étire sous une lumière douce, pavée de pierres chaudes et bordée de terrasses sous des auvents verts. Parfum de pain frais et de vin clair, touche de sel portée par la mer. Des lanternes diffusent une lueur dorée sur les façades couvertes de lierre, et au bout de la rue, l'horizon s'ouvre sur un éclat bleu.",
+  "galerie": [
+   {
+    "img": "img/paysages/port-doelan/ancre-seche.webp",
+    "legende": "L'Ancre Sèche"
+   }
+  ]
  },
  {
   "id": "raffaele-orsini",
@@ -3832,7 +4327,15 @@
   "citation": {
    "texte": "La Sentinella veille au large, et l'Invicta patrouille comme un faucon. On dort tranquille ici.",
    "qui": "Raffaele Orsini"
-  }
+  },
+  "galerie": [
+   {
+    "img": "img/paysages/port-doelan/ancre-seche.webp",
+    "legende": "L'Ancre Sèche"
+   }
+  ],
+  "img": "img/pnj/port-doe-lan-raffaele-orsini.webp",
+  "teinte": "#753c19"
  },
  {
   "id": "comptoir-de-l-ether",
@@ -3841,7 +4344,17 @@
   "titre": "Objets magiques",
   "parent": "port-doelan",
   "resume": "Alcôve lumineuse de pierre claire, vitrines de fioles et d'objets patiemment alignés.",
-  "chapeau": "La boutique s'ouvre comme une alcôve lumineuse, encastrée dans la pierre claire. Des vitrines chargées de fioles, des odeurs d'encens doux, de cire fondue et de poudres minérales. Ici, la magie se montre sans éclat brutal, ordonnée, presque domestiquée."
+  "chapeau": "La boutique s'ouvre comme une alcôve lumineuse, encastrée dans la pierre claire. Des vitrines chargées de fioles, des odeurs d'encens doux, de cire fondue et de poudres minérales. Ici, la magie se montre sans éclat brutal, ordonnée, presque domestiquée.",
+  "galerie": [
+   {
+    "img": "img/paysages/port-doelan/comptoir-de-l-ether.webp",
+    "legende": "Le Comptoir de l'Éther"
+   },
+   {
+    "img": "img/paysages/port-doelan/comptoir-de-l-ether-2.webp",
+    "legende": "Le Comptoir de l'Éther, l'étal"
+   }
+  ]
  },
  {
   "id": "korvin-lustracier",
@@ -3858,7 +4371,15 @@
   "citation": {
    "texte": "Parlez-moi de la mort que vous avez frôlée, que vous avez presque touchée du bout des doigts. Faites-moi frémir, mes amis, faites vibrer l'air entre nous.",
    "qui": "Korvin Lustracier"
-  }
+  },
+  "galerie": [
+   {
+    "img": "img/paysages/port-doelan/comptoir-de-l-ether.webp",
+    "legende": "Le Comptoir de l'Éther"
+   }
+  ],
+  "img": "img/pnj/port-doe-lan-korvin-lustracier.webp",
+  "teinte": "#521975"
  },
  {
   "id": "forge-maison-du-fer",
@@ -3867,7 +4388,13 @@
   "titre": "Forge du chantier naval",
   "parent": "port-doelan",
   "resume": "Forge ouverte sur la rue, chaleur et résonance de coups de marteau.",
-  "chapeau": "La forge s'ouvre largement sur la rue et laisse la chaleur se répandre comme un souffle vivant. Le feu gronde dans l'âtre, jetant des reflets orange sur la pierre sombre. Odeur de métal chauffé, de charbon et de graisse brûlée. Chaque coup porté résonne encore dans les murs."
+  "chapeau": "La forge s'ouvre largement sur la rue et laisse la chaleur se répandre comme un souffle vivant. Le feu gronde dans l'âtre, jetant des reflets orange sur la pierre sombre. Odeur de métal chauffé, de charbon et de graisse brûlée. Chaque coup porté résonne encore dans les murs.",
+  "galerie": [
+   {
+    "img": "img/paysages/port-doelan/maison-du-fer.webp",
+    "legende": "La Maison du Fer"
+   }
+  ]
  },
  {
   "id": "giorgio-malvento",
@@ -3884,7 +4411,15 @@
   "citation": {
    "texte": "L'Invicta ? Ah, elle fend l'eau comme une lame chaude. La Sentinella, pareil. Deux merveilles.",
    "qui": "Giorgio Malvento"
-  }
+  },
+  "galerie": [
+   {
+    "img": "img/paysages/port-doelan/maison-du-fer.webp",
+    "legende": "La Maison du Fer"
+   }
+  ],
+  "img": "img/pnj/port-doe-lan-giorgio-malvento.webp",
+  "teinte": "#753c19"
  },
  {
   "id": "officine",
@@ -3902,7 +4437,13 @@
   "titre": "Plage et stand de Lina",
   "parent": "port-doelan",
   "resume": "Sable blond, parasols bleus et blancs, un stand de bois débordant de tissus.",
-  "chapeau": "La mer s'étire en une courbe claire au pied des falaises couvertes de maisons chaudes et serrées. Sable fin et blond, parasols bleus et blancs, rires près de l'eau. Ici, la ville oublie la mer comme menace et la prend comme compagne."
+  "chapeau": "La mer s'étire en une courbe claire au pied des falaises couvertes de maisons chaudes et serrées. Sable fin et blond, parasols bleus et blancs, rires près de l'eau. Ici, la ville oublie la mer comme menace et la prend comme compagne.",
+  "galerie": [
+   {
+    "img": "img/paysages/port-doelan/plage.webp",
+    "legende": "La plage"
+   }
+  ]
  },
  {
   "id": "lina",
@@ -3912,7 +4453,15 @@
   "parent": "plage-doelan",
   "lieu": "plage-doelan",
   "statut": "vivant",
-  "resume": "Jeune femme vive à l'accent chantant, qui aime les aventuriers. Elle ne sait rien des intrigues."
+  "resume": "Jeune femme vive à l'accent chantant, qui aime les aventuriers. Elle ne sait rien des intrigues.",
+  "galerie": [
+   {
+    "img": "img/paysages/port-doelan/plage.webp",
+    "legende": "La plage"
+   }
+  ],
+  "img": "img/pnj/port-doe-lan-lina.webp",
+  "teinte": "#755219"
  },
  {
   "id": "port-et-jetee-doelan",
@@ -3921,7 +4470,13 @@
   "titre": "Quais de Port Doëlan",
   "parent": "port-doelan",
   "resume": "Pierres blondes, coques amarrées et voiles repliées sur l'eau turquoise.",
-  "chapeau": "Le port s'étire le long de l'eau claire, pavé de pierres blondes chauffées par le soleil. Les coques grincent, bercées par le clapot, dans une odeur de sel, de corde humide et de bois goudronné. Des marins portent des tonneaux, les mouettes crient, les drisses claquent. La jetée vit au rythme des départs et des retours."
+  "chapeau": "Le port s'étire le long de l'eau claire, pavé de pierres blondes chauffées par le soleil. Les coques grincent, bercées par le clapot, dans une odeur de sel, de corde humide et de bois goudronné. Des marins portent des tonneaux, les mouettes crient, les drisses claquent. La jetée vit au rythme des départs et des retours.",
+  "galerie": [
+   {
+    "img": "img/paysages/port-doelan/port.webp",
+    "legende": "Le port"
+   }
+  ]
  },
  {
   "id": "falco",
@@ -3935,7 +4490,15 @@
   "citation": {
    "texte": "On dit qu'il n'a pas montré son visage. Ça fait parler.",
    "qui": "Falco et Mirella, sur la jetée"
-  }
+  },
+  "galerie": [
+   {
+    "img": "img/paysages/port-doelan/port.webp",
+    "legende": "Le port"
+   }
+  ],
+  "img": "img/pnj/port-doe-lan-falco-mirella.webp",
+  "teinte": "#753c19"
  },
  {
   "id": "mirella",
@@ -3945,7 +4508,15 @@
   "parent": "port-et-jetee-doelan",
   "lieu": "port-et-jetee-doelan",
   "statut": "vivant",
-  "resume": "Compagne de discussion de Falco. Elle parle des deux femmes que Spezza traquerait."
+  "resume": "Compagne de discussion de Falco. Elle parle des deux femmes que Spezza traquerait.",
+  "galerie": [
+   {
+    "img": "img/paysages/port-doelan/port.webp",
+    "legende": "Le port"
+   }
+  ],
+  "img": "img/pnj/port-doe-lan-falco-mirella.webp",
+  "teinte": "#753c19"
  },
  {
   "id": "phare-doelan",
@@ -3954,7 +4525,13 @@
   "titre": "Promontoire face à la mer",
   "parent": "port-doelan",
   "resume": "Tour de pierre claire à lanterne stable, escalier extérieur battu par le vent.",
-  "chapeau": "Le phare se dresse sur son promontoire de pierre claire, droit face à la mer. L'escalier extérieur tourne autour de la tour, exposé au vent salé, et la lanterne brûle haut et stable. Les barques entrent et sortent du port. Pourtant, quelque chose semble écouter plus qu'observer."
+  "chapeau": "Le phare se dresse sur son promontoire de pierre claire, droit face à la mer. L'escalier extérieur tourne autour de la tour, exposé au vent salé, et la lanterne brûle haut et stable. Les barques entrent et sortent du port. Pourtant, quelque chose semble écouter plus qu'observer.",
+  "galerie": [
+   {
+    "img": "img/paysages/port-doelan/phare.webp",
+    "legende": "Le phare"
+   }
+  ]
  },
  {
   "id": "haute-vigie",
@@ -3963,7 +4540,13 @@
   "titre": "Tour d'Amôn",
   "parent": "port-doelan",
   "resume": "Tour étroite gravée de symboles discrets, aux fenêtres éclairées à des heures où la ville dort.",
-  "chapeau": "La tour s'élève au-dessus des toits comme une vigie de pierre, étroite et patiente. Ses murs portent la trace des vents salés et des symboles discrets que l'œil devine plus qu'il ne les lit. Des lumières chaudes brillent aux fenêtres hautes, à des heures où la ville dort encore. Ici, le silence n'est jamais vide."
+  "chapeau": "La tour s'élève au-dessus des toits comme une vigie de pierre, étroite et patiente. Ses murs portent la trace des vents salés et des symboles discrets que l'œil devine plus qu'il ne les lit. Des lumières chaudes brillent aux fenêtres hautes, à des heures où la ville dort encore. Ici, le silence n'est jamais vide.",
+  "galerie": [
+   {
+    "img": "img/paysages/port-doelan/haute-vigie.webp",
+    "legende": "La Haute Vigie"
+   }
+  ]
  },
  {
   "id": "amon-haute-vigie",
@@ -3980,7 +4563,15 @@
   "citation": {
    "texte": "Je ne regarde pas les hommes. Je regarde les forces qui les traversent.",
    "qui": "Amon"
-  }
+  },
+  "galerie": [
+   {
+    "img": "img/paysages/port-doelan/haute-vigie.webp",
+    "legende": "La Haute Vigie"
+   }
+  ],
+  "img": "img/pnj/port-doe-lan-amo-n.webp",
+  "teinte": "#755219"
  },
  {
   "id": "cesare-rusconi",
@@ -4000,7 +4591,15 @@
   "citation": {
    "texte": "Merci de venir habillés en conséquence. C'est un théâtre. Pas une halle de poisson.",
    "qui": "Cesare Rusconi"
-  }
+  },
+  "galerie": [
+   {
+    "img": "img/paysages/port-doelan/theatre-russconi.webp",
+    "legende": "Le théâtre Russconi"
+   }
+  ],
+  "img": "img/pnj/port-doe-lan-cesare.webp",
+  "teinte": "#753c19"
  },
  {
   "id": "arkhavel-dorn",
@@ -4019,7 +4618,17 @@
   "titre": "Étals, lanternes et terrasses",
   "parent": "port-doelan",
   "resume": "Arcades de pierre, odeurs de fruits mûrs, de pain chaud et d'épices.",
-  "chapeau": "La nuit descend doucement et la rue marchande s'embrase d'une lumière chaude et dorée. Les lanternes s'allument sous les arcades de pierre, les étals répandent l'odeur des fruits mûrs, du pain chaud et des épices venues d'au-delà de la mer. Les terrasses bruissent de rires et de verres qui s'entrechoquent."
+  "chapeau": "La nuit descend doucement et la rue marchande s'embrase d'une lumière chaude et dorée. Les lanternes s'allument sous les arcades de pierre, les étals répandent l'odeur des fruits mûrs, du pain chaud et des épices venues d'au-delà de la mer. Les terrasses bruissent de rires et de verres qui s'entrechoquent.",
+  "galerie": [
+   {
+    "img": "img/paysages/port-doelan/marche.webp",
+    "legende": "Le marché"
+   },
+   {
+    "img": "img/paysages/port-doelan/rue-le-soir.webp",
+    "legende": "La rue marchande le soir"
+   }
+  ]
  },
  {
   "id": "eloi-bonbarique",
@@ -4035,7 +4644,15 @@
   ],
   "alias": [
    "Eloi Bonbarique"
-  ]
+  ],
+  "galerie": [
+   {
+    "img": "img/paysages/port-doelan/rue-le-soir.webp",
+    "legende": "La rue marchande le soir"
+   }
+  ],
+  "img": "img/pnj/port-doe-lan-eloi-a-la-rue.webp",
+  "teinte": "#753c19"
  },
  {
   "id": "entrepots-abandonnes-doelan",
@@ -4044,7 +4661,13 @@
   "titre": "Quartier brûlé",
   "parent": "port-doelan",
   "resume": "Hangars noircis par un ancien incendie, où certains viennent disparaître.",
-  "chapeau": "Là où les lanternes deviennent rares et les rues plus étroites, des entrepôts abandonnés où s'entassent barils brisés, cordages pourris et caisses éventrées. L'air est chargé d'une odeur de bois brûlé et de sel marin. C'est ici que certains viennent disparaître."
+  "chapeau": "Là où les lanternes deviennent rares et les rues plus étroites, des entrepôts abandonnés où s'entassent barils brisés, cordages pourris et caisses éventrées. L'air est chargé d'une odeur de bois brûlé et de sel marin. C'est ici que certains viennent disparaître.",
+  "galerie": [
+   {
+    "img": "img/paysages/port-doelan/entrepots.webp",
+    "legende": "Les entrepôts"
+   }
+  ]
  },
  {
   "id": "ancien-quartier-brule",
@@ -4056,7 +4679,13 @@
   "connu": [
    "Officiellement par manque de moyens."
   ],
-  "chapeau": "Vestige de la guerre de la Veyra, ce quartier ravagé par les forces de l'Empire d'Altéra n'a jamais été reconstruit. Poutres noircies, volets tordus, murs lézardés par la chaleur d'un feu qui a dû rugir toute une nuit. La ville parle de prospérité et oublie ces ruines."
+  "chapeau": "Vestige de la guerre de la Veyra, ce quartier ravagé par les forces de l'Empire d'Altéra n'a jamais été reconstruit. Poutres noircies, volets tordus, murs lézardés par la chaleur d'un feu qui a dû rugir toute une nuit. La ville parle de prospérité et oublie ces ruines.",
+  "galerie": [
+   {
+    "img": "img/paysages/port-doelan/ancien-quartier-brule.webp",
+    "legende": "L'ancien quartier brûlé"
+   }
+  ]
  },
  {
   "id": "tomas",
@@ -4066,7 +4695,15 @@
   "parent": "ancien-quartier-brule",
   "lieu": "ancien-quartier-brule",
   "statut": "vivant",
-  "resume": "Coupe d'anciennes poutres pour se chauffer et en a un peu honte. Il n'a rien contre Spezza."
+  "resume": "Coupe d'anciennes poutres pour se chauffer et en a un peu honte. Il n'a rien contre Spezza.",
+  "galerie": [
+   {
+    "img": "img/paysages/port-doelan/ancien-quartier-brule.webp",
+    "legende": "L'ancien quartier brûlé"
+   }
+  ],
+  "img": "img/pnj/tomas.webp",
+  "teinte": "#753c19"
  },
  {
   "id": "malka",
@@ -4083,7 +4720,15 @@
   "citation": {
    "texte": "Ramenez-nous le trou. Notre trou.",
    "qui": "Malka, la rat-folk en exil"
-  }
+  },
+  "galerie": [
+   {
+    "img": "img/paysages/port-doelan/ancien-quartier-brule.webp",
+    "legende": "L'ancien quartier brûlé"
+   }
+  ],
+  "img": "img/pnj/port-doe-lan-malka.webp",
+  "teinte": "#193c75"
  },
  {
   "id": "tina",
@@ -4116,7 +4761,13 @@
   "titre": "Arrière-boutique de la maison Vespera",
   "parent": "maison-de-vespera",
   "resume": "Pièce de cartes et de plans, armes visibles. La Griffe prépare des coups ici.",
-  "chapeau": "La pièce derrière les tentures change de ton. Moins de velours, plus de cartes. Des lampes basses éclairent des plans étalés sur une grande table. Des visages fermés lèvent les yeux, et des armes sont visibles. Ce lieu ne vend pas du plaisir, il prépare des coups."
+  "chapeau": "La pièce derrière les tentures change de ton. Moins de velours, plus de cartes. Des lampes basses éclairent des plans étalés sur une grande table. Des visages fermés lèvent les yeux, et des armes sont visibles. Ce lieu ne vend pas du plaisir, il prépare des coups.",
+  "galerie": [
+   {
+    "img": "img/paysages/port-doelan/qg-de-la-griffe.webp",
+    "legende": "Le QG de la Griffe"
+   }
+  ]
  },
  {
   "id": "cassiopee-vorn",
@@ -4129,7 +4780,15 @@
   "resume": "Droite, regard tranchant. Elle propose une alliance temporaire contre Spezza et veut sa part d'or.",
   "alias": [
    "Cassiopee Vorn"
-  ]
+  ],
+  "galerie": [
+   {
+    "img": "img/paysages/port-doelan/qg-de-la-griffe.webp",
+    "legende": "Le QG de la Griffe"
+   }
+  ],
+  "img": "img/pnj/port-doe-lan-cassiope-e-vorn.webp",
+  "teinte": "#755219"
  },
  {
   "id": "mine-d-argent-doelan",
@@ -4138,7 +4797,13 @@
   "titre": "Fermée",
   "parent": "port-doelan",
   "resume": "Entrée brisée à l'est de la ville. Spezza l'a fait dynamiter.",
-  "chapeau": "À l'est de la ville, la roche s'ouvre sur une entrée brisée. Poutres éclatées, rails qui rouillent dans la poussière, gravats qui bouchent le passage principal. Aucun bruit, aucun écho de travail. La mine est morte."
+  "chapeau": "À l'est de la ville, la roche s'ouvre sur une entrée brisée. Poutres éclatées, rails qui rouillent dans la poussière, gravats qui bouchent le passage principal. Aucun bruit, aucun écho de travail. La mine est morte.",
+  "galerie": [
+   {
+    "img": "img/paysages/port-doelan/mine-d-argent.webp",
+    "legende": "La vieille mine d'argent"
+   }
+  ]
  },
  {
   "id": "aldo",
@@ -4152,7 +4817,15 @@
   "citation": {
    "texte": "Fermée. Enfin. Meilleure nouvelle de l'année.",
    "qui": "Aldo, le mineur"
-  }
+  },
+  "galerie": [
+   {
+    "img": "img/paysages/port-doelan/mine-d-argent.webp",
+    "legende": "La vieille mine d'argent"
+   }
+  ],
+  "img": "img/pnj/port-doe-lan-aldo.webp",
+  "teinte": "#753c19"
  },
  {
   "id": "carriere-de-pierre-doelan",
@@ -4161,7 +4834,13 @@
   "titre": "Murailles renforcées",
   "parent": "port-doelan",
   "resume": "Paliers de roche, activité au ralenti. Les livraisons ont servi à épaissir les murs.",
-  "chapeau": "Des paliers de roche taillés en marches descendent vers le fond sec de la carrière. La poussière flotte dans l'air chaud, les blocs extraits portent encore les marques des outils. L'activité ralentit : on termine des commandes, on ne commence plus rien."
+  "chapeau": "Des paliers de roche taillés en marches descendent vers le fond sec de la carrière. La poussière flotte dans l'air chaud, les blocs extraits portent encore les marques des outils. L'activité ralentit : on termine des commandes, on ne commence plus rien.",
+  "galerie": [
+   {
+    "img": "img/paysages/port-doelan/carriere-de-pierre.webp",
+    "legende": "La carrière de pierre"
+   }
+  ]
  },
  {
   "id": "maela",
@@ -4175,7 +4854,15 @@
   "citation": {
    "texte": "Vous voyez les murs en ville ? C'est nous.",
    "qui": "Maela, la mineure"
-  }
+  },
+  "galerie": [
+   {
+    "img": "img/paysages/port-doelan/carriere-de-pierre.webp",
+    "legende": "La carrière de pierre"
+   }
+  ],
+  "img": "img/pnj/port-doe-lan-maela.webp",
+  "teinte": "#755219"
  },
  {
   "id": "voile-doelan",
@@ -4184,7 +4871,13 @@
   "titre": "Bas-quartiers",
   "parent": "port-doelan",
   "resume": "Maison basse aux volets gonflés, foyer de briques et armes contre un mur.",
-  "chapeau": "Dans une rue étroite des bas-quartiers, une maison basse s'enfonce dans l'ombre. Odeur de suie, de graisse et de métal chauffé. La pièce principale sert d'atelier, de salle de conseil et de cantine, avec un foyer de briques et un chaudron noir sur un feu vif. Des armes contre un mur, une table de cartes tachées, de pièces et d'un crâne blanchi."
+  "chapeau": "Dans une rue étroite des bas-quartiers, une maison basse s'enfonce dans l'ombre. Odeur de suie, de graisse et de métal chauffé. La pièce principale sert d'atelier, de salle de conseil et de cantine, avec un foyer de briques et un chaudron noir sur un feu vif. Des armes contre un mur, une table de cartes tachées, de pièces et d'un crâne blanchi.",
+  "galerie": [
+   {
+    "img": "img/paysages/port-doelan/repaire-du-voile.webp",
+    "legende": "Le repaire du Voile"
+   }
+  ]
  },
  {
   "id": "korrash",
@@ -4198,7 +4891,15 @@
   "citation": {
    "texte": "Spezza voit loin. Vers l'ouest. Vers des terres où personne n'a encore planté son drapeau.",
    "qui": "Korrash"
-  }
+  },
+  "galerie": [
+   {
+    "img": "img/paysages/port-doelan/repaire-du-voile.webp",
+    "legende": "Le repaire du Voile"
+   }
+  ],
+  "img": "img/pnj/port-doe-lan-korrash-saphir.webp",
+  "teinte": "#753c19"
  },
  {
   "id": "saphir",
@@ -4208,7 +4909,15 @@
   "parent": "voile-doelan",
   "lieu": "voile-doelan",
   "statut": "vivant",
-  "resume": "Accompagne Korrash."
+  "resume": "Accompagne Korrash.",
+  "galerie": [
+   {
+    "img": "img/paysages/port-doelan/repaire-du-voile.webp",
+    "legende": "Le repaire du Voile"
+   }
+  ],
+  "img": "img/pnj/port-doe-lan-korrash-saphir.webp",
+  "teinte": "#753c19"
  },
  {
   "id": "bains-publics-doelan",
@@ -4217,7 +4926,13 @@
   "titre": "Entrée 5 po",
   "parent": "port-doelan",
   "resume": "Colonnes blanches, vapeur et bassins chauds. Quelques heures retirent un niveau d'épuisement.",
-  "chapeau": "Les colonnes blanches montent vers une verrière dorée de lumière. La vapeur flotte au-dessus des bassins, l'eau chaude miroite, calme et profonde. Des herbes infusent dans de grands bols de pierre, le feu crépite dans des braseros bas. Ici, le corps se relâche, l'esprit aussi."
+  "chapeau": "Les colonnes blanches montent vers une verrière dorée de lumière. La vapeur flotte au-dessus des bassins, l'eau chaude miroite, calme et profonde. Des herbes infusent dans de grands bols de pierre, le feu crépite dans des braseros bas. Ici, le corps se relâche, l'esprit aussi.",
+  "galerie": [
+   {
+    "img": "img/paysages/port-doelan/bains-publics.webp",
+    "legende": "Les bains publics"
+   }
+  ]
  },
  {
   "id": "octavia",
@@ -4234,7 +4949,15 @@
   "citation": {
    "texte": "Ici, tout finit par se savoir.",
    "qui": "Octavia"
-  }
+  },
+  "galerie": [
+   {
+    "img": "img/paysages/port-doelan/bains-publics.webp",
+    "legende": "Les bains publics"
+   }
+  ],
+  "img": "img/pnj/port-doe-lan-octavia.webp",
+  "teinte": "#753c19"
  },
  {
   "id": "barbier-edouardo",
@@ -4243,7 +4966,13 @@
   "titre": "Barbier",
   "parent": "port-doelan",
   "resume": "Fauteuil face au miroir, savon chaud et huiles capillaires.",
-  "chapeau": "La boutique s'ouvre sous une arcade de pierre, avec une enseigne discrète et un fauteuil bien centré face au miroir. L'air sent le savon chaud et les huiles capillaires. On parle peu, on coupe droit, on travaille bien."
+  "chapeau": "La boutique s'ouvre sous une arcade de pierre, avec une enseigne discrète et un fauteuil bien centré face au miroir. L'air sent le savon chaud et les huiles capillaires. On parle peu, on coupe droit, on travaille bien.",
+  "galerie": [
+   {
+    "img": "img/paysages/port-doelan/chez-edouardo.webp",
+    "legende": "Chez Edouardo"
+   }
+  ]
  },
  {
   "id": "edouardo",
@@ -4256,7 +4985,15 @@
   "resume": "Il grogne plus qu'il ne discute. 2 po la coupe.",
   "alias": [
    "Édouardo"
-  ]
+  ],
+  "galerie": [
+   {
+    "img": "img/paysages/port-doelan/chez-edouardo.webp",
+    "legende": "Chez Edouardo"
+   }
+  ],
+  "img": "img/pnj/port-doe-lan-edouardo.webp",
+  "teinte": "#755219"
  },
  {
   "id": "boulangerie-rossi",
@@ -4275,7 +5012,9 @@
   "parent": "boulangerie-rossi",
   "lieu": "boulangerie-rossi",
   "statut": "vivant",
-  "resume": "Large tablier, bras farinés. Il vend à bas prix."
+  "resume": "Large tablier, bras farinés. Il vend à bas prix.",
+  "img": "img/pnj/port-doe-lan-bruno-rossi.webp",
+  "teinte": "#753c19"
  },
  {
   "id": "fleurs-nicea",
@@ -4298,7 +5037,9 @@
   "citation": {
    "texte": "Oh mes chéris, prenez donc une fleur, ça adoucit la journée.",
    "qui": "Nicea"
-  }
+  },
+  "img": "img/pnj/port-doe-lan-nicea.webp",
+  "teinte": "#755219"
  },
  {
   "id": "chantier-naval-doelan",
@@ -4307,7 +5048,13 @@
   "titre": "Cathédrale de bois et de fer",
   "parent": "port-doelan",
   "resume": "Coques inachevées sur leurs berceaux, maillets, poulies et fours.",
-  "chapeau": "Le chantier s'étend comme une cathédrale de bois et de fer, saturée de sciure humide et de résine chauffée. Les coques inachevées reposent sur leurs berceaux, vastes squelettes promis à la mer. L'air vibre du choc des maillets, du grincement des poulies et du souffle des fours."
+  "chapeau": "Le chantier s'étend comme une cathédrale de bois et de fer, saturée de sciure humide et de résine chauffée. Les coques inachevées reposent sur leurs berceaux, vastes squelettes promis à la mer. L'air vibre du choc des maillets, du grincement des poulies et du souffle des fours.",
+  "galerie": [
+   {
+    "img": "img/paysages/port-doelan/chantier-naval.webp",
+    "legende": "Le chantier naval"
+   }
+  ]
  },
  {
   "id": "enzo",
@@ -4317,7 +5064,15 @@
   "parent": "chantier-naval-doelan",
   "lieu": "chantier-naval-doelan",
   "statut": "vivant",
-  "resume": "Maître charpentier massif, attaché à son métier plus qu'à Spezza."
+  "resume": "Maître charpentier massif, attaché à son métier plus qu'à Spezza.",
+  "galerie": [
+   {
+    "img": "img/paysages/port-doelan/chantier-naval.webp",
+    "legende": "Le chantier naval"
+   }
+  ],
+  "img": "img/pnj/port-doe-lan-enzo.webp",
+  "teinte": "#753c19"
  },
  {
   "id": "fortin-des-mercenaires",
@@ -4326,7 +5081,13 @@
   "titre": "Ancien terrier de wererats",
   "parent": "port-doelan",
   "resume": "Bâtisse de pierre grossière et palissades récentes, sous-sol d'anciens tunnels.",
-  "chapeau": "Le fortin se dresse sur les ruines d'un ancien terrier de wererats chassés de force il y a quelques mois. Pierre grossière, palissades récentes, tours branlantes, feu de camp central et baraquements sommaires."
+  "chapeau": "Le fortin se dresse sur les ruines d'un ancien terrier de wererats chassés de force il y a quelques mois. Pierre grossière, palissades récentes, tours branlantes, feu de camp central et baraquements sommaires.",
+  "galerie": [
+   {
+    "img": "img/paysages/port-doelan/fortin-des-mercenaires.webp",
+    "legende": "Le fortin des mercenaires"
+   }
+  ]
  },
  {
   "id": "capitaine-krezz",
@@ -4339,7 +5100,15 @@
   "resume": "Capitaine des mercenaires de Spezza au fortin.",
   "alias": [
    "Krezz"
-  ]
+  ],
+  "galerie": [
+   {
+    "img": "img/paysages/port-doelan/fortin-des-mercenaires.webp",
+    "legende": "Le fortin des mercenaires"
+   }
+  ],
+  "img": "img/pnj/port-doe-lan-mercenaire-capitaine-krezz.webp",
+  "teinte": "#753c19"
  },
  {
   "id": "terrier-de-malka",
@@ -4348,7 +5117,13 @@
   "titre": "Nid de Malka",
   "parent": "port-doelan",
   "resume": "Terrier de fortune sous des racines et des ruines de pierre. Le nid est divisé.",
-  "chapeau": "Un terrier de fortune dissimulé sous des racines et des ruines de pierre. Les wererats y débattent pour savoir s'il faut reprendre leur territoire par la force ou attendre une faiblesse."
+  "chapeau": "Un terrier de fortune dissimulé sous des racines et des ruines de pierre. Les wererats y débattent pour savoir s'il faut reprendre leur territoire par la force ou attendre une faiblesse.",
+  "galerie": [
+   {
+    "img": "img/paysages/port-doelan/terrier-des-wererats.webp",
+    "legende": "Le terrier des wererats"
+   }
+  ]
  },
  {
   "id": "kralik",
@@ -4358,7 +5133,15 @@
   "parent": "terrier-de-malka",
   "lieu": "terrier-de-malka",
   "statut": "vivant",
-  "resume": "Veut attaquer immédiatement et reprendre ce qui est à eux."
+  "resume": "Veut attaquer immédiatement et reprendre ce qui est à eux.",
+  "galerie": [
+   {
+    "img": "img/paysages/port-doelan/terrier-des-wererats.webp",
+    "legende": "Le terrier des wererats"
+   }
+  ],
+  "img": "img/pnj/port-doe-lan-wererat-kralik-nesk.webp",
+  "teinte": "#195275"
  },
  {
   "id": "nesk",
@@ -4368,7 +5151,15 @@
   "parent": "terrier-de-malka",
   "lieu": "terrier-de-malka",
   "statut": "vivant",
-  "resume": "Veut du sang, avec Kralik."
+  "resume": "Veut du sang, avec Kralik.",
+  "galerie": [
+   {
+    "img": "img/paysages/port-doelan/terrier-des-wererats.webp",
+    "legende": "Le terrier des wererats"
+   }
+  ],
+  "img": "img/pnj/port-doe-lan-wererat-kralik-nesk.webp",
+  "teinte": "#195275"
  },
  {
   "id": "krelia",
@@ -4378,7 +5169,15 @@
   "parent": "terrier-de-malka",
   "lieu": "terrier-de-malka",
   "statut": "vivant",
-  "resume": "Juge l'assaut suicidaire : arbalètes, chiens, pièges."
+  "resume": "Juge l'assaut suicidaire : arbalètes, chiens, pièges.",
+  "galerie": [
+   {
+    "img": "img/paysages/port-doelan/terrier-des-wererats.webp",
+    "legende": "Le terrier des wererats"
+   }
+  ],
+  "img": "img/pnj/port-doe-lan-wererat-krelia-nissek.webp",
+  "teinte": "#195275"
  },
  {
   "id": "nissek",
@@ -4388,7 +5187,15 @@
   "parent": "terrier-de-malka",
   "lieu": "terrier-de-malka",
   "statut": "vivant",
-  "resume": "Préfère attendre une faiblesse, avec Krelia."
+  "resume": "Préfère attendre une faiblesse, avec Krelia.",
+  "galerie": [
+   {
+    "img": "img/paysages/port-doelan/terrier-des-wererats.webp",
+    "legende": "Le terrier des wererats"
+   }
+  ],
+  "img": "img/pnj/port-doe-lan-wererat-krelia-nissek.webp",
+  "teinte": "#195275"
  },
  {
   "id": "anquiri-di-velarossa",
@@ -4398,7 +5205,9 @@
   "parent": "maison-de-vespera",
   "lieu": "maison-de-vespera",
   "statut": "vivant",
-  "resume": "Visage de la Maison Close de Vespera."
+  "resume": "Visage de la Maison Close de Vespera.",
+  "img": "img/pnj/port-doe-lan-anquiri-di-velarossa.webp",
+  "teinte": "#753c19"
  },
  {
   "id": "bravala-compagnie-navale",
@@ -4407,7 +5216,13 @@
   "titre": "Compagnie en déclin",
   "parent": "port-doelan",
   "resume": "Petit bureau sombre, cartes jaunies. Spezza la garde sous perfusion commerciale.",
-  "chapeau": "La ruelle se referme comme un couloir oublié, pavée de pierres usées. La façade de Bravala est étroite, presque timide, éclairée par deux lanternes vacillantes. Odeur de bois humide, de poussière de parchemin et de corde salée. Rien ne brille vraiment, tout persiste."
+  "chapeau": "La ruelle se referme comme un couloir oublié, pavée de pierres usées. La façade de Bravala est étroite, presque timide, éclairée par deux lanternes vacillantes. Odeur de bois humide, de poussière de parchemin et de corde salée. Rien ne brille vraiment, tout persiste.",
+  "galerie": [
+   {
+    "img": "img/paysages/port-doelan/bravala.webp",
+    "legende": "Bravala, compagnie navale"
+   }
+  ]
  },
  {
   "id": "giovanni-bravala",
@@ -4421,7 +5236,15 @@
   "citation": {
    "texte": "On a bâti cette compagnie avec nos mains. Aujourd'hui on transporte des miettes pendant que Titan encaisse les cargaisons d'or.",
    "qui": "Le père Bravala"
-  }
+  },
+  "galerie": [
+   {
+    "img": "img/paysages/port-doelan/bravala.webp",
+    "legende": "Bravala, compagnie navale"
+   }
+  ],
+  "img": "img/pnj/port-doe-lan-giovanni-et-dario-bravala.webp",
+  "teinte": "#753c19"
  },
  {
   "id": "dario-bravala",
@@ -4431,7 +5254,15 @@
   "parent": "bravala-compagnie-navale",
   "lieu": "bravala-compagnie-navale",
   "statut": "vivant",
-  "resume": "Veut encore croire à un redressement."
+  "resume": "Veut encore croire à un redressement.",
+  "galerie": [
+   {
+    "img": "img/paysages/port-doelan/bravala.webp",
+    "legende": "Bravala, compagnie navale"
+   }
+  ],
+  "img": "img/pnj/port-doe-lan-giovanni-et-dario-bravala.webp",
+  "teinte": "#753c19"
  },
  {
   "id": "titan-inc",
@@ -4440,7 +5271,13 @@
   "titre": "Compagnie de Spezza",
   "parent": "port-doelan",
   "resume": "Façade de pierre claire, bannières bleues, hall de marbre. Registres et contrats en circulation.",
-  "chapeau": "La façade s'impose avec une assurance tranquille, en pierre claire sculptée pour inspirer la confiance et l'obéissance. Des bannières bleues battent doucement. Le hall de marbre poli est vaste et lumineux, des employés vont et viennent, porteurs de registres et de contrats scellés. Ici, la richesse se montre sans ostentation."
+  "chapeau": "La façade s'impose avec une assurance tranquille, en pierre claire sculptée pour inspirer la confiance et l'obéissance. Des bannières bleues battent doucement. Le hall de marbre poli est vaste et lumineux, des employés vont et viennent, porteurs de registres et de contrats scellés. Ici, la richesse se montre sans ostentation.",
+  "galerie": [
+   {
+    "img": "img/paysages/port-doelan/titan-inc.webp",
+    "legende": "Titan Inc."
+   }
+  ]
  },
  {
   "id": "lucio-bellanera",
@@ -4450,7 +5287,15 @@
   "parent": "titan-inc",
   "lieu": "titan-inc",
   "statut": "vivant",
-  "resume": "Homme pâle aux lunettes rondes, sans talent martial. Il cède sous pression."
+  "resume": "Homme pâle aux lunettes rondes, sans talent martial. Il cède sous pression.",
+  "galerie": [
+   {
+    "img": "img/paysages/port-doelan/titan-inc.webp",
+    "legende": "Titan Inc."
+   }
+  ],
+  "img": "img/pnj/port-doe-lan-lucio-bellanera.webp",
+  "teinte": "#755219"
  },
  {
   "id": "l-invicta-sentinella",
@@ -4462,6 +5307,20 @@
   "alias": [
    "Invicta",
    "Sentinella"
+  ],
+  "galerie": [
+   {
+    "img": "img/paysages/port-doelan/vaisseaux-amiraux.webp",
+    "legende": "Les vaisseaux amiraux"
+   },
+   {
+    "img": "img/paysages/port-doelan/vaisseaux-amiraux-2.webp",
+    "legende": "Les vaisseaux amiraux, le pont"
+   },
+   {
+    "img": "img/paysages/port-doelan/vaisseaux-amiraux-3.webp",
+    "legende": "Les vaisseaux amiraux, au coucher du soleil"
+   }
   ]
  },
  {
@@ -4471,7 +5330,17 @@
   "titre": "Bloc de pierre sèche",
   "parent": "port-doelan",
   "resume": "Carré massif flanqué de tours trapues, herse encadrée de torches.",
-  "chapeau": "La prison se dresse comme un bloc de pierre sèche au cœur d'un quartier administratif austère : un carré massif flanqué de tours trapues, aux murs épaissis de contreforts, des chaînes tendues entre les créneaux, une herse encadrée de torches même en plein jour."
+  "chapeau": "La prison se dresse comme un bloc de pierre sèche au cœur d'un quartier administratif austère : un carré massif flanqué de tours trapues, aux murs épaissis de contreforts, des chaînes tendues entre les créneaux, une herse encadrée de torches même en plein jour.",
+  "galerie": [
+   {
+    "img": "img/paysages/port-doelan/prison.webp",
+    "legende": "La prison"
+   },
+   {
+    "img": "img/paysages/port-doelan/prison-2.webp",
+    "legende": "La prison, la cour intérieure"
+   }
+  ]
  },
  {
   "id": "pam",
@@ -4481,7 +5350,15 @@
   "parent": "prison-de-port-doelan",
   "lieu": "prison-de-port-doelan",
   "statut": "vivant",
-  "resume": "Jeune femme aux lunettes rondes. Elle aime les conversations polies."
+  "resume": "Jeune femme aux lunettes rondes. Elle aime les conversations polies.",
+  "galerie": [
+   {
+    "img": "img/paysages/port-doelan/prison-2.webp",
+    "legende": "La prison, la cour intérieure"
+   }
+  ],
+  "img": "img/pnj/port-doe-lan-pam.webp",
+  "teinte": "#753c19"
  },
  {
   "id": "monique",
@@ -4491,7 +5368,15 @@
   "parent": "prison-de-port-doelan",
   "lieu": "prison-de-port-doelan",
   "statut": "vivant",
-  "resume": "Observe la prison depuis sa fenêtre et note les relèves."
+  "resume": "Observe la prison depuis sa fenêtre et note les relèves.",
+  "galerie": [
+   {
+    "img": "img/paysages/port-doelan/prison-2.webp",
+    "legende": "La prison, la cour intérieure"
+   }
+  ],
+  "img": "img/pnj/port-doe-lan-monique.webp",
+  "teinte": "#756919"
  },
  {
   "id": "capitaine-kessler",
@@ -4504,7 +5389,15 @@
   "resume": "Incorruptible, moustache impeccable, monocle mécanique.",
   "alias": [
    "Kessler"
-  ]
+  ],
+  "galerie": [
+   {
+    "img": "img/paysages/port-doelan/prison.webp",
+    "legende": "La prison"
+   }
+  ],
+  "img": "img/pnj/port-doe-lan-chef-de-la-prison-kessler.webp",
+  "teinte": "#195275"
  },
  {
   "id": "bibliotheque-de-port-doelan",
@@ -4513,7 +5406,13 @@
   "titre": "Presses arcaniques",
   "parent": "port-doelan",
   "resume": "Pierres claires, devises savantes. Les presses magiques tournent à l'étage.",
-  "chapeau": "Le bâtiment s'élève avec une assurance tranquille, ses pierres claires gravées de devises savantes. À l'intérieur, l'odeur du papier ancien se mêle à celle de l'encre fraîche. À l'étage résonne le frottement régulier de presses magiques. Des feuillets encore tièdes s'empilent, porteurs de récits glorieux."
+  "chapeau": "Le bâtiment s'élève avec une assurance tranquille, ses pierres claires gravées de devises savantes. À l'intérieur, l'odeur du papier ancien se mêle à celle de l'encre fraîche. À l'étage résonne le frottement régulier de presses magiques. Des feuillets encore tièdes s'empilent, porteurs de récits glorieux.",
+  "galerie": [
+   {
+    "img": "img/paysages/port-doelan/bibliotheque.webp",
+    "legende": "La bibliothèque"
+   }
+  ]
  },
  {
   "id": "aurelian-thorex",
@@ -4527,7 +5426,15 @@
   "alias": [
    "Thorex",
    "Aurelian"
-  ]
+  ],
+  "galerie": [
+   {
+    "img": "img/paysages/port-doelan/bibliotheque.webp",
+    "legende": "La bibliothèque"
+   }
+  ],
+  "img": "img/pnj/port-doe-lan-aurelian-thorex.webp",
+  "teinte": "#755219"
  },
  {
   "id": "crique-du-sous-marin",
@@ -4536,7 +5443,13 @@
   "titre": "Chantier nain sous le château",
   "parent": "port-doelan",
   "resume": "Escalier taillé dans la falaise vers une crique souterraine et un sous-marin à coque de pyrracier.",
-  "chapeau": "Un long escalier taillé à même la roche de la falaise descend dans le noir. L'air qui remonte sent le sel, le métal chaud et l'huile de machine. Très loin en bas, une lumière orangée pulse. Dans la crique, une coque de pyrracier aux proportions impossibles."
+  "chapeau": "Un long escalier taillé à même la roche de la falaise descend dans le noir. L'air qui remonte sent le sel, le métal chaud et l'huile de machine. Très loin en bas, une lumière orangée pulse. Dans la crique, une coque de pyrracier aux proportions impossibles.",
+  "galerie": [
+   {
+    "img": "img/paysages/port-doelan/crique.webp",
+    "legende": "La crique du sous-marin"
+   }
+  ]
  },
  {
   "id": "borim-brise-montagne",
@@ -4550,7 +5463,15 @@
   "citation": {
    "texte": "Vous êtes venus pour le sous-marin. Bien. On peut partir quand vous voulez.",
    "qui": "Borim Brise-Montagne"
-  }
+  },
+  "galerie": [
+   {
+    "img": "img/paysages/port-doelan/crique.webp",
+    "legende": "La crique du sous-marin"
+   }
+  ],
+  "img": "img/pnj/port-doe-lan-borim-brise-montagne.webp",
+  "teinte": "#753c19"
  },
  {
   "id": "la-faille-d-agran",
@@ -4576,7 +5497,13 @@
    "Il a traversé deux tempêtes de courants avant de plonger dans la faille.",
    "Des créatures de la faille l'ont attaqué pendant la descente."
   ],
-  "chapeau": "Le sous-marin sent le métal chaud, l'huile de machine et le bois compressé. Les cloisons de pyrracier gémissent à intervalles irréguliers, une respiration mécanique qui rappelle que quelque chose retient le poids de l'océan à quelques centimètres. Par les hublots, l'eau passe du vert au bleu, puis à un noir absolu."
+  "chapeau": "Le sous-marin sent le métal chaud, l'huile de machine et le bois compressé. Les cloisons de pyrracier gémissent à intervalles irréguliers, une respiration mécanique qui rappelle que quelque chose retient le poids de l'océan à quelques centimètres. Par les hublots, l'eau passe du vert au bleu, puis à un noir absolu.",
+  "galerie": [
+   {
+    "img": "img/paysages/agran/sous-marin-interieur.webp",
+    "legende": "L'intérieur du sous-marin"
+   }
+  ]
  },
  {
   "id": "reshaar",
@@ -4593,7 +5520,9 @@
   "citation": {
    "texte": "Vous êtes vivants. C'est déjà inhabituel.",
    "qui": "Reshaar"
-  }
+  },
+  "img": "img/pnj/agran-reshaar.webp",
+  "teinte": "#197569"
  },
  {
   "id": "ghor",
@@ -4603,7 +5532,9 @@
   "parent": "agran",
   "lieu": "la-faille-d-agran",
   "statut": "vivant",
-  "resume": "Roche vivante aux tentacules, coquillages incrustés, yeux orange. Il surveille ce qui vient derrière les voyageurs."
+  "resume": "Roche vivante aux tentacules, coquillages incrustés, yeux orange. Il surveille ce qui vient derrière les voyageurs.",
+  "img": "img/pnj/agran-ghor.webp",
+  "teinte": "#752519"
  },
  {
   "id": "auberge-d-agran",
@@ -4615,7 +5546,13 @@
   "connu": [
    "Les habitants appellent les voyageurs de la surface les Noyés."
   ],
-  "chapeau": "Une salle creusée à même la roche de la faille, aux murs polis par des siècles d'eau tiède. L'odeur de corail chauffé et d'algues cuites rappelle un bouillon, presque familier. Des coraux bioluminescents courent le long des poutres et pulsent, bleus. Personne n'accueille les étrangers, personne ne les chasse non plus."
+  "chapeau": "Une salle creusée à même la roche de la faille, aux murs polis par des siècles d'eau tiède. L'odeur de corail chauffé et d'algues cuites rappelle un bouillon, presque familier. Des coraux bioluminescents courent le long des poutres et pulsent, bleus. Personne n'accueille les étrangers, personne ne les chasse non plus.",
+  "galerie": [
+   {
+    "img": "img/paysages/agran/auberge-de-thaloor.webp",
+    "legende": "L'auberge de Thaloor"
+   }
+  ]
  },
  {
   "id": "temple-de-kataron",
@@ -4628,7 +5565,21 @@
    "Le pupitre central a brillé au contact du groupe.",
    "Glooglugogg leur a dit d'aller voir la Suuraal sans attendre."
   ],
-  "chapeau": "Une cavité naturelle agrandie par des mains patientes. Les colonnes de roche polie sont incrustées de coraux rouges et dorés qui brûlent lentement, comme des braises sous l'eau. Au fond, un trône en forme de coquille géante, vide. Des miroirs ovales de métal poli renvoient des éclats bleus sur le sol mouillé."
+  "chapeau": "Une cavité naturelle agrandie par des mains patientes. Les colonnes de roche polie sont incrustées de coraux rouges et dorés qui brûlent lentement, comme des braises sous l'eau. Au fond, un trône en forme de coquille géante, vide. Des miroirs ovales de métal poli renvoient des éclats bleus sur le sol mouillé.",
+  "galerie": [
+   {
+    "img": "img/paysages/agran/temple-de-kataron.webp",
+    "legende": "Le temple de Kataron"
+   },
+   {
+    "img": "img/paysages/agran/temple-de-kataron-2.webp",
+    "legende": "Le temple de Kataron, une autre vue"
+   },
+   {
+    "img": "img/paysages/agran/temple-de-kataron-3.webp",
+    "legende": "Le temple de Kataron, le pupitre central"
+   }
+  ]
  },
  {
   "id": "echoppe-de-peraalys",
@@ -4637,7 +5588,13 @@
   "titre": "Alcôve de corail noir",
   "parent": "agran",
   "resume": "Boutique sans devanture, rideau de petits poissons argentés. Objets d'épaves et créations locales.",
-  "chapeau": "Une alcôve creusée dans la roche, sans devanture, tapissée d'étagères de corail noir. Objets d'épaves, créations locales et choses sans nom. Des poissons plats dorment accrochés aux parois comme des tableaux, et un rideau de perles laisse passer les clients : des centaines de petits poissons argentés."
+  "chapeau": "Une alcôve creusée dans la roche, sans devanture, tapissée d'étagères de corail noir. Objets d'épaves, créations locales et choses sans nom. Des poissons plats dorment accrochés aux parois comme des tableaux, et un rideau de perles laisse passer les clients : des centaines de petits poissons argentés.",
+  "galerie": [
+   {
+    "img": "img/paysages/agran/echoppe-de-peraalys.webp",
+    "legende": "L'échoppe de Peraalys"
+   }
+  ]
  },
  {
   "id": "peraalys",
@@ -4651,7 +5608,15 @@
   "citation": {
    "texte": "Si vous cherchez quelque chose de précis, dites-le. Sinon, nagez votre chemin.",
    "qui": "Peraalys"
-  }
+  },
+  "galerie": [
+   {
+    "img": "img/paysages/agran/echoppe-de-peraalys.webp",
+    "legende": "L'échoppe de Peraalys"
+   }
+  ],
+  "img": "img/pnj/agran-peraalys.webp",
+  "teinte": "#753c19"
  },
  {
   "id": "kel",
@@ -4661,7 +5626,15 @@
   "parent": "echoppe-de-peraalys",
   "lieu": "echoppe-de-peraalys",
   "statut": "vivant",
-  "resume": "Bien intentionné et sans notion du commerce : il donne des potions. Il a offert trois potions mineures au groupe."
+  "resume": "Bien intentionné et sans notion du commerce : il donne des potions. Il a offert trois potions mineures au groupe.",
+  "galerie": [
+   {
+    "img": "img/paysages/agran/echoppe-de-peraalys.webp",
+    "legende": "L'échoppe de Peraalys"
+   }
+  ],
+  "img": "img/pnj/agran-kel-assistant-de-peraalys.webp",
+  "teinte": "#755219"
  },
  {
   "id": "atelier-de-drisuun",
@@ -4684,7 +5657,9 @@
   "citation": {
    "texte": "Vous achetez ou vous regardez ? Les deux, c'est bien aussi. Mais regarder prend du temps.",
    "qui": "Drisuun"
-  }
+  },
+  "img": "img/pnj/agran-drisuun.webp",
+  "teinte": "#753c19"
  },
  {
   "id": "salle-de-l-orant",
@@ -4693,7 +5668,13 @@
   "titre": "Face à la faille",
   "parent": "agran",
   "resume": "Couloir de roche vive ouvert sur la faille, sans vitre ni barrière. Les courants se voient comme des rivières translucides.",
-  "chapeau": "Au bout d'un couloir taillé dans la roche vive, face à une ouverture directe sur la faille : pas de vitre, juste le vide abyssal et les courants suspendus, visibles comme des rivières translucides. Les coraux pulsent au rythme de la respiration de l'Orant. Des poissons s'approchent de lui sans crainte."
+  "chapeau": "Au bout d'un couloir taillé dans la roche vive, face à une ouverture directe sur la faille : pas de vitre, juste le vide abyssal et les courants suspendus, visibles comme des rivières translucides. Les coraux pulsent au rythme de la respiration de l'Orant. Des poissons s'approchent de lui sans crainte.",
+  "galerie": [
+   {
+    "img": "img/paysages/agran/salle-de-l-orant.webp",
+    "legende": "La salle de l'Orant"
+   }
+  ]
  },
  {
   "id": "uruukaysal",
@@ -4710,7 +5691,15 @@
   "citation": {
    "texte": "Les courants qui mènent à Thaladrassyl ne sont pas des routes. Ce sont des invitations. Et les invitations ne se forcent pas.",
    "qui": "Uruukaysal"
-  }
+  },
+  "galerie": [
+   {
+    "img": "img/paysages/agran/salle-de-l-orant.webp",
+    "legende": "La salle de l'Orant"
+   }
+  ],
+  "img": "img/pnj/agran-uruukaysal.webp",
+  "teinte": "#196975"
  },
  {
   "id": "epave-du-grauwacht",
@@ -4723,7 +5712,13 @@
    "Une lettre de mission scellée désigne l'Astariel, navire escorté par le Grauwacht.",
    "Le capitaine du Grauwacht était Edvar Sorn."
   ],
-  "chapeau": "Une épave couchée sur le flanc, la coque enfoncée dans la vase de la faille jusqu'au tiers de sa hauteur. Bois noir, mangé par les années, couvert d'anémones pâles. Les sabords sont ouverts comme des bouches muettes. Rien d'hostile, juste le silence des objets abandonnés et une odeur minérale."
+  "chapeau": "Une épave couchée sur le flanc, la coque enfoncée dans la vase de la faille jusqu'au tiers de sa hauteur. Bois noir, mangé par les années, couvert d'anémones pâles. Les sabords sont ouverts comme des bouches muettes. Rien d'hostile, juste le silence des objets abandonnés et une odeur minérale.",
+  "galerie": [
+   {
+    "img": "img/paysages/agran/epave-du-grauwacht.webp",
+    "legende": "L'épave du Grauwacht"
+   }
+  ]
  },
  {
   "id": "edvar-sorn",
@@ -4733,7 +5728,13 @@
   "parent": "epave-du-grauwacht",
   "lieu": "epave-du-grauwacht",
   "statut": "mort",
-  "resume": "Commandant du vaisseau d'escorte, chargé de protéger l'Astariel et de récupérer la caisse de pierre en cas de naufrage."
+  "resume": "Commandant du vaisseau d'escorte, chargé de protéger l'Astariel et de récupérer la caisse de pierre en cas de naufrage.",
+  "galerie": [
+   {
+    "img": "img/paysages/agran/epave-du-grauwacht.webp",
+    "legende": "L'épave du Grauwacht"
+   }
+  ]
  },
  {
   "id": "epave-de-l-astariel",
@@ -4773,7 +5774,23 @@
   "citation": {
    "texte": "Des Noyés. Dans mon épave. Vous cherchez la boîte. Tout le monde cherche la boîte.",
    "qui": "Ossyraal"
-  }
+  },
+  "img": "img/pnj/agran-ossyraal-p1.webp",
+  "formes": [
+   {
+    "img": "img/pnj/agran-ossyraal-p1.webp",
+    "label": "Première forme",
+    "lieux": [],
+    "teinte": "#196975"
+   },
+   {
+    "img": "img/pnj/agran-ossyraal-p2.webp",
+    "label": "Seconde forme",
+    "lieux": [],
+    "teinte": "#197552"
+   }
+  ],
+  "teinte": "#196975"
  },
  {
   "id": "fragment-de-nyrrh",
@@ -4790,7 +5807,14 @@
    "Fragment de Nyrrh",
    "Astaryl",
    "Fragment d'Astaryl"
-  ]
+  ],
+  "galerie": [
+   {
+    "img": "img/paysages/agran/fragment-de-nyrrh.webp",
+    "legende": "Le fragment de Nyrrh"
+   }
+  ],
+  "img": "img/pnj/agran-fragment-de-nyrrh.webp"
  },
  {
   "id": "kataron",
@@ -4806,7 +5830,13 @@
   "citation": {
    "texte": "Vous avez fait du chemin. Je l'ai senti depuis les courants de surface.",
    "qui": "Kataron"
-  }
+  },
+  "galerie": [
+   {
+    "img": "img/paysages/agran/temple-de-kataron.webp",
+    "legende": "Le temple de Kataron"
+   }
+  ]
  },
  {
   "id": "thaladrassyl",
@@ -5476,7 +6506,13 @@
   "titre": "Pluie, boue et lanternes",
   "parent": "leyenmil",
   "resume": "Village refermé sur lui-même sous la pluie. Seule l'auberge diffuse une chaleur stable.",
-  "chapeau": "Pluie battante, boue épaisse, lanternes vacillantes. Le village semble refermé sur lui-même, et seule l'auberge diffuse une chaleur stable au cœur de la nuit. Un vendeur de poisson tend un morceau de poisson salé sans poser de question, le marchand d'armes ferme sa porte aux enfants."
+  "chapeau": "Pluie battante, boue épaisse, lanternes vacillantes. Le village semble refermé sur lui-même, et seule l'auberge diffuse une chaleur stable au cœur de la nuit. Un vendeur de poisson tend un morceau de poisson salé sans poser de question, le marchand d'armes ferme sa porte aux enfants.",
+  "galerie": [
+   {
+    "img": "img/paysages/leyenmil/auberge-copperworth.webp",
+    "legende": "L'auberge de Mr. Copperworth"
+   }
+  ]
  },
  {
   "id": "m-weller",
@@ -5520,7 +6556,15 @@
   "citation": {
    "texte": "Ne l'écoutez pas. Il ne sait pas ce qu'il dit.",
    "qui": "Mr. Copperworth, aubergiste"
-  }
+  },
+  "galerie": [
+   {
+    "img": "img/paysages/leyenmil/auberge-copperworth.webp",
+    "legende": "L'auberge de Mr. Copperworth"
+   }
+  ],
+  "img": "img/pnj/leyenmil-mr-copperworth.webp",
+  "teinte": "#755219"
  },
  {
   "id": "otto",
@@ -5539,7 +6583,13 @@
   "titre": "Grille noire et fontaine",
   "parent": "leyenmil",
   "resume": "Maison au fond du village, en hauteur, à l'orée des arbres. Deux gardes à l'entrée.",
-  "chapeau": "Une maison au fond du village, derrière une grille noire et un jardin détrempé. Fontaine centrale, fenêtres allumées, forêt dense à l'arrière-plan. Deux lanternes encadrent l'entrée et des silhouettes montent la garde sous la pluie."
+  "chapeau": "Une maison au fond du village, derrière une grille noire et un jardin détrempé. Fontaine centrale, fenêtres allumées, forêt dense à l'arrière-plan. Deux lanternes encadrent l'entrée et des silhouettes montent la garde sous la pluie.",
+  "galerie": [
+   {
+    "img": "img/paysages/leyenmil/maison-kornwald.webp",
+    "legende": "La maison Kornwald"
+   }
+  ]
  },
  {
   "id": "gardes-de-kornwald",
@@ -5571,7 +6621,39 @@
    "Statue Clericalis",
    "Statue Paladinis"
   ],
+  "galerie": [
+   {
+    "img": "img/paysages/temple-brumeux/salle-des-statues.webp",
+    "legende": "La salle des statues"
+   }
+  ],
   "img": "img/pnj/lathandre.webp",
+  "formes": [
+   {
+    "img": "img/pnj/lathandre.webp",
+    "label": "Normal",
+    "lieux": [],
+    "teinte": "#755219"
+   },
+   {
+    "img": "img/pnj/temple-brumeux-statue-clericalis.webp",
+    "label": "Statue Clericalis",
+    "lieux": [],
+    "teinte": "#755219"
+   },
+   {
+    "img": "img/pnj/temple-brumeux-statue-paladinis.webp",
+    "label": "Statue Paladinis",
+    "lieux": [],
+    "teinte": "#755219"
+   },
+   {
+    "img": "img/pnj/temple-brumeux-statue-de-clerc.webp",
+    "label": "Statue de Clerc",
+    "lieux": [],
+    "teinte": "#756919"
+   }
+  ],
   "lieu": "temple-brumeux",
   "teinte": "#755219"
  },
@@ -5722,7 +6804,13 @@
   "connu": [
    "Un symbole de Vassago a été gravé sur la pierre de gauche."
   ],
-  "chapeau": "Trois pierres noires dressées en arc de cercle sur une plateforme de dalles grises, face à la mer. Une fissure turquoise lumineuse court le long de la pierre centrale comme une veine vivante. Deux bougies de chaque côté, une toile de lin contre le soleil, et l'odeur du sel et de la cire chaude."
+  "chapeau": "Trois pierres noires dressées en arc de cercle sur une plateforme de dalles grises, face à la mer. Une fissure turquoise lumineuse court le long de la pierre centrale comme une veine vivante. Deux bougies de chaque côté, une toile de lin contre le soleil, et l'odeur du sel et de la cire chaude.",
+  "galerie": [
+   {
+    "img": "img/paysages/brakka/sanctuaire-de-la-maree.webp",
+    "legende": "Le sanctuaire de la marée"
+   }
+  ]
  },
  {
   "id": "boru-pretre-de-brakka",
@@ -5739,7 +6827,13 @@
   "citation": {
    "texte": "Elle est arrivée entre mort et vie. Je lui ai rendu la vie. Elle est repartie, forte.",
    "qui": "Boru, en istran, traduit"
-  }
+  },
+  "galerie": [
+   {
+    "img": "img/paysages/brakka/sanctuaire-de-la-maree.webp",
+    "legende": "Le sanctuaire de la marée"
+   }
+  ]
  },
  {
   "id": "fumerie-de-shoba",
@@ -5748,7 +6842,13 @@
   "titre": "Fournil naturel dans la falaise",
   "parent": "brakka",
   "resume": "Poissons salés sur des perches au-dessus d'un feu de bois vert.",
-  "chapeau": "À l'écart du quai, dans un renfoncement de la falaise qui sert de fournil naturel, la fumée monte en colonnes grises et régulières. Quatre rangées de poissons ventrés et salés pendent au-dessus d'un feu bas, nourri de bois vert et d'herbes séchées."
+  "chapeau": "À l'écart du quai, dans un renfoncement de la falaise qui sert de fournil naturel, la fumée monte en colonnes grises et régulières. Quatre rangées de poissons ventrés et salés pendent au-dessus d'un feu bas, nourri de bois vert et d'herbes séchées.",
+  "galerie": [
+   {
+    "img": "img/paysages/brakka/fumerie-de-shoba.webp",
+    "legende": "La fumerie de Shoba"
+   }
+  ]
  },
  {
   "id": "campement-detruit-steppes",
@@ -5761,7 +6861,13 @@
    "Deux écuelles au feu : quelqu'un de plus petit mangeait avec eux.",
    "Une bague à armoiries est plantée près du totem."
   ],
-  "chapeau": "Le soleil tombe vite sur les steppes, et la lumière qui reste est orange, rasante, sans pitié. Des tentes éventrées, un feu mort depuis des heures, du matériel éparpillé. Et cinq corps, allongés dans des positions qui racontent chacune une fin différente. Même le vent s'est arrêté."
+  "chapeau": "Le soleil tombe vite sur les steppes, et la lumière qui reste est orange, rasante, sans pitié. Des tentes éventrées, un feu mort depuis des heures, du matériel éparpillé. Et cinq corps, allongés dans des positions qui racontent chacune une fin différente. Même le vent s'est arrêté.",
+  "galerie": [
+   {
+    "img": "img/paysages/steppes-rouges/campement-detruit.webp",
+    "legende": "Le campement détruit"
+   }
+  ]
  },
  {
   "id": "les-quatre-lames",
@@ -5790,7 +6896,19 @@
    "Œuf de Roc",
    "Plume de Roc"
   ],
-  "lieu": "monastere-des-steppes"
+  "galerie": [
+   {
+    "img": "img/paysages/steppes-rouges/monastere-et-roc.webp",
+    "legende": "Le monastère et le Roc"
+   },
+   {
+    "img": "img/paysages/steppes-rouges/escalade.webp",
+    "legende": "L'escalade"
+   }
+  ],
+  "img": "img/pnj/steppes-rouge-roc.webp",
+  "lieu": "monastere-des-steppes",
+  "teinte": "#2d2d2d"
  },
  {
   "id": "ashvur-tesh",
