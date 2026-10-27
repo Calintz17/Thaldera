@@ -1445,6 +1445,14 @@
    "texte": "Regardezzzza-moi cette dent, hein ? Dragon d'argent, rien que ça !",
    "qui": "Ssilik, le vendeur à la sauvette"
   },
+  "relations": [
+   {
+    "cible": "irna",
+    "type": "même ruelles que",
+    "ton": "neutre",
+    "inverse": "même ruelles que"
+   }
+  ],
   "attitude": "neutre"
  },
  {
@@ -1592,6 +1600,14 @@
    "texte": "Halte. Motif de passage ? Laissez-passer ?",
    "qui": "Le capitaine des gardes gris"
   },
+  "relations": [
+   {
+    "cible": "gardes-gris",
+    "type": "officier des",
+    "ton": "neutre",
+    "inverse": "commandés par"
+   }
+  ],
   "attitude": "neutre"
  },
  {
@@ -1626,6 +1642,15 @@
    "texte": "Les dettes, voyez-vous, ont la délicatesse de ne pas disparaître.",
    "qui": "Arin Veyr"
   },
+  "relations": [
+   {
+    "cible": "iris",
+    "type": "doit une dette aux Yeux d'",
+    "ton": "positif",
+    "note": "Il offre 25 % de rabais en leur nom.",
+    "inverse": "créancière d'"
+   }
+  ],
   "attitude": "neutre"
  },
  {
@@ -1656,6 +1681,22 @@
    "texte": "Votre Altesse Graham sa seigneurie, j'vous écris vite parce que j'ai un truc chelou sur les bras.",
    "qui": "Lettre de Leth à Graham"
   },
+  "relations": [
+   {
+    "cible": "les-epingles",
+    "type": "cible des",
+    "ton": "negatif",
+    "note": "Les Épingles préparent un cambriolage chez lui.",
+    "inverse": "cambrioleurs de"
+   },
+   {
+    "cible": "iris",
+    "type": "cible d'",
+    "ton": "negatif",
+    "note": "Iris envoie les joueurs voler le rubis chez lui.",
+    "inverse": "cambrioleuse de"
+   }
+  ],
   "attitude": "neutre"
  },
  {
@@ -1785,6 +1826,15 @@
    }
   ],
   "img": "img/pnj/port-blanc-susie.webp",
+  "relations": [
+   {
+    "cible": "boon",
+    "type": "hôtesse de",
+    "ton": "neutre",
+    "note": "Joueur de poker installé au saloon.",
+    "inverse": "client de"
+   }
+  ],
   "attitude": "neutre",
   "teinte": "#755219"
  },
@@ -1952,6 +2002,14 @@
    "qui": "Harlan"
   },
   "img": "img/pnj/port-blanc-harlan.webp",
+  "relations": [
+   {
+    "cible": "eleanor-holsten",
+    "type": "gardien d'enclos du cercle de",
+    "ton": "neutre",
+    "inverse": "employeuse de"
+   }
+  ],
   "attitude": "neutre",
   "teinte": "#755219"
  },
@@ -2102,6 +2160,14 @@
     "label": "Vraie apparence",
     "lieux": [],
     "teinte": "#755219"
+   }
+  ],
+  "relations": [
+   {
+    "cible": "barok",
+    "type": "protectrice de",
+    "ton": "positif",
+    "inverse": "protégé par"
    }
   ],
   "attitude": "positif",
@@ -2330,6 +2396,88 @@
    }
   ],
   "attitude": "allie",
+  "etapes": [
+   {
+    "label": "Fleuriste à Malquessar",
+    "lieu": "malquessar",
+    "attitude": "positif",
+    "img": "img/thaldera/pnj/liora.webp",
+    "texte": "Philippa la rencontre dans sa fleuristerie de la cité mouvante. Liora quitte ensuite la ville et part errer dans le sud de Thaldera.",
+    "lieux": [],
+    "teinte": "#755219"
+   },
+   {
+    "label": "Esclave de la Griffe à l'Île aux Moines",
+    "lieu": "ile-aux-moines",
+    "attitude": "positif",
+    "img": "img/thaldera/pnj/liora.webp",
+    "texte": "La Griffe l'a capturée, enchaînée et réduite en esclavage. Philippa la découvre à peine vivante dans une salle de survivants alignés comme du bétail et la libère.",
+    "lieux": [],
+    "teinte": "#755219"
+   },
+   {
+    "label": "Le Pavillon Vert à ses débuts",
+    "lieu": "pavillon-vert",
+    "attitude": "positif",
+    "img": "img/thaldera/pnj/liora.webp",
+    "texte": "À Havre Noir, elle dispose ses premiers pots sur une table récupérée. Elle propose un troc : bourgeons rares, semences étranges ou plantes inhabituelles contre compositions florales. Elle offre trois Bandle Scouts au groupe.",
+    "lieux": [],
+    "fond": "img/paysages/havre-noir/pavillon-vert-interieur.webp",
+    "teinte": "#755219"
+   },
+   {
+    "label": "Le Pavillon Vert florissant",
+    "lieu": "pavillon-vert",
+    "attitude": "allie",
+    "img": "img/thaldera/pnj/liora.webp",
+    "fond": "img/paysages/havre-noir/pavillon-vert-interieur.webp",
+    "texte": "Philippa finance l'agrandissement. Liora livre des plantes à Olyssane pour ses reboisements au Repos des Épées, et la boutique a triplé. Elle veut maintenant se diversifier vers l'alchimie.",
+    "lieux": [],
+    "statut": "vivant",
+    "teinte": "#755219"
+   }
+  ],
+  "formes": [
+   {
+    "label": "Fleuriste à Malquessar",
+    "lieu": "malquessar",
+    "attitude": "positif",
+    "img": "img/thaldera/pnj/liora.webp",
+    "texte": "Philippa la rencontre dans sa fleuristerie de la cité mouvante. Liora quitte ensuite la ville et part errer dans le sud de Thaldera.",
+    "lieux": [],
+    "teinte": "#755219"
+   },
+   {
+    "label": "Esclave de la Griffe à l'Île aux Moines",
+    "lieu": "ile-aux-moines",
+    "attitude": "positif",
+    "img": "img/thaldera/pnj/liora.webp",
+    "texte": "La Griffe l'a capturée, enchaînée et réduite en esclavage. Philippa la découvre à peine vivante dans une salle de survivants alignés comme du bétail et la libère.",
+    "lieux": [],
+    "teinte": "#755219"
+   },
+   {
+    "label": "Le Pavillon Vert à ses débuts",
+    "lieu": "pavillon-vert",
+    "attitude": "positif",
+    "img": "img/thaldera/pnj/liora.webp",
+    "texte": "À Havre Noir, elle dispose ses premiers pots sur une table récupérée. Elle propose un troc : bourgeons rares, semences étranges ou plantes inhabituelles contre compositions florales. Elle offre trois Bandle Scouts au groupe.",
+    "lieux": [],
+    "fond": "img/paysages/havre-noir/pavillon-vert-interieur.webp",
+    "teinte": "#755219"
+   },
+   {
+    "label": "Le Pavillon Vert florissant",
+    "lieu": "pavillon-vert",
+    "attitude": "allie",
+    "img": "img/thaldera/pnj/liora.webp",
+    "fond": "img/paysages/havre-noir/pavillon-vert-interieur.webp",
+    "texte": "Philippa finance l'agrandissement. Liora livre des plantes à Olyssane pour ses reboisements au Repos des Épées, et la boutique a triplé. Elle veut maintenant se diversifier vers l'alchimie.",
+    "lieux": [],
+    "statut": "vivant",
+    "teinte": "#755219"
+   }
+  ],
   "teinte": "#755219"
  },
  {
@@ -2551,6 +2699,12 @@
     "cible": "mezzek",
     "type": "combattait la Griffe de",
     "ton": "negatif"
+   },
+   {
+    "cible": "abby",
+    "type": "même réseau du Voile que",
+    "ton": "positif",
+    "inverse": "même réseau du Voile que"
    }
   ],
   "attitude": "positif"
@@ -2883,6 +3037,10 @@
   "lieu": "pyrrah",
   "statut": "vivant",
   "resume": "Adolescent qui garde la Première Flamme. Épargné par le groupe.",
+  "citation": {
+   "texte": "Je savais que vous viendriez. La Flamme me l'a murmuré, hier. Elle m'a dit… que ce n'était pas moi qui devais la porter. Pas pour toujours.",
+   "qui": "L'Incarnat de la Flamme"
+  },
   "attitude": "neutre"
  },
  {
@@ -2919,6 +3077,15 @@
    "texte": "Regardez bien ces murs… Ce n'est pas mon œuvre. Ils étaient déjà là quand mon père m'a donné cette maison. Toute la bataille y est, figée dans la pierre.",
    "qui": "Ashur"
   },
+  "relations": [
+   {
+    "cible": "gran-brijit",
+    "type": "vieil ami de",
+    "ton": "positif",
+    "note": "Elle l'appelle Ereshkigal.",
+    "inverse": "amie de"
+   }
+  ],
   "attitude": "neutre"
  },
  {
@@ -3064,27 +3231,6 @@
   ]
  },
  {
-  "id": "russconi",
-  "type": "pnj",
-  "nom": "Russconi",
-  "titre": "Directeur du théâtre",
-  "parent": "theatre-russconi",
-  "lieu": "theatre-russconi",
-  "statut": "vivant",
-  "resume": "Ajuste ses manchettes et laisse entendre que les places sont très demandées.",
-  "citation": {
-   "texte": "Merci de venir habillés en conséquence. C'est un théâtre. Pas une halle de poisson.",
-   "qui": "Cesare Rusconi"
-  },
-  "galerie": [
-   {
-    "img": "img/paysages/port-doelan/theatre-russconi.webp",
-    "legende": "Le théâtre Russconi"
-   }
-  ],
-  "attitude": "neutre"
- },
- {
   "id": "requiem",
   "type": "lieu",
   "nom": "Le magasin de musique Requiem",
@@ -3222,19 +3368,71 @@
   ],
   "formes": [
    {
+    "label": "Madame de la maison Vespera",
+    "lieu": "maison-de-vespera",
+    "attitude": "neutre",
+    "img": "img/pnj/madame-vespera-bordel.webp",
+    "texte": "Elle dirige le bordel de Port Doëlan avec Tina et Nina et contrôle les rumeurs. Son arrière-boutique accueille les activités locales de la Griffe. Elle se range pourtant du côté du groupe par loyauté envers Jane, sa sœur d'orphelinat.",
+    "lieux": [],
+    "fond": "img/paysages/port-doelan/maison-de-vespera.webp",
+    "teinte": "#752519"
+   },
+   {
+    "label": "Cheffe de Port Doëlan sur le chantier",
+    "lieu": "port-doelan",
+    "attitude": "allie",
     "img": "img/thaldera/pnj/vespera-merigold.webp",
-    "label": "Normal",
+    "fond": "img/paysages/port-doelan/ancien-quartier-brule.webp",
+    "texte": "Après la chute de Spezza, la ville est à elle, avec Tina, Nina, Kralik et Nesk pour garde. Elle appelle le groupe pour les raids de mercenaires et propose un roadtrip vers Leyenmil.",
     "lieux": [],
     "teinte": "#752519"
    },
    {
-    "img": "img/pnj/madame-vespera-bordel.webp",
-    "label": "Au bordel",
+    "label": "Prétendante au trône, en difficulté",
+    "lieu": "port-doelan",
+    "attitude": "allie",
+    "img": "img/thaldera/pnj/vespera-merigold.webp",
+    "fond": "img/paysages/port-doelan/ancien-quartier-brule.webp",
+    "texte": "Elle veut devenir la prochaine seigneure pirate. Les villes sujettes se détachent, Havre Noir et Rivegard courtisent les satellites, et des navires de l'Impératrice passent dans la baie. Elle a besoin des livraisons de matériaux rares d'Istra.",
     "lieux": [],
+    "statut": "vivant",
     "teinte": "#752519"
    }
   ],
   "attitude": "allie",
+  "etapes": [
+   {
+    "label": "Madame de la maison Vespera",
+    "lieu": "maison-de-vespera",
+    "attitude": "neutre",
+    "img": "img/pnj/madame-vespera-bordel.webp",
+    "texte": "Elle dirige le bordel de Port Doëlan avec Tina et Nina et contrôle les rumeurs. Son arrière-boutique accueille les activités locales de la Griffe. Elle se range pourtant du côté du groupe par loyauté envers Jane, sa sœur d'orphelinat.",
+    "lieux": [],
+    "fond": "img/paysages/port-doelan/maison-de-vespera.webp",
+    "teinte": "#752519"
+   },
+   {
+    "label": "Cheffe de Port Doëlan sur le chantier",
+    "lieu": "port-doelan",
+    "attitude": "allie",
+    "img": "img/thaldera/pnj/vespera-merigold.webp",
+    "fond": "img/paysages/port-doelan/ancien-quartier-brule.webp",
+    "texte": "Après la chute de Spezza, la ville est à elle, avec Tina, Nina, Kralik et Nesk pour garde. Elle appelle le groupe pour les raids de mercenaires et propose un roadtrip vers Leyenmil.",
+    "lieux": [],
+    "teinte": "#752519"
+   },
+   {
+    "label": "Prétendante au trône, en difficulté",
+    "lieu": "port-doelan",
+    "attitude": "allie",
+    "img": "img/thaldera/pnj/vespera-merigold.webp",
+    "fond": "img/paysages/port-doelan/ancien-quartier-brule.webp",
+    "texte": "Elle veut devenir la prochaine seigneure pirate. Les villes sujettes se détachent, Havre Noir et Rivegard courtisent les satellites, et des navires de l'Impératrice passent dans la baie. Elle a besoin des livraisons de matériaux rares d'Istra.",
+    "lieux": [],
+    "statut": "vivant",
+    "teinte": "#752519"
+   }
+  ],
   "teinte": "#752519"
  },
  {
@@ -3305,6 +3503,15 @@
    "qui": "Serna"
   },
   "img": "img/pnj/port-doe-lan-serna.webp",
+  "relations": [
+   {
+    "cible": "spezza",
+    "type": "dénonce les démons sous le château de",
+    "ton": "negatif",
+    "note": "Tous la prennent pour une folle.",
+    "inverse": "dénoncé par"
+   }
+  ],
   "attitude": "neutre",
   "teinte": "#755219"
  },
@@ -3612,6 +3819,14 @@
    "texte": "Vous avez vu sa peau ? Verte comme une algue pourrie, ses yeux sortaient de l'orbite !",
    "qui": "Alrik Crochemer"
   },
+  "relations": [
+   {
+    "cible": "crochemer",
+    "type": "frère de",
+    "ton": "positif",
+    "inverse": "frère de"
+   }
+  ],
   "attitude": "neutre"
  },
  {
@@ -3623,6 +3838,20 @@
   "lieu": "maison-crochemer",
   "statut": "mort",
   "resume": "Marin du Brumeux retrouvé mort, peau verdâtre.",
+  "relations": [
+   {
+    "cible": "eldran-korr",
+    "type": "victime d'",
+    "ton": "negatif",
+    "inverse": "a tué"
+   },
+   {
+    "cible": "derek-varn",
+    "type": "ancien équipage du Brumeux avec",
+    "ton": "neutre",
+    "inverse": "ancien équipage du Brumeux avec"
+   }
+  ],
   "attitude": "neutre"
  },
  {
@@ -3646,6 +3875,21 @@
   "lieu": "ruelle-des-cordages",
   "statut": "mort",
   "resume": "Nouvelle victime, mêmes symptômes que les précédentes.",
+  "relations": [
+   {
+    "cible": "eldran-korr",
+    "type": "victime d'",
+    "ton": "negatif",
+    "note": "Même signe du 7 inversé sur sa porte.",
+    "inverse": "a tué"
+   },
+   {
+    "cible": "derek-varn",
+    "type": "ancien équipage du Brumeux avec",
+    "ton": "neutre",
+    "inverse": "ancien équipage du Brumeux avec"
+   }
+  ],
   "attitude": "neutre"
  },
  {
@@ -3664,6 +3908,14 @@
    "texte": "Pas d'spectacle aujourd'hui, seulement un mort de plus.",
    "qui": "Dr Melior Skarne"
   },
+  "relations": [
+   {
+    "cible": "lapides-garde",
+    "type": "travaille avec",
+    "ton": "neutre",
+    "inverse": "assisté par"
+   }
+  ],
   "attitude": "neutre"
  },
  {
@@ -3695,6 +3947,20 @@
    "texte": "Calven, Brague, Crochemer… leurs noms je les ai.",
    "qui": "Arvik Denholm, le scribe"
   },
+  "relations": [
+   {
+    "cible": "derek-varn",
+    "type": "a désigné comme dernier survivant",
+    "ton": "neutre",
+    "inverse": "désigné par"
+   },
+   {
+    "cible": "philippa-rougetoison",
+    "type": "renseigne",
+    "ton": "positif",
+    "inverse": "renseignée par"
+   }
+  ],
   "attitude": "neutre"
  },
  {
@@ -3758,6 +4024,12 @@
     "cible": "crochemer",
     "type": "tue",
     "ton": "negatif"
+   },
+   {
+    "cible": "derek-varn",
+    "type": "cherche à tuer",
+    "ton": "negatif",
+    "inverse": "traqué par"
    }
   ],
   "attitude": "ennemi"
@@ -3790,7 +4062,22 @@
    "texte": "Écoute-moi, cafitaine… y'a une brèche, dans la coque de l'Affemblage.",
    "qui": "Filver Brandepoix, prisonnier du Pont du Jugement"
   },
-  "attitude": "neutre"
+  "relations": [
+   {
+    "cible": "argonath",
+    "type": "envoyé à Havre Noir par",
+    "ton": "negatif",
+    "note": "Le Passeur lui a dit de planter un comptoir.",
+    "inverse": "a envoyé"
+   },
+   {
+    "cible": "sycomore-brise-pavois",
+    "type": "prisonnier de",
+    "ton": "negatif",
+    "inverse": "geôlière de"
+   }
+  ],
+  "attitude": "ennemi"
  },
  {
   "id": "caverne-aux-butins",
@@ -3863,6 +4150,14 @@
    "texte": "Ici, on ne jure que par la flamme et le marteau. C'est eux qui tiennent l'Assemblage à flot.",
    "qui": "Korga Brise-Lame"
   },
+  "relations": [
+   {
+    "cible": "sycomore-brise-pavois",
+    "type": "forgeronne loyale à",
+    "ton": "positif",
+    "inverse": "forgeronne de"
+   }
+  ],
   "attitude": "neutre"
  },
  {
@@ -4064,6 +4359,12 @@
     "type": "banni par",
     "ton": "negatif",
     "inverse": "a banni"
+   },
+   {
+    "cible": "sycomore-brise-pavois",
+    "type": "banni par",
+    "ton": "negatif",
+    "inverse": "a banni"
    }
   ],
   "attitude": "ennemi"
@@ -4077,6 +4378,20 @@
   "lieu": "registres-du-port",
   "statut": "mort",
   "resume": "Nom cité par le scribe parmi les marins du Brumeux déjà morts.",
+  "relations": [
+   {
+    "cible": "eldran-korr",
+    "type": "victime d'",
+    "ton": "negatif",
+    "inverse": "a tué"
+   },
+   {
+    "cible": "derek-varn",
+    "type": "ancien équipage du Brumeux avec",
+    "ton": "neutre",
+    "inverse": "ancien équipage du Brumeux avec"
+   }
+  ],
   "attitude": "neutre"
  },
  {
@@ -4259,6 +4574,21 @@
    "texte": "Si on me demande d'y aller, qu'est-ce que je fais, moi ? Je refuse et on nous pourchasse ?",
    "qui": "Leth, dans sa lettre à Graham"
   },
+  "relations": [
+   {
+    "cible": "graham-gonn",
+    "type": "informateur de",
+    "ton": "neutre",
+    "note": "Il le prévient du coup commandé par l'envoyé du Passeur.",
+    "inverse": "informé par"
+   },
+   {
+    "cible": "nix",
+    "type": "même gang que",
+    "ton": "neutre",
+    "inverse": "même gang que"
+   }
+  ],
   "attitude": "neutre"
  },
  {
@@ -4274,6 +4604,21 @@
    "texte": "Mais c'est pas enfermé au sous-sol que nos noms seront gravés dans l'histoire !",
    "qui": "Damian"
   },
+  "relations": [
+   {
+    "cible": "graham-gonn",
+    "type": "garde de",
+    "ton": "neutre",
+    "inverse": "gardé par"
+   },
+   {
+    "cible": "vieux-garde-graham",
+    "type": "collègue de",
+    "ton": "neutre",
+    "note": "Le vieux garde conseille au jeune de savourer les postes calmes.",
+    "inverse": "collègue de"
+   }
+  ],
   "attitude": "neutre"
  },
  {
@@ -4289,6 +4634,15 @@
    "texte": "Attends d'avoir mon âge. Tu verras qu'un poste où il se passe rien, c'est pas une punition, c'est une bénédiction.",
    "qui": "Le vieux garde"
   },
+  "relations": [
+   {
+    "cible": "graham-gonn",
+    "type": "garde de",
+    "ton": "neutre",
+    "note": "Il a tiré des ficelles pour être posté là avant sa retraite.",
+    "inverse": "gardé par"
+   }
+  ],
   "attitude": "neutre"
  },
  {
@@ -4393,6 +4747,15 @@
    }
   ],
   "img": "img/pnj/port-blanc-ezekiel.webp",
+  "relations": [
+   {
+    "cible": "tiberius",
+    "type": "garde avec",
+    "ton": "neutre",
+    "note": "Gardes à l'entrée des abattoirs sur ordre des Familles.",
+    "inverse": "garde avec"
+   }
+  ],
   "attitude": "neutre",
   "teinte": "#753c19"
  },
@@ -4428,7 +4791,21 @@
    "qui": "Abby"
   },
   "img": "img/pnj/port-blanc-abby.webp",
-  "attitude": "neutre",
+  "relations": [
+   {
+    "cible": "harlow",
+    "type": "même réseau du Voile que",
+    "ton": "positif",
+    "inverse": "même réseau du Voile que"
+   },
+   {
+    "cible": "helka-von-leyenmil",
+    "type": "même réseau du Voile que",
+    "ton": "positif",
+    "inverse": "même réseau du Voile que"
+   }
+  ],
+  "attitude": "positif",
   "teinte": "#755219"
  },
  {
@@ -5020,6 +5397,14 @@
    }
   ],
   "img": "img/pnj/port-doe-lan-falco-mirella.webp",
+  "relations": [
+   {
+    "cible": "mirella",
+    "type": "discute avec",
+    "ton": "neutre",
+    "inverse": "discute avec"
+   }
+  ],
   "attitude": "neutre",
   "teinte": "#753c19"
  },
@@ -5108,11 +5493,14 @@
   "statut": "vivant",
   "resume": "Il réclame 15 po par personne et exige une tenue de circonstance.",
   "connu": [
-   "Acte I : les Voltigeurs de l'Éclipse. Acte II : Barok."
+   "Acte I : les Voltigeurs de l'Éclipse. Acte II : Barok.",
+   "Ajuste ses manchettes et laisse entendre que les places sont très demandées."
   ],
   "alias": [
-   "Rusconi"
+   "Rusconi",
+   "Russconi"
   ],
+  "histoire": [],
   "citation": {
    "texte": "Merci de venir habillés en conséquence. C'est un théâtre. Pas une halle de poisson.",
    "qui": "Cesare Rusconi"
@@ -5124,6 +5512,21 @@
    }
   ],
   "img": "img/pnj/port-doe-lan-cesare.webp",
+  "relations": [
+   {
+    "cible": "spezza",
+    "type": "attend la venue de",
+    "ton": "neutre",
+    "inverse": "invité au théâtre par"
+   },
+   {
+    "cible": "barok",
+    "type": "programme",
+    "ton": "neutre",
+    "note": "Acte II : Barok.",
+    "inverse": "programmé par"
+   }
+  ],
   "attitude": "neutre",
   "teinte": "#753c19"
  },
@@ -5187,6 +5590,14 @@
    }
   ],
   "img": "img/pnj/port-doe-lan-eloi-a-la-rue.webp",
+  "relations": [
+   {
+    "cible": "philippa-rougetoison",
+    "type": "compagnon de caravane de",
+    "ton": "neutre",
+    "inverse": "compagne de caravane d'"
+   }
+  ],
   "attitude": "positif",
   "teinte": "#753c19"
  },
@@ -5239,6 +5650,14 @@
    }
   ],
   "img": "img/pnj/tomas.webp",
+  "relations": [
+   {
+    "cible": "spezza",
+    "type": "indifférent à",
+    "ton": "neutre",
+    "inverse": "ignoré par"
+   }
+  ],
   "attitude": "neutre",
   "teinte": "#753c19"
  },
@@ -5280,16 +5699,25 @@
   "img": "img/pnj/tina-nina-garde-de-port-doelan.webp",
   "formes": [
    {
-    "img": "img/pnj/tina-nina-garde-de-port-doelan.webp",
-    "label": "Garde de Vespera, aujourd'hui",
+    "label": "À la maison de Vespera, avant la chute de Spezza",
+    "lieu": "maison-de-vespera",
+    "attitude": "neutre",
+    "img": "img/pnj/tina-nina-prostitue-es.webp",
+    "texte": "Les joueurs les rencontrent comme prostituées dans la maison de Madame Vespera.",
     "lieux": [],
-    "teinte": "#753c19"
+    "fond": "img/paysages/port-doelan/maison-de-vespera.webp",
+    "teinte": "#755219"
    },
    {
-    "img": "img/pnj/tina-nina-prostitue-es.webp",
-    "label": "Avant la guerre, à la maison de Vespera",
+    "label": "Garde de Vespera à Port Doëlan",
+    "lieu": "port-doelan",
+    "attitude": "positif",
+    "img": "img/pnj/tina-nina-garde-de-port-doelan.webp",
+    "fond": "img/paysages/port-doelan/ancien-quartier-brule.webp",
+    "texte": "Elles montent la garde autour de Vespera, en armure de fortune, pendant la reconstruction.",
     "lieux": [],
-    "teinte": "#755219"
+    "statut": "vivant",
+    "teinte": "#753c19"
    }
   ],
   "relations": [
@@ -5306,6 +5734,29 @@
    }
   ],
   "attitude": "positif",
+  "etapes": [
+   {
+    "label": "À la maison de Vespera, avant la chute de Spezza",
+    "lieu": "maison-de-vespera",
+    "attitude": "neutre",
+    "img": "img/pnj/tina-nina-prostitue-es.webp",
+    "texte": "Les joueurs les rencontrent comme prostituées dans la maison de Madame Vespera.",
+    "lieux": [],
+    "fond": "img/paysages/port-doelan/maison-de-vespera.webp",
+    "teinte": "#755219"
+   },
+   {
+    "label": "Garde de Vespera à Port Doëlan",
+    "lieu": "port-doelan",
+    "attitude": "positif",
+    "img": "img/pnj/tina-nina-garde-de-port-doelan.webp",
+    "fond": "img/paysages/port-doelan/ancien-quartier-brule.webp",
+    "texte": "Elles montent la garde autour de Vespera, en armure de fortune, pendant la reconstruction.",
+    "lieux": [],
+    "statut": "vivant",
+    "teinte": "#753c19"
+   }
+  ],
   "teinte": "#753c19"
  },
  {
@@ -5320,16 +5771,25 @@
   "img": "img/pnj/tina-nina-garde-de-port-doelan.webp",
   "formes": [
    {
-    "img": "img/pnj/tina-nina-garde-de-port-doelan.webp",
-    "label": "Garde de Vespera, aujourd'hui",
+    "label": "À la maison de Vespera, avant la chute de Spezza",
+    "lieu": "maison-de-vespera",
+    "attitude": "neutre",
+    "img": "img/pnj/tina-nina-prostitue-es.webp",
+    "texte": "Les joueurs les rencontrent comme prostituées dans la maison de Madame Vespera.",
     "lieux": [],
-    "teinte": "#753c19"
+    "fond": "img/paysages/port-doelan/maison-de-vespera.webp",
+    "teinte": "#755219"
    },
    {
-    "img": "img/pnj/tina-nina-prostitue-es.webp",
-    "label": "Avant la guerre, à la maison de Vespera",
+    "label": "Garde de Vespera à Port Doëlan",
+    "lieu": "port-doelan",
+    "attitude": "positif",
+    "img": "img/pnj/tina-nina-garde-de-port-doelan.webp",
+    "fond": "img/paysages/port-doelan/ancien-quartier-brule.webp",
+    "texte": "Elles montent la garde autour de Vespera, en armure de fortune, pendant la reconstruction.",
     "lieux": [],
-    "teinte": "#755219"
+    "statut": "vivant",
+    "teinte": "#753c19"
    }
   ],
   "relations": [
@@ -5341,6 +5801,29 @@
    }
   ],
   "attitude": "positif",
+  "etapes": [
+   {
+    "label": "À la maison de Vespera, avant la chute de Spezza",
+    "lieu": "maison-de-vespera",
+    "attitude": "neutre",
+    "img": "img/pnj/tina-nina-prostitue-es.webp",
+    "texte": "Les joueurs les rencontrent comme prostituées dans la maison de Madame Vespera.",
+    "lieux": [],
+    "fond": "img/paysages/port-doelan/maison-de-vespera.webp",
+    "teinte": "#755219"
+   },
+   {
+    "label": "Garde de Vespera à Port Doëlan",
+    "lieu": "port-doelan",
+    "attitude": "positif",
+    "img": "img/pnj/tina-nina-garde-de-port-doelan.webp",
+    "fond": "img/paysages/port-doelan/ancien-quartier-brule.webp",
+    "texte": "Elles montent la garde autour de Vespera, en armure de fortune, pendant la reconstruction.",
+    "lieux": [],
+    "statut": "vivant",
+    "teinte": "#753c19"
+   }
+  ],
   "teinte": "#753c19"
  },
  {
@@ -5415,6 +5898,14 @@
    }
   ],
   "img": "img/pnj/port-doe-lan-aldo.webp",
+  "relations": [
+   {
+    "cible": "spezza",
+    "type": "soulagé de la mine fermée sous",
+    "ton": "neutre",
+    "inverse": "ignoré par"
+   }
+  ],
   "attitude": "neutre",
   "teinte": "#753c19"
  },
@@ -5682,6 +6173,15 @@
    }
   ],
   "img": "img/pnj/port-doe-lan-enzo.webp",
+  "relations": [
+   {
+    "cible": "spezza",
+    "type": "charpentier malgré",
+    "ton": "neutre",
+    "note": "Il tient à son métier plus qu'au seigneur.",
+    "inverse": "ignoré par"
+   }
+  ],
   "attitude": "neutre",
   "teinte": "#753c19"
  },
@@ -5869,7 +6369,7 @@
     "cible": "vespera-merigold",
     "type": "sert",
     "ton": "positif",
-    "inverse": "dirigée par"
+    "inverse": "patronne de"
    }
   ],
   "attitude": "positif",
@@ -6049,6 +6549,14 @@
    }
   ],
   "img": "img/pnj/port-doe-lan-pam.webp",
+  "relations": [
+   {
+    "cible": "monique",
+    "type": "voisine de prison de",
+    "ton": "neutre",
+    "inverse": "voisine de prison de"
+   }
+  ],
   "attitude": "neutre",
   "teinte": "#753c19"
  },
@@ -6494,6 +7002,14 @@
     "legende": "L'épave du Grauwacht"
    }
   ],
+  "relations": [
+   {
+    "cible": "voryn-kael",
+    "type": "escorte le vaisseau de",
+    "ton": "positif",
+    "inverse": "escorté par"
+   }
+  ],
   "attitude": "neutre"
  },
  {
@@ -6518,6 +7034,14 @@
   "lieu": "epave-de-l-astariel",
   "statut": "mort",
   "resume": "Commandant de la Troisième Expédition des Profondeurs sous mandat de l'Impératrice Eryndel. Il a consigné la mission de porter le fragment au fond.",
+  "relations": [
+   {
+    "cible": "eryndel",
+    "type": "mandaté par",
+    "ton": "neutre",
+    "inverse": "mandate"
+   }
+  ],
   "attitude": "neutre"
  },
  {
@@ -6549,6 +7073,14 @@
     "label": "Seconde forme",
     "lieux": [],
     "teinte": "#197552"
+   }
+  ],
+  "relations": [
+   {
+    "cible": "voryn-kael",
+    "type": "a pris possession de l'épave de",
+    "ton": "neutre",
+    "inverse": "épave occupée par"
    }
   ],
   "attitude": "ennemi",
@@ -6672,6 +7204,20 @@
   "lieu": "temple-des-ardeurs",
   "statut": "vivant",
   "resume": "Un des trois compagnons de la maison.",
+  "relations": [
+   {
+    "cible": "koressa",
+    "type": "compagnon de maison de",
+    "ton": "positif",
+    "inverse": "compagne de maison de"
+   },
+   {
+    "cible": "thaleia",
+    "type": "compagnon de maison de",
+    "ton": "positif",
+    "inverse": "compagne de maison de"
+   }
+  ],
   "attitude": "neutre"
  },
  {
@@ -6685,6 +7231,14 @@
   "resume": "Une des trois compagnes de la maison.",
   "alias": [
    "Koressa"
+  ],
+  "relations": [
+   {
+    "cible": "thaleia",
+    "type": "compagne de maison de",
+    "ton": "positif",
+    "inverse": "compagne de maison de"
+   }
   ],
   "attitude": "neutre"
  },
@@ -6725,6 +7279,26 @@
    "texte": "On a livré les dernières caisses comme prévu, et depuis plus rien.",
    "qui": "Un membre de la Griffe, taverne de Pyrrah"
   },
+  "relations": [
+   {
+    "cible": "vire",
+    "type": "collègue de la Griffe",
+    "ton": "negatif",
+    "inverse": "collègue de la Griffe"
+   },
+   {
+    "cible": "ishra",
+    "type": "collègue de la Griffe",
+    "ton": "negatif",
+    "inverse": "collègue de la Griffe"
+   },
+   {
+    "cible": "naberoth",
+    "type": "produit pour le réseau de",
+    "ton": "negatif",
+    "inverse": "fournisseurs de la Griffe"
+   }
+  ],
   "attitude": "ennemi"
  },
  {
@@ -6736,6 +7310,24 @@
   "lieu": "taverne-de-la-griffe-pyrrah",
   "statut": "vivant",
   "resume": "Producteur de la Griffe. Il se demande à qui refourguer sa came.",
+  "citation": {
+   "texte": "On a encore quelques échantillons, mais à qui refourguer notre came ?",
+   "qui": "Un agent de la Griffe, à Pyrrah"
+  },
+  "relations": [
+   {
+    "cible": "ishra",
+    "type": "collègue de la Griffe",
+    "ton": "negatif",
+    "inverse": "collègue de la Griffe"
+   },
+   {
+    "cible": "naberoth",
+    "type": "produit pour le réseau de",
+    "ton": "negatif",
+    "inverse": "fournisseurs de la Griffe"
+   }
+  ],
   "attitude": "ennemi"
  },
  {
@@ -6747,6 +7339,18 @@
   "lieu": "taverne-de-la-griffe-pyrrah",
   "statut": "vivant",
   "resume": "Productrice de la Griffe. Elle évoque une association avec le Voile.",
+  "citation": {
+   "texte": "Et si on tentait une association avec le Voile ? Peut-être qu'ils veulent des trucs eux ?",
+   "qui": "Un agent de la Griffe, à Pyrrah"
+  },
+  "relations": [
+   {
+    "cible": "naberoth",
+    "type": "produit pour le réseau de",
+    "ton": "negatif",
+    "inverse": "fournisseurs de la Griffe"
+   }
+  ],
   "attitude": "ennemi"
  },
  {
@@ -6831,7 +7435,15 @@
    "texte": "Mon inventaire est fort réduit, oui fort réduit pour le moment, n'est-ce pas. Mais si vous avez des idées ou des patrons, je peux vous aider à réaliser des objets sur mesure.",
    "qui": "Ashkalyon le Verracier"
   },
-  "attitude": "neutre"
+  "relations": [
+   {
+    "cible": "philippa-rougetoison",
+    "type": "a confirmé la prophétie à",
+    "ton": "positif",
+    "inverse": "prophétie confirmée par"
+   }
+  ],
+  "attitude": "positif"
  },
  {
   "id": "brasero-aux-merveilles",
@@ -6881,6 +7493,14 @@
   "lieu": "thermes-solaires",
   "statut": "vivant",
   "resume": "Un des trois serviteurs des thermes.",
+  "relations": [
+   {
+    "cible": "pyrokles",
+    "type": "serviteur de",
+    "ton": "neutre",
+    "inverse": "maître de"
+   }
+  ],
   "attitude": "neutre"
  },
  {
@@ -6908,6 +7528,14 @@
   "resume": "Un des trois serviteurs des thermes.",
   "alias": [
    "Oresias"
+  ],
+  "relations": [
+   {
+    "cible": "pyrokles",
+    "type": "serviteur de",
+    "ton": "neutre",
+    "inverse": "maître de"
+   }
   ],
   "attitude": "neutre"
  },
@@ -7054,6 +7682,15 @@
   "lieu": "auberge-dans-la-roche",
   "statut": "vivant",
   "resume": "Un des habitants qui réclament une taxe de protection aux étrangers.",
+  "relations": [
+   {
+    "cible": "ur-kalmesh",
+    "type": "complice de",
+    "ton": "negatif",
+    "note": "Taxe de protection réclamée aux étrangers.",
+    "inverse": "complice de"
+   }
+  ],
   "attitude": "neutre"
  },
  {
@@ -7183,6 +7820,10 @@
   "alias": [
    "Aram Sharun"
   ],
+  "citation": {
+   "texte": "Je sers ce qui fut avant les trônes, et je suivrai ce qui viendra après les rois.",
+   "qui": "Aram Sharûn, aux messagers des rois"
+  },
   "attitude": "neutre",
   "lieu": "kazad-marunn"
  },
@@ -7210,6 +7851,14 @@
    "texte": "Prenez garde, la fosse est gardée par Al Batun, le vorace, c'est lui qui possède la clef pour y accéder.",
    "qui": "Ashur, à propos d'Al Batun"
   },
+  "relations": [
+   {
+    "cible": "aram-sharun",
+    "type": "garde la Fosse d'",
+    "ton": "negatif",
+    "inverse": "gardée par"
+   }
+  ],
   "attitude": "ennemi",
   "lieu": "kazad-marunn"
  },
@@ -7249,25 +7898,16 @@
   "alias": [
    "Tique"
   ],
+  "relations": [
+   {
+    "cible": "aram-sharun",
+    "type": "automate d'",
+    "ton": "negatif",
+    "inverse": "a construit"
+   }
+  ],
   "attitude": "ennemi",
   "lieu": "tour-de-resonance"
- },
- {
-  "id": "gikyo-noshi-buru",
-  "type": "pnj",
-  "nom": "Gikyo Noshi Buru",
-  "titre": "Ennemie de Gran Brijit",
-  "parent": "kazad-marunn",
-  "resume": "Femme à la peau violette parée de métal et de tissus du désert, qui attendait Gran Brijit dans une ruelle. Elle appelle un djinn d'eau.",
-  "alias": [
-   "Gikyo"
-  ],
-  "citation": {
-   "texte": "T'approche pas. Tu pues les racines mortes. T'avancer encore d'un pas… c'est mourir.",
-   "qui": "Gikyo Noshi Buru"
-  },
-  "attitude": "ennemi",
-  "lieu": "kazad-marunn"
  },
  {
   "id": "grands-mages-du-desert",
@@ -7414,6 +8054,10 @@
   "lieu": "village-de-leyenmil",
   "statut": "vivant",
   "resume": "Il insulte les orphelins. Copperworth le coupe net.",
+  "citation": {
+   "texte": "La chair fraîche du vieil orphelinat… Alors, on vient voler ce soir ? Ou offrir d'autres services ?",
+   "qui": "Otto, ivre, à l'auberge de Leyenmil"
+  },
   "attitude": "neutre"
  },
  {
@@ -7448,6 +8092,20 @@
   "lieu": "temple-brumeux",
   "statut": "mort",
   "resume": "Auteur du journal du temple. Il écrit qu'en ramenant tout le monde ici, les moines ont commis une erreur.",
+  "relations": [
+   {
+    "cible": "frere-augustus-carrow",
+    "type": "frère du temple avec",
+    "ton": "neutre",
+    "inverse": "frère du temple avec"
+   },
+   {
+    "cible": "barakel",
+    "type": "victime de",
+    "ton": "negatif",
+    "inverse": "a corrompu"
+   }
+  ],
   "attitude": "neutre"
  },
  {
@@ -7562,6 +8220,20 @@
    "texte": "La forêt est cruelle, surtout pour ceux qui ne savent pas obéir. Vous le ramènerez, n'est-ce pas ?",
    "qui": "Dimir"
   },
+  "relations": [
+   {
+    "cible": "iulia",
+    "type": "époux de",
+    "ton": "neutre",
+    "inverse": "épouse de"
+   },
+   {
+    "cible": "spano",
+    "type": "retenait enchaîné",
+    "ton": "negatif",
+    "inverse": "retenu par"
+   }
+  ],
   "attitude": "neutre"
  },
  {
@@ -7577,6 +8249,14 @@
    "texte": "Oh… vous savez… il était fragile, ce garçon. Il avait besoin qu'on veille sur lui, nuit et jour.",
    "qui": "Iulia"
   },
+  "relations": [
+   {
+    "cible": "spano",
+    "type": "séquestrait",
+    "ton": "negatif",
+    "inverse": "séquestré par"
+   }
+  ],
   "attitude": "neutre"
  },
  {
@@ -7592,6 +8272,14 @@
    "texte": "Ils souriaient tout le temps… même quand ils fermaient la chaîne.",
    "qui": "Spano"
   },
+  "relations": [
+   {
+    "cible": "philippa-rougetoison",
+    "type": "sauvé par",
+    "ton": "positif",
+    "inverse": "a sauvé"
+   }
+  ],
   "attitude": "neutre"
  },
  {
@@ -7605,6 +8293,20 @@
   "resume": "Rôdeuse de Havre Noir, jovial, à cheval sur sa monture Justine. Retrouvée morte une nuit, empoisonnée par un poison qui ne la visait pas.",
   "alias": [
    "Justine"
+  ],
+  "relations": [
+   {
+    "cible": "constance-brisemousse",
+    "type": "compagne de caravane de",
+    "ton": "neutre",
+    "inverse": "compagne de caravane de"
+   },
+   {
+    "cible": "solkah-barrow",
+    "type": "compagne de caravane de",
+    "ton": "neutre",
+    "inverse": "compagne de caravane de"
+   }
   ],
   "attitude": "neutre"
  },
@@ -7620,6 +8322,14 @@
   "alias": [
    "Plop"
   ],
+  "relations": [
+   {
+    "cible": "solkah-barrow",
+    "type": "compagnon de caravane de",
+    "ton": "neutre",
+    "inverse": "compagne de caravane de"
+   }
+  ],
   "attitude": "positif"
  },
  {
@@ -7631,6 +8341,14 @@
   "lieu": "caravane-port-doelan",
   "statut": "vivant",
   "resume": "Drow taciturne qui évite le soleil. Passionné de serpents, il rejette les dogmes de Lolth et veut rejoindre Port Doëlan.",
+  "relations": [
+   {
+    "cible": "seravine",
+    "type": "dresseur de",
+    "ton": "positif",
+    "inverse": "dressée par"
+   }
+  ],
   "attitude": "neutre"
  },
  {
@@ -7682,6 +8400,15 @@
    {
     "img": "img/paysages/brakka/sanctuaire-de-la-maree.webp",
     "legende": "Le sanctuaire de la marée"
+   }
+  ],
+  "relations": [
+   {
+    "cible": "absalom",
+    "type": "a soigné",
+    "ton": "neutre",
+    "note": "Pendant plusieurs jours.",
+    "inverse": "soignée par"
    }
   ],
   "attitude": "neutre"

@@ -424,3 +424,19 @@ a.wcrest:hover .wn { color: var(--gold-hi); }
 .chapeau { font-style: italic; line-height: 1.55; margin: 6px 0 12px; color: var(--ink2, #cfc7b4); }
 li.key { border-left: 2px solid var(--gold); padding-left: 10px; margin-left: -12px; list-style: none; color: #f3e9c9; font-weight: 600; }
 .nt .pills { justify-content: flex-start; }
+
+/* parcours par etapes */
+.parc { list-style: none; margin: 0; padding: 0; position: relative; }
+.parc::before { content: ''; position: absolute; left: 13px; top: 8px; bottom: 8px; width: 1px; background: linear-gradient(var(--gold, #c9a84c), rgba(201,168,76,.15)); }
+.parc li.etape { position: relative; padding: 4px 8px 14px 44px; margin: 0; cursor: pointer; opacity: .62; transition: opacity .3s; }
+.parc li.etape::before, .parc li.etape::marker { content: none; display: none; }
+.etape.on { opacity: 1; }
+.etape .eh { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; }
+.etape .en { position: absolute; left: 0; top: 2px; width: 27px; height: 27px; border-radius: 50%; border: 1px solid rgba(201,168,76,.6); background: #0b0e18; color: #e8c964; font: 600 12px 'Cinzel', serif; display: grid; place-items: center; }
+.etape.on .en { background: #e8c964; color: #0b0e18; }
+.etape b { font: 600 14px 'Cinzel', serif; letter-spacing: .06em; color: #efe6cf; }
+.etape em { font-size: 12px; color: #e8c964; font-style: normal; letter-spacing: .12em; text-transform: uppercase; }
+.etape .el { font-size: 13px; color: #aab; margin-top: 2px; }
+.etape .pills { justify-content: flex-start; gap: 6px; }
+.etape .pills .pill { margin-top: 5px; font-size: 9px; padding: 2px 9px; }
+.etape p { margin: 6px 0 0; font-size: 15px; line-height: 1.45; }

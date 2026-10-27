@@ -2077,7 +2077,7 @@
    }
   ],
   "img": "img/pnj/neryn-yosa.webp",
-  "attitude": "neutre",
+  "attitude": "ennemi",
   "teinte": "#755219"
  },
  {
@@ -2088,7 +2088,9 @@
   "parent": "roshen-buru",
   "statut": "inconnu",
   "alias": [
-   "Ginko"
+   "Ginko",
+   "Gikyo",
+   "Gikyo Noshi Buru"
   ],
   "question": "Qu'est devenue Ginko depuis son combat contre Gran Brijit ?",
   "resume": "Puissante guerrière, souvent en voyage. Son Miren est un djinn.",
@@ -2096,7 +2098,8 @@
    "Elle est souvent en voyage et rarement en ville.",
    "Son Miren, un Tenrai de niveau 3, est un djinn.",
    "Le groupe l'a croisée à Thaldera.",
-   "Elle a affronté Gran Brijit dans les sables de Kazad Marunn. Gran Brijit semblait lui vouloir quelque chose."
+   "Elle a affronté Gran Brijit dans les sables de Kazad Marunn. Gran Brijit semblait lui vouloir quelque chose.",
+   "Femme à la peau violette parée de métal et de tissus du désert, qui attendait Gran Brijit dans une ruelle. Elle appelle un djinn d'eau."
   ],
   "relations": [
    {
@@ -2108,10 +2111,21 @@
     "cible": "gran-brijit",
     "type": "Affrontement",
     "ton": "negatif"
+   },
+   {
+    "cible": "anaru-miren-buru",
+    "type": "cousine de",
+    "ton": "positif",
+    "inverse": "cousine de"
    }
   ],
   "lieu": "palais-miren-buru",
-  "attitude": "neutre"
+  "histoire": [],
+  "citation": {
+   "texte": "T'approche pas. Tu pues les racines mortes. T'avancer encore d'un pas… c'est mourir.",
+   "qui": "Gikyo Noshi Buru"
+  },
+  "attitude": "ennemi"
  },
  {
   "id": "thibwick-rumple",
@@ -2335,27 +2349,109 @@
   },
   "formes": [
    {
+    "label": "Le Berger, à l'Île aux Moines",
+    "lieu": "ile-aux-moines",
+    "attitude": "ennemi",
     "img": "img/istra-belig/roshen-buru/pnj/absalom.webp",
-    "label": "Normal",
+    "texte": "Boss de l'île, elle organise le trafic d'êtres humains pour la Griffe. Le groupe la met en déroute et elle s'enfuit blessée.",
     "lieux": [],
     "teinte": "#755219"
    },
    {
-    "img": "img/pnj/absalom-demon.webp",
-    "label": "Forme démon",
-    "lieux": [
-     "temple-du-tenraku"
-    ],
-    "teinte": "#752519"
+    "label": "Sadie, au saloon de Port Blanc",
+    "lieu": "saloon-port-blanc",
+    "attitude": "neutre",
+    "img": "img/pnj/port-doe-lan-absalom-de-guise-e-en-sadie.webp",
+    "texte": "Elle se fait passer pour une prostituée nommée Sadie. Le groupe ne comprend qui elle était que plus tard, à Port Doëlan.",
+    "lieux": [],
+    "fond": "img/paysages/port-blanc/saloon.webp",
+    "teinte": "#2d2d2d"
    },
    {
+    "label": "Chez Makandral, à Port Doëlan",
+    "lieu": "port-doelan",
+    "attitude": "neutre",
     "img": "img/pnj/port-doe-lan-absalom-en-forme-de-de-mon.webp",
-    "label": "Forme démon, Port Doëlan",
+    "fond": "img/paysages/port-doelan/ancien-quartier-brule.webp",
+    "texte": "Elle révèle qui elle est et propose une alliance de circonstance contre Naberoth. Elle hait toujours le groupe.",
     "lieux": [],
     "teinte": "#755219"
+   },
+   {
+    "label": "À Keras Tauroc",
+    "lieu": "keras-tauroc",
+    "attitude": "ennemi",
+    "img": "img/istra-belig/roshen-buru/pnj/absalom.webp",
+    "texte": "Le groupe la poursuit jusqu'à Keras Tauroc, où elle efface un mois de sa mémoire.",
+    "lieux": [],
+    "fond": "img/paysages/keras-tauroc/rue-passant-ivre.webp",
+    "teinte": "#755219"
+   },
+   {
+    "label": "Au Temple du Tenraku",
+    "lieu": "temple-du-tenraku",
+    "attitude": "neutre",
+    "img": "img/pnj/absalom-demon.webp",
+    "texte": "Elle brise la Jarre Miren, lit le parchemin sacré et comprend la supercherie de son maître. Son cri détruit le temple, puis elle part vers les Enfers.",
+    "lieux": [],
+    "fond": "img/paysages/roshen-buru/temple-du-tenraku-ceremonie.webp",
+    "statut": "inconnu",
+    "teinte": "#752519"
    }
   ],
   "attitude": "neutre",
+  "etapes": [
+   {
+    "label": "Le Berger, à l'Île aux Moines",
+    "lieu": "ile-aux-moines",
+    "attitude": "ennemi",
+    "img": "img/istra-belig/roshen-buru/pnj/absalom.webp",
+    "texte": "Boss de l'île, elle organise le trafic d'êtres humains pour la Griffe. Le groupe la met en déroute et elle s'enfuit blessée.",
+    "lieux": [],
+    "teinte": "#755219"
+   },
+   {
+    "label": "Sadie, au saloon de Port Blanc",
+    "lieu": "saloon-port-blanc",
+    "attitude": "neutre",
+    "img": "img/pnj/port-doe-lan-absalom-de-guise-e-en-sadie.webp",
+    "texte": "Elle se fait passer pour une prostituée nommée Sadie. Le groupe ne comprend qui elle était que plus tard, à Port Doëlan.",
+    "lieux": [],
+    "fond": "img/paysages/port-blanc/saloon.webp",
+    "teinte": "#2d2d2d"
+   },
+   {
+    "label": "Chez Makandral, à Port Doëlan",
+    "lieu": "port-doelan",
+    "attitude": "neutre",
+    "img": "img/pnj/port-doe-lan-absalom-en-forme-de-de-mon.webp",
+    "fond": "img/paysages/port-doelan/ancien-quartier-brule.webp",
+    "texte": "Elle révèle qui elle est et propose une alliance de circonstance contre Naberoth. Elle hait toujours le groupe.",
+    "lieux": [],
+    "teinte": "#755219"
+   },
+   {
+    "label": "À Keras Tauroc",
+    "lieu": "keras-tauroc",
+    "attitude": "ennemi",
+    "img": "img/istra-belig/roshen-buru/pnj/absalom.webp",
+    "texte": "Le groupe la poursuit jusqu'à Keras Tauroc, où elle efface un mois de sa mémoire.",
+    "lieux": [],
+    "fond": "img/paysages/keras-tauroc/rue-passant-ivre.webp",
+    "teinte": "#755219"
+   },
+   {
+    "label": "Au Temple du Tenraku",
+    "lieu": "temple-du-tenraku",
+    "attitude": "neutre",
+    "img": "img/pnj/absalom-demon.webp",
+    "texte": "Elle brise la Jarre Miren, lit le parchemin sacré et comprend la supercherie de son maître. Son cri détruit le temple, puis elle part vers les Enfers.",
+    "lieux": [],
+    "fond": "img/paysages/roshen-buru/temple-du-tenraku-ceremonie.webp",
+    "statut": "inconnu",
+    "teinte": "#752519"
+   }
+  ],
   "teinte": "#755219"
  },
  {
@@ -2526,6 +2622,15 @@
    }
   ],
   "img": "img/pnj/maitre-mishta.webp",
+  "relations": [
+   {
+    "cible": "harfang-tsuren",
+    "type": "instructeur de",
+    "ton": "positif",
+    "note": "Il lui demande comment se passe la cohabitation avec Stryge.",
+    "inverse": "instruit par"
+   }
+  ],
   "attitude": "positif",
   "teinte": "#753c19"
  },
@@ -2583,6 +2688,14 @@
    }
   ],
   "img": "img/pnj/takko-halvaki.webp",
+  "relations": [
+   {
+    "cible": "harfang-tsuren",
+    "type": "ami d'enfance de",
+    "ton": "positif",
+    "inverse": "ami d'enfance de"
+   }
+  ],
   "attitude": "positif",
   "teinte": "#753c19"
  },
@@ -2710,6 +2823,20 @@
   "statut": "vivant",
   "resume": "Père de Konya, mal à l'aise, il n'ose pas se mêler de l'affaire.",
   "img": "img/pnj/kazen-sokabei.webp",
+  "relations": [
+   {
+    "cible": "konya-sokabei",
+    "type": "père de",
+    "ton": "positif",
+    "inverse": "fille de"
+   },
+   {
+    "cible": "wano-sokabei",
+    "type": "époux de",
+    "ton": "positif",
+    "inverse": "épouse de"
+   }
+  ],
   "attitude": "neutre",
   "teinte": "#755219"
  },
@@ -2723,6 +2850,14 @@
   "statut": "vivant",
   "resume": "Elle coud, écoute et ne dit rien. C'est elle qui a vu quelqu'un rôder dans la rue.",
   "img": "img/pnj/wano-sokabei.webp",
+  "relations": [
+   {
+    "cible": "konya-sokabei",
+    "type": "mère de",
+    "ton": "positif",
+    "inverse": "fille de"
+   }
+  ],
   "attitude": "neutre",
   "teinte": "#753c19"
  },
@@ -2758,6 +2893,14 @@
    "qui": "Doryen Kaben, à Konya, sans élever la voix"
   },
   "img": "img/pnj/doryen-kaben.webp",
+  "relations": [
+   {
+    "cible": "ayano-kaben",
+    "type": "père d'",
+    "ton": "positif",
+    "inverse": "fille de"
+   }
+  ],
   "attitude": "neutre",
   "teinte": "#753c19"
  },
@@ -2773,7 +2916,26 @@
   "connu": [
    "Ayano a fréquenté il y a des années un fils de clan de haute noblesse, arrogant et détestable. Elle n'a jamais lâché son nom."
   ],
+  "citation": {
+   "texte": "Elle n'a jamais lâché le nom. Jamais. Ce que je sais, c'est que ça s'est très mal fini, et que c'est elle qui l'a envoyé promener.",
+   "qui": "Siona Kaben, sœur d'Ayano"
+  },
   "img": "img/pnj/siona-kaben.webp",
+  "relations": [
+   {
+    "cible": "ayano-kaben",
+    "type": "sœur d'",
+    "ton": "positif",
+    "inverse": "sœur de"
+   },
+   {
+    "cible": "clan-anadori",
+    "type": "méfiante envers",
+    "ton": "negatif",
+    "note": "Préjugé de classe.",
+    "inverse": "soupçonné par"
+   }
+  ],
   "attitude": "neutre",
   "teinte": "#755219"
  },
@@ -2813,6 +2975,14 @@
    "qui": "Hoshka, sans lever les yeux de sa tasse"
   },
   "img": "img/pnj/hoshka.webp",
+  "relations": [
+   {
+    "cible": "orisa",
+    "type": "patron d'",
+    "ton": "neutre",
+    "inverse": "serveuse d'"
+   }
+  ],
   "attitude": "neutre",
   "teinte": "#753c19"
  },
@@ -2911,6 +3081,10 @@
   "lieu": "curiosites-maven",
   "statut": "vivant",
   "resume": "Vend des objets étranges et curieux.",
+  "citation": {
+   "texte": "Ah. Ah, non, ça, attendez, posez-la, ne la posez pas, tenez-la mieux que ça, on ne la tient pas par le milieu.",
+   "qui": "Maven Ako, devant la longue-vue d'émeraude"
+  },
   "galerie": [
    {
     "img": "img/paysages/roshen-buru/curiosites-maven.webp",
@@ -3001,6 +3175,14 @@
    "qui": "Maître Orashay"
   },
   "img": "img/pnj/maitre-orashay.webp",
+  "relations": [
+   {
+    "cible": "anaru-miren-buru",
+    "type": "grand officiant sous",
+    "ton": "neutre",
+    "inverse": "supérieure de"
+   }
+  ],
   "attitude": "neutre",
   "teinte": "#753c19"
  },
@@ -3032,6 +3214,14 @@
   "lieu": "palais-miren-buru",
   "statut": "vivant",
   "resume": "Chambellan du palais de la Gardienne.",
+  "relations": [
+   {
+    "cible": "anaru-miren-buru",
+    "type": "chambellan d'",
+    "ton": "positif",
+    "inverse": "chambellan de"
+   }
+  ],
   "attitude": "neutre"
  },
  {
@@ -3043,6 +3233,10 @@
   "lieu": "roshen-buru",
   "statut": "vivant",
   "resume": "Mendiant de la ville.",
+  "citation": {
+   "texte": "Une pièce, braves gens, une pièce pour le vieux Doku... pitié pour un pauvre homme qui n'a plus rien...",
+   "qui": "Doku, mendiant"
+  },
   "img": "img/pnj/doku.webp",
   "attitude": "neutre",
   "teinte": "#753c19"
@@ -3093,6 +3287,14 @@
   "lieu": "pavillon-mariage",
   "statut": "mort",
   "resume": "Retrouvé mort au petit matin, overdose de Vésine d'une pureté impossible à acheter pour son rang.",
+  "relations": [
+   {
+    "cible": "vesine",
+    "type": "mort d'une overdose de",
+    "ton": "negatif",
+    "inverse": "a tué"
+   }
+  ],
   "attitude": "neutre"
  },
  {
@@ -3104,6 +3306,14 @@
   "lieu": "pavillon-mariage",
   "statut": "vivant",
   "resume": "Prend le relais après Kabo. Il sort discrètement par la porte de service.",
+  "relations": [
+   {
+    "cible": "kabo",
+    "type": "remplace",
+    "ton": "neutre",
+    "inverse": "remplacé par"
+   }
+  ],
   "attitude": "neutre"
  },
  {
@@ -3115,6 +3325,10 @@
   "lieu": "pavillon-mariage",
   "statut": "vivant",
   "resume": "Tente d'entrer au mariage pour boire à l'œil. Fausse alerte.",
+  "citation": {
+   "texte": "Non mais attendez. Attendez. Attendez deux secondes. Je vous dis que je suis invité. Enfin je suis pas invité invité, mais je connais le père.",
+   "qui": "Otta, à la porte du pavillon"
+  },
   "img": "img/pnj/otta.webp",
   "attitude": "neutre",
   "teinte": "#753c19"
@@ -3176,6 +3390,14 @@
    }
   ],
   "img": "img/pnj/dame-teshima.webp",
+  "relations": [
+   {
+    "cible": "maitre-siharen",
+    "type": "épouse et voix de",
+    "ton": "neutre",
+    "inverse": "époux de"
+   }
+  ],
   "attitude": "neutre",
   "teinte": "#753c19"
  },
@@ -3206,6 +3428,15 @@
   "alias": [
    "Ako"
   ],
+  "relations": [
+   {
+    "cible": "madame-renka",
+    "type": "disparue de chez",
+    "ton": "negatif",
+    "note": "Un avis de recherche renvoie à Renka.",
+    "inverse": "recherchée par"
+   }
+  ],
   "attitude": "neutre"
  },
  {
@@ -3218,6 +3449,14 @@
   "statut": "vivant",
   "resume": "Courtisane qui reçoit les fils de clan.",
   "img": "img/pnj/velsha-quartier-des-plaisirs.webp",
+  "relations": [
+   {
+    "cible": "madame-renka",
+    "type": "travaille pour",
+    "ton": "neutre",
+    "inverse": "emploie"
+   }
+  ],
   "attitude": "neutre",
   "teinte": "#752519"
  },
@@ -3231,6 +3470,14 @@
   "statut": "vivant",
   "resume": "Courtisane qui reçoit les fils de clan.",
   "img": "img/pnj/lysha-quartier-des-plaisirs.webp",
+  "relations": [
+   {
+    "cible": "madame-renka",
+    "type": "travaille pour",
+    "ton": "neutre",
+    "inverse": "emploie"
+   }
+  ],
   "attitude": "neutre",
   "teinte": "#755219"
  },
@@ -3247,6 +3494,21 @@
    "texte": "Le fils Kovacz, oui, je vois qui c'est. Il payait bien, mais il était pas facile. Personne n'en voulait deux fois.",
    "qui": "Maeko, en rangeant ses affaires"
   },
+  "relations": [
+   {
+    "cible": "madame-renka",
+    "type": "travaille pour",
+    "ton": "neutre",
+    "inverse": "emploie"
+   },
+   {
+    "cible": "darrek-kovacz",
+    "type": "déteste",
+    "ton": "negatif",
+    "note": "Il payait bien mais personne n'en voulait deux fois.",
+    "inverse": "détesté par"
+   }
+  ],
   "attitude": "neutre"
  },
  {
@@ -3259,6 +3521,14 @@
   "statut": "vivant",
   "resume": "Courtisan qui connaît les femmes de la haute société.",
   "img": "img/pnj/sevaki-quartier-des-plaisirs.webp",
+  "relations": [
+   {
+    "cible": "madame-renka",
+    "type": "travaille pour",
+    "ton": "neutre",
+    "inverse": "emploie"
+   }
+  ],
   "attitude": "neutre",
   "teinte": "#752519"
  },
@@ -3272,6 +3542,14 @@
   "statut": "vivant",
   "resume": "Gardien de la porte. Il fouille, désarme et ne discute pas.",
   "img": "img/pnj/venta.webp",
+  "relations": [
+   {
+    "cible": "madame-renka",
+    "type": "travaille pour",
+    "ton": "neutre",
+    "inverse": "emploie"
+   }
+  ],
   "attitude": "neutre",
   "teinte": "#753c19"
  },
@@ -3287,7 +3565,19 @@
   "connu": [
    "Ce n'est pas Absalom : l'enquête sur la femme en noir n'a rien révélé d'infernal."
   ],
+  "citation": {
+   "texte": "Je ne reçois pas. Vous vous êtes trompés de porte.",
+   "qui": "Muji, sur le seuil"
+  },
   "img": "img/pnj/muji.webp",
+  "relations": [
+   {
+    "cible": "sabo",
+    "type": "se dit mariée à",
+    "ton": "neutre",
+    "inverse": "marié à"
+   }
+  ],
   "attitude": "neutre",
   "teinte": "#753c19"
  },
@@ -3300,7 +3590,19 @@
   "lieu": "roshen-buru",
   "statut": "vivant",
   "resume": "Elle a orienté le groupe vers la dame en noir derrière le temple.",
+  "citation": {
+   "texte": "Absalom, Absalom... connais pas le nom. Mais si vous cherchez louche, y a la dame en noir, derrière le temple.",
+   "qui": "Nusei, la passante"
+  },
   "img": "img/pnj/nusei.webp",
+  "relations": [
+   {
+    "cible": "muji",
+    "type": "a orienté le groupe vers",
+    "ton": "positif",
+    "inverse": "présentée par"
+   }
+  ],
   "attitude": "neutre",
   "teinte": "#755219"
  },
@@ -3374,6 +3676,14 @@
     "legende": "La forge Oyoroï"
    }
   ],
+  "relations": [
+   {
+    "cible": "tessei-kanae",
+    "type": "père de",
+    "ton": "positif",
+    "inverse": "enfant de"
+   }
+  ],
   "attitude": "neutre"
  },
  {
@@ -3385,6 +3695,14 @@
   "lieu": "roshen-buru",
   "statut": "vivant",
   "resume": "Maître Mishta demande à Harfang comment se passe la cohabitation avec lui.",
+  "relations": [
+   {
+    "cible": "harfang-tsuren",
+    "type": "cohabite avec",
+    "ton": "neutre",
+    "inverse": "cohabite avec"
+   }
+  ],
   "attitude": "neutre"
  },
  {
@@ -3425,6 +3743,14 @@
     "legende": "Le palais Kovacz"
    }
   ],
+  "relations": [
+   {
+    "cible": "clan-kovacz",
+    "type": "domestique du",
+    "ton": "neutre",
+    "inverse": "domestiques de"
+   }
+  ],
   "attitude": "neutre"
  },
  {
@@ -3439,7 +3765,20 @@
   "alias": [
    "Bao"
   ],
+  "citation": {
+   "texte": "Tobiya ? Le pauvre. Il est passé devant mon étal il y a trois jours, tout pâle, il marchait de travers, il parlait tout seul.",
+   "qui": "Ohana, marchande de dim sum"
+  },
   "img": "img/pnj/ohana-bao.webp",
+  "relations": [
+   {
+    "cible": "tobiya",
+    "type": "voisin de",
+    "ton": "neutre",
+    "note": "Témoin de la maison de Tobiya.",
+    "inverse": "voisin de"
+   }
+  ],
   "attitude": "neutre",
   "teinte": "#753c19"
  },
@@ -3452,7 +3791,20 @@
   "lieu": "roshen-buru",
   "statut": "vivant",
   "resume": "Il se souvient d'une odeur âcre qui remontait des égouts autour de la maison de Tobiya.",
+  "citation": {
+   "texte": "Une odeur. Voilà ce dont je me souviens. Une odeur âcre, chimique, qui flottait autour de sa maison depuis une semaine.",
+   "qui": "Bhamir, marchand d'encens"
+  },
   "img": "img/pnj/bhamir.webp",
+  "relations": [
+   {
+    "cible": "tobiya",
+    "type": "voisin de",
+    "ton": "neutre",
+    "note": "Témoin de la maison de Tobiya.",
+    "inverse": "voisin de"
+   }
+  ],
   "attitude": "neutre",
   "teinte": "#753c19"
  },
@@ -3465,7 +3817,20 @@
   "lieu": "roshen-buru",
   "statut": "vivant",
   "resume": "Voisin de Tobiya, naïf. Il signale l'odeur infâme venue de sa maison.",
+  "citation": {
+   "texte": "Alors les gens se lavent pas beaucoup, ok, moi-même je prends un bain par mois, mais quand même !",
+   "qui": "Poki, l'idiot du coin"
+  },
   "img": "img/pnj/poki.webp",
+  "relations": [
+   {
+    "cible": "tobiya",
+    "type": "voisin de",
+    "ton": "neutre",
+    "note": "Témoin de la maison de Tobiya.",
+    "inverse": "voisin de"
+   }
+  ],
   "attitude": "neutre",
   "teinte": "#753c19"
  },
@@ -3484,6 +3849,14 @@
   ],
   "connu": [
    "!! Gran Brijit l'a tué sur-le-champ dans le laboratoire de Nolbrim, puis a aspiré son âme pour la donner à Nolbrim."
+  ],
+  "relations": [
+   {
+    "cible": "gran-brijit",
+    "type": "construct de",
+    "ton": "neutre",
+    "inverse": "a arraché"
+   }
   ],
   "attitude": "neutre"
  },
@@ -3594,7 +3967,22 @@
   "lieu": "camont",
   "statut": "vivant",
   "resume": "Passe à L'Abattoir, la taverne de Teka.",
-  "attitude": "neutre"
+  "relations": [
+   {
+    "cible": "helka-von-leyenmil",
+    "type": "même réseau du Voile que",
+    "ton": "positif",
+    "inverse": "même réseau du Voile que"
+   },
+   {
+    "cible": "teka",
+    "type": "client de",
+    "ton": "neutre",
+    "note": "Il passe à L'Abattoir, la taverne de Teka.",
+    "inverse": "hôtesse de"
+   }
+  ],
+  "attitude": "positif"
  },
  {
   "id": "orant-des-failles",
@@ -3605,6 +3993,10 @@
   "lieu": "agran",
   "statut": "vivant",
   "resume": "Il bénit les départs et planifie les routes sous-marines.",
+  "citation": {
+   "texte": "Les courants qui mènent à Thaladrassyl ne sont pas des routes. Ce sont des invitations. Et les invitations ne se forcent pas.",
+   "qui": "Uruukaysal, l'Orant de la Faille"
+  },
   "attitude": "neutre"
  },
  {
@@ -3616,6 +4008,14 @@
   "lieu": "port-doelan",
   "statut": "vivant",
   "resume": "Elle consigne les entrées, exige le dépôt des armes contre récépissé et aime les conversations polies.",
+  "relations": [
+   {
+    "cible": "garde-de-doelan",
+    "type": "collègue de",
+    "ton": "neutre",
+    "inverse": "collègue de"
+   }
+  ],
   "attitude": "neutre"
  },
  {
@@ -3770,6 +4170,14 @@
    }
   ],
   "img": "img/pnj/rory-cory.webp",
+  "relations": [
+   {
+    "cible": "eamonn",
+    "type": "a fourni les clous du cercle d'",
+    "ton": "neutre",
+    "inverse": "fournisseur du cercle de"
+   }
+  ],
   "attitude": "positif",
   "teinte": "#755219"
  },
@@ -3826,6 +4234,14 @@
    "Le Passeur d'Azuren Kai"
   ],
   "img": "img/pnj/obore.webp",
+  "relations": [
+   {
+    "cible": "clan-uramei",
+    "type": "passeur lié au réseau",
+    "ton": "neutre",
+    "inverse": "réseau de passeurs"
+   }
+  ],
   "attitude": "neutre",
   "teinte": "#753c19"
  },
@@ -3845,6 +4261,20 @@
    }
   ],
   "img": "img/pnj/doryo-kovacz.webp",
+  "relations": [
+   {
+    "cible": "harfang-tsuren",
+    "type": "reçoit comme délégué",
+    "ton": "neutre",
+    "inverse": "délégué par"
+   },
+   {
+    "cible": "clan-kovacz",
+    "type": "greffier du",
+    "ton": "neutre",
+    "inverse": "greffier du"
+   }
+  ],
   "attitude": "neutre",
   "teinte": "#753c19"
  },

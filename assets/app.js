@@ -4,7 +4,7 @@
 (() => {
 'use strict';
 
-const VER = '24';
+const VER = '26';
 const EDIT = new URLSearchParams(location.search).has('edit');
 const $ = (s, r = document) => r.querySelector(s);
 const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
@@ -228,7 +228,9 @@ function sceneOf(e, q, depth = 0) {
       if (!s && depth === 0) s = sceneOf(BY.istra, null, 1);
       if (s && (e.type === 'pnj' || e.type === 'pj') && depth === 0) {
         let gal = (e.galerie && e.galerie.length) ? e.galerie : (s.gallery || fallbackLand(e) || [PH_LAND]);
-        if (e.formes && e.formes.length > 1) {
+        if (e.etapes && e.etapes.length) {
+          gal = e.etapes.map(f => ({ img: f.fond || PH_LAND.img, ph: !f.fond, legende: f.label, cut: f }));
+        } else if (e.formes && e.formes.length > 1) {
           const bg = (f, d) => f.fond ? { img: f.fond, legende: '' } : d;
           gal = gal.map(g => ({ ...bg(e.formes[0], g), cut: e.formes[0] })).concat(e.formes.slice(1).map(f => ({ ...bg(f, gal[0]), cut: f })));
         }
@@ -444,7 +446,10 @@ function showGallery(imgs, title, ent) {
     g.querySelectorAll('.sl').forEach((s, i) => { s.classList.toggle('act', i === cur); });
     g.querySelectorAll('.gdots i').forEach((d, i) => d.classList.toggle('on', i === cur));
     const c = imgs[cur].cut;
-    $('.gt', g).textContent = [imgs[cur].legende, c && ent && ent.formes && ent.formes.length > 1 && c !== ent.formes[0] ? c.label : ''].filter(Boolean).join(', ');
+    if (ent && ent.etapes && c) {
+      $('.gt', g).textContent = `Étape ${cur + 1} sur ${imgs.length} : ${c.label}`;
+      panelEl.querySelectorAll('.etape').forEach((x, i) => x.classList.toggle('on', i === cur));
+    } else $('.gt', g).textContent = [imgs[cur].legende, c && ent && ent.formes && ent.formes.length > 1 && c !== ent.formes[0] ? c.label : ''].filter(Boolean).join(', ');
     if (ent && c) { S.curForm = c; S.curFormOf = ent.id; setCutout(ent, c); }
   };
   go(0);
@@ -611,6 +616,17 @@ function network(e) {
   };
   return grp('Alliés de', 'positif') + grp('Ennemis de', 'negatif') + grp('Autres liens', 'neutre');
 }
+function parcours(e) {
+  if (!e.etapes || !e.etapes.length) return '';
+  const pl = BY[e.lieu];
+  return '<ol class="parc">' + e.etapes.map((f, i) => {
+    const lp = f.lieu && BY[f.lieu] ? `<a href="#/${f.lieu}">${esc(BY[f.lieu].nom)}</a>` : (f.lieuNom ? esc(f.lieuNom) : '');
+    const last = i === e.etapes.length - 1;
+    const st = f.statut ? `<span class="pill ${esc(f.statut)}">${esc(f.statut === 'pj' ? 'joueur' : f.statut)}</span>` : '';
+    const at = f.attitude ? `<span class="pill att ${esc(f.attitude)}" title="${esc(ATT_TIP[f.attitude] || '')}">${esc(ATT_LABEL[f.attitude] || f.attitude)}</span>` : '';
+    return `<li class="etape${i === 0 ? ' on' : ''}${last ? ' now' : ''}" data-i="${i}"><div class="eh"><span class="en">${i + 1}</span><b>${esc(f.label)}</b>${last ? '<em>aujourd’hui</em>' : ''}</div>${lp ? `<div class="el">${lp}</div>` : ''}<div class="pills">${st}${at}</div><p>${L(f.texte || '', e.id)}</p></li>`;
+  }).join('') + '</ol>';
+}
 function sec(title, body, cls = '') { if (body) body = body.replace(/<li>!! /g, '<li class="key">'); return body ? `<section class="sec ${cls}"><h3>${esc(title)}</h3>${body}</section>` : ''; }
 const ul = (arr, id) => arr && arr.length ? '<ul>' + arr.map(t => `<li>${L(t, id)}</li>`).join('') + '</ul>' : '';
 function connuHtml(e) {
@@ -710,6 +726,7 @@ function renderPanel(e, q) {
   }
   if (e.type === 'evenement') { h += sec('Ce que le groupe sait', connuHtml(e)); h += sec('Ce qui s’est passé', ul(e.histoire, e.id), 'past'); }
   else h += sec('Ce que le groupe sait', savoirHtml(e));
+  if (e.etapes) h += sec('Parcours', parcours(e), 'parcsec');
   if (e.type === 'pj') h += sec('Enjeux et quête en cours', ul(e.histoire, e.id), 'past');
   if (e.question) h += sec('En suspens', `<p class="qs">${L(e.question, e.id)}</p>`);
   if (mp) { const sib = pnjsAt(mp).filter(x => x.id !== e.id); if (sib.length) h += sec('Aussi présents', `<div class="bubs">${sib.map(q2 => bubble(q2)).join('')}</div>`); }
@@ -738,6 +755,11 @@ function renderPanel(e, q) {
   h += '</div>';
   panelEl.innerHTML = h;
   panelEl.scrollTop = 0;
+  panelEl.querySelectorAll('.etape').forEach(li => li.addEventListener('click', ev => {
+    if (ev.target.closest('a')) return;
+    const d = S.gal && S.gal.querySelectorAll('.gdots i')[+li.dataset.i];
+    if (d) d.click();
+  }));
 
   // bulles : accordeon + silhouette sur la scene
   const box = $('#npcbox');

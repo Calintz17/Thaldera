@@ -1445,6 +1445,14 @@
    }
   ],
   "img": "img/pnj/pius.webp",
+  "relations": [
+   {
+    "cible": "absalom",
+    "type": "admire",
+    "ton": "neutre",
+    "inverse": "admirée par"
+   }
+  ],
   "attitude": "neutre",
   "teinte": "#755219"
  },
@@ -1499,6 +1507,22 @@
    }
   ],
   "img": "img/pnj/naevia.webp",
+  "relations": [
+   {
+    "cible": "jane-merigold",
+    "type": "volée par",
+    "ton": "negatif",
+    "note": "Jane garde la garde de l'épée brisée.",
+    "inverse": "a volé la Hache Étrange à"
+   },
+   {
+    "cible": "comatus",
+    "type": "chaîne du recel avec",
+    "ton": "neutre",
+    "note": "Elle les lames, lui le reste.",
+    "inverse": "chaîne du recel avec"
+   }
+  ],
   "attitude": "neutre",
   "lieu": "keras-tauroc",
   "teinte": "#755219"
@@ -2470,6 +2494,10 @@
     "ton": "positif"
    }
   ],
+  "citation": {
+   "texte": "Vous venez de là-haut ? Du dessus des courants ? Vous avez vu les Léviathans ?",
+   "qui": "Ink, à Agran"
+  },
   "formes": [
    {
     "img": "img/pnj/ink.webp",
@@ -3543,6 +3571,20 @@
    }
   ],
   "img": "img/pnj/vrakul.webp",
+  "relations": [
+   {
+    "cible": "philippa-rougetoison",
+    "type": "battu par",
+    "ton": "neutre",
+    "inverse": "a battu"
+   },
+   {
+    "cible": "jane-merigold",
+    "type": "battu par",
+    "ton": "neutre",
+    "inverse": "a battu"
+   }
+  ],
   "attitude": "neutre",
   "teinte": "#753c19"
  },
@@ -3567,6 +3609,15 @@
    }
   ],
   "img": "img/pnj/voshara.webp",
+  "relations": [
+   {
+    "cible": "philippa-rougetoison",
+    "type": "tuée par",
+    "ton": "negatif",
+    "note": "Seul meurtre de l'arène.",
+    "inverse": "a tué"
+   }
+  ],
   "attitude": "neutre",
   "teinte": "#753c19"
  },
@@ -3589,6 +3640,20 @@
    }
   ],
   "img": "img/pnj/peu-importe.webp",
+  "relations": [
+   {
+    "cible": "philippa-rougetoison",
+    "type": "battu par",
+    "ton": "neutre",
+    "inverse": "a battu"
+   },
+   {
+    "cible": "jane-merigold",
+    "type": "battu par",
+    "ton": "neutre",
+    "inverse": "a battu"
+   }
+  ],
   "attitude": "neutre",
   "teinte": "#753c19"
  },
@@ -3613,6 +3678,20 @@
    }
   ],
   "img": "img/pnj/gru-l.webp",
+  "relations": [
+   {
+    "cible": "philippa-rougetoison",
+    "type": "battu par",
+    "ton": "neutre",
+    "inverse": "a battu"
+   },
+   {
+    "cible": "jane-merigold",
+    "type": "battu par",
+    "ton": "neutre",
+    "inverse": "a battu"
+   }
+  ],
   "attitude": "ennemi",
   "teinte": "#755219"
  },
@@ -3639,6 +3718,15 @@
    }
   ],
   "img": "img/pnj/cordus.webp",
+  "relations": [
+   {
+    "cible": "absalom",
+    "type": "a conseillé",
+    "ton": "neutre",
+    "note": "Suivre le fleuve vers le nord.",
+    "inverse": "conseillée par"
+   }
+  ],
   "attitude": "neutre",
   "teinte": "#755219"
  },
@@ -3662,6 +3750,14 @@
    }
   ],
   "img": "img/pnj/lapidus.webp",
+  "relations": [
+   {
+    "cible": "absalom",
+    "type": "a renseigné",
+    "ton": "neutre",
+    "inverse": "renseignée par"
+   }
+  ],
   "attitude": "neutre",
   "teinte": "#753c19"
  },
@@ -3685,6 +3781,15 @@
    }
   ],
   "img": "img/pnj/grixus.webp",
+  "relations": [
+   {
+    "cible": "philippa-rougetoison",
+    "type": "a témoigné pour",
+    "ton": "positif",
+    "note": "Il parle parce que le groupe porte les Cornes d'Or.",
+    "inverse": "témoin de"
+   }
+  ],
   "attitude": "neutre",
   "teinte": "#755219"
  },
@@ -3706,40 +3811,6 @@
   "teinte": "#527519"
  },
  {
-  "id": "branak",
-  "type": "pnj",
-  "nom": "Branak",
-  "titre": "Client de Hématome",
-  "parent": "vieille-tannerie",
-  "lieu": "vieille-tannerie",
-  "statut": "vivant",
-  "resume": "Client qui commande des récupérations de colis au quai sud, selon le carnet de Hématome.",
-  "galerie": [
-   {
-    "img": "img/paysages/keras-tauroc/planque-hematome.webp",
-    "legende": "La vieille tannerie"
-   }
-  ],
-  "attitude": "neutre"
- },
- {
-  "id": "ossyk",
-  "type": "pnj",
-  "nom": "Ossyk",
-  "titre": "Client de Hématome",
-  "parent": "vieille-tannerie",
-  "lieu": "vieille-tannerie",
-  "statut": "vivant",
-  "resume": "Client qui a commandé une escorte discrète jusqu'à la porte nord, selon le carnet de Hématome.",
-  "galerie": [
-   {
-    "img": "img/paysages/keras-tauroc/planque-hematome.webp",
-    "legende": "La vieille tannerie"
-   }
-  ],
-  "attitude": "neutre"
- },
- {
   "id": "harak",
   "type": "pnj",
   "nom": "Harak",
@@ -3748,6 +3819,14 @@
   "lieu": "keras-tauroc",
   "statut": "vivant",
   "resume": "Nom dont une recommandation ouvre la boutique de Thessala.",
+  "relations": [
+   {
+    "cible": "thessala",
+    "type": "nom qui ouvre la boutique de",
+    "ton": "positif",
+    "inverse": "boutique ouverte sur recommandation de"
+   }
+  ],
   "attitude": "neutre"
  },
  {
@@ -3788,6 +3867,21 @@
     "label": "Homme de main 1",
     "lieux": [],
     "teinte": "#753c19"
+   }
+  ],
+  "relations": [
+   {
+    "cible": "calvinus-ferox",
+    "type": "payés par",
+    "ton": "negatif",
+    "inverse": "emploie"
+   },
+   {
+    "cible": "hematome",
+    "type": "poursuivent",
+    "ton": "negatif",
+    "note": "Ils voulaient reprendre son carnet.",
+    "inverse": "poursuivi par"
    }
   ],
   "attitude": "ennemi",
@@ -3838,6 +3932,14 @@
   "titre": "Roi du Dominion Sol",
   "parent": "dominion-sol",
   "resume": "Jeune roi, voix du Soleil sur terre. Son règne s'étend vite sur Thaldera.",
+  "relations": [
+   {
+    "cible": "dominion-sol",
+    "type": "roi du",
+    "ton": "neutre",
+    "inverse": "roi du"
+   }
+  ],
   "attitude": "ennemi"
  },
  {
@@ -3993,6 +4095,20 @@
   "parent": "leyenmil",
   "resume": "Noble de Leyenmil qui a fondé l'orphelinat sur ses deniers. Elle est morte peu après avoir engagé la Rectrice.",
   "statut": "mort",
+  "relations": [
+   {
+    "cible": "jane-merigold",
+    "type": "fondatrice de l'orphelinat de",
+    "ton": "positif",
+    "inverse": "orpheline de"
+   },
+   {
+    "cible": "la-rectrice",
+    "type": "a engagé",
+    "ton": "negatif",
+    "inverse": "engagée par"
+   }
+  ],
   "attitude": "neutre",
   "lieu": "leyenmil"
  },
@@ -4004,6 +4120,14 @@
   "parent": "leyenmil",
   "resume": "Le plus jeune des garçons, protégé par Soren comme un petit frère.",
   "img": "img/pnj/leyenmil-lukas.webp",
+  "relations": [
+   {
+    "cible": "soren",
+    "type": "protégé par",
+    "ton": "positif",
+    "inverse": "protège"
+   }
+  ],
   "attitude": "positif",
   "lieu": "leyenmil",
   "teinte": "#755219"
@@ -4925,7 +5049,7 @@
     "cible": "vespera-merigold",
     "type": "sert",
     "ton": "positif",
-    "inverse": "dirigée par"
+    "inverse": "patronne de"
    }
   ],
   "attitude": "neutre",
