@@ -1973,11 +1973,6 @@
     "cible": "aurelian-thorex",
     "type": "refuse sa propagande",
     "ton": "negatif"
-   },
-   {
-    "cible": "riminar",
-    "type": "invité par",
-    "ton": "positif"
    }
   ],
   "attitude": "positif",
@@ -2320,88 +2315,6 @@
    "y": 0.673
   },
   "accent": "#4aa7a3"
- },
- {
-  "id": "gallywix",
-  "type": "pnj",
-  "nom": "Gallywix",
-  "titre": "Prince-Marchand de Voros",
-  "parent": "voros",
-  "lieu": "voros",
-  "statut": "vivant",
-  "resume": "Assis sur un trône en forme de navire, il traite la neutralité comme une politique commerciale.",
-  "connu": [
-   "Il met la Griffe et le Voile sur le même plan.",
-   "On ne l'obtient que par le calcul d'équilibre, pas par la morale."
-  ],
-  "attitude": "neutre"
- },
- {
-  "id": "helka-von-leyenmil",
-  "type": "pnj",
-  "nom": "Helka von Leyenmil",
-  "titre": "Cheffe du Voile à Voros",
-  "parent": "voros",
-  "lieu": "voros",
-  "statut": "vivant",
-  "resume": "Ex-landsknecht d'Altéra, repentie, devenue cheffe du Voile local.",
-  "connu": [
-   "Elle décrit la Griffe comme une meute de cinq, soigneur et arcaniste compris : « tu touches à un, t'en as quatre autres. »",
-   "Olyssane garde un ressentiment de guerre contre elle."
-  ],
-  "relations": [
-   {
-    "cible": "skrell",
-    "type": "cheffe du Voile",
-    "ton": "positif"
-   }
-  ],
-  "attitude": "positif"
- },
- {
-  "id": "skrell",
-  "type": "pnj",
-  "nom": "Skrell",
-  "titre": "Relais du Voile et trafiquant",
-  "parent": "voros",
-  "lieu": "voros",
-  "statut": "mort",
-  "resume": "Tabaxi au cerveau défoncé par le Suud, qui mâche une racine dans les bains.",
-  "connu": [
-   "Une lettre de Lavande le liait au réseau du Voile."
-  ],
-  "histoire": [
-   "Helka et Philippa le tuent au fond de sa planque."
-  ],
-  "attitude": "neutre"
- },
- {
-  "id": "bernard",
-  "type": "pnj",
-  "nom": "Bernard",
-  "titre": "Goliath druide symbiotique",
-  "parent": "voros",
-  "lieu": "voros",
-  "statut": "inconnu",
-  "resume": "Goliath couvert de champignons, qui ne parle jamais. Retourné vivre dans les sources chaudes.",
-  "connu": [
-   "Helka l'a présenté à Philippa, avec affection."
-  ],
-  "attitude": "neutre"
- },
- {
-  "id": "vano-meredzi",
-  "type": "pnj",
-  "nom": "Vano Meredzi",
-  "titre": "Capitaine de l'Aile d'Avalon",
-  "parent": "voros",
-  "lieu": "voros",
-  "statut": "vivant",
-  "resume": "Ancien corsaire de Havre Noir devenu indépendant à Voros.",
-  "connu": [
-   "Son navire a mené le groupe de Lunsk à Voros, en 3 jours et demi, malgré une tempête et des nagas."
-  ],
-  "attitude": "neutre"
  },
  {
   "id": "lunsk",
@@ -3259,14 +3172,7 @@
    }
   ],
   "img": "img/pnj/port-doe-lan-matthias-holbrekt-mort.webp",
-  "relations": [
-   {
-    "cible": "arkhavel-dorn",
-    "type": "mandaté par",
-    "ton": "positif",
-    "inverse": "a mandaté"
-   }
-  ],
+  "relations": [],
   "attitude": "neutre",
   "teinte": "#753c19"
  },
@@ -4536,12 +4442,6 @@
     "type": "même réseau du Voile que",
     "ton": "positif",
     "inverse": "même réseau du Voile que"
-   },
-   {
-    "cible": "helka-von-leyenmil",
-    "type": "même réseau du Voile que",
-    "ton": "positif",
-    "inverse": "même réseau du Voile que"
    }
   ],
   "attitude": "positif",
@@ -5263,25 +5163,6 @@
   "attitude": "neutre"
  },
  {
-  "id": "arkhavel-dorn",
-  "type": "pnj",
-  "nom": "Arkhavel Dorn",
-  "titre": "Intendant des Compagnies Impériales",
-  "parent": "port-doelan",
-  "lieu": "port-doelan",
-  "statut": "inconnu",
-  "resume": "Signataire de la lettre de mission confiée à Matthias Holbrekt, au nom de l'Impératrice Eryndel d'Altéra.",
-  "relations": [
-   {
-    "cible": "eryndel",
-    "type": "sert",
-    "ton": "positif",
-    "inverse": "servi par"
-   }
-  ],
-  "attitude": "neutre"
- },
- {
   "id": "rue-marchande-doelan",
   "type": "lieu",
   "nom": "La rue marchande",
@@ -5425,7 +5306,7 @@
   "nom": "Tina et Nina",
   "titre": "Gardes de Vespera, anciennes de la maison",
   "parent": "maison-de-vespera",
-  "lieu": "maison-de-vespera",
+  "lieu": "camp-de-vespera",
   "statut": "vivant",
   "resume": "Deux sœurs prostituées à la maison de Vespera avant la chute de Spezza. Elles gardent désormais Madame en armures de fortune.",
   "img": "img/pnj/tina-nina-garde-de-port-doelan.webp",
@@ -5915,7 +5796,7 @@
   "nom": "Kralik",
   "titre": "Guerrier wererat",
   "parent": "terrier-de-malka",
-  "lieu": "terrier-de-malka",
+  "lieu": "camp-de-vespera",
   "statut": "vivant",
   "resume": "Veut attaquer immédiatement et reprendre ce qui est à eux.",
   "galerie": [
@@ -5946,7 +5827,7 @@
   "nom": "Nesk",
   "titre": "Guerrier wererat",
   "parent": "terrier-de-malka",
-  "lieu": "terrier-de-malka",
+  "lieu": "camp-de-vespera",
   "statut": "vivant",
   "resume": "Veut du sang, avec Kralik.",
   "galerie": [
@@ -6673,14 +6554,7 @@
     "legende": "L'épave du Grauwacht"
    }
   ],
-  "relations": [
-   {
-    "cible": "voryn-kael",
-    "type": "escorte le vaisseau de",
-    "ton": "positif",
-    "inverse": "escorté par"
-   }
-  ],
+  "relations": [],
   "attitude": "neutre"
  },
  {
@@ -6695,25 +6569,6 @@
    "Un matelot nommé Renault y a signalé un son grave venu des profondeurs."
   ],
   "chapeau": "Une épave appuyée contre la paroi, comme quelque chose qui aurait renoncé à tomber. Mâts brisés couverts de coraux noirs et de varech, bois gorgé de siècles. Quelques coraux bioluminescents, à la lumière froide et irrégulière. L'eau est immobile, trop immobile."
- },
- {
-  "id": "voryn-kael",
-  "type": "pnj",
-  "nom": "Voryn Kael",
-  "titre": "Capitaine de l'Astariel",
-  "parent": "epave-de-l-astariel",
-  "lieu": "epave-de-l-astariel",
-  "statut": "mort",
-  "resume": "Commandant de la Troisième Expédition des Profondeurs sous mandat de l'Impératrice Eryndel. Il a consigné la mission de porter le fragment au fond.",
-  "relations": [
-   {
-    "cible": "eryndel",
-    "type": "mandaté par",
-    "ton": "neutre",
-    "inverse": "mandate"
-   }
-  ],
-  "attitude": "neutre"
  },
  {
   "id": "ossyraal",
@@ -6746,14 +6601,7 @@
     "teinte": "#197552"
    }
   ],
-  "relations": [
-   {
-    "cible": "voryn-kael",
-    "type": "a pris possession de l'épave de",
-    "ton": "neutre",
-    "inverse": "épave occupée par"
-   }
-  ],
+  "relations": [],
   "attitude": "ennemi",
   "teinte": "#196975"
  },
@@ -7755,31 +7603,6 @@
   "resume": "Deux gardes à l'entrée, possiblement un troisième en patrouille latérale."
  },
  {
-  "id": "frere-septim",
-  "type": "pnj",
-  "nom": "Frère Septim",
-  "titre": "Frère supérieur",
-  "parent": "temple-brumeux",
-  "lieu": "temple-brumeux",
-  "statut": "mort",
-  "resume": "Auteur du journal du temple. Il écrit qu'en ramenant tout le monde ici, les moines ont commis une erreur.",
-  "relations": [
-   {
-    "cible": "frere-augustus-carrow",
-    "type": "frère du temple avec",
-    "ton": "neutre",
-    "inverse": "frère du temple avec"
-   },
-   {
-    "cible": "barakel",
-    "type": "victime de",
-    "ton": "negatif",
-    "inverse": "a corrompu"
-   }
-  ],
-  "attitude": "neutre"
- },
- {
   "id": "statues-gardiennes-lathandre",
   "type": "pnj",
   "nom": "Les statues de Lathandre",
@@ -8170,16 +7993,5 @@
   "alias": [
    "Ashvûr-tesh"
   ]
- },
- {
-  "id": "riminar",
-  "type": "pnj",
-  "nom": "Riminar",
-  "titre": "Conservateur du musée Spezza",
-  "parent": "port-doelan",
-  "resume": "Il a invité Umberto Hevalan à un séminaire de recherche à Port Doëlan.",
-  "statut": "inconnu",
-  "attitude": "neutre",
-  "lieu": "port-doelan"
  }
 ]

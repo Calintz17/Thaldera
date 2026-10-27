@@ -32,7 +32,7 @@
    "Le groupe traverse la mer d'Émeraude à bord d'un sous-marin de coque pyrracier, piloté par des nains de chantier menés par Brise-Montagne.",
    "Il débarque à Brakka, les derniers mètres à la nage, et le sous-marin plonge derrière lui.",
    "Il remonte ensuite les steppes rouges jusqu'à Keras Tauroc, gagne le festival des Cornes Rouges, perd un mois de mémoire, puis descend la Khor Selash jusqu'à Cap Cornes.",
-   "Un portail est ouvert à Cap Cornes vers Port Doëlan. Le groupe repart vers le nord, traverse la forêt d'Aruzen depuis Azuren Kai et arrive à Roshen Buru."
+   "Un portail est ouvert à Cap Cornes vers Port Doëlan. Le groupe repart vers le nord, traverse la forêt d'Azuren depuis Azuren Kai et arrive à Roshen Buru."
   ],
   "blason": "img/blasons/vide.svg"
  },
@@ -428,11 +428,6 @@
     "cible": "roven-moto",
     "type": "Ancien supérieur",
     "ton": "negatif"
-   },
-   {
-    "cible": "thibwick-rumple",
-    "type": "Ami",
-    "ton": "positif"
    },
    {
     "cible": "havoc-tsuren",

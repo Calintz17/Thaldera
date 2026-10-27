@@ -2580,11 +2580,6 @@
   ],
   "relations": [
    {
-    "cible": "ajaw-tzobal",
-    "type": "Grand Prêtre",
-    "ton": "neutre"
-   },
-   {
     "cible": "tobiya",
     "type": "Araignées",
     "ton": "negatif"
@@ -2974,20 +2969,6 @@
   ]
  },
  {
-  "id": "ajaw-tzobal",
-  "type": "pnj",
-  "nom": "Ajaw Tzobal",
-  "titre": "Grand Prêtre de Balamor",
-  "parent": "tzalanar",
-  "statut": "vivant",
-  "resume": "Réside à Tzalanar. Inaccessible en pratique.",
-  "connu": [
-   "Son autorité est avant tout religieuse."
-  ],
-  "attitude": "neutre",
-  "lieu": "tzalanar"
- },
- {
   "id": "there-duun",
   "type": "region",
   "nom": "There'Duun",
@@ -3017,13 +2998,7 @@
    "Dieu Moradin : forge, connaissance, tradition. There'Duun archive tout depuis des millénaires.",
    "Avec Roshen Buru, la relation est neutre et distante, sans conflit historique."
   ],
-  "relations": [
-   {
-    "cible": "valdain-there-duun",
-    "type": "Roi",
-    "ton": "neutre"
-   }
-  ],
+  "relations": [],
   "poly": [
    [
     0.143,
@@ -3346,19 +3321,6 @@
   "connu": [
    "Les nains y reçoivent les étrangers mais n'ouvrent jamais leur capitale."
   ]
- },
- {
-  "id": "valdain-there-duun",
-  "type": "pnj",
-  "nom": "Valdain There'Duun",
-  "titre": "Roi de There'Duun",
-  "parent": "there-duun",
-  "statut": "vivant",
-  "resume": "Personne d'extérieur ne l'a jamais rencontré.",
-  "connu": [
-   "Il envoie des représentants à La Rencontre."
-  ],
-  "attitude": "neutre"
  },
  {
   "id": "catacombes-de-kord",
@@ -3763,25 +3725,6 @@
   "teinte": "#527519"
  },
  {
-  "id": "harak",
-  "type": "pnj",
-  "nom": "Harak",
-  "titre": "Marchand de Keras Tauroc",
-  "parent": "keras-tauroc",
-  "lieu": "keras-tauroc",
-  "statut": "vivant",
-  "resume": "Nom dont une recommandation ouvre la boutique de Thessala.",
-  "relations": [
-   {
-    "cible": "thessala",
-    "type": "nom qui ouvre la boutique de",
-    "ton": "positif",
-    "inverse": "boutique ouverte sur recommandation de"
-   }
-  ],
-  "attitude": "neutre"
- },
- {
   "id": "hommes-de-main-de-ferox",
   "type": "pnj",
   "nom": "Les hommes de main de Ferox",
@@ -3876,23 +3819,6 @@
   "titre": "Septième cercle des Enfers, la Ruine",
   "parent": "vitiosa",
   "resume": "Cercle de la Ruine. Vitiosa en est originaire et s'est révélée démone de ce cercle."
- },
- {
-  "id": "sol-regem",
-  "type": "pnj",
-  "nom": "Sol Regem",
-  "titre": "Roi du Dominion Sol",
-  "parent": "dominion-sol",
-  "resume": "Jeune roi, voix du Soleil sur terre. Son règne s'étend vite sur Thaldera.",
-  "relations": [
-   {
-    "cible": "dominion-sol",
-    "type": "roi du",
-    "ton": "neutre",
-    "inverse": "roi du"
-   }
-  ],
-  "attitude": "ennemi"
  },
  {
   "id": "villes-du-dominion",
@@ -4012,32 +3938,6 @@
   "titre": "Garde de la Ville Haute de Camont",
   "parent": "camont",
   "resume": "Garde qui protège la Ville Haute. Jane a dû en abattre plusieurs lors d'un vol dans son passé."
- },
- {
-  "id": "larme-et-cils",
-  "type": "pnj",
-  "nom": "Larme et Cils",
-  "titre": "Membres des Yeux connus de Jane",
-  "parent": "les-yeux",
-  "resume": "Deux mutants du clan des Yeux de Camont que Jane connaît.",
-  "alias": [
-   "Larme",
-   "Cils"
-  ],
-  "relations": [
-   {
-    "cible": "iris",
-    "type": "membres des Yeux",
-    "ton": "positif",
-    "inverse": "cheffe de"
-   },
-   {
-    "cible": "jane-merigold",
-    "type": "connus de",
-    "ton": "positif"
-   }
-  ],
-  "attitude": "positif"
  },
  {
   "id": "lukas",
@@ -4254,9 +4154,10 @@
  {
   "id": "foret-d-aruzen",
   "type": "ville",
-  "nom": "La forêt d'Aruzen",
+  "nom": "La forêt d'Azuren",
   "alias": [
    "Forêt d'Azuren",
+   "Azuren",
    "Forêt d'Aruzen"
   ],
   "titre": "Entre Roshen Buru et Azuren Kai",
@@ -4276,7 +4177,14 @@
     "img": "img/paysages/azuren-kai/foret-sorenka.webp",
     "legende": "La traversée de la forêt"
    }
-  ]
+  ],
+  "connu": [
+   "La route de Roshen Buru passe par cette forêt, cernée d'un océan de sakura.",
+   "Le groupe l'a traversée depuis Azuren Kai pour être plus discret.",
+   "Forêt dense qui entoure Roshen Buru. Le groupe l'a traversée pour éviter Seiran Vale."
+  ],
+  "histoire": [],
+  "chapeau": "Une forêt dense qui entoure Roshen Buru, cernée d'un océan de sakura. La route passe par là, loin des postes de garde et des regards."
  },
  {
   "id": "route-keras-tauroc-cap-cornes",
@@ -4541,7 +4449,7 @@
   "id": "nubbe",
   "type": "pnj",
   "nom": "La Nubbé",
-  "titre": "Créature de la forêt d'Aruzen",
+  "titre": "Créature de la forêt d'Azuren",
   "parent": "foret-d-aruzen",
   "lieu": "foret-d-aruzen",
   "statut": "inconnu",
@@ -4552,13 +4460,13 @@
   "resume": "Petite racine tordue au visage creusé, couronnée d'une fleur jaune.",
   "connu": [
    "Une petite racine tordue au visage creusé, couronnée d'une fleur jaune, qui grignote tout ce qui lui passe sous la main, pas forcément des pousses.",
-   "Les Nubbés sont connues pour habiter la forêt d'Aruzen, en bordure de Rochenborough.",
+   "Les Nubbés sont connues pour habiter la forêt d'Azuren, en bordure de Rochenborough.",
    "Les joueurs ont rencontré une Nubbé. Philippa en a cueilli une avec sa main spectrale."
   ],
   "scenar": {
    "titre": "Où en est le scénario",
    "texte": [
-    "Rencontre dans la forêt d'Aruzen, sur la route de Rochenborough.",
+    "Rencontre dans la forêt d'Azuren, sur la route de Rochenborough.",
     "Philippa a cueilli une Nubbé de sa main spectrale. La créature est restée neutre envers le groupe."
    ]
   },
@@ -4569,12 +4477,12 @@
   "id": "sorenka",
   "type": "pnj",
   "nom": "Sorenka",
-  "titre": "Fée de la forêt d'Aruzen",
+  "titre": "Fée de la forêt d'Azuren",
   "parent": "foret-d-aruzen",
   "lieu": "foret-d-aruzen",
   "statut": "inconnu",
   "img": "img/pnj/sorenka.webp",
-  "resume": "Créature des bois croisée dans la forêt d'Aruzen.",
+  "resume": "Créature des bois croisée dans la forêt d'Azuren.",
   "connu": [
    "Maigre, les cheveux noirs et le front couronné de bois, vêtue de feuilles. Une fumée violette tourbillonne autour d'elle."
   ],
@@ -4706,6 +4614,28 @@
   ],
   "attitude": "neutre",
   "teinte": "#753c19"
+ },
+ {
+  "id": "camp-de-vespera",
+  "type": "lieu",
+  "nom": "Le camp de Vespera",
+  "titre": "Le chantier de Port Doëlan, au pied des gravats",
+  "parent": "port-doelan",
+  "resume": "Vespera reçoit le groupe sur le chantier, cordiale mais occupée. La ville est à elle, l'accueil est bon, la situation reste fragile.",
+  "chapeau": "Port Doëlan se relève à mains nues. Partout des équipes déblaient les gravats, charrient des poutres noircies, et la poussière de pierre flotte dans la lumière rase du couchant. L'odeur de bois brûlé n'a pas tout à fait quitté les ruelles, mêlée au sel et au varech que le vent remonte du port. En bas, les quais sont une forêt de carcasses de bateaux, coques éventrées, mâts rompus, et l'eau clapote entre les épaves. Au milieu des décombres, assise sur un bloc de maçonnerie comme sur un trône de fortune, Vespera observe le chantier sans un mot. Autour d'elle veillent des silhouettes en armures bricolées, haches et épées au clair, et deux hommes-rats aux aguets qui reniflent le vent. On la salue de loin, on baisse la voix en passant. Ici, c'est elle qu'on écoute, maintenant.",
+  "connu": [
+   "Sa garde : Tina et Nina, anciennes prostituées en armures de fortune, et les wererats Kralik et Nesk, libérés par le groupe, qui patrouillent la ville.",
+   "Des mercenaires sous pavillon inconnu rôdent autour de la ville. Elle ne sait pas qui les paie. L'un de ses hommes envoyé fouiller du côté de Leyenmill n'est pas revenu.",
+   "Le pacte avec l'Aile d'Argent a fait entrer des capitaux, très loin de ce qu'il faudrait. La ville est au chômage, la flotte en miettes.",
+   "Elle a échangé avec Sycomore, et avec un ambassadeur de Rivegard qui presse Sycomore de lâcher Port Doëlan.",
+   "Elle attend que l'Arshen soit livré à Cap Cornes pour relancer le commerce. Sans navires, pas d'économie.",
+   "Elle est allée à Cap Cornes et y a croisé le mage Eamonn, qu'elle juge drogué jusqu'aux yeux. Ses charmes ont mal pris sur lui."
+  ],
+  "nofusion": true,
+  "citation": {
+   "texte": "Mes renverseuses de despote préférées ! Les voici ! On leur doit la ruine de Spezza, et c'est pas rien !",
+   "qui": "Vespera"
+  }
  },
  {
   "id": "temple-de-valkur",

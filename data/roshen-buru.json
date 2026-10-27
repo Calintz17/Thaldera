@@ -17,11 +17,11 @@
    "Maison Miren-Buru",
    "maison verte",
    "Miren-Buru",
-   "forêt d'Aruzen",
-   "Aruzen"
+   "forêt d'Azuren",
+   "Azuren"
   ],
   "ordre": 0,
-  "resume": "Le pays des Mirenaï, protégé par Mélora, autour de la forêt d'Aruzen et de la cité des cerisiers roses.",
+  "resume": "Le pays des Mirenaï, protégé par Mélora, autour de la forêt d'Azuren et de la cité des cerisiers roses.",
   "connu": [
    "La maison verte Miren-Buru est gouvernée par la Gardienne Anaru Miren-Buru, championne de Mélora.",
    "Ses villes sont Roshen Buru, Azuren Kai et Seiran Vale. Azuren Kai est le port, Seiran Vale la porte terrestre.",
@@ -504,15 +504,15 @@
     "legende": "Le canal la nuit"
    }
   ],
-  "resume": "Ville-port mirenaï ouverte aux étrangers, dernier ravitaillement avant la forêt d'Aruzen.",
+  "resume": "Ville-port mirenaï ouverte aux étrangers, dernier ravitaillement avant la forêt d'Azuren.",
   "connu": [
    "Un port ouvert, vivant et cosmopolite, plus tourné vers le commerce extérieur que le reste du territoire Miren-Buru.",
-   "C'est le dernier point de ravitaillement avant la forêt d'Aruzen et la route de Roshen Buru.",
+   "C'est le dernier point de ravitaillement avant la forêt d'Azuren et la route de Roshen Buru.",
    "La garde laisse passer les étrangers sans contrôle particulier."
   ],
   "histoire": [
    "Le groupe arrive par le port, juste après Cap Cornes, avec l'accusation du meurtre d'Otoba sur le dos.",
-   "Il choisit de passer par la forêt d'Aruzen plutôt que par Seiran Vale pour rester discret.",
+   "Il choisit de passer par la forêt d'Azuren plutôt que par Seiran Vale pour rester discret.",
    "Au Ryokan de Noshka, il affronte Kirin Anadori et le tue dans une ruelle."
   ],
   "cartes": [
@@ -700,33 +700,6 @@
   "teinte": "#196975"
  },
  {
-  "id": "foret-aruzen",
-  "type": "lieu",
-  "nom": "La forêt d'Aruzen",
-  "titre": "Entre Azuren Kai et Roshen Buru",
-  "parent": "region-roshen-buru",
-  "pos": {
-   "x": 0.69,
-   "y": 0.365
-  },
-  "galerie": [
-   {
-    "img": "img/azuren-kai/lieux/foret.webp",
-    "legende": "Sous la canopée"
-   },
-   {
-    "img": "img/azuren-kai/lieux/fleuve-cerisiers.webp",
-    "legende": "Le fleuve et les cerisiers"
-   }
-  ],
-  "resume": "Forêt dense qui entoure Roshen Buru. Le groupe l'a traversée pour éviter Seiran Vale.",
-  "connu": [
-   "La route de Roshen Buru passe par cette forêt, cernée d'un océan de sakura.",
-   "Le groupe l'a traversée depuis Azuren Kai pour être plus discret."
-  ],
-  "chapeau": "Une forêt dense qui entoure Roshen Buru, cernée d'un océan de sakura. La route passe par là, loin des postes de garde et des regards."
- },
- {
   "id": "seiran-vale",
   "type": "ville",
   "nom": "Seiran Vale",
@@ -813,7 +786,7 @@
     "legende": "Ville haute, palais et temple du Tenraku"
    }
   ],
-  "resume": "Cité sacrée des Mirenaï, bâtie dans une cuvette de la forêt d'Aruzen. Magistrature en bas, palais de la Gardienne en haut.",
+  "resume": "Cité sacrée des Mirenaï, bâtie dans une cuvette de la forêt d'Azuren. Magistrature en bas, palais de la Gardienne en haut.",
   "connu": [
    "La ville fonctionne avec deux pouvoirs. La Magistrature gère le quotidien avec une ferveur administrative sans égal. Le palais de la Gardienne pilote la politique extérieure et la religion.",
    "La ville haute abrite les cinq clans nobles : Tsuren, Kovacz, Anadori, Urameï et Siharen. La ville basse rassemble le peuple et les marchands.",
@@ -1978,11 +1951,6 @@
     "cible": "tribunal-de-chair",
     "type": "Envoie",
     "ton": "negatif"
-   },
-   {
-    "cible": "thibwick-rumple",
-    "type": "Fait espionner",
-    "ton": "negatif"
    }
   ],
   "lieu": "palais-miren-buru",
@@ -2046,37 +2014,6 @@
    "qui": "Gikyo Noshi Buru"
   },
   "attitude": "ennemi"
- },
- {
-  "id": "thibwick-rumple",
-  "type": "pnj",
-  "nom": "Thibwick Rumple",
-  "titre": "Inventeur, ami nain de Harfang",
-  "parent": "roshen-buru",
-  "statut": "vivant",
-  "alias": [
-   "Thibwick"
-  ],
-  "resume": "Inventeur nain qui a participé aux défenses de la ville. La Protectrice le fait espionner.",
-  "connu": [
-   "Harfang l'a rencontré à Valedorn.",
-   "Il a participé à construire les mécanismes de défense de Roshen Buru. La Protectrice le fait espionner, et son espion recommande de ne pas le tuer pour cette raison.",
-   "Sa capture semble privilégiée."
-  ],
-  "relations": [
-   {
-    "cible": "harfang-tsuren",
-    "type": "Ami",
-    "ton": "positif"
-   },
-   {
-    "cible": "neryn-yosa",
-    "type": "Surveillé par",
-    "ton": "negatif"
-   }
-  ],
-  "lieu": "atelier-thibwick",
-  "attitude": "positif"
  },
  {
   "id": "tessei-kanae",
@@ -3064,21 +3001,6 @@
   "teinte": "#755219"
  },
  {
-  "id": "atelier-thibwick",
-  "type": "lieu",
-  "nom": "L'atelier de Thibwick",
-  "titre": "Atelier d'inventeur nain",
-  "parent": "roshen-buru",
-  "resume": "Atelier du nain Thibwick Rumple.",
-  "pos": {
-   "x": 0.25,
-   "y": 0.3
-  },
-  "carte": "ville",
-  "zoom": 0.12,
-  "chapeau": "L'atelier de Thibwick Rumple, nain et ami de Harfang Tsuren."
- },
- {
   "id": "orashay",
   "type": "pnj",
   "nom": "Maître Orashay",
@@ -3128,25 +3050,6 @@
   "img": "img/pnj/tasseren.webp",
   "attitude": "neutre",
   "teinte": "#752519"
- },
- {
-  "id": "oryo-takashen",
-  "type": "pnj",
-  "nom": "Oryo Takashen",
-  "titre": "Chambellan",
-  "parent": "roshen-buru",
-  "lieu": "palais-miren-buru",
-  "statut": "vivant",
-  "resume": "Chambellan du palais de la Gardienne.",
-  "relations": [
-   {
-    "cible": "anaru-miren-buru",
-    "type": "chambellan d'",
-    "ton": "positif",
-    "inverse": "chambellan de"
-   }
-  ],
-  "attitude": "neutre"
  },
  {
   "id": "doku",
@@ -3494,14 +3397,7 @@
    "qui": "Muji, sur le seuil"
   },
   "img": "img/pnj/muji.webp",
-  "relations": [
-   {
-    "cible": "sabo",
-    "type": "se dit mariée à",
-    "ton": "neutre",
-    "inverse": "marié à"
-   }
-  ],
+  "relations": [],
   "attitude": "neutre",
   "teinte": "#753c19"
  },
@@ -3529,20 +3425,6 @@
   ],
   "attitude": "neutre",
   "teinte": "#755219"
- },
- {
-  "id": "sabo",
-  "type": "pnj",
-  "nom": "Sabō",
-  "titre": "Magistrat de Seiran Vale",
-  "parent": "seiran-vale",
-  "lieu": "seiran-vale",
-  "statut": "vivant",
-  "resume": "Magistrat de Seiran Vale, dont la route commerciale navigable est bloquée.",
-  "alias": [
-   "Sabo"
-  ],
-  "attitude": "neutre"
  },
  {
   "id": "boutique-de-soko",
@@ -3606,25 +3488,6 @@
     "type": "père de",
     "ton": "positif",
     "inverse": "enfant de"
-   }
-  ],
-  "attitude": "neutre"
- },
- {
-  "id": "stryge",
-  "type": "pnj",
-  "nom": "Stryge",
-  "titre": "Cohabitant de Harfang",
-  "parent": "roshen-buru",
-  "lieu": "roshen-buru",
-  "statut": "vivant",
-  "resume": "Maître Mishta demande à Harfang comment se passe la cohabitation avec lui.",
-  "relations": [
-   {
-    "cible": "harfang-tsuren",
-    "type": "cohabite avec",
-    "ton": "neutre",
-    "inverse": "cohabite avec"
    }
   ],
   "attitude": "neutre"
@@ -3893,12 +3756,6 @@
   "resume": "Passe à L'Abattoir, la taverne de Teka.",
   "relations": [
    {
-    "cible": "helka-von-leyenmil",
-    "type": "même réseau du Voile que",
-    "ton": "positif",
-    "inverse": "même réseau du Voile que"
-   },
-   {
     "cible": "teka",
     "type": "client de",
     "ton": "neutre",
@@ -4133,7 +3990,7 @@
   "parent": "azuren-kai",
   "lieu": "azuren-kai",
   "statut": "vivant",
-  "resume": "Il observait le carnage du ryokan. Il vend une carte de la forêt d'Aruzen qui évite patrouilles et regards, 500 po.",
+  "resume": "Il observait le carnage du ryokan. Il vend une carte de la forêt d'Azuren qui évite patrouilles et regards, 500 po.",
   "alias": [
    "Obore",
    "Le Passeur d'Azuren Kai"
