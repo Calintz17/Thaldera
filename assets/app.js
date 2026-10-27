@@ -4,7 +4,7 @@
 (() => {
 'use strict';
 
-const VER = '10';
+const VER = '11';
 const EDIT = new URLSearchParams(location.search).has('edit');
 const $ = (s, r = document) => r.querySelector(s);
 const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
@@ -218,7 +218,8 @@ function sceneOf(e, q, depth = 0) {
       if (s && (e.type === 'pnj' || e.type === 'pj') && depth === 0) {
         let gal = (e.galerie && e.galerie.length) ? e.galerie : (s.gallery || fallbackLand(e) || [PH_LAND]);
         if (e.formes && e.formes.length > 1) {
-          gal = gal.map(g => ({ ...g, cut: e.formes[0] })).concat(e.formes.slice(1).map(f => ({ ...gal[0], cut: f })));
+          const bg = (f, d) => f.fond ? { img: f.fond, legende: '' } : d;
+          gal = gal.map(g => ({ ...bg(e.formes[0], g), cut: e.formes[0] })).concat(e.formes.slice(1).map(f => ({ ...bg(f, gal[0]), cut: f })));
         }
         s = { ...s, gallery: gal, cutout: e };
       }
@@ -240,7 +241,7 @@ function fallbackLand(e) {
   const chainUp = [];
   if (e.lieu && BY[e.lieu]) chainUp.push(...chain(BY[e.lieu]).reverse());
   chainUp.push(...chain(e).reverse().slice(1));
-  for (const x of chainUp) if (x.galerie && x.galerie.length) return x.galerie;
+  for (const x of chainUp) if (x.galerie && x.galerie.length) return x.type === 'ville' ? [x.galerie[0]] : x.galerie;
   return null;
 }
 function frameOf(k, solo) {
@@ -419,9 +420,13 @@ function showGallery(imgs, title, ent) {
   clearGal(true);
   const g = document.createElement('div');
   g.className = 'gal';
-  g.innerHTML = imgs.map((im, i) => `<div class="sl${i === 0 ? ' act' : ''}"><img src="${im.img}" alt="${esc(im.legende || title || '')}"></div>`).join('') +
+  g.innerHTML = imgs.map((im, i) => `<div class="sl${i === 0 ? ' act' : ''}" style="--bg:url('${new URL(im.img, location.href).href}')"><img src="${im.img}" alt="${esc(im.legende || title || '')}"></div>`).join('') +
     `<div class="gcap"><span class="gt"></span>${imgs.length > 1 ? '<div class="gdots">' + imgs.map((_, i) => `<i data-i="${i}"${i === 0 ? ' class="on"' : ''}></i>`).join('') + '</div><div class="gnav"><button data-d="-1" aria-label="Précédente">‹</button><button data-d="1" aria-label="Suivante">›</button></div>' : ''}</div>`;
   stageEl.insertBefore(g, $('.fog', stageEl));
+  g.querySelectorAll('.sl img').forEach(im => {
+    const fit = () => { if (im.naturalWidth) im.style.maxWidth = Math.min(stageEl.clientWidth, im.naturalWidth * 1.4) + 'px'; };
+    if (im.complete) fit(); else im.addEventListener('load', fit);
+  });
   let cur = 0;
   const go = n => {
     cur = (n + imgs.length) % imgs.length;
@@ -475,6 +480,9 @@ function setCutout(e, form) {
   c.className = 'cutout' + (src ? '' : ' ph');
   c.innerHTML = `<img src="${src || PH_SIL}" alt="${esc(e.nom)}"><span class="cn">${esc(e.nom)}</span>`;
   stageEl.insertBefore(c, $('.fog', stageEl));
+  const ci = $('img', c);
+  const cfit = () => { if (ci.naturalHeight && src) ci.style.maxHeight = Math.min(stageEl.clientHeight * 0.88, ci.naturalHeight * 1.3) + 'px'; };
+  if (ci.complete) cfit(); else ci.addEventListener('load', cfit);
   S.cut = ck;
 }
 function renderCap(sc, entry) {
@@ -485,7 +493,7 @@ function renderCap(sc, entry) {
     h += sc.tabs.map((t, i) => `<a class="tab${i === sc.tab ? ' on' : ''}" data-sheet="${i}" href="#/${sc.owner.id}">${esc(t.legende || 'Carte ' + (i + 1))}</a>`).join('');
   } else if (sc && sc.tabs && sc.tabs.length > 1) {
     h += sc.tabs.map((t, i) => `<a class="tab${i === sc.tab ? ' on' : ''}" href="#/${sc.owner.id}${i ? '?c=' + i : ''}">${esc(t.legende || 'Carte ' + (i + 1))}</a>`).join('');
-  } else if (sc && sc.tabs && sc.tabs[0] && sc.tabs[0].legende) {
+  } else if (sc && !sc.gallery && sc.tabs && sc.tabs[0] && sc.tabs[0].legende) {
     h += `<span class="cap">${esc(sc.tabs[0].legende)}</span>`;
   }
   cap.innerHTML = h;
@@ -615,7 +623,7 @@ function detailBlock(e) {
   return `<h4>${esc(e.nom)}</h4><div class="nt">${esc(e.titre || '')} ${statusPill(e)}</div>` +
     (e.resume ? `<p class="resume" style="text-align:left;font-size:17px;margin:6px 0">${L(e.resume, e.id)}</p>` : '') +
     sec('Ce que le groupe sait', connuHtml(e)) +
-    sec(e.histoireTitre || 'Pendant le scénario', ul(e.histoire, e.id), 'past') +
+    sec(e.histoireTitre || (e.type === 'pj' ? 'Enjeux et quête en cours' : 'Pendant le scénario'), ul(e.histoire, e.id), 'past') +
     (e.question ? sec('En suspens', `<p class="qs">${L(e.question, e.id)}</p>`) : '') +
     `<a class="more" href="#/${e.id}">Fiche complète ›</a>`;
 }
@@ -643,7 +651,7 @@ function renderPanel(e, q) {
     h += `<section class="sec"><h3>Personnages présents</h3><div class="bubs" id="npcs">${here.map(p => bubble(p, 'data-npc="1"')).join('')}</div><div id="npcbox"></div></section>`;
   }
   h += sec('Ce que le groupe sait', connuHtml(e));
-  h += sec(e.histoireTitre || (e.type === 'evenement' ? 'Ce qui s’est passé' : 'Pendant le scénario'), ul(e.histoire, e.id), 'past');
+  h += sec(e.histoireTitre || (e.type === 'evenement' ? 'Ce qui s’est passé' : e.type === 'pj' ? 'Enjeux et quête en cours' : 'Pendant le scénario'), ul(e.histoire, e.id), 'past');
   if (e.question) h += sec('En suspens', `<p class="qs">${L(e.question, e.id)}</p>`);
   const rel = relations(e);
   if (rel) h += sec('Liens', rel);
@@ -774,5 +782,34 @@ function initEdit() {
   initSearch();
   window.addEventListener('hashchange', route);
   route();
+})();
+/* zoom molette et glisser sur la carte */
+(function () {
+  let drag = null, moved = false;
+  const live = () => S.map && !S.map.stack && !S.gal && S.map.rect && S.map.info;
+  stageEl.addEventListener('wheel', ev => {
+    if (!live()) return;
+    ev.preventDefault();
+    const L = S.map, r = L.rect, info = L.info;
+    measure();
+    const c = camFor(r, info, L.pad);
+    const b = stageEl.getBoundingClientRect();
+    const px = (ev.clientX - b.left - c.tx) / (info.w * c.s), py = (ev.clientY - b.top - c.ty) / (info.h * c.s);
+    const k = Math.min(1.6, Math.max(0.6, Math.exp(ev.deltaY * 0.0016)));
+    const nw = Math.min(1.1, Math.max(0.04, r.w * k)), kk = nw / r.w, nh = r.h * kk;
+    const cx = px - kk * (px - (r.x + r.w / 2)), cy = py - kk * (py - (r.y + r.h / 2));
+    setCam(L, { x: Math.min(1, Math.max(0, cx)) - nw / 2, y: Math.min(1, Math.max(0, cy)) - nh / 2, w: nw, h: nh }, true, L.pad);
+  }, { passive: false });
+  stageEl.addEventListener('pointerdown', ev => { if (!live() || ev.button !== 0) return; drag = { x: ev.clientX, y: ev.clientY, r: { ...S.map.rect } }; moved = false; });
+  window.addEventListener('pointermove', ev => {
+    if (!drag || !live()) return;
+    const dx = ev.clientX - drag.x, dy = ev.clientY - drag.y;
+    if (!moved && Math.hypot(dx, dy) < 6) return;
+    moved = true;
+    const L = S.map, info = L.info, c = camFor(drag.r, info, L.pad);
+    setCam(L, { x: drag.r.x - dx / (info.w * c.s), y: drag.r.y - dy / (info.h * c.s), w: drag.r.w, h: drag.r.h }, false, L.pad);
+  });
+  window.addEventListener('pointerup', () => { drag = null; });
+  stageEl.addEventListener('click', ev => { if (moved) { ev.stopPropagation(); ev.preventDefault(); moved = false; } }, true);
 })();
 })();

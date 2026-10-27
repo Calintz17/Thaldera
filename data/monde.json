@@ -380,7 +380,7 @@
   ],
   "resume": "Mirenaï du clan Tsuren, druide du Cercle de la Chouette, devenu marchand après avoir quitté la Magistrature.",
   "connu": [
-   "Elfe mirenaï de Roshen Buru, druide de niveau 9 du Cercle de la Chouette. Son Miren est Stryge, un hibou.",
+   "Elfe mirenaï de Roshen Buru, druide de niveau 11 du Cercle de la Chouette. Son Miren est Stryge, un hibou.",
    "Noble du clan Tsuren, fils du Grand-Duc Havoc Tsuren et de Kynn Tsuren, frère de Rysei Tsuren. Sa famille ignore qu'il est espion.",
    "Assistant d'un diplomate à la Magistrature, il rédigeait des rapports et voyageait avec une bonne couverture. En réalité, il espionnait pour la Protectrice Neryn Yosa.",
    "Il a quitté la Magistrature après que le grand Magistrat Roven Moto lui a tiré les oreilles sur la qualité de ses rapports. Il est maintenant marchand, avec l'accord de la Protectrice.",
@@ -446,12 +446,12 @@
   "id": "jane-merigold",
   "type": "pj",
   "nom": "Jane Merigold",
-  "titre": "Voleuse, membre du groupe",
+  "titre": "Roublarde Arcane Trickster, membre du groupe",
   "img": "img/groupe/jane-merigold.webp",
   "statut": "vivant",
-  "resume": "Demi-elfe, roublarde de niveau 10. Elle porte des cristaux de titan dans le dos.",
+  "resume": "Demi-elfe, roublarde Arcane Trickster de niveau 11. Elle porte des cristaux de titan dans le dos.",
   "connu": [
-   "Demi-elfe, roublarde de niveau 10.",
+   "Demi-elfe, roublarde de niveau 11, Arcane Trickster.",
    "Elle porte des cristaux de titan dans le dos.",
    "Elle a volé à Naevia, à Keras Tauroc, une « Hache Étrange » qui est la garde d'une épée brisée aux glyphes non décoratifs.",
    "Pendant le mois perdu, elle a travaillé pour Hématome sans qu'elle ou le groupe s'en souviennent.",
@@ -493,12 +493,14 @@
    {
     "img": "img/pnj/jane-a-roshen-buru.webp",
     "label": "A Roshen Buru",
-    "lieux": []
+    "lieux": [],
+    "fond": "img/paysages/roshen-buru/rue.webp"
    },
    {
     "img": "img/pnj/jane-arcane-trickster.webp",
     "label": "Arcane Trickster",
-    "lieux": []
+    "lieux": [],
+    "fond": "img/paysages/cap-cornes/cabane-gran-brijit.webp"
    }
   ]
  },
@@ -512,9 +514,9 @@
   "alias": [
    "Philippa"
   ],
-  "resume": "Drow demi-elfe, occultiste de niveau 7 et barde de niveau 3. Gran Brijit déclare qu'elle est une championne.",
+  "resume": "Drow demi-elfe, occultiste de niveau 8 et barde de niveau 3. Gran Brijit déclare qu'elle est une championne.",
   "connu": [
-   "Drow demi-elfe, occultiste de niveau 7 et barde de niveau 3.",
+   "Drow demi-elfe, occultiste de niveau 8 et barde de niveau 3.",
    "Gran Brijit déclare qu'elle est une championne.",
    "Gran Brijit lui a confié deux missions : ne pas ouvrir de portail entre Cap Cornes et Havre Noir, et trouver puis tuer Oren Sidaï à Roshen Buru pour préserver l'équilibre.",
    "Elle a marqué à la craie la porte d'Ursinus, celle de la tour d'Eamonn et d'autres lieux, qui servent de points de retour.",
@@ -567,7 +569,8 @@
    {
     "img": "img/pnj/philippa-a-roshen-buru.webp",
     "label": "A Roshen Buru",
-    "lieux": []
+    "lieux": [],
+    "fond": "img/paysages/roshen-buru/rue.webp"
    }
   ]
  },
@@ -1392,7 +1395,7 @@
   "type": "ville",
   "nom": "Kazad Marunn",
   "titre": "Ville des sables",
-  "parent": "thaldera",
+  "parent": "consortium",
   "alias": [
    "Khazad-Marun",
    "Khazad Marun"

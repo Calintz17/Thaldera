@@ -360,14 +360,6 @@
     "legende": "Le fleuve vers la ville"
    },
    {
-    "img": "img/paysages/azuren-kai/foret-nubbe.webp",
-    "legende": "La traversée de la forêt"
-   },
-   {
-    "img": "img/paysages/azuren-kai/foret-sorenka.webp",
-    "legende": "La traversée de la forêt"
-   },
-   {
     "img": "img/azuren-kai/lieux/port.webp",
     "legende": "La baie et le quai marchand"
    },
@@ -394,6 +386,13 @@
    "Le groupe arrive par le port, juste après Cap Cornes, avec l'accusation du meurtre d'Otoba sur le dos.",
    "Il choisit de passer par la forêt d'Aruzen plutôt que par Seiran Vale pour rester discret.",
    "Au Ryokan de Noshka, il affronte Kirin Anadori et le tue dans une ruelle."
+  ],
+  "cartes": [
+   {
+    "id": "ville",
+    "img": "img/placeholder/carte-noire.svg",
+    "legende": "Plan d'Azuren Kai"
+   }
   ]
  },
  {

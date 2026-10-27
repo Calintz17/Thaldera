@@ -2,7 +2,7 @@
  {
   "id": "maison-tauroc",
   "type": "region",
-  "nom": "Maison Tauroc",
+  "nom": "Keras Tauroc",
   "titre": "Les steppes rouges, terre de Kord",
   "parent": "istra",
   "zone": {
@@ -14,13 +14,7 @@
   "blason": "img/blasons/keras-tauroc.webp",
   "accent": "#d96a28",
   "alias": [
-   "maison rouge",
-   "Taurok",
-   "Tauroc",
-   "Taurokh",
-   "taurokh",
-   "steppes rouges",
-   "Steppes Rouges"
+   "Maison Tauroc"
   ],
   "ordre": 1,
   "resume": "Le territoire de la maison rouge : minotaures, steppes rouges, loi du plus fort et religion de Kord.",
@@ -1943,15 +1937,9 @@
  {
   "id": "cabane-gran-brijit",
   "type": "lieu",
-  "nom": "La cabane de Gran Brijit",
-  "titre": "À l'écart de la ville",
-  "parent": "cap-cornes",
-  "pos": {
-   "x": 0.025,
-   "y": 0.265
-  },
-  "carte": "ville",
-  "zoom": 0.2,
+  "nom": "L'intérieur du manoir",
+  "titre": "Là où Gran Brijit reçoit le groupe",
+  "parent": "manoir-des-ligaments",
   "resume": "La cabane où Gran Brijit reçoit le groupe avant son départ de Cap Cornes.",
   "connu": [
    "Philippa y a eu une vision d'une balance désaxée. Olyssane y a ouvert le passage en faisant couler son sang."
@@ -2054,7 +2042,8 @@
    {
     "img": "img/pnj/olyssane-a-roshen-buru.webp",
     "label": "A Roshen Buru",
-    "lieux": []
+    "lieux": [],
+    "fond": "img/paysages/roshen-buru/rue.webp"
    }
   ]
  },
@@ -2087,7 +2076,8 @@
    {
     "img": "img/pnj/ink-a-roshen-buru.webp",
     "label": "A Roshen Buru",
-    "lieux": []
+    "lieux": [],
+    "fond": "img/paysages/roshen-buru/rue.webp"
    }
   ]
  },
@@ -2863,21 +2853,6 @@
   "resume": "Résidence du Grand Prêtre, inaccessible en pratique.",
   "connu": [
    "C'est là que vit le Grand Prêtre Ajaw Tzobal."
-  ]
- },
- {
-  "id": "kurakal",
-  "type": "ville",
-  "nom": "Kurakal",
-  "titre": "Port à l'embouchure du Nahur",
-  "parent": "balamor",
-  "pos": {
-   "x": 0.405,
-   "y": 0.275
-  },
-  "resume": "Les échanges réels se font ici. Beaucoup d'étrangers la prennent pour la capitale.",
-  "connu": [
-   "Les échanges réels avec l'extérieur passent par Kurakal."
   ]
  },
  {
@@ -3986,7 +3961,7 @@
   "nom": "Feywild",
   "titre": "Le plan des fées",
   "sousTitre": "Le plan des fées",
-  "ordre": 2,
+  "ordre": 3,
   "cartes": [
    {
     "id": "carte",
@@ -4008,7 +3983,7 @@
   "nom": "Plan du Feu",
   "titre": "Le plan élémentaire du feu",
   "sousTitre": "Le plan élémentaire",
-  "ordre": 3,
+  "ordre": 4,
   "cartes": [
    {
     "id": "carte",
@@ -4029,7 +4004,7 @@
   "nom": "Les Enfers",
   "titre": "Verrouillé",
   "sousTitre": "Verrouillé",
-  "ordre": 5,
+  "ordre": 6,
   "cartes": [
    {
     "id": "carte",
@@ -4041,5 +4016,242 @@
   "locked": true,
   "typeLabel": "Plan",
   "resume": ""
+ },
+ {
+  "id": "manoir-des-ligaments",
+  "type": "continent",
+  "nom": "Le Manoir des Ligaments",
+  "titre": "À l'écart du monde",
+  "sousTitre": "Le repaire de Gran Brijit",
+  "ordre": 2,
+  "cartes": [
+   {
+    "id": "carte",
+    "img": "img/placeholder/carte-noire.svg",
+    "legende": ""
+   }
+  ],
+  "blason": "img/blasons/vide.svg",
+  "typeLabel": "Lieu",
+  "resume": "Cabane de bois sombre au fond d'une clairière à la lumière verte stagnante. Gran Brijit y reçoit ceux qu'elle a choisis.",
+  "alias": [
+   "Manoir des ligaments",
+   "Cabane de Gran Brijit"
+  ]
+ },
+ {
+  "id": "uruzal",
+  "type": "ville",
+  "nom": "Uruzal",
+  "titre": "Porte de la jungle de Balamor",
+  "parent": "balamor",
+  "pos": {
+   "x": 0.405,
+   "y": 0.275
+  },
+  "resume": "Ville de la côte de Balamor.",
+  "connu": [
+   "Le seul passage connu vers l'intérieur de la jungle de Balamor."
+  ]
+ },
+ {
+  "id": "tzakar",
+  "type": "ville",
+  "nom": "Tzakar",
+  "titre": "Ville de la lagune",
+  "parent": "balamor",
+  "pos": {
+   "x": 0.36,
+   "y": 0.263
+  },
+  "resume": "Ville de Balamor, en amont d'Uruzal.",
+  "connu": [
+   "Elle se trouve sur la route de Tzalanar."
+  ]
+ },
+ {
+  "id": "foret-d-aruzen",
+  "type": "ville",
+  "nom": "La forêt d'Aruzen",
+  "alias": [
+   "Forêt d'Azuren",
+   "Forêt d'Aruzen"
+  ],
+  "titre": "Entre Roshen Buru et Azuren Kai",
+  "parent": "region-roshen-buru",
+  "pos": {
+   "x": 0.689,
+   "y": 0.366
+  },
+  "typeLabel": "Trajet",
+  "resume": "Forêt que l'on traverse pour relier Roshen Buru à Azuren Kai.",
+  "galerie": [
+   {
+    "img": "img/paysages/azuren-kai/foret-nubbe.webp",
+    "legende": "La traversée de la forêt"
+   },
+   {
+    "img": "img/paysages/azuren-kai/foret-sorenka.webp",
+    "legende": "La traversée de la forêt"
+   }
+  ]
+ },
+ {
+  "id": "route-keras-tauroc-cap-cornes",
+  "type": "ville",
+  "nom": "La route de Cap Cornes",
+  "titre": "Entre Keras Tauroc et Cap Cornes",
+  "parent": "maison-tauroc",
+  "pos": {
+   "x": 0.757,
+   "y": 0.582
+  },
+  "typeLabel": "Trajet",
+  "resume": "La route de la lande qui relie Keras Tauroc à Cap Cornes, jalonnée d'un gibet.",
+  "galerie": [
+   {
+    "img": "img/paysages/cap-cornes/route-keras-tauroc.webp",
+    "legende": "La route"
+   },
+   {
+    "img": "img/paysages/cap-cornes/route-gibet.webp",
+    "legende": "Le gibet"
+   }
+  ]
+ },
+ {
+  "id": "malquessar",
+  "type": "ville",
+  "nom": "Malquessar",
+  "titre": "Ville du Feywild",
+  "parent": "feywild",
+  "resume": "Ville connue par son nom seulement."
+ },
+ {
+  "id": "helios",
+  "type": "ville",
+  "nom": "Helios",
+  "titre": "Ville du Dominion Sol",
+  "parent": "dominion-sol",
+  "resume": "Ville connue par son nom seulement."
+ },
+ {
+  "id": "sol-novem",
+  "type": "ville",
+  "nom": "Sol Novem",
+  "titre": "Ville du Dominion Sol",
+  "parent": "dominion-sol",
+  "resume": "Ville connue par son nom seulement."
+ },
+ {
+  "id": "solarius",
+  "type": "ville",
+  "nom": "Solarius",
+  "titre": "Ville du Dominion Sol",
+  "parent": "dominion-sol",
+  "resume": "Ville connue par son nom seulement."
+ },
+ {
+  "id": "corvalis",
+  "type": "ville",
+  "nom": "Corvalis",
+  "titre": "Ville du Dominion Sol",
+  "parent": "dominion-sol",
+  "resume": "Ville connue par son nom seulement."
+ },
+ {
+  "id": "teravane",
+  "type": "ville",
+  "nom": "Teravane",
+  "titre": "Ville du Dominion Sol",
+  "parent": "dominion-sol",
+  "resume": "Ville connue par son nom seulement.",
+  "alias": [
+   "Teravan"
+  ]
+ },
+ {
+  "id": "obaline",
+  "type": "ville",
+  "nom": "Obaline",
+  "titre": "Ville du Dominion Sol",
+  "parent": "dominion-sol",
+  "resume": "Ville connue par son nom seulement."
+ },
+ {
+  "id": "grisecroix",
+  "type": "ville",
+  "nom": "Grisecroix",
+  "titre": "Ville du Dominion Sol",
+  "parent": "dominion-sol",
+  "resume": "Ville connue par son nom seulement.",
+  "alias": [
+   "Griscroix"
+  ]
+ },
+ {
+  "id": "dusenberg",
+  "type": "ville",
+  "nom": "Dusenberg",
+  "titre": "Ville d'Altéra",
+  "parent": "altera",
+  "resume": "Ville connue par son nom seulement."
+ },
+ {
+  "id": "lumenlid",
+  "type": "ville",
+  "nom": "Lumenlid",
+  "titre": "Ville d'Altéra",
+  "parent": "altera",
+  "resume": "Ville connue par son nom seulement."
+ },
+ {
+  "id": "einsenmarch",
+  "type": "ville",
+  "nom": "Einsenmarch",
+  "titre": "Ville d'Altéra",
+  "parent": "altera",
+  "resume": "Ville connue par son nom seulement.",
+  "alias": [
+   "Eisenmark"
+  ]
+ },
+ {
+  "id": "holstein",
+  "type": "ville",
+  "nom": "Holstein",
+  "titre": "Ville d'Altéra",
+  "parent": "altera",
+  "resume": "Ville connue par son nom seulement.",
+  "alias": [
+   "Holsten"
+  ]
+ },
+ {
+  "id": "rottenwald",
+  "type": "ville",
+  "nom": "Rottenwald",
+  "titre": "Ville d'Altéra",
+  "parent": "altera",
+  "resume": "Ville connue par son nom seulement."
+ },
+ {
+  "id": "altenheim",
+  "type": "ville",
+  "nom": "Altenheim",
+  "titre": "Ville d'Altéra",
+  "parent": "altera",
+  "resume": "Ville connue par son nom seulement."
+ },
+ {
+  "id": "altenmarkt",
+  "type": "ville",
+  "nom": "Altenmarkt",
+  "titre": "Ville d'Altéra",
+  "parent": "altera",
+  "resume": "Ville connue par son nom seulement.",
+  "alias": [
+   "Altenmark"
+  ]
  }
 ]

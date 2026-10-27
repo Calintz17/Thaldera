@@ -2200,7 +2200,7 @@
   "type": "ville",
   "nom": "Le Temple Brumeux",
   "titre": "Retraite des moines de Lathander",
-  "parent": "thaldera",
+  "parent": "consortium",
   "resume": "Temple de la jungle, à l'ouest de Port Lagon, où les moines se sont repliés. Pentacle malsain au niveau inférieur.",
   "connu": [
    "Statue gardienne à l'entrée, deux statues animées au premier sous-sol.",
@@ -2229,9 +2229,10 @@
  },
  {
   "id": "agran",
-  "type": "continent",
+  "type": "ville",
   "nom": "Agran",
   "titre": "Cité sous-marine à vingt kilomètres de profondeur",
+  "parent": "thaldera",
   "resume": "Cité de corail au fond d'une faille abyssale, éclairée par la seule bioluminescence qui pulse au rythme de Kataron.",
   "connu": [
    "Aucune surface visible. Des courants létaux coulent au-dessus de la faille.",
@@ -2247,16 +2248,7 @@
   "alias": [
    "Agran"
   ],
-  "ordre": 4,
-  "sousTitre": "La cité sous les flots",
-  "cartes": [
-   {
-    "id": "carte",
-    "img": "img/placeholder/carte-noire.svg",
-    "legende": ""
-   }
-  ],
-  "typeLabel": "Cité engloutie"
+  "ordre": 5
  },
  {
   "id": "thaloor",
@@ -4772,9 +4764,9 @@
  {
   "id": "cabane-de-gran-brijit",
   "type": "lieu",
-  "nom": "La cabane de Gran Brijit",
+  "nom": "Le Manoir des Ligaments",
   "titre": "Clairière aux masques effacés",
-  "parent": "thaldera",
+  "parent": "manoir-des-ligaments",
   "resume": "Cabane de bois sombre au fond d'une clairière à la lumière verte stagnante. Masques effacés aux murs, herbes pendues au plafond.",
   "connu": [
    "Nolbrim y travaille sur ses prototypes.",
