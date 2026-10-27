@@ -4,7 +4,7 @@
 (() => {
 'use strict';
 
-const VER = '14';
+const VER = '15';
 const EDIT = new URLSearchParams(location.search).has('edit');
 const $ = (s, r = document) => r.querySelector(s);
 const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
@@ -108,7 +108,9 @@ const PH_LAND = { img: 'img/placeholder/paysage.svg', legende: '', ph: true };
 const PH_SIL = 'img/placeholder/silhouette.svg';
 const S = { map: null, gal: null, entry: null, key: '', cut: null, W: 0, H: 0 };
 
-function measure() { S.W = stageEl.clientWidth; S.H = stageEl.clientHeight; }
+function syncTop() { const t = document.querySelector('.top'); if (t) document.documentElement.style.setProperty('--top-h', t.offsetHeight + 'px'); }
+window.addEventListener('resize', syncTop); window.addEventListener('orientationchange', syncTop); window.addEventListener('load', syncTop);
+function measure() { syncTop(); S.W = stageEl.clientWidth; S.H = stageEl.clientHeight; }
 function camFor(rect, info, pad = 0.94) {
   const s = Math.min(S.W / (rect.w * info.w), S.H / (rect.h * info.h)) * pad;
   return {
