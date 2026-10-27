@@ -4479,16 +4479,54 @@
   "id": "sorenka",
   "type": "pnj",
   "nom": "Sorenka",
-  "titre": "Fée de la forêt d'Azuren",
+  "titre": "Fée de la forêt d'Azuren, collectionneuse d'équipement",
   "parent": "foret-d-aruzen",
   "lieu": "foret-d-aruzen",
-  "statut": "inconnu",
+  "statut": "vivant",
   "img": "img/pnj/sorenka.webp",
-  "resume": "Créature des bois croisée dans la forêt d'Azuren.",
+  "resume": "Petite fée au sourire immuable croisée au quatrième jour dans la forêt d'Azuren. Elle a voulu troquer l'équipement du groupe, puis a retourné ses propres ombres contre lui après leur refus.",
   "connu": [
-   "Maigre, les cheveux noirs et le front couronné de bois, vêtue de feuilles. Une fumée violette tourbillonne autour d'elle."
+   "Petite fée maigre, les cheveux noirs et le front couronné de bois, vêtue de feuilles cousues. Une fumée violette tourbillonne autour d'elle.",
+   "Elle a prélevé trois cheveux à chacun du groupe, sans qu'ils s'en aperçoivent, et les a laissés alignés sur la mousse derrière eux.",
+   "Elle connaît des choses intimes sur chaque membre du groupe et les place dans la conversation comme des cadeaux.",
+   "Elle propose un troc : la cuirasse de Harfang contre une clé qui n'ouvre rien, le bâton à plumes d'Olyssane, que Sorenka promet de casser en deux, et la Mâchoire de Philippa.",
+   "Devant le refus, elle déclare le groupe « méchant » et le punit : elle dresse contre lui des doubles de fumée noire, copies de chacun.",
+   "Olyssane et Ink sont restés enfermés hors de la zone de combat pendant l'affrontement."
   ],
-  "attitude": "neutre",
+  "chapeau": "Au quatrième jour, la forêt se tait. À midi, tous sentent la même traction minuscule sur la nuque, comme un fil qui casse. Trois cheveux gisent sur la mousse, alignés, à distance égale, posés avec un soin qui n'est pas naturel. Plus loin, sur une racine à hauteur d'épaule, une petite fée en robe de feuilles cousues attend. Sa chevelure traîne sur plusieurs mètres derrière elle, mêlée de racines, de plumes et de mèches qui ne sont pas les siennes. Elle sourit sans cesse, et le sourire ne bouge pas d'un millimètre.",
+  "histoire": [
+   "Le groupe traverse la forêt d'Azuren pour rejoindre Roshen Buru en évitant Seiran Vale. Au quatrième jour, la forêt se tait et Sorenka apparaît sur une racine.",
+   "Elle tente d'extorquer l'équipement du groupe sous couvert de troc.",
+   "Au refus, elle lance contre les aventuriers leurs propres doubles de fumée noire, tandis qu'Olyssane et Ink sont tenus hors du combat.",
+   "Harfang et Philippa viennent à bout des doubles. L'un d'eux, devenu une Nubbé, finit dans un Sac sans fond."
+  ],
+  "citation": {
+   "texte": "Non ? Vous dites non ? Vous êtes venus dans ma forêt avec vos jolies choses et vous dites non ?",
+   "qui": "Sorenka"
+  },
+  "relations": [
+   {
+    "cible": "harfang-tsuren",
+    "type": "Convoite sa cuirasse",
+    "ton": "negatif"
+   },
+   {
+    "cible": "philippa-rougetoison",
+    "type": "Convoite la Mâchoire",
+    "ton": "negatif"
+   },
+   {
+    "cible": "olyssane-veythar",
+    "type": "Convoite son bâton",
+    "ton": "negatif"
+   },
+   {
+    "cible": "nubbe",
+    "type": "Double de fumée devenu",
+    "ton": "neutre"
+   }
+  ],
+  "attitude": "ennemi",
   "teinte": "#753c19"
  },
  {

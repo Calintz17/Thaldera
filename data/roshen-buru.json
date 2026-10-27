@@ -4079,6 +4079,12 @@
    "Goryo des berges",
    "Le Goryo des berges"
   ],
+  "galerie": [
+   {
+    "img": "img/azuren-kai/lieux/canal-nuit.webp",
+    "legende": "Les berges de la rivière, la nuit"
+   }
+  ],
   "img": "img/pnj/le-goryo.webp",
   "attitude": "ennemi",
   "teinte": "#753c19"
