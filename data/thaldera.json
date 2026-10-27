@@ -1131,7 +1131,10 @@
   "resume": "Démon qui règne sur le Repos des Épées. Il vole la magie et les objets de ceux qu'il touche.",
   "connu": [
    "Il parle par la bouche d'autres créatures. Il se dit d'un autre rang qu'Absalom, qu'il méprise.",
-   "Il a contacté les Épingles de Camont pour un vol chez l'impératrice Eryndel."
+   "Il a contacté les Épingles de Camont pour un vol chez l'impératrice Eryndel.",
+   "Démon sans déguisement, forme haute et immobile reliée aux nerfs de son repaire, au Repos des Épées. Il se présente comme le Passeur du Sang Noir, le berceau de la nouvelle chair.",
+   "Il méprise Absalom, la plus faible et la plus sotte d'entre eux selon lui, et promet de crever les yeux de tous ceux qui ont aidé le groupe.",
+   "Il vole la magie et les objets : Larcin d'Essence, Poigne du Troc. Il ne parle jamais directement, ses mots sortent de la bouche d'autres créatures présentes."
   ],
   "histoire": [
    "Le groupe le combat dans sa salle du cœur et le vainc.",
@@ -1227,7 +1230,9 @@
   "connu": [
    "Elle regrette la basse-ville d'avant la guerre.",
    "Un poulpe, Mika, vit au bout de ses bras.",
-   "Elle a indiqué aux joueuses le quartier des Planches où vivent les enfants des rues."
+   "Elle a indiqué aux joueuses le quartier des Planches où vivent les enfants des rues.",
+   "Elle sert un repas maigre (poisson sec, pain dur, eau tiède) et propose de dormir dans l'arrière-boutique, sur deux vieux canapés. Elle conseille de ne pas ouvrir les fenêtres : les gosses passent les bras pour voler les bottes.",
+   "Le poisson de la Veyra rend malade, celui qu'elle sert vient d'ailleurs."
   ],
   "citation": {
    "texte": "C'est pas grand-chose, mais c'est propre. Enfin… à peu près.",
@@ -1265,7 +1270,9 @@
   "resume": "Femme maigre et autoritaire qui veille sur les enfants voleurs.",
   "connu": [
    "Elle a fait rendre à Philippa sa bourse et le Bag of Many Things.",
-   "Irna, Tilda et Cleff sont sous sa garde."
+   "Irna, Tilda et Cleff sont sous sa garde.",
+   "Surnommée la mère des couvées, femme maigre, usée mais autoritaire, qui veille sur les enfants sans toit du quartier des Planches.",
+   "Elle gronde Irna sévèrement, force les enfants à tout rendre, et leur répète de ne pas voler les voyageurs armés."
   ],
   "histoire": [
    "Elle gronde Irna devant les joueuses et force les enfants à tout restituer."
@@ -1293,7 +1300,9 @@
   "statut": "vivant",
   "resume": "Adolescente maigre au regard dur, qui a volé le groupe avec Tilda et Cleff.",
   "connu": [
-   "Elle trouvait que les voyageurs avaient l'air d'en avoir trop."
+   "Elle trouvait que les voyageurs avaient l'air d'en avoir trop.",
+   "Adolescente maigre et crasseuse au regard dur, qui fait face sans reculer. Elle protège Tilda et Cleff, accrochés à ses jambes.",
+   "Elle explique le vol simplement : les PJ avaient l'air d'en avoir trop."
   ],
   "citation": {
    "texte": "On vous voulait rien de mal. C'est juste… vous aviez l'air d'en avoir trop.",
@@ -1323,7 +1332,9 @@
   "statut": "vivant",
   "resume": "Homme-lézard qui vend des bibelots accrochés à la doublure de son manteau.",
   "connu": [
-   "Presque tout est faux. Un ou deux objets sont réellement magiques, dont un vrai saphir et une vraie perle vendus pour rien."
+   "Presque tout est faux. Un ou deux objets sont réellement magiques, dont un vrai saphir et une vraie perle vendus pour rien.",
+   "Homme-lézard au regard brillant, manteau grand ouvert sur une dizaine de bibelots accrochés à la doublure : colifichets, fioles, dents, médaillons ternis, fragments de cristal.",
+   "Il force la main, mélange les prix et jure que tout est authentique. Seuls un ou deux objets sont réellement précieux : une amulette de saphir terni, une perle iridescente prise pour une bille de verre."
   ],
   "citation": {
    "texte": "Regardezzzza-moi cette dent, hein ? Dragon d'argent, rien que ça !",
@@ -1362,7 +1373,10 @@
   "resume": "Ancienne soldate du Consortium qui dirige les mutants des Silos. Alliée de Jane.",
   "connu": [
    "Jane a déjà travaillé pour elle, il y a environ cinq ans.",
-   "Elle a envoyé le groupe voler le rubis de la villa Graham avant les Épingles, et conseillé le marchand de potions de la Ville Haute."
+   "Elle a envoyé le groupe voler le rubis de la villa Graham avant les Épingles, et conseillé le marchand de potions de la Ville Haute.",
+   "Ancienne soldate qui dirige les Yeux, survivants et mutants installés dans les silos. Elle parle avec autorité et n'avait pas pensé revoir Jane.",
+   "Les Épingles cambriolent une maison de la Ville Haute cette nuit. Les Yeux ont les plans mais leurs voleurs sont à Voros. Elle demande à Jane et aux PJ de prendre leur place pour récupérer un gros rubis, qui doit lui revenir.",
+   "Elle les envoie voir le marchand de potions de la Ville Haute, qui fera un prix pour les Yeux."
   ],
   "histoire": [
    "Le groupe lui rapporte le rubis."
@@ -1426,7 +1440,9 @@
   "resume": "Fée au port altier armée d'une épingle géante.",
   "connu": [
    "Elle menace de coudre les bottes aux chevilles de ceux qui entrent sans permission.",
-   "Son gang a été contacté pour un vol chez l'impératrice Eryndel."
+   "Son gang a été contacté pour un vol chez l'impératrice Eryndel.",
+   "Fée au port altier, qui manie une épingle géante comme un fleuret. Elle ne les attaque pas mais menace sèchement de leur coudre les bottes aux chevilles avant que les choses ne se tendent.",
+   "Les Épingles protègent leur quartier du sud et les habitants leur paient une contribution pour la paix. L'ancienne usine textile, barricadée, leur sert de camp central."
   ],
   "histoire": [
    "Le groupe se heurte à ses gardes devant l'usine."
@@ -1517,7 +1533,9 @@
   "resume": "Apothicaire de la Ville Haute, élégant·e, au genre ambivalent.",
   "connu": [
    "Iel doit une dette aux Yeux, sans dire laquelle.",
-   "Iel vend potions de soins, résistances, et quelques raretés comme l'essence de possibilité."
+   "Iel vend potions de soins, résistances, et quelques raretés comme l'essence de possibilité.",
+   "Apothicaire de la Ville Haute à l'allure noble et au genre ambivalent, silhouette élancée, voix posée, manières impeccables.",
+   "Quand on vient de la part des Yeux, Arin se fige, hoche la tête et accorde 25 % de remise sans poser de questions, en précisant leur devoir une dette. Il reste une tension non réglée avec les Yeux."
   ],
   "histoire": [
    "Le groupe y achète des potions avec la remise des Yeux."
@@ -1559,7 +1577,9 @@
   "statut": "vivant",
   "resume": "Riche négociant qui a piégé sa villa après une série de cambriolages.",
   "connu": [
-   "Il reçoit des lettres de Leth, un informateur des Épingles."
+   "Il reçoit des lettres de Leth, un informateur des Épingles.",
+   "Riche négociant de la Ville Haute. Sa villa est une forteresse déguisée en maison de maître, truffée de pièges mécaniques, magiques et parfois mortels après une série de cambriolages venus de la basse-ville.",
+   "On dit que personne n'a jamais rien volé chez lui sans y laisser un morceau de soi."
   ],
   "citation": {
    "texte": "Votre Altesse Graham sa seigneurie, j'vous écris vite parce que j'ai un truc chelou sur les bras.",
@@ -1593,7 +1613,8 @@
   "statut": "vivant",
   "resume": "Rôdeuse du gang des Épingles, rivale d'équipe dans la villa Graham.",
   "connu": [
-   "Elle, Nibb et Ash cambriolent la même villa que le groupe."
+   "Elle, Nibb et Ash cambriolent la même villa que le groupe.",
+   "Rôdeuse de l'équipe des Épingles qui s'infiltre en parallèle dans la villa Graham, avec Nibb et Ash. Les voleurs rivaux sont blessés si on les croise."
   ],
   "histoire": [
    "Les Épingles sont arrêtées pour l'effraction."
@@ -1610,7 +1631,8 @@
   "statut": "vivant",
   "resume": "Roublard du gang des Épingles.",
   "connu": [
-   "Il agit avec Vira et Ash."
+   "Il agit avec Vira et Ash.",
+   "Roublard de l'équipe des Épingles qui s'infiltre en parallèle dans la villa Graham, avec Vira et Ash."
   ],
   "attitude": "neutre"
  },
@@ -2235,7 +2257,9 @@
   "statut": "vivant",
   "resume": "Triton renégat à la peau striée de cicatrices, cruel et moqueur.",
   "connu": [
-   "Il cherche avant tout à être vu de Sycomore."
+   "Il cherche avant tout à être vu de Sycomore.",
+   "Triton renégat à la peau bleutée striée de cicatrices, cheveux raides et humides, yeux jaunes aux pupilles fendues, trident cabossé. Moqueur et sadique, il rit rauque comme le ressac dans une cale.",
+   "Ancien soldat d'un royaume marin, il a déserté et trouvé chez Sycomore une famille qui ne le juge pas tant qu'il reste utile. Il affronte Philippa en duel sur le Pont de Parade."
   ],
   "histoire": [
    "Philippa l'affronte sur le pont de parade."
@@ -2411,7 +2435,9 @@
   "statut": "mort",
   "resume": "Chasseur massif à la Zweihander, venu ramener Philippa à l'impératrice.",
   "connu": [
-   "Il portait l'insigne RadenSiegel."
+   "Il portait l'insigne RadenSiegel.",
+   "Landsknecht massif, Zweihänder sur l'épaule, trois Radensiegel qui brillent sur sa cuirasse. Il sourit, jovial, presque amical, mais son regard ne laisse aucun doute : Philippa ne quittera pas Havre Noir libre.",
+   "Les trois sceaux des racines lui donnent plus de points de vie, une peau durcie comme l'écorce et le poids du ciel dans ses coups."
   ],
   "histoire": [
    "Le groupe le vainc."
@@ -3684,7 +3710,9 @@
   "statut": "vivant",
   "resume": "Humain décharné, terrifié, persuadé que la peste est revenue.",
   "connu": [
-   "Il brûle les draps de son frère, marin du Brumeux retrouvé mort, la peau verdâtre. Il renvoie le groupe vers le médecin du mortuaire."
+   "Il brûle les draps de son frère, marin du Brumeux retrouvé mort, la peau verdâtre. Il renvoie le groupe vers le médecin du mortuaire.",
+   "Humain de la trentaine, grand mais décharné, chemise trop large, barbe éparse, mains couvertes de sel et de crevasses. Il parle vite, avec des sursauts nerveux.",
+   "Son frère Crochemer a été retrouvé près de chez lui, peau verdâtre et yeux écarquillés. Le 7 inversé est apparu sur la porte pendant la nuit. Les Lapidès ont emporté le corps au mortuaire et les affaires chez le scribe du port."
   ],
   "citation": {
    "texte": "Vous avez vu sa peau ? Verte comme une algue pourrie, ses yeux sortaient de l'orbite !",
@@ -3729,7 +3757,11 @@
     "inverse": "ancien équipage du Brumeux avec"
    }
   ],
-  "attitude": "neutre"
+  "attitude": "neutre",
+  "connu": [
+   "Marchand de cordages, mêmes symptômes que les précédentes victimes : peau verdâtre, yeux exorbités. Le 7 inversé, gravé d'un coup de lame sûr, est encore frais sur sa porte, avec des copeaux au sol.",
+   "Ses effets personnels sont saisis et transférés au bureau des registres du port."
+  ]
  },
  {
   "id": "melior-skarne",
@@ -3741,7 +3773,9 @@
   "statut": "vivant",
   "resume": "Rationaliste calme au milieu de la panique. Il invite le groupe au mortuaire.",
   "connu": [
-   "Il note peau verdâtre et yeux exorbités, comme chez les précédents."
+   "Il note peau verdâtre et yeux exorbités, comme chez les précédents.",
+   "Médecin légiste nain, trapu, barbe tressée mal entretenue, lunettes rondes, tablier de cuir noirci. Calme, méthodique, presque froid, un rationaliste au milieu de la panique.",
+   "Il note les mêmes signes sur chaque victime et invite les PJ à venir le voir au mortuaire pour entendre son avis médical."
   ],
   "citation": {
    "texte": "Pas d'spectacle aujourd'hui, seulement un mort de plus.",
@@ -3780,7 +3814,9 @@
   "statut": "vivant",
   "resume": "Petit scribe voûté, agacé d'être dérangé mais fasciné par les meurtres.",
   "connu": [
-   "Il désigne Derek Varn comme seul survivant du Brumeux encore en vie."
+   "Il désigne Derek Varn comme seul survivant du Brumeux encore en vie.",
+   "Gnome des profondeurs, petit, voûté, teint grisâtre, lunettes cerclées de cuivre. Il aime étaler son savoir malgré son agacement.",
+   "Les registres montrent que tous les morts étaient marins du Brumeux, navire disparu il y a vingt ans au large des récifs de Solcarne. Le seul survivant est Derek Varn, toujours à Havre Noir. Le 7 inversé n'apparaît nulle part dans les registres."
   ],
   "citation": {
    "texte": "Calven, Brague, Crochemer… leurs noms je les ai.",
@@ -3824,7 +3860,9 @@
   "statut": "vivant",
   "resume": "Ancien gabier paranoïaque, persuadé d'être la prochaine cible.",
   "connu": [
-   "Il avoue que l'équipage a jeté Eldran Korr, son timonier, par-dessus bord pendant une mutinerie."
+   "Il avoue que l'équipage a jeté Eldran Korr, son timonier, par-dessus bord pendant une mutinerie.",
+   "Ancien gabier d'une cinquantaine d'années, cheveux blancs filasses, barbe hirsute, peau parcheminée par le sel. Paranoïaque, il boit pour tenir mais sa terreur est lucide.",
+   "Il avoue que l'équipage s'est mutiné et a jeté par-dessus bord le second, Eldran Korr, qui suppliait d'arrêter. Il se croit la prochaine cible : le 7 inversé est gravé sur sa porte."
   ],
   "citation": {
    "texte": "Moi j'suis l'dernier. Le dernier du Brumeux.",
@@ -3849,7 +3887,9 @@
   "statut": "mort",
   "resume": "Mort-vivant qui tue un par un ses anciens frères d'armes du Brumeux, sous le signe du 7 inversé.",
   "connu": [
-   "Il masquait sa vengeance en fausse peste pour détourner les soupçons."
+   "Il masquait sa vengeance en fausse peste pour détourner les soupçons.",
+   "Mort-vivant hanté par vingt ans de haine, qui force la porte de Derek Varn vers minuit en traînant sa chaîne. Il manie un sabre rouillé.",
+   "Les meurtres ne sont pas liés à la peste : il tue ses anciens frères d'armes et maquille ses crimes avec le 7 inversé, rappel des vieilles pestes maritimes, pour détourner les soupçons."
   ],
   "histoire": [
    "Le groupe le vainc dans la masure de Derek Varn."
@@ -3890,7 +3930,9 @@
   "statut": "vivant",
   "resume": "Prisonnier zozotant qui accuse le Passeur de Camont de l'avoir envoyé à Havre Noir.",
   "connu": [
-   "Il propose or et contacts en échange de sa libération, et parle d'une brèche dans la coque de l'Assemblage menant à la cale aux vivres."
+   "Il propose or et contacts en échange de sa libération, et parle d'une brèche dans la coque de l'Assemblage menant à la cale aux vivres.",
+   "Halfling prisonnier d'une cage du Pont du Jugement, zozotant. Il accuse le Passeur de Camont de l'avoir envoyé monter un comptoir à Havre Noir, et maudit Sycomore.",
+   "Il propose de l'or, des contacts pour faire sortir un navire de la baie sans que les Lapidès le flairent, et une brèche dans la coque de l'Assemblage qui mène à la cale aux vivres."
   ],
   "citation": {
    "texte": "Écoute-moi, cafitaine… y'a une brèche, dans la coque de l'Affemblage.",
@@ -3935,7 +3977,9 @@
   "statut": "vivant",
   "resume": "Vieux receleur tordu, un œil voilé, une oreille en moins, qui appelle tout le monde capitaine.",
   "connu": [
-   "Ses registres permettent de remonter l'origine d'un objet, à condition de payer."
+   "Ses registres permettent de remonter l'origine d'un objet, à condition de payer.",
+   "Receleur officiel de Sycomore, vieil homme sec et tordu, dos voûté comme un arc, un œil voilé et une oreille manquante. Toujours couvert de suie et d'éclats de goudron, il inscrit chaque transaction avec une précision maniaque.",
+   "Tous les butins de Havre Noir passent par lui. Ses registres permettent parfois de retrouver l'origine d'un objet, si l'on paie le bon prix. Ne pas toucher sans payer, sous peine de voir intervenir les Lapidès."
   ],
   "citation": {
    "texte": "Ici tout est à vendre, capitaine… Mais faut payer. Et payer cher.",
@@ -3974,7 +4018,10 @@
   "resume": "Massive, tatouée de vagues, un clou de fer dans l'oreille. Une petite souris, Raisin Sec, dépasse de son tablier.",
   "connu": [
    "Elle est loyale à Sycomore sans fanatisme.",
-   "Sa souris s'appelle Raisin Sec."
+   "Sa souris s'appelle Raisin Sec.",
+   "Forgeronne demi-orque massive, torse nu noirci de suie, tatouages de vagues sur les bras, un clou de fer dans l'oreille. Fière et brutale, elle respecte la force et méprise les faibles.",
+   "Loyale à Sycomore sans fanatisme, elle voit son art comme une arme au service de l'Assemblage. Les registres montrent que tout le matériel forgé vient de Havre Noir, jamais de l'Île aux Moines.",
+   "Un apprenti a laissé échapper qu'un capitaine parlait d'or venant de Port Doëlan."
   ],
   "alias": [
    "Raisin Sec",
@@ -4030,7 +4077,11 @@
     "ton": "positif"
    }
   ],
-  "attitude": "neutre"
+  "attitude": "neutre",
+  "connu": [
+   "Deux gardes surveillent en permanence la passerelle unique vers l'Assemblage, armés de mousquets et de hallebardes. Il faut un laissez-passer signé de Sycomore ou de son scribe pour entrer.",
+   "Une attaque à l'entrée déclenche l'alerte : une demi-douzaine de Lapidès sortent des entrailles du lieu."
+  ]
  },
  {
   "id": "reserve-armes",
@@ -4143,7 +4194,9 @@
   "statut": "vivant",
   "resume": "Scribe aux doigts tachés d'encre et de rhum, qui tient les registres avec méticulosité.",
   "connu": [
-   "Sa note personnelle montre que Sycomore se méfie de Spezza sans preuve."
+   "Sa note personnelle montre que Sycomore se méfie de Spezza sans preuve.",
+   "Maître-scribe de Sycomore, plume trempée dans un encrier de goudron, doigts tachés d'encre et de rhum. Ses registres sont l'un des rares témoignages d'ordre et de loi à Havre Noir.",
+   "Ils montrent que Sycomore interdit toute contrebande, que la Griffe n'a jamais pris pied officiellement, qu'aucun navire lié à l'Île aux Moines n'a accosté, et qu'elle a commandé une enquête discrète sur Port Doëlan et Titan Inc."
   ],
   "alias": [
    "Gratte-papier"
@@ -4167,7 +4220,8 @@
   "statut": "vivant",
   "resume": "Opportuniste et cupide. Il ne mène qu'à Port Lagon, contre une lourde somme.",
   "connu": [
-   "C'est la sortie de secours si le groupe se brouille avec Sycomore."
+   "C'est la sortie de secours si le groupe se brouille avec Sycomore.",
+   "Capitaine de fortune, opportuniste et cupide. Si les PJ rompent avec Sycomore, il ne les mène qu'à Port Lagon, contre une lourde somme d'or."
   ],
   "attitude": "neutre"
  },
@@ -4181,7 +4235,9 @@
   "statut": "en fuite",
   "resume": "Il a basculé en prêchant pour le Dominion. Sycomore a brûlé le temple et l'a banni.",
   "connu": [
-   "Il placardait « la lumière de Sol » et accusait Sycomore d'hérésie."
+   "Il placardait « la lumière de Sol » et accusait Sycomore d'hérésie.",
+   "Diacre du temple de Thalos, qui a basculé en prêchant pour le Dominion et en accusant Sycomore d'hérésie sur des affiches. Sycomore a fait brûler le temple et l'a banni, sans massacrer les fidèles.",
+   "Depuis, plus aucun culte extérieur n'a osé se relever à Havre Noir."
   ],
   "citation": {
    "texte": "Malrik voulait qu'on se rallie tous à la cause du Dominion. Ici, on chante qu'pour l'goudron. Sycomore lui a montré la sortie à coups de torches, et basta.",
@@ -4356,7 +4412,8 @@
   "statut": "vivant",
   "resume": "Gamine accrochée aux jambes d'Irna.",
   "connu": [
-   "« C'est pas du vol si on le rend, non ? »"
+   "« C'est pas du vol si on le rend, non ? »",
+   "Petite fille accrochée aux jambes d'Irna. Elle plaide que ce n'est pas du vol si on le rend."
   ],
   "citation": {
    "texte": "C'est pas du vol si on le rend, non ?",
@@ -4372,8 +4429,11 @@
   "parent": "planches-camont",
   "lieu": "planches-camont",
   "statut": "vivant",
-  "resume": "Gamin qui tient le vieux sac de cuir volé avec Irna et Tilda.",
-  "attitude": "neutre"
+  "resume": "Gamin des Planches qui tient le vieux sac de cuir volé avec Irna et Tilda.",
+  "attitude": "neutre",
+  "connu": [
+   "Petit garçon qui porte le vieux sac de cuir volé avec Irna et Tilda."
+  ]
  },
  {
   "id": "mika",
@@ -4384,7 +4444,10 @@
   "lieu": "l-abattoir",
   "statut": "vivant",
   "resume": "Petit poulpe qui vit au bout des tentacules de Teka.",
-  "attitude": "neutre"
+  "attitude": "neutre",
+  "connu": [
+   "Petit poulpe qui vit au bout des bras de Teka."
+  ]
  },
  {
   "id": "leth",
@@ -4396,7 +4459,9 @@
   "statut": "inconnu",
   "resume": "Auteur d'une lettre à Graham Gonn pour le prévenir qu'un envoyé du Passeur a commandé un vol chez Eryndel.",
   "connu": [
-   "Il a éloigné un membre bavard en l'envoyant monter un comptoir à Havre Noir pour la Griffe."
+   "Il a éloigné un membre bavard en l'envoyant monter un comptoir à Havre Noir pour la Griffe.",
+   "Il écrit à Graham Gonn, à l'insu de son chef, qu'un homme envoyé du Passeur a demandé une équipe pour un coup important au Siège des Étoiles, chez l'Impératrice elle-même.",
+   "Le chef des Épingles est paniqué, certains veulent refuser, d'autres redoutent des représailles. Un membre qui parlait trop a été éloigné pour monter un comptoir à Havre Noir pour le Passeur et la Griffe."
   ],
   "citation": {
    "texte": "Si on me demande d'y aller, qu'est-ce que je fais, moi ? Je refuse et on nous pourchasse ?",
@@ -4471,7 +4536,11 @@
     "inverse": "gardé par"
    }
   ],
-  "attitude": "neutre"
+  "attitude": "neutre",
+  "connu": [
+   "Garde du coffre de la villa Graham, il part à la retraite à la fin de la semaine et a tiré des ficelles auprès de Graham pour être posté ici.",
+   "Il explique à son jeune collègue Damian qu'un poste où il ne se passe rien est une bénédiction."
+  ]
  },
  {
   "id": "sadie",
