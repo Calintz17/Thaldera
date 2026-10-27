@@ -2049,7 +2049,10 @@
    "Elle remet les 5 600 pièces d'or aux vainqueurs depuis la loge d'honneur, un cocktail à la main, calme.",
    "Voyant que le groupe restait indifférent à la somme, elle l'a interrogé sur son origine et ses intentions, avec politesse et patience.",
    "Le groupe a découvert qu'elle est une démone de Maladomini. Elle est relativement alliée avec lui.",
-   "Elle a fait remettre une missive au groupe par Vibia."
+   "Elle a fait remettre une missive au groupe par Vibia.",
+   "Organisatrice du Colisée, onctueuse et souriante, avec une bienveillance trop lisse. Elle présente les risques de blessures graves et de mort avec le même ton enjoué que pour un menu.",
+   "Elle remet aux vainqueurs les Cornes d'Or, une couronne de corne de minotaure dorée, et 5 600 po de récompense.",
+   "Elle révèle être un démon du septième cercle, la Ruine de Maladomini, et sent chez les PJ une odeur d'Hécate. Elle parle d'Absalom comme d'une infernale de Dis qui ne s'annonce jamais."
   ],
   "relations": [
    {
@@ -2111,7 +2114,9 @@
   "resume": "Enregistre les combattants et construit leur légende devant la foule.",
   "connu": [
    "Elle exige un fait d'armes pour que Vitiosa présente un combattant à la foule.",
-   "Après la victoire, en aparté, elle devient froide et contractuelle : si le groupe veut plus de combats, il doit revenir la voir."
+   "Après la victoire, en aparté, elle devient froide et contractuelle : si le groupe veut plus de combats, il doit revenir la voir.",
+   "Coach et annonceuse du Colisée. Brusque et professionnelle, elle applique le règlement : elle refuse d'abord l'inscription des PJ, puis cède quand Vitiosa force l'inscription.",
+   "Le format : trois combats en poules, deux victoires pour passer au combat final contre un adversaire hors norme. Un prêtre-guérisseur est disponible entre les combats, contre paiement."
   ],
   "citation": {
    "texte": "Les inscriptions à l'arène sont fermées. C'est le règlement. Je ne peux pas, non.",
@@ -2132,7 +2137,9 @@
   "resume": "Prêtre diminué qui parle d'Absalom comme d'une personne extraordinaire.",
   "connu": [
    "Il parle d'Absalom avec admiration. Il lui a prêté les catacombes pour se reposer et l'a orientée vers Chrysodoros.",
-   "Il est physiquement diminué : « ma pauvre tête », « je n'ai presque plus de vie ». Il pense qu'Absalom est partie vers le nord, vers Roshen Buru."
+   "Il est physiquement diminué : « ma pauvre tête », « je n'ai presque plus de vie ». Il pense qu'Absalom est partie vers le nord, vers Roshen Buru.",
+   "Parle d'Absalom avec un enthousiasme déplacé. Il lui a prêté les catacombes pour qu'elle se repose et l'a orientée vers Chrysodoros l'orfèvre.",
+   "Il dit qu'elle cherchait des reliques anciennes, et que Keras Tauroc n'a pas de magie : ici, c'est l'or et le combat."
   ],
   "citation": {
    "texte": "Oh... ma tête, ma pauvre tête. Je n'ai presque plus de vie, il faut que je me repose.",
@@ -2167,7 +2174,9 @@
   "connu": [
    "Avant les Cornes d'Or, il refuse poliment mais définitivement. Après, il accueille chaleureusement.",
    "Absalom lui demandait une relique liée à un pouvoir ancien, peut-être d'avant la grande catastrophe, et s'informait sur la provenance des pierres précieuses. Il l'a orientée vers la Maison Tauroc.",
-   "Il l'a revue le lendemain près du port, avec l'air d'une femme qui avait pris une décision."
+   "Il l'a revue le lendemain près du port, avec l'air d'une femme qui avait pris une décision.",
+   "Orfèvre de Keras Tauroc, qui travaille uniquement sur recommandation. Il refuse de parler à des étrangères inconnues, sans hostilité, par indifférence.",
+   "Après la victoire des PJ aux Cornes d'Or, il confirme qu'Absalom cherchait un artefact précis à l'histoire ancienne et posait des questions sur la provenance des pierres, donc les mines à l'ouest. Il l'a revue le lendemain au port, regardant longuement les barges."
   ],
   "lieu": "atelier-de-chrysodoros",
   "citation": {
@@ -2194,7 +2203,9 @@
   "resume": "Receleuse qui vend exclusivement des dagues, sans poser de questions.",
   "connu": [
    "Elle n'a ni enseigne ni adresse fixe : un pan de mur différent chaque jour.",
-   "Jane lui a volé une « Hache Étrange » à 2 000 pièces d'or : la garde d'une épée brisée aux glyphes non décoratifs."
+   "Jane lui a volé une « Hache Étrange » à 2 000 pièces d'or : la garde d'une épée brisée aux glyphes non décoratifs.",
+   "Vend exclusivement des dagues, sans enseigne ni adresse fixe : un pan de mur différent chaque matin, jusqu'à mi-après-midi. Elle ne pose aucune question sur l'usage et ne fait pas d'arnaque.",
+   "Elle cède une Hache étrange aux glyphes non décoratifs pour 2000 po, puis propose 200 po."
   ],
   "citation": {
    "texte": "Vingt dagues. Différentes tailles, différentes origines. Certaines ont une histoire. Tu veux pas la savoir.",
@@ -2236,7 +2247,8 @@
   "statut": "vivant",
   "resume": "Il parle vite et beaucoup, et prétend fabriquer lui-même ses potions.",
   "connu": [
-   "C'est vrai pour environ la moitié."
+   "C'est vrai pour environ la moitié.",
+   "Vendeur de rue escroc. Il prétend fabriquer ses potions lui-même, ce qui est vrai pour environ la moitié, l'autre moitié étant de l'eau colorée. Il a échoué à vendre ses potions aux PJ, et Jane lui en a écrasé une sur la tête."
   ],
   "citation": {
    "texte": "Regardez ça ! Regardez, regardez ! Vous avez jamais vu quelque chose comme ça, jamais !",
@@ -2263,7 +2275,8 @@
   "resume": "Il achète tout et revend avec une histoire fabriquée.",
   "connu": [
    "Son entrepôt ressemble à l'intérieur d'une tête qui n'a jamais rien jeté.",
-   "Il vend une tablette de pierre gravée de glyphes anciens, déchiffrable en partie : un fragment sur les Architectes."
+   "Il vend une tablette de pierre gravée de glyphes anciens, déchiffrable en partie : un fragment sur les Architectes.",
+   "Vendeur de bric-à-brac qui achète tout sans question et vend tout avec une histoire inventée. Il aime marchander. Il a une Tablette de pierre gravée de glyphes anciens, déchiffrable en partie."
   ],
   "citation": {
    "texte": "Cette corde ? Aaah. Elle a appartenu à un grimpeur légendaire.",
@@ -2292,7 +2305,8 @@
   "connu": [
    "Avant les Cornes d'Or, il refuse de parler. Après, il parle.",
    "Il raconte qu'une femme en noir a fait modifier une barge, et qu'elle a payé généreusement.",
-   "Il conduit le groupe au ponton du Tenrai Buru et se porte garant auprès de Yorisa, qu'il connaît de longue date."
+   "Il conduit le groupe au ponton du Tenrai Buru et se porte garant auprès de Yorisa, qu'il connaît de longue date.",
+   "Responsable des docks, un registre sous le bras. Il confirme qu'une femme en noir a fait aménager une barge de fret (grand lit, draperies, vaisselle, vin rouge) en payant trois fois le tarif. La barge remonte le fleuve vers le nord."
   ],
   "citation": {
    "texte": "J'ai du travail. Je ne vous connais pas. Vous n'êtes pas d'ici, vous êtes des étrangères. Partez, partez !",
@@ -2322,7 +2336,9 @@
    "Elle se souvient d'Absalom : étrangère tout en noir, restée une nuit, partie au petit matin sans sac, après avoir demandé où se trouvait la cathédrale.",
    "Elle a prévenu le groupe : sans arène, pas de respect, et les étrangers finissent mal ici. Plus tard, c'est elle qui lui remet la missive de Vitiosa.",
    "Le carnet d'Hématome la nomme comme commanditaire d'un contrat : elle emploie la pègre locale.",
-   "Les gens de Brakka et la caravane recommandent de la voir à Keras Taurok, à l'Angues Dormientes : elle saura les accueillir."
+   "Les gens de Brakka et la caravane recommandent de la voir à Keras Taurok, à l'Angues Dormientes : elle saura les accueillir.",
+   "Lizardfolk aux écailles sombres, tenancière des Angues Dormantes. Elle confirme qu'Absalom a passé une nuit à l'auberge, s'est plainte du bruit et a demandé où se trouvait la cathédrale. Elle est repartie les mains vides, sans sac.",
+   "Elle prévient les PJ que sans victoire à l'arène, personne en ville ne leur accordera de respect : les étrangers finissent mal à Keras Tauroc."
   ],
   "citation": {
    "texte": "Moi je suis plutôt aimable, rapport au fait que je suis pas une grosse minotaure, une grosse brute. Mais si vous comptez pas vous battre dans l'arène, ici, le chemin va être rude pour vous.",
@@ -2353,6 +2369,7 @@
    "Quand le groupe quitte Keras Tauroc, il lui doit encore 6 000 po.",
    "Il avait retiré les colliers anti-magie posés par Tarcus, contre 2 000 po chacun. Le gouvernement les lui a repris.",
    "Au Malleus Cadens, le groupe revient le voir. Il pose un nouveau collier anti-magie sur la table et l'offre à Philippa.",
+   "Forgeron de Malleus Cadens, sourd d'une oreille, qui ne parle que le taurokh et répond par une plaque de prix. Frère de Volusius, l'aubergiste du Cornua Fracta : mentionner son frère le fait s'arrêter une seconde.",
    "Sa forge pulse comme un cœur : le soufflet aspire, l'enclume répond, la fumée est légèrement orangée à cause du minerai local. Les outils sont accrochés avec une précision militaire, et une plaque gravée à l'entrée donne les prix.",
    "Il lève les yeux de son établi, un seul regard, puis retourne à son travail.",
    "Il laisse entendre que les colliers anti-magie ont été repris par le gouvernement : ils sont spéciaux et ne peuvent pas traîner dans les rues. Il regarde à droite, à gauche, puis pose un collier neuf sur la table sans préciser d'où il vient."
@@ -2391,7 +2408,10 @@
   "connu": [
    "Il garde toujours des potions de côté pour ceux qui n'ont pas les moyens.",
    "Plusieurs de ses clients se plaignent d'une sensation désagréable près de la cathédrale.",
-   "Le groupe s'est lié d'amitié avec lui. Sa potion a servi à ressusciter Nolbrim."
+   "Le groupe s'est lié d'amitié avec lui. Sa potion a servi à ressusciter Nolbrim.",
+   "Tenancier chaleureux de Mandragora Viridis. Il offre du thé à tout visiteur, garde des potions pour ceux qui n'ont pas les moyens et prépare des commandes spéciales en deux jours.",
+   "La boutique ferme neuf mois par an : il part en montagne, mais il n'hiberne pas, insiste-t-il. Plusieurs clients se plaignent d'un malaise depuis quelques semaines, sans qu'il sache d'où il vient.",
+   "Les PJ lui ont acheté un élixir de vie, flacon scellé à la cire noire."
   ],
   "citation": {
    "texte": "Ah ! Bonjour, bonjour ! Entrez, entrez ! Moi c'est Ursinus, et ici, regardez : des plantes partout, des remèdes, de belles herbes.",
@@ -2418,12 +2438,10 @@
   "resume": "Tabaxi noire un peu snob, qui ne sourit pas.",
   "connu": [
    "Elle refuse tout inconnu sans recommandation. Les Cornes d'Or comptent, comme un mot de Volusius, d'Ursinus ou d'Harak.",
-   "Elle a d'abord refusé l'entrée au groupe, avant de le servir."
+   "Elle a d'abord refusé l'entrée au groupe, avant de le servir.",
+   "Marchande de magie de Cinis et Caligo, sans enseigne. Elle ne vend pas aux inconnus sans recommandation ; les Cornes d'Or comptent comme recommandation. Elle évalue l'acheteur avant la marchandise."
   ],
-  "citation": {
-   "texte": "Revenez quand vous savez. D'ici là, sortez.",
-   "qui": "Thessala, en Taurokh, traduit"
-  },
+  "citation": "Revenez quand vous savez. D'ici là, sortez.",
   "galerie": [
    {
     "img": "img/paysages/keras-tauroc/cinis-et-caligo.webp",
@@ -2444,7 +2462,8 @@
   "statut": "vivant",
   "resume": "Minotaure, frère d'Egnatius. Son nom vaut recommandation auprès de Thessala.",
   "connu": [
-   "Il confirme que Philippa chantait chaque soir depuis un mois. En la voyant, il s'est arrêté, soulagé, avec une question qu'il n'avait pas posée."
+   "Il confirme que Philippa chantait chaque soir depuis un mois. En la voyant, il s'est arrêté, soulagé, avec une question qu'il n'avait pas posée.",
+   "Aubergiste du Cornua Fracta. Il confirme que Philippa y chantait tous les soirs depuis un mois, gîte et couvert contre prestation, et signale qu'une jeune fille venait chaque soir : la fille du meunier, des moulins à l'ouest."
   ],
   "relations": [
    {
@@ -2477,7 +2496,9 @@
   "resume": "Elle venait écouter Philippa chaque soir. Elle a gardé le pli de Ferox.",
   "connu": [
    "Elle reconnaît Philippa de loin et se montre bien trop familière : un mois de souvenirs que Philippa n'a pas.",
-   "La veille du meurtre, un vieil homme aux cheveux blancs et au maintien militaire a remis un pli à Philippa. Sera l'a gardé : « À la deuxième cloche après le coucher du soleil. Viens seule. Ne parle à personne. Via Castrum, Quartier de la Caserne, porte de fer. »"
+   "La veille du meurtre, un vieil homme aux cheveux blancs et au maintien militaire a remis un pli à Philippa. Sera l'a gardé : « À la deuxième cloche après le coucher du soleil. Viens seule. Ne parle à personne. Via Castrum, Quartier de la Caserne, porte de fer. »",
+   "Fille du meunier des moulins à l'ouest, très familière avec Philippa après un mois de promenades. Elle a gardé le pli remis à Philippa par un vieil homme aux cheveux blancs, au maintien militaire, la veille du meurtre.",
+   "Le pli donnait une adresse dans le quartier de la caserne et une heure, sous sceau administratif militaire, sans nom."
   ],
   "citation": {
    "texte": "Il était vieux, les cheveux blancs, il se tenait droit comme un piquet. Il t'a donné ça entre deux chansons et tu n'as rien dit.",
@@ -2503,7 +2524,8 @@
   "statut": "vivant",
   "resume": "Voisine de la chambre louée par Jane pendant le mois perdu.",
   "connu": [
-   "Jane avait loué une chambre de bonne chez elle, propre mais sans rien de personnel. Capella l'entendait rentrer tard et lui reprochait de travailler pour Hématome. Jane portait ses courses le mardi."
+   "Jane avait loué une chambre de bonne chez elle, propre mais sans rien de personnel. Capella l'entendait rentrer tard et lui reprochait de travailler pour Hématome. Jane portait ses courses le mardi.",
+   "Grand-mère du rez-de-chaussée de l'ancienne logeuse de Jane. Elle l'entendait rentrer tard tous les soirs. Elle lui a indiqué qu'Hématome se trouve dans la vieille tannerie."
   ],
   "citation": {
    "texte": "Je t'entendais rentrer tard tous les soirs. T'as bon cœur, tu portais mes courses le mardi.",
@@ -2532,7 +2554,9 @@
   "connu": [
    "Trouvé un matin assis sur les murailles de la ville, il y est revenu à chaque expulsion. « Il a neuf vies. » La ville a fini par le mettre dans l'arène.",
    "Il respecte Jane pour avoir travaillé un mois sans poser de questions. Il donne le nom de Calvinus Ferox sans négocier : ce nom est devenu dangereux à garder.",
-   "Son carnet liste d'autres contrats, dont un de Vibia. Il garde les captifs de l'embuscade au fond de la tannerie, à disposition de Tarcus."
+   "Son carnet liste d'autres contrats, dont un de Vibia. Il garde les captifs de l'embuscade au fond de la tannerie, à disposition de Tarcus.",
+   "Chat des rues et combattant de l'arène, sans titre, sans clan, sans maître. Légende : retrouvé un matin assis sur les murailles à lécher ses griffes, il a survécu à toutes les tentatives de l'expulser, de l'enfermer ou de le tuer. Il dort sur les toits.",
+   "Les PJ l'ont battu au Colisée."
   ],
   "histoire": [
    "Jane le bat dans l'arène du festival."
@@ -2578,7 +2602,9 @@
   "resume": "Général humilié, manipulé par Absalom pour faire tuer l'ambassadeur.",
   "connu": [
    "Sa villa est connue de tout le quartier. Son bureau contenait la lettre d'Absalom, signée du sceau de Vassago, et la copie de sa propre réponse.",
-   "Absalom lui promettait de lui rendre sa dignité en lui envoyant deux agents sous son contrôle total, le groupe, qu'il devait faire surveiller, puis lancer sur l'ambassadeur, avant de les laisser à la garde."
+   "Absalom lui promettait de lui rendre sa dignité en lui envoyant deux agents sous son contrôle total, le groupe, qu'il devait faire surveiller, puis lancer sur l'ambassadeur, avant de les laisser à la garde.",
+   "Ancien Grand-Général de la Maison Tauroc, jeté après avoir été usé, vivant dans une villa décrépite du quartier de la caserne. Il a commandé la surveillance de l'ambassadeur de Roshen Buru auprès d'Hématome.",
+   "La correspondance retrouvée chez lui est signée du sceau de Vassago et émane d'Absalom, qui l'incitait à faire tuer l'ambassadeur pour rétablir l'honneur de Tauroc."
   ],
   "relations": [
    {
@@ -2592,10 +2618,7 @@
     "ton": "negatif"
    }
   ],
-  "citation": {
-   "texte": "Je savais que vous viendriez. J'aurais dû vous faire tuer dans la ruelle.",
-   "qui": "Ferox, en saisissant l'épée accrochée au mur"
-  },
+  "citation": "Je savais que vous viendriez. J'aurais dû vous faire tuer dans la ruelle.",
   "galerie": [
    {
     "img": "img/paysages/keras-tauroc/villa-ferox.webp",
@@ -2618,7 +2641,10 @@
    "Vieux minotaure en robe de fonction, tablette de cire sous le bras. Il regarde longtemps avant de parler.",
    "Il pense que le crime a été planifié. Il a fait lancer Greater Restoration sur le groupe dès l'arrestation parce qu'il avait le regard vide.",
    "Son accord : un sceau de localisation sur chacune, liberté de mouvement en ville, interdiction de franchir les murailles. En échange, le groupe enquête sur lui-même et rapporte des preuves.",
-   "Il a aussi enquêté sur l'homme contrôlé par une araignée : sa chambre était dévastée, avec des symboles de Balamor gravés dans le bois, à coups d'ongles."
+   "Il a aussi enquêté sur l'homme contrôlé par une araignée : sa chambre était dévastée, avec des symboles de Balamor gravés dans le bois, à coups d'ongles.",
+   "Minotaure âgé en robe de fonction, conseiller juridique de la Maison Tauroc auprès du Consul Draven Tauroc. Il a fait lancer Greater Restoration sur Philippa et Jane à leur arrestation.",
+   "Il leur propose un accord : sceau de localisation et liberté de mouvement en ville, sans franchir les murailles, contre des preuves exploitables. Leurs affaires leur sont rendues à l'innocentation.",
+   "À la fin, il lève les sceaux, rend les armes et révèle qu'Absalom a passé la frontière de Roshen Buru trois semaines avant le meurtre avec des papiers en règle, que Ferox n'avait pas les moyens de signer."
   ],
   "relations": [
    {
@@ -2657,7 +2683,8 @@
   "resume": "Assassiné lors du banquet du festival. Sa mort a fermé les routes vers Roshen Buru.",
   "connu": [
    "Il a été tué le soir du banquet du festival, après la victoire du groupe au colisée. Le groupe était sur les lieux, couvert de sang, sans en avoir le souvenir.",
-   "Sa mort a fermé les accès à Roshen Buru, Seiran Vale et Azuren Kai compris."
+   "Sa mort a fermé les accès à Roshen Buru, Seiran Vale et Azuren Kai compris.",
+   "Ambassadeur de Roshen Buru à Keras Tauroc, assassiné le soir du banquet du Festival par les doubles de Philippa et Jane, manipulés par un vieillard sous le contrôle d'Absalom."
   ],
   "img": "img/pnj/otoba-kessai.webp",
   "attitude": "neutre",
@@ -5231,10 +5258,7 @@
   "lieu": "hopital-du-colisee",
   "statut": "vivant",
   "resume": "Prêtresse-guérisseuse économe de ses gestes. Elle soigne et vend des potions à prix fixes.",
-  "citation": {
-   "texte": "Je ne fais pas de miracles. Je fais de la mécanique.",
-   "qui": "Meditrina, en Taurokh, traduit"
-  },
+  "citation": "Je ne fais pas de miracles. Je fais de la mécanique.",
   "galerie": [
    {
     "img": "img/paysages/keras-tauroc/hopital.webp",
@@ -5243,6 +5267,9 @@
   ],
   "img": "img/pnj/meditrina.webp",
   "attitude": "neutre",
+  "connu": [
+   "Soigneuse de l'hôpital des combattants du Colisée. Gestes économes, regard qui évalue en une seconde. Elle vend des potions de soin et des soins sur mesure : soins d'urgence, soin complet, repos long accéléré, PV temporaires ou avantage aux jets de CON avant un combat."
+  ],
   "teinte": "#193c75"
  },
  {
@@ -5279,6 +5306,9 @@
    }
   ],
   "attitude": "neutre",
+  "connu": [
+   "Le Monolithe, combattant du Colisée. La légende le dit né dans le sud des plaines rouges, fils d'une tempête et d'un tremblement de terre, seul à trouver encore un adversaire à sa taille dans l'arène. Les PJ l'ont affronté et battu."
+  ],
   "teinte": "#753c19"
  },
  {
@@ -5312,6 +5342,9 @@
    }
   ],
   "attitude": "neutre",
+  "connu": [
+   "Combattante du Colisée surnommée La Cendre du Monastère. Elle a prié et médité vingt ans, puis est sortie seule d'un monastère, couverte de cendres et riant. Elle cherche à se sentir vivante. Elle a été tuée par Philippa dans l'arène."
+  ],
   "teinte": "#753c19"
  },
  {
@@ -5348,6 +5381,9 @@
    }
   ],
   "attitude": "neutre",
+  "connu": [
+   "Combattant anonyme du Colisée, qui refuse de donner son nom ou ses origines. Fulvia, exaspérée, doit improviser son annonce. Les PJ l'ont battu."
+  ],
   "teinte": "#753c19"
  },
  {
@@ -5421,6 +5457,10 @@
    }
   ],
   "attitude": "neutre",
+  "connu": [
+   "Haruspex minotaure âgé, cornes usées, dont le cabinet jouxte la caserne. Il n'ouvre qu'à ceux qui portent les Cornes d'Or.",
+   "Il a lu pour Absalom des présages vers le nord : une présence ancienne qui dort dans une forêt. Il lui a conseillé de suivre le fleuve. Elle a payé sans un mot de remerciement."
+  ],
   "teinte": "#755219"
  },
  {
@@ -5452,6 +5492,11 @@
    }
   ],
   "attitude": "neutre",
+  "connu": [
+   "Contremaître de la mine de l'ouest. Il se souvient d'Absalom, qui posait des questions sur les pierres et leurs propriétés. Il répond que les pierres locales (rubis, quartz, grenats) sont belles mais sans magie, hormis l'arshen.",
+   "L'arshen, pierre rare, conduit la magie comme un grand chemin et convient aux cercles d'invocation et aux portails.",
+   "Les PJ concluent avec lui un marché de 10 000 po pour deux tonnes de pierre, sous réserve d'organiser la livraison."
+  ],
   "teinte": "#753c19"
  },
  {
@@ -5484,6 +5529,9 @@
    }
   ],
   "attitude": "neutre",
+  "connu": [
+   "Voisin de la scène de crime, caché dans un renfoncement la nuit du meurtre, sans oser aller voir la garde. Il a vu deux femmes au regard mort guidées par un vieil homme aux cheveux blancs, et accepte de parler parce que les PJ portent les Cornes d'Or."
+  ],
   "teinte": "#755219"
  },
  {
@@ -5501,6 +5549,9 @@
   ],
   "img": "img/pnj/passant-ivre.webp",
   "attitude": "ennemi",
+  "connu": [
+   "Homme devenu renfermé depuis des mois, dont le corps a été contrôlé par une araignée pâle qui lui rongeait le visage. Les voisins entendaient griffures et marmonnements la nuit. Dans son logement, un symbole gravé aux ongles dans le plancher se déforme."
+  ],
   "teinte": "#527519"
  },
  {
@@ -5559,6 +5610,9 @@
    }
   ],
   "attitude": "ennemi",
+  "connu": [
+   "Deux soldats en permission payés par Ferox pour récupérer le carnet d'Hématome et renvoyer les PJ en cellule. Ils usent de menaces sur les proches. Ils se rendent si l'un d'eux tombe à 0 PV."
+  ],
   "teinte": "#753c19"
  },
  {

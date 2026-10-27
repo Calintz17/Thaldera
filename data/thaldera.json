@@ -3516,12 +3516,12 @@
   "resume": "Directrice méthodique qui habillait le meurtre en devoir moral.",
   "connu": [
    "Elle distribuait des objets de meurtre silencieux avant les missions.",
-   "Elle a été tuée plus tard par des mercenaires."
+   "Elle a été tuée plus tard par des mercenaires.",
+   "Dirige l'orphelinat de Merigold. Elle félicite Jane pour son efficacité, récupère la bourse volée et lui accorde une chambre au lieu du dortoir : le privilège des enfants qui travaillent bien.",
+   "Elle confie à Jane son premier meurtre commandité : réduire au silence Edmund Von Kornwald, qui voudrait nuire à l'orphelinat. Elle remet à chaque enfant un objet à choisir (fléchettes silencieuses, anneau d'étranglement, plume de téléportation).",
+   "Elle reçoit en privé M. Falken, qui attend le même niveau de service à chaque fois."
   ],
-  "citation": {
-   "texte": "Certaines mauvaises herbes doivent être arrachées avant qu'elles n'étouffent le jardin. Tu comprends cela, n'est-ce pas, Jane ?",
-   "qui": "Madame la Rectrice"
-  },
+  "citation": "Certaines mauvaises herbes doivent être arrachées avant qu'elles n'étouffent le jardin.",
   "img": "img/pnj/leyenmil-madame-la-rectrice.webp",
   "relations": [
    {
@@ -3549,7 +3549,9 @@
   "statut": "mort",
   "resume": "Homme que Jane a tué pour la Rectrice. Il enquêtait en secret pour la faire tomber.",
   "connu": [
-   "Ses documents décrivaient les sévices de l'orphelinat."
+   "Ses documents décrivaient les sévices de l'orphelinat.",
+   "Vit au fond du village, dans une maison isolée à l'orée des arbres, gardée de nuit. Il n'est pas un combattant d'élite.",
+   "Dans son bureau, des notes d'enquête, des témoignages anonymes et des comptes suspects montrent qu'il enquêtait pour faire tomber la Rectrice et protéger les enfants."
   ],
   "galerie": [
    {
@@ -3577,7 +3579,10 @@
     "ton": "positif"
    }
   ],
-  "attitude": "positif"
+  "attitude": "positif",
+  "connu": [
+   "Voleur de quinze ans au service de la Rectrice. Il veille sur Luka comme sur un petit frère et demande à Jane de l'aider à le retrouver sans alerter les adultes."
+  ]
  },
  {
   "id": "luka",
@@ -3589,7 +3594,8 @@
   "statut": "inconnu",
   "resume": "Retrouvé muet, un œil manquant, le visage griffé.",
   "connu": [
-   "Jane veut le retrouver."
+   "Jane veut le retrouver.",
+   "Enfant de dix ans de l'orphelinat. Retrouvé dans une pièce vide, mutique, un œil manquant, le visage griffé et le corps marqué de coups. Il refuse de parler et personne n'ose demander ce qui s'est passé."
   ],
   "attitude": "positif"
  },
@@ -3603,7 +3609,8 @@
   "statut": "vivant",
   "resume": "Client régulier et exigeant, canne à pommeau doré. Il achetait des enfants.",
   "connu": [
-   "Jane compte le tuer s'il se représente."
+   "Jane compte le tuer s'il se représente.",
+   "Visiteur régulier de l'orphelinat, en costume impeccable, manteau long et canne à pommeau doré. Il sort de la chapelle en félicitant la Rectrice pour un service rendu comme à l'habitude."
   ],
   "citation": {
    "texte": "C'était très agréable, comme à notre habitude. J'attendrai le même niveau de service à chaque fois.",
@@ -8015,7 +8022,10 @@
     "ton": "positif"
    }
   ],
-  "attitude": "positif"
+  "attitude": "positif",
+  "connu": [
+   "Enfant de l'orphelinat choisi par Jane avec Freya pour la mission contre Von Kornwald."
+  ]
  },
  {
   "id": "freya",
@@ -8033,7 +8043,10 @@
     "ton": "positif"
    }
   ],
-  "attitude": "positif"
+  "attitude": "positif",
+  "connu": [
+   "Enfant de l'orphelinat choisie par Jane avec Klaus pour la mission contre Von Kornwald."
+  ]
  },
  {
   "id": "village-de-leyenmil",
@@ -8062,7 +8075,10 @@
   "alias": [
    "Weller"
   ],
-  "attitude": "positif"
+  "attitude": "positif",
+  "connu": [
+   "Vendeur de poisson du village. Il tend un morceau de poisson salé aux enfants sans poser de question."
+  ]
  },
  {
   "id": "mr-kessler-leyenmil",
@@ -8077,7 +8093,10 @@
    "texte": "Vous êtes trop jeunes pour tout ça. Revenez quand vous serez grands.",
    "qui": "Mr. Kessler, marchand d'armes"
   },
-  "attitude": "neutre"
+  "attitude": "neutre",
+  "connu": [
+   "Armurier du village. Il ferme la porte au nez des enfants : trop jeunes pour tout ça."
+  ]
  },
  {
   "id": "m-copperworth",
@@ -8110,6 +8129,9 @@
    }
   ],
   "attitude": "positif",
+  "connu": [
+   "Aubergiste du village. Il fait entrer les enfants pour les abriter, leur offre lait chaud et feu, et fait taire Otto quand celui-ci les insulte."
+  ],
   "teinte": "#755219"
  },
  {
@@ -8125,7 +8147,10 @@
    "texte": "La chair fraîche du vieil orphelinat… Alors, on vient voler ce soir ? Ou offrir d'autres services ?",
    "qui": "Otto, ivre, à l'auberge de Leyenmil"
   },
-  "attitude": "neutre"
+  "attitude": "neutre",
+  "connu": [
+   "Ivrogne de l'auberge du village. Il ricane en voyant les enfants de l'orphelinat et lance des allusions grossières."
+  ]
  },
  {
   "id": "maison-kornwald",
