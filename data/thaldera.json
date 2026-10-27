@@ -1264,7 +1264,12 @@
     "type": "Même camp",
     "ton": "negatif"
    }
-  ]
+  ],
+  "citation": {
+   "texte": "On ne tue pas un démon, insolente. Pas plus qu'on ne tue la soif ou l'envie. On les subit, on les prie, on s'y consume.",
+   "qui": "Argonath"
+  },
+  "attitude": "ennemi"
  },
  {
   "id": "camont",
@@ -1343,7 +1348,15 @@
   "citation": {
    "texte": "C'est pas grand-chose, mais c'est propre. Enfin… à peu près.",
    "qui": "Teka, l'aubergière"
-  }
+  },
+  "relations": [
+   {
+    "cible": "mika",
+    "type": "familier",
+    "ton": "positif"
+   }
+  ],
+  "attitude": "neutre"
  },
  {
   "id": "planches-camont",
@@ -1376,7 +1389,15 @@
   "citation": {
    "texte": "Rendez tout, et vite. On trouvera autre chose à bouffer.",
    "qui": "Ève, la mère des couvées"
-  }
+  },
+  "relations": [
+   {
+    "cible": "irna",
+    "type": "veille sur",
+    "ton": "positif"
+   }
+  ],
+  "attitude": "neutre"
  },
  {
   "id": "irna",
@@ -1393,7 +1414,20 @@
   "citation": {
    "texte": "On vous voulait rien de mal. C'est juste… vous aviez l'air d'en avoir trop.",
    "qui": "Irna"
-  }
+  },
+  "relations": [
+   {
+    "cible": "tilda",
+    "type": "chef de",
+    "ton": "positif"
+   },
+   {
+    "cible": "cleff",
+    "type": "chef de",
+    "ton": "positif"
+   }
+  ],
+  "attitude": "neutre"
  },
  {
   "id": "ssilik",
@@ -1410,7 +1444,8 @@
   "citation": {
    "texte": "Regardezzzza-moi cette dent, hein ? Dragon d'argent, rien que ça !",
    "qui": "Ssilik, le vendeur à la sauvette"
-  }
+  },
+  "attitude": "neutre"
  },
  {
   "id": "silos-camont",
@@ -1450,12 +1485,18 @@
     "cible": "arin-veyr",
     "type": "Lui envoie des clients",
     "ton": "neutre"
+   },
+   {
+    "cible": "jane-merigold",
+    "type": "alliée de",
+    "ton": "positif"
    }
   ],
   "citation": {
    "texte": "J'pensais pas te revoir ici, Jane. Les temps changent, mais pas nos emmerdes.",
    "qui": "Iris, cheffe des Yeux"
-  }
+  },
+  "attitude": "allie"
  },
  {
   "id": "dome-camont",
@@ -1501,7 +1542,28 @@
   "citation": {
    "texte": "L'usine, c'est chez nous. Vous rentrez pas, point.",
    "qui": "Nix, des Épingles"
-  }
+  },
+  "relations": [
+   {
+    "cible": "vira",
+    "type": "cheffe de",
+    "ton": "positif",
+    "inverse": "sous les ordres de"
+   },
+   {
+    "cible": "nibb",
+    "type": "cheffe de",
+    "ton": "positif",
+    "inverse": "sous les ordres de"
+   },
+   {
+    "cible": "ash",
+    "type": "cheffe de",
+    "ton": "positif",
+    "inverse": "sous les ordres de"
+   }
+  ],
+  "attitude": "neutre"
  },
  {
   "id": "porte-ville-haute",
@@ -1529,7 +1591,8 @@
   "citation": {
    "texte": "Halte. Motif de passage ? Laissez-passer ?",
    "qui": "Le capitaine des gardes gris"
-  }
+  },
+  "attitude": "neutre"
  },
  {
   "id": "potion-shop-camont",
@@ -1562,7 +1625,8 @@
   "citation": {
    "texte": "Les dettes, voyez-vous, ont la délicatesse de ne pas disparaître.",
    "qui": "Arin Veyr"
-  }
+  },
+  "attitude": "neutre"
  },
  {
   "id": "villa-graham",
@@ -1587,7 +1651,12 @@
   "resume": "Riche négociant qui a piégé sa villa après une série de cambriolages.",
   "connu": [
    "Il reçoit des lettres de Leth, un informateur des Épingles."
-  ]
+  ],
+  "citation": {
+   "texte": "Votre Altesse Graham sa seigneurie, j'vous écris vite parce que j'ai un truc chelou sur les bras.",
+   "qui": "Lettre de Leth à Graham"
+  },
+  "attitude": "neutre"
  },
  {
   "id": "vira",
@@ -1603,7 +1672,8 @@
   ],
   "histoire": [
    "Les Épingles sont arrêtées pour l'effraction."
-  ]
+  ],
+  "attitude": "neutre"
  },
  {
   "id": "nibb",
@@ -1616,7 +1686,8 @@
   "resume": "Roublard du gang des Épingles.",
   "connu": [
    "Il agit avec Vira et Ash."
-  ]
+  ],
+  "attitude": "neutre"
  },
  {
   "id": "ash",
@@ -1629,7 +1700,8 @@
   "resume": "Guerrier du gang des Épingles.",
   "connu": [
    "Il agit avec Vira et Nibb."
-  ]
+  ],
+  "attitude": "neutre"
  },
  {
   "id": "port-blanc",
@@ -1713,6 +1785,7 @@
    }
   ],
   "img": "img/pnj/port-blanc-susie.webp",
+  "attitude": "neutre",
   "teinte": "#755219"
  },
  {
@@ -1726,7 +1799,12 @@
   "resume": "Joueur installé qui invite les nouveaux visages à sa table.",
   "connu": [
    "Il joue contre des gens qui ne repasseront pas."
-  ]
+  ],
+  "citation": {
+   "texte": "Tiens donc… des nouvelles têtes. On n'en voit pas souvent passer par ici.",
+   "qui": "Boon"
+  },
+  "attitude": "neutre"
  },
  {
   "id": "quais-rouges",
@@ -1765,6 +1843,7 @@
    }
   ],
   "img": "img/pnj/port-blanc-june.webp",
+  "attitude": "neutre",
   "teinte": "#753c19"
  },
  {
@@ -1807,6 +1886,14 @@
    }
   ],
   "img": "img/pnj/port-blanc-wyatt.webp",
+  "relations": [
+   {
+    "cible": "mara-callahan",
+    "type": "shérif contre",
+    "ton": "negatif"
+   }
+  ],
+  "attitude": "positif",
   "teinte": "#753c19"
  },
  {
@@ -1829,7 +1916,12 @@
    "Red Callahan",
    "Mara Callahan"
   ],
+  "citation": {
+   "texte": "Dis-moi… t’as vraiment l’air du genre à faire la nounou pour Wyatt Hale ? Regarde-toi. Tu pourrais être de l’autre côté des barreaux, à compter ton or !",
+   "qui": "Mara « Red » Callahan"
+  },
   "img": "img/pnj/port-blanc-mara.webp",
+  "attitude": "positif",
   "teinte": "#753c19"
  },
  {
@@ -1855,7 +1947,12 @@
   "connu": [
    "« Moi je garde les pâtures, je pose pas trop de questions. »"
   ],
+  "citation": {
+   "texte": "I-ici c-c’est l-le b-bétail… D-des v-vaches… d-des c-cochons… d-des t-troupeaux à p-perte d-vue…",
+   "qui": "Harlan"
+  },
   "img": "img/pnj/port-blanc-harlan.webp",
+  "attitude": "neutre",
   "teinte": "#755219"
  },
  {
@@ -1873,7 +1970,8 @@
   "resume": "Varkel (bovins), Reth (moutons, rites de purification), Holsten (chevaux de guerre) et Calderon (grandes plaines).",
   "connu": [
    "Elles arbitrent leurs différends ensemble pour que la ville tienne.",
-   "Les Varkel ont accusé publiquement les Reth dans l'affaire des bêtes dorées."
+   "Les Varkel ont accusé publiquement les Reth dans l'affaire des bêtes dorées.",
+   "Eleanor Holsten est à la tête de la maison Holsten."
   ]
  },
  {
@@ -1911,7 +2009,8 @@
     "type": "Sa cible",
     "ton": "negatif"
    }
-  ]
+  ],
+  "attitude": "ennemi"
  },
  {
   "id": "magdalena",
@@ -1934,6 +2033,7 @@
    }
   ],
   "img": "img/pnj/port-doe-lan-magdalena.webp",
+  "attitude": "positif",
   "teinte": "#752519"
  },
  {
@@ -1951,6 +2051,10 @@
   "histoire": [
    "Le groupe le recroise devant le théâtre Russconi."
   ],
+  "citation": {
+   "texte": "Regardez-moi ça. Ces lignes, ces volumes, cette courbe parfaite sous l'arche… C'est un écrin. Une promesse.",
+   "qui": "Barok"
+  },
   "img": "img/pnj/port-doe-lan-barok-de-guise.webp",
   "formes": [
    {
@@ -1966,6 +2070,7 @@
     "teinte": "#752519"
    }
   ],
+  "attitude": "positif",
   "teinte": "#752519"
  },
  {
@@ -1980,6 +2085,10 @@
   "connu": [
    "Elle a remarqué trop de gardes autour du théâtre pour un simple spectacle."
   ],
+  "citation": {
+   "texte": "Contente de vous voir en vie. Restez attentifs. La ville n'est pas aussi calme qu'elle en a l'air.",
+   "qui": "Almar"
+  },
   "img": "img/pnj/port-doe-lan-almar-de-guise-e.webp",
   "formes": [
    {
@@ -1995,6 +2104,7 @@
     "teinte": "#755219"
    }
   ],
+  "attitude": "positif",
   "teinte": "#756919"
  },
  {
@@ -2009,6 +2119,10 @@
   "connu": [
    "Il a été invité à Port Doëlan pour un séminaire."
   ],
+  "citation": {
+   "texte": "Rivegard ne cautionne pas les récits hagiographiques déguisés en archives ; nous classons des faits, pas des flatteries.",
+   "qui": "Umberto Hevalan"
+  },
   "galerie": [
    {
     "img": "img/paysages/port-doelan/marche.webp",
@@ -2016,6 +2130,19 @@
    }
   ],
   "img": "img/pnj/port-doe-lan-umberto-hevalan.webp",
+  "relations": [
+   {
+    "cible": "aurelian-thorex",
+    "type": "refuse sa propagande",
+    "ton": "negatif"
+   },
+   {
+    "cible": "riminar",
+    "type": "invité par",
+    "ton": "positif"
+   }
+  ],
+  "attitude": "positif",
   "teinte": "#753c19"
  },
  {
@@ -2093,12 +2220,34 @@
     "cible": "thargan",
     "type": "Second",
     "ton": "neutre"
+   },
+   {
+    "cible": "thargan",
+    "type": "second",
+    "ton": "positif",
+    "inverse": "second de Sycomore"
+   },
+   {
+    "cible": "gran-brijit",
+    "type": "alliée",
+    "ton": "positif"
+   },
+   {
+    "cible": "jane-merigold",
+    "type": "alliée",
+    "ton": "positif"
+   },
+   {
+    "cible": "philippa-rougetoison",
+    "type": "alliée",
+    "ton": "positif"
    }
   ],
   "citation": {
    "texte": "Vous avez du cran de venir ici vivants. Parlez, je veux voir jusqu'où va votre folie.",
    "qui": "Sycomore Brise-Pavois"
   },
+  "attitude": "allie",
   "teinte": "#756919"
  },
  {
@@ -2119,7 +2268,8 @@
   "citation": {
    "texte": "Regarde-moi bien, étrangère… je vais peindre ces planches avec ton sang.",
    "qui": "Thargan l'Écaillé"
-  }
+  },
+  "attitude": "neutre"
  },
  {
   "id": "pavillon-vert",
@@ -2171,6 +2321,15 @@
     "legende": "Le Pavillon Vert, la serre"
    }
   ],
+  "relations": [
+   {
+    "cible": "philippa-rougetoison",
+    "type": "libérée par",
+    "ton": "positif",
+    "inverse": "libératrice de"
+   }
+  ],
+  "attitude": "allie",
   "teinte": "#755219"
  },
  {
@@ -2199,7 +2358,26 @@
   ],
   "histoire": [
    "Le groupe le vainc."
-  ]
+  ],
+  "citation": {
+   "texte": "Ha ! Tu te bats bien… mais la lame d'un Landsknecht ne manque jamais sa proie.",
+   "qui": "Wilhelm der Treue"
+  },
+  "relations": [
+   {
+    "cible": "eryndel",
+    "type": "sert",
+    "ton": "positif",
+    "inverse": "servi par"
+   },
+   {
+    "cible": "philippa-rougetoison",
+    "type": "venu la ramener",
+    "ton": "negatif",
+    "inverse": "traquée par"
+   }
+  ],
+  "attitude": "ennemi"
  },
  {
   "id": "voros",
@@ -2235,7 +2413,8 @@
   "connu": [
    "Il met la Griffe et le Voile sur le même plan.",
    "On ne l'obtient que par le calcul d'équilibre, pas par la morale."
-  ]
+  ],
+  "attitude": "neutre"
  },
  {
   "id": "helka-von-leyenmil",
@@ -2249,7 +2428,15 @@
   "connu": [
    "Elle décrit la Griffe comme une meute de cinq, soigneur et arcaniste compris : « tu touches à un, t'en as quatre autres. »",
    "Olyssane garde un ressentiment de guerre contre elle."
-  ]
+  ],
+  "relations": [
+   {
+    "cible": "skrell",
+    "type": "cheffe du Voile",
+    "ton": "positif"
+   }
+  ],
+  "attitude": "positif"
  },
  {
   "id": "skrell",
@@ -2265,7 +2452,8 @@
   ],
   "histoire": [
    "Helka et Philippa le tuent au fond de sa planque."
-  ]
+  ],
+  "attitude": "neutre"
  },
  {
   "id": "bernard",
@@ -2278,7 +2466,8 @@
   "resume": "Goliath couvert de champignons, qui ne parle jamais. Retourné vivre dans les sources chaudes.",
   "connu": [
    "Helka l'a présenté à Philippa, avec affection."
-  ]
+  ],
+  "attitude": "neutre"
  },
  {
   "id": "vano-meredzi",
@@ -2291,7 +2480,8 @@
   "resume": "Ancien corsaire de Havre Noir devenu indépendant à Voros.",
   "connu": [
    "Son navire a mené le groupe de Lunsk à Voros, en 3 jours et demi, malgré une tempête et des nagas."
-  ]
+  ],
+  "attitude": "neutre"
  },
  {
   "id": "lunsk",
@@ -2325,7 +2515,16 @@
   "resume": "Trafiquant local, qui cite « le Berger » comme donneur d'ordres.",
   "connu": [
    "Son livre de comptes mentionne de la marchandise vive scellée, déchargée de nuit à Voros."
-  ]
+  ],
+  "relations": [
+   {
+    "cible": "silex",
+    "type": "chef de",
+    "ton": "positif",
+    "inverse": "sbire de"
+   }
+  ],
+  "attitude": "ennemi"
  },
  {
   "id": "silex",
@@ -2335,7 +2534,8 @@
   "parent": "lunsk",
   "lieu": "lunsk",
   "statut": "vivant",
-  "resume": "Sous-fifre de Mezzek, épargné par Philippa."
+  "resume": "Sous-fifre de Mezzek, épargné par Philippa.",
+  "attitude": "ennemi"
  },
  {
   "id": "selva",
@@ -2345,7 +2545,15 @@
   "parent": "lunsk",
   "lieu": "lunsk",
   "statut": "en fuite",
-  "resume": "Lagamore logisticienne qui combattait la Griffe. En fuite depuis l'annexion."
+  "resume": "Lagamore logisticienne qui combattait la Griffe. En fuite depuis l'annexion.",
+  "relations": [
+   {
+    "cible": "mezzek",
+    "type": "combattait la Griffe de",
+    "ton": "negatif"
+   }
+  ],
+  "attitude": "positif"
  },
  {
   "id": "mirek-trois-pierres",
@@ -2355,7 +2563,8 @@
   "parent": "lunsk",
   "lieu": "lunsk",
   "statut": "vivant",
-  "resume": "Aubergiste à l'œil de verre. Point de chute et de rumeurs."
+  "resume": "Aubergiste à l'œil de verre. Point de chute et de rumeurs.",
+  "attitude": "neutre"
  },
  {
   "id": "ile-aux-moines",
@@ -2396,6 +2605,7 @@
    }
   ],
   "img": "img/pnj/temple-brumeux-fre-re-augustus.webp",
+  "attitude": "ennemi",
   "teinte": "#753c19"
  },
  {
@@ -2459,6 +2669,14 @@
    }
   ],
   "img": "img/pnj/temple-brumeux-barakel.webp",
+  "relations": [
+   {
+    "cible": "frere-augustus-carrow",
+    "type": "possède",
+    "ton": "negatif"
+   }
+  ],
+  "attitude": "ennemi",
   "teinte": "#196975"
  },
  {
@@ -2522,6 +2740,7 @@
    }
   ],
   "img": "img/pnj/agran-thaloor.webp",
+  "attitude": "positif",
   "teinte": "#755219"
  },
  {
@@ -2547,6 +2766,14 @@
    }
   ],
   "img": "img/pnj/agran-suuraal.webp",
+  "relations": [
+   {
+    "cible": "kataron",
+    "type": "porte la voix de",
+    "ton": "positif"
+   }
+  ],
+  "attitude": "neutre",
   "teinte": "#753c19"
  },
  {
@@ -2572,6 +2799,7 @@
    }
   ],
   "img": "img/pnj/agran-algari.webp",
+  "attitude": "neutre",
   "teinte": "#755219"
  },
  {
@@ -2588,6 +2816,14 @@
    "qui": "Glooglugogg"
   },
   "img": "img/pnj/agran-glooglugoog.webp",
+  "relations": [
+   {
+    "cible": "la-suuraal",
+    "type": "envoie vers",
+    "ton": "positif"
+   }
+  ],
+  "attitude": "positif",
   "teinte": "#755219"
  },
  {
@@ -2627,7 +2863,16 @@
   "citation": {
    "texte": "Bienvenue dans la forge éternelle mes amis. Que cherchez-vous ? Vous avez l'air d'aventurières.",
    "qui": "Kaldros Emberforge"
-  }
+  },
+  "relations": [
+   {
+    "cible": "fyra",
+    "type": "maître de",
+    "ton": "positif",
+    "inverse": "apprentie de"
+   }
+  ],
+  "attitude": "allie"
  },
  {
   "id": "l-incarnat",
@@ -2637,7 +2882,8 @@
   "parent": "pyrrah",
   "lieu": "pyrrah",
   "statut": "vivant",
-  "resume": "Adolescent qui garde la Première Flamme. Épargné par le groupe."
+  "resume": "Adolescent qui garde la Première Flamme. Épargné par le groupe.",
+  "attitude": "neutre"
  },
  {
   "id": "solemnar",
@@ -2647,7 +2893,15 @@
   "parent": "pyrrah",
   "lieu": "pyrrah",
   "statut": "vivant",
-  "resume": "Autorité religieuse du sanctuaire. Les genasi sont interrogés avant d'approcher la chambre solaire."
+  "resume": "Autorité religieuse du sanctuaire. Les genasi sont interrogés avant d'approcher la chambre solaire.",
+  "relations": [
+   {
+    "cible": "l-incarnat",
+    "type": "grand prêtre de",
+    "ton": "positif"
+   }
+  ],
+  "attitude": "neutre"
  },
  {
   "id": "ashur",
@@ -2664,7 +2918,8 @@
   "citation": {
    "texte": "Regardez bien ces murs… Ce n'est pas mon œuvre. Ils étaient déjà là quand mon père m'a donné cette maison. Toute la bataille y est, figée dans la pierre.",
    "qui": "Ashur"
-  }
+  },
+  "attitude": "neutre"
  },
  {
   "id": "chateau-spezza",
@@ -2741,6 +2996,21 @@
     "teinte": "#753c19"
    }
   ],
+  "relations": [
+   {
+    "cible": "naberoth",
+    "type": "ingénieur de",
+    "ton": "positif",
+    "inverse": "serviteur de"
+   },
+   {
+    "cible": "cassiopee-vorn",
+    "type": "finançait, puis a lâché",
+    "ton": "neutre",
+    "inverse": "financée puis lâchée par"
+   }
+  ],
+  "attitude": "ennemi",
   "teinte": "#753c19"
  },
  {
@@ -2773,6 +3043,7 @@
     "teinte": "#753c19"
    }
   ],
+  "attitude": "ennemi",
   "teinte": "#753c19"
  },
  {
@@ -2801,12 +3072,17 @@
   "lieu": "theatre-russconi",
   "statut": "vivant",
   "resume": "Ajuste ses manchettes et laisse entendre que les places sont très demandées.",
+  "citation": {
+   "texte": "Merci de venir habillés en conséquence. C'est un théâtre. Pas une halle de poisson.",
+   "qui": "Cesare Rusconi"
+  },
   "galerie": [
    {
     "img": "img/paysages/port-doelan/theatre-russconi.webp",
     "legende": "Le théâtre Russconi"
    }
-  ]
+  ],
+  "attitude": "neutre"
  },
  {
   "id": "requiem",
@@ -2842,7 +3118,7 @@
    "C'est chez lui qu'Absalom se révèle aux joueuses."
   ],
   "citation": {
-   "texte": "Mais pile entre le bien et le mal, il y a une porte, qui mène vers un autre chemin.",
+   "texte": "Je vois votre futur, la fin de la route que vous êtes en train d'emprunter. Et je ne vois que la mort, la vôtre.",
    "qui": "Makandral Toussaint"
   },
   "galerie": [
@@ -2852,6 +3128,19 @@
    }
   ],
   "img": "img/pnj/port-doe-lan-makandral.webp",
+  "relations": [
+   {
+    "cible": "absalom",
+    "type": "l'a convoquée",
+    "ton": "neutre"
+   },
+   {
+    "cible": "amon-haute-vigie",
+    "type": "voisin proche",
+    "ton": "positif"
+   }
+  ],
+  "attitude": "positif",
   "teinte": "#753c19"
  },
  {
@@ -2905,6 +3194,21 @@
     "cible": "eamonn",
     "type": "L'a jugé drogué",
     "ton": "neutre"
+   },
+   {
+    "cible": "jane-merigold",
+    "type": "sœur d'orphelinat",
+    "ton": "positif"
+   },
+   {
+    "cible": "sycomore-brise-pavois",
+    "type": "partenaire",
+    "ton": "positif"
+   },
+   {
+    "cible": "cassiopee-vorn",
+    "type": "rivale",
+    "ton": "neutre"
    }
   ],
   "alias": [
@@ -2930,6 +3234,7 @@
     "teinte": "#752519"
    }
   ],
+  "attitude": "allie",
   "teinte": "#752519"
  },
  {
@@ -2945,6 +3250,14 @@
    "Traces de poudre noire sur ses manches et odeur de soufre."
   ],
   "img": "img/pnj/port-doe-lan-lirenne.webp",
+  "relations": [
+   {
+    "cible": "arianthil",
+    "type": "Ordre de l'Aile d'Argent",
+    "ton": "positif"
+   }
+  ],
+  "attitude": "neutre",
   "teinte": "#755219"
  },
  {
@@ -2967,6 +3280,15 @@
    }
   ],
   "img": "img/pnj/port-doe-lan-matthias-holbrekt-mort.webp",
+  "relations": [
+   {
+    "cible": "arkhavel-dorn",
+    "type": "mandaté par",
+    "ton": "positif",
+    "inverse": "a mandaté"
+   }
+  ],
+  "attitude": "neutre",
   "teinte": "#753c19"
  },
  {
@@ -2978,7 +3300,12 @@
   "lieu": "port-doelan",
   "statut": "vivant",
   "resume": "Vieille femme que tous prennent pour une folle. Elle jure que des démons vivent sous le château.",
+  "citation": {
+   "texte": "Vous les entendez pas… mais moi je les entends. La nuit.",
+   "qui": "Serna"
+  },
   "img": "img/pnj/port-doe-lan-serna.webp",
+  "attitude": "neutre",
   "teinte": "#755219"
  },
  {
@@ -2990,6 +3317,10 @@
   "lieu": "temple-de-valkur",
   "statut": "vivant",
   "resume": "Donne des orbes de respiration sous-marine.",
+  "citation": {
+   "texte": "Valkur guide les vents et tient la tempête en équilibre ; ceux qui respectent la mer ne sont pas abandonnés à sa colère.",
+   "qui": "Isuun des Profondeurs"
+  },
   "galerie": [
    {
     "img": "img/paysages/port-doelan/temple-de-valkur.webp",
@@ -2997,6 +3328,14 @@
    }
   ],
   "img": "img/pnj/port-doe-lan-isuun.webp",
+  "relations": [
+   {
+    "cible": "kataron",
+    "type": "peuple de",
+    "ton": "neutre"
+   }
+  ],
+  "attitude": "positif",
   "teinte": "#755219"
  },
  {
@@ -3070,6 +3409,20 @@
    "qui": "Madame la Rectrice"
   },
   "img": "img/pnj/leyenmil-madame-la-rectrice.webp",
+  "relations": [
+   {
+    "cible": "edmund-von-kornwald",
+    "type": "l'a fait tuer",
+    "ton": "negatif"
+   },
+   {
+    "cible": "jane-merigold",
+    "type": "ancienne tutrice de",
+    "ton": "negatif",
+    "inverse": "ennemie de"
+   }
+  ],
+  "attitude": "ennemi",
   "teinte": "#75193c"
  },
  {
@@ -3091,6 +3444,7 @@
    }
   ],
   "img": "img/pnj/leyenmil-edmund-von-kornwald.webp",
+  "attitude": "neutre",
   "teinte": "#752519"
  },
  {
@@ -3101,7 +3455,15 @@
   "parent": "orphelinat-merigold",
   "lieu": "orphelinat-merigold",
   "statut": "inconnu",
-  "resume": "Garçon de quinze ans qui veillait sur Luka. Il a demandé à Jane de chercher sans alerter les adultes."
+  "resume": "Garçon de quinze ans qui veillait sur Luka. Il a demandé à Jane de chercher sans alerter les adultes.",
+  "relations": [
+   {
+    "cible": "luka",
+    "type": "veille sur",
+    "ton": "positif"
+   }
+  ],
+  "attitude": "positif"
  },
  {
   "id": "luka",
@@ -3114,7 +3476,8 @@
   "resume": "Retrouvé muet, un œil manquant, le visage griffé.",
   "connu": [
    "Jane veut le retrouver."
-  ]
+  ],
+  "attitude": "positif"
  },
  {
   "id": "m-falken",
@@ -3139,6 +3502,14 @@
    }
   ],
   "img": "img/pnj/leyenmil-mr-falken.webp",
+  "relations": [
+   {
+    "cible": "la-rectrice",
+    "type": "client de",
+    "ton": "positif"
+   }
+  ],
+  "attitude": "ennemi",
   "teinte": "#753c19"
  },
  {
@@ -3187,7 +3558,8 @@
   "citation": {
    "texte": "Nouvelles du jour ! Encore un cadavre trouvé ce matin, peau verte, yeux exorbités !",
    "qui": "Brask le Clocheur, crieur de rue"
-  }
+  },
+  "attitude": "neutre"
  },
  {
   "id": "taverne-harpon-rouge",
@@ -3209,7 +3581,8 @@
   "parent": "taverne-harpon-rouge",
   "lieu": "taverne-harpon-rouge",
   "statut": "vivant",
-  "resume": "Figure de la taverne où Wilhelm der Treue s'attaque à Philippa."
+  "resume": "Figure de la taverne où Wilhelm der Treue s'attaque à Philippa.",
+  "attitude": "neutre"
  },
  {
   "id": "maison-crochemer",
@@ -3238,7 +3611,8 @@
   "citation": {
    "texte": "Vous avez vu sa peau ? Verte comme une algue pourrie, ses yeux sortaient de l'orbite !",
    "qui": "Alrik Crochemer"
-  }
+  },
+  "attitude": "neutre"
  },
  {
   "id": "crochemer",
@@ -3248,7 +3622,8 @@
   "parent": "maison-crochemer",
   "lieu": "maison-crochemer",
   "statut": "mort",
-  "resume": "Marin du Brumeux retrouvé mort, peau verdâtre."
+  "resume": "Marin du Brumeux retrouvé mort, peau verdâtre.",
+  "attitude": "neutre"
  },
  {
   "id": "ruelle-des-cordages",
@@ -3270,7 +3645,8 @@
   "parent": "ruelle-des-cordages",
   "lieu": "ruelle-des-cordages",
   "statut": "mort",
-  "resume": "Nouvelle victime, mêmes symptômes que les précédentes."
+  "resume": "Nouvelle victime, mêmes symptômes que les précédentes.",
+  "attitude": "neutre"
  },
  {
   "id": "melior-skarne",
@@ -3287,7 +3663,8 @@
   "citation": {
    "texte": "Pas d'spectacle aujourd'hui, seulement un mort de plus.",
    "qui": "Dr Melior Skarne"
-  }
+  },
+  "attitude": "neutre"
  },
  {
   "id": "registres-du-port",
@@ -3317,7 +3694,8 @@
   "citation": {
    "texte": "Calven, Brague, Crochemer… leurs noms je les ai.",
    "qui": "Arvik Denholm, le scribe"
-  }
+  },
+  "attitude": "neutre"
  },
  {
   "id": "maison-derek-varn",
@@ -3346,7 +3724,15 @@
   "citation": {
    "texte": "Moi j'suis l'dernier. Le dernier du Brumeux.",
    "qui": "Derek Varn"
-  }
+  },
+  "relations": [
+   {
+    "cible": "eldran-korr",
+    "type": "poursuivi par",
+    "ton": "negatif"
+   }
+  ],
+  "attitude": "neutre"
  },
  {
   "id": "eldran-korr",
@@ -3362,7 +3748,19 @@
   ],
   "histoire": [
    "Le groupe le vainc dans la masure de Derek Varn."
-  ]
+  ],
+  "citation": {
+   "texte": "On a levé l'fer contre not' capitaine. Tous unis. Tous sauf lui. Korr… son second, son chien fidèle.",
+   "qui": "Derek Varn, à propos d'Eldran"
+  },
+  "relations": [
+   {
+    "cible": "crochemer",
+    "type": "tue",
+    "ton": "negatif"
+   }
+  ],
+  "attitude": "ennemi"
  },
  {
   "id": "pont-du-jugement",
@@ -3391,7 +3789,8 @@
   "citation": {
    "texte": "Écoute-moi, cafitaine… y'a une brèche, dans la coque de l'Affemblage.",
    "qui": "Filver Brandepoix, prisonnier du Pont du Jugement"
-  }
+  },
+  "attitude": "neutre"
  },
  {
   "id": "caverne-aux-butins",
@@ -3420,7 +3819,15 @@
   "citation": {
    "texte": "Ici tout est à vendre, capitaine… Mais faut payer. Et payer cher.",
    "qui": "Marek le Calfat"
-  }
+  },
+  "relations": [
+   {
+    "cible": "sycomore-brise-pavois",
+    "type": "receleur de",
+    "ton": "positif"
+   }
+  ],
+  "attitude": "neutre"
  },
  {
   "id": "gueule-de-feu",
@@ -3455,7 +3862,8 @@
   "citation": {
    "texte": "Ici, on ne jure que par la flamme et le marteau. C'est eux qui tiennent l'Assemblage à flot.",
    "qui": "Korga Brise-Lame"
-  }
+  },
+  "attitude": "neutre"
  },
  {
   "id": "ponton-assemblage",
@@ -3485,7 +3893,15 @@
   "citation": {
    "texte": "Interdiction de passer, l'assemblage c'est pas une plage publique.",
    "qui": "Un garde Lapidès"
-  }
+  },
+  "relations": [
+   {
+    "cible": "sycomore-brise-pavois",
+    "type": "garde de",
+    "ton": "positif"
+   }
+  ],
+  "attitude": "neutre"
  },
  {
   "id": "reserve-armes",
@@ -3602,7 +4018,15 @@
   ],
   "alias": [
    "Gratte-papier"
-  ]
+  ],
+  "relations": [
+   {
+    "cible": "sycomore-brise-pavois",
+    "type": "scribe de",
+    "ton": "positif"
+   }
+  ],
+  "attitude": "neutre"
  },
  {
   "id": "draven-corbeal",
@@ -3615,7 +4039,8 @@
   "resume": "Opportuniste et cupide. Il ne mène qu'à Port Lagon, contre une lourde somme.",
   "connu": [
    "C'est la sortie de secours si le groupe se brouille avec Sycomore."
-  ]
+  ],
+  "attitude": "neutre"
  },
  {
   "id": "malrik-solbrun",
@@ -3628,7 +4053,20 @@
   "resume": "Il a basculé en prêchant pour le Dominion. Sycomore a brûlé le temple et l'a banni.",
   "connu": [
    "Il placardait « la lumière de Sol » et accusait Sycomore d'hérésie."
-  ]
+  ],
+  "citation": {
+   "texte": "Malrik voulait qu'on se rallie tous à la cause du Dominion. Ici, on chante qu'pour l'goudron. Sycomore lui a montré la sortie à coups de torches, et basta.",
+   "qui": "Un charpentier borgne, à propos du Diacre"
+  },
+  "relations": [
+   {
+    "cible": "sycomore-brise-pavois",
+    "type": "banni par",
+    "ton": "negatif",
+    "inverse": "a banni"
+   }
+  ],
+  "attitude": "ennemi"
  },
  {
   "id": "brague",
@@ -3638,7 +4076,8 @@
   "parent": "registres-du-port",
   "lieu": "registres-du-port",
   "statut": "mort",
-  "resume": "Nom cité par le scribe parmi les marins du Brumeux déjà morts."
+  "resume": "Nom cité par le scribe parmi les marins du Brumeux déjà morts.",
+  "attitude": "neutre"
  },
  {
   "id": "les-yeux",
@@ -3675,7 +4114,11 @@
   "alias": [
    "Brûleurs",
    "Bruloir"
-  ]
+  ],
+  "citation": {
+   "texte": "Bonjour, bonjour, voyageurs de passage… Venez, venez, il y a de la place sous le dôme.",
+   "qui": "Les Brûleurs, d'une seule voix"
+  }
  },
  {
   "id": "les-epingles",
@@ -3771,7 +4214,12 @@
   "resume": "Gamine accrochée aux jambes d'Irna.",
   "connu": [
    "« C'est pas du vol si on le rend, non ? »"
-  ]
+  ],
+  "citation": {
+   "texte": "C'est pas du vol si on le rend, non ?",
+   "qui": "Tilda"
+  },
+  "attitude": "neutre"
  },
  {
   "id": "cleff",
@@ -3781,7 +4229,8 @@
   "parent": "planches-camont",
   "lieu": "planches-camont",
   "statut": "vivant",
-  "resume": "Gamin qui tient le vieux sac de cuir volé avec Irna et Tilda."
+  "resume": "Gamin qui tient le vieux sac de cuir volé avec Irna et Tilda.",
+  "attitude": "neutre"
  },
  {
   "id": "mika",
@@ -3791,7 +4240,8 @@
   "parent": "l-abattoir",
   "lieu": "l-abattoir",
   "statut": "vivant",
-  "resume": "Petit poulpe qui vit au bout des tentacules de Teka."
+  "resume": "Petit poulpe qui vit au bout des tentacules de Teka.",
+  "attitude": "neutre"
  },
  {
   "id": "leth",
@@ -3804,7 +4254,12 @@
   "resume": "Auteur d'une lettre à Graham Gonn pour le prévenir qu'un envoyé du Passeur a commandé un vol chez Eryndel.",
   "connu": [
    "Il a éloigné un membre bavard en l'envoyant monter un comptoir à Havre Noir pour la Griffe."
-  ]
+  ],
+  "citation": {
+   "texte": "Si on me demande d'y aller, qu'est-ce que je fais, moi ? Je refuse et on nous pourchasse ?",
+   "qui": "Leth, dans sa lettre à Graham"
+  },
+  "attitude": "neutre"
  },
  {
   "id": "damian",
@@ -3814,7 +4269,12 @@
   "parent": "villa-graham",
   "lieu": "villa-graham",
   "statut": "vivant",
-  "resume": "Jeune garde qui rêve de prouver sa valeur dans la ville basse."
+  "resume": "Jeune garde qui rêve de prouver sa valeur dans la ville basse.",
+  "citation": {
+   "texte": "Mais c'est pas enfermé au sous-sol que nos noms seront gravés dans l'histoire !",
+   "qui": "Damian"
+  },
+  "attitude": "neutre"
  },
  {
   "id": "vieux-garde-graham",
@@ -3824,7 +4284,12 @@
   "parent": "villa-graham",
   "lieu": "villa-graham",
   "statut": "vivant",
-  "resume": "Garde proche de la retraite qui préfère les postes tranquilles."
+  "resume": "Garde proche de la retraite qui préfère les postes tranquilles.",
+  "citation": {
+   "texte": "Attends d'avoir mon âge. Tu verras qu'un poste où il se passe rien, c'est pas une punition, c'est une bénédiction.",
+   "qui": "Le vieux garde"
+  },
+  "attitude": "neutre"
  },
  {
   "id": "sadie",
@@ -3845,6 +4310,10 @@
     "ton": "negatif"
    }
   ],
+  "citation": {
+   "texte": "Sadie. Enchantée.",
+   "qui": "Sadie"
+  },
   "galerie": [
    {
     "img": "img/paysages/port-blanc/saloon.webp",
@@ -3852,6 +4321,7 @@
    }
   ],
   "img": "img/pnj/port-doe-lan-absalom-de-guise-e-en-sadie.webp",
+  "attitude": "neutre",
   "teinte": "#2d2d2d"
  },
  {
@@ -3893,6 +4363,14 @@
    }
   ],
   "img": "img/pnj/port-blanc-tibe-rius.webp",
+  "relations": [
+   {
+    "cible": "ezekiel",
+    "type": "gardes des abattoirs",
+    "ton": "positif"
+   }
+  ],
+  "attitude": "neutre",
   "teinte": "#755219"
  },
  {
@@ -3904,6 +4382,10 @@
   "lieu": "abattoirs-de-chaux",
   "statut": "vivant",
   "resume": "Garde posté avec Tiberius. « Ordres des Familles. Pas d'étrangers. »",
+  "citation": {
+   "texte": "Ordres des Familles. Pas d'étrangers.",
+   "qui": "Ezekiel"
+  },
   "galerie": [
    {
     "img": "img/paysages/port-blanc/abattoirs-de-chaux.webp",
@@ -3911,6 +4393,7 @@
    }
   ],
   "img": "img/pnj/port-blanc-ezekiel.webp",
+  "attitude": "neutre",
   "teinte": "#753c19"
  },
  {
@@ -3940,7 +4423,12 @@
   "alias": [
    "Abby du Voile"
   ],
+  "citation": {
+   "texte": "Je suis là parce que Port-Blanc nourrit encore trop de monde pour qu’on laisse ça dériver sans regarder.",
+   "qui": "Abby"
+  },
   "img": "img/pnj/port-blanc-abby.webp",
+  "attitude": "neutre",
   "teinte": "#755219"
  },
  {
@@ -3977,6 +4465,7 @@
    }
   ],
   "img": "img/pnj/port-blanc-corne-lius.webp",
+  "attitude": "neutre",
   "teinte": "#753c19"
  },
  {
@@ -4010,6 +4499,7 @@
    }
   ],
   "img": "img/pnj/port-blanc-royce.webp",
+  "attitude": "neutre",
   "teinte": "#753c19"
  },
  {
@@ -4043,6 +4533,7 @@
    }
   ],
   "img": "img/pnj/port-blanc-otis.webp",
+  "attitude": "neutre",
   "teinte": "#755219"
  },
  {
@@ -4102,6 +4593,7 @@
    }
   ],
   "img": "img/pnj/port-blanc-edrin-boeuf-cendre.webp",
+  "attitude": "neutre",
   "teinte": "#755219"
  },
  {
@@ -4165,6 +4657,15 @@
    }
   ],
   "img": "img/pnj/port-blanc-clint-mercer.webp",
+  "relations": [
+   {
+    "cible": "mara-callahan",
+    "type": "homme de",
+    "ton": "positif",
+    "inverse": "chef de"
+   }
+  ],
+  "attitude": "ennemi",
   "teinte": "#755219"
  },
  {
@@ -4180,7 +4681,8 @@
    "Mr Turner",
    "Mme Turner",
    "Turner"
-  ]
+  ],
+  "attitude": "neutre"
  },
  {
   "id": "gue-port-blanc",
@@ -4249,6 +4751,7 @@
    }
   ],
   "img": "img/pnj/port-doe-lan-gorak.webp",
+  "attitude": "neutre",
   "teinte": "#755219"
  },
  {
@@ -4292,6 +4795,7 @@
    }
   ],
   "img": "img/pnj/port-doe-lan-gardes.webp",
+  "attitude": "neutre",
   "teinte": "#753c19"
  },
  {
@@ -4335,6 +4839,14 @@
    }
   ],
   "img": "img/pnj/port-doe-lan-raffaele-orsini.webp",
+  "relations": [
+   {
+    "cible": "spezza",
+    "type": "admirateur de",
+    "ton": "positif"
+   }
+  ],
+  "attitude": "neutre",
   "teinte": "#753c19"
  },
  {
@@ -4379,6 +4891,7 @@
    }
   ],
   "img": "img/pnj/port-doe-lan-korvin-lustracier.webp",
+  "attitude": "neutre",
   "teinte": "#521975"
  },
  {
@@ -4419,6 +4932,14 @@
    }
   ],
   "img": "img/pnj/port-doe-lan-giorgio-malvento.webp",
+  "relations": [
+   {
+    "cible": "spezza",
+    "type": "admirateur de",
+    "ton": "positif"
+   }
+  ],
+  "attitude": "neutre",
   "teinte": "#753c19"
  },
  {
@@ -4461,6 +4982,7 @@
    }
   ],
   "img": "img/pnj/port-doe-lan-lina.webp",
+  "attitude": "positif",
   "teinte": "#755219"
  },
  {
@@ -4498,6 +5020,7 @@
    }
   ],
   "img": "img/pnj/port-doe-lan-falco-mirella.webp",
+  "attitude": "neutre",
   "teinte": "#753c19"
  },
  {
@@ -4516,6 +5039,7 @@
    }
   ],
   "img": "img/pnj/port-doe-lan-falco-mirella.webp",
+  "attitude": "neutre",
   "teinte": "#753c19"
  },
  {
@@ -4571,6 +5095,7 @@
    }
   ],
   "img": "img/pnj/port-doe-lan-amo-n.webp",
+  "attitude": "positif",
   "teinte": "#755219"
  },
  {
@@ -4599,6 +5124,7 @@
    }
   ],
   "img": "img/pnj/port-doe-lan-cesare.webp",
+  "attitude": "neutre",
   "teinte": "#753c19"
  },
  {
@@ -4609,7 +5135,16 @@
   "parent": "port-doelan",
   "lieu": "port-doelan",
   "statut": "inconnu",
-  "resume": "Signataire de la lettre de mission confiée à Matthias Holbrekt, au nom de l'Impératrice Eryndel d'Altéra."
+  "resume": "Signataire de la lettre de mission confiée à Matthias Holbrekt, au nom de l'Impératrice Eryndel d'Altéra.",
+  "relations": [
+   {
+    "cible": "eryndel",
+    "type": "sert",
+    "ton": "positif",
+    "inverse": "servi par"
+   }
+  ],
+  "attitude": "neutre"
  },
  {
   "id": "rue-marchande-doelan",
@@ -4652,6 +5187,7 @@
    }
   ],
   "img": "img/pnj/port-doe-lan-eloi-a-la-rue.webp",
+  "attitude": "positif",
   "teinte": "#753c19"
  },
  {
@@ -4703,6 +5239,7 @@
    }
   ],
   "img": "img/pnj/tomas.webp",
+  "attitude": "neutre",
   "teinte": "#753c19"
  },
  {
@@ -4728,31 +5265,83 @@
    }
   ],
   "img": "img/pnj/port-doe-lan-malka.webp",
+  "attitude": "positif",
   "teinte": "#193c75"
  },
  {
   "id": "tina",
   "type": "pnj",
   "nom": "Tina",
-  "titre": "Employée de la maison Vespera",
+  "titre": "Garde de Vespera, ancienne de la maison",
   "parent": "maison-de-vespera",
   "lieu": "maison-de-vespera",
   "statut": "vivant",
-  "resume": "Une des deux sœurs de la maison.",
-  "img": "img/pnj/tina-nina-prostitue-es.webp",
-  "teinte": "#755219"
+  "resume": "Une des deux sœurs de la maison. Prostituée à la maison de Vespera avant la chute de Spezza, elle garde désormais Madame en armure de fortune.",
+  "img": "img/pnj/tina-nina-garde-de-port-doelan.webp",
+  "formes": [
+   {
+    "img": "img/pnj/tina-nina-garde-de-port-doelan.webp",
+    "label": "Garde de Vespera, aujourd'hui",
+    "lieux": [],
+    "teinte": "#753c19"
+   },
+   {
+    "img": "img/pnj/tina-nina-prostitue-es.webp",
+    "label": "Avant la guerre, à la maison de Vespera",
+    "lieux": [],
+    "teinte": "#755219"
+   }
+  ],
+  "relations": [
+   {
+    "cible": "vespera-merigold",
+    "type": "garde de",
+    "ton": "positif",
+    "inverse": "gardée par"
+   },
+   {
+    "cible": "nina",
+    "type": "sœur",
+    "ton": "positif"
+   }
+  ],
+  "attitude": "positif",
+  "teinte": "#753c19"
  },
  {
   "id": "nina",
   "type": "pnj",
   "nom": "Nina",
-  "titre": "Employée de la maison Vespera",
+  "titre": "Garde de Vespera, ancienne de la maison",
   "parent": "maison-de-vespera",
   "lieu": "maison-de-vespera",
   "statut": "vivant",
-  "resume": "Une des deux sœurs de la maison.",
-  "img": "img/pnj/tina-nina-prostitue-es.webp",
-  "teinte": "#755219"
+  "resume": "Une des deux sœurs de la maison. Prostituée à la maison de Vespera avant la chute de Spezza, elle garde désormais Madame en armure de fortune.",
+  "img": "img/pnj/tina-nina-garde-de-port-doelan.webp",
+  "formes": [
+   {
+    "img": "img/pnj/tina-nina-garde-de-port-doelan.webp",
+    "label": "Garde de Vespera, aujourd'hui",
+    "lieux": [],
+    "teinte": "#753c19"
+   },
+   {
+    "img": "img/pnj/tina-nina-prostitue-es.webp",
+    "label": "Avant la guerre, à la maison de Vespera",
+    "lieux": [],
+    "teinte": "#755219"
+   }
+  ],
+  "relations": [
+   {
+    "cible": "vespera-merigold",
+    "type": "garde de",
+    "ton": "positif",
+    "inverse": "gardée par"
+   }
+  ],
+  "attitude": "positif",
+  "teinte": "#753c19"
  },
  {
   "id": "quartier-general-griffe",
@@ -4788,6 +5377,7 @@
    }
   ],
   "img": "img/pnj/port-doe-lan-cassiope-e-vorn.webp",
+  "attitude": "neutre",
   "teinte": "#755219"
  },
  {
@@ -4825,6 +5415,7 @@
    }
   ],
   "img": "img/pnj/port-doe-lan-aldo.webp",
+  "attitude": "neutre",
   "teinte": "#753c19"
  },
  {
@@ -4862,6 +5453,7 @@
    }
   ],
   "img": "img/pnj/port-doe-lan-maela.webp",
+  "attitude": "neutre",
   "teinte": "#755219"
  },
  {
@@ -4886,8 +5478,12 @@
   "titre": "Chef du Voile",
   "parent": "voile-doelan",
   "lieu": "voile-doelan",
-  "statut": "vivant",
+  "statut": "mort",
   "resume": "Orc massif. Il cherche à se rapprocher de Spezza pour l'argent et l'expansion vers l'Ouest.",
+  "connu": [
+   "Il voulait se rapprocher de Spezza pour l'argent et l'expansion vers l'Ouest.",
+   "Après la chute de Spezza, il a été retrouvé mort."
+  ],
   "citation": {
    "texte": "Spezza voit loin. Vers l'ouest. Vers des terres où personne n'a encore planté son drapeau.",
    "qui": "Korrash"
@@ -4899,6 +5495,15 @@
    }
   ],
   "img": "img/pnj/port-doe-lan-korrash-saphir.webp",
+  "relations": [
+   {
+    "cible": "saphir",
+    "type": "chef de",
+    "ton": "positif",
+    "inverse": "sous les ordres de"
+   }
+  ],
+  "attitude": "neutre",
   "teinte": "#753c19"
  },
  {
@@ -4917,6 +5522,7 @@
    }
   ],
   "img": "img/pnj/port-doe-lan-korrash-saphir.webp",
+  "attitude": "neutre",
   "teinte": "#753c19"
  },
  {
@@ -4957,6 +5563,7 @@
    }
   ],
   "img": "img/pnj/port-doe-lan-octavia.webp",
+  "attitude": "neutre",
   "teinte": "#753c19"
  },
  {
@@ -4993,6 +5600,7 @@
    }
   ],
   "img": "img/pnj/port-doe-lan-edouardo.webp",
+  "attitude": "neutre",
   "teinte": "#755219"
  },
  {
@@ -5014,6 +5622,7 @@
   "statut": "vivant",
   "resume": "Large tablier, bras farinés. Il vend à bas prix.",
   "img": "img/pnj/port-doe-lan-bruno-rossi.webp",
+  "attitude": "neutre",
   "teinte": "#753c19"
  },
  {
@@ -5039,6 +5648,7 @@
    "qui": "Nicea"
   },
   "img": "img/pnj/port-doe-lan-nicea.webp",
+  "attitude": "neutre",
   "teinte": "#755219"
  },
  {
@@ -5072,6 +5682,7 @@
    }
   ],
   "img": "img/pnj/port-doe-lan-enzo.webp",
+  "attitude": "neutre",
   "teinte": "#753c19"
  },
  {
@@ -5108,6 +5719,15 @@
    }
   ],
   "img": "img/pnj/port-doe-lan-mercenaire-capitaine-krezz.webp",
+  "relations": [
+   {
+    "cible": "spezza",
+    "type": "mercenaire de",
+    "ton": "positif",
+    "inverse": "employeur de"
+   }
+  ],
+  "attitude": "ennemi",
   "teinte": "#753c19"
  },
  {
@@ -5141,6 +5761,19 @@
    }
   ],
   "img": "img/pnj/port-doe-lan-wererat-kralik-nesk.webp",
+  "relations": [
+   {
+    "cible": "malka",
+    "type": "même tribu",
+    "ton": "positif"
+   },
+   {
+    "cible": "krelia",
+    "type": "désaccord sur l'assaut",
+    "ton": "neutre"
+   }
+  ],
+  "attitude": "positif",
   "teinte": "#195275"
  },
  {
@@ -5159,6 +5792,14 @@
    }
   ],
   "img": "img/pnj/port-doe-lan-wererat-kralik-nesk.webp",
+  "relations": [
+   {
+    "cible": "malka",
+    "type": "même tribu",
+    "ton": "positif"
+   }
+  ],
+  "attitude": "positif",
   "teinte": "#195275"
  },
  {
@@ -5177,6 +5818,14 @@
    }
   ],
   "img": "img/pnj/port-doe-lan-wererat-krelia-nissek.webp",
+  "relations": [
+   {
+    "cible": "malka",
+    "type": "même tribu",
+    "ton": "positif"
+   }
+  ],
+  "attitude": "positif",
   "teinte": "#195275"
  },
  {
@@ -5195,6 +5844,14 @@
    }
   ],
   "img": "img/pnj/port-doe-lan-wererat-krelia-nissek.webp",
+  "relations": [
+   {
+    "cible": "malka",
+    "type": "même tribu",
+    "ton": "positif"
+   }
+  ],
+  "attitude": "positif",
   "teinte": "#195275"
  },
  {
@@ -5207,6 +5864,15 @@
   "statut": "vivant",
   "resume": "Visage de la Maison Close de Vespera.",
   "img": "img/pnj/port-doe-lan-anquiri-di-velarossa.webp",
+  "relations": [
+   {
+    "cible": "vespera-merigold",
+    "type": "sert",
+    "ton": "positif",
+    "inverse": "dirigée par"
+   }
+  ],
+  "attitude": "positif",
   "teinte": "#753c19"
  },
  {
@@ -5244,6 +5910,21 @@
    }
   ],
   "img": "img/pnj/port-doe-lan-giovanni-et-dario-bravala.webp",
+  "relations": [
+   {
+    "cible": "lucio-bellanera",
+    "type": "concurrence",
+    "ton": "negatif",
+    "inverse": "concurrent de"
+   },
+   {
+    "cible": "dario-bravala",
+    "type": "père",
+    "ton": "positif",
+    "inverse": "fils de"
+   }
+  ],
+  "attitude": "positif",
   "teinte": "#753c19"
  },
  {
@@ -5262,6 +5943,7 @@
    }
   ],
   "img": "img/pnj/port-doe-lan-giovanni-et-dario-bravala.webp",
+  "attitude": "positif",
   "teinte": "#753c19"
  },
  {
@@ -5295,6 +5977,15 @@
    }
   ],
   "img": "img/pnj/port-doe-lan-lucio-bellanera.webp",
+  "relations": [
+   {
+    "cible": "spezza",
+    "type": "comptable de",
+    "ton": "positif",
+    "inverse": "employeur de"
+   }
+  ],
+  "attitude": "ennemi",
   "teinte": "#755219"
  },
  {
@@ -5358,6 +6049,7 @@
    }
   ],
   "img": "img/pnj/port-doe-lan-pam.webp",
+  "attitude": "neutre",
   "teinte": "#753c19"
  },
  {
@@ -5376,6 +6068,7 @@
    }
   ],
   "img": "img/pnj/port-doe-lan-monique.webp",
+  "attitude": "neutre",
   "teinte": "#756919"
  },
  {
@@ -5397,6 +6090,15 @@
    }
   ],
   "img": "img/pnj/port-doe-lan-chef-de-la-prison-kessler.webp",
+  "relations": [
+   {
+    "cible": "spezza",
+    "type": "sert",
+    "ton": "positif",
+    "inverse": "employeur de"
+   }
+  ],
+  "attitude": "neutre",
   "teinte": "#195275"
  },
  {
@@ -5434,6 +6136,15 @@
    }
   ],
   "img": "img/pnj/port-doe-lan-aurelian-thorex.webp",
+  "relations": [
+   {
+    "cible": "spezza",
+    "type": "dévoué à",
+    "ton": "positif",
+    "inverse": "protecteur de"
+   }
+  ],
+  "attitude": "neutre",
   "teinte": "#755219"
  },
  {
@@ -5471,6 +6182,27 @@
    }
   ],
   "img": "img/pnj/port-doe-lan-borim-brise-montagne.webp",
+  "relations": [
+   {
+    "cible": "dogrun",
+    "type": "chef de chantier de",
+    "ton": "positif",
+    "inverse": "sous les ordres de"
+   },
+   {
+    "cible": "thram",
+    "type": "chef de chantier de",
+    "ton": "positif",
+    "inverse": "sous les ordres de"
+   },
+   {
+    "cible": "orik",
+    "type": "chef de chantier de",
+    "ton": "positif",
+    "inverse": "sous les ordres de"
+   }
+  ],
+  "attitude": "positif",
   "teinte": "#753c19"
  },
  {
@@ -5522,6 +6254,14 @@
    "qui": "Reshaar"
   },
   "img": "img/pnj/agran-reshaar.webp",
+  "relations": [
+   {
+    "cible": "ghor",
+    "type": "gardes d'Agran",
+    "ton": "positif"
+   }
+  ],
+  "attitude": "neutre",
   "teinte": "#197569"
  },
  {
@@ -5534,6 +6274,7 @@
   "statut": "vivant",
   "resume": "Roche vivante aux tentacules, coquillages incrustés, yeux orange. Il surveille ce qui vient derrière les voyageurs.",
   "img": "img/pnj/agran-ghor.webp",
+  "attitude": "neutre",
   "teinte": "#752519"
  },
  {
@@ -5616,6 +6357,14 @@
    }
   ],
   "img": "img/pnj/agran-peraalys.webp",
+  "relations": [
+   {
+    "cible": "kel",
+    "type": "employeuse de",
+    "ton": "positif"
+   }
+  ],
+  "attitude": "neutre",
   "teinte": "#753c19"
  },
  {
@@ -5634,6 +6383,7 @@
    }
   ],
   "img": "img/pnj/agran-kel-assistant-de-peraalys.webp",
+  "attitude": "positif",
   "teinte": "#755219"
  },
  {
@@ -5659,6 +6409,7 @@
    "qui": "Drisuun"
   },
   "img": "img/pnj/agran-drisuun.webp",
+  "attitude": "neutre",
   "teinte": "#753c19"
  },
  {
@@ -5699,6 +6450,14 @@
    }
   ],
   "img": "img/pnj/agran-uruukaysal.webp",
+  "relations": [
+   {
+    "cible": "la-suuraal",
+    "type": "envoie vers",
+    "ton": "positif"
+   }
+  ],
+  "attitude": "positif",
   "teinte": "#196975"
  },
  {
@@ -5734,7 +6493,8 @@
     "img": "img/paysages/agran/epave-du-grauwacht.webp",
     "legende": "L'épave du Grauwacht"
    }
-  ]
+  ],
+  "attitude": "neutre"
  },
  {
   "id": "epave-de-l-astariel",
@@ -5757,7 +6517,8 @@
   "parent": "epave-de-l-astariel",
   "lieu": "epave-de-l-astariel",
   "statut": "mort",
-  "resume": "Commandant de la Troisième Expédition des Profondeurs sous mandat de l'Impératrice Eryndel. Il a consigné la mission de porter le fragment au fond."
+  "resume": "Commandant de la Troisième Expédition des Profondeurs sous mandat de l'Impératrice Eryndel. Il a consigné la mission de porter le fragment au fond.",
+  "attitude": "neutre"
  },
  {
   "id": "ossyraal",
@@ -5790,6 +6551,7 @@
     "teinte": "#197552"
    }
   ],
+  "attitude": "ennemi",
   "teinte": "#196975"
  },
  {
@@ -5818,35 +6580,50 @@
  },
  {
   "id": "kataron",
-  "type": "sujet",
+  "type": "pnj",
   "nom": "Kataron",
-  "titre": "Dame des Marées, Titan de l'Océan",
-  "parent": "agran",
-  "resume": "Titan de l'océan vénéré à Agran. Ses tempêtes labourent la surface.",
+  "titre": "Titan de l'océan, Dame des Marées Profondes",
+  "parent": "coeur-immerge",
+  "resume": "Titan de l'océan vénérée à Agran. Le groupe l'a vue et lui a parlé au pied de Thaladrassyl. Elle les a écoutés avec élégance et ne s'est pas inquiétée.",
   "connu": [
-   "Les corails d'Agran réagissent à ses tempêtes.",
-   "Elle protège Thaladrassyl derrière vingt kilomètres d'eau."
+   "Ses tempêtes labourent la surface et les coraux d'Agran y répondent.",
+   "Elle protège Thaladrassyl derrière vingt kilomètres d'eau et une faille que personne ne trouve sans sa permission.",
+   "Elle connaît Vassago : « Elle n'a jamais atteint le fond. »",
+   "Elle a refusé d'être inquiète. Sa certitude est plus troublante qu'une menace."
   ],
+  "lieu": "coeur-immerge",
+  "statut": "vivant",
   "citation": {
-   "texte": "Vous avez fait du chemin. Je l'ai senti depuis les courants de surface.",
+   "texte": "Je suis là depuis bien avant l'âge des Hommes. J'y serai quand leurs noms seront oubliés. Partez tranquilles.",
    "qui": "Kataron"
   },
   "galerie": [
    {
     "img": "img/paysages/agran/temple-de-kataron.webp",
     "legende": "Le temple de Kataron"
+   },
+   {
+    "img": "img/paysages/agran/coeur-immerge.webp",
+    "legende": "Le Cœur immergé"
    }
-  ]
+  ],
+  "attitude": "neutre"
  },
  {
   "id": "thaladrassyl",
   "type": "sujet",
   "nom": "Thaladrassyl",
   "titre": "La forêt sous l'océan",
-  "parent": "agran",
+  "parent": "coeur-immerge",
   "resume": "Arbre-Titan des profondeurs. Personne ne sait où il se trouve, car les courants qui y mènent changent.",
   "connu": [
    "Le groupe l'a vu à la fin de la traversée vers le Cœur Immergé."
+  ],
+  "galerie": [
+   {
+    "img": "img/paysages/agran/coeur-immerge.webp",
+    "legende": "Le Cœur immergé"
+   }
   ]
  },
  {
@@ -5870,7 +6647,8 @@
   "parent": "auberge-de-l-etincelle",
   "lieu": "auberge-de-l-etincelle",
   "statut": "vivant",
-  "resume": "Tient l'auberge principale de Pyrrah."
+  "resume": "Tient l'auberge principale de Pyrrah.",
+  "attitude": "neutre"
  },
  {
   "id": "temple-des-ardeurs",
@@ -5893,7 +6671,8 @@
   "parent": "temple-des-ardeurs",
   "lieu": "temple-des-ardeurs",
   "statut": "vivant",
-  "resume": "Un des trois compagnons de la maison."
+  "resume": "Un des trois compagnons de la maison.",
+  "attitude": "neutre"
  },
  {
   "id": "koressa",
@@ -5906,7 +6685,8 @@
   "resume": "Une des trois compagnes de la maison.",
   "alias": [
    "Koressa"
-  ]
+  ],
+  "attitude": "neutre"
  },
  {
   "id": "thaleia",
@@ -5916,7 +6696,8 @@
   "parent": "temple-des-ardeurs",
   "lieu": "temple-des-ardeurs",
   "statut": "vivant",
-  "resume": "Une des trois compagnes de la maison."
+  "resume": "Une des trois compagnes de la maison.",
+  "attitude": "neutre"
  },
  {
   "id": "taverne-de-la-griffe-pyrrah",
@@ -5943,7 +6724,8 @@
   "citation": {
    "texte": "On a livré les dernières caisses comme prévu, et depuis plus rien.",
    "qui": "Un membre de la Griffe, taverne de Pyrrah"
-  }
+  },
+  "attitude": "ennemi"
  },
  {
   "id": "vire",
@@ -5953,7 +6735,8 @@
   "parent": "taverne-de-la-griffe-pyrrah",
   "lieu": "taverne-de-la-griffe-pyrrah",
   "statut": "vivant",
-  "resume": "Producteur de la Griffe. Il se demande à qui refourguer sa came."
+  "resume": "Producteur de la Griffe. Il se demande à qui refourguer sa came.",
+  "attitude": "ennemi"
  },
  {
   "id": "ishra",
@@ -5963,7 +6746,8 @@
   "parent": "taverne-de-la-griffe-pyrrah",
   "lieu": "taverne-de-la-griffe-pyrrah",
   "statut": "vivant",
-  "resume": "Productrice de la Griffe. Elle évoque une association avec le Voile."
+  "resume": "Productrice de la Griffe. Elle évoque une association avec le Voile.",
+  "attitude": "ennemi"
  },
  {
   "id": "forge-eternelle-pyrrah",
@@ -5989,7 +6773,8 @@
   "citation": {
    "texte": "Yeaaah, des clients ! Qu'est-ce que je peux vous offrir… vous vendre ? Vous offrir d'acheter ? Ah !",
    "qui": "Fyra, apprentie de Kaldros"
-  }
+  },
+  "attitude": "positif"
  },
  {
   "id": "mine-de-pyrrah",
@@ -6018,7 +6803,8 @@
   "citation": {
    "texte": "Dans la mine, des créatures en feu ont attaqué. Trois mineurs ont disparu. Le reste refuse de descendre.",
    "qui": "Milos, contremaître"
-  }
+  },
+  "attitude": "neutre"
  },
  {
   "id": "athanor-d-ashkalyon",
@@ -6044,7 +6830,8 @@
   "citation": {
    "texte": "Mon inventaire est fort réduit, oui fort réduit pour le moment, n'est-ce pas. Mais si vous avez des idées ou des patrons, je peux vous aider à réaliser des objets sur mesure.",
    "qui": "Ashkalyon le Verracier"
-  }
+  },
+  "attitude": "neutre"
  },
  {
   "id": "brasero-aux-merveilles",
@@ -6070,7 +6857,8 @@
   "citation": {
    "texte": "J'achète, je vends, j'essaie de vendre plus que ce que j'achète, c'est la base du commerce, n'est-ce pas ?",
    "qui": "Krixis les Écailles"
-  }
+  },
+  "attitude": "neutre"
  },
  {
   "id": "thermes-solaires",
@@ -6092,7 +6880,8 @@
   "parent": "thermes-solaires",
   "lieu": "thermes-solaires",
   "statut": "vivant",
-  "resume": "Un des trois serviteurs des thermes."
+  "resume": "Un des trois serviteurs des thermes.",
+  "attitude": "neutre"
  },
  {
   "id": "pyrokles",
@@ -6105,7 +6894,8 @@
   "resume": "Observe, jauge et conseille les baigneurs. Les prêtres viennent parfois aux thermes.",
   "alias": [
    "Pyrokles"
-  ]
+  ],
+  "attitude": "neutre"
  },
  {
   "id": "oresias",
@@ -6118,7 +6908,8 @@
   "resume": "Un des trois serviteurs des thermes.",
   "alias": [
    "Oresias"
-  ]
+  ],
+  "attitude": "neutre"
  },
  {
   "id": "basilique-d-heliandros",
@@ -6188,6 +6979,19 @@
    "!! Dans son laboratoire, il attaque Jane sur une table d'opération. Avec l'âme de Bourre-Piff que Gran Brijit lui tend, il arrache l'exo-squelette et le dos de Jane. Elle se réveille avec un gant de cristaux rouge."
   ],
   "img": "img/pnj/nolbrim.webp",
+  "relations": [
+   {
+    "cible": "gran-brijit",
+    "type": "familier de",
+    "ton": "positif"
+   },
+   {
+    "cible": "jane-merigold",
+    "type": "compagnon de",
+    "ton": "positif"
+   }
+  ],
+  "attitude": "positif",
   "teinte": "#753c19"
  },
  {
@@ -6249,7 +7053,8 @@
   "parent": "auberge-dans-la-roche",
   "lieu": "auberge-dans-la-roche",
   "statut": "vivant",
-  "resume": "Un des habitants qui réclament une taxe de protection aux étrangers."
+  "resume": "Un des habitants qui réclament une taxe de protection aux étrangers.",
+  "attitude": "neutre"
  },
  {
   "id": "ur-kalmesh",
@@ -6263,7 +7068,8 @@
   "citation": {
    "texte": "Vous n'êtes pas les bienvenus ici, les étrangers… Et si vous voulez rester, il faut payer pour notre protection !",
    "qui": "Un brigand de l'auberge"
-  }
+  },
+  "attitude": "neutre"
  },
  {
   "id": "herboriste-la-vie-des-dunes",
@@ -6286,7 +7092,8 @@
   "citation": {
    "texte": "Entrez. Reprenez votre souffle. Dites-moi ce qu'il vous faut, et je verrai ce que le désert peut vous donner.",
    "qui": "Ashran"
-  }
+  },
+  "attitude": "neutre"
  },
  {
   "id": "tanneur-peau-de-sable",
@@ -6312,7 +7119,8 @@
   "citation": {
    "texte": "Si vous êtes venus pour du solide, vous êtes au bon endroit. Si c'est pour faire joli… allez voir un tisseur.",
    "qui": "Maara Namtarûn"
-  }
+  },
+  "attitude": "neutre"
  },
  {
   "id": "atelier-sahrim",
@@ -6338,7 +7146,8 @@
   "citation": {
    "texte": "Les gens pensent qu'une poterie, c'est un récipient. Ils ne voient jamais le geste, ni le silence qu'il faut pour la créer.",
    "qui": "Sahrim"
-  }
+  },
+  "attitude": "neutre"
  },
  {
   "id": "bibliotheque-enfouie",
@@ -6374,6 +7183,7 @@
   "alias": [
    "Aram Sharun"
   ],
+  "attitude": "neutre",
   "lieu": "kazad-marunn"
  },
  {
@@ -6400,6 +7210,7 @@
    "texte": "Prenez garde, la fosse est gardée par Al Batun, le vorace, c'est lui qui possède la clef pour y accéder.",
    "qui": "Ashur, à propos d'Al Batun"
   },
+  "attitude": "ennemi",
   "lieu": "kazad-marunn"
  },
  {
@@ -6438,6 +7249,7 @@
   "alias": [
    "Tique"
   ],
+  "attitude": "ennemi",
   "lieu": "tour-de-resonance"
  },
  {
@@ -6454,6 +7266,7 @@
    "texte": "T'approche pas. Tu pues les racines mortes. T'avancer encore d'un pas… c'est mourir.",
    "qui": "Gikyo Noshi Buru"
   },
+  "attitude": "ennemi",
   "lieu": "kazad-marunn"
  },
  {
@@ -6487,7 +7300,15 @@
   "parent": "orphelinat-merigold",
   "lieu": "orphelinat-merigold",
   "statut": "vivant",
-  "resume": "Choisi par Jane avec Freya pour la mission contre Edmund von Kornwald."
+  "resume": "Choisi par Jane avec Freya pour la mission contre Edmund von Kornwald.",
+  "relations": [
+   {
+    "cible": "jane-merigold",
+    "type": "choisi par",
+    "ton": "positif"
+   }
+  ],
+  "attitude": "positif"
  },
  {
   "id": "freya",
@@ -6497,7 +7318,15 @@
   "parent": "orphelinat-merigold",
   "lieu": "orphelinat-merigold",
   "statut": "vivant",
-  "resume": "Choisie par Jane avec Klaus pour la mission contre Edmund von Kornwald."
+  "resume": "Choisie par Jane avec Klaus pour la mission contre Edmund von Kornwald.",
+  "relations": [
+   {
+    "cible": "jane-merigold",
+    "type": "choisie par",
+    "ton": "positif"
+   }
+  ],
+  "attitude": "positif"
  },
  {
   "id": "village-de-leyenmil",
@@ -6525,7 +7354,8 @@
   "resume": "Il tend un morceau de poisson salé aux enfants sans poser de question.",
   "alias": [
    "Weller"
-  ]
+  ],
+  "attitude": "positif"
  },
  {
   "id": "mr-kessler-leyenmil",
@@ -6539,7 +7369,8 @@
   "citation": {
    "texte": "Vous êtes trop jeunes pour tout ça. Revenez quand vous serez grands.",
    "qui": "Mr. Kessler, marchand d'armes"
-  }
+  },
+  "attitude": "neutre"
  },
  {
   "id": "m-copperworth",
@@ -6564,6 +7395,14 @@
    }
   ],
   "img": "img/pnj/leyenmil-mr-copperworth.webp",
+  "relations": [
+   {
+    "cible": "otto",
+    "type": "recadre",
+    "ton": "negatif"
+   }
+  ],
+  "attitude": "positif",
   "teinte": "#755219"
  },
  {
@@ -6574,7 +7413,8 @@
   "parent": "village-de-leyenmil",
   "lieu": "village-de-leyenmil",
   "statut": "vivant",
-  "resume": "Il insulte les orphelins. Copperworth le coupe net."
+  "resume": "Il insulte les orphelins. Copperworth le coupe net.",
+  "attitude": "neutre"
  },
  {
   "id": "maison-kornwald",
@@ -6607,7 +7447,8 @@
   "parent": "temple-brumeux",
   "lieu": "temple-brumeux",
   "statut": "mort",
-  "resume": "Auteur du journal du temple. Il écrit qu'en ramenant tout le monde ici, les moines ont commis une erreur."
+  "resume": "Auteur du journal du temple. Il écrit qu'en ramenant tout le monde ici, les moines ont commis une erreur.",
+  "attitude": "neutre"
  },
  {
   "id": "statues-gardiennes-lathandre",
@@ -6654,6 +7495,7 @@
     "teinte": "#756919"
    }
   ],
+  "attitude": "ennemi",
   "lieu": "temple-brumeux",
   "teinte": "#755219"
  },
@@ -6674,7 +7516,8 @@
   "resume": "Créature obèse dont le ventre s'ouvre sur un œil gigantesque, née des séquelles de la guerre de la Veyra.",
   "alias": [
    "Abomination des yeux"
-  ]
+  ],
+  "attitude": "ennemi"
  },
  {
   "id": "guerre-de-la-veyra",
@@ -6718,7 +7561,8 @@
   "citation": {
    "texte": "La forêt est cruelle, surtout pour ceux qui ne savent pas obéir. Vous le ramènerez, n'est-ce pas ?",
    "qui": "Dimir"
-  }
+  },
+  "attitude": "neutre"
  },
  {
   "id": "iulia",
@@ -6732,7 +7576,8 @@
   "citation": {
    "texte": "Oh… vous savez… il était fragile, ce garçon. Il avait besoin qu'on veille sur lui, nuit et jour.",
    "qui": "Iulia"
-  }
+  },
+  "attitude": "neutre"
  },
  {
   "id": "spano",
@@ -6746,7 +7591,8 @@
   "citation": {
    "texte": "Ils souriaient tout le temps… même quand ils fermaient la chaîne.",
    "qui": "Spano"
-  }
+  },
+  "attitude": "neutre"
  },
  {
   "id": "ivy",
@@ -6759,7 +7605,8 @@
   "resume": "Rôdeuse de Havre Noir, jovial, à cheval sur sa monture Justine. Retrouvée morte une nuit, empoisonnée par un poison qui ne la visait pas.",
   "alias": [
    "Justine"
-  ]
+  ],
+  "attitude": "neutre"
  },
  {
   "id": "constance-brisemousse",
@@ -6772,7 +7619,8 @@
   "resume": "Seule du convoi sans caravane : un petit chariot tiré par l'âne Plop. Elle voit la pluie comme une bénédiction de Sylvanus.",
   "alias": [
    "Plop"
-  ]
+  ],
+  "attitude": "positif"
  },
  {
   "id": "solkah-barrow",
@@ -6782,7 +7630,8 @@
   "parent": "caravane-port-doelan",
   "lieu": "caravane-port-doelan",
   "statut": "vivant",
-  "resume": "Drow taciturne qui évite le soleil. Passionné de serpents, il rejette les dogmes de Lolth et veut rejoindre Port Doëlan."
+  "resume": "Drow taciturne qui évite le soleil. Passionné de serpents, il rejette les dogmes de Lolth et veut rejoindre Port Doëlan.",
+  "attitude": "neutre"
  },
  {
   "id": "seravine",
@@ -6792,7 +7641,8 @@
   "parent": "caravane-port-doelan",
   "lieu": "caravane-port-doelan",
   "statut": "vivant",
-  "resume": "Immense serpent extrêmement venimeux, d'une intelligence notable. Son nom signifie « le Poison » en elfique."
+  "resume": "Immense serpent extrêmement venimeux, d'une intelligence notable. Son nom signifie « le Poison » en elfique.",
+  "attitude": "neutre"
  },
  {
   "id": "sanctuaire-de-la-maree",
@@ -6833,7 +7683,8 @@
     "img": "img/paysages/brakka/sanctuaire-de-la-maree.webp",
     "legende": "Le sanctuaire de la marée"
    }
-  ]
+  ],
+  "attitude": "neutre"
  },
  {
   "id": "fumerie-de-shoba",
@@ -6907,6 +7758,7 @@
    }
   ],
   "img": "img/pnj/steppes-rouge-roc.webp",
+  "attitude": "neutre",
   "lieu": "monastere-des-steppes",
   "teinte": "#2d2d2d"
  },
@@ -6929,6 +7781,7 @@
   "parent": "port-doelan",
   "resume": "Il a invité Umberto Hevalan à un séminaire de recherche à Port Doëlan.",
   "statut": "inconnu",
+  "attitude": "neutre",
   "lieu": "port-doelan"
  }
 ]

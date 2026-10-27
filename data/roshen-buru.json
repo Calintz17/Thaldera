@@ -702,6 +702,7 @@
     "legende": "Le Ryokan"
    }
   ],
+  "attitude": "neutre",
   "teinte": "#755219"
  },
  {
@@ -732,6 +733,11 @@
     "cible": "genie-de-suie",
     "type": "Miren",
     "ton": "neutre"
+   },
+   {
+    "cible": "genie-de-suie",
+    "type": "Miren de",
+    "ton": "positif"
    }
   ],
   "formes": [
@@ -750,6 +756,7 @@
     "teinte": "#196975"
    }
   ],
+  "attitude": "ennemi",
   "teinte": "#753c19"
  },
  {
@@ -769,6 +776,7 @@
    "Intangible et impossible à cibler.",
    "Il agit en même temps que Kirin et s'évanouit quand celui-ci tombe."
   ],
+  "attitude": "ennemi",
   "teinte": "#196975"
  },
  {
@@ -1008,6 +1016,7 @@
    }
   ],
   "img": "img/pnj/roven-moto.webp",
+  "attitude": "neutre",
   "teinte": "#753c19"
  },
  {
@@ -1369,6 +1378,11 @@
     "cible": "harfang-tsuren",
     "type": "Fils",
     "ton": "neutre"
+   },
+   {
+    "cible": "kynn-tsuren",
+    "type": "époux de",
+    "ton": "positif"
    }
   ],
   "lieu": "domaine-tsuren",
@@ -1383,6 +1397,7 @@
    }
   ],
   "img": "img/pnj/havoc-tsuren.webp",
+  "attitude": "neutre",
   "teinte": "#755219"
  },
  {
@@ -1433,6 +1448,7 @@
     "teinte": "#196975"
    }
   ],
+  "attitude": "neutre",
   "teinte": "#752519"
  },
  {
@@ -1466,6 +1482,7 @@
    }
   ],
   "img": "img/pnj/kynn-tsuren.webp",
+  "attitude": "neutre",
   "teinte": "#753c19"
  },
  {
@@ -1513,6 +1530,12 @@
     "cible": "ayano-kaben",
     "type": "Ancien prétendant",
     "ton": "negatif"
+   },
+   {
+    "cible": "brodek-kovacz",
+    "type": "fils de",
+    "ton": "positif",
+    "inverse": "père de"
    }
   ],
   "citation": {
@@ -1542,6 +1565,7 @@
     "teinte": "#196975"
    }
   ],
+  "attitude": "ennemi",
   "teinte": "#753c19"
  },
  {
@@ -1575,6 +1599,7 @@
    }
   ],
   "img": "img/pnj/brodek-kovacz.webp",
+  "attitude": "neutre",
   "teinte": "#755219"
  },
  {
@@ -1616,6 +1641,7 @@
    }
   ],
   "img": "img/pnj/ayano-kaben.webp",
+  "attitude": "positif",
   "teinte": "#751925"
  },
  {
@@ -1643,6 +1669,12 @@
     "cible": "harfang-tsuren",
     "type": "Ami",
     "ton": "positif"
+   },
+   {
+    "cible": "ayano-kaben",
+    "type": "marié à",
+    "ton": "positif",
+    "inverse": "mariée à"
    }
   ],
   "lieu": "maison-sokabei",
@@ -1657,6 +1689,7 @@
    }
   ],
   "img": "img/pnj/konya-sokabei.webp",
+  "attitude": "positif",
   "teinte": "#753c19"
  },
  {
@@ -1733,6 +1766,16 @@
     "cible": "absalom",
     "type": "Tolère sa présence",
     "ton": "neutre"
+   },
+   {
+    "cible": "sabake",
+    "type": "époux de",
+    "ton": "positif"
+   },
+   {
+    "cible": "nyssra",
+    "type": "époux de",
+    "ton": "positif"
    }
   ],
   "citation": {
@@ -1745,6 +1788,7 @@
     "legende": "Le palais Urameï"
    }
   ],
+  "attitude": "neutre",
   "teinte": "#753c19"
  },
  {
@@ -1766,6 +1810,7 @@
    }
   ],
   "img": "img/pnj/sabake.webp",
+  "attitude": "neutre",
   "teinte": "#753c19"
  },
  {
@@ -1787,6 +1832,7 @@
    }
   ],
   "img": "img/pnj/nyssra.webp",
+  "attitude": "neutre",
   "teinte": "#753c19"
  },
  {
@@ -1828,6 +1874,11 @@
     "cible": "philippa-rougetoison",
     "type": "Flirte avec elle",
     "ton": "positif"
+   },
+   {
+    "cible": "ankou-uramei",
+    "type": "contrebandière de",
+    "ton": "positif"
    }
   ],
   "citation": {
@@ -1840,6 +1891,7 @@
     "legende": "La planque de Yureï"
    }
   ],
+  "attitude": "neutre",
   "teinte": "#753c19"
  },
  {
@@ -1877,6 +1929,7 @@
    }
   ],
   "img": "img/pnj/tobiya.webp",
+  "attitude": "neutre",
   "teinte": "#751925"
  },
  {
@@ -1958,6 +2011,7 @@
     "teinte": "#197569"
    }
   ],
+  "attitude": "neutre",
   "lieu": "palais-miren-buru",
   "teinte": "#195275"
  },
@@ -2023,6 +2077,7 @@
    }
   ],
   "img": "img/pnj/neryn-yosa.webp",
+  "attitude": "neutre",
   "teinte": "#755219"
  },
  {
@@ -2055,7 +2110,8 @@
     "ton": "negatif"
    }
   ],
-  "lieu": "palais-miren-buru"
+  "lieu": "palais-miren-buru",
+  "attitude": "neutre"
  },
  {
   "id": "thibwick-rumple",
@@ -2085,7 +2141,8 @@
     "ton": "negatif"
    }
   ],
-  "lieu": "atelier-thibwick"
+  "lieu": "atelier-thibwick",
+  "attitude": "positif"
  },
  {
   "id": "tessei-kanae",
@@ -2117,6 +2174,7 @@
    }
   ],
   "img": "img/pnj/tessei-kanae.webp",
+  "attitude": "neutre",
   "teinte": "#753c19"
  },
  {
@@ -2148,6 +2206,7 @@
    }
   ],
   "img": "img/pnj/oren-sidai.webp",
+  "attitude": "neutre",
   "teinte": "#755219"
  },
  {
@@ -2176,6 +2235,7 @@
    }
   ],
   "img": "img/pnj/saori-velmaka.webp",
+  "attitude": "neutre",
   "teinte": "#753c19"
  },
  {
@@ -2210,6 +2270,7 @@
    }
   ],
   "img": "img/pnj/sumeren-dai-ko.webp",
+  "attitude": "neutre",
   "teinte": "#753c19"
  },
  {
@@ -2249,8 +2310,29 @@
     "cible": "otoba",
     "type": "Cible",
     "ton": "negatif"
+   },
+   {
+    "cible": "naberoth",
+    "type": "rivalité mortelle",
+    "ton": "negatif"
+   },
+   {
+    "cible": "cassiopee-vorn",
+    "type": "commande en coulisses",
+    "ton": "positif",
+    "inverse": "obéit à"
+   },
+   {
+    "cible": "mezzek",
+    "type": "commande",
+    "ton": "positif",
+    "inverse": "obéit à"
    }
   ],
+  "citation": {
+   "texte": "Mettons les choses au clair : vous êtes des insectes répugnants, et je vous hais de chaque fibre de mon essence.",
+   "qui": "Absalom"
+  },
   "formes": [
    {
     "img": "img/istra-belig/roshen-buru/pnj/absalom.webp",
@@ -2273,6 +2355,7 @@
     "teinte": "#755219"
    }
   ],
+  "attitude": "neutre",
   "teinte": "#755219"
  },
  {
@@ -2332,6 +2415,7 @@
     "legende": "L'intérieur de la maison de Gran Brijit"
    }
   ],
+  "attitude": "allie",
   "teinte": "#753c19"
  },
  {
@@ -2348,6 +2432,7 @@
   ],
   "question": "Qui est Carnage, et qu'est devenue la foule du temple ?",
   "img": "img/pnj/carnage.webp",
+  "attitude": "ennemi",
   "teinte": "#753c19"
  },
  {
@@ -2441,6 +2526,7 @@
    }
   ],
   "img": "img/pnj/maitre-mishta.webp",
+  "attitude": "positif",
   "teinte": "#753c19"
  },
  {
@@ -2497,6 +2583,7 @@
    }
   ],
   "img": "img/pnj/takko-halvaki.webp",
+  "attitude": "positif",
   "teinte": "#753c19"
  },
  {
@@ -2592,6 +2679,7 @@
     "teinte": "#195275"
    }
   ],
+  "attitude": "neutre",
   "teinte": "#753c19"
  },
  {
@@ -2622,6 +2710,7 @@
   "statut": "vivant",
   "resume": "Père de Konya, mal à l'aise, il n'ose pas se mêler de l'affaire.",
   "img": "img/pnj/kazen-sokabei.webp",
+  "attitude": "neutre",
   "teinte": "#755219"
  },
  {
@@ -2634,6 +2723,7 @@
   "statut": "vivant",
   "resume": "Elle coud, écoute et ne dit rien. C'est elle qui a vu quelqu'un rôder dans la rue.",
   "img": "img/pnj/wano-sokabei.webp",
+  "attitude": "neutre",
   "teinte": "#753c19"
  },
  {
@@ -2668,6 +2758,7 @@
    "qui": "Doryen Kaben, à Konya, sans élever la voix"
   },
   "img": "img/pnj/doryen-kaben.webp",
+  "attitude": "neutre",
   "teinte": "#753c19"
  },
  {
@@ -2683,6 +2774,7 @@
    "Ayano a fréquenté il y a des années un fils de clan de haute noblesse, arrogant et détestable. Elle n'a jamais lâché son nom."
   ],
   "img": "img/pnj/siona-kaben.webp",
+  "attitude": "neutre",
   "teinte": "#755219"
  },
  {
@@ -2721,6 +2813,7 @@
    "qui": "Hoshka, sans lever les yeux de sa tasse"
   },
   "img": "img/pnj/hoshka.webp",
+  "attitude": "neutre",
   "teinte": "#753c19"
  },
  {
@@ -2740,6 +2833,7 @@
    "qui": "Orisa, à voix basse, en posant le plateau"
   },
   "img": "img/pnj/orisa.webp",
+  "attitude": "neutre",
   "teinte": "#753c19"
  },
  {
@@ -2784,6 +2878,7 @@
    "qui": "Madame Renka, en versant elle-même, sans se presser"
   },
   "img": "img/pnj/madame-renka.webp",
+  "attitude": "neutre",
   "teinte": "#755219"
  },
  {
@@ -2823,6 +2918,7 @@
    }
   ],
   "img": "img/pnj/maven-ako.webp",
+  "attitude": "neutre",
   "teinte": "#753c19"
  },
  {
@@ -2866,6 +2962,7 @@
    }
   ],
   "img": "img/pnj/ilvaro.webp",
+  "attitude": "neutre",
   "teinte": "#755219"
  },
  {
@@ -2904,6 +3001,7 @@
    "qui": "Maître Orashay"
   },
   "img": "img/pnj/maitre-orashay.webp",
+  "attitude": "neutre",
   "teinte": "#753c19"
  },
  {
@@ -2922,6 +3020,7 @@
    }
   ],
   "img": "img/pnj/tasseren.webp",
+  "attitude": "neutre",
   "teinte": "#752519"
  },
  {
@@ -2932,7 +3031,8 @@
   "parent": "roshen-buru",
   "lieu": "palais-miren-buru",
   "statut": "vivant",
-  "resume": "Chambellan du palais de la Gardienne."
+  "resume": "Chambellan du palais de la Gardienne.",
+  "attitude": "neutre"
  },
  {
   "id": "doku",
@@ -2944,6 +3044,7 @@
   "statut": "vivant",
   "resume": "Mendiant de la ville.",
   "img": "img/pnj/doku.webp",
+  "attitude": "neutre",
   "teinte": "#753c19"
  },
  {
@@ -2973,6 +3074,14 @@
    }
   ],
   "img": "img/pnj/bruska.webp",
+  "relations": [
+   {
+    "cible": "darrek-kovacz",
+    "type": "homme de main de",
+    "ton": "positif"
+   }
+  ],
+  "attitude": "ennemi",
   "teinte": "#755219"
  },
  {
@@ -2983,7 +3092,8 @@
   "parent": "roshen-buru",
   "lieu": "pavillon-mariage",
   "statut": "mort",
-  "resume": "Retrouvé mort au petit matin, overdose de Vésine d'une pureté impossible à acheter pour son rang."
+  "resume": "Retrouvé mort au petit matin, overdose de Vésine d'une pureté impossible à acheter pour son rang.",
+  "attitude": "neutre"
  },
  {
   "id": "tosha",
@@ -2993,7 +3103,8 @@
   "parent": "roshen-buru",
   "lieu": "pavillon-mariage",
   "statut": "vivant",
-  "resume": "Prend le relais après Kabo. Il sort discrètement par la porte de service."
+  "resume": "Prend le relais après Kabo. Il sort discrètement par la porte de service.",
+  "attitude": "neutre"
  },
  {
   "id": "otta",
@@ -3005,6 +3116,7 @@
   "statut": "vivant",
   "resume": "Tente d'entrer au mariage pour boire à l'œil. Fausse alerte.",
   "img": "img/pnj/otta.webp",
+  "attitude": "neutre",
   "teinte": "#753c19"
  },
  {
@@ -3015,7 +3127,8 @@
   "parent": "roshen-buru",
   "lieu": "pavillon-mariage",
   "statut": "vivant",
-  "resume": "Sa livraison a été remplacée. Il jure n'avoir rien changé."
+  "resume": "Sa livraison a été remplacée. Il jure n'avoir rien changé.",
+  "attitude": "neutre"
  },
  {
   "id": "sennai",
@@ -3025,7 +3138,8 @@
   "parent": "roshen-buru",
   "lieu": "pavillon-mariage",
   "statut": "vivant",
-  "resume": "Payé le double pour aller ailleurs. Il décrit un homme au visage bandé, voix rauque, pièces neuves."
+  "resume": "Payé le double pour aller ailleurs. Il décrit un homme au visage bandé, voix rauque, pièces neuves.",
+  "attitude": "neutre"
  },
  {
   "id": "maitre-siharen",
@@ -3043,6 +3157,7 @@
    }
   ],
   "img": "img/pnj/maitre-siharen.webp",
+  "attitude": "neutre",
   "teinte": "#753c19"
  },
  {
@@ -3061,6 +3176,7 @@
    }
   ],
   "img": "img/pnj/dame-teshima.webp",
+  "attitude": "neutre",
   "teinte": "#753c19"
  },
  {
@@ -3089,7 +3205,8 @@
   "resume": "Disparue depuis des semaines, elle n'aurait pas quitté la ville. Un avis de recherche renvoie à Madame Renka.",
   "alias": [
    "Ako"
-  ]
+  ],
+  "attitude": "neutre"
  },
  {
   "id": "velsha",
@@ -3101,6 +3218,7 @@
   "statut": "vivant",
   "resume": "Courtisane qui reçoit les fils de clan.",
   "img": "img/pnj/velsha-quartier-des-plaisirs.webp",
+  "attitude": "neutre",
   "teinte": "#752519"
  },
  {
@@ -3113,6 +3231,7 @@
   "statut": "vivant",
   "resume": "Courtisane qui reçoit les fils de clan.",
   "img": "img/pnj/lysha-quartier-des-plaisirs.webp",
+  "attitude": "neutre",
   "teinte": "#755219"
  },
  {
@@ -3127,7 +3246,8 @@
   "citation": {
    "texte": "Le fils Kovacz, oui, je vois qui c'est. Il payait bien, mais il était pas facile. Personne n'en voulait deux fois.",
    "qui": "Maeko, en rangeant ses affaires"
-  }
+  },
+  "attitude": "neutre"
  },
  {
   "id": "sevaki",
@@ -3139,6 +3259,7 @@
   "statut": "vivant",
   "resume": "Courtisan qui connaît les femmes de la haute société.",
   "img": "img/pnj/sevaki-quartier-des-plaisirs.webp",
+  "attitude": "neutre",
   "teinte": "#752519"
  },
  {
@@ -3151,6 +3272,7 @@
   "statut": "vivant",
   "resume": "Gardien de la porte. Il fouille, désarme et ne discute pas.",
   "img": "img/pnj/venta.webp",
+  "attitude": "neutre",
   "teinte": "#753c19"
  },
  {
@@ -3166,6 +3288,7 @@
    "Ce n'est pas Absalom : l'enquête sur la femme en noir n'a rien révélé d'infernal."
   ],
   "img": "img/pnj/muji.webp",
+  "attitude": "neutre",
   "teinte": "#753c19"
  },
  {
@@ -3178,6 +3301,7 @@
   "statut": "vivant",
   "resume": "Elle a orienté le groupe vers la dame en noir derrière le temple.",
   "img": "img/pnj/nusei.webp",
+  "attitude": "neutre",
   "teinte": "#755219"
  },
  {
@@ -3191,7 +3315,8 @@
   "resume": "Magistrat de Seiran Vale, dont la route commerciale navigable est bloquée.",
   "alias": [
    "Sabo"
-  ]
+  ],
+  "attitude": "neutre"
  },
  {
   "id": "boutique-de-soko",
@@ -3231,6 +3356,7 @@
    }
   ],
   "img": "img/pnj/soko.webp",
+  "attitude": "neutre",
   "teinte": "#752519"
  },
  {
@@ -3247,7 +3373,8 @@
     "img": "img/paysages/roshen-buru/forge-oyoroi.webp",
     "legende": "La forge Oyoroï"
    }
-  ]
+  ],
+  "attitude": "neutre"
  },
  {
   "id": "stryge",
@@ -3257,7 +3384,8 @@
   "parent": "roshen-buru",
   "lieu": "roshen-buru",
   "statut": "vivant",
-  "resume": "Maître Mishta demande à Harfang comment se passe la cohabitation avec lui."
+  "resume": "Maître Mishta demande à Harfang comment se passe la cohabitation avec lui.",
+  "attitude": "neutre"
  },
  {
   "id": "meshi",
@@ -3279,6 +3407,7 @@
    }
   ],
   "img": "img/pnj/meshi.webp",
+  "attitude": "neutre",
   "teinte": "#752519"
  },
  {
@@ -3295,7 +3424,8 @@
     "img": "img/paysages/roshen-buru/palais-kovacz.webp",
     "legende": "Le palais Kovacz"
    }
-  ]
+  ],
+  "attitude": "neutre"
  },
  {
   "id": "ohana",
@@ -3310,6 +3440,7 @@
    "Bao"
   ],
   "img": "img/pnj/ohana-bao.webp",
+  "attitude": "neutre",
   "teinte": "#753c19"
  },
  {
@@ -3322,6 +3453,7 @@
   "statut": "vivant",
   "resume": "Il se souvient d'une odeur âcre qui remontait des égouts autour de la maison de Tobiya.",
   "img": "img/pnj/bhamir.webp",
+  "attitude": "neutre",
   "teinte": "#753c19"
  },
  {
@@ -3334,6 +3466,7 @@
   "statut": "vivant",
   "resume": "Voisin de Tobiya, naïf. Il signale l'odeur infâme venue de sa maison.",
   "img": "img/pnj/poki.webp",
+  "attitude": "neutre",
   "teinte": "#753c19"
  },
  {
@@ -3351,7 +3484,8 @@
   ],
   "connu": [
    "!! Gran Brijit l'a tué sur-le-champ dans le laboratoire de Nolbrim, puis a aspiré son âme pour la donner à Nolbrim."
-  ]
+  ],
+  "attitude": "neutre"
  },
  {
   "id": "oni-aux-masques",
@@ -3363,6 +3497,24 @@
   "statut": "vaincu",
   "resume": "Silhouette drapée de masques flottants qui a pris d'assaut la tour d'Eamonn. Vaincu avec ses gardes.",
   "img": "img/pnj/oni-aux-masques.webp",
+  "relations": [
+   {
+    "cible": "porteur-de-hallebarde",
+    "type": "chef de",
+    "ton": "positif"
+   },
+   {
+    "cible": "faucheuse-d-echos",
+    "type": "chef de",
+    "ton": "positif"
+   },
+   {
+    "cible": "olyssane-veythar",
+    "type": "cible",
+    "ton": "negatif"
+   }
+  ],
+  "attitude": "ennemi",
   "teinte": "#753c19"
  },
  {
@@ -3373,7 +3525,8 @@
   "parent": "tour-eamonn",
   "lieu": "tour-eamonn",
   "statut": "vaincu",
-  "resume": "Assassin armé d'une naginata, vaincu à la tour."
+  "resume": "Assassin armé d'une naginata, vaincu à la tour.",
+  "attitude": "ennemi"
  },
  {
   "id": "faucheuse-d-echos",
@@ -3383,7 +3536,8 @@
   "parent": "tour-eamonn",
   "lieu": "tour-eamonn",
   "statut": "vaincu",
-  "resume": "Assassine du Tribunal de Chair, vaincue à la tour."
+  "resume": "Assassine du Tribunal de Chair, vaincue à la tour.",
+  "attitude": "ennemi"
  },
  {
   "id": "psa-87",
@@ -3439,7 +3593,8 @@
   "parent": "camont",
   "lieu": "camont",
   "statut": "vivant",
-  "resume": "Passe à L'Abattoir, la taverne de Teka."
+  "resume": "Passe à L'Abattoir, la taverne de Teka.",
+  "attitude": "neutre"
  },
  {
   "id": "orant-des-failles",
@@ -3449,7 +3604,8 @@
   "parent": "agran",
   "lieu": "agran",
   "statut": "vivant",
-  "resume": "Il bénit les départs et planifie les routes sous-marines."
+  "resume": "Il bénit les départs et planifie les routes sous-marines.",
+  "attitude": "neutre"
  },
  {
   "id": "receptionniste-de-la-caserne",
@@ -3459,7 +3615,8 @@
   "parent": "port-doelan",
   "lieu": "port-doelan",
   "statut": "vivant",
-  "resume": "Elle consigne les entrées, exige le dépôt des armes contre récépissé et aime les conversations polies."
+  "resume": "Elle consigne les entrées, exige le dépôt des armes contre récépissé et aime les conversations polies.",
+  "attitude": "neutre"
  },
  {
   "id": "arianthil",
@@ -3472,7 +3629,15 @@
   "resume": "Sauveur récurrent de Philippa : il l'a téléportée hors du temple de Creux-d'Azur et l'a sortie de l'île du Vesper.",
   "alias": [
    "Ariantil"
-  ]
+  ],
+  "relations": [
+   {
+    "cible": "philippa-rougetoison",
+    "type": "sauveur de",
+    "ton": "positif"
+   }
+  ],
+  "attitude": "allie"
  },
  {
   "id": "frere-aldric",
@@ -3482,7 +3647,8 @@
   "parent": "monastere-des-steppes",
   "lieu": "monastere-des-steppes",
   "statut": "vivant",
-  "resume": "Moine dont la bourse figure au loot."
+  "resume": "Moine dont la bourse figure au loot.",
+  "attitude": "neutre"
  },
  {
   "id": "vexil",
@@ -3495,6 +3661,14 @@
   "resume": "Massif et silencieux, il préfère laisser son employeur gagner.",
   "ordre": 2,
   "img": "img/pnj/vexil.webp",
+  "relations": [
+   {
+    "cible": "kester-tauroc",
+    "type": "garde du corps de",
+    "ton": "positif"
+   }
+  ],
+  "attitude": "neutre",
   "teinte": "#527519"
  },
  {
@@ -3514,6 +3688,7 @@
    }
   ],
   "img": "img/pnj/grimwald.webp",
+  "attitude": "neutre",
   "teinte": "#753c19"
  },
  {
@@ -3536,6 +3711,7 @@
    }
   ],
   "img": "img/pnj/pe-re-niall.webp",
+  "attitude": "positif",
   "teinte": "#195275"
  },
  {
@@ -3554,6 +3730,7 @@
    }
   ],
   "img": "img/pnj/mae-ve.webp",
+  "attitude": "positif",
   "teinte": "#751925"
  },
  {
@@ -3573,6 +3750,7 @@
    }
   ],
   "img": "img/pnj/tormund.webp",
+  "attitude": "positif",
   "teinte": "#755219"
  },
  {
@@ -3592,6 +3770,7 @@
    }
   ],
   "img": "img/pnj/rory-cory.webp",
+  "attitude": "positif",
   "teinte": "#755219"
  },
  {
@@ -3611,6 +3790,7 @@
    }
   ],
   "img": "img/pnj/sorcha.webp",
+  "attitude": "neutre",
   "teinte": "#755219"
  },
  {
@@ -3629,6 +3809,7 @@
    }
   ],
   "img": "img/pnj/madame-ari.webp",
+  "attitude": "neutre",
   "teinte": "#753c19"
  },
  {
@@ -3645,6 +3826,7 @@
    "Le Passeur d'Azuren Kai"
   ],
   "img": "img/pnj/obore.webp",
+  "attitude": "neutre",
   "teinte": "#753c19"
  },
  {
@@ -3663,6 +3845,7 @@
    }
   ],
   "img": "img/pnj/doryo-kovacz.webp",
+  "attitude": "neutre",
   "teinte": "#753c19"
  },
  {
@@ -3681,6 +3864,7 @@
    }
   ],
   "img": "img/pnj/nuala.webp",
+  "attitude": "neutre",
   "teinte": "#751925"
  },
  {
@@ -3702,6 +3886,7 @@
    }
   ],
   "img": "img/pnj/kanabe.webp",
+  "attitude": "neutre",
   "teinte": "#753c19"
  },
  {
@@ -3720,6 +3905,7 @@
    }
   ],
   "img": "img/pnj/rokka.webp",
+  "attitude": "neutre",
   "teinte": "#755219"
  },
  {
@@ -3741,6 +3927,7 @@
    "Le groupe soupçonne que la Protectrice l'a envoyé pour le tuer, probablement grâce à son pacte avec Levistus."
   ],
   "img": "img/pnj/le-goryo.webp",
+  "attitude": "ennemi",
   "teinte": "#753c19"
  }
 ]

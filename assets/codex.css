@@ -302,6 +302,16 @@ a.wcrest:hover .wn { color: var(--gold-hi); }
 .pill { display: inline-block; font-family: 'Cinzel', serif; font-size: 10px; letter-spacing: .2em; text-transform: uppercase; padding: 3px 11px; border-radius: 99px; border: 1px solid; margin-top: 8px; }
 .pill.vivant { color: #8fd09a; border-color: rgba(95,168,106,.6); background: rgba(95,168,106,.1); }
 .pill.mort { color: #e49a98; border-color: rgba(192,80,77,.65); background: rgba(192,80,77,.12); }
+.pills { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; }
+.pills .pill { margin-top: 8px; }
+.pill.att.ennemi { color: #ff9a82; border-color: rgba(224,96,70,.75); background: rgba(224,96,70,.14); }
+.pill.att.neutre { color: #b9bfcb; border-color: rgba(160,168,184,.45); background: rgba(160,168,184,.08); }
+.pill.att.positif { color: #8cc4ee; border-color: rgba(90,160,225,.6); background: rgba(90,160,225,.12); }
+.pill.att.allie { color: #f3d37a; border-color: rgba(232,196,100,.8); background: rgba(232,196,100,.16); box-shadow: 0 0 10px rgba(232,196,100,.25); }
+.netsec .net { margin-bottom: 14px; }
+.netsec .nl { display: block; font-family: 'Cinzel', serif; font-size: 10px; letter-spacing: .2em; text-transform: uppercase; color: var(--muted); margin-bottom: 6px; }
+.netsec .net.positif .nl { color: #8fd09a; }
+.netsec .net.negatif .nl { color: #e49a98; }
 .pill.inconnu { color: #d9c27d; border-color: rgba(201,168,76,.5); background: rgba(201,168,76,.08); }
 .resume { margin: 14px 0 6px; font-size: 18.5px; color: var(--text); text-align: center; font-style: italic; }
 .chef { text-align: center; margin: 6px 0; }
@@ -413,3 +423,4 @@ a.wcrest:hover .wn { color: var(--gold-hi); }
 
 .chapeau { font-style: italic; line-height: 1.55; margin: 6px 0 12px; color: var(--ink2, #cfc7b4); }
 li.key { border-left: 2px solid var(--gold); padding-left: 10px; margin-left: -12px; list-style: none; color: #f3e9c9; font-weight: 600; }
+.nt .pills { justify-content: flex-start; }

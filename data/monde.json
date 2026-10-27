@@ -1482,6 +1482,11 @@
     "type": "Alliance envisagée",
     "ton": "neutre"
    }
-  ]
+  ],
+  "citation": {
+   "texte": "Deux petits soleils, brillants seuls dans le froid du cosmos infini…",
+   "qui": "Impératrice Eryndel"
+  },
+  "attitude": "neutre"
  }
 ]

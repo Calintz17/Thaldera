@@ -773,7 +773,8 @@
     "img": "img/paysages/brakka/maison-de-tembo.webp",
     "legende": "La maison de Tembo"
    }
-  ]
+  ],
+  "attitude": "positif"
  },
  {
   "id": "urrak",
@@ -808,7 +809,8 @@
     "img": "img/paysages/brakka/maison-d-urrak.webp",
     "legende": "La maison d'Urrak"
    }
-  ]
+  ],
+  "attitude": "positif"
  },
  {
   "id": "shoba",
@@ -842,6 +844,7 @@
    }
   ],
   "img": "img/pnj/brakka-shoba.webp",
+  "attitude": "neutre",
   "teinte": "#753c19"
  },
  {
@@ -897,6 +900,12 @@
     "cible": "sevik",
     "type": "Fille",
     "ton": "positif"
+   },
+   {
+    "cible": "sevik",
+    "type": "père",
+    "ton": "positif",
+    "inverse": "fille de"
    }
   ],
   "citation": {
@@ -904,6 +913,7 @@
    "qui": "Voraan, en istran, traduit"
   },
   "img": "img/pnj/brakka-voraan.webp",
+  "attitude": "positif",
   "teinte": "#755219"
  },
  {
@@ -931,6 +941,7 @@
    "qui": "Sevik, en istran, traduit"
   },
   "img": "img/pnj/steppes-rouge-sevik.webp",
+  "attitude": "positif",
   "teinte": "#755219"
  },
  {
@@ -951,6 +962,14 @@
    "qui": "Thaal, en istran, traduit"
   },
   "img": "img/pnj/steppes-rouge-thaal.webp",
+  "relations": [
+   {
+    "cible": "voraan",
+    "type": "sage de",
+    "ton": "positif"
+   }
+  ],
+  "attitude": "positif",
   "teinte": "#2d2d2d"
  },
  {
@@ -1004,7 +1023,15 @@
   "resume": "Autorité pratique du monastère, sans titre officiel.",
   "connu": [
    "Il bat Frère Tomek quatre fois de suite au bâton. Il remarque les détails, comme les nœuds de corde du voyageur."
-  ]
+  ],
+  "relations": [
+   {
+    "cible": "frere-aldric",
+    "type": "moine du monastère",
+    "ton": "positif"
+   }
+  ],
+  "attitude": "neutre"
  },
  {
   "id": "frere-tomek",
@@ -1018,7 +1045,15 @@
   "connu": [
    "Il se foule la cheville à l'entraînement et veut reprendre malgré le repos prescrit.",
    "À la fin du registre, il bat enfin Frère Ossian."
-  ]
+  ],
+  "relations": [
+   {
+    "cible": "frere-aldric",
+    "type": "moine du monastère",
+    "ton": "positif"
+   }
+  ],
+  "attitude": "neutre"
  },
  {
   "id": "keras-tauroc",
@@ -1297,6 +1332,7 @@
     "legende": "L'intérieur du palais Tauroc"
    }
   ],
+  "attitude": "neutre",
   "lieu": "keras-tauroc"
  },
  {
@@ -1330,6 +1366,11 @@
     "cible": "demons",
     "type": "Démone",
     "ton": "neutre"
+   },
+   {
+    "cible": "fulvia",
+    "type": "organisatrices",
+    "ton": "positif"
    }
   ],
   "citation": {
@@ -1356,6 +1397,7 @@
     "teinte": "#751925"
    }
   ],
+  "attitude": "positif",
   "teinte": "#751925"
  },
  {
@@ -1376,6 +1418,7 @@
    "qui": "Fulvia, en Taurokh, traduit"
   },
   "img": "img/pnj/fulvia.webp",
+  "attitude": "neutre",
   "teinte": "#755219"
  },
  {
@@ -1402,6 +1445,7 @@
    }
   ],
   "img": "img/pnj/pius.webp",
+  "attitude": "neutre",
   "teinte": "#755219"
  },
  {
@@ -1428,6 +1472,7 @@
    }
   ],
   "img": "img/pnj/chrysodoros.webp",
+  "attitude": "neutre",
   "lieu": "keras-tauroc",
   "teinte": "#755219"
  },
@@ -1454,6 +1499,7 @@
    }
   ],
   "img": "img/pnj/naevia.webp",
+  "attitude": "neutre",
   "lieu": "keras-tauroc",
   "teinte": "#755219"
  },
@@ -1479,6 +1525,7 @@
    }
   ],
   "img": "img/pnj/eshkal.webp",
+  "attitude": "neutre",
   "lieu": "keras-tauroc",
   "teinte": "#753c19"
  },
@@ -1505,6 +1552,7 @@
    }
   ],
   "img": "img/pnj/comatus.webp",
+  "attitude": "neutre",
   "lieu": "keras-tauroc",
   "teinte": "#752519"
  },
@@ -1533,6 +1581,7 @@
    }
   ],
   "img": "img/pnj/capito.webp",
+  "attitude": "positif",
   "teinte": "#755219"
  },
  {
@@ -1561,6 +1610,7 @@
    }
   ],
   "img": "img/pnj/vibia.webp",
+  "attitude": "neutre",
   "teinte": "#755219"
  },
  {
@@ -1584,6 +1634,11 @@
     "cible": "volusius",
     "type": "Frère",
     "ton": "positif"
+   },
+   {
+    "cible": "volusius",
+    "type": "frère",
+    "ton": "positif"
    }
   ],
   "galerie": [
@@ -1593,6 +1648,7 @@
    }
   ],
   "img": "img/pnj/egnatius.webp",
+  "attitude": "positif",
   "teinte": "#755219"
  },
  {
@@ -1620,6 +1676,7 @@
    }
   ],
   "img": "img/pnj/ursinus.webp",
+  "attitude": "positif",
   "teinte": "#755219"
  },
  {
@@ -1646,6 +1703,7 @@
    }
   ],
   "img": "img/pnj/thessala.webp",
+  "attitude": "neutre",
   "teinte": "#753c19"
  },
  {
@@ -1678,6 +1736,7 @@
    }
   ],
   "img": "img/pnj/volusius.webp",
+  "attitude": "neutre",
   "teinte": "#753c19"
  },
  {
@@ -1703,6 +1762,7 @@
    }
   ],
   "img": "img/pnj/sera.webp",
+  "attitude": "positif",
   "lieu": "keras-tauroc",
   "teinte": "#753c19"
  },
@@ -1728,6 +1788,7 @@
    }
   ],
   "img": "img/pnj/capella.webp",
+  "attitude": "neutre",
   "lieu": "keras-tauroc",
   "teinte": "#755219"
  },
@@ -1771,6 +1832,7 @@
    }
   ],
   "img": "img/pnj/he-matome-are-ne.webp",
+  "attitude": "neutre",
   "teinte": "#753c19"
  },
  {
@@ -1780,7 +1842,7 @@
   "titre": "Grand-Général en disgrâce",
   "parent": "villa-ferox",
   "lieu": "villa-ferox",
-  "statut": "inconnu",
+  "statut": "arrêté",
   "question": "Qu'est devenu Calvinus Ferox après la visite du groupe ?",
   "alias": [
    "Ferox"
@@ -1813,6 +1875,7 @@
    }
   ],
   "img": "img/pnj/calvinus-ferox.webp",
+  "attitude": "ennemi",
   "teinte": "#2d2d2d"
  },
  {
@@ -1852,6 +1915,7 @@
    }
   ],
   "img": "img/pnj/tarcus.webp",
+  "attitude": "allie",
   "lieu": "keras-tauroc",
   "teinte": "#755219"
  },
@@ -1868,6 +1932,7 @@
    "Sa mort a fermé les accès à Roshen Buru, Seiran Vale et Azuren Kai compris."
   ],
   "img": "img/pnj/otoba-kessai.webp",
+  "attitude": "neutre",
   "lieu": "keras-tauroc",
   "teinte": "#752519"
  },
@@ -1905,6 +1970,7 @@
    }
   ],
   "img": "img/pnj/capitaine-yorisa.webp",
+  "attitude": "neutre",
   "teinte": "#751925"
  },
  {
@@ -1928,6 +1994,7 @@
   "lieu": "combat-de-silas",
   "ordre": 2,
   "img": "img/pnj/saoren.webp",
+  "attitude": "neutre",
   "teinte": "#752519"
  },
  {
@@ -2028,6 +2095,11 @@
     "cible": "vassago",
     "type": "Envoyé par",
     "ton": "negatif"
+   },
+   {
+    "cible": "absalom",
+    "type": "agent de Vassago",
+    "ton": "neutre"
    }
   ],
   "citation": {
@@ -2043,6 +2115,7 @@
    }
   ],
   "img": "img/pnj/silas-mortdore-e.webp",
+  "attitude": "ennemi",
   "teinte": "#755219"
  },
  {
@@ -2271,6 +2344,11 @@
     "cible": "olyssane-veythar",
     "type": "Négocie avec",
     "ton": "neutre"
+   },
+   {
+    "cible": "philippa-rougetoison",
+    "type": "point de retour de",
+    "ton": "positif"
    }
   ],
   "citation": {
@@ -2284,6 +2362,7 @@
    }
   ],
   "img": "img/pnj/eamonn-moorwich.webp",
+  "attitude": "positif",
   "teinte": "#753c19"
  },
  {
@@ -2315,8 +2394,33 @@
     "cible": "eamonn",
     "type": "Négocie avec",
     "ton": "neutre"
+   },
+   {
+    "cible": "gran-brijit",
+    "type": "serment à",
+    "ton": "positif"
+   },
+   {
+    "cible": "ink",
+    "type": "protège",
+    "ton": "positif",
+    "inverse": "protégée par"
+   },
+   {
+    "cible": "eamonn",
+    "type": "commanditaire de",
+    "ton": "positif"
+   },
+   {
+    "cible": "liora",
+    "type": "partenaire de livraison",
+    "ton": "positif"
    }
   ],
+  "citation": {
+   "texte": "On part quand vous serez prêts. Faites vos emplettes, après ce port y'aura plus rien d'humain avant Camont.",
+   "qui": "Olyssane Veythar"
+  },
   "formes": [
    {
     "img": "img/pnj/olyssane-veythar.webp",
@@ -2332,6 +2436,7 @@
     "teinte": "#753c19"
    }
   ],
+  "attitude": "allie",
   "teinte": "#753c19"
  },
  {
@@ -2351,6 +2456,17 @@
    {
     "cible": "olyssane-veythar",
     "type": "Protectrice",
+    "ton": "positif"
+   },
+   {
+    "cible": "thaloor",
+    "type": "tuteur",
+    "ton": "positif",
+    "inverse": "protège"
+   },
+   {
+    "cible": "maeve",
+    "type": "amie",
     "ton": "positif"
    }
   ],
@@ -2375,6 +2491,7 @@
     "teinte": "#195275"
    }
   ],
+  "attitude": "allie",
   "teinte": "#195275"
  },
  {
@@ -2401,6 +2518,7 @@
    }
   ],
   "img": "img/pnj/oswin.webp",
+  "attitude": "neutre",
   "teinte": "#2d2d2d"
  },
  {
@@ -2432,6 +2550,7 @@
    }
   ],
   "img": "img/pnj/lorca-n.webp",
+  "attitude": "positif",
   "teinte": "#753c19"
  },
  {
@@ -2460,6 +2579,7 @@
    }
   ],
   "img": "img/pnj/fennick.webp",
+  "attitude": "neutre",
   "teinte": "#753c19"
  },
  {
@@ -2487,6 +2607,15 @@
    }
   ],
   "img": "img/pnj/kester-tauroc.webp",
+  "relations": [
+   {
+    "cible": "draval-tauroc",
+    "type": "bâtard exilé de",
+    "ton": "negatif",
+    "inverse": "ennemi de"
+   }
+  ],
+  "attitude": "ennemi",
   "teinte": "#752519"
  },
  {
@@ -2903,6 +3032,7 @@
   "connu": [
    "Son autorité est avant tout religieuse."
   ],
+  "attitude": "neutre",
   "lieu": "tzalanar"
  },
  {
@@ -3247,7 +3377,8 @@
   "resume": "Personne d'extérieur ne l'a jamais rencontré.",
   "connu": [
    "Il envoie des représentants à La Rencontre."
-  ]
+  ],
+  "attitude": "neutre"
  },
  {
   "id": "catacombes-de-kord",
@@ -3390,6 +3521,7 @@
    }
   ],
   "img": "img/pnj/meditrina.webp",
+  "attitude": "neutre",
   "teinte": "#193c75"
  },
  {
@@ -3411,6 +3543,7 @@
    }
   ],
   "img": "img/pnj/vrakul.webp",
+  "attitude": "neutre",
   "teinte": "#753c19"
  },
  {
@@ -3434,6 +3567,7 @@
    }
   ],
   "img": "img/pnj/voshara.webp",
+  "attitude": "neutre",
   "teinte": "#753c19"
  },
  {
@@ -3455,6 +3589,7 @@
    }
   ],
   "img": "img/pnj/peu-importe.webp",
+  "attitude": "neutre",
   "teinte": "#753c19"
  },
  {
@@ -3478,6 +3613,7 @@
    }
   ],
   "img": "img/pnj/gru-l.webp",
+  "attitude": "ennemi",
   "teinte": "#755219"
  },
  {
@@ -3503,6 +3639,7 @@
    }
   ],
   "img": "img/pnj/cordus.webp",
+  "attitude": "neutre",
   "teinte": "#755219"
  },
  {
@@ -3525,6 +3662,7 @@
    }
   ],
   "img": "img/pnj/lapidus.webp",
+  "attitude": "neutre",
   "teinte": "#753c19"
  },
  {
@@ -3547,6 +3685,7 @@
    }
   ],
   "img": "img/pnj/grixus.webp",
+  "attitude": "neutre",
   "teinte": "#755219"
  },
  {
@@ -3563,6 +3702,7 @@
    "Passant ivre"
   ],
   "img": "img/pnj/passant-ivre.webp",
+  "attitude": "ennemi",
   "teinte": "#527519"
  },
  {
@@ -3579,7 +3719,8 @@
     "img": "img/paysages/keras-tauroc/planque-hematome.webp",
     "legende": "La vieille tannerie"
    }
-  ]
+  ],
+  "attitude": "neutre"
  },
  {
   "id": "ossyk",
@@ -3595,7 +3736,8 @@
     "img": "img/paysages/keras-tauroc/planque-hematome.webp",
     "legende": "La vieille tannerie"
    }
-  ]
+  ],
+  "attitude": "neutre"
  },
  {
   "id": "harak",
@@ -3605,7 +3747,8 @@
   "parent": "keras-tauroc",
   "lieu": "keras-tauroc",
   "statut": "vivant",
-  "resume": "Nom dont une recommandation ouvre la boutique de Thessala."
+  "resume": "Nom dont une recommandation ouvre la boutique de Thessala.",
+  "attitude": "neutre"
  },
  {
   "id": "hommes-de-main-de-ferox",
@@ -3647,6 +3790,7 @@
     "teinte": "#753c19"
    }
   ],
+  "attitude": "ennemi",
   "teinte": "#753c19"
  },
  {
@@ -3693,7 +3837,8 @@
   "nom": "Sol Regem",
   "titre": "Roi du Dominion Sol",
   "parent": "dominion-sol",
-  "resume": "Jeune roi, voix du Soleil sur terre. Son règne s'étend vite sur Thaldera."
+  "resume": "Jeune roi, voix du Soleil sur terre. Son règne s'étend vite sur Thaldera.",
+  "attitude": "ennemi"
  },
  {
   "id": "villes-du-dominion",
@@ -3824,7 +3969,21 @@
   "alias": [
    "Larme",
    "Cils"
-  ]
+  ],
+  "relations": [
+   {
+    "cible": "iris",
+    "type": "membres des Yeux",
+    "ton": "positif",
+    "inverse": "cheffe de"
+   },
+   {
+    "cible": "jane-merigold",
+    "type": "connus de",
+    "ton": "positif"
+   }
+  ],
+  "attitude": "positif"
  },
  {
   "id": "dame-merigold",
@@ -3834,6 +3993,7 @@
   "parent": "leyenmil",
   "resume": "Noble de Leyenmil qui a fondé l'orphelinat sur ses deniers. Elle est morte peu après avoir engagé la Rectrice.",
   "statut": "mort",
+  "attitude": "neutre",
   "lieu": "leyenmil"
  },
  {
@@ -3844,6 +4004,7 @@
   "parent": "leyenmil",
   "resume": "Le plus jeune des garçons, protégé par Soren comme un petit frère.",
   "img": "img/pnj/leyenmil-lukas.webp",
+  "attitude": "positif",
   "lieu": "leyenmil",
   "teinte": "#755219"
  },
@@ -4341,7 +4502,8 @@
   "connu": [
    "Selon la légende, les Goryo sont les fantômes de paysans noyés dans les rizières. Ils protègent Roshen Buru contre les voyageurs qui lui veulent du mal.",
    "Le groupe le croise une première fois sur les berges, avant d'atteindre Azuren Kai."
-  ]
+  ],
+  "attitude": "neutre"
  },
  {
   "id": "nubbe",
@@ -4360,6 +4522,7 @@
    "!! Rencontre d'une Nubbé : une petite racine affairée à grignoter des pousses. Philippa en cueille une de sa main spectrale.",
    "Une racine tordue au visage creusé, couronnée d'une fleur jaune, qui tient un doigt dans sa bouche."
   ],
+  "attitude": "neutre",
   "teinte": "#697519"
  },
  {
@@ -4375,6 +4538,7 @@
   "connu": [
    "Maigre, les cheveux noirs et le front couronné de bois, vêtue de feuilles. Une fumée violette tourbillonne autour d'elle."
   ],
+  "attitude": "neutre",
   "teinte": "#753c19"
  },
  {
@@ -4500,6 +4664,7 @@
    "Elle rôde au pied des piliers et se nourrit des cadavres.",
    "Elle fuit quand on s'avance franchement vers elle."
   ],
+  "attitude": "neutre",
   "teinte": "#753c19"
  },
  {
@@ -4547,6 +4712,14 @@
     "teinte": "#755219"
    }
   ],
+  "relations": [
+   {
+    "cible": "absalom",
+    "type": "relevés par",
+    "ton": "neutre"
+   }
+  ],
+  "attitude": "ennemi",
   "teinte": "#755219"
  },
  {
@@ -4564,6 +4737,7 @@
    "Ils cherchent à voler et disparaître, pas à tuer."
   ],
   "img": "img/pnj/agran-attaque-de-bandits.webp",
+  "attitude": "ennemi",
   "teinte": "#195275"
  },
  {
@@ -4580,6 +4754,7 @@
    "Ils distinguent l'ouvrage du commanditaire et restent à bord quoi qu'il arrive."
   ],
   "img": "img/pnj/nain-du-sous-marin-dogrun.webp",
+  "attitude": "positif",
   "teinte": "#755219"
  },
  {
@@ -4596,6 +4771,7 @@
    "Ils distinguent l'ouvrage du commanditaire et restent à bord quoi qu'il arrive."
   ],
   "img": "img/pnj/nain-du-sous-marin-thram.webp",
+  "attitude": "positif",
   "teinte": "#753c19"
  },
  {
@@ -4612,18 +4788,147 @@
    "Ils distinguent l'ouvrage du commanditaire et restent à bord quoi qu'il arrive."
   ],
   "img": "img/pnj/nain-du-sous-marin-orik.webp",
+  "attitude": "positif",
   "teinte": "#755219"
  },
  {
   "id": "eleanor-holsten",
   "type": "pnj",
   "nom": "Eleanor Holsten",
-  "titre": "De la maison Holsten",
-  "parent": "cercle-des-eleveurs",
+  "titre": "Cheffe de la maison Holsten",
+  "parent": "maison-holsten",
   "lieu": "cercle-des-eleveurs",
   "statut": "inconnu",
-  "resume": "De la maison Holsten, éleveurs de chevaux de trait et de guerre de Port Blanc.",
+  "resume": "Dirige la maison Holsten, une des quatre grandes familles d'éleveurs de Port Blanc. Chevaux de trait et de guerre.",
+  "connu": [
+   "Les Holsten siègent au Cercle des Éleveurs avec les Varkel, les Reth et les Calderon."
+  ],
   "img": "img/pnj/port-blanc-eleanor-holsten.webp",
+  "attitude": "neutre",
   "teinte": "#751925"
+ },
+ {
+  "id": "coeur-immerge",
+  "type": "lieu",
+  "nom": "Le Cœur immergé",
+  "titre": "Le pied de Thaladrassyl, au fond de la tranchée",
+  "parent": "agran",
+  "resume": "Un arbre noir dont le tronc dépasse toute échelle, couvert de coraux qui pulsent bleu et violet. Kataron y a parlé au groupe sans intermédiaire.",
+  "connu": [
+   "Kataron a reçu le groupe au pied de l'arbre. Elle n'est ni hostile ni bienveillante.",
+   "Elle n'a pas besoin d'eux : elle connaît Vassago, elle est protégée par vingt kilomètres d'eau et par une faille que personne ne trouve sans qu'elle le décide.",
+   "Congé définitif : « Vous avez été reçu. »"
+  ],
+  "chapeau": "Le varech s'écarte d'un coup, comme une forêt qui cède, et l'arbre est là. Le tronc dépasse toute échelle connue : des centaines de mètres de bois noir recouvert de coraux vivants qui pulsent bleu et violet, au rythme d'une respiration trop lente pour être humaine. Les racines plongent dans une obscurité sans fond. Les branches se perdent dans le noir, trop haut pour être vues. La seule lumière vient des coraux, froide et régulière, comme un cœur qui bat depuis l'aube du monde. Les voyageurs ne sont plus que des points minuscules au pied de quelque chose qui n'a pas besoin d'eux pour exister.",
+  "galerie": [
+   {
+    "img": "img/paysages/agran/coeur-immerge.webp",
+    "legende": "Le Cœur immergé"
+   }
+  ]
+ },
+ {
+  "id": "traversee-vers-le-coeur",
+  "type": "lieu",
+  "nom": "La traversée vers le Cœur",
+  "titre": "La tranchée de varech au-delà d'Agran",
+  "parent": "agran",
+  "resume": "La faille s'élargit en une tranchée sans bord visible. Le varech y forme des forêts entières, le courant guide le groupe.",
+  "connu": [
+   "Le courant prend les voyageurs à la sortie d'Agran, puis accélère.",
+   "Trois obstacles jalonnent la route : pression, instruments brouillés et gouffre pour le sous-marin, formations rocheuses, contre-courant et froid pour la nage.",
+   "Les créatures s'écartent sur leur passage, parce que le courant le leur dit."
+  ],
+  "chapeau": "Le courant prend le groupe doucement à la sortie d'Agran, puis accélère. La faille s'élargit, les parois s'écartent jusqu'à disparaître dans le noir, et le canyon devient une tranchée sans bord visible, dont le fond est une obscurité absolue et le plafond une obscurité différente. Le varech commence ici, quelques tiges isolées d'abord, puis des forêts entières qui montent de nulle part et ondulent comme une fumée lente. La route n'est pas tracée, elle se devine à travers des rideaux d'algues, des grottes qui s'ouvrent sur d'autres grottes. Les créatures s'écartent, non par peur, mais parce que le courant le leur dit.",
+  "galerie": [
+   {
+    "img": "img/paysages/agran/traversee-vers-le-coeur.webp",
+    "legende": "La traversée vers le Cœur"
+   }
+  ]
+ },
+ {
+  "id": "maison-holsten",
+  "type": "organisation",
+  "nom": "Maison Holsten",
+  "titre": "Éleveurs de chevaux de trait et de guerre",
+  "parent": "quatre-familles",
+  "resume": "Une des quatre grandes familles d'éleveurs de Port Blanc, aux chevaux de trait et de guerre. Eleanor Holsten la dirige.",
+  "connu": [
+   "Fournisseurs majeurs de montures. Leurs clients fréquents sont les pirates, les milices et les gardes privées.",
+   "Culture martiale, langage direct, peu de patience pour la politique. Ils respectent la force plus que l'or."
+  ],
+  "chef": {
+   "titre": "Cheffe de la maison",
+   "nom": "Eleanor Holsten"
+  }
+ },
+ {
+  "id": "capitaine-salvera",
+  "type": "pnj",
+  "nom": "Capitaine Salvera",
+  "titre": "Capitaine pirate de la flotte de Spezza",
+  "parent": "port-doelan",
+  "lieu": "port-et-jetee-doelan",
+  "statut": "inconnu",
+  "resume": "Chevelure brune, redingote rouge brodée, ceinture de perles. Capitaine pirate sous les ordres de Spezza.",
+  "img": "img/pnj/capitaine-salvera.webp",
+  "relations": [
+   {
+    "cible": "spezza",
+    "type": "capitaine de",
+    "ton": "positif",
+    "inverse": "employeur de"
+   }
+  ],
+  "attitude": "ennemi",
+  "teinte": "#752519"
+ },
+ {
+  "id": "capitaine-tiberio",
+  "type": "pnj",
+  "nom": "Capitaine Tiberio",
+  "titre": "Capitaine pirate de la flotte de Spezza",
+  "parent": "port-doelan",
+  "lieu": "port-et-jetee-doelan",
+  "statut": "inconnu",
+  "resume": "Barbe de trois jours, cape sombre et écharpe bleue, sabre au côté. Capitaine pirate sous les ordres de Spezza.",
+  "img": "img/pnj/capitaine-tiberio.webp",
+  "relations": [
+   {
+    "cible": "spezza",
+    "type": "capitaine de",
+    "ton": "positif",
+    "inverse": "employeur de"
+   },
+   {
+    "cible": "capitaine-salvera",
+    "type": "même flotte",
+    "ton": "positif"
+   }
+  ],
+  "attitude": "ennemi",
+  "teinte": "#753c19"
+ },
+ {
+  "id": "madame-lucrece",
+  "type": "pnj",
+  "nom": "Madame Lucrèce",
+  "titre": "Dominatrice de la maison de Vespera",
+  "parent": "maison-de-vespera",
+  "lieu": "maison-de-vespera",
+  "statut": "inconnu",
+  "resume": "Elfe en corset noir et or, fouet rouge à la main. Elle tient les jeux de mise en scène de la maison close.",
+  "img": "img/pnj/madame-lucrece.webp",
+  "relations": [
+   {
+    "cible": "vespera-merigold",
+    "type": "sert",
+    "ton": "positif",
+    "inverse": "dirigée par"
+   }
+  ],
+  "attitude": "neutre",
+  "teinte": "#753c19"
  }
 ]

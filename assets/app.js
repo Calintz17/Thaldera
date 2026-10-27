@@ -4,7 +4,7 @@
 (() => {
 'use strict';
 
-const VER = '23';
+const VER = '24';
 const EDIT = new URLSearchParams(location.search).has('edit');
 const $ = (s, r = document) => r.querySelector(s);
 const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
@@ -592,6 +592,25 @@ function statusPill(e) {
   if (!s) return '';
   return `<span class="pill ${esc(s)}">${esc(s === 'pj' ? 'joueur' : s)}</span>`;
 }
+const ATT_LABEL = { ennemi: 'ennemi', neutre: 'neutre', positif: 'positif', allie: 'allié' };
+const ATT_TIP = { ennemi: 'Ennemi du groupe', neutre: 'Neutre envers le groupe', positif: 'Bien disposé envers le groupe', allie: 'Allié : prêt à répondre à l’appel, à se sacrifier, à aider le groupe' };
+function attPill(e) {
+  const a = e.attitude;
+  if (e.type !== 'pnj' || !a) return '';
+  return `<span class="pill att ${esc(a)}" title="${esc(ATT_TIP[a] || '')}">${esc(ATT_LABEL[a] || a)}</span>`;
+}
+const pills = e => { const p = statusPill(e) + attPill(e); return p ? `<div class="pills">${p}</div>` : ''; };
+function network(e) {
+  const rows = [], seen = new Set();
+  const add = (id, type, ton) => { if (BY[id] && id !== e.id && !seen.has(id)) { seen.add(id); rows.push({ id, type, ton }); } };
+  (e.relations || []).forEach(r => add(r.cible, r.type, r.ton));
+  DB.forEach(o => (o.relations || []).forEach(r => { if (r.cible === e.id && o.type !== 'sujet') add(o.id, r.inverse || r.type, r.ton); }));
+  const grp = (label, ton) => {
+    const l = rows.filter(r => ton === 'neutre' ? (r.ton !== 'positif' && r.ton !== 'negatif') : r.ton === ton);
+    return l.length ? `<div class="net ${ton}"><span class="nl">${label}</span><div class="rels">${l.map(r => `<a class="chip ${ton === 'positif' ? 'pos' : ton === 'negatif' ? 'neg' : ''}" href="#/${r.id}"><b>${esc(r.type)}</b>${esc(BY[r.id].nom)}</a>`).join('')}</div></div>` : '';
+  };
+  return grp('Alliés de', 'positif') + grp('Ennemis de', 'negatif') + grp('Autres liens', 'neutre');
+}
 function sec(title, body, cls = '') { if (body) body = body.replace(/<li>!! /g, '<li class="key">'); return body ? `<section class="sec ${cls}"><h3>${esc(title)}</h3>${body}</section>` : ''; }
 const ul = (arr, id) => arr && arr.length ? '<ul>' + arr.map(t => `<li>${L(t, id)}</li>`).join('') + '</ul>' : '';
 function connuHtml(e) {
@@ -649,12 +668,11 @@ function savoirItems(e) {
   if (isP && e.type === 'pnj' && pl) out.push(`Vu : ${pl.nom}${vil ? ' (' + vil.nom + ')' : ''}`);
   (e.connu || []).forEach(t => out.push(L(t, e.id)));
   if (e.type !== 'pj' && e.type !== 'evenement') (e.histoire || []).forEach(t => out.push(L(t, e.id)));
-  if (isP) relBullets(e).forEach(t => out.push(esc(t)));
   return out;
 }
 const savoirHtml = e => { const it = savoirItems(e); return it.length ? '<ul>' + it.map(t => `<li>${t}</li>`).join('') + '</ul>' : ''; };
 function detailBlock(e) {
-  return `<h4>${esc(e.nom)}</h4><div class="nt">${esc(e.titre || '')} ${statusPill(e)}</div>` +
+  return `<h4>${esc(e.nom)}</h4><div class="nt">${esc(e.titre || '')}${pills(e)}</div>` +
     (e.resume ? `<p class="resume" style="text-align:left;font-size:17px;margin:6px 0">${L(e.resume, e.id)}</p>` : '') +
     sec('Ce que le groupe sait', savoirHtml(e)) +
     (e.type === 'pj' ? sec('Enjeux et quête en cours', ul(e.histoire, e.id), 'past') : '') +
@@ -672,7 +690,7 @@ function renderPanel(e, q) {
     h += `<div class="hero"><img src="${e.galerie[0].img}" alt=""></div>`;
   }
   if (e.type !== 'pnj' && e.type !== 'pj' && e.blason) h += `<div class="crest"><img src="${e.blason}" alt=""></div>`;
-  h += `<header class="head"><div class="tp">${esc(e.typeLabel || TYPES[e.type] || '')}</div><h1>${esc(e.nom)}</h1>${e.titre ? `<div class="ti">${L(e.titre, e.id)}</div>` : ''}${statusPill(e)}<div class="rule"><i></i></div></header>`;
+  h += `<header class="head"><div class="tp">${esc(e.typeLabel || TYPES[e.type] || '')}</div><h1>${esc(e.nom)}</h1>${e.titre ? `<div class="ti">${L(e.titre, e.id)}</div>` : ''}${pills(e)}<div class="rule"><i></i></div></header>`;
   if (e.chef) h += `<div class="chef"><span class="rt">${esc(e.chef.titre)}</span><span class="rn">${esc(e.chef.nom)}</span></div>`;
   if (e.themes) h += `<div class="themes">${esc(e.themes)}</div>`;
   const mp = mergedPlace(e);
@@ -697,6 +715,7 @@ function renderPanel(e, q) {
   if (mp) { const sib = pnjsAt(mp).filter(x => x.id !== e.id); if (sib.length) h += sec('Aussi présents', `<div class="bubs">${sib.map(q2 => bubble(q2)).join('')}</div>`); }
   if (e.citation) h += `<blockquote class="cite"><p>${esc(e.citation.texte)}</p>${e.citation.qui ? `<cite>${esc(e.citation.qui)}</cite>` : ''}</blockquote>`;
   if (e.type !== 'pnj' && e.type !== 'pj') { const rel = relations(e); if (rel) h += sec('Liens', rel); }
+  else { const nw = network(e); if (nw) h += sec('Réseau', nw, 'netsec'); }
 
   // enfants
   const placed = new Set(here.map(x => x.id));
