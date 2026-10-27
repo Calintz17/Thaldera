@@ -247,7 +247,7 @@ a.wcrest:hover .wn { color: var(--gold-hi); }
 .gal.on { opacity: 1; }
 .gal .sl { position: absolute; inset: 0; opacity: 0; transition: opacity 1.4s ease; overflow: hidden; display: flex; align-items: center; justify-content: center; }
 .gal .sl.act { opacity: 1; }
-.gal .sl img { position: relative; width: auto; height: auto; max-width: 100%; max-height: 100%; object-fit: contain; transform-origin: 50% 50%; }
+.gal .sl img { position: relative; width: auto; height: auto; max-width: 100%; max-height: 100%; min-height: 0; object-fit: contain; transform-origin: 50% 50%; }
 .gal .sl.act img { animation: none; }
 @keyframes kb { from { transform: scale(1.0) translate(0,0); } to { transform: scale(1.1) translate(-1.5%,-1%); } }
 @keyframes kb2 { from { transform: scale(1.1) translate(1.5%,0); } to { transform: scale(1.0) translate(0,0); } }
@@ -440,3 +440,28 @@ li.key { border-left: 2px solid var(--gold); padding-left: 10px; margin-left: -1
 .etape .pills { justify-content: flex-start; gap: 6px; }
 .etape .pills .pill { margin-top: 5px; font-size: 9px; padding: 2px 9px; }
 .etape p { margin: 6px 0 0; font-size: 15px; line-height: 1.45; }
+
+/* v27 : Nubée et consorts ancrées en bas du paysage, chevauchant l'image */
+.cutout img { right: 3%; bottom: 0; max-height: 86%; }
+.cutout .glow { bottom: -14%; }
+.sec ul li { text-align: left; }
+.sec li + li { border-top: 1px solid rgba(201,168,76,.08); padding-top: 8px; }
+.scenar { margin: 22px 0 6px; padding: 14px 18px 8px; border: 1px solid rgba(201,168,76,.6); border-left: 4px solid var(--gold); border-radius: 4px; background: linear-gradient(135deg, rgba(201,168,76,.12), rgba(201,168,76,.03)); box-shadow: 0 6px 20px rgba(0,0,0,.35); }
+.scenar .sch { font-family: 'Cinzel', serif; font-weight: 700; font-size: 12px; letter-spacing: .16em; text-transform: uppercase; color: var(--gold-hi, #f0d78a); margin-bottom: 8px; }
+.scenar p { font-weight: 600; color: #efe7d4; line-height: 1.5; margin: 0 0 8px; }
+.cutout img { bottom: var(--cb, 0); right: calc(var(--cx, 0px) + 3%); }
+.cutout.lf img { right: auto; left: calc(var(--cl, 0px) + 3%); }
+.cutout .glow { bottom: calc(var(--cb, 0px) - 14%); }
+.cam.zl .pin .pl { display: block !important; }
+.cam.zl .pin.dim, .cam.zl .pin.near { opacity: .92; }
+
+/* rune Raido */
+.rb { display: inline-grid; place-items: center; width: 28px; height: 28px; border-radius: 50%; background: rgba(6,16,38,.92); border: 1.5px solid #4db8ff; box-shadow: 0 0 10px 2px rgba(77,184,255,.85), 0 0 24px 6px rgba(40,140,255,.45); animation: rune 2.2s ease-in-out infinite; }
+.rb svg { width: 15px; height: 15px; fill: none; stroke: #bfe8ff; stroke-width: 2.4; stroke-linecap: round; stroke-linejoin: round; filter: drop-shadow(0 0 3px #4db8ff); }
+@keyframes rune { 50% { box-shadow: 0 0 5px 1px rgba(77,184,255,.6), 0 0 14px 3px rgba(40,140,255,.3); } }
+.pin .rb { position: absolute; right: -14px; top: -16px; pointer-events: none; }
+.pin.r-detruite .rb, .runeline.r-detruite .rb { filter: grayscale(1) brightness(.7); animation: none; box-shadow: none; }
+.pin.r-tbc .rb { opacity: .7; border-style: dashed; }
+.runeline { display: flex; gap: 12px; align-items: center; margin: 8px 0 14px; padding: 10px 14px; border: 1px solid rgba(77,184,255,.45); border-radius: 4px; background: rgba(40,140,255,.07); color: #cfe9ff; font-size: 15px; line-height: 1.4; }
+.runeline b { display: block; font-family: 'Cinzel', serif; font-size: 11px; letter-spacing: .14em; text-transform: uppercase; color: #7fcaff; margin-bottom: 2px; }
+@media (prefers-reduced-motion: reduce) { .rb { animation: none; } }

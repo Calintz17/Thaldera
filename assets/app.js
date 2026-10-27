@@ -4,7 +4,7 @@
 (() => {
 'use strict';
 
-const VER = '26';
+const VER = '27';
 const EDIT = new URLSearchParams(location.search).has('edit');
 const $ = (s, r = document) => r.querySelector(s);
 const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
@@ -131,9 +131,11 @@ function setCam(layer, rect, animate, pad) {
   const el = layer.cam;
   if (!animate) el.classList.add('notrans');
   el.style.setProperty('--s', c.s);
+  el.classList.toggle('zl', rect.w < 0.5);
   el.style.transform = `translate(${c.tx}px, ${c.ty}px) scale(${c.s})`;
   if (!animate) { void el.offsetWidth; el.classList.remove('notrans'); }
 }
+const RAIDO = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3v18M7 4l11 6.5L7 14.5M7 13.5L18 21"/></svg>';
 const FULL = { x: 0, y: 0, w: 1, h: 1 };
 const around = (p, w = 0.14) => ({ x: p.x - w / 2, y: p.y - w / 2, w, h: w });
 
@@ -258,7 +260,7 @@ function fallbackLand(e) {
   return null;
 }
 function frameOf(k, solo) {
-  return { id: k.id, poly: k.poly, color: k.couleur || k.accent || '#d9402f', lab: k.lab, label: k.nom, sub: k.titre, solo: !!solo };
+  return { id: k.id, poly: k.poly, polyx: k.polyx, color: k.couleur || k.accent || '#d9402f', lab: k.lab, label: k.nom, sub: k.titre, solo: !!solo };
 }
 function collectVilles(e) {
   const out = [];
@@ -288,7 +290,7 @@ function makeLayer(src, info) {
 function smoothPath(pts) {
   // courbe fermee (Catmull-Rom vers Bezier), coins arrondis sans trop deborder
   const n = pts.length; if (n < 3) return 'M' + pts.map(p => p.join(' ')).join('L');
-  const k = 0.17, f = v => +v.toFixed(5);
+  const k = 0.1, f = v => +v.toFixed(5);
   let d = 'M' + f(pts[0][0]) + ' ' + f(pts[0][1]);
   for (let i = 0; i < n; i++) {
     const p0 = pts[(i - 1 + n) % n], p1 = pts[i], p2 = pts[(i + 1) % n], p3 = pts[(i + 2) % n];
@@ -308,7 +310,7 @@ function renderOverlay(layer, sc) {
     const svg = document.createElementNS(NS, 'svg');
     svg.setAttribute('class', 'regs'); svg.setAttribute('viewBox', '0 0 1 1'); svg.setAttribute('preserveAspectRatio', 'none');
     sc.frames.forEach(f => {
-      const d = smoothPath(f.poly);
+      const d = smoothPath(f.poly) + (f.polyx || []).map(smoothPath).join('');
       const g = document.createElementNS(NS, 'g');
       g.setAttribute('class', 'reg' + (f.solo ? ' solo' : '')); g.dataset.id = f.id; g.style.setProperty('--c', f.color);
       ['fill', 'glow', 'glow2', 'line', 'run'].forEach(c => { const p = document.createElementNS(NS, 'path'); p.setAttribute('d', d); p.setAttribute('class', c); if (c === 'run') p.setAttribute('pathLength', '1'); g.appendChild(p); });
@@ -336,7 +338,9 @@ function renderOverlay(layer, sc) {
     a.className = `pin k-${p.kind}${p.dim ? ' dim' : ''}${p.near ? ' near' : ''}${p.here ? ' here' : ''}${p.x < 0.1 ? ' edge-l' : ''}${p.x > 0.9 ? ' edge-r' : ''}`;
     a.href = '#/' + p.id; a.dataset.id = p.id;
     a.style.cssText = `left:${p.x * 100}%;top:${p.y * 100}%`;
-    a.innerHTML = `<span class="in"><span class="pd"></span><span class="pl">${esc(p.label)}</span></span>`;
+    const ru = BY[p.id] && BY[p.id].rune;
+    if (ru) a.classList.add('rune', 'r-' + ru.etat);
+    a.innerHTML = `<span class="in"><span class="pd"></span>${ru ? `<span class="rb" title="Rune Raido de Philippa">${RAIDO}</span>` : ''}<span class="pl">${esc(p.label)}</span></span>`;
     ov.appendChild(a);
   });
   void ov.offsetWidth;
@@ -437,7 +441,7 @@ function showGallery(imgs, title, ent) {
     `<div class="gcap"><span class="gt"></span>${imgs.length > 1 ? '<div class="gdots">' + imgs.map((_, i) => `<i data-i="${i}"${i === 0 ? ' class="on"' : ''}></i>`).join('') + '</div><div class="gnav"><button data-d="-1" aria-label="Précédente">‹</button><button data-d="1" aria-label="Suivante">›</button></div>' : ''}</div>`;
   stageEl.insertBefore(g, $('.fog', stageEl));
   g.querySelectorAll('.sl img').forEach(im => {
-    const fit = () => { if (im.naturalWidth) im.style.maxWidth = Math.min(stageEl.clientWidth, im.naturalWidth * 1.7) + 'px'; };
+    const fit = () => { if (!im.naturalWidth) return; const r = im.naturalWidth / im.naturalHeight; im.style.maxWidth = 'none'; im.style.width = Math.min(stageEl.clientWidth * 0.92, stageEl.clientHeight * 0.92 * r, im.naturalWidth * 2.04) + 'px'; };
     if (im.complete) fit(); else im.addEventListener('load', fit);
   });
   let cur = 0;
@@ -500,8 +504,17 @@ function setCutout(e, form) {
   c.innerHTML = `<i class="glow"></i><img src="${src}" alt="${esc(e.nom)}">`;
   stageEl.insertBefore(c, $('.fog', stageEl));
   const ci = $('img', c);
-  const cfit = () => { if (ci.naturalHeight && src) ci.style.maxHeight = Math.min(stageEl.clientHeight * (innerWidth <= 760 ? 0.78 : 0.94), ci.naturalHeight * 1.7) + 'px'; };
+  const cfit = () => { if (ci.naturalHeight && src) ci.style.maxHeight = Math.min(stageEl.clientHeight * (innerWidth <= 760 ? 0.78 : 0.86), ci.naturalHeight * 1.7) + 'px'; };
   if (ci.complete) cfit(); else ci.addEventListener('load', cfit);
+  const anchor = () => {
+    const bg = S.gal && $('.sl.act img', S.gal); if (!bg || !bg.naturalWidth) return;
+    const sr = stageEl.getBoundingClientRect(), br = bg.getBoundingClientRect();
+    c.style.setProperty('--cb', Math.max(0, sr.bottom - br.bottom) + 'px');
+    c.style.setProperty('--cx', Math.max(0, sr.right - br.right) + 'px');
+    c.style.setProperty('--cl', Math.max(0, br.left - sr.left) + 'px');
+  };
+  setTimeout(anchor, 60); setTimeout(anchor, 600);
+  const bgi = S.gal && $('.sl.act img', S.gal); if (bgi && !bgi.complete) bgi.addEventListener('load', anchor);
   S.cut = ck;
 }
 function renderCap(sc, entry) {
@@ -707,6 +720,8 @@ function renderPanel(e, q) {
   }
   if (e.type !== 'pnj' && e.type !== 'pj' && e.blason) h += `<div class="crest"><img src="${e.blason}" alt=""></div>`;
   h += `<header class="head"><div class="tp">${esc(e.typeLabel || TYPES[e.type] || '')}</div><h1>${esc(e.nom)}</h1>${e.titre ? `<div class="ti">${L(e.titre, e.id)}</div>` : ''}${pills(e)}<div class="rule"><i></i></div></header>`;
+  const mp0 = mergedPlace(e), ru0 = e.rune || (mp0 && mp0.rune);
+  if (ru0) h += `<div class="runeline r-${esc(ru0.etat)}"><span class="rb">${RAIDO}</span><span><b>Rune Raido${ru0.etat === 'detruite' ? ' (détruite)' : ru0.etat === 'tbc' ? ' (à confirmer)' : ''}</b>${esc(ru0.note || '')}</span></div>`;
   if (e.chef) h += `<div class="chef"><span class="rt">${esc(e.chef.titre)}</span><span class="rn">${esc(e.chef.nom)}</span></div>`;
   if (e.themes) h += `<div class="themes">${esc(e.themes)}</div>`;
   const mp = mergedPlace(e);
@@ -726,6 +741,7 @@ function renderPanel(e, q) {
   }
   if (e.type === 'evenement') { h += sec('Ce que le groupe sait', connuHtml(e)); h += sec('Ce qui s’est passé', ul(e.histoire, e.id), 'past'); }
   else h += sec('Ce que le groupe sait', savoirHtml(e));
+  if (e.scenar && e.scenar.texte) h += `<aside class="scenar"><div class="sch">${esc(e.scenar.titre || 'Où en est le scénario')}</div>${e.scenar.texte.map(t => `<p>${L(t, e.id)}</p>`).join('')}</aside>`;
   if (e.etapes) h += sec('Parcours', parcours(e), 'parcsec');
   if (e.type === 'pj') h += sec('Enjeux et quête en cours', ul(e.histoire, e.id), 'past');
   if (e.question) h += sec('En suspens', `<p class="qs">${L(e.question, e.id)}</p>`);
