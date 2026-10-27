@@ -1433,7 +1433,9 @@
   "resume": "Premier habitant d'Istra rencontré par le groupe.",
   "connu": [
    "Grand, la peau gris sombre, la trompe courte, les défenses à peine naissantes. Il recoud une barque abîmée par la tempête.",
-   "Bienveillant et expressif, fasciné par les étrangers venus de la mer. Il dit qu'il s'agit d'un « chemin sous la mer », une route ancienne."
+   "Bienveillant et expressif, fasciné par les étrangers venus de la mer. Il dit qu'il s'agit d'un « chemin sous la mer », une route ancienne.",
+   "Jeune Pachidan à la peau gris sombre, trompe courte et nerveuse, défenses à peine naissantes. Il recoud une barque abîmée par une tempête trois jours plus tôt, avec une aiguille en os et de la fibre tressée.",
+   "Il ne parle qu'Istran et compense par des gestes larges et des mimiques claires. Il regarde les PJ avec une curiosité sans méfiance, les salue (Tharnak, Philippa, Tharnak, Jane) et les envoie voir Urrak, le vieux, qui comprend les étrangers."
   ],
   "histoire": [
    "Il renvoie le groupe vers Urrak, qui comprend les étrangers."
@@ -1462,7 +1464,12 @@
   "connu": [
    "Sa maison est la plus grande du village, avec une porte de deux mètres de large.",
    "Il accueille le groupe par son nom, Philippa et Jane.",
-   "Il résume le continent : Keras Taurok au centre des steppes, le clan qui gagne au combat. Il refuse de parler de Balamor."
+   "Il résume le continent : Keras Taurok au centre des steppes, le clan qui gagne au combat. Il refuse de parler de Balamor.",
+   "Loxodon à la trompe couverte de tatouages anciens noirs et bleus. Sa maison, au centre du village, est la plus grande de Brakka, à l'échelle d'un Loxodon. Il attendait les PJ.",
+   "S'il ne se passe rien, il lance Tongues lui-même, avec une patience résignée : il a déjà vécu ça. Brakka ne reçoit jamais de visiteurs, et les PJ sont les seconds en quelques semaines.",
+   "Absalom est arrivée par les airs, épuisée, à moitié morte. Le prêtre l'a soignée plusieurs jours, elle a passé beaucoup de temps au sanctuaire de la marée, puis elle est partie vers les Steppes sans un mot. Elle parlait un Istran parfait, comme personne n'en parle.",
+   "Sur Istra-Belig : Keras Taurok, au centre des Steppes, est le clan le plus puissant du continent. Roshen Buru, au nord, rassemble des moines, des rituels et des esprits. There'duun, dans les montagnes de l'ouest, abrite les nains. On ne parle pas de Balamor à Brakka.",
+   "Au départ, il remet un paquet de vivres (poisson séché, sel, galettes plates) et pose une main sur l'épaule de chacune."
   ],
   "histoire": [
    "Il fournit au groupe du poisson séché, qui servira à dresser les Rakh."
@@ -1498,7 +1505,11 @@
   "connu": [
    "Elle parle peu, observe tout, et un peu amusée.",
    "Elle appelle Absalom « Vasha ». Celle-ci est restée une semaine à Brakka, parlait un istran parfait comme appris dans un livre, dormait dehors et passait ses nuits au sanctuaire.",
-   "Elle souriait quand elle pensait que personne ne regardait. Shoba se réjouit qu'elle soit partie."
+   "Elle souriait quand elle pensait que personne ne regardait. Shoba se réjouit qu'elle soit partie.",
+   "Vieille, petite pour une Pachidan, défenses taillées court en signe de deuil. Elle parle peu, observe tout, direct et un peu amusée. Elle travaille depuis l'aube à sa fumerie, dans un renfoncement de la falaise.",
+   "Brakka est un village de pêcheurs reculé, sans route ni visiteurs depuis toujours : les steppes sont à la fois leur garde et leur prison, et ils ne voyagent pas.",
+   "Absalom, qu'elle appelle Vasha, est restée une semaine. Son Istran était parfait, sans accent, comme appris dans un livre, ce qui mettait Shoba mal à l'aise. Elle mangeait peu, dormait dehors et passait ses nuits au sanctuaire.",
+   "Si on insiste : « Elle souriait quand elle pensait que personne ne regardait. Pas un sourire normal. » Elle ne sait pas où Vasha est allée et s'en moque, contente qu'elle soit partie."
   ],
   "relations": [
    {
@@ -1567,7 +1578,10 @@
   "statut": "vivant",
   "resume": "Courtois et direct. Il lit dans l'arrivée du groupe un présage plutôt qu'une offense.",
   "connu": [
-   "Il refuse le passage pendant le rituel, mais interprète leur arrivée comme un signe favorable."
+   "Il refuse le passage pendant le rituel, mais interprète leur arrivée comme un signe favorable.",
+   "Chef de la caravane dans la gorge du Mesa, calme et prévenu par les gardes. Il leur apprend que la gorge est fermée pendant un rituel : personne ne passe, personne n'entre.",
+   "Il trouve leurs Rakh beaux et demande s'ils sont nouveaux sur Istra-Belig. Il invite les PJ à participer au rituel s'ils le souhaitent.",
+   "Il sert les PJ lui-même au repas de la fin, geste de respect, et pose une main sur l'épaule de chacune. Plus tard il leur demande ce qu'ils cherchent vraiment à Keras Taurok."
   ],
   "relations": [
    {
@@ -1601,7 +1615,10 @@
   "resume": "En plein Ashkral, son rituel de passage à l'âge adulte.",
   "connu": [
    "Elle porte de fausses cornes en os sculpté, avec une fleur jaune glissée entre les deux.",
-   "Elle exige d'abord que les étrangers soient expulsés. Après le verdict du sage, elle admet qu'ils ne sont pas un mauvais présage."
+   "Elle exige d'abord que les étrangers soient expulsés. Après le verdict du sage, elle admet qu'ils ne sont pas un mauvais présage.",
+   "Humaine aux fausses cornes d'os sculpté attachées de cuir tressé, avec une fleur jaune entre les deux. Elle a grandi dans cette caravane parmi les Taurok.",
+   "Elle est en plein Ashkral, son premier rituel de passage à l'âge adulte. L'intrusion d'étrangers est une offense à la fois personnelle et rituelle, et elle exige de son père qu'on les expulse.",
+   "Elle finit par accepter à contrecœur, bras croisés, dos tourné. Au repas final, elle apporte deux bols sans un mot, s'assoit à côté des PJ, boit trop vite et déclare vers minuit qu'ils ne sont finalement pas si mal."
   ],
   "relations": [
    {
@@ -1629,7 +1646,10 @@
   "resume": "Sa tente est la plus petite du camp. Il regardait déjà le groupe quand il est entré.",
   "connu": [
    "Son verdict est double : les étrangers ne peuvent pas traverser pendant le rituel. Leur arrivée est un signe, ils sont les bienvenus dans le camp.",
-   "Dans les braises, il voit que le groupe porte quelque chose de lourd. « Une vieille route. Vous comprendrez. »"
+   "Dans les braises, il voit que le groupe porte quelque chose de lourd. « Une vieille route. Vous comprendrez. »",
+   "Il parle peu et lentement, chaque phrase est une décision. Il consulte les braises après la fumée comme on regarde une carte.",
+   "Son verdict est double : les étrangers ne peuvent pas traverser pendant le rituel, mais leur arrivée ce jour précis est un signe. Ils sont les bienvenus au camp et au rituel s'ils le souhaitent.",
+   "Il dit que les PJ portent quelque chose de lourd avec eux et que les steppes l'ont senti. Il ne précise pas ce qu'il a vu dans les braises : une vieille route, vous comprendrez."
   ],
   "citation": {
    "texte": "Vous avez marché sur une vieille route. Maintenant, une route de danger. Vous êtes forts, mais peu vivants.",
@@ -2301,7 +2321,8 @@
    "Premier PNJ coopératif de la ville, elle ne donne jamais plus que ce qu'on lui demande.",
    "Elle se souvient d'Absalom : étrangère tout en noir, restée une nuit, partie au petit matin sans sac, après avoir demandé où se trouvait la cathédrale.",
    "Elle a prévenu le groupe : sans arène, pas de respect, et les étrangers finissent mal ici. Plus tard, c'est elle qui lui remet la missive de Vitiosa.",
-   "Le carnet d'Hématome la nomme comme commanditaire d'un contrat : elle emploie la pègre locale."
+   "Le carnet d'Hématome la nomme comme commanditaire d'un contrat : elle emploie la pègre locale.",
+   "Les gens de Brakka et la caravane recommandent de la voir à Keras Taurok, à l'Angues Dormientes : elle saura les accueillir."
   ],
   "citation": {
    "texte": "Moi je suis plutôt aimable, rapport au fait que je suis pas une grosse minotaure, une grosse brute. Mais si vous comptez pas vous battre dans l'arène, ici, le chemin va être rude pour vous.",
@@ -3168,7 +3189,9 @@
   "statut": "vivant",
   "resume": "Jeune fille qui vagabonde à Cap Cornes.",
   "connu": [
-   "Retrouvée près d'une flaque, elle joue avec des amis. Elle a aidé le groupe à vaincre les ghoules des marées."
+   "Retrouvée près d'une flaque, elle joue avec des amis. Elle a aidé le groupe à vaincre les ghoules des marées.",
+   "Elle surgit à côté d'un PJ, queue déjà agitée, et veut tout savoir sur la surface, les Léviathans et le soleil. Ses braies viennent d'une épave de la faille basse, de style altéran.",
+   "Thaloor lui a interdit de s'approcher de l'épave plus bas, celle qui a encore un pavillon accroché. Elle sait où elle est, et elle en est fière."
   ],
   "relations": [
    {
@@ -6585,7 +6608,9 @@
   "statut": "inconnu",
   "resume": "Dirige la maison Holsten, une des quatre grandes familles d'éleveurs de Port Blanc. Chevaux de trait et de guerre.",
   "connu": [
-   "Les Holsten siègent au Cercle des Éleveurs avec les Varkel, les Reth et les Calderon."
+   "Les Holsten siègent au Cercle des Éleveurs avec les Varkel, les Reth et les Calderon.",
+   "Maison Holsten, la Force Utile : chevaux de trait et de guerre, clients fréquents parmi pirates, milices et gardes privées. Culture martiale, langage direct, peu de patience pour la politique.",
+   "Ils respectent la force plus que l'or."
   ],
   "img": "img/pnj/port-blanc-eleanor-holsten.webp",
   "attitude": "neutre",

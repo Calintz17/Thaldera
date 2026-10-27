@@ -1697,7 +1697,9 @@
   "statut": "vivant",
   "resume": "Accueille les voyageurs avec de la bière fraîche et du bœuf grillé.",
   "connu": [
-   "Elle sert ce que la ville élève, avec fierté."
+   "Elle sert ce que la ville élève, avec fierté.",
+   "Elle sert du vrai bœuf de Port Blanc, grillé, avec du pain et des haricots, de la bière fraîche et un whisky qui réveille les morts.",
+   "Elle accueille les voyageurs à bras ouverts et les invite à s'installer où ils veulent."
   ],
   "citation": {
    "texte": "Ici on sert ce qu'on élève : du vrai bœuf de Port-Blanc.",
@@ -1732,7 +1734,9 @@
   "statut": "vivant",
   "resume": "Joueur installé qui invite les nouveaux visages à sa table.",
   "connu": [
-   "Il joue contre des gens qui ne repasseront pas."
+   "Il joue contre des gens qui ne repasseront pas.",
+   "Joueur installé à une table du saloon, il jette un coup d'œil par-dessus ses cartes avec un sourire discret. Il remarque les nouvelles têtes, rares par ici.",
+   "Il propose une partie de poker : trois jets secrets (d20, d12, d6), chacun choisit de se coucher, de suivre ou de relancer, et la somme la plus haute gagne. Insight pour deviner un bluff, Deception pour bluffer."
   ],
   "citation": {
    "texte": "Tiens donc… des nouvelles têtes. On n'en voit pas souvent passer par ici.",
@@ -1768,7 +1772,11 @@
   "statut": "vivant",
   "resume": "Vend suif, boyaux, laine brute et conserves sur les Quais Rouges.",
   "connu": [
-   "Elle explique que la pêche n'existe plus. Elle voit tout et ne dénonce personne."
+   "Elle explique que la pêche n'existe plus. Elle voit tout et ne dénonce personne.",
+   "Elle tient une petite boutique utilitaire sur les quais : graisse, suif, boyaux traités, laine brute, cuir de rebut, conserves simples. Elle vit du flux des dockers et des équipages de passage.",
+   "La pêche n'existe plus à Port Blanc. Depuis la Guerre de la Veyra, le fleuve est considéré comme mort, et le sang des abattoirs en amont s'écoule jusqu'aux quais, d'où leur nom.",
+   "La viande part en continu vers les flottes pirates et les comptoirs du Consortium. Des cargaisons de contrebande, notamment depuis ou vers Altéra, transitent aussi par ici.",
+   "Elle voit et entend, mais reste en dehors des affaires des Familles. Elle répond aux questions simples, ne dénonce personne et évite les détails dangereux."
   ],
   "galerie": [
    {
@@ -1807,7 +1815,11 @@
   "statut": "vivant",
   "resume": "Shérif qui voulait transférer Mara Callahan. Il laisse les joueuses décider.",
   "connu": [
-   "Il tournait en rond, visiblement sous pression."
+   "Il tournait en rond, visiblement sous pression.",
+   "Il fait les cent pas devant la prison, visiblement sous pression, et interpelle les PJ s'ils traînent dans la rue.",
+   "Il transporte une prisonnière, cheffe d'un gang local, à remettre aux autorités de Port Doëlan dans une auberge isolée de la plaine, pour que Doëlan n'entre pas en ville.",
+   "Ses deux adjoints ont disparu et il refuse de partir seul. Il offre 1000 po pour l'escorte, payables à l'arrivée au point d'échange ou sur preuve de remise.",
+   "Insight DD 12 : sincère, inquiet, coincé. Perception DD 13 : la charrette est modifiée pour un transport à risque."
   ],
   "citation": {
    "texte": "Mes deux adjoints ont pas reparu. Ça me plaît pas.",
@@ -1841,7 +1853,10 @@
   "resume": "Prisonnière aidée à fuir par le groupe. Elle lui doit 1000 po.",
   "connu": [
    "Elle est toujours dans la nature.",
-   "Sa dette n'a jamais été payée."
+   "Sa dette n'a jamais été payée.",
+   "Cheffe de gang surnommée Red, transportée dans une cage sur la charrette. Elle observe en silence, dos droit, avec une patience calme.",
+   "Pendant le trajet, elle flatte, insinue que Doëlan veut l'éliminer, lance Charm Person (DC 15), puis propose 2000 po et un coffre caché dans les collines, jusqu'à 4000 po si elle sent une faiblesse.",
+   "Insight DD 14 : elle ment en partie. Insight DD 16 : elle sait que quelqu'un est en position. Insight DD 18 : elle prépare quelque chose."
   ],
   "histoire": [
    "Le groupe l'aide à s'évader."
@@ -1879,7 +1894,11 @@
   "statut": "vivant",
   "resume": "Gardien bègue qui confirme à demi-mot que les bêtes sont malades.",
   "connu": [
-   "« Moi je garde les pâtures, je pose pas trop de questions. »"
+   "« Moi je garde les pâtures, je pose pas trop de questions. »",
+   "Homme d'une quarantaine avancée, grand, un peu voûté, sec plutôt que robuste, peau tannée et mains calleuses. Vêtements simples, réparés plus d'une fois.",
+   "Il parle peu, avec un accent rural et un phrasé lent, et répond aux questions qu'on lui pose, ni plus ni moins. Il garde les pâtures et ne pose pas de questions.",
+   "Port Blanc n'est pas un port : pas d'eau, pas de bateaux, des troupeaux à perte de vue. On dit que c'est le garde-manger du Consortium, et même d'Altéra.",
+   "Quelques bêtes vont mal : elles tremblent, les yeux tout blancs. Pour en savoir plus, il faut aller en ville, mais personne n'en parle."
   ],
   "citation": {
    "texte": "I-ici c-c’est l-le b-bétail… D-des v-vaches… d-des c-cochons… d-des t-troupeaux à p-perte d-vue…",
@@ -2692,10 +2711,7 @@
   "lieu": "agran",
   "statut": "vivant",
   "resume": "Prudent, il veut protéger Ink du monde extérieur.",
-  "citation": {
-   "texte": "Rouge ou blanc. Le rouge est rare. Il coûte plus.",
-   "qui": "Thaloor"
-  },
+  "citation": "« Rouge ou blanc. Le rouge est rare. Il coûte plus. »",
   "galerie": [
    {
     "img": "img/paysages/agran/auberge-de-thaloor.webp",
@@ -2704,6 +2720,10 @@
   ],
   "img": "img/pnj/agran-thaloor.webp",
   "attitude": "positif",
+  "connu": [
+   "Il sert sans un mot de trop, jauge les PJ du coin de l'œil et répond aux questions directes par des phrases courtes. Le rouge est de la viande, rare et plus chère, le blanc du poisson.",
+   "Il conseille de rester dans les rues principales, d'éviter les courants du haut et de dormir quand les coraux s'éteignent. Il protège Ink en la rappelant à l'ordre une fois, pas deux."
+  ],
   "teinte": "#755219"
  },
  {
@@ -2716,7 +2736,10 @@
   "statut": "vivant",
   "resume": "Autorité spirituelle et temporelle. Kataron parle à travers elle.",
   "connu": [
-   "Elle donne au groupe une marque liée au Cœur Immergé."
+   "Elle donne au groupe une marque liée au Cœur Immergé.",
+   "Elle attend en haut des marches, voile de raie manta autour du visage, bras croisés, tentacules immobiles sur la pierre. Elle ne descend pas, elle regarde monter.",
+   "Directe, sans hostilité mais sans chaleur, elle veut savoir pourquoi ils sont là avant de parler. Devant le fragment de Nyrrh, elle se lève, le prend avec précaution et dit très peu.",
+   "Elle explique que Kataron est protégée, que les tempêtes de surface sont les battements du Titan, et que personne n'approche Thaladrassyl sans sa permission."
   ],
   "citation": {
    "texte": "Vous avez traversé les courants. Cela ne se fait pas par chance.",
@@ -2749,7 +2772,10 @@
   "statut": "vivant",
   "resume": "Joue de la lyre, queue de poisson pendant dans le vide.",
   "connu": [
-   "Il enseigne le thuun, un gel qui remplace l'air pour transmettre le son."
+   "Il enseigne le thuun, un gel qui remplace l'air pour transmettre le son.",
+   "Musicien attitré d'Agran, l'othuun de la ville : son rôle est autant rituel que performatif, et certaines cérémonies du culte de Kataron ne peuvent pas se tenir sans lui.",
+   "Il explique le thuun, gel organique sécrété par une anémone des grandes profondeurs. Appliqué sur les cordes, il remplace l'air comme medium, et la vibration traverse l'eau sur des dizaines de mètres. Sans thuun, les cordes bougent mais le son ne porte pas.",
+   "Son othuunra est faite d'une coquille de fond et de cordes de filament de varech, avec du thuun changé tous les trois jours : elle porte à trois cents pieds par eau calme. Il peut en fabriquer une pour Philippa ou lui en vendre une de réserve, et lui montre comment appliquer le thuun."
   ],
   "citation": {
    "texte": "Tu as essayé de jouer. J'ai senti le silence. C'est une chose particulière, le silence d'une corde qui ne sait pas comment se faire entendre.",
@@ -2787,6 +2813,11 @@
    }
   ],
   "attitude": "positif",
+  "connu": [
+   "Il parle d'une voix lente et appliquée, comme dans une langue apprise. Il demande une offrande, n'importe quel objet de valeur déposé au pied du trône-coquille, sans en préciser le montant.",
+   "Quand le pupitre s'illumine au contact des PJ, il recule d'un pas, regarde le pupitre, puis les PJ, puis le pupitre : ce qu'il voit n'entre dans aucune catégorie connue de lui (Insight DC 13). Il les envoie voir la Suuraal sur-le-champ.",
+   "Religion DC 12 : le pupitre sert à lire les pulsations de Kataron. Arcanes DC 14 : la lumière est une résonance, quelque chose dans les PJ vibre à la fréquence des coraux d'Agran."
+  ],
   "teinte": "#755219"
  },
  {
@@ -2821,7 +2852,10 @@
   "resume": "Allié et crafteur de confiance du groupe, assisté de Fyra.",
   "connu": [
    "Il forge avec l'écaille d'Al Batun et la Pyrrite.",
-   "Même lui ne peut reforger la lame brisée."
+   "Même lui ne peut reforger la lame brisée.",
+   "Sa forge est taillée dans une masse de basalte rouge, avec des canaux de métal fondu autour des établis et un bassin incandescent gravé de symboles anciens sous une enclume circulaire.",
+   "Il travaille la pyrrite (bracelets, égide, gants-barrière) et l'écaille de ver des sables, qui dissipe la chaleur plutôt que de la conduire.",
+   "Il refuse d'être jugé pour l'acier vendu à la Griffe : le pyrracier n'a pas d'intention, il a une forme. Il fait des armures, la pyrrite protège, et forger une arme contre sa nature donne quelque chose de médiocre."
   ],
   "citation": {
    "texte": "Bienvenue dans la forge éternelle mes amis. Que cherchez-vous ? Vous avez l'air d'aventurières.",
@@ -3595,7 +3629,9 @@
   "resume": "Grand, maigre, œil exorbité, il crie les nouvelles et amplifie les rumeurs.",
   "connu": [
    "Il annonce les meurtres de marins à la peau verte et le 7 inversé, ancienne marque de quarantaine de la peste des noyés.",
-   "Il envoie le groupe chez Alrik Crochemer."
+   "Il envoie le groupe chez Alrik Crochemer.",
+   "Demi-elfe grand et maigre, cheveux filasses collés au front, manteau élimé trop large, un œil exorbité et l'autre plissé. Il crie ses nouvelles place des Quais de Poix.",
+   "Il aime le drame et amplifie les rumeurs, mais il a peur au fond. Il annonce que la flotte de Sycomore a pris la baie de Port Doëlan en une nuit, que Rivegard et Altéra exigent des explications, et que le prix du poisson a doublé."
   ],
   "citation": {
    "texte": "Nouvelles du jour ! Encore un cadavre trouvé ce matin, peau verte, yeux exorbités !",
@@ -4519,6 +4555,11 @@
    }
   ],
   "attitude": "neutre",
+  "connu": [
+   "Posté avec Ezekiel à l'entrée des abattoirs de chaux, où toute la viande de la ville est traitée. Les Familles ont interdit l'accès aux étrangers.",
+   "Calme, professionnel, inflexible. Les refus sont nets et répétés, sans provocation. En cas d'insistance, ils bloquent le passage et appellent du renfort, en évitant l'escalade.",
+   "Leur fermeté inhabituelle trahit l'importance de l'enjeu."
+  ],
   "teinte": "#755219"
  },
  {
@@ -4551,6 +4592,9 @@
    }
   ],
   "attitude": "neutre",
+  "connu": [
+   "Posté avec Tiberius à l'entrée des abattoirs de chaux. Il répète les consignes des Familles et refuse l'accès aux étrangers."
+  ],
   "teinte": "#753c19"
  },
  {
@@ -4575,7 +4619,11 @@
   "statut": "vivant",
   "resume": "Passe ses journées dans les champs et ses nuits à écouter les rumeurs. Elle veut savoir combien de temps Port Blanc tient.",
   "connu": [
-   "Elle décrit les quatre familles et dit que des cargaisons transitent par la terre depuis que le port est mort."
+   "Elle décrit les quatre familles et dit que des cargaisons transitent par la terre depuis que le port est mort.",
+   "Elle est présente au marché aux bestiaux, simple acteur parmi d'autres. Elle travaille pour le Voile, qui veut savoir comment Port Blanc tient, combien de temps, et à quel prix réel.",
+   "Elle passe ses journées dans les champs, enclos et granges, et ses nuits à écouter ce que les gens racontent quand ils pensent que personne ne compte.",
+   "Elle résume les quatre maisons : les Varkel font du bœuf bien compté pour le Consortium, les Reth le mouton, la laine et le cuir avec des rites de purification et la chapelle, les Holsten des chevaux de trait et de guerre pour des gens armés, les Calderon possèdent la plupart des terres et méprisent ce qui vient de l'extérieur.",
+   "Depuis que le port est mort, des cargaisons passent par la terre et changent de mains deux ou trois fois entre Altéra et le Consortium."
   ],
   "alias": [
    "Abby du Voile"
@@ -4621,7 +4669,10 @@
   "statut": "vivant",
   "resume": "Travaille le cuir près du marché, sans boutique fixe. Il sait quand il vaut mieux se taire.",
   "connu": [
-   "Il est témoin des transactions sous le manteau entre Familles."
+   "Il est témoin des transactions sous le manteau entre Familles.",
+   "Il travaille le cuir près du marché aux bestiaux. Sans boutique fixe, il loue de l'espace et travaille sur place ou à la demande, au rythme des bêtes et des marchands.",
+   "Il connaît bien le fonctionnement du marché sans en être un acteur central. Il est témoin régulier des affaires sous le manteau et sait quand il vaut mieux se taire.",
+   "Il vend cuir souple et épais, courroies, lacets, gants et tabliers de tanneur, manteaux de voyage en peau, armures de cuir et brassards de force."
   ],
   "galerie": [
    {
@@ -4665,6 +4716,10 @@
   ],
   "img": "img/pnj/port-blanc-royce.webp",
   "attitude": "neutre",
+  "connu": [
+   "Il tient le général store des quais : cordes, lampes de piste, rations du désert, gourdes, couvertures de selle, chapeaux de frontière, onguents, selles et armes simples.",
+   "Il vend aussi une carte grossière de Port Blanc, imprécise mais utile."
+  ],
   "teinte": "#753c19"
  },
  {
@@ -4699,6 +4754,10 @@
   ],
   "img": "img/pnj/port-blanc-otis.webp",
   "attitude": "neutre",
+  "connu": [
+   "Maréchal-ferrant des quais. Il vend fers, clous de maréchal, rations pour cheval, graisse de sabot, marteaux et kits de ferrage de voyage.",
+   "Son fer gravé de frontière, décoré de symboles tribaux, est une marque de reconnaissance locale."
+  ],
   "teinte": "#755219"
  },
  {
@@ -4742,7 +4801,10 @@
   "statut": "vivant",
   "resume": "Il explique que le culte est né quand les bêtes ont commencé à tomber après la guerre.",
   "connu": [
-   "La terre est abîmée, l'eau aussi, alors ce qu'on invoque l'est forcément."
+   "La terre est abîmée, l'eau aussi, alors ce qu'on invoque l'est forcément.",
+   "Gardien de la chapelle des Bêtes Silencieuses, bâtiment de bois brut aux crânes de bovins suspendus, ex-voto, poupées de paille et talismans.",
+   "Au centre trône une statue difforme d'un homme mi-cerf, bois brisés, figé dans la douleur. Certains y voient Sylvanus, mais nul n'ose le nommer ici.",
+   "Il dit que le culte est né après la guerre, quand le bétail tombait sans raison claire. On a gardé ce qui fonctionnait un peu, même mal. La terre est abîmée, l'eau aussi, donc ce qu'on invoque l'est forcément."
   ],
   "alias": [
    "Edrin Boeuf-Cendre"
@@ -4832,6 +4894,10 @@
    }
   ],
   "attitude": "ennemi",
+  "connu": [
+   "Faux patron de l'auberge des Trois Pins, il essuie un verre sans lever les yeux. Lui et les deux faux clients sont des hommes de Mara.",
+   "Dans la réserve, deux cadavres récents : les véritables aubergistes, aux traces de lutte brève."
+  ],
   "teinte": "#755219"
  },
  {
@@ -4878,7 +4944,11 @@
   "alias": [
    "Banditos"
   ],
-  "img": "img/pnj/port-blanc-banditos.webp"
+  "img": "img/pnj/port-blanc-banditos.webp",
+  "connu": [
+   "Les bandits de Mara tendent une embuscade au gué : un arbre fraîchement abattu en travers du passage, une rivière anormalement haute pour la saison, des reflets métalliques dans les rochers.",
+   "S'il n'y a pas de découverte, l'attaque vient en pleine nuit : trois hommes à l'intérieur de l'auberge, deux autres qui surgissent de l'écurie."
+  ]
  },
  {
   "id": "ecuries-clos-vieux",
@@ -6620,7 +6690,9 @@
   "statut": "vivant",
   "resume": "Genasi d'eau à la peau bleu-vert, bâton de corail doré. Elle laisse entrer les voyageurs mais marque une frontière.",
   "connu": [
-   "« Vous êtes vivants. C'est déjà inhabituel. »"
+   "« Vous êtes vivants. C'est déjà inhabituel. »",
+   "Genasi d'eau à la peau bleu-vert, bâton de corail doré. Elle regarde à l'intérieur du sous-marin puis s'écarte. La ville n'est pas fermée, dit-elle, elle n'a pas besoin de l'être.",
+   "Insight DC 13 : elle les observe encore après les avoir laissés passer. « Noyés » n'est pas une insulte : c'est le nom d'Agran pour ceux qui vivent là où l'eau finit par tout prendre."
   ],
   "citation": {
    "texte": "Vous êtes vivants. C'est déjà inhabituel.",
@@ -6648,6 +6720,10 @@
   "resume": "Roche vivante aux tentacules, coquillages incrustés, yeux orange. Il surveille ce qui vient derrière les voyageurs.",
   "img": "img/pnj/agran-ghor.webp",
   "attitude": "neutre",
+  "connu": [
+   "Garde d'Agran à côté de Reshaar : roche vivante, tentacules, coquillages incrustés dans une chair blanchâtre, yeux orange brûlants. Une mutation des eaux de surface, poussée sur plusieurs générations.",
+   "Insight DC 14 : il ne surveille pas les PJ, il surveille ce qui vient derrière eux. Il reste immobile comme un récif qui attend."
+  ],
   "teinte": "#752519"
  },
  {
@@ -6738,6 +6814,10 @@
    }
   ],
   "attitude": "neutre",
+  "connu": [
+   "Son échoppe n'a pas de devanture : une alcôve dans la roche, des étagères de corail noir chargées d'objets d'épaves. Un rideau de petits poissons argentés s'écarte quand on entre.",
+   "Persuasion DC 11 : réduction de 10 % pour qui lui apporte d'abord un objet de surface. Elle laisse Kel distribuer ses potions et passe cela en perte dans ses comptes."
+  ],
   "teinte": "#753c19"
  },
  {
@@ -6757,6 +6837,10 @@
   ],
   "img": "img/pnj/agran-kel-assistant-de-peraalys.webp",
   "attitude": "positif",
+  "connu": [
+   "Il a de bonnes intentions et aucune notion du commerce : il donne, convaincu de rendre service. Perception DC 18 : il est déjà dans la poche d'un PJ avant trois mots.",
+   "Dextérité DC 12 pour l'attraper : il est rapide, déterminé et sincèrement surpris d'être arrêté."
+  ],
   "teinte": "#755219"
  },
  {
@@ -6783,6 +6867,11 @@
   },
   "img": "img/pnj/agran-drisuun.webp",
   "attitude": "neutre",
+  "connu": [
+   "Il est posé sur une caisse, un couteau à la main, à examiner une trouvaille récente. Sa forge est creusée autour d'une colonne d'eau bouillante canalisée par des conduits de pierre noire.",
+   "Trois techniques : compression du corail (armures, aussi dense que la pierre mais plus léger), taille de coquilles (lames légères, silencieuses, résistantes à la corrosion, plus fragiles que le métal), forge thermique du métal abyssal (armes lourdes).",
+   "Il paie au poids tout ce que l'on rapporte des épaves de la faille basse. Le métal de surface tient peu longtemps ici, la pression et le sel finissent par tout avoir."
+  ],
   "teinte": "#753c19"
  },
  {
@@ -6810,7 +6899,10 @@
   "statut": "vivant",
   "resume": "Il lit les courants comme des intentions de Kataron. Il bénit les départs d'un chant grave et envoie vers la Suuraal.",
   "connu": [
-   "Les courants qui mènent à Thaladrassyl sont des invitations."
+   "Les courants qui mènent à Thaladrassyl sont des invitations.",
+   "Immobile devant une ouverture directe sur la faille, les yeux fermés, il articule quelque chose de très grave et de très lent. Il parle avec la précision d'un cartographe et la conviction d'un prêtre.",
+   "Il lit les courants comme des intentions de Kataron. Ceux qui mènent à Thaladrassyl sont des invitations qui ne se forcent pas. Personne ne sait où se trouve Thaladrassyl, pas même lui : le point de convergence change de place.",
+   "Il bénit les départs d'un chant grave modulé selon les flux du moment, et attend avec les voyageurs si le moment n'est pas favorable. Partir sans bénédiction est une mauvaise idée, pas un interdit."
   ],
   "citation": {
    "texte": "Les courants qui mènent à Thaladrassyl ne sont pas des routes. Ce sont des invitations. Et les invitations ne se forcent pas.",
@@ -6868,7 +6960,11 @@
    }
   ],
   "relations": [],
-  "attitude": "neutre"
+  "attitude": "neutre",
+  "connu": [
+   "Capitaine du Grauwacht, vaisseau d'escorte altéran. Son ordre de mission, signé Arkhavel Dorn pour la Chancellerie impériale, lui demande une escorte strictement défensive de l'Astariel.",
+   "En cas de naufrage de l'Astariel, il devait récupérer en priorité la caisse de pierre scellée de la cabine du capitaine. La mission est classifiée sous peine des sanctions de l'Ordre de la Racine."
+  ]
  },
  {
   "id": "epave-de-l-astariel",
@@ -6893,7 +6989,9 @@
   "statut": "vivant",
   "resume": "Créature à tentacules bleus et roses qui a pris possession de l'épave. Elle échange, elle ne vend pas.",
   "connu": [
-   "« Je ne vends pas. J'échange. »"
+   "« Je ne vends pas. J'échange. »",
+   "Peau bleue qui se fond dans la faille, lance en main, enroulée autour d'un mât brisé. Elle n'attaque pas, elle regarde. Ses tentacules bleus et roses traversent toute l'épave de l'Astariel, et elle en a pris possession comme des racines dans du bois mort.",
+   "Elle ne vend pas, elle échange : une odeur de surface, un souvenir, un mensonge bien fait. Si on force le passage, il faut se battre contre tout ce qui compose l'épave."
   ],
   "citation": {
    "texte": "Des Noyés. Dans mon épave. Vous cherchez la boîte. Tout le monde cherche la boîte.",
@@ -8221,7 +8319,12 @@
     "inverse": "soignée par"
    }
   ],
-  "attitude": "neutre"
+  "attitude": "neutre",
+  "connu": [
+   "Loxodon en robe bleue, assis en tailleur devant la pierre centrale du sanctuaire, immobile, trompe sur les genoux. Il ne parle pas pendant sa méditation. Les Pachidan y vénèrent Ashvûr-tesh, l'horizon d'eau.",
+   "Il a soigné Absalom, arrivée entre mort et vie. Elle est restée des jours au rituel de la mer et parlait à la pierre sacrée, à son ami plutôt qu'à Ashvûr-tesh.",
+   "Dans la pierre de gauche, à hauteur de main accroupie, un symbole de Vassago a été gravé à l'ongle."
+  ]
  },
  {
   "id": "fumerie-de-shoba",
