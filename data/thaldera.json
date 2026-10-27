@@ -3126,7 +3126,11 @@
    "Elle a hérité du pouvoir après la chute de Spezza et reconstruit la ville avec l'aide du groupe.",
    "Des mercenaires sous pavillon inconnu rôdent. Un de ses hommes n'est pas revenu de Leyenmil.",
    "Elle attend la livraison de l'Arshen à Cap Cornes pour relancer le commerce.",
-   "Le pacte avec l'Aile d'Argent a apporté des capitaux, très loin de ce qu'il faudrait. Un ambassadeur de Rivegard presse Sycomore de lâcher Port Doëlan."
+   "Le pacte avec l'Aile d'Argent a apporté des capitaux, très loin de ce qu'il faudrait. Un ambassadeur de Rivegard presse Sycomore de lâcher Port Doëlan.",
+   "Elle reçoit les joueurs sur le chantier, cordiale mais occupée, assise sur un bloc de maçonnerie comme sur un trône de fortune. Autour d'elle veillent Tina et Nina en armures bricolées, Kralik et Nesk, deux hommes-rats aux aguets.",
+   "Elle est jeune cheffe, calme, calculatrice, avec un charme froid, et parle en dirigeante qui compte ses pertes.",
+   "Elle s'est rendue à Cap Cornes et y a croisé le mage Eamonn, qu'elle juge drogué jusqu'aux yeux. Ses charmes ont mal pris sur lui, ce qui la contrarie.",
+   "Elle pèse l'idée d'envoyer des émissaires sur le nouveau continent, mais préfère la discrétion pour l'instant."
   ],
   "histoire": [
    "Elle appelle le groupe au chantier de Port Doëlan et propose un roadtrip vers Leyenmil."
@@ -3207,6 +3211,10 @@
    }
   ],
   "attitude": "allie",
+  "citation": {
+   "texte": "Mes renverseuses de despote préférées ! Les voici ! On leur doit la ruine de Spezza, et c'est pas rien !",
+   "qui": "Vespera"
+  },
   "etapes": [
    {
     "label": "Madame de la maison Vespera",
@@ -5450,6 +5458,9 @@
    }
   ],
   "attitude": "positif",
+  "connu": [
+   "Ancienne prostituée de la maison de Vespera que le groupe connaît, désormais en armure de fortune dans la garde de Vespera, avec sa sœur Nina."
+  ],
   "alias": [
    "Tina",
    "Nina"
@@ -5927,6 +5938,9 @@
    }
   ],
   "attitude": "positif",
+  "connu": [
+   "Wererat libéré par le groupe, il patrouille Port Doëlan pour le compte de Vespera."
+  ],
   "teinte": "#195275"
  },
  {
@@ -5953,6 +5967,9 @@
    }
   ],
   "attitude": "positif",
+  "connu": [
+   "Wererat libéré par le groupe, il patrouille Port Doëlan pour le compte de Vespera."
+  ],
   "teinte": "#195275"
  },
  {
@@ -7218,9 +7235,12 @@
   "parent": "cabane-de-gran-brijit",
   "lieu": "cabane-de-gran-brijit",
   "statut": "vivant",
-  "resume": "Familier de Gran Brijit comme chez sa tante. Il a diagnostiqué le moteur cristallin de Jane et construit l'arme Horizon Brûlée pour Philippa.",
+  "resume": "Inventeur vif et chaleureux, à l'humour noir, qui traite l'horreur avec désinvolture. Il appelle Gran Brijit « Mamie » et a refait l'équipement de Jane.",
   "connu": [
-   "Il a stabilisé Jane avec l'Hexacore."
+   "Il a stabilisé Jane avec l'Hexacore.",
+   "Son atelier tient de la forge et du cabinet de curiosités : établis croulant sous les engrenages et les bobines de cuivre, carcasses mécaniques à demi montées au plafond, éclats de cristal qui palpitent sous des cloches de verre.",
+   "Au centre de la pièce, un brancard de bois usé avec quatre sangles de cuir, trop propre pour l'endroit. L'atelier a l'odeur d'huile chaude et d'orage, et le silence des lieux où la mort a ses habitudes.",
+   "Il dit avoir contourné la violence des cristaux de Jane, mais que le pouvoir « part dans tous les sens » : selon lui, chair, magie et mécanique ne tiennent ensemble qu'avec une âme."
   ],
   "alias": [
    "Nolbrim Cuivre Rouge"

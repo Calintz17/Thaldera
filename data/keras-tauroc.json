@@ -1755,7 +1755,9 @@
    "Après avoir gagné le tournoi du colisée, il reçoit les Cornes d'Or. Les mêmes habitants deviennent chaleureux.",
    "Le lendemain, le Consul Chrysodoros coopère. Absalom cherchait un artefact puissant.",
    "Une araignée prend le contrôle d'un homme du peuple, qui attaque le groupe dans la rue. Des symboles de Balamor sont gravés dans le bois de sa chambre.",
-   "Sur les docks, Absalom tend une embuscade au groupe et efface un mois de sa mémoire."
+   "Sur les docks, Absalom tend une embuscade au groupe et efface un mois de sa mémoire.",
+   "Le groupe se réveille en prison. L'ambassadeur Otoba a été assassiné le soir du banquet du festival et le groupe est accusé du crime.",
+   "Tarcus propose un marché au groupe, qui enquête sur lui-même et démasque Calvinus Ferox."
   ],
   "galerie": [
    {
@@ -2329,7 +2331,10 @@
    "Il est le frère de Volusius. Mentionner son frère le fait regarder autrement.",
    "Quand le groupe quitte Keras Tauroc, il lui doit encore 6 000 po.",
    "Il avait retiré les colliers anti-magie posés par Tarcus, contre 2 000 po chacun. Le gouvernement les lui a repris.",
-   "Au Malleus Cadens, le groupe revient le voir. Il pose un nouveau collier anti-magie sur la table et l'offre à Philippa."
+   "Au Malleus Cadens, le groupe revient le voir. Il pose un nouveau collier anti-magie sur la table et l'offre à Philippa.",
+   "Sa forge pulse comme un cœur : le soufflet aspire, l'enclume répond, la fumée est légèrement orangée à cause du minerai local. Les outils sont accrochés avec une précision militaire, et une plaque gravée à l'entrée donne les prix.",
+   "Il lève les yeux de son établi, un seul regard, puis retourne à son travail.",
+   "Il laisse entendre que les colliers anti-magie ont été repris par le gouvernement : ils sont spéciaux et ne peuvent pas traîner dans les rues. Il regarde à droite, à gauche, puis pose un collier neuf sur la table sans préciser d'où il vient."
   ],
   "relations": [
    {
@@ -2718,7 +2723,8 @@
    "Avant la victoire, personne n'aide le groupe. Les marchands refusent poliment, les autorités l'ignorent.",
    "Dans les catacombes de la cathédrale, il trouve un autel secondaire aux armes de Vassago. Le Démon des Mains surgit.",
    "Jane bat Hématome, un voleur tabaxi que la ville a fini par mettre dans l'arène. Philippa bat son adversaire.",
-   "Le groupe gagne. Les Cornes d'Or lui sont remises par un vieux minotaure, avec 5 600 pièces d'or."
+   "Le groupe gagne. Les Cornes d'Or lui sont remises par un vieux minotaure, avec 5 600 pièces d'or.",
+   "La ville s'ouvre. Fulvia parle en aparté, d'un ton froid : à revoir pour la prochaine saison."
   ]
  },
  {
@@ -2733,7 +2739,10 @@
    "Il se réveille en prison, plusieurs semaines plus tard, du sang sur les mains. Ses armes et objets magiques sont confisqués. Otoba a été assassiné le soir du banquet du festival.",
    "Tarcus propose un marché : enquêter sur soi-même.",
    "Philippa avait une clef du Cornua Fracta. Volusius confirme qu'elle y chantait chaque soir. Sera a gardé le pli d'un vieil homme aux cheveux blancs.",
-   "Jane avait un carnet et une chambre chez Capella. Hématome confirme qu'elle travaillait pour lui. Son carnet montre que la surveillance de l'ambassadeur a été commandée par Calvinus Ferox, en liquide."
+   "Jane avait un carnet et une chambre chez Capella. Hématome confirme qu'elle travaillait pour lui. Son carnet montre que la surveillance de l'ambassadeur a été commandée par Calvinus Ferox, en liquide.",
+   "Derrière la tannerie, deux soldats payés par Ferox tentent de récupérer le carnet.",
+   "Chez Ferox, le groupe trouve la lettre d'Absalom et la copie de sa réponse. Il était l'instrument et le coupable désigné du meurtre.",
+   "Le meurtre d'Otoba a fermé les accès à Roshen Buru, Seiran Vale et Azuren Kai compris."
   ]
  },
  {
@@ -2790,7 +2799,8 @@
    "À bord il est courtois, reconnaissant, légèrement louche.",
    "Il interroge Philippa sur les dettes et l'ingratitude : celui qui vole son protecteur, et refuse de rendre ce qui ne lui appartient pas.",
    "La nuit, il tente de lui voler le Fragment dans son sac.",
-   "Découvert, il se bat sur le pont et il est vaincu par le groupe."
+   "Découvert, il se bat sur le pont et il est vaincu par le groupe.",
+   "Il a été vaincu, pas tué : Vassago pourrait le renvoyer."
   ],
   "relations": [
    {
@@ -3021,7 +3031,8 @@
    "Jane, déguisée en Olyssane, attire Kester dans une ruelle. Il fuit, apeuré, et jure vengeance.",
    "Pour les composants, le groupe obtient de Fennick de la vesine en le menaçant, vainc des ghoules des marées avec l'aide d'Ink, et rapporte trois cœurs flétris.",
    "Eamonn négocie contre du suud et ouvre le cercle. Philippa trace sa marque de craie sur la porte.",
-   "Chez Gran Brijit, Philippa a une vision d'une balance désaxée. Harfang et Ink rencontrent Brijit pour la première fois, et elle semble déjà les connaître."
+   "Chez Gran Brijit, Philippa a une vision d'une balance désaxée. Harfang et Ink rencontrent Brijit pour la première fois, et elle semble déjà les connaître.",
+   "Le groupe réveille Nolbrim, dans le coma depuis Malquessar, en le tuant puis en le ressuscitant avec la potion d'Ursinus. Philippa envoie un message à Bourre-Pif."
   ]
  },
  {
@@ -3038,7 +3049,8 @@
    "Vieux Mirenaï à la peau grise et violacée, affalé dans un fauteuil trop grand pour lui, longue pipe, paupières lourdes. Fatigué et paresseux, mais pas hostile.",
    "Il a d'abord résisté, puis négocié contre du suud. Il a ouvert un cercle de téléportation entre sa tour et les ruines du château de Port Doëlan.",
    "Philippa a tracé une marque de craie sur sa porte, point de retour permanent. Sa condition : lui envoyer un message avant de débarquer dans son salon.",
-   "La Protectrice a envoyé le Tribunal de chair pour le tuer et détruire le cercle, afin de préserver l'isolationnisme d'Istra."
+   "La Protectrice a envoyé le Tribunal de chair pour le tuer et détruire le cercle, afin de préserver l'isolationnisme d'Istra.",
+   "Il appelle à l'aide par la pierre de communication, la voix brisée : des masques flottants sont entrés dans la tour, il va ouvrir un passage, puis un cri et la ligne se coupe."
   ],
   "relations": [
    {
@@ -3358,7 +3370,8 @@
    "Religion de Balam : la nature est divine mais violente. Chasse, sang, sacrifice, cycle vie-mort. Quatre aspects : Jaguar (guerre), Serpent (connaissance), Aigle (autorité), Crocodile (puissance primordiale).",
    "Théocratie décentralisée. L'autorité du Grand Prêtre est avant tout religieuse.",
    "Rumeur persistante : Balamor aurait des espions partout sur le continent. Les étrangers qui s'intéressent de trop près à leurs rituels changent brutalement d'avis, ou disparaissent.",
-   "Avec Roshen Buru, les relations sont formellement neutres, avec une méfiance sourde."
+   "Avec Roshen Buru, les relations sont formellement neutres, avec une méfiance sourde.",
+   "Tobiya, à Roshen Buru, et un homme du peuple à Keras Tauroc ont été contrôlés par des araignées, avec des symboles de Balamor."
   ],
   "relations": [
    {
@@ -6229,7 +6242,8 @@
    "Elle connaît des choses intimes sur chaque membre du groupe et les place dans la conversation comme des cadeaux.",
    "Elle propose un troc : la cuirasse de Harfang contre une clé qui n'ouvre rien, le bâton à plumes d'Olyssane, que Sorenka promet de casser en deux, et la Mâchoire de Philippa.",
    "Devant le refus, elle déclare le groupe « méchant » et le punit : elle dresse contre lui des doubles de fumée noire, copies de chacun.",
-   "Olyssane et Ink sont restés enfermés hors de la zone de combat pendant l'affrontement."
+   "Olyssane et Ink sont restés enfermés hors de la zone de combat pendant l'affrontement.",
+   "Les doubles sont tombés après un exploit de Harfang et de Philippa. L'un d'eux, métamorphosé en Nubbé, est rangé dans un Sac sans fond."
   ],
   "chapeau": "Au quatrième jour, la forêt se tait. À midi, tous sentent la même traction minuscule sur la nuque, comme un fil qui casse. Trois cheveux gisent sur la mousse, alignés, à distance égale, posés avec un soin qui n'est pas naturel. Plus loin, sur une racine à hauteur d'épaule, une petite fée en robe de feuilles cousues attend. Sa chevelure traîne sur plusieurs mètres derrière elle, mêlée de racines, de plumes et de mèches qui ne sont pas les siennes. Elle sourit sans cesse, et le sourire ne bouge pas d'un millimètre.",
   "histoire": [
@@ -6407,7 +6421,8 @@
    "Le pacte avec l'Aile d'Argent a fait entrer des capitaux, très loin de ce qu'il faudrait. La ville est au chômage, la flotte en miettes.",
    "Elle a échangé avec Sycomore, et avec un ambassadeur de Rivegard qui presse Sycomore de lâcher Port Doëlan.",
    "Elle attend que l'Arshen soit livré à Cap Cornes pour relancer le commerce. Sans navires, pas d'économie.",
-   "Elle est allée à Cap Cornes et y a croisé le mage Eamonn, qu'elle juge drogué jusqu'aux yeux. Ses charmes ont mal pris sur lui."
+   "Elle est allée à Cap Cornes et y a croisé le mage Eamonn, qu'elle juge drogué jusqu'aux yeux. Ses charmes ont mal pris sur lui.",
+   "Elle pèse l'idée d'envoyer des émissaires sur le nouveau continent, mais préfère la discrétion pour l'instant."
   ],
   "nofusion": true,
   "citation": {
