@@ -714,15 +714,16 @@
   "alias": [
    "Kirin"
   ],
-  "resume": "Noble du clan Anadori, tué par le groupe à Azuren Kai.",
+  "resume": "Noble mirenaï du clan Anadori, tué par le groupe à Azuren Kai.",
   "connu": [
-   "Un noble mirenaï du clan Anadori, aux cheveux d'elfe bouclés.",
+   "Un noble mirenaï du clan Anadori, aux cheveux d'elfe bouclés, qui dînait seul au Ryokan de Noshka.",
    "Son Miren est le Génie de Suie, intangible, qui agit sur son initiative.",
+   "Il a tué toute une bande de soudards qui se moquaient de lui, sous les yeux d'Oboré.",
    "Il est violent et méthodique quand on le provoque."
   ],
   "histoire": [
-   "Le groupe l'affronte au Ryokan d'Azuren Kai.",
-   "Le combat se poursuit dans une ruelle. Le groupe le tue."
+   "Un incident éclate dans la salle commune du ryokan, avec lui et son Miren.",
+   "Le combat se poursuit dans la ruelle voisine. Le groupe le tue."
   ],
   "relations": [
    {
@@ -3457,16 +3458,6 @@
   "teinte": "#755219"
  },
  {
-  "id": "kirin-seiren",
-  "type": "pnj",
-  "nom": "Kirin Seiren",
-  "titre": "Noble mirenaï du ryokan",
-  "parent": "azuren-kai",
-  "lieu": "azuren-kai",
-  "statut": "inconnu",
-  "resume": "Il a tué toute une bande de soudards qui se moquaient de lui, avec son Miren, le Génie de Suie."
- },
- {
   "id": "madame-ari",
   "type": "pnj",
   "nom": "Madame Ari",
@@ -3583,7 +3574,16 @@
   "parent": "azuren-kai",
   "lieu": "azuren-kai",
   "statut": "inconnu",
-  "resume": "Assassin de combat éclair qui a attaqué le groupe.",
+  "resume": "Assassin de combat éclair qui a attaqué le groupe à Azuren Kai.",
+  "alias": [
+   "Goryo"
+  ],
+  "connu": [
+   "Il frappe puis disparaît.",
+   "Le groupe le tue à l'auberge. Il murmure « elle sait… ». Le groupe pense à Absalom.",
+   "Ce n'est pas le fantôme croisé sur les berges : le groupe en déduit plus tard, sans certitude, qu'il s'agit d'un démon qui prend la forme d'un cryptide de la culture populaire.",
+   "Le groupe soupçonne que la Protectrice l'a envoyé pour le tuer, probablement grâce à son pacte avec Levistus."
+  ],
   "img": "img/pnj/le-goryo.webp",
   "teinte": "#753c19"
  }

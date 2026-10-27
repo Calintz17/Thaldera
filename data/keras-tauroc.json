@@ -2,7 +2,7 @@
  {
   "id": "maison-tauroc",
   "type": "region",
-  "nom": "Keras Tauroc",
+  "nom": "Maison Tauroc",
   "titre": "Les steppes rouges, terre de Kord",
   "parent": "istra",
   "zone": {
@@ -14,7 +14,13 @@
   "blason": "img/blasons/keras-tauroc.webp",
   "accent": "#d96a28",
   "alias": [
-   "Maison Tauroc"
+   "maison rouge",
+   "Taurok",
+   "Tauroc",
+   "Taurokh",
+   "taurokh",
+   "steppes rouges",
+   "Steppes Rouges"
   ],
   "ordre": 1,
   "resume": "Le territoire de la maison rouge : minotaures, steppes rouges, loi du plus fort et religion de Kord.",
@@ -23,7 +29,8 @@
    "On y parle le taurokh. Les minotaures ne mangent jamais de bœuf et ne boivent pas de lait : poser la question est une insulte grave.",
    "Ses villes connues sont Keras Tauroc, Cap Cornes, Brakka, Khardun, Port Goraik, Urnak et Unear Keras.",
    "La Maison Tauroc exporte du métal travaillé, des armes et du cuir. Elle importe de la nourriture, surtout du poisson de Cap Cornes.",
-   "Le groupe a vu le symbole de Vassago à Brakka, dans les steppes, puis sur l'autel secondaire des catacombes de Keras Tauroc."
+   "Le groupe voit le symbole de Vassago à Brakka, dans les steppes, puis sur l'autel secondaire des catacombes de Keras Tauroc.",
+   "Le festival des Cornes Rouges se termine par la remise des Cornes d'Or. Le meurtre de l'ambassadeur Otoba, le soir du banquet, ferme ensuite les accès à Roshen Buru."
   ],
   "relations": [
    {
@@ -712,7 +719,7 @@
   "connu": [
    "Des falaises ocre et sang, une plage de sable roux et de galets sombres. Les murs en pisé rougeâtre semblent avoir poussé de la roche.",
    "Personne ne parle la langue commune. Il faut des gestes, ou la magie de Philippa.",
-   "Le village n'a jamais reçu de visiteurs venus de la mer, et ses habitants ne voyagent pas : les steppes sont à la fois leur garde et leur prison.",
+   "Le village n'a jamais reçu de visiteurs venus de la mer, et ses habitants ne voyagent pas : les steppes les enferment et les protègent.",
    "C'est ici que le groupe voit pour la première fois le symbole de Vassago."
   ],
   "histoire": [
@@ -858,7 +865,7 @@
   "statut": "vivant",
   "resume": "Sa tente est la plus petite du camp. Il regardait déjà le groupe quand il est entré.",
   "connu": [
-   "Son verdict est double : les étrangers ne peuvent pas traverser pendant le rituel, mais leur arrivée est un signe et ils sont les bienvenus dans le camp.",
+   "Son verdict est double : les étrangers ne peuvent pas traverser pendant le rituel. Leur arrivée est un signe, ils sont les bienvenus dans le camp.",
    "Dans les braises, il voit que le groupe porte quelque chose de lourd. « Une vieille route. Vous comprendrez. »"
   ]
  },
@@ -937,15 +944,14 @@
   "connu": [
    "La ville est fermée aux étrangers. Sans les Cornes d'Or, trophée des vainqueurs du festival, personne n'aide ni ne parle. Seuls les lieux de culte ne font pas de distinction.",
    "Le colisée règle les conflits et reste le spectacle central de la culture tauroc.",
-   "La religion de Kord prône la force, l'honneur, le combat. Le clergé est très proche du pouvoir militaire.",
-   "L'ambassadeur de Roshen Buru, Otoba, a été assassiné ici. Les accès à Roshen Buru en ont été fermés.",
-   "Une araignée a pris le contrôle d'un homme du peuple, qui a attaqué le groupe dans la rue. Des symboles de Balamor étaient gravés dans le bois de sa chambre."
+   "La religion de Kord prône la force, l'honneur, le combat. Le clergé est très proche du pouvoir militaire."
   ],
   "histoire": [
    "Le groupe arrive en plein festival des Cornes Rouges, sur la piste d'Absalom, passée quelques jours plus tôt.",
-   "Après l'avoir gagné, il reçoit les Cornes d'Or et 5 600 pièces d'or. Les mêmes habitants deviennent chaleureux.",
-   "Absalom efface un mois de la mémoire du groupe et le fait accuser du meurtre d'Otoba.",
-   "Tarcus propose un marché au groupe, qui enquête sur lui-même et démasque Calvinus Ferox."
+   "Après avoir gagné le tournoi du colisée, il reçoit les Cornes d'Or. Les mêmes habitants deviennent chaleureux.",
+   "Le lendemain, le Consul Chrysodoros coopère. Absalom cherchait un artefact puissant.",
+   "Une araignée prend le contrôle d'un homme du peuple, qui attaque le groupe dans la rue. Des symboles de Balamor sont gravés dans le bois de sa chambre.",
+   "Sur les docks, Absalom tend une embuscade au groupe et efface un mois de sa mémoire."
   ],
   "galerie": [
    {
@@ -1424,10 +1430,13 @@
   "parent": "malleus-cadens",
   "lieu": "malleus-cadens",
   "statut": "vivant",
-  "resume": "Forgeron de guerre, sourd d'une oreille.",
+  "resume": "Forgeron de guerre sourd, qui parle en langue des signes.",
   "connu": [
-   "Il ne parle que le taurokh. Sa plaque de prix gravée à l'entrée sert de réponse à toute négociation.",
-   "Il est le frère de Volusius. Mentionner son frère le fait regarder autrement."
+   "Il est sourd et parle en langue des signes. Sa plaque de prix gravée à l'entrée sert de réponse à toute négociation.",
+   "Il est le frère de Volusius. Mentionner son frère le fait regarder autrement.",
+   "Quand le groupe quitte Keras Tauroc, il lui doit encore 6 000 po.",
+   "Il avait retiré les colliers anti-magie posés par Tarcus, contre 2 000 po chacun. Le gouvernement les lui a repris.",
+   "Au Malleus Cadens, le groupe revient le voir. Il pose un nouveau collier anti-magie sur la table et l'offre à Philippa."
   ],
   "relations": [
    {
@@ -1682,7 +1691,7 @@
   "statut": "mort",
   "resume": "Assassiné lors du banquet du festival. Sa mort a fermé les routes vers Roshen Buru.",
   "connu": [
-   "Il a été tué le soir du banquet du festival. Le groupe était sur les lieux, couvert de sang, sans en avoir le souvenir.",
+   "Il a été tué le soir du banquet du festival, après la victoire du groupe au colisée. Le groupe était sur les lieux, couvert de sang, sans en avoir le souvenir.",
    "Sa mort a fermé les accès à Roshen Buru, Seiran Vale et Azuren Kai compris."
   ],
   "img": "img/pnj/otoba-kessai.webp",
@@ -3997,7 +4006,7 @@
   },
   "typeLabel": "Trajet",
   "resume": "Là où le groupe croise le Goryo pour la première fois.",
-  "redirige": "le-goryo"
+  "redirige": "goryo-des-berges"
  },
  {
   "id": "combat-de-silas",
@@ -4035,5 +4044,56 @@
   },
   "typeLabel": "Trajet",
   "resume": "Lieu du rituel du Tier Voyage."
+ },
+ {
+  "id": "goryo-des-berges",
+  "type": "pnj",
+  "nom": "Le Goryo des berges",
+  "titre": "Fantôme croisé sur la route d'Azuren Kai",
+  "parent": "rencontre-du-goryo",
+  "lieu": "rencontre-du-goryo",
+  "statut": "inconnu",
+  "alias": [
+   "Goryo des berges",
+   "Goryo"
+  ],
+  "resume": "Fantôme croisé sur les berges, sur la route d'Azuren Kai.",
+  "connu": [
+   "Selon la légende, les Goryo sont les fantômes de paysans noyés dans les rizières. Ils protègent Roshen Buru contre les voyageurs qui lui veulent du mal.",
+   "Le groupe le croise une première fois sur les berges, avant d'atteindre Azuren Kai."
+  ]
+ },
+ {
+  "id": "nubbe",
+  "type": "pnj",
+  "nom": "La Nubbé",
+  "titre": "Créature de la forêt d'Aruzen",
+  "parent": "foret-d-aruzen",
+  "lieu": "foret-d-aruzen",
+  "statut": "inconnu",
+  "img": "img/pnj/nubbe.webp",
+  "alias": [
+   "Nubbe"
+  ],
+  "resume": "Créature végétale croisée dans la forêt d'Aruzen.",
+  "connu": [
+   "Une racine tordue au visage creusé, couronnée d'une fleur jaune, qui tient un doigt dans sa bouche."
+  ],
+  "teinte": "#697519"
+ },
+ {
+  "id": "sorenka",
+  "type": "pnj",
+  "nom": "Sorenka",
+  "titre": "Fée de la forêt d'Aruzen",
+  "parent": "foret-d-aruzen",
+  "lieu": "foret-d-aruzen",
+  "statut": "inconnu",
+  "img": "img/pnj/sorenka.webp",
+  "resume": "Créature des bois croisée dans la forêt d'Aruzen.",
+  "connu": [
+   "Maigre, les cheveux noirs et le front couronné de bois, vêtue de feuilles. Une fumée violette tourbillonne autour d'elle."
+  ],
+  "teinte": "#753c19"
  }
 ]
