@@ -1984,7 +1984,10 @@
   "resume": "Riche marchand de la caravane, en réalité agent de la Lumière Noire.",
   "connu": [
    "Il traquait Magdalena pour la tuer.",
-   "Il a empoisonné Ivy à sa place."
+   "Il a empoisonné Ivy à sa place.",
+   "Riche marchand charismatique, qui a pris de fait la tête de la caravane vers Port Doëlan. Chaleureux, soucieux de l'harmonie du groupe, il regrette que l'escorte prévue ne soit jamais venue.",
+   "Il propose aux PJ 500 po pour l'ensemble du groupe pour escorter la caravane. Son chariot est un salon roulant : soieries, peaux fines, colliers de verre et perles océanes de Voros.",
+   "Il dit voyager lui-même plutôt qu'envoyer des agents, pour comprendre les besoins réels des clients, et rêver de quitter le désert et la chaleur pour la côte ouest."
   ],
   "relations": [
    {
@@ -2010,7 +2013,9 @@
    "Survivante du programme de la Lumière Noire à Sol Novem, aux pouvoirs de glace stables, bien que moins spectaculaires que ceux de Jane.",
    "Envoyée sur le front d'Obaline où les sujets servaient d'armes vivantes, elle a déserté. Une Arch-Fey agissant pour la Lumière Noire a tenté de l'assassiner durant le voyage.",
    "À Port Doëlan, elle se cache dans les entrepôts abandonnés du Quartier Brûlé, déguisée en marchande d'épices. Fatiguée et nerveuse, elle est heureuse de revoir les PJ.",
-   "Elle peut créer du givre pour bloquer une porte ou ralentir des gardes et transmettre ce qu'elle observe, mais refuse tout assaut direct."
+   "Elle peut créer du givre pour bloquer une porte ou ralentir des gardes et transmettre ce qu'elle observe, mais refuse tout assaut direct.",
+   "Marchande de Sol Novem, discrète, qui supporte mal les marchands bruyants. Sa caravane porte encore l'inscription presque effacée Cuir Fameux, Achetez-Ici, et contient des peaux et des outils de cuir peu cohérents avec son commerce d'épices.",
+   "Elle s'est liée d'amitié avec Ivy et partage avec elle discussions et alcool au coin du feu."
   ],
   "relations": [
    {
@@ -2035,7 +2040,8 @@
   "connu": [
    "Il doit jouer au théâtre Russconi de Port Doëlan, sur invitation de Bartolomeo Spezza.",
    "Il admire la façade du théâtre en écartant les bras, accueille les PJ avec chaleur et annonce son concert dans quelques jours, sur invitation de Bartolomeo Spezza en personne.",
-   "Acte II de la soirée : rideau rose, paillettes, cape démesurée, une voix profonde qui chante la mer, la guerre, la ville et l'or."
+   "Acte II de la soirée : rideau rose, paillettes, cape démesurée, une voix profonde qui chante la mer, la guerre, la ville et l'or.",
+   "Orc massif en uniforme élégant évoquant un serviteur de grande maison, présenté comme le garde du corps. Sociable, curieux, ravi du voyage, il cherche à s'intégrer à la caravane."
   ],
   "histoire": [
    "Le groupe le recroise devant le théâtre Russconi."
@@ -2074,7 +2080,9 @@
   "connu": [
    "Elle a remarqué trop de gardes autour du théâtre pour un simple spectacle.",
    "Droite, mains croisées dans le dos, le regard toujours en mouvement. Elle retrouve les PJ devant le théâtre Rusconi.",
-   "Elle se dit contente de les revoir en vie et leur conseille de rester attentifs : la ville n'est pas aussi calme qu'elle en a l'air."
+   "Elle se dit contente de les revoir en vie et leur conseille de rester attentifs : la ville n'est pas aussi calme qu'elle en a l'air.",
+   "Présentée comme la chanteuse d'opéra du convoi : robe fluide à froufrous, attitude renfermée et bougonne. Elle mange à l'écart et réprimande souvent son garde du corps.",
+   "Le convoi se rend à Port Doëlan sur invitation du seigneur local pour une soirée d'opéra au château, par Altéra, Sol Novem et Voros."
   ],
   "citation": {
    "texte": "Contente de vous voir en vie. Restez attentifs. La ville n'est pas aussi calme qu'elle en a l'air.",
@@ -2119,12 +2127,11 @@
    "Il a été invité à Port Doëlan pour un séminaire.",
    "Envoyé officieux de la Grande Bibliothèque de Rivegard, convié pour valider l'intégration des chroniques locales aux archives internationales.",
    "Il constate que presque tous les ouvrages récents exaltent Spezza. S'il refuse brutalement, il provoque un incident entre institutions, s'il valide, il trahit Rivegard.",
-   "Il cherche une source indépendante ou un manuscrit non expurgé et peut présenter les PJ à Thorex, tout en les prévenant que ce dernier excelle à esquiver."
+   "Il cherche une source indépendante ou un manuscrit non expurgé et peut présenter les PJ à Thorex, tout en les prévenant que ce dernier excelle à esquiver.",
+   "Érudit de Rivegard, de la Bibliothèque Empyréenne, invité à Port Doëlan par Riminar, conservateur du musée Spezza, pour un séminaire de recherche. Il soupçonne Riminar de vouloir exploiter l'autorité intellectuelle de Rivegard.",
+   "Sa caravane de bois noirci est sobre et discrète. Il est morne, grave, peu loquace, et dit ne pas se vendre."
   ],
-  "citation": {
-   "texte": "Rivegard ne cautionne pas les récits hagiographiques déguisés en archives ; nous classons des faits, pas des flatteries.",
-   "qui": "Umberto Hevalan"
-  },
+  "citation": "Je ne me vends pas. Et je n'oublie rien.",
   "galerie": [
    {
     "img": "img/paysages/port-doelan/marche.webp",
@@ -2602,10 +2609,7 @@
   "histoire": [
    "Il attaque le groupe, d'abord à l'Île aux Moines puis au Temple Brumeux."
   ],
-  "citation": {
-   "texte": "Il est en moi… il arrive… il m'a choisi ! Moi et moi seul ! Pas les autres… juste moi !",
-   "qui": "Frère Augustus Carrow"
-  },
+  "citation": "Il est en moi, il arrive, il m'a choisi ! Moi et moi seul ! Pas les autres, juste moi !",
   "galerie": [
    {
     "img": "img/paysages/temple-brumeux/frere-augustus.webp",
@@ -2614,6 +2618,10 @@
   ],
   "img": "img/pnj/temple-brumeux-fre-re-augustus.webp",
   "attitude": "ennemi",
+  "connu": [
+   "Moine du temple de Lathandre, méconnaissable : amaigri, yeux brillants d'une lueur maladive, doigts tachés de sang séché. Pris de convulsions, il attaque dès qu'il aperçoit les PJ.",
+   "Il affirme que Lui l'a choisi, lui seul, et que la lumière le brûle. Frère Septim le soupçonnait déjà de psalmodier des prières plus anciennes et plus noires que celles de l'Aube."
+  ],
   "teinte": "#753c19"
  },
  {
@@ -2666,10 +2674,7 @@
   "histoire": [
    "Le groupe le détruit."
   ],
-  "citation": {
-   "texte": "J'ai senti la faiblesse des hommes. Leur foi vacillait, et j'ai soufflé dessus, jusqu'à ce que la flamme s'éteigne.",
-   "qui": "Barakel, le parasite de l'Aube"
-  },
+  "citation": "J'ai senti la faiblesse des hommes. Leur foi vacillait, et j'ai soufflé dessus, jusqu'à ce que la flamme s'éteigne.",
   "galerie": [
    {
     "img": "img/paysages/temple-brumeux/barakel.webp",
@@ -2685,6 +2690,10 @@
    }
   ],
   "attitude": "ennemi",
+  "connu": [
+   "Démon parasite de l'Aube, qui prend l'apparence d'un prêtre de Lathandre en robe blanche, au sourire trop large et aux yeux de flamme rouge. Il se nourrit de la foi perdue des moines et a fait du temple son domaine.",
+   "Sa défaite éteint le pentacle du sous-sol et brise les chaînes noires. Le Reliquaire de Lathandre, intact, réapparaît alors au centre du reliquaire."
+  ],
   "teinte": "#196975"
  },
  {
@@ -3371,7 +3380,8 @@
    "Il portait un avis de recherche de Jane et Philippa.",
    "Armure aux couleurs d'Altéra, retrouvé sur le dos, bras ouverts, un coup de poignard précis dans les côtes. Le corps est encore tiède.",
    "Sa lettre de mission porte les ordres de l'Impératrice Eryndel d'Altéra et de la Chancellerie impériale, signée Arkhavel Dorn, Intendant des Compagnies Impériales. Elle lui demande d'observer, de questionner et de trouver des preuves.",
-   "L'assassin n'a emporté aucun document, ce qui laisse penser à une attaque rapide ou à l'envie de le faire taire. Les gardes peuvent arriver si les PJ s'attardent."
+   "L'assassin n'a emporté aucun document, ce qui laisse penser à une attaque rapide ou à l'envie de le faire taire. Les gardes peuvent arriver si les PJ s'attardent.",
+   "Landsknecht en mission officielle, envoyé par son capitaine pour enquêter sur Port Doëlan. Direct et discipliné, il ne cherche ni discrétion ni camouflage et compte s'installer en ville pour mener son enquête."
   ],
   "galerie": [
    {
@@ -5550,7 +5560,9 @@
    "La Griffe achète du pyrracier en quantités absurdes.",
    "Marchand modeste et ambitieux de la caravane, il avait investi toutes ses économies dans une cargaison et parlait de son dernier coup commercial.",
    "En deux jours, son contact s'est retiré, ses marchandises ont été bradées et ses créanciers l'ont acculé. Les portes du château Spezza lui sont restées fermées, la garde étant inhabituellement tendue.",
-   "Il n'a rien mangé depuis deux jours et mendie pour payer une nuit dans une taverne bon marché. Il reconnaît les PJ et éclate en sanglots."
+   "Il n'a rien mangé depuis deux jours et mendie pour payer une nuit dans une taverne bon marché. Il reconnaît les PJ et éclate en sanglots.",
+   "Halfelin de Voros, marchand d'épices et de potions de faible qualité, caractériel et nerveux. C'est son premier voyage de cette ampleur. Il refuse de partager ses provisions et s'inquiète de l'absence d'escorte armée.",
+   "Il déteste Magdalena, qu'il juge être une concurrente."
   ],
   "alias": [
    "Eloi Bonbarique"
@@ -8242,7 +8254,10 @@
   "alias": [
    "Abomination des yeux"
   ],
-  "attitude": "ennemi"
+  "attitude": "ennemi",
+  "connu": [
+   "Abomination née de la guerre de la Veyra, qui surgit au Repos des Épées après le combat contre des créatures altérées. Masse de chair obèse et instable, un œil gigantesque et conscient s'ouvre lentement sur son ventre. Les résidus d'arcane alentour réagissent à sa présence."
+  ]
  },
  {
   "id": "guerre-de-la-veyra",
@@ -8283,10 +8298,7 @@
   "lieu": "vignoble-abandonne",
   "statut": "vivant",
   "resume": "Vieux paysan au sourire figé, qui retenait un employé enchaîné.",
-  "citation": {
-   "texte": "La forêt est cruelle, surtout pour ceux qui ne savent pas obéir. Vous le ramènerez, n'est-ce pas ?",
-   "qui": "Dimir"
-  },
+  "citation": "La forêt est cruelle, surtout pour ceux qui ne savent pas obéir. Vous le ramènerez, n'est-ce pas ?",
   "relations": [
    {
     "cible": "iulia",
@@ -8301,7 +8313,11 @@
     "inverse": "retenu par"
    }
   ],
-  "attitude": "neutre"
+  "attitude": "neutre",
+  "connu": [
+   "Vieux paysan du vignoble abandonné, d'une amabilité excessive et dérangeante, sourire figé et mains tremblantes. Avec Iulia, il insiste pour que les voyageurs boivent, mangent et dorment sur place.",
+   "Il fait promettre une récompense aux PJ pour retrouver leur employé disparu, tout en minimisant sa captivité : discipline et motivation, dit-il."
+  ]
  },
  {
   "id": "iulia",
@@ -8312,10 +8328,7 @@
   "lieu": "vignoble-abandonne",
   "statut": "vivant",
   "resume": "Femme de Dimir, d'une douceur trop insistante.",
-  "citation": {
-   "texte": "Oh… vous savez… il était fragile, ce garçon. Il avait besoin qu'on veille sur lui, nuit et jour.",
-   "qui": "Iulia"
-  },
+  "citation": "Nous ne sommes que de braves gens. Sans lui, la vigne ne survivra pas. Et nous non plus.",
   "relations": [
    {
     "cible": "spano",
@@ -8324,7 +8337,11 @@
     "inverse": "séquestré par"
    }
   ],
-  "attitude": "neutre"
+  "attitude": "neutre",
+  "connu": [
+   "Vieille paysanne du vignoble, voix trop douce et mielleuse. Avec Dimir, elle parle de l'employé disparu comme d'un garçon fragile qu'il fallait surveiller nuit et jour.",
+   "Elle jure que sans lui la vigne ne survivra pas, ni eux."
+  ]
  },
  {
   "id": "spano",
@@ -8335,10 +8352,7 @@
   "lieu": "vignoble-abandonne",
   "statut": "vivant",
   "resume": "Retenu prisonnier au vignoble, sauvé du loup par le groupe. « Ils souriaient tout le temps, même quand ils fermaient la chaîne. »",
-  "citation": {
-   "texte": "Ils souriaient tout le temps… même quand ils fermaient la chaîne.",
-   "qui": "Spano"
-  },
+  "citation": "Ils souriaient tout le temps, même quand ils fermaient la chaîne.",
   "relations": [
    {
     "cible": "philippa-rougetoison",
@@ -8347,7 +8361,11 @@
     "inverse": "a sauvé"
    }
   ],
-  "attitude": "neutre"
+  "attitude": "neutre",
+  "connu": [
+   "Employé du vignoble, que les PJ sauvent d'un loup dans la forêt. Épuisé, terrorisé, légèrement blessé. Il révèle avoir été enchaîné et forcé de travailler par Dimir et Iulia.",
+   "Après leur chute, il peut rester au vignoble, libre, et en devenir le responsable."
+  ]
  },
  {
   "id": "ivy",
@@ -8375,7 +8393,11 @@
     "inverse": "compagne de caravane de"
    }
   ],
-  "attitude": "neutre"
+  "attitude": "neutre",
+  "connu": [
+   "Rôdeuse joviale surnommée la Voyageuse Joyeuse, rangeuse de niveau 7 venue de Havre Noir en quête d'or et de contrats. Elle voyage à cheval avec sa monture Justine, épée longue au côté.",
+   "Elle boit volontiers au coin du feu, se lie d'amitié avec Magdalena, et est retrouvée morte une nuit au camp, empoisonnée par un poison qui ne la visait pas."
+  ]
  },
  {
   "id": "constance-brisemousse",
@@ -8397,7 +8419,11 @@
     "inverse": "compagne de caravane de"
    }
   ],
-  "attitude": "positif"
+  "attitude": "positif",
+  "connu": [
+   "Firbolg solitaire, seule du convoi à ne pas avoir de caravane : un petit chariot découvert tiré par un âne nommé Plop. Épée lourde, blessures anciennes, ferme et vigilante.",
+   "Elle voit la pluie comme une bénédiction de Sylvanus et cherche des indices sur la disparition de sa famille."
+  ]
  },
  {
   "id": "solkah-barrow",
@@ -8416,7 +8442,11 @@
     "inverse": "dressée par"
    }
   ],
-  "attitude": "neutre"
+  "attitude": "neutre",
+  "connu": [
+   "Drow originaire de Menzoberranzan, renfrogné et taciturne, qui évite le soleil et se tient à l'écart du convoi. Sa caravane rafistolée transporte des serpents.",
+   "Il n'est ni cruel ni malveillant : passionné par les serpents, il rejette les dogmes violents de Lolth. Il veut découvrir la surface et espère embarquer depuis Port Doëlan vers un autre continent."
+  ]
  },
  {
   "id": "seravine",
@@ -8427,7 +8457,10 @@
   "lieu": "caravane-port-doelan",
   "statut": "vivant",
   "resume": "Immense serpent extrêmement venimeux, d'une intelligence notable. Son nom signifie « le Poison » en elfique.",
-  "attitude": "neutre"
+  "attitude": "neutre",
+  "connu": [
+   "Immense serpent très venimeux et d'une intelligence notable, compagnon de Solkah Barrow. Son nom signifie Le Poison en elfique."
+  ]
  },
  {
   "id": "sanctuaire-de-la-maree",
