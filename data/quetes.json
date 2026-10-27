@@ -1,9 +1,92 @@
 {
- "persos": [
-  {"id": "philippa", "nom": "Philippa"},
-  {"id": "jane", "nom": "Jane"},
-  {"id": "harfang", "nom": "Harfang"}
- ],
- "globales": [],
- "personnelles": {"philippa": [], "jane": [], "harfang": []}
+ "quetes": [
+  {
+   "titre": "La vraie mort",
+   "texte": "Pour donner la vraie mort aux démons vaincus, il faut les trouver et les détruire dans leur plan d'origine."
+  },
+  {
+   "titre": "Les tours noires",
+   "texte": "Des tours noires se dressent maintenant en Dominion Sol et nous avons enfin compris son plan : utiliser les fragments de Titans comme réceptacle pour reproduire le rituel du PSA-84, et ascender au rang de Dieu."
+  },
+  {
+   "titre": "Le vrai nom de l'avarice",
+   "texte": "Pour tuer définitivement Vassago, nous devons récupérer les 3 fragments du vrai nom de l'avarice."
+  },
+  {
+   "titre": "La parole d'Olyssane",
+   "texte": "Olyssane doit tenir parole : il faut trouver des opportunités pour Sycomore sur Istra, ou trouver le moyen de rompre son serment."
+  },
+  {
+   "titre": "Le Repos des Épées",
+   "texte": "Le fléau du Repos des Épées a été vaincu, mais nous pourrions redonner vie à la terre si nous plantons des arbres."
+  },
+  {
+   "titre": "Ink veut l'aventure",
+   "texte": "Ink veut « partir à l'aventure », nous devons l'accompagner sans la mettre en danger."
+  },
+  {
+   "titre": "La revanche de Kester",
+   "texte": "Kester Tauroc, « l'héritier », a juré de prendre sa revanche contre Olyssane, nous le recroiserons sûrement."
+  },
+  {
+   "titre": "Les zombies-araignées",
+   "texte": "Un étrange « zombie-araignée » nous a attaqués à Keras Tauroc. Et nous avons découvert des traces semblables à Roshen Buru. Balamor semble se cacher derrière cette discrète invasion."
+  },
+  {
+   "titre": "Absalom aux Enfers",
+   "texte": "Absalom nous a échappé, après avoir compris que Vassago l'avait trahie. Nous pourrions en faire une alliée de poids, encore faut-il la retrouver… aux Enfers."
+  },
+  {
+   "titre": "Le portail de Minauros",
+   "texte": "Ankou Urameï pourrait nous guider vers un portail qui mène à Minauros, mais à quel prix ?"
+  },
+  {
+   "titre": "Le PSA-84",
+   "texte": "Le « Rituel du Tenraku » était en fait un blueprint appelé « PSA-84 ». Qu'est-ce que ça signifie ? Pourquoi Gran Brijit tenait-elle tant à le récupérer ?"
+  },
+  {
+   "titre": "Liora alchimiste",
+   "texte": "Liora veut se diversifier en alchimie, mais a besoin d'un maître. Elle pourrait nous aider si elle faisait des potions."
+  },
+  {
+   "titre": "Les talents de cartographe",
+   "texte": "Si Philippa continue à développer mes talents de cartographe, ça finira forcément par porter ses fruits."
+  },
+  {
+   "titre": "Les orphelins Merigold",
+   "texte": "Si Jane retrouvait les autres élèves de l'orphelinat Merigold, nous pourrions nous en faire des alliés."
+  },
+  {
+   "titre": "La Lumière Noire",
+   "texte": "La « Lumière Noire », responsable de la capture de Jane, agit toujours en Dominion Sol. Nous devons y mettre un terme."
+  },
+  {
+   "titre": "Le laboratoire de Jane",
+   "texte": "Nous devons trouver et détruire le laboratoire dans lequel Jane a été torturée, et qui fabrique encore des guerriers modifiés."
+  },
+  {
+   "titre": "La hache de Naevia",
+   "texte": "À quoi peut bien servir cette hache étrange, volée à Naevia, la marchande de dagues de Keras Tauroc ?"
+  },
+  {
+   "titre": "La Protectrice et Levistus",
+   "texte": "La Protectrice a fait un pacte avec Levistus pour protéger Roshen Buru. Elle a tenté de tuer Eamonn et mes compagnons. Elle doit être mise hors d'état de nuire."
+  },
+  {
+   "titre": "Le ravisseur de Roshen Buru",
+   "texte": "J'ai retrouvé l'auteur des disparitions de Roshen Buru et je l'ai mis hors d'état de nuire. Que faire de cette information ?"
+  },
+  {
+   "titre": "Thibwick en danger",
+   "texte": "Thibwick Rumple, le nain de There'Duun, est peut-être en danger : la Protectrice veut le capturer."
+  },
+  {
+   "titre": "Harfang marchand",
+   "texte": "Harfang a mis un terme à sa carrière de diplomate, au profit d'une carrière de marchand. Nous pourrions en profiter ?"
+  },
+  {
+   "titre": "L'Arshen de Vespera",
+   "texte": "Vespera a été mise en contact avec Eamonn, et nous lui avons fourni de quoi lancer le business de l'Arshen. Il faut surveiller la reconstruction de la ville : elle nous a promis 1 % des bénéfices."
+  }
+ ]
 }

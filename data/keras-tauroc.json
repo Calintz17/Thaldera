@@ -4220,6 +4220,7 @@
    "Message laissé par Absalom à quiconque la suit : elle tue sans hésiter, et elle a une large avance.",
    "Un charognard rôdait au pied des piliers à l'arrivée du groupe."
   ],
+  "fusion": true,
   "chapeau": "Un ancien aqueduc en ruine, arches de pierre sur trois niveaux, se dresse seul au milieu de la lande. Dans chaque alcove pend un corps retenu par une chaîne, des gardes de Keras Tauroc reconnaissables à leurs uniformes. Le vent fait grincer le métal et tourner lentement les cadavres. L'air est lourd, sucré, écœurant."
  },
  {
@@ -4853,7 +4854,8 @@
   "chef": {
    "titre": "Cheffe de la maison",
    "nom": "Eleanor Holsten"
-  }
+  },
+  "fusion": true
  },
  {
   "id": "capitaine-salvera",

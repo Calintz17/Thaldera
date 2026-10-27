@@ -4,7 +4,7 @@
 (() => {
 'use strict';
 
-const VER = '32';
+const VER = '33';
 const EDIT = new URLSearchParams(location.search).has('edit');
 const $ = (s, r = document) => r.querySelector(s);
 const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
@@ -36,7 +36,7 @@ async function load() {
 }
 
 const pnjsAt = pl => (kids(pl.id, 'pnj').concat(DB.filter(x => x.lieu === pl.id && x.parent !== pl.id && x.type === 'pnj'))).sort((a, b) => (a.ordre ?? 99) - (b.ordre ?? 99));
-const mainOf = pl => { if (!pl || !(pl.type === 'lieu' || pl.fusion) || pl.nofusion) return null; if (kids(pl.id, 'lieu').length) return null; const l = pnjsAt(pl); return l.length ? l[0] : null; };
+const mainOf = pl => { if (!pl || !(pl.type === 'lieu' || pl.fusion) || pl.nofusion) return null; if (kids(pl.id, 'lieu').length) return null; const l = pnjsAt(pl); return l.length === 1 ? l[0] : null; };
 const mergedPlace = p => { const pl = p && p.type === 'pnj' ? (p.lieu && BY[p.lieu] ? BY[p.lieu] : (p.parent ? BY[p.parent] : null)) : null; return pl && mainOf(pl) ? pl : null; };
 const kids = (id, type) => (KIDS[id] || []).filter(k => !type || k.type === type);
 const chain = e => { const a = []; let c = e; let g = 0; while (c && g++ < 12) { a.unshift(c); c = c.parent ? BY[c.parent] : null; } return a; };
@@ -885,20 +885,20 @@ function initEdit() {
 async function initQuests() {
   const btn = $('#qbtn'), box = $('#qlog');
   if (!btn || !box) return;
-  let Q = null, tab = 'global';
+  let Q = null;
   const draw = () => {
-    const tabs = [{ id: 'global', nom: 'Globales' }, ...Q.persos.map(p => ({ id: p.id, nom: p.nom }))];
-    const list = tab === 'global' ? Q.globales : (Q.personnelles[tab] || []);
-    const items = list.map(x => `<div class="quest${x.statut === 'fait' ? ' fait' : ''}"><b>${esc(x.titre)}</b>${x.statut ? `<em>${esc(x.statut === 'fait' ? 'terminée' : 'en cours')}</em>` : ''}${x.resume ? `<p>${esc(x.resume)}</p>` : ''}${x.etapes && x.etapes.length ? '<ul>' + x.etapes.map(e => `<li class="${e.fait ? 'ok' : ''}">${esc(e.texte)}</li>`).join('') + '</ul>' : ''}</div>`).join('');
-    box.innerHTML = `<h2>Journal de quêtes</h2><div class="qtabs">${tabs.map(t => `<button type="button" data-t="${t.id}" class="${t.id === tab ? 'on' : ''}">${esc(t.nom)}</button>`).join('')}</div>${items || '<p class="qempty">Aucune quête renseignée pour le moment.</p>'}`;
-    box.querySelectorAll('[data-t]').forEach(b => b.addEventListener('click', () => { tab = b.dataset.t; draw(); }));
+    const n = Q.length;
+    box.innerHTML = `<div class="qwin" role="document"><header><span class="qgem"></span><h2>Journal de quêtes</h2><span class="qcount">${n} en cours</span><button type="button" class="qx" aria-label="Fermer">×</button></header><ol class="qlist">${Q.map(x => `<li class="qitem"><i class="qdia"></i><div><b>${esc(x.titre)}</b><p>${L(x.texte, '')}</p></div></li>`).join('') || '<li class="qempty">Aucune quête renseignée pour le moment.</li>'}</ol></div>`;
+    box.querySelector('.qx').addEventListener('click', () => toggle(false));
+    box.querySelectorAll('.qitem a').forEach(a => a.addEventListener('click', () => toggle(false)));
   };
   const toggle = async open => {
-    if (open && !Q) { try { Q = await (await fetch('data/quetes.json?v=' + VER)).json(); } catch (e) { Q = { persos: [], globales: [], personnelles: {} }; } }
+    if (open && !Q) { try { Q = (await (await fetch('data/quetes.json?v=' + VER)).json()).quetes || []; } catch (e) { Q = []; } }
     box.hidden = !open; btn.setAttribute('aria-expanded', String(open));
     if (open) draw();
   };
-  btn.addEventListener('click', () => toggle(box.hidden));
+  btn.addEventListener('click', ev => { ev.stopPropagation(); toggle(box.hidden); });
+  box.addEventListener('click', ev => { if (ev.target === box) toggle(false); });
   document.addEventListener('keydown', ev => { if (ev.key === 'Escape' && !box.hidden) toggle(false); });
 }
 

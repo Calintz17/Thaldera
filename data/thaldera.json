@@ -2419,7 +2419,8 @@
   "histoire": [
    "Philippa libère Liora, prisonnière de la Griffe.",
    "Le groupe affronte Absalom, appelée le Berger, qui s'échappe."
-  ]
+  ],
+  "fusion": true
  },
  {
   "id": "frere-augustus-carrow",
@@ -4625,6 +4626,7 @@
     "ton": "negatif"
    }
   ],
+  "fusion": true,
   "galerie": [
    {
     "img": "img/paysages/port-blanc/grange-abandonnee.webp",
