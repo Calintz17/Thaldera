@@ -1222,6 +1222,9 @@
   "connu": [
    "Le groupe ne l'a jamais rencontré directement."
   ],
+  "alias": [
+   "Draven Tauroc"
+  ],
   "galerie": [
    {
     "img": "img/paysages/keras-tauroc/palais-tauroc.webp",
@@ -3333,6 +3336,7 @@
    "Le Démon des Mains a surgi pendant la fouille. Il a été vaincu.",
    "Un collier a été repéré sur l'autel et mené chez Chrysodoros."
   ],
+  "nofusion": true,
   "chapeau": "L'escalier descend sur trente marches avant de déboucher sur une galerie basse et longue. Les niches abritent les grands combattants de la lignée Taurok, figures de pierre aux visages sévères, certaines couronnées de vraies cornes dorées patinées par le temps. Ça sent la pierre froide et la cire noire brûlée, une fumée qui n'est pas celle des bougies habituelles."
  },
  {
@@ -4636,6 +4640,27 @@
    "texte": "Mes renverseuses de despote préférées ! Les voici ! On leur doit la ruine de Spezza, et c'est pas rien !",
    "qui": "Vespera"
   }
+ },
+ {
+  "id": "omen-of-many-hands",
+  "type": "pnj",
+  "nom": "Omen of Many Hands",
+  "titre": "Le Démon des Mains",
+  "parent": "catacombes-de-kord",
+  "lieu": "catacombes-de-kord",
+  "statut": "mort",
+  "attitude": "neutre",
+  "alias": [
+   "Démon des Mains",
+   "Le Démon des Mains"
+  ],
+  "img": "img/pnj/omen-of-many-hands.webp",
+  "resume": "Démon surgi pendant la fouille des catacombes de Kord, près d'un autel secondaire aux armes de Vassago.",
+  "connu": [
+   "Il a surgi pendant la fouille des catacombes, sous la cathédrale de Kord.",
+   "Le groupe l'a vaincu."
+  ],
+  "teinte": "#755219"
  },
  {
   "id": "temple-de-valkur",

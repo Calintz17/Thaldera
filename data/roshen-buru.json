@@ -3244,29 +3244,6 @@
   ]
  },
  {
-  "id": "iko",
-  "type": "pnj",
-  "nom": "Iko",
-  "titre": "Jeune femme disparue du quartier des plaisirs",
-  "parent": "quartier-des-plaisirs",
-  "lieu": "quartier-des-plaisirs",
-  "statut": "mort",
-  "resume": "Disparue depuis des semaines, elle n'aurait pas quitté la ville. Un avis de recherche renvoie à Madame Renka.",
-  "alias": [
-   "Ako"
-  ],
-  "relations": [
-   {
-    "cible": "madame-renka",
-    "type": "disparue de chez",
-    "ton": "negatif",
-    "note": "Un avis de recherche renvoie à Renka.",
-    "inverse": "recherchée par"
-   }
-  ],
-  "attitude": "neutre"
- },
- {
   "id": "velsha",
   "type": "pnj",
   "nom": "Velsha",
@@ -3779,27 +3756,6 @@
    "qui": "Uruukaysal, l'Orant de la Faille"
   },
   "attitude": "neutre"
- },
- {
-  "id": "arianthil",
-  "type": "pnj",
-  "nom": "Arianthil",
-  "titre": "Elfe de l'Ordre d'Argent",
-  "parent": "aile-d-argent",
-  "lieu": "aile-d-argent",
-  "statut": "vivant",
-  "resume": "Sauveur récurrent de Philippa : il l'a téléportée hors du temple de Creux-d'Azur et l'a sortie de l'île du Vesper.",
-  "alias": [
-   "Ariantil"
-  ],
-  "relations": [
-   {
-    "cible": "philippa-rougetoison",
-    "type": "sauveur de",
-    "ton": "positif"
-   }
-  ],
-  "attitude": "allie"
  },
  {
   "id": "frere-aldric",

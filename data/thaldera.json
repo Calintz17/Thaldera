@@ -3142,13 +3142,7 @@
    "Traces de poudre noire sur ses manches et odeur de soufre."
   ],
   "img": "img/pnj/port-doe-lan-lirenne.webp",
-  "relations": [
-   {
-    "cible": "arianthil",
-    "type": "Ordre de l'Aile d'Argent",
-    "ton": "positif"
-   }
-  ],
+  "relations": [],
   "attitude": "neutre",
   "teinte": "#755219"
  },
