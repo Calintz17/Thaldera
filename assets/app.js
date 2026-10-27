@@ -4,7 +4,7 @@
 (() => {
 'use strict';
 
-const VER = '21';
+const VER = '22';
 const EDIT = new URLSearchParams(location.search).has('edit');
 const $ = (s, r = document) => r.querySelector(s);
 const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
@@ -182,7 +182,7 @@ function sceneOf(e, q, depth = 0) {
       const villes = collectVilles(e);
       return {
         kind: 'map', src: om.carte.img, cam, owner: om.host, tabs: om.host.cartes, tab: om.host.cartes.indexOf(om.carte),
-        frames: e.poly ? [frameOf(e, true)] : [], pins: villes.map(v => ({ id: v.id, ...v.pos, label: v.nom, kind: 'ville' })),
+        frames: e.poly ? [frameOf(e, true)] : [], pins: villes.map(v => ({ id: v.id, ...v.pos, label: v.nom, kind: 'ville' })).concat(collectVilles(om.host).filter(v => !villes.includes(v)).map(v => ({ id: v.id, ...v.pos, label: v.nom, kind: 'ville', near: true }))),
         focus: z ? { x: z.x + z.w / 2, y: z.y + z.h / 2 } : null
       };
     }
@@ -273,7 +273,7 @@ function collectLieux(v) {
 
 function sceneKey(sc) {
   if (!sc) return 'none';
-  return JSON.stringify([sc.src, sc.cam, sc.frames.map(f => f.id + (f.solo ? 's' : '')), sc.pins.map(p => p.id + (p.dim ? 'd' : '') + (p.here ? 'h' : '')), sc.gallery?.map(g => g.img + (g.cut ? g.cut.img : '')), sc.cutout?.id, sc.tab, sc.focus]);
+  return JSON.stringify([sc.src, sc.cam, sc.frames.map(f => f.id + (f.solo ? 's' : '')), sc.pins.map(p => p.id + (p.dim ? 'd' : '') + (p.here ? 'h' : '') + (p.near ? 'n' : '')), sc.gallery?.map(g => g.img + (g.cut ? g.cut.img : '')), sc.cutout?.id, sc.tab, sc.focus]);
 }
 
 function makeLayer(src, info) {
@@ -328,10 +328,10 @@ function renderOverlay(layer, sc) {
     svg.addEventListener('click', ev => { const g = ev.target.closest('.reg'); if (g && !g.classList.contains('solo')) location.hash = '#/' + g.dataset.id; });
     ov.querySelectorAll('.rlab').forEach(a => { a.addEventListener('mouseenter', () => hot(a.dataset.id, true)); a.addEventListener('mouseleave', () => hot(a.dataset.id, false)); });
   }
-  if (sc.pins.length > 8) ov.classList.add('many'); else ov.classList.remove('many');
+  if (sc.pins.filter(p => !p.near).length > 8) ov.classList.add('many'); else ov.classList.remove('many');
   sc.pins.forEach(p => {
     const a = document.createElement('a');
-    a.className = `pin k-${p.kind}${p.dim ? ' dim' : ''}${p.here ? ' here' : ''}${p.x < 0.1 ? ' edge-l' : ''}${p.x > 0.9 ? ' edge-r' : ''}`;
+    a.className = `pin k-${p.kind}${p.dim ? ' dim' : ''}${p.near ? ' near' : ''}${p.here ? ' here' : ''}${p.x < 0.1 ? ' edge-l' : ''}${p.x > 0.9 ? ' edge-r' : ''}`;
     a.href = '#/' + p.id; a.dataset.id = p.id;
     a.style.cssText = `left:${p.x * 100}%;top:${p.y * 100}%`;
     a.innerHTML = `<span class="in"><span class="pd"></span><span class="pl">${esc(p.label)}</span></span>`;

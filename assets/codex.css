@@ -213,6 +213,7 @@ a.wcrest:hover .wn { color: var(--gold-hi); }
 .pin:hover .pl, .pin.hot .pl { background: var(--gold); color: #0b0d14; text-shadow: none; }
 .pin:hover .pd { transform: scale(1.18); }
 .pin.dim { opacity: .55; }
+.pin.near { opacity: .8; }
 .pin.dim .pl { display: none; }
 .pin.dim:hover { opacity: 1; }
 .pin.dim:hover .pl { display: block; }
@@ -325,8 +326,8 @@ a.wcrest:hover .wn { color: var(--gold-hi); }
 .sec li.avis b { font-family: 'Cinzel', serif; font-weight: 600; font-size: 11px; letter-spacing: .1em; text-transform: uppercase; color: var(--gold-hi); }
 .sec .qs { font-style: italic; color: #d9c27d; }
 
-.ln { color: inherit; border-bottom: 1px solid rgba(255,255,255,.2); transition: color .15s, border-color .15s; }
-.ln:hover { color: var(--gold-hi); border-bottom-color: var(--gold-hi); }
+.ln { color: var(--gold-hi); border-bottom: 1px dotted rgba(230,200,114,.55); transition: color .15s, border-color .15s; }
+.ln:hover { color: #fff; border-bottom-color: var(--gold-hi); }
 .ln.t-sujet { border-bottom-style: dashed; }
 
 /* cartes enfants */
@@ -406,6 +407,7 @@ a.wcrest:hover .wn { color: var(--gold-hi); }
 .rlab.hot .fs, .rlab:hover .fs { display: block !important; }
 
 .many .pin:not(.here):not(:hover):not(.hot) .pl { display: none; }
+.pin.near:not(:hover):not(.hot) .pl { display: none; }
 @media (max-width: 860px), (pointer: coarse) { .cam { will-change: auto; } }
 @media (max-width: 860px) { .pin:not(.here):not(.hot) .pl { display: none; } .pin .in { width: 30px; height: 30px; } }
 
