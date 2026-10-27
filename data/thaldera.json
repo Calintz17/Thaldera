@@ -2881,7 +2881,9 @@
    "Même lui ne peut reforger la lame brisée.",
    "Sa forge est taillée dans une masse de basalte rouge, avec des canaux de métal fondu autour des établis et un bassin incandescent gravé de symboles anciens sous une enclume circulaire.",
    "Il travaille la pyrrite (bracelets, égide, gants-barrière) et l'écaille de ver des sables, qui dissipe la chaleur plutôt que de la conduire.",
-   "Il refuse d'être jugé pour l'acier vendu à la Griffe : le pyrracier n'a pas d'intention, il a une forme. Il fait des armures, la pyrrite protège, et forger une arme contre sa nature donne quelque chose de médiocre."
+   "Il refuse d'être jugé pour l'acier vendu à la Griffe : le pyrracier n'a pas d'intention, il a une forme. Il fait des armures, la pyrrite protège, et forger une arme contre sa nature donne quelque chose de médiocre.",
+   "Les livraisons de Pyrracier ont cessé depuis plusieurs jours : sans minerai, il ne peut plus forger, y compris les pièces sur mesure qu'il a laissé entendre pouvoir créer pour les aventuriers.",
+   "Si les PJ sécurisent la mine et rapportent de la Pyrrite brute, il peut la transformer en Pyrracier et forger un objet personnalisé pour l'un d'eux."
   ],
   "citation": {
    "texte": "Bienvenue dans la forge éternelle mes amis. Que cherchez-vous ? Vous avez l'air d'aventurières.",
@@ -2895,7 +2897,10 @@
     "inverse": "apprentie de"
    }
   ],
-  "attitude": "allie"
+  "attitude": "allie",
+  "histoire": [
+   "La Forge éternelle se présente comme la meilleure de tous les plans. Son apprentie Fyra lui a déjà valu un rappel à l'ordre sur la modestie."
+  ]
  },
  {
   "id": "l-incarnat",
@@ -2906,11 +2911,14 @@
   "lieu": "pyrrah",
   "statut": "vivant",
   "resume": "Adolescent qui garde la Première Flamme. Épargné par le groupe.",
-  "citation": {
-   "texte": "Je savais que vous viendriez. La Flamme me l'a murmuré, hier. Elle m'a dit… que ce n'était pas moi qui devais la porter. Pas pour toujours.",
-   "qui": "L'Incarnat de la Flamme"
-  },
-  "attitude": "neutre"
+  "citation": "Je savais que vous viendriez. La Flamme me l'a murmuré, hier. Elle m'a dit que ce n'était pas moi qui devais la porter. Pas pour toujours.",
+  "attitude": "neutre",
+  "connu": [
+   "Adolescent de douze à quatorze ans, peau mate, traits doux, vêtu de tissus blancs et sable. Une couronne de flammes stable pulse au-dessus de sa tête.",
+   "Il vit seul dans le sanctuaire supérieur du temple, sans garde ni prêtre. Autour de son cou pend la Première Flamme, un cristal incandescent sur une chaîne noire.",
+   "Les habitants l'adorent : il se promène dans les rues, parle aux gens et accepte les offrandes.",
+   "Il dit savoir que les PJ viendraient et que la Flamme lui a murmuré qu'il ne devait pas la porter pour toujours."
+  ]
  },
  {
   "id": "solemnar",
@@ -2928,7 +2936,10 @@
     "ton": "positif"
    }
   ],
-  "attitude": "neutre"
+  "attitude": "neutre",
+  "connu": [
+   "Prêtre de la basilique d'Héliandros, à Pyrrah. Il officie sous la coupole solaire où brûlent douze braseros rituels."
+  ]
  },
  {
   "id": "ashur",
@@ -2940,12 +2951,13 @@
   "statut": "vivant",
   "resume": "Vieil ami de Gran Brijit, dans une maison aux gravures anciennes.",
   "connu": [
-   "Il confirme l'ancienneté des liens de Gran Brijit dans le désert."
+   "Il confirme l'ancienneté des liens de Gran Brijit dans le désert.",
+   "Vieil homme respecté de Khazad-Marûn, qui offre du thé malgré la rareté de l'eau. Il reconnaît Gran Brijit sous le nom d'Ereshkigal Rabâyandeh, une amie de longue date avec qui il commerce depuis son enfance.",
+   "Il ne sait pas où se trouve la Clé d'Anachronie, mais indique la Bibliothèque Enfouie, à l'ouest de la ville. Il ne ment pas, mais omet volontairement.",
+   "Sa maison troglodyte porte des gravures anciennes de la Bataille des Sables, qu'il n'a pas faites : elles étaient là quand son père lui a légué la maison. Il y reconnaît Aram Sharûn.",
+   "Selon la tradition locale, les corps des mages furent jetés dans la Gueule des Sables, la Fosse sans Fond, gardée par Al Batun, le vorace, qui possède de quoi l'ouvrir."
   ],
-  "citation": {
-   "texte": "Regardez bien ces murs… Ce n'est pas mon œuvre. Ils étaient déjà là quand mon père m'a donné cette maison. Toute la bataille y est, figée dans la pierre.",
-   "qui": "Ashur"
-  },
+  "citation": "Quand quelqu'un apporte la pluie dans le désert, on ne pose pas de questions.",
   "relations": [
    {
     "cible": "gran-brijit",
@@ -7179,7 +7191,10 @@
   "lieu": "auberge-de-l-etincelle",
   "statut": "vivant",
   "resume": "Tient l'auberge principale de Pyrrah.",
-  "attitude": "neutre"
+  "attitude": "neutre",
+  "connu": [
+   "Tient l'Auberge de l'Étincelle à Pyrrah : basalte poli veiné d'orange, salle commune éclairée de lanternes à flammes bleutées, vasque de braises qui sert de foyer et de cuisine."
+  ]
  },
  {
   "id": "temple-des-ardeurs",
@@ -7217,7 +7232,10 @@
     "inverse": "compagne de maison de"
    }
   ],
-  "attitude": "neutre"
+  "attitude": "neutre",
+  "connu": [
+   "Tient avec Kóressa et Thaleia la maison de passe du Temple des Ardeurs, à Pyrrah. Tentures couleur braise, vapeur de safran, on y parle bas."
+  ]
  },
  {
   "id": "koressa",
@@ -7239,7 +7257,10 @@
     "inverse": "compagne de maison de"
    }
   ],
-  "attitude": "neutre"
+  "attitude": "neutre",
+  "connu": [
+   "Travaille au Temple des Ardeurs, à Pyrrah, avec Kaldon et Thaleia."
+  ]
  },
  {
   "id": "thaleia",
@@ -7250,7 +7271,10 @@
   "lieu": "temple-des-ardeurs",
   "statut": "vivant",
   "resume": "Une des trois compagnes de la maison.",
-  "attitude": "neutre"
+  "attitude": "neutre",
+  "connu": [
+   "Travaille au Temple des Ardeurs, à Pyrrah, avec Kaldon et Kóressa."
+  ]
  },
  {
   "id": "taverne-de-la-griffe-pyrrah",
@@ -7298,7 +7322,11 @@
     "inverse": "fournisseurs de la Griffe"
    }
   ],
-  "attitude": "ennemi"
+  "attitude": "ennemi",
+  "connu": [
+   "Membre de la Griffe à Pyrrah, lié à la production locale. Il se plaint de l'arrêt soudain des commandes : les dernières caisses, marquées du symbole de la Griffe, sont parties vers Port Doëlan.",
+   "Il parle d'un intermédiaire, le Pêcheur, qui faisait suivre les instructions et ne donne plus signe de vie."
+  ]
  },
  {
   "id": "vire",
@@ -7327,7 +7355,11 @@
     "inverse": "fournisseurs de la Griffe"
    }
   ],
-  "attitude": "ennemi"
+  "attitude": "ennemi",
+  "connu": [
+   "Agent de la Griffe à Pyrrah. Avec Morve et Ishra, il discute dans l'arrière-salle du Rendez-vous de la Griffe : tout ce qui partait de Pyrrah passait par Port Doëlan, et il reste des échantillons sans acheteur.",
+   "Il évoque l'idée de s'associer avec le Voile."
+  ]
  },
  {
   "id": "ishra",
@@ -7350,7 +7382,10 @@
     "inverse": "fournisseurs de la Griffe"
    }
   ],
-  "attitude": "ennemi"
+  "attitude": "ennemi",
+  "connu": [
+   "Agent de la Griffe à Pyrrah, présent avec Morve et Vire dans l'arrière-salle du Rendez-vous de la Griffe. Elle s'inquiète de ce que deviendra le réseau sans nouvelles commandes."
+  ]
  },
  {
   "id": "forge-eternelle-pyrrah",
@@ -7373,11 +7408,11 @@
   "lieu": "forge-eternelle-pyrrah",
   "statut": "vivant",
   "resume": "Jeune apprentie volubile. « La forge éternelle est reconnue à travers tous les plans comme la deuxième meilleure. Pardon, la meilleure ! »",
-  "citation": {
-   "texte": "Yeaaah, des clients ! Qu'est-ce que je peux vous offrir… vous vendre ? Vous offrir d'acheter ? Ah !",
-   "qui": "Fyra, apprentie de Kaldros"
-  },
-  "attitude": "positif"
+  "citation": "Vous savez que la forge éternelle est reconnue à travers tous les plans comme la deuxième meilleure ?",
+  "attitude": "positif",
+  "connu": [
+   "Jeune apprentie de Kaldros à la Forge éternelle, volubile et maladroite. Elle porte les fioles de sang-magma et vante la qualité et les prix de la forge à chaque client."
+  ]
  },
  {
   "id": "mine-de-pyrrah",
@@ -7401,12 +7436,10 @@
   "statut": "vivant",
   "resume": "Explique que ses hommes refusent de redescendre tant que la menace n'est pas éliminée.",
   "connu": [
-   "« Trois mineurs ont disparu. Le reste refuse de descendre. »"
+   "« Trois mineurs ont disparu. Le reste refuse de descendre. »",
+   "Contremaître de la mine de Pyrrah. Ses hommes ont été attaqués dans les galeries par des créatures en feu, trois mineurs ont disparu et aucun survivant ne redescendra tant que la menace persiste."
   ],
-  "citation": {
-   "texte": "Dans la mine, des créatures en feu ont attaqué. Trois mineurs ont disparu. Le reste refuse de descendre.",
-   "qui": "Milos, contremaître"
-  },
+  "citation": "Dans la mine, des créatures en feu ont attaqué. Trois mineurs ont disparu. Le reste refuse de descendre.",
   "attitude": "neutre"
  },
  {
@@ -7430,10 +7463,7 @@
   "alias": [
    "Ashkalyon le Verracier"
   ],
-  "citation": {
-   "texte": "Mon inventaire est fort réduit, oui fort réduit pour le moment, n'est-ce pas. Mais si vous avez des idées ou des patrons, je peux vous aider à réaliser des objets sur mesure.",
-   "qui": "Ashkalyon le Verracier"
-  },
+  "citation": "Mon inventaire est fort réduit pour le moment, n'est-ce pas. Mais si vous avez des idées ou des patrons, je peux vous aider à réaliser des objets sur mesure.",
   "relations": [
    {
     "cible": "philippa-rougetoison",
@@ -7442,7 +7472,12 @@
     "inverse": "prophétie confirmée par"
    }
   ],
-  "attitude": "positif"
+  "attitude": "positif",
+  "connu": [
+   "Drakéide arcaniste de l'Athanor, à Pyrrah. Il ne se soucie pas de politique et ne jure que par la recherche.",
+   "Il a vu l'Incarnat plusieurs fois, venu bénir des rituels. Il confirme que la prophétie des cheveux de flamme est authentique et que les prêtres sont nerveux à l'approche de la procession.",
+   "Il perçoit la marque de lumière sur Philippa, même quand elle tente de la masquer. Son inventaire est réduit, mais il peut réaliser des objets, sorts et enchantements sur mesure."
+  ]
  },
  {
   "id": "brasero-aux-merveilles",
@@ -7465,11 +7500,12 @@
   "alias": [
    "Krixis les écailles"
   ],
-  "citation": {
-   "texte": "J'achète, je vends, j'essaie de vendre plus que ce que j'achète, c'est la base du commerce, n'est-ce pas ?",
-   "qui": "Krixis les Écailles"
-  },
-  "attitude": "neutre"
+  "citation": "J'achète, je vends, j'essaie de vendre plus que ce que j'achète, c'est la base du commerce, n'est-ce pas ?",
+  "attitude": "neutre",
+  "connu": [
+   "Marchand du Bric-à-brac Le Brasero aux Merveilles, dans une ruelle secondaire de Pyrrah. Il rachète ce que les habitants trouvent dans les dunes de magma et sait reconnaître l'origine titanique, féerique ou élémentaire d'un objet.",
+   "Il connaît bien les zones dangereuses autour de Pyrrah et adore les gadgets mécaniques. Il ne fait commerce qu'avec une personne à la fois."
+  ]
  },
  {
   "id": "thermes-solaires",
@@ -7500,7 +7536,10 @@
     "inverse": "maître de"
    }
   ],
-  "attitude": "neutre"
+  "attitude": "neutre",
+  "connu": [
+   "Employé des Thermes Solaires de Pyrrah, aux côtés de Pyroklès et Orésias."
+  ]
  },
  {
   "id": "pyrokles",
@@ -7514,7 +7553,11 @@
   "alias": [
    "Pyrokles"
   ],
-  "attitude": "neutre"
+  "attitude": "neutre",
+  "connu": [
+   "Tient les Thermes Solaires de Pyrrah, vaste complexe enterré aux arches immenses, avec bassins tempérés, bains de vapeur et bassin de refroidissement. Il observe les clients et peut les conseiller.",
+   "Des prêtres fréquentent les thermes : une oreille attentive peut y glaner des rumeurs."
+  ]
  },
  {
   "id": "oresias",
@@ -7536,7 +7579,10 @@
     "inverse": "maître de"
    }
   ],
-  "attitude": "neutre"
+  "attitude": "neutre",
+  "connu": [
+   "Employé des Thermes Solaires de Pyrrah, aux côtés de Pyroklès et Ephyrion."
+  ]
  },
  {
   "id": "basilique-d-heliandros",
@@ -7593,6 +7639,9 @@
   "resume": "Inventeur vif et chaleureux, à l'humour noir, qui traite l'horreur avec désinvolture. Il appelle Gran Brijit « Mamie » et a refait l'équipement de Jane.",
   "connu": [
    "Il a stabilisé Jane avec l'Hexacore.",
+   "Il remet à Philippa Horizon Brûlée, une arme encore à l'état de prototype, qu'il dit stable. Gran Brijit estime qu'il y manque un souffle de vie pour l'invoquer à volonté.",
+   "Il examine Jane et conclut que ses cristaux tirent chacun sur une fréquence différente, ce qui crée des interférences dangereuses. Il lui faut un Hexacore.",
+   "À son retour du désert, il saisit l'Hexacore avec une excitation presque enfantine et promet de stabiliser le moteur cristallin de Jane.",
    "Son atelier tient de la forge et du cabinet de curiosités : établis croulant sous les engrenages et les bobines de cuivre, carcasses mécaniques à demi montées au plafond, éclats de cristal qui palpitent sous des cloches de verre.",
    "Au centre de la pièce, un brancard de bois usé avec quatre sangles de cuir, trop propre pour l'endroit. L'atelier a l'odeur d'huile chaude et d'orage, et le silence des lieux où la mort a ses habitudes.",
    "Il dit avoir contourné la violence des cristaux de Jane, mais que le pouvoir « part dans tous les sens » : selon lui, chair, magie et mécanique ne tiennent ensemble qu'avec une âme."
@@ -7693,7 +7742,11 @@
     "inverse": "complice de"
    }
   ],
-  "attitude": "neutre"
+  "attitude": "neutre",
+  "connu": [
+   "Brigand de Khazad-Marûn. Il entre de nuit dans la chambre des PJ au couteau pour les détrousser, en exigeant de l'argent pour leur protection. Opportuniste porté par la misère et la méfiance envers les étrangers, il tremble en apercevant Gran Brijit."
+  ],
+  "citation": "Vous n'êtes pas les bienvenus ici, les étrangers. Et si vous voulez rester, il faut payer pour notre protection !"
  },
  {
   "id": "ur-kalmesh",
@@ -7708,7 +7761,10 @@
    "texte": "Vous n'êtes pas les bienvenus ici, les étrangers… Et si vous voulez rester, il faut payer pour notre protection !",
    "qui": "Un brigand de l'auberge"
   },
-  "attitude": "neutre"
+  "attitude": "neutre",
+  "connu": [
+   "Autre brigand de Khazad-Marûn, impliqué dans l'incident nocturne de l'auberge taillée dans la roche."
+  ]
  },
  {
   "id": "herboriste-la-vie-des-dunes",
@@ -7728,11 +7784,12 @@
   "lieu": "herboriste-la-vie-des-dunes",
   "statut": "vivant",
   "resume": "Genasi de Terre au visage carré. Il est fier de sa qualité artisanale.",
-  "citation": {
-   "texte": "Entrez. Reprenez votre souffle. Dites-moi ce qu'il vous faut, et je verrai ce que le désert peut vous donner.",
-   "qui": "Ashran"
-  },
-  "attitude": "neutre"
+  "citation": "Entrez. Reprenez votre souffle. Dites-moi ce qu'il vous faut, et je verrai ce que le désert peut vous donner.",
+  "attitude": "neutre",
+  "connu": [
+   "Genasi de Terre, herboriste de La Vie des Dunes, à Khazad-Marûn. Visage carré, peau tannée, tablier de cuir marqué de cicatrices, voix rauque. Direct, un peu méfiant envers les étrangers mais professionnel.",
+   "Il vend des plantes du désert : cactus à eau, racine antidote, fruits contre l'épuisement, lys rare qui soigne."
+  ]
  },
  {
   "id": "tanneur-peau-de-sable",
@@ -7755,11 +7812,11 @@
   "alias": [
    "Maara Namtarun"
   ],
-  "citation": {
-   "texte": "Si vous êtes venus pour du solide, vous êtes au bon endroit. Si c'est pour faire joli… allez voir un tisseur.",
-   "qui": "Maara Namtarûn"
-  },
-  "attitude": "neutre"
+  "citation": "Si vous êtes venus pour du solide, vous êtes au bon endroit. Si c'est pour faire joli, allez voir un tisseur.",
+  "attitude": "neutre",
+  "connu": [
+   "Tanneuse de Peau de Sable, à Khazad-Marûn. Femme fine à la peau ridée par le vent, cheveux tressés serrés, elle observe avant de parler. Elle ne vend que ce que le désert offre : brassards, masques coupe-sable, armures légères en cuir durci au sel."
+  ]
  },
  {
   "id": "atelier-sahrim",
@@ -7782,11 +7839,12 @@
   "alias": [
    "Hazar"
   ],
-  "citation": {
-   "texte": "Les gens pensent qu'une poterie, c'est un récipient. Ils ne voient jamais le geste, ni le silence qu'il faut pour la créer.",
-   "qui": "Sahrim"
-  },
-  "attitude": "neutre"
+  "citation": "Les gens pensent qu'une poterie, c'est un récipient. Ils ne voient jamais le geste, ni le silence qu'il faut pour la créer.",
+  "attitude": "neutre",
+  "connu": [
+   "Potier genasi de Terre de l'Atelier Sahrim, à Khazad-Marûn : massif, peau couleur grès, voix au grondement d'éboulement lointain. Il travaille même quand on lui parle et se juge un génie méconnu.",
+   "Il affirme que ses pièces vaudraient une fortune auprès des collectionneurs de Rivegard."
+  ]
  },
  {
   "id": "bibliotheque-enfouie",
@@ -7822,11 +7880,13 @@
   "alias": [
    "Aram Sharun"
   ],
-  "citation": {
-   "texte": "Je sers ce qui fut avant les trônes, et je suivrai ce qui viendra après les rois.",
-   "qui": "Aram Sharûn, aux messagers des rois"
-  },
+  "citation": "Je sers ce qui fut avant les trônes, et je suivrai ce qui viendra après les rois.",
   "attitude": "neutre",
+  "connu": [
+   "Mage puissant, dernier détenteur connu de la Clé d'Anachronie, mort lors de la Bataille des Sables avec les autres maîtres en lice. Son corps fut jeté dans la Fosse des Mille Sables.",
+   "Il bâtit sa demeure dans un donjon de pierre blanche, loin des hommes, qui n'obéissait pas aux jours. Une porte donnait sur hier, une autre sur demain.",
+   "Les rois réclamaient sa science. Sa réponse est restée dans les chants : il servait ce qui fut avant les trônes."
+  ],
   "lieu": "kazad-marunn"
  },
  {
@@ -7862,6 +7922,11 @@
    }
   ],
   "attitude": "ennemi",
+  "connu": [
+   "Ver des sables colossal qui circule sous les dunes près de la mesa, attiré par le mouvement et la chaleur. Son éruption ouvre momentanément la fosse qui mène au site enfoui.",
+   "L'Anneau des Sables est incrusté dans sa carapace, et le ver ne le recrache que lorsqu'il est gravement blessé.",
+   "Il revient à intervalles irréguliers : aucun répit durable près de la fosse."
+  ],
   "lieu": "kazad-marunn"
  },
  {
