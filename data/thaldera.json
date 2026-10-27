@@ -2515,6 +2515,23 @@
   ],
   "alias": [
    "Madame Vespera"
+  ],
+  "formes": [
+   {
+    "img": "img/thaldera/pnj/vespera-merigold.webp",
+    "label": "Normal",
+    "lieux": []
+   },
+   {
+    "img": "img/pnj/madame-vespera-bordel.webp",
+    "label": "Au bordel",
+    "lieux": []
+   },
+   {
+    "img": "img/pnj/madame-vespera-chef-de-port-doelan.webp",
+    "label": "Cheffe du port de Doëlan",
+    "lieux": []
+   }
   ]
  },
  {
@@ -3837,7 +3854,8 @@
   "parent": "maison-de-vespera",
   "lieu": "maison-de-vespera",
   "statut": "vivant",
-  "resume": "Une des deux sœurs de la maison."
+  "resume": "Une des deux sœurs de la maison.",
+  "img": "img/pnj/tina-nina-prostitue-es.webp"
  },
  {
   "id": "nina",
@@ -3847,7 +3865,8 @@
   "parent": "maison-de-vespera",
   "lieu": "maison-de-vespera",
   "statut": "vivant",
-  "resume": "Une des deux sœurs de la maison."
+  "resume": "Une des deux sœurs de la maison.",
+  "img": "img/pnj/tina-nina-prostitue-es.webp"
  },
  {
   "id": "quartier-general-griffe",
@@ -4781,7 +4800,8 @@
   ],
   "alias": [
    "Nolbrim Cuivre Rouge"
-  ]
+  ],
+  "img": "img/pnj/nolbrim.webp"
  },
  {
   "id": "harpe-de-chair",
@@ -5152,6 +5172,7 @@
    "Statue Clericalis",
    "Statue Paladinis"
   ],
+  "img": "img/pnj/lathandre.webp",
   "lieu": "temple-brumeux"
  },
  {

@@ -483,6 +483,23 @@
     "type": "Compagne d'aventure",
     "ton": "positif"
    }
+  ],
+  "formes": [
+   {
+    "img": "img/groupe/jane-merigold.webp",
+    "label": "Normal",
+    "lieux": []
+   },
+   {
+    "img": "img/pnj/jane-a-roshen-buru.webp",
+    "label": "A Roshen Buru",
+    "lieux": []
+   },
+   {
+    "img": "img/pnj/jane-arcane-trickster.webp",
+    "label": "Arcane Trickster",
+    "lieux": []
+   }
   ]
  },
  {
@@ -539,6 +556,18 @@
     "cible": "harfang-tsuren",
     "type": "Compagnon d'aventure",
     "ton": "positif"
+   }
+  ],
+  "formes": [
+   {
+    "img": "img/groupe/philippa-rougetoison.webp",
+    "label": "Normal",
+    "lieux": []
+   },
+   {
+    "img": "img/pnj/philippa-a-roshen-buru.webp",
+    "label": "A Roshen Buru",
+    "lieux": []
    }
   ]
  },

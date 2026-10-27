@@ -4,7 +4,7 @@
 (() => {
 'use strict';
 
-const VER = '9';
+const VER = '10';
 const EDIT = new URLSearchParams(location.search).has('edit');
 const $ = (s, r = document) => r.querySelector(s);
 const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
@@ -216,7 +216,11 @@ function sceneOf(e, q, depth = 0) {
       let s = lieu ? sceneOf(lieu, null, depth + 1) : (e.parent ? sceneOf(BY[e.parent], null, depth + 1) : null);
       if (!s && depth === 0) s = sceneOf(BY.istra, null, 1);
       if (s && (e.type === 'pnj' || e.type === 'pj') && depth === 0) {
-        s = { ...s, gallery: (e.galerie && e.galerie.length) ? e.galerie : (s.gallery || fallbackLand(e) || [PH_LAND]), cutout: e };
+        let gal = (e.galerie && e.galerie.length) ? e.galerie : (s.gallery || fallbackLand(e) || [PH_LAND]);
+        if (e.formes && e.formes.length > 1) {
+          gal = gal.map(g => ({ ...g, cut: e.formes[0] })).concat(e.formes.slice(1).map(f => ({ ...gal[0], cut: f })));
+        }
+        s = { ...s, gallery: gal, cutout: e };
       }
       return s;
     }
@@ -257,7 +261,7 @@ function collectLieux(v) {
 
 function sceneKey(sc) {
   if (!sc) return 'none';
-  return JSON.stringify([sc.src, sc.cam, sc.frames.map(f => f.id + (f.solo ? 's' : '')), sc.pins.map(p => p.id + (p.dim ? 'd' : '') + (p.here ? 'h' : '')), sc.gallery?.map(g => g.img), sc.cutout?.id, sc.tab, sc.focus]);
+  return JSON.stringify([sc.src, sc.cam, sc.frames.map(f => f.id + (f.solo ? 's' : '')), sc.pins.map(p => p.id + (p.dim ? 'd' : '') + (p.here ? 'h' : '')), sc.gallery?.map(g => g.img + (g.cut ? g.cut.img : '')), sc.cutout?.id, sc.tab, sc.focus]);
 }
 
 function makeLayer(src, info) {
@@ -411,7 +415,7 @@ function clearGal(hard) {
   clearInterval(galTimer); galTimer = null;
   if (S.gal) { const g = S.gal; g.classList.remove('on'); setTimeout(() => g.remove(), hard ? 0 : 950); S.gal = null; }
 }
-function showGallery(imgs, title) {
+function showGallery(imgs, title, ent) {
   clearGal(true);
   const g = document.createElement('div');
   g.className = 'gal';
@@ -423,7 +427,9 @@ function showGallery(imgs, title) {
     cur = (n + imgs.length) % imgs.length;
     g.querySelectorAll('.sl').forEach((s, i) => { s.classList.toggle('act', i === cur); });
     g.querySelectorAll('.gdots i').forEach((d, i) => d.classList.toggle('on', i === cur));
-    $('.gt', g).textContent = imgs[cur].legende || '';
+    const c = imgs[cur].cut;
+    $('.gt', g).textContent = [imgs[cur].legende, c && ent && ent.formes && ent.formes.length > 1 && c !== ent.formes[0] ? c.label : ''].filter(Boolean).join(' · ');
+    if (ent && c) { S.curForm = c; S.curFormOf = ent.id; setCutout(ent, c); }
   };
   go(0);
   g.addEventListener('click', ev => {
@@ -431,21 +437,45 @@ function showGallery(imgs, title) {
     if (b) go(cur + parseInt(b.dataset.d, 10));
     if (d) go(parseInt(d.dataset.i, 10));
   });
-  if (imgs.length > 1) galTimer = setInterval(() => go(cur + 1), 8000);
+  const forms = imgs.some(i => i.cut);
+  if (imgs.length > 1 && !forms) galTimer = setInterval(() => go(cur + 1), 8000);
+  if (forms) {
+    let lock = 0, ty = null;
+    g.addEventListener('wheel', ev => {
+      const now = Date.now();
+      if (Math.abs(ev.deltaY) < 8 || now - lock < 700) return;
+      const n = cur + (ev.deltaY > 0 ? 1 : -1);
+      if (n < 0 || n >= imgs.length) return;
+      lock = now; go(n);
+    }, { passive: true });
+    g.addEventListener('touchstart', ev => { ty = ev.touches[0].clientY; }, { passive: true });
+    g.addEventListener('touchend', ev => {
+      if (ty == null) return;
+      const d = ty - ev.changedTouches[0].clientY; ty = null;
+      if (Math.abs(d) > 50) { const n = cur + (d > 0 ? 1 : -1); if (n >= 0 && n < imgs.length) go(n); }
+    }, { passive: true });
+  }
   requestAnimationFrame(() => g.classList.add('on'));
   S.gal = g;
 }
-function setCutout(e) {
+function formeFor(e, ctx) {
+  if (!e || !e.formes) return null;
+  return e.formes.slice(1).find(f => ctx && f.lieux && f.lieux.includes(ctx)) || e.formes[0];
+}
+function setCutout(e, form) {
   let c = $('.cutout', stageEl);
   if (!e || !S.gal) { if (c) c.remove(); S.cut = null; return; }
-  if (S.cut === e.id && c) return;
+  if (!form && e.formes && S.curFormOf === e.id) form = S.curForm;
+  const src = (form && form.img) || e.img;
+  const ck = e.id + '|' + (src || '');
+  if (S.cut === ck && c) return;
   if (c) c.remove();
   c = document.createElement('div');
   c.className = 'cutout';
-  c.className = 'cutout' + (e.img ? '' : ' ph');
-  c.innerHTML = `<img src="${e.img || PH_SIL}" alt="${esc(e.nom)}"><span class="cn">${esc(e.nom)}</span>`;
+  c.className = 'cutout' + (src ? '' : ' ph');
+  c.innerHTML = `<img src="${src || PH_SIL}" alt="${esc(e.nom)}"><span class="cn">${esc(e.nom)}</span>`;
   stageEl.insertBefore(c, $('.fog', stageEl));
-  S.cut = e.id;
+  S.cut = ck;
 }
 function renderCap(sc, entry) {
   const cap = $('#mapcap');
@@ -483,8 +513,8 @@ async function applyScene(e, q, token) {
   await applyMap(sc, dir, focus);
   if (token !== TOKEN) return;
   if (sc.gallery) {
-    const sameGal = S.gal && S.galKey === JSON.stringify(sc.gallery.map(g => g.img));
-    if (!sameGal) { showGallery(sc.gallery, e.nom); S.galKey = JSON.stringify(sc.gallery.map(g => g.img)); }
+    const sameGal = S.gal && S.galKey === JSON.stringify(sc.gallery.map(g => g.img + (g.cut ? g.cut.img : '')));
+    if (!sameGal) { showGallery(sc.gallery, e.nom, sc.cutout); S.galKey = JSON.stringify(sc.gallery.map(g => g.img + (g.cut ? g.cut.img : ''))); }
   } else { clearGal(); S.galKey = null; }
   setCutout(sc.cutout);
 }
@@ -650,7 +680,7 @@ function renderPanel(e, q) {
       sel = id;
       box.innerHTML = `<div class="npcbox">${detailBlock(p)}</div>`;
       panelEl.querySelectorAll('.bub').forEach(b => b.classList.toggle('sel', b.dataset.id === id));
-      setCutout(p);
+      S.curForm = null; S.curFormOf = null; setCutout(p, formeFor(p, S.entry && S.entry.id));
     };
     $('#npcs').addEventListener('click', ev => {
       const b = ev.target.closest('[data-npc]');
