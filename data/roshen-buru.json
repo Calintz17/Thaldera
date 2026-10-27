@@ -655,7 +655,8 @@
   "histoire": [
    "Le groupe entre dans la salle commune. Un incident éclate avec Kirin Anadori et son Miren, le Génie de Suie.",
    "Le combat se déplace dans la ruelle voisine, où le groupe tue Kirin."
-  ]
+  ],
+  "chapeau": "Une auberge de port bien remplie, au brouhaha permanent, au va-et-vient de marins et de marchands de passage. Des nattes de bambou couvrent le sol. Dans la salle, un homme-sanglier grogne qu'il n'y a pas de place, puis laisse quand même les clients s'asseoir."
  },
  {
   "id": "ruelle-azuren-kai",
@@ -675,7 +676,8 @@
   "resume": "Une ruelle étroite derrière l'auberge, entre échoppes et lanternes rouges.",
   "connu": [
    "C'est ici que le groupe a achevé Kirin Anadori."
-  ]
+  ],
+  "chapeau": "Une ruelle étroite derrière l'auberge, entre échoppes et lanternes rouges, à l'écart du brouhaha du port."
  },
  {
   "id": "noshka",
@@ -793,7 +795,8 @@
   "connu": [
    "La route de Roshen Buru passe par cette forêt, cernée d'un océan de sakura.",
    "Le groupe l'a traversée depuis Azuren Kai pour être plus discret."
-  ]
+  ],
+  "chapeau": "Une forêt dense qui entoure Roshen Buru, cernée d'un océan de sakura. La route passe par là, loin des postes de garde et des regards."
  },
  {
   "id": "seiran-vale",
@@ -835,7 +838,8 @@
   "resume": "Le bâtiment qui garde la porte vers Roshen Buru.",
   "connu": [
    "Il se trouve à l'entrée de la ville, côté Roshen Buru."
-  ]
+  ],
+  "chapeau": "Reconnaissable avant même de toquer : façade taguée, traces d'œufs séchés sur les volets, graffitis hâtifs sur le bois de la porte. Le peuple s'en prend au Magistrat, qui perd le contrôle."
  },
  {
   "id": "pont-miren",
@@ -851,7 +855,8 @@
   "resume": "Il enjambe la rivière à l'entrée de la ville.",
   "connu": [
    "Fermé par une grille magique depuis l'assassinat d'Otoba."
-  ]
+  ],
+  "chapeau": "Un grand pont de pierre à arche unique, fermé par une grille magique vibrante. Autour, des toits de pagode empilés, des lanternes rouges par centaines, et un fleuve totalement embouteillé de barges, de sampans et de jonques flanc contre flanc."
  },
  {
   "id": "roshen-buru",
@@ -1021,7 +1026,8 @@
   "connu": [
    "Le Temple du Tenraku couronne son sommet.",
    "Des ponts vermillon le relient aux falaises. Trois ascenseurs géants desservent la ville haute et le palais."
-  ]
+  ],
+  "chapeau": "Un monolithe rocheux moussu au centre de la cuvette, habité de haut en bas, couvert de planches et de passerelles jusqu'à sa cime. Des ponts vermillon le relient aux falaises, trois ascenseurs géants desservent la ville haute, et le Temple du Tenraku couronne son sommet."
  },
  {
   "id": "temple-du-tenraku",
@@ -2632,7 +2638,8 @@
   "parent": "roshen-buru",
   "resume": "Maison où le clan Kaben se referme après l'enlèvement.",
   "carte": "palais",
-  "zoom": 0.12
+  "zoom": 0.12,
+  "chapeau": "La maison du clan Kaben, qui se referme sur elle-même depuis l'enlèvement d'Ayano. L'accès y est difficile, et il faut passer par les Sokabeï ou entrer autrement."
  },
  {
   "id": "doryen-kaben",
@@ -2680,7 +2687,8 @@
   "parent": "roshen-buru",
   "resume": "Maison de thé où le groupe loge. On y apprend ce que les domestiques racontent quand ils sont fatigués.",
   "connu": [
-   "Trois pièces le thé, quinze la chambre."
+   "Trois pièces le thé, quinze la chambre.",
+   "Au tableau d'affichage de l'auberge, le groupe lit que la garde est en alerte à cause de la présence d'Absalom, que des filles ont disparu au bordel, qu'un contrebandier manque à l'appel, et que des commerçants font leur publicité."
   ],
   "pos": {
    "x": 0.45,
@@ -2866,7 +2874,8 @@
    "y": 0.3
   },
   "carte": "ville",
-  "zoom": 0.12
+  "zoom": 0.12,
+  "chapeau": "L'atelier de Thibwick Rumple, nain et ami de Harfang Tsuren."
  },
  {
   "id": "orashay",
@@ -3333,6 +3342,9 @@
   "alias": [
    "Bourre Pif",
    "Bourre-Pif"
+  ],
+  "connu": [
+   "!! Gran Brijit l'a tué sur-le-champ dans le laboratoire de Nolbrim, puis a aspiré son âme pour la donner à Nolbrim."
   ]
  },
  {

@@ -1074,6 +1074,7 @@
     "ton": "positif"
    }
   ],
+  "chapeau": "Un wasteland meurtri : sol craquelé, noirci par des brûlures anciennes, constellé d'éclats métalliques et de carcasses de machines de guerre effondrées. Des filaments d'arcane persistent dans l'air et vibrent au moindre mouvement. Des cratères éventrés et des grottes basses d'où montent des bruits humides, traces de la guerre de la Veyra.",
   "poly": [
    [
     0.275,
@@ -2263,7 +2264,11 @@
   "resume": "Moine de Lathander devenu fou. Son journal raconte la présence démoniaque et « le navire qui n'existait pas ».",
   "histoire": [
    "Il attaque le groupe, d'abord à l'Île aux Moines puis au Temple Brumeux."
-  ]
+  ],
+  "citation": {
+   "texte": "Il est en moi… il arrive… il m'a choisi ! Moi et moi seul ! Pas les autres… juste moi !",
+   "qui": "Frère Augustus Carrow"
+  }
  },
  {
   "id": "temple-brumeux",
@@ -2282,7 +2287,8 @@
   "pos": {
    "x": 0.313,
    "y": 0.78
-  }
+  },
+  "chapeau": "La jungle se resserre et laisse place à une clairière envahie par une brume laiteuse qui colle aux pierres. Entre les lianes et les troncs moussus, la façade effondrée d'un ancien temple, mangé par les racines. L'air sent l'humidité et la moisissure, et seul le ruissellement d'une source invisible trouble le silence."
  },
  {
   "id": "barakel",
@@ -2295,7 +2301,11 @@
   "resume": "Démon déguisé en prêtre au fond du Temple Brumeux.",
   "histoire": [
    "Le groupe le détruit."
-  ]
+  ],
+  "citation": {
+   "texte": "J'ai senti la faiblesse des hommes. Leur foi vacillait, et j'ai soufflé dessus, jusqu'à ce que la flamme s'éteigne.",
+   "qui": "Barakel, le parasite de l'Aube"
+  }
  },
  {
   "id": "agran",
@@ -2336,7 +2346,11 @@
   "parent": "agran",
   "lieu": "agran",
   "statut": "vivant",
-  "resume": "Prudent, il veut protéger Ink du monde extérieur."
+  "resume": "Prudent, il veut protéger Ink du monde extérieur.",
+  "citation": {
+   "texte": "Rouge ou blanc. Le rouge est rare. Il coûte plus.",
+   "qui": "Thaloor"
+  }
  },
  {
   "id": "la-suuraal",
@@ -2349,7 +2363,11 @@
   "resume": "Autorité spirituelle et temporelle. Kataron parle à travers elle.",
   "connu": [
    "Elle donne au groupe une marque liée au Cœur Immergé."
-  ]
+  ],
+  "citation": {
+   "texte": "Vous avez traversé les courants. Cela ne se fait pas par chance.",
+   "qui": "La Suuraal"
+  }
  },
  {
   "id": "algari",
@@ -2362,7 +2380,11 @@
   "resume": "Joue de la lyre, queue de poisson pendant dans le vide.",
   "connu": [
    "Il enseigne le thuun, un gel qui remplace l'air pour transmettre le son."
-  ]
+  ],
+  "citation": {
+   "texte": "Tu as essayé de jouer. J'ai senti le silence. C'est une chose particulière, le silence d'une corde qui ne sait pas comment se faire entendre.",
+   "qui": "Algari"
+  }
  },
  {
   "id": "glooglugogg",
@@ -2372,7 +2394,11 @@
   "parent": "agran",
   "lieu": "agran",
   "statut": "vivant",
-  "resume": "Seul à parler la langue commune. Inquiet, il envoie le groupe voir la Suuraal."
+  "resume": "Seul à parler la langue commune. Inquiet, il envoie le groupe voir la Suuraal.",
+  "citation": {
+   "texte": "Vous offrez à Kataron. Vous recevez sa faveur. C'est la règle.",
+   "qui": "Glooglugogg"
+  }
  },
  {
   "id": "pyrrah",
@@ -2407,7 +2433,11 @@
   "connu": [
    "Il forge avec l'écaille d'Al Batun et la Pyrrite.",
    "Même lui ne peut reforger la lame brisée."
-  ]
+  ],
+  "citation": {
+   "texte": "Bienvenue dans la forge éternelle mes amis. Que cherchez-vous ? Vous avez l'air d'aventurières.",
+   "qui": "Kaldros Emberforge"
+  }
  },
  {
   "id": "l-incarnat",
@@ -2440,7 +2470,11 @@
   "resume": "Vieil ami de Gran Brijit, dans une maison aux gravures anciennes.",
   "connu": [
    "Il confirme l'ancienneté des liens de Gran Brijit dans le désert."
-  ]
+  ],
+  "citation": {
+   "texte": "Regardez bien ces murs… Ce n'est pas mon œuvre. Ils étaient déjà là quand mon père m'a donné cette maison. Toute la bataille y est, figée dans la pierre.",
+   "qui": "Ashur"
+  }
  },
  {
   "id": "chateau-spezza",
@@ -2455,7 +2489,8 @@
   ],
   "histoire": [
    "Le groupe donne l'assaut et tue Spezza. Naberoth est renvoyé aux Enfers."
-  ]
+  ],
+  "chapeau": "Une forteresse qui domine la ville. La porte est une masse de chêne ferrée, haute comme trois hommes, encadrée de deux tours qui crachent une lumière orange. Elle abrite une chambre forte et une trappe qui mène à la crique secrète."
  },
  {
   "id": "spezza",
@@ -2686,7 +2721,8 @@
   "resume": "Bâtiment gothique froid, portail de fer forgé. La salle des déguisements se cache derrière la chapelle.",
   "connu": [
    "Les enfants méritants gagnent une chambre. Jane partageait la sienne avec Vespera."
-  ]
+  ],
+  "chapeau": "Une pluie fine perle sur les barreaux noirs du portail, dont le fer forgé dessine des arabesques sombres au-dessus du nom de l'orphelinat. Au-delà, un bâtiment gothique massif, aux fenêtres hautes comme des juges silencieux. À l'intérieur, la cire froide et l'encens fané, des portraits austères aux murs, et le sol de pierre qui renvoie chaque pas."
  },
  {
   "id": "la-rectrice",
@@ -2700,7 +2736,11 @@
   "connu": [
    "Elle distribuait des objets de meurtre silencieux avant les missions.",
    "Elle a été tuée plus tard par des mercenaires."
-  ]
+  ],
+  "citation": {
+   "texte": "Certaines mauvaises herbes doivent être arrachées avant qu'elles n'étouffent le jardin. Tu comprends cela, n'est-ce pas, Jane ?",
+   "qui": "Madame la Rectrice"
+  }
  },
  {
   "id": "edmund-von-kornwald",
@@ -2749,7 +2789,11 @@
   "resume": "Client régulier et exigeant, canne à pommeau doré. Il achetait des enfants.",
   "connu": [
    "Jane compte le tuer s'il se représente."
-  ]
+  ],
+  "citation": {
+   "texte": "C'était très agréable, comme à notre habitude. J'attendrai le même niveau de service à chaque fois.",
+   "qui": "Mr. Falken"
+  }
  },
  {
   "id": "rocher-aux-noeuds",
@@ -4518,7 +4562,8 @@
   "connu": [
    "Dans la Faille, les créatures qui respirent sous l'eau ne subissent aucune pénalité de pression.",
    "Les armes perforantes marchent normalement, les armes tranchantes et contondantes sont gênées."
-  ]
+  ],
+  "chapeau": "La faille s'ouvre sur quelque chose d'impossible : des lumières orangées et dorées en dômes et en arches, comme une ville endormie sous une couverture de coraux. Les coraux brillent, bleus et froids, au rythme lent d'un cœur énorme. Les parois encadrent l'ensemble comme deux mains qui tiendraient un trésor."
  },
  {
   "id": "sous-marin-borim",
@@ -4530,7 +4575,8 @@
   "connu": [
    "Il a traversé deux tempêtes de courants avant de plonger dans la faille.",
    "Des créatures de la faille l'ont attaqué pendant la descente."
-  ]
+  ],
+  "chapeau": "Le sous-marin sent le métal chaud, l'huile de machine et le bois compressé. Les cloisons de pyrracier gémissent à intervalles irréguliers, une respiration mécanique qui rappelle que quelque chose retient le poids de l'océan à quelques centimètres. Par les hublots, l'eau passe du vert au bleu, puis à un noir absolu."
  },
  {
   "id": "reshaar",
@@ -4543,7 +4589,11 @@
   "resume": "Genasi d'eau à la peau bleu-vert, bâton de corail doré. Elle laisse entrer les voyageurs mais marque une frontière.",
   "connu": [
    "« Vous êtes vivants. C'est déjà inhabituel. »"
-  ]
+  ],
+  "citation": {
+   "texte": "Vous êtes vivants. C'est déjà inhabituel.",
+   "qui": "Reshaar"
+  }
  },
  {
   "id": "ghor",
@@ -4564,7 +4614,8 @@
   "resume": "Salle taillée dans la faille, coraux bioluminescents le long des poutres. Rouge (viande, rare) ou blanc (poisson).",
   "connu": [
    "Les habitants appellent les voyageurs de la surface les Noyés."
-  ]
+  ],
+  "chapeau": "Une salle creusée à même la roche de la faille, aux murs polis par des siècles d'eau tiède. L'odeur de corail chauffé et d'algues cuites rappelle un bouillon, presque familier. Des coraux bioluminescents courent le long des poutres et pulsent, bleus. Personne n'accueille les étrangers, personne ne les chasse non plus."
  },
  {
   "id": "temple-de-kataron",
@@ -4576,7 +4627,8 @@
   "connu": [
    "Le pupitre central a brillé au contact du groupe.",
    "Glooglugogg leur a dit d'aller voir la Suuraal sans attendre."
-  ]
+  ],
+  "chapeau": "Une cavité naturelle agrandie par des mains patientes. Les colonnes de roche polie sont incrustées de coraux rouges et dorés qui brûlent lentement, comme des braises sous l'eau. Au fond, un trône en forme de coquille géante, vide. Des miroirs ovales de métal poli renvoient des éclats bleus sur le sol mouillé."
  },
  {
   "id": "echoppe-de-peraalys",
@@ -4584,7 +4636,8 @@
   "nom": "L'échoppe de Peraalys",
   "titre": "Alcôve de corail noir",
   "parent": "agran",
-  "resume": "Boutique sans devanture, rideau de petits poissons argentés. Objets d'épaves et créations locales."
+  "resume": "Boutique sans devanture, rideau de petits poissons argentés. Objets d'épaves et créations locales.",
+  "chapeau": "Une alcôve creusée dans la roche, sans devanture, tapissée d'étagères de corail noir. Objets d'épaves, créations locales et choses sans nom. Des poissons plats dorment accrochés aux parois comme des tableaux, et un rideau de perles laisse passer les clients : des centaines de petits poissons argentés."
  },
  {
   "id": "peraalys",
@@ -4594,7 +4647,11 @@
   "parent": "echoppe-de-peraalys",
   "lieu": "echoppe-de-peraalys",
   "statut": "vivant",
-  "resume": "Professionnelle et directe. Elle rachète honnêtement tout objet de surface, sans poser de question."
+  "resume": "Professionnelle et directe. Elle rachète honnêtement tout objet de surface, sans poser de question.",
+  "citation": {
+   "texte": "Si vous cherchez quelque chose de précis, dites-le. Sinon, nagez votre chemin.",
+   "qui": "Peraalys"
+  }
  },
  {
   "id": "kel",
@@ -4612,7 +4669,8 @@
   "nom": "L'atelier de Drisuun",
   "titre": "Forge thermique et récupération",
   "parent": "agran",
-  "resume": "Forge creusée autour d'une colonne d'eau bouillante. Corail compressé, lames de coquille, métal abyssal."
+  "resume": "Forge creusée autour d'une colonne d'eau bouillante. Corail compressé, lames de coquille, métal abyssal.",
+  "chapeau": "Une chaleur sourde monte de la roche et tranche avec l'eau froide de la faille. La forge est creusée autour d'une colonne d'eau bouillante qui jaillit du plancher. Coraux séchés empilés, coquilles taillées en lames, métal abyssal brut sur des crochets de roche."
  },
  {
   "id": "drisuun",
@@ -4622,7 +4680,11 @@
   "parent": "atelier-de-drisuun",
   "lieu": "atelier-de-drisuun",
   "statut": "vivant",
-  "resume": "Pragmatique et direct. Il paie au poids ce qu'on lui rapporte des épaves de la faille basse."
+  "resume": "Pragmatique et direct. Il paie au poids ce qu'on lui rapporte des épaves de la faille basse.",
+  "citation": {
+   "texte": "Vous achetez ou vous regardez ? Les deux, c'est bien aussi. Mais regarder prend du temps.",
+   "qui": "Drisuun"
+  }
  },
  {
   "id": "salle-de-l-orant",
@@ -4630,7 +4692,8 @@
   "nom": "La salle de l'Orant",
   "titre": "Face à la faille",
   "parent": "agran",
-  "resume": "Couloir de roche vive ouvert sur la faille, sans vitre ni barrière. Les courants se voient comme des rivières translucides."
+  "resume": "Couloir de roche vive ouvert sur la faille, sans vitre ni barrière. Les courants se voient comme des rivières translucides.",
+  "chapeau": "Au bout d'un couloir taillé dans la roche vive, face à une ouverture directe sur la faille : pas de vitre, juste le vide abyssal et les courants suspendus, visibles comme des rivières translucides. Les coraux pulsent au rythme de la respiration de l'Orant. Des poissons s'approchent de lui sans crainte."
  },
  {
   "id": "uruukaysal",
@@ -4643,7 +4706,11 @@
   "resume": "Il lit les courants comme des intentions de Kataron. Il bénit les départs d'un chant grave et envoie vers la Suuraal.",
   "connu": [
    "Les courants qui mènent à Thaladrassyl sont des invitations."
-  ]
+  ],
+  "citation": {
+   "texte": "Les courants qui mènent à Thaladrassyl ne sont pas des routes. Ce sont des invitations. Et les invitations ne se forcent pas.",
+   "qui": "Uruukaysal"
+  }
  },
  {
   "id": "epave-du-grauwacht",
@@ -4655,7 +4722,8 @@
   "connu": [
    "Une lettre de mission scellée désigne l'Astariel, navire escorté par le Grauwacht.",
    "Le capitaine du Grauwacht était Edvar Sorn."
-  ]
+  ],
+  "chapeau": "Une épave couchée sur le flanc, la coque enfoncée dans la vase de la faille jusqu'au tiers de sa hauteur. Bois noir, mangé par les années, couvert d'anémones pâles. Les sabords sont ouverts comme des bouches muettes. Rien d'hostile, juste le silence des objets abandonnés et une odeur minérale."
  },
  {
   "id": "edvar-sorn",
@@ -4677,7 +4745,8 @@
   "connu": [
    "Le journal de bord est signé du capitaine Voryn Kael, commandant de la Troisième Expédition des Profondeurs.",
    "Un matelot nommé Renault y a signalé un son grave venu des profondeurs."
-  ]
+  ],
+  "chapeau": "Une épave appuyée contre la paroi, comme quelque chose qui aurait renoncé à tomber. Mâts brisés couverts de coraux noirs et de varech, bois gorgé de siècles. Quelques coraux bioluminescents, à la lumière froide et irrégulière. L'eau est immobile, trop immobile."
  },
  {
   "id": "voryn-kael",
@@ -4700,7 +4769,11 @@
   "resume": "Créature à tentacules bleus et roses qui a pris possession de l'épave. Elle échange, elle ne vend pas.",
   "connu": [
    "« Je ne vends pas. J'échange. »"
-  ]
+  ],
+  "citation": {
+   "texte": "Des Noyés. Dans mon épave. Vous cherchez la boîte. Tout le monde cherche la boîte.",
+   "qui": "Ossyraal"
+  }
  },
  {
   "id": "fragment-de-nyrrh",
@@ -4729,7 +4802,11 @@
   "connu": [
    "Les corails d'Agran réagissent à ses tempêtes.",
    "Elle protège Thaladrassyl derrière vingt kilomètres d'eau."
-  ]
+  ],
+  "citation": {
+   "texte": "Vous avez fait du chemin. Je l'ai senti depuis les courants de surface.",
+   "qui": "Kataron"
+  }
  },
  {
   "id": "thaladrassyl",
@@ -4752,7 +4829,8 @@
   "connu": [
    "Une procession doit avoir lieu bientôt.",
    "La sécurité de la ville est étonnamment faible."
-  ]
+  ],
+  "chapeau": "Une auberge de basalte poli, traversée de veines orangées qui diffusent une lueur constante. L'air est chaud mais contrôlé, comme dans un hammam sec, et sent l'épice grillée, la viande rôtie et la fumée résineuse. Des lanternes de verre fumé abritent de petites flammes bleutées, et une vasque de braises sert de foyer, de cuisine et de décor."
  },
  {
   "id": "serevya",
@@ -4774,7 +4852,8 @@
   "connu": [
    "Les prêtres du Temple surveillent surtout les Genasi de feu.",
    "Prophétie : « Les cheveux de flamme éteindront un jour la Flamme éternelle. »"
-  ]
+  ],
+  "chapeau": "Façade de cuivre poli et tentures couleur braise. À l'intérieur, une chaleur douce, des volutes de vapeur parfumée au safran, des vasques de verre rouge qui tamisent la lumière. Les mosaïques montrent des silhouettes dansantes faites de flammes stylisées. Les voix sont basses, rien n'est brusque ici."
  },
  {
   "id": "kaldon",
@@ -4819,7 +4898,8 @@
   "connu": [
    "Jane y a découvert un message à l'encre invisible de la Griffe.",
    "Les commandes de pyrracier se sont arrêtées d'un coup, et les dernières caisses sont parties vers Port Doëlan."
-  ]
+  ],
+  "chapeau": "À la lisière des quartiers de forge, dans une rue étroite encore tiède de la chaleur du jour. Murs noircis de suie, plafond bas qui retient la fumée, foyer mal entretenu. Une arrière-salle se cache derrière un rideau épais, pour les discussions qui ne doivent pas porter."
  },
  {
   "id": "morve",
@@ -4829,7 +4909,11 @@
   "parent": "taverne-de-la-griffe-pyrrah",
   "lieu": "taverne-de-la-griffe-pyrrah",
   "statut": "vivant",
-  "resume": "Producteur de la Griffe, inquiet de l'arrêt des commandes."
+  "resume": "Producteur de la Griffe, inquiet de l'arrêt des commandes.",
+  "citation": {
+   "texte": "On a livré les dernières caisses comme prévu, et depuis plus rien.",
+   "qui": "Un membre de la Griffe, taverne de Pyrrah"
+  }
  },
  {
   "id": "vire",
@@ -4860,7 +4944,8 @@
   "resume": "Forge taillée dans le basalte, canaux de métal fondu, enclume circulaire sur un bassin incandescent.",
   "connu": [
    "Les livraisons de pyrracier ont cessé : la mine est fermée."
-  ]
+  ],
+  "chapeau": "Une forge taillée directement dans une masse de basalte rouge. Des canaux de métal fondu serpentent autour des établis et éclairent la salle d'une lueur orange pulsée. Au centre, une enclume circulaire repose au-dessus d'un bassin incandescent gravé de symboles anciens, dont les flammes montent et redescendent comme une respiration."
  },
  {
   "id": "fyra",
@@ -4870,7 +4955,11 @@
   "parent": "forge-eternelle-pyrrah",
   "lieu": "forge-eternelle-pyrrah",
   "statut": "vivant",
-  "resume": "Jeune apprentie volubile. « La forge éternelle est reconnue à travers tous les plans comme la deuxième meilleure. Pardon, la meilleure ! »"
+  "resume": "Jeune apprentie volubile. « La forge éternelle est reconnue à travers tous les plans comme la deuxième meilleure. Pardon, la meilleure ! »",
+  "citation": {
+   "texte": "Yeaaah, des clients ! Qu'est-ce que je peux vous offrir… vous vendre ? Vous offrir d'acheter ? Ah !",
+   "qui": "Fyra, apprentie de Kaldros"
+  }
  },
  {
   "id": "mine-de-pyrrah",
@@ -4881,7 +4970,8 @@
   "resume": "Mine silencieuse sous la montagne. Des créatures de feu y ont attaqué les mineurs, et un portail instable s'ouvre au fond.",
   "connu": [
    "Trois mineurs ont disparu."
-  ]
+  ],
+  "chapeau": "Sous la montagne, la mine s'est tue, et avec elle le battement régulier de la cité. À l'entrée, des mineurs blessés et démoralisés. Dans les galeries, des traces de panique brutale : cadavres calcinés, matériel abandonné, parois noircies."
  },
  {
   "id": "milos",
@@ -4894,7 +4984,11 @@
   "resume": "Explique que ses hommes refusent de redescendre tant que la menace n'est pas éliminée.",
   "connu": [
    "« Trois mineurs ont disparu. Le reste refuse de descendre. »"
-  ]
+  ],
+  "citation": {
+   "texte": "Dans la mine, des créatures en feu ont attaqué. Trois mineurs ont disparu. Le reste refuse de descendre.",
+   "qui": "Milos, contremaître"
+  }
  },
  {
   "id": "athanor-d-ashkalyon",
@@ -4902,7 +4996,8 @@
   "nom": "L'Athanor d'Ashkalyon",
   "titre": "Dôme de verre rouge",
   "parent": "pyrrah",
-  "resume": "Atelier d'arcaniste sous un dôme de verre rouge, cristaux suspendus et rouages enchantés."
+  "resume": "Atelier d'arcaniste sous un dôme de verre rouge, cristaux suspendus et rouages enchantés.",
+  "chapeau": "Un dôme de verre rouge traversé de nervures de métal fondu solidifié. Des cristaux suspendus diffusent des vagues d'air frais. À l'intérieur : étagères de minerais incandescents, fioles luminescentes, manuscrits sur peau ignifugée, rouages enchantés qui tournent autour d'un brasero violet. L'air sent la cendre douce et l'ozone."
  },
  {
   "id": "ashkalyon",
@@ -4915,7 +5010,11 @@
   "resume": "Drakéide qui ne jure que par la recherche. Il confirme la prophétie des cheveux de flamme et peut détecter la marque de lumière sur Philippa.",
   "alias": [
    "Ashkalyon le Verracier"
-  ]
+  ],
+  "citation": {
+   "texte": "Mon inventaire est fort réduit, oui fort réduit pour le moment, n'est-ce pas. Mais si vous avez des idées ou des patrons, je peux vous aider à réaliser des objets sur mesure.",
+   "qui": "Ashkalyon le Verracier"
+  }
  },
  {
   "id": "brasero-aux-merveilles",
@@ -4923,7 +5022,8 @@
   "nom": "Le Brasero aux Merveilles",
   "titre": "Bric-à-brac",
   "parent": "pyrrah",
-  "resume": "Atelier improvisé sous un dais de toile rouge, objets incandescents ou refroidis, reliques de créatures du feu."
+  "resume": "Atelier improvisé sous un dais de toile rouge, objets incandescents ou refroidis, reliques de créatures du feu.",
+  "chapeau": "Un bric-à-brac installé dans une ruelle secondaire, sous un dais de toile rouge qui pulse sous la chaleur. Coffres de métal noir, fioles pendues à des cordelettes de cuivre, reliques de créatures du feu, outils étranges. Cliquetis et crépitements constants, chaleur tempérée pour ne pas effrayer la clientèle venue d'autres plans."
  },
  {
   "id": "krixis",
@@ -4936,7 +5036,11 @@
   "resume": "Vif et débrouillard, il aime les gadgets et ne fait commerce qu'avec une personne à la fois.",
   "alias": [
    "Krixis les écailles"
-  ]
+  ],
+  "citation": {
+   "texte": "J'achète, je vends, j'essaie de vendre plus que ce que j'achète, c'est la base du commerce, n'est-ce pas ?",
+   "qui": "Krixis les Écailles"
+  }
  },
  {
   "id": "thermes-solaires",
@@ -4947,7 +5051,8 @@
   "resume": "Complexe enterré : rotonde éclairée d'une pluie de lumière dorée, grotte de bassins turquoise, cascades fraîches.",
   "connu": [
    "Le bain tempéré retire un niveau d'épuisement lié à la chaleur."
-  ]
+  ],
+  "chapeau": "Un complexe monumental enterré sous la cité. Un escalier de marbre rouge plonge vers une rotonde colossale éclairée par un puits où la lumière dorée tombe comme une pluie chaude. Plus bas, une grotte aménagée aux larges bassins turquoise, des cascades qui refroidissent les eaux brûlantes du plan."
  },
  {
   "id": "ephyrion",
@@ -4991,7 +5096,8 @@
   "nom": "La basilique d'Héliandros",
   "titre": "Temple de Pyrrah",
   "parent": "pyrrah",
-  "resume": "Façade flanquée de statues de guerriers solaires, parvis de bassins aux flammes bleues. Nef sous une coupole d'étincelles."
+  "resume": "Façade flanquée de statues de guerriers solaires, parvis de bassins aux flammes bleues. Nef sous une coupole d'étincelles.",
+  "chapeau": "Le temple domine la cité comme une enclave de lumière condensée. La façade est flanquée de statues colossales de guerriers solaires, un parvis circulaire est bordé de bassins de flammes bleues qui ne consument rien. Dans la nef, la voûte se perd dans une mer d'étincelles et des rayons dorés tracent un damier mouvant de lumière sur le sol."
  },
  {
   "id": "pretres-de-la-flamme",
@@ -5025,7 +5131,8 @@
   "connu": [
    "Nolbrim y travaille sur ses prototypes.",
    "La harpe de chair faite du Landsknecht vaincu y est exposée."
-  ]
+  ],
+  "chapeau": "Une clairière enveloppée d'une lueur tamisée, où les feuilles épaisses filtrent la lumière en un vert profond, presque stagnant. À l'intérieur, l'odeur dense de terre humide se mêle aux parfums secs des poudres, des racines et des herbes pendues au plafond. Des masques effacés par le temps veillent depuis les murs, et le sol de bois sombre se plaint à chaque pas."
  },
  {
   "id": "nolbrim",
@@ -5041,6 +5148,14 @@
   ],
   "alias": [
    "Nolbrim Cuivre Rouge"
+  ],
+  "citation": {
+   "texte": "Jane, viens voir. Ton moteur interne est instable : tes cristaux tirent chacun sur une fréquence différente.",
+   "qui": "Nolbrim"
+  },
+  "histoire": [
+   "Pendant son coma, il a percé le Voile et trouvé une solution pour Jane : il manquait une âme pour stabiliser son exo-squelette.",
+   "!! Dans son laboratoire, il attaque Jane sur une table d'opération. Avec l'âme de Bourre-Piff que Gran Brijit lui tend, il arrache l'exo-squelette et le dos de Jane. Elle se réveille avec un gant de cristaux rouge."
   ],
   "img": "img/pnj/nolbrim.webp",
   "teinte": "#753c19"
@@ -5093,7 +5208,8 @@
   "resume": "Maison basse adossée à la paroi, comptoir de pierre brute. Un homme du village y a tenté de détrousser le groupe de nuit.",
   "connu": [
    "Gran Brijit a demandé au groupe s'il voulait gérer ça seul."
-  ]
+  ],
+  "chapeau": "Une maison basse adossée à la paroi rocheuse, où l'ombre s'accumule comme une seconde façade. L'air est lourd et frais, chargé de sable humide et d'huile brûlée. Une faible lampe vacille au-dessus d'un comptoir taillé dans la pierre brute. La nuit tombe vite, et le silence est si dense qu'on a l'impression qu'il écoute."
  },
  {
   "id": "zababa-mahir",
@@ -5113,7 +5229,11 @@
   "parent": "auberge-dans-la-roche",
   "lieu": "auberge-dans-la-roche",
   "statut": "vivant",
-  "resume": "Un des habitants qui réclament une taxe de protection aux étrangers."
+  "resume": "Un des habitants qui réclament une taxe de protection aux étrangers.",
+  "citation": {
+   "texte": "Vous n'êtes pas les bienvenus ici, les étrangers… Et si vous voulez rester, il faut payer pour notre protection !",
+   "qui": "Un brigand de l'auberge"
+  }
  },
  {
   "id": "herboriste-la-vie-des-dunes",
@@ -5121,7 +5241,8 @@
   "nom": "La Vie des Dunes",
   "titre": "Herboriste",
   "parent": "kazad-marunn",
-  "resume": "Échoppe creusée dans la roche, rideau de perles d'argile, fleurs séchées et racines torsadées."
+  "resume": "Échoppe creusée dans la roche, rideau de perles d'argile, fleurs séchées et racines torsadées.",
+  "chapeau": "Une échoppe creusée à même la roche, à l'ouverture basse marquée par un rideau de perles d'argile que le vent fait cliqueter. La lumière descend d'un puits discret sur des étagères de pierre couvertes de fleurs séchées, de racines torsadées et de fioles. L'air est frais, parfumé d'herbes brûlées et de terre sèche."
  },
  {
   "id": "ashran",
@@ -5131,7 +5252,11 @@
   "parent": "herboriste-la-vie-des-dunes",
   "lieu": "herboriste-la-vie-des-dunes",
   "statut": "vivant",
-  "resume": "Genasi de Terre au visage carré. Il est fier de sa qualité artisanale."
+  "resume": "Genasi de Terre au visage carré. Il est fier de sa qualité artisanale.",
+  "citation": {
+   "texte": "Entrez. Reprenez votre souffle. Dites-moi ce qu'il vous faut, et je verrai ce que le désert peut vous donner.",
+   "qui": "Ashran"
+  }
  },
  {
   "id": "tanneur-peau-de-sable",
@@ -5139,7 +5264,8 @@
   "nom": "Peau de Sable",
   "titre": "Tanneur",
   "parent": "kazad-marunn",
-  "resume": "Cour intérieure de pierre sèche, peaux qui durcissent au soleil."
+  "resume": "Cour intérieure de pierre sèche, peaux qui durcissent au soleil.",
+  "chapeau": "Une petite cour intérieure protégée par des murs de pierre sèche, où des peaux tannées pendent à des cordes en durcissant au soleil. L'odeur de cuir chauffé se mêle à celle du sable chaud. La boutique n'est qu'une pièce sombre et fraîche, remplie de sacs, de brassards et de vestes suspendues."
  },
  {
   "id": "maara-namtarun",
@@ -5152,7 +5278,11 @@
   "resume": "Femme fine à la peau ridée par le vent. « Si c'est pour faire joli, allez voir un tisseur. »",
   "alias": [
    "Maara Namtarun"
-  ]
+  ],
+  "citation": {
+   "texte": "Si vous êtes venus pour du solide, vous êtes au bon endroit. Si c'est pour faire joli… allez voir un tisseur.",
+   "qui": "Maara Namtarûn"
+  }
  },
  {
   "id": "atelier-sahrim",
@@ -5160,7 +5290,8 @@
   "nom": "L'atelier Sahrim",
   "titre": "Potier",
   "parent": "kazad-marunn",
-  "resume": "Façade ouverte sur la ruelle, grandes poteries ocre qui sèchent."
+  "resume": "Façade ouverte sur la ruelle, grandes poteries ocre qui sèchent.",
+  "chapeau": "Un atelier à la façade entièrement ouverte sur la ruelle, comme une bouche de pierre. De grandes poteries ocre sèchent dehors, et à l'intérieur l'air est frais, saturé d'argile humide et de cendres froides. Un tour de potier en pierre occupe le centre. Rien n'est brillant : tout est mat, minéral, taillé pour durer."
  },
  {
   "id": "sahrim",
@@ -5173,7 +5304,11 @@
   "resume": "Genasi de Terre massif, convaincu que ses bols vaudraient une fortune à Rivegard.",
   "alias": [
    "Hazar"
-  ]
+  ],
+  "citation": {
+   "texte": "Les gens pensent qu'une poterie, c'est un récipient. Ils ne voient jamais le geste, ni le silence qu'il faut pour la créer.",
+   "qui": "Sahrim"
+  }
  },
  {
   "id": "bibliotheque-enfouie",
@@ -5184,7 +5319,8 @@
   "resume": "Fronton brisé, escaliers à demi submergés, rayonnages effondrés dans le sable.",
   "connu": [
    "Les chroniques y décrivent la Bataille des Sables et le mage Aram Sharûn."
-  ]
+  ],
+  "chapeau": "Une excroissance à moitié avalée par les dunes : un fronton brisé, des escaliers à demi submergés, une porte de pierre fendue dont l'ouverture respire un souffle froid. À l'intérieur, la poussière ancienne et l'encre séchée. Les rayonnages effondrés se mêlent au sable, et les livres sont gonflés, craquelés, parfois scellés par des dépôts minéraux."
  },
  {
   "id": "bataille-des-sables",
@@ -5230,6 +5366,10 @@
    "Al-Batūn",
    "Al Batūn"
   ],
+  "citation": {
+   "texte": "Prenez garde, la fosse est gardée par Al Batun, le vorace, c'est lui qui possède la clef pour y accéder.",
+   "qui": "Ashur, à propos d'Al Batun"
+  },
   "lieu": "kazad-marunn"
  },
  {
@@ -5241,7 +5381,8 @@
   "resume": "Gouffre aux abords de la ville où furent jetés les mages de la Bataille des Sables.",
   "alias": [
    "Fosse des Mille Sables"
-  ]
+  ],
+  "chapeau": "Aux abords de Khazad-Marûn, le désert se creuse en un gouffre immense, une faille sombre qui semble avaler la lumière. Le vent y descend en un sifflement grave. La paroi est striée d'érosion, et en contrebas on distingue des ossements blanchis, des fragments de tissu et des restes d'armures anciennes. Même la gravité semble hésiter à y pénétrer."
  },
  {
   "id": "tour-de-resonance",
@@ -5253,7 +5394,8 @@
   "connu": [
    "Un golem de résonance temporelle y gardait l'Hexacore.",
    "Des tiques d'arcane, un golem de verre et un golem de bronze en défendaient les salles."
-  ]
+  ],
+  "chapeau": "Les ruines du complexe d'Aram Sharûn se dressent au milieu du désert comme un squelette brisé. La pierre est fendillée, creusée par le vent, et les colonnes effondrées forment un cercle irrégulier où le sable s'accumule. L'air y est plus froid qu'ailleurs, comme si le lieu respirait encore une mémoire ancienne. Au centre, une dalle gravée traversée d'une fente lumineuse."
  },
  {
   "id": "tique-d-arcane",
@@ -5278,6 +5420,10 @@
   "alias": [
    "Gikyo"
   ],
+  "citation": {
+   "texte": "T'approche pas. Tu pues les racines mortes. T'avancer encore d'un pas… c'est mourir.",
+   "qui": "Gikyo Noshi Buru"
+  },
   "lieu": "kazad-marunn"
  },
  {
@@ -5300,7 +5446,8 @@
   "nom": "La chapelle de l'orphelinat",
   "titre": "Bureau de la Rectrice",
   "parent": "orphelinat-merigold",
-  "resume": "Chapelle de l'orphelinat où la Rectrice reçoit. Un bâtiment annexe confortable lui sert de salle à manger."
+  "resume": "Chapelle de l'orphelinat où la Rectrice reçoit. Un bâtiment annexe confortable lui sert de salle à manger.",
+  "chapeau": "Les portes de la chapelle restent entrouvertes sur une lumière chaude. Derrière, une salle annexe dissimulée sert de salle des déguisements : costumes, masques, capes et coffres verrouillés. C'est ici que la Rectrice reçoit ses enfants et distribue ses ordres."
  },
  {
   "id": "klaus",
@@ -5328,7 +5475,8 @@
   "nom": "Le village",
   "titre": "Pluie, boue et lanternes",
   "parent": "leyenmil",
-  "resume": "Village refermé sur lui-même sous la pluie. Seule l'auberge diffuse une chaleur stable."
+  "resume": "Village refermé sur lui-même sous la pluie. Seule l'auberge diffuse une chaleur stable.",
+  "chapeau": "Pluie battante, boue épaisse, lanternes vacillantes. Le village semble refermé sur lui-même, et seule l'auberge diffuse une chaleur stable au cœur de la nuit. Un vendeur de poisson tend un morceau de poisson salé sans poser de question, le marchand d'armes ferme sa porte aux enfants."
  },
  {
   "id": "m-weller",
@@ -5351,7 +5499,11 @@
   "parent": "village-de-leyenmil",
   "lieu": "village-de-leyenmil",
   "statut": "vivant",
-  "resume": "Il ferme la porte aux enfants : « Revenez quand vous serez grands. »"
+  "resume": "Il ferme la porte aux enfants : « Revenez quand vous serez grands. »",
+  "citation": {
+   "texte": "Vous êtes trop jeunes pour tout ça. Revenez quand vous serez grands.",
+   "qui": "Mr. Kessler, marchand d'armes"
+  }
  },
  {
   "id": "m-copperworth",
@@ -5364,7 +5516,11 @@
   "resume": "Il abrite les enfants, avec du lait chaud et un feu.",
   "alias": [
    "Copperworth"
-  ]
+  ],
+  "citation": {
+   "texte": "Ne l'écoutez pas. Il ne sait pas ce qu'il dit.",
+   "qui": "Mr. Copperworth, aubergiste"
+  }
  },
  {
   "id": "otto",
@@ -5382,7 +5538,8 @@
   "nom": "La maison Kornwald",
   "titre": "Grille noire et fontaine",
   "parent": "leyenmil",
-  "resume": "Maison au fond du village, en hauteur, à l'orée des arbres. Deux gardes à l'entrée."
+  "resume": "Maison au fond du village, en hauteur, à l'orée des arbres. Deux gardes à l'entrée.",
+  "chapeau": "Une maison au fond du village, derrière une grille noire et un jardin détrempé. Fontaine centrale, fenêtres allumées, forêt dense à l'arrière-plan. Deux lanternes encadrent l'entrée et des silhouettes montent la garde sous la pluie."
  },
  {
   "id": "gardes-de-kornwald",
@@ -5464,7 +5621,8 @@
   "connu": [
    "Les tonneaux sont anormalement grands pour l'exploitation.",
    "860 po cachées dans le bureau."
-  ]
+  ],
+  "chapeau": "Une clairière dans l'épaisseur du bois, où subsiste un vignoble oublié : quelques rangs de vignes maigres, mal taillées, aux ceps tordus. Au centre, un vieux corps de ferme massif sans être noble, solide sans être sain, dont certaines pierres semblent prêtes à céder. Pas de fumée, pas de voix, pas de pas. La nuit s'annonce, patiente."
  },
  {
   "id": "dimir",
@@ -5474,7 +5632,11 @@
   "parent": "vignoble-abandonne",
   "lieu": "vignoble-abandonne",
   "statut": "vivant",
-  "resume": "Vieux paysan au sourire figé, qui retenait un employé enchaîné."
+  "resume": "Vieux paysan au sourire figé, qui retenait un employé enchaîné.",
+  "citation": {
+   "texte": "La forêt est cruelle, surtout pour ceux qui ne savent pas obéir. Vous le ramènerez, n'est-ce pas ?",
+   "qui": "Dimir"
+  }
  },
  {
   "id": "iulia",
@@ -5484,7 +5646,11 @@
   "parent": "vignoble-abandonne",
   "lieu": "vignoble-abandonne",
   "statut": "vivant",
-  "resume": "Femme de Dimir, d'une douceur trop insistante."
+  "resume": "Femme de Dimir, d'une douceur trop insistante.",
+  "citation": {
+   "texte": "Oh… vous savez… il était fragile, ce garçon. Il avait besoin qu'on veille sur lui, nuit et jour.",
+   "qui": "Iulia"
+  }
  },
  {
   "id": "spano",
@@ -5494,7 +5660,11 @@
   "parent": "vignoble-abandonne",
   "lieu": "vignoble-abandonne",
   "statut": "vivant",
-  "resume": "Retenu prisonnier au vignoble, sauvé du loup par le groupe. « Ils souriaient tout le temps, même quand ils fermaient la chaîne. »"
+  "resume": "Retenu prisonnier au vignoble, sauvé du loup par le groupe. « Ils souriaient tout le temps, même quand ils fermaient la chaîne. »",
+  "citation": {
+   "texte": "Ils souriaient tout le temps… même quand ils fermaient la chaîne.",
+   "qui": "Spano"
+  }
  },
  {
   "id": "ivy",

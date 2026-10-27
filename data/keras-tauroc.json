@@ -2052,6 +2052,10 @@
    "Le cercle de téléportation vers Port Doëlan y est installé."
   ],
   "chapeau": "Au bout d'une ruelle en pente, massive et vénérable, la tour est rongée de lierre et de lichen, ses fanions usés immobiles. La porte est entrebâillée. À l'intérieur, une odeur de tabac froid et de parchemin moisi.",
+  "histoire": [
+   "!! Eamonn appelle les joueuses en urgence : la tour est attaquée. Elles battent les agresseurs, qui disparaissent dans un nuage de soufre en laissant une liste de cibles estampillée du sceau du Tribunal de Chair.",
+   "!! La liste porte les noms : Eamonn, Olyssane, Jane, Philippa, Ink, et Harfang suivi d'un point d'interrogation."
+  ],
   "galerie": [
    {
     "img": "img/paysages/cap-cornes/tour-eamonn.webp",
@@ -2150,6 +2154,7 @@
   "connu": [
    "Philippa y a eu une vision d'une balance désaxée. Olyssane y a ouvert le passage en faisant couler son sang."
   ],
+  "chapeau": "Un salon encombré de fioles, de grimoires ouverts et de fragments de créatures gelés dans des bocaux. La lumière tombe en nappes calmes d'une fenêtre étroite, les herbes suspendues diffusent une odeur amère, mêlée à celle du thé noir oublié. Sur la table, les restes du Landsknecht forment une harpe de chair dont les cordes tintent au moindre courant d'air.",
   "galerie": [
    {
     "img": "img/paysages/cap-cornes/cabane-gran-brijit.webp",
@@ -3776,6 +3781,7 @@
   "alias": [
    "Valar Taurok"
   ],
+  "chapeau": "Le palais de la Maison Tauroc, résidence du Consul Draval Tauroc. Le style est romain : méandres, angles droits, aucune courbe, ocre, or et terracotta.",
   "galerie": [
    {
     "img": "img/paysages/keras-tauroc/palais-tauroc.webp",
@@ -3789,7 +3795,8 @@
   "nom": "La Longue Vue",
   "titre": "Tour de surveillance au nord",
   "parent": "region-roshen-buru",
-  "resume": "Tour de surveillance de Roshen Buru qui guette l'océan et les passages maritimes."
+  "resume": "Tour de surveillance de Roshen Buru qui guette l'océan et les passages maritimes.",
+  "chapeau": "Une tour de surveillance de Roshen Buru tournée vers l'océan, qui guette les passages maritimes."
  },
  {
   "id": "port-gorash",
