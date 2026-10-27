@@ -845,10 +845,6 @@
     "ton": "neutre"
    }
   ],
-  "rune": {
-   "etat": "active",
-   "note": "Craie posée par Philippa dans une auberge de Rochenborough."
-  },
   "galerie": [
    {
     "img": "img/paysages/roshen-buru/rue.webp",
@@ -2880,6 +2876,10 @@
   },
   "carte": "ville",
   "zoom": 0.12,
+  "rune": {
+   "etat": "active",
+   "note": "Craie posée par Philippa dans le salon de thé de Rochenborough."
+  },
   "chapeau": "La porte coulisse sur une odeur de feuilles brûlées et de bois humide. Il fait sombre, d'une pénombre chaude : les lanternes sont basses, la lumière rampe au sol, et le plafond noirci de fumée retient les voix. Derrière le comptoir, un homme massif essuie une tasse sans lever les yeux. Le thé coûte trois pièces, une chambre quinze, et on ne pose pas de questions sur les autres."
  },
  {

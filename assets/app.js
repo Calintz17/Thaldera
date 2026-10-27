@@ -4,7 +4,7 @@
 (() => {
 'use strict';
 
-const VER = '27';
+const VER = '28';
 const EDIT = new URLSearchParams(location.search).has('edit');
 const $ = (s, r = document) => r.querySelector(s);
 const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
@@ -646,13 +646,22 @@ function connuHtml(e) {
   let items = (e.connu || []).map(t => `<li>${L(t, e.id)}</li>`).join('');
   return items ? `<ul>${items}</ul>` : '';
 }
+const tgt = c => { if (c.redirige && BY[c.redirige]) return tgt(BY[c.redirige]); const m = mainOf(c); return m ? m : c; };
+function upOf(e) {
+  const mp = mergedPlace(e);
+  let c = mp ? BY[mp.parent] : (e.parent ? BY[e.parent] : null);
+  let g = 0;
+  while (c && g++ < 12 && (tgt(c) === e || c === e)) c = c.parent ? BY[c.parent] : null;
+  return c;
+}
 function crumbs(e) {
   const mp = mergedPlace(e);
-  const ch = chain(e).filter(c => c !== mp);
+  const ch = chain(e).filter(c => c !== mp && c !== e && tgt(c) !== e);
   const parts = ['<a href="#/">Monde</a>'];
-  ch.forEach((c, i) => parts.push(i === ch.length - 1 ? `<span>${esc(c.nom)}</span>` : `<a href="#/${c.id}">${esc(c.nom)}</a>`));
-  const upE = mp ? BY[mp.parent] : (e.parent ? BY[e.parent] : null);
-  const up = upE ? '#/' + upE.id : '#/';
+  ch.forEach(c => parts.push(`<a href="#/${tgt(c).id}">${esc(c.nom)}</a>`));
+  parts.push(`<span>${esc(e.nom)}</span>`);
+  const upE = upOf(e);
+  const up = upE ? '#/' + tgt(upE).id : '#/';
   const upName = upE ? upE.nom : 'Monde';
   return `<nav class="crumbs"><a class="back" href="${up}" title="Retour : ${esc(upName)}">‹ Retour</a>${parts.join('<span class="sep">›</span>')}</nav>`;
 }
@@ -799,7 +808,7 @@ function renderPanel(e, q) {
 
 /* ---------- routage ---------- */
 let TOKEN = 0;
-function goUp(e) { const mp = mergedPlace(e); const par = mp ? mp.parent : e.parent; location.hash = par ? '#/' + par : '#/'; }
+function goUp(e) { const u = upOf(e); location.hash = u ? '#/' + tgt(u).id : '#/'; }
 
 async function route() {
   const my = ++TOKEN;

@@ -709,8 +709,8 @@
   "type": "pnj",
   "nom": "Shoba",
   "titre": "Fumeuse de poisson",
-  "parent": "brakka",
-  "lieu": "brakka",
+  "parent": "fumerie-de-shoba",
+  "lieu": "fumerie-de-shoba",
   "statut": "vivant",
   "resume": "Vieille Pachidan aux défenses taillées court, en deuil.",
   "connu": [
@@ -1357,7 +1357,7 @@
   "type": "pnj",
   "nom": "Chrysodoros",
   "titre": "Orfèvre",
-  "parent": "keras-tauroc",
+  "parent": "atelier-de-chrysodoros",
   "statut": "vivant",
   "resume": "Orfèvre qui ne sert que sur recommandation.",
   "connu": [
@@ -1365,6 +1365,7 @@
    "Absalom lui demandait une relique liée à un pouvoir ancien, peut-être d'avant la grande catastrophe, et s'informait sur la provenance des pierres précieuses. Il l'a orientée vers la Maison Tauroc.",
    "Il l'a revue le lendemain près du port, avec l'air d'une femme qui avait pris une décision."
   ],
+  "lieu": "atelier-de-chrysodoros",
   "citation": {
    "texte": "Ah, les grands vainqueurs de l'arène ! Félicitations à vous ! Force et honneur !",
    "qui": "Chrysodoros, après les Cornes d'Or, traduit"
@@ -1377,7 +1378,6 @@
   ],
   "img": "img/pnj/chrysodoros.webp",
   "attitude": "neutre",
-  "lieu": "keras-tauroc",
   "teinte": "#755219"
  },
  {
