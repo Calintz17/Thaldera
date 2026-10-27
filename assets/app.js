@@ -4,7 +4,7 @@
 (() => {
 'use strict';
 
-const VER = '13';
+const VER = '14';
 const EDIT = new URLSearchParams(location.search).has('edit');
 const $ = (s, r = document) => r.querySelector(s);
 const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
@@ -484,7 +484,7 @@ function setCutout(e, form) {
   c.className = 'cutout' + (src ? '' : ' ph');
   const tn = (form && form.teinte) || e.teinte || '#3a2a14';
   c.style.setProperty('--tn', tn);
-  c.innerHTML = `<i class="band"></i><span class="cn">${esc(e.nom)}</span><img src="${src || PH_SIL}" alt="${esc(e.nom)}">`;
+  c.innerHTML = `<i class="glow"></i><img src="${src || PH_SIL}" alt="${esc(e.nom)}">`;
   stageEl.insertBefore(c, $('.fog', stageEl));
   const ci = $('img', c);
   const cfit = () => { if (ci.naturalHeight && src) ci.style.maxHeight = Math.min(stageEl.clientHeight * 0.88, ci.naturalHeight * 1.3) + 'px'; };
@@ -677,6 +677,7 @@ function renderPanel(e, q) {
   else h += sec('Ce que le groupe sait', savoirHtml(e));
   if (e.type === 'pj') h += sec('Enjeux et quête en cours', ul(e.histoire, e.id), 'past');
   if (e.question) h += sec('En suspens', `<p class="qs">${L(e.question, e.id)}</p>`);
+  if (e.citation) h += `<blockquote class="cite"><p>${esc(e.citation.texte)}</p>${e.citation.qui ? `<cite>${esc(e.citation.qui)}</cite>` : ''}</blockquote>`;
   if (e.type !== 'pnj' && e.type !== 'pj') { const rel = relations(e); if (rel) h += sec('Liens', rel); }
 
   // enfants

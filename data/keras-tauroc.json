@@ -1817,17 +1817,21 @@
   "id": "silas-mort-doree",
   "type": "pnj",
   "nom": "Silas Mort-Dorée",
-  "titre": "Agent de Vassago",
+  "titre": "Fey rogue, agent de Vassago",
   "parent": "descente-khor-selash",
   "statut": "inconnu",
-  "question": "Vassago rappellera-t-il Silas ?",
+  "question": "Vassago renverra-t-il Silas ?",
   "alias": [
    "Silas"
   ],
-  "resume": "Fey rogue envoyé par Vassago, vaincu sur le Tenrai Buru.",
+  "resume": "Fey rogue au sourire de marchand, courtois et un peu trop reconnaissant. Il a embarqué sur le bateau du groupe pour le compte de Vassago.",
   "connu": [
-   "Il se présente comme un marchand en détresse. Il interroge Philippa sur les dettes et l'ingratitude, et tente de lui voler le Fragment la nuit.",
-   "Le groupe l'a vaincu sur le pont. Il n'est vaincu que sur le plan matériel : Vassago peut le rappeler."
+   "Sur la lande plate de la Khor Selash, sous un ciel ambré, le groupe aperçoit une silhouette qui agite les bras sur la berge.",
+   "Il se présente comme un marchand en détresse, perdu depuis des jours. Le groupe l'invite à bord.",
+   "À bord il est courtois, reconnaissant, légèrement louche.",
+   "Il interroge Philippa sur les dettes et l'ingratitude : celui qui vole son protecteur, et refuse de rendre ce qui ne lui appartient pas.",
+   "La nuit, il tente de lui voler le Fragment dans son sac.",
+   "Découvert, il se bat sur le pont et il est vaincu par le groupe."
   ],
   "relations": [
    {
@@ -1836,6 +1840,10 @@
     "ton": "negatif"
    }
   ],
+  "citation": {
+   "texte": "Comme voler son protecteur, qui a tant fait pour toi, et avoir un objet qui lui appartient et refuser de le lui rendre.",
+   "qui": "Silas Mort-Dorée, à Philippa"
+  },
   "galerie": [
    {
     "img": "img/paysages/roshen-buru/voyage-silas-mort-doree.webp",
