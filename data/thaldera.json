@@ -5312,7 +5312,8 @@
   "resume": "Trois pierres noires en arc de cercle, fissure turquoise sur la pierre centrale. Les Pachidan y vénèrent Ashvûr-tesh, l'horizon d'eau.",
   "connu": [
    "Un symbole de Vassago a été gravé sur la pierre de gauche."
-  ]
+  ],
+  "chapeau": "Trois pierres noires dressées en arc de cercle sur une plateforme de dalles grises, face à la mer. Une fissure turquoise lumineuse court le long de la pierre centrale comme une veine vivante. Deux bougies de chaque côté, une toile de lin contre le soleil, et l'odeur du sel et de la cire chaude."
  },
  {
   "id": "boru-pretre-de-brakka",
@@ -5325,7 +5326,11 @@
   "resume": "Prêtre qui médite devant la pierre centrale. Il a soigné Absalom pendant plusieurs jours.",
   "alias": [
    "Boru"
-  ]
+  ],
+  "citation": {
+   "texte": "Elle est arrivée entre mort et vie. Je lui ai rendu la vie. Elle est repartie, forte.",
+   "qui": "Boru, en istran, traduit"
+  }
  },
  {
   "id": "fumerie-de-shoba",
@@ -5333,7 +5338,8 @@
   "nom": "La fumerie de Shoba",
   "titre": "Fournil naturel dans la falaise",
   "parent": "brakka",
-  "resume": "Poissons salés sur des perches au-dessus d'un feu de bois vert."
+  "resume": "Poissons salés sur des perches au-dessus d'un feu de bois vert.",
+  "chapeau": "À l'écart du quai, dans un renfoncement de la falaise qui sert de fournil naturel, la fumée monte en colonnes grises et régulières. Quatre rangées de poissons ventrés et salés pendent au-dessus d'un feu bas, nourri de bois vert et d'herbes séchées."
  },
  {
   "id": "campement-detruit-steppes",
@@ -5345,37 +5351,8 @@
   "connu": [
    "Deux écuelles au feu : quelqu'un de plus petit mangeait avec eux.",
    "Une bague à armoiries est plantée près du totem."
-  ]
- },
- {
-  "id": "szara",
-  "type": "pnj",
-  "nom": "Szara",
-  "titre": "Githyanki voyageuse",
-  "parent": "gorge-du-mesa",
-  "lieu": "gorge-du-mesa",
-  "statut": "vivant",
-  "resume": "Peau bleu nuit tachetée, yeux jaunes. Elle trouve les joueuses intéressantes comme un casse-tête."
- },
- {
-  "id": "zyrith",
-  "type": "pnj",
-  "nom": "Zyrith",
-  "titre": "Serpent de Szara",
-  "parent": "gorge-du-mesa",
-  "lieu": "gorge-du-mesa",
-  "statut": "vivant",
-  "resume": "Énorme serpent calme, enroulé autour de ses épaules. Il accepte un morceau d'œuf de la main de Sevik."
- },
- {
-  "id": "iku",
-  "type": "pnj",
-  "nom": "Iku",
-  "titre": "Moine de Roshen Buru masqué",
-  "parent": "gorge-du-mesa",
-  "lieu": "gorge-du-mesa",
-  "statut": "vivant",
-  "resume": "Robe gris-vert, masque de bois à longues oreilles. Il ne parle qu'Istran, en phrases très courtes."
+  ],
+  "chapeau": "Le soleil tombe vite sur les steppes, et la lumière qui reste est orange, rasante, sans pitié. Des tentes éventrées, un feu mort depuis des heures, du matériel éparpillé. Et cinq corps, allongés dans des positions qui racontent chacune une fin différente. Même le vent s'est arrêté."
  },
  {
   "id": "les-quatre-lames",

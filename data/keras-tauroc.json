@@ -727,7 +727,8 @@
    "Tembo, un jeune Pachidan, l'oriente vers Urrak, l'ancien du village.",
    "Shoba, la fumeuse de poisson, lui parle d'une étrangère nommée Vasha, restée une semaine : Absalom.",
    "Urrak accueille officiellement le groupe, qui repart dans les steppes avec du poisson séché."
-  ]
+  ],
+  "chapeau": "Les falaises ocre et sang tombent droit dans une eau devenue turquoise. En dessous, une plage de sable roux et de galets sombres, et quelques constructions basses en pisé rougeâtre, comme poussées là par la colline. Toits de chaume tressé, une tour au centre qui regarde la mer, une maison sur pilotis au bout d'un ponton. L'odeur est celle du sel, du poisson séché et du bois chauffé par le soleil."
  },
  {
   "id": "tembo",
@@ -744,7 +745,11 @@
   ],
   "histoire": [
    "Il renvoie le groupe vers Urrak, qui comprend les étrangers."
-  ]
+  ],
+  "citation": {
+   "texte": "Bienvenue, Philippa. Bienvenue, Jane. Vous êtes à Brakka, en terre d'Istra-Belig.",
+   "qui": "Tembo, en istran, traduit"
+  }
  },
  {
   "id": "urrak",
@@ -769,7 +774,11 @@
     "type": "Poisson séché",
     "ton": "neutre"
    }
-  ]
+  ],
+  "citation": {
+   "texte": "Elle est venue. Vous venez. Brakka n'a jamais vu d'étrangers, alors pourquoi maintenant ?",
+   "qui": "Urrak, en istran, traduit"
+  }
  },
  {
   "id": "shoba",
@@ -791,7 +800,11 @@
     "type": "Témoin de son passage",
     "ton": "neutre"
    }
-  ]
+  ],
+  "citation": {
+   "texte": "Elle est partie. Les steppes. Sans au revoir, sans un mot, et maintenant Brakka respire.",
+   "qui": "Shoba, en istran, traduit"
+  }
  },
  {
   "id": "gorge-du-mesa",
@@ -812,7 +825,8 @@
    "À l'aube, deux Rakh affamés attaquent le campement. Le groupe les dresse avec le poisson d'Urrak.",
    "Voraan, chef de la caravane, voit dans leur arrivée un signe favorable. Sa fille Sevik, humaine élevée chez les Taurok, est furieuse que des étrangers troublent son rituel de passage.",
    "Le groupe monte à la falaise cueillir les œufs du rituel de Sevik, sous les yeux de la caravane."
-  ]
+  ],
+  "chapeau": "La gorge s'ouvre sans prévenir dans la plaine rouge, comme une blessure dans la terre. Les parois montent à pic, ocre et noires de stries anciennes. Au milieu du passage, une caravane entière installée comme si elle avait toujours été là : tentes de cuir brun et de toile safran, feux bas, et sur une table de pierre naturelle, cinq œufs verts et écailleux. Autour, personne ne parle fort."
  },
  {
   "id": "voraan",
@@ -832,7 +846,11 @@
     "type": "Fille",
     "ton": "positif"
    }
-  ]
+  ],
+  "citation": {
+   "texte": "Vous ne connaissez pas nos rituels. Mais vous y êtes bienvenus, si vous le souhaitez.",
+   "qui": "Voraan, en istran, traduit"
+  }
  },
  {
   "id": "sevik",
@@ -853,7 +871,11 @@
     "type": "Père",
     "ton": "positif"
    }
-  ]
+  ],
+  "citation": {
+   "texte": "Partez, étrangers. Ce rituel n'est pas le vôtre !",
+   "qui": "Sevik, en istran, traduit"
+  }
  },
  {
   "id": "thaal",
@@ -867,7 +889,11 @@
   "connu": [
    "Son verdict est double : les étrangers ne peuvent pas traverser pendant le rituel. Leur arrivée est un signe, ils sont les bienvenus dans le camp.",
    "Dans les braises, il voit que le groupe porte quelque chose de lourd. « Une vieille route. Vous comprendrez. »"
-  ]
+  ],
+  "citation": {
+   "texte": "Vous avez marché sur une vieille route. Maintenant, une route de danger. Vous êtes forts, mais peu vivants.",
+   "qui": "Thaal, en istran, traduit"
+  }
  },
  {
   "id": "monastere-des-steppes",
@@ -896,7 +922,8 @@
     "type": "Moine",
     "ton": "neutre"
    }
-  ]
+  ],
+  "chapeau": "L'herbe rouge pousse ici plus dense, plus haute, portée par une humidité que les steppes en contrebas ne connaissent pas. Niché sous une voûte naturelle creusée dans la roche comme une mâchoire ouverte vers le ciel, un monastère de pierre ocre aux toits de tuile rouge fissurés. De la végétation partout. Beau et mort depuis longtemps, mais pas vide."
  },
  {
   "id": "frere-ossian",
@@ -979,6 +1006,7 @@
    "Backstage où Fulvia enregistre les combattants, gradins, loge d'honneur de Vitiosa, prêtre-guérisseur au bord de l'arène (soins payants), vendeurs de potions.",
    "Après le festival, il devient son propre fantôme : gradins déserts, détritus partout, une seule lampe allumée dans la loge d'honneur."
   ],
+  "chapeau": "Les vestiaires sentent la sueur séchée, le cuir huilé et quelque chose de métallique qu'on préfère ne pas identifier. Des armures s'accumulent sur des crochets, des bancs usés longent les murs. Le soir de la finale, la foule se lève d'un seul mouvement et le son appuie sur la poitrine. Au lendemain, le colisée n'est plus que son propre fantôme : silence épais, gradins déserts, détritus partout.",
   "galerie": [
    {
     "img": "img/paysages/keras-tauroc/arene-vitiosa-demon.webp",
@@ -1004,6 +1032,7 @@
   "histoire": [
    "Le groupe y trouve un autel secondaire aux armes de Vassago et combat le Démon des Mains."
   ],
+  "chapeau": "La cathédrale s'élève sur la place centrale comme une déclaration d'intention. La pierre est ancienne, les colonnes portent des bas-reliefs de guerriers en marche. Mais quelque chose ne va pas : l'encens est trop épais, comme s'il compensait quelque chose, et une pression légèrement froide pèse derrière les yeux, comme un son trop aigu pour être entendu.",
   "galerie": [
    {
     "img": "img/paysages/keras-tauroc/cathedrale-de-kord.webp",
@@ -1024,6 +1053,7 @@
   "connu": [
    "Tout y est ordonné comme un système. C'est l'auberge de référence pour les étrangers de qualité."
   ],
+  "chapeau": "L'atrium s'ouvre comme une respiration après l'étroitesse de la rue. L'air sent le bois de cèdre et quelque chose de propre, presque médical, qui vient des bains du sous-sol. Des colonnes de marbre pâle encadrent un bassin central où l'eau reflète les torches. Tout est ordonné avec une précision qui ressemble moins au confort qu'à un système.",
   "galerie": [
    {
     "img": "img/paysages/keras-tauroc/angues-dormientes.webp",
@@ -1044,6 +1074,7 @@
   "connu": [
    "Philippa y a chanté chaque soir pendant le mois perdu."
   ],
+  "chapeau": "L'auberge du quartier nord sent la bière tiède et la sueur honnête. La salle commune est le cœur social du quartier étranger : bruyante, éclairée au jaune, des tables au bois ciré autant que possible.",
   "galerie": [
    {
     "img": "img/paysages/keras-tauroc/cornua-fracta.webp",
@@ -1064,6 +1095,7 @@
   "connu": [
    "Le groupe y a acheté Mâchoire, Caput Tauri et la Cuirasse Aurée."
   ],
+  "chapeau": "La chaleur arrive avant le bruit : un mur de braise et d'air chargé qui colle aux vêtements dès le seuil. Le soufflet aspire, l'enclume répond dans un rythme naturel. L'odeur est âcre, minérale, le fer en fusion dégage une fumée légèrement orangée. Les murs sont couverts d'outils accrochés avec une précision militaire, et d'une plaque gravée à l'entrée où figurent les prix.",
   "galerie": [
    {
     "img": "img/paysages/keras-tauroc/malleus-cadens.webp",
@@ -1084,6 +1116,7 @@
   "connu": [
    "C'est un point de retour permanent vers Keras Tauroc."
   ],
+  "chapeau": "La boutique sent les herbes séchées et la résine dès le coin de la rue, une odeur dense qui attire autant qu'elle prévient. L'intérieur est encombré mais organisé, des étagères du sol au plafond. Ursinus se déplace entre ses préparations avec la lenteur de quelqu'un qui n'a jamais été pressé, et offre un thé chaud à quiconque entre.",
   "galerie": [
    {
     "img": "img/paysages/keras-tauroc/mandragora-viridis.webp",
@@ -1104,6 +1137,7 @@
   "connu": [
    "Elle refuse tout inconnu sans recommandation."
   ],
+  "chapeau": "Pas d'enseigne, juste un symbole gravé dans la pierre au-dessus de la porte. De l'extérieur, rien ne distingue cet endroit d'un entrepôt. Dedans : des étagères du sol au plafond, des objets rangés avec une précision presque obsessionnelle, une lumière tamisée dont on ne localise pas les sources.",
   "galerie": [
    {
     "img": "img/paysages/keras-tauroc/cinis-et-caligo.webp",
@@ -1127,6 +1161,7 @@
   "histoire": [
    "Sur les docks, Absalom prend le groupe de court avec Modify Memory. Le groupe se réveille en prison, un mois plus tard."
   ],
+  "chapeau": "Le quartier des docks commence là où les rues pavées laissent place aux planches et à la boue compacte. Le fleuve est large, lent, d'une couleur ocre qui vient des steppes en amont. Des barges à fond plat attendent contre les piliers. Ça sent le bois humide, le poisson séché et la graisse de corde.",
   "galerie": [
    {
     "img": "img/paysages/keras-tauroc/docks.webp",
@@ -1147,6 +1182,7 @@
   "histoire": [
    "Le groupe y est attaqué par deux soldats en permission payés par Ferox. Il les capture."
   ],
+  "chapeau": "La tannerie sent encore le cuir et la cendre. La ruelle derrière elle sent le cuir raté et l'eau stagnante. Hématome est assis sur une caisse retournée, deux de ses hommes derrière lui, et regarde entrer sans bouger.",
   "galerie": [
    {
     "img": "img/paysages/keras-tauroc/planque-hematome.webp",
@@ -1164,6 +1200,7 @@
   "connu": [
    "Dans son bureau : la lettre d'Absalom signée du sceau de Vassago et la copie de la réponse de Ferox."
   ],
+  "chapeau": "La villa se dresse au bout de son allée comme un vieux patricien qui refuse de mourir. Les colonnes tiennent encore, mais la pierre a jauni, les tuiles ont glissé, le lierre reconquiert les fissures. Des torches brûlent le long du péristyle. Odeur de cyprès, de cire tiède et de poussière ancienne. Dedans, des trophées de guerre poussiéreux couvrent les murs du couloir.",
   "galerie": [
    {
     "img": "img/paysages/keras-tauroc/villa-ferox.webp",
@@ -1227,6 +1264,10 @@
     "ton": "neutre"
    }
   ],
+  "citation": {
+   "texte": "Cinq mille six cents pièces. Le triomphe d'une vie, pour n'importe quel soldat. Et vous, pas un frémissement.",
+   "qui": "Vitiosa, à la remise de la récompense"
+  },
   "galerie": [
    {
     "img": "img/paysages/keras-tauroc/colisee-vitiosa.webp",
@@ -1262,6 +1303,10 @@
    "Elle exige un fait d'armes pour que Vitiosa présente un combattant à la foule.",
    "Après la victoire, en aparté, elle devient froide et contractuelle : si le groupe veut plus de combats, il doit revenir la voir."
   ],
+  "citation": {
+   "texte": "Les inscriptions à l'arène sont fermées. C'est le règlement. Je ne peux pas, non.",
+   "qui": "Fulvia, en Taurokh, traduit"
+  },
   "img": "img/pnj/fulvia.webp",
   "teinte": "#755219"
  },
@@ -1278,6 +1323,10 @@
    "Il parle d'Absalom avec admiration. Il lui a prêté les catacombes pour se reposer et l'a orientée vers Chrysodoros.",
    "Il est physiquement diminué : « ma pauvre tête », « je n'ai presque plus de vie ». Il pense qu'Absalom est partie vers le nord, vers Roshen Buru."
   ],
+  "citation": {
+   "texte": "Oh... ma tête, ma pauvre tête. Je n'ai presque plus de vie, il faut que je me repose.",
+   "qui": "Pius, en Taurokh, traduit"
+  },
   "galerie": [
    {
     "img": "img/paysages/keras-tauroc/cathedrale-de-kord.webp",
@@ -1300,6 +1349,10 @@
    "Absalom lui demandait une relique liée à un pouvoir ancien, peut-être d'avant la grande catastrophe, et s'informait sur la provenance des pierres précieuses. Il l'a orientée vers la Maison Tauroc.",
    "Il l'a revue le lendemain près du port, avec l'air d'une femme qui avait pris une décision."
   ],
+  "citation": {
+   "texte": "Ah, les grands vainqueurs de l'arène ! Félicitations à vous ! Force et honneur !",
+   "qui": "Chrysodoros, après les Cornes d'Or, traduit"
+  },
   "galerie": [
    {
     "img": "img/paysages/keras-tauroc/atelier-de-chrysodoros.webp",
@@ -1322,6 +1375,10 @@
    "Elle n'a ni enseigne ni adresse fixe : un pan de mur différent chaque jour.",
    "Jane lui a volé une « Hache Étrange » à 2 000 pièces d'or : la garde d'une épée brisée aux glyphes non décoratifs."
   ],
+  "citation": {
+   "texte": "Vingt dagues. Différentes tailles, différentes origines. Certaines ont une histoire. Tu veux pas la savoir.",
+   "qui": "Naevia, en Taurokh, traduit"
+  },
   "galerie": [
    {
     "img": "img/paysages/keras-tauroc/rue-naevia.webp",
@@ -1343,6 +1400,10 @@
   "connu": [
    "C'est vrai pour environ la moitié."
   ],
+  "citation": {
+   "texte": "Regardez ça ! Regardez, regardez ! Vous avez jamais vu quelque chose comme ça, jamais !",
+   "qui": "Eshkal, en Taurokh, traduit"
+  },
   "galerie": [
    {
     "img": "img/paysages/keras-tauroc/rue-eshkal.webp",
@@ -1365,6 +1426,10 @@
    "Son entrepôt ressemble à l'intérieur d'une tête qui n'a jamais rien jeté.",
    "Il vend une tablette de pierre gravée de glyphes anciens, déchiffrable en partie : un fragment sur les Architectes."
   ],
+  "citation": {
+   "texte": "Cette corde ? Aaah. Elle a appartenu à un grimpeur légendaire.",
+   "qui": "Comatus, à l'échoppe de bric-à-brac"
+  },
   "galerie": [
    {
     "img": "img/paysages/keras-tauroc/rue-comatus.webp",
@@ -1389,6 +1454,10 @@
    "Il raconte qu'une femme en noir a fait modifier une barge, et qu'elle a payé généreusement.",
    "Il conduit le groupe au ponton du Tenrai Buru et se porte garant auprès de Yorisa, qu'il connaît de longue date."
   ],
+  "citation": {
+   "texte": "J'ai du travail. Je ne vous connais pas. Vous n'êtes pas d'ici, vous êtes des étrangères. Partez, partez !",
+   "qui": "Capito, avant les Cornes d'Or, traduit"
+  },
   "galerie": [
    {
     "img": "img/paysages/keras-tauroc/docks.webp",
@@ -1413,6 +1482,10 @@
    "Elle a prévenu le groupe : sans arène, pas de respect, et les étrangers finissent mal ici. Plus tard, c'est elle qui lui remet la missive de Vitiosa.",
    "Le carnet d'Hématome la nomme comme commanditaire d'un contrat : elle emploie la pègre locale."
   ],
+  "citation": {
+   "texte": "Moi je suis plutôt aimable, rapport au fait que je suis pas une grosse minotaure, une grosse brute. Mais si vous comptez pas vous battre dans l'arène, ici, le chemin va être rude pour vous.",
+   "qui": "Vibia, en Taurokh, traduit"
+  },
   "galerie": [
    {
     "img": "img/paysages/keras-tauroc/angues-dormientes.webp",
@@ -1468,6 +1541,10 @@
    "Plusieurs de ses clients se plaignent d'une sensation désagréable près de la cathédrale.",
    "Le groupe s'est lié d'amitié avec lui. Sa potion a servi à ressusciter Nolbrim."
   ],
+  "citation": {
+   "texte": "Ah ! Bonjour, bonjour ! Entrez, entrez ! Moi c'est Ursinus, et ici, regardez : des plantes partout, des remèdes, de belles herbes.",
+   "qui": "Ursinus, en Taurokh, traduit"
+  },
   "galerie": [
    {
     "img": "img/paysages/keras-tauroc/mandragora-viridis.webp",
@@ -1490,6 +1567,10 @@
    "Elle refuse tout inconnu sans recommandation. Les Cornes d'Or comptent, comme un mot de Volusius, d'Ursinus ou d'Harak.",
    "Elle a d'abord refusé l'entrée au groupe, avant de le servir."
   ],
+  "citation": {
+   "texte": "Revenez quand vous savez. D'ici là, sortez.",
+   "qui": "Thessala, en Taurokh, traduit"
+  },
   "galerie": [
    {
     "img": "img/paysages/keras-tauroc/cinis-et-caligo.webp",
@@ -1518,6 +1599,10 @@
     "ton": "positif"
    }
   ],
+  "citation": {
+   "texte": "Elle venait tous les soirs. Même quand il pleuvait. Elle commandait un lait chaud et elle t'écoutait jusqu'à la fin.",
+   "qui": "Volusius, à Philippa"
+  },
   "galerie": [
    {
     "img": "img/paysages/keras-tauroc/cornua-fracta.webp",
@@ -1539,6 +1624,10 @@
    "Elle reconnaît Philippa de loin et se montre bien trop familière : un mois de souvenirs que Philippa n'a pas.",
    "La veille du meurtre, un vieil homme aux cheveux blancs et au maintien militaire a remis un pli à Philippa. Sera l'a gardé : « À la deuxième cloche après le coucher du soleil. Viens seule. Ne parle à personne. Via Castrum, Quartier de la Caserne, porte de fer. »"
   ],
+  "citation": {
+   "texte": "Il était vieux, les cheveux blancs, il se tenait droit comme un piquet. Il t'a donné ça entre deux chansons et tu n'as rien dit.",
+   "qui": "Sera, à Philippa"
+  },
   "galerie": [
    {
     "img": "img/paysages/keras-tauroc/moulins.webp",
@@ -1560,6 +1649,10 @@
   "connu": [
    "Jane avait loué une chambre de bonne chez elle, propre mais sans rien de personnel. Capella l'entendait rentrer tard et lui reprochait de travailler pour Hématome. Jane portait ses courses le mardi."
   ],
+  "citation": {
+   "texte": "Je t'entendais rentrer tard tous les soirs. T'as bon cœur, tu portais mes courses le mardi.",
+   "qui": "Capella, à Jane"
+  },
   "galerie": [
    {
     "img": "img/paysages/keras-tauroc/chambre-de-bonne-capella.webp",
@@ -1599,6 +1692,10 @@
     "ton": "neutre"
    }
   ],
+  "citation": {
+   "texte": "Tu étais trop qualifiée pour la petite semaine. Je me posais des questions, j'en ai pas posé. C'est ma règle.",
+   "qui": "Hématome, à Jane"
+  },
   "galerie": [
    {
     "img": "img/paysages/keras-tauroc/colisee-hematome.webp",
@@ -1637,6 +1734,10 @@
     "ton": "negatif"
    }
   ],
+  "citation": {
+   "texte": "Je savais que vous viendriez. J'aurais dû vous faire tuer dans la ruelle.",
+   "qui": "Ferox, en saisissant l'épée accrochée au mur"
+  },
   "galerie": [
    {
     "img": "img/paysages/keras-tauroc/villa-ferox.webp",
@@ -1672,6 +1773,10 @@
     "ton": "negatif"
    }
   ],
+  "citation": {
+   "texte": "Roshen Buru veut des têtes, Keras Tauroc veut éviter l'incident diplomatique et en tant qu'étrangers, vous êtes les coupables parfaits. Mais je suis rigoureux.",
+   "qui": "Tarcus"
+  },
   "galerie": [
    {
     "img": "img/paysages/keras-tauroc/prison-tarcus.webp",
@@ -1703,7 +1808,7 @@
   "type": "pnj",
   "nom": "Yorisa",
   "titre": "Capitaine aveugle du Tenrai Buru",
-  "parent": "keras-tauroc",
+  "parent": "combat-de-silas",
   "statut": "vivant",
   "resume": "Capitaine mirenaï, fume la pipe, perçoit plus qu'elle ne le montre.",
   "connu": [
@@ -1723,8 +1828,15 @@
     "ton": "positif"
    }
   ],
+  "lieu": "combat-de-silas",
+  "ordre": 1,
+  "galerie": [
+   {
+    "img": "img/paysages/roshen-buru/voyage-navire.webp",
+    "legende": "Le navire du voyage"
+   }
+  ],
   "img": "img/pnj/capitaine-yorisa.webp",
-  "lieu": "keras-tauroc",
   "teinte": "#751925"
  },
  {
@@ -1732,7 +1844,7 @@
   "type": "pnj",
   "nom": "Saoren",
   "titre": "Seconde du Tenrai Buru",
-  "parent": "keras-tauroc",
+  "parent": "combat-de-silas",
   "statut": "vivant",
   "resume": "Fille de Yorisa, jeune et vive.",
   "connu": [
@@ -1745,8 +1857,9 @@
     "ton": "positif"
    }
   ],
+  "lieu": "combat-de-silas",
+  "ordre": 2,
   "img": "img/pnj/saoren.webp",
-  "lieu": "keras-tauroc",
   "teinte": "#752519"
  },
  {
@@ -1853,6 +1966,8 @@
    "texte": "Comme voler son protecteur, qui a tant fait pour toi, et avoir un objet qui lui appartient et refuser de le lui rendre.",
    "qui": "Silas Mort-Dorée, à Philippa"
   },
+  "lieu": "combat-de-silas",
+  "ordre": 3,
   "galerie": [
    {
     "img": "img/paysages/roshen-buru/voyage-silas-mort-doree.webp",
@@ -1861,21 +1976,6 @@
   ],
   "img": "img/pnj/silas-mortdore-e.webp",
   "teinte": "#755219"
- },
- {
-  "id": "gibet-absalom",
-  "type": "lieu",
-  "nom": "Le gibet d'Absalom",
-  "titre": "Un aqueduc en ruine sur la lande",
-  "parent": "descente-khor-selash",
-  "pos": {
-   "x": 0.775,
-   "y": 0.562
-  },
-  "resume": "Des gardes de Keras Tauroc pendus à des chaînes, laissés par Absalom comme message.",
-  "connu": [
-   "Un charognard fuyait au pied des piliers quand le groupe est arrivé."
-  ]
  },
  {
   "id": "cap-cornes",
@@ -1951,6 +2051,7 @@
    "Massive, rongée de lierre, à l'est de la ville. Odeur de tabac froid et de parchemin moisi. Olyssane y passe ses journées.",
    "Le cercle de téléportation vers Port Doëlan y est installé."
   ],
+  "chapeau": "Au bout d'une ruelle en pente, massive et vénérable, la tour est rongée de lierre et de lichen, ses fanions usés immobiles. La porte est entrebâillée. À l'intérieur, une odeur de tabac froid et de parchemin moisi.",
   "galerie": [
    {
     "img": "img/paysages/cap-cornes/tour-eamonn.webp",
@@ -1978,6 +2079,7 @@
   "connu": [
    "Elle se tient à l'ouest, de l'autre côté du canal."
   ],
+  "chapeau": "Installée et renforcée récemment, la caserne Tauroc pèse sur la ville. La tension est palpable, jusque dans les commandes d'armes imposées aux artisans du port.",
   "galerie": [
    {
     "img": "img/paysages/cap-cornes/caserne.webp",
@@ -2001,10 +2103,12 @@
   },
   "carte": "ville",
   "zoom": 0.2,
-  "resume": "Chambre humide mais toit solide.",
+  "resume": "Auberge du port. Chambres au confort médiocre, prix honnête, et un feu dans l'âtre.",
   "connu": [
+   "Chambre humide mais toit solide.",
    "Soupe de poisson légèrement périmée et bière brune locale."
   ],
+  "chapeau": "Rien de luxueux : des poutres qui suintent, des rideaux jamais tout à fait secs. Mais un feu dans l'âtre, une odeur de soupe de poisson et de cire, et un accueil franc.",
   "galerie": [
    {
     "img": "img/paysages/cap-cornes/auberge-la-machoire.webp",
@@ -2028,6 +2132,7 @@
   "connu": [
    "Le groupe y a menacé Fennick pour obtenir de la vesine."
   ],
+  "chapeau": "Une place pavée, quelques étals délavés sous des bâches rapiécées, et un puits au centre.",
   "galerie": [
    {
     "img": "img/paysages/cap-cornes/marche.webp",
@@ -2095,6 +2200,10 @@
     "ton": "neutre"
    }
   ],
+  "citation": {
+   "texte": "Envoyez-moi un message avant de débarquer dans mon salon.",
+   "qui": "Eamonn Moorwich, à Philippa"
+  },
   "galerie": [
    {
     "img": "img/paysages/cap-cornes/tour-eamonn.webp",
@@ -2194,12 +2303,18 @@
   "type": "pnj",
   "nom": "Oswin",
   "titre": "Chef officiel de Cap Cornes",
-  "parent": "cap-cornes",
+  "parent": "reservoir-aux-poissons",
   "statut": "vivant",
   "resume": "Vieux Scalvern posé.",
   "connu": [
    "Il est le chef officiel de la ville."
   ],
+  "lieu": "reservoir-aux-poissons",
+  "ordre": 1,
+  "citation": {
+   "texte": "Le poisson part d'ici, remonte l'aqueduc, et finit dans les assiettes de Keras Tauroc.",
+   "qui": "Oswin"
+  },
   "galerie": [
    {
     "img": "img/paysages/cap-cornes/reservoir-aux-poissons.webp",
@@ -2207,7 +2322,6 @@
    }
   ],
   "img": "img/pnj/oswin.webp",
-  "lieu": "cap-cornes",
   "teinte": "#2d2d2d"
  },
  {
@@ -2221,10 +2335,17 @@
   "alias": [
    "Lorcan"
   ],
-  "resume": "Aubergiste cordial et bavard.",
+  "resume": "Aubergiste scalvern, cordial et bavard. Il essuie ses chopes avec un torchon douteux et sourit de toutes ses dents pointues.",
   "connu": [
-   "Grand Scalvern aux écailles sombres, foulard orange. Il pointe sans hésiter la tour d'Eamonn quand on cherche Olyssane."
+   "Grand Scalvern, homme-alligator aux écailles sombres, foulard orange noué au cou. Voix rauque.",
+   "Cordial, bavard, sans rien à cacher.",
+   "Quand le groupe cherche Olyssane, il pointe sans hésiter la tour d'Eamonn : « la grisonne qui se fait emmerder par l'abruti Tauroc »."
   ],
+  "citation": {
+   "texte": "Une chambre ? J'en ai. Sèche, je promets pas, mais le toit tient.",
+   "qui": "Lorcán"
+  },
+  "ordre": 1,
   "galerie": [
    {
     "img": "img/paysages/cap-cornes/auberge-la-machoire.webp",
@@ -2267,13 +2388,19 @@
   "type": "pnj",
   "nom": "Kester Tauroc",
   "titre": "Bâtard exilé de la Maison Tauroc",
-  "parent": "cap-cornes",
+  "parent": "cercle-ecarlate",
   "statut": "vivant",
   "resume": "Exilé à Cap Cornes pour son caractère. A juré vengeance.",
   "connu": [
    "Grand, mi-elfe mi-gobelin, cheveux blancs, chemise écarlate ouverte. Il défie à peu près tout le monde, Olyssane en particulier.",
    "Jane, déguisée en Olyssane, l'a attiré dans une ruelle. Il s'est enfui, apeuré, en jurant vengeance."
   ],
+  "lieu": "cercle-ecarlate",
+  "ordre": 1,
+  "citation": {
+   "texte": "Du sang Tauroc coule dans mes veines. Ici, ça veut dire que je fais ce que je veux.",
+   "qui": "Kester Tauroc"
+  },
   "galerie": [
    {
     "img": "img/paysages/cap-cornes/kester-tauroc.webp",
@@ -2281,7 +2408,6 @@
    }
   ],
   "img": "img/pnj/kester-tauroc.webp",
-  "lieu": "cap-cornes",
   "teinte": "#752519"
  },
  {
@@ -3054,7 +3180,8 @@
   "connu": [
    "Le Démon des Mains a surgi pendant la fouille. Il a été vaincu.",
    "Un collier a été repéré sur l'autel et mené chez Chrysodoros."
-  ]
+  ],
+  "chapeau": "L'escalier descend sur trente marches avant de déboucher sur une galerie basse et longue. Les niches abritent les grands combattants de la lignée Taurok, figures de pierre aux visages sévères, certaines couronnées de vraies cornes dorées patinées par le temps. Ça sent la pierre froide et la cire noire brûlée, une fumée qui n'est pas celle des bougies habituelles."
  },
  {
   "id": "atelier-de-chrysodoros",
@@ -3063,6 +3190,7 @@
   "titre": "Vitrines d'or et de pierres",
   "parent": "keras-tauroc",
   "resume": "Boutique d'orfèvrerie. Fermée aux étrangers avant les Cornes d'Or.",
+  "chapeau": "La boutique s'annonce par le reflet d'or qui traverse la vitre avant même que l'on pousse la porte. Des vitrines soignées, un éclairage calculé pour faire chatoyer les pierres, un parquet ciré. L'orfèvre est au fond, penché sur un établi, une loupe à l'œil, sans se retourner.",
   "galerie": [
    {
     "img": "img/paysages/keras-tauroc/atelier-de-chrysodoros.webp",
@@ -3080,6 +3208,7 @@
   "connu": [
    "Le groupe a négocié 10 000 po pour deux tonnes de pierre, livraison à organiser."
   ],
+  "chapeau": "La route monte vers l'ouest pendant vingt minutes avant de déboucher sur une plateforme creusée à flanc de colline. Des chariots descendent chargés, remontent vides, tirés par des mineurs dont les tuniques sont rouges de la poussière locale. L'entrée de la galerie est basse, renforcée de bois sombre. L'air sent la roche et quelque chose de plus chaud, presque métallique, qui vient de plus profond.",
   "galerie": [
    {
     "img": "img/paysages/keras-tauroc/mine-de-lapidus.webp",
@@ -3094,6 +3223,7 @@
   "titre": "Adjacent à la caserne",
   "parent": "keras-tauroc",
   "resume": "Cabinet de divination militaire, accessible grâce aux Cornes d'Or.",
+  "chapeau": "Le cabinet de l'haruspex est adjacent à la caserne. L'espace est sobre : une table basse, des bols en cuivre, des instruments dont on préfère ne pas deviner l'usage. Des registres couvrent un mur entier. Cordus est un minotaure plus vieux que la moyenne de sa caste, les cornes usées, les mains tachées de quelque chose de brun.",
   "galerie": [
    {
     "img": "img/paysages/keras-tauroc/cabinet-de-cordus.webp",
@@ -3108,6 +3238,7 @@
   "titre": "Soins des combattants",
   "parent": "colisee",
   "resume": "Lits alignés, herbes séchées. Meditrina y soigne contre paiement.",
+  "chapeau": "L'hôpital des combattants est sobre et efficace. Des lits alignés, des herbes séchées en fagots, l'odeur du vinaigre et de la résine. Meditrina circule entre les blessés avec une économie de gestes qui suggère des années à ne jamais perdre de temps.",
   "galerie": [
    {
     "img": "img/paysages/keras-tauroc/hopital.webp",
@@ -3122,6 +3253,7 @@
   "titre": "Moulins des steppes",
   "parent": "keras-tauroc",
   "resume": "Grands moulins où vit Sera, la fille du meunier.",
+  "chapeau": "Les moulins tournent lentement dans le vent des steppes. La farine flotte dans l'air comme une brume blanche et fine, qui pose une couche légère sur tout et sur tout le monde.",
   "galerie": [
    {
     "img": "img/paysages/keras-tauroc/moulins.webp",
@@ -3136,6 +3268,7 @@
   "titre": "Scène du meurtre d'Otoba",
   "parent": "keras-tauroc",
   "resume": "Ruelle ocre où l'ambassadeur a été tué. Les traces désignent les doubles des joueuses.",
+  "chapeau": "La ruelle dort encore dans l'odeur du sang séché. Sous la dernière lampe à huile, les dalles ocre gardent la mémoire de la nuit du meurtre : une longue entaille d'épée dans la pierre, des coulées de suie noire sur le mur, des éclats de cristal pris entre les pavés. Le cordon de corde pend de travers.",
   "galerie": [
    {
     "img": "img/paysages/keras-tauroc/rue-grixus.webp",
@@ -3150,6 +3283,7 @@
   "titre": "Cellule au collier de fer",
   "parent": "keras-tauroc",
   "resume": "Cellules de pierre où le groupe s'est réveillé avec un collier arcanique. Harfang y était détenu.",
+  "chapeau": "Une lumière froide et grise passe entre des barreaux de pierre. L'odeur est âcre : paille humide, métal rouillé, et quelque chose de ferrique que les joueuses mettent quelques secondes à reconnaître comme du sang. Une grille centrale sépare les cellules.",
   "galerie": [
    {
     "img": "img/paysages/keras-tauroc/prison.webp",
@@ -3166,6 +3300,10 @@
   "lieu": "hopital-du-colisee",
   "statut": "vivant",
   "resume": "Prêtresse-guérisseuse économe de ses gestes. Elle soigne et vend des potions à prix fixes.",
+  "citation": {
+   "texte": "Je ne fais pas de miracles. Je fais de la mécanique.",
+   "qui": "Meditrina, en Taurokh, traduit"
+  },
   "galerie": [
    {
     "img": "img/paysages/keras-tauroc/hopital.webp",
@@ -3275,6 +3413,10 @@
   "alias": [
    "L'haruspex"
   ],
+  "citation": {
+   "texte": "Quelque chose qui respire sans avoir de corps. Ça vit sans vivre. Ça dort, ça rêve.",
+   "qui": "Cordus, en Taurokh, traduit"
+  },
   "galerie": [
    {
     "img": "img/paysages/keras-tauroc/cabinet-de-cordus.webp",
@@ -3293,6 +3435,10 @@
   "lieu": "mine-de-lapidus",
   "statut": "vivant",
   "resume": "Contremaître qui a répondu à Absalom que les pierres de Keras Tauroc n'ont aucune propriété magique. Il a conclu un marché de pierre avec le groupe.",
+  "citation": {
+   "texte": "On a du rubis, du quartz, quelques grenats. C'est beau, ça vaut de l'or. Mais c'est rien que de la roche.",
+   "qui": "Lapidus, en Taurokh, traduit"
+  },
   "galerie": [
    {
     "img": "img/paysages/keras-tauroc/mine-de-lapidus.webp",
@@ -3311,6 +3457,10 @@
   "lieu": "scene-de-crime-ambassadeur",
   "statut": "vivant",
   "resume": "Il a vu deux femmes au regard vide guidées par un vieillard aux cheveux blancs. Il parle parce que le groupe porte les Cornes d'Or.",
+  "citation": {
+   "texte": "Deux femmes qui marchaient comme des pantins, le regard mort, et derrière elles ce vieil homme aux cheveux blancs qui les menait du bout des doigts.",
+   "qui": "Grixus, le voisin"
+  },
   "galerie": [
    {
     "img": "img/paysages/keras-tauroc/rue-grixus.webp",
@@ -3837,7 +3987,7 @@
   "id": "route-keras-tauroc-cap-cornes",
   "type": "ville",
   "nom": "Le gibet",
-  "titre": "Sur la route entre Keras Tauroc et Cap Cornes",
+  "titre": "Hommage brisé aux héros de guerre Tauroc, sur la lande",
   "alias": [
    "La route de Cap Cornes"
   ],
@@ -3847,7 +3997,7 @@
    "y": 0.551
   },
   "typeLabel": "Trajet",
-  "resume": "La route de la lande qui relie Keras Tauroc à Cap Cornes, jalonnée d'un gibet.",
+  "resume": "Un ancien aqueduc en ruine, seul au milieu de la lande, où pendent des gardes de Keras Tauroc. C'est le message d'Absalom pour quiconque la suit.",
   "galerie": [
    {
     "img": "img/paysages/cap-cornes/route-gibet.webp",
@@ -3857,7 +4007,16 @@
     "img": "img/paysages/cap-cornes/route-keras-tauroc.webp",
     "legende": "La route"
    }
-  ]
+  ],
+  "connu": [
+   "Le bâtiment est un hommage aux héros de guerre Tauroc : chaque arche abritait une statue. Les statues ont été brisées, et des corps de minotaures pendent à des chaînes rouillées à leur place.",
+   "Au pied de la structure, des empreintes de bottes récentes. Ce sont celles d'Absalom.",
+   "Des marques inhumaines se mêlent aux empreintes, griffes ou sabots : signe d'une créature contrôlée, ou d'une de ses formes.",
+   "Les corps sont des gardes envoyés en patrouille, exécutés d'un coup net.",
+   "Message laissé par Absalom à quiconque la suit : elle tue sans hésiter, et elle a une large avance.",
+   "Un charognard rôdait au pied des piliers à l'arrivée du groupe."
+  ],
+  "chapeau": "Un ancien aqueduc en ruine, arches de pierre sur trois niveaux, se dresse seul au milieu de la lande. Dans chaque alcove pend un corps retenu par une chaîne, des gardes de Keras Tauroc reconnaissables à leurs uniformes. Le vent fait grincer le métal et tourner lentement les cadavres. L'air est lourd, sucré, écœurant."
  },
  {
   "id": "malquessar",
@@ -4011,15 +4170,15 @@
  {
   "id": "combat-de-silas",
   "type": "ville",
-  "nom": "La traversée de Silas",
-  "titre": "Sur la Khor Selash",
+  "nom": "Le voyage vers Cap Cornes",
+  "titre": "À bord du Tenrai Buru, sur la Khor Selash",
   "parent": "maison-tauroc",
   "pos": {
    "x": 0.756,
    "y": 0.596
   },
   "typeLabel": "Trajet",
-  "resume": "Traversée sur le Tenrai Buru, où le groupe affronte Silas Mort-Dorée.",
+  "resume": "Traversée sur le Tenrai Buru, navire de Roshen Buru, de Keras Tauroc jusqu'à la lande. Silas Mort-Dorée monte à bord en chemin.",
   "galerie": [
    {
     "img": "img/paysages/roshen-buru/voyage-silas-mort-doree.webp",
@@ -4030,7 +4189,15 @@
     "legende": "Le navire du voyage"
    }
   ],
-  "redirige": "silas-mort-doree"
+  "fusion": true,
+  "connu": [
+   "Capito guide le groupe jusqu'au ponton du Tenrai Buru et se porte garant auprès de la capitaine Yorisa.",
+   "L'équipage compte quatre membres, tous originaires de Roshen Buru.",
+   "Le passage coûte 40 pièces d'or par tête, ou un service.",
+   "La traversée descend la Khor Selash jusqu'à la lande plate, sous un ciel ambré, puis le groupe continue à pied vers Cap Cornes.",
+   "En chemin, le groupe recueille un voyageur égaré : Silas Mort-Dorée. Il est vaincu à bord par le groupe."
+  ],
+  "chapeau": "Un navire élancé, la coque sombre rehaussée de dorures, aux voiles ajourées comme des ailes d'insecte. Il détonne dans le port de Keras Tauroc. À bord, une capitaine aveugle qui fume sa pipe, et un équipage venu de Roshen Buru. Puis la rivière, et la lande plate de chaque côté, sous un ciel d'ambre."
  },
  {
   "id": "rituel-du-tier-voyage",
@@ -4075,8 +4242,9 @@
   "alias": [
    "Nubbe"
   ],
-  "resume": "Créature végétale croisée dans la forêt d'Aruzen.",
+  "resume": "Petite racine vivante croisée dans la forêt d'Aruzen, affairée à grignoter des pousses.",
   "connu": [
+   "!! Rencontre d'une Nubbé : une petite racine affairée à grignoter des pousses. Philippa en cueille une de sa main spectrale.",
    "Une racine tordue au visage creusé, couronnée d'une fleur jaune, qui tient un doigt dans sa bouche."
   ],
   "teinte": "#697519"
@@ -4093,6 +4261,131 @@
   "resume": "Créature des bois croisée dans la forêt d'Aruzen.",
   "connu": [
    "Maigre, les cheveux noirs et le front couronné de bois, vêtue de feuilles. Une fumée violette tourbillonne autour d'elle."
+  ],
+  "teinte": "#753c19"
+ },
+ {
+  "id": "eglise-mere-des-marees",
+  "type": "lieu",
+  "nom": "L'église de la Mère des Marées",
+  "titre": "Une église sobre au bout d'une placette",
+  "parent": "cap-cornes",
+  "resume": "Église battue par le vent, façade de pierre claire ornée d'un trident sculpté.",
+  "galerie": [
+   {
+    "img": "img/paysages/cap-cornes/cathedrale.webp",
+    "legende": "L'église de la Mère des Marées"
+   }
+  ],
+  "chapeau": "Au bout d'une placette, sobre et battue par le vent, la façade de pierre claire est ornée d'un trident sculpté. Une fontaine devant le portail, et des vitraux délavés qui baignent les bancs d'une clarté aqueuse."
+ },
+ {
+  "id": "forge-des-rames",
+  "type": "lieu",
+  "nom": "La forge des Rames",
+  "titre": "Forge de réparation navale",
+  "parent": "cap-cornes",
+  "resume": "Forge ouverte sur la rue, qui répare les bateaux du port.",
+  "galerie": [
+   {
+    "img": "img/paysages/cap-cornes/forge-des-rames.webp",
+    "legende": "La forge des Rames"
+   }
+  ],
+  "chapeau": "La forge ouvre sur la rue, gueule rougeoyante qui crache chaleur et étincelles. Rames, espars et pièces de coque s'entassent contre les murs. Odeur de métal chaud et de bois brûlé."
+ },
+ {
+  "id": "pecherie-cap-cornes",
+  "type": "lieu",
+  "nom": "La pêcherie",
+  "titre": "Le cœur économique de Cap Cornes",
+  "parent": "cap-cornes",
+  "resume": "Le long du quai, des milliers de poissons triés chaque jour et expédiés vers Keras Tauroc.",
+  "galerie": [
+   {
+    "img": "img/paysages/cap-cornes/pecherie.webp",
+    "legende": "La pêcherie"
+   }
+  ],
+  "chapeau": "La pêcherie s'étend le long du quai, ruche bruyante et glissante. Des centaines de poissons argentés sur les étals, vidés et triés à la chaîne, des filets qui sèchent, des tonneaux de saumure, l'eau et le sang mêlés dans les rigoles."
+ },
+ {
+  "id": "reservoir-aux-poissons",
+  "type": "lieu",
+  "nom": "Le réservoir aux poissons",
+  "titre": "Grand bâtiment de pierre près du port",
+  "parent": "cap-cornes",
+  "resume": "Bassins où grouillent les poissons avant leur départ par l'aqueduc.",
+  "galerie": [
+   {
+    "img": "img/paysages/cap-cornes/reservoir-aux-poissons.webp",
+    "legende": "Le réservoir aux poissons"
+   }
+  ],
+  "chapeau": "Un grand bâtiment de pierre trapu, percé de portes basses, d'où s'échappent des effluves d'eau saumâtre et d'écailles. Des palans grincent en hissant des paniers ruisselants. À l'intérieur, l'eau clapote dans de vastes bassins pleins de bancs de poissons argentés."
+ },
+ {
+  "id": "aqueduc-cap-cornes",
+  "type": "lieu",
+  "nom": "L'aqueduc de Cap Cornes",
+  "titre": "Le chemin du poisson vers l'intérieur des terres",
+  "parent": "cap-cornes",
+  "resume": "Arches massives qui acheminent le poisson vers Keras Tauroc. Un bâtiment gardé en occupe la base.",
+  "galerie": [
+   {
+    "img": "img/paysages/cap-cornes/aqueduc.webp",
+    "legende": "L'aqueduc"
+   }
+  ],
+  "chapeau": "L'aqueduc enjambe les eaux de ses arches massives et achemine le poisson vers l'intérieur des terres. À sa base, un bâtiment gardé, portes closes, hommes en faction."
+ },
+ {
+  "id": "moustache-et-baguette",
+  "type": "lieu",
+  "nom": "Moustache et Baguette",
+  "titre": "Boutique magique de Sorcha",
+  "parent": "cap-cornes",
+  "resume": "Boutique de consommables magiques, la dernière avant le départ vers Roshen Buru.",
+  "galerie": [
+   {
+    "img": "img/paysages/cap-cornes/moustache-baguette.webp",
+    "legende": "Moustache et Baguette"
+   }
+  ],
+  "chapeau": "La devanture est ornée d'une étoile dorée et d'une enseigne sculptée. Dedans, des fioles colorées et des orbes lumineux sur des étagères poussiéreuses, une odeur d'encens éteint et de vieux grimoire."
+ },
+ {
+  "id": "cercle-ecarlate",
+  "type": "lieu",
+  "nom": "Le Cercle Écarlate",
+  "titre": "Arène de duel de Cap Cornes",
+  "parent": "cap-cornes",
+  "resume": "Cour pavée où l'on règle les comptes dans les règles, ou presque.",
+  "galerie": [
+   {
+    "img": "img/paysages/cap-cornes/kester-tauroc.webp",
+    "legende": "Kester Tauroc au Cercle Écarlate"
+   }
+  ],
+  "chapeau": "Une cour pavée et close, ceinte d'une barrière de bois usée, des bannières bleues qui claquent au vent au-dessus de gradins de pierre. « C'est ici qu'on règle les comptes à Cap Cornes, dans les règles ou presque. »"
+ },
+ {
+  "id": "monstre-du-gibet",
+  "type": "pnj",
+  "nom": "La créature du gibet",
+  "titre": "Charognard de la lande",
+  "parent": "route-keras-tauroc-cap-cornes",
+  "lieu": "route-keras-tauroc-cap-cornes",
+  "statut": "inconnu",
+  "img": "img/pnj/monstre-du-gibet.webp",
+  "alias": [
+   "Le charognard",
+   "Monstre du gibet"
+  ],
+  "resume": "Une créature peureuse qui se nourrit des corps pendus au pied du gibet.",
+  "connu": [
+   "Elle rôde au pied des piliers et se nourrit des cadavres.",
+   "Elle fuit quand on s'avance franchement vers elle."
   ],
   "teinte": "#753c19"
  }

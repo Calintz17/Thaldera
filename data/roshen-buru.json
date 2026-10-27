@@ -957,6 +957,7 @@
    "Roven Moto reçoit Harfang et lui tire les oreilles sur la qualité de ses rapports.",
    "Le groupe fouille les archives. Il y trouve les rapports d'enquête sur les jeunes femmes mortes, une lettre de Brodek Kovacz au magistrat de l'époque et un coffre du clan Urameï."
   ],
+  "chapeau": "La Magistrature occupe le centre du quartier haut : une salle circulaire coiffée de rouge, des couloirs en anneaux concentriques, des dizaines de bureaux le long de la courbe. Des scribes traversent avec des piles de papiers, des plaignants attendent sur des bancs depuis le matin. Ça sent l'encre et la cire à cacheter.",
   "galerie": [
    {
     "img": "img/paysages/roshen-buru/magistrature.webp",
@@ -991,6 +992,10 @@
     "ton": "negatif"
    }
   ],
+  "citation": {
+   "texte": "Le registre cadastral est un document privé. À partir du moment où la règle souffre une exception, elle n'est plus une règle. Elle devient une faveur.",
+   "qui": "Roven Moto, le Magistrat"
+  },
   "galerie": [
    {
     "img": "img/paysages/roshen-buru/magistrature.webp",
@@ -1046,6 +1051,7 @@
    "La Gardienne fait apparaître des lianes pour empêcher sa destruction totale. Elle recule devant Gran Brijit, qui emporte le parchemin.",
    "Carnage arrive à la fin de la cérémonie. Le groupe l'affronte."
   ],
+  "chapeau": "On monte au Temple par la porte haute, celle qui ne s'ouvre pas. La salle est immense et presque vide, taillée dans le sommet du Pillier, et la lumière tombe d'une ouverture au plafond en une colonne blanche qui frappe le sol au centre exact. Pas de bancs. Ça sent la pierre froide et l'encens. Au fond, sur un socle bas, la jarre Miren, scellée.",
   "galerie": [
    {
     "img": "img/paysages/roshen-buru/temple-du-tenraku-ceremonie.webp",
@@ -1069,7 +1075,8 @@
   "connu": [
    "Le palais pilote la politique extérieure et la religion de la ville.",
    "On n'y monte que par les ascenseurs, sous contrôle des gardes."
-  ]
+  ],
+  "chapeau": "En haut, l'air change. Il est plus froid, plus sec, et le grondement de la ville s'éteint d'un coup. Le sol est dallé, propre, entretenu par des gens qu'on ne voit jamais. Des sakuras bordent une allée qui monte encore, et au bout, le Palais de la Gardienne domine la cuvette. Des gardes en armure claire se tiennent aux portes, immobiles, et ne saluent personne."
  },
  {
   "id": "atelier-calligraphie",
@@ -1090,6 +1097,7 @@
   "connu": [
    "Le groupe y apprend que le papier des lettres de menace est un papier noble, réservé aux clans."
   ],
+  "chapeau": "L'atelier est au bord du canal, sous les cerisiers. La lumière entre par une paroi entière de papier tendu, blanche, sans ombre. Ça sent l'encre fraîche, la colle de riz et le papier neuf. Des feuilles sèchent sur des fils et bougent quand on passe, des pinceaux sont rangés par centaines. Au fond, une femme en tailleur, de l'encre sur le nez sans qu'elle s'en soit rendu compte.",
   "galerie": [
    {
     "img": "img/paysages/roshen-buru/calligraphie.webp",
@@ -1117,6 +1125,7 @@
   "connu": [
    "La forgeronne a perdu une commande à 50 000 pièces d'or du clan Anadori."
   ],
+  "chapeau": "On entend la forge deux carrefours avant de la voir. La chaleur sort par la porte ouverte et déforme l'air au-dessus du seuil. Dedans il fait rouge et noir, le sol est jonché de limaille qui craque sous les pas. Une trentaine de lames pendent au mur, toutes différentes. Ça sent le charbon, l'huile chaude et le métal. Une femme travaille au marteau, dos tourné, sans se retourner quand on entre.",
   "galerie": [
    {
     "img": "img/paysages/roshen-buru/forge-oyoroi.webp",
@@ -1140,6 +1149,7 @@
   "connu": [
    "Saori y prépare ses remèdes et fait aussi office de médecin légiste."
   ],
+  "chapeau": "La boutique est coincée entre deux maisons plus hautes qu'elle, dans une rue qui remonte vers l'Académie. Des bocaux par centaines, étiquetés à la main, des herbes pendues au plafond en bouquets serrés. Ça sent le vinaigre, la menthe froissée et une odeur de sirop. Une jeune femme à cornes, perchée sur un tabouret, la queue enroulée autour d'un montant, sourit avant d'avoir vu qui entre.",
   "galerie": [
    {
     "img": "img/paysages/roshen-buru/apothicaire.webp",
@@ -1163,6 +1173,7 @@
   "connu": [
    "Philippa l'a dévalisée après la mort d'Oren."
   ],
+  "chapeau": "L'échoppe est étroite, coincée entre deux bâtiments plus larges, et la porte est si basse qu'on entre en se courbant. Tout est derrière une grille : des objets exposés sur des étagères, chacun avec un numéro et rien d'autre. La seule lampe éclaire le visage du client, pas celui du tenancier. Ça sent le métal froid, le papier moisi et la cire. Derrière la grille, un homme maigre, assis très droit, sourit sans plus jamais bouger.",
   "galerie": [
    {
     "img": "img/paysages/roshen-buru/preteur-sur-gage.webp",
@@ -1199,6 +1210,7 @@
    "x": 0.25,
    "y": 0.88
   },
+  "chapeau": "L'adresse mène tout au fond de la ville basse, dans une rue si étroite que deux hommes ne s'y croisent pas de front. La porte donne directement sur une pièce haute de plafond, avec une mezzanine de bois. Ça sent le renfermé, la cire froide et quelque chose de sucré, écœurant, qui vient d'un brûle-parfum. Sur les murs, des trous ronds de la taille d'un poing, comme si le bois avait été mangé de l'intérieur.",
   "galerie": [
    {
     "img": "img/paysages/roshen-buru/garconniere-darrek.webp",
@@ -1220,6 +1232,7 @@
    "x": 0.1,
    "y": 0.7
   },
+  "chapeau": "La planque sent l'encens froid et la contrebande. La pièce est petite, encombrée, et il y fait plus chaud qu'il ne faudrait : des caisses empilées jusqu'au plafond, des bouteilles sans étiquette, une odeur de résine et d'alcool qui prend à la gorge. Elle est dans la ville basse, à l'est, là où les enseignes n'existent plus.",
   "galerie": [
    {
     "img": "img/paysages/roshen-buru/planque-yurei.webp",
@@ -1242,6 +1255,7 @@
    "Il fait sombre dans la pièce, et pourtant il n'y a pas d'ombres."
   ],
   "carte": "palais",
+  "chapeau": "La maison Urameï ne ressemble pas à ce qu'on imagine d'une maison de contrebandiers. Elle est propre, silencieuse, sans personne à l'entrée. On traverse deux pièces vides avant la troisième, où Ankou est assis, sans table ni bureau. Il fait sombre, et pourtant il n'y a pas d'ombres.",
   "galerie": [
    {
     "img": "img/paysages/roshen-buru/palais-uramei.webp",
@@ -1268,6 +1282,7 @@
    "x": 0.45,
    "y": 0.12
   },
+  "chapeau": "Le pavillon est au nord, dans les rues de la petite noblesse. Un bâtiment loué, pierre et bois sombre, avec une grande salle et un jardin clos. La lumière entre par les fenêtres hautes et tombe en carrés sur le parquet ciré. Ça sent le bois neuf, la cire et la cuisine qui a commencé tôt. Le soir, les lanternes sont allumées et la lumière est plus chaude.",
   "galerie": [
    {
     "img": "img/paysages/roshen-buru/buvette-mariage-yurei.webp",
@@ -1299,6 +1314,7 @@
    "x": 0.4,
    "y": 0.8
   },
+  "chapeau": "Sous Roshen Buru, la ville montre son ventre. Les égouts sont un dédale de pierre suintante où l'air est un ennemi : un gaz épais et jaunâtre brûle les poumons à chaque inspiration. Il faut avancer courbé, une manche sur le visage, en suivant les traînées de bave gluante qui luisent sur les parois. Par endroits, des toiles blanches tendues d'un mur à l'autre, et des formes noires qui guettent.",
   "galerie": [
    {
     "img": "img/paysages/roshen-buru/egouts.webp",
@@ -1350,6 +1366,10 @@
    }
   ],
   "lieu": "domaine-tsuren",
+  "citation": {
+   "texte": "Tu es rentré.",
+   "qui": "Havoc Tsuren, en s'arrêtant à quelques pas, sans saluer"
+  },
   "galerie": [
    {
     "img": "img/paysages/roshen-buru/palais-tsuren.webp",
@@ -1380,6 +1400,10 @@
    }
   ],
   "lieu": "academie-tenraku",
+  "citation": {
+   "texte": "Harfang. Tu es rentré. Père ne m'a rien dit, ce qui veut dire soit qu'il ne le sait pas, soit qu'il ne trouve pas ça important.",
+   "qui": "Rysei, en s'asseyant, sans préambule"
+  },
   "galerie": [
    {
     "img": "img/paysages/roshen-buru/academie-du-tenraku.webp",
@@ -1425,6 +1449,10 @@
    }
   ],
   "lieu": "domaine-tsuren",
+  "citation": {
+   "texte": "Harfang, mais regarde-toi. Tu as maigri et tu as une tête épouvantable. Est-ce que tu dors ?",
+   "qui": "Kynn Tsuren, sans laisser à personne le temps de parler"
+  },
   "galerie": [
    {
     "img": "img/paysages/roshen-buru/palais-tsuren.webp",
@@ -1481,6 +1509,10 @@
     "ton": "negatif"
    }
   ],
+  "citation": {
+   "texte": "Ah, des nouvelles filles ? Je me rappelle pas avoir passé commande. Je suis occupé. Alors je vais vous garder dans un coin et vous allez attendre votre tour, d'accord ?",
+   "qui": "Darrek, en arrivant"
+  },
   "galerie": [
    {
     "img": "img/paysages/roshen-buru/garconniere-darrek.webp",
@@ -1526,6 +1558,10 @@
    }
   ],
   "lieu": "domaine-kovacz",
+  "citation": {
+   "texte": "Excusez-moi. Non, restez debout, c'est que ça me prend un moment et que je préfère le garder pour quand c'est nécessaire.",
+   "qui": "Brodek Kovacz, en renonçant à se lever"
+  },
   "galerie": [
    {
     "img": "img/paysages/roshen-buru/palais-kovacz.webp",
@@ -1604,6 +1640,10 @@
    }
   ],
   "lieu": "maison-sokabei",
+  "citation": {
+   "texte": "Si je ne me trompe pas, je ne veux pas être seul.",
+   "qui": "Konya Sokabeï, plus bas"
+  },
   "galerie": [
    {
     "img": "img/paysages/roshen-buru/premier-mariage-konya-ayano.webp",
@@ -1689,6 +1729,10 @@
     "ton": "neutre"
    }
   ],
+  "citation": {
+   "texte": "Asseyez-vous. Le thé a un goût tout particulier quand la ville est en émoi, je ne sais pas pourquoi.",
+   "qui": "Ankou Urameï"
+  },
   "galerie": [
    {
     "img": "img/paysages/roshen-buru/palais-uramei.webp",
@@ -1780,6 +1824,10 @@
     "ton": "positif"
    }
   ],
+  "citation": {
+   "texte": "Ah, tiens. Vous êtes revenus. Soit vous avez un nom, soit vous venez me faire perdre mon temps une deuxième fois, et la deuxième option me vexerait un peu.",
+   "qui": "Yurëi, en se redressant à peine"
+  },
   "galerie": [
    {
     "img": "img/paysages/roshen-buru/planque-yurei.webp",
@@ -1958,6 +2006,10 @@
    }
   ],
   "lieu": "palais-miren-buru",
+  "citation": {
+   "texte": "Relevez-vous. Je ne suis pas venue pour vous voir à genoux.",
+   "qui": "Neryn Yosa, quand tout le monde est à genoux"
+  },
   "galerie": [
    {
     "img": "img/paysages/roshen-buru/neryn-yosa.webp",
@@ -2048,6 +2100,10 @@
     "ton": "negatif"
    }
   ],
+  "citation": {
+   "texte": "Alors. Vous voulez quelque chose, ou vous êtes juste entrés pour vous réchauffer ?",
+   "qui": "Tessei Kanae, en se retournant, sans lâcher son marteau"
+  },
   "galerie": [
    {
     "img": "img/paysages/roshen-buru/forge-oyoroi.webp",
@@ -2075,6 +2131,10 @@
   "alias": [
    "Oren Shidaï"
   ],
+  "citation": {
+   "texte": "Je ne sais pas d'où ça vient. On m'apporte. Je prends. On ne revient pas.",
+   "qui": "Oren Sidaï, derrière sa grille"
+  },
   "galerie": [
    {
     "img": "img/paysages/roshen-buru/preteur-sur-gage.webp",
@@ -2099,6 +2159,10 @@
    "Le cuisinier est mort empoisonné à la vesine.",
    "Pendant la seconde cérémonie, elle était dans la foule du Temple du Tenraku."
   ],
+  "citation": {
+   "texte": "Yaaaaa, Bonjour ! Attendez deux secondes, je pose ça et je suis à vous. Vous avez mal quelque part, ou vous entrez juste parce que ça sentait bon dehors ?",
+   "qui": "Saori Velmaka, en redescendant de son tabouret, bocal dans les bras"
+  },
   "galerie": [
    {
     "img": "img/paysages/roshen-buru/apothicaire.webp",
@@ -2129,6 +2193,10 @@
   "histoire": [
    "Elle fait émarger les invités du mariage sans trouver le coupable."
   ],
+  "citation": {
+   "texte": "Bienvenue dans ma boutique, vous êtes là pour apprendre à écrire ? C'est Yen qui vous envoie ?",
+   "qui": "Sumeren Daïko, en les voyant entrer"
+  },
   "galerie": [
    {
     "img": "img/paysages/roshen-buru/calligraphie.webp",
@@ -2282,6 +2350,7 @@
   ],
   "carte": "palais",
   "zoom": 0.12,
+  "chapeau": "La maison Tsuren est en haut, dans le quartier noble, et il faut prendre l'ascenseur pour y monter. Rien n'y a bougé : les mêmes couloirs, les mêmes odeurs, la même lumière filtrée par les cloisons de papier. Les domestiques saluent Harfang par son nom, comme s'il était sorti la veille.",
   "galerie": [
    {
     "img": "img/paysages/roshen-buru/palais-tsuren.webp",
@@ -2307,6 +2376,7 @@
   },
   "carte": "ville",
   "zoom": 0.12,
+  "chapeau": "La cabine est plus grande qu'une maison : planches larges et sombres cerclées de fer, câbles si gros qu'on ne les voit pas bouger. Le mécanisme, en pierre et en bois, à moitié enfoui dans la falaise, gronde en permanence. Quand la cabine s'ébranle, la ville s'éloigne par en dessous, les rues deviennent des traits, et le Pillier se dresse au centre, énorme et moussu.",
   "galerie": [
    {
     "img": "img/paysages/roshen-buru/ascenseur.webp",
@@ -2327,6 +2397,7 @@
   "resume": "Grande cour de terre battue ceinte de bâtiments bas, pieds nus et bois contre bois, une trentaine d'élèves.",
   "carte": "palais",
   "zoom": 0.12,
+  "chapeau": "L'Académie occupe tout l'angle sud-ouest de la ville, contre les murailles, un des rares endroits de Roshen Buru où l'on a laissé de la place. Une cour immense en terre battue, entourée de bâtiments bas. Le bruit est constant : pieds nus sur le sol, cris courts, bois qui frappe du bois. Ça sent la sueur, la poussière et le thé refroidi.",
   "galerie": [
    {
     "img": "img/paysages/roshen-buru/academie-du-tenraku.webp",
@@ -2347,6 +2418,10 @@
    "Rysei s'entraîne seule deux ou trois fois par semaine, à une force qui dépasse déjà son enseignement.",
    "Il demande à Harfang comment se passe la cohabitation avec Stryge."
   ],
+  "citation": {
+   "texte": "Rien de neuf ici. Ils arrivent, ils sont mauvais, on les corrige, ils repartent, et on recommence l'année suivante avec les mêmes gestes.",
+   "qui": "Mishta, en regardant la cour"
+  },
   "galerie": [
    {
     "img": "img/paysages/roshen-buru/academie-du-tenraku.webp",
@@ -2375,6 +2450,7 @@
   "alias": [
    "temple de Mélora"
   ],
+  "chapeau": "Le temple est au sud de la ville basse, adossé aux murailles, et on l'entend avant de le voir : c'est le bruit de l'eau qui court sous les dalles. Le bâtiment est ouvert sur trois côtés, la végétation entre avec les visiteurs, mousse sur les colonnes, racines qui soulèvent les pierres. La lumière tombe verte à travers un toit percé de trous laissés exprès.",
   "galerie": [
    {
     "img": "img/paysages/roshen-buru/temple-de-melora.webp",
@@ -2398,6 +2474,10 @@
   "histoire": [
    "Il célèbre la première cérémonie de mariage, celle de la salle des fêtes."
   ],
+  "citation": {
+   "texte": "Vous n'avez rien à faire ici si vous n'avez rien à donner, mais vous pouvez rester assises aussi longtemps que vous voulez.",
+   "qui": "Takko Halvaki, aux deux femmes"
+  },
   "galerie": [
    {
     "img": "img/paysages/roshen-buru/temple-de-melora.webp",
@@ -2419,6 +2499,7 @@
   ],
   "carte": "palais",
   "zoom": 0.12,
+  "chapeau": "Le domaine est en bordure du quartier noble, du côté où les maisons se font plus rares et où les jardins sont mal tenus. Le portail est ouvert, ce qui n'est pas normal. À l'intérieur, les pièces sont grandes et froides, la moitié des lampes sont éteintes, et des traces plus claires sur les murs montrent là où des choses étaient accrochées.",
   "galerie": [
    {
     "img": "img/paysages/roshen-buru/palais-kovacz.webp",
@@ -2438,6 +2519,7 @@
   ],
   "carte": "palais",
   "zoom": 0.12,
+  "chapeau": "On les fait attendre vingt minutes dans un vestibule où il n'y a rien à regarder. Le salon est au fond, plus sombre que le reste de la maison, les volets fermés en plein jour. La fumée stagne à mi-hauteur et sent le tabac lourd et quelque chose de sucré. Deux chiens dorment devant la cheminée éteinte sans se lever.",
   "galerie": [
    {
     "img": "img/paysages/roshen-buru/salon-anadori.webp",
@@ -2471,6 +2553,10 @@
     "ton": "neutre"
    }
   ],
+  "citation": {
+   "texte": "Vous êtes là parce que vous êtes des étrangers qui cherchent à rencontrer le clan Anadori après en avoir vaincu deux, et je trouve ça complètement fou, alors je suis curieux.",
+   "qui": "Caspian Anadori, après un long silence"
+  },
   "galerie": [
    {
     "img": "img/paysages/roshen-buru/salon-anadori.webp",
@@ -2511,7 +2597,8 @@
    "y": 0.55
   },
   "carte": "ville",
-  "zoom": 0.12
+  "zoom": 0.12,
+  "chapeau": "La maison est dans le quartier des marchands, propre, sans ornement, avec une cour minuscule où sèche du linge. Tout est déjà prêt pour la fête : caisses empilées contre le mur, rouleaux de tissu, lanternes emballées. Sur une table, une lettre que personne n'a touchée depuis qu'elle est arrivée."
  },
  {
   "id": "kazen-sokabei",
@@ -2563,6 +2650,10 @@
   "histoire": [
    "Après le sauvetage d'Ayano, il sert lui-même les Sokabeï."
   ],
+  "citation": {
+   "texte": "Je ne vous accuse de rien. Mais je vous ai confié ma fille il y a trois heures. Et elle n'est plus là.",
+   "qui": "Doryen Kaben, à Konya, sans élever la voix"
+  },
   "img": "img/pnj/doryen-kaben.webp",
   "teinte": "#753c19"
  },
@@ -2596,7 +2687,8 @@
    "y": 0.62
   },
   "carte": "ville",
-  "zoom": 0.12
+  "zoom": 0.12,
+  "chapeau": "La porte coulisse sur une odeur de feuilles brûlées et de bois humide. Il fait sombre, d'une pénombre chaude : les lanternes sont basses, la lumière rampe au sol, et le plafond noirci de fumée retient les voix. Derrière le comptoir, un homme massif essuie une tasse sans lever les yeux. Le thé coûte trois pièces, une chambre quinze, et on ne pose pas de questions sur les autres."
  },
  {
   "id": "hoshka",
@@ -2610,6 +2702,10 @@
   "connu": [
    "Les Kovacz déclinent et le fils est un problème connu. Les Urameï tiennent le bas quartier. Les Anadori se battent partout en ville."
   ],
+  "citation": {
+   "texte": "Trois pièces le thé. Quinze la chambre mes amis.",
+   "qui": "Hoshka, sans lever les yeux de sa tasse"
+  },
   "img": "img/pnj/hoshka.webp",
   "teinte": "#753c19"
  },
@@ -2625,6 +2721,10 @@
   "connu": [
    "Le mariage Sokabeï-Kaben fait jaser, scandaleux ou romantique selon la table."
   ],
+  "citation": {
+   "texte": "Vous êtes au sujet du mariage, c'est ça ? Tout le monde en parle. Une fille de noble qui épouse un fils de marchand. Ma mère dit que c'est beau.",
+   "qui": "Orisa, à voix basse, en posant le plateau"
+  },
   "img": "img/pnj/orisa.webp",
   "teinte": "#753c19"
  },
@@ -2641,6 +2741,7 @@
   },
   "carte": "ville",
   "zoom": 0.12,
+  "chapeau": "La ruelle descend vers l'ouest, entre les entrepôts et le canal, là où les lanternes se font rares. La lumière passe du blanc au rouge sur une vingtaine de pas. Des voiles pendent aux fenêtres et bougent sans vent, quelqu'un joue doucement d'un instrument à cordes, et l'air sent le parfum bon marché et l'eau croupie du canal. Au bout de la rue, une maison plus haute que les autres, éclairée de vert.",
   "galerie": [
    {
     "img": "img/paysages/roshen-buru/quartier-des-plaisirs.webp",
@@ -2664,6 +2765,10 @@
   "connu": [
    "Maeko, l'une de ses courtisanes, connaît Darrek, qui ne vient plus depuis des mois."
   ],
+  "citation": {
+   "texte": "Qu'est-ce que vous cherchez ici ? Du plaisir ? Du divertissement ? De l'évasion ? Tout se discute, tout se monaye.",
+   "qui": "Madame Renka, en versant elle-même, sans se presser"
+  },
   "img": "img/pnj/madame-renka.webp",
   "teinte": "#755219"
  },
@@ -2680,6 +2785,7 @@
   },
   "carte": "ville",
   "zoom": 0.12,
+  "chapeau": "La boutique est tout au fond de la ville basse, la dernière avant les murailles, et rien sur la devanture n'indique ce qu'on y vend. Pas de rayons, des piles d'objets jusqu'au plafond, et pourtant pas un grain de poussière. Il fait sombre, l'air est sec. Derrière un comptoir minuscule, un homme penché sur quelque chose de petit ne lève pas la tête quand la porte s'ouvre.",
   "galerie": [
    {
     "img": "img/paysages/roshen-buru/curiosites-maven.webp",
@@ -2718,6 +2824,7 @@
   },
   "carte": "ville",
   "zoom": 0.12,
+  "chapeau": "Au coin d'une ruelle, coincée entre deux escaliers de pierre, une charrette croule sous un bazar improbable : amulettes dépareillées, fioles vides, lames ébréchées, éventails cassés, cartes cornées. Derrière ce fatras, un homme d'une quarantaine d'années, le visage buriné, hèle les passants en faisant tournoyer un objet comme s'il s'agissait d'un trésor.",
   "galerie": [
    {
     "img": "img/paysages/roshen-buru/echoppe-ilvaro.webp",
@@ -2734,6 +2841,10 @@
   "lieu": "echoppe-ilvaro",
   "statut": "vivant",
   "resume": "Marchand de la ville basse.",
+  "citation": {
+   "texte": "Approchez, approchez ! Vous savez que vous voulez quelque chose, même si vous ne savez pas encore que vous savez vouloir savoir !",
+   "qui": "Ilvaro, hélant un passant"
+  },
   "galerie": [
    {
     "img": "img/paysages/roshen-buru/echoppe-ilvaro.webp",
@@ -2773,6 +2884,10 @@
    "Il officie la seconde cérémonie de mariage.",
    "Quand Absalom brise la jarre, il murmure : « Vous venez de briser un objet vieux de neuf cents ans. »"
   ],
+  "citation": {
+   "texte": "Aucune union n'a jamais été bénie sous cette voûte. Aucune, depuis que la pierre fut ouverte.",
+   "qui": "Maître Orashay"
+  },
   "img": "img/pnj/maitre-orashay.webp",
   "teinte": "#753c19"
  },
@@ -2832,6 +2947,10 @@
   "histoire": [
    "Le groupe le combat devant la porte de la planque."
   ],
+  "citation": {
+   "texte": "Je pourrai faire un super discours, mais je vais pas le faire. On me paye. Vous, vous me payez pas. C'est pour ça que je vais vous casser les jambes.",
+   "qui": "Bruska, si les joueurs tentent de négocier"
+  },
   "galerie": [
    {
     "img": "img/paysages/roshen-buru/garconniere-bruska.webp",
@@ -2989,7 +3108,11 @@
   "parent": "quartier-des-plaisirs",
   "lieu": "quartier-des-plaisirs",
   "statut": "vivant",
-  "resume": "Elle connaît Darrek Kovacz et le déteste. Il payait bien mais personne n'en voulait deux fois."
+  "resume": "Elle connaît Darrek Kovacz et le déteste. Il payait bien mais personne n'en voulait deux fois.",
+  "citation": {
+   "texte": "Le fils Kovacz, oui, je vois qui c'est. Il payait bien, mais il était pas facile. Personne n'en voulait deux fois.",
+   "qui": "Maeko, en rangeant ses affaires"
+  }
  },
  {
   "id": "sevaki",
@@ -3062,6 +3185,7 @@
   "titre": "Instruments et toiles",
   "parent": "roshen-buru",
   "resume": "Salle basse sous le niveau de la rue, tapissée d'instruments suspendus.",
+  "chapeau": "Quelques marches de bois usé plongent sous le niveau de la rue, et le vacarme de Roshen Buru s'éteint d'un coup. La salle est longue, basse, tapissée d'instruments suspendus : cordes tendues, panses de luths, bambous alignés. Une lumière grise s'accroche à des fils presque invisibles tendus d'une poutre à l'autre. Une corde vibre, une seule note grave, sans que personne l'ait touchée.",
   "galerie": [
    {
     "img": "img/paysages/roshen-buru/boutique-de-soko.webp",
@@ -3081,6 +3205,10 @@
   "connu": [
    "Des gardes ont soupçonné ses toiles d'araignée, à tort selon elle."
   ],
+  "citation": {
+   "texte": "Des visiteurs dans ma boutique. Des égarés, ou des musiciens ? Soko se demande.",
+   "qui": "Soko, depuis le plafond, douce"
+  },
   "galerie": [
    {
     "img": "img/paysages/roshen-buru/boutique-de-soko.webp",
@@ -3125,6 +3253,10 @@
   "lieu": "ascenseurs",
   "statut": "vivant",
   "resume": "Garde qui filtre l'accès. Un laissez-passer, une convocation ou un nom de clan suffisent.",
+  "citation": {
+   "texte": "Vous avez de quoi justifier ? Je vous demande pas ça pour vous embêter. C'est juste que s'il y a un souci là-haut, c'est moi qui saute.",
+   "qui": "Meshi, le garde d'ascenseur, sans agressivité"
+  },
   "galerie": [
    {
     "img": "img/paysages/roshen-buru/ascenseur.webp",
@@ -3339,10 +3471,11 @@
   "type": "pnj",
   "nom": "Vexil",
   "titre": "Garde du corps de Kester",
-  "parent": "cap-cornes",
-  "lieu": "cap-cornes",
+  "parent": "cercle-ecarlate",
+  "lieu": "cercle-ecarlate",
   "statut": "vivant",
   "resume": "Massif et silencieux, il préfère laisser son employeur gagner.",
+  "ordre": 2,
   "img": "img/pnj/vexil.webp",
   "teinte": "#527519"
  },
@@ -3351,10 +3484,11 @@
   "type": "pnj",
   "nom": "Grimwald",
   "titre": "Lutriel élégant, maître du passage du poisson",
-  "parent": "cap-cornes",
-  "lieu": "cap-cornes",
+  "parent": "aqueduc-cap-cornes",
+  "lieu": "aqueduc-cap-cornes",
   "statut": "vivant",
   "resume": "Redingote brodée d'or, fine pipe, regard froid. Il contrôle le point de passage du poisson vers Keras Tauroc.",
+  "ordre": 1,
   "galerie": [
    {
     "img": "img/paysages/cap-cornes/aqueduc.webp",
@@ -3369,13 +3503,14 @@
   "type": "pnj",
   "nom": "Père Niall",
   "titre": "Prêtre de la Mère des Marées",
-  "parent": "cap-cornes",
-  "lieu": "cap-cornes",
+  "parent": "eglise-mere-des-marees",
+  "lieu": "eglise-mere-des-marees",
   "statut": "vivant",
   "resume": "Lutriel en robe bleu et or, doux et légèrement excentrique. Il demande volontiers un galet poli en offrande. Expert des ghoules des marées.",
   "alias": [
    "Niall"
   ],
+  "ordre": 1,
   "galerie": [
    {
     "img": "img/paysages/cap-cornes/cathedrale.webp",
@@ -3408,10 +3543,11 @@
   "type": "pnj",
   "nom": "Tormund",
   "titre": "Forgeron lutriel",
-  "parent": "cap-cornes",
-  "lieu": "cap-cornes",
+  "parent": "forge-des-rames",
+  "lieu": "forge-des-rames",
   "statut": "vivant",
   "resume": "Réparateur de bateaux, bourru, qui déteste forger pour tuer.",
+  "ordre": 1,
   "galerie": [
    {
     "img": "img/paysages/cap-cornes/forge-des-rames.webp",
@@ -3426,10 +3562,11 @@
   "type": "pnj",
   "nom": "Rory",
   "titre": "Maître de la pêcherie",
-  "parent": "cap-cornes",
-  "lieu": "cap-cornes",
+  "parent": "pecherie-cap-cornes",
+  "lieu": "pecherie-cap-cornes",
   "statut": "vivant",
   "resume": "Gaffe de pêche à l'épaule, accueillant. Il fournit les clous rouillés du cercle d'Eamonn.",
+  "ordre": 1,
   "galerie": [
    {
     "img": "img/paysages/cap-cornes/pecherie.webp",
@@ -3444,10 +3581,11 @@
   "type": "pnj",
   "nom": "Sorcha",
   "titre": "Boutique magique Moustache et Baguette",
-  "parent": "cap-cornes",
-  "lieu": "cap-cornes",
+  "parent": "moustache-et-baguette",
+  "lieu": "moustache-et-baguette",
   "statut": "vivant",
   "resume": "Vive et curieuse, vend potions et parchemins de bas et moyen niveau. Dernier réapprovisionnement avant Roshen Buru.",
+  "ordre": 1,
   "galerie": [
    {
     "img": "img/paysages/cap-cornes/moustache-baguette.webp",

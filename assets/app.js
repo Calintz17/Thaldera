@@ -4,7 +4,7 @@
 (() => {
 'use strict';
 
-const VER = '17';
+const VER = '19';
 const EDIT = new URLSearchParams(location.search).has('edit');
 const $ = (s, r = document) => r.querySelector(s);
 const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
@@ -35,6 +35,9 @@ async function load() {
   buildLinker();
 }
 
+const pnjsAt = pl => (kids(pl.id, 'pnj').concat(DB.filter(x => x.lieu === pl.id && x.parent !== pl.id && x.type === 'pnj'))).sort((a, b) => (a.ordre ?? 99) - (b.ordre ?? 99));
+const mainOf = pl => { if (!pl || !(pl.type === 'lieu' || pl.fusion) || pl.nofusion) return null; if (kids(pl.id, 'lieu').length) return null; const l = pnjsAt(pl); return l.length ? l[0] : null; };
+const mergedPlace = p => { const pl = p && p.type === 'pnj' ? (p.lieu && BY[p.lieu] ? BY[p.lieu] : (p.parent ? BY[p.parent] : null)) : null; return pl && mainOf(pl) ? pl : null; };
 const kids = (id, type) => (KIDS[id] || []).filter(k => !type || k.type === type);
 const chain = e => { const a = []; let c = e; let g = 0; while (c && g++ < 12) { a.unshift(c); c = c.parent ? BY[c.parent] : null; } return a; };
 const isAnc = (a, e) => { let c = e; let g = 0; while (c && g++ < 12) { if (c === a) return true; c = c.parent ? BY[c.parent] : null; } return false; };
@@ -432,7 +435,7 @@ function showGallery(imgs, title, ent) {
     `<div class="gcap"><span class="gt"></span>${imgs.length > 1 ? '<div class="gdots">' + imgs.map((_, i) => `<i data-i="${i}"${i === 0 ? ' class="on"' : ''}></i>`).join('') + '</div><div class="gnav"><button data-d="-1" aria-label="Précédente">‹</button><button data-d="1" aria-label="Suivante">›</button></div>' : ''}</div>`;
   stageEl.insertBefore(g, $('.fog', stageEl));
   g.querySelectorAll('.sl img').forEach(im => {
-    const fit = () => { if (im.naturalWidth) im.style.maxWidth = Math.min(stageEl.clientWidth, im.naturalWidth * 1.4) + 'px'; };
+    const fit = () => { if (im.naturalWidth) im.style.maxWidth = Math.min(stageEl.clientWidth, im.naturalWidth * 1.7) + 'px'; };
     if (im.complete) fit(); else im.addEventListener('load', fit);
   });
   let cur = 0;
@@ -475,6 +478,7 @@ function formeFor(e, ctx) {
   if (!e || !e.formes) return null;
   return e.formes.slice(1).find(f => ctx && f.lieux && f.lieux.includes(ctx)) || e.formes[0];
 }
+function hashSide(id) { let h = 0; for (const ch of id) h = (h * 31 + ch.charCodeAt(0)) >>> 0; return h % 2; }
 function setCutout(e, form) {
   let c = $('.cutout', stageEl);
   if (!e || !S.gal || !((form && form.img) || e.img)) { if (c) c.remove(); S.cut = null; return; }
@@ -485,13 +489,13 @@ function setCutout(e, form) {
   if (c) c.remove();
   c = document.createElement('div');
   c.className = 'cutout';
-  c.className = 'cutout' + (src ? '' : ' ph');
+  c.className = 'cutout' + (src ? '' : ' ph') + (hashSide(e.id) ? ' lf' : '');
   const tn = (form && form.teinte) || e.teinte || '#3a2a14';
   c.style.setProperty('--tn', tn);
   c.innerHTML = `<i class="glow"></i><img src="${src}" alt="${esc(e.nom)}">`;
   stageEl.insertBefore(c, $('.fog', stageEl));
   const ci = $('img', c);
-  const cfit = () => { if (ci.naturalHeight && src) ci.style.maxHeight = Math.min(stageEl.clientHeight * 0.84, ci.naturalHeight * 1.3) + 'px'; };
+  const cfit = () => { if (ci.naturalHeight && src) ci.style.maxHeight = Math.min(stageEl.clientHeight * (innerWidth <= 760 ? 0.78 : 0.94), ci.naturalHeight * 1.7) + 'px'; };
   if (ci.complete) cfit(); else ci.addEventListener('load', cfit);
   S.cut = ck;
 }
@@ -588,18 +592,20 @@ function statusPill(e) {
   if (!s) return '';
   return `<span class="pill ${esc(s)}">${esc(s === 'pj' ? 'joueur' : s)}</span>`;
 }
-function sec(title, body, cls = '') { return body ? `<section class="sec ${cls}"><h3>${esc(title)}</h3>${body}</section>` : ''; }
+function sec(title, body, cls = '') { if (body) body = body.replace(/<li>!! /g, '<li class="key">'); return body ? `<section class="sec ${cls}"><h3>${esc(title)}</h3>${body}</section>` : ''; }
 const ul = (arr, id) => arr && arr.length ? '<ul>' + arr.map(t => `<li>${L(t, id)}</li>`).join('') + '</ul>' : '';
 function connuHtml(e) {
   let items = (e.connu || []).map(t => `<li>${L(t, e.id)}</li>`).join('');
   return items ? `<ul>${items}</ul>` : '';
 }
 function crumbs(e) {
-  const ch = chain(e);
+  const mp = mergedPlace(e);
+  const ch = chain(e).filter(c => c !== mp);
   const parts = ['<a href="#/">Monde</a>'];
   ch.forEach((c, i) => parts.push(i === ch.length - 1 ? `<span>${esc(c.nom)}</span>` : `<a href="#/${c.id}">${esc(c.nom)}</a>`));
-  const up = e.parent ? '#/' + e.parent : '#/';
-  const upName = e.parent ? BY[e.parent]?.nom : 'Monde';
+  const upE = mp ? BY[mp.parent] : (e.parent ? BY[e.parent] : null);
+  const up = upE ? '#/' + upE.id : '#/';
+  const upName = upE ? upE.nom : 'Monde';
   return `<nav class="crumbs"><a class="back" href="${up}" title="Retour : ${esc(upName)}">‹ Retour</a>${parts.join('<span class="sep">›</span>')}</nav>`;
 }
 function bubble(p, attrs = '') {
@@ -669,7 +675,14 @@ function renderPanel(e, q) {
   h += `<header class="head"><div class="tp">${esc(e.typeLabel || TYPES[e.type] || '')}</div><h1>${esc(e.nom)}</h1>${e.titre ? `<div class="ti">${L(e.titre, e.id)}</div>` : ''}${statusPill(e)}<div class="rule"><i></i></div></header>`;
   if (e.chef) h += `<div class="chef"><span class="rt">${esc(e.chef.titre)}</span><span class="rn">${esc(e.chef.nom)}</span></div>`;
   if (e.themes) h += `<div class="themes">${esc(e.themes)}</div>`;
+  const mp = mergedPlace(e);
+  if (mp && mp.chapeau) h += `<p class="chapeau">${L(mp.chapeau, e.id)}</p>`;
+  else if (e.chapeau) h += `<p class="chapeau">${L(e.chapeau, e.id)}</p>`;
   if (e.resume) h += `<p class="resume">${L(e.resume, e.id)}</p>`;
+  if (mp) {
+    const pit = [...(mp.connu || []), ...(mp.histoire || [])].map(t => L(t, e.id));
+    if (pit.length) h += sec(mp.nom, '<ul>' + pit.map(t => `<li>${t}</li>`).join('') + '</ul>', 'past');
+  }
 
   // lieu : personnages en bulles
   const isPlace = e.type === 'lieu';
@@ -681,6 +694,7 @@ function renderPanel(e, q) {
   else h += sec('Ce que le groupe sait', savoirHtml(e));
   if (e.type === 'pj') h += sec('Enjeux et quête en cours', ul(e.histoire, e.id), 'past');
   if (e.question) h += sec('En suspens', `<p class="qs">${L(e.question, e.id)}</p>`);
+  if (mp) { const sib = pnjsAt(mp).filter(x => x.id !== e.id); if (sib.length) h += sec('Aussi présents', `<div class="bubs">${sib.map(q2 => bubble(q2)).join('')}</div>`); }
   if (e.citation) h += `<blockquote class="cite"><p>${esc(e.citation.texte)}</p>${e.citation.qui ? `<cite>${esc(e.citation.qui)}</cite>` : ''}</blockquote>`;
   if (e.type !== 'pnj' && e.type !== 'pj') { const rel = relations(e); if (rel) h += sec('Liens', rel); }
 
@@ -728,7 +742,7 @@ function renderPanel(e, q) {
 
 /* ---------- routage ---------- */
 let TOKEN = 0;
-function goUp(e) { location.hash = e.parent ? '#/' + e.parent : '#/'; }
+function goUp(e) { const mp = mergedPlace(e); const par = mp ? mp.parent : e.parent; location.hash = par ? '#/' + par : '#/'; }
 
 async function route() {
   const my = ++TOKEN;
@@ -741,6 +755,7 @@ async function route() {
   if (e && e.locked) { location.hash = '#/'; return; }
   if (!e) { sceneEl.classList.remove('is-world'); panelEl.innerHTML = '<div class="pin-pad"><nav class="crumbs"><a class="back" href="#/">‹ Monde</a></nav><p class="empty">Cette page n’existe pas encore.</p></div>'; return; }
   if (e.redirige && BY[e.redirige]) { location.replace('#/' + e.redirige); return; }
+  { const m = mainOf(e); if (m) { location.replace('#/' + m.id); return; } }
   sceneEl.classList.remove('is-world');
   measure();
   const q = new URLSearchParams(qs || '');
@@ -837,7 +852,7 @@ function initEdit() {
       if (ent.type === 'continent' && ev.deltaY < 0) {
         const hit = kids(ent.id).find(k => k.poly && k.zone && nw <= k.zone.w * 1.25 && pip([px, py], k.poly));
         if (hit) { S.keepCam = true; S.navBusy = true; location.hash = '#/' + hit.id; }
-      } else if ((ent.type === 'region' || ent.type === 'faction') && ent.zone && BY[ent.parent] && BY[ent.parent].type === 'continent' && ev.deltaY > 0 && nw > ent.zone.w * 1.12 * 1.8) {
+      } else if ((ent.type === 'region' || ent.type === 'faction') && ent.zone && BY[ent.parent] && BY[ent.parent].type === 'continent' && ev.deltaY > 0 && nw > Math.min(1.04, ent.zone.w * 1.12 * 1.6)) {
         S.keepCam = true; S.navBusy = true; location.hash = '#/' + ent.parent;
       }
     }

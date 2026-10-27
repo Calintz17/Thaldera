@@ -15,7 +15,7 @@
   --ok: #5fa86a;
   --bad: #c0504d;
   --top-h: 74px;
-  --panel-w: clamp(420px, 46vw, 760px);
+  --panel-w: clamp(380px, 40vw, 720px);
 }
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -260,8 +260,10 @@ a.wcrest:hover .wn { color: var(--gold-hi); }
 .gal .gdots i { width: 7px; height: 7px; border-radius: 50%; background: rgba(255,255,255,.28); cursor: pointer; }
 .gal .gdots i.on { background: var(--gold); }
 .cutout { position: absolute; z-index: 9; inset: 0; pointer-events: none; overflow: hidden; }
-.cutout .glow { position: absolute; right: -4%; bottom: -10%; width: 70%; height: 80%; background: radial-gradient(ellipse at 55% 60%, rgba(4,6,10,.62) 0%, rgba(4,6,10,.3) 45%, transparent 72%); }
-.cutout img { position: absolute; right: 5%; bottom: 7%; height: auto; width: auto; max-height: 86%; max-width: 56%; object-fit: contain; object-position: right bottom; animation: cin 1.1s cubic-bezier(.22,.7,.2,1) both; }
+.cutout .glow { position: absolute; right: -4%; bottom: -10%; width: 80%; height: 90%; background: radial-gradient(ellipse at 55% 60%, rgba(4,6,10,.62) 0%, rgba(4,6,10,.3) 45%, transparent 72%); }
+.cutout.lf .glow { right: auto; left: -4%; background: radial-gradient(ellipse at 45% 60%, rgba(4,6,10,.62) 0%, rgba(4,6,10,.3) 45%, transparent 72%); }
+.cutout.lf img { right: auto; left: 3%; object-position: left bottom; }
+.cutout img { position: absolute; right: 3%; bottom: 2%; height: auto; width: auto; max-height: 94%; max-width: 62%; object-fit: contain; object-position: right bottom; animation: cin 1.1s cubic-bezier(.22,.7,.2,1) both; }
 .cutout.ph img { opacity: .8; }
 @keyframes cin { from { opacity: 0; transform: translate3d(40px,0,0); } to { opacity: 1; transform: translate3d(0,0,0); } }
 @keyframes imgf { from { transform: translate3d(0,0,0) scale(1); } to { transform: translate3d(-10px,-6px,0) scale(1.012); } }
@@ -387,7 +389,7 @@ a.wcrest:hover .wn { color: var(--gold-hi); }
   .pin-pad { padding: 14px 18px 60px; }
   .hero { margin: 0 -18px 10px; }
   .kids { grid-template-columns: 1fr; }
-  .cutout img { max-height: 74%; max-width: 56%; bottom: 52px; }
+  .cutout img { max-height: 80%; max-width: 62%; bottom: 52px; }
   .mapcap { left: 8px; bottom: 8px; gap: 6px; max-width: calc(100% - 16px); }
   .mapcap .tab { font-size: 9px; letter-spacing: .1em; padding: 5px 10px; }
   .mapcap .cap { font-size: 12.5px; padding: 4px 10px; }
@@ -406,3 +408,6 @@ a.wcrest:hover .wn { color: var(--gold-hi); }
 .many .pin:not(.here):not(:hover):not(.hot) .pl { display: none; }
 @media (max-width: 860px), (pointer: coarse) { .cam { will-change: auto; } }
 @media (max-width: 860px) { .pin:not(.here):not(.hot) .pl { display: none; } .pin .in { width: 30px; height: 30px; } }
+
+.chapeau { font-style: italic; line-height: 1.55; margin: 6px 0 12px; color: var(--ink2, #cfc7b4); }
+li.key { border-left: 2px solid var(--gold); padding-left: 10px; margin-left: -12px; list-style: none; color: #f3e9c9; font-weight: 600; }
