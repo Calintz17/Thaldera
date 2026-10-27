@@ -1231,14 +1231,17 @@
    {
     "img": "img/pnj/vitiosa-human.webp",
     "label": "Normal",
-    "lieux": []
+    "lieux": [],
+    "teinte": "#751925"
    },
    {
     "img": "img/pnj/vitiosa-de-mon-form.webp",
     "label": "Forme démon",
-    "lieux": []
+    "lieux": [],
+    "teinte": "#751925"
    }
-  ]
+  ],
+  "teinte": "#751925"
  },
  {
   "id": "fulvia",
@@ -1253,7 +1256,8 @@
    "Elle exige un fait d'armes pour que Vitiosa présente un combattant à la foule.",
    "Après la victoire, en aparté, elle devient froide et contractuelle : si le groupe veut plus de combats, il doit revenir la voir."
   ],
-  "img": "img/pnj/fulvia.webp"
+  "img": "img/pnj/fulvia.webp",
+  "teinte": "#755219"
  },
  {
   "id": "pius",
@@ -1274,7 +1278,8 @@
     "legende": "La cathédrale de Kord"
    }
   ],
-  "img": "img/pnj/pius.webp"
+  "img": "img/pnj/pius.webp",
+  "teinte": "#755219"
  },
  {
   "id": "chrysodoros",
@@ -1296,7 +1301,8 @@
    }
   ],
   "img": "img/pnj/chrysodoros.webp",
-  "lieu": "keras-tauroc"
+  "lieu": "keras-tauroc",
+  "teinte": "#755219"
  },
  {
   "id": "naevia",
@@ -1317,7 +1323,8 @@
    }
   ],
   "img": "img/pnj/naevia.webp",
-  "lieu": "keras-tauroc"
+  "lieu": "keras-tauroc",
+  "teinte": "#755219"
  },
  {
   "id": "eshkal",
@@ -1337,7 +1344,8 @@
    }
   ],
   "img": "img/pnj/eshkal.webp",
-  "lieu": "keras-tauroc"
+  "lieu": "keras-tauroc",
+  "teinte": "#753c19"
  },
  {
   "id": "comatus",
@@ -1358,7 +1366,8 @@
    }
   ],
   "img": "img/pnj/comatus.webp",
-  "lieu": "keras-tauroc"
+  "lieu": "keras-tauroc",
+  "teinte": "#752519"
  },
  {
   "id": "capito",
@@ -1380,7 +1389,8 @@
     "legende": "Les docks"
    }
   ],
-  "img": "img/pnj/capito.webp"
+  "img": "img/pnj/capito.webp",
+  "teinte": "#755219"
  },
  {
   "id": "vibia",
@@ -1403,7 +1413,8 @@
     "legende": "L'auberge des Angues Dormientes"
    }
   ],
-  "img": "img/pnj/vibia.webp"
+  "img": "img/pnj/vibia.webp",
+  "teinte": "#755219"
  },
  {
   "id": "egnatius",
@@ -1431,7 +1442,8 @@
     "legende": "Le Malleus Cadens"
    }
   ],
-  "img": "img/pnj/egnatius.webp"
+  "img": "img/pnj/egnatius.webp",
+  "teinte": "#755219"
  },
  {
   "id": "ursinus",
@@ -1453,7 +1465,8 @@
     "legende": "Mandragora Viridis"
    }
   ],
-  "img": "img/pnj/ursinus.webp"
+  "img": "img/pnj/ursinus.webp",
+  "teinte": "#755219"
  },
  {
   "id": "thessala",
@@ -1474,7 +1487,8 @@
     "legende": "Cinis et Caligo"
    }
   ],
-  "img": "img/pnj/thessala.webp"
+  "img": "img/pnj/thessala.webp",
+  "teinte": "#753c19"
  },
  {
   "id": "volusius",
@@ -1501,7 +1515,8 @@
     "legende": "Cornua Fracta"
    }
   ],
-  "img": "img/pnj/volusius.webp"
+  "img": "img/pnj/volusius.webp",
+  "teinte": "#753c19"
  },
  {
   "id": "sera",
@@ -1522,7 +1537,8 @@
    }
   ],
   "img": "img/pnj/sera.webp",
-  "lieu": "keras-tauroc"
+  "lieu": "keras-tauroc",
+  "teinte": "#753c19"
  },
  {
   "id": "capella",
@@ -1542,7 +1558,8 @@
    }
   ],
   "img": "img/pnj/capella.webp",
-  "lieu": "keras-tauroc"
+  "lieu": "keras-tauroc",
+  "teinte": "#755219"
  },
  {
   "id": "hematome",
@@ -1579,7 +1596,8 @@
     "legende": "Hématome au Colisée"
    }
   ],
-  "img": "img/pnj/he-matome-are-ne.webp"
+  "img": "img/pnj/he-matome-are-ne.webp",
+  "teinte": "#753c19"
  },
  {
   "id": "calvinus-ferox",
@@ -1616,7 +1634,8 @@
     "legende": "La villa de Ferox"
    }
   ],
-  "img": "img/pnj/calvinus-ferox.webp"
+  "img": "img/pnj/calvinus-ferox.webp",
+  "teinte": "#2d2d2d"
  },
  {
   "id": "tarcus",
@@ -1651,7 +1670,8 @@
    }
   ],
   "img": "img/pnj/tarcus.webp",
-  "lieu": "keras-tauroc"
+  "lieu": "keras-tauroc",
+  "teinte": "#755219"
  },
  {
   "id": "otoba",
@@ -1666,7 +1686,8 @@
    "Sa mort a fermé les accès à Roshen Buru, Seiran Vale et Azuren Kai compris."
   ],
   "img": "img/pnj/otoba-kessai.webp",
-  "lieu": "keras-tauroc"
+  "lieu": "keras-tauroc",
+  "teinte": "#752519"
  },
  {
   "id": "yorisa",
@@ -1694,7 +1715,8 @@
    }
   ],
   "img": "img/pnj/capitaine-yorisa.webp",
-  "lieu": "keras-tauroc"
+  "lieu": "keras-tauroc",
+  "teinte": "#751925"
  },
  {
   "id": "saoren",
@@ -1715,7 +1737,8 @@
    }
   ],
   "img": "img/pnj/saoren.webp",
-  "lieu": "keras-tauroc"
+  "lieu": "keras-tauroc",
+  "teinte": "#752519"
  },
  {
   "id": "festival-cornes-rouges",
@@ -1819,7 +1842,8 @@
     "legende": "Le voyage avec Silas Mort-Dorée"
    }
   ],
-  "img": "img/pnj/silas-mortdore-e.webp"
+  "img": "img/pnj/silas-mortdore-e.webp",
+  "teinte": "#755219"
  },
  {
   "id": "gibet-absalom",
@@ -2060,7 +2084,8 @@
     "legende": "La tour d'Eamonn"
    }
   ],
-  "img": "img/pnj/eamonn-moorwich.webp"
+  "img": "img/pnj/eamonn-moorwich.webp",
+  "teinte": "#753c19"
  },
  {
   "id": "olyssane-veythar",
@@ -2097,15 +2122,18 @@
    {
     "img": "img/pnj/olyssane-veythar.webp",
     "label": "Normal",
-    "lieux": []
+    "lieux": [],
+    "teinte": "#753c19"
    },
    {
     "img": "img/pnj/olyssane-a-roshen-buru.webp",
     "label": "A Roshen Buru",
     "lieux": [],
-    "fond": "img/paysages/roshen-buru/rue.webp"
+    "fond": "img/paysages/roshen-buru/rue.webp",
+    "teinte": "#753c19"
    }
-  ]
+  ],
+  "teinte": "#753c19"
  },
  {
   "id": "ink",
@@ -2131,15 +2159,18 @@
    {
     "img": "img/pnj/ink.webp",
     "label": "Normal",
-    "lieux": []
+    "lieux": [],
+    "teinte": "#195275"
    },
    {
     "img": "img/pnj/ink-a-roshen-buru.webp",
     "label": "A Roshen Buru",
     "lieux": [],
-    "fond": "img/paysages/roshen-buru/rue.webp"
+    "fond": "img/paysages/roshen-buru/rue.webp",
+    "teinte": "#195275"
    }
-  ]
+  ],
+  "teinte": "#195275"
  },
  {
   "id": "oswin",
@@ -2159,7 +2190,8 @@
    }
   ],
   "img": "img/pnj/oswin.webp",
-  "lieu": "cap-cornes"
+  "lieu": "cap-cornes",
+  "teinte": "#2d2d2d"
  },
  {
   "id": "lorcan",
@@ -2182,7 +2214,8 @@
     "legende": "L'auberge La Mâchoire"
    }
   ],
-  "img": "img/pnj/lorca-n.webp"
+  "img": "img/pnj/lorca-n.webp",
+  "teinte": "#753c19"
  },
  {
   "id": "fennick",
@@ -2209,7 +2242,8 @@
     "legende": "Le marché"
    }
   ],
-  "img": "img/pnj/fennick.webp"
+  "img": "img/pnj/fennick.webp",
+  "teinte": "#753c19"
  },
  {
   "id": "kester-tauroc",
@@ -2230,7 +2264,8 @@
    }
   ],
   "img": "img/pnj/kester-tauroc.webp",
-  "lieu": "cap-cornes"
+  "lieu": "cap-cornes",
+  "teinte": "#752519"
  },
  {
   "id": "balamor",
@@ -3120,7 +3155,8 @@
     "legende": "L'hôpital du Colisée"
    }
   ],
-  "img": "img/pnj/meditrina.webp"
+  "img": "img/pnj/meditrina.webp",
+  "teinte": "#193c75"
  },
  {
   "id": "vrakul",
@@ -3140,7 +3176,8 @@
     "legende": "Vrakul au Colisée"
    }
   ],
-  "img": "img/pnj/vrakul.webp"
+  "img": "img/pnj/vrakul.webp",
+  "teinte": "#753c19"
  },
  {
   "id": "voshara",
@@ -3162,7 +3199,8 @@
     "legende": "Voshara au Colisée"
    }
   ],
-  "img": "img/pnj/voshara.webp"
+  "img": "img/pnj/voshara.webp",
+  "teinte": "#753c19"
  },
  {
   "id": "peu-importe",
@@ -3182,7 +3220,8 @@
     "legende": "Peu Importe au Colisée"
    }
   ],
-  "img": "img/pnj/peu-importe.webp"
+  "img": "img/pnj/peu-importe.webp",
+  "teinte": "#753c19"
  },
  {
   "id": "gruel",
@@ -3204,7 +3243,8 @@
     "legende": "Grûl au Colisée"
    }
   ],
-  "img": "img/pnj/gru-l.webp"
+  "img": "img/pnj/gru-l.webp",
+  "teinte": "#755219"
  },
  {
   "id": "cordus",
@@ -3224,7 +3264,8 @@
     "legende": "Le cabinet de Cordus"
    }
   ],
-  "img": "img/pnj/cordus.webp"
+  "img": "img/pnj/cordus.webp",
+  "teinte": "#755219"
  },
  {
   "id": "lapidus",
@@ -3241,7 +3282,8 @@
     "legende": "La mine de Lapidus"
    }
   ],
-  "img": "img/pnj/lapidus.webp"
+  "img": "img/pnj/lapidus.webp",
+  "teinte": "#753c19"
  },
  {
   "id": "grixus",
@@ -3258,7 +3300,8 @@
     "legende": "Une rue de Keras Tauroc"
    }
   ],
-  "img": "img/pnj/grixus.webp"
+  "img": "img/pnj/grixus.webp",
+  "teinte": "#755219"
  },
  {
   "id": "goelo",
@@ -3273,7 +3316,8 @@
    "Le Pisteur Creux",
    "Passant ivre"
   ],
-  "img": "img/pnj/passant-ivre.webp"
+  "img": "img/pnj/passant-ivre.webp",
+  "teinte": "#527519"
  },
  {
   "id": "branak",
@@ -3341,19 +3385,23 @@
    {
     "img": "img/pnj/homme-de-main-de-ferox2.webp",
     "label": "Homme de main 2",
-    "lieux": []
+    "lieux": [],
+    "teinte": "#753c19"
    },
    {
     "img": "img/pnj/garde-de-ferox3.webp",
     "label": "Garde 3",
-    "lieux": []
+    "lieux": [],
+    "teinte": "#753c19"
    },
    {
     "img": "img/pnj/homme-de-main-de-ferox1.webp",
     "label": "Homme de main 1",
-    "lieux": []
+    "lieux": [],
+    "teinte": "#753c19"
    }
-  ]
+  ],
+  "teinte": "#753c19"
  },
  {
   "id": "arshen",

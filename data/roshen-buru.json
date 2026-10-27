@@ -699,7 +699,8 @@
     "img": "img/paysages/azuren-kai/ryokan-1.webp",
     "legende": "Le Ryokan"
    }
-  ]
+  ],
+  "teinte": "#755219"
  },
  {
   "id": "kirin-anadori",
@@ -734,16 +735,19 @@
    {
     "img": "img/pnj/kirin.webp",
     "label": "Normal",
-    "lieux": []
+    "lieux": [],
+    "teinte": "#753c19"
    },
    {
     "img": "img/pnj/kirin-son-miren.webp",
     "label": "Avec son Miren",
     "lieux": [
      "temple-du-tenraku"
-    ]
+    ],
+    "teinte": "#196975"
    }
-  ]
+  ],
+  "teinte": "#753c19"
  },
  {
   "id": "genie-de-suie",
@@ -761,7 +765,8 @@
   "connu": [
    "Intangible et impossible à cibler.",
    "Il agit en même temps que Kirin et s'évanouit quand celui-ci tombe."
-  ]
+  ],
+  "teinte": "#196975"
  },
  {
   "id": "foret-aruzen",
@@ -991,7 +996,8 @@
     "legende": "La Magistrature"
    }
   ],
-  "img": "img/pnj/roven-moto.webp"
+  "img": "img/pnj/roven-moto.webp",
+  "teinte": "#753c19"
  },
  {
   "id": "pillier",
@@ -1349,7 +1355,8 @@
     "legende": "Le palais Tsuren"
    }
   ],
-  "img": "img/pnj/havoc-tsuren.webp"
+  "img": "img/pnj/havoc-tsuren.webp",
+  "teinte": "#755219"
  },
  {
   "id": "rysei-tsuren",
@@ -1383,16 +1390,19 @@
    {
     "img": "img/pnj/rysei-tsuren.webp",
     "label": "Normal",
-    "lieux": []
+    "lieux": [],
+    "teinte": "#752519"
    },
    {
     "img": "img/pnj/rysei-tsuren-miren.webp",
     "label": "Avec son Miren",
     "lieux": [
      "temple-du-tenraku"
-    ]
+    ],
+    "teinte": "#196975"
    }
-  ]
+  ],
+  "teinte": "#752519"
  },
  {
   "id": "kynn-tsuren",
@@ -1420,7 +1430,8 @@
     "legende": "Le palais Tsuren"
    }
   ],
-  "img": "img/pnj/kynn-tsuren.webp"
+  "img": "img/pnj/kynn-tsuren.webp",
+  "teinte": "#753c19"
  },
  {
   "id": "clan-kovacz",
@@ -1480,16 +1491,19 @@
    {
     "img": "img/pnj/darrek-kovacz.webp",
     "label": "Normal",
-    "lieux": []
+    "lieux": [],
+    "teinte": "#753c19"
    },
    {
     "img": "img/pnj/darrek-kovacz-miren.webp",
     "label": "Avec son Miren",
     "lieux": [
      "temple-du-tenraku"
-    ]
+    ],
+    "teinte": "#196975"
    }
-  ]
+  ],
+  "teinte": "#753c19"
  },
  {
   "id": "brodek-kovacz",
@@ -1517,7 +1531,8 @@
     "legende": "Le palais Kovacz"
    }
   ],
-  "img": "img/pnj/brodek-kovacz.webp"
+  "img": "img/pnj/brodek-kovacz.webp",
+  "teinte": "#755219"
  },
  {
   "id": "ayano-kaben",
@@ -1557,7 +1572,8 @@
     "legende": "La garçonnière de Darrek Kovacz"
    }
   ],
-  "img": "img/pnj/ayano-kaben.webp"
+  "img": "img/pnj/ayano-kaben.webp",
+  "teinte": "#751925"
  },
  {
   "id": "konya-sokabei",
@@ -1593,7 +1609,8 @@
     "legende": "Le lieu du premier mariage"
    }
   ],
-  "img": "img/pnj/konya-sokabei.webp"
+  "img": "img/pnj/konya-sokabei.webp",
+  "teinte": "#753c19"
  },
  {
   "id": "clan-anadori",
@@ -1676,7 +1693,8 @@
     "img": "img/paysages/roshen-buru/palais-uramei.webp",
     "legende": "Le palais Urameï"
    }
-  ]
+  ],
+  "teinte": "#753c19"
  },
  {
   "id": "sabake",
@@ -1696,7 +1714,8 @@
     "legende": "Le palais Urameï"
    }
   ],
-  "img": "img/pnj/sabake.webp"
+  "img": "img/pnj/sabake.webp",
+  "teinte": "#753c19"
  },
  {
   "id": "nyssra",
@@ -1716,7 +1735,8 @@
     "legende": "Le palais Urameï"
    }
   ],
-  "img": "img/pnj/nyssra.webp"
+  "img": "img/pnj/nyssra.webp",
+  "teinte": "#753c19"
  },
  {
   "id": "yurei-poison",
@@ -1764,7 +1784,8 @@
     "img": "img/paysages/roshen-buru/planque-yurei.webp",
     "legende": "La planque de Yureï"
    }
-  ]
+  ],
+  "teinte": "#753c19"
  },
  {
   "id": "tobiya",
@@ -1800,7 +1821,8 @@
     "legende": "La maison de Tobiya"
    }
   ],
-  "img": "img/pnj/tobiya.webp"
+  "img": "img/pnj/tobiya.webp",
+  "teinte": "#751925"
  },
  {
   "id": "clan-siharen",
@@ -1869,17 +1891,20 @@
    {
     "img": "img/pnj/anaru-miren-buru.webp",
     "label": "Normal",
-    "lieux": []
+    "lieux": [],
+    "teinte": "#195275"
    },
    {
     "img": "img/pnj/anaru-miren-buru-miren.webp",
     "label": "Avec son Miren",
     "lieux": [
      "temple-du-tenraku"
-    ]
+    ],
+    "teinte": "#197569"
    }
   ],
-  "lieu": "palais-miren-buru"
+  "lieu": "palais-miren-buru",
+  "teinte": "#195275"
  },
  {
   "id": "neryn-yosa",
@@ -1938,7 +1963,8 @@
     "legende": "Neryn Yosa"
    }
   ],
-  "img": "img/pnj/neryn-yosa.webp"
+  "img": "img/pnj/neryn-yosa.webp",
+  "teinte": "#755219"
  },
  {
   "id": "ginko-noshi-buru",
@@ -2027,7 +2053,8 @@
     "legende": "La forge Oyoroï"
    }
   ],
-  "img": "img/pnj/tessei-kanae.webp"
+  "img": "img/pnj/tessei-kanae.webp",
+  "teinte": "#753c19"
  },
  {
   "id": "oren-sidai",
@@ -2053,7 +2080,8 @@
     "legende": "Le prêteur sur gage"
    }
   ],
-  "img": "img/pnj/oren-sidai.webp"
+  "img": "img/pnj/oren-sidai.webp",
+  "teinte": "#755219"
  },
  {
   "id": "saori-velmaka",
@@ -2076,7 +2104,8 @@
     "legende": "L'apothicaire"
    }
   ],
-  "img": "img/pnj/saori-velmaka.webp"
+  "img": "img/pnj/saori-velmaka.webp",
+  "teinte": "#753c19"
  },
  {
   "id": "sumeren-daiko",
@@ -2105,7 +2134,8 @@
     "legende": "L'atelier de calligraphie"
    }
   ],
-  "img": "img/pnj/sumeren-dai-ko.webp"
+  "img": "img/pnj/sumeren-dai-ko.webp",
+  "teinte": "#753c19"
  },
  {
   "id": "absalom",
@@ -2150,44 +2180,45 @@
    {
     "img": "img/istra-belig/roshen-buru/pnj/absalom.webp",
     "label": "Normal",
-    "lieux": []
+    "lieux": [],
+    "teinte": "#755219"
    },
    {
     "img": "img/pnj/absalom-demon.webp",
     "label": "Forme démon",
     "lieux": [
      "temple-du-tenraku"
-    ]
+    ],
+    "teinte": "#752519"
    }
-  ]
+  ],
+  "teinte": "#755219"
  },
  {
   "id": "gran-brijit",
   "type": "pnj",
   "nom": "Gran Brijit",
-  "titre": "Hanaré, divinité de la Mort",
+  "titre": "Divinité de la Mort",
   "parent": "cabane-gran-brijit",
   "lieu": "cabane-gran-brijit",
   "statut": "vivant",
   "img": "img/pnj/gran-brijit.webp",
   "alias": [
    "Hanaré",
+   "Hécate",
    "Ereshkigal",
    "Brijit"
   ],
-  "resume": "Être froid et dérangeant que la Gardienne appelle « Hanaré ». Elle est la divinité de la Mort.",
+  "resume": "Divinité de la Mort, froide et dérangeante. Chaque culture de Thaldera lui donne un nom différent. Elle règne sur l'équilibre entre la vie et la mort.",
   "connu": [
-   "La Gardienne l'a appelée « Hanaré ». Elle dit que chaque création de Mélora est un cadeau que celle-ci lui envoie.",
-   "Elle a donné deux missions à Philippa : ne pas ouvrir de portail entre Cap Cornes et Havre Noir, et trouver puis tuer Oren Sidaï à Roshen Buru pour préserver l'équilibre.",
-   "Elle a affronté Ginko Noshi-Buru à Kazad Marunn et semblait lui vouloir quelque chose.",
-   "Elle a menacé la Gardienne directement. Celle-ci a reculé et l'a laissée prendre le parchemin.",
-   "Les gens du pays l'appellent Ereshkigal dans le désert de Kazad Marunn."
+   "Noms selon les régions : Hécate à Keras Tauroc, Hanaré à Roshen Buru, Ereshkigal à Khazad Marunn.",
+   "Cap Cornes : le groupe la rencontre dans sa cabane. Philippa y a une vision d'une balance désaxée.",
+   "Elle parle à un vieux monsieur inconnu que le groupe interrompt : « l'équilibre doit être préservé ».",
+   "Elle désigne Philippa championne et lui donne deux missions : ne pas ouvrir de portail entre Cap Cornes et Havre Noir, trouver puis tuer Oren Sidaï à Roshen Buru.",
+   "Elle dit que chaque création de Mélora est un cadeau que celle-ci lui envoie.",
+   "Khazad Marunn : elle affronte Ginko Noshi-Buru et semble lui vouloir quelque chose."
   ],
-  "histoire": [
-   "À Cap Cornes, le groupe la rencontre dans sa cabane. Philippa y a une vision d'une balance désaxée.",
-   "Le groupe interrompt sa conversation avec un vieux monsieur inconnu, à qui elle dit que « l'équilibre doit être préservé ».",
-   "Elle intervient au Temple du Tenraku et emporte le parchemin sacré."
-  ],
+  "histoire": [],
   "relations": [
    {
     "cible": "anaru-miren-buru",
@@ -2215,7 +2246,8 @@
     "img": "img/paysages/cap-cornes/cabane-gran-brijit.webp",
     "legende": "L'intérieur de la maison de Gran Brijit"
    }
-  ]
+  ],
+  "teinte": "#753c19"
  },
  {
   "id": "carnage",
@@ -2230,7 +2262,8 @@
    "Le groupe l'affronte après la destruction du sommet du temple."
   ],
   "question": "Qui est Carnage, et qu'est devenue la foule du temple ?",
-  "img": "img/pnj/carnage.webp"
+  "img": "img/pnj/carnage.webp",
+  "teinte": "#753c19"
  },
  {
   "id": "domaine-tsuren",
@@ -2315,7 +2348,8 @@
     "legende": "L'académie du Tenraku"
    }
   ],
-  "img": "img/pnj/maitre-mishta.webp"
+  "img": "img/pnj/maitre-mishta.webp",
+  "teinte": "#753c19"
  },
  {
   "id": "temple-de-melora",
@@ -2365,7 +2399,8 @@
     "legende": "Le temple de Mélora Sylvestre"
    }
   ],
-  "img": "img/pnj/takko-halvaki.webp"
+  "img": "img/pnj/takko-halvaki.webp",
+  "teinte": "#753c19"
  },
  {
   "id": "domaine-kovacz",
@@ -2442,16 +2477,19 @@
    {
     "img": "img/pnj/caspian-anadori.webp",
     "label": "Normal",
-    "lieux": []
+    "lieux": [],
+    "teinte": "#753c19"
    },
    {
     "img": "img/pnj/caspian-anadori-miren.webp",
     "label": "Avec son Miren",
     "lieux": [
      "temple-du-tenraku"
-    ]
+    ],
+    "teinte": "#195275"
    }
-  ]
+  ],
+  "teinte": "#753c19"
  },
  {
   "id": "maison-sokabei",
@@ -2479,7 +2517,8 @@
   "lieu": "maison-sokabei",
   "statut": "vivant",
   "resume": "Père de Konya, mal à l'aise, il n'ose pas se mêler de l'affaire.",
-  "img": "img/pnj/kazen-sokabei.webp"
+  "img": "img/pnj/kazen-sokabei.webp",
+  "teinte": "#755219"
  },
  {
   "id": "wano-sokabei",
@@ -2490,7 +2529,8 @@
   "lieu": "maison-sokabei",
   "statut": "vivant",
   "resume": "Elle coud, écoute et ne dit rien. C'est elle qui a vu quelqu'un rôder dans la rue.",
-  "img": "img/pnj/wano-sokabei.webp"
+  "img": "img/pnj/wano-sokabei.webp",
+  "teinte": "#753c19"
  },
  {
   "id": "domaine-kaben",
@@ -2518,7 +2558,8 @@
   "histoire": [
    "Après le sauvetage d'Ayano, il sert lui-même les Sokabeï."
   ],
-  "img": "img/pnj/doryen-kaben.webp"
+  "img": "img/pnj/doryen-kaben.webp",
+  "teinte": "#753c19"
  },
  {
   "id": "siona-kaben",
@@ -2532,7 +2573,8 @@
   "connu": [
    "Ayano a fréquenté il y a des années un fils de clan de haute noblesse, arrogant et détestable. Elle n'a jamais lâché son nom."
   ],
-  "img": "img/pnj/siona-kaben.webp"
+  "img": "img/pnj/siona-kaben.webp",
+  "teinte": "#755219"
  },
  {
   "id": "maison-de-the",
@@ -2563,7 +2605,8 @@
   "connu": [
    "Les Kovacz déclinent et le fils est un problème connu. Les Urameï tiennent le bas quartier. Les Anadori se battent partout en ville."
   ],
-  "img": "img/pnj/hoshka.webp"
+  "img": "img/pnj/hoshka.webp",
+  "teinte": "#753c19"
  },
  {
   "id": "orisa",
@@ -2577,7 +2620,8 @@
   "connu": [
    "Le mariage Sokabeï-Kaben fait jaser, scandaleux ou romantique selon la table."
   ],
-  "img": "img/pnj/orisa.webp"
+  "img": "img/pnj/orisa.webp",
+  "teinte": "#753c19"
  },
  {
   "id": "quartier-des-plaisirs",
@@ -2615,7 +2659,8 @@
   "connu": [
    "Maeko, l'une de ses courtisanes, connaît Darrek, qui ne vient plus depuis des mois."
   ],
-  "img": "img/pnj/madame-renka.webp"
+  "img": "img/pnj/madame-renka.webp",
+  "teinte": "#755219"
  },
  {
   "id": "curiosites-maven",
@@ -2652,7 +2697,8 @@
     "legende": "Les curiosités de Maven Ako"
    }
   ],
-  "img": "img/pnj/maven-ako.webp"
+  "img": "img/pnj/maven-ako.webp",
+  "teinte": "#753c19"
  },
  {
   "id": "echoppe-ilvaro",
@@ -2689,7 +2735,8 @@
     "legende": "L'échoppe d'Ilvaro"
    }
   ],
-  "img": "img/pnj/ilvaro.webp"
+  "img": "img/pnj/ilvaro.webp",
+  "teinte": "#755219"
  },
  {
   "id": "atelier-thibwick",
@@ -2721,7 +2768,8 @@
    "Il officie la seconde cérémonie de mariage.",
    "Quand Absalom brise la jarre, il murmure : « Vous venez de briser un objet vieux de neuf cents ans. »"
   ],
-  "img": "img/pnj/maitre-orashay.webp"
+  "img": "img/pnj/maitre-orashay.webp",
+  "teinte": "#753c19"
  },
  {
   "id": "tasseren",
@@ -2738,7 +2786,8 @@
     "legende": "La Magistrature"
    }
   ],
-  "img": "img/pnj/tasseren.webp"
+  "img": "img/pnj/tasseren.webp",
+  "teinte": "#752519"
  },
  {
   "id": "oryo-takashen",
@@ -2759,7 +2808,8 @@
   "lieu": "roshen-buru",
   "statut": "vivant",
   "resume": "Mendiant de la ville.",
-  "img": "img/pnj/doku.webp"
+  "img": "img/pnj/doku.webp",
+  "teinte": "#753c19"
  },
  {
   "id": "bruska",
@@ -2783,7 +2833,8 @@
     "legende": "La garçonnière de Bruska"
    }
   ],
-  "img": "img/pnj/bruska.webp"
+  "img": "img/pnj/bruska.webp",
+  "teinte": "#755219"
  },
  {
   "id": "kabo",
@@ -2814,7 +2865,8 @@
   "lieu": "pavillon-mariage",
   "statut": "vivant",
   "resume": "Tente d'entrer au mariage pour boire à l'œil. Fausse alerte.",
-  "img": "img/pnj/otta.webp"
+  "img": "img/pnj/otta.webp",
+  "teinte": "#753c19"
  },
  {
   "id": "obumi",
@@ -2851,7 +2903,8 @@
     "legende": "Le palais Siharen"
    }
   ],
-  "img": "img/pnj/maitre-siharen.webp"
+  "img": "img/pnj/maitre-siharen.webp",
+  "teinte": "#753c19"
  },
  {
   "id": "dame-teshima",
@@ -2868,7 +2921,8 @@
     "legende": "Le palais Siharen"
    }
   ],
-  "img": "img/pnj/dame-teshima.webp"
+  "img": "img/pnj/dame-teshima.webp",
+  "teinte": "#753c19"
  },
  {
   "id": "clan-kaben",
@@ -2907,7 +2961,8 @@
   "lieu": "quartier-des-plaisirs",
   "statut": "vivant",
   "resume": "Courtisane qui reçoit les fils de clan.",
-  "img": "img/pnj/velsha-quartier-des-plaisirs.webp"
+  "img": "img/pnj/velsha-quartier-des-plaisirs.webp",
+  "teinte": "#752519"
  },
  {
   "id": "lysha",
@@ -2918,7 +2973,8 @@
   "lieu": "quartier-des-plaisirs",
   "statut": "vivant",
   "resume": "Courtisane qui reçoit les fils de clan.",
-  "img": "img/pnj/lysha-quartier-des-plaisirs.webp"
+  "img": "img/pnj/lysha-quartier-des-plaisirs.webp",
+  "teinte": "#755219"
  },
  {
   "id": "maeko",
@@ -2939,7 +2995,8 @@
   "lieu": "quartier-des-plaisirs",
   "statut": "vivant",
   "resume": "Courtisan qui connaît les femmes de la haute société.",
-  "img": "img/pnj/sevaki-quartier-des-plaisirs.webp"
+  "img": "img/pnj/sevaki-quartier-des-plaisirs.webp",
+  "teinte": "#752519"
  },
  {
   "id": "venta",
@@ -2950,7 +3007,8 @@
   "lieu": "quartier-des-plaisirs",
   "statut": "vivant",
   "resume": "Gardien de la porte. Il fouille, désarme et ne discute pas.",
-  "img": "img/pnj/venta.webp"
+  "img": "img/pnj/venta.webp",
+  "teinte": "#753c19"
  },
  {
   "id": "muji",
@@ -2964,7 +3022,8 @@
   "connu": [
    "Ce n'est pas Absalom : l'enquête sur la femme en noir n'a rien révélé d'infernal."
   ],
-  "img": "img/pnj/muji.webp"
+  "img": "img/pnj/muji.webp",
+  "teinte": "#753c19"
  },
  {
   "id": "nusei",
@@ -2975,7 +3034,8 @@
   "lieu": "roshen-buru",
   "statut": "vivant",
   "resume": "Elle a orienté le groupe vers la dame en noir derrière le temple.",
-  "img": "img/pnj/nusei.webp"
+  "img": "img/pnj/nusei.webp",
+  "teinte": "#755219"
  },
  {
   "id": "sabo",
@@ -3022,7 +3082,8 @@
     "legende": "La boutique de Soko"
    }
   ],
-  "img": "img/pnj/soko.webp"
+  "img": "img/pnj/soko.webp",
+  "teinte": "#752519"
  },
  {
   "id": "kaban-kanae",
@@ -3065,7 +3126,8 @@
     "legende": "Les ascenseurs"
    }
   ],
-  "img": "img/pnj/meshi.webp"
+  "img": "img/pnj/meshi.webp",
+  "teinte": "#752519"
  },
  {
   "id": "vosko",
@@ -3095,7 +3157,8 @@
   "alias": [
    "Bao"
   ],
-  "img": "img/pnj/ohana-bao.webp"
+  "img": "img/pnj/ohana-bao.webp",
+  "teinte": "#753c19"
  },
  {
   "id": "bhamir",
@@ -3106,7 +3169,8 @@
   "lieu": "roshen-buru",
   "statut": "vivant",
   "resume": "Il se souvient d'une odeur âcre qui remontait des égouts autour de la maison de Tobiya.",
-  "img": "img/pnj/bhamir.webp"
+  "img": "img/pnj/bhamir.webp",
+  "teinte": "#753c19"
  },
  {
   "id": "poki",
@@ -3117,7 +3181,8 @@
   "lieu": "roshen-buru",
   "statut": "vivant",
   "resume": "Voisin de Tobiya, naïf. Il signale l'odeur infâme venue de sa maison.",
-  "img": "img/pnj/poki.webp"
+  "img": "img/pnj/poki.webp",
+  "teinte": "#753c19"
  },
  {
   "id": "bourre-piff",
@@ -3142,7 +3207,8 @@
   "lieu": "tour-eamonn",
   "statut": "vaincu",
   "resume": "Silhouette drapée de masques flottants qui a pris d'assaut la tour d'Eamonn. Vaincu avec ses gardes.",
-  "img": "img/pnj/oni-aux-masques.webp"
+  "img": "img/pnj/oni-aux-masques.webp",
+  "teinte": "#753c19"
  },
  {
   "id": "porteur-de-hallebarde",
@@ -3272,7 +3338,8 @@
   "lieu": "cap-cornes",
   "statut": "vivant",
   "resume": "Massif et silencieux, il préfère laisser son employeur gagner.",
-  "img": "img/pnj/vexil.webp"
+  "img": "img/pnj/vexil.webp",
+  "teinte": "#527519"
  },
  {
   "id": "grimwald",
@@ -3289,7 +3356,8 @@
     "legende": "L'aqueduc"
    }
   ],
-  "img": "img/pnj/grimwald.webp"
+  "img": "img/pnj/grimwald.webp",
+  "teinte": "#753c19"
  },
  {
   "id": "pere-niall",
@@ -3309,7 +3377,8 @@
     "legende": "La cathédrale"
    }
   ],
-  "img": "img/pnj/pe-re-niall.webp"
+  "img": "img/pnj/pe-re-niall.webp",
+  "teinte": "#195275"
  },
  {
   "id": "maeve",
@@ -3326,7 +3395,8 @@
     "legende": "Dans les rues de Cap Cornes"
    }
   ],
-  "img": "img/pnj/mae-ve.webp"
+  "img": "img/pnj/mae-ve.webp",
+  "teinte": "#751925"
  },
  {
   "id": "tormund",
@@ -3343,7 +3413,8 @@
     "legende": "La forge des rames"
    }
   ],
-  "img": "img/pnj/tormund.webp"
+  "img": "img/pnj/tormund.webp",
+  "teinte": "#755219"
  },
  {
   "id": "rory",
@@ -3360,7 +3431,8 @@
     "legende": "La pêcherie"
    }
   ],
-  "img": "img/pnj/rory-cory.webp"
+  "img": "img/pnj/rory-cory.webp",
+  "teinte": "#755219"
  },
  {
   "id": "sorcha",
@@ -3377,7 +3449,8 @@
     "legende": "Moustache et Baguette"
    }
   ],
-  "img": "img/pnj/sorcha.webp"
+  "img": "img/pnj/sorcha.webp",
+  "teinte": "#755219"
  },
  {
   "id": "kirin-seiren",
@@ -3404,7 +3477,8 @@
     "legende": "Chez Madame Ari"
    }
   ],
-  "img": "img/pnj/madame-ari.webp"
+  "img": "img/pnj/madame-ari.webp",
+  "teinte": "#753c19"
  },
  {
   "id": "obore",
@@ -3419,7 +3493,8 @@
    "Obore",
    "Le Passeur d'Azuren Kai"
   ],
-  "img": "img/pnj/obore.webp"
+  "img": "img/pnj/obore.webp",
+  "teinte": "#753c19"
  },
  {
   "id": "doryo-kovacz",
@@ -3436,7 +3511,8 @@
     "legende": "La Magistrature de Doryo Kovacz"
    }
   ],
-  "img": "img/pnj/doryo-kovacz.webp"
+  "img": "img/pnj/doryo-kovacz.webp",
+  "teinte": "#753c19"
  },
  {
   "id": "nuala",
@@ -3453,7 +3529,8 @@
     "legende": "Le comptoir de Cap Cornes"
    }
   ],
-  "img": "img/pnj/nuala.webp"
+  "img": "img/pnj/nuala.webp",
+  "teinte": "#751925"
  },
  {
   "id": "kanabe",
@@ -3473,7 +3550,8 @@
     "legende": "La carriole de Kanabé"
    }
   ],
-  "img": "img/pnj/kanabe.webp"
+  "img": "img/pnj/kanabe.webp",
+  "teinte": "#753c19"
  },
  {
   "id": "rokka",
@@ -3490,7 +3568,8 @@
     "legende": "Le Cuir et l'Écaille"
    }
   ],
-  "img": "img/pnj/rokka.webp"
+  "img": "img/pnj/rokka.webp",
+  "teinte": "#755219"
  },
  {
   "id": "le-goryo",
@@ -3501,6 +3580,7 @@
   "lieu": "azuren-kai",
   "statut": "inconnu",
   "resume": "Assassin de combat éclair qui a attaqué le groupe.",
-  "img": "img/pnj/le-goryo.webp"
+  "img": "img/pnj/le-goryo.webp",
+  "teinte": "#753c19"
  }
 ]

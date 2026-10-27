@@ -4,7 +4,7 @@
 (() => {
 'use strict';
 
-const VER = '11';
+const VER = '12';
 const EDIT = new URLSearchParams(location.search).has('edit');
 const $ = (s, r = document) => r.querySelector(s);
 const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
@@ -478,7 +478,9 @@ function setCutout(e, form) {
   c = document.createElement('div');
   c.className = 'cutout';
   c.className = 'cutout' + (src ? '' : ' ph');
-  c.innerHTML = `<img src="${src || PH_SIL}" alt="${esc(e.nom)}"><span class="cn">${esc(e.nom)}</span>`;
+  const tn = (form && form.teinte) || e.teinte || '#3a2a14';
+  c.style.setProperty('--tn', tn);
+  c.innerHTML = `<i class="band"></i><span class="cn">${esc(e.nom)}</span><img src="${src || PH_SIL}" alt="${esc(e.nom)}">`;
   stageEl.insertBefore(c, $('.fog', stageEl));
   const ci = $('img', c);
   const cfit = () => { if (ci.naturalHeight && src) ci.style.maxHeight = Math.min(stageEl.clientHeight * 0.88, ci.naturalHeight * 1.3) + 'px'; };
@@ -619,11 +621,29 @@ function relations(e) {
   return '<div class="rels">' + rows.map(r => `<a class="chip${cls(r.ton)}" href="#/${r.id}" title="${esc(r.note || '')}"><b>${esc(r.type)}</b>${esc(BY[r.id].nom)}</a>`).join('') + '</div>';
 }
 
+function relBullets(e) {
+  const rows = [], seen = new Set();
+  (e.relations || []).forEach(r => { if (BY[r.cible] && !seen.has(r.cible)) { seen.add(r.cible); rows.push([r.type, r.cible, r.note]); } });
+  DB.forEach(o => (o.relations || []).forEach(r => { if (r.cible === e.id && o.id !== e.id && !seen.has(o.id) && o.type !== 'sujet') { seen.add(o.id); rows.push([r.inverse || r.type, o.id, r.note]); } }));
+  return rows.map(([t, id, n]) => `${t ? t.charAt(0).toUpperCase() + t.slice(1) + ' : ' : ''}${BY[id].nom}${n ? ', ' + n : ''}`);
+}
+function savoirItems(e) {
+  const out = [];
+  const isP = e.type === 'pnj' || e.type === 'pj';
+  const pl = e.lieu && BY[e.lieu] ? BY[e.lieu] : (e.parent && BY[e.parent] && ['lieu', 'ville'].includes(BY[e.parent].type) ? BY[e.parent] : null);
+  const vil = pl && pl.type === 'lieu' ? chain(pl).find(c => c.type === 'ville') : null;
+  if (isP && e.type === 'pnj' && pl) out.push(`Vu : ${pl.nom}${vil ? ' (' + vil.nom + ')' : ''}`);
+  (e.connu || []).forEach(t => out.push(L(t, e.id)));
+  if (e.type !== 'pj' && e.type !== 'evenement') (e.histoire || []).forEach(t => out.push(L(t, e.id)));
+  if (isP) relBullets(e).forEach(t => out.push(esc(t)));
+  return out;
+}
+const savoirHtml = e => { const it = savoirItems(e); return it.length ? '<ul>' + it.map(t => `<li>${t}</li>`).join('') + '</ul>' : ''; };
 function detailBlock(e) {
   return `<h4>${esc(e.nom)}</h4><div class="nt">${esc(e.titre || '')} ${statusPill(e)}</div>` +
     (e.resume ? `<p class="resume" style="text-align:left;font-size:17px;margin:6px 0">${L(e.resume, e.id)}</p>` : '') +
-    sec('Ce que le groupe sait', connuHtml(e)) +
-    sec(e.histoireTitre || (e.type === 'pj' ? 'Enjeux et quête en cours' : 'Pendant le scénario'), ul(e.histoire, e.id), 'past') +
+    sec('Ce que le groupe sait', savoirHtml(e)) +
+    (e.type === 'pj' ? sec('Enjeux et quête en cours', ul(e.histoire, e.id), 'past') : '') +
     (e.question ? sec('En suspens', `<p class="qs">${L(e.question, e.id)}</p>`) : '') +
     `<a class="more" href="#/${e.id}">Fiche complète ›</a>`;
 }
@@ -637,8 +657,7 @@ function renderPanel(e, q) {
   if (e.galerie && e.galerie.length && !asGallery && ['ville', 'region', 'faction', 'continent'].includes(e.type)) {
     h += `<div class="hero"><img src="${e.galerie[0].img}" alt=""></div>`;
   }
-  if ((e.type === 'pnj' || e.type === 'pj') && e.img) h += `<div class="cut"><img src="${e.img}" alt="${esc(e.nom)}"></div><div class="sepline"></div>`;
-  else if (e.blason) h += `<div class="crest"><img src="${e.blason}" alt=""></div>`;
+  if (e.type !== 'pnj' && e.type !== 'pj' && e.blason) h += `<div class="crest"><img src="${e.blason}" alt=""></div>`;
   h += `<header class="head"><div class="tp">${esc(e.typeLabel || TYPES[e.type] || '')}</div><h1>${esc(e.nom)}</h1>${e.titre ? `<div class="ti">${L(e.titre, e.id)}</div>` : ''}${statusPill(e)}<div class="rule"><i></i></div></header>`;
   if (e.chef) h += `<div class="chef"><span class="rt">${esc(e.chef.titre)}</span><span class="rn">${esc(e.chef.nom)}</span></div>`;
   if (e.themes) h += `<div class="themes">${esc(e.themes)}</div>`;
@@ -650,11 +669,11 @@ function renderPanel(e, q) {
   if (isPlace && here.length) {
     h += `<section class="sec"><h3>Personnages présents</h3><div class="bubs" id="npcs">${here.map(p => bubble(p, 'data-npc="1"')).join('')}</div><div id="npcbox"></div></section>`;
   }
-  h += sec('Ce que le groupe sait', connuHtml(e));
-  h += sec(e.histoireTitre || (e.type === 'evenement' ? 'Ce qui s’est passé' : e.type === 'pj' ? 'Enjeux et quête en cours' : 'Pendant le scénario'), ul(e.histoire, e.id), 'past');
+  if (e.type === 'evenement') { h += sec('Ce que le groupe sait', connuHtml(e)); h += sec('Ce qui s’est passé', ul(e.histoire, e.id), 'past'); }
+  else h += sec('Ce que le groupe sait', savoirHtml(e));
+  if (e.type === 'pj') h += sec('Enjeux et quête en cours', ul(e.histoire, e.id), 'past');
   if (e.question) h += sec('En suspens', `<p class="qs">${L(e.question, e.id)}</p>`);
-  const rel = relations(e);
-  if (rel) h += sec('Liens', rel);
+  if (e.type !== 'pnj' && e.type !== 'pj') { const rel = relations(e); if (rel) h += sec('Liens', rel); }
 
   // enfants
   const placed = new Set(here.map(x => x.id));

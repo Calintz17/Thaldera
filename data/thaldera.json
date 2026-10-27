@@ -1935,7 +1935,8 @@
     "type": "Second",
     "ton": "neutre"
    }
-  ]
+  ],
+  "teinte": "#756919"
  },
  {
   "id": "thargan",
@@ -1981,7 +1982,8 @@
   "histoire": [
    "Philippa la libère à l'Île aux Moines."
   ],
-  "img": "img/thaldera/pnj/liora.webp"
+  "img": "img/thaldera/pnj/liora.webp",
+  "teinte": "#755219"
  },
  {
   "id": "temple-de-thalos",
@@ -2229,10 +2231,9 @@
  },
  {
   "id": "agran",
-  "type": "ville",
+  "type": "continent",
   "nom": "Agran",
   "titre": "Cité sous-marine à vingt kilomètres de profondeur",
-  "parent": "thaldera",
   "resume": "Cité de corail au fond d'une faille abyssale, éclairée par la seule bioluminescence qui pulse au rythme de Kataron.",
   "connu": [
    "Aucune surface visible. Des courants létaux coulent au-dessus de la faille.",
@@ -2248,7 +2249,16 @@
   "alias": [
    "Agran"
   ],
-  "ordre": 5
+  "ordre": 5,
+  "sousTitre": "La cité sous les flots",
+  "cartes": [
+   {
+    "id": "carte",
+    "img": "img/placeholder/carte-noire.svg",
+    "legende": ""
+   }
+  ],
+  "typeLabel": "Cité engloutie"
  },
  {
   "id": "thaloor",
@@ -2512,14 +2522,17 @@
    {
     "img": "img/thaldera/pnj/vespera-merigold.webp",
     "label": "Normal",
-    "lieux": []
+    "lieux": [],
+    "teinte": "#752519"
    },
    {
     "img": "img/pnj/madame-vespera-bordel.webp",
     "label": "Au bordel",
-    "lieux": []
+    "lieux": [],
+    "teinte": "#752519"
    }
-  ]
+  ],
+  "teinte": "#752519"
  },
  {
   "id": "lirenne",
@@ -3842,7 +3855,8 @@
   "lieu": "maison-de-vespera",
   "statut": "vivant",
   "resume": "Une des deux sœurs de la maison.",
-  "img": "img/pnj/tina-nina-prostitue-es.webp"
+  "img": "img/pnj/tina-nina-prostitue-es.webp",
+  "teinte": "#755219"
  },
  {
   "id": "nina",
@@ -3853,7 +3867,8 @@
   "lieu": "maison-de-vespera",
   "statut": "vivant",
   "resume": "Une des deux sœurs de la maison.",
-  "img": "img/pnj/tina-nina-prostitue-es.webp"
+  "img": "img/pnj/tina-nina-prostitue-es.webp",
+  "teinte": "#755219"
  },
  {
   "id": "quartier-general-griffe",
@@ -4788,7 +4803,8 @@
   "alias": [
    "Nolbrim Cuivre Rouge"
   ],
-  "img": "img/pnj/nolbrim.webp"
+  "img": "img/pnj/nolbrim.webp",
+  "teinte": "#753c19"
  },
  {
   "id": "harpe-de-chair",
@@ -5160,7 +5176,8 @@
    "Statue Paladinis"
   ],
   "img": "img/pnj/lathandre.webp",
-  "lieu": "temple-brumeux"
+  "lieu": "temple-brumeux",
+  "teinte": "#755219"
  },
  {
   "id": "reliquaire-de-lathandre",

@@ -440,7 +440,8 @@
     "type": "Compagne d'aventure",
     "ton": "positif"
    }
-  ]
+  ],
+  "teinte": "#753c19"
  },
  {
   "id": "jane-merigold",
@@ -488,21 +489,25 @@
    {
     "img": "img/groupe/jane-merigold.webp",
     "label": "Normal",
-    "lieux": []
+    "lieux": [],
+    "teinte": "#756919"
    },
    {
     "img": "img/pnj/jane-a-roshen-buru.webp",
     "label": "A Roshen Buru",
     "lieux": [],
-    "fond": "img/paysages/roshen-buru/rue.webp"
+    "fond": "img/paysages/roshen-buru/rue.webp",
+    "teinte": "#752519"
    },
    {
     "img": "img/pnj/jane-arcane-trickster.webp",
     "label": "Arcane Trickster",
     "lieux": [],
-    "fond": "img/paysages/cap-cornes/cabane-gran-brijit.webp"
+    "fond": "img/paysages/cap-cornes/cabane-gran-brijit.webp",
+    "teinte": "#752519"
    }
-  ]
+  ],
+  "teinte": "#756919"
  },
  {
   "id": "philippa-rougetoison",
@@ -564,15 +569,18 @@
    {
     "img": "img/groupe/philippa-rougetoison.webp",
     "label": "Normal",
-    "lieux": []
+    "lieux": [],
+    "teinte": "#753c19"
    },
    {
     "img": "img/pnj/philippa-a-roshen-buru.webp",
     "label": "A Roshen Buru",
     "lieux": [],
-    "fond": "img/paysages/roshen-buru/rue.webp"
+    "fond": "img/paysages/roshen-buru/rue.webp",
+    "teinte": "#751925"
    }
-  ]
+  ],
+  "teinte": "#753c19"
  },
  {
   "id": "altera",
