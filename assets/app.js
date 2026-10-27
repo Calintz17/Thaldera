@@ -4,7 +4,7 @@
 (() => {
 'use strict';
 
-const VER = '15';
+const VER = '16';
 const EDIT = new URLSearchParams(location.search).has('edit');
 const $ = (s, r = document) => r.querySelector(s);
 const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
@@ -98,7 +98,7 @@ function imgInfo(src) {
     const i = new Image();
     i.onload = () => res({ w: i.naturalWidth, h: i.naturalHeight });
     i.onerror = () => res({ w: 1600, h: 1200 });
-    i.src = src;
+    i.src = mapSrc(src);
   });
 }
 
@@ -108,6 +108,8 @@ const PH_LAND = { img: 'img/placeholder/paysage.svg', legende: '', ph: true };
 const PH_SIL = 'img/placeholder/silhouette.svg';
 const S = { map: null, gal: null, entry: null, key: '', cut: null, W: 0, H: 0 };
 
+const SMALLMAP = matchMedia('(max-width: 860px), (pointer: coarse)').matches;
+const mapSrc = u => SMALLMAP && /^img\/cartes\/(istra|thaldera|thaldera-factions)\.webp$/.test(u) ? u.replace('.webp', '-m.webp') : u;
 function syncTop() { const t = document.querySelector('.top'); if (t) document.documentElement.style.setProperty('--top-h', t.offsetHeight + 'px'); }
 window.addEventListener('resize', syncTop); window.addEventListener('orientationchange', syncTop); window.addEventListener('load', syncTop);
 function measure() { syncTop(); S.W = stageEl.clientWidth; S.H = stageEl.clientHeight; }
@@ -274,7 +276,7 @@ function sceneKey(sc) {
 function makeLayer(src, info) {
   const layer = document.createElement('div');
   layer.className = 'layer';
-  layer.innerHTML = `<div class="drift"><div class="cam" style="width:${info.w}px;height:${info.h}px"><img src="${src}" alt="" draggable="false"><div class="ovl"></div></div></div>`;
+  layer.innerHTML = `<div class="drift"><div class="cam" style="width:${info.w}px;height:${info.h}px"><img src="${mapSrc(src)}" alt="" draggable="false"><div class="ovl"></div></div></div>`;
   const o = { el: layer, cam: $('.cam', layer), ovl: $('.ovl', layer), info, src };
   return o;
 }
@@ -352,7 +354,7 @@ function makeStack(sc) {
   const el = document.createElement('div');
   el.className = 'layer stackl';
   el.innerHTML = '<div class="stk">' + sc.sheets.map((sh, i) =>
-    `<section class="sheet" data-i="${i}" style="--s:1"><div class="shcap">${esc(sh.carte.legende || '')}</div><div class="shw"><img src="${sh.carte.img}" alt="" draggable="false"><div class="ovl"></div></div></section>`).join('') + '</div>';
+    `<section class="sheet" data-i="${i}" style="--s:1"><div class="shcap">${esc(sh.carte.legende || '')}</div><div class="shw"><img src="${mapSrc(sh.carte.img)}" alt="" draggable="false"><div class="ovl"></div></div></section>`).join('') + '</div>';
   const layer = { el, stack: true, src: sc.src };
   const stk = $('.stk', el);
   stk.addEventListener('scroll', () => {

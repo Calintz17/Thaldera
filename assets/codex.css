@@ -403,4 +403,5 @@ a.wcrest:hover .wn { color: var(--gold-hi); }
 .rlab.hot .fs, .rlab:hover .fs { display: block !important; }
 
 .many .pin:not(.here):not(:hover):not(.hot) .pl { display: none; }
+@media (max-width: 860px), (pointer: coarse) { .cam { will-change: auto; } }
 @media (max-width: 860px) { .pin:not(.here):not(.hot) .pl { display: none; } .pin .in { width: 30px; height: 30px; } }
