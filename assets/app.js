@@ -4,7 +4,7 @@
 (() => {
 'use strict';
 
-const VER = '31';
+const VER = '32';
 const EDIT = new URLSearchParams(location.search).has('edit');
 const $ = (s, r = document) => r.querySelector(s);
 const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
@@ -880,6 +880,28 @@ function initEdit() {
 }
 
 /* ---------- demarrage ---------- */
+
+/* ---------- journal de quêtes ---------- */
+async function initQuests() {
+  const btn = $('#qbtn'), box = $('#qlog');
+  if (!btn || !box) return;
+  let Q = null, tab = 'global';
+  const draw = () => {
+    const tabs = [{ id: 'global', nom: 'Globales' }, ...Q.persos.map(p => ({ id: p.id, nom: p.nom }))];
+    const list = tab === 'global' ? Q.globales : (Q.personnelles[tab] || []);
+    const items = list.map(x => `<div class="quest${x.statut === 'fait' ? ' fait' : ''}"><b>${esc(x.titre)}</b>${x.statut ? `<em>${esc(x.statut === 'fait' ? 'terminée' : 'en cours')}</em>` : ''}${x.resume ? `<p>${esc(x.resume)}</p>` : ''}${x.etapes && x.etapes.length ? '<ul>' + x.etapes.map(e => `<li class="${e.fait ? 'ok' : ''}">${esc(e.texte)}</li>`).join('') + '</ul>' : ''}</div>`).join('');
+    box.innerHTML = `<h2>Journal de quêtes</h2><div class="qtabs">${tabs.map(t => `<button type="button" data-t="${t.id}" class="${t.id === tab ? 'on' : ''}">${esc(t.nom)}</button>`).join('')}</div>${items || '<p class="qempty">Aucune quête renseignée pour le moment.</p>'}`;
+    box.querySelectorAll('[data-t]').forEach(b => b.addEventListener('click', () => { tab = b.dataset.t; draw(); }));
+  };
+  const toggle = async open => {
+    if (open && !Q) { try { Q = await (await fetch('data/quetes.json?v=' + VER)).json(); } catch (e) { Q = { persos: [], globales: [], personnelles: {} }; } }
+    box.hidden = !open; btn.setAttribute('aria-expanded', String(open));
+    if (open) draw();
+  };
+  btn.addEventListener('click', () => toggle(box.hidden));
+  document.addEventListener('keydown', ev => { if (ev.key === 'Escape' && !box.hidden) toggle(false); });
+}
+
 (async function init() {
   try {
     await load();
@@ -891,6 +913,7 @@ function initEdit() {
   measure();
   buildWorld();
   initSearch();
+  initQuests();
   window.addEventListener('hashchange', route);
   route();
 })();

@@ -1,0 +1,9 @@
+{
+ "persos": [
+  {"id": "philippa", "nom": "Philippa"},
+  {"id": "jane", "nom": "Jane"},
+  {"id": "harfang", "nom": "Harfang"}
+ ],
+ "globales": [],
+ "personnelles": {"philippa": [], "jane": [], "harfang": []}
+}
