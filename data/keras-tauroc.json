@@ -3833,12 +3833,12 @@
   "resume": "La route de la lande qui relie Keras Tauroc à Cap Cornes, jalonnée d'un gibet.",
   "galerie": [
    {
-    "img": "img/paysages/cap-cornes/route-keras-tauroc.webp",
-    "legende": "La route"
-   },
-   {
     "img": "img/paysages/cap-cornes/route-gibet.webp",
     "legende": "Le gibet"
+   },
+   {
+    "img": "img/paysages/cap-cornes/route-keras-tauroc.webp",
+    "legende": "La route"
    }
   ]
  },
@@ -3988,7 +3988,8 @@
    "y": 0.436
   },
   "typeLabel": "Trajet",
-  "resume": "Là où le groupe croise le Goryo pour la première fois."
+  "resume": "Là où le groupe croise le Goryo pour la première fois.",
+  "redirige": "le-goryo"
  },
  {
   "id": "combat-de-silas",
@@ -4011,7 +4012,8 @@
     "img": "img/paysages/roshen-buru/voyage-navire.webp",
     "legende": "Le navire du voyage"
    }
-  ]
+  ],
+  "redirige": "silas-mort-doree"
  },
  {
   "id": "rituel-du-tier-voyage",

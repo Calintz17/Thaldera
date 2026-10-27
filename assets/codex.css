@@ -15,7 +15,7 @@
   --ok: #5fa86a;
   --bad: #c0504d;
   --top-h: 74px;
-  --panel-w: clamp(380px, 38vw, 560px);
+  --panel-w: clamp(420px, 55vw, 880px);
 }
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -244,7 +244,6 @@ a.wcrest:hover .wn { color: var(--gold-hi); }
 .gal { position: absolute; inset: 0; z-index: 8; background: #07090f; opacity: 0; transition: opacity .9s ease; }
 .gal.on { opacity: 1; }
 .gal .sl { position: absolute; inset: 0; opacity: 0; transition: opacity 1.4s ease; overflow: hidden; display: flex; align-items: center; justify-content: center; }
-.gal .sl::before { content: ''; position: absolute; inset: 0; background: var(--bg) center / cover; opacity: .22; }
 .gal .sl.act { opacity: 1; }
 .gal .sl img { position: relative; width: auto; height: auto; max-width: 100%; max-height: 100%; object-fit: contain; transform-origin: 50% 50%; }
 .gal .sl.act img { animation: none; }
@@ -270,7 +269,7 @@ a.wcrest:hover .wn { color: var(--gold-hi); }
 @keyframes namef { from { transform: rotate(-5deg) translate(0,0); } to { transform: rotate(-5deg) translate(8px,-4px); } }
 
 /* ===== Panneau (fiches) ===== */
-.pin-pad { padding: 16px 30px 70px; animation: panelin .45s ease both; }
+.pin-pad { max-width: 820px; margin: 0 auto; padding: 16px 30px 70px; animation: panelin .45s ease both; }
 @keyframes panelin { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: none; } }
 .crumbs { display: flex; align-items: center; flex-wrap: wrap; gap: 4px 8px; font-size: 14px; color: var(--muted); margin-bottom: 14px; }
 .crumbs a:hover { color: var(--gold-hi); }

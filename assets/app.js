@@ -4,7 +4,7 @@
 (() => {
 'use strict';
 
-const VER = '12';
+const VER = '13';
 const EDIT = new URLSearchParams(location.search).has('edit');
 const $ = (s, r = document) => r.querySelector(s);
 const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
@@ -181,7 +181,11 @@ function sceneOf(e, q, depth = 0) {
     }
     case 'ville': {
       const cs = e.cartes || [];
-      if (!cs.length) return sceneOf(BY[e.parent], null, depth + 1);
+      if (!cs.length) {
+        const ps = sceneOf(BY[e.parent], null, depth + 1);
+        if (ps && depth === 0 && ps.kind === 'map' && e.galerie && e.galerie.length) return { ...ps, gallery: e.galerie };
+        return ps;
+      }
       const t = Math.min(tab, cs.length - 1);
       if (cs.length > 1) return stackScene(e, null);
       const lieux = collectLieux(e);
@@ -731,6 +735,7 @@ async function route() {
   const e = BY[id];
   if (e && e.locked) { location.hash = '#/'; return; }
   if (!e) { sceneEl.classList.remove('is-world'); panelEl.innerHTML = '<div class="pin-pad"><nav class="crumbs"><a class="back" href="#/">‹ Monde</a></nav><p class="empty">Cette page n’existe pas encore.</p></div>'; return; }
+  if (e.redirige && BY[e.redirige]) { location.replace('#/' + e.redirige); return; }
   sceneEl.classList.remove('is-world');
   measure();
   const q = new URLSearchParams(qs || '');
