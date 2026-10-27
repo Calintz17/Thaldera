@@ -3924,25 +3924,6 @@
   "attitude": "neutre"
  },
  {
-  "id": "receptionniste-de-la-caserne",
-  "type": "pnj",
-  "nom": "La réceptionniste de la caserne",
-  "titre": "Registre des entrées",
-  "parent": "port-doelan",
-  "lieu": "port-doelan",
-  "statut": "vivant",
-  "resume": "Elle consigne les entrées, exige le dépôt des armes contre récépissé et aime les conversations polies.",
-  "relations": [
-   {
-    "cible": "garde-de-doelan",
-    "type": "collègue de",
-    "ton": "neutre",
-    "inverse": "collègue de"
-   }
-  ],
-  "attitude": "neutre"
- },
- {
   "id": "arianthil",
   "type": "pnj",
   "nom": "Arianthil",
@@ -4266,19 +4247,24 @@
   "id": "le-goryo",
   "type": "pnj",
   "nom": "Le Goryo",
-  "titre": "Assassin d'Azuren Kai",
+  "titre": "Fantôme des berges, assassin d'Azuren Kai",
   "parent": "azuren-kai",
   "lieu": "azuren-kai",
   "statut": "inconnu",
-  "resume": "Assassin de combat éclair qui a attaqué le groupe à Azuren Kai.",
-  "alias": [
-   "Goryo"
-  ],
+  "resume": "Fantôme croisé sur les berges, puis assassin éclair qui a attaqué le groupe à Azuren Kai.",
   "connu": [
+   "Selon la légende, les Goryo sont les fantômes de paysans noyés dans les rizières. Ils protègent Roshen Buru contre les voyageurs qui lui veulent du mal.",
+   "Le groupe le croise une première fois sur les berges, avant d'atteindre Azuren Kai.",
    "Il frappe puis disparaît.",
    "Le groupe le tue à l'auberge. Il murmure « elle sait… ». Le groupe pense à Absalom.",
-   "Ce n'est pas le fantôme croisé sur les berges : le groupe en déduit plus tard, sans certitude, qu'il s'agit d'un démon qui prend la forme d'un cryptide de la culture populaire.",
+   "Le groupe en déduit plus tard, sans certitude, qu'il s'agit d'un démon qui prend la forme d'un cryptide de la culture populaire.",
    "Le groupe soupçonne que la Protectrice l'a envoyé pour le tuer, probablement grâce à son pacte avec Levistus."
+  ],
+  "histoire": [],
+  "alias": [
+   "Goryo",
+   "Goryo des berges",
+   "Le Goryo des berges"
   ],
   "img": "img/pnj/le-goryo.webp",
   "attitude": "ennemi",

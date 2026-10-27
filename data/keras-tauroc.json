@@ -4040,31 +4040,6 @@
   "attitude": "positif"
  },
  {
-  "id": "dame-merigold",
-  "type": "pnj",
-  "nom": "Dame Merigold",
-  "titre": "Fondatrice de l'orphelinat",
-  "parent": "leyenmil",
-  "resume": "Noble de Leyenmil qui a fondé l'orphelinat sur ses deniers. Elle est morte peu après avoir engagé la Rectrice.",
-  "statut": "mort",
-  "relations": [
-   {
-    "cible": "jane-merigold",
-    "type": "fondatrice de l'orphelinat de",
-    "ton": "positif",
-    "inverse": "orpheline de"
-   },
-   {
-    "cible": "la-rectrice",
-    "type": "a engagé",
-    "ton": "negatif",
-    "inverse": "engagée par"
-   }
-  ],
-  "attitude": "neutre",
-  "lieu": "leyenmil"
- },
- {
   "id": "lukas",
   "type": "pnj",
   "nom": "Lukas",
@@ -4485,7 +4460,7 @@
   },
   "typeLabel": "Trajet",
   "resume": "Là où le groupe croise le Goryo pour la première fois.",
-  "redirige": "goryo-des-berges"
+  "redirige": "le-goryo"
  },
  {
   "id": "combat-de-silas",
@@ -4561,25 +4536,6 @@
     "legende": "Les steppes rouges, en plein jour"
    }
   ]
- },
- {
-  "id": "goryo-des-berges",
-  "type": "pnj",
-  "nom": "Le Goryo des berges",
-  "titre": "Fantôme croisé sur la route d'Azuren Kai",
-  "parent": "rencontre-du-goryo",
-  "lieu": "rencontre-du-goryo",
-  "statut": "inconnu",
-  "alias": [
-   "Goryo des berges",
-   "Goryo"
-  ],
-  "resume": "Fantôme croisé sur les berges, sur la route d'Azuren Kai.",
-  "connu": [
-   "Selon la légende, les Goryo sont les fantômes de paysans noyés dans les rizières. Ils protègent Roshen Buru contre les voyageurs qui lui veulent du mal.",
-   "Le groupe le croise une première fois sur les berges, avant d'atteindre Azuren Kai."
-  ],
-  "attitude": "neutre"
  },
  {
   "id": "nubbe",

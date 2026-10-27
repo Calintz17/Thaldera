@@ -3361,7 +3361,8 @@
   "parent": "leyenmil",
   "resume": "Bâtiment gothique froid, portail de fer forgé. La salle des déguisements se cache derrière la chapelle.",
   "connu": [
-   "Les enfants méritants gagnent une chambre. Jane partageait la sienne avec Vespera."
+   "Les enfants méritants gagnent une chambre. Jane partageait la sienne avec Vespera.",
+   "L'orphelinat a été fondé sur ses deniers par Dame Merigold, noble de Leyenmil, morte peu après avoir engagé la Rectrice."
   ],
   "chapeau": "Une pluie fine perle sur les barreaux noirs du portail, dont le fer forgé dessine des arabesques sombres au-dessus du nom de l'orphelinat. Au-delà, un bâtiment gothique massif, aux fenêtres hautes comme des juges silencieux. À l'intérieur, la cire froide et l'encens fané, des portraits austères aux murs, et le sol de pierre qui renvoie chaque pas.",
   "galerie": [
@@ -3588,51 +3589,19 @@
   "id": "alrik-crochemer",
   "type": "pnj",
   "nom": "Alrik Crochemer",
-  "titre": "Frère de la victime",
+  "titre": "Frère du marin mort",
   "parent": "maison-crochemer",
   "lieu": "maison-crochemer",
   "statut": "vivant",
   "resume": "Humain décharné, terrifié, persuadé que la peste est revenue.",
   "connu": [
-   "Il brûle les draps de son frère. Il renvoie le groupe vers le médecin du mortuaire."
+   "Il brûle les draps de son frère, marin du Brumeux retrouvé mort, la peau verdâtre. Il renvoie le groupe vers le médecin du mortuaire."
   ],
   "citation": {
    "texte": "Vous avez vu sa peau ? Verte comme une algue pourrie, ses yeux sortaient de l'orbite !",
    "qui": "Alrik Crochemer"
   },
-  "relations": [
-   {
-    "cible": "crochemer",
-    "type": "frère de",
-    "ton": "positif",
-    "inverse": "frère de"
-   }
-  ],
-  "attitude": "neutre"
- },
- {
-  "id": "crochemer",
-  "type": "pnj",
-  "nom": "Crochemer",
-  "titre": "Marin, première victime citée",
-  "parent": "maison-crochemer",
-  "lieu": "maison-crochemer",
-  "statut": "mort",
-  "resume": "Marin du Brumeux retrouvé mort, peau verdâtre.",
-  "relations": [
-   {
-    "cible": "eldran-korr",
-    "type": "victime d'",
-    "ton": "negatif",
-    "inverse": "a tué"
-   },
-   {
-    "cible": "derek-varn",
-    "type": "ancien équipage du Brumeux avec",
-    "ton": "neutre",
-    "inverse": "ancien équipage du Brumeux avec"
-   }
-  ],
+  "relations": [],
   "attitude": "neutre"
  },
  {
@@ -3801,11 +3770,6 @@
    "qui": "Derek Varn, à propos d'Eldran"
   },
   "relations": [
-   {
-    "cible": "crochemer",
-    "type": "tue",
-    "ton": "negatif"
-   },
    {
     "cible": "derek-varn",
     "type": "cherche à tuer",
@@ -6242,6 +6206,13 @@
   "lieu": "prison-de-port-doelan",
   "statut": "vivant",
   "resume": "Jeune femme aux lunettes rondes. Elle aime les conversations polies.",
+  "connu": [
+   "Elle consigne les entrées, exige le dépôt des armes contre récépissé et aime les conversations polies."
+  ],
+  "histoire": [],
+  "alias": [
+   "La réceptionniste de la caserne"
+  ],
   "galerie": [
    {
     "img": "img/paysages/port-doelan/prison-2.webp",
