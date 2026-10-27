@@ -5,7 +5,7 @@
   "nom": "Istra",
   "titre": "Le continent isolé",
   "sousTitre": "Le continent isolé",
-  "ordre": 0,
+  "ordre": 1,
   "vignette": "img/cartes/istra-mini.webp",
   "cartes": [
    {
@@ -42,7 +42,7 @@
   "nom": "Thaldera",
   "titre": "Le continent voisin",
   "sousTitre": "Le continent voisin",
-  "ordre": 1,
+  "ordre": 0,
   "vignette": "img/cartes/thaldera-mini.webp",
   "cartes": [
    {
@@ -1349,6 +1349,12 @@
     "cible": "tour-eamonn",
     "type": "Cercle de téléportation",
     "ton": "positif"
+   }
+  ],
+  "galerie": [
+   {
+    "img": "img/paysages/port-doelan/salle-du-trone.webp",
+    "legende": "La salle du trône"
    }
   ]
  },

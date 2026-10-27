@@ -171,11 +171,13 @@ a.wcrest:hover .wn { color: var(--gold-hi); }
 .regs { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; overflow: visible; }
 .reg path { vector-effect: non-scaling-stroke; stroke-linejoin: round; stroke-linecap: round; }
 .reg .fill { fill: transparent; stroke: none; pointer-events: all; cursor: pointer; }
-.reg .glow { fill: none; stroke: var(--c); stroke-width: 7; stroke-opacity: .16; pointer-events: none; transition: stroke-opacity .3s, stroke-width .3s; }
-.reg .line { fill: none; stroke: var(--c); stroke-width: 2.2; stroke-opacity: .9; pointer-events: none; transition: stroke-width .25s; }
+.reg .glow { fill: none; stroke: var(--c); stroke-width: 44; stroke-opacity: .13; pointer-events: none; transition: stroke-opacity .35s, stroke-width .35s; }
+.reg .glow2 { fill: none; stroke: var(--c); stroke-width: 22; stroke-opacity: .30; pointer-events: none; transition: stroke-opacity .35s, stroke-width .35s; }
+.reg .line { fill: none; stroke: var(--c); stroke-width: 3.2; stroke-opacity: 1; pointer-events: none; transition: stroke-width .25s; }
 .reg .run { fill: none; stroke: #fff; stroke-width: 4.2; stroke-dasharray: .045 .955; stroke-dashoffset: 0; opacity: 0; pointer-events: none; transition: opacity .25s; }
-.reg.hot .glow { stroke-opacity: .6; stroke-width: 14; }
-.reg.hot .line { stroke-width: 3; }
+.reg.hot .glow { stroke-opacity: .22; stroke-width: 46; }
+.reg.hot .glow2 { stroke-opacity: .5; stroke-width: 24; }
+.reg.hot .line { stroke-width: 3.4; }
 .reg.hot .run { opacity: 1; animation: orbit 2.6s linear infinite; }
 .reg.solo .fill { pointer-events: none; }
 @keyframes orbit { to { stroke-dashoffset: -1; } }
@@ -183,12 +185,12 @@ a.wcrest:hover .wn { color: var(--gold-hi); }
 .rlab { position: absolute; width: 0; height: 0; z-index: 4; }
 .rlab .fl {
   position: absolute; left: 0; top: 0; transform: translate(-50%,-50%) scale(calc(1 / var(--s))); white-space: nowrap; text-align: center;
-  font-family: 'Cinzel', serif; font-weight: 700; font-size: 12px; letter-spacing: .14em; text-transform: uppercase;
-  color: #fff6e2; background: rgba(9,11,18,.7); border: 1px solid var(--c); border-left-width: 4px; padding: 4px 10px; border-radius: 3px;
-  box-shadow: 0 3px 14px rgba(0,0,0,.6); transition: background .2s;
+  font-family: 'Cinzel', serif; font-weight: 700; font-size: 13px; letter-spacing: .3em; padding-left: .3em; text-transform: uppercase;
+  color: #fff8e8; background: none; border: 0; border-radius: 0; box-shadow: none;
+  text-shadow: 0 0 6px var(--c), 0 0 16px var(--c), 0 0 30px var(--c), 0 2px 5px rgba(0,0,0,.9); transition: text-shadow .25s, color .25s;
 }
-.rlab.hot .fl, .rlab:hover .fl { background: var(--c); color: #0b0d14; }
-.rlab .fs { display: none; font-family: 'EB Garamond', serif; font-style: italic; font-weight: 400; font-size: 12.5px; letter-spacing: .04em; text-transform: none; opacity: .85; }
+.rlab.hot .fl, .rlab:hover .fl { color: #fff; text-shadow: 0 0 8px var(--c), 0 0 22px var(--c), 0 0 44px var(--c), 0 0 60px var(--c), 0 2px 5px rgba(0,0,0,.9); }
+.rlab .fs { display: none; text-shadow: 0 0 10px var(--c), 0 1px 4px #000; color: #fff8e8; padding-left: 0; letter-spacing: .04em; font-family: 'EB Garamond', serif; font-style: italic; font-weight: 400; font-size: 12.5px; letter-spacing: .04em; text-transform: none; opacity: .85; }
 
 /* points sur carte */
 .pin { position: absolute; width: 0; height: 0; z-index: 3; }
@@ -227,6 +229,16 @@ a.wcrest:hover .wn { color: var(--gold-hi); }
   background: rgba(7,9,15,.82); border: 1px solid rgba(201,168,76,.5); color: var(--gold); padding: 8px 14px; border-radius: 3px; backdrop-filter: blur(4px); transition: background .2s, color .2s;
 }
 .stage .upbtn:hover { background: var(--gold); color: #0b0d14; }
+
+/* cartes empilees (ville a plusieurs plans) */
+.stackl { background: radial-gradient(ellipse at 50% 30%, #101524 0%, #07090f 80%); }
+.stk { position: absolute; inset: 0; overflow-y: auto; overflow-x: hidden; scroll-behavior: smooth; padding: 52px 14px 80px; scrollbar-width: thin; scrollbar-color: rgba(201,168,76,.5) transparent; }
+.sheet { position: relative; margin: 0 auto 26px; max-width: 1500px; }
+.sheet .shcap { font-family: 'Cinzel', serif; font-size: 11.5px; letter-spacing: .26em; text-transform: uppercase; color: var(--gold); text-align: center; padding: 6px 0 10px; }
+.sheet .shw { position: relative; border: 1px solid rgba(201,168,76,.28); box-shadow: 0 14px 40px rgba(0,0,0,.55); line-height: 0; }
+.sheet .shw > img { width: 100%; height: auto; display: block; -webkit-user-drag: none; }
+.sheet .ovl { position: absolute; inset: 0; pointer-events: none; }
+.sheet .rlab, .sheet .pin { --s: 1; }
 
 /* galerie de lieu */
 .gal { position: absolute; inset: 0; z-index: 8; background: #07090f; opacity: 0; transition: opacity .9s ease; }
@@ -378,7 +390,7 @@ a.wcrest:hover .wn { color: var(--gold-hi); }
   .mapcap { left: 8px; bottom: 8px; gap: 6px; max-width: calc(100% - 16px); }
   .mapcap .tab { font-size: 9px; letter-spacing: .1em; padding: 5px 10px; }
   .mapcap .cap { font-size: 12.5px; padding: 4px 10px; }
-  .rlab .fl { font-size: 9.5px; letter-spacing: .08em; padding: 3px 7px; border-left-width: 3px; }
+  .rlab .fl { font-size: 10px; letter-spacing: .16em; }
   .stage { height: 48dvh; }
   .stage .upbtn { transform: scale(.85); transform-origin: left top; }
   .gal .gcap .gt { display: none; }

@@ -336,6 +336,38 @@
   ],
   "galerie": [
    {
+    "img": "img/paysages/azuren-kai/rue.webp",
+    "legende": "Une rue d'Azuren Kai"
+   },
+   {
+    "img": "img/paysages/azuren-kai/vue-ville.webp",
+    "legende": "Azuren Kai vue d'ensemble"
+   },
+   {
+    "img": "img/paysages/azuren-kai/laboratoire-vesine.webp",
+    "legende": "Le laboratoire de la vésine"
+   },
+   {
+    "img": "img/paysages/azuren-kai/entrepot-etrange.webp",
+    "legende": "L'entrepôt étrange"
+   },
+   {
+    "img": "img/paysages/azuren-kai/tour-abandonnee.webp",
+    "legende": "La tour abandonnée"
+   },
+   {
+    "img": "img/paysages/azuren-kai/fleuve-vers-la-ville.webp",
+    "legende": "Le fleuve vers la ville"
+   },
+   {
+    "img": "img/paysages/azuren-kai/foret-nubbe.webp",
+    "legende": "La traversée de la forêt"
+   },
+   {
+    "img": "img/paysages/azuren-kai/foret-sorenka.webp",
+    "legende": "La traversée de la forêt"
+   },
+   {
     "img": "img/azuren-kai/lieux/port.webp",
     "legende": "La baie et le quai marchand"
    },
@@ -371,6 +403,18 @@
   "titre": "Auberge de Noshka",
   "parent": "azuren-kai",
   "galerie": [
+   {
+    "img": "img/paysages/azuren-kai/ryokan-1.webp",
+    "legende": "Le Ryokan"
+   },
+   {
+    "img": "img/paysages/azuren-kai/ryokan-2.webp",
+    "legende": "Le Ryokan, une autre salle"
+   },
+   {
+    "img": "img/paysages/azuren-kai/ryokan-3.webp",
+    "legende": "Le Ryokan, une autre salle"
+   },
    {
     "img": "img/azuren-kai/lieux/ryokan-salle-2.webp",
     "legende": "La salle commune"
@@ -438,6 +482,12 @@
   ],
   "histoire": [
    "Le groupe entre dans son auberge juste avant l'incident avec Kirin Anadori."
+  ],
+  "galerie": [
+   {
+    "img": "img/paysages/azuren-kai/ryokan-1.webp",
+    "legende": "Le Ryokan"
+   }
   ]
  },
  {
@@ -591,12 +641,12 @@
    {
     "id": "ville",
     "img": "img/cartes/roshen-buru-ville.webp",
-    "legende": "Plan de la ville"
+    "legende": "Ville basse"
    },
    {
     "id": "palais",
     "img": "img/cartes/roshen-buru-palais.webp",
-    "legende": "Palais, Temple du Tenraku et quartier Tenraï"
+    "legende": "Ville haute, palais et temple du Tenraku"
    }
   ],
   "resume": "Cité sacrée des Mirenaï, bâtie dans une cuvette de la forêt d'Aruzen. Magistrature en bas, palais de la Gardienne en haut.",
@@ -630,6 +680,28 @@
     "type": "Grand Magistrat",
     "ton": "neutre"
    }
+  ],
+  "galerie": [
+   {
+    "img": "img/paysages/roshen-buru/rue.webp",
+    "legende": "Une rue de Roshen Buru"
+   },
+   {
+    "img": "img/paysages/roshen-buru/rue-3.webp",
+    "legende": "Une rue de Roshen Buru"
+   },
+   {
+    "img": "img/paysages/roshen-buru/vue-ville.webp",
+    "legende": "Roshen Buru vue d'ensemble"
+   },
+   {
+    "img": "img/paysages/roshen-buru/ville-basse.webp",
+    "legende": "La ville basse"
+   },
+   {
+    "img": "img/paysages/roshen-buru/auberge.webp",
+    "legende": "L'auberge"
+   }
   ]
  },
  {
@@ -638,11 +710,7 @@
   "nom": "La Magistrature",
   "titre": "Administration de Roshen Buru",
   "parent": "roshen-buru",
-  "pos": {
-   "x": 0.557,
-   "y": 0.267
-  },
-  "carte": "ville",
+  "carte": "palais",
   "zoom": 0.22,
   "alias": [
    "Magistrat",
@@ -657,6 +725,16 @@
   "histoire": [
    "Roven Moto reçoit Harfang et lui tire les oreilles sur la qualité de ses rapports.",
    "Le groupe fouille les archives. Il y trouve les rapports d'enquête sur les jeunes femmes mortes, une lettre de Brodek Kovacz au magistrat de l'époque et un coffre du clan Urameï."
+  ],
+  "galerie": [
+   {
+    "img": "img/paysages/roshen-buru/magistrature.webp",
+    "legende": "La Magistrature"
+   },
+   {
+    "img": "img/paysages/roshen-buru/magistrature-2.webp",
+    "legende": "La Magistrature, une autre salle"
+   }
   ]
  },
  {
@@ -680,6 +758,12 @@
     "cible": "harfang-tsuren",
     "type": "Ancien supérieur",
     "ton": "negatif"
+   }
+  ],
+  "galerie": [
+   {
+    "img": "img/paysages/roshen-buru/magistrature.webp",
+    "legende": "La Magistrature"
    }
   ]
  },
@@ -728,6 +812,12 @@
    "Absalom brise la Jarre Miren, qui était vide, et se saisit du parchemin sacré. En le lisant, elle comprend que Vassago l'a trahie et pousse un cri qui détruit le temple.",
    "La Gardienne fait apparaître des lianes pour empêcher sa destruction totale. Elle recule devant Gran Brijit, qui emporte le parchemin.",
    "Carnage arrive à la fin de la cérémonie. Le groupe l'affronte."
+  ],
+  "galerie": [
+   {
+    "img": "img/paysages/roshen-buru/temple-du-tenraku-ceremonie.webp",
+    "legende": "Le temple du Tenraku, deuxième cérémonie"
+   }
   ]
  },
  {
@@ -766,6 +856,12 @@
   "resume": "L'atelier de la calligraphe Sumeren Daïko.",
   "connu": [
    "Le groupe y apprend que le papier des lettres de menace est un papier noble, réservé aux clans."
+  ],
+  "galerie": [
+   {
+    "img": "img/paysages/roshen-buru/calligraphie.webp",
+    "legende": "L'atelier de calligraphie"
+   }
   ]
  },
  {
@@ -787,6 +883,12 @@
   "resume": "La forge de Tessei Kanaë.",
   "connu": [
    "La forgeronne a perdu une commande à 50 000 pièces d'or du clan Anadori."
+  ],
+  "galerie": [
+   {
+    "img": "img/paysages/roshen-buru/forge-oyoroi.webp",
+    "legende": "La forge Oyoroï"
+   }
   ]
  },
  {
@@ -804,6 +906,12 @@
   "resume": "L'apothicaire de la ville basse, où officie Saori Velmaka.",
   "connu": [
    "Saori y prépare ses remèdes et fait aussi office de médecin légiste."
+  ],
+  "galerie": [
+   {
+    "img": "img/paysages/roshen-buru/apothicaire.webp",
+    "legende": "L'apothicaire"
+   }
   ]
  },
  {
@@ -821,6 +929,12 @@
   "resume": "La boutique d'Oren Sidaï, marchand louche.",
   "connu": [
    "Philippa l'a dévalisée après la mort d'Oren."
+  ],
+  "galerie": [
+   {
+    "img": "img/paysages/roshen-buru/preteur-sur-gage.webp",
+    "legende": "Le prêteur sur gage"
+   }
   ]
  },
  {
@@ -851,7 +965,13 @@
   "pos": {
    "x": 0.25,
    "y": 0.88
-  }
+  },
+  "galerie": [
+   {
+    "img": "img/paysages/roshen-buru/garconniere-darrek.webp",
+    "legende": "La garçonnière de Darrek Kovacz"
+   }
+  ]
  },
  {
   "id": "planque-yurei",
@@ -866,7 +986,13 @@
   "pos": {
    "x": 0.1,
    "y": 0.7
-  }
+  },
+  "galerie": [
+   {
+    "img": "img/paysages/roshen-buru/planque-yurei.webp",
+    "legende": "La planque de Yureï"
+   }
+  ]
  },
  {
   "id": "maison-uramei",
@@ -882,10 +1008,13 @@
    "Ankou y reçoit assis, sans table ni bureau, Sabaké à sa gauche et Nyssra à sa droite.",
    "Il fait sombre dans la pièce, et pourtant il n'y a pas d'ombres."
   ],
-  "pos": {
-   "x": 0.2,
-   "y": 0.6
-  }
+  "carte": "palais",
+  "galerie": [
+   {
+    "img": "img/paysages/roshen-buru/palais-uramei.webp",
+    "legende": "Le palais Urameï"
+   }
+  ]
  },
  {
   "id": "pavillon-mariage",
@@ -905,7 +1034,17 @@
   "pos": {
    "x": 0.45,
    "y": 0.12
-  }
+  },
+  "galerie": [
+   {
+    "img": "img/paysages/roshen-buru/buvette-mariage-yurei.webp",
+    "legende": "La buvette du mariage"
+   },
+   {
+    "img": "img/paysages/roshen-buru/premier-mariage-konya-ayano.webp",
+    "legende": "Le lieu du premier mariage"
+   }
+  ]
  },
  {
   "id": "egouts",
@@ -926,7 +1065,13 @@
   "pos": {
    "x": 0.4,
    "y": 0.8
-  }
+  },
+  "galerie": [
+   {
+    "img": "img/paysages/roshen-buru/egouts.webp",
+    "legende": "Les égouts"
+   }
+  ]
  },
  {
   "id": "clan-tsuren",
@@ -971,7 +1116,13 @@
     "ton": "neutre"
    }
   ],
-  "lieu": "domaine-tsuren"
+  "lieu": "domaine-tsuren",
+  "galerie": [
+   {
+    "img": "img/paysages/roshen-buru/palais-tsuren.webp",
+    "legende": "Le palais Tsuren"
+   }
+  ]
  },
  {
   "id": "rysei-tsuren",
@@ -993,7 +1144,13 @@
     "ton": "neutre"
    }
   ],
-  "lieu": "academie-tenraku"
+  "lieu": "academie-tenraku",
+  "galerie": [
+   {
+    "img": "img/paysages/roshen-buru/academie-du-tenraku.webp",
+    "legende": "L'académie du Tenraku"
+   }
+  ]
  },
  {
   "id": "kynn-tsuren",
@@ -1014,7 +1171,13 @@
     "ton": "positif"
    }
   ],
-  "lieu": "domaine-tsuren"
+  "lieu": "domaine-tsuren",
+  "galerie": [
+   {
+    "img": "img/paysages/roshen-buru/palais-tsuren.webp",
+    "legende": "Le palais Tsuren"
+   }
+  ]
  },
  {
   "id": "clan-kovacz",
@@ -1062,6 +1225,12 @@
     "type": "Ancien prétendant",
     "ton": "negatif"
    }
+  ],
+  "galerie": [
+   {
+    "img": "img/paysages/roshen-buru/garconniere-darrek.webp",
+    "legende": "La garçonnière de Darrek Kovacz"
+   }
   ]
  },
  {
@@ -1083,7 +1252,13 @@
     "ton": "positif"
    }
   ],
-  "lieu": "domaine-kovacz"
+  "lieu": "domaine-kovacz",
+  "galerie": [
+   {
+    "img": "img/paysages/roshen-buru/palais-kovacz.webp",
+    "legende": "Le palais Kovacz"
+   }
+  ]
  },
  {
   "id": "ayano-kaben",
@@ -1111,6 +1286,16 @@
     "cible": "darrek-kovacz",
     "type": "Ravisseur",
     "ton": "negatif"
+   }
+  ],
+  "galerie": [
+   {
+    "img": "img/paysages/roshen-buru/premier-mariage-konya-ayano.webp",
+    "legende": "Le lieu du premier mariage"
+   },
+   {
+    "img": "img/paysages/roshen-buru/garconniere-darrek.webp",
+    "legende": "La garçonnière de Darrek Kovacz"
    }
   ]
  },
@@ -1141,7 +1326,13 @@
     "ton": "positif"
    }
   ],
-  "lieu": "maison-sokabei"
+  "lieu": "maison-sokabei",
+  "galerie": [
+   {
+    "img": "img/paysages/roshen-buru/premier-mariage-konya-ayano.webp",
+    "legende": "Le lieu du premier mariage"
+   }
+  ]
  },
  {
   "id": "clan-anadori",
@@ -1218,6 +1409,12 @@
     "type": "Tolère sa présence",
     "ton": "neutre"
    }
+  ],
+  "galerie": [
+   {
+    "img": "img/paysages/roshen-buru/palais-uramei.webp",
+    "legende": "Le palais Urameï"
+   }
   ]
  },
  {
@@ -1231,6 +1428,12 @@
   "resume": "Une des deux femmes d'Ankou. Semble être un démon.",
   "connu": [
    "Tatouée du même dessin que lui. Elle n'a pas vraiment pris la parole."
+  ],
+  "galerie": [
+   {
+    "img": "img/paysages/roshen-buru/palais-uramei.webp",
+    "legende": "Le palais Urameï"
+   }
   ]
  },
  {
@@ -1244,6 +1447,12 @@
   "resume": "Une des deux femmes d'Ankou. Semble être un démon.",
   "connu": [
    "Tatouée du même dessin que lui. Elle n'a pas vraiment pris la parole."
+  ],
+  "galerie": [
+   {
+    "img": "img/paysages/roshen-buru/palais-uramei.webp",
+    "legende": "Le palais Urameï"
+   }
   ]
  },
  {
@@ -1286,6 +1495,12 @@
     "type": "Flirte avec elle",
     "ton": "positif"
    }
+  ],
+  "galerie": [
+   {
+    "img": "img/paysages/roshen-buru/planque-yurei.webp",
+    "legende": "La planque de Yureï"
+   }
   ]
  },
  {
@@ -1314,6 +1529,12 @@
     "cible": "balamor",
     "type": "Symboles trouvés",
     "ton": "negatif"
+   }
+  ],
+  "galerie": [
+   {
+    "img": "img/paysages/roshen-buru/maison-de-tobiya.webp",
+    "legende": "La maison de Tobiya"
    }
   ]
  },
@@ -1432,7 +1653,13 @@
     "ton": "negatif"
    }
   ],
-  "lieu": "palais-miren-buru"
+  "lieu": "palais-miren-buru",
+  "galerie": [
+   {
+    "img": "img/paysages/roshen-buru/neryn-yosa.webp",
+    "legende": "Neryn Yosa"
+   }
+  ]
  },
  {
   "id": "ginko-noshi-buru",
@@ -1514,6 +1741,12 @@
     "type": "Cliente",
     "ton": "negatif"
    }
+  ],
+  "galerie": [
+   {
+    "img": "img/paysages/roshen-buru/forge-oyoroi.webp",
+    "legende": "La forge Oyoroï"
+   }
   ]
  },
  {
@@ -1533,6 +1766,12 @@
   ],
   "alias": [
    "Oren Shidaï"
+  ],
+  "galerie": [
+   {
+    "img": "img/paysages/roshen-buru/preteur-sur-gage.webp",
+    "legende": "Le prêteur sur gage"
+   }
   ]
  },
  {
@@ -1549,6 +1788,12 @@
    "Invitée au mariage, elle a servi de médecin légiste lors de la première cérémonie.",
    "Le cuisinier est mort empoisonné à la vesine.",
    "Pendant la seconde cérémonie, elle était dans la foule du Temple du Tenraku."
+  ],
+  "galerie": [
+   {
+    "img": "img/paysages/roshen-buru/apothicaire.webp",
+    "legende": "L'apothicaire"
+   }
   ]
  },
  {
@@ -1571,6 +1816,12 @@
   ],
   "histoire": [
    "Elle fait émarger les invités du mariage sans trouver le coupable."
+  ],
+  "galerie": [
+   {
+    "img": "img/paysages/roshen-buru/calligraphie.webp",
+    "legende": "L'atelier de calligraphie"
+   }
   ]
  },
  {
@@ -1661,6 +1912,12 @@
     "type": "Divinité de la Mort",
     "ton": "neutre"
    }
+  ],
+  "galerie": [
+   {
+    "img": "img/paysages/cap-cornes/cabane-gran-brijit.webp",
+    "legende": "L'intérieur de la maison de Gran Brijit"
+   }
   ]
  },
  {
@@ -1687,12 +1944,14 @@
   "connu": [
    "Le statut Tsuren de Harfang ouvre les ascenseurs et le quartier noble à tout le groupe."
   ],
-  "pos": {
-   "x": 0.42,
-   "y": 0.17
-  },
-  "carte": "ville",
-  "zoom": 0.12
+  "carte": "palais",
+  "zoom": 0.12,
+  "galerie": [
+   {
+    "img": "img/paysages/roshen-buru/palais-tsuren.webp",
+    "legende": "Le palais Tsuren"
+   }
+  ]
  },
  {
   "id": "ascenseurs",
@@ -1711,7 +1970,17 @@
    "y": 0.47
   },
   "carte": "ville",
-  "zoom": 0.12
+  "zoom": 0.12,
+  "galerie": [
+   {
+    "img": "img/paysages/roshen-buru/ascenseur.webp",
+    "legende": "Les ascenseurs"
+   },
+   {
+    "img": "img/paysages/roshen-buru/ascenseur-2.webp",
+    "legende": "Les ascenseurs, la cabine"
+   }
+  ]
  },
  {
   "id": "academie-tenraku",
@@ -1720,12 +1989,14 @@
   "titre": "Cour d'entraînement des jeunes Mirenai",
   "parent": "roshen-buru",
   "resume": "Grande cour de terre battue ceinte de bâtiments bas, pieds nus et bois contre bois, une trentaine d'élèves.",
-  "pos": {
-   "x": 0.85,
-   "y": 0.85
-  },
-  "carte": "ville",
-  "zoom": 0.12
+  "carte": "palais",
+  "zoom": 0.12,
+  "galerie": [
+   {
+    "img": "img/paysages/roshen-buru/academie-du-tenraku.webp",
+    "legende": "L'académie du Tenraku"
+   }
+  ]
  },
  {
   "id": "kaoren-mishta",
@@ -1739,6 +2010,12 @@
   "connu": [
    "Rysei s'entraîne seule deux ou trois fois par semaine, à une force qui dépasse déjà son enseignement.",
    "Il demande à Harfang comment se passe la cohabitation avec Stryge."
+  ],
+  "galerie": [
+   {
+    "img": "img/paysages/roshen-buru/academie-du-tenraku.webp",
+    "legende": "L'académie du Tenraku"
+   }
   ]
  },
  {
@@ -1759,6 +2036,12 @@
   "zoom": 0.12,
   "alias": [
    "temple de Mélora"
+  ],
+  "galerie": [
+   {
+    "img": "img/paysages/roshen-buru/temple-de-melora.webp",
+    "legende": "Le temple de Mélora Sylvestre"
+   }
   ]
  },
  {
@@ -1776,6 +2059,12 @@
   ],
   "histoire": [
    "Il célèbre la première cérémonie de mariage, celle de la salle des fêtes."
+  ],
+  "galerie": [
+   {
+    "img": "img/paysages/roshen-buru/temple-de-melora.webp",
+    "legende": "Le temple de Mélora Sylvestre"
+   }
   ]
  },
  {
@@ -1788,12 +2077,14 @@
   "connu": [
    "Un vieux domestique essoufflé s'excuse sans qu'on lui demande rien."
   ],
-  "pos": {
-   "x": 0.3,
-   "y": 0.16
-  },
-  "carte": "ville",
-  "zoom": 0.12
+  "carte": "palais",
+  "zoom": 0.12,
+  "galerie": [
+   {
+    "img": "img/paysages/roshen-buru/palais-kovacz.webp",
+    "legende": "Le palais Kovacz"
+   }
+  ]
  },
  {
   "id": "salon-anadori",
@@ -1805,12 +2096,14 @@
   "connu": [
    "On fait attendre vingt minutes dans un vestibule vide."
   ],
-  "pos": {
-   "x": 0.6,
-   "y": 0.14
-  },
-  "carte": "ville",
-  "zoom": 0.12
+  "carte": "palais",
+  "zoom": 0.12,
+  "galerie": [
+   {
+    "img": "img/paysages/roshen-buru/salon-anadori.webp",
+    "legende": "Le salon Anadori"
+   }
+  ]
  },
  {
   "id": "caspian-anadori",
@@ -1836,6 +2129,12 @@
     "cible": "kirin-anadori",
     "type": "Chef du clan",
     "ton": "neutre"
+   }
+  ],
+  "galerie": [
+   {
+    "img": "img/paysages/roshen-buru/salon-anadori.webp",
+    "legende": "Le salon Anadori"
    }
   ]
  },
@@ -1883,11 +2182,7 @@
   "titre": "Famille de la mariée",
   "parent": "roshen-buru",
   "resume": "Maison où le clan Kaben se referme après l'enlèvement.",
-  "pos": {
-   "x": 0.35,
-   "y": 0.35
-  },
-  "carte": "ville",
+  "carte": "palais",
   "zoom": 0.12
  },
  {
@@ -1975,7 +2270,17 @@
    "y": 0.42
   },
   "carte": "ville",
-  "zoom": 0.12
+  "zoom": 0.12,
+  "galerie": [
+   {
+    "img": "img/paysages/roshen-buru/quartier-des-plaisirs.webp",
+    "legende": "Le quartier des Plaisirs"
+   },
+   {
+    "img": "img/paysages/roshen-buru/quartier-des-plaisirs-2.webp",
+    "legende": "Le quartier des Plaisirs, une autre allée"
+   }
+  ]
  },
  {
   "id": "madame-renka",
@@ -2002,7 +2307,13 @@
    "y": 0.5
   },
   "carte": "ville",
-  "zoom": 0.12
+  "zoom": 0.12,
+  "galerie": [
+   {
+    "img": "img/paysages/roshen-buru/curiosites-maven.webp",
+    "legende": "Les curiosités de Maven Ako"
+   }
+  ]
  },
  {
   "id": "maven-ako",
@@ -2012,7 +2323,13 @@
   "parent": "roshen-buru",
   "lieu": "curiosites-maven",
   "statut": "vivant",
-  "resume": "Vend des objets étranges et curieux."
+  "resume": "Vend des objets étranges et curieux.",
+  "galerie": [
+   {
+    "img": "img/paysages/roshen-buru/curiosites-maven.webp",
+    "legende": "Les curiosités de Maven Ako"
+   }
+  ]
  },
  {
   "id": "echoppe-ilvaro",
@@ -2026,7 +2343,13 @@
    "y": 0.55
   },
   "carte": "ville",
-  "zoom": 0.12
+  "zoom": 0.12,
+  "galerie": [
+   {
+    "img": "img/paysages/roshen-buru/echoppe-ilvaro.webp",
+    "legende": "L'échoppe d'Ilvaro"
+   }
+  ]
  },
  {
   "id": "ilvaro",
@@ -2036,7 +2359,13 @@
   "parent": "roshen-buru",
   "lieu": "echoppe-ilvaro",
   "statut": "vivant",
-  "resume": "Marchand de la ville basse."
+  "resume": "Marchand de la ville basse.",
+  "galerie": [
+   {
+    "img": "img/paysages/roshen-buru/echoppe-ilvaro.webp",
+    "legende": "L'échoppe d'Ilvaro"
+   }
+  ]
  },
  {
   "id": "atelier-thibwick",
@@ -2077,7 +2406,13 @@
   "parent": "roshen-buru",
   "lieu": "magistrature",
   "statut": "vivant",
-  "resume": "Politesse qui ne promet rien. Elle ferme elle-même les archives chaque soir."
+  "resume": "Politesse qui ne promet rien. Elle ferme elle-même les archives chaque soir.",
+  "galerie": [
+   {
+    "img": "img/paysages/roshen-buru/magistrature.webp",
+    "legende": "La Magistrature"
+   }
+  ]
  },
  {
   "id": "oryo-takashen",
@@ -2114,6 +2449,12 @@
   ],
   "histoire": [
    "Le groupe le combat devant la porte de la planque."
+  ],
+  "galerie": [
+   {
+    "img": "img/paysages/roshen-buru/garconniere-bruska.webp",
+    "legende": "La garçonnière de Bruska"
+   }
   ]
  },
  {
@@ -2174,7 +2515,13 @@
   "parent": "clan-siharen",
   "lieu": "clan-siharen",
   "statut": "vivant",
-  "resume": "Figé sur l'estrade, casque ailé, visage de cire. Il ne dit pas un mot."
+  "resume": "Figé sur l'estrade, casque ailé, visage de cire. Il ne dit pas un mot.",
+  "galerie": [
+   {
+    "img": "img/paysages/roshen-buru/palais-siharen.webp",
+    "legende": "Le palais Siharen"
+   }
+  ]
  },
  {
   "id": "dame-teshima",
@@ -2184,7 +2531,13 @@
   "parent": "clan-siharen",
   "lieu": "clan-siharen",
   "statut": "vivant",
-  "resume": "Épouse effacée en apparence, elle mène l'audience et parle toujours au « nous »."
+  "resume": "Épouse effacée en apparence, elle mène l'audience et parle toujours au « nous ».",
+  "galerie": [
+   {
+    "img": "img/paysages/roshen-buru/palais-siharen.webp",
+    "legende": "Le palais Siharen"
+   }
+  ]
  },
  {
   "id": "clan-kaben",
@@ -2306,7 +2659,13 @@
   "nom": "La boutique de Soko",
   "titre": "Instruments et toiles",
   "parent": "roshen-buru",
-  "resume": "Salle basse sous le niveau de la rue, tapissée d'instruments suspendus."
+  "resume": "Salle basse sous le niveau de la rue, tapissée d'instruments suspendus.",
+  "galerie": [
+   {
+    "img": "img/paysages/roshen-buru/boutique-de-soko.webp",
+    "legende": "La boutique de Soko"
+   }
+  ]
  },
  {
   "id": "soko",
@@ -2319,6 +2678,12 @@
   "resume": "Strider qui attend au plafond, un shamisen entre les mains. Elle parle d'elle à la troisième personne et nie toute implication dans les disparitions.",
   "connu": [
    "Des gardes ont soupçonné ses toiles d'araignée, à tort selon elle."
+  ],
+  "galerie": [
+   {
+    "img": "img/paysages/roshen-buru/boutique-de-soko.webp",
+    "legende": "La boutique de Soko"
+   }
   ]
  },
  {
@@ -2329,7 +2694,13 @@
   "parent": "forge-oyoroi",
   "lieu": "forge-oyoroi",
   "statut": "mort",
-  "resume": "Il a fait la réputation de la forge et emporté son secret de fabrication dans la tombe. On dit qu'il forgeait des mois durant au cœur des montagnes."
+  "resume": "Il a fait la réputation de la forge et emporté son secret de fabrication dans la tombe. On dit qu'il forgeait des mois durant au cœur des montagnes.",
+  "galerie": [
+   {
+    "img": "img/paysages/roshen-buru/forge-oyoroi.webp",
+    "legende": "La forge Oyoroï"
+   }
+  ]
  },
  {
   "id": "stryge",
@@ -2349,7 +2720,13 @@
   "parent": "ascenseurs",
   "lieu": "ascenseurs",
   "statut": "vivant",
-  "resume": "Garde qui filtre l'accès. Un laissez-passer, une convocation ou un nom de clan suffisent."
+  "resume": "Garde qui filtre l'accès. Un laissez-passer, une convocation ou un nom de clan suffisent.",
+  "galerie": [
+   {
+    "img": "img/paysages/roshen-buru/ascenseur.webp",
+    "legende": "Les ascenseurs"
+   }
+  ]
  },
  {
   "id": "vosko",
@@ -2359,7 +2736,13 @@
   "parent": "domaine-kovacz",
   "lieu": "domaine-kovacz",
   "statut": "vivant",
-  "resume": "Domestique essoufflé qui ouvre les portes du domaine."
+  "resume": "Domestique essoufflé qui ouvre les portes du domaine.",
+  "galerie": [
+   {
+    "img": "img/paysages/roshen-buru/palais-kovacz.webp",
+    "legende": "Le palais Kovacz"
+   }
+  ]
  },
  {
   "id": "ohana",
@@ -2555,7 +2938,13 @@
   "parent": "cap-cornes",
   "lieu": "cap-cornes",
   "statut": "vivant",
-  "resume": "Redingote brodée d'or, fine pipe, regard froid. Il contrôle le point de passage du poisson vers Keras Tauroc."
+  "resume": "Redingote brodée d'or, fine pipe, regard froid. Il contrôle le point de passage du poisson vers Keras Tauroc.",
+  "galerie": [
+   {
+    "img": "img/paysages/cap-cornes/aqueduc.webp",
+    "legende": "L'aqueduc"
+   }
+  ]
  },
  {
   "id": "pere-niall",
@@ -2568,6 +2957,12 @@
   "resume": "Lutriel en robe bleu et or, doux et légèrement excentrique. Il demande volontiers un galet poli en offrande. Expert des ghoules des marées.",
   "alias": [
    "Niall"
+  ],
+  "galerie": [
+   {
+    "img": "img/paysages/cap-cornes/cathedrale.webp",
+    "legende": "La cathédrale"
+   }
   ]
  },
  {
@@ -2578,7 +2973,13 @@
   "parent": "cap-cornes",
   "lieu": "cap-cornes",
   "statut": "vivant",
-  "resume": "Écailles bleutées, queue de poisson. Elle attrape des têtards avec Ink."
+  "resume": "Écailles bleutées, queue de poisson. Elle attrape des têtards avec Ink.",
+  "galerie": [
+   {
+    "img": "img/paysages/cap-cornes/rues-maeve.webp",
+    "legende": "Dans les rues de Cap Cornes"
+   }
+  ]
  },
  {
   "id": "tormund",
@@ -2588,7 +2989,13 @@
   "parent": "cap-cornes",
   "lieu": "cap-cornes",
   "statut": "vivant",
-  "resume": "Réparateur de bateaux, bourru, qui déteste forger pour tuer."
+  "resume": "Réparateur de bateaux, bourru, qui déteste forger pour tuer.",
+  "galerie": [
+   {
+    "img": "img/paysages/cap-cornes/forge-des-rames.webp",
+    "legende": "La forge des rames"
+   }
+  ]
  },
  {
   "id": "rory",
@@ -2598,7 +3005,13 @@
   "parent": "cap-cornes",
   "lieu": "cap-cornes",
   "statut": "vivant",
-  "resume": "Gaffe de pêche à l'épaule, accueillant. Il fournit les clous rouillés du cercle d'Eamonn."
+  "resume": "Gaffe de pêche à l'épaule, accueillant. Il fournit les clous rouillés du cercle d'Eamonn.",
+  "galerie": [
+   {
+    "img": "img/paysages/cap-cornes/pecherie.webp",
+    "legende": "La pêcherie"
+   }
+  ]
  },
  {
   "id": "sorcha",
@@ -2608,7 +3021,13 @@
   "parent": "cap-cornes",
   "lieu": "cap-cornes",
   "statut": "vivant",
-  "resume": "Vive et curieuse, vend potions et parchemins de bas et moyen niveau. Dernier réapprovisionnement avant Roshen Buru."
+  "resume": "Vive et curieuse, vend potions et parchemins de bas et moyen niveau. Dernier réapprovisionnement avant Roshen Buru.",
+  "galerie": [
+   {
+    "img": "img/paysages/cap-cornes/moustache-baguette.webp",
+    "legende": "Moustache et Baguette"
+   }
+  ]
  },
  {
   "id": "kirin-seiren",
@@ -2628,7 +3047,13 @@
   "parent": "azuren-kai",
   "lieu": "azuren-kai",
   "statut": "vivant",
-  "resume": "Minuscule, très âgée, l'œil vif. Elle propose des tenues adaptées aux modes locales."
+  "resume": "Minuscule, très âgée, l'œil vif. Elle propose des tenues adaptées aux modes locales.",
+  "galerie": [
+   {
+    "img": "img/paysages/azuren-kai/chez-madame-ari.webp",
+    "legende": "Chez Madame Ari"
+   }
+  ]
  },
  {
   "id": "obore",
@@ -2652,7 +3077,13 @@
   "parent": "capitainerie",
   "lieu": "capitainerie",
   "statut": "vivant",
-  "resume": "Il tient les registres de fret du port depuis vingt ans et reçoit Harfang comme délégué."
+  "resume": "Il tient les registres de fret du port depuis vingt ans et reçoit Harfang comme délégué.",
+  "galerie": [
+   {
+    "img": "img/paysages/azuren-kai/magistrature-doryo-kovacz.webp",
+    "legende": "La Magistrature de Doryo Kovacz"
+   }
+  ]
  },
  {
   "id": "nuala",
@@ -2662,7 +3093,13 @@
   "parent": "azuren-kai",
   "lieu": "azuren-kai",
   "statut": "vivant",
-  "resume": "Antitoxines, remèdes contre le mal de mer, rations sèches. Prix fixes. Elle vient de Cap Cornes."
+  "resume": "Antitoxines, remèdes contre le mal de mer, rations sèches. Prix fixes. Elle vient de Cap Cornes.",
+  "galerie": [
+   {
+    "img": "img/paysages/azuren-kai/comptoir-cap-cornes-nuala.webp",
+    "legende": "Le comptoir de Cap Cornes"
+   }
+  ]
  },
  {
   "id": "kanabe",
@@ -2675,6 +3112,12 @@
   "resume": "Charmes en os, lanternes, aiguilles. Il refuse un charme d'embarquement à qui ne part pas.",
   "alias": [
    "Kanabe"
+  ],
+  "galerie": [
+   {
+    "img": "img/paysages/azuren-kai/carriole-kanabe.webp",
+    "legende": "La carriole de Kanabé"
+   }
   ]
  },
  {
@@ -2685,7 +3128,13 @@
   "parent": "azuren-kai",
   "lieu": "azuren-kai",
   "statut": "vivant",
-  "resume": "Cuir, écailles de saurien de Balamor, jaques matelassés. Il refuse plaque et métal lourd."
+  "resume": "Cuir, écailles de saurien de Balamor, jaques matelassés. Il refuse plaque et métal lourd.",
+  "galerie": [
+   {
+    "img": "img/paysages/azuren-kai/cuir-et-ecaille-rokka.webp",
+    "legende": "Le Cuir et l'Écaille"
+   }
+  ]
  },
  {
   "id": "le-goryo",

@@ -2998,6 +2998,12 @@
   "resume": "Salle d'audience bâtie sur un ancien navire amiral, trône de poutres et d'os, trophées d'abordage.",
   "connu": [
    "Sycomore y siège entourée de trois lieutenants."
+  ],
+  "galerie": [
+   {
+    "img": "img/paysages/azuren-kai/capitainerie.webp",
+    "legende": "La Capitainerie"
+   }
   ]
  },
  {

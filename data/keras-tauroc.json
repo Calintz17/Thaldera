@@ -892,6 +892,20 @@
    "Après l'avoir gagné, il reçoit les Cornes d'Or et 5 600 pièces d'or. Les mêmes habitants deviennent chaleureux.",
    "Absalom efface un mois de la mémoire du groupe et le fait accuser du meurtre d'Otoba.",
    "Tarcus propose un marché au groupe, qui enquête sur lui-même et démasque Calvinus Ferox."
+  ],
+  "galerie": [
+   {
+    "img": "img/paysages/keras-tauroc/rue-passant-ivre.webp",
+    "legende": "Un passant ivre dans la rue"
+   },
+   {
+    "img": "img/paysages/keras-tauroc/vue-ville.webp",
+    "legende": "Keras Tauroc vue d'ensemble"
+   },
+   {
+    "img": "img/paysages/keras-tauroc/la-balance.webp",
+    "legende": "La Balance"
+   }
   ]
  },
  {
@@ -904,6 +918,16 @@
   "connu": [
    "Backstage où Fulvia enregistre les combattants, gradins, loge d'honneur de Vitiosa, prêtre-guérisseur au bord de l'arène (soins payants), vendeurs de potions.",
    "Après le festival, il devient son propre fantôme : gradins déserts, détritus partout, une seule lampe allumée dans la loge d'honneur."
+  ],
+  "galerie": [
+   {
+    "img": "img/paysages/keras-tauroc/arene-vitiosa-demon.webp",
+    "legende": "L'arène, Vitiosa et le démon"
+   },
+   {
+    "img": "img/paysages/keras-tauroc/colisee-3.webp",
+    "legende": "Le Colisée"
+   }
   ]
  },
  {
@@ -919,6 +943,12 @@
   ],
   "histoire": [
    "Le groupe y trouve un autel secondaire aux armes de Vassago et combat le Démon des Mains."
+  ],
+  "galerie": [
+   {
+    "img": "img/paysages/keras-tauroc/cathedrale-de-kord.webp",
+    "legende": "La cathédrale de Kord"
+   }
   ]
  },
  {
@@ -933,6 +963,12 @@
   "resume": "Atrium de marbre autour d'un bassin, chambres en galerie, bains au sous-sol.",
   "connu": [
    "Tout y est ordonné comme un système. C'est l'auberge de référence pour les étrangers de qualité."
+  ],
+  "galerie": [
+   {
+    "img": "img/paysages/keras-tauroc/angues-dormientes.webp",
+    "legende": "L'auberge des Angues Dormientes"
+   }
   ]
  },
  {
@@ -947,6 +983,12 @@
   "resume": "Auberge pauvre et bruyante, cœur social du quartier étranger.",
   "connu": [
    "Philippa y a chanté chaque soir pendant le mois perdu."
+  ],
+  "galerie": [
+   {
+    "img": "img/paysages/keras-tauroc/cornua-fracta.webp",
+    "legende": "Cornua Fracta"
+   }
   ]
  },
  {
@@ -961,6 +1003,12 @@
   "resume": "La forge d'Egnatius.",
   "connu": [
    "Le groupe y a acheté Mâchoire, Caput Tauri et la Cuirasse Aurée."
+  ],
+  "galerie": [
+   {
+    "img": "img/paysages/keras-tauroc/malleus-cadens.webp",
+    "legende": "Le Malleus Cadens"
+   }
   ]
  },
  {
@@ -975,6 +1023,12 @@
   "resume": "La boutique d'Ursinus. La porte porte la marque de craie de Philippa.",
   "connu": [
    "C'est un point de retour permanent vers Keras Tauroc."
+  ],
+  "galerie": [
+   {
+    "img": "img/paysages/keras-tauroc/mandragora-viridis.webp",
+    "legende": "Mandragora Viridis"
+   }
   ]
  },
  {
@@ -989,6 +1043,12 @@
   "resume": "La boutique de Thessala.",
   "connu": [
    "Elle refuse tout inconnu sans recommandation."
+  ],
+  "galerie": [
+   {
+    "img": "img/paysages/keras-tauroc/cinis-et-caligo.webp",
+    "legende": "Cinis et Caligo"
+   }
   ]
  },
  {
@@ -1006,6 +1066,12 @@
   ],
   "histoire": [
    "Sur les docks, Absalom prend le groupe de court avec Modify Memory. Le groupe se réveille en prison, un mois plus tard."
+  ],
+  "galerie": [
+   {
+    "img": "img/paysages/keras-tauroc/docks.webp",
+    "legende": "Les docks"
+   }
   ]
  },
  {
@@ -1020,6 +1086,12 @@
   ],
   "histoire": [
    "Le groupe y est attaqué par deux soldats en permission payés par Ferox. Il les capture."
+  ],
+  "galerie": [
+   {
+    "img": "img/paysages/keras-tauroc/planque-hematome.webp",
+    "legende": "La vieille tannerie"
+   }
   ]
  },
  {
@@ -1031,6 +1103,16 @@
   "resume": "Une villa jaunie et lasse au bout d'une allée, connue de tout le quartier.",
   "connu": [
    "Dans son bureau : la lettre d'Absalom signée du sceau de Vassago et la copie de la réponse de Ferox."
+  ],
+  "galerie": [
+   {
+    "img": "img/paysages/keras-tauroc/villa-ferox.webp",
+    "legende": "La villa de Ferox"
+   },
+   {
+    "img": "img/paysages/keras-tauroc/villa-ferox-2.webp",
+    "legende": "La villa de Ferox, une autre salle"
+   }
   ]
  },
  {
@@ -1043,6 +1125,12 @@
   "resume": "Consul de la Maison Tauroc. Autoritaire et pragmatique.",
   "connu": [
    "Le groupe ne l'a jamais rencontré directement."
+  ],
+  "galerie": [
+   {
+    "img": "img/paysages/keras-tauroc/palais-tauroc.webp",
+    "legende": "L'intérieur du palais Tauroc"
+   }
   ],
   "lieu": "keras-tauroc"
  },
@@ -1078,6 +1166,12 @@
     "type": "Démone",
     "ton": "neutre"
    }
+  ],
+  "galerie": [
+   {
+    "img": "img/paysages/keras-tauroc/colisee-vitiosa.webp",
+    "legende": "Vitiosa au Colisée"
+   }
   ]
  },
  {
@@ -1106,6 +1200,12 @@
   "connu": [
    "Il parle d'Absalom avec admiration. Il lui a prêté les catacombes pour se reposer et l'a orientée vers Chrysodoros.",
    "Il est physiquement diminué : « ma pauvre tête », « je n'ai presque plus de vie ». Il pense qu'Absalom est partie vers le nord, vers Roshen Buru."
+  ],
+  "galerie": [
+   {
+    "img": "img/paysages/keras-tauroc/cathedrale-de-kord.webp",
+    "legende": "La cathédrale de Kord"
+   }
   ]
  },
  {
@@ -1121,6 +1221,12 @@
    "Absalom lui demandait une relique liée à un pouvoir ancien, peut-être d'avant la grande catastrophe, et s'informait sur la provenance des pierres précieuses. Il l'a orientée vers la Maison Tauroc.",
    "Il l'a revue le lendemain près du port, avec l'air d'une femme qui avait pris une décision."
   ],
+  "galerie": [
+   {
+    "img": "img/paysages/keras-tauroc/atelier-de-chrysodoros.webp",
+    "legende": "L'orfèvrerie de Chrysodoros"
+   }
+  ],
   "lieu": "keras-tauroc"
  },
  {
@@ -1135,6 +1241,12 @@
    "Elle n'a ni enseigne ni adresse fixe : un pan de mur différent chaque jour.",
    "Jane lui a volé une « Hache Étrange » à 2 000 pièces d'or : la garde d'une épée brisée aux glyphes non décoratifs."
   ],
+  "galerie": [
+   {
+    "img": "img/paysages/keras-tauroc/rue-naevia.webp",
+    "legende": "Une rue de Keras Tauroc"
+   }
+  ],
   "lieu": "keras-tauroc"
  },
  {
@@ -1147,6 +1259,12 @@
   "resume": "Il parle vite et beaucoup, et prétend fabriquer lui-même ses potions.",
   "connu": [
    "C'est vrai pour environ la moitié."
+  ],
+  "galerie": [
+   {
+    "img": "img/paysages/keras-tauroc/rue-eshkal.webp",
+    "legende": "Une rue de Keras Tauroc"
+   }
   ],
   "lieu": "keras-tauroc"
  },
@@ -1161,6 +1279,12 @@
   "connu": [
    "Son entrepôt ressemble à l'intérieur d'une tête qui n'a jamais rien jeté.",
    "Il vend une tablette de pierre gravée de glyphes anciens, déchiffrable en partie : un fragment sur les Architectes."
+  ],
+  "galerie": [
+   {
+    "img": "img/paysages/keras-tauroc/rue-comatus.webp",
+    "legende": "Une rue de Keras Tauroc"
+   }
   ],
   "lieu": "keras-tauroc"
  },
@@ -1177,6 +1301,12 @@
    "Avant les Cornes d'Or, il refuse de parler. Après, il parle.",
    "Il raconte qu'une femme en noir a fait modifier une barge, et qu'elle a payé généreusement.",
    "Il conduit le groupe au ponton du Tenrai Buru et se porte garant auprès de Yorisa, qu'il connaît de longue date."
+  ],
+  "galerie": [
+   {
+    "img": "img/paysages/keras-tauroc/docks.webp",
+    "legende": "Les docks"
+   }
   ]
  },
  {
@@ -1193,6 +1323,12 @@
    "Elle se souvient d'Absalom : étrangère tout en noir, restée une nuit, partie au petit matin sans sac, après avoir demandé où se trouvait la cathédrale.",
    "Elle a prévenu le groupe : sans arène, pas de respect, et les étrangers finissent mal ici. Plus tard, c'est elle qui lui remet la missive de Vitiosa.",
    "Le carnet d'Hématome la nomme comme commanditaire d'un contrat : elle emploie la pègre locale."
+  ],
+  "galerie": [
+   {
+    "img": "img/paysages/keras-tauroc/angues-dormientes.webp",
+    "legende": "L'auberge des Angues Dormientes"
+   }
   ]
  },
  {
@@ -1214,6 +1350,12 @@
     "type": "Frère",
     "ton": "positif"
    }
+  ],
+  "galerie": [
+   {
+    "img": "img/paysages/keras-tauroc/malleus-cadens.webp",
+    "legende": "Le Malleus Cadens"
+   }
   ]
  },
  {
@@ -1229,6 +1371,12 @@
    "Il garde toujours des potions de côté pour ceux qui n'ont pas les moyens.",
    "Plusieurs de ses clients se plaignent d'une sensation désagréable près de la cathédrale.",
    "Le groupe s'est lié d'amitié avec lui. Sa potion a servi à ressusciter Nolbrim."
+  ],
+  "galerie": [
+   {
+    "img": "img/paysages/keras-tauroc/mandragora-viridis.webp",
+    "legende": "Mandragora Viridis"
+   }
   ]
  },
  {
@@ -1243,6 +1391,12 @@
   "connu": [
    "Elle refuse tout inconnu sans recommandation. Les Cornes d'Or comptent, comme un mot de Volusius, d'Ursinus ou d'Harak.",
    "Elle a d'abord refusé l'entrée au groupe, avant de le servir."
+  ],
+  "galerie": [
+   {
+    "img": "img/paysages/keras-tauroc/cinis-et-caligo.webp",
+    "legende": "Cinis et Caligo"
+   }
   ]
  },
  {
@@ -1263,6 +1417,12 @@
     "type": "Frère",
     "ton": "positif"
    }
+  ],
+  "galerie": [
+   {
+    "img": "img/paysages/keras-tauroc/cornua-fracta.webp",
+    "legende": "Cornua Fracta"
+   }
   ]
  },
  {
@@ -1277,6 +1437,12 @@
    "Elle reconnaît Philippa de loin et se montre bien trop familière : un mois de souvenirs que Philippa n'a pas.",
    "La veille du meurtre, un vieil homme aux cheveux blancs et au maintien militaire a remis un pli à Philippa. Sera l'a gardé : « À la deuxième cloche après le coucher du soleil. Viens seule. Ne parle à personne. Via Castrum, Quartier de la Caserne, porte de fer. »"
   ],
+  "galerie": [
+   {
+    "img": "img/paysages/keras-tauroc/moulins.webp",
+    "legende": "Les moulins"
+   }
+  ],
   "lieu": "keras-tauroc"
  },
  {
@@ -1289,6 +1455,12 @@
   "resume": "Voisine de la chambre louée par Jane pendant le mois perdu.",
   "connu": [
    "Jane avait loué une chambre de bonne chez elle, propre mais sans rien de personnel. Capella l'entendait rentrer tard et lui reprochait de travailler pour Hématome. Jane portait ses courses le mardi."
+  ],
+  "galerie": [
+   {
+    "img": "img/paysages/keras-tauroc/chambre-de-bonne-capella.webp",
+    "legende": "La chambre de bonne de Capella"
+   }
   ],
   "lieu": "keras-tauroc"
  },
@@ -1320,6 +1492,12 @@
     "type": "Employeur",
     "ton": "neutre"
    }
+  ],
+  "galerie": [
+   {
+    "img": "img/paysages/keras-tauroc/colisee-hematome.webp",
+    "legende": "Hématome au Colisée"
+   }
   ]
  },
  {
@@ -1350,6 +1528,12 @@
     "type": "Cible",
     "ton": "negatif"
    }
+  ],
+  "galerie": [
+   {
+    "img": "img/paysages/keras-tauroc/villa-ferox.webp",
+    "legende": "La villa de Ferox"
+   }
   ]
  },
  {
@@ -1376,6 +1560,12 @@
     "cible": "calvinus-ferox",
     "type": "Enquête sur",
     "ton": "negatif"
+   }
+  ],
+  "galerie": [
+   {
+    "img": "img/paysages/keras-tauroc/prison-tarcus.webp",
+    "legende": "La prison, Tarcus"
    }
   ],
   "lieu": "keras-tauroc"
@@ -1536,6 +1726,12 @@
     "type": "Envoyé par",
     "ton": "negatif"
    }
+  ],
+  "galerie": [
+   {
+    "img": "img/paysages/roshen-buru/voyage-silas-mort-doree.webp",
+    "legende": "Le voyage avec Silas Mort-Dorée"
+   }
   ]
  },
  {
@@ -1591,6 +1787,20 @@
     "type": "Chef officiel",
     "ton": "positif"
    }
+  ],
+  "galerie": [
+   {
+    "img": "img/paysages/cap-cornes/rue.webp",
+    "legende": "Une rue de Cap Cornes"
+   },
+   {
+    "img": "img/paysages/cap-cornes/vue-ville.webp",
+    "legende": "Cap Cornes vue d'ensemble"
+   },
+   {
+    "img": "img/paysages/cap-cornes/cote-des-coeurs-fannes.webp",
+    "legende": "La côte des cœurs fanés"
+   }
   ]
  },
  {
@@ -1612,6 +1822,16 @@
   "connu": [
    "Massive, rongée de lierre, à l'est de la ville. Odeur de tabac froid et de parchemin moisi. Olyssane y passe ses journées.",
    "Le cercle de téléportation vers Port Doëlan y est installé."
+  ],
+  "galerie": [
+   {
+    "img": "img/paysages/cap-cornes/tour-eamonn.webp",
+    "legende": "La tour d'Eamonn"
+   },
+   {
+    "img": "img/paysages/cap-cornes/tour-eamonn-2.webp",
+    "legende": "La tour d'Eamonn, vue intérieure"
+   }
   ]
  },
  {
@@ -1629,6 +1849,16 @@
   "resume": "Une caserne récemment installée, qui pèse sur la ville.",
   "connu": [
    "Elle se tient à l'ouest, de l'autre côté du canal."
+  ],
+  "galerie": [
+   {
+    "img": "img/paysages/cap-cornes/caserne.webp",
+    "legende": "La caserne"
+   },
+   {
+    "img": "img/paysages/cap-cornes/caserne-2.webp",
+    "legende": "La caserne, une autre salle"
+   }
   ]
  },
  {
@@ -1646,6 +1876,12 @@
   "resume": "Chambre humide mais toit solide.",
   "connu": [
    "Soupe de poisson légèrement périmée et bière brune locale."
+  ],
+  "galerie": [
+   {
+    "img": "img/paysages/cap-cornes/auberge-la-machoire.webp",
+    "legende": "L'auberge La Mâchoire"
+   }
   ]
  },
  {
@@ -1663,6 +1899,12 @@
   "resume": "Le marché où Fennick vend sa vesine.",
   "connu": [
    "Le groupe y a menacé Fennick pour obtenir de la vesine."
+  ],
+  "galerie": [
+   {
+    "img": "img/paysages/cap-cornes/marche.webp",
+    "legende": "Le marché"
+   }
   ]
  },
  {
@@ -1680,6 +1922,12 @@
   "resume": "La cabane où Gran Brijit reçoit le groupe avant son départ de Cap Cornes.",
   "connu": [
    "Philippa y a eu une vision d'une balance désaxée. Olyssane y a ouvert le passage en faisant couler son sang."
+  ],
+  "galerie": [
+   {
+    "img": "img/paysages/cap-cornes/cabane-gran-brijit.webp",
+    "legende": "L'intérieur de la maison de Gran Brijit"
+   }
   ]
  },
  {
@@ -1723,6 +1971,12 @@
     "cible": "olyssane-veythar",
     "type": "Négocie avec",
     "ton": "neutre"
+   }
+  ],
+  "galerie": [
+   {
+    "img": "img/paysages/cap-cornes/tour-eamonn.webp",
+    "legende": "La tour d'Eamonn"
    }
   ]
  },
@@ -1790,6 +2044,12 @@
   "connu": [
    "Il est le chef officiel de la ville."
   ],
+  "galerie": [
+   {
+    "img": "img/paysages/cap-cornes/reservoir-aux-poissons.webp",
+    "legende": "Le réservoir aux poissons"
+   }
+  ],
   "lieu": "cap-cornes"
  },
  {
@@ -1806,6 +2066,12 @@
   "resume": "Aubergiste cordial et bavard.",
   "connu": [
    "Grand Scalvern aux écailles sombres, foulard orange. Il pointe sans hésiter la tour d'Eamonn quand on cherche Olyssane."
+  ],
+  "galerie": [
+   {
+    "img": "img/paysages/cap-cornes/auberge-la-machoire.webp",
+    "legende": "L'auberge La Mâchoire"
+   }
   ]
  },
  {
@@ -1826,6 +2092,12 @@
     "type": "Vend",
     "ton": "negatif"
    }
+  ],
+  "galerie": [
+   {
+    "img": "img/paysages/cap-cornes/marche.webp",
+    "legende": "Le marché"
+   }
   ]
  },
  {
@@ -1839,6 +2111,12 @@
   "connu": [
    "Grand, mi-elfe mi-gobelin, cheveux blancs, chemise écarlate ouverte. Il défie à peu près tout le monde, Olyssane en particulier.",
    "Jane, déguisée en Olyssane, l'a attiré dans une ruelle. Il s'est enfui, apeuré, en jurant vengeance."
+  ],
+  "galerie": [
+   {
+    "img": "img/paysages/cap-cornes/kester-tauroc.webp",
+    "legende": "Kester Tauroc à Cap Cornes"
+   }
   ],
   "lieu": "cap-cornes"
  },
@@ -3023,7 +3301,13 @@
   "nom": "L'orfèvrerie de Chrysodoros",
   "titre": "Vitrines d'or et de pierres",
   "parent": "keras-tauroc",
-  "resume": "Boutique d'orfèvrerie. Fermée aux étrangers avant les Cornes d'Or."
+  "resume": "Boutique d'orfèvrerie. Fermée aux étrangers avant les Cornes d'Or.",
+  "galerie": [
+   {
+    "img": "img/paysages/keras-tauroc/atelier-de-chrysodoros.webp",
+    "legende": "L'orfèvrerie de Chrysodoros"
+   }
+  ]
  },
  {
   "id": "mine-de-lapidus",
@@ -3034,6 +3318,12 @@
   "resume": "Rubis, quartz et grenats, sans propriété magique, sauf l'arshen, rare.",
   "connu": [
    "Le groupe a négocié 10 000 po pour deux tonnes de pierre, livraison à organiser."
+  ],
+  "galerie": [
+   {
+    "img": "img/paysages/keras-tauroc/mine-de-lapidus.webp",
+    "legende": "La mine de Lapidus"
+   }
   ]
  },
  {
@@ -3042,7 +3332,13 @@
   "nom": "Le cabinet de l'haruspex",
   "titre": "Adjacent à la caserne",
   "parent": "keras-tauroc",
-  "resume": "Cabinet de divination militaire, accessible grâce aux Cornes d'Or."
+  "resume": "Cabinet de divination militaire, accessible grâce aux Cornes d'Or.",
+  "galerie": [
+   {
+    "img": "img/paysages/keras-tauroc/cabinet-de-cordus.webp",
+    "legende": "Le cabinet de Cordus"
+   }
+  ]
  },
  {
   "id": "hopital-du-colisee",
@@ -3050,7 +3346,13 @@
   "nom": "L'hôpital du Colisée",
   "titre": "Soins des combattants",
   "parent": "colisee",
-  "resume": "Lits alignés, herbes séchées. Meditrina y soigne contre paiement."
+  "resume": "Lits alignés, herbes séchées. Meditrina y soigne contre paiement.",
+  "galerie": [
+   {
+    "img": "img/paysages/keras-tauroc/hopital.webp",
+    "legende": "L'hôpital du Colisée"
+   }
+  ]
  },
  {
   "id": "moulins-de-keras-tauroc",
@@ -3058,7 +3360,13 @@
   "nom": "Les moulins de l'ouest",
   "titre": "Moulins des steppes",
   "parent": "keras-tauroc",
-  "resume": "Grands moulins où vit Sera, la fille du meunier."
+  "resume": "Grands moulins où vit Sera, la fille du meunier.",
+  "galerie": [
+   {
+    "img": "img/paysages/keras-tauroc/moulins.webp",
+    "legende": "Les moulins"
+   }
+  ]
  },
  {
   "id": "scene-de-crime-ambassadeur",
@@ -3066,7 +3374,13 @@
   "nom": "La ruelle du meurtre",
   "titre": "Scène du meurtre d'Otoba",
   "parent": "keras-tauroc",
-  "resume": "Ruelle ocre où l'ambassadeur a été tué. Les traces désignent les doubles des joueuses."
+  "resume": "Ruelle ocre où l'ambassadeur a été tué. Les traces désignent les doubles des joueuses.",
+  "galerie": [
+   {
+    "img": "img/paysages/keras-tauroc/rue-grixus.webp",
+    "legende": "Une rue de Keras Tauroc"
+   }
+  ]
  },
  {
   "id": "prison-de-keras-tauroc",
@@ -3074,7 +3388,13 @@
   "nom": "La prison de Keras Tauroc",
   "titre": "Cellule au collier de fer",
   "parent": "keras-tauroc",
-  "resume": "Cellules de pierre où le groupe s'est réveillé avec un collier arcanique. Harfang y était détenu."
+  "resume": "Cellules de pierre où le groupe s'est réveillé avec un collier arcanique. Harfang y était détenu.",
+  "galerie": [
+   {
+    "img": "img/paysages/keras-tauroc/prison.webp",
+    "legende": "La prison"
+   }
+  ]
  },
  {
   "id": "meditrina",
@@ -3084,7 +3404,13 @@
   "parent": "hopital-du-colisee",
   "lieu": "hopital-du-colisee",
   "statut": "vivant",
-  "resume": "Prêtresse-guérisseuse économe de ses gestes. Elle soigne et vend des potions à prix fixes."
+  "resume": "Prêtresse-guérisseuse économe de ses gestes. Elle soigne et vend des potions à prix fixes.",
+  "galerie": [
+   {
+    "img": "img/paysages/keras-tauroc/hopital.webp",
+    "legende": "L'hôpital du Colisée"
+   }
+  ]
  },
  {
   "id": "vrakul",
@@ -3097,6 +3423,12 @@
   "resume": "Force de la nature, né dit-on dans le sud des plaines rouges. Le groupe l'a affronté au tournoi.",
   "alias": [
    "Le Monolithe"
+  ],
+  "galerie": [
+   {
+    "img": "img/paysages/keras-tauroc/colisee-vrakul.webp",
+    "legende": "Vrakul au Colisée"
+   }
   ]
  },
  {
@@ -3112,6 +3444,12 @@
    "Vocharra",
    "Vosharra",
    "La Cendre du Monastère"
+  ],
+  "galerie": [
+   {
+    "img": "img/paysages/keras-tauroc/colisee-voshara.webp",
+    "legende": "Voshara au Colisée"
+   }
   ]
  },
  {
@@ -3125,6 +3463,12 @@
   "resume": "Combattant mirenaï qui refuse de donner son nom. Le groupe l'a battu.",
   "alias": [
    "Mirenaï anonyme"
+  ],
+  "galerie": [
+   {
+    "img": "img/paysages/keras-tauroc/colisee-peu-importe.webp",
+    "legende": "Peu Importe au Colisée"
+   }
   ]
  },
  {
@@ -3140,6 +3484,12 @@
    "Grûl",
    "Grul",
    "L'Abomination des Cornes Rouges"
+  ],
+  "galerie": [
+   {
+    "img": "img/paysages/keras-tauroc/colisee-gruel.webp",
+    "legende": "Grûl au Colisée"
+   }
   ]
  },
  {
@@ -3153,6 +3503,12 @@
   "resume": "Vieux minotaure qui lit les présages. Il a conseillé à Absalom de suivre le fleuve vers le nord.",
   "alias": [
    "L'haruspex"
+  ],
+  "galerie": [
+   {
+    "img": "img/paysages/keras-tauroc/cabinet-de-cordus.webp",
+    "legende": "Le cabinet de Cordus"
+   }
   ]
  },
  {
@@ -3163,7 +3519,13 @@
   "parent": "mine-de-lapidus",
   "lieu": "mine-de-lapidus",
   "statut": "vivant",
-  "resume": "Contremaître qui a répondu à Absalom que les pierres de Keras Tauroc n'ont aucune propriété magique. Il a conclu un marché de pierre avec le groupe."
+  "resume": "Contremaître qui a répondu à Absalom que les pierres de Keras Tauroc n'ont aucune propriété magique. Il a conclu un marché de pierre avec le groupe.",
+  "galerie": [
+   {
+    "img": "img/paysages/keras-tauroc/mine-de-lapidus.webp",
+    "legende": "La mine de Lapidus"
+   }
+  ]
  },
  {
   "id": "grixus",
@@ -3173,7 +3535,13 @@
   "parent": "scene-de-crime-ambassadeur",
   "lieu": "scene-de-crime-ambassadeur",
   "statut": "vivant",
-  "resume": "Il a vu deux femmes au regard vide guidées par un vieillard aux cheveux blancs. Il parle parce que le groupe porte les Cornes d'Or."
+  "resume": "Il a vu deux femmes au regard vide guidées par un vieillard aux cheveux blancs. Il parle parce que le groupe porte les Cornes d'Or.",
+  "galerie": [
+   {
+    "img": "img/paysages/keras-tauroc/rue-grixus.webp",
+    "legende": "Une rue de Keras Tauroc"
+   }
+  ]
  },
  {
   "id": "goelo",
@@ -3197,7 +3565,13 @@
   "parent": "vieille-tannerie",
   "lieu": "vieille-tannerie",
   "statut": "vivant",
-  "resume": "Client qui commande des récupérations de colis au quai sud, selon le carnet de Hématome."
+  "resume": "Client qui commande des récupérations de colis au quai sud, selon le carnet de Hématome.",
+  "galerie": [
+   {
+    "img": "img/paysages/keras-tauroc/planque-hematome.webp",
+    "legende": "La vieille tannerie"
+   }
+  ]
  },
  {
   "id": "ossyk",
@@ -3207,7 +3581,13 @@
   "parent": "vieille-tannerie",
   "lieu": "vieille-tannerie",
   "statut": "vivant",
-  "resume": "Client qui a commandé une escorte discrète jusqu'à la porte nord, selon le carnet de Hématome."
+  "resume": "Client qui a commandé une escorte discrète jusqu'à la porte nord, selon le carnet de Hématome.",
+  "galerie": [
+   {
+    "img": "img/paysages/keras-tauroc/planque-hematome.webp",
+    "legende": "La vieille tannerie"
+   }
+  ]
  },
  {
   "id": "harak",
@@ -3231,7 +3611,13 @@
    "Pachidan soldat",
    "Gardes de Ferox"
   ],
-  "statut": "vaincu"
+  "statut": "vaincu",
+  "galerie": [
+   {
+    "img": "img/paysages/keras-tauroc/rue-hommes-de-main-ferox.webp",
+    "legende": "Les hommes de main de Ferox"
+   }
+  ]
  },
  {
   "id": "arshen",
@@ -3438,6 +3824,12 @@
   "resume": "Palais de la Maison Tauroc à Keras Tauroc, résidence du Consul Draval Tauroc.",
   "alias": [
    "Valar Taurok"
+  ],
+  "galerie": [
+   {
+    "img": "img/paysages/keras-tauroc/palais-tauroc.webp",
+    "legende": "L'intérieur du palais Tauroc"
+   }
   ]
  },
  {

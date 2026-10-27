@@ -4,7 +4,7 @@
 (() => {
 'use strict';
 
-const VER = '4';
+const VER = '9';
 const EDIT = new URLSearchParams(location.search).has('edit');
 const $ = (s, r = document) => r.querySelector(s);
 const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
@@ -183,6 +183,7 @@ function sceneOf(e, q, depth = 0) {
       const cs = e.cartes || [];
       if (!cs.length) return sceneOf(BY[e.parent], null, depth + 1);
       const t = Math.min(tab, cs.length - 1);
+      if (cs.length > 1) return stackScene(e, null);
       const lieux = collectLieux(e);
       return {
         kind: 'map', src: cs[t].img, cam: FULL, owner: e, tabs: cs, tab: t,
@@ -197,6 +198,11 @@ function sceneOf(e, q, depth = 0) {
         return ps;
       }
       const host = om.host, cs = host.cartes;
+      if (cs.length > 1) {
+        const st = stackScene(host, e);
+        if (e.galerie && e.galerie.length) st.gallery = e.galerie;
+        return st;
+      }
       const base = {
         kind: 'map', src: om.carte.img, cam: e.pos ? around(e.pos, Math.max(e.zoom || 0.2, 0.18)) : FULL, owner: host, tabs: cs, tab: cs.indexOf(om.carte),
         frames: [],
@@ -210,11 +216,28 @@ function sceneOf(e, q, depth = 0) {
       let s = lieu ? sceneOf(lieu, null, depth + 1) : (e.parent ? sceneOf(BY[e.parent], null, depth + 1) : null);
       if (!s && depth === 0) s = sceneOf(BY.istra, null, 1);
       if (s && (e.type === 'pnj' || e.type === 'pj') && depth === 0) {
-        s = { ...s, gallery: s.gallery || [PH_LAND], cutout: e };
+        s = { ...s, gallery: (e.galerie && e.galerie.length) ? e.galerie : (s.gallery || fallbackLand(e) || [PH_LAND]), cutout: e };
       }
       return s;
     }
   }
+}
+function stackScene(host, focus) {
+  const cs = host.cartes, lieux = collectLieux(host);
+  const idx = focus ? Math.max(0, cs.findIndex(c => c.id === (focus.carte || cs[0].id))) : 0;
+  const sheets = cs.map(c => ({
+    carte: c,
+    pins: lieux.filter(l => (l.carte || cs[0].id) === c.id && l.pos).map(l => ({ id: l.id, ...l.pos, label: l.nom, kind: 'lieu', dim: !!focus && l.id !== focus.id, here: !!focus && l.id === focus.id }))
+  }));
+  return { kind: 'stack', src: 'stack:' + host.id, owner: host, tabs: cs, tab: idx, sheets, pins: sheets.flatMap((sh, i) => sh.pins.map(p => ({ ...p, sheet: i }))), frames: [], focus: focus ? focus.id : null, focusSheet: idx, focusPos: focus && focus.pos ? focus.pos : null };
+}
+function fallbackLand(e) {
+  // paysage de repli : lieu, puis rue de la ville
+  const chainUp = [];
+  if (e.lieu && BY[e.lieu]) chainUp.push(...chain(BY[e.lieu]).reverse());
+  chainUp.push(...chain(e).reverse().slice(1));
+  for (const x of chainUp) if (x.galerie && x.galerie.length) return x.galerie;
+  return null;
 }
 function frameOf(k, solo) {
   return { id: k.id, poly: k.poly, color: k.couleur || k.accent || '#d9402f', lab: k.lab, label: k.nom, sub: k.titre, solo: !!solo };
@@ -234,7 +257,7 @@ function collectLieux(v) {
 
 function sceneKey(sc) {
   if (!sc) return 'none';
-  return JSON.stringify([sc.src, sc.cam, sc.frames.map(f => f.id + (f.solo ? 's' : '')), sc.pins.map(p => p.id + (p.dim ? 'd' : '') + (p.here ? 'h' : '')), sc.gallery?.map(g => g.img), sc.cutout?.id, sc.tab]);
+  return JSON.stringify([sc.src, sc.cam, sc.frames.map(f => f.id + (f.solo ? 's' : '')), sc.pins.map(p => p.id + (p.dim ? 'd' : '') + (p.here ? 'h' : '')), sc.gallery?.map(g => g.img), sc.cutout?.id, sc.tab, sc.focus]);
 }
 
 function makeLayer(src, info) {
@@ -243,6 +266,17 @@ function makeLayer(src, info) {
   layer.innerHTML = `<div class="drift"><div class="cam" style="width:${info.w}px;height:${info.h}px"><img src="${src}" alt="" draggable="false"><div class="ovl"></div></div></div>`;
   const o = { el: layer, cam: $('.cam', layer), ovl: $('.ovl', layer), info, src };
   return o;
+}
+function smoothPath(pts) {
+  // courbe fermee (Catmull-Rom vers Bezier), coins arrondis sans trop deborder
+  const n = pts.length; if (n < 3) return 'M' + pts.map(p => p.join(' ')).join('L');
+  const k = 0.17, f = v => +v.toFixed(5);
+  let d = 'M' + f(pts[0][0]) + ' ' + f(pts[0][1]);
+  for (let i = 0; i < n; i++) {
+    const p0 = pts[(i - 1 + n) % n], p1 = pts[i], p2 = pts[(i + 1) % n], p3 = pts[(i + 2) % n];
+    d += 'C' + f(p1[0] + (p2[0] - p0[0]) * k) + ' ' + f(p1[1] + (p2[1] - p0[1]) * k) + ' ' + f(p2[0] - (p3[0] - p1[0]) * k) + ' ' + f(p2[1] - (p3[1] - p1[1]) * k) + ' ' + f(p2[0]) + ' ' + f(p2[1]);
+  }
+  return d + 'Z';
 }
 function centroid(poly) {
   let x = 0, y = 0; poly.forEach(p => { x += p[0]; y += p[1]; }); return [x / poly.length, y / poly.length];
@@ -256,10 +290,10 @@ function renderOverlay(layer, sc) {
     const svg = document.createElementNS(NS, 'svg');
     svg.setAttribute('class', 'regs'); svg.setAttribute('viewBox', '0 0 1 1'); svg.setAttribute('preserveAspectRatio', 'none');
     sc.frames.forEach(f => {
-      const d = 'M' + f.poly.map(p => p[0] + ' ' + p[1]).join('L') + 'Z';
+      const d = smoothPath(f.poly);
       const g = document.createElementNS(NS, 'g');
       g.setAttribute('class', 'reg' + (f.solo ? ' solo' : '')); g.dataset.id = f.id; g.style.setProperty('--c', f.color);
-      ['fill', 'glow', 'line', 'run'].forEach(c => { const p = document.createElementNS(NS, 'path'); p.setAttribute('d', d); p.setAttribute('class', c); if (c === 'run') p.setAttribute('pathLength', '1'); g.appendChild(p); });
+      ['fill', 'glow', 'glow2', 'line', 'run'].forEach(c => { const p = document.createElementNS(NS, 'path'); p.setAttribute('d', d); p.setAttribute('class', c); if (c === 'run') p.setAttribute('pathLength', '1'); g.appendChild(p); });
       svg.appendChild(g);
     });
     ov.appendChild(svg);
@@ -291,8 +325,53 @@ function renderOverlay(layer, sc) {
   ov.classList.add('fresh');
 }
 
+function sheetEls() { return S.map && S.map.stack ? [...S.map.el.querySelectorAll('.sheet')] : []; }
+function scrollSheet(i, pos, smooth = true) {
+  const stk = S.map && S.map.stack ? $('.stk', S.map.el) : null; if (!stk) return;
+  const sh = sheetEls()[i]; if (!sh) return;
+  const w = $('.shw', sh);
+  let y = sh.offsetTop - 6;
+  if (pos) y = sh.offsetTop + w.offsetTop + pos.y * w.offsetHeight - stk.clientHeight / 2;
+  stk.scrollTo({ top: Math.max(0, y), behavior: smooth ? 'smooth' : 'auto' });
+}
+function fillStack(layer, sc) {
+  layer.el.querySelectorAll('.sheet').forEach((sh, i) => renderOverlay({ ovl: $('.ovl', sh) }, { frames: [], pins: sc.sheets[i].pins }));
+}
+function makeStack(sc) {
+  const el = document.createElement('div');
+  el.className = 'layer stackl';
+  el.innerHTML = '<div class="stk">' + sc.sheets.map((sh, i) =>
+    `<section class="sheet" data-i="${i}" style="--s:1"><div class="shcap">${esc(sh.carte.legende || '')}</div><div class="shw"><img src="${sh.carte.img}" alt="" draggable="false"><div class="ovl"></div></div></section>`).join('') + '</div>';
+  const layer = { el, stack: true, src: sc.src };
+  const stk = $('.stk', el);
+  stk.addEventListener('scroll', () => {
+    const mid = stk.scrollTop + stk.clientHeight * 0.4;
+    let cur = 0; stk.querySelectorAll('.sheet').forEach((sh, i) => { if (sh.offsetTop <= mid) cur = i; });
+    document.querySelectorAll('#mapcap .tab[data-sheet]').forEach(t => t.classList.toggle('on', parseInt(t.dataset.sheet, 10) === cur));
+  }, { passive: true });
+  return layer;
+}
+async function applyStack(sc, old) {
+  if (old && old.stack && old.src === sc.src) { fillStack(old, sc); scrollSheet(sc.focusSheet, sc.focusPos, true); return; }
+  const layer = makeStack(sc);
+  stageEl.insertBefore(layer.el, $('.fog', stageEl));
+  fillStack(layer, sc);
+  S.map = layer;
+  void layer.el.offsetWidth;
+  layer.el.classList.add('on');
+  const imgs = [...layer.el.querySelectorAll('.shw img')];
+  await Promise.all(imgs.map(im => im.complete ? 0 : new Promise(r => { im.onload = im.onerror = r; })));
+  scrollSheet(sc.focusSheet, sc.focusPos, false);
+  if (old) { setTimeout(() => old.el.classList.remove('on'), 120); setTimeout(() => old.el.remove(), 1200); }
+}
+
 async function applyMap(sc, dir, focus) {
   ensureChrome();
+  if (sc.kind === 'stack') return applyStack(sc, S.map);
+  if (S.map && S.map.stack) {
+    const o = S.map; S.map = null;
+    setTimeout(() => o.el.classList.remove('on'), 60); setTimeout(() => o.el.remove(), 1100);
+  }
   const info = await imgInfo(sc.src);
   const old = S.map;
   if (old && old.src === sc.src) {
@@ -372,18 +451,22 @@ function renderCap(sc, entry) {
   const cap = $('#mapcap');
   if (!cap) return;
   let h = '';
-  if (sc && sc.tabs && sc.tabs.length > 1) {
+  if (sc && sc.kind === 'stack') {
+    h += sc.tabs.map((t, i) => `<a class="tab${i === sc.tab ? ' on' : ''}" data-sheet="${i}" href="#/${sc.owner.id}">${esc(t.legende || 'Carte ' + (i + 1))}</a>`).join('');
+  } else if (sc && sc.tabs && sc.tabs.length > 1) {
     h += sc.tabs.map((t, i) => `<a class="tab${i === sc.tab ? ' on' : ''}" href="#/${sc.owner.id}${i ? '?c=' + i : ''}">${esc(t.legende || 'Carte ' + (i + 1))}</a>`).join('');
   } else if (sc && sc.tabs && sc.tabs[0] && sc.tabs[0].legende) {
     h += `<span class="cap">${esc(sc.tabs[0].legende)}</span>`;
   }
   cap.innerHTML = h;
+  cap.querySelectorAll('a[data-sheet]').forEach(a => a.addEventListener('click', ev => { ev.preventDefault(); scrollSheet(parseInt(a.dataset.sheet, 10)); }));
   const up = $('#upbtn');
   if (up) { up.hidden = !(entry && entry.parent); const p = entry && BY[entry.parent]; up.textContent = p ? '‹ ' + p.nom : '‹ Retour'; }
 }
 
 async function applyScene(e, q, token) {
   const sc = sceneOf(e, q);
+  ensureChrome();
   const prevEntry = S.entry;
   S.entry = e;
   if (!sc) { stageEl.classList.add('empty'); return; }
@@ -416,7 +499,7 @@ function focusIn(e, mapSrc) {
 
 window.addEventListener('resize', () => {
   measure();
-  if (S.map) setCam(S.map, S.map.rect, false, S.map.pad);
+  if (S.map && !S.map.stack) setCam(S.map, S.map.rect, false, S.map.pad);
 });
 
 /* ---------- vue monde ---------- */
