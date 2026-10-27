@@ -6667,6 +6667,9 @@
    }
   ],
   "attitude": "ennemi",
+  "connu": [
+   "Capitaine pirate de la flotte de Spezza. Chevelure brune, redingote rouge brodée, ceinture de perles."
+  ],
   "teinte": "#752519"
  },
  {
@@ -6693,6 +6696,9 @@
    }
   ],
   "attitude": "ennemi",
+  "connu": [
+   "Capitaine pirate de la flotte de Spezza. Barbe de trois jours, cape sombre, écharpe bleue, sabre au côté."
+  ],
   "teinte": "#753c19"
  },
  {

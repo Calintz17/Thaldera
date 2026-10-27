@@ -1965,7 +1965,11 @@
   "resume": "Humaine aux cristaux dans le dos et aux pouvoirs de glace, déserteuse du front d'Obaline.",
   "connu": [
    "Elle partage l'expérience des cristaux de Jane.",
-   "Elle voulait atteindre Port Doëlan."
+   "Elle voulait atteindre Port Doëlan.",
+   "Survivante du programme de la Lumière Noire à Sol Novem, aux pouvoirs de glace stables, bien que moins spectaculaires que ceux de Jane.",
+   "Envoyée sur le front d'Obaline où les sujets servaient d'armes vivantes, elle a déserté. Une Arch-Fey agissant pour la Lumière Noire a tenté de l'assassiner durant le voyage.",
+   "À Port Doëlan, elle se cache dans les entrepôts abandonnés du Quartier Brûlé, déguisée en marchande d'épices. Fatiguée et nerveuse, elle est heureuse de revoir les PJ.",
+   "Elle peut créer du givre pour bloquer une porte ou ralentir des gardes et transmettre ce qu'elle observe, mais refuse tout assaut direct."
   ],
   "relations": [
    {
@@ -1988,7 +1992,9 @@
   "statut": "vivant",
   "resume": "Artiste exalté qui voyage sous couverture de garde du corps. Almar joue la chanteuse.",
   "connu": [
-   "Il doit jouer au théâtre Russconi de Port Doëlan, sur invitation de Bartolomeo Spezza."
+   "Il doit jouer au théâtre Russconi de Port Doëlan, sur invitation de Bartolomeo Spezza.",
+   "Il admire la façade du théâtre en écartant les bras, accueille les PJ avec chaleur et annonce son concert dans quelques jours, sur invitation de Bartolomeo Spezza en personne.",
+   "Acte II de la soirée : rideau rose, paillettes, cape démesurée, une voix profonde qui chante la mer, la guerre, la ville et l'or."
   ],
   "histoire": [
    "Le groupe le recroise devant le théâtre Russconi."
@@ -2025,7 +2031,9 @@
   "statut": "vivant",
   "resume": "Joue la chanteuse pour attirer l'attention. Droite, laconique, le regard toujours en mouvement.",
   "connu": [
-   "Elle a remarqué trop de gardes autour du théâtre pour un simple spectacle."
+   "Elle a remarqué trop de gardes autour du théâtre pour un simple spectacle.",
+   "Droite, mains croisées dans le dos, le regard toujours en mouvement. Elle retrouve les PJ devant le théâtre Rusconi.",
+   "Elle se dit contente de les revoir en vie et leur conseille de rester attentifs : la ville n'est pas aussi calme qu'elle en a l'air."
   ],
   "citation": {
    "texte": "Contente de vous voir en vie. Restez attentifs. La ville n'est pas aussi calme qu'elle en a l'air.",
@@ -2067,7 +2075,10 @@
   "statut": "vivant",
   "resume": "Érudit incorruptible qui refuse de valider la propagande de Spezza.",
   "connu": [
-   "Il a été invité à Port Doëlan pour un séminaire."
+   "Il a été invité à Port Doëlan pour un séminaire.",
+   "Envoyé officieux de la Grande Bibliothèque de Rivegard, convié pour valider l'intégration des chroniques locales aux archives internationales.",
+   "Il constate que presque tous les ouvrages récents exaltent Spezza. S'il refuse brutalement, il provoque un incident entre institutions, s'il valide, il trahit Rivegard.",
+   "Il cherche une source indépendante ou un manuscrit non expurgé et peut présenter les PJ à Thorex, tout en les prévenant que ce dernier excelle à esquiver."
   ],
   "citation": {
    "texte": "Rivegard ne cautionne pas les récits hagiographiques déguisés en archives ; nous classons des faits, pas des flatteries.",
@@ -2935,7 +2946,10 @@
   "resume": "Warlock lié à Vassago. Il finançait la Griffe, le trafic humain et le sous-marin via Titan Inc.",
   "connu": [
    "Il voulait entrer dans l'Histoire et achetait des historiens.",
-   "Un avis de recherche de 36 000 po visait Jane et Philippa."
+   "Un avis de recherche de 36 000 po visait Jane et Philippa.",
+   "Retranché dans son château, il ne se montre plus. Une silhouette de lui dans une loge du théâtre Rusconi est un leurre.",
+   "Les chiffres de Titan Inc. montrent des fonds détournés : 68 000 po réaffectés du programme de modernisation portuaire vers un compte privé au château.",
+   "Il a ordonné de dynamiter la vieille mine d'argent et de doubler les cadences de la carrière pour renforcer les murs."
   ],
   "alias": [
    "Spezza"
@@ -2992,7 +3006,9 @@
   "statut": "renvoyé aux Enfers",
   "resume": "Diable qui a construit le sous-marin et inventé les canons runiques.",
   "connu": [
-   "Absalom exige sa vraie mort."
+   "Absalom exige sa vraie mort.",
+   "Diable ingénieur surnommé le Pêcheur. Il gère des dispositifs mécaniques actifs et se bat avec lame-scie, mine infernale, baliste et harpon.",
+   "Dans sa seconde forme, Ordonnateur du Blasphème, il déploie des tentacules d'os, un canon organique et des tourelles embryonnaires."
   ],
   "histoire": [
    "Le groupe le vainc au château. Il est renvoyé à Dis."
@@ -3065,15 +3081,15 @@
   "resume": "Lit les échos plutôt que l'avenir.",
   "connu": [
    "Il sent que le pacte de Spezza avec Vassago n'est pas soldé.",
-   "Il perçoit une distorsion active sous le château, qui venait de Naberoth."
+   "Il perçoit une distorsion active sous le château, qui venait de Naberoth.",
+   "Il lit trois échos. Passé : le pacte de Spezza avec Vassago n'est pas soldé. Présent : une distorsion mécanique et artificielle agit sous le château. Futur : l'intérêt de Spezza pour Thaladrassyl, le Titan de l'Eau, projette une ombre longue sur l'équilibre cosmique.",
+   "Il prédit la mort des PJ face à une coalition plus puissante que toutes les précédentes, puis propose d'appeler quelqu'un pour ouvrir une autre voie."
   ],
   "histoire": [
-   "C'est chez lui qu'Absalom se révèle aux joueuses."
+   "C'est chez lui qu'Absalom se révèle aux joueuses.",
+   "Il appelle Sadie, qui perd son déguisement d'un claquement de doigts et redevient Absalom. Elle propose une alliance de circonstance contre Spezza et Naberoth, à condition de frapper en pleine lumière."
   ],
-  "citation": {
-   "texte": "Je vois votre futur, la fin de la route que vous êtes en train d'emprunter. Et je ne vois que la mort, la vôtre.",
-   "qui": "Makandral Toussaint"
-  },
+  "citation": "« Pile entre le bien et le mal, il y a une porte. Êtes-vous prête à ouvrir votre esprit ? »",
   "galerie": [
    {
     "img": "img/paysages/port-doelan/requiem.webp",
@@ -3260,7 +3276,9 @@
   "statut": "vivant",
   "resume": "Alchimiste de l'Officine, qui travaille aussi sur des explosifs.",
   "connu": [
-   "Traces de poudre noire sur ses manches et odeur de soufre."
+   "Traces de poudre noire sur ses manches et odeur de soufre.",
+   "Alchimiste affable, distraite en apparence, qui murmure à elle-même. Elle vend potions communes et supérieures, acides, huiles inflammables, solvants, poudres de fumée et réactifs.",
+   "Persuasion DD 13 : remise mineure. Insight ou Perception DD 14 : poudre noire sur ses manches, odeur soufrée tenace, regard plus calculateur qu'elle ne le laisse paraître."
   ],
   "img": "img/pnj/port-doe-lan-lirenne.webp",
   "relations": [],
@@ -3278,7 +3296,10 @@
   "resume": "Retrouvé mort dans une ruelle en pente vers la mer, le corps encore tiède.",
   "connu": [
    "Sa lettre de mission montre qu'il surveillait Spezza et les importations de pyrracier, et des rumeurs de navire capable de traverser la mer d'Émeraude.",
-   "Il portait un avis de recherche de Jane et Philippa."
+   "Il portait un avis de recherche de Jane et Philippa.",
+   "Armure aux couleurs d'Altéra, retrouvé sur le dos, bras ouverts, un coup de poignard précis dans les côtes. Le corps est encore tiède.",
+   "Sa lettre de mission porte les ordres de l'Impératrice Eryndel d'Altéra et de la Chancellerie impériale, signée Arkhavel Dorn, Intendant des Compagnies Impériales. Elle lui demande d'observer, de questionner et de trouver des preuves.",
+   "L'assassin n'a emporté aucun document, ce qui laisse penser à une attaque rapide ou à l'envie de le faire taire. Les gardes peuvent arriver si les PJ s'attardent."
   ],
   "galerie": [
    {
@@ -3315,6 +3336,12 @@
    }
   ],
   "attitude": "neutre",
+  "connu": [
+   "Vieille femme maigre au dos voûté et aux yeux clairs trop vifs, qui parle par fragments et répète certaines phrases. Elle vit près du phare.",
+   "Elle entend des bruits sous le château la nuit. Insight DD 12 : elle croit sincèrement ce qu'elle dit. Arcana ou Religion DD 14 : ses descriptions évoquent une présence infernale ou abyssale.",
+   "Elle n'a aucune preuve et aucun allié. Personne ne la croit.",
+   "Le phare peut être éteint pour rendre la navigation dangereuse, et sa lanterne se module avec des volets internes, ce qui permet de faire signe à Sycomore."
+  ],
   "teinte": "#755219"
  },
  {
@@ -3345,6 +3372,11 @@
    }
   ],
   "attitude": "positif",
+  "connu": [
+   "Aquan, peuple inconnu des PJ, mis à l'écart de sa tribu qui vénère Kataron. Il prêche Valkur, divinité des tempêtes et protecteur des marins, avec calme et douceur.",
+   "Il vient d'Agran, cité sous-marine de la mer d'Émeraude, et remet deux orbes de respiration sous-marine aux PJ.",
+   "Il explique que les failles du plancher marin servent de routes aux Aquans. Les eaux du milieu appartiennent à la tempête, et Agran repose au fond d'une faille, ancrée à la roche."
+  ],
   "teinte": "#755219"
  },
  {
@@ -4415,7 +4447,9 @@
   "statut": "vivant",
   "resume": "Elle se présente sous ce nom au saloon. Le groupe apprend plus tard à Port Doëlan que c'était Absalom.",
   "connu": [
-   "Absalom est passée à Port Blanc sous une identité banale."
+   "Absalom est passée à Port Blanc sous une identité banale.",
+   "Au saloon, elle se présente sous ce nom avec un « howdy partners » appuyé.",
+   "Chez Makandral, un claquement de doigts lui retire son déguisement : elle redevient Absalom."
   ],
   "relations": [
    {
@@ -4872,7 +4906,7 @@
   "parent": "ecuries-clos-vieux",
   "lieu": "ecuries-clos-vieux",
   "statut": "vivant",
-  "resume": "Orc massif, peu bavard, professionnel et direct. Il ne négocie pas.",
+  "resume": "Orc massif aux épaules larges, cheveux noués en arrière, regard sombre. Peu bavard, professionnel et direct, il tient les écuries du Clos Vieux.",
   "alias": [
    "Gorak"
   ],
@@ -4884,6 +4918,11 @@
   ],
   "img": "img/pnj/port-doe-lan-gorak.webp",
   "attitude": "neutre",
+  "connu": [
+   "Le logement et le fourrage coûtent 1 po par jour et par cheval, avec boxes propres, eau fraîche et surveillance de nuit basique.",
+   "Il ne négocie pas. Une Persuasion DD 15 lui fait accepter 9 pa pour un paiement de plusieurs jours, une tentative d'Intimidation met fin à la discussion.",
+   "Sur une colonne devant les écuries, un avis de recherche vise Philippa et Jane : 36 000 po pour leur capture. La discrétion s'impose en ville."
+  ],
   "teinte": "#755219"
  },
  {
@@ -4928,6 +4967,11 @@
   ],
   "img": "img/pnj/port-doe-lan-gardes.webp",
   "attitude": "neutre",
+  "connu": [
+   "Quatre gardes en livrée bleue tiennent le poste de contrôle sur la route, hallebardes plantées en terre. Ils vérifient identité, provenance et cargaison.",
+   "Le sergent mène l'interrogatoire pendant que les autres fouillent les sacs. La procédure est lente et méthodique.",
+   "Il conclut d'ordinaire par un conseil : éviter de faire parler de soi en ville."
+  ],
   "teinte": "#753c19"
  },
  {
@@ -4958,7 +5002,12 @@
   "statut": "vivant",
   "resume": "Patron jovial et fier de sa ville, sincèrement fidèle à Spezza.",
   "connu": [
-   "La Sentinella et l'Invicta assurent la sécurité maritime."
+   "La Sentinella et l'Invicta assurent la sécurité maritime.",
+   "Chambre à 2 po la nuit (deux lits, fenêtre sur la mer), repas à 50 pa : poisson grillé, boulettes de riz, légumes confits, pain, vin léger.",
+   "Il ne négocie pas, sauf Persuasion DD 13 pour 10 % de remise. Une Intimidation DD 14 le braque.",
+   "Il adore Spezza, bienfaiteur et défenseur de la baie, et cite la prospérité récente de la ville.",
+   "Persuasion DD 12 : un chantier naval discret lié au château, et des marchands étrangers plus nombreux depuis quelques mois.",
+   "Insight DD 13 : sa loyauté est sincère, presque affective, et il ignore tout des dessous occultes."
   ],
   "citation": {
    "texte": "La Sentinella veille au large, et l'Invicta patrouille comme un faucon. On dort tranquille ici.",
@@ -5024,6 +5073,11 @@
   ],
   "img": "img/pnj/port-doe-lan-korvin-lustracier.webp",
   "attitude": "neutre",
+  "connu": [
+   "Gnome flamboyant, barbe violette impeccable, redingote brodée de runes fines, gestuelle théâtrale. Il tient le Comptoir de l'Éther.",
+   "Il apprécie les clients curieux, les lanceurs de sorts et les histoires exotiques. Il méprise les acheteurs hésitants et le marchandage grossier.",
+   "Persuasion DD 14 : réduction de 10 à 15 %. Investigation DD 13 : repérer un objet légèrement instable. Arcana DD 15 : comprendre qu'un artefact rare dort en arrière-boutique."
+  ],
   "teinte": "#521975"
  },
  {
@@ -5051,7 +5105,11 @@
   "statut": "vivant",
   "resume": "Humain massif, fier du chantier naval. Il a travaillé sur l'Invicta et la Sentinella.",
   "connu": [
-   "Il décrit l'Arsenal comme une ancienne caserne devenue dépôt logistique."
+   "Il décrit l'Arsenal comme une ancienne caserne devenue dépôt logistique.",
+   "Humain massif au large sourire et à la voix grave, forgeron respecté du chantier naval de Port Doëlan.",
+   "L'Invicta et la Sentinella, deux navires d'élite rapides et bien armés, sont en partie son ouvrage.",
+   "Persuasion DD 12 : coques renforcées, balistes modernisées, équipages triés sur le volet. Persuasion DD 14 : l'Arsenal était une caserne, réaffectée depuis quelques mois à des activités maritimes et logistiques.",
+   "Insight DD 13 : il est sincère, ignore les intrigues, et voit en Spezza un homme d'action qui a relancé la marine."
   ],
   "citation": {
    "texte": "L'Invicta ? Ah, elle fend l'eau comme une lame chaude. La Sentinella, pareil. Deux merveilles.",
@@ -5115,6 +5173,11 @@
   ],
   "img": "img/pnj/port-doe-lan-lina.webp",
   "attitude": "positif",
+  "connu": [
+   "Son stand de bois, adossé au muret de la plage, déborde de tissus colorés, chapeaux de paille, serviettes et bouées.",
+   "Persuasion DD 12 : petit rabais ou accessoire offert. Insight DD 11 : elle observe les aventuriers avec curiosité.",
+   "Une partie de volley de plage se joue au pied de son stand : jet de Dextérité contre un DC qui monte à chaque renvoi."
+  ],
   "teinte": "#755219"
  },
  {
@@ -5161,6 +5224,11 @@
    }
   ],
   "attitude": "neutre",
+  "connu": [
+   "Il y a six mois, un homme s'est présenté à la cour de Spezza. Depuis, il serait enfermé au château et personne ne l'a vu ressortir.",
+   "L'Arsenal a été modifié récemment : ancienne caserne devenue une forge particulière, avec une activité nocturne accrue.",
+   "Persuasion DD 14 : le château est lourdement gardé, on parle de deux folles traquées par Spezza, et Spezza ne quitte plus ses murs."
+  ],
   "teinte": "#753c19"
  },
  {
@@ -5180,6 +5248,11 @@
   ],
   "img": "img/pnj/port-doe-lan-falco-mirella.webp",
   "attitude": "neutre",
+  "connu": [
+   "Elle discute avec Falco sur la jetée et relaie les mêmes rumeurs : le château est plein de gardes, trop pour être tranquille.",
+   "Elle trouve suspect qu'un homme cesse de se montrer en public."
+  ],
+  "citation": "« Deux femmes qu'il traquerait… des folles, paraît-il. »",
   "teinte": "#753c19"
  },
  {
@@ -5240,6 +5313,12 @@
   ],
   "img": "img/pnj/port-doe-lan-amo-n.webp",
   "attitude": "positif",
+  "connu": [
+   "Vieux tieffelin aveugle aux longues cornes et à la voix posée. Il ne voit pas, il perçoit. Il ne siège pas à la cour de Spezza.",
+   "Il veille à l'équilibre de la ville, reçoit les PJ avec calme, dissuade les menaces majeures et n'intervient pas dans les querelles ordinaires. Il ne vend rien et sourit quand on parle d'argent.",
+   "Il peut lancer Scrying si la demande est justifiée : un nom clair ou un lien tangible est requis, et il refuse si l'intention trouble l'équilibre.",
+   "Insight DD 14 : il dit la vérité. Insight DD 17 : il en sait plus qu'il ne révèle."
+  ],
   "teinte": "#755219"
  },
  {
@@ -5252,7 +5331,10 @@
   "statut": "vivant",
   "resume": "Il réclame 15 po par personne et exige une tenue de circonstance.",
   "connu": [
-   "Acte I : les Voltigeurs de l'Éclipse. Acte II : Barok."
+   "Acte I : les Voltigeurs de l'Éclipse. Acte II : Barok.",
+   "Il tient le comptoir extérieur du théâtre Rusconi, ajuste ses manchettes, le regard lourd et mesuré.",
+   "Il réclame 15 po par personne pour la représentation d'après-demain, exige une tenue élégante et fait remarquer que les places sont très demandées.",
+   "Dans une loge haute, une silhouette de Spezza semble présente, entourée de gardes. Un PJ attentif comprend que c'est un leurre."
   ],
   "alias": [
    "Cesare"
@@ -5307,7 +5389,10 @@
   "statut": "vivant",
   "resume": "Ruiné, il mendie contre un mur. Il a voyagé avec le groupe jusqu'à Port Doëlan.",
   "connu": [
-   "La Griffe achète du pyrracier en quantités absurdes."
+   "La Griffe achète du pyrracier en quantités absurdes.",
+   "Marchand modeste et ambitieux de la caravane, il avait investi toutes ses économies dans une cargaison et parlait de son dernier coup commercial.",
+   "En deux jours, son contact s'est retiré, ses marchandises ont été bradées et ses créanciers l'ont acculé. Les portes du château Spezza lui sont restées fermées, la garde étant inhabituellement tendue.",
+   "Il n'a rien mangé depuis deux jours et mendie pour payer une nuit dans une taverne bon marché. Il reconnaît les PJ et éclate en sanglots."
   ],
   "alias": [
    "Eloi Bonbarique"
@@ -5388,6 +5473,10 @@
    }
   ],
   "attitude": "neutre",
+  "connu": [
+   "Il coupe d'anciennes poutres du Quartier Brûlé pour se chauffer, et en a un peu honte. Il vit avec sa famille près des décombres.",
+   "Il confirme que la ville a tourné la page un peu vite. Le quartier est un vestige de la guerre de la Veyra, ravagé par Altéra et jamais reconstruit."
+  ],
   "teinte": "#753c19"
  },
  {
@@ -5400,7 +5489,10 @@
   "statut": "vivant",
   "resume": "Sa tribu a été chassée par les mercenaires de Spezza. Elle propose de reprendre le fortin.",
   "connu": [
-   "« Ramenez-nous le trou. Notre trou. »"
+   "« Ramenez-nous le trou. Notre trou. »",
+   "Corps trapu, dos voûté, regard vif. Elle renifle les PJ avant de leur parler et fouille les gravats pour manger.",
+   "Les mercenaires de Spezza ont cassé les terriers de sa tribu et pris leurs réserves. Un fortin occupe désormais leur refuge.",
+   "Elle propose un accord : les PJ délogent les mercenaires, et la tribu reprend son foyer."
   ],
   "citation": {
    "texte": "Ramenez-nous le trou. Notre trou.",
@@ -5525,6 +5617,12 @@
   ],
   "img": "img/pnj/port-doe-lan-cassiope-e-vorn.webp",
   "attitude": "neutre",
+  "connu": [
+   "Droite, maîtrisée, le regard tranchant. Elle n'est pas surprise de voir les PJ, les jauge, puis annonce que Spezza a coupé la Griffe des flux d'or.",
+   "Elle propose une alliance temporaire et stratégique. Elle veut entrer dans le château avec les PJ et réclame sa part d'or, qu'elle estime lui revenir.",
+   "Elle met en garde contre le combat final : Spezza, le Berger et le Pêcheur seront dans la même pièce.",
+   "Elle peut prendre en charge certaines opérations : le fortin, le chantier naval, la chute d'un noble influent, le sabotage de Titan Inc."
+  ],
   "teinte": "#755219"
  },
  {
@@ -5571,6 +5669,11 @@
    }
   ],
   "attitude": "neutre",
+  "connu": [
+   "Mineur assis devant l'entrée de la vieille mine d'argent, bouteille en main. Il profite de la fermeture.",
+   "Spezza a fait dynamiter la mine par crainte d'un accès discret vers le château, avec des galeries scellées et des kilomètres de tunnels impraticables.",
+   "Investigation DD 14 : effondrement massif et volontaire, aucun passage exploitable. Survival DD 13 : aucune activité récente. Insight DD 12 : il ne ment pas."
+  ],
   "teinte": "#753c19"
  },
  {
@@ -5609,6 +5712,11 @@
   ],
   "img": "img/pnj/port-doe-lan-maela.webp",
   "attitude": "neutre",
+  "connu": [
+   "Ouvrière de la carrière de pierre, large marteau et geste sec. Elle parle peu et n'aime pas les curieux.",
+   "Les dernières livraisons ont renforcé les murailles de la ville. Spezza a exigé des doubles shifts depuis des mois.",
+   "Persuasion DD 12 : elle confirme le renforcement des murs. Persuasion DD 14 : la pression vient directement du château. Insight DD 13 : elle en veut à Spezza."
+  ],
   "teinte": "#755219"
  },
  {
@@ -5637,7 +5745,11 @@
   "resume": "Orc massif. Il cherche à se rapprocher de Spezza pour l'argent et l'expansion vers l'Ouest.",
   "connu": [
    "Il voulait se rapprocher de Spezza pour l'argent et l'expansion vers l'Ouest.",
-   "Après la chute de Spezza, il a été retrouvé mort."
+   "Après la chute de Spezza, il a été retrouvé mort.",
+   "Orc massif, dos voûté, regard fixe, assis près du feu de la maison du Voile. Il pèse chaque décision en argent et en sang.",
+   "Allié pragmatique des PJ jusque-là, il cherche désormais à se rapprocher de Spezza pour l'argent et l'expansion vers l'Ouest. Il demande aux PJ de faciliter une audience.",
+   "Persuasion DD 16 : il écoute sans changer d'avis et propose un compromis temporaire. Insight DD 13 : calcul économique plutôt que trahison. Intimidation DD 15 : il se ferme.",
+   "Si les PJ refusent ou sabotent, le Voile devient un acteur neutre hostile, voire un adversaire actif."
   ],
   "citation": {
    "texte": "Spezza voit loin. Vers l'ouest. Vers des terres où personne n'a encore planté son drapeau.",
@@ -5669,7 +5781,7 @@
   "parent": "voile-doelan",
   "lieu": "voile-doelan",
   "statut": "vivant",
-  "resume": "Accompagne Korrash.",
+  "resume": "Lieutenante du Voile, présente aux côtés de Korrash dans la maison des bas-quartiers.",
   "galerie": [
    {
     "img": "img/paysages/port-doelan/repaire-du-voile.webp",
@@ -5678,6 +5790,9 @@
   ],
   "img": "img/pnj/port-doe-lan-korrash-saphir.webp",
   "attitude": "neutre",
+  "connu": [
+   "Elle assiste aux échanges entre Korrash et les PJ et suit la décision de son chef."
+  ],
   "teinte": "#753c19"
  },
  {
@@ -5705,7 +5820,11 @@
   "statut": "vivant",
   "resume": "Sourire simple et regard attentif. Elle répète les rumeurs de l'accueil.",
   "connu": [
-   "Des nains recrutés par Spezza ont été vus il y a quelques mois."
+   "Des nains recrutés par Spezza ont été vus il y a quelques mois.",
+   "L'entrée des bains publics coûte 5 po. Quelques heures d'immersion retirent 1 niveau d'épuisement.",
+   "Persuasion DD 12 : elle partage les rumeurs. Insight DD 12 : elle ne ment pas.",
+   "Spezza reste enfermé dans son château. Un noble influent descend parfois dans les bas quartiers, bien habillé, capuche sur la tête, mais reconnaissable.",
+   "Des nains ont été vus en ville il y a quelques mois, recrutés par Spezza selon les bruits, puis plus revus."
   ],
   "citation": {
    "texte": "Ici, tout finit par se savoir.",
@@ -5756,6 +5875,10 @@
   ],
   "img": "img/pnj/port-doe-lan-edouardo.webp",
   "attitude": "neutre",
+  "connu": [
+   "2 po pour changer la coupe de cheveux, au choix. 4 po pour un soin complet de Jane : lavage, brossage, huile, pelage lisse et brillant.",
+   "Philippa peut aussi se faire couper les cheveux, coupe simple ou plus marquée. Aucun enjeu politique ici."
+  ],
   "teinte": "#755219"
  },
  {
@@ -5778,6 +5901,10 @@
   "resume": "Large tablier, bras farinés. Il vend à bas prix.",
   "img": "img/pnj/port-doe-lan-bruno-rossi.webp",
   "attitude": "neutre",
+  "connu": [
+   "Boulanger à la boutique qui sent le pain chaud. Pain blanc, pain noir, pain marin, fougasse, brioche, pain farci et galettes de voyage.",
+   "Il travaille sans lever beaucoup les yeux et vend à bas prix."
+  ],
   "teinte": "#753c19"
  },
  {
@@ -5804,6 +5931,11 @@
   },
   "img": "img/pnj/port-doe-lan-nicea.webp",
   "attitude": "neutre",
+  "connu": [
+   "Vieille dame qui arrange ses bouquets avec lenteur, sous les pins face à la mer. Elle observe beaucoup.",
+   "La Sentinella et l'Invicta ne rentrent jamais au port et restent dans la baie. Des barques font la relève de façon régulière.",
+   "La librairie lui demande de poser des tracts à la gloire de Spezza sur son comptoir. Elle les met à côté des marguerites et trouve cela un peu insistant."
+  ],
   "teinte": "#755219"
  },
  {
@@ -5847,6 +5979,11 @@
    }
   ],
   "attitude": "neutre",
+  "connu": [
+   "Maître charpentier massif, couvert de sciure, précis dans ses gestes. Il parle peu, observe beaucoup, et aime voir une coque prendre forme.",
+   "Il ne dénoncera pas spontanément les PJ, mais ne sacrifiera pas son atelier pour une cause abstraite. Si on lui prouve que Spezza met la ville en danger, il pourrait fermer les yeux quelques minutes.",
+   "Quatre points critiques du chantier : les cales de construction, les réserves de goudron et de poix, les grues et palans lourds, les ateliers de charpenterie navale."
+  ],
   "teinte": "#753c19"
  },
  {
@@ -5892,6 +6029,11 @@
    }
   ],
   "attitude": "ennemi",
+  "connu": [
+   "Commande le fortin des mercenaires, bâti sur les ruines du terrier de wererats chassés il y a quelques mois : pierre grossière, palissades récentes, tours branlantes, feu de camp central.",
+   "Le fortin est sous-occupé, la majorité des mercenaires gardant le château. Il sert de base avancée et de point de contrôle sur les routes forestières.",
+   "Son sous-sol est un réseau d'anciens tunnels partiellement effondrés, encore praticables."
+  ],
   "teinte": "#753c19"
  },
  {
@@ -5996,6 +6138,10 @@
    }
   ],
   "attitude": "positif",
+  "connu": [
+   "Au nid, elle débat avec Kralik et Nesk, qui veulent attaquer tout de suite. Elle connaît les galeries et les points faibles du sol sous le fortin.",
+   "Les PJ peuvent arbitrer en proposant un plan précis ou un sabotage discret."
+  ],
   "teinte": "#195275"
  },
  {
@@ -6022,6 +6168,9 @@
    }
   ],
   "attitude": "positif",
+  "connu": [
+   "Il soutient Krelia au nid : l'assaut frontal est un suicide. Il connaît les galeries sous le fortin."
+  ],
   "teinte": "#195275"
  },
  {
@@ -6043,6 +6192,10 @@
    }
   ],
   "attitude": "positif",
+  "connu": [
+   "Elle accueille les visiteurs dans la maison close, tentures rouges, lumière de bougies et parfums lourds.",
+   "Elle accepte de témoigner de façon triviale et détaillée sur les pratiques privées d'un noble de haut rang de la cour de Spezza."
+  ],
   "teinte": "#753c19"
  },
  {
@@ -6095,6 +6248,11 @@
    }
   ],
   "attitude": "positif",
+  "connu": [
+   "Fondateur de la compagnie Bravala, petit bureau sombre avec cartes maritimes jaunies et registres empilés. Amer, il parle sec et sans illusion.",
+   "Spezza garde la compagnie sous perfusion commerciale pour éviter toute accusation de monopole : quelques contrats secondaires, jamais les grandes routes.",
+   "Titan Inc. détourne des fonds via des sociétés écrans, falsifie des registres de cargaison et commerce discrètement avec Havre Noir, notamment du transport d'esclaves. Les preuves décisives sont dans les bureaux centraux de Titan Inc."
+  ],
   "teinte": "#753c19"
  },
  {
@@ -6114,6 +6272,9 @@
   ],
   "img": "img/pnj/port-doe-lan-giovanni-et-dario-bravala.webp",
   "attitude": "positif",
+  "connu": [
+   "Il parle d'ouvrir de nouvelles lignes et de reconstruire une flotte, tout en sachant que Titan Inc. rafle tout ce qui compte."
+  ],
   "teinte": "#753c19"
  },
  {
@@ -6156,6 +6317,11 @@
    }
   ],
   "attitude": "ennemi",
+  "connu": [
+   "Responsable financier de Titan Inc., surnommé le Comptable. Homme pâle, lunettes rondes, costume strict, il comprend immédiatement le rapport de force.",
+   "Son bureau est au fond d'un couloir fermé par une porte lourde. Sous pression, il peut ouvrir les archives ou donner les clés du coffre de registres.",
+   "Les registres contiennent livres codés, doubles écritures, fausses lignes de transport et références aux cargaisons venues de Havre Noir."
+  ],
   "teinte": "#755219"
  },
  {
@@ -6213,7 +6379,9 @@
   "statut": "vivant",
   "resume": "Jeune femme aux lunettes rondes. Elle aime les conversations polies.",
   "connu": [
-   "Elle consigne les entrées, exige le dépôt des armes contre récépissé et aime les conversations polies."
+   "Elle consigne les entrées, exige le dépôt des armes contre récépissé et aime les conversations polies.",
+   "Jeune femme au chignon soigné et aux lunettes rondes, à l'accueil de la prison. Toute consultation exige le nom exact du détenu, consigné dans le registre.",
+   "Elle rougit si on la complimente. Un charme bien mené ou une invitation bien tournée, après son service, peut lui délier les scrupules."
   ],
   "histoire": [],
   "alias": [
@@ -6254,6 +6422,11 @@
   ],
   "img": "img/pnj/port-doe-lan-monique.webp",
   "attitude": "neutre",
+  "connu": [
+   "Vieille gobeline maigre en robe passée de mode, cigarette au bec, bagues trop grandes pour ses doigts. Elle observe la prison depuis une fenêtre toujours entrouverte.",
+   "Elle raconte qui entre et qui sort, note les heures de relève, et vante la moustache du capitaine Kessler.",
+   "Elle sait que Kessler quitte la prison au crépuscule pour rentrer chez lui par la ruelle latérale."
+  ],
   "teinte": "#756919"
  },
  {
@@ -6284,6 +6457,11 @@
    }
   ],
   "attitude": "neutre",
+  "connu": [
+   "Il traverse la cour chaque soir à heure fixe, manteau sombre boutonné jusqu'au col, monocle mécanique serti d'engrenages, démarche de parade.",
+   "Réputé incorruptible : ni pots-de-vin ni flatteries. Il reste un homme de chair que l'on peut suivre, surprendre, endormir ou enlever, au prix d'une ville dont la garde respecte son nom.",
+   "Son bureau, au fond du bâtiment, abrite le trousseau de clés qui ouvre toutes les cellules."
+  ],
   "teinte": "#195275"
  },
  {
@@ -6330,6 +6508,11 @@
    }
   ],
   "attitude": "neutre",
+  "connu": [
+   "Libraire de Port Doëlan, fébrile, dévoué corps et âme à Spezza. Il prétend répertorier et conserver les ouvrages pour enrichir la cité.",
+   "Il ment par omission, jamais frontalement. Intimidation DC 14 : il panique et mentionne les commandes spéciales de Monsieur Spezza. Insight DC 12 : il cache quelque chose à propos des combles.",
+   "Les combles abritent une presse arcanique qui imprime en boucle flyers, chroniques et pamphlets favorables à Spezza. Un escalier de service est caché derrière une étagère mobile."
+  ],
   "teinte": "#755219"
  },
  {
@@ -6388,6 +6571,11 @@
    }
   ],
   "attitude": "positif",
+  "connu": [
+   "Chef de chantier nain, petit et trapu, lunettes à double épaisseur qui agrandissent ses yeux. Il regarde les PJ avec une curiosité tranquille.",
+   "Spezza leur a commandé un vaisseau, ils l'ont construit. Ce qu'il en fait ensuite ne les concerne pas. Les nains pilotent le sous-marin, donc ils partent avec les PJ.",
+   "Il désigne la mer d'Émeraude sur une carte : là où personne ne va."
+  ],
   "teinte": "#753c19"
  },
  {
