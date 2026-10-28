@@ -1130,7 +1130,7 @@
   "statut": "mort",
   "resume": "Démon qui règne sur le Repos des Épées. Il vole la magie et les objets de ceux qu'il touche.",
   "connu": [
-   "Il parle par la bouche d'autres créatures. Il se dit d'un autre rang qu'Absalom, qu'il méprise.",
+   "Il se dit d'un autre rang qu'Absalom, qu'il méprise.",
    "Il a contacté les Épingles de Camont pour un vol chez l'impératrice Eryndel.",
    "Démon sans déguisement, forme haute et immobile reliée aux nerfs de son repaire, au Repos des Épées. Il se présente comme le Passeur du Sang Noir, le berceau de la nouvelle chair.",
    "Il méprise Absalom, la plus faible et la plus sotte d'entre eux selon lui, et promet de crever les yeux de tous ceux qui ont aidé le groupe.",
@@ -2187,7 +2187,6 @@
   "statut": "vivant",
   "resume": "Érudit incorruptible qui refuse de valider la propagande de Spezza.",
   "connu": [
-   "Il a été invité à Port Doëlan pour un séminaire.",
    "Envoyé officieux de la Grande Bibliothèque de Rivegard, convié pour valider l'intégration des chroniques locales aux archives internationales.",
    "Il constate que presque tous les ouvrages récents exaltent Spezza. S'il refuse brutalement, il provoque un incident entre institutions, s'il valide, il trahit Rivegard.",
    "Il cherche une source indépendante ou un manuscrit non expurgé et peut présenter les PJ à Thorex, tout en les prévenant que ce dernier excelle à esquiver.",
@@ -2231,8 +2230,8 @@
    "Liora y ouvre sa boutique, le Pavillon Vert."
   ],
   "pos": {
-   "x": 0.463,
-   "y": 0.812
+   "x": 0.437,
+   "y": 0.791
   },
   "accent": "#c9a84c",
   "blason": "img/blasons/havre-noir.webp",
@@ -2278,8 +2277,10 @@
   "parent": "assemblage",
   "lieu": "assemblage",
   "statut": "vivant",
-  "resume": "Femme à la crinière sombre, épée massive et bouclier enduit de poix. Alliée du groupe.",
+  "resume": "Tout le port la croit homme. C'est en réalité une jeune femme d'environ seize ans, balafrée, sous une armure massive et un bouclier enduit de poix. Alliée du groupe.",
   "connu": [
+   "Tout Havre Noir croit que Sycomore Brise-Pavois est un homme. Très peu de gens savent que c'est une femme, balafrée, d'environ seize ans.",
+   "Son armure a une histoire que le groupe n'a pas encore comprise.",
    "Elle ne tolère aucune contrebande et déteste la Griffe, sans partir en croisade tant qu'on ne touche pas à son territoire.",
    "Elle reçoit une audience polie avec amusement, et répond à une intrusion par l'attaque.",
    "Olyssane est sa Première-Capitaine."
@@ -2689,8 +2690,8 @@
   ],
   "fusion": true,
   "pos": {
-   "x": 0.524,
-   "y": 0.775
+   "x": 0.514,
+   "y": 0.774
   }
  },
  {
@@ -2839,10 +2840,11 @@
   "type": "pnj",
   "nom": "Thaloor",
   "titre": "Aubergiste et tuteur d'Ink",
-  "parent": "agran",
-  "lieu": "agran",
+  "parent": "auberge-d-agran",
+  "lieu": "auberge-d-agran",
   "statut": "vivant",
   "resume": "Prudent, il veut protéger Ink du monde extérieur.",
+  "ordre": 1,
   "citation": "« Rouge ou blanc. Le rouge est rare. Il coûte plus. »",
   "galerie": [
    {
@@ -2928,8 +2930,8 @@
   "type": "pnj",
   "nom": "Glooglugogg",
   "titre": "Grand prêtre kuo-toa",
-  "parent": "agran",
-  "lieu": "agran",
+  "parent": "temple-de-kataron",
+  "lieu": "temple-de-kataron",
   "statut": "vivant",
   "resume": "Seul à parler la langue commune. Inquiet, il envoie le groupe voir la Suuraal.",
   "citation": {
@@ -3473,7 +3475,7 @@
   ],
   "img": "img/pnj/port-doe-lan-lirenne.webp",
   "relations": [],
-  "attitude": "neutre",
+  "attitude": "allie",
   "teinte": "#755219"
  },
  {
@@ -3511,7 +3513,7 @@
   "titre": "Vieille femme du phare",
   "parent": "port-doelan",
   "lieu": "port-doelan",
-  "statut": "vivant",
+  "statut": "mort",
   "resume": "Vieille femme que tous prennent pour une folle. Elle jure que des démons vivent sous le château.",
   "citation": {
    "texte": "Vous les entendez pas… mais moi je les entends. La nuit.",
@@ -3878,7 +3880,7 @@
    "qui": "Alrik Crochemer"
   },
   "relations": [],
-  "attitude": "neutre"
+  "attitude": "ennemi"
  },
  {
   "id": "ruelle-des-cordages",
@@ -4019,7 +4021,6 @@
   "statut": "vivant",
   "resume": "Ancien gabier paranoïaque, persuadé d'être la prochaine cible.",
   "connu": [
-   "Il avoue que l'équipage a jeté Eldran Korr, son timonier, par-dessus bord pendant une mutinerie.",
    "Ancien gabier d'une cinquantaine d'années, cheveux blancs filasses, barbe hirsute, peau parcheminée par le sel. Paranoïaque, il boit pour tenir mais sa terreur est lucide.",
    "Il avoue que l'équipage s'est mutiné et a jeté par-dessus bord le second, Eldran Korr, qui suppliait d'arrêter. Il se croit la prochaine cible : le 7 inversé est gravé sur sa porte."
   ],
@@ -4090,7 +4091,7 @@
   "titre": "Halfling de la Griffe, prisonnier",
   "parent": "pont-du-jugement",
   "lieu": "pont-du-jugement",
-  "statut": "vivant",
+  "statut": "mort",
   "resume": "Prisonnier zozotant qui accuse le Passeur de Camont de l'avoir envoyé à Havre Noir.",
   "connu": [
    "Il propose or et contacts en échange de sa libération, et parle d'une brèche dans la coque de l'Assemblage menant à la cale aux vivres.",
@@ -4193,7 +4194,6 @@
   "statut": "vivant",
   "resume": "Massive, tatouée de vagues, un clou de fer dans l'oreille. Une petite souris, Raisin Sec, dépasse de son tablier.",
   "connu": [
-   "Elle est loyale à Sycomore sans fanatisme.",
    "Sa souris s'appelle Raisin Sec.",
    "Forgeronne demi-orque massive, torse nu noirci de suie, tatouages de vagues sur les bras, un clou de fer dans l'oreille. Fière et brutale, elle respecte la force et méprise les faibles.",
    "Loyale à Sycomore sans fanatisme, elle voit son art comme une arme au service de l'Assemblage. Les registres montrent que tout le matériel forgé vient de Havre Noir, jamais de l'Île aux Moines.",
@@ -4636,7 +4636,6 @@
   "statut": "inconnu",
   "resume": "Auteur d'une lettre à Graham Gonn pour le prévenir qu'un envoyé du Passeur a commandé un vol chez Eryndel.",
   "connu": [
-   "Il a éloigné un membre bavard en l'envoyant monter un comptoir à Havre Noir pour la Griffe.",
    "Il écrit à Graham Gonn, à l'insu de son chef, qu'un homme envoyé du Passeur a demandé une équipe pour un coup important au Siège des Étoiles, chez l'Impératrice elle-même.",
    "Le chef des Épingles est paniqué, certains veulent refuser, d'autres redoutent des représailles. Un membre qui parlait trop a été éloigné pour monter un comptoir à Havre Noir pour le Passeur et la Griffe."
   ],
@@ -5507,7 +5506,7 @@
   "titre": "Marchande de la plage",
   "parent": "plage-doelan",
   "lieu": "plage-doelan",
-  "statut": "vivant",
+  "statut": "mort",
   "resume": "Jeune femme vive à l'accent chantant, qui aime les aventuriers. Elle ne sait rien des intrigues.",
   "galerie": [
    {
@@ -5546,7 +5545,7 @@
   "titre": "Marin du port",
   "parent": "port-et-jetee-doelan",
   "lieu": "port-et-jetee-doelan",
-  "statut": "vivant",
+  "statut": "mort",
   "resume": "Il raconte qu'un homme est entré à la cour de Spezza il y a six mois et n'en est jamais ressorti.",
   "citation": {
    "texte": "On dit qu'il n'a pas montré son visage. Ça fait parler.",
@@ -5582,7 +5581,7 @@
   "titre": "Marin du port",
   "parent": "port-et-jetee-doelan",
   "lieu": "port-et-jetee-doelan",
-  "statut": "vivant",
+  "statut": "mort",
   "resume": "Compagne de discussion de Falco. Elle parle des deux femmes que Spezza traquerait.",
   "galerie": [
    {
@@ -5641,7 +5640,7 @@
   "titre": "Vieux tieffelin aveugle",
   "parent": "haute-vigie",
   "lieu": "haute-vigie",
-  "statut": "vivant",
+  "statut": "mort",
   "resume": "Il perçoit les lignes du monde et sert l'équilibre de la ville. Il recommande de voir Makandral.",
   "alias": [
    "Amon"
@@ -5684,6 +5683,7 @@
   "alias": [
    "Cesare"
   ],
+  "img": "img/pnj/port-doe-lan-cesare.webp",
   "citation": {
    "texte": "Merci de venir habillés en conséquence. C'est un théâtre. Pas une halle de poisson.",
    "qui": "Cesare, réceptionniste du théâtre"
@@ -5703,7 +5703,8 @@
     "inverse": "programmé par"
    }
   ],
-  "attitude": "neutre"
+  "attitude": "neutre",
+  "teinte": "#753c19"
  },
  {
   "id": "rue-marchande-doelan",
@@ -5852,7 +5853,7 @@
    }
   ],
   "img": "img/pnj/port-doe-lan-malka.webp",
-  "attitude": "positif",
+  "attitude": "allie",
   "teinte": "#193c75"
  },
  {
@@ -5952,7 +5953,7 @@
   "titre": "Cheffe de la Griffe",
   "parent": "quartier-general-griffe",
   "lieu": "quartier-general-griffe",
-  "statut": "vivant",
+  "statut": "mort",
   "resume": "Droite, regard tranchant. Elle propose une alliance temporaire contre Spezza et veut sa part d'or.",
   "alias": [
    "Cassiopee Vorn"
@@ -6117,7 +6118,7 @@
     "inverse": "sous les ordres de"
    }
   ],
-  "attitude": "neutre",
+  "attitude": "ennemi",
   "teinte": "#753c19"
  },
  {
@@ -6127,7 +6128,7 @@
   "titre": "Lieutenante du Voile",
   "parent": "voile-doelan",
   "lieu": "voile-doelan",
-  "statut": "vivant",
+  "statut": "mort",
   "resume": "Lieutenante du Voile, présente aux côtés de Korrash dans la maison des bas-quartiers.",
   "galerie": [
    {
@@ -6136,7 +6137,7 @@
    }
   ],
   "img": "img/pnj/port-doe-lan-korrash-saphir.webp",
-  "attitude": "neutre",
+  "attitude": "ennemi",
   "connu": [
    "Elle assiste aux échanges entre Korrash et les PJ et suit la décision de son chef."
   ],
@@ -6167,7 +6168,6 @@
   "statut": "vivant",
   "resume": "Sourire simple et regard attentif. Elle répète les rumeurs de l'accueil.",
   "connu": [
-   "Des nains recrutés par Spezza ont été vus il y a quelques mois.",
    "L'entrée des bains publics coûte 5 po. Quelques heures d'immersion retirent 1 niveau d'épuisement.",
    "Persuasion DD 12 : elle partage les rumeurs. Insight DD 12 : elle ne ment pas.",
    "Spezza reste enfermé dans son château. Un noble influent descend parfois dans les bas quartiers, bien habillé, capuche sur la tête, mais reconnaissable.",
@@ -6209,7 +6209,7 @@
   "titre": "Barbier",
   "parent": "barbier-edouardo",
   "lieu": "barbier-edouardo",
-  "statut": "vivant",
+  "statut": "mort",
   "resume": "Il grogne plus qu'il ne discute. 2 po la coupe.",
   "alias": [
    "Édouardo"
@@ -6270,7 +6270,7 @@
   "titre": "Fleuriste",
   "parent": "fleurs-nicea",
   "lieu": "fleurs-nicea",
-  "statut": "vivant",
+  "statut": "mort",
   "resume": "Vieille dame qui observe beaucoup. Les grands navires restent dans la baie, des barques font la relève.",
   "citation": {
    "texte": "Oh mes chéris, prenez donc une fleur, ça adoucit la journée.",
@@ -6426,7 +6426,7 @@
     "ton": "neutre"
    }
   ],
-  "attitude": "positif",
+  "attitude": "allie",
   "connu": [
    "Embauché comme garde, il patrouille le camp de Vespera avec Nesk.",
    "Wererat libéré par le groupe, il patrouille Port Doëlan pour le compte de Vespera."
@@ -6456,7 +6456,7 @@
     "ton": "positif"
    }
   ],
-  "attitude": "positif",
+  "attitude": "allie",
   "connu": [
    "Embauché comme garde, il patrouille le camp de Vespera avec Kralik.",
    "Wererat libéré par le groupe, il patrouille Port Doëlan pour le compte de Vespera."
@@ -6486,7 +6486,7 @@
     "ton": "positif"
    }
   ],
-  "attitude": "positif",
+  "attitude": "allie",
   "connu": [
    "Au nid, elle débat avec Kralik et Nesk, qui veulent attaquer tout de suite. Elle connaît les galeries et les points faibles du sol sous le fortin.",
    "Les PJ peuvent arbitrer en proposant un plan précis ou un sabotage discret."
@@ -6516,7 +6516,7 @@
     "ton": "positif"
    }
   ],
-  "attitude": "positif",
+  "attitude": "allie",
   "connu": [
    "Il soutient Krelia au nid : l'assaut frontal est un suicide. Il connaît les galeries sous le fortin."
   ],
@@ -6569,7 +6569,7 @@
   "titre": "Fondateur de la compagnie Bravala",
   "parent": "bravala-compagnie-navale",
   "lieu": "bravala-compagnie-navale",
-  "statut": "vivant",
+  "statut": "mort",
   "resume": "Amer et direct. Il sait que Titan Inc. détourne des fonds et commerce avec Havre Noir.",
   "citation": {
    "texte": "On a bâti cette compagnie avec nos mains. Aujourd'hui on transporte des miettes pendant que Titan encaisse les cargaisons d'or.",
@@ -6596,7 +6596,7 @@
     "inverse": "fils de"
    }
   ],
-  "attitude": "positif",
+  "attitude": "neutre",
   "connu": [
    "Fondateur de la compagnie Bravala, petit bureau sombre avec cartes maritimes jaunies et registres empilés. Amer, il parle sec et sans illusion.",
    "Spezza garde la compagnie sous perfusion commerciale pour éviter toute accusation de monopole : quelques contrats secondaires, jamais les grandes routes.",
@@ -6611,7 +6611,7 @@
   "titre": "Fils de Giovanni",
   "parent": "bravala-compagnie-navale",
   "lieu": "bravala-compagnie-navale",
-  "statut": "vivant",
+  "statut": "mort",
   "resume": "Veut encore croire à un redressement.",
   "galerie": [
    {
@@ -6620,7 +6620,7 @@
    }
   ],
   "img": "img/pnj/port-doe-lan-giovanni-et-dario-bravala.webp",
-  "attitude": "positif",
+  "attitude": "neutre",
   "connu": [
    "Il parle d'ouvrir de nouvelles lignes et de reconstruire une flotte, tout en sachant que Titan Inc. rafle tout ce qui compte."
   ],
@@ -6648,7 +6648,7 @@
   "titre": "Le Comptable",
   "parent": "titan-inc",
   "lieu": "titan-inc",
-  "statut": "vivant",
+  "statut": "mort",
   "resume": "Homme pâle aux lunettes rondes, sans talent martial. Il cède sous pression.",
   "galerie": [
    {
@@ -6785,7 +6785,7 @@
   "titre": "Directeur de la prison",
   "parent": "prison-de-port-doelan",
   "lieu": "prison-de-port-doelan",
-  "statut": "vivant",
+  "statut": "mort",
   "resume": "Incorruptible, moustache impeccable, monocle mécanique.",
   "alias": [
    "Kessler"
@@ -6835,7 +6835,7 @@
   "titre": "Le Libraire",
   "parent": "bibliotheque-de-port-doelan",
   "lieu": "bibliotheque-de-port-doelan",
-  "statut": "vivant",
+  "statut": "mort",
   "resume": "Fébrile, dévoué à Spezza. Il esquive par omission.",
   "alias": [
    "Thorex",
@@ -7198,7 +7198,6 @@
   "statut": "vivant",
   "resume": "Il lit les courants comme des intentions de Kataron. Il bénit les départs d'un chant grave et envoie vers la Suuraal.",
   "connu": [
-   "Les courants qui mènent à Thaladrassyl sont des invitations.",
    "Immobile devant une ouverture directe sur la faille, les yeux fermés, il articule quelque chose de très grave et de très lent. Il parle avec la précision d'un cartographe et la conviction d'un prêtre.",
    "Ceux qui mènent à Thaladrassyl sont des invitations qui ne se forcent pas. Personne ne sait où se trouve Thaladrassyl, pas même lui : le point de convergence change de place.",
    "Il bénit les départs d'un chant grave modulé selon les flux du moment, et attend avec les voyageurs si le moment n'est pas favorable. Partir sans bénédiction est une mauvaise idée, pas un interdit."
@@ -7359,7 +7358,7 @@
   "lieu": "coeur-immerge",
   "statut": "vivant",
   "citation": {
-   "texte": "Je suis là depuis bien avant l'âge des Hommes. J'y serai quand leurs noms seront oubliés. Partez tranquilles.",
+   "texte": "Vous avez fait du chemin. Je l'ai senti depuis les courants de surface.",
    "qui": "Kataron"
   },
   "galerie": [
@@ -7670,7 +7669,7 @@
   "statut": "vivant",
   "resume": "Explique que ses hommes refusent de redescendre tant que la menace n'est pas éliminée.",
   "connu": [
-   "« Trois mineurs ont disparu. Le reste refuse de descendre. »",
+   "Le reste refuse de descendre. »",
    "Contremaître de la mine de Pyrrah. Ses hommes ont été attaqués dans les galeries par des créatures en feu, trois mineurs ont disparu et aucun survivant ne redescendra tant que la menace persiste."
   ],
   "citation": "Dans la mine, des créatures en feu ont attaqué. Trois mineurs ont disparu. Le reste refuse de descendre.",
@@ -7893,7 +7892,6 @@
   "statut": "vivant",
   "resume": "Inventeur vif et chaleureux, à l'humour noir, qui traite l'horreur avec désinvolture. Il appelle Gran Brijit « Mamie » et a refait l'équipement de Jane.",
   "connu": [
-   "Il a stabilisé Jane avec l'Hexacore.",
    "Il remet à Philippa Horizon Brûlée, une arme encore à l'état de prototype, qu'il dit stable. Gran Brijit estime qu'il y manque un souffle de vie pour l'invoquer à volonté.",
    "Il examine Jane et conclut que ses cristaux tirent chacun sur une fréquence différente, ce qui crée des interférences dangereuses. Il lui faut un Hexacore.",
    "À son retour du désert, il saisit l'Hexacore avec une excitation presque enfantine et promet de stabiliser le moteur cristallin de Jane.",

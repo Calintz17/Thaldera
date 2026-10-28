@@ -4,7 +4,7 @@
 (() => {
 'use strict';
 
-const VER = '49';
+const VER = '50';
 const EDIT = new URLSearchParams(location.search).has('edit');
 const $ = (s, r = document) => r.querySelector(s);
 const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
@@ -35,7 +35,7 @@ async function load() {
   buildLinker();
 }
 
-const pnjsAt = pl => (kids(pl.id, 'pnj').concat(DB.filter(x => x.lieu === pl.id && x.parent !== pl.id && x.type === 'pnj'))).sort((a, b) => (a.ordre ?? 99) - (b.ordre ?? 99));
+const pnjsAt = pl => (kids(pl.id, 'pnj').concat(DB.filter(x => (x.lieu === pl.id || (x.lieux || []).includes(pl.id)) && x.parent !== pl.id && x.type === 'pnj'))).sort((a, b) => (a.ordre ?? 99) - (b.ordre ?? 99));
 const mainOf = pl => { if (!pl || !(pl.type === 'lieu' || pl.fusion) || pl.nofusion) return null; if (kids(pl.id, 'lieu').length) return null; const l = pnjsAt(pl); return l.length === 1 ? l[0] : null; };
 const mergedPlace = p => { const pl = p && p.type === 'pnj' ? (p.lieu && BY[p.lieu] ? BY[p.lieu] : (p.parent ? BY[p.parent] : null)) : null; return pl && mainOf(pl) ? pl : null; };
 const kids = (id, type) => (KIDS[id] || []).filter(k => !type || k.type === type);
@@ -112,7 +112,8 @@ const PH_SIL = 'img/placeholder/silhouette.svg';
 const S = { map: null, gal: null, entry: null, key: '', cut: null, W: 0, H: 0 };
 
 const SMALLMAP = matchMedia('(max-width: 860px), (pointer: coarse)').matches;
-const mapSrc = u => SMALLMAP && /^img\/cartes\/(istra|thaldera|thaldera-factions)\.webp$/.test(u) ? u.replace('.webp', '-m.webp') : u;
+const BIGMAP = /^img\/cartes\/(istra|thaldera|thaldera-factions)\.webp$/;
+const mapSrc = u => BIGMAP.test(u) ? u.replace('.webp', '-m.webp') : u;
 function syncTop() { const t = document.querySelector('.top'); if (t) document.documentElement.style.setProperty('--top-h', t.offsetHeight + 'px'); }
 window.addEventListener('resize', syncTop); window.addEventListener('orientationchange', syncTop); window.addEventListener('load', syncTop);
 function measure() { syncTop(); S.W = stageEl.clientWidth; S.H = stageEl.clientHeight; }
@@ -131,7 +132,10 @@ function setCam(layer, rect, animate, pad) {
   const el = layer.cam;
   if (!animate) el.classList.add('notrans');
   el.style.setProperty('--s', c.s);
-  el.classList.toggle('zl', rect.w < 0.5);
+  const fs = camFor(FULL, layer.info, 0.94).s, rel = c.s / fs;
+  el.classList.toggle('zl', !layer.zp && rect.w < 0.5);
+  el.classList.toggle('zp', !!layer.zp);
+  el.dataset.z = rel < 1.25 ? "0" : rel < 1.7 ? "1" : "2";
   el.style.transform = `translate(${c.tx}px, ${c.ty}px) scale(${c.s})`;
   if (!animate) { void el.offsetWidth; el.classList.remove('notrans'); }
 }
@@ -141,8 +145,7 @@ const around = (p, w = 0.14) => ({ x: p.x - w / 2, y: p.y - w / 2, w, h: w });
 
 function ensureChrome() {
   if ($('.fog', stageEl)) return;
-  stageEl.insertAdjacentHTML('beforeend', '<div class="fog"></div><div class="mapcap" id="mapcap"></div><button class="upbtn" id="upbtn" hidden>‹ Vue précédente</button>');
-  $('#upbtn').addEventListener('click', () => { if (S.entry) goUp(S.entry); });
+  stageEl.insertAdjacentHTML('beforeend', '<div class="fog"></div><div class="mapcap" id="mapcap"></div><div class="mprev" id="mprev" hidden></div>');
   if (EDIT) initEdit();
 }
 
@@ -170,9 +173,9 @@ function sceneOf(e, q, depth = 0) {
     case 'continent': {
       const c = e.cartes[Math.min(tab, e.cartes.length - 1)];
       return {
-        kind: 'map', src: c.img, cam: FULL, owner: e, tabs: e.cartes, tab: Math.min(tab, e.cartes.length - 1),
-        frames: kids(e.id).filter(k => k.poly).map(k => frameOf(k)),
-        pins: kids(e.id).filter(k => k.pos && (k.type === 'ville' || k.type === 'lieu')).map(k => ({ id: k.id, ...k.pos, label: k.nom, kind: k.type === 'lieu' ? 'lieu' : 'ville' })).concat(collectVoyages(e).map(k => ({ id: k.id, ...k.pos, label: k.nom, kind: 'ville' })))
+        kind: 'map', src: c.img, cam: FULL, owner: e, tabs: e.cartes, tab: Math.min(tab, e.cartes.length - 1), zp: true,
+        frames: kids(e.id).filter(k => k.poly && (!ownerMap(k) || ownerMap(k).carte === c)).map(k => frameOf(k)),
+        pins: kids(e.id).filter(k => k.pos && k.type === 'lieu').map(k => ({ id: k.id, ...k.pos, label: k.nom, kind: 'lieu' })).concat(collectVilles(e).map(k => ({ id: k.id, ...k.pos, label: k.nom, kind: 'ville' }))).concat(collectVoyages(e).map(k => ({ id: k.id, ...k.pos, label: k.nom, kind: 'ville' })))
       };
     }
     case 'region':
@@ -181,10 +184,11 @@ function sceneOf(e, q, depth = 0) {
       if (!om) return depth === 0 ? sceneOf(BY[e.parent], null, depth + 1) : null;
       const z = e.zone;
       const cam = z ? { x: z.x - z.w * 0.06, y: z.y - z.h * 0.06, w: z.w * 1.12, h: z.h * 1.12 } : FULL;
-      const villes = collectVilles(e);
+      const host = om.host;
       return {
-        kind: 'map', src: om.carte.img, cam, owner: om.host, tabs: om.host.cartes, tab: om.host.cartes.indexOf(om.carte),
-        frames: e.poly ? [frameOf(e, true)] : [], pins: villes.map(v => ({ id: v.id, ...v.pos, label: v.nom, kind: 'ville' })).concat(collectVilles(om.host).filter(v => !villes.includes(v)).map(v => ({ id: v.id, ...v.pos, label: v.nom, kind: 'ville', near: true }))),
+        kind: 'map', src: om.carte.img, cam, owner: host, tabs: host.cartes, tab: host.cartes.indexOf(om.carte), zp: true,
+        frames: kids(host.id).filter(k => k.poly && (!ownerMap(k) || ownerMap(k).carte === om.carte)).map(k => ({ ...frameOf(k), act: k === e })),
+        pins: collectVilles(host).map(v => ({ id: v.id, ...v.pos, label: v.nom, kind: 'ville' })).concat(collectVoyages(host).map(k => ({ id: k.id, ...k.pos, label: k.nom, kind: 'ville' }))),
         focus: z ? { x: z.x + z.w / 2, y: z.y + z.h / 2 } : null
       };
     }
@@ -243,9 +247,9 @@ function sceneOf(e, q, depth = 0) {
   }
 }
 function castOf(e) {
-  const ps = kids(e.id, 'pnj').concat(DB.filter(x => x.lieu === e.id && x.parent !== e.id && x.type === 'pnj'));
+  const ps = kids(e.id, 'pnj').concat(DB.filter(x => (x.lieu === e.id || (x.lieux || []).includes(e.id)) && x.parent !== e.id && x.type === 'pnj'));
   const seen = new Set();
-  return ps.filter(p => !seen.has(p.id) && seen.add(p.id) && ((p.formes && p.formes[0] && p.formes[0].img) || p.img));
+  return ps.filter(p => !seen.has(p.id) && seen.add(p.id) && ((p.formes && p.formes[0] && p.formes[0].img) || p.img)).sort((a, b) => (a.ordre ?? 99) - (b.ordre ?? 99));
 }
 function withCast(sc, e) {
   if (!sc || !sc.gallery || sc.kind === 'stack') return sc;
@@ -256,7 +260,7 @@ function withCast(sc, e) {
     const f = formeFor(p, e.id);
     return { img: bg.img, legende: p.nom, who: p, cut: f && f.img ? f : { img: p.img, teinte: p.teinte, label: '' } };
   });
-  return { ...sc, gallery: sc.gallery.concat(extra) };
+  return { ...sc, gallery: extra.concat(sc.gallery) };
 }
 function stackScene(host, focus) {
   const cs = host.cartes, lieux = collectLieux(host);
@@ -299,7 +303,7 @@ function collectLieux(v) {
 
 function sceneKey(sc) {
   if (!sc) return 'none';
-  return JSON.stringify([sc.src, sc.cam, sc.frames.map(f => f.id + (f.solo ? 's' : '')), sc.pins.map(p => p.id + (p.dim ? 'd' : '') + (p.here ? 'h' : '') + (p.near ? 'n' : '')), sc.gallery?.map(g => g.img + (g.cut ? g.cut.img : '')), sc.cutout?.id, sc.tab, sc.focus]);
+  return JSON.stringify([sc.src, sc.cam, sc.frames.map(f => f.id + (f.solo ? 's' : '') + (f.act ? 'a' : '')), sc.pins.map(p => p.id + (p.dim ? 'd' : '') + (p.here ? 'h' : '') + (p.near ? 'n' : '')), sc.gallery?.map(g => g.img + (g.cut ? g.cut.img : '')), sc.cutout?.id, sc.tab, sc.focus]);
 }
 
 function makeLayer(src, info) {
@@ -307,6 +311,7 @@ function makeLayer(src, info) {
   layer.className = 'layer';
   layer.innerHTML = `<div class="drift"><div class="cam" style="width:${info.w}px;height:${info.h}px"><img src="${mapSrc(src)}" alt="" draggable="false"><div class="ovl"></div></div></div>`;
   const o = { el: layer, cam: $('.cam', layer), ovl: $('.ovl', layer), info, src };
+  if (!SMALLMAP && BIGMAP.test(src)) { const im = $('img', layer), hi = new Image(); hi.onload = () => { im.src = src; }; hi.src = src; }
   return o;
 }
 function smoothPath(pts) {
@@ -334,7 +339,7 @@ function renderOverlay(layer, sc) {
     sc.frames.forEach(f => {
       const d = smoothPath(f.poly) + (f.polyx || []).map(smoothPath).join('');
       const g = document.createElementNS(NS, 'g');
-      g.setAttribute('class', 'reg' + (f.solo ? ' solo' : '')); g.dataset.id = f.id; g.style.setProperty('--c', f.color);
+      g.setAttribute('class', 'reg' + (f.solo ? ' solo' : '') + (f.act ? ' act' : '')); g.dataset.id = f.id; g.style.setProperty('--c', f.color);
       ['fill', 'glow', 'glow2', 'line', 'run'].forEach(c => { const p = document.createElementNS(NS, 'path'); p.setAttribute('d', d); p.setAttribute('class', c); if (c === 'run') p.setAttribute('pathLength', '1'); g.appendChild(p); });
       svg.appendChild(g);
     });
@@ -365,9 +370,19 @@ function renderOverlay(layer, sc) {
     a.innerHTML = `<span class="in"><span class="pd"></span>${ru ? `<span class="rb" title="Rune Raido de Philippa">${RAIDO}</span>` : ''}<span class="pl">${esc(p.label)}</span></span>`;
     ov.appendChild(a);
   });
+  ov.querySelectorAll('.pin, .rlab').forEach(n => { n.addEventListener('mouseenter', () => showPrev(n.dataset.id)); n.addEventListener('mouseleave', hidePrev); });
+  ov.querySelectorAll('.reg:not(.solo)').forEach(g => { g.addEventListener('mouseenter', () => showPrev(g.dataset.id)); g.addEventListener('mouseleave', hidePrev); });
   void ov.offsetWidth;
   ov.classList.add('fresh');
 }
+function showPrev(id) {
+  const e = BY[id], el = $('#mprev'); if (!e || !el) return;
+  const t = tgt(e);
+  const img = t.type === 'ville' || t.type === 'region' || t.type === 'faction' ? (t.blason || t.vignette || '') : '';
+  el.innerHTML = `${img ? `<img src="${esc(img)}" alt="">` : ''}<div><b>${esc(t.nom)}</b><i>${esc(t.titre || t.typeLabel || '')}</i>${t.resume ? `<p>${esc(t.resume.length > 150 ? t.resume.slice(0, 147) + '…' : t.resume)}</p>` : ''}</div>`;
+  el.hidden = false;
+}
+function hidePrev() { const el = $('#mprev'); if (el) el.hidden = true; }
 
 function sheetEls() { return S.map && S.map.stack ? [...S.map.el.querySelectorAll('.sheet')] : []; }
 function scrollSheet(i, pos, smooth = true) {
@@ -441,12 +456,13 @@ async function applyMap(sc, dir, focus) {
   const info = await imgInfo(sc.src);
   const old = S.map;
   if (old && old.src === sc.src) {
-    old.info = info;
+    old.info = info; old.zp = !!sc.zp;
     if (S.keepCam) S.keepCam = false; else setCam(old, sc.cam, true);
     renderOverlay(old, sc);
     return;
   }
   const layer = makeLayer(sc.src, info);
+  layer.zp = !!sc.zp;
   stageEl.insertBefore(layer.el, $('.fog', stageEl));
   renderOverlay(layer, sc);
   // camera de depart
@@ -484,6 +500,7 @@ function showGallery(imgs, title, ent) {
   g.innerHTML = imgs.map((im, i) => `<div class="sl${i === 0 ? ' act' : ''}" style="--bg:url('${new URL(im.img, location.href).href}')"><img src="${im.img}" alt="${esc(im.legende || title || '')}"></div>`).join('') +
     `<div class="gcap"><span class="gt"></span>${imgs.length > 1 ? '<div class="gdots">' + imgs.map((_, i) => `<i data-i="${i}"${i === 0 ? ' class="on"' : ''}></i>`).join('') + '</div><div class="gnav"><button data-d="-1" aria-label="Précédente">‹</button><button data-d="1" aria-label="Suivante">›</button></div>' : ''}</div>`;
   stageEl.insertBefore(g, $('.fog', stageEl));
+  S.gal = g;
   g.querySelectorAll('.sl img').forEach(im => {
     const fit = () => { if (!im.naturalWidth) return; const r = im.naturalWidth / im.naturalHeight; im.style.maxWidth = 'none'; im.style.width = Math.min(stageEl.clientWidth * 0.92, stageEl.clientHeight * 0.92 * r, im.naturalWidth * 2.04) + 'px'; };
     if (im.complete) fit(); else im.addEventListener('load', fit);
@@ -568,6 +585,8 @@ function renderCap(sc, entry) {
   let h = '';
   if (sc && sc.kind === 'stack') {
     h += sc.tabs.map((t, i) => `<a class="tab${i === sc.tab ? ' on' : ''}" data-sheet="${i}" href="#/${sc.owner.id}">${esc(t.legende || 'Carte ' + (i + 1))}</a>`).join('');
+  } else if (sc && sc.owner && sc.owner.type === 'continent') {
+    h = '';
   } else if (sc && sc.tabs && sc.tabs.length > 1) {
     h += sc.tabs.map((t, i) => `<a class="tab${i === sc.tab ? ' on' : ''}" href="#/${sc.owner.id}${i ? '?c=' + i : ''}">${esc(t.legende || 'Carte ' + (i + 1))}</a>`).join('');
   } else if (sc && !sc.gallery && sc.tabs && sc.tabs[0] && sc.tabs[0].legende) {
@@ -575,8 +594,6 @@ function renderCap(sc, entry) {
   }
   cap.innerHTML = h;
   cap.querySelectorAll('a[data-sheet]').forEach(a => a.addEventListener('click', ev => { ev.preventDefault(); scrollSheet(parseInt(a.dataset.sheet, 10)); }));
-  const up = $('#upbtn');
-  if (up) { up.hidden = !(entry && entry.parent); const p = entry && BY[entry.parent]; up.textContent = p ? '‹ ' + p.nom : '‹ Retour'; }
 }
 
 async function applyScene(e, q, token) {
@@ -635,10 +652,8 @@ function buildWorld() {
 }
 function worldBar() {
   const pj = DB.filter(e => e.type === 'pj');
-  const suj = DB.filter(e => e.type === 'sujet' && e.accueil);
   let h = '';
   if (pj.length) h += `<div class="wgroup"><b>Le groupe</b>${pj.map(p => `<a href="#/${p.id}">${p.img ? `<span class="bub" style="width:auto"><span class="av" style="width:34px;height:34px;font-size:13px"><img src="${p.img}" alt=""></span></span>` : ''}${esc(p.nom.split(' ')[0])}</a>`).join('')}</div>`;
-  if (suj.length) h += `<div class="wgroup"><b>Savoirs</b>${suj.map(s => `<a href="#/${s.id}">${esc(s.nom)}</a>`).join('')}</div>`;
   return h;
 }
 function showWorld() {
@@ -769,7 +784,7 @@ function renderPanel(e, q) {
   const sc = sceneOf(e, q);
   const asGallery = sc && sc.gallery;
   // chapeau (paysage 4:3) quand la scene est une carte
-  if (e.galerie && e.galerie.length && !asGallery && !e.blason && ['ville', 'region', 'faction', 'continent'].includes(e.type)) {
+  if (e.galerie && e.galerie.length && !asGallery && !e.blason && ['region', 'faction', 'continent'].includes(e.type)) {
     h += `<div class="hero"><img src="${e.galerie[0].img}" alt=""></div>`;
   }
   if (e.type !== 'pnj' && e.type !== 'pj' && e.blason) h += `<div class="crest"><img src="${e.blason}" alt=""></div>`;
@@ -789,7 +804,7 @@ function renderPanel(e, q) {
 
   // lieu : personnages en bulles
   const isPlace = e.type === 'lieu';
-  const here = isPlace ? kids(e.id, 'pnj').concat(DB.filter(x => x.lieu === e.id && x.parent !== e.id && (x.type === 'pnj'))) : [];
+  const here = isPlace ? kids(e.id, 'pnj').concat(DB.filter(x => (x.lieu === e.id || (x.lieux || []).includes(e.id)) && x.parent !== e.id && (x.type === 'pnj'))) : [];
   if (isPlace && here.length) {
     h += `<section class="sec"><h3>Personnages présents</h3><div class="bubs" id="npcs">${here.map(p => bubble(p, 'data-npc="1"')).join('')}</div><div id="npcbox"></div></section>`;
   }
@@ -990,20 +1005,23 @@ function initRunes() {
     const cx = px - kk * (px - (r.x + r.w / 2)), cy = py - kk * (py - (r.y + r.h / 2));
     L.cam.classList.add('wz'); clearTimeout(L.wzT); L.wzT = setTimeout(() => L.cam.classList.remove('wz'), 450);
     setCam(L, { x: Math.min(1, Math.max(0, cx)) - nw / 2, y: Math.min(1, Math.max(0, cy)) - nh / 2, w: nw, h: nh }, true, L.pad);
-    /* passage fluide continent <-> region a la molette */
-    const ent = S.entry;
-    if (!S.navBusy && ent) {
-      const pip = (pt, poly) => { let ins = false; for (let i = 0, j = poly.length - 1; i < poly.length; j = i++) { const a = poly[i], b2 = poly[j]; if ((a[1] > pt[1]) !== (b2[1] > pt[1]) && pt[0] < (b2[0] - a[0]) * (pt[1] - a[1]) / (b2[1] - a[1]) + a[0]) ins = !ins; } return ins; };
-      if (ent.type === 'continent' && ev.deltaY < 0) {
-        const hit = kids(ent.id).find(k => k.poly && k.zone && nw <= k.zone.w * 1.25 && pip([px, py], k.poly));
-        if (hit) { S.keepCam = true; S.navBusy = true; location.hash = '#/' + hit.id; }
-      } else if ((ent.type === 'region' || ent.type === 'faction') && ent.zone && BY[ent.parent] && BY[ent.parent].type === 'continent' && ev.deltaY > 0 && nw > Math.min(1.04, ent.zone.w * 1.12 * 1.6)) {
-        S.keepCam = true; S.navBusy = true; location.hash = '#/' + ent.parent;
-      }
-    }
   }, { passive: false });
-  stageEl.addEventListener('pointerdown', ev => { if (!live() || ev.button !== 0) return; drag = { x: ev.clientX, y: ev.clientY, r: { ...S.map.rect } }; moved = false; });
+  const ptrs = new Map(); let pinch = null;
+  const spread = () => { const [a, b] = [...ptrs.values()]; return { d: Math.hypot(a.x - b.x, a.y - b.y), cx: (a.x + b.x) / 2, cy: (a.y + b.y) / 2 }; };
+  stageEl.addEventListener('pointerdown', ev => {
+    if (!live() || ev.button !== 0) return;
+    ptrs.set(ev.pointerId, { x: ev.clientX, y: ev.clientY });
+    if (ptrs.size === 2) { const sp = spread(); pinch = { d: sp.d, r: { ...S.map.rect } }; drag = null; moved = true; return; }
+    drag = { x: ev.clientX, y: ev.clientY, r: { ...S.map.rect } }; moved = false;
+  });
   window.addEventListener('pointermove', ev => {
+    if (ptrs.has(ev.pointerId)) ptrs.set(ev.pointerId, { x: ev.clientX, y: ev.clientY });
+    if (pinch && ptrs.size >= 2 && live()) {
+      const L = S.map, r = pinch.r, sp = spread(), k = pinch.d / Math.max(10, sp.d);
+      const nw = Math.min(1.1, Math.max(0.04, r.w * k)), nh = r.h * (nw / r.w);
+      setCam(L, { x: r.x + r.w / 2 - nw / 2, y: r.y + r.h / 2 - nh / 2, w: nw, h: nh }, false, L.pad);
+      return;
+    }
     if (!drag || !live()) return;
     const dx = ev.clientX - drag.x, dy = ev.clientY - drag.y;
     if (!moved && Math.hypot(dx, dy) < 6) return;
@@ -1011,7 +1029,8 @@ function initRunes() {
     const L = S.map, info = L.info, c = camFor(drag.r, info, L.pad);
     setCam(L, { x: drag.r.x - dx / (info.w * c.s), y: drag.r.y - dy / (info.h * c.s), w: drag.r.w, h: drag.r.h }, false, L.pad);
   });
-  window.addEventListener('pointerup', () => { drag = null; });
+  const endp = ev => { ptrs.delete(ev.pointerId); if (ptrs.size < 2) pinch = null; if (!ptrs.size) drag = null; };
+  window.addEventListener('pointerup', endp); window.addEventListener('pointercancel', endp);
   stageEl.addEventListener('click', ev => { if (moved) { ev.stopPropagation(); ev.preventDefault(); moved = false; } }, true);
 })();
 })();

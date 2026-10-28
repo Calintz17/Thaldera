@@ -2637,7 +2637,7 @@
   "resume": "Guide spirituelle de Roshen Buru et championne de Mélora. A reculé devant Gran Brijit.",
   "connu": [
    "Autorité absolue de Roshen Buru, religion et politique. On la dit incarnation de Mélora sur terre.",
-   "Son Miren est un avatar de Mélora. Il remplit la pièce de pouvoir brut.",
+   "Il remplit la pièce de pouvoir brut.",
    "Elle est la cousine de Ginko Noshi-Buru.",
    "D'après son journal, elle prépare une alliance avec Eryndel, l'impératrice d'Altéra.",
    "Elle ne reçoit pas sur demande : elle convoque. Sans convocation, on n'entre pas au Palais, et les gardes refusent poliment, sans négociation.",
@@ -3370,7 +3370,6 @@
   "resume": "Prêtre de Mélora Sylvestre, ami d'enfance de Harfang. Il croit sincèrement que son temple est protégé et qu'aucun mal ne peut y entrer.",
   "connu": [
    "Il n'a rien vu et jure que le temple est protégé.",
-   "Il bénit tout le monde, tout le temps.",
    "Son temple est au sud de la ville basse, adossé aux murailles, ouvert sur trois côtés, mousse sur les colonnes et racines qui soulèvent les dalles. On entend l'eau courir sous le sol.",
    "Il taille un rosier en tablier, les mains dans la terre. Il propose de bénir tout le monde, tout le temps.",
    "Il célèbre le premier mariage de Konya et Ayano, celui qui sera interrompu."
@@ -3634,7 +3633,7 @@
   "statut": "vivant",
   "resume": "Sœur d'Ayano. Elle soupçonne les Anadori par préjugé de classe, et reçoit dans le vestibule sans proposer de s'asseoir.",
   "connu": [
-   "Ayano a fréquenté il y a des années un fils de clan de haute noblesse, arrogant et détestable. Elle n'a jamais lâché son nom.",
+   "Elle n'a jamais lâché son nom.",
    "Le clan Kaben se referme après l'enlèvement : l'accès passe par Konya.",
    "Elle sait seulement qu'Ayano a fréquenté il y a des années un fils de très haute noblesse, arrogant et détestable, qu'elle a envoyé promener."
   ],
@@ -3696,7 +3695,7 @@
   "connu": [
    "Il tient la maison de thé avec Orissa. Il explique aux joueurs que des gens disparaissent en ville depuis plusieurs mois.",
    "À l'entrée, un panneau signale des patrouilles et demande de rapporter à la garde tout étranger ou comportement inhabituel.",
-   "Les Kovacz déclinent et le fils est un problème connu. Les Urameï tiennent le bas quartier. Les Anadori se battent partout en ville.",
+   "Les Kovacz déclinent et le fils est un problème connu.",
    "Un homme massif qui essuie la même tasse sans lever les yeux, le geste répété jusqu'à l'usure. Le thé coûte trois pièces, la chambre quinze, payables d'avance.",
    "Il connaît la ville par les gens qui y dorment. Sa clientèle est surtout de passage, et il renvoie vers les domestiques et ceux qui travaillent pour les clans ou pour le Magistrat.",
    "Pour les rumeurs sur les clans, il faut payer ou obtenir sa confiance : les Kovacz déclinent, les Urameï tiennent le bas quartier, les Anadori se battent partout en ville.",
@@ -4944,8 +4943,8 @@
   "type": "pnj",
   "nom": "Doryo Kovacz",
   "titre": "Greffier de la capitainerie",
-  "parent": "capitainerie",
-  "lieu": "capitainerie",
+  "parent": "capitainerie-azuren-kai",
+  "lieu": "capitainerie-azuren-kai",
   "statut": "vivant",
   "resume": "Il tient les registres de fret du port depuis vingt ans et reçoit Harfang comme délégué.",
   "galerie": [
@@ -5125,6 +5124,14 @@
   "connu": [
    "Harfang demande à son Miren s'il peut faire confiance à la Protectrice. La réponse est non."
   ]
+ },
+ {
+  "id": "capitainerie-azuren-kai",
+  "type": "lieu",
+  "nom": "La capitainerie d'Azuren Kai",
+  "titre": "Le port d'Azuren Kai",
+  "parent": "azuren-kai",
+  "resume": "La capitainerie tient les registres de fret du port d'Azuren Kai. Doryo Kovacz, le greffier, y reçoit Harfang comme délégué."
  },
  {
   "id": "ascenseur-nord-est",

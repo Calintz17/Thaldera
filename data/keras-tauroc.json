@@ -27,7 +27,7 @@
   "connu": [
    "La Maison Tauroc est dirigée par le Consul Draval Tauroc depuis Keras Tauroc, au centre des steppes.",
    "On y parle le taurokh. Les minotaures ne mangent jamais de bœuf et ne boivent pas de lait : poser la question est une insulte grave.",
-   "Ses villes connues sont Keras Tauroc, Cap Cornes, Brakka, Khardun, Port Goraik, Urnak et Unear Keras.",
+   "Ses villes connues sont Keras Tauroc, Cap Cornes, Brakka, Khardun, Port Gorash, Urnak, Ungar Keras et Pont Taurin.",
    "La Maison Tauroc exporte du métal travaillé, des armes et du cuir. Elle importe de la nourriture, surtout du poisson de Cap Cornes.",
    "Le groupe voit le symbole de Vassago à Brakka, dans les steppes, puis sur l'autel secondaire des catacombes de Keras Tauroc.",
    "Le festival des Cornes Rouges se termine par la remise des Cornes d'Or. Le meurtre de l'ambassadeur Otoba, le soir du banquet, ferme ensuite les accès à Roshen Buru."
@@ -1439,7 +1439,6 @@
   "statut": "vivant",
   "resume": "Premier habitant d'Istra rencontré par le groupe.",
   "connu": [
-   "Grand, la peau gris sombre, la trompe courte, les défenses à peine naissantes. Il recoud une barque abîmée par la tempête.",
    "Bienveillant et expressif, fasciné par les étrangers venus de la mer. Il dit qu'il s'agit d'un « chemin sous la mer », une route ancienne.",
    "Jeune Pachidan à la peau gris sombre, trompe courte et nerveuse, défenses à peine naissantes. Il recoud une barque abîmée par une tempête trois jours plus tôt, avec une aiguille en os et de la fibre tressée.",
    "Il ne parle qu'Istran et compense par des gestes larges et des mimiques claires. Il regarde les PJ avec une curiosité sans méfiance, les salue (Tharnak, Philippa, Tharnak, Jane) et les envoie voir Urrak, le vieux, qui comprend les étrangers."
@@ -1510,13 +1509,12 @@
   "statut": "vivant",
   "resume": "Vieille Pachidan aux défenses taillées court, en deuil.",
   "connu": [
-   "Elle parle peu, observe tout, et un peu amusée.",
-   "Elle appelle Absalom « Vasha ». Celle-ci est restée une semaine à Brakka, parlait un istran parfait comme appris dans un livre, dormait dehors et passait ses nuits au sanctuaire.",
-   "Elle souriait quand elle pensait que personne ne regardait. Shoba se réjouit qu'elle soit partie.",
-   "Vieille, petite pour une Pachidan, défenses taillées court en signe de deuil. Elle travaille depuis l'aube à sa fumerie, dans un renfoncement de la falaise.",
-   "Brakka est un village de pêcheurs reculé, sans route ni visiteurs depuis toujours : les steppes sont à la fois leur garde et leur prison, et ils ne voyagent pas.",
-   "Absalom, qu'elle appelle Vasha, est restée une semaine. Son Istran était parfait, sans accent, comme appris dans un livre, ce qui mettait Shoba mal à l'aise. Elle mangeait peu, dormait dehors et passait ses nuits au sanctuaire.",
-   "Pas un sourire normal. » Elle ne sait pas où Vasha est allée et s'en moque, contente qu'elle soit partie."
+   "Elle parle peu, observe tout, et reste un peu amusée.",
+   "Vieille, petite pour une Pachidan, elle porte les défenses taillées court en signe de deuil. Elle travaille depuis l'aube à sa fumerie, dans un renfoncement de la falaise.",
+   "Brakka est un village de pêcheurs reculé, sans route ni visiteurs depuis toujours : les steppes sont à la fois leur garde et leur prison.",
+   "Elle appelle Absalom « Vasha ». Vasha est restée une semaine, parlait un istran parfait, sans accent, comme appris dans un livre, ce qui mettait Shoba mal à l'aise.",
+   "Vasha mangeait peu, dormait dehors et passait ses nuits au sanctuaire. Elle ne souriait que lorsqu'elle croyait que personne ne regardait, et pas d'un sourire normal.",
+   "Shoba ne sait pas où Vasha est allée et s'en moque, contente qu'elle soit partie."
   ],
   "relations": [
    {
@@ -1621,7 +1619,6 @@
   "statut": "vivant",
   "resume": "En plein Ashkral, son rituel de passage à l'âge adulte.",
   "connu": [
-   "Elle porte de fausses cornes en os sculpté, avec une fleur jaune glissée entre les deux.",
    "Elle exige d'abord que les étrangers soient expulsés. Après le verdict du sage, elle admet qu'ils ne sont pas un mauvais présage.",
    "Humaine aux fausses cornes d'os sculpté attachées de cuir tressé, avec une fleur jaune entre les deux. Elle a grandi dans cette caravane parmi les Taurok.",
    "Elle est en plein Ashkral, son premier rituel de passage à l'âge adulte. L'intrusion d'étrangers est une offense à la fois personnelle et rituelle, et elle exige de son père qu'on les expulse.",
@@ -1652,7 +1649,7 @@
   "statut": "vivant",
   "resume": "Sa tente est la plus petite du camp. Il regardait déjà le groupe quand il est entré.",
   "connu": [
-   "Son verdict est double : les étrangers ne peuvent pas traverser pendant le rituel. Leur arrivée est un signe, ils sont les bienvenus dans le camp.",
+   "Leur arrivée est un signe, ils sont les bienvenus dans le camp.",
    "Dans les braises, il voit que le groupe porte quelque chose de lourd. « Une vieille route. Vous comprendrez. »",
    "Il parle peu et lentement, chaque phrase est une décision. Il consulte les braises après la fumée comme on regarde une carte.",
    "Son verdict est double : les étrangers ne peuvent pas traverser pendant le rituel, mais leur arrivée ce jour précis est un signe. Ils sont les bienvenus au camp et au rituel s'ils le souhaitent.",
@@ -2189,7 +2186,6 @@
   "statut": "vivant",
   "resume": "Prêtre diminué qui parle d'Absalom comme d'une personne extraordinaire.",
   "connu": [
-   "Il parle d'Absalom avec admiration. Il lui a prêté les catacombes pour se reposer et l'a orientée vers Chrysodoros.",
    "Il est physiquement diminué : « ma pauvre tête », « je n'ai presque plus de vie ». Il pense qu'Absalom est partie vers le nord, vers Roshen Buru.",
    "Parle d'Absalom avec un enthousiasme déplacé. Il lui a prêté les catacombes pour qu'elle se repose et l'a orientée vers Chrysodoros l'orfèvre.",
    "Il dit qu'elle cherchait des reliques anciennes, et que Keras Tauroc n'a pas de magie : ici, c'est l'or et le combat."
@@ -2255,7 +2251,6 @@
   "statut": "vivant",
   "resume": "Receleuse qui vend exclusivement des dagues, sans poser de questions.",
   "connu": [
-   "Elle n'a ni enseigne ni adresse fixe : un pan de mur différent chaque jour.",
    "Jane lui a volé une « Hache Étrange » à 2 000 pièces d'or : la garde d'une épée brisée aux glyphes non décoratifs.",
    "Vend exclusivement des dagues, sans enseigne ni adresse fixe : un pan de mur différent chaque matin, jusqu'à mi-après-midi. Elle ne pose aucune question sur l'usage et ne fait pas d'arnaque.",
    "Elle cède une Hache étrange aux glyphes non décoratifs pour 2000 po, puis propose 200 po."
@@ -2300,7 +2295,6 @@
   "statut": "vivant",
   "resume": "Il parle vite et beaucoup, et prétend fabriquer lui-même ses potions.",
   "connu": [
-   "C'est vrai pour environ la moitié.",
    "Vendeur de rue escroc. Il prétend fabriquer ses potions lui-même, ce qui est vrai pour environ la moitié, l'autre moitié étant de l'eau colorée. Il a échoué à vendre ses potions aux PJ, et Jane lui en a écrasé une sur la tête."
   ],
   "citation": {
@@ -2387,7 +2381,7 @@
   "connu": [
    "Premier PNJ coopératif de la ville, elle ne donne jamais plus que ce qu'on lui demande.",
    "Elle se souvient d'Absalom : étrangère tout en noir, restée une nuit, partie au petit matin sans sac, après avoir demandé où se trouvait la cathédrale.",
-   "Elle a prévenu le groupe : sans arène, pas de respect, et les étrangers finissent mal ici. Plus tard, c'est elle qui lui remet la missive de Vitiosa.",
+   "Plus tard, c'est elle qui lui remet la missive de Vitiosa.",
    "Le carnet d'Hématome la nomme comme commanditaire d'un contrat : elle emploie la pègre locale.",
    "Les gens de Brakka et la caravane recommandent de la voir à Keras Taurok, à l'Angues Dormientes : elle saura les accueillir.",
    "Lizardfolk aux écailles sombres, tenancière des Angues Dormantes. Elle confirme qu'Absalom a passé une nuit à l'auberge, s'est plainte du bruit et a demandé où se trouvait la cathédrale. Elle est repartie les mains vides, sans sac.",
@@ -2459,7 +2453,6 @@
   "statut": "vivant",
   "resume": "Chaleureux et bavard. Il offre un thé chaud à quiconque entre.",
   "connu": [
-   "Il garde toujours des potions de côté pour ceux qui n'ont pas les moyens.",
    "Plusieurs de ses clients se plaignent d'une sensation désagréable près de la cathédrale.",
    "Le groupe s'est lié d'amitié avec lui. Sa potion a servi à ressusciter Nolbrim.",
    "Tenancier chaleureux de Mandragora Viridis. Il offre du thé à tout visiteur, garde des potions pour ceux qui n'ont pas les moyens et prépare des commandes spéciales en deux jours.",
@@ -2515,7 +2508,7 @@
   "statut": "vivant",
   "resume": "Minotaure, frère d'Egnatius. Son nom vaut recommandation auprès de Thessala.",
   "connu": [
-   "Il confirme que Philippa chantait chaque soir depuis un mois. En la voyant, il s'est arrêté, soulagé, avec une question qu'il n'avait pas posée.",
+   "En la voyant, il s'est arrêté, soulagé, avec une question qu'il n'avait pas posée.",
    "Aubergiste du Cornua Fracta. Il confirme que Philippa y chantait tous les soirs depuis un mois, gîte et couvert contre prestation, et signale qu'une jeune fille venait chaque soir : la fille du meunier, des moulins à l'ouest."
   ],
   "relations": [
@@ -2693,7 +2686,7 @@
   "connu": [
    "Vieux minotaure en robe de fonction, tablette de cire sous le bras. Il regarde longtemps avant de parler.",
    "Il pense que le crime a été planifié. Il a fait lancer Greater Restoration sur le groupe dès l'arrestation parce qu'il avait le regard vide.",
-   "Son accord : un sceau de localisation sur chacune, liberté de mouvement en ville, interdiction de franchir les murailles. En échange, le groupe enquête sur lui-même et rapporte des preuves.",
+   "En échange, le groupe enquête sur lui-même et rapporte des preuves.",
    "Il a aussi enquêté sur l'homme contrôlé par une araignée : sa chambre était dévastée, avec des symboles de Balamor gravés dans le bois, à coups d'ongles.",
    "Minotaure âgé en robe de fonction, conseiller juridique de la Maison Tauroc auprès du Consul Draven Tauroc. Il a fait lancer Greater Restoration sur Philippa et Jane à leur arrestation.",
    "Il leur propose un accord : sceau de localisation et liberté de mouvement en ville, sans franchir les murailles, contre des preuves exploitables. Leurs affaires leur sont rendues à l'innocentation.",
@@ -3047,10 +3040,6 @@
    {
     "img": "img/paysages/cap-cornes/caserne.webp",
     "legende": "La caserne"
-   },
-   {
-    "img": "img/paysages/cap-cornes/caserne-2.webp",
-    "legende": "La caserne, une autre salle"
    }
   ]
  },
@@ -3276,11 +3265,15 @@
   "lieu": "tour-eamonn",
   "img": "img/pnj/ink.webp",
   "statut": "vivant",
-  "resume": "Jeune fille qui vagabonde à Cap Cornes.",
+  "resume": "Jeune créature marine d'Agran, recueillie par Thaloor. Le groupe l'a adoptée et Olyssane l'emmène partout.",
   "connu": [
-   "Retrouvée près d'une flaque, elle joue avec des amis. Elle a aidé le groupe à vaincre les ghoules des marées.",
-   "Elle surgit à côté d'un PJ, queue déjà agitée, et veut tout savoir sur la surface, les Léviathans et le soleil. Ses braies viennent d'une épave de la faille basse, de style altéran.",
-   "Thaloor lui a interdit de s'approcher de l'épave plus bas, celle qui a encore un pavillon accroché. Elle sait où elle est, et elle en est fière."
+   "Retrouvée près d'une flaque à Cap Cornes, elle joue avec Maeve, une jeune Ophidienne. Elle a aidé le groupe à vaincre les ghoules des marées.",
+   "Elle surgit à côté d'un PJ, queue déjà agitée, et veut tout savoir sur la surface, les Léviathans et le soleil. Elle appelle les humains « les Noyés » et remue la queue quand elle est contente, comme un chien.",
+   "Ses braies viennent d'une épave de la faille basse, de style altéran. Thaloor lui a interdit de s'approcher de l'épave plus bas, celle qui a encore un pavillon accroché. Elle sait où elle est, et elle en est fière.",
+   "Thaloor l'a recueillie à Agran. Ses parents ont disparu, elle ne sait pas pourquoi, et personne ne le lui a jamais demandé.",
+   "Elle a deux formes, une jeune fille du peuple marin à queue de poisson et une otarie mage, mais c'est la même Ink.",
+   "Le groupe l'a adoptée à Agran et a tenté de la confier à Urnak, sans succès. C'est Olyssane qui l'emmène partout avec elle, jusqu'à Cap Cornes.",
+   "Elle raconte qu'un homme les a embêtées, qu'un œil vert a brillé sur les toits et que l'homme a disparu dans un cri. Pour elle, les esprits des marées la protègent."
   ],
   "relations": [
    {
@@ -3300,6 +3293,10 @@
     "ton": "positif"
    }
   ],
+  "lieux": [
+   "auberge-d-agran"
+  ],
+  "ordre": 2,
   "citation": {
    "texte": "Vous venez de là-haut ? Du dessus des courants ? Vous avez vu les Léviathans ?",
    "qui": "Ink, à Agran"
@@ -5820,7 +5817,11 @@
   "resume": "Cœur logistique de la Veyra, sous la coupe de Havre-Noir. Toits de tuiles rouges, quais bondés, réfugiés devenus artisans et bateliers.",
   "connu": [
    "Un conseil de bateliers et d'armateurs la dirige."
-  ]
+  ],
+  "pos": {
+   "x": 0.399,
+   "y": 0.754
+  }
  },
  {
   "id": "port-daman",
@@ -5899,6 +5900,10 @@
   "titre": "Tour de surveillance au nord",
   "parent": "region-roshen-buru",
   "resume": "Tour de surveillance de Roshen Buru qui guette l'océan et les passages maritimes.",
+  "pos": {
+   "x": 0.689,
+   "y": 0.252
+  },
   "chapeau": "Une tour de surveillance de Roshen Buru tournée vers l'océan, qui guette les passages maritimes."
  },
  {
@@ -5910,7 +5915,11 @@
   "resume": "Point stratégique de pêche de la Maison Tauroc.",
   "alias": [
    "Port Goraik"
-  ]
+  ],
+  "pos": {
+   "x": 0.557,
+   "y": 0.6615
+  }
  },
  {
   "id": "ungar-keras",
@@ -5921,7 +5930,71 @@
   "resume": "Village orc fortifié de la zone la plus aride, au sud, allié de la Maison Tauroc.",
   "alias": [
    "Unear Keras"
-  ]
+  ],
+  "pos": {
+   "x": 0.4258,
+   "y": 0.8675
+  }
+ },
+ {
+  "id": "khardun",
+  "type": "ville",
+  "nom": "Khardun",
+  "titre": "Ville monastique du sud",
+  "parent": "maison-tauroc",
+  "resume": "Ville monastique de la Maison Tauroc, dans les steppes du sud.",
+  "pos": {
+   "x": 0.6025,
+   "y": 0.684
+  }
+ },
+ {
+  "id": "urnak",
+  "type": "ville",
+  "nom": "Urnak",
+  "titre": "Village orc allié des Tauroc",
+  "parent": "maison-tauroc",
+  "resume": "Village orc de la zone la plus aride, au sud, allié de la Maison Tauroc.",
+  "pos": {
+   "x": 0.485,
+   "y": 0.834
+  }
+ },
+ {
+  "id": "pont-taurin",
+  "type": "ville",
+  "nom": "Pont Taurin",
+  "titre": "Hameau au pied des Grandes Dents",
+  "parent": "maison-tauroc",
+  "resume": "Hameau porté sur la carte d'Istra, au bord de l'Abreuvoir et au pied des Grandes Dents. Le groupe n'y est pas allé.",
+  "pos": {
+   "x": 0.4515,
+   "y": 0.6858
+  }
+ },
+ {
+  "id": "port-suuren",
+  "type": "ville",
+  "nom": "Port Suuren",
+  "titre": "Port de la zone neutre",
+  "parent": "istra",
+  "resume": "Port de la zone neutre, sur la Mer du Milieu, qui n'appartient à aucune des quatre maisons.",
+  "pos": {
+   "x": 0.6228,
+   "y": 0.496
+  }
+ },
+ {
+  "id": "la-rencontre",
+  "type": "lieu",
+  "nom": "La Rencontre",
+  "titre": "Le lieu du rituel annuel",
+  "parent": "istra",
+  "resume": "Lieu neutre où les quatre maisons se retrouvent chaque année pour le rituel qui empêche l'une d'elles d'écraser les autres.",
+  "pos": {
+   "x": 0.616,
+   "y": 0.5346
+  }
  },
  {
   "id": "rangs-des-mirens",
@@ -5984,8 +6057,8 @@
   "cartes": [
    {
     "id": "carte",
-    "img": "img/placeholder/carte-noire.svg",
-    "legende": ""
+    "img": "img/cartes/pyrrah.webp",
+    "legende": "Plan de Pyrrah"
    }
   ],
   "blason": "img/blasons/pyrrah.webp",
@@ -5993,6 +6066,29 @@
   "resume": "Territoire d'une beauté violente, hostile à toute vie qui n'y est pas née. Pyrrah en est la cité connue.",
   "alias": [
    "Plan du feu"
+  ]
+ },
+ {
+  "id": "outreterre",
+  "type": "continent",
+  "nom": "L'Outreterre",
+  "titre": "Verrouillé",
+  "sousTitre": "Verrouillé",
+  "ordre": 2.5,
+  "cartes": [
+   {
+    "id": "carte",
+    "img": "img/placeholder/carte-noire.svg",
+    "legende": ""
+   }
+  ],
+  "blason": "img/blasons/vide.svg",
+  "locked": true,
+  "typeLabel": "Plan",
+  "resume": "",
+  "alias": [
+   "Outreterre",
+   "Underdark"
   ]
  },
  {
@@ -6850,7 +6946,7 @@
   "titre": "Capitaine pirate de la flotte de Spezza",
   "parent": "port-doelan",
   "lieu": "port-et-jetee-doelan",
-  "statut": "inconnu",
+  "statut": "mort",
   "resume": "Chevelure brune, redingote rouge brodée, ceinture de perles. Capitaine pirate sous les ordres de Spezza.",
   "img": "img/pnj/capitaine-salvera.webp",
   "relations": [
@@ -6874,7 +6970,7 @@
   "titre": "Capitaine pirate de la flotte de Spezza",
   "parent": "port-doelan",
   "lieu": "port-et-jetee-doelan",
-  "statut": "inconnu",
+  "statut": "mort",
   "resume": "Barbe de trois jours, cape sombre et écharpe bleue, sabre au côté. Capitaine pirate sous les ordres de Spezza.",
   "img": "img/pnj/capitaine-tiberio.webp",
   "relations": [
@@ -8515,7 +8611,13 @@
   "pos": {
    "x": 0.911,
    "y": 0.625
-  }
+  },
+  "galerie": [
+   {
+    "img": "img/paysages/agran/sous-marin-interieur.webp",
+    "legende": "L'intérieur du Vesper"
+   }
+  ]
  },
  {
   "id": "chez-capella",
@@ -8539,6 +8641,12 @@
   "pos": {
    "x": 0.342,
    "y": 0.874
-  }
+  },
+  "galerie": [
+   {
+    "img": "img/paysages/cap-cornes/caserne-2.webp",
+    "legende": "La caserne"
+   }
+  ]
  }
 ]
