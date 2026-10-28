@@ -474,8 +474,6 @@
   "statut": "vivant",
   "resume": "Demi-elfe, roublarde Arcane Trickster de niveau 11. Elle porte des cristaux de titan dans le dos.",
   "connu": [
-   "Demi-elfe, roublarde de niveau 11, Arcane Trickster.",
-   "Elle porte des cristaux de titan dans le dos.",
    "Elle a volé à Naevia, à Keras Tauroc, une « Hache Étrange » qui est la garde d'une épée brisée aux glyphes non décoratifs.",
    "Pendant le mois perdu, elle a travaillé pour Hématome sans qu'elle ou le groupe s'en souviennent.",
    "Déguisée en Olyssane, elle a attiré Kester Tauroc dans une ruelle de Cap Cornes."
@@ -545,8 +543,6 @@
   ],
   "resume": "Drow demi-elfe, occultiste de niveau 8 et barde de niveau 3. Gran Brijit déclare qu'elle est une championne.",
   "connu": [
-   "Drow demi-elfe, occultiste de niveau 8 et barde de niveau 3.",
-   "Gran Brijit déclare qu'elle est une championne.",
    "Gran Brijit lui a confié deux missions : ne pas ouvrir de portail entre Cap Cornes et Havre Noir, et trouver puis tuer Oren Sidaï à Roshen Buru pour préserver l'équilibre.",
    "Elle a marqué à la craie la porte d'Ursinus, celle de la tour d'Eamonn et d'autres lieux, qui servent de points de retour.",
    "Elle chantait chaque soir au Cornua Fracta pendant le mois perdu, sans en garder le moindre souvenir.",
@@ -1249,9 +1245,7 @@
    "le Dominion"
   ],
   "resume": "Faction de Thaldera qui semble mener une guerre.",
-  "connu": [
-   "Le Dominion Sol semble mener une guerre sur Thaldera."
-  ],
+  "connu": [],
   "poly": [
    [
     0.6528,
@@ -1785,7 +1779,6 @@
   ],
   "resume": "Ville rasée par le géant en armure, dirigée de fortune par une tieffeline rouge. Alliée du groupe.",
   "connu": [
-   "La ville a été rasée par la main du géant en armure.",
    "Une tieffeline rouge, à cornes et légèrement vêtue, dirige les ruines de fortune.",
    "Le temps y est doux et la reconstruction est en cours.",
    "Ce sont des alliés du groupe.",
@@ -1834,7 +1827,6 @@
   },
   "resume": "Ville des sables où Gran Brijit a affronté Ginko Noshi-Buru.",
   "connu": [
-   "Gran Brijit a affronté Ginko Noshi-Buru dans ses sables.",
    "Le groupe a traversé le désert avec Gran Brijit, que les gens du pays appellent Ereshkigal."
   ],
   "relations": [

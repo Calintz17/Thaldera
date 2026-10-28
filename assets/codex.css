@@ -329,7 +329,7 @@ a.wcrest:hover .wn { color: var(--gold-hi); }
 .sec.past h3::after { background: linear-gradient(to right, rgba(217,143,90,.5), transparent); }
 .sec ul { list-style: none; }
 .sec li { position: relative; padding: 0 0 9px 18px; color: var(--text-soft); line-height: 1.55; }
-.sec li::before { content: ''; position: absolute; left: 3px; top: .62em; width: 5px; height: 5px; background: var(--gold); transform: rotate(45deg); opacity: .6; }
+.sec li::before { content: ''; position: absolute; left: 3px; top: calc(.775em - 2.5px); width: 5px; height: 5px; background: var(--gold); transform: rotate(45deg); opacity: .6; }
 .sec.past li::before { background: #d98f5a; }
 .sec li.avis { color: #e8dfc8; background: rgba(201,168,76,.07); border-left: 2px solid var(--gold); padding: 7px 10px 7px 14px; margin: 4px 0 10px; border-radius: 0 4px 4px 0; }
 .sec li.avis::before { display: none; }
@@ -446,6 +446,7 @@ li.key { border-left: 2px solid var(--gold); padding-left: 10px; margin-left: -1
 .cutout .glow { bottom: -14%; }
 .sec ul li { text-align: left; }
 .sec li + li { border-top: 1px solid rgba(201,168,76,.08); padding-top: 8px; }
+.sec li + li::before { top: calc(.775em - 2.5px + 8px); }
 .scenar { margin: 22px 0 6px; padding: 14px 18px 8px; border: 1px solid rgba(201,168,76,.6); border-left: 4px solid var(--gold); border-radius: 4px; background: linear-gradient(135deg, rgba(201,168,76,.12), rgba(201,168,76,.03)); box-shadow: 0 6px 20px rgba(0,0,0,.35); }
 .scenar .sch { font-family: 'Cinzel', serif; font-weight: 700; font-size: 12px; letter-spacing: .16em; text-transform: uppercase; color: var(--gold-hi, #f0d78a); margin-bottom: 8px; }
 .scenar p { font-weight: 600; color: #efe7d4; line-height: 1.5; margin: 0 0 8px; }

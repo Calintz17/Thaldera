@@ -1976,7 +1976,7 @@
   "connu": [
    "« Moi je garde les pâtures, je pose pas trop de questions. »",
    "Homme d'une quarantaine avancée, grand, un peu voûté, sec plutôt que robuste, peau tannée et mains calleuses. Vêtements simples, réparés plus d'une fois.",
-   "Il parle peu, avec un accent rural et un phrasé lent, et répond aux questions qu'on lui pose, ni plus ni moins. Il garde les pâtures et ne pose pas de questions.",
+   "Il parle peu, avec un accent rural et un phrasé lent, et répond aux questions qu'on lui pose, ni plus ni moins.",
    "Port Blanc n'est pas un port : pas d'eau, pas de bateaux, des troupeaux à perte de vue. On dit que c'est le garde-manger du Consortium, et même d'Altéra.",
    "Quelques bêtes vont mal : elles tremblent, les yeux tout blancs. Pour en savoir plus, il faut aller en ville, mais personne n'en parle."
   ],
@@ -2342,9 +2342,7 @@
    "Triton renégat à la peau bleutée striée de cicatrices, cheveux raides et humides, yeux jaunes aux pupilles fendues, trident cabossé. Moqueur et sadique, il rit rauque comme le ressac dans une cale.",
    "Ancien soldat d'un royaume marin, il a déserté et trouvé chez Sycomore une famille qui ne le juge pas tant qu'il reste utile. Il affronte Philippa en duel sur le Pont de Parade."
   ],
-  "histoire": [
-   "Philippa l'affronte sur le pont de parade."
-  ],
+  "histoire": [],
   "citation": {
    "texte": "Regarde-moi bien, étrangère… je vais peindre ces planches avec ton sang.",
    "qui": "Thargan l'Écaillé"
@@ -3271,7 +3269,7 @@
   "connu": [
    "Il sent que le pacte de Spezza avec Vassago n'est pas soldé.",
    "Il perçoit une distorsion active sous le château, qui venait de Naberoth.",
-   "Il lit trois échos. Passé : le pacte de Spezza avec Vassago n'est pas soldé. Présent : une distorsion mécanique et artificielle agit sous le château. Futur : l'intérêt de Spezza pour Thaladrassyl, le Titan de l'Eau, projette une ombre longue sur l'équilibre cosmique.",
+   "Il lit trois échos. Présent : une distorsion mécanique et artificielle agit sous le château. Futur : l'intérêt de Spezza pour Thaladrassyl, le Titan de l'Eau, projette une ombre longue sur l'équilibre cosmique.",
    "Il prédit la mort des PJ face à une coalition plus puissante que toutes les précédentes, puis propose d'appeler quelqu'un pour ouvrir une autre voie."
   ],
   "histoire": [
@@ -3769,10 +3767,7 @@
   "titre": "Entrée de la baie",
   "parent": "havre-noir",
   "resume": "Immense mât fiché dans la roche, couvert de cordages et de nœuds marins.",
-  "connu": [
-   "Chaque marin qui entre au service de Sycomore y attache son nœud en signe de loyauté.",
-   "La légende dit que les cordes tombées à la mer étranglent les traîtres dans leur sommeil."
-  ],
+  "connu": [],
   "chapeau": "À l'entrée de la baie, un immense mât fiché dans la roche, couvert de centaines de cordages et de nœuds marins. Chaque marin qui entre au service de Sycomore y attache son nœud en signe de loyauté. La légende dit que les cordes tombées à la mer s'animent et viennent étrangler les traîtres dans leur sommeil.",
   "alias": [
    "Rocher aux Noeuds"
@@ -4539,8 +4534,7 @@
   "parent": "camont",
   "resume": "Avenues pavées, demeures claires, maisons de patriciens sur un pinacle. Emmurée dans son propre mirage.",
   "connu": [
-   "Les marchands extérieurs évitent Camont par peur des pillards de la basse-ville.",
-   "Sous la peinture fraîche, les pierres se fendent."
+   "Les marchands extérieurs évitent Camont par peur des pillards de la basse-ville."
   ],
   "alias": [
    "Ville Haute"
@@ -4626,9 +4620,7 @@
   "statut": "vivant",
   "resume": "Petit poulpe qui vit au bout des tentacules de Teka.",
   "attitude": "neutre",
-  "connu": [
-   "Petit poulpe qui vit au bout des bras de Teka."
-  ]
+  "connu": []
  },
  {
   "id": "leth",
@@ -4932,7 +4924,7 @@
   "resume": "Travaille le cuir près du marché, sans boutique fixe. Il sait quand il vaut mieux se taire.",
   "connu": [
    "Il est témoin des transactions sous le manteau entre Familles.",
-   "Il travaille le cuir près du marché aux bestiaux. Sans boutique fixe, il loue de l'espace et travaille sur place ou à la demande, au rythme des bêtes et des marchands.",
+   "Sans boutique fixe, il loue de l'espace et travaille sur place ou à la demande, au rythme des bêtes et des marchands.",
    "Il connaît bien le fonctionnement du marché sans en être un acteur central. Il est témoin régulier des affaires sous le manteau et sait quand il vaut mieux se taire.",
    "Il vend cuir souple et épais, courroies, lacets, gants et tabliers de tanneur, manteaux de voyage en peau, armures de cuir et brassards de force."
   ],
@@ -5082,7 +5074,7 @@
    "La terre est abîmée, l'eau aussi, alors ce qu'on invoque l'est forcément.",
    "Gardien de la chapelle des Bêtes Silencieuses, bâtiment de bois brut aux crânes de bovins suspendus, ex-voto, poupées de paille et talismans.",
    "Au centre trône une statue difforme d'un homme mi-cerf, bois brisés, figé dans la douleur. Certains y voient Sylvanus, mais nul n'ose le nommer ici.",
-   "Il dit que le culte est né après la guerre, quand le bétail tombait sans raison claire. On a gardé ce qui fonctionnait un peu, même mal. La terre est abîmée, l'eau aussi, donc ce qu'on invoque l'est forcément."
+   "Il dit que le culte est né après la guerre, quand le bétail tombait sans raison claire. On a gardé ce qui fonctionnait un peu, même mal."
   ],
   "alias": [
    "Edrin Boeuf-Cendre"
@@ -5573,7 +5565,7 @@
   ],
   "attitude": "neutre",
   "connu": [
-   "Il y a six mois, un homme s'est présenté à la cour de Spezza. Depuis, il serait enfermé au château et personne ne l'a vu ressortir.",
+   "Depuis, il serait enfermé au château et personne ne l'a vu ressortir.",
    "L'Arsenal a été modifié récemment : ancienne caserne devenue une forge particulière, avec une activité nocturne accrue.",
    "Persuasion DD 14 : le château est lourdement gardé, on parle de deux folles traquées par Spezza, et Spezza ne quitte plus ses murs."
   ],
@@ -5970,7 +5962,7 @@
   "attitude": "neutre",
   "connu": [
    "Droite, maîtrisée, le regard tranchant. Elle n'est pas surprise de voir les PJ, les jauge, puis annonce que Spezza a coupé la Griffe des flux d'or.",
-   "Elle propose une alliance temporaire et stratégique. Elle veut entrer dans le château avec les PJ et réclame sa part d'or, qu'elle estime lui revenir.",
+   "Elle veut entrer dans le château avec les PJ et réclame sa part d'or, qu'elle estime lui revenir.",
    "Elle met en garde contre le combat final : Spezza, le Berger et le Pêcheur seront dans la même pièce.",
    "Elle peut prendre en charge certaines opérations : le fortin, le chantier naval, la chute d'un noble influent, le sabotage de Titan Inc."
   ],
@@ -6095,7 +6087,6 @@
   "statut": "mort",
   "resume": "Orc massif. Il cherche à se rapprocher de Spezza pour l'argent et l'expansion vers l'Ouest.",
   "connu": [
-   "Il voulait se rapprocher de Spezza pour l'argent et l'expansion vers l'Ouest.",
    "Après la chute de Spezza, il a été retrouvé mort.",
    "Orc massif, dos voûté, regard fixe, assis près du feu de la maison du Voile. Il pèse chaque décision en argent et en sang.",
    "Allié pragmatique des PJ jusque-là, il cherche désormais à se rapprocher de Spezza pour l'argent et l'expansion vers l'Ouest. Il demande aux PJ de faciliter une audience.",
@@ -6972,7 +6963,7 @@
   "resume": "Genasi d'eau à la peau bleu-vert, bâton de corail doré. Elle laisse entrer les voyageurs mais marque une frontière.",
   "connu": [
    "« Vous êtes vivants. C'est déjà inhabituel. »",
-   "Genasi d'eau à la peau bleu-vert, bâton de corail doré. Elle regarde à l'intérieur du sous-marin puis s'écarte. La ville n'est pas fermée, dit-elle, elle n'a pas besoin de l'être.",
+   "Elle regarde à l'intérieur du sous-marin puis s'écarte. La ville n'est pas fermée, dit-elle, elle n'a pas besoin de l'être.",
    "Insight DC 13 : elle les observe encore après les avoir laissés passer. « Noyés » n'est pas une insulte : c'est le nom d'Agran pour ceux qui vivent là où l'eau finit par tout prendre."
   ],
   "citation": {
@@ -7167,7 +7158,7 @@
   "connu": [
    "Il est posé sur une caisse, un couteau à la main, à examiner une trouvaille récente. Sa forge est creusée autour d'une colonne d'eau bouillante canalisée par des conduits de pierre noire.",
    "Trois techniques : compression du corail (armures, aussi dense que la pierre mais plus léger), taille de coquilles (lames légères, silencieuses, résistantes à la corrosion, plus fragiles que le métal), forge thermique du métal abyssal (armes lourdes).",
-   "Il paie au poids tout ce que l'on rapporte des épaves de la faille basse. Le métal de surface tient peu longtemps ici, la pression et le sel finissent par tout avoir."
+   "Le métal de surface tient peu longtemps ici, la pression et le sel finissent par tout avoir."
   ],
   "teinte": "#753c19"
  },
@@ -7202,7 +7193,7 @@
   "connu": [
    "Les courants qui mènent à Thaladrassyl sont des invitations.",
    "Immobile devant une ouverture directe sur la faille, les yeux fermés, il articule quelque chose de très grave et de très lent. Il parle avec la précision d'un cartographe et la conviction d'un prêtre.",
-   "Il lit les courants comme des intentions de Kataron. Ceux qui mènent à Thaladrassyl sont des invitations qui ne se forcent pas. Personne ne sait où se trouve Thaladrassyl, pas même lui : le point de convergence change de place.",
+   "Ceux qui mènent à Thaladrassyl sont des invitations qui ne se forcent pas. Personne ne sait où se trouve Thaladrassyl, pas même lui : le point de convergence change de place.",
    "Il bénit les départs d'un chant grave modulé selon les flux du moment, et attend avec les voyageurs si le moment n'est pas favorable. Partir sans bénédiction est une mauvaise idée, pas un interdit."
   ],
   "citation": {
@@ -7748,7 +7739,7 @@
   "attitude": "neutre",
   "connu": [
    "Marchand du Bric-à-brac Le Brasero aux Merveilles, dans une ruelle secondaire de Pyrrah. Il rachète ce que les habitants trouvent dans les dunes de magma et sait reconnaître l'origine titanique, féerique ou élémentaire d'un objet.",
-   "Il connaît bien les zones dangereuses autour de Pyrrah et adore les gadgets mécaniques. Il ne fait commerce qu'avec une personne à la fois."
+   "Il connaît bien les zones dangereuses autour de Pyrrah et adore les gadgets mécaniques."
   ]
  },
  {
@@ -8273,9 +8264,7 @@
    }
   ],
   "attitude": "positif",
-  "connu": [
-   "Enfant de l'orphelinat choisi par Jane avec Freya pour la mission contre Von Kornwald."
-  ]
+  "connu": []
  },
  {
   "id": "freya",
@@ -8294,9 +8283,7 @@
    }
   ],
   "attitude": "positif",
-  "connu": [
-   "Enfant de l'orphelinat choisie par Jane avec Klaus pour la mission contre Von Kornwald."
-  ]
+  "connu": []
  },
  {
   "id": "village-de-leyenmil",
@@ -8327,7 +8314,7 @@
   ],
   "attitude": "positif",
   "connu": [
-   "Vendeur de poisson du village. Il tend un morceau de poisson salé aux enfants sans poser de question."
+   "Vendeur de poisson du village."
   ]
  },
  {

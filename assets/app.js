@@ -4,7 +4,7 @@
 (() => {
 'use strict';
 
-const VER = '46';
+const VER = '47';
 const EDIT = new URLSearchParams(location.search).has('edit');
 const $ = (s, r = document) => r.querySelector(s);
 const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
@@ -207,14 +207,14 @@ function sceneOf(e, q, depth = 0) {
       const om = ownerMap(e);
       if (!om) {
         const ps = sceneOf(BY[e.parent], null, depth + 1);
-        if (ps && depth === 0 && ps.kind === 'map') return { ...ps, gallery: (e.galerie && e.galerie.length) ? e.galerie : (ps.gallery || [PH_LAND]) };
+        if (ps && depth === 0 && ps.kind === 'map') return withCast({ ...ps, gallery: (e.galerie && e.galerie.length) ? e.galerie : (ps.gallery || [PH_LAND]) }, e);
         return ps;
       }
       const host = om.host, cs = host.cartes;
       if (cs.length > 1) {
         const st = stackScene(host, e);
         if (e.galerie && e.galerie.length) st.gallery = e.galerie;
-        return st;
+        return depth === 0 ? withCast(st, e) : st;
       }
       const base = {
         kind: 'map', src: om.carte.img, cam: e.pos ? around(e.pos, Math.max(e.zoom || 0.2, 0.18)) : FULL, owner: host, tabs: cs, tab: cs.indexOf(om.carte),
@@ -222,7 +222,7 @@ function sceneOf(e, q, depth = 0) {
         pins: collectLieux(host).filter(l => (l.carte || cs[0].id) === om.carte.id && l.pos).map(l => ({ id: l.id, ...l.pos, label: l.nom, kind: 'lieu', dim: l.id !== e.id, here: l.id === e.id }))
       };
       if (e.galerie && e.galerie.length) base.gallery = e.galerie;
-      return base;
+      return depth === 0 ? withCast(base, e) : base;
     }
     default: {
       const lieu = e.lieu ? BY[e.lieu] : null;
@@ -241,6 +241,22 @@ function sceneOf(e, q, depth = 0) {
       return s;
     }
   }
+}
+function castOf(e) {
+  const ps = kids(e.id, 'pnj').concat(DB.filter(x => x.lieu === e.id && x.parent !== e.id && x.type === 'pnj'));
+  const seen = new Set();
+  return ps.filter(p => !seen.has(p.id) && seen.add(p.id) && ((p.formes && p.formes[0] && p.formes[0].img) || p.img));
+}
+function withCast(sc, e) {
+  if (!sc || !sc.gallery || sc.kind === 'stack') return sc;
+  const cast = castOf(e);
+  if (!cast.length) return sc;
+  const bg = sc.gallery[0];
+  const extra = cast.map(p => {
+    const f = formeFor(p, e.id);
+    return { img: bg.img, legende: p.nom, who: p, cut: f && f.img ? f : { img: p.img, teinte: p.teinte, label: '' } };
+  });
+  return { ...sc, gallery: sc.gallery.concat(extra) };
 }
 function stackScene(host, focus) {
   const cs = host.cartes, lieux = collectLieux(host);
@@ -477,12 +493,13 @@ function showGallery(imgs, title, ent) {
     cur = (n + imgs.length) % imgs.length;
     g.querySelectorAll('.sl').forEach((s, i) => { s.classList.toggle('act', i === cur); });
     g.querySelectorAll('.gdots i').forEach((d, i) => d.classList.toggle('on', i === cur));
-    const c = imgs[cur].cut;
+    const c = imgs[cur].cut, who = imgs[cur].who || ent;
     if (ent && ent.etapes && c) {
       $('.gt', g).textContent = `Étape ${cur + 1} sur ${imgs.length} : ${c.label}`;
       panelEl.querySelectorAll('.etape').forEach((x, i) => x.classList.toggle('on', i === cur));
-    } else $('.gt', g).textContent = [imgs[cur].legende, c && ent && ent.formes && ent.formes.length > 1 && c !== ent.formes[0] ? c.label : ''].filter(Boolean).join(', ');
-    if (ent && c) { S.curForm = c; S.curFormOf = ent.id; setCutout(ent, c); }
+    } else $('.gt', g).textContent = [imgs[cur].legende, c && who && who.formes && who.formes.length > 1 && c !== who.formes[0] ? c.label : ''].filter(Boolean).join(', ');
+    if (who && c) { S.curForm = c; S.curFormOf = who.id; setCutout(who, c); }
+    else if (imgs.some(i => i.who)) { S.curForm = null; S.curFormOf = null; setCutout(null); }
   };
   go(0);
   g.addEventListener('click', ev => {
@@ -532,7 +549,7 @@ function setCutout(e, form) {
   c.innerHTML = `<i class="glow"></i><img src="${src}" alt="${esc(e.nom)}">`;
   stageEl.insertBefore(c, $('.fog', stageEl));
   const ci = $('img', c);
-  const cfit = () => { if (ci.naturalHeight && src) ci.style.maxHeight = Math.min(stageEl.clientHeight * (innerWidth <= 760 ? 0.78 : 0.86), ci.naturalHeight * 1.7) + 'px'; };
+  const cfit = () => { if (ci.naturalHeight && src) { const mh = stageEl.clientHeight * (innerWidth <= 760 ? 0.78 : 0.86); ci.style.height = mh + 'px'; ci.style.maxHeight = mh + 'px'; ci.style.width = 'auto'; ci.style.maxWidth = (stageEl.clientWidth * 0.6) + 'px'; } };
   if (ci.complete) cfit(); else ci.addEventListener('load', cfit);
   const anchor = () => {
     const bg = S.gal && $('.sl.act img', S.gal); if (!bg || !bg.naturalWidth) return;
@@ -570,7 +587,8 @@ async function applyScene(e, q, token) {
   if (!sc) { stageEl.classList.add('empty'); return; }
   const key = sceneKey(sc);
   renderCap(sc, e);
-  if (key === S.key) { setCutout(sc.cutout); return; }
+  const castG = !!(sc.gallery && sc.gallery.some(g => g.who));
+  if (key === S.key) { if (!castG) setCutout(sc.cutout); return; }
   // sens du zoom
   let dir = null, focus = null;
   if (prevEntry && S.map && S.map.src !== sc.src) {
@@ -584,7 +602,7 @@ async function applyScene(e, q, token) {
     const sameGal = S.gal && S.galKey === JSON.stringify(sc.gallery.map(g => g.img + (g.cut ? g.cut.img : '')));
     if (!sameGal) { showGallery(sc.gallery, e.nom, sc.cutout); S.galKey = JSON.stringify(sc.gallery.map(g => g.img + (g.cut ? g.cut.img : ''))); }
   } else { clearGal(); S.galKey = null; }
-  setCutout(sc.cutout);
+  if (!castG) setCutout(sc.cutout);
 }
 function focusIn(e, mapSrc) {
   for (const c of chain(e).reverse()) {
@@ -731,7 +749,6 @@ function savoirItems(e) {
   const isP = e.type === 'pnj' || e.type === 'pj';
   const pl = e.lieu && BY[e.lieu] ? BY[e.lieu] : (e.parent && BY[e.parent] && ['lieu', 'ville'].includes(BY[e.parent].type) ? BY[e.parent] : null);
   const vil = pl && pl.type === 'lieu' ? chain(pl).find(c => c.type === 'ville') : null;
-  if (isP && e.type === 'pnj' && pl) out.push(`Vu : ${pl.nom}${vil ? ' (' + vil.nom + ')' : ''}`);
   (e.connu || []).forEach(t => out.push(L(t, e.id)));
   if (e.type !== 'pj' && e.type !== 'evenement') (e.histoire || []).forEach(t => out.push(L(t, e.id)));
   return out;
@@ -764,7 +781,7 @@ function renderPanel(e, q) {
   const mp = mergedPlace(e);
   if (mp && mp.chapeau) h += `<p class="chapeau">${L(mp.chapeau, e.id)}</p>`;
   else if (e.chapeau) h += `<p class="chapeau">${L(e.chapeau, e.id)}</p>`;
-  if (e.resume) h += `<p class="resume">${L(e.resume, e.id)}</p>`;
+  if (e.resume && !(mp && mp.chapeau) && !e.chapeau) h += `<p class="resume">${L(e.resume, e.id)}</p>`;
   if (mp) {
     const pit = [...(mp.connu || []), ...(mp.histoire || [])].map(t => L(t, e.id));
     if (pit.length) h += sec(mp.nom, '<ul>' + pit.map(t => `<li>${t}</li>`).join('') + '</ul>', 'past');
@@ -814,24 +831,13 @@ function renderPanel(e, q) {
     if (d) d.click();
   }));
 
-  // bulles : accordeon + silhouette sur la scene
-  const box = $('#npcbox');
-  if (box) {
-    let sel = null;
-    const open = id => {
-      const p = BY[id];
-      if (sel === id) { sel = null; box.innerHTML = ''; setCutout(null); S.cut = null; panelEl.querySelectorAll('.bub.sel').forEach(b => b.classList.remove('sel')); return; }
-      sel = id;
-      box.innerHTML = `<div class="npcbox">${detailBlock(p)}</div>`;
-      panelEl.querySelectorAll('.bub').forEach(b => b.classList.toggle('sel', b.dataset.id === id));
-      S.curForm = null; S.curFormOf = null; setCutout(p, formeFor(p, S.entry && S.entry.id));
-    };
-    $('#npcs').addEventListener('click', ev => {
-      const b = ev.target.closest('[data-npc]');
-      if (!b) return;
-      ev.preventDefault(); open(b.dataset.id);
-    });
-  }
+  // bulles : ouvre directement la fiche complete
+  const npcs = $('#npcs');
+  if (npcs) npcs.addEventListener('click', ev => {
+    const b = ev.target.closest('[data-npc]');
+    if (!b) return;
+    ev.preventDefault(); location.hash = '#/' + b.dataset.id;
+  });
 }
 
 /* ---------- routage ---------- */

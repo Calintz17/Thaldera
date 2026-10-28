@@ -1513,10 +1513,10 @@
    "Elle parle peu, observe tout, et un peu amusée.",
    "Elle appelle Absalom « Vasha ». Celle-ci est restée une semaine à Brakka, parlait un istran parfait comme appris dans un livre, dormait dehors et passait ses nuits au sanctuaire.",
    "Elle souriait quand elle pensait que personne ne regardait. Shoba se réjouit qu'elle soit partie.",
-   "Vieille, petite pour une Pachidan, défenses taillées court en signe de deuil. Elle parle peu, observe tout, direct et un peu amusée. Elle travaille depuis l'aube à sa fumerie, dans un renfoncement de la falaise.",
+   "Vieille, petite pour une Pachidan, défenses taillées court en signe de deuil. Elle travaille depuis l'aube à sa fumerie, dans un renfoncement de la falaise.",
    "Brakka est un village de pêcheurs reculé, sans route ni visiteurs depuis toujours : les steppes sont à la fois leur garde et leur prison, et ils ne voyagent pas.",
    "Absalom, qu'elle appelle Vasha, est restée une semaine. Son Istran était parfait, sans accent, comme appris dans un livre, ce qui mettait Shoba mal à l'aise. Elle mangeait peu, dormait dehors et passait ses nuits au sanctuaire.",
-   "Si on insiste : « Elle souriait quand elle pensait que personne ne regardait. Pas un sourire normal. » Elle ne sait pas où Vasha est allée et s'en moque, contente qu'elle soit partie."
+   "Pas un sourire normal. » Elle ne sait pas où Vasha est allée et s'en moque, contente qu'elle soit partie."
   ],
   "relations": [
    {
@@ -1544,7 +1544,7 @@
   "type": "lieu",
   "nom": "La gorge du Mesa",
   "titre": "Caravane des Taurok dans les steppes",
-  "parent": "maison-tauroc",
+  "parent": "rituel-du-tier-voyage",
   "pos": {
    "x": 0.76,
    "y": 0.7
@@ -1843,7 +1843,6 @@
   "parent": "keras-tauroc",
   "resume": "Lieu de culte ouvert sans Cornes d'Or. L'encens y est trop épais.",
   "connu": [
-   "Pierre ancienne, colonnes à bas-reliefs de guerriers. L'encens est trop épais, et on ressent une pression froide derrière les yeux.",
    "Les catacombes abritent les grands combattants de la lignée Tauroc."
   ],
   "histoire": [
@@ -2101,12 +2100,11 @@
   "statut": "vivant",
   "resume": "Démone de Maladomini qui organise le tournoi. Relativement alliée du groupe.",
   "connu": [
-   "Elle remet les 5 600 pièces d'or aux vainqueurs depuis la loge d'honneur, un cocktail à la main, calme.",
+   "Elle remet les Cornes d'Or (couronne de corne de minotaure dorée) et les 5 600 po de récompense aux vainqueurs depuis la loge d'honneur, un cocktail à la main, calme.",
    "Voyant que le groupe restait indifférent à la somme, elle l'a interrogé sur son origine et ses intentions, avec politesse et patience.",
    "Le groupe a découvert qu'elle est une démone de Maladomini. Elle est relativement alliée avec lui.",
    "Elle a fait remettre une missive au groupe par Vibia.",
    "Organisatrice du Colisée, onctueuse et souriante, avec une bienveillance trop lisse. Elle présente les risques de blessures graves et de mort avec le même ton enjoué que pour un menu.",
-   "Elle remet aux vainqueurs les Cornes d'Or, une couronne de corne de minotaure dorée, et 5 600 po de récompense.",
    "Elle révèle être un démon du septième cercle, la Ruine de Maladomini, et sent chez les PJ une odeur d'Hécate. Elle parle d'Absalom comme d'une infernale de Dis qui ne s'annonce jamais."
   ],
   "relations": [
@@ -2331,7 +2329,7 @@
   "connu": [
    "Son entrepôt ressemble à l'intérieur d'une tête qui n'a jamais rien jeté.",
    "Il vend une tablette de pierre gravée de glyphes anciens, déchiffrable en partie : un fragment sur les Architectes.",
-   "Vendeur de bric-à-brac qui achète tout sans question et vend tout avec une histoire inventée. Il aime marchander. Il a une Tablette de pierre gravée de glyphes anciens, déchiffrable en partie."
+   "Vendeur de bric-à-brac qui achète tout sans question et vend tout avec une histoire inventée. Il aime marchander."
   ],
   "citation": {
    "texte": "Cette corde ? Aaah. Elle a appartenu à un grimpeur légendaire.",
@@ -2419,7 +2417,7 @@
   "statut": "vivant",
   "resume": "Forgeron de guerre sourd, qui parle en langue des signes.",
   "connu": [
-   "Il est sourd et parle en langue des signes. Sa plaque de prix gravée à l'entrée sert de réponse à toute négociation.",
+   "Sa plaque de prix gravée à l'entrée sert de réponse à toute négociation.",
    "Il est le frère de Volusius. Mentionner son frère le fait regarder autrement.",
    "Quand le groupe quitte Keras Tauroc, il lui doit encore 6 000 po.",
    "Il avait retiré les colliers anti-magie posés par Tarcus, contre 2 000 po chacun. Le gouvernement les lui a repris.",
@@ -2552,7 +2550,7 @@
   "connu": [
    "Elle reconnaît Philippa de loin et se montre bien trop familière : un mois de souvenirs que Philippa n'a pas.",
    "La veille du meurtre, un vieil homme aux cheveux blancs et au maintien militaire a remis un pli à Philippa. Sera l'a gardé : « À la deuxième cloche après le coucher du soleil. Viens seule. Ne parle à personne. Via Castrum, Quartier de la Caserne, porte de fer. »",
-   "Fille du meunier des moulins à l'ouest, très familière avec Philippa après un mois de promenades. Elle a gardé le pli remis à Philippa par un vieil homme aux cheveux blancs, au maintien militaire, la veille du meurtre.",
+   "Fille du meunier des moulins à l'ouest, très familière avec Philippa après un mois de promenades.",
    "Le pli donnait une adresse dans le quartier de la caserne et une heure, sous sceau administratif militaire, sans nom."
   ],
   "citation": {
@@ -3004,7 +3002,7 @@
   ],
   "resume": "Quartier général d'Olyssane. Porte marquée de la craie de Philippa.",
   "connu": [
-   "Massive, rongée de lierre, à l'est de la ville. Odeur de tabac froid et de parchemin moisi. Olyssane y passe ses journées.",
+   "Massive, rongée de lierre, à l'est de la ville. Olyssane y passe ses journées.",
    "Le cercle de téléportation vers Port Doëlan y est installé."
   ],
   "rune": {
@@ -6094,7 +6092,7 @@
   "connu": [
    "La route de Roshen Buru passe par cette forêt, cernée d'un océan de sakura.",
    "Le groupe l'a traversée depuis Azuren Kai pour être plus discret.",
-   "Forêt dense qui entoure Roshen Buru. Le groupe l'a traversée pour éviter Seiran Vale."
+   "Le groupe l'a traversée pour éviter Seiran Vale."
   ],
   "histoire": [],
   "chapeau": "Une forêt dense qui entoure Roshen Buru, cernée d'un océan de sakura. La route passe par là, loin des postes de garde et des regards."
@@ -6634,8 +6632,7 @@
   "parent": "port-doelan",
   "resume": "Façade de pierre sombre percée de hautes verrières bleutées, motifs de vagues et d'éclairs. Isuun des Profondeurs y prêche Valkur.",
   "connu": [
-   "Isuun remet aux joueuses des orbes de respiration sous-marine.",
-   "Des coquillages et des coraux sont déposés en offrande."
+   "Isuun remet aux joueuses des orbes de respiration sous-marine."
   ],
   "chapeau": "Le temple se dresse face à la mer. Une façade de pierre sombre, percée de hautes verrières bleutées. Des motifs de vagues et d'éclairs courent le long des arcs. L'air y est frais, chargé d'embruns. On entend l'eau couler dans un bassin central. Des coquillages et des coraux sont déposés en offrande. Des bougies tremblent sous les courants d'air marins. L'endroit inspire le respect, et une forme d'étrangeté.",
   "galerie": [
@@ -6796,9 +6793,7 @@
   "parent": "agran",
   "resume": "La faille s'élargit en une tranchée sans bord visible. Le varech y forme des forêts entières, le courant guide le groupe.",
   "connu": [
-   "Le courant prend les voyageurs à la sortie d'Agran, puis accélère.",
-   "Trois obstacles jalonnent la route : pression, instruments brouillés et gouffre pour le sous-marin, formations rocheuses, contre-courant et froid pour la nage.",
-   "Les créatures s'écartent sur leur passage, parce que le courant le leur dit."
+   "Trois obstacles jalonnent la route : pression, instruments brouillés et gouffre pour le sous-marin, formations rocheuses, contre-courant et froid pour la nage."
   ],
   "chapeau": "Le courant prend le groupe doucement à la sortie d'Agran, puis accélère. La faille s'élargit, les parois s'écartent jusqu'à disparaître dans le noir, et le canyon devient une tranchée sans bord visible, dont le fond est une obscurité absolue et le plafond une obscurité différente. Le varech commence ici, quelques tiges isolées d'abord, puis des forêts entières qui montent de nulle part et ondulent comme une fumée lente. La route n'est pas tracée, elle se devine à travers des rideaux d'algues, des grottes qui s'ouvrent sur d'autres grottes. Les créatures s'écartent, non par peur, mais parce que le courant le leur dit.",
   "galerie": [
@@ -6845,7 +6840,7 @@
   ],
   "attitude": "ennemi",
   "connu": [
-   "Capitaine pirate de la flotte de Spezza. Chevelure brune, redingote rouge brodée, ceinture de perles."
+   "Capitaine pirate de la flotte de Spezza."
   ],
   "teinte": "#752519"
  },
@@ -6874,7 +6869,7 @@
   ],
   "attitude": "ennemi",
   "connu": [
-   "Capitaine pirate de la flotte de Spezza. Barbe de trois jours, cape sombre, écharpe bleue, sabre au côté."
+   "Capitaine pirate de la flotte de Spezza."
   ],
   "teinte": "#753c19"
  },

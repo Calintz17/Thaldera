@@ -1300,7 +1300,6 @@
   ],
   "resume": "Auberge de port bien remplie, brouhaha permanent, nattes de bambou au sol.",
   "connu": [
-   "Va-et-vient de marins et de marchands de passage.",
    "Noshka, un homme-sanglier, tient l'établissement.",
    "Une noble mirenaï, Kirin Anadori, y dînait seule."
   ],
@@ -1587,7 +1586,7 @@
   "nom": "La Magistrature",
   "titre": "Administration de Roshen Buru",
   "parent": "roshen-buru",
-  "carte": "palais",
+  "carte": "ville",
   "zoom": 0.22,
   "alias": [
    "Magistrat",
@@ -1613,7 +1612,11 @@
     "img": "img/paysages/roshen-buru/magistrature-2.webp",
     "legende": "La Magistrature, une autre salle"
    }
-  ]
+  ],
+  "pos": {
+   "x": 0.564,
+   "y": 0.264
+  }
  },
  {
   "id": "roven-moto",
@@ -1662,16 +1665,13 @@
   "titre": "Monolithe au cœur de la ville",
   "parent": "roshen-buru",
   "pos": {
-   "x": 0.583,
-   "y": 0.567
+   "x": 0.58,
+   "y": 0.575
   },
   "carte": "ville",
   "zoom": 0.2,
   "resume": "Un monolithe rocheux moussu, habité de haut en bas, couvert de planches et de passerelles jusqu'à sa cime.",
-  "connu": [
-   "Le Temple du Tenraku couronne son sommet.",
-   "Des ponts vermillon le relient aux falaises. Trois ascenseurs géants desservent la ville haute et le palais."
-  ],
+  "connu": [],
   "chapeau": "Un monolithe rocheux moussu au centre de la cuvette, habité de haut en bas, couvert de planches et de passerelles jusqu'à sa cime. Des ponts vermillon le relient aux falaises, trois ascenseurs géants desservent la ville haute, et le Temple du Tenraku couronne son sommet."
  },
  {
@@ -1692,7 +1692,6 @@
   ],
   "resume": "Salle immense et presque vide, taillée dans le sommet du Pillier, où la Jarre Miren était scellée.",
   "connu": [
-   "On y monte par la porte haute, celle qui ne s'ouvre pas. La lumière tombe d'une ouverture au plafond en colonne blanche sur le centre exact de la salle.",
    "Au fond, sur un socle bas, la Jarre Miren scellée, et derrière elle, le parchemin sacré.",
    "Le temple ne se prête jamais : l'ouvrir pour un mariage était un honneur inédit."
   ],
@@ -1736,8 +1735,8 @@
   "titre": "Atelier de Sumeren Daïko",
   "parent": "roshen-buru",
   "pos": {
-   "x": 0.6,
-   "y": 0.463
+   "x": 0.606,
+   "y": 0.475
   },
   "carte": "ville",
   "zoom": 0.2,
@@ -1763,8 +1762,8 @@
   "titre": "Forge de Tessei Kanaë",
   "parent": "roshen-buru",
   "pos": {
-   "x": 0.38,
-   "y": 0.67
+   "x": 0.386,
+   "y": 0.669
   },
   "carte": "ville",
   "zoom": 0.2,
@@ -1791,8 +1790,8 @@
   "titre": "Boutique de Saori Velmaka",
   "parent": "roshen-buru",
   "pos": {
-   "x": 0.14,
-   "y": 0.582
+   "x": 0.139,
+   "y": 0.58
   },
   "carte": "ville",
   "zoom": 0.2,
@@ -1815,8 +1814,8 @@
   "titre": "Boutique de curiosités",
   "parent": "roshen-buru",
   "pos": {
-   "x": 0.43,
-   "y": 0.16
+   "x": 0.558,
+   "y": 0.107
   },
   "carte": "ville",
   "zoom": 0.2,
@@ -1835,7 +1834,7 @@
  {
   "id": "planque-darrek",
   "type": "lieu",
-  "nom": "La planque de Darrek",
+  "nom": "La garçonnière de Darrek",
   "titre": "Fond de la ville basse",
   "parent": "roshen-buru",
   "alias": [
@@ -1858,8 +1857,8 @@
    }
   ],
   "pos": {
-   "x": 0.78,
-   "y": 0.54
+   "x": 0.756,
+   "y": 0.575
   },
   "chapeau": "L'adresse mène tout au fond de la ville basse, dans une rue si étroite que deux hommes ne s'y croisent pas de front. La porte donne directement sur une pièce haute de plafond, avec une mezzanine de bois. Ça sent le renfermé, la cire froide et quelque chose de sucré, écœurant, qui vient d'un brûle-parfum. Sur les murs, des trous ronds de la taille d'un poing, comme si le bois avait été mangé de l'intérieur.",
   "galerie": [
@@ -1880,8 +1879,8 @@
    "Ankou Urameï en donne l'adresse au groupe."
   ],
   "pos": {
-   "x": 0.1,
-   "y": 0.7
+   "x": 0.68,
+   "y": 0.514
   },
   "chapeau": "La planque sent l'encens froid et la contrebande. La pièce est petite, encombrée, et il y fait plus chaud qu'il ne faudrait : des caisses empilées jusqu'au plafond, des bouteilles sans étiquette, une odeur de résine et d'alcool qui prend à la gorge. Elle est dans la ville basse, à l'est, là où les enseignes n'existent plus.",
   "galerie": [
@@ -1966,7 +1965,7 @@
    "Harfang suit la trace de Tobiya jusqu'ici."
   ],
   "pos": {
-   "x": 0.33,
+   "x": 0.38,
    "y": 0.385
   },
   "chapeau": "Sous Roshen Buru, la ville montre son ventre. Les égouts sont un dédale de pierre suintante où l'air est un ennemi : un gaz épais et jaunâtre brûle les poumons à chaque inspiration. Il faut avancer courbé, une manche sur le visage, en suivant les traînées de bave gluante qui luisent sur les parois. Par endroits, des toiles blanches tendues d'un mur à l'autre, et des formes noires qui guettent.",
@@ -2228,7 +2227,7 @@
   "statut": "vivant",
   "resume": "Patriarche demi-orc du clan Kovacz, retraité de fait. Il refuse de céder les clés à son fils, dernière chose qu'il contrôle encore.",
   "connu": [
-   "Un demi-orc massif que l'âge a vidé. Il refuse de céder les clés à son fils, la dernière chose qu'il contrôle encore.",
+   "Un demi-orc massif que l'âge a vidé.",
    "Sa lettre au magistrat a suffi à clore l'enquête, au prix de la mort de plusieurs innocents.",
    "Le domaine est en bordure du quartier noble, jardins mal tenus, portail ouvert, la moitié des lampes éteintes et des traces claires sur les murs là où des objets étaient accrochés. Un domestique âgé, Vosko, reçoit en s'excusant.",
    "Il met un long moment à se lever, puis y renonce. Il croit sincèrement que Darrek est parti à Azuren Kai il y a quatre jours, et propose de faire visiter le domaine.",
@@ -2267,7 +2266,6 @@
   "resume": "Jeune mariée enlevée par Darrek Kovacz, retrouvée vivante par le groupe. Elle reçoit les mêmes lettres de menace que son fiancé.",
   "connu": [
    "Enlevée pendant la nuée de phalènes de la première cérémonie.",
-   "Elle reçoit les mêmes lettres de menace que son fiancé.",
    "Elle a eu autrefois une relation avec un fils de clan noble, arrogant, qu'elle a rompue.",
    "Sauvée, elle est assise à table avec une couverture sur les épaules, vivante, et Konya ne la lâche pas du regard."
   ],
@@ -2516,7 +2514,6 @@
   "resume": "Contrebandière du clan Urameï, fournisseuse principale de vésine en ville. Insolente, drôle, elle travaille avec une autonomie réelle et flirte ouvertement avec Philippa.",
   "connu": [
    "Fournisseuse principale de vesine en ville.",
-   "Insolente et drôle, elle flirte ouvertement avec Philippa.",
    "Elle a refusé de parler jusqu'à ce que le groupe revienne avec un nom.",
    "Elle opère dans la ville basse, à l'est, derrière un comptoir qui n'est pas le sien : pièce petite et chaude, caisses jusqu'au plafond, bouteilles sans étiquette, odeur de résine et d'alcool.",
    "Elle ne connaît pas Darrek. Elle connaît celui qui vient chercher les doses : Bruska, visage bandé, régulier, qui paie bien. Elle supposait qu'il achetait pour un noble.",
@@ -2707,7 +2704,7 @@
    "Elle est l'interface entre la Gardienne et le reste du monde. Son Miren est un phénix.",
    "Elle a envoyé le Tribunal de chair tuer Eamonn et détruire le cercle de téléportation, pour préserver l'isolationnisme d'Istra.",
    "Elle s'est donné pour mission de protéger la ville et le continent à tout prix, et de faire dans l'ombre ce que la Gardienne n'a pas le courage de faire.",
-   "Elle a conclu un pacte avec Levistus. Le Tribunal de chair est composé d'agents de Levistus.",
+   "Le Tribunal de chair est composé d'agents de Levistus.",
    "Elle écrit entendre une voix dans sa tête et résister de plus en plus difficilement à la tentation."
   ],
   "histoire": [
@@ -3230,8 +3227,8 @@
    "Depuis la cabine, on voit les quartiers bas bien plus denses qu'ils n'en ont l'air."
   ],
   "pos": {
-   "x": 0.4,
-   "y": 0.3
+   "x": 0.394,
+   "y": 0.308
   },
   "carte": "ville",
   "zoom": 0.12,
@@ -3254,7 +3251,7 @@
   "titre": "Cour d'entraînement des jeunes Mirenai",
   "parent": "roshen-buru",
   "resume": "Grande cour de terre battue ceinte de bâtiments bas, pieds nus et bois contre bois, une trentaine d'élèves.",
-  "carte": "palais",
+  "carte": "ville",
   "zoom": 0.12,
   "chapeau": "L'Académie occupe tout l'angle sud-ouest de la ville, contre les murailles, un des rares endroits de Roshen Buru où l'on a laissé de la place. Une cour immense en terre battue, entourée de bâtiments bas. Le bruit est constant : pieds nus sur le sol, cris courts, bois qui frappe du bois. Ça sent la sueur, la poussière et le thé refroidi.",
   "galerie": [
@@ -3262,7 +3259,11 @@
     "img": "img/paysages/roshen-buru/academie-du-tenraku.webp",
     "legende": "L'académie du Tenraku"
    }
-  ]
+  ],
+  "pos": {
+   "x": 0.225,
+   "y": 0.853
+  }
  },
  {
   "id": "kaoren-mishta",
@@ -3314,8 +3315,8 @@
    "Les fidèles s'y assoient sans rien dire, et personne ne les dérange."
   ],
   "pos": {
-   "x": 0.425,
-   "y": 0.855
+   "x": 0.431,
+   "y": 0.865
   },
   "carte": "ville",
   "zoom": 0.12,
@@ -3402,9 +3403,7 @@
   "titre": "Quartier noble",
   "parent": "roshen-buru",
   "resume": "Salon aux volets clos en plein jour, fumée lourde et deux chiens endormis devant une cheminée éteinte.",
-  "connu": [
-   "On fait attendre vingt minutes dans un vestibule vide."
-  ],
+  "connu": [],
   "carte": "palais",
   "zoom": 0.12,
   "chapeau": "On les fait attendre vingt minutes dans un vestibule où il n'y a rien à regarder. Le salon est au fond, plus sombre que le reste de la maison, les volets fermés en plein jour. La fumée stagne à mi-hauteur et sent le tabac lourd et quelque chose de sucré. Deux chiens dorment devant la cheminée éteinte sans se lever.",
@@ -3490,8 +3489,8 @@
    "Une lettre de menace est posée sur la table."
   ],
   "pos": {
-   "x": 0.7,
-   "y": 0.34
+   "x": 0.461,
+   "y": 0.082
   },
   "carte": "ville",
   "zoom": 0.12,
@@ -3642,12 +3641,11 @@
   "parent": "roshen-buru",
   "resume": "Maison de thé où le groupe loge. On y apprend ce que les domestiques racontent quand ils sont fatigués.",
   "connu": [
-   "Trois pièces le thé, quinze la chambre.",
    "Au tableau d'affichage de l'auberge, le groupe lit que la garde est en alerte à cause de la présence d'Absalom, que des filles ont disparu au bordel, qu'un contrebandier manque à l'appel, et que des commerçants font leur publicité."
   ],
   "pos": {
-   "x": 0.46,
-   "y": 0.46
+   "x": 0.469,
+   "y": 0.447
   },
   "carte": "ville",
   "zoom": 0.12,
@@ -3720,8 +3718,8 @@
   "parent": "roshen-buru",
   "resume": "Ruelles où l'on vend de l'information autant que du plaisir.",
   "pos": {
-   "x": 0.84,
-   "y": 0.7
+   "x": 0.83,
+   "y": 0.672
   },
   "carte": "ville",
   "zoom": 0.12,
@@ -3769,8 +3767,8 @@
   "parent": "roshen-buru",
   "resume": "Boutique d'objets étranges du quartier des marchands.",
   "pos": {
-   "x": 0.13,
-   "y": 0.48
+   "x": 0.136,
+   "y": 0.497
   },
   "carte": "ville",
   "zoom": 0.12,
@@ -5020,26 +5018,65 @@
  {
   "id": "ascenseur-nord-est",
   "type": "lieu",
-  "nom": "Ascenseur géant (nord-est)",
+  "nom": "Ascenseur du Palais",
   "titre": "Ville basse",
   "parent": "ascenseurs",
-  "resume": "Ascenseur géant relié à la ville haute, au nord-est.",
+  "resume": "Ascenseur géant relié au palais, au nord-est.",
   "pos": {
-   "x": 0.82,
-   "y": 0.17
+   "x": 0.817,
+   "y": 0.186
   }
  },
  {
   "id": "ascenseur-sud",
   "type": "lieu",
-  "nom": "Ascenseur géant (sud)",
+  "nom": "Ascenseur du Temple",
   "titre": "Ville basse",
   "parent": "ascenseurs",
-  "resume": "Ascenseur géant relié à la ville haute, au sud.",
+  "resume": "Ascenseur géant relié au Temple du Tenraku, au sud.",
   "pos": {
-   "x": 0.585,
-   "y": 0.755
+   "x": 0.583,
+   "y": 0.764
   }
+ },
+ {
+  "id": "caserne-roshen-buru",
+  "type": "lieu",
+  "nom": "La caserne",
+  "titre": "Ville basse",
+  "parent": "roshen-buru",
+  "resume": "Caserne de la ville basse, au sud-est du Pillier.",
+  "pos": {
+   "x": 0.664,
+   "y": 0.827
+  },
+  "carte": "ville"
+ },
+ {
+  "id": "ecurie-roshen-buru",
+  "type": "lieu",
+  "nom": "L'écurie",
+  "titre": "Ville basse",
+  "parent": "roshen-buru",
+  "resume": "Grande écurie au nord-est de la ville basse.",
+  "pos": {
+   "x": 0.697,
+   "y": 0.333
+  },
+  "carte": "ville"
+ },
+ {
+  "id": "pavillon-des-diplomates",
+  "type": "lieu",
+  "nom": "Le pavillon des Diplomates",
+  "titre": "Ville basse",
+  "parent": "roshen-buru",
+  "resume": "Pavillon des Diplomates, au nord de la ville basse.",
+  "pos": {
+   "x": 0.725,
+   "y": 0.067
+  },
+  "carte": "ville"
  },
  {
   "id": "quartiers-de-neryn-yosa",
