@@ -4,7 +4,7 @@
 (() => {
 'use strict';
 
-const VER = '56';
+const VER = '57';
 const EDIT = new URLSearchParams(location.search).has('edit');
 const $ = (s, r = document) => r.querySelector(s);
 const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
@@ -167,6 +167,7 @@ function setCam(layer, rect, animate, pad) {
     high.src = layer.src;
   }
   el.style.transform = `translate(${c.tx}px, ${c.ty}px) scale(${c.s})`;
+  positionMapAnchors(layer, c, animate);
   // Keep transitions disabled during gestures; no synchronous layout flush.
 }
 const RAIDO = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3v18M7 4l11 6.5L7 14.5M7 13.5L18 21"/></svg>';
@@ -339,7 +340,7 @@ function collectVoyages(e) {
 function collectVilles(e) {
   return cachedCollection('villes', e, () => {
     const out = [];
-    const walk = x => kids(x.id).forEach(k => { if (k.type === 'ville' && k.pos) out.push(k); else if (k.type === 'region') walk(k); });
+    const walk = x => kids(x.id).forEach(k => { if (k.type === 'ville' && k.pos) out.push(k); else if (k.type === 'region' || k.type === 'faction') walk(k); });
     walk(e);
     return out;
   });
@@ -358,11 +359,26 @@ function sceneKey(sc) {
   return JSON.stringify([sc.src, sc.cam, sc.frames.map(f => f.id + (f.solo ? 's' : '') + (f.act ? 'a' : '')), sc.pins.map(p => p.id + (p.dim ? 'd' : '') + (p.here ? 'h' : '') + (p.near ? 'n' : '')), sc.gallery?.map(g => g.img + (g.cut ? g.cut.img : '')), sc.cutout?.id, sc.tab, sc.focus]);
 }
 
+function positionMapAnchors(layer, camera, animate) {
+  if (!layer.labels) return;
+  const hud = layer.labels;
+  hud.classList.toggle('zp', !!layer.zp);
+  hud.dataset.z = layer.cam.dataset.z;
+  hud.classList.toggle('notrans', !animate);
+  const sx = layer.info.w * camera.s, sy = layer.info.h * camera.s;
+  for (const anchor of layer.anchors || []) {
+    const x = Math.round(camera.tx + Number(anchor.dataset.x) * sx);
+    const y = Math.round(camera.ty + Number(anchor.dataset.y) * sy);
+    anchor.style.left = x + 'px';
+    anchor.style.top = y + 'px';
+    anchor.classList.toggle('offscreen', x < -180 || x > S.W + 180 || y < -110 || y > S.H + 110);
+  }
+}
 function makeLayer(src, info) {
   const layer = document.createElement('div');
   layer.className = 'layer';
-  layer.innerHTML = `<div class="drift"><div class="cam" style="width:${info.w}px;height:${info.h}px"><img src="${mapSrc(src)}" alt="" decoding="async" draggable="false"><div class="ovl"></div></div></div>`;
-  const o = { el: layer, cam: $('.cam', layer), ovl: $('.ovl', layer), info, src };
+  layer.innerHTML = `<div class="drift"><div class="cam" style="width:${info.w}px;height:${info.h}px"><img src="${mapSrc(src)}" alt="" decoding="async" draggable="false"><div class="ovl"></div></div></div><div class="map-labels" aria-label="Lieux et territoires de la carte"></div>`;
+  const o = { el: layer, cam: $('.cam', layer), ovl: $('.ovl', layer), labels: $('.map-labels', layer), anchors: [], info, src };
   return o;
 }
 function smoothPath(pts) {
@@ -377,6 +393,17 @@ function renderOverlay(layer, sc) {
   const ov = layer.ovl;
   ov.classList.remove('fresh');
   ov.innerHTML = '';
+  const hud = layer.labels || ov;
+  if (hud !== ov) { hud.replaceChildren(); layer.anchors = []; }
+  const addAnchor = (el, x, y) => {
+    if (hud !== ov) {
+      el.dataset.x = x; el.dataset.y = y;
+      layer.anchors.push(el);
+    } else {
+      el.style.left = x * 100 + '%'; el.style.top = y * 100 + '%';
+    }
+    hud.appendChild(el);
+  };
   if (sc.frames.length) {
     const NS = 'http://www.w3.org/2000/svg';
     const svg = document.createElementNS(NS, 'svg');
@@ -394,30 +421,28 @@ function renderOverlay(layer, sc) {
       const a = document.createElement('a');
       a.className = 'rlab'; a.href = '#/' + f.id; a.dataset.id = f.id; a.style.setProperty('--c', f.color);
       const c = f.lab || centroid(f.poly);
-      a.style.cssText += `;left:${c[0] * 100}%;top:${c[1] * 100}%`;
       a.innerHTML = `<span class="fl">${esc(f.label)}${f.sub ? `<span class="fs">${esc(f.sub)}</span>` : ''}</span>`;
-      ov.appendChild(a);
+      addAnchor(a, c[0], c[1]);
     });
-    const hot = (id, on) => ov.querySelectorAll(`[data-id="${id}"]`).forEach(n => n.classList.toggle('hot', on));
+    const hot = (id, on) => [ov, hud].forEach(root => root.querySelectorAll(`[data-id="${id}"]`).forEach(n => n.classList.toggle('hot', on)));
     svg.addEventListener('mouseover', ev => { const g = ev.target.closest('.reg'); if (g && !g.contains(ev.relatedTarget)) hot(g.dataset.id, true); });
     svg.addEventListener('mouseout', ev => { const g = ev.target.closest('.reg'); if (g && !g.contains(ev.relatedTarget)) hot(g.dataset.id, false); });
     svg.addEventListener('click', ev => { const g = ev.target.closest('.reg'); if (g && !g.classList.contains('solo')) location.hash = '#/' + g.dataset.id; });
-    ov.querySelectorAll('.rlab').forEach(a => { a.addEventListener('mouseenter', () => hot(a.dataset.id, true)); a.addEventListener('mouseleave', () => hot(a.dataset.id, false)); });
+    hud.querySelectorAll('.rlab').forEach(a => { a.addEventListener('mouseenter', () => hot(a.dataset.id, true)); a.addEventListener('mouseleave', () => hot(a.dataset.id, false)); });
   }
-  if (sc.pins.filter(p => !p.near).length > 8) ov.classList.add('many'); else ov.classList.remove('many');
+  hud.classList.toggle('many', sc.pins.filter(p => !p.near).length > 8);
   sc.pins.forEach(p => {
     const a = document.createElement('a');
     a.className = `pin k-${p.kind}${p.dim ? ' dim' : ''}${p.near ? ' near' : ''}${p.here ? ' here' : ''}${p.x < 0.1 ? ' edge-l' : ''}${p.x > 0.9 ? ' edge-r' : ''}`;
     a.href = '#/' + p.id; a.dataset.id = p.id;
-    a.style.cssText = `left:${p.x * 100}%;top:${p.y * 100}%`;
     const ru = BY[p.id] && BY[p.id].rune;
     if (ru) a.classList.add('rune', 'r-' + ru.etat);
     a.innerHTML = `<span class="in"><span class="pd"></span>${ru ? `<span class="rb" title="Rune Raido de Philippa">${RAIDO}</span>` : ''}<span class="pl">${esc(p.label)}</span></span>`;
-    ov.appendChild(a);
+    addAnchor(a, p.x, p.y);
   });
-  ov.querySelectorAll('.pin, .rlab').forEach(n => { n.addEventListener('mouseenter', () => showPrev(n.dataset.id)); n.addEventListener('mouseleave', hidePrev); });
+  hud.querySelectorAll('.pin, .rlab').forEach(n => { n.addEventListener('mouseenter', () => showPrev(n.dataset.id)); n.addEventListener('mouseleave', hidePrev); });
   ov.querySelectorAll('.reg:not(.solo)').forEach(g => { g.addEventListener('mouseenter', () => showPrev(g.dataset.id)); g.addEventListener('mouseleave', hidePrev); });
-  void ov.offsetWidth;
+  if (layer.labels && layer.rect && layer.info) positionMapAnchors(layer, camFor(layer.rect, layer.info, layer.pad), false);
   ov.classList.add('fresh');
 }
 function showPrev(id) {
@@ -706,7 +731,7 @@ function buildWorld() {
     if (ev.metaKey || ev.ctrlKey || ev.shiftKey || ev.altKey || ev.button !== 0) return;
     ev.preventDefault();
     worldEl.classList.add('leaving'); a.classList.add('chosen');
-    setTimeout(() => { location.hash = '#/' + a.dataset.id; }, 480);
+    setTimeout(() => { if (a.isConnected) location.hash = '#/' + a.dataset.id; }, 240);
   }));
 }
 function worldBar() {
