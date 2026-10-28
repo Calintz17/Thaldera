@@ -34,7 +34,7 @@
    "Il remonte ensuite les steppes rouges jusqu'à Keras Tauroc, gagne le festival des Cornes Rouges, perd un mois de mémoire, puis descend la Khor Selash jusqu'à Cap Cornes.",
    "Un portail est ouvert à Cap Cornes vers Port Doëlan. Le groupe repart vers le nord, traverse la forêt d'Azuren depuis Azuren Kai et arrive à Roshen Buru."
   ],
-  "blason": "img/blasons/vide.svg"
+  "blason": "img/blasons/istra.webp"
  },
  {
   "id": "thaldera",
@@ -69,7 +69,7 @@
    "Le groupe a visité Port Doëlan, une ville rasée en pleine reconstruction.",
    "Un portail relie Cap Cornes, sur Istra, à Port Doëlan. Le groupe ne l'a pas ouvert vers Havre Noir."
   ],
-  "blason": "img/blasons/vide.svg"
+  "blason": "img/blasons/thaldera.webp"
  },
  {
   "id": "dieux",
