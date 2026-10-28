@@ -1,1897 +1,1897 @@
 [
- {
-  "id": "istra",
-  "type": "continent",
-  "nom": "Istra",
-  "titre": "Le continent isolé",
-  "sousTitre": "Le continent isolé",
-  "ordre": 1,
-  "vignette": "img/cartes/istra-mini.webp",
-  "cartes": [
-   {
-    "id": "carte",
-    "img": "img/cartes/istra.webp",
-    "legende": "Carte d'Istra-Belig"
-   }
-  ],
-  "alias": [
-   "Istra-Belig",
-   "Istran",
-   "Istrane",
-   "Istrans"
-  ],
-  "resume": "Un continent coupé du reste du monde, à l'ouest de Thaldera, gouverné par quatre grandes maisons.",
-  "connu": [
-   "Istra est séparée de Thaldera par la mer d'Émeraude. Des tempêtes gigantesques en rendent la traversée impossible.",
-   "Quatre maisons se partagent le continent : la maison rouge Tauroc (Keras Tauroc, Kord), la maison verte Miren-Buru (Roshen Buru, Mélora), la maison blanche There'Duun (royaume nain, Moradin) et la maison noire Tzobal (Balamor, Balam).",
-   "Chaque année, les maisons se retrouvent à La Rencontre, un rituel qui empêche l'une d'elles d'écraser les autres.",
-   "La langue commune de Thaldera n'est pas parlée ici. Le groupe se débrouille avec l'istran, que Harfang lit et parle.",
-   "Les habitants d'Istra ne connaissent pas Thaldera. Seuls quelques proches du pouvoir de Roshen Buru semblent au courant."
-  ],
-  "histoire": [
-   "Le groupe traverse la mer d'Émeraude à bord d'un sous-marin de coque pyrracier, piloté par des nains de chantier menés par Brise-Montagne.",
-   "Il débarque à Brakka, les derniers mètres à la nage, et le sous-marin plonge derrière lui.",
-   "Il remonte ensuite les steppes rouges jusqu'à Keras Tauroc, gagne le festival des Cornes Rouges, perd un mois de mémoire, puis descend la Khor Selash jusqu'à Cap Cornes.",
-   "Un portail est ouvert à Cap Cornes vers Port Doëlan. Le groupe repart vers le nord, traverse la forêt d'Azuren depuis Azuren Kai et arrive à Roshen Buru."
-  ],
-  "blason": "img/blasons/istra.webp"
- },
- {
-  "id": "thaldera",
-  "type": "continent",
-  "nom": "Thaldera",
-  "titre": "Le continent voisin",
-  "sousTitre": "Le continent voisin",
-  "ordre": 0,
-  "vignette": "img/cartes/thaldera-mini.webp",
-  "cartes": [
-   {
-    "id": "carte",
-    "img": "img/cartes/thaldera.webp",
-    "legende": "Carte de Thalderra"
-   },
-   {
-    "id": "factions",
-    "img": "img/cartes/thaldera-factions.webp",
-    "legende": "Territoires des factions"
-   }
-  ],
-  "alias": [
-   "Thalderra",
-   "Thalderran",
-   "Thalderrans"
-  ],
-  "resume": "Le continent voisin d'Istra, au-delà de la mer d'Émeraude. Il parle une autre langue et se partage entre plusieurs factions.",
-  "connu": [
-   "Thaldera est séparée d'Istra par la mer d'Émeraude. Des tempêtes gigantesques, nées de l'arbre d'un titan, faisceau de sa puissance disparue sous l'océan, rendent la traversée impossible.",
-   "Ses habitants parlent une autre langue qu'Istra.",
-   "Au moins trois factions s'y distinguent : le Dominion Sol, Altéra et le Consortium.",
-   "Le groupe a visité Port Doëlan, une ville rasée en pleine reconstruction.",
-   "Un portail relie Cap Cornes, sur Istra, à Port Doëlan. Le groupe ne l'a pas ouvert vers Havre Noir."
-  ],
-  "blason": "img/blasons/thaldera.webp"
- },
- {
-  "id": "dieux",
-  "type": "sujet",
-  "nom": "Les dieux",
-  "titre": "L'ordre du monde",
-  "accueil": true,
-  "alias": [
-   "dieu",
-   "dieux",
-   "divinité",
-   "divinités"
-  ],
-  "resume": "Les dieux existent, mais Roshen Buru ne connaît vraiment que Mélora.",
-  "connu": [
-   "Le groupe a vu Mélora à travers la Gardienne. Des fleurs ont poussé à sa seule présence.",
-   "La Gardienne a appelé Gran Brijit « Hanaré ». Gran Brijit dit que chaque création de Mélora est un cadeau que celle-ci lui envoie.",
-   "Un lien de fraternité unit les dieux.",
-   "Gran Brijit est la divinité de la Mort."
-  ],
-  "relations": [
-   {
-    "cible": "melora",
-    "type": "Déesse protectrice",
-    "ton": "positif"
-   },
-   {
-    "cible": "gran-brijit",
-    "type": "Divinité de la Mort",
-    "ton": "neutre"
-   },
-   {
-    "cible": "champions",
-    "type": "Agissent par leurs champions",
-    "ton": "neutre"
-   }
-  ]
- },
- {
-  "id": "champions",
-  "type": "sujet",
-  "nom": "Les champions",
-  "titre": "L'ordre du monde",
-  "accueil": true,
-  "alias": [
-   "champion",
-   "championne",
-   "championnes"
-  ],
-  "resume": "Les dieux agissent sur terre par des champions, vecteurs de leur pouvoir et de leur volonté.",
-  "connu": [
-   "Les dieux ne peuvent pas agir directement auprès des mortels.",
-   "Ils utilisent des champions comme véhicule de leur pouvoir et de leur volonté.",
-   "La Gardienne est la championne de Mélora. Gran Brijit déclare que Philippa en est une aussi.",
-   "Les champions défendent les intérêts de leur dieu. Ils sont bien plus forts que le commun des mortels, sans pouvoir vaincre un dieu."
-  ]
- },
- {
-  "id": "vassago",
-  "type": "sujet",
-  "nom": "Vassago",
-  "titre": "Celui qui veut devenir dieu",
-  "accueil": true,
-  "resume": "Vassago veut utiliser le rituel du Tenraku à l'envers pour s'élever au rang de dieu.",
-  "connu": [
-   "Vassago connaît le rituel du Tenraku, par lequel Roshen Buru fait descendre des Miren sur terre.",
-   "Il prévoit de l'utiliser dans l'autre sens, pour s'élever lui-même au rang de dieu.",
-   "Absalom et d'autres agents agissent pour son compte et collectionnent des fragments de titans.",
-   "À distance, il a pu fomenter l'attaque du Temple du Tenraku."
-  ],
-  "relations": [
-   {
-    "cible": "absalom",
-    "type": "Sert Vassago",
-    "ton": "negatif"
-   },
-   {
-    "cible": "silas-mort-doree",
-    "type": "Agent envoyé",
-    "ton": "negatif"
-   },
-   {
-    "cible": "miren",
-    "type": "Détourne le rituel",
-    "ton": "negatif"
-   }
-  ]
- },
- {
-  "id": "demons",
-  "type": "sujet",
-  "nom": "Les démons et les Enfers",
-  "titre": "Une société de dettes et de pactes",
-  "accueil": true,
-  "alias": [
-   "démon",
-   "démons",
-   "démone",
-   "démones",
-   "diable",
-   "diables",
-   "Enfers",
-   "enfers",
-   "infernal",
-   "infernale",
-   "infernaux"
-  ],
-  "resume": "Les démons obéissent à la loi cosmique. Leur société repose sur les dettes, les pactes, les serments et la servitude.",
-  "connu": [
-   "Chaque démon répond à son supérieur. Personne, pas même un dieu, ne peut briser un pacte conclu.",
-   "Il existe 9 strates infernales. S'y rendre et passer de l'une à l'autre est difficile et coûteux. Un portail ne suffit pas, car les deux mondes sont hermétiques.",
-   "Un démon ne peut accéder qu'à son propre plan.",
-   "Les démons majeurs comme Absalom semblent obéir au maître de leur plan, l'équivalent d'un dieu du plan matériel.",
-   "Les démons qui ont prêté allégeance à Vassago ont trahi leur patron d'origine. Retourner aux Enfers serait presque une condamnation pour eux.",
-   "Les démons sont rares sur le plan matériel et plutôt territoriaux.",
-   "La monnaie des Enfers est la pièce d'âme : une âme damnée, torturée puis compressée jusqu'à former une pièce."
-  ],
-  "relations": [
-   {
-    "cible": "ankou-uramei",
-    "type": "Chef de clan à Roshen Buru",
-    "ton": "neutre"
-   },
-   {
-    "cible": "absalom",
-    "type": "Démone majeure",
-    "ton": "negatif"
-   },
-   {
-    "cible": "vitiosa",
-    "type": "Démone de Maladomini",
-    "ton": "neutre"
-   },
-   {
-    "cible": "levistus",
-    "type": "Archidiable de Stygia",
-    "ton": "negatif"
-   }
-  ]
- },
- {
-  "id": "melora",
-  "type": "sujet",
-  "nom": "Mélora",
-  "titre": "Déesse de la nature",
-  "accueil": true,
-  "resume": "Déesse protectrice de Roshen Buru. Sa championne est la Gardienne.",
-  "connu": [
-   "Mélora a une championne, la Gardienne Anaru Miren-Buru.",
-   "Son pouvoir fait pousser des fleurs à sa seule présence.",
-   "Les cerisiers roses de Roshen Buru sont l'incarnation de son esprit.",
-   "On dit qu'elle a fait sortir la ville du sol elle-même."
-  ],
-  "relations": [
-   {
-    "cible": "anaru-miren-buru",
-    "type": "Championne",
-    "ton": "positif"
-   },
-   {
-    "cible": "gran-brijit",
-    "type": "Lien de fraternité",
-    "ton": "neutre"
-   }
-  ]
- },
- {
-  "id": "levistus",
-  "type": "sujet",
-  "nom": "Levistus",
-  "titre": "Archidiable de Stygia, 5ème enfer",
-  "alias": [
-   "Prince Gelé",
-   "Stygia"
-  ],
-  "resume": "Archidiable de Stygia, le Prince Gelé. Pactisant de Neryn Yosa.",
-  "connu": [
-   "Levistus est l'Archidiable du 5ème enfer, Stygia, le Prince Gelé.",
-   "La Protectrice a passé un pacte avec lui.",
-   "Le Tribunal de chair, qu'elle a envoyé contre Eamonn, est composé d'agents de Levistus prêtés à ses ordres."
-  ],
-  "relations": [
-   {
-    "cible": "neryn-yosa",
-    "type": "Pactisante",
-    "ton": "negatif"
-   },
-   {
-    "cible": "tribunal-de-chair",
-    "type": "Agents prêtés",
-    "ton": "negatif"
-   }
-  ]
- },
- {
-  "id": "miren",
-  "type": "sujet",
-  "nom": "Les Miren et le Tenraku",
-  "titre": "Le socle de la civilisation mirenaï",
-  "accueil": true,
-  "alias": [
-   "Miren",
-   "Mirenaï",
-   "Mirenai",
-   "Tenraku",
-   "Hikari",
-   "Seiran",
-   "Tenrai"
-  ],
-  "resume": "Lors du rituel du Tenraku, chaque guerrier mirenaï reçoit un Miren, un esprit céleste lié à lui pour la vie.",
-  "connu": [
-   "Les rangs Hikari, Seiran et Tenrai dépendent de la capacité du guerrier au moment du rituel.",
-   "Un Miren ne peut être ni volé ni effacé. Le révéler relève de la pudeur sociale, comme se mettre torse nu.",
-   "Le Miren de Harfang est Stryge, un hibou. Celui de Rysei Tsuren est un Tenrai. Celui de Ginko Noshi-Buru est un djinn. Celui de la Gardienne est un avatar de Mélora.",
-   "Le Temple du Tenraku, au sommet du Pillier de Roshen Buru, gardait la Jarre Miren scellée.",
-   "Vassago voulait détourner le rituel pour s'élever au rang de dieu."
-  ],
-  "histoire": [
-   "Absalom a brisé la Jarre Miren pendant la seconde cérémonie de mariage, puis a détruit une partie du temple d'un cri de rage."
-  ]
- },
- {
-  "id": "vesine",
-  "type": "sujet",
-  "nom": "La vesine",
-  "titre": "Une drogue qui voyage",
-  "alias": [
-   "Vesine"
-  ],
-  "resume": "Drogue dont la contrebande traverse Istra, de Balamor à Roshen Buru.",
-  "connu": [
-   "Fennick, petit escroc du marché de Cap Cornes, en vend. Le groupe l'a obtenue en le menaçant.",
-   "À Roshen Buru, Yureï Poison en est la fournisseuse principale pour le clan Urameï.",
-   "Le cuisinier Kabo est mort d'une dose d'une pureté qu'un homme de son rang ne pouvait pas acheter.",
-   "Darrek Kovacz y était accro."
-  ]
- },
- {
-  "id": "kord",
-  "type": "sujet",
-  "nom": "Kord",
-  "titre": "Dieu de la force et du combat",
-  "resume": "Dieu de Keras Tauroc : force, honneur, combat. Son clergé est très proche du pouvoir militaire.",
-  "connu": [
-   "La religion de Kord est celle de la Maison Tauroc.",
-   "Les lieux de culte ne font pas de distinction entre les étrangers, même avant les Cornes d'Or.",
-   "Sa cathédrale occupe la place centrale de Keras Tauroc."
-  ],
-  "relations": [
-   {
-    "cible": "cathedrale-de-kord",
-    "type": "Cathédrale",
-    "ton": "neutre"
-   }
-  ]
- },
- {
-  "id": "rakh",
-  "type": "sujet",
-  "nom": "Les Rakh",
-  "titre": "Félins des steppes",
-  "alias": [
-   "Rakh",
-   "Rakhs"
-  ],
-  "resume": "Grands félins des steppes rouges, capables de porter un cavalier.",
-  "connu": [
-   "Un mâle et une femelle chassent en tandem, la femelle attaque en premier.",
-   "Ce sont des prédateurs affamés, pas des monstres. Quand l'un d'eux passe sous la moitié de ses points de vie, la paire marque une pause, ce qui permet de la dresser avec de la nourriture.",
-   "Les montures du groupe viennent de là. Chez les Taurok, avoir dompté un prédateur des plaines vaut présentation."
-  ],
-  "histoire": [
-   "À l'aube, deux Rakh attaquent le campement du groupe dans les steppes. Il les dresse avec le poisson séché d'Urrak."
-  ],
-  "galerie": [
-   {
-    "img": "img/paysages/steppes-rouges/steppes-rakh.webp",
-    "legende": "Les steppes rouges"
-   },
-   {
-    "img": "img/paysages/steppes-rouges/steppes-rakh-2.webp",
-    "legende": "Les steppes rouges, en plein jour"
-   }
-  ],
-  "img": "img/pnj/brakka-rakh-carcadonne-appartient-a-philippa.webp",
-  "formes": [
-   {
-    "img": "img/pnj/brakka-rakh-carcadonne-appartient-a-philippa.webp",
-    "label": "Carcadonne, monture de Philippa",
-    "lieux": []
-   },
-   {
-    "img": "img/pnj/brakka-rakh-rashka-appartient-a-jane.webp",
-    "label": "Rashka, monture de Jane",
-    "lieux": []
-   }
-  ]
- },
- {
-  "id": "tribunal-de-chair",
-  "type": "organisation",
-  "nom": "Le Tribunal de chair",
-  "titre": "Agents de Levistus",
-  "parent": "levistus",
-  "resume": "Agents de Levistus prêtés à la Protectrice.",
-  "connu": [
-   "La Protectrice les a envoyés tuer Eamonn et détruire le cercle de téléportation de Cap Cornes.",
-   "Ce sont des agents de Levistus, prêtés à la Protectrice pour servir ses desseins.",
-   "!! Les assassins laissent une liste de cibles à son sceau : Eamonn, Olyssane, Jane, Philippa, Ink, et Harfang suivi d'un point d'interrogation."
-  ],
-  "relations": [
-   {
-    "cible": "eamonn",
-    "type": "Cible",
-    "ton": "negatif"
-   },
-   {
-    "cible": "neryn-yosa",
-    "type": "Mandataire",
-    "ton": "negatif"
-   }
-  ]
- },
- {
-  "id": "harfang-tsuren",
-  "type": "pj",
-  "nom": "Harfang Tsuren",
-  "titre": "Homme-chouette, diplomate et espion de Roshen Buru",
-  "img": "img/groupe/harfang-tsuren.webp",
-  "statut": "vivant",
-  "alias": [
-   "Harfang"
-  ],
-  "resume": "Mirenaï du clan Tsuren, druide du Cercle de la Chouette, devenu marchand après avoir quitté la Magistrature.",
-  "connu": [
-   "Elfe mirenaï de Roshen Buru, druide de niveau 11 du Cercle de la Chouette. Son Miren est Stryge, un hibou.",
-   "Noble du clan Tsuren, fils du Grand-Duc Havoc Tsuren et de Kynn Tsuren, frère de Rysei Tsuren. Sa famille ignore qu'il est espion.",
-   "Assistant d'un diplomate à la Magistrature, il rédigeait des rapports et voyageait avec une bonne couverture. En réalité, il espionnait pour la Protectrice Neryn Yosa.",
-   "Il a quitté la Magistrature après que le grand Magistrat Roven Moto lui a tiré les oreilles sur la qualité de ses rapports. Il est maintenant marchand, avec l'accord de la Protectrice.",
-   "Son statut de Tsuren ouvre les ascenseurs et le quartier noble à tout le groupe.",
-   "Il lit et parle l'istran et le mirenaï. Son ami nain est l'inventeur Thibwick Rumple.",
-   "Il connaît bien Keras Tauroc, où il est allé quatre fois sous couverture diplomatique, et ne connaissait Cap Cornes que par les rapports."
-  ],
-  "histoire": [
-   "Il se recueille au temple de Tako Alvaki : son Miren lui déconseille de faire confiance à la Protectrice.",
-   "Au Temple du Tenraku, il tente de dissiper la magie de Gran Brijit et la Gardienne contre son sort.",
-   "Rejoint le groupe de Jane et Philippa à Istra et chasse Absalom avec elles jusqu'à Roshen Buru.",
-   "À Roshen Buru, il enquête sur les lettres de menace du mariage Sokabeï-Kaben, sur ordre de la Protectrice, puis retrouve et tue Darrek Kovacz avec ses compagnes.",
-   "Il lit le journal de la Protectrice et apprend son pacte avec Levistus, ainsi que le projet d'alliance de la Gardienne avec Eryndel d'Altéra.",
-   "Il donne sa démission de la Magistrature et devient marchand.",
-   "Il est présent au Temple du Tenraku lors de la seconde cérémonie, face à Absalom, puis face à Carnage.",
-   "À Roshen Buru, il va rendre son rapport au Magistrat, qui se fâche de ne pas recevoir quarante pages. Harfang est agacé et ne veut plus être diplomate."
-  ],
-  "relations": [
-   {
-    "cible": "neryn-yosa",
-    "type": "Employeuse",
-    "ton": "negatif"
-   },
-   {
-    "cible": "roven-moto",
-    "type": "Ancien supérieur",
-    "ton": "negatif"
-   },
-   {
-    "cible": "havoc-tsuren",
-    "type": "Père",
-    "ton": "neutre"
-   },
-   {
-    "cible": "kynn-tsuren",
-    "type": "Mère",
-    "ton": "positif"
-   },
-   {
-    "cible": "rysei-tsuren",
-    "type": "Sœur",
-    "ton": "neutre"
-   },
-   {
-    "cible": "konya-sokabei",
-    "type": "Ami",
-    "ton": "positif"
-   },
-   {
-    "cible": "jane-merigold",
-    "type": "Compagne d'aventure",
-    "ton": "positif"
-   },
-   {
-    "cible": "philippa-rougetoison",
-    "type": "Compagne d'aventure",
-    "ton": "positif"
-   }
-  ],
-  "teinte": "#753c19",
-  "galerie": [
-   {
-    "img": "img/paysages/roshen-buru/palais-tsuren.webp",
-    "legende": ""
-   }
-  ]
- },
- {
-  "id": "jane-merigold",
-  "type": "pj",
-  "nom": "Jane Merigold",
-  "titre": "Roublarde Arcane Trickster, membre du groupe",
-  "img": "img/groupe/jane-merigold.webp",
-  "statut": "vivant",
-  "resume": "Demi-elfe, roublarde Arcane Trickster de niveau 11. Elle porte des cristaux de titan dans le dos.",
-  "connu": [
-   "Nolbrim estimait que son exosquelette incomplet finirait par lui faire mal ou la tuer : il lui manquait une âme.",
-   "Elle a volé à Naevia, à Keras Tauroc, une « Hache Étrange » qui est la garde d'une épée brisée aux glyphes non décoratifs.",
-   "Pendant le mois perdu, elle a travaillé pour Hématome sans qu'elle ou le groupe s'en souviennent.",
-   "Déguisée en Olyssane, elle a attiré Kester Tauroc dans une ruelle de Cap Cornes."
-  ],
-  "histoire": [
-   "Flashback au camp : Nolbrim l'emmène seule chez Gran Brijit. Attachée à plat ventre sur une table d'opération, elle perd son exosquelette incomplet, arraché avec la moitié de son dos.",
-   "Elle se réveille avec un gant de cristal à la main gauche et une main fantomatique qui suit ses gestes.",
-   "À Keras Tauroc, elle bat Hématome dans l'arène du festival.",
-   "Elle retrouve son carnet, sa chambre chez Capella et le nom de Calvinus Ferox.",
-   "À Roshen Buru, elle prend part à l'enquête du mariage et à la chute de Darrek Kovacz.",
-   "!! Avant Roshen Buru, au feu de camp dans la forêt d'Azuren, Gran Brijit ouvre un portail pour Nolbrim, qui attire Jane dans son laboratoire. Il a percé le Voile pendant son coma : il manque une âme pour stabiliser son exo-squelette. Il l'attaque sur une table d'opération. Gran Brijit arrive avec Bourre-Piff, qu'elle tue aussitôt, aspire son âme et la tend à Nolbrim, qui arrache l'exo-squelette (et le dos) de Jane.",
-   "!! Elle se réveille avec un gant rouge de cristaux sur la main et change de sous-classe : Arcane Trickster."
-  ],
-  "relations": [
-   {
-    "cible": "hematome",
-    "type": "A travaillé pour",
-    "ton": "neutre"
-   },
-   {
-    "cible": "capella",
-    "type": "Locataire",
-    "ton": "positif"
-   },
-   {
-    "cible": "harfang-tsuren",
-    "type": "Compagnon d'aventure",
-    "ton": "positif"
-   },
-   {
-    "cible": "philippa-rougetoison",
-    "type": "Compagne d'aventure",
-    "ton": "positif"
-   }
-  ],
-  "formes": [
-   {
-    "img": "img/groupe/jane-merigold.webp",
-    "label": "Normal",
-    "lieux": [],
-    "teinte": "#756919"
-   },
-   {
-    "img": "img/pnj/jane-a-roshen-buru.webp",
-    "label": "A Roshen Buru",
-    "lieux": [],
-    "fond": "img/paysages/roshen-buru/rue.webp",
-    "teinte": "#752519"
-   },
-   {
-    "img": "img/pnj/jane-arcane-trickster.webp",
-    "label": "Arcane Trickster",
-    "lieux": [],
-    "fond": "img/paysages/cap-cornes/cabane-gran-brijit.webp",
-    "teinte": "#752519"
-   }
-  ],
-  "teinte": "#756919",
-  "galerie": [
-   {
-    "img": "img/paysages/roshen-buru/rue.webp",
-    "legende": ""
-   }
-  ]
- },
- {
-  "id": "philippa-rougetoison",
-  "type": "pj",
-  "nom": "Philippa Rougetoison",
-  "titre": "Championne désignée par Gran Brijit",
-  "img": "img/groupe/philippa-rougetoison.webp",
-  "statut": "vivant",
-  "alias": [
-   "Philippa"
-  ],
-  "resume": "Drow demi-elfe, occultiste de niveau 8 et barde de niveau 3. Gran Brijit déclare qu'elle est une championne.",
-  "connu": [
-   "Gran Brijit lui a confié deux missions : ne pas ouvrir de portail entre Cap Cornes et Havre Noir, et trouver puis tuer Oren Sidaï à Roshen Buru pour préserver l'équilibre.",
-   "Elle a marqué à la craie la porte d'Ursinus, celle de la tour d'Eamonn et d'autres lieux, qui servent de points de retour.",
-   "Elle chantait chaque soir au Cornua Fracta pendant le mois perdu, sans en garder le moindre souvenir.",
-   "Elle comprend les langues par magie, ce qui sert de passerelle avec les habitants d'Istra."
-  ],
-  "histoire": [
-   "Elle voit une balance désaxée dans la cabane de Gran Brijit, avant le départ de Cap Cornes.",
-   "À Roshen Buru, elle dévalise la boutique d'Oren Sidaï après sa mort.",
-   "Elle identifie la pièce d'âme du clan Urameï."
-  ],
-  "relations": [
-   {
-    "cible": "gran-brijit",
-    "type": "Désignée championne par",
-    "ton": "neutre"
-   },
-   {
-    "cible": "sera",
-    "type": "Admirée par",
-    "ton": "positif"
-   },
-   {
-    "cible": "eamonn",
-    "type": "Point de retour : tour d'Eamonn",
-    "ton": "neutre"
-   },
-   {
-    "cible": "jane-merigold",
-    "type": "Compagne d'aventure",
-    "ton": "positif"
-   },
-   {
-    "cible": "harfang-tsuren",
-    "type": "Compagnon d'aventure",
-    "ton": "positif"
-   }
-  ],
-  "formes": [
-   {
-    "img": "img/groupe/philippa-rougetoison.webp",
-    "label": "Normal",
-    "lieux": [],
-    "teinte": "#753c19"
-   },
-   {
-    "img": "img/pnj/philippa-a-roshen-buru.webp",
-    "label": "A Roshen Buru",
-    "lieux": [],
-    "fond": "img/paysages/roshen-buru/rue.webp",
-    "teinte": "#751925"
-   }
-  ],
-  "teinte": "#753c19",
-  "galerie": [
-   {
-    "img": "img/paysages/cap-cornes/cabane-gran-brijit.webp",
-    "legende": ""
-   }
-  ]
- },
- {
-  "id": "altera",
-  "type": "faction",
-  "nom": "Altéra",
-  "titre": "Dynastie d'Altéra",
-  "parent": "thaldera",
-  "blason": "img/blasons/altera.webp",
-  "accent": "#4a8fd9",
-  "zone": {
-   "x": 0.125,
-   "y": 0.237,
-   "w": 0.516,
-   "h": 0.425
+  {
+    "id": "istra",
+    "type": "continent",
+    "nom": "Istra",
+    "titre": "Le continent isolé",
+    "sousTitre": "Le continent isolé",
+    "ordre": 1,
+    "vignette": "img/cartes/istra-mini.webp",
+    "cartes": [
+      {
+        "id": "carte",
+        "img": "img/cartes/istra.webp",
+        "legende": "Carte d'Istra-Belig"
+      }
+    ],
+    "alias": [
+      "Istra-Belig",
+      "Istran",
+      "Istrane",
+      "Istrans"
+    ],
+    "resume": "Un continent coupé du reste du monde, à l'ouest de Thaldera, gouverné par quatre grandes maisons.",
+    "connu": [
+      "Istra est séparée de Thaldera par la mer d'Émeraude. Des tempêtes gigantesques en rendent la traversée impossible.",
+      "Quatre maisons se partagent le continent : la maison rouge Tauroc (Keras Tauroc, Kord), la maison verte Miren-Buru (Roshen Buru, Mélora), la maison blanche There'Duun (royaume nain, Moradin) et la maison noire Tzobal (Balamor, Balam).",
+      "Chaque année, les maisons se retrouvent à La Rencontre, un rituel qui empêche l'une d'elles d'écraser les autres.",
+      "La langue commune de Thaldera n'est pas parlée ici. Le groupe se débrouille avec l'istran, que Harfang lit et parle.",
+      "Les habitants d'Istra ne connaissent pas Thaldera. Seuls quelques proches du pouvoir de Roshen Buru semblent au courant."
+    ],
+    "histoire": [
+      "Le groupe traverse la mer d'Émeraude à bord d'un sous-marin de coque pyrracier, piloté par des nains de chantier menés par Brise-Montagne.",
+      "Il débarque à Brakka, les derniers mètres à la nage, et le sous-marin plonge derrière lui.",
+      "Il remonte ensuite les steppes rouges jusqu'à Keras Tauroc, gagne le festival des Cornes Rouges, perd un mois de mémoire, puis descend la Khor Selash jusqu'à Cap Cornes.",
+      "Un portail est ouvert à Cap Cornes vers Port Doëlan. Le groupe repart vers le nord, traverse la forêt d'Azuren depuis Azuren Kai et arrive à Roshen Buru."
+    ],
+    "blason": "img/blasons/istra.webp"
   },
-  "alias": [
-   "Dynastie d'Altéra",
-   "altéran",
-   "altérane",
-   "altérans"
-  ],
-  "resume": "Faction dirigée par l'impératrice Eryndel. La Gardienne envisage une alliance.",
-  "connu": [
-   "Altéra est dirigée par l'impératrice Eryndel.",
-   "La Gardienne envisage une alliance avec elle, d'après son journal."
-  ],
-  "relations": [
-   {
-    "cible": "eryndel",
-    "type": "Impératrice",
-    "ton": "positif"
-   },
-   {
-    "cible": "anaru-miren-buru",
-    "type": "Alliance envisagée",
-    "ton": "neutre"
-   }
-  ],
-  "poly": [
-   [
-    0.6267,
-    0.1992
-   ],
-   [
-    0.6076,
-    0.1992
-   ],
-   [
-    0.5017,
-    0.2122
-   ],
-   [
-    0.4939,
-    0.2155
-   ],
-   [
-    0.4835,
-    0.2233
-   ],
-   [
-    0.4757,
-    0.2233
-   ],
-   [
-    0.4722,
-    0.2246
-   ],
-   [
-    0.4714,
-    0.2285
-   ],
-   [
-    0.4757,
-    0.2344
-   ],
-   [
-    0.4748,
-    0.2383
-   ],
-   [
-    0.4714,
-    0.2409
-   ],
-   [
-    0.4635,
-    0.2435
-   ],
-   [
-    0.4644,
-    0.248
-   ],
-   [
-    0.4592,
-    0.2526
-   ],
-   [
-    0.4479,
-    0.2559
-   ],
-   [
-    0.4375,
-    0.2559
-   ],
-   [
-    0.4193,
-    0.25
-   ],
-   [
-    0.4132,
-    0.2454
-   ],
-   [
-    0.4115,
-    0.2428
-   ],
-   [
-    0.4132,
-    0.2266
-   ],
-   [
-    0.3906,
-    0.2253
-   ],
-   [
-    0.3845,
-    0.2305
-   ],
-   [
-    0.3802,
-    0.2318
-   ],
-   [
-    0.3767,
-    0.2311
-   ],
-   [
-    0.3715,
-    0.2272
-   ],
-   [
-    0.355,
-    0.2298
-   ],
-   [
-    0.3429,
-    0.2337
-   ],
-   [
-    0.3238,
-    0.2454
-   ],
-   [
-    0.3142,
-    0.2493
-   ],
-   [
-    0.2734,
-    0.2598
-   ],
-   [
-    0.2491,
-    0.2643
-   ],
-   [
-    0.2257,
-    0.2786
-   ],
-   [
-    0.2109,
-    0.2943
-   ],
-   [
-    0.2101,
-    0.2969
-   ],
-   [
-    0.2118,
-    0.2975
-   ],
-   [
-    0.2196,
-    0.2956
-   ],
-   [
-    0.23,
-    0.3001
-   ],
-   [
-    0.2483,
-    0.3027
-   ],
-   [
-    0.2491,
-    0.3053
-   ],
-   [
-    0.2431,
-    0.3132
-   ],
-   [
-    0.2431,
-    0.3216
-   ],
-   [
-    0.2378,
-    0.3275
-   ],
-   [
-    0.2248,
-    0.3372
-   ],
-   [
-    0.2205,
-    0.3444
-   ],
-   [
-    0.2196,
-    0.3535
-   ],
-   [
-    0.2179,
-    0.3561
-   ],
-   [
-    0.2023,
-    0.3665
-   ],
-   [
-    0.1962,
-    0.3757
-   ],
-   [
-    0.191,
-    0.3783
-   ],
-   [
-    0.1771,
-    0.3809
-   ],
-   [
-    0.171,
-    0.3841
-   ],
-   [
-    0.1684,
-    0.388
-   ],
-   [
-    0.1675,
-    0.4036
-   ],
-   [
-    0.1658,
-    0.4062
-   ],
-   [
-    0.1623,
-    0.4082
-   ],
-   [
-    0.1484,
-    0.4108
-   ],
-   [
-    0.1337,
-    0.4089
-   ],
-   [
-    0.1259,
-    0.4128
-   ],
-   [
-    0.1224,
-    0.418
-   ],
-   [
-    0.1172,
-    0.4362
-   ],
-   [
-    0.1215,
-    0.444
-   ],
-   [
-    0.1207,
-    0.4577
-   ],
-   [
-    0.1259,
-    0.4688
-   ],
-   [
-    0.1328,
-    0.4733
-   ],
-   [
-    0.1458,
-    0.4753
-   ],
-   [
-    0.1519,
-    0.4818
-   ],
-   [
-    0.1502,
-    0.4863
-   ],
-   [
-    0.1415,
-    0.4948
-   ],
-   [
-    0.1415,
-    0.5026
-   ],
-   [
-    0.1441,
-    0.5072
-   ],
-   [
-    0.1536,
-    0.513
-   ],
-   [
-    0.1693,
-    0.5163
-   ],
-   [
-    0.1753,
-    0.5221
-   ],
-   [
-    0.1753,
-    0.5267
-   ],
-   [
-    0.1684,
-    0.5417
-   ],
-   [
-    0.1675,
-    0.5501
-   ],
-   [
-    0.1693,
-    0.5612
-   ],
-   [
-    0.1658,
-    0.5697
-   ],
-   [
-    0.1658,
-    0.5742
-   ],
-   [
-    0.1701,
-    0.5781
-   ],
-   [
-    0.1866,
-    0.5781
-   ],
-   [
-    0.1918,
-    0.5807
-   ],
-   [
-    0.1953,
-    0.5866
-   ],
-   [
-    0.1997,
-    0.6016
-   ],
-   [
-    0.2127,
-    0.61
-   ],
-   [
-    0.2127,
-    0.6204
-   ],
-   [
-    0.217,
-    0.627
-   ],
-   [
-    0.217,
-    0.6328
-   ],
-   [
-    0.2153,
-    0.6354
-   ],
-   [
-    0.2161,
-    0.6426
-   ],
-   [
-    0.224,
-    0.6458
-   ],
-   [
-    0.2335,
-    0.6458
-   ],
-   [
-    0.2387,
-    0.6478
-   ],
-   [
-    0.263,
-    0.6647
-   ],
-   [
-    0.2639,
-    0.6686
-   ],
-   [
-    0.2674,
-    0.6693
-   ],
-   [
-    0.2856,
-    0.6621
-   ],
-   [
-    0.3351,
-    0.6523
-   ],
-   [
-    0.3594,
-    0.6497
-   ],
-   [
-    0.3967,
-    0.6484
-   ],
-   [
-    0.4314,
-    0.6426
-   ],
-   [
-    0.4635,
-    0.6426
-   ],
-   [
-    0.4818,
-    0.6335
-   ],
-   [
-    0.4913,
-    0.6146
-   ],
-   [
-    0.4931,
-    0.6074
-   ],
-   [
-    0.4922,
-    0.5938
-   ],
-   [
-    0.487,
-    0.5736
-   ],
-   [
-    0.487,
-    0.5618
-   ],
-   [
-    0.4931,
-    0.554
-   ],
-   [
-    0.5052,
-    0.5443
-   ],
-   [
-    0.5104,
-    0.5358
-   ],
-   [
-    0.5104,
-    0.5299
-   ],
-   [
-    0.5052,
-    0.5189
-   ],
-   [
-    0.5069,
-    0.4948
-   ],
-   [
-    0.4948,
-    0.4622
-   ],
-   [
-    0.4896,
-    0.4414
-   ],
-   [
-    0.4878,
-    0.4206
-   ],
-   [
-    0.4939,
-    0.3978
-   ],
-   [
-    0.5061,
-    0.3691
-   ],
-   [
-    0.5148,
-    0.3568
-   ],
-   [
-    0.5339,
-    0.3379
-   ],
-   [
-    0.5417,
-    0.3242
-   ],
-   [
-    0.5486,
-    0.3158
-   ],
-   [
-    0.559,
-    0.3073
-   ],
-   [
-    0.5686,
-    0.3027
-   ],
-   [
-    0.5799,
-    0.2936
-   ],
-   [
-    0.5929,
-    0.2865
-   ],
-   [
-    0.6024,
-    0.2793
-   ],
-   [
-    0.6111,
-    0.2695
-   ],
-   [
-    0.6441,
-    0.2474
-   ],
-   [
-    0.6484,
-    0.2396
-   ],
-   [
-    0.6502,
-    0.2266
-   ],
-   [
-    0.6476,
-    0.2253
-   ],
-   [
-    0.6354,
-    0.2246
-   ],
-   [
-    0.6302,
-    0.2214
-   ],
-   [
-    0.6276,
-    0.2161
-   ]
-  ],
-  "lab": [
-   0.319,
-   0.469
-  ],
-  "couleur": "#4a8fd9",
-  "polyx": [
-   [
-    [
-     0.2083,
-     0.3008
+  {
+    "id": "thaldera",
+    "type": "continent",
+    "nom": "Thaldera",
+    "titre": "Le continent voisin",
+    "sousTitre": "Le continent voisin",
+    "ordre": 0,
+    "vignette": "img/cartes/thaldera-mini.webp",
+    "cartes": [
+      {
+        "id": "carte",
+        "img": "img/cartes/thaldera.webp",
+        "legende": "Carte de Thalderra"
+      },
+      {
+        "id": "factions",
+        "img": "img/cartes/thaldera-factions.webp",
+        "legende": "Territoires des factions"
+      }
     ],
-    [
-     0.2049,
-     0.3008
+    "alias": [
+      "Thalderra",
+      "Thalderran",
+      "Thalderrans"
     ],
-    [
-     0.1884,
-     0.3164
+    "resume": "Le continent voisin d'Istra, au-delà de la mer d'Émeraude. Il parle une autre langue et se partage entre plusieurs factions.",
+    "connu": [
+      "Thaldera est séparée d'Istra par la mer d'Émeraude. Des tempêtes gigantesques, nées de l'arbre d'un titan, faisceau de sa puissance disparue sous l'océan, rendent la traversée impossible.",
+      "Ses habitants parlent une autre langue qu'Istra.",
+      "Au moins trois factions s'y distinguent : le Dominion Sol, Altéra et le Consortium.",
+      "Le groupe a visité Port Doëlan, une ville rasée en pleine reconstruction.",
+      "Un portail relie Cap Cornes, sur Istra, à Port Doëlan. Le groupe ne l'a pas ouvert vers Havre Noir."
     ],
-    [
-     0.1823,
-     0.3255
+    "blason": "img/blasons/thaldera.webp"
+  },
+  {
+    "id": "dieux",
+    "type": "sujet",
+    "nom": "Les dieux",
+    "titre": "L'ordre du monde",
+    "accueil": true,
+    "alias": [
+      "dieu",
+      "dieux",
+      "divinité",
+      "divinités"
     ],
-    [
-     0.1849,
-     0.3262
+    "resume": "Les dieux existent, mais Roshen Buru ne connaît vraiment que Mélora.",
+    "connu": [
+      "Le groupe a vu Mélora à travers la Gardienne. Des fleurs ont poussé à sa seule présence.",
+      "La Gardienne a appelé Gran Brijit « Hanaré ». Gran Brijit dit que chaque création de Mélora est un cadeau que celle-ci lui envoie.",
+      "Un lien de fraternité unit les dieux.",
+      "Gran Brijit est la divinité de la Mort."
     ],
-    [
-     0.197,
-     0.3236
-    ],
-    [
-     0.204,
-     0.3203
-    ],
-    [
-     0.2049,
-     0.3105
+    "relations": [
+      {
+        "cible": "melora",
+        "type": "Déesse protectrice",
+        "ton": "positif"
+      },
+      {
+        "cible": "gran-brijit",
+        "type": "Divinité de la Mort",
+        "ton": "neutre"
+      },
+      {
+        "cible": "champions",
+        "type": "Agissent par leurs champions",
+        "ton": "neutre"
+      }
     ]
-   ]
-  ]
- },
- {
-  "id": "dominion-sol",
-  "type": "faction",
-  "nom": "Dominion Sol",
-  "titre": "Faction de Thaldera",
-  "parent": "thaldera",
-  "blason": "img/blasons/dominion-sol.webp",
-  "accent": "#c44510",
-  "zone": {
-   "x": 0.49,
-   "y": 0.235,
-   "w": 0.337,
-   "h": 0.459
   },
-  "alias": [
-   "le Dominion"
-  ],
-  "resume": "Faction de Thaldera qui semble mener une guerre.",
-  "connu": [],
-  "poly": [
-   [
-    0.6528,
-    0.2259
-   ],
-   [
-    0.651,
-    0.2266
-   ],
-   [
-    0.6493,
-    0.2396
-   ],
-   [
-    0.645,
-    0.2474
-   ],
-   [
-    0.612,
-    0.2695
-   ],
-   [
-    0.6033,
-    0.2793
-   ],
-   [
-    0.5929,
-    0.2871
-   ],
-   [
-    0.5799,
-    0.2943
-   ],
-   [
-    0.5686,
-    0.3034
-   ],
-   [
-    0.559,
-    0.3079
-   ],
-   [
-    0.5495,
-    0.3158
-   ],
-   [
-    0.5425,
-    0.3242
-   ],
-   [
-    0.5347,
-    0.3379
-   ],
-   [
-    0.513,
-    0.36
-   ],
-   [
-    0.5,
-    0.3841
-   ],
-   [
-    0.4913,
-    0.4082
-   ],
-   [
-    0.4887,
-    0.4251
-   ],
-   [
-    0.4939,
-    0.4564
-   ],
-   [
-    0.5087,
-    0.4987
-   ],
-   [
-    0.5061,
-    0.5189
-   ],
-   [
-    0.5113,
-    0.5299
-   ],
-   [
-    0.5113,
-    0.5358
-   ],
-   [
-    0.5061,
-    0.5443
-   ],
-   [
-    0.4939,
-    0.554
-   ],
-   [
-    0.4878,
-    0.5618
-   ],
-   [
-    0.4878,
-    0.5736
-   ],
-   [
-    0.4931,
-    0.5938
-   ],
-   [
-    0.4939,
-    0.6074
-   ],
-   [
-    0.4922,
-    0.6146
-   ],
-   [
-    0.4826,
-    0.6328
-   ],
-   [
-    0.4861,
-    0.6491
-   ],
-   [
-    0.4922,
-    0.6589
-   ],
-   [
-    0.5061,
-    0.6725
-   ],
-   [
-    0.5217,
-    0.6823
-   ],
-   [
-    0.5417,
-    0.6719
-   ],
-   [
-    0.5582,
-    0.6608
-   ],
-   [
-    0.5634,
-    0.6589
-   ],
-   [
-    0.5729,
-    0.6589
-   ],
-   [
-    0.6068,
-    0.6654
-   ],
-   [
-    0.6267,
-    0.6784
-   ],
-   [
-    0.6345,
-    0.6816
-   ],
-   [
-    0.6484,
-    0.6829
-   ],
-   [
-    0.6589,
-    0.6862
-   ],
-   [
-    0.6736,
-    0.6849
-   ],
-   [
-    0.6832,
-    0.6888
-   ],
-   [
-    0.704,
-    0.6934
-   ],
-   [
-    0.7101,
-    0.696
-   ],
-   [
-    0.7214,
-    0.7064
-   ],
-   [
-    0.7283,
-    0.7077
-   ],
-   [
-    0.7405,
-    0.7012
-   ],
-   [
-    0.7795,
-    0.6999
-   ],
-   [
-    0.7882,
-    0.6973
-   ],
-   [
-    0.8012,
-    0.6966
-   ],
-   [
-    0.8073,
-    0.6947
-   ],
-   [
-    0.8116,
-    0.6895
-   ],
-   [
-    0.8125,
-    0.6797
-   ],
-   [
-    0.8212,
-    0.6602
-   ],
-   [
-    0.8273,
-    0.653
-   ],
-   [
-    0.8273,
-    0.6465
-   ],
-   [
-    0.8194,
-    0.6367
-   ],
-   [
-    0.8186,
-    0.6335
-   ],
-   [
-    0.8203,
-    0.6315
-   ],
-   [
-    0.8316,
-    0.6309
-   ],
-   [
-    0.8368,
-    0.6289
-   ],
-   [
-    0.8394,
-    0.625
-   ],
-   [
-    0.8385,
-    0.6107
-   ],
-   [
-    0.8342,
-    0.6003
-   ],
-   [
-    0.829,
-    0.5931
-   ],
-   [
-    0.829,
-    0.5879
-   ],
-   [
-    0.8255,
-    0.5807
-   ],
-   [
-    0.8264,
-    0.5742
-   ],
-   [
-    0.8351,
-    0.5671
-   ],
-   [
-    0.8351,
-    0.5592
-   ],
-   [
-    0.8247,
-    0.5371
-   ],
-   [
-    0.8229,
-    0.5267
-   ],
-   [
-    0.816,
-    0.515
-   ],
-   [
-    0.8151,
-    0.498
-   ],
-   [
-    0.803,
-    0.4811
-   ],
-   [
-    0.7969,
-    0.4694
-   ],
-   [
-    0.776,
-    0.4512
-   ],
-   [
-    0.7743,
-    0.4479
-   ],
-   [
-    0.7743,
-    0.4382
-   ],
-   [
-    0.77,
-    0.4303
-   ],
-   [
-    0.7595,
-    0.4219
-   ],
-   [
-    0.7509,
-    0.4173
-   ],
-   [
-    0.7509,
-    0.403
-   ],
-   [
-    0.7465,
-    0.3965
-   ],
-   [
-    0.737,
-    0.3893
-   ],
-   [
-    0.7344,
-    0.3828
-   ],
-   [
-    0.7561,
-    0.3698
-   ],
-   [
-    0.7708,
-    0.3652
-   ],
-   [
-    0.7856,
-    0.3542
-   ],
-   [
-    0.7908,
-    0.347
-   ],
-   [
-    0.8021,
-    0.3457
-   ],
-   [
-    0.8082,
-    0.3424
-   ],
-   [
-    0.809,
-    0.3366
-   ],
-   [
-    0.8064,
-    0.332
-   ],
-   [
-    0.8064,
-    0.3249
-   ],
-   [
-    0.8134,
-    0.3047
-   ],
-   [
-    0.8108,
-    0.2878
-   ],
-   [
-    0.8168,
-    0.2845
-   ],
-   [
-    0.8411,
-    0.2839
-   ],
-   [
-    0.8446,
-    0.2812
-   ],
-   [
-    0.8446,
-    0.278
-   ],
-   [
-    0.8368,
-    0.2747
-   ],
-   [
-    0.822,
-    0.2734
-   ],
-   [
-    0.7917,
-    0.2734
-   ],
-   [
-    0.7856,
-    0.2754
-   ],
-   [
-    0.7778,
-    0.2806
-   ],
-   [
-    0.7726,
-    0.2806
-   ],
-   [
-    0.7708,
-    0.2786
-   ],
-   [
-    0.77,
-    0.265
-   ],
-   [
-    0.7595,
-    0.252
-   ],
-   [
-    0.7604,
-    0.2474
-   ],
-   [
-    0.77,
-    0.2409
-   ],
-   [
-    0.77,
-    0.2363
-   ],
-   [
-    0.7665,
-    0.2331
-   ],
-   [
-    0.7595,
-    0.2324
-   ],
-   [
-    0.7561,
-    0.2337
-   ],
-   [
-    0.7517,
-    0.2389
-   ],
-   [
-    0.7483,
-    0.2402
-   ],
-   [
-    0.7378,
-    0.235
-   ],
-   [
-    0.7248,
-    0.2396
-   ],
-   [
-    0.7066,
-    0.2376
-   ],
-   [
-    0.6918,
-    0.2376
-   ],
-   [
-    0.6858,
-    0.2357
-   ],
-   [
-    0.6719,
-    0.2279
-   ]
-  ],
-  "lab": [
-   0.67,
-   0.557
-  ],
-  "couleur": "#c44510"
- },
- {
-  "id": "port-doelan",
-  "type": "ville",
-  "nom": "Port Doëlan",
-  "titre": "Ville rasée en pleine reconstruction",
-  "parent": "consortium",
-  "blason": "img/blasons/port-doelan.webp",
-  "accent": "#c9a84c",
-  "pos": {
-   "x": 0.19,
-   "y": 0.747
+  {
+    "id": "champions",
+    "type": "sujet",
+    "nom": "Les champions",
+    "titre": "L'ordre du monde",
+    "accueil": true,
+    "alias": [
+      "champion",
+      "championne",
+      "championnes"
+    ],
+    "resume": "Les dieux agissent sur terre par des champions, vecteurs de leur pouvoir et de leur volonté.",
+    "connu": [
+      "Les dieux ne peuvent pas agir directement auprès des mortels.",
+      "Ils utilisent des champions comme véhicule de leur pouvoir et de leur volonté.",
+      "La Gardienne est la championne de Mélora. Gran Brijit déclare que Philippa en est une aussi.",
+      "Les champions défendent les intérêts de leur dieu. Ils sont bien plus forts que le commun des mortels, sans pouvoir vaincre un dieu."
+    ]
   },
-  "alias": [
-   "Doëlan"
-  ],
-  "resume": "Ville rasée par le géant en armure, dirigée de fortune par une tieffeline rouge. Alliée du groupe.",
-  "connu": [
-   "Cité portuaire du Consortium, sur une eau turquoise, aux rues de pierre blonde, d'arcades et de terrasses. Elle vivait de son port, de sa mine d'argent et de sa carrière.",
-   "Bartolomeo Spezza, seigneur pirate et warlock lié à Vassago, la tenait depuis son château. Il finançait la Griffe, le trafic humain et un sous-marin en pyrracier par l'intermédiaire de Titan Inc.",
-   "Le groupe a donné l'assaut au château et tué Spezza. Naberoth, le démon qui rôdait sous les caves, a été renvoyé aux Enfers.",
-   "La ville est aujourd'hui en ruines : le géant en armure l'a rasée, et l'assaut du groupe a aussi fait des dégâts. Des équipes déblaient les gravats et la reconstruction est en cours.",
-   "Vespera Merigold, la tieffeline rouge, à cornes et légèrement vêtue, a hérité du pouvoir. Ancienne Madame de la maison close, sœur d'orphelinat de Jane, elle dirige les ruines de fortune depuis un bloc de maçonnerie qui lui sert de trône.",
-   "Sa garde se compose de Tina et Nina, en armures bricolées, et de Kralik et Nesk, les deux wererats libérés par le groupe, qui patrouillent la ville.",
-   "La plupart des habitants sont au chômage et la flotte est en miettes. Le pacte avec l'Aile d'Argent a apporté des capitaux, très loin de ce qu'il faudrait.",
-   "Vespera attend la livraison de l'Arshen à Cap Cornes pour relancer le commerce. Jane lui a remis la Couronne de Corail Noir, dont la revente doit financer l'archène de Keras Tauroc, avec 1 % des ventes pour Jane.",
-   "Un ambassadeur de Rivegard presse Sycomore Brise-Pavois de lâcher Port Doëlan.",
-   "Des mercenaires sous pavillon inconnu attaquent ceux qui sortent de la ville. L'émissaire que Vespera a envoyé au sud de Leyenmil n'est pas revenu.",
-   "Ce sont des alliés du groupe. Un cercle de téléportation relie les ruines du château à la tour d'Eamonn, à Cap Cornes."
-  ],
-  "relations": [
-   {
-    "cible": "eamonn",
-    "type": "Cercle de téléportation",
-    "ton": "positif"
-   },
-   {
-    "cible": "tour-eamonn",
-    "type": "Cercle de téléportation",
-    "ton": "positif"
-   }
-  ],
-  "galerie": [
-   {
-    "img": "img/paysages/port-doelan/vue-ville.webp",
-    "legende": "Port Doëlan, vue d'ensemble"
-   },
-   {
-    "img": "img/paysages/port-doelan/salle-du-trone.webp",
-    "legende": "La salle du trône"
-   },
-   {
-    "img": "img/paysages/port-doelan/port.webp",
-    "legende": "Le port"
-   }
-  ]
- },
- {
-  "id": "kazad-marunn",
-  "type": "ville",
-  "nom": "Kazad Marunn",
-  "titre": "Ville des sables",
-  "parent": "consortium",
-  "alias": [
-   "Khazad-Marun",
-   "Khazad Marun"
-  ],
-  "pos": {
-   "x": 0.727,
-   "y": 0.927
+  {
+    "id": "vassago",
+    "type": "sujet",
+    "nom": "Vassago",
+    "titre": "Celui qui veut devenir dieu",
+    "accueil": true,
+    "resume": "Vassago veut utiliser le rituel du Tenraku à l'envers pour s'élever au rang de dieu.",
+    "connu": [
+      "Vassago connaît le rituel du Tenraku, par lequel Roshen Buru fait descendre des Miren sur terre.",
+      "Il prévoit de l'utiliser dans l'autre sens, pour s'élever lui-même au rang de dieu.",
+      "Absalom et d'autres agents agissent pour son compte et collectionnent des fragments de titans.",
+      "À distance, il a pu fomenter l'attaque du Temple du Tenraku."
+    ],
+    "relations": [
+      {
+        "cible": "absalom",
+        "type": "Sert Vassago",
+        "ton": "negatif"
+      },
+      {
+        "cible": "silas-mort-doree",
+        "type": "Agent envoyé",
+        "ton": "negatif"
+      },
+      {
+        "cible": "miren",
+        "type": "Détourne le rituel",
+        "ton": "negatif"
+      }
+    ]
   },
-  "resume": "Ville des sables où Gran Brijit a affronté Ginko Noshi-Buru.",
-  "connu": [
-   "Le groupe a traversé le désert avec Gran Brijit, que les gens du pays appellent Ereshkigal."
-  ],
-  "relations": [
-   {
-    "cible": "ginko-noshi-buru",
-    "type": "Affrontement",
-    "ton": "negatif"
-   },
-   {
-    "cible": "gran-brijit",
-    "type": "Affrontement",
-    "ton": "negatif"
-   }
-  ]
- },
- {
-  "id": "eryndel",
-  "type": "pnj",
-  "nom": "Eryndel",
-  "titre": "Impératrice d'Altéra",
-  "parent": "altera",
-  "statut": "vivant",
-  "resume": "Impératrice d'Altéra. La Gardienne envisage une alliance avec elle.",
-  "connu": [
-   "Le journal de la Gardienne montre qu'elle prépare une alliance avec elle.",
-   "La Protectrice la traite de « pétasse ».",
-   "Dans un rêve partagé, elle accueille les PJ aux Jardins de l'Éternité : peau de marbre fissurée laissant passer la lumière des galaxies, chevelure blanche mouvante, aucun visage mais un vide rempli de constellations.",
-   "Elle parle de deux petits soleils brillant seuls dans le froid du cosmos, l'un allumé des restes d'un Titan faiblissant, l'autre par le génie fou d'un homme seul, et demande si leurs trajectoires gravitent autour du même point."
-  ],
-  "relations": [
-   {
-    "cible": "anaru-miren-buru",
-    "type": "Alliance envisagée",
-    "ton": "neutre"
-   }
-  ],
-  "citation": {
-   "texte": "Deux petits soleils, brillants seuls dans le froid du cosmos infini…",
-   "qui": "Impératrice Eryndel"
+  {
+    "id": "demons",
+    "type": "sujet",
+    "nom": "Les démons et les Enfers",
+    "titre": "Une société de dettes et de pactes",
+    "accueil": true,
+    "alias": [
+      "démon",
+      "démons",
+      "démone",
+      "démones",
+      "diable",
+      "diables",
+      "Enfers",
+      "enfers",
+      "infernal",
+      "infernale",
+      "infernaux"
+    ],
+    "resume": "Les démons obéissent à la loi cosmique. Leur société repose sur les dettes, les pactes, les serments et la servitude.",
+    "connu": [
+      "Chaque démon répond à son supérieur. Personne, pas même un dieu, ne peut briser un pacte conclu.",
+      "Il existe 9 strates infernales. S'y rendre et passer de l'une à l'autre est difficile et coûteux. Un portail ne suffit pas, car les deux mondes sont hermétiques.",
+      "Un démon ne peut accéder qu'à son propre plan.",
+      "Les démons majeurs comme Absalom semblent obéir au maître de leur plan, l'équivalent d'un dieu du plan matériel.",
+      "Les démons qui ont prêté allégeance à Vassago ont trahi leur patron d'origine. Retourner aux Enfers serait presque une condamnation pour eux.",
+      "Les démons sont rares sur le plan matériel et plutôt territoriaux.",
+      "La monnaie des Enfers est la pièce d'âme : une âme damnée, torturée puis compressée jusqu'à former une pièce."
+    ],
+    "relations": [
+      {
+        "cible": "ankou-uramei",
+        "type": "Chef de clan à Roshen Buru",
+        "ton": "neutre"
+      },
+      {
+        "cible": "absalom",
+        "type": "Démone majeure",
+        "ton": "negatif"
+      },
+      {
+        "cible": "vitiosa",
+        "type": "Démone de Maladomini",
+        "ton": "neutre"
+      },
+      {
+        "cible": "levistus",
+        "type": "Archidiable de Stygia",
+        "ton": "negatif"
+      }
+    ]
   },
-  "attitude": "neutre"
- }
+  {
+    "id": "melora",
+    "type": "sujet",
+    "nom": "Mélora",
+    "titre": "Déesse de la nature",
+    "accueil": true,
+    "resume": "Déesse protectrice de Roshen Buru. Sa championne est la Gardienne.",
+    "connu": [
+      "Mélora a une championne, la Gardienne Anaru Miren-Buru.",
+      "Son pouvoir fait pousser des fleurs à sa seule présence.",
+      "Les cerisiers roses de Roshen Buru sont l'incarnation de son esprit.",
+      "On dit qu'elle a fait sortir la ville du sol elle-même."
+    ],
+    "relations": [
+      {
+        "cible": "anaru-miren-buru",
+        "type": "Championne",
+        "ton": "positif"
+      },
+      {
+        "cible": "gran-brijit",
+        "type": "Lien de fraternité",
+        "ton": "neutre"
+      }
+    ]
+  },
+  {
+    "id": "levistus",
+    "type": "sujet",
+    "nom": "Levistus",
+    "titre": "Archidiable de Stygia, 5ème enfer",
+    "alias": [
+      "Prince Gelé",
+      "Stygia"
+    ],
+    "resume": "Archidiable de Stygia, le Prince Gelé. Pactisant de Neryn Yosa.",
+    "connu": [
+      "Levistus est l'Archidiable du 5ème enfer, Stygia, le Prince Gelé.",
+      "La Protectrice a passé un pacte avec lui.",
+      "Le Tribunal de chair, qu'elle a envoyé contre Eamonn, est composé d'agents de Levistus prêtés à ses ordres."
+    ],
+    "relations": [
+      {
+        "cible": "neryn-yosa",
+        "type": "Pactisante",
+        "ton": "negatif"
+      },
+      {
+        "cible": "tribunal-de-chair",
+        "type": "Agents prêtés",
+        "ton": "negatif"
+      }
+    ]
+  },
+  {
+    "id": "miren",
+    "type": "sujet",
+    "nom": "Les Miren et le Tenraku",
+    "titre": "Le socle de la civilisation mirenaï",
+    "accueil": true,
+    "alias": [
+      "Miren",
+      "Mirenaï",
+      "Mirenai",
+      "Tenraku",
+      "Hikari",
+      "Seiran",
+      "Tenrai"
+    ],
+    "resume": "Lors du rituel du Tenraku, chaque guerrier mirenaï reçoit un Miren, un esprit céleste lié à lui pour la vie.",
+    "connu": [
+      "Les rangs Hikari, Seiran et Tenrai dépendent de la capacité du guerrier au moment du rituel.",
+      "Un Miren ne peut être ni volé ni effacé. Le révéler relève de la pudeur sociale, comme se mettre torse nu.",
+      "Le Miren de Harfang est Stryge, un hibou. Celui de Rysei Tsuren est un Tenrai. Celui de Ginko Noshi-Buru est un djinn. Celui de la Gardienne est un avatar de Mélora.",
+      "Le Temple du Tenraku, au sommet du Pillier de Roshen Buru, gardait la Jarre Miren scellée.",
+      "Vassago voulait détourner le rituel pour s'élever au rang de dieu."
+    ],
+    "histoire": [
+      "Absalom a brisé la Jarre Miren pendant la seconde cérémonie de mariage, puis a détruit une partie du temple d'un cri de rage."
+    ]
+  },
+  {
+    "id": "vesine",
+    "type": "sujet",
+    "nom": "La vesine",
+    "titre": "Une drogue qui voyage",
+    "alias": [
+      "Vesine"
+    ],
+    "resume": "Drogue dont la contrebande traverse Istra, de Balamor à Roshen Buru.",
+    "connu": [
+      "Fennick, petit escroc du marché de Cap Cornes, en vend. Le groupe l'a obtenue en le menaçant.",
+      "À Roshen Buru, Yureï Poison en est la fournisseuse principale pour le clan Urameï.",
+      "Le cuisinier Kabo est mort d'une dose d'une pureté qu'un homme de son rang ne pouvait pas acheter.",
+      "Darrek Kovacz y était accro."
+    ]
+  },
+  {
+    "id": "kord",
+    "type": "sujet",
+    "nom": "Kord",
+    "titre": "Dieu de la force et du combat",
+    "resume": "Dieu de Keras Tauroc : force, honneur, combat. Son clergé est très proche du pouvoir militaire.",
+    "connu": [
+      "La religion de Kord est celle de la Maison Tauroc.",
+      "Les lieux de culte ne font pas de distinction entre les étrangers, même avant les Cornes d'Or.",
+      "Sa cathédrale occupe la place centrale de Keras Tauroc."
+    ],
+    "relations": [
+      {
+        "cible": "cathedrale-de-kord",
+        "type": "Cathédrale",
+        "ton": "neutre"
+      }
+    ]
+  },
+  {
+    "id": "rakh",
+    "type": "sujet",
+    "nom": "Les Rakh",
+    "titre": "Félins des steppes",
+    "alias": [
+      "Rakh",
+      "Rakhs"
+    ],
+    "resume": "Grands félins des steppes rouges, capables de porter un cavalier.",
+    "connu": [
+      "Un mâle et une femelle chassent en tandem, la femelle attaque en premier.",
+      "Ce sont des prédateurs affamés, pas des monstres. Quand l'un d'eux passe sous la moitié de ses points de vie, la paire marque une pause, ce qui permet de la dresser avec de la nourriture.",
+      "Les montures du groupe viennent de là. Chez les Taurok, avoir dompté un prédateur des plaines vaut présentation."
+    ],
+    "histoire": [
+      "À l'aube, deux Rakh attaquent le campement du groupe dans les steppes. Il les dresse avec le poisson séché d'Urrak."
+    ],
+    "galerie": [
+      {
+        "img": "img/paysages/steppes-rouges/steppes-rakh.webp",
+        "legende": "Les steppes rouges"
+      },
+      {
+        "img": "img/paysages/steppes-rouges/steppes-rakh-2.webp",
+        "legende": "Les steppes rouges, en plein jour"
+      }
+    ],
+    "img": "img/pnj/brakka-rakh-carcadonne-appartient-a-philippa.webp",
+    "formes": [
+      {
+        "img": "img/pnj/brakka-rakh-carcadonne-appartient-a-philippa.webp",
+        "label": "Carcadonne, monture de Philippa",
+        "lieux": []
+      },
+      {
+        "img": "img/pnj/brakka-rakh-rashka-appartient-a-jane.webp",
+        "label": "Rashka, monture de Jane",
+        "lieux": []
+      }
+    ]
+  },
+  {
+    "id": "tribunal-de-chair",
+    "type": "organisation",
+    "nom": "Le Tribunal de chair",
+    "titre": "Agents de Levistus",
+    "parent": "levistus",
+    "resume": "Agents de Levistus prêtés à la Protectrice.",
+    "connu": [
+      "La Protectrice les a envoyés tuer Eamonn et détruire le cercle de téléportation de Cap Cornes.",
+      "Ce sont des agents de Levistus, prêtés à la Protectrice pour servir ses desseins.",
+      "!! Les assassins laissent une liste de cibles à son sceau : Eamonn, Olyssane, Jane, Philippa, Ink, et Harfang suivi d'un point d'interrogation."
+    ],
+    "relations": [
+      {
+        "cible": "eamonn",
+        "type": "Cible",
+        "ton": "negatif"
+      },
+      {
+        "cible": "neryn-yosa",
+        "type": "Mandataire",
+        "ton": "negatif"
+      }
+    ]
+  },
+  {
+    "id": "harfang-tsuren",
+    "type": "pj",
+    "nom": "Harfang Tsuren",
+    "titre": "Homme-chouette, diplomate et espion de Roshen Buru",
+    "img": "img/groupe/harfang-tsuren.webp",
+    "statut": "vivant",
+    "alias": [
+      "Harfang"
+    ],
+    "resume": "Mirenaï du clan Tsuren, druide du Cercle de la Chouette, devenu marchand après avoir quitté la Magistrature.",
+    "connu": [
+      "Elfe mirenaï de Roshen Buru, druide de niveau 11 du Cercle de la Chouette. Son Miren est Stryge, un hibou.",
+      "Noble du clan Tsuren, fils du Grand-Duc Havoc Tsuren et de Kynn Tsuren, frère de Rysei Tsuren. Sa famille ignore qu'il est espion.",
+      "Assistant d'un diplomate à la Magistrature, il rédigeait des rapports et voyageait avec une bonne couverture. En réalité, il espionnait pour la Protectrice Neryn Yosa.",
+      "Il a quitté la Magistrature après que le grand Magistrat Roven Moto lui a tiré les oreilles sur la qualité de ses rapports. Il est maintenant marchand, avec l'accord de la Protectrice.",
+      "Son statut de Tsuren ouvre les ascenseurs et le quartier noble à tout le groupe.",
+      "Il lit et parle l'istran et le mirenaï. Son ami nain est l'inventeur Thibwick Rumple.",
+      "Il connaît bien Keras Tauroc, où il est allé quatre fois sous couverture diplomatique, et ne connaissait Cap Cornes que par les rapports."
+    ],
+    "histoire": [
+      "Il se recueille au temple de Tako Alvaki : son Miren lui déconseille de faire confiance à la Protectrice.",
+      "Au Temple du Tenraku, il tente de dissiper la magie de Gran Brijit et la Gardienne contre son sort.",
+      "Rejoint le groupe de Jane et Philippa à Istra et chasse Absalom avec elles jusqu'à Roshen Buru.",
+      "À Roshen Buru, il enquête sur les lettres de menace du mariage Sokabeï-Kaben, sur ordre de la Protectrice, puis retrouve et tue Darrek Kovacz avec ses compagnes.",
+      "Il lit le journal de la Protectrice et apprend son pacte avec Levistus, ainsi que le projet d'alliance de la Gardienne avec Eryndel d'Altéra.",
+      "Il donne sa démission de la Magistrature et devient marchand.",
+      "Il est présent au Temple du Tenraku lors de la seconde cérémonie, face à Absalom, puis face à Carnage.",
+      "À Roshen Buru, il va rendre son rapport au Magistrat, qui se fâche de ne pas recevoir quarante pages. Harfang est agacé et ne veut plus être diplomate."
+    ],
+    "relations": [
+      {
+        "cible": "neryn-yosa",
+        "type": "Employeuse",
+        "ton": "negatif"
+      },
+      {
+        "cible": "roven-moto",
+        "type": "Ancien supérieur",
+        "ton": "negatif"
+      },
+      {
+        "cible": "havoc-tsuren",
+        "type": "Père",
+        "ton": "neutre"
+      },
+      {
+        "cible": "kynn-tsuren",
+        "type": "Mère",
+        "ton": "positif"
+      },
+      {
+        "cible": "rysei-tsuren",
+        "type": "Sœur",
+        "ton": "neutre"
+      },
+      {
+        "cible": "konya-sokabei",
+        "type": "Ami",
+        "ton": "positif"
+      },
+      {
+        "cible": "jane-merigold",
+        "type": "Compagne d'aventure",
+        "ton": "positif"
+      },
+      {
+        "cible": "philippa-rougetoison",
+        "type": "Compagne d'aventure",
+        "ton": "positif"
+      }
+    ],
+    "teinte": "#753c19",
+    "galerie": [
+      {
+        "img": "img/paysages/roshen-buru/palais-tsuren.webp",
+        "legende": ""
+      }
+    ]
+  },
+  {
+    "id": "jane-merigold",
+    "type": "pj",
+    "nom": "Jane Merigold",
+    "titre": "Roublarde Arcane Trickster, membre du groupe",
+    "img": "img/groupe/jane-merigold.webp",
+    "statut": "vivant",
+    "resume": "Demi-elfe, roublarde Arcane Trickster de niveau 11. Elle porte des cristaux de titan dans le dos.",
+    "connu": [
+      "Nolbrim estimait que son exosquelette incomplet finirait par lui faire mal ou la tuer : il lui manquait une âme.",
+      "Elle a volé à Naevia, à Keras Tauroc, une « Hache Étrange » qui est la garde d'une épée brisée aux glyphes non décoratifs.",
+      "Pendant le mois perdu, elle a travaillé pour Hématome sans qu'elle ou le groupe s'en souviennent.",
+      "Déguisée en Olyssane, elle a attiré Kester Tauroc dans une ruelle de Cap Cornes."
+    ],
+    "histoire": [
+      "Flashback au camp : Nolbrim l'emmène seule chez Gran Brijit. Attachée à plat ventre sur une table d'opération, elle perd son exosquelette incomplet, arraché avec la moitié de son dos.",
+      "Elle se réveille avec un gant de cristal à la main gauche et une main fantomatique qui suit ses gestes.",
+      "À Keras Tauroc, elle bat Hématome dans l'arène du festival.",
+      "Elle retrouve son carnet, sa chambre chez Capella et le nom de Calvinus Ferox.",
+      "À Roshen Buru, elle prend part à l'enquête du mariage et à la chute de Darrek Kovacz.",
+      "!! Avant Roshen Buru, au feu de camp dans la forêt d'Azuren, Gran Brijit ouvre un portail pour Nolbrim, qui attire Jane dans son laboratoire. Il a percé le Voile pendant son coma : il manque une âme pour stabiliser son exo-squelette. Il l'attaque sur une table d'opération. Gran Brijit arrive avec Bourre-Piff, qu'elle tue aussitôt, aspire son âme et la tend à Nolbrim, qui arrache l'exo-squelette (et le dos) de Jane.",
+      "!! Elle se réveille avec un gant rouge de cristaux sur la main et change de sous-classe : Arcane Trickster."
+    ],
+    "relations": [
+      {
+        "cible": "hematome",
+        "type": "A travaillé pour",
+        "ton": "neutre"
+      },
+      {
+        "cible": "capella",
+        "type": "Locataire",
+        "ton": "positif"
+      },
+      {
+        "cible": "harfang-tsuren",
+        "type": "Compagnon d'aventure",
+        "ton": "positif"
+      },
+      {
+        "cible": "philippa-rougetoison",
+        "type": "Compagne d'aventure",
+        "ton": "positif"
+      }
+    ],
+    "formes": [
+      {
+        "img": "img/groupe/jane-merigold.webp",
+        "label": "Normal",
+        "lieux": [],
+        "teinte": "#756919"
+      },
+      {
+        "img": "img/pnj/jane-a-roshen-buru.webp",
+        "label": "A Roshen Buru",
+        "lieux": [],
+        "fond": "img/paysages/roshen-buru/rue.webp",
+        "teinte": "#752519"
+      },
+      {
+        "img": "img/pnj/jane-arcane-trickster.webp",
+        "label": "Arcane Trickster",
+        "lieux": [],
+        "fond": "img/paysages/cap-cornes/cabane-gran-brijit.webp",
+        "teinte": "#752519"
+      }
+    ],
+    "teinte": "#756919",
+    "galerie": [
+      {
+        "img": "img/paysages/roshen-buru/rue.webp",
+        "legende": ""
+      }
+    ]
+  },
+  {
+    "id": "philippa-rougetoison",
+    "type": "pj",
+    "nom": "Philippa Rougetoison",
+    "titre": "Championne désignée par Gran Brijit",
+    "img": "img/groupe/philippa-rougetoison.webp",
+    "statut": "vivant",
+    "alias": [
+      "Philippa"
+    ],
+    "resume": "Drow demi-elfe, occultiste de niveau 8 et barde de niveau 3. Gran Brijit déclare qu'elle est une championne.",
+    "connu": [
+      "Gran Brijit lui a confié deux missions : ne pas ouvrir de portail entre Cap Cornes et Havre Noir, et trouver puis tuer Oren Sidaï à Roshen Buru pour préserver l'équilibre.",
+      "Elle a marqué à la craie la porte d'Ursinus, celle de la tour d'Eamonn et d'autres lieux, qui servent de points de retour.",
+      "Elle chantait chaque soir au Cornua Fracta pendant le mois perdu, sans en garder le moindre souvenir.",
+      "Elle comprend les langues par magie, ce qui sert de passerelle avec les habitants d'Istra."
+    ],
+    "histoire": [
+      "Elle voit une balance désaxée dans le Manoir des Ligaments, avant le départ de Cap Cornes.",
+      "À Roshen Buru, elle dévalise la boutique d'Oren Sidaï après sa mort.",
+      "Elle identifie la pièce d'âme du clan Urameï."
+    ],
+    "relations": [
+      {
+        "cible": "gran-brijit",
+        "type": "Désignée championne par",
+        "ton": "neutre"
+      },
+      {
+        "cible": "sera",
+        "type": "Admirée par",
+        "ton": "positif"
+      },
+      {
+        "cible": "eamonn",
+        "type": "Point de retour : tour d'Eamonn",
+        "ton": "neutre"
+      },
+      {
+        "cible": "jane-merigold",
+        "type": "Compagne d'aventure",
+        "ton": "positif"
+      },
+      {
+        "cible": "harfang-tsuren",
+        "type": "Compagnon d'aventure",
+        "ton": "positif"
+      }
+    ],
+    "formes": [
+      {
+        "img": "img/groupe/philippa-rougetoison.webp",
+        "label": "Normal",
+        "lieux": [],
+        "teinte": "#753c19"
+      },
+      {
+        "img": "img/pnj/philippa-a-roshen-buru.webp",
+        "label": "A Roshen Buru",
+        "lieux": [],
+        "fond": "img/paysages/roshen-buru/rue.webp",
+        "teinte": "#751925"
+      }
+    ],
+    "teinte": "#753c19",
+    "galerie": [
+      {
+        "img": "img/paysages/cap-cornes/cabane-gran-brijit.webp",
+        "legende": ""
+      }
+    ]
+  },
+  {
+    "id": "altera",
+    "type": "faction",
+    "nom": "Altéra",
+    "titre": "Dynastie d'Altéra",
+    "parent": "thaldera",
+    "blason": "img/blasons/altera.webp",
+    "accent": "#4a8fd9",
+    "zone": {
+      "x": 0.125,
+      "y": 0.237,
+      "w": 0.516,
+      "h": 0.425
+    },
+    "alias": [
+      "Dynastie d'Altéra",
+      "altéran",
+      "altérane",
+      "altérans"
+    ],
+    "resume": "Faction dirigée par l'impératrice Eryndel. La Gardienne envisage une alliance.",
+    "connu": [
+      "Altéra est dirigée par l'impératrice Eryndel.",
+      "La Gardienne envisage une alliance avec elle, d'après son journal."
+    ],
+    "relations": [
+      {
+        "cible": "eryndel",
+        "type": "Impératrice",
+        "ton": "positif"
+      },
+      {
+        "cible": "anaru-miren-buru",
+        "type": "Alliance envisagée",
+        "ton": "neutre"
+      }
+    ],
+    "poly": [
+      [
+        0.6267,
+        0.1992
+      ],
+      [
+        0.6076,
+        0.1992
+      ],
+      [
+        0.5017,
+        0.2122
+      ],
+      [
+        0.4939,
+        0.2155
+      ],
+      [
+        0.4835,
+        0.2233
+      ],
+      [
+        0.4757,
+        0.2233
+      ],
+      [
+        0.4722,
+        0.2246
+      ],
+      [
+        0.4714,
+        0.2285
+      ],
+      [
+        0.4757,
+        0.2344
+      ],
+      [
+        0.4748,
+        0.2383
+      ],
+      [
+        0.4714,
+        0.2409
+      ],
+      [
+        0.4635,
+        0.2435
+      ],
+      [
+        0.4644,
+        0.248
+      ],
+      [
+        0.4592,
+        0.2526
+      ],
+      [
+        0.4479,
+        0.2559
+      ],
+      [
+        0.4375,
+        0.2559
+      ],
+      [
+        0.4193,
+        0.25
+      ],
+      [
+        0.4132,
+        0.2454
+      ],
+      [
+        0.4115,
+        0.2428
+      ],
+      [
+        0.4132,
+        0.2266
+      ],
+      [
+        0.3906,
+        0.2253
+      ],
+      [
+        0.3845,
+        0.2305
+      ],
+      [
+        0.3802,
+        0.2318
+      ],
+      [
+        0.3767,
+        0.2311
+      ],
+      [
+        0.3715,
+        0.2272
+      ],
+      [
+        0.355,
+        0.2298
+      ],
+      [
+        0.3429,
+        0.2337
+      ],
+      [
+        0.3238,
+        0.2454
+      ],
+      [
+        0.3142,
+        0.2493
+      ],
+      [
+        0.2734,
+        0.2598
+      ],
+      [
+        0.2491,
+        0.2643
+      ],
+      [
+        0.2257,
+        0.2786
+      ],
+      [
+        0.2109,
+        0.2943
+      ],
+      [
+        0.2101,
+        0.2969
+      ],
+      [
+        0.2118,
+        0.2975
+      ],
+      [
+        0.2196,
+        0.2956
+      ],
+      [
+        0.23,
+        0.3001
+      ],
+      [
+        0.2483,
+        0.3027
+      ],
+      [
+        0.2491,
+        0.3053
+      ],
+      [
+        0.2431,
+        0.3132
+      ],
+      [
+        0.2431,
+        0.3216
+      ],
+      [
+        0.2378,
+        0.3275
+      ],
+      [
+        0.2248,
+        0.3372
+      ],
+      [
+        0.2205,
+        0.3444
+      ],
+      [
+        0.2196,
+        0.3535
+      ],
+      [
+        0.2179,
+        0.3561
+      ],
+      [
+        0.2023,
+        0.3665
+      ],
+      [
+        0.1962,
+        0.3757
+      ],
+      [
+        0.191,
+        0.3783
+      ],
+      [
+        0.1771,
+        0.3809
+      ],
+      [
+        0.171,
+        0.3841
+      ],
+      [
+        0.1684,
+        0.388
+      ],
+      [
+        0.1675,
+        0.4036
+      ],
+      [
+        0.1658,
+        0.4062
+      ],
+      [
+        0.1623,
+        0.4082
+      ],
+      [
+        0.1484,
+        0.4108
+      ],
+      [
+        0.1337,
+        0.4089
+      ],
+      [
+        0.1259,
+        0.4128
+      ],
+      [
+        0.1224,
+        0.418
+      ],
+      [
+        0.1172,
+        0.4362
+      ],
+      [
+        0.1215,
+        0.444
+      ],
+      [
+        0.1207,
+        0.4577
+      ],
+      [
+        0.1259,
+        0.4688
+      ],
+      [
+        0.1328,
+        0.4733
+      ],
+      [
+        0.1458,
+        0.4753
+      ],
+      [
+        0.1519,
+        0.4818
+      ],
+      [
+        0.1502,
+        0.4863
+      ],
+      [
+        0.1415,
+        0.4948
+      ],
+      [
+        0.1415,
+        0.5026
+      ],
+      [
+        0.1441,
+        0.5072
+      ],
+      [
+        0.1536,
+        0.513
+      ],
+      [
+        0.1693,
+        0.5163
+      ],
+      [
+        0.1753,
+        0.5221
+      ],
+      [
+        0.1753,
+        0.5267
+      ],
+      [
+        0.1684,
+        0.5417
+      ],
+      [
+        0.1675,
+        0.5501
+      ],
+      [
+        0.1693,
+        0.5612
+      ],
+      [
+        0.1658,
+        0.5697
+      ],
+      [
+        0.1658,
+        0.5742
+      ],
+      [
+        0.1701,
+        0.5781
+      ],
+      [
+        0.1866,
+        0.5781
+      ],
+      [
+        0.1918,
+        0.5807
+      ],
+      [
+        0.1953,
+        0.5866
+      ],
+      [
+        0.1997,
+        0.6016
+      ],
+      [
+        0.2127,
+        0.61
+      ],
+      [
+        0.2127,
+        0.6204
+      ],
+      [
+        0.217,
+        0.627
+      ],
+      [
+        0.217,
+        0.6328
+      ],
+      [
+        0.2153,
+        0.6354
+      ],
+      [
+        0.2161,
+        0.6426
+      ],
+      [
+        0.224,
+        0.6458
+      ],
+      [
+        0.2335,
+        0.6458
+      ],
+      [
+        0.2387,
+        0.6478
+      ],
+      [
+        0.263,
+        0.6647
+      ],
+      [
+        0.2639,
+        0.6686
+      ],
+      [
+        0.2674,
+        0.6693
+      ],
+      [
+        0.2856,
+        0.6621
+      ],
+      [
+        0.3351,
+        0.6523
+      ],
+      [
+        0.3594,
+        0.6497
+      ],
+      [
+        0.3967,
+        0.6484
+      ],
+      [
+        0.4314,
+        0.6426
+      ],
+      [
+        0.4635,
+        0.6426
+      ],
+      [
+        0.4818,
+        0.6335
+      ],
+      [
+        0.4913,
+        0.6146
+      ],
+      [
+        0.4931,
+        0.6074
+      ],
+      [
+        0.4922,
+        0.5938
+      ],
+      [
+        0.487,
+        0.5736
+      ],
+      [
+        0.487,
+        0.5618
+      ],
+      [
+        0.4931,
+        0.554
+      ],
+      [
+        0.5052,
+        0.5443
+      ],
+      [
+        0.5104,
+        0.5358
+      ],
+      [
+        0.5104,
+        0.5299
+      ],
+      [
+        0.5052,
+        0.5189
+      ],
+      [
+        0.5069,
+        0.4948
+      ],
+      [
+        0.4948,
+        0.4622
+      ],
+      [
+        0.4896,
+        0.4414
+      ],
+      [
+        0.4878,
+        0.4206
+      ],
+      [
+        0.4939,
+        0.3978
+      ],
+      [
+        0.5061,
+        0.3691
+      ],
+      [
+        0.5148,
+        0.3568
+      ],
+      [
+        0.5339,
+        0.3379
+      ],
+      [
+        0.5417,
+        0.3242
+      ],
+      [
+        0.5486,
+        0.3158
+      ],
+      [
+        0.559,
+        0.3073
+      ],
+      [
+        0.5686,
+        0.3027
+      ],
+      [
+        0.5799,
+        0.2936
+      ],
+      [
+        0.5929,
+        0.2865
+      ],
+      [
+        0.6024,
+        0.2793
+      ],
+      [
+        0.6111,
+        0.2695
+      ],
+      [
+        0.6441,
+        0.2474
+      ],
+      [
+        0.6484,
+        0.2396
+      ],
+      [
+        0.6502,
+        0.2266
+      ],
+      [
+        0.6476,
+        0.2253
+      ],
+      [
+        0.6354,
+        0.2246
+      ],
+      [
+        0.6302,
+        0.2214
+      ],
+      [
+        0.6276,
+        0.2161
+      ]
+    ],
+    "lab": [
+      0.319,
+      0.469
+    ],
+    "couleur": "#4a8fd9",
+    "polyx": [
+      [
+        [
+          0.2083,
+          0.3008
+        ],
+        [
+          0.2049,
+          0.3008
+        ],
+        [
+          0.1884,
+          0.3164
+        ],
+        [
+          0.1823,
+          0.3255
+        ],
+        [
+          0.1849,
+          0.3262
+        ],
+        [
+          0.197,
+          0.3236
+        ],
+        [
+          0.204,
+          0.3203
+        ],
+        [
+          0.2049,
+          0.3105
+        ]
+      ]
+    ]
+  },
+  {
+    "id": "dominion-sol",
+    "type": "faction",
+    "nom": "Dominion Sol",
+    "titre": "Faction de Thaldera",
+    "parent": "thaldera",
+    "blason": "img/blasons/dominion-sol.webp",
+    "accent": "#c44510",
+    "zone": {
+      "x": 0.49,
+      "y": 0.235,
+      "w": 0.337,
+      "h": 0.459
+    },
+    "alias": [
+      "le Dominion"
+    ],
+    "resume": "Faction de Thaldera qui semble mener une guerre.",
+    "connu": [],
+    "poly": [
+      [
+        0.6528,
+        0.2259
+      ],
+      [
+        0.651,
+        0.2266
+      ],
+      [
+        0.6493,
+        0.2396
+      ],
+      [
+        0.645,
+        0.2474
+      ],
+      [
+        0.612,
+        0.2695
+      ],
+      [
+        0.6033,
+        0.2793
+      ],
+      [
+        0.5929,
+        0.2871
+      ],
+      [
+        0.5799,
+        0.2943
+      ],
+      [
+        0.5686,
+        0.3034
+      ],
+      [
+        0.559,
+        0.3079
+      ],
+      [
+        0.5495,
+        0.3158
+      ],
+      [
+        0.5425,
+        0.3242
+      ],
+      [
+        0.5347,
+        0.3379
+      ],
+      [
+        0.513,
+        0.36
+      ],
+      [
+        0.5,
+        0.3841
+      ],
+      [
+        0.4913,
+        0.4082
+      ],
+      [
+        0.4887,
+        0.4251
+      ],
+      [
+        0.4939,
+        0.4564
+      ],
+      [
+        0.5087,
+        0.4987
+      ],
+      [
+        0.5061,
+        0.5189
+      ],
+      [
+        0.5113,
+        0.5299
+      ],
+      [
+        0.5113,
+        0.5358
+      ],
+      [
+        0.5061,
+        0.5443
+      ],
+      [
+        0.4939,
+        0.554
+      ],
+      [
+        0.4878,
+        0.5618
+      ],
+      [
+        0.4878,
+        0.5736
+      ],
+      [
+        0.4931,
+        0.5938
+      ],
+      [
+        0.4939,
+        0.6074
+      ],
+      [
+        0.4922,
+        0.6146
+      ],
+      [
+        0.4826,
+        0.6328
+      ],
+      [
+        0.4861,
+        0.6491
+      ],
+      [
+        0.4922,
+        0.6589
+      ],
+      [
+        0.5061,
+        0.6725
+      ],
+      [
+        0.5217,
+        0.6823
+      ],
+      [
+        0.5417,
+        0.6719
+      ],
+      [
+        0.5582,
+        0.6608
+      ],
+      [
+        0.5634,
+        0.6589
+      ],
+      [
+        0.5729,
+        0.6589
+      ],
+      [
+        0.6068,
+        0.6654
+      ],
+      [
+        0.6267,
+        0.6784
+      ],
+      [
+        0.6345,
+        0.6816
+      ],
+      [
+        0.6484,
+        0.6829
+      ],
+      [
+        0.6589,
+        0.6862
+      ],
+      [
+        0.6736,
+        0.6849
+      ],
+      [
+        0.6832,
+        0.6888
+      ],
+      [
+        0.704,
+        0.6934
+      ],
+      [
+        0.7101,
+        0.696
+      ],
+      [
+        0.7214,
+        0.7064
+      ],
+      [
+        0.7283,
+        0.7077
+      ],
+      [
+        0.7405,
+        0.7012
+      ],
+      [
+        0.7795,
+        0.6999
+      ],
+      [
+        0.7882,
+        0.6973
+      ],
+      [
+        0.8012,
+        0.6966
+      ],
+      [
+        0.8073,
+        0.6947
+      ],
+      [
+        0.8116,
+        0.6895
+      ],
+      [
+        0.8125,
+        0.6797
+      ],
+      [
+        0.8212,
+        0.6602
+      ],
+      [
+        0.8273,
+        0.653
+      ],
+      [
+        0.8273,
+        0.6465
+      ],
+      [
+        0.8194,
+        0.6367
+      ],
+      [
+        0.8186,
+        0.6335
+      ],
+      [
+        0.8203,
+        0.6315
+      ],
+      [
+        0.8316,
+        0.6309
+      ],
+      [
+        0.8368,
+        0.6289
+      ],
+      [
+        0.8394,
+        0.625
+      ],
+      [
+        0.8385,
+        0.6107
+      ],
+      [
+        0.8342,
+        0.6003
+      ],
+      [
+        0.829,
+        0.5931
+      ],
+      [
+        0.829,
+        0.5879
+      ],
+      [
+        0.8255,
+        0.5807
+      ],
+      [
+        0.8264,
+        0.5742
+      ],
+      [
+        0.8351,
+        0.5671
+      ],
+      [
+        0.8351,
+        0.5592
+      ],
+      [
+        0.8247,
+        0.5371
+      ],
+      [
+        0.8229,
+        0.5267
+      ],
+      [
+        0.816,
+        0.515
+      ],
+      [
+        0.8151,
+        0.498
+      ],
+      [
+        0.803,
+        0.4811
+      ],
+      [
+        0.7969,
+        0.4694
+      ],
+      [
+        0.776,
+        0.4512
+      ],
+      [
+        0.7743,
+        0.4479
+      ],
+      [
+        0.7743,
+        0.4382
+      ],
+      [
+        0.77,
+        0.4303
+      ],
+      [
+        0.7595,
+        0.4219
+      ],
+      [
+        0.7509,
+        0.4173
+      ],
+      [
+        0.7509,
+        0.403
+      ],
+      [
+        0.7465,
+        0.3965
+      ],
+      [
+        0.737,
+        0.3893
+      ],
+      [
+        0.7344,
+        0.3828
+      ],
+      [
+        0.7561,
+        0.3698
+      ],
+      [
+        0.7708,
+        0.3652
+      ],
+      [
+        0.7856,
+        0.3542
+      ],
+      [
+        0.7908,
+        0.347
+      ],
+      [
+        0.8021,
+        0.3457
+      ],
+      [
+        0.8082,
+        0.3424
+      ],
+      [
+        0.809,
+        0.3366
+      ],
+      [
+        0.8064,
+        0.332
+      ],
+      [
+        0.8064,
+        0.3249
+      ],
+      [
+        0.8134,
+        0.3047
+      ],
+      [
+        0.8108,
+        0.2878
+      ],
+      [
+        0.8168,
+        0.2845
+      ],
+      [
+        0.8411,
+        0.2839
+      ],
+      [
+        0.8446,
+        0.2812
+      ],
+      [
+        0.8446,
+        0.278
+      ],
+      [
+        0.8368,
+        0.2747
+      ],
+      [
+        0.822,
+        0.2734
+      ],
+      [
+        0.7917,
+        0.2734
+      ],
+      [
+        0.7856,
+        0.2754
+      ],
+      [
+        0.7778,
+        0.2806
+      ],
+      [
+        0.7726,
+        0.2806
+      ],
+      [
+        0.7708,
+        0.2786
+      ],
+      [
+        0.77,
+        0.265
+      ],
+      [
+        0.7595,
+        0.252
+      ],
+      [
+        0.7604,
+        0.2474
+      ],
+      [
+        0.77,
+        0.2409
+      ],
+      [
+        0.77,
+        0.2363
+      ],
+      [
+        0.7665,
+        0.2331
+      ],
+      [
+        0.7595,
+        0.2324
+      ],
+      [
+        0.7561,
+        0.2337
+      ],
+      [
+        0.7517,
+        0.2389
+      ],
+      [
+        0.7483,
+        0.2402
+      ],
+      [
+        0.7378,
+        0.235
+      ],
+      [
+        0.7248,
+        0.2396
+      ],
+      [
+        0.7066,
+        0.2376
+      ],
+      [
+        0.6918,
+        0.2376
+      ],
+      [
+        0.6858,
+        0.2357
+      ],
+      [
+        0.6719,
+        0.2279
+      ]
+    ],
+    "lab": [
+      0.67,
+      0.557
+    ],
+    "couleur": "#c44510"
+  },
+  {
+    "id": "port-doelan",
+    "type": "ville",
+    "nom": "Port Doëlan",
+    "titre": "Ville rasée en pleine reconstruction",
+    "parent": "consortium",
+    "blason": "img/blasons/port-doelan.webp",
+    "accent": "#c9a84c",
+    "pos": {
+      "x": 0.19,
+      "y": 0.747
+    },
+    "alias": [
+      "Doëlan"
+    ],
+    "resume": "Ville rasée par le géant en armure, dirigée de fortune par une tieffeline rouge. Alliée du groupe.",
+    "connu": [
+      "Cité portuaire du Consortium, sur une eau turquoise, aux rues de pierre blonde, d'arcades et de terrasses. Elle vivait de son port, de sa mine d'argent et de sa carrière.",
+      "Bartolomeo Spezza, seigneur pirate et warlock lié à Vassago, la tenait depuis son château. Il finançait la Griffe, le trafic humain et un sous-marin en pyrracier par l'intermédiaire de Titan Inc.",
+      "Le groupe a donné l'assaut au château et tué Spezza. Naberoth, le démon qui rôdait sous les caves, a été renvoyé aux Enfers.",
+      "La ville est aujourd'hui en ruines : le géant en armure l'a rasée, et l'assaut du groupe a aussi fait des dégâts. Des équipes déblaient les gravats et la reconstruction est en cours.",
+      "Vespera Merigold, la tieffeline rouge, à cornes et légèrement vêtue, a hérité du pouvoir. Ancienne Madame de la maison close, sœur d'orphelinat de Jane, elle dirige les ruines de fortune depuis un bloc de maçonnerie qui lui sert de trône.",
+      "Sa garde se compose de Tina et Nina, en armures bricolées, et de Kralik et Nesk, les deux wererats libérés par le groupe, qui patrouillent la ville.",
+      "La plupart des habitants sont au chômage et la flotte est en miettes. Le pacte avec l'Aile d'Argent a apporté des capitaux, très loin de ce qu'il faudrait.",
+      "Vespera attend la livraison de l'Arshen à Cap Cornes pour relancer le commerce. Jane lui a remis la Couronne de Corail Noir, dont la revente doit financer l'archène de Keras Tauroc, avec 1 % des ventes pour Jane.",
+      "Un ambassadeur de Rivegard presse Sycomore Brise-Pavois de lâcher Port Doëlan.",
+      "Des mercenaires sous pavillon inconnu attaquent ceux qui sortent de la ville. L'émissaire que Vespera a envoyé au sud de Leyenmil n'est pas revenu.",
+      "Ce sont des alliés du groupe. Un cercle de téléportation relie les ruines du château à la tour d'Eamonn, à Cap Cornes."
+    ],
+    "relations": [
+      {
+        "cible": "eamonn",
+        "type": "Cercle de téléportation",
+        "ton": "positif"
+      },
+      {
+        "cible": "tour-eamonn",
+        "type": "Cercle de téléportation",
+        "ton": "positif"
+      }
+    ],
+    "galerie": [
+      {
+        "img": "img/paysages/port-doelan/vue-ville.webp",
+        "legende": "Port Doëlan, vue d'ensemble"
+      },
+      {
+        "img": "img/paysages/port-doelan/salle-du-trone.webp",
+        "legende": "La salle du trône"
+      },
+      {
+        "img": "img/paysages/port-doelan/port.webp",
+        "legende": "Le port"
+      }
+    ]
+  },
+  {
+    "id": "kazad-marunn",
+    "type": "ville",
+    "nom": "Kazad Marunn",
+    "titre": "Ville des sables",
+    "parent": "consortium",
+    "alias": [
+      "Khazad-Marun",
+      "Khazad Marun"
+    ],
+    "pos": {
+      "x": 0.727,
+      "y": 0.927
+    },
+    "resume": "Ville des sables où Gran Brijit a affronté Ginko Noshi-Buru.",
+    "connu": [
+      "Le groupe a traversé le désert avec Gran Brijit, que les gens du pays appellent Ereshkigal."
+    ],
+    "relations": [
+      {
+        "cible": "ginko-noshi-buru",
+        "type": "Affrontement",
+        "ton": "negatif"
+      },
+      {
+        "cible": "gran-brijit",
+        "type": "Affrontement",
+        "ton": "negatif"
+      }
+    ]
+  },
+  {
+    "id": "eryndel",
+    "type": "pnj",
+    "nom": "Eryndel",
+    "titre": "Impératrice d'Altéra",
+    "parent": "altera",
+    "statut": "vivant",
+    "resume": "Impératrice d'Altéra. La Gardienne envisage une alliance avec elle.",
+    "connu": [
+      "Le journal de la Gardienne montre qu'elle prépare une alliance avec elle.",
+      "La Protectrice la traite de « pétasse ».",
+      "Dans un rêve partagé, elle accueille les PJ aux Jardins de l'Éternité : peau de marbre fissurée laissant passer la lumière des galaxies, chevelure blanche mouvante, aucun visage mais un vide rempli de constellations.",
+      "Elle parle de deux petits soleils brillant seuls dans le froid du cosmos, l'un allumé des restes d'un Titan faiblissant, l'autre par le génie fou d'un homme seul, et demande si leurs trajectoires gravitent autour du même point."
+    ],
+    "relations": [
+      {
+        "cible": "anaru-miren-buru",
+        "type": "Alliance envisagée",
+        "ton": "neutre"
+      }
+    ],
+    "citation": {
+      "texte": "Deux petits soleils, brillants seuls dans le froid du cosmos infini…",
+      "qui": "Impératrice Eryndel"
+    },
+    "attitude": "neutre"
+  }
 ]
