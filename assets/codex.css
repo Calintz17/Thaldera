@@ -637,3 +637,6 @@ li.key { border-left: 2px solid var(--gold); padding-left: 10px; margin-left: -1
 .gal .gdots button { width: 10px; height: 10px; border-radius: 50%; background: rgba(255,255,255,.32); border: 1px solid rgba(255,255,255,.2); cursor: pointer; }
 .gal .gdots button.on { background: var(--gold-hi); border-color: var(--gold-hi); }
 .gal .gdots button:hover { background: #fff4d6; }
+
+/* v55: hide inert map controls behind galleries and stacked plans */
+.stage:has(.gal) .maptools, .stage:has(.stackl) .maptools { display: none; }

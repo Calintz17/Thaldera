@@ -50,3 +50,6 @@
 - Test smartphone : arrivée sur une fiche par URL, explorer, sélection du continent, navigation depuis la carte, ouverture et fermeture des quêtes.
 - Test sur ordinateur : contours Istra/Thaldera, cadrage des régions, 8 polygones, marqueurs de villes et de lieux, transitions rapides de cartes.
 - Validation de cohérence des illustrations : portrait principal, forme contextuelle, arrière-plan de ville, lieu et personnage, sans modifier le texte.
+
+## Complément v55
+Le zoom haute résolution est désormais accessible sur les écrans tactiles également, sans dégrader les assets. Les cartes inférieures des villes à plusieurs plans utilisent le chargement différé, et les commandes inactives sont masquées derrière les galeries et plans empilés.

@@ -4,7 +4,7 @@
 (() => {
 'use strict';
 
-const VER = '54';
+const VER = '55';
 const EDIT = new URLSearchParams(location.search).has('edit');
 const $ = (s, r = document) => r.querySelector(s);
 const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
@@ -133,7 +133,6 @@ const PH_LAND = { img: 'img/placeholder/paysage.svg', legende: '', ph: true };
 const PH_SIL = 'img/placeholder/silhouette.svg';
 const S = { map: null, gal: null, entry: null, key: '', cut: null, W: 0, H: 0 };
 
-const SMALLMAP = matchMedia('(max-width: 860px), (pointer: coarse)').matches;
 const BIGMAP = /^img\/cartes\/(istra|thaldera|thaldera-factions)\.webp$/;
 const mapSrc = u => BIGMAP.test(u) ? u.replace('.webp', '-m.webp') : u;
 function syncTop() { const t = document.querySelector('.top'); if (t) document.documentElement.style.setProperty('--top-h', t.offsetHeight + 'px'); }
@@ -159,11 +158,12 @@ function setCam(layer, rect, animate, pad) {
   el.classList.toggle('zp', !!layer.zp);
   el.dataset.z = rel < 1.25 ? "0" : rel < 1.7 ? "1" : "2";
   // Download full-resolution map only when the zoom actually requires it.
-  if (!SMALLMAP && BIGMAP.test(layer.src) && rel >= 1.65 && !layer.hiLoading) {
+  if (BIGMAP.test(layer.src) && rel >= 1.65 && !layer.hiLoading && !layer.hiFailed) {
     layer.hiLoading = true;
     const high = new Image();
     high.decoding = 'async';
     high.onload = () => { const img = layer.cam.querySelector('img'); if (img) img.src = layer.src; };
+    high.onerror = () => { layer.hiFailed = true; };
     high.src = layer.src;
   }
   el.style.transform = `translate(${c.tx}px, ${c.ty}px) scale(${c.s})`;
@@ -446,7 +446,7 @@ function makeStack(sc) {
   const el = document.createElement('div');
   el.className = 'layer stackl';
   el.innerHTML = '<div class="stk">' + sc.sheets.map((sh, i) =>
-    `<section class="sheet" data-i="${i}" style="--s:1"><div class="shcap">${esc(sh.carte.legende || '')}</div><div class="shw"><img src="${mapSrc(sh.carte.img)}" alt="" draggable="false"><div class="ovl"></div></div></section>`).join('') + '</div>';
+    `<section class="sheet" data-i="${i}" style="--s:1"><div class="shcap">${esc(sh.carte.legende || '')}</div><div class="shw"><img src="${mapSrc(sh.carte.img)}" loading="${i > sc.focusSheet ? 'lazy' : 'eager'}" decoding="async" alt="" draggable="false"><div class="ovl"></div></div></section>`).join('') + '</div>';
   const layer = { el, stack: true, src: sc.src };
   const stk = $('.stk', el);
   const listenerScope = new AbortController();
@@ -1154,7 +1154,7 @@ function initRunes() {
   const ptrs = new Map(); let pinch = null;
   const spread = () => { const [a, b] = [...ptrs.values()]; return { d: Math.hypot(a.x - b.x, a.y - b.y), cx: (a.x + b.x) / 2, cy: (a.y + b.y) / 2 }; };
   stageEl.addEventListener('pointerdown', ev => {
-    if (!live() || ev.button !== 0) return;
+    if (!live() || ev.button !== 0 || ev.target.closest('.maptools, .mapcap')) return;
     ptrs.set(ev.pointerId, { x: ev.clientX, y: ev.clientY });
     if (ptrs.size === 2) { const sp = spread(); pinch = { d: sp.d, r: { ...S.map.rect } }; drag = null; moved = true; return; }
     drag = { x: ev.clientX, y: ev.clientY, r: { ...S.map.rect } }; moved = false;
