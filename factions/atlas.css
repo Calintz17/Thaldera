@@ -1,0 +1,38 @@
+
+/* Factions overview v60, compatible with the main codex art direction. */
+:root { --bg:#0b0d13; --card-bg:#171b24; --card-border:rgba(196,163,106,.28);
+  --text:#e9dfca; --muted:#b5a996; --gold:#c4a36a; }
+body { font-family:'Alegreya',Georgia,serif;
+  background:radial-gradient(ellipse 82% 50% at 50% -8%,#29313c,#161b26 55%,#0b0d13 95%);
+  padding:clamp(35px,5vw,75px) clamp(14px,3vw,38px) 85px; }
+header { margin-bottom:35px; }
+.header-pre { font:700 11px 'Alegreya Sans',sans-serif; letter-spacing:.3em; color:#c5ab76; }
+h1 { font:600 clamp(31px,5vw,60px)/1.1 'Cinzel',serif; letter-spacing:.15em; }
+.subtitle { font:italic 19px 'Alegreya',serif; color:#cec1ae; letter-spacing:.03em; }
+.grid { max-width:1220px; gap:16px; }
+.card { position:relative; border:1px solid #62543c; border-top:2px solid var(--accent,#98794e);
+  border-radius:5px; background:linear-gradient(145deg,#212530,#141a24 68%,#10151d);
+  padding:25px clamp(15px,2vw,25px) 27px;
+  box-shadow:0 9px 28px #0006,inset 0 1px 0 #ffffff12; }
+.card::before,.card::after { content:""; position:absolute; width:20px; height:20px; pointer-events:none; }
+.card::before { left:7px; top:7px; border-top:1px solid #ae9362; border-left:1px solid #ae9362; }
+.card::after { right:7px; bottom:7px; border-right:1px solid #ae9362; border-bottom:1px solid #ae9362; }
+.card:hover { background:linear-gradient(145deg,#2a2c35,#151d2b 70%,#101723);
+  border-color:#b49b67; box-shadow:0 16px 34px #0009,inset 0 1px 0 #ffffff15; }
+.crest-wrap { width:min(176px,70%); height:155px; margin-bottom:13px; }
+.crest-img { width:100%; height:100%; object-fit:contain; filter:drop-shadow(0 9px 13px #0009); }
+.faction-name { font:600 clamp(17px,2vw,24px)/1.3 'Cinzel',serif;
+  letter-spacing:.08em; color:#f5e9d0; }
+.ruler-title { font:700 11px 'Alegreya Sans',sans-serif; letter-spacing:.13em; }
+.ruler-name { font:italic 19px/1.35 'Alegreya',serif; color:#e5d6bc; }
+.themes { font:italic 16px/1.35 'Alegreya',serif; color:#d4b87f; }
+.description { font:400 19px/1.46 'Alegreya',serif; color:#dbd1c3; text-align:left; }
+.back-codex { position:absolute; top:14px; left:18px; color:#ebcd92;
+  font:700 12px/1.4 'Alegreya Sans',sans-serif; letter-spacing:.10em; text-decoration:none;
+  background:#101722; border:1px solid #746242; padding:8px 12px; border-radius:4px; }
+.back-codex:hover { color:#fff3d8; background:#292a30; border-color:#c4a36a; }
+.back-codex:focus-visible { outline:2px solid #ffdc9b; outline-offset:3px; }
+@media(max-width:800px) { .grid { grid-template-columns:repeat(2,minmax(0,1fr)); } .description { font-size:17px; } }
+@media(max-width:540px) { header { padding-top:24px; } .grid { grid-template-columns:1fr; }
+ .card { padding:20px 19px 24px; } .crest-wrap { height:125px; } .description { font-size:19px; } }
+@media(prefers-reduced-motion:reduce) { .card { transition:none; } }

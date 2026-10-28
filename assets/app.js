@@ -4,7 +4,7 @@
 (() => {
 'use strict';
 
-const VER = '59';
+const VER = '60';
 const EDIT = new URLSearchParams(location.search).has('edit');
 const $ = (s, r = document) => r.querySelector(s);
 const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
@@ -146,12 +146,18 @@ function camFor(rect, info, pad = 0.94) {
     ty: S.H / 2 - (rect.y + rect.h / 2) * info.h * s
   };
 }
+function clampMapRect(rect) {
+  const bound = (start, size) => size >= 1 ? (1-size)/2 : Math.min(1-size, Math.max(0, start));
+  return { ...rect, x: bound(rect.x, rect.w), y: bound(rect.y, rect.h) };
+}
 function setCam(layer, rect, animate, pad) {
   measure();
   const c = camFor(rect, layer.info, pad);
   layer.rect = rect; layer.pad = pad;
   const el = layer.cam;
   el.classList.toggle('notrans', !animate);
+  // Keep the screen-space label movement in lockstep with the image transform.
+  layer.labels?.style.setProperty('--atlas-motion', animate ? (el.classList.contains('wz') ? '.28s' : '.95s') : '0s');
   el.style.setProperty('--s', c.s);
   const fs = camFor(FULL, layer.info, 0.94).s, rel = c.s / fs;
   el.classList.toggle('zl', !layer.zp && rect.w < 0.5);
@@ -186,7 +192,7 @@ function ensureChrome() {
     }
     const rect = S.map.rect, factor = action === 'in' ? 0.75 : 1.33;
     const w = Math.min(1.1, Math.max(0.04, rect.w * factor)), ratio = w / rect.w;
-    setCam(S.map, { x: rect.x + rect.w * (1-ratio)/2, y: rect.y + rect.h * (1-ratio)/2, w, h: rect.h * ratio }, true);
+    setCam(S.map, clampMapRect({ x: rect.x + rect.w * (1-ratio)/2, y: rect.y + rect.h * (1-ratio)/2, w, h: rect.h * ratio }), true);
   });
   if (EDIT) initEdit();
 }
@@ -436,7 +442,8 @@ function renderOverlay(layer, sc) {
     sc.frames.forEach(f => {
       if (f.solo) return;
       const a = document.createElement('a');
-      a.className = 'rlab'; a.href = '#/' + f.id; a.dataset.id = f.id; a.style.setProperty('--c', f.color);
+      a.className = 'rlab' + (f.act ? ' act' : ''); a.href = '#/' + f.id; a.dataset.id = f.id; a.style.setProperty('--c', f.color);
+      a.setAttribute('aria-label', 'Explorer ' + f.label);
       const c = f.lab || centroid(f.poly);
       a.innerHTML = `<span class="fl">${esc(f.label)}${f.sub ? `<span class="fs">${esc(f.sub)}</span>` : ''}</span>`;
       addAnchor(a, c[0], c[1]);
@@ -452,6 +459,7 @@ function renderOverlay(layer, sc) {
     const a = document.createElement('a');
     a.className = `pin k-${p.kind}${p.dim ? ' dim' : ''}${p.near ? ' near' : ''}${p.here ? ' here' : ''}${p.x < 0.1 ? ' edge-l' : ''}${p.x > 0.9 ? ' edge-r' : ''}`;
     a.href = '#/' + p.id; a.dataset.id = p.id;
+    a.setAttribute('aria-label', 'Ouvrir ' + p.label);
     const ru = BY[p.id] && BY[p.id].rune;
     if (ru) a.classList.add('rune', 'r-' + ru.etat);
     a.innerHTML = `<span class="in"><span class="pd"></span>${ru ? `<span class="rb" title="Rune Raido de Philippa">${RAIDO}</span>` : ''}<span class="pl">${esc(p.label)}</span></span>`;
@@ -686,7 +694,8 @@ function renderCap(sc, entry) {
   if (sc && sc.kind === 'stack') {
     h += sc.tabs.map((t, i) => `<a class="tab${i === sc.tab ? ' on' : ''}" data-sheet="${i}" href="#/${sc.owner.id}">${esc(t.legende || 'Carte ' + (i + 1))}</a>`).join('');
   } else if (sc && sc.owner && sc.owner.type === 'continent') {
-    h = '';
+    const territory = entry && (entry.type === 'region' || entry.type === 'faction');
+    h = territory ? `<span class="cap current-territory"><span class="territory-kicker">Territoire exploré</span><strong>${esc(entry.nom)}</strong></span>` : '';
   } else if (sc && sc.tabs && sc.tabs.length > 1) {
     h += sc.tabs.map((t, i) => `<a class="tab${i === sc.tab ? ' on' : ''}" href="#/${sc.owner.id}${i ? '?c=' + i : ''}">${esc(t.legende || 'Carte ' + (i + 1))}</a>`).join('');
   } else if (sc && !sc.gallery && sc.tabs && sc.tabs[0] && sc.tabs[0].legende) {
@@ -1205,7 +1214,7 @@ function initRunes() {
     const nw = Math.min(1.1, Math.max(0.04, r.w * k)), kk = nw / r.w, nh = r.h * kk;
     const cx = px - kk * (px - (r.x + r.w / 2)), cy = py - kk * (py - (r.y + r.h / 2));
     L.cam.classList.add('wz'); clearTimeout(L.wzT); L.wzT = setTimeout(() => L.cam.classList.remove('wz'), 450);
-    setCam(L, { x: Math.min(1, Math.max(0, cx)) - nw / 2, y: Math.min(1, Math.max(0, cy)) - nh / 2, w: nw, h: nh }, true, L.pad);
+    setCam(L, clampMapRect({ x: cx - nw / 2, y: cy - nh / 2, w: nw, h: nh }), true, L.pad);
   }, { passive: false });
   const ptrs = new Map(); let pinch = null;
   const spread = () => { const [a, b] = [...ptrs.values()]; return { d: Math.hypot(a.x - b.x, a.y - b.y), cx: (a.x + b.x) / 2, cy: (a.y + b.y) / 2 }; };
@@ -1220,7 +1229,7 @@ function initRunes() {
     if (pinch && ptrs.size >= 2 && live()) {
       const L = S.map, r = pinch.r, sp = spread(), k = pinch.d / Math.max(10, sp.d);
       const nw = Math.min(1.1, Math.max(0.04, r.w * k)), nh = r.h * (nw / r.w);
-      setCam(L, { x: r.x + r.w / 2 - nw / 2, y: r.y + r.h / 2 - nh / 2, w: nw, h: nh }, false, L.pad);
+      setCam(L, clampMapRect({ x: r.x + r.w / 2 - nw / 2, y: r.y + r.h / 2 - nh / 2, w: nw, h: nh }), false, L.pad);
       return;
     }
     if (!drag || !live()) return;
@@ -1228,9 +1237,13 @@ function initRunes() {
     if (!moved && Math.hypot(dx, dy) < 6) return;
     moved = true;
     const L = S.map, info = L.info, c = camFor(drag.r, info, L.pad);
-    setCam(L, { x: drag.r.x - dx / (info.w * c.s), y: drag.r.y - dy / (info.h * c.s), w: drag.r.w, h: drag.r.h }, false, L.pad);
+    setCam(L, clampMapRect({ x: drag.r.x - dx / (info.w * c.s), y: drag.r.y - dy / (info.h * c.s), w: drag.r.w, h: drag.r.h }), false, L.pad);
   });
-  const endp = ev => { ptrs.delete(ev.pointerId); if (ptrs.size < 2) pinch = null; if (!ptrs.size) drag = null; };
+  const endp = ev => {
+    ptrs.delete(ev.pointerId);
+    if (ptrs.size < 2) pinch = null;
+    if (!ptrs.size) { drag = null; setTimeout(() => { moved = false; }, 0); }
+  };
   window.addEventListener('pointerup', endp); window.addEventListener('pointercancel', endp);
   stageEl.addEventListener('click', ev => { if (moved) { ev.stopPropagation(); ev.preventDefault(); moved = false; } }, true);
 })();
