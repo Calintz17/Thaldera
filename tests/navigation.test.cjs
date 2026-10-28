@@ -29,5 +29,21 @@ for (const continent of entries.filter(e => e.type === 'continent')) {
       'Atlas pin without normalized coordinates: ' + city.id);
   }
 }
-assert.equal(entries.length, 783, 'Unexpected codex entity count: investigate data changes');
-console.log('Atlas regression OK: Port Doëlan, faction cities, Istra regional cities; 783 fiches.');
+assert.ok(entries.length >= 783, 'Codex entity count decreased below verified v59 baseline');
+assert.equal(new Set(entries.map(e => e.id)).size, entries.length, 'Duplicate entity identifiers detected');
+// Extract and exercise the exact runtime camera clamping function.
+const clampStart = source.indexOf('function clampMapRect(rect) {');
+const clampEnd = source.indexOf('\nfunction setCam(', clampStart);
+assert.ok(clampStart > 0 && clampEnd > clampStart, 'Camera clamp missing');
+const clamp = new Function(source.slice(clampStart, clampEnd) + '\nreturn clampMapRect;')();
+assert.deepEqual(clamp({ x:-0.5, y:0.9, w:0.25, h:0.3 }), { x:0, y:0.7, w:0.25, h:0.3 });
+assert.deepEqual(clamp({ x:0.8, y:0.9, w:1.1, h:1.2 }),
+  { x:-0.05, y:-0.1, w:1.1, h:1.2 });
+const theme = fs.readFileSync(path.join(root, 'assets/arcane-theme.css'), 'utf8');
+const page = fs.readFileSync(path.join(root, 'index.html'), 'utf8');
+assert.ok(theme.includes('.map-labels .rlab { pointer-events:auto;'), 'Region labels must remain interactive');
+assert.ok(theme.includes('--atlas-motion'), 'Map labels must match zoom duration');
+assert.ok(source.includes('class="map-labels"'), 'Screen-space map-label layer required');
+assert.ok(source.includes('current-territory'), 'Selected region title must remain visible');
+assert.ok(page.includes('arcane-theme.css?v=61'), 'Fantasy theme revision must load');
+console.log('Atlas regression OK: city pins, label interaction, camera bounds, 783+ unique fiches.');

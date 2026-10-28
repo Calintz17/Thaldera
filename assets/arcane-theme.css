@@ -385,7 +385,7 @@ a.wcrest:hover { transform:translateY(-6px); border-color:#d4ad69; background:li
 .maptools button { min-width:40px; min-height:40px; }
 @media(max-width:860px) {
   /* Fixed-height desktop header clipped its wrapped rows and broke sticky-map offset. */
-  .top { height:auto; min-height:var(--top-h); flex:0 0 auto; align-content:center; }
+  .top { height:auto; min-height:0; flex:0 0 auto; align-content:center; }
   .map-labels .rlab .fl { font-size:12px; padding:4px 7px; }
   .map-labels .rlab.act .fl { font-size:12px; }
   .mapcap .current-territory { padding:6px 10px 7px; }
@@ -396,4 +396,28 @@ a.wcrest:hover { transform:translateY(-6px); border-color:#d4ad69; background:li
   .map-labels .rlab .fl { font-size:11px; padding:3px 5px; letter-spacing:.025em; }
   .map-labels .rlab.act .fl { font-size:11px; }
   .current-territory .territory-kicker { font-size:8px; }
+}
+
+/* v61: finish typography and responsive map controls */
+@media(max-width:860px) {
+  .top { min-height:0; }
+  .search { min-width:0; }
+  .nav a,.nav .qbtn { min-height:38px; }
+  .mapcap { max-width:calc(100% - 18px); }
+}
+@media(max-width:600px) {
+  .world { padding-inline:12px; }
+  .wgrid { max-width:350px; }
+  .pin-pad .head h1 { overflow-wrap:break-word; }
+  .ewin { width:100%; }
+  .mapcap .current-territory { max-width:min(48vw,220px); }
+  .mapcap .current-territory strong { overflow-wrap:anywhere; }
+}
+@media(prefers-reduced-motion:reduce) {
+  .map-labels .rlab,.map-labels .pin { transition:none !important; }
+}
+/* Harmonize direct interaction across the codex, even on touch devices. */
+@media(hover:hover) {
+  .map-labels .rlab:not(.act):hover .fl { border-bottom-color:#f0d4a0; }
+  .maptools button:hover { box-shadow:inset 0 0 0 1px rgba(235,203,142,.24); }
 }
