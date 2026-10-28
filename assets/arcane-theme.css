@@ -330,3 +330,14 @@ a.wcrest:hover { transform:translateY(-6px); border-color:#d4ad69; background:li
  .map-labels .pin .in { width:44px; height:44px; }
  .map-labels .pin .pd { inset:16px; }
 }
+
+/* v58 : etiquettes de regions legeres (texte sur la carte, carte seulement au survol) */
+.map-labels .rlab .fl { white-space:nowrap; max-width:none; padding:2px 6px; border-color:transparent; border-radius:3px;
+  background:transparent; box-shadow:none; color:#fff3d2; letter-spacing:.14em;
+  text-shadow:0 0 3px #000,0 0 6px #000,0 1px 10px #000,0 0 16px rgba(0,0,0,.8); }
+.map-labels .rlab .fs { display:none; }
+.map-labels .rlab.hot .fl,.map-labels .rlab:hover .fl { background:#edcd8e; border-color:#fff0c4; color:#111821; text-shadow:none; box-shadow:0 6px 22px #000b; }
+.map-labels .rlab.hot .fs,.map-labels .rlab:hover .fs { display:block; white-space:normal; max-width:190px; }
+@media(max-width:760px) { .map-labels .rlab .fl { font-size:10px; max-width:none; padding:1px 4px; letter-spacing:.1em; } }
+.map-labels .rlab { z-index:6; pointer-events:none; }
+.map-labels .rlab .fl { font-size:clamp(11px,.9vw,13px); }
