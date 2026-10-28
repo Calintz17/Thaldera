@@ -320,3 +320,13 @@ a.wcrest:hover { transform:translateY(-6px); border-color:#d4ad69; background:li
  .map-labels .pin,.map-labels .rlab,.cam,.layer,.wcrest { transition:none !important; animation:none !important; }
  html { scroll-behavior:auto; }
 }
+
+/* Visibility policy: a named city remains legible after entering a territory. */
+.map-labels.zp[data-z="1"] .pin.k-ville:not(.dim):not(.near) .pl,
+.map-labels.zp[data-z="2"] .pin.k-ville:not(.dim) .pl { display:block; }
+.map-labels .pin.crowded:not(:hover):not(:focus-within) .pl { display:none !important; }
+.map-labels .pin:focus-within .pl { display:block !important; }
+@media(max-width:860px) {
+ .map-labels .pin .in { width:44px; height:44px; }
+ .map-labels .pin .pd { inset:16px; }
+}

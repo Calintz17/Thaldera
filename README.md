@@ -32,3 +32,12 @@ Les retouches géographiques précises nécessitent une comparaison visuelle ave
 ## Contrôles continus
 Le workflow GitHub Actions `Codex integrity` exécute les contrôles à chaque push.
 Diagnostic et limites dans `AUDIT_UX_TECHNIQUE.md`.
+
+## Atlas Nocturne v57
+L'interface de jeu est définie dans `assets/arcane-theme.css`.
+Les noms et marqueurs d'atlas sont positionnés à l'écran, indépendamment
+de l'agrandissement de la carte, pour éviter les textes flous.
+Les villes des factions sont de nouveau affichées sur la carte du continent,
+y compris Port Doëlan. Test de régression : `node tests/navigation.test.cjs`.
+
+Rapport de relecture sans modification de lore : `AUDIT_REPETITIONS.md`.

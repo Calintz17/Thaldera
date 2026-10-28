@@ -10,9 +10,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - name: Validate JavaScript
+        run: node --check assets/app.js
+      - name: Test navigation and map inventory
+        run: node tests/navigation.test.cjs
       - name: Check entity and relation integrity
         run: python3 tools/check_data.py
       - name: Audit images, positions and structure
         run: python3 tools/audit_assets.py
-      - name: Check JavaScript syntax
-        run: node --check assets/app.js
+      - name: Report narrative repetition candidates
+        run: python3 tools/audit_repetitions.py
