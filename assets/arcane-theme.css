@@ -538,3 +538,20 @@ body.journal-open .qitem .rbl{align-self:flex-start}
  body.journal-open .qlog{left:0;top:var(--top-h)}
  body.journal-open .qlog .qwin{width:100%}
 }
+
+/* Correct legacy zoom selectors: dots visible, labels strictly on demand. */
+.cam.zp[data-z="0"] .ovl .pin{display:block!important}
+.cam.zp[data-z="2"] .ovl .pin .pl,
+.cam.zp[data-z="1"] .ovl .pin:not(:hover):not(:focus-visible) .pl{display:none!important}
+.cam.zp[data-z="2"] .ovl .pin:hover .pl,
+.cam.zp[data-z="2"] .ovl .pin:focus-visible .pl,
+.cam.zp[data-z="1"] .ovl .pin:hover .pl,
+.cam.zp[data-z="1"] .ovl .pin:focus-visible .pl{display:block!important}
+/* A docked journal must not clip the start-screen crests on laptop widths. */
+@media(min-width:861px) and (max-width:1350px){
+ body.journal-open .world .wgrid{grid-template-columns:repeat(3,minmax(0,135px));max-width:445px}
+ body.journal-open .world .wcrest{height:clamp(105px,17vh,142px)}
+ body.journal-open .world .wcr{max-width:75px}
+}
+/* Avoid sticky legacy sizes overriding the open-drawer layout. */
+body.journal-open .qlog .qwin{min-height:0}

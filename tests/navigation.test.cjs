@@ -54,6 +54,8 @@ assert.ok(mainPage.includes('href="resumes/"'), 'Session archive navigation miss
 assert.ok(Array.isArray(sessions.parties), 'Session archive needs an array');
 assert.ok(worldCss.includes('body.journal-open #scene'), 'Docked journal layout required');
 assert.ok(source.includes('extra.concat(gallery)'), 'Location NPCs must precede landscapes');
+assert.ok(worldCss.includes('.cam.zp[data-z="2"] .ovl .pin .pl'), 'Labels at close zoom should be hover-only');
+assert.ok(worldCss.includes('.cam.zp[data-z="0"] .ovl .pin'), 'Markers should remain visible at far zoom');
 assert.ok(source.includes("ov.appendChild(a);"), 'Pins must remain anchored inside the map camera');
 assert.ok(!source.includes('function showPrev(id)'), 'Redundant floating hover card reintroduced');
 console.log('Atlas regression OK: city pins, cast gallery, fixed dots, journals and 783+ entries.');
