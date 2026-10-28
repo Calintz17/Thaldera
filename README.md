@@ -41,3 +41,13 @@ Les villes des factions sont de nouveau affichées sur la carte du continent,
 y compris Port Doëlan. Test de régression : `node tests/navigation.test.cjs`.
 
 Rapport de relecture sans modification de lore : `AUDIT_REPETITIONS.md`.
+
+
+## Résumés de parties
+La nouvelle page `resumes/` affiche les séances jouées depuis `data/parties.json`, au format liste cliquable et panneau de lecture. Le fichier est vide jusqu'à réception de comptes rendus authentiques. Il ne faut jamais déduire les séances jouées des scénarios écrits.
+
+Exemple d'entrée dans le tableau `parties` :
+```json
+{"titre":"Partie 1 : titre validé","date":"À renseigner","resume":"Résumé destiné aux joueurs, sans secrets MJ.","liens":[{"id":"port-doelan","label":"Port Doëlan"}]}
+```
+Conserver l'ordre chronologique. Réserver les notes MJ, révélations secrètes et scénarios non joués aux documents privés.

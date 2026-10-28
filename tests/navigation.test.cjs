@@ -46,5 +46,14 @@ assert.ok(theme.includes('.map-labels .rlab { pointer-events:auto;'), 'Region la
 assert.ok(theme.includes('--atlas-motion'), 'Map labels must match zoom duration');
 assert.ok(source.includes('class="map-labels"'), 'Screen-space map-label layer required');
 assert.ok(source.includes('current-territory'), 'Selected region title must remain visible');
-assert.ok(page.includes('arcane-theme.css?v=62'), 'Fantasy theme revision must load');
-console.log('Atlas regression OK: city pins, label interaction, camera bounds, 783+ unique fiches.');
+assert.ok(page.includes('arcane-theme.css?v=63'), 'Fantasy theme revision must load');
+const mainPage = fs.readFileSync(path.join(root, 'index.html'), 'utf8');
+const worldCss = fs.readFileSync(path.join(root, 'assets/arcane-theme.css'), 'utf8');
+const sessions = JSON.parse(fs.readFileSync(path.join(root, 'data/parties.json'), 'utf8'));
+assert.ok(mainPage.includes('href="resumes/"'), 'Session archive navigation missing');
+assert.ok(Array.isArray(sessions.parties), 'Session archive needs an array');
+assert.ok(worldCss.includes('body.journal-open #scene'), 'Docked journal layout required');
+assert.ok(source.includes('extra.concat(gallery)'), 'Location NPCs must precede landscapes');
+assert.ok(source.includes("ov.appendChild(a);"), 'Pins must remain anchored inside the map camera');
+assert.ok(!source.includes('function showPrev(id)'), 'Redundant floating hover card reintroduced');
+console.log('Atlas regression OK: city pins, cast gallery, fixed dots, journals and 783+ entries.');
