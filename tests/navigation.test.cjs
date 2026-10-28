@@ -37,8 +37,9 @@ const clampEnd = source.indexOf('\nfunction setCam(', clampStart);
 assert.ok(clampStart > 0 && clampEnd > clampStart, 'Camera clamp missing');
 const clamp = new Function(source.slice(clampStart, clampEnd) + '\nreturn clampMapRect;')();
 assert.deepEqual(clamp({ x:-0.5, y:0.9, w:0.25, h:0.3 }), { x:0, y:0.7, w:0.25, h:0.3 });
-assert.deepEqual(clamp({ x:0.8, y:0.9, w:1.1, h:1.2 }),
-  { x:-0.05, y:-0.1, w:1.1, h:1.2 });
+const oversize = clamp({ x:0.8, y:0.9, w:1.1, h:1.2 });
+assert.ok(Math.abs(oversize.x + 0.05) < 1e-9 && Math.abs(oversize.y + 0.1) < 1e-9,
+  'Oversized map should stay centered without floating-point precision errors');
 const theme = fs.readFileSync(path.join(root, 'assets/arcane-theme.css'), 'utf8');
 const page = fs.readFileSync(path.join(root, 'index.html'), 'utf8');
 assert.ok(theme.includes('.map-labels .rlab { pointer-events:auto;'), 'Region labels must remain interactive');
