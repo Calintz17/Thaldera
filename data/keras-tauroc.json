@@ -6137,9 +6137,15 @@
   "id": "malquessar",
   "type": "ville",
   "nom": "Malquessar",
-  "titre": "Ville du Feywild",
+  "titre": "Ville nomade qui traverse les plans",
   "parent": "feywild",
-  "resume": "Ville connue par son nom seulement."
+  "resume": "Cité qui change de plan tous les cinq ans grâce à un rituel alimenté par les trois Pierres de Seuil. Une des trois a été volée.",
+  "connu": [
+   "Tous les cinq ans, la ville franchit le voile vers une nouvelle réalité : Arborée, Ysgard, Bytopie, Arcadie, et même Avernus. Sans les trois Pierres de Seuil, le rituel ne peut s'accomplir.",
+   "Au centre de la grande place fleurie, un dôme d'énergie irisé protège un ancien autel. Deux orbes y brillent. Le troisième socle est vide, fendu, noirci et encore fumant.",
+   "L'ambassadeur de la Cour Seelie donne vingt-quatre heures : au-delà, la Cour prendra les deux Pierres restantes pour les mettre en sécurité.",
+   "Philippa y arrive après son passage dans le Feywild, envoyée par Gran Brijit. Elle démasque le changeforme qui avait volé la Pierre en se faisant passer pour Mira."
+  ]
  },
  {
   "id": "helios",
@@ -6197,7 +6203,13 @@
   "nom": "Obaline",
   "titre": "Ville du Dominion Sol",
   "parent": "dominion-sol",
-  "resume": "Ville connue par son nom seulement.",
+  "resume": "Ville du Dominion Sol, sous occupation depuis peu. Ambiance tendue mais pas hostile.",
+  "connu": [
+   "Aucune vérification sérieuse à l'entrée, des avis de recherche sur un panneau d'affichage, des affiches de propagande partout.",
+   "La Garde-Soleil patrouille dans les rues, sans retenue. Un garde nonchalant lance : « File droit et y aura pas d'ennuis. La ville est calme… pour l'instant. »",
+   "Le bourgmestre Thoros Ven est enfermé dans la prison du Grand Palais. Lenach, la grande couturière de la ville, a fui en laissant sa maison ouverte.",
+   "Une cellule de résistance, relais du Voile, s'organise autour d'Ira Malden."
+  ],
   "cartes": [
    {
     "id": "plan",
@@ -6229,9 +6241,16 @@
   "id": "lumenlid",
   "type": "ville",
   "nom": "Lumenlid",
-  "titre": "Ville d'Altéra",
+  "titre": "Académie neutre des bardes, rattachée à l'Empire d'Altéra",
   "parent": "altera",
-  "resume": "Ville connue par son nom seulement."
+  "resume": "Académie de bardes et d'officiers, territoire neutre reconnu par l'Empire d'Altéra et par le Dominion Sol. Quatre écoles, quatre directeurs.",
+  "connu": [
+   "Pas de guerre, d'uniforme ni de bannière à l'intérieur. Pas de complots politiques, de provocation ni de mensonges aux professeurs.",
+   "L'académie forme des artistes et des officiers, d'où une tolérance exceptionnelle de l'Ordre du Ciel Noir, qui a reçu consigne de ne jamais intervenir dans ses murs.",
+   "Elle est dirigée par un quartet de quatre directeurs, un par école. Des épreuves de fin de cycle illustrent chacune une facette du métier de barde.",
+   "La rumeur dit qu'elle a été bâtie sur les ruines d'un collège oublié dont une partie des fondations reste inaccessible. L'administration nie l'existence d'un tel lieu.",
+   "Lyrianne Velarion propose à Philippa de valider en un mois les quatre épreuves de fin d'année, devant témoins et professeurs, pour être reconnue diplômée."
+  ]
  },
  {
   "id": "einsenmarch",
@@ -6893,6 +6912,1276 @@
   ],
   "attitude": "neutre",
   "teinte": "#753c19"
+ },
+ {
+  "id": "bren-legemor",
+  "type": "pnj",
+  "nom": "Bren Legemor",
+  "titre": "Marchand de fromages de Grisecroix",
+  "parent": "portes-de-corvalis",
+  "lieu": "portes-de-corvalis",
+  "statut": "vivant",
+  "resume": "Marchand itinérant jovial, croisé dans la file d'entrée de Corvalis.",
+  "attitude": "neutre",
+  "connu": [
+   "Il fait goûter un fromage crémeux à Philippa et lui donne le montant du péage exigé par les gardes, les caprices récents des autorités et les tensions qui pèsent sur les commerçants.",
+   "Il l'invite à passer à Grisecroix, son village d'origine, où ses caves regorgent de fromages affinés."
+  ],
+  "citation": {
+   "texte": "Les gardes veulent toujours leur part, mais si tu sais à qui sourire, le prix paraît plus doux… comme ce p'tit morceau de Grisecroix.",
+   "qui": "Bren Legemor"
+  },
+  "alias": [
+   "Brem Legemor"
+  ]
+ },
+ {
+  "id": "bandits-de-corvalis",
+  "type": "pnj",
+  "nom": "Les bandits de la plaine",
+  "titre": "Alma, Garth et Bob",
+  "parent": "portes-de-corvalis",
+  "lieu": "portes-de-corvalis",
+  "statut": "inconnu",
+  "resume": "Trois bandits de grand chemin, rencontrés à la sortie de la plaine avant Corvalis.",
+  "attitude": "neutre",
+  "connu": [
+   "Ils cherchent un sponsor pour payer leur entrée en ville : 150 po pour eux trois, car les gardes réclament 50 po par tête.",
+   "Leur attaque montre l'ampleur de la corruption aux portes de Corvalis. Philippa les recroise plus tard sur la route d'Obaline à Lunsk, sans qu'ils la reconnaissent d'abord."
+  ],
+  "citation": {
+   "texte": "Le Duc appelle ça des taxes… moi j'dis que c'est du vol, et qu'c'est les pauvres qui paient.",
+   "qui": "Un bandit"
+  }
+ },
+ {
+  "id": "gardes-soleil",
+  "type": "pnj",
+  "nom": "Les Gardes-Soleil",
+  "titre": "Soldats du Dominion Sol",
+  "parent": "portes-de-corvalis",
+  "lieu": "portes-de-corvalis",
+  "statut": "vivant",
+  "resume": "Garde du Dominion qui contrôle Corvalis. Philippa les croise en patrouille.",
+  "attitude": "neutre",
+  "connu": [
+   "Selon Madame Augustine, ils ne retirent jamais leur armure et rien ne les distrait, contrairement aux soldats du Duc. La rumeur dit que leurs lèvres sont cousues pendant leur formation."
+  ]
+ },
+ {
+  "id": "ganimede",
+  "type": "pnj",
+  "nom": "Ganimède",
+  "titre": "Tavernier de la ville haute",
+  "parent": "taverne-ganimede",
+  "lieu": "taverne-ganimede",
+  "statut": "vivant",
+  "resume": "Orc fatigué, propriétaire d'une taverne fréquentée par les nobles.",
+  "attitude": "neutre",
+  "connu": [
+   "Il donne à Philippa six informations : le Duc organise un bal masqué pour présenter le Joyau tombé du ciel, l'invitation officielle avec sceau du Duc est obligatoire, le Duc pratique une corruption douanière aux portes Est et Ouest, les meubles de luxe du bal sont bloqués à l'entrepôt faute de taxe payée, la contrebande ruine ses affaires dans les quartiers nobles, et le Dominion Sol a pris la ville grâce au Duc.",
+   "Si Philippa le convainc, il lui donne le code de la porte : « J'apporte l'encre violette et les plumes pour écrire »."
+  ]
+ },
+ {
+  "id": "omen",
+  "type": "pnj",
+  "nom": "Omen",
+  "titre": "Tavernière de la ville basse",
+  "parent": "omen-corvalis",
+  "lieu": "omen-corvalis",
+  "statut": "vivant",
+  "resume": "Tavernière opportuniste, qui profite de la pauvreté ambiante.",
+  "attitude": "neutre",
+  "connu": [
+   "Elle confirme les informations de Ganimède avec quelques nuances : son commerce prospère malgré l'appauvrissement, ou grâce à lui.",
+   "Elle n'aime pas la Garde-Soleil, qu'elle perçoit comme une force d'oppression. Madame Augustine renvoie vers elle quiconque cherche Lavande."
+  ]
+ },
+ {
+  "id": "lavande",
+  "type": "pnj",
+  "nom": "Lavande",
+  "titre": "Chef du Voile à Corvalis",
+  "parent": "tour-du-pentacle-corvalis",
+  "lieu": "tour-du-pentacle-corvalis",
+  "statut": "vivant",
+  "resume": "Chef du réseau de contrebande du Voile à Corvalis. Allié de Philippa.",
+  "attitude": "neutre",
+  "connu": [
+   "Mot de passe pour entrer : « J'apporte l'encre violette et les plumes pour écrire ».",
+   "Il propose à Philippa un accès aux égouts menant au bal masqué, en échange de l'assassinat de Cecilia de Vaelmor.",
+   "Il révèle que Cecilia est responsable du trafic d'êtres humains et de l'influence du Dominion. Il magouille avec le Duc, mais refuse la cruauté de Cecilia.",
+   "La Garde-Soleil freine ses affaires. Il veut préserver l'indépendance de Corvalis face au Dominion Sol.",
+   "À Obaline, il répond à Philippa par écho télépathique, moqueur, et lui donne le mot de passe de Milo : « Mon ourlet s'est défait. J'ai besoin d'une aiguille sûre. »"
+  ],
+  "citation": {
+   "texte": "Oh notre petite cambrioleuse ! Quel plaisir ineffable d'avoir de tes nouvelles.",
+   "qui": "Lavande, par télépathie"
+  }
+ },
+ {
+  "id": "durnan-forgefeuil",
+  "type": "pnj",
+  "nom": "Durnan Forgefeuil",
+  "titre": "Marchand de la ville haute",
+  "parent": "forge-de-durnan-forgefeuil",
+  "lieu": "forge-de-durnan-forgefeuil",
+  "statut": "vivant",
+  "resume": "Marchand et forgeron de Corvalis, qui vend potions, huiles et poudres.",
+  "attitude": "neutre",
+  "connu": [
+   "Potion d'endurance mineure (75 po) : avantage aux tests de Constitution pendant 1 h.",
+   "Élixir de vigueur (200 po) : +1d4 Force temporaire pendant 1 h.",
+   "Huile de protection runique (250 po) : +1 au toucher et aux dégâts d'une arme pendant 10 min.",
+   "Fiole d'acide (25 po) : 2d6 acide, jet de DEX DD 13 pour moitié.",
+   "Flasque d'huile enflammée (20 po) : 1d6 feu, puis 1d6 au début du tour suivant.",
+   "Poudre de lune (100 po) : dissipe magie de niveau 3 sur 10 ft, ou neutralise une créature lycanthrope touchée (CON DD 13).",
+   "Vin de Moine (60 po) : une gorgée accorde Inspiration, une fois par jour.",
+   "Cristal de mana brut (150 po) : une charge pour lancer un sort de niveau 1 sans emplacement.",
+   "Encens des Ancêtres (80 po) : brûlé 1 h, avantage aux jets de Religion et d'Histoire jusqu'au prochain repos long."
+  ]
+ },
+ {
+  "id": "regus-vaelmor",
+  "type": "pnj",
+  "nom": "Regus Vaelmor",
+  "titre": "Fils du Duc",
+  "parent": "theatre-vaelmore",
+  "lieu": "theatre-vaelmore",
+  "statut": "vivant",
+  "resume": "Fils du Duc, rêve de devenir acteur. Naïf, manipulable et mauvais comédien.",
+  "attitude": "neutre",
+  "connu": [
+   "On peut le séduire ou le tromper pour obtenir une invitation au bal ou des détails sur les plans de son père pour la soirée.",
+   "Il a failli aller à Sol Novem, mais son père a insisté pour qu'il reste. Sa mère lit enfermée dans son bureau à l'étage."
+  ],
+  "citation": {
+   "texte": "Je suis un feu, madame. Certains s'y brûlent. D'autres… y trouvent la lumière.",
+   "qui": "Regus Vaelmor"
+  }
+ },
+ {
+  "id": "reginald-de-vaelmor",
+  "type": "pnj",
+  "nom": "Reginald de Vaelmor",
+  "titre": "Duc de Corvalis",
+  "parent": "palais-ducal-corvalis",
+  "lieu": "palais-ducal-corvalis",
+  "statut": "vivant",
+  "resume": "Ancien marchand devenu noble, fier de sa réussite sociale. Il organise le bal masqué.",
+  "attitude": "neutre",
+  "connu": [
+   "Il organise un bal masqué pour présenter le « Joyau tombé du ciel ».",
+   "Il ne donne aucune information utile directement, sauf s'il est manipulé ou espionné."
+  ],
+  "citation": {
+   "texte": "Je suis un homme de chiffres. La loyauté s'achète, la beauté se vend, et le pouvoir… se construit, pierre par pierre.",
+   "qui": "Le Duc"
+  },
+  "alias": [
+   "Le Duc de Vaelmor",
+   "Le Duc"
+  ]
+ },
+ {
+  "id": "cecilia-de-vaelmor",
+  "type": "pnj",
+  "nom": "Cecilia de Vaelmor",
+  "titre": "Duchesse de Corvalis",
+  "parent": "palais-ducal-corvalis",
+  "lieu": "palais-ducal-corvalis",
+  "statut": "vivant",
+  "resume": "Magicienne noire liée au Dominion Sol. Responsable du trafic humain dans les bas-fonds.",
+  "attitude": "neutre",
+  "connu": [
+   "Elle n'offre aucune information volontairement. Ses secrets se découvrent par enquête, espionnage ou grâce à Lavande."
+  ],
+  "citation": {
+   "texte": "Le Dominion Sol est une opportunité. Ceux qui ne le voient pas pourriront avec le reste.",
+   "qui": "Cecilia de Vaelmor"
+  },
+  "alias": [
+   "La Duchesse"
+  ]
+ },
+ {
+  "id": "madame-augustine",
+  "type": "pnj",
+  "nom": "Madame Augustine",
+  "titre": "Tenancière de la maison de jeu",
+  "parent": "maison-augustine",
+  "lieu": "maison-augustine",
+  "statut": "vivant",
+  "resume": "Tenancière qui vend du jeu et refuse le trafic d'êtres humains.",
+  "attitude": "neutre",
+  "connu": [
+   "Elle indique à Philippa une porte dérobée au sud-ouest du palais : le verrou est facile à forcer et la garde y est inexistante.",
+   "Elle conseille de parler à Lavande, qu'elle décrit comme un malin et un honnête filou, à la taverne du bas quartier : il faut demander Omen.",
+   "Elle dénonce le trafic des Vaelmor : « Je vends du jeu, pas de la souffrance. »"
+  ],
+  "citation": {
+   "texte": "Le pauvre garçon… il croit que c'est lui qui séduit. Mais c'est son père qui paie. Alors, on joue le jeu.",
+   "qui": "Madame Augustine, sur Regus"
+  }
+ },
+ {
+  "id": "greenwood",
+  "type": "pnj",
+  "nom": "Greenwood",
+  "titre": "Luthier de Corvalis",
+  "parent": "greenwood-instruments",
+  "lieu": "greenwood-instruments",
+  "statut": "vivant",
+  "resume": "Vieux luthier solitaire et doux. Il donne à Philippa un cours de harpe improvisé.",
+  "attitude": "neutre",
+  "connu": [
+   "Il oriente Philippa vers l'académie de Lumenlid pour poursuivre sa voie de barde.",
+   "Tarifs : cordes de violon en boyau 2 po, archet 5 po, partitions anciennes 3 po, flûte en bois ouvragée 8 po, métronome en cuivre 10 po, étui de violon 12 po, harpe de voyage 25 po, luth restauré 30 po."
+  ],
+  "citation": {
+   "texte": "La musique est un chemin… mais pour avancer, il faut de bons maîtres. Lumenlid pourra t'offrir ce que mes vieux doigts ne peuvent plus donner.",
+   "qui": "Greenwood"
+  }
+ },
+ {
+  "id": "route-de-lumenlid",
+  "type": "lieu",
+  "nom": "La route de Lumenlid",
+  "titre": "Forêt de bois tordus, avant l'académie",
+  "parent": "lumenlid",
+  "resume": "Une caravane immobilisée au bord de la route, entourée d'herbe noircie par une explosion.",
+  "chapeau": "La forêt s'épaissit à mesure qu'on approche de Lumenlid. Des arbres tordus s'élancent vers le ciel pâle et leurs branches craquent au vent comme des doigts d'os. L'air sent la poudre brûlée. Sur le bord de la route, une caravane bringuebalante est immobilisée, entourée d'herbe noircie, de terre retournée et d'éclats de métal. À l'avant, une table croule sous les engrenages, les bobines et les fioles de cuivre. Des étincelles bleutées zèbrent l'ombre des arbres à chaque réglage d'une machine grinçante."
+ },
+ {
+  "id": "nezbrok",
+  "type": "pnj",
+  "nom": "Nezbrok",
+  "titre": "Ingénieur gnome",
+  "parent": "route-de-lumenlid",
+  "lieu": "route-de-lumenlid",
+  "statut": "vivant",
+  "resume": "Gnome hirsute et inventeur, qui teste ses prototypes sur les passants.",
+  "attitude": "neutre",
+  "connu": [
+   "Il force Philippa à essayer son Lance-tempête, un prototype de cuivre et d'acier qui lui explose entre les mains.",
+   "Le Lance-tempête est un revolver primitif, instable et incomplet, taillé dans le bois brut et le cuivre. Chaque tir risque de le briser complètement."
+  ],
+  "citation": {
+   "texte": "Le lance-tempête ! Prototype de génie, arme de demain, concentré de ma science !",
+   "qui": "Nezbrok"
+  },
+  "alias": [
+   "Nezdrok"
+  ]
+ },
+ {
+  "id": "ecole-de-l-eloquence",
+  "type": "lieu",
+  "nom": "L'École de l'Éloquence",
+  "titre": "Devise : Verba regunt mundum",
+  "parent": "lumenlid",
+  "resume": "Amphithéâtre de pierre polie, ouvert sur le ciel. On y forme diplomates, espions et maîtres du discours.",
+  "chapeau": "Un amphithéâtre de pierre polie s'ouvre sur le ciel, et la voix y porte jusqu'au dernier gradin. Au centre de la scène, un homme en manteau or et ivoire pointe un élève du doigt et lance un défi. Un murmure d'excitation parcourt la pierre. Les élèves montent à tour de rôle, improvisent tirades, mensonges ou vérités brûlantes. Les applaudissements sont réels, les regards aussi : chaque mot mal posé est une faiblesse, chaque pause bien tenue une lame invisible.",
+  "connu": [
+   "Épreuve, la Commandante aux Cent Voix : sur une plateforme enchantée devant le lac, Philippa doit convaincre sans magie trois archétypes d'illusions : un soldat blessé proche de la désertion (Persuasion DC 12), un général renégat et cynique (Intimidation DC 14), un espion neutre et sarcastique (Tromperie DC 16). Deux réussites sur trois valident l'épreuve."
+  ]
+ },
+ {
+  "id": "severin-d-aurenze",
+  "type": "pnj",
+  "nom": "Severin d'Aurenze",
+  "titre": "Professeur de l'École de l'Éloquence",
+  "parent": "ecole-de-l-eloquence",
+  "lieu": "ecole-de-l-eloquence",
+  "statut": "vivant",
+  "resume": "Humain raffiné à la voix ciselée, toujours en habit jaune d'or. Ancien tribun de l'Empire.",
+  "attitude": "neutre",
+  "connu": [
+   "Il enseigne à commander sans imposer et à inspirer sans magie. Il sait retourner un champ de bataille avec un mot."
+  ],
+  "citation": {
+   "texte": "Convaincs-moi que le soleil est une illusion.",
+   "qui": "Severin d'Aurenze"
+  }
+ },
+ {
+  "id": "ecole-de-la-vaillance",
+  "type": "lieu",
+  "nom": "L'École de la Vaillance",
+  "titre": "Devise : Cantus et Gladius",
+  "parent": "lumenlid",
+  "resume": "Cour extérieure de graviers clairs. L'art martial appliqué à la musique.",
+  "chapeau": "Dans la cour extérieure de l'école, les graviers clairs crissent sous les pas. Deux élèves croisent le fer avec des fleurets en bois, au rythme d'un tambour posé à même le sol. Un petit gobelin à la tunique écarlate commente chaque geste et mêle ses consignes à des refrains d'anciens chants de guerre. L'écho des lames répond comme une chorégraphie. Tout autour, d'autres élèves observent, instrument en main, prêts à changer leur souffle en cadence.",
+  "connu": [
+   "Épreuve, le Chant du Sang et du Fer : dans l'arène bardique, devant un jury d'élèves et de professeurs, Philippa affronte un duelliste excentrique dans un combat scénique mêlant épée de bois et lyre. À chaque round, un jet de Performance DC 12 valide son attaque. Trois échecs font perdre le duel. L'adversaire ne cherche pas à blesser, mais à voler la scène."
+  ]
+ },
+ {
+  "id": "tharamund-skeldraxis",
+  "type": "pnj",
+  "nom": "Tharamund Skeldraxis",
+  "titre": "Professeur de l'École de la Vaillance",
+  "parent": "ecole-de-la-vaillance",
+  "lieu": "ecole-de-la-vaillance",
+  "statut": "vivant",
+  "resume": "Drakéide rouge à la voix rauque, ancien champion impérial. Sa lyre est cloutée.",
+  "attitude": "neutre",
+  "connu": [
+   "Il enseigne le chant martial et l'inspiration sur le champ de bataille. Il est l'adversaire de l'épreuve de Philippa : estoc avant et illusion mineure, estafilade circulaire et mur de feu, frappe tournoyante et Thunderclap, charge en ligne droite et Lightning Bolt."
+  ]
+ },
+ {
+  "id": "ecole-de-la-creation",
+  "type": "lieu",
+  "nom": "L'École de la Création",
+  "titre": "Devise : Ex Nihilo, Harmonia",
+  "parent": "lumenlid",
+  "resume": "Vaste salle aux murs couverts de fresques musicales animées.",
+  "chapeau": "Dans une vaste salle aux murs couverts de fresques musicales qui bougent, un drakéide massif au souffle rauque s'agite entre les pupitres. Sa robe bleue est tachée d'encre, ses doigts boudinés glissent sur un cristal suspendu qui vibre d'une note claire. Il fait signe de recommencer, et un kaléidoscope de sons prend forme : harpe flottante, luth luminescent, tambour spectral. Chaque note devient couleur, matière ou émotion. Le silence entre les accords est aussi dense que la musique.",
+  "connu": [
+   "Épreuve, l'Harmonique Originelle : dans une salle suspendue au-dessus du vide, Philippa compose une mélodie magique unique qui deviendra un sort. Cinq jets de Performance (DC 10, 12, 14, 16, 18). Zéro ou une réussite : échec. Deux ou trois : Feather Fall et Cure Wounds. Quatre : Mirror Image et Silence. Cinq : Hypnotic Pattern, Shatter, ou un sort sur mesure. Chaque échec désaccorde l'harmonie."
+  ]
+ },
+ {
+  "id": "aeon-calaryn",
+  "type": "pnj",
+  "nom": "Aeon Calaryn",
+  "titre": "Professeur de l'École de la Création",
+  "parent": "ecole-de-la-creation",
+  "lieu": "ecole-de-la-creation",
+  "statut": "vivant",
+  "resume": "Elfe androgyne au regard lointain, comme s'il entendait une symphonie céleste. Il parle peu et compose souvent.",
+  "attitude": "neutre",
+  "connu": [
+   "Il enseigne la magie harmonique pure, la création par la vibration et la beauté."
+  ]
+ },
+ {
+  "id": "ecole-du-savoir",
+  "type": "lieu",
+  "nom": "L'École du Savoir",
+  "titre": "Devise : Memoria potentia est",
+  "parent": "lumenlid",
+  "resume": "Un vieux hêtre noueux derrière la bibliothèque, où les élèves écoutent en cercle dans l'herbe.",
+  "chapeau": "À l'ombre d'un vieux hêtre noueux, derrière la bibliothèque, les élèves sont assis en cercle dans l'herbe. Le vent fait danser les pages de leurs carnets, mais aucun ne bronche. Une femme parle, un manuscrit posé sur les genoux, ses doigts fins suivant les lignes d'une écriture oubliée. Sa voix est douce, presque effacée, et chaque mot semble tirer un fil dans l'air, comme si elle recousait la mémoire d'un monde plus ancien que le jour. Le soleil perce les branches, et l'instant semble suspendu.",
+  "connu": [
+   "Épreuve, la Force du Souvenir : dans la grande bibliothèque, Philippa affronte Aster Invictus, un dragon cosmique né des étoiles, invoqué par la mémoire des contes. Cinq tours, un jet d'Histoire par tour (DC 12, 14, 16, 18, 20). Chaque réussite débloque une faiblesse légendaire et un sort lancé juste après inflige dix fois les dégâts. Objectif : 1 000 dégâts ou plus en 5 tours."
+  ]
+ },
+ {
+  "id": "lyrianne-velarion",
+  "type": "pnj",
+  "nom": "Lyrianne Velarion",
+  "titre": "Professeure de l'École du Savoir",
+  "parent": "ecole-du-savoir",
+  "lieu": "ecole-du-savoir",
+  "statut": "vivant",
+  "resume": "Humaine rigide à la voix calme et au ton professoral. Elle raconte les histoires comme si elle les avait vécues.",
+  "attitude": "neutre",
+  "connu": [
+   "Elle accueille Philippa, lui propose les quatre épreuves de fin d'année et lui fait visiter l'académie : dortoirs sans séparation par école, salle commune où l'on trouve toujours quelqu'un d'éveillé, salles de cours parfois enchantées.",
+   "Elle dirige l'École du Savoir, dite les Gardiens du Verset, spécialisée dans les connaissances oubliées et les contes légendaires."
+  ],
+  "citation": {
+   "texte": "Tu ne peux pas défier un lieu que tu ne comprends pas.",
+   "qui": "Lyrianne Velarion"
+  }
+ },
+ {
+  "id": "emma-balambour",
+  "type": "pnj",
+  "nom": "Emma Balambour",
+  "titre": "Colporteuse de colifichets",
+  "parent": "obaline",
+  "lieu": "obaline",
+  "statut": "vivant",
+  "resume": "Gentille Pachydan, timide, vendeuse ambulante de grigris et de breloques.",
+  "attitude": "neutre",
+  "connu": [
+   "Elle vend des objets artisanaux, dont certains ont de légers effets magiques. Elle offre à Philippa un Pendentif du petit ronron, qui vibre un peu.",
+   "Elle a entendu parler du Voile, « des gens bien cachés sous une boutique », mais ne veut surtout pas en savoir plus. Elle sait que le bourgmestre est emprisonné."
+  ],
+  "citation": {
+   "texte": "Je vends ce que je peux… mais je ne veux surtout pas déranger, oh !",
+   "qui": "Emma Balambour"
+  }
+ },
+ {
+  "id": "torren-tweedy",
+  "type": "pnj",
+  "nom": "Torren Tweedy",
+  "titre": "Aubergiste du Camélia",
+  "parent": "auberge-du-camelia",
+  "lieu": "auberge-du-camelia",
+  "statut": "vivant",
+  "resume": "Aubergiste frénétique et peu discret, qui colle des affiches pour retrouver Lenach.",
+  "attitude": "neutre",
+  "connu": [
+   "Il dénonce avec amertume la trahison de Lenach et l'occupation de la ville. Il détient des informations clés sur le port, la prison, Cassar et la Résistance.",
+   "Il envoie Philippa voir Milo avant Ira Malden : Milo connaît les recoins."
+  ],
+  "citation": {
+   "texte": "Elle a tout ouvert, tout ! Une nuit, hop, les portes grandes ouvertes comme à la foire !",
+   "qui": "Torren Tweedy"
+  }
+ },
+ {
+  "id": "milo",
+  "type": "pnj",
+  "nom": "Milo",
+  "titre": "Apothicaire de l'Emporium",
+  "parent": "emporium-de-milo",
+  "lieu": "emporium-de-milo",
+  "statut": "vivant",
+  "resume": "Petit apothicaire à la langue sèche. Il cache le représentant du Voile.",
+  "attitude": "neutre",
+  "connu": [
+   "Il se ferme dès qu'on mentionne Ira, et n'ouvre l'accès à la cave que sur le mot de passe. Un levier dissimulé sous une étagère fait descendre dans une cave humide.",
+   "Boutique : acide 25 po, feu grégeois 50 po, antitoxine 50 po, trousse de soins 5 po, potion de soin 50 po, poison basique 100 po, matériel d'alchimiste, d'empoisonneur et d'herboriste 50 po chacun, potions peu communes 250 po."
+  ],
+  "citation": {
+   "texte": "Pas de mot de passe ? Alors pas d'accès.",
+   "qui": "Milo"
+  }
+ },
+ {
+  "id": "ira-malden",
+  "type": "pnj",
+  "nom": "Ira Malden",
+  "titre": "Relais du Voile à Obaline",
+  "parent": "emporium-de-milo",
+  "lieu": "emporium-de-milo",
+  "statut": "vivant",
+  "resume": "Franche et pragmatique, elle dirige une cellule de résistance contre le Dominion avec le soutien de Lavande.",
+  "attitude": "neutre",
+  "connu": [
+   "Elle propose à Philippa de libérer le bourgmestre Thoros Ven, détenu au Grand Palais. Ses hommes ont posé une échelle dans le coin le moins surveillé, qui mène à la cour intérieure.",
+   "En échange, elle offre un sauf-conduit jusqu'à Lunsk. Si Philippa tue Cassar, elle ajoute un vrai Bag of Holding cousu dans les ateliers de Lenach.",
+   "Une fois Thoros libéré, elle fait traverser la ville en silence jusqu'au fleuve."
+  ],
+  "citation": {
+   "texte": "Tu veux quitter cette ville ? Très bien. Mais y'a un prix.",
+   "qui": "Ira Malden"
+  }
+ },
+ {
+  "id": "elza-skaparel",
+  "type": "pnj",
+  "nom": "Elza Skaparel",
+  "titre": "Noble locale, rivale de Lenach",
+  "parent": "skaparel-apparel",
+  "lieu": "skaparel-apparel",
+  "statut": "vivant",
+  "resume": "Élégante, jalouse et ambitieuse. Elle cherche à s'emparer de ce qu'il reste de l'empire Lenach.",
+  "attitude": "neutre",
+  "connu": [
+   "Elle a vu Lenach triompher puis fuir. Elle réside près du palais du bourgmestre et garde un pied dans les salons nobles.",
+   "Sa boutique Skaparel Apparel est clinquante et hors de prix, ses vitrines pleines de sacs de luxe. Philippa comprend qu'un vol y serait risqué : enchantements et protections sont en place."
+  ],
+  "alias": [
+   "Skaparel"
+  ]
+ },
+ {
+  "id": "tiffany",
+  "type": "pnj",
+  "nom": "Tiffany",
+  "titre": "Vendeuse de Skaparel Apparel",
+  "parent": "skaparel-apparel",
+  "lieu": "skaparel-apparel",
+  "statut": "vivant",
+  "resume": "Vendeuse elfique à l'accent parisien forcé, qui mâche son chewing-gum.",
+  "attitude": "neutre",
+  "connu": [
+   "Elle ne fait pas de crédit, même pour les aventurières. Un sac est à trois mille cinq cents pièces d'or."
+  ],
+  "citation": {
+   "texte": "Non, on ne fait pas de crédit. Même pour les… aventurières, hein ?",
+   "qui": "Tiffany"
+  }
+ },
+ {
+  "id": "alwin-et-gerhard-kern",
+  "type": "pnj",
+  "nom": "Alwin et Gerhard Kern",
+  "titre": "Financiers, frères",
+  "parent": "maison-lenach",
+  "lieu": "maison-lenach",
+  "statut": "vivant",
+  "resume": "Anciens partenaires financiers de Lenach, ils occupent sa maison depuis sa fuite.",
+  "attitude": "neutre",
+  "connu": [
+   "Ils ont abandonné la soierie pour fabriquer des onguents, plus rentables. Ils s'enrichissent grâce au nom de Lenach tout en préservant la structure.",
+   "Pragmatiques et intéressés par le profit, ils pourraient devenir des alliés, ou non."
+  ],
+  "alias": [
+   "Alwin Kern",
+   "Gerhard Kern"
+  ]
+ },
+ {
+  "id": "capitaine-cassar",
+  "type": "pnj",
+  "nom": "Capitaine Cassar",
+  "titre": "Capitaine zélote du Dominion",
+  "parent": "grand-palais-obaline",
+  "lieu": "grand-palais-obaline",
+  "statut": "inconnu",
+  "resume": "Capitaine ambitieux promu par le Dominion, passé par des expériences de modification arcanique à Sol Novem.",
+  "attitude": "neutre",
+  "connu": [
+   "Il laisse les Gardes-Soleil patrouiller sans retenue, fait coller des affiches de propagande et répète que « des gens sensés » vivent encore à Obaline.",
+   "Il surgit si Philippa échoue à rester discrète. Il enfonce une gemme démoniaque pour se transformer en semi-démon."
+  ],
+  "citation": {
+   "texte": "Enfin… une occasion de tester les dons du Seigneur-Soleil.",
+   "qui": "Cassar"
+  }
+ },
+ {
+  "id": "thoros-ven",
+  "type": "pnj",
+  "nom": "Thoros Ven",
+  "titre": "Ancien bourgmestre d'Obaline",
+  "parent": "grand-palais-obaline",
+  "lieu": "grand-palais-obaline",
+  "statut": "vivant",
+  "resume": "Idéaliste, usé mais digne, patriote convaincu. Il est blessé à la jambe et marche difficilement.",
+  "attitude": "neutre",
+  "connu": [
+   "Il avait commencé à organiser la défense de la ville avant d'être capturé. Il détient probablement des noms, des plans et des caches.",
+   "Il accepte l'aide de Philippa et demande à être conduit à Ira Malden, en qui il a confiance."
+  ],
+  "citation": {
+   "texte": "Ne me laissez pas seul. Amenez-moi jusqu'à Malden.",
+   "qui": "Thoros Ven"
+  }
+ },
+ {
+  "id": "darn",
+  "type": "pnj",
+  "nom": "Darn",
+  "titre": "Maître du port d'Obaline",
+  "parent": "port-marchand-obaline",
+  "lieu": "port-marchand-obaline",
+  "statut": "vivant",
+  "resume": "Silencieux et efficace. Il est à la solde du Voile, travaille aussi avec la Griffe et obéit aux ordres du Dominion.",
+  "attitude": "neutre",
+  "connu": [
+   "Il prépare deux barques, l'une pour le bourgmestre, l'autre pour Philippa, direction Lunsk. Facilement corruptible."
+  ]
+ },
+ {
+  "id": "nella-fanwyk",
+  "type": "pnj",
+  "nom": "Nella Fanwyk",
+  "titre": "Herboriste et marchande",
+  "parent": "herboristerie-la-sous-corolle",
+  "lieu": "herboristerie-la-sous-corolle",
+  "statut": "vivant",
+  "resume": "Herboriste pro-Dominion, droite comme une poutre. Elle se dispute avec Karst à la taverne.",
+  "attitude": "neutre",
+  "connu": [
+   "Elle défend le Dominion : « Le Dominion, lui, apporte des lois. Une vraie stabilité. »"
+  ],
+  "citation": {
+   "texte": "Ce n'est pas en buvant avec des voleurs qu'on construit un avenir.",
+   "qui": "Nella Fanwyk"
+  }
+ },
+ {
+  "id": "karst",
+  "type": "pnj",
+  "nom": "Karst",
+  "titre": "Contrebandier de Lunsk",
+  "parent": "auberge-du-brouillard-attable",
+  "lieu": "auberge-du-brouillard-attable",
+  "statut": "vivant",
+  "resume": "Bourru, anti-Dominion et pro-contrebande. Il se dispute avec Nella.",
+  "attitude": "neutre",
+  "connu": [
+   "Il reproche au Dominion ses taxes, ses papiers et ses fouilles à chaque barque qui bouge."
+  ],
+  "citation": {
+   "texte": "Je préfère crever dans la brume que vivre sous leurs chaînes dorées.",
+   "qui": "Karst"
+  }
+ },
+ {
+  "id": "oswald-brumier",
+  "type": "pnj",
+  "nom": "Oswald Brumier",
+  "titre": "Notable de Lunsk",
+  "parent": "auberge-du-brouillard-attable",
+  "lieu": "auberge-du-brouillard-attable",
+  "statut": "vivant",
+  "resume": "Opposé à la contrebande, qui déshonore la ville selon lui.",
+  "attitude": "neutre",
+  "connu": [
+   "Pour lui, Lunsk devrait se concentrer sur l'exploitation du bois et le commerce, et le Dominion peut y aider."
+  ]
+ },
+ {
+  "id": "auberge-de-voros",
+  "type": "lieu",
+  "nom": "L'auberge de Voros",
+  "titre": "Petite bâtisse de bois aux lanternes rouges",
+  "parent": "voros",
+  "resume": "Petite auberge de bois, lanternes rouges suspendues, tenue par un homme gras.",
+  "chapeau": "Le navire glisse entre deux falaises abruptes, comme s'il s'enfonçait dans la gueule d'une bête antique. Les murailles de roche encadrent une cité suspendue entre la mer et la pierre. Sur les quais de bois, des crieurs, des mercenaires, des marchands chamarrés et des contrebandiers aux dents dorées se croisent en grondant dans toutes les langues. À l'auberge, une petite bâtisse de bois, des lanternes rouges oscillent au-dessus de la porte. L'air est moite, chargé d'algues et d'épices."
+ },
+ {
+  "id": "ghassan-tarek",
+  "type": "pnj",
+  "nom": "Ghassan Tarek",
+  "titre": "Aubergiste de Voros",
+  "parent": "auberge-de-voros",
+  "lieu": "auberge-de-voros",
+  "statut": "vivant",
+  "resume": "Homme gras aux doigts couverts de bagues, à la voix très aiguë.",
+  "attitude": "neutre",
+  "connu": [
+   "La guilde des marchands contrôle tout à Voros, et elle obéit au Prince-Marchand Gallywix, qui bénit les affaires quand ça l'arrange.",
+   "Il glisse que le Voile opère depuis les bains publics, près de la terrasse d'onyx."
+  ],
+  "citation": {
+   "texte": "On ne fait pas de business ici sans sa bénédiction. Et croyez-moi, il bénit quand ça l'arrange.",
+   "qui": "Ghassan Tarek"
+  }
+ },
+ {
+  "id": "bains-publics-de-voros",
+  "type": "lieu",
+  "nom": "Les bains publics de Voros",
+  "titre": "Fief du Voile",
+  "parent": "voros",
+  "resume": "Ancien établissement de bains, brumeux, traversé de canalisations rouillées et de nappes de vapeur.",
+  "chapeau": "Une porte de cuivre gravée s'ouvre sur l'humidité, qui engloutit aussitôt le visiteur. Elle est mêlée aux relents d'algues, d'encens et de peau chaude. Des canalisations rouillées courent sous des plafonds voûtés, et des nappes de vapeur montent paresseusement au-dessus des bassins. L'odeur du sel, du musc et des corps fatigués imprègne les murs. Des silhouettes floues se déplacent en silence entre les bassins, drapées de serviettes, anonymes dans la brume."
+ },
+ {
+  "id": "entrepot-de-jericho",
+  "type": "lieu",
+  "nom": "L'entrepôt de Jericho",
+  "titre": "Entrepôt à l'odeur d'épices éventées",
+  "parent": "voros",
+  "resume": "Entrepôt encombré de caisses et de ballots, patrouillé par deux gardes peu motivés.",
+  "chapeau": "Dans les entrepôts à l'odeur d'épices éventées, l'ombre est moite et les caisses montent jusqu'aux poutres. Deux gardes peu motivés patrouillent à distance. L'atmosphère est tendue mais calme. Certaines caisses portent des marques étranges, et l'une d'elles cache un double fond rempli d'une fine poudre brune. Plus tard dans la nuit, une silhouette s'introduit et s'affaire à piller une caisse."
+ },
+ {
+  "id": "jericho",
+  "type": "pnj",
+  "nom": "Jericho",
+  "titre": "Marchand de Voros",
+  "parent": "entrepot-de-jericho",
+  "lieu": "entrepot-de-jericho",
+  "statut": "vivant",
+  "resume": "Marchand grassouillet, qu'on pille chaque nuit sans que personne ne voie rien.",
+  "attitude": "neutre",
+  "connu": [
+   "Il engage Philippa, qui a pris sa quête sur le tableau, pour surprendre les voleurs et découvrir qui tire les ficelles. Il promet de la couvrir d'or.",
+   "Dans une caisse à double fond, Philippa trouve du Suud, une drogue brune précieuse et illégale."
+  ],
+  "citation": {
+   "texte": "Je veux des yeux, des oreilles… une présence. Quelqu'un pour surprendre ces rats.",
+   "qui": "Jericho"
+  }
+ },
+ {
+  "id": "vrex",
+  "type": "pnj",
+  "nom": "Vrex",
+  "titre": "Voleur du Voile",
+  "parent": "entrepot-de-jericho",
+  "lieu": "entrepot-de-jericho",
+  "statut": "inconnu",
+  "resume": "Voleur qui pille l'entrepôt de Jericho sur ordre d'un donneur d'ordre inconnu.",
+  "attitude": "neutre",
+  "connu": [
+   "Si Philippa le suit, il la mène aux bains publics. S'il est confronté, il admet travailler pour un donneur d'ordre qu'il rencontre toujours aux bains."
+  ]
+ },
+ {
+  "id": "palais-de-gallywix",
+  "type": "lieu",
+  "nom": "Le palais du Prince-Marchand",
+  "titre": "Palais de pierre blanche taillé dans la falaise",
+  "parent": "voros",
+  "resume": "Palais de pierre blanche taillé dans la falaise qui surplombe Voros, ouvert sur la mer.",
+  "chapeau": "Les lourdes portes du palais s'ouvrent sur la pierre blanche, taillée dans la falaise même qui surplombe Voros. L'intérieur est luxueux sans ostentation : de l'or terni, des tentures exotiques, des vitrines pleines d'objets rares. Au centre d'une vaste salle ouverte sur la mer, un trône sculpté en forme de navire domine l'espace. Des scribes et des gardes aux couleurs de la ville l'entourent. Le bruit des vagues monte en dessous."
+ },
+ {
+  "id": "entrepot-de-la-griffe",
+  "type": "lieu",
+  "nom": "L'entrepôt de la Griffe",
+  "titre": "Collines arides au-dessus de Voros",
+  "parent": "voros",
+  "resume": "Maison en ruines, dissimulée derrière des murs rongés par le sel, avec une trappe et des tunnels en dessous.",
+  "chapeau": "Sur les collines arides qui surplombent Voros, une maison en ruines se cache derrière des pans de pierre effondrés et des murs rongés par le sel. Des hommes armés montent la garde, nerveux. Sous des débris, une trappe dissimule une échelle de corde qui plonge dans l'obscurité. En bas, un réseau de tunnels humides est éclairé par des lanternes tremblantes. Des cages de métal, des prisonniers hagards et des caisses estampillées de sceaux exotiques y attendent.",
+  "connu": [
+   "Le chef de la Griffe, interrogé, explique que la marchandise vivante vient de l'Île aux Moines, par caravanes à travers le désert, et que l'argent sert à les faire passer à Lunsk."
+  ]
+ },
+ {
+  "id": "laile-d-avalon",
+  "type": "lieu",
+  "nom": "L'Aile d'Avalon",
+  "titre": "Navire à voiles noires bordées d'or",
+  "parent": "voros",
+  "resume": "Grand navire aux voiles noires bordées d'or, qui relie Lunsk à Voros en trois jours et demi.",
+  "chapeau": "Un immense navire fend la brume du petit matin, ses voiles noires bordées d'or. Une corne de brume déchire le silence. Sur le quai, des contrebandiers déchargent des caisses sous le regard placide du capitaine. À bord, les cordages claquent, les vergues grincent et les voiles se gonflent lentement sous la brise du sud. La lumière dorée de fin de journée baigne le pont et les quais de Lunsk s'effacent dans le sillage."
+ },
+ {
+  "id": "brugo-dentmolle",
+  "type": "pnj",
+  "nom": "Brugo Dentmolle",
+  "titre": "Cuisinier de l'Aile d'Avalon",
+  "parent": "laile-d-avalon",
+  "lieu": "laile-d-avalon",
+  "statut": "vivant",
+  "resume": "Cuisinier sympathique et bonne mine, spécialisé dans le poisson. Né à Rivegard.",
+  "attitude": "neutre",
+  "connu": [
+   "Il aime le grand large et reste hilare même en pleine tempête, une louche à la main."
+  ],
+  "alias": [
+   "Brugo Dent-Molle"
+  ]
+ },
+ {
+  "id": "daska-voll",
+  "type": "pnj",
+  "nom": "Daska Voll",
+  "titre": "Second de l'Aile d'Avalon",
+  "parent": "laile-d-avalon",
+  "lieu": "laile-d-avalon",
+  "statut": "vivant",
+  "resume": "Vieille femme autoritaire et sérieuse, à la barre. Elle n'aime pas partager d'information sur elle.",
+  "attitude": "neutre",
+  "connu": [
+   "Le capitaine conseille d'éviter de lui parler quand elle regarde. Il faut border net quand elle donne un ordre."
+  ]
+ },
+ {
+  "id": "vyzza",
+  "type": "pnj",
+  "nom": "Vyzza",
+  "titre": "Timonier en herbe de l'Aile d'Avalon",
+  "parent": "laile-d-avalon",
+  "lieu": "laile-d-avalon",
+  "statut": "vivant",
+  "resume": "Jeune tieffeline violette à l'enthousiasme débordant. Elle admire le capitaine et l'imite sans relâche.",
+  "attitude": "neutre",
+  "connu": [
+   "Née dans les bas-quartiers de Solarius, elle rêve de devenir capitaine à son tour."
+  ]
+ },
+ {
+  "id": "djan-kassadi",
+  "type": "pnj",
+  "nom": "Djan Kassadi",
+  "titre": "Marin de l'Aile d'Avalon",
+  "parent": "laile-d-avalon",
+  "lieu": "laile-d-avalon",
+  "statut": "vivant",
+  "resume": "Grand, solide et silencieux. Ancien pêcheur né à Havre Noir, très respecté.",
+  "attitude": "neutre",
+  "connu": [
+   "Il a le pied marin et l'œil plus vif que tous les gabiers du capitaine. Il protège Izzri discrètement."
+  ]
+ },
+ {
+  "id": "creux-d-azur",
+  "type": "ville",
+  "nom": "Creux d'Azur",
+  "titre": "Ville de l'Underdark aux mains des Duergar",
+  "parent": "thaldera",
+  "resume": "Ville de pierre sombre, éventrée et couverte de toiles d'araignée. La Bande des Crocs Gris l'occupe.",
+  "chapeau": "Les barricades, dressées à la hâte avec des planches, des chariots retournés et même des meubles, ont volé en éclats. La brume rampe au ras du sol et cache les pavés irréguliers. Les maisons, bâties à même la roche, sont éventrées : volets déchirés, portes fracassées puis raccrochées de travers. Des toiles épaisses comme du chanvre se tendent entre les bâtiments et chaque pas les fait vibrer. Un marteau frappe au loin sur du métal, et l'air sent la terre humide, le fer et la viande avariée. Un panneau de pierre dit encore : « Bienvenue à Creux-d'Azur, joyau des montagnes. Là où la pierre chante. »",
+  "connu": [
+   "Philippa y arrive après sa chute dans l'Underdark, guidée par le murmure de Vassago.",
+   "Sorem le croque-mort et d'autres habitants répètent une phrase : la toile voit, la toile sait, ses yeux sont légions et ils sont braqués sur nous."
+  ]
+ },
+ {
+  "id": "camp-des-bandits-creux",
+  "type": "lieu",
+  "nom": "Le camp des braconniers",
+  "titre": "Enclave abandonnée de l'Underdark",
+  "parent": "creux-d-azur",
+  "resume": "Camp de bandits dans une cavité rocheuse, bloquant la seule sortie vers l'extérieur.",
+  "chapeau": "Dans un tunnel étroit, une ancienne enclave abandonnée surgit, pleine de lumières tremblantes et d'ombres mouvantes, les murs couverts de toiles d'araignée. Un camp de bandits s'est installé dans une cavité rocheuse : des tentes, des caisses éventrées, un chaos de bivouac. Autour d'un feu, plusieurs hommes boivent de la bière en riant, inconscients de l'obscurité qui les entoure. Au centre, un cercle runique désactivé entoure une structure d'ossements et de métal noir, un prototype de siphon d'âmes."
+ },
+ {
+  "id": "varroth",
+  "type": "pnj",
+  "nom": "Varroth",
+  "titre": "Chef des bandits",
+  "parent": "camp-des-bandits-creux",
+  "lieu": "camp-des-bandits-creux",
+  "statut": "inconnu",
+  "resume": "Archer redoutable qui commande le camp des braconniers.",
+  "attitude": "neutre",
+  "connu": [
+   "Autour du siphon d'âmes, des cadavres de Githzerai, la peau striée de veines noires.",
+   "Vassago pousse Philippa à massacrer et lui offre un nouveau sort."
+  ]
+ },
+ {
+  "id": "caravane-de-darren",
+  "type": "lieu",
+  "nom": "La caravane de Darren",
+  "titre": "Voyageurs bloqués devant la ville",
+  "parent": "creux-d-azur",
+  "resume": "Tentes de fortune et deux chariots, devant la ville aux murs larges.",
+  "chapeau": "Passé le camp des braconniers, on arrive aux abords d'une ville encerclée de larges murs. Devant, une caravane est bloquée. Des tentes de fortune ont été montées à la hâte et deux chariots stationnent plus loin. Un vieil homme salue de loin d'un hochement de tête."
+ },
+ {
+  "id": "darren",
+  "type": "pnj",
+  "nom": "Darren",
+  "titre": "Vieux voyageur de la caravane",
+  "parent": "caravane-de-darren",
+  "lieu": "caravane-de-darren",
+  "statut": "vivant",
+  "resume": "Vieil homme de la caravane, qui avertit Philippa de faire demi-tour.",
+  "attitude": "neutre",
+  "connu": [
+   "Les voyageurs voulaient échanger avec Creux d'Azur pour acquérir quelques cristaux. La mine s'est effondrée après leur passage et la seule sortie est bloquée par des braconniers.",
+   "Pour lui, la ville est un repaire de barbares et de démons."
+  ],
+  "citation": {
+   "texte": "Fais demi-tour si tu le peux, cette région est maudite, cette ville est infernale, et ses habitants sont damnés !",
+   "qui": "Darren"
+  }
+ },
+ {
+  "id": "salon-funeraire-de-sorem",
+  "type": "lieu",
+  "nom": "Le salon funéraire de Sorem",
+  "titre": "Petite maison carrée à l'ouest du village",
+  "parent": "creux-d-azur",
+  "resume": "Petite maison carrée d'une propreté presque irréelle, éclairée d'une lumière douce.",
+  "chapeau": "À l'ouest du village, une petite maison carrée tranche par son ordre presque irréel. Le salon funéraire est propre, éclairé d'une lumière douce, presque chaleureuse. Derrière le comptoir, une porte entrebâillée laisse voir la salle d'embaumement, où plusieurs cadavres sont étendus. Des bandelettes trempent dans des huiles sombres et des aiguilles sont encore fichées dans la chair. Les corps semblent intacts, avec une rigidité maladive et une teinte cireuse."
+ },
+ {
+  "id": "sorem",
+  "type": "pnj",
+  "nom": "Sorem",
+  "titre": "Croque-mort de Creux d'Azur",
+  "parent": "salon-funeraire-de-sorem",
+  "lieu": "salon-funeraire-de-sorem",
+  "statut": "vivant",
+  "resume": "Homme maigre et voûté aux doigts longs et osseux, qui accueille avec une lenteur presque solennelle.",
+  "attitude": "neutre",
+  "connu": [
+   "Il sait ce qui s'est passé dehors et a choisi de ne pas y penser. Il conseille de partir sans se retourner et d'éviter la toile."
+  ],
+  "citation": {
+   "texte": "Vous devriez retourner d'où vous venez, voyez-vous ? Et quoi qu'il arrive, évitez la toile.",
+   "qui": "Sorem"
+  }
+ },
+ {
+  "id": "forge-de-korrik",
+  "type": "lieu",
+  "nom": "La forge de Korrik",
+  "titre": "Forge ensanglantée",
+  "parent": "creux-d-azur",
+  "resume": "Forge où un forgeron frappe une enclume vide, au milieu de traînées de sang.",
+  "chapeau": "Une lueur tremblante danse derrière la fenêtre crasseuse de la forge. Le forgeron est debout devant son enclume, le bras monte et descend avec une régularité mécanique, comme un métronome funèbre. Son tablier est déchiré et taché de sang séché. Quelqu'un a nettoyé le sol, mais mal : les traînées brunes s'étalent jusqu'à la porte arrière, où une serrure brisée pend encore. Dans l'arrière-boutique, des étagères renversées, un établi fendu et des outils brisés."
+ },
+ {
+  "id": "korrik-marteaucreux",
+  "type": "pnj",
+  "nom": "Korrik Marteaucreux",
+  "titre": "Forgeron fantôme",
+  "parent": "forge-de-korrik",
+  "lieu": "forge-de-korrik",
+  "statut": "vivant",
+  "resume": "Forgeron au visage blême et aux yeux laiteux. Il frappe l'enclume sans réagir à rien.",
+  "attitude": "neutre",
+  "connu": [
+   "Il ne parle pas, prisonnier d'une horreur que lui seul semble percevoir."
+  ]
+ },
+ {
+  "id": "boucherie-de-tommen",
+  "type": "lieu",
+  "nom": "La boucherie de Tommen",
+  "titre": "Boutique aux crochets vides",
+  "parent": "creux-d-azur",
+  "resume": "Boucherie pillée, où des crochets vides oscillent au plafond.",
+  "chapeau": "À la lumière d'une lanterne à huile, un homme massif se tient derrière son comptoir. La boutique sent la chair et le sel, mais aussi la peur moite. Des crochets vides balancent au plafond, certains tachés de sang noirci. Le sol est un chaos de viande oubliée, de caisses brisées et de toiles d'araignée collées aux murs et aux vitres. Sur le mur, gravée à la pointe d'un couteau, une phrase griffe le bois : « Ses yeux sont légions et ils sont braqués sur toi. »"
+ },
+ {
+  "id": "tommen-peaunoire",
+  "type": "pnj",
+  "nom": "Tommen Peaunoire",
+  "titre": "Boucher, témoin tremblant",
+  "parent": "boucherie-de-tommen",
+  "lieu": "boucherie-de-tommen",
+  "statut": "vivant",
+  "resume": "Homme massif dont les mains tremblent trop pour découper un morceau de viande.",
+  "attitude": "neutre",
+  "connu": [
+   "Il sursaute à chaque bruit venu de l'extérieur et fixe la porte, comme s'il s'attendait à ce qu'elle explose."
+  ]
+ },
+ {
+  "id": "la-chope-fendue",
+  "type": "lieu",
+  "nom": "La Chope Fendue",
+  "titre": "Ancienne auberge, poste avancé des Duergar",
+  "parent": "creux-d-azur",
+  "resume": "Auberge aux fenêtres barricadées, enseigne gravée d'un marteau brisé surmonté d'un œil noir.",
+  "chapeau": "L'ancienne fierté de Creux d'Azur porte aujourd'hui bien son nom. Les fenêtres sont barricadées de l'intérieur, la porte pend sur ses gonds, et l'enseigne, jadis une chope taillée dans un cristal bleu, a été gravée d'un marteau brisé surmonté d'un œil noir. Des tables renversées, des chaises éclatées et une mer de tessons couvrent le sol. L'odeur d'alcool éventé et de nourriture pourrie flotte dans l'air. Des Duergar de la Bande des Crocs Gris s'y sont installés comme dans un campement de guerre."
+ },
+ {
+  "id": "bilpi-tournebock",
+  "type": "pnj",
+  "nom": "Bilpi Tournebock",
+  "titre": "Patron de la Chope Fendue",
+  "parent": "la-chope-fendue",
+  "lieu": "la-chope-fendue",
+  "statut": "vivant",
+  "resume": "Patron hagard, enchaîné par un collier de fer au pilier central de l'auberge.",
+  "attitude": "neutre",
+  "connu": [
+   "Il sert, nettoie et obéit sous les ricanements des Duergar. Chaque geste trop lent lui vaut un coup de botte."
+  ]
+ },
+ {
+  "id": "ruelle-de-la-cage",
+  "type": "lieu",
+  "nom": "La ruelle et la cage",
+  "titre": "Ruelle étroite avalée par la brume",
+  "parent": "creux-d-azur",
+  "resume": "Au fond d'une ruelle, une cage de fer tordue abrite un Githzerai mourant.",
+  "chapeau": "Plus loin dans les entrailles de Creux d'Azur, la ruelle est étroite, presque entièrement avalée par la brume et les toiles d'araignée qui s'accrochent aux murs comme une seconde peau. L'air y est plus froid, chargé de fer et de moisi, avec une pointe acide de chair malade. Au fond, à moitié cachée par une charrette renversée, une cage de fer tordue par endroits, comme si quelqu'un avait essayé en vain de l'arracher du sol."
+ },
+ {
+  "id": "natharim-zorath",
+  "type": "pnj",
+  "nom": "Natharim Zorath",
+  "titre": "Githzerai prisonnier",
+  "parent": "ruelle-de-la-cage",
+  "lieu": "ruelle-de-la-cage",
+  "statut": "vivant",
+  "resume": "Githzerai au crâne rasé couvert de cicatrices géométriques, laissé mourir dans une cage par les Duergar.",
+  "attitude": "neutre",
+  "connu": [
+   "Il reste en vie par sa discipline mentale. Il s'infiltre dans l'esprit de Philippa (jet d'Intelligence DC 25).",
+   "Il explique que le cristal attire les gens vers un piège, une offrande pour la reine araignée, et supplie Philippa de détruire l'artefact et le cristal pour sauver son peuple."
+  ],
+  "citation": {
+   "texte": "Tu n'es pas des leurs. Tu portes tes propres démons.",
+   "qui": "Natharim Zorath"
+  },
+  "alias": [
+   "Natharim Zortah"
+  ]
+ },
+ {
+  "id": "temple-de-l-essence-volee",
+  "type": "lieu",
+  "nom": "Le temple de l'Essence volée",
+  "titre": "Temple de Callarduran, dieu des gnomes des profondeurs",
+  "parent": "creux-d-azur",
+  "resume": "Temple antique taillé dans la roche, en ruines, éclairé de braseros violets.",
+  "chapeau": "Une structure antique taillée dans la roche, marquée de symboles que le temps a érodés. Le temple est dédié à Callarduran, protecteur de la pierre vivante et des gemmes sous les montagnes. Il est silencieux, trop silencieux. Des tapis élimés recouvrent le sol, les fresques sont fissurées et couvertes de toiles. Des ronces noueuses ont percé le sol et se tordent vers le plafond brisé. Les braseros ne donnent plus qu'une faible lueur violette, crépitante, qui fait danser les ombres. Derrière l'autel renversé, un escalier s'enfonce dans le sous-sol.",
+  "connu": [
+   "Au sous-sol, un ancien dortoir de prieuré, dominé par un autel de fortune. L'artefact, source d'une énergie obscure, lévite au-dessus du sol.",
+   "Pour s'échapper, Philippa retrouve la surface. Un elfe de l'Ordre d'Argent l'attend et la téléporte."
+  ]
+ },
+ {
+  "id": "xaelith",
+  "type": "pnj",
+  "nom": "Xaelith",
+  "titre": "Drider déchu",
+  "parent": "temple-de-l-essence-volee",
+  "lieu": "temple-de-l-essence-volee",
+  "statut": "inconnu",
+  "resume": "Drider qui incante un rituel impie autour de l'artefact.",
+  "attitude": "neutre",
+  "connu": [
+   "Il se bat avec des lames chitineuses, des illusions ténébreuses et un cri qui effraie."
+  ],
+  "citation": {
+   "texte": "Il me suffit d'un seul instant pour t'anéantir, une seule chance, une seule fois.",
+   "qui": "Xaelith"
+  }
+ },
+ {
+  "id": "vaerion",
+  "type": "pnj",
+  "nom": "Vaerion",
+  "titre": "Elfe mage de la gravité",
+  "parent": "temple-de-l-essence-volee",
+  "lieu": "temple-de-l-essence-volee",
+  "statut": "inconnu",
+  "resume": "Elfe mage manipulateur de gravité, qui assiste Xaelith d'un air calculateur.",
+  "attitude": "neutre",
+  "connu": [
+   "Il trace des runes dans l'air et dispose de sorts de chute, de distorsion gravitationnelle et de singularité."
+  ]
+ },
+ {
+  "id": "gorrak",
+  "type": "pnj",
+  "nom": "Gorrak",
+  "titre": "Barbare imposant",
+  "parent": "temple-de-l-essence-volee",
+  "lieu": "temple-de-l-essence-volee",
+  "statut": "inconnu",
+  "resume": "Barbare adossé à un mur, qui joue avec la garde de son immense épée.",
+  "attitude": "neutre",
+  "connu": [
+   "Il combat avec une hache, une frappe de titan et une rage élémentaire."
+  ]
+ },
+ {
+  "id": "ile-du-vesper",
+  "type": "ville",
+  "nom": "L'île du Vesper",
+  "titre": "Île maudite, village de pirates squelettes",
+  "parent": "thaldera",
+  "resume": "Île où dérive Philippa après la destruction du cristal de Vassago. Village pirate, mine, cabane de sorcière et temple au sommet.",
+  "chapeau": "Après le portail brisé, la mer est vide et le ciel sans parole. Un navire marchand échoué sur des rochers offre de quoi bâtir un radeau, puis une île se dessine au loin. Sur la plage, une immense épave est ouverte en deux. Plus haut, un village de pirates s'accroche aux rochers, avec une taverne improvisée. La jungle ferme l'arrière-pays, et au centre de l'île, un temple domine la montagne. Une vieille mine, la cabane d'une sorcière et un village de Nagas gardent chacun un chemin.",
+  "connu": [
+   "Les pirates squelettes dessinent sur le sable la carte de l'île et offrent leur aide si Philippa retrouve leur capitaine, disparu dans la jungle.",
+   "Le capitaine du Vesper, Alaric Morwyn, a été maudit par Vassago après avoir volé un artefact d'immortalité.",
+   "Philippa détruit l'artefact au cœur du temple. La malédiction est brisée et Elias et Dorian redeviennent poussière. Elle trouve 450 po, 2 émeraudes et 1 diamant, puis contacte Arianthil avec le rameau magique et se fait téléporter loin de l'île."
+  ]
+ },
+ {
+  "id": "dorian",
+  "type": "pnj",
+  "nom": "Dorian",
+  "titre": "Barde squelette pirate",
+  "parent": "ile-du-vesper",
+  "lieu": "ile-du-vesper",
+  "statut": "mort",
+  "resume": "Pirate squelette, barde amical, qui invite Philippa dans la taverne improvisée.",
+  "attitude": "neutre",
+  "connu": [
+   "Avec Elias, il accompagne Philippa dans la mine contre trois araignées. À la fin, il redevient poussière en disant merci."
+  ]
+ },
+ {
+  "id": "elias",
+  "type": "pnj",
+  "nom": "Elias",
+  "titre": "Guerrier squelette pirate",
+  "parent": "ile-du-vesper",
+  "lieu": "ile-du-vesper",
+  "statut": "mort",
+  "resume": "Pirate squelette, guerrier taciturne.",
+  "attitude": "neutre",
+  "connu": [
+   "Il accompagne Philippa dans la mine et redevient poussière avec Dorian à la fin."
+  ],
+  "citation": {
+   "texte": "Merci…",
+   "qui": "Elias et Dorian"
+  }
+ },
+ {
+  "id": "drozzle",
+  "type": "pnj",
+  "nom": "Drozzle",
+  "titre": "Le mage fou",
+  "parent": "ile-du-vesper",
+  "lieu": "ile-du-vesper",
+  "statut": "vaincu",
+  "resume": "Statue de mage fou au fond de la mine, avec deux pierres runiques enchaînées, une rouge et une bleue.",
+  "attitude": "neutre",
+  "connu": [
+   "Il hurle que Philippa ne touchera pas à son Éclat. Philippa récupère le Shard of the Mad Arcanist et une lettre des druides de l'équilibre tordu."
+  ],
+  "citation": {
+   "texte": "Tu ne toucheras pas à mon Éclat !",
+   "qui": "Drozzle"
+  },
+  "alias": [
+   "Drozzle le mage fou"
+  ]
+ },
+ {
+  "id": "alaric-morwyn",
+  "type": "pnj",
+  "nom": "Alaric Morwyn",
+  "titre": "Ancien capitaine du Vesper",
+  "parent": "ile-du-vesper",
+  "lieu": "ile-du-vesper",
+  "statut": "vaincu",
+  "resume": "Capitaine corrompu, maudit par Vassago après le vol d'un artefact d'immortalité.",
+  "attitude": "neutre",
+  "connu": [
+   "Il invoque cinq pirates spectraux qui absorbent les dégâts à sa place. Philippa doit détruire l'artefact et résister à l'influence de Vassago."
+  ],
+  "citation": {
+   "texte": "Je n'ai plus d'âme à perdre. Mais toi, tu portes encore son espoir… Il suffit de l'éteindre.",
+   "qui": "Alaric Morwyn"
+  }
+ },
+ {
+  "id": "dren-malbar",
+  "type": "pnj",
+  "nom": "Dren Malbar",
+  "titre": "Capitaine des gardes de Malquessar",
+  "parent": "malquessar",
+  "lieu": "malquessar",
+  "statut": "vivant",
+  "resume": "Demi-orc en armure, poli mais méfiant, qui accueille Philippa aux portes.",
+  "attitude": "neutre",
+  "connu": [
+   "Il l'envoie à la porte sud puis à la place principale chercher Thalanir Vel'dorel. Il mentionne un vol récent sans en dire plus."
+  ],
+  "citation": {
+   "texte": "Faites attention à qui vous parlez. Cette ville a l'air paisible, mais les racines sont pourries bien plus souvent qu'on ne le croit.",
+   "qui": "Dren Malbar"
+  }
+ },
+ {
+  "id": "thalanir-veldorel",
+  "type": "pnj",
+  "nom": "Thalanir Vel'dorel",
+  "titre": "Magistère de Malquessar",
+  "parent": "malquessar",
+  "lieu": "malquessar",
+  "statut": "vivant",
+  "resume": "Chef de la ville, en habits brodés, qui transpire et s'incline de mauvaise grâce devant l'ambassadeur.",
+  "attitude": "neutre",
+  "connu": [
+   "Il explique que sans la troisième Pierre, la ville reste figée. Il soupçonne Nolbrim Cuivre-Rouge, qui a toujours haï les Pierres.",
+   "Il tolère que Philippa enquête, tant que cela ne trouble pas l'ordre."
+  ],
+  "citation": {
+   "texte": "Deux orbes ne suffisent pas. Deux jambes ne courent pas sans la troisième.",
+   "qui": "Thalanir Vel'dorel"
+  },
+  "alias": [
+   "Thalanir"
+  ]
+ },
+ {
+  "id": "elarin-velasyr",
+  "type": "pnj",
+  "nom": "Elarin Velasyr",
+  "titre": "Ambassadeur de la Cour Seelie",
+  "parent": "malquessar",
+  "lieu": "malquessar",
+  "statut": "vivant",
+  "resume": "Ambassadeur calme, glacial et autoritaire, qui exige le retour de la Pierre.",
+  "attitude": "neutre",
+  "connu": [
+   "Pour lui, le vol d'un tel artefact est une question d'équilibre planaire. Une potion a été volée chez lui pendant une livraison de fleurs, et il en a honte."
+  ],
+  "citation": {
+   "texte": "Votre ville n'est pas un coffre-fort : c'est une vitrine.",
+   "qui": "Elarin Velasyr"
+  }
+ },
+ {
+  "id": "mira-glindewyn",
+  "type": "pnj",
+  "nom": "Mira Glindewyn",
+  "titre": "Apprentie herboriste de Liora",
+  "parent": "malquessar",
+  "lieu": "malquessar",
+  "statut": "mort",
+  "resume": "Apprentie très bavarde et volontaire pour aider Philippa. Elle est en réalité le changeforme qui a volé la Pierre.",
+  "attitude": "neutre",
+  "connu": [
+   "Elle donne trois fausses pistes : l'achat de verveine de Nolbrim, la plume et l'encre d'Arlo, et Thalanir sortant de la taverne de nuit.",
+   "Démasquée, elle change de forme, se moque avec la voix de Mira et fuit dans les bois. La vraie Mira est morte."
+  ],
+  "citation": {
+   "texte": "Je suis tout le monde, Philippa. Je suis Mira, je suis toi, je suis ce que tu refuses de regarder dans le miroir.",
+   "qui": "Le changeforme"
+  }
+ },
+ {
+  "id": "arlo-brisemousse",
+  "type": "pnj",
+  "nom": "Arlo Brisemousse",
+  "titre": "Firbolg de Malquessar",
+  "parent": "malquessar",
+  "lieu": "malquessar",
+  "statut": "vivant",
+  "resume": "Firbolg timide qui apprend à écrire, pour donner de ses nouvelles à quelqu'un de sa forêt natale.",
+  "attitude": "neutre",
+  "connu": [
+   "Mellioen lui enseigne l'écriture. Il n'est pas suspect du vol."
+  ],
+  "citation": {
+   "texte": "Écrire… c'est un peu comme planter une graine. Même une toute petite.",
+   "qui": "Arlo"
+  },
+  "alias": [
+   "Arlo Brise-Mousse"
+  ]
+ },
+ {
+  "id": "berrund-hrakkal",
+  "type": "pnj",
+  "nom": "Berrund Hrakkal",
+  "titre": "Forgeron de Malquessar",
+  "parent": "malquessar",
+  "lieu": "malquessar",
+  "statut": "vivant",
+  "resume": "Grand forgeron à la peau rugueuse, qui parle par grognements. Il méprise les Pierres mais nie toute implication.",
+  "attitude": "neutre",
+  "connu": [
+   "Il a autrefois forgé des armes pour un archifey banni, Vaelthorn Xil'Vanyr, le Cœur-Lame de l'Équinoxe Brisé, dont GlassBane, une hallebarde capable de fracturer les pactes magiques au contact du sang d'un pactisant.",
+   "Il a honte de ce passé et ne forge plus que des outils agricoles ou des armes défensives."
+  ],
+  "citation": {
+   "texte": "J'ai forgé une lame, autrefois. Une qui tranchait pas la chair… mais les serments.",
+   "qui": "Berrund Hrakkal"
+  }
+ },
+ {
+  "id": "mellioen-lumeverre",
+  "type": "pnj",
+  "nom": "Mellioen Lumeverre",
+  "titre": "Enchanteur de Malquessar",
+  "parent": "malquessar",
+  "lieu": "malquessar",
+  "statut": "vivant",
+  "resume": "Enchanteur féérique patient, qui enseigne l'écriture à Arlo.",
+  "attitude": "neutre",
+  "connu": [
+   "Il identifie le morceau de peau grise trouvé près des Pierres : un changeforme, qui copie l'apparence mais rarement la mémoire. Il devra se soigner, ce qui peut le trahir."
+  ],
+  "citation": {
+   "texte": "Il s'agit d'un changeforme. Une créature capable de copier parfaitement l'apparence… mais rarement la mémoire.",
+   "qui": "Mellioen Lumeverre"
+  },
+  "alias": [
+   "Mellioen"
+  ]
+ },
+ {
+  "id": "erdem-brelmott",
+  "type": "pnj",
+  "nom": "Erdem Brelmott",
+  "titre": "Archiscribe de Malquessar",
+  "parent": "malquessar",
+  "lieu": "malquessar",
+  "statut": "vivant",
+  "resume": "Très vieil archiscribe, chauve et ridé, enfermé dans un bureau en désordre absolu.",
+  "attitude": "neutre",
+  "connu": [
+   "Il est le seul à savoir activer la Pierre de Seuil avec le bon parchemin, un savoir qu'il a oublié sauf dans des éclairs de lucidité.",
+   "Il reconnaît Philippa comme « la fille du feu qui parle au Soleil »."
+  ],
+  "citation": {
+   "texte": "N'ouvrez pas la boîte aux lucioles. Elles mordent quand on ment.",
+   "qui": "Erdem Brelmott"
+  }
  },
  {
   "id": "maison-lenach",
