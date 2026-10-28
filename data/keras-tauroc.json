@@ -7660,6 +7660,26 @@
   "chapeau": "Une porte de cuivre gravée s'ouvre sur l'humidité, qui engloutit aussitôt le visiteur. Elle est mêlée aux relents d'algues, d'encens et de peau chaude. Des canalisations rouillées courent sous des plafonds voûtés, et des nappes de vapeur montent paresseusement au-dessus des bassins. L'odeur du sel, du musc et des corps fatigués imprègne les murs. Des silhouettes floues se déplacent en silence entre les bassins, drapées de serviettes, anonymes dans la brume."
  },
  {
+  "id": "skrell",
+  "type": "pnj",
+  "nom": "Skrell",
+  "titre": "Trafiquant de Suud du Voile",
+  "parent": "maison-condamnee-skrell",
+  "lieu": "maison-condamnee-skrell",
+  "statut": "mort",
+  "resume": "Chef du trafic de Suud du Voile, qui se terrait dans une maison condamnée. Il ne se sépare jamais de sa propre production.",
+  "attitude": "ennemi",
+  "connu": [
+   "Helka sait où il se cache : il est connu pour sniffer sa propre production.",
+   "Il reconnaît Helka, « la repentie », et Philippa, « celle qui cherche sa mère ».",
+   "Il est mort au combat. Sur lui, une lettre de Lavande qui lui était adressée."
+  ],
+  "citation": {
+   "texte": "Bravo, Sherlock. T'as suivi un type qui bosse pour moi, jusqu'à moi.",
+   "qui": "Skrell"
+  }
+ },
+ {
   "id": "entrepot-de-jericho",
   "type": "lieu",
   "nom": "L'entrepôt de Jericho",
@@ -8312,6 +8332,188 @@
    "Il fait recommencer les élèves devant un cristal suspendu qui vibre d'une note claire, et laisse naître un kaléidoscope de sons.",
    "Il enseigne aux côtés d'Aeon Calaryn."
   ]
+ },
+ {
+  "id": "tour-de-guet-des-marais",
+  "type": "lieu",
+  "nom": "La tour de guet des marais",
+  "titre": "Ruine au bord du bras de mer",
+  "parent": "ile-aux-moines",
+  "resume": "Tour de guet abandonnée qui domine un camp de gobelins mercenaires, de l'autre côté d'un bras de mer.",
+  "connu": [
+   "Un petit quai de contrebande à demi pourri, avec une barque bringuebalante, mène à l'île.",
+   "Depuis la tour, on voit des feux de camp sur la côte opposée : un camp gobelin organisé et mieux équipé qu'il n'en a l'air.",
+   "Les gobelins sont payés pour garder ce poste et se plaignent de la boue. Traverser leur camp risque l'affrontement, contourner par les marais ralentit."
+  ],
+  "chapeau": "Une tour de guet abandonnée émerge des marais : pierres humides, escalier brisé, bois gonflé de moisissure. Au loin, au milieu des brumes marines, l'île aux moines se tient sombre sous un voile de brouillard. Sur la côte opposée, des lueurs de feux de camp percent la nuit."
+ },
+ {
+  "id": "village-monastique-ile-aux-moines",
+  "type": "lieu",
+  "nom": "Le village monastique",
+  "titre": "Ruines mangées par la végétation",
+  "parent": "ile-aux-moines",
+  "resume": "Ancien village de moines de Lathandre, aux statues brisées et aux visages martelés. Le lieu a été volontairement profané.",
+  "connu": [
+   "Les moines vénéraient Lathandre : le lieu n'est pas seulement ruiné, il a été profané exprès.",
+   "Le journal d'un moine explique les raisons du départ : un fléau s'est abattu sur l'île.",
+   "Au quartier nord, un réverbère isolé brûle contre toute logique. C'est un démon-alarme, qui hurle si on s'approche et invoque des Mains gardiennes.",
+   "Une maison faiblement éclairée est le seul lieu animé du village : des hommes de la Griffe y patrouillent, nerveux."
+  ],
+  "chapeau": "Un ancien village monastique, mangé par la végétation, dont les pierres humides suintent de mousse. Les maisons en ruine s'écroulent sur elles-mêmes, certaines à moitié englouties par la boue et les racines. Partout, des statues brisées de Lathandre gisent à demi renversées, les visages martelés. L'air est lourd, saturé de sel et de pierre humide, et le silence est presque total."
+ },
+ {
+  "id": "grande-cathedrale-ile-aux-moines",
+  "type": "lieu",
+  "nom": "La grande cathédrale effondrée",
+  "titre": "Là où le Berger attend",
+  "parent": "ile-aux-moines",
+  "resume": "Immense cathédrale au toit éventré, où Absalom, le Berger, affronte le groupe.",
+  "connu": [
+   "La Sphère de l'Aube y est restée intacte, ignorée par les pillards.",
+   "Absalom attend près de l'autel et ne prend pas l'initiative : elle réagit à l'agression, d'abord par une boule de feu sur l'autel.",
+   "Elle a laissé une lettre brûlée où l'on lit encore « Havre Noir », « contrat » et « mission », un anneau de protection +1 et un sac de 3 400 pièces d'or."
+  ],
+  "chapeau": "La cathédrale est vaste, son toit éventré laisse filtrer un rai de lune dans la poussière. Les colonnes sont éventrées par le temps, le sol jonché de gravats. Dans un recoin, une lueur douce perce l'obscurité."
+ },
+ {
+  "id": "souterrains-ile-aux-moines",
+  "type": "lieu",
+  "nom": "Les souterrains de la cathédrale",
+  "titre": "Cages de fer et marais qui suinte",
+  "parent": "ile-aux-moines",
+  "resume": "Réseau de salles humides où la Griffe garde des prisonniers dans des cages rouillées.",
+  "connu": [
+   "Les murs sont envahis de moisissure, l'odeur du marais stagnant s'infiltre par les fissures.",
+   "Liora y est prisonnière. Elle a été attaquée près de Havre Noir, et on lui a volé son médaillon.",
+   "Le Démon des Mains guette dans les fissures et attaque dès que les prisonniers sont libérés.",
+   "Plus loin, une porte massive de pierre et de fer, gravée de symboles effacés, ouvre sur des couloirs plus propres."
+  ],
+  "chapeau": "Un réseau de salles humides, envahies de mousse et de moisissures. Des cages de fer rouillées s'alignent le long des couloirs, certaines ouvertes, d'autres encore occupées par des silhouettes faméliques. Dans l'ombre, on entend des couinements métalliques et des doigts qui rampent sur la pierre."
+ },
+ {
+  "id": "porte-de-la-jungle",
+  "type": "lieu",
+  "nom": "La porte de pierre de la jungle",
+  "titre": "Énigme à vingt-cinq cases",
+  "parent": "ile-aux-moines",
+  "resume": "Porte de pierre dans la jungle, au motif de vingt-cinq symboles. Trois arbres portent chacun une rune et un bol de pierre vide.",
+  "connu": [
+   "Au sol est gravé : « Rendez hommage à la forêt. »",
+   "Trois arbres majestueux s'élèvent à égale distance du seuil, chacun marqué d'une immense rune entourée de petits symboles. Au pied de chaque tronc repose un bol de pierre vide."
+  ],
+  "chapeau": "Le sentier s'interrompt brusquement, avalé par une lourde porte de pierre enchâssée dans un pan rocheux. Au centre, taillé dans la roche, un motif de vingt-cinq cases, cinq par cinq, chacune marquée d'un symbole ancien usé par le temps. La clairière est silencieuse, presque solennelle."
+ },
+ {
+  "id": "relais-des-sables",
+  "type": "lieu",
+  "nom": "Le relais des sables",
+  "titre": "Relais de caravane dans le désert",
+  "parent": "voros",
+  "resume": "Relais de caravane perdu dans le désert, sur la route de Khazad-Marun. Quatre tenanciers y accueillent les voyageurs.",
+  "connu": [
+   "On y trouve des provisions, des capes, des armes discrètes, de la poudre et des potions. Une chambre coûte vingt pièces."
+  ]
+ },
+ {
+  "id": "maison-condamnee-skrell",
+  "type": "lieu",
+  "nom": "La maison condamnée",
+  "titre": "Laboratoire de Suud sous une trappe",
+  "parent": "voros",
+  "resume": "Bâtisse aux volets cloués, au sous-sol transformé en laboratoire de drogue par le Voile.",
+  "connu": [
+   "Une trappe cachée derrière une étagère vermoulue mène à un laboratoire où l'on raffine la Suud en poudre (Perception ou Investigation, DD 14).",
+   "Un alchimiste maigre, aux doigts tachés d'acide, et deux colosses drogués y travaillaient sous les ordres de Skrell."
+  ],
+  "chapeau": "Une bâtisse aux volets cloués, murs fissurés, herbes folles poussant entre les pierres."
+ },
+ {
+  "id": "demon-des-mains",
+  "type": "pnj",
+  "nom": "Le Démon des Mains",
+  "titre": "Gardien des souterrains de la cathédrale",
+  "parent": "souterrains-ile-aux-moines",
+  "lieu": "souterrains-ile-aux-moines",
+  "resume": "Démon qui s'agrippe aux pierres des souterrains et bondit sur ceux qui libèrent les prisonniers.",
+  "statut": "inconnu",
+  "attitude": "ennemi",
+  "connu": [
+   "Il attaque dès que les prisonniers sont libérés, ou quand les PJ sont vulnérables.",
+   "Il frappe à la masse cloutée, allonge une langue empoisonnée et crache un cône de feu et de nécrotique avec une lanterne."
+  ]
+ },
+ {
+  "id": "sahir-al-basma",
+  "type": "pnj",
+  "nom": "Sahir Al-Basma",
+  "titre": "Le Marchand",
+  "parent": "relais-des-sables",
+  "lieu": "relais-des-sables",
+  "resume": "Marchand du relais des sables, qui ne montre certains articles qu'à ceux qu'il juge dignes.",
+  "statut": "vivant",
+  "attitude": "neutre",
+  "connu": [
+   "Il vend des épices, du thé, des outres, de la corde, de la poudre, des mines de feu et des potions de soin."
+  ],
+  "citation": {
+   "texte": "Rien d'extraordinaire, juste des provisions, des capes, ce genre de choses.",
+   "qui": "Sahir Al-Basma"
+  }
+ },
+ {
+  "id": "grikka-marmiton",
+  "type": "pnj",
+  "nom": "Grikka Marmiton",
+  "titre": "La Cuisinière",
+  "parent": "relais-des-sables",
+  "lieu": "relais-des-sables",
+  "resume": "Cuisinière du relais des sables, qui n'a pas grand-chose sur le feu et supporte mal la chaleur.",
+  "statut": "vivant",
+  "attitude": "neutre",
+  "connu": [
+   "Elle fait la cuisine du relais malgré la chaleur."
+  ],
+  "citation": {
+   "texte": "Sérieux ? Vous voulez manger maintenant ?",
+   "qui": "Grikka Marmiton"
+  }
+ },
+ {
+  "id": "nashara-aux-anneaux",
+  "type": "pnj",
+  "nom": "Nashara-aux-Anneaux",
+  "titre": "La Patronne",
+  "parent": "relais-des-sables",
+  "lieu": "relais-des-sables",
+  "resume": "Patronne du relais des sables. Elle ne voit presque jamais de voyageurs et loue une chambre vingt pièces.",
+  "statut": "vivant",
+  "attitude": "neutre",
+  "connu": [
+   "Elle trouve que les PJ ne sont pas sa clientèle habituelle."
+  ],
+  "citation": {
+   "texte": "Tiens donc… c'est pas souvent que je vois des voyageurs par ici.",
+   "qui": "Nashara-aux-Anneaux"
+  }
+ },
+ {
+  "id": "oba-l-errant",
+  "type": "pnj",
+  "nom": "Oba l'Errant",
+  "titre": "Le Prophète",
+  "parent": "relais-des-sables",
+  "lieu": "relais-des-sables",
+  "resume": "Prophète du relais des sables. Il sent deux pouvoirs en Jane et lui indique comment traverser les marais.",
+  "statut": "vivant",
+  "attitude": "positif",
+  "connu": [
+   "À Jane : suivre la renarde dans les marais et ne pas lâcher la bête quand le moment viendra."
+  ],
+  "citation": {
+   "texte": "Je sens deux pouvoirs en toi… le cœur rusé de la renarde et la fureur du monstre. Les marais où tu vas t'enfoncer sont traîtres : là, ne lâche pas la bête. Là, suis la renarde, et laisse sa ruse ouvrir ton chemin.",
+   "qui": "Oba l'Errant, à Jane"
+  }
  },
  {
   "id": "maison-lenach",

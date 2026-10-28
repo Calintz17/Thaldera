@@ -2399,6 +2399,9 @@
    "Philippa la libère à l'Île aux Moines."
   ],
   "img": "img/thaldera/pnj/liora.webp",
+  "lieux": [
+   "souterrains-ile-aux-moines"
+  ],
   "citation": {
    "texte": "Si vous trouvez des bourgeons rares dans vos voyages… même un seul… je vous donnerai ce que je peux.",
    "qui": "Liora"
@@ -6261,6 +6264,12 @@
   "titre": "Kiosque face à la mer",
   "parent": "port-doelan",
   "resume": "Pots débordants de fleurs sous des pins tordus.",
+  "galerie": [
+   {
+    "img": "img/paysages/port-doelan/fleurs-nicea.webp",
+    "legende": "Fleurs Nicea"
+   }
+  ],
   "chapeau": "Le kiosque est posé face à la mer, sous des pins larges et tordus. Des pots débordent de fleurs colorées, des rubans pendent au vent. L'air sent le sel et le pollen."
  },
  {
@@ -7278,7 +7287,7 @@
   "chapeau": "Une épave appuyée contre la paroi, comme quelque chose qui aurait renoncé à tomber. Mâts brisés couverts de coraux noirs et de varech, bois gorgé de siècles. Quelques coraux bioluminescents, à la lumière froide et irrégulière. L'eau est immobile, trop immobile.",
   "pos": {
    "x": 0.172,
-   "y": 0.756
+   "y": 0.722
   }
  },
  {
@@ -8732,6 +8741,7 @@
   "alias": [
    "Boru"
   ],
+  "img": "img/pnj/brakka-boru.webp",
   "citation": {
    "texte": "Elle est arrivée entre mort et vie. Je lui ai rendu la vie. Elle est repartie, forte.",
    "qui": "Boru, en istran, traduit"
@@ -8756,7 +8766,8 @@
    "Loxodon en robe bleue, assis en tailleur devant la pierre centrale du sanctuaire, immobile, trompe sur les genoux. Il ne parle pas pendant sa méditation. Les Pachidan y vénèrent Ashvûr-tesh, l'horizon d'eau.",
    "Il a soigné Absalom, arrivée entre mort et vie. Elle est restée des jours au rituel de la mer et parlait à la pierre sacrée, à son ami plutôt qu'à Ashvûr-tesh.",
    "Dans la pierre de gauche, à hauteur de main accroupie, un symbole de Vassago a été gravé à l'ongle."
-  ]
+  ],
+  "teinte": "#195275"
  },
  {
   "id": "fumerie-de-shoba",

@@ -4,7 +4,7 @@
 (() => {
 'use strict';
 
-const VER = '50';
+const VER = '51';
 const EDIT = new URLSearchParams(location.search).has('edit');
 const $ = (s, r = document) => r.querySelector(s);
 const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
@@ -175,7 +175,7 @@ function sceneOf(e, q, depth = 0) {
       return {
         kind: 'map', src: c.img, cam: FULL, owner: e, tabs: e.cartes, tab: Math.min(tab, e.cartes.length - 1), zp: true,
         frames: kids(e.id).filter(k => k.poly && (!ownerMap(k) || ownerMap(k).carte === c)).map(k => frameOf(k)),
-        pins: kids(e.id).filter(k => k.pos && k.type === 'lieu').map(k => ({ id: k.id, ...k.pos, label: k.nom, kind: 'lieu' })).concat(collectVilles(e).map(k => ({ id: k.id, ...k.pos, label: k.nom, kind: 'ville' }))).concat(collectVoyages(e).map(k => ({ id: k.id, ...k.pos, label: k.nom, kind: 'ville' })))
+        pins: collectLieux(e).filter(k => k.pos).map(k => ({ id: k.id, ...k.pos, label: k.nom, kind: 'lieu' })).concat(collectVilles(e).map(k => ({ id: k.id, ...k.pos, label: k.nom, kind: 'ville' }))).concat(collectVoyages(e).map(k => ({ id: k.id, ...k.pos, label: k.nom, kind: 'ville' })))
       };
     }
     case 'region':
