@@ -4,7 +4,7 @@
 (() => {
 'use strict';
 
-const VER = '45';
+const VER = '46';
 const EDIT = new URLSearchParams(location.search).has('edit');
 const $ = (s, r = document) => r.querySelector(s);
 const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
@@ -372,6 +372,28 @@ function makeStack(sc) {
     `<section class="sheet" data-i="${i}" style="--s:1"><div class="shcap">${esc(sh.carte.legende || '')}</div><div class="shw"><img src="${mapSrc(sh.carte.img)}" alt="" draggable="false"><div class="ovl"></div></div></section>`).join('') + '</div>';
   const layer = { el, stack: true, src: sc.src };
   const stk = $('.stk', el);
+  /* deplacement haut/bas au clic : glisser a la souris + fleches */
+  let dg = null, dmoved = false;
+  stk.addEventListener('pointerdown', ev => { if (ev.button !== 0 || ev.pointerType === 'touch') return; dg = { y: ev.clientY, t: stk.scrollTop }; dmoved = false; });
+  window.addEventListener('pointermove', ev => {
+    if (!dg) return;
+    const dy = ev.clientY - dg.y;
+    if (!dmoved && Math.abs(dy) < 6) return;
+    dmoved = true; stk.classList.add('grab'); stk.style.scrollBehavior = 'auto';
+    stk.scrollTop = dg.t - dy;
+  });
+  window.addEventListener('pointerup', () => { if (!dg) return; dg = null; stk.classList.remove('grab'); stk.style.scrollBehavior = ''; if (dmoved) setTimeout(() => { dmoved = false; }, 0); });
+  stk.addEventListener('click', ev => { if (dmoved) { ev.preventDefault(); ev.stopPropagation(); } }, true);
+  if (sc.sheets.length > 1) {
+    const nav = document.createElement('div');
+    nav.className = 'stknav';
+    nav.innerHTML = '<button type="button" class="up" aria-label="Carte du dessus" title="Carte du dessus">▲</button><button type="button" class="dn" aria-label="Carte du dessous" title="Carte du dessous">▼</button>';
+    const cur = () => { const mid = stk.scrollTop + stk.clientHeight * 0.4; let c = 0; stk.querySelectorAll('.sheet').forEach((sh, i) => { if (sh.offsetTop <= mid) c = i; }); return c; };
+    const go = d => { const n = sc.sheets.length; scrollSheet(Math.max(0, Math.min(n - 1, cur() + d))); };
+    $('.up', nav).addEventListener('click', ev => { ev.stopPropagation(); go(-1); });
+    $('.dn', nav).addEventListener('click', ev => { ev.stopPropagation(); go(1); });
+    el.appendChild(nav);
+  }
   stk.addEventListener('scroll', () => {
     const mid = stk.scrollTop + stk.clientHeight * 0.4;
     let cur = 0; stk.querySelectorAll('.sheet').forEach((sh, i) => { if (sh.offsetTop <= mid) cur = i; });
