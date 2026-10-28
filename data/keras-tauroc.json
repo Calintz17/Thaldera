@@ -6703,7 +6703,7 @@
   "nom": "Dogrun",
   "titre": "Nain de l'équipage du sous-marin",
   "parent": "sous-marin-borim",
-  "lieu": "sous-marin-borim",
+  "lieu": "le-vesper",
   "statut": "inconnu",
   "resume": "Nain du chantier de Borim Brise-Montagne, à bord du sous-marin de pyrracier. Il travaille en silence.",
   "connu": [
@@ -6720,7 +6720,7 @@
   "nom": "Thram",
   "titre": "Nain de l'équipage du sous-marin",
   "parent": "sous-marin-borim",
-  "lieu": "sous-marin-borim",
+  "lieu": "le-vesper",
   "statut": "inconnu",
   "resume": "Nain du chantier de Borim Brise-Montagne, à bord du sous-marin de pyrracier. Il travaille en silence.",
   "connu": [
@@ -6737,7 +6737,7 @@
   "nom": "Orik",
   "titre": "Nain de l'équipage du sous-marin",
   "parent": "sous-marin-borim",
-  "lieu": "sous-marin-borim",
+  "lieu": "le-vesper",
   "statut": "inconnu",
   "resume": "Nain du chantier de Borim Brise-Montagne, à bord du sous-marin de pyrracier. Il travaille en silence.",
   "connu": [
@@ -7020,10 +7020,10 @@
  {
   "id": "omen-corvalis",
   "type": "lieu",
-  "nom": "Omen",
-  "titre": "Quartier nord-ouest",
+  "nom": "La taverne d'Omen",
+  "titre": "Ville basse",
   "parent": "corvalis",
-  "resume": "Quartier ou établissement nommé Omen, au nord-ouest.",
+  "resume": "Taverne de la ville basse, tenue par Omen, la tavernière.",
   "pos": {
    "x": 0.247,
    "y": 0.3
@@ -7191,7 +7191,7 @@
   "nom": "Le Vesper",
   "titre": "Sous-marin",
   "parent": "brakka",
-  "resume": "Sous-marin signalé au large de la côte de Brakka.",
+  "resume": "Sous-marin nain à coque de pyrracier, laissé au large de Brakka lors de la dernière escale. Son équipage d'ingénieurs nains l'attend.",
   "pos": {
    "x": 0.911,
    "y": 0.625

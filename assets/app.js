@@ -4,7 +4,7 @@
 (() => {
 'use strict';
 
-const VER = '43';
+const VER = '44';
 const EDIT = new URLSearchParams(location.search).has('edit');
 const $ = (s, r = document) => r.querySelector(s);
 const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
@@ -172,7 +172,7 @@ function sceneOf(e, q, depth = 0) {
       return {
         kind: 'map', src: c.img, cam: FULL, owner: e, tabs: e.cartes, tab: Math.min(tab, e.cartes.length - 1),
         frames: kids(e.id).filter(k => k.poly).map(k => frameOf(k)),
-        pins: kids(e.id).filter(k => k.pos && (k.type === 'ville' || k.type === 'lieu')).map(k => ({ id: k.id, ...k.pos, label: k.nom, kind: k.type === 'lieu' ? 'lieu' : 'ville' })).concat(collectVoyages(e).map(k => ({ id: k.id, ...k.pos, label: k.nom, kind: k.voyage === 'x' ? 'voyage' : 'ville' })))
+        pins: kids(e.id).filter(k => k.pos && (k.type === 'ville' || k.type === 'lieu')).map(k => ({ id: k.id, ...k.pos, label: k.nom, kind: k.type === 'lieu' ? 'lieu' : 'ville' })).concat(collectVoyages(e).map(k => ({ id: k.id, ...k.pos, label: k.nom, kind: 'ville' })))
       };
     }
     case 'region':
@@ -908,6 +908,27 @@ async function initQuests() {
   document.addEventListener('keydown', ev => { if (ev.key === 'Escape' && !box.hidden) toggle(false); });
 }
 
+/* ---------- journal des runes de Philippa ---------- */
+function initRunes() {
+  const btn = $('#rbtn'), box = $('#rlog');
+  if (!btn || !box) return;
+  const ETAT = { active: 'Active', detruite: 'Détruite', tbc: 'À confirmer' };
+  const where = e => { let p = BY[e.parent], g = 0; while (p && g++ < 8) { if (p.type === 'ville' || p.type === 'continent') return p; p = BY[p.parent]; } return null; };
+  const draw = () => {
+    const R = Object.values(BY).filter(x => x.rune).sort((a, b) => ({ active: 0, tbc: 1, detruite: 2 }[a.rune.etat] - { active: 0, tbc: 1, detruite: 2 }[b.rune.etat]) || a.nom.localeCompare(b.nom, 'fr'));
+    box.innerHTML = `<div class="qwin" role="document"><header><span class="qgem"></span><h2>Runes de Philippa</h2><span class="qcount">${R.length} posées</span><button type="button" class="qx" aria-label="Fermer">×</button></header><ol class="qlist">${R.map(x => { const w = where(x); return `<li class="qitem r-${esc(x.rune.etat)}"><span class="rb rbl">${RAIDO}</span><div><b><a href="#/${esc(x.id)}">${esc(x.nom)}</a>${w ? ' · ' + esc(w.nom) : ''}</b><p><i>${esc(ETAT[x.rune.etat] || x.rune.etat)}.</i> ${esc(x.rune.note || '')}</p></div></li>`; }).join('') || '<li class="qempty">Aucune rune posée pour le moment.</li>'}</ol></div>`;
+    box.querySelector('.qx').addEventListener('click', () => toggle(false));
+    box.querySelectorAll('.qitem a').forEach(a => a.addEventListener('click', () => toggle(false)));
+  };
+  const toggle = open => {
+    box.hidden = !open; btn.setAttribute('aria-expanded', String(open));
+    if (open) draw();
+  };
+  btn.addEventListener('click', ev => { ev.stopPropagation(); toggle(box.hidden); });
+  box.addEventListener('click', ev => { if (ev.target === box) toggle(false); });
+  document.addEventListener('keydown', ev => { if (ev.key === 'Escape' && !box.hidden) toggle(false); });
+}
+
 (async function init() {
   try {
     await load();
@@ -920,6 +941,7 @@ async function initQuests() {
   buildWorld();
   initSearch();
   initQuests();
+  initRunes();
   window.addEventListener('hashchange', route);
   route();
 })();

@@ -2376,6 +2376,10 @@
   "pos": {
    "x": 0.675,
    "y": 0.37
+  },
+  "rune": {
+   "etat": "active",
+   "note": "Craie posée par Philippa au Pavillon Vert, chez Liora."
   }
  },
  {
@@ -2897,7 +2901,7 @@
   "nom": "Algari",
   "titre": "Musicien d'Agran",
   "parent": "agran",
-  "lieu": "agran",
+  "lieu": "othuunra",
   "statut": "vivant",
   "resume": "Joue de la lyre, queue de poisson pendant dans le vide.",
   "connu": [
@@ -4126,6 +4130,10 @@
   "pos": {
    "x": 0.083,
    "y": 0.626
+  },
+  "rune": {
+   "etat": "active",
+   "note": "Craie posée par Philippa à la Caverne aux Butins."
   }
  },
  {
@@ -6874,7 +6882,7 @@
   "nom": "Borim Brise-Montagne",
   "titre": "Chef de chantier nain",
   "parent": "crique-du-sous-marin",
-  "lieu": "crique-du-sous-marin",
+  "lieu": "le-vesper",
   "statut": "vivant",
   "resume": "Petit, trapu, lunettes épaisses. Il propose de partir avec le groupe dans le sous-marin.",
   "citation": {
@@ -7265,7 +7273,11 @@
    "Le journal de bord est signé du capitaine Voryn Kael, commandant de la Troisième Expédition des Profondeurs.",
    "Un matelot nommé Renault y a signalé un son grave venu des profondeurs."
   ],
-  "chapeau": "Une épave appuyée contre la paroi, comme quelque chose qui aurait renoncé à tomber. Mâts brisés couverts de coraux noirs et de varech, bois gorgé de siècles. Quelques coraux bioluminescents, à la lumière froide et irrégulière. L'eau est immobile, trop immobile."
+  "chapeau": "Une épave appuyée contre la paroi, comme quelque chose qui aurait renoncé à tomber. Mâts brisés couverts de coraux noirs et de varech, bois gorgé de siècles. Quelques coraux bioluminescents, à la lumière froide et irrégulière. L'eau est immobile, trop immobile.",
+  "pos": {
+   "x": 0.172,
+   "y": 0.756
+  }
  },
  {
   "id": "ossyraal",
@@ -7826,6 +7838,10 @@
   "pos": {
    "x": 0.556,
    "y": 0.45
+  },
+  "rune": {
+   "etat": "active",
+   "note": "Craie posée par Philippa dans la basilique d'Héliandros."
   }
  },
  {
@@ -8477,7 +8493,8 @@
   "attitude": "ennemi",
   "connu": [
    "Abomination née de la guerre de la Veyra, qui surgit au Repos des Épées après le combat contre des créatures altérées. Masse de chair obèse et instable, un œil gigantesque et conscient s'ouvre lentement sur son ventre. Les résidus d'arcane alentour réagissent à sa présence."
-  ]
+  ],
+  "lieu": "coeur-de-la-corruption"
  },
  {
   "id": "guerre-de-la-veyra",
@@ -8887,7 +8904,7 @@
   "nom": "L'herboristerie « La sous-corolle »",
   "titre": "Quartier est",
   "parent": "lunsk",
-  "resume": "Herboristerie du quartier est, près des quais nord.",
+  "resume": "Herboristerie du quartier est, près des quais nord, tenue par une femme de Lunsk.",
   "pos": {
    "x": 0.778,
    "y": 0.252
@@ -8966,6 +8983,18 @@
   }
  },
  {
+  "id": "othuunra",
+  "type": "lieu",
+  "nom": "L'Othuunra",
+  "titre": "Rebord de pierre",
+  "parent": "agran",
+  "resume": "Rebord de pierre au-dessus d'un couloir ouvert sur la faille, où Algari joue de la lyre.",
+  "pos": {
+   "x": 0.619,
+   "y": 0.313
+  }
+ },
+ {
   "id": "demeure-de-la-suuraal",
   "type": "lieu",
   "nom": "La demeure de la Suuraal",
@@ -8978,23 +9007,11 @@
   }
  },
  {
-  "id": "epave-d-ossyraal",
-  "type": "lieu",
-  "nom": "L'épave d'Ossyraal",
-  "titre": "À l'ouest de la cité",
-  "parent": "agran",
-  "resume": "Épave marquée sur le plan, à l'ouest de la cité.",
-  "pos": {
-   "x": 0.172,
-   "y": 0.756
-  }
- },
- {
   "id": "coeur-de-la-corruption",
   "nom": "Le Cœur de la corruption",
   "titre": "Épicentre de la corruption du Repos des Épées",
   "parent": "repos-des-epees",
-  "resume": "Point de la plaine vitrifiée où la corruption est la plus dense.",
+  "resume": "Épicentre de la corruption du Repos des Épées. Le groupe y a affronté l'Abomination des Yeux.",
   "pos": {
    "x": 0.428,
    "y": 0.706
