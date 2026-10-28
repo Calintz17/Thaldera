@@ -366,12 +366,29 @@ function positionMapAnchors(layer, camera, animate) {
   hud.dataset.z = layer.cam.dataset.z;
   hud.classList.toggle('notrans', !animate);
   const sx = layer.info.w * camera.s, sy = layer.info.h * camera.s;
+  const occupied = [];
   for (const anchor of layer.anchors || []) {
     const x = Math.round(camera.tx + Number(anchor.dataset.x) * sx);
     const y = Math.round(camera.ty + Number(anchor.dataset.y) * sy);
     anchor.style.left = x + 'px';
     anchor.style.top = y + 'px';
     anchor.classList.toggle('offscreen', x < -180 || x > S.W + 180 || y < -110 || y > S.H + 110);
+    anchor.classList.remove('crowded');
+    if (anchor.classList.contains('offscreen')) continue;
+    if (anchor.classList.contains('rlab')) {
+      const width = Math.min(215, Math.max(115, (BY[anchor.dataset.id]?.nom.length || 13) * 8));
+      occupied.push({ l:x-width/2-8, r:x+width/2+8, t:y-24, b:y+25 });
+      continue;
+    }
+    if (!anchor.classList.contains('pin') || hud.dataset.z === '0') continue;
+    const title = BY[anchor.dataset.id]?.nom || '';
+    const width = Math.min(190, Math.max(80, title.length * 7 + 20));
+    const r = { l:x-width/2-5, r:x+width/2+5, t:y+18, b:y+57 };
+    const conflict = occupied.some(v => r.l<v.r && r.r>v.l && r.t<v.b && r.b>v.t);
+    // Show a stable, uncrowded subset. All markers remain navigable and reveal
+    // their names on hover/focus. Never suppress the selected destination.
+    if (conflict && !anchor.classList.contains('here')) anchor.classList.add('crowded');
+    else occupied.push(r);
   }
 }
 function makeLayer(src, info) {
@@ -721,7 +738,7 @@ window.addEventListener('resize', () => {
 /* ---------- vue monde ---------- */
 function buildWorld() {
   const cont = DB.filter(e => e.type === 'continent').sort((a, b) => (a.ordre ?? 0) - (b.ordre ?? 0));
-  worldEl.innerHTML = `<div class="whead"><h1>Thaldera <span>Codex</span></h1><div class="wrule"><i></i></div></div><div class="wgrid">` + cont.map(c => {
+  worldEl.innerHTML = `<div class="whead"><h1>Thaldera <span>Codex</span></h1><div class="wrule"><i></i></div><p class="wintro">Les terres explorées, les rencontres et les chroniques de votre aventure.</p></div><div class="wgrid">` + cont.map(c => {
     const inner = `<span class="wcr"><img loading="lazy" decoding="async" src="${esc(c.blason || 'img/blasons/vide.svg')}" alt=""></span><span class="wn">${esc(c.nom)}</span><span class="ws">${esc(c.sousTitre || '')}</span>`;
     return c.locked
       ? `<div class="wcrest locked" id="world-${c.id}" aria-disabled="true">${inner}</div>`
