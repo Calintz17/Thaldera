@@ -430,3 +430,111 @@ a.wcrest:hover { transform:translateY(-6px); border-color:#d4ad69; background:li
 /* Native-screen label visibility must not depend on the border glow. */
 .map-labels .rlab .fl { -webkit-font-smoothing:antialiased; }
 .map-labels .rlab.act .fl { color:#fff0cb; }
+
+/* v63 | Quiet Atlas: leather, antique brass and parchment. */
+:root{--bg:#170f0b;--card-bg:#2b2018;--card-border:#715437;--gold:#cca86e;--gold-hi:#f0d4a2;
+--text:#ecdfc8;--text-soft:#d7c3a4;--muted:#b8a386;--line:rgba(204,168,110,.28)}
+body{background:radial-gradient(ellipse 80% 55% at 50% -15%,#4b3224,#2b1d16 49%,#160f0c 93%)}
+.top{background:linear-gradient(#3b281e,#211811);border-color:#785839;box-shadow:0 5px 14px #0005}
+.search input{background:#1c1411;border-color:#826342}.search input:focus{background:#271b14}
+#results{background:#2a1e17;border-color:#a1845e}
+.nav a,.nav .qbtn{border:0;border-bottom:1px solid transparent;border-radius:0;background:transparent;
+padding:9px 12px;color:#dcc9aa;box-shadow:none}
+.nav a:hover,.nav .qbtn:hover,.nav a.on,.nav .qbtn[aria-expanded="true"]{
+background:#ad89501c;border-color:#d4b584;color:#ffdfaf}
+.nav svg{stroke:#d0ad77}
+.stage{background:#1a130e;border-color:#765637}
+.panel{background:linear-gradient(150deg,#32251d,#271c16 55%,#1c1511);border-color:#765637}
+.kcard,.chip{background:linear-gradient(145deg,#392b21,#271c16);border-color:#80603d}
+.kcard:hover,.chip:hover{background:#3b291e;transform:none;box-shadow:0 5px 13px #0005}
+.qwin,.ewin{background:linear-gradient(155deg,#37271c,#271b14 60%,#1b120d);border-color:#a48760}
+.qwin header,.ehead{background:#96744b21}
+.qitem:hover{background:#af8e5522}
+.world{height:100%;overflow:hidden;justify-content:space-evenly;gap:clamp(5px,1.4vh,15px);
+padding:clamp(6px,1.5vh,16px) 16px;
+background:radial-gradient(ellipse 66% 60% at 50% 7%,#483124,#302017 55%,#1b130e 100%)}
+.world::before{opacity:.22}
+.whead{flex:none;text-align:center}
+.whead::before{display:none}
+.whead h1{display:flex;flex-direction:column;align-items:center;gap:0;padding:0;letter-spacing:0;text-shadow:0 2px 5px #0006}
+.whead h1 span{font:600 clamp(13px,1.6vw,19px)/1.1 var(--display);letter-spacing:.34em;
+padding-left:.34em;color:#c9a878}
+.whead h1 strong{font:900 clamp(36px,5vw,60px)/1.02 'Cinzel Decorative',var(--display);
+letter-spacing:.035em;color:#f1ddaf;text-transform:uppercase}
+.whead .wrule{margin-top:6px}
+.whead .wrule::before,.whead .wrule::after{width:clamp(36px,6vw,65px)}
+.wgrid{flex:0 1 auto;grid-template-columns:repeat(4,minmax(0,155px));width:100%;max-width:740px;
+gap:clamp(7px,1.5vh,15px)}
+.wcrest{min-height:0;height:clamp(115px,21vh,175px);padding:7px 7px 9px;gap:3px;
+border-radius:3px;border-color:#715338;background:linear-gradient(145deg,#3b2a20,#241912);
+box-shadow:0 4px 12px #0005;transition:none}
+.wcrest::before,.wcrest::after{width:12px;height:12px;border-color:#9f7b50}
+.wcr{width:100%;max-width:min(100px,12vh)}
+.wcr img{filter:drop-shadow(0 4px 7px #0007);transition:none}
+.wn{font:600 clamp(10px,1vw,12px)/1.2 var(--display);letter-spacing:.04em;color:#eedab8;margin:1px 0}
+.ws{font:italic 12px/1.15 var(--body);min-height:0;color:#c9b293}
+a.wcrest:hover,a.wcrest:focus-visible{transform:none;background:linear-gradient(145deg,#493428,#2a1e17);
+border-color:#c7a674;box-shadow:0 4px 12px #0005}
+a.wcrest:hover .wcr img{filter:drop-shadow(0 4px 7px #0007);transform:none}
+.world.leaving .wcrest,.world.leaving .wcrest.chosen{opacity:1;transform:none;pointer-events:auto}
+.wbar{flex:none;padding:0;gap:10px}
+.wgroup{background:#2a1d16;border-color:#725238;padding:5px 12px;border-radius:3px}
+.reg .glow,.reg .glow2,.reg .run{display:none!important}
+.reg .line,.reg.act .line,.reg.hot .line{stroke:#c2a47b;stroke-width:1.3;
+stroke-opacity:.68;transition:none;filter:none}
+.reg.hot .line{stroke:#e2c292;stroke-width:1.7;stroke-opacity:.85}
+.reg.act .line{stroke:#e0bd89;stroke-width:1.8;stroke-opacity:.9}
+.reg .fill,.reg.hot .fill{fill:transparent}
+.reg.act .fill{fill:rgba(204,168,110,.045)}
+.reg.hot .fill{fill:rgba(204,168,110,.025)}
+.map-labels .rlab .fl,.map-labels .rlab.act .fl{border:0;background:none;box-shadow:none;
+padding:3px 5px;font:600 clamp(11px,.98vw,13px)/1.3 var(--display);
+letter-spacing:.075em;color:#e5cda8;text-shadow:0 1px 3px #000,0 2px 8px #000;transition:none}
+.map-labels .rlab.hot .fl,.map-labels .rlab:hover .fl,.map-labels .rlab:focus-visible .fl{
+border:0;background:none;box-shadow:none;color:#ffecbc;text-shadow:0 1px 3px #000,0 2px 8px #000}
+.map-labels .rlab .fs{display:none!important}
+.mprev{display:none!important}
+/* Pins must remain at exact authored map coordinates, inside .cam. */
+.cam .ovl .pin{pointer-events:auto;z-index:7}
+.cam .ovl .pin .in{width:30px;height:30px;
+transform:translate(-50%,-50%) scale(calc(1 / var(--s)));backface-visibility:visible}
+.cam .ovl .pin .pd{inset:9px;border-radius:50%;background:#d6b27b;border:1px solid #27180f;
+box-shadow:0 0 0 1px #edd0a490,0 2px 5px #0009;transition:none}
+.cam .ovl .pin .in::before{content:none;animation:none}
+.cam .ovl .pin:hover .pd{background:#f4d5a1;transform:none}
+.cam .ovl .pin.here .pd{background:#efcd92}
+.cam .ovl .pin .pl{display:none!important;font:700 12px/1.22 var(--ui);letter-spacing:.02em;
+padding:5px 9px;border:1px solid #b7915d;border-radius:3px;color:#f3e2c6;
+background:#2c2018;text-shadow:none;box-shadow:0 3px 8px #0008}
+.cam .ovl .pin:hover .pl,.cam .ovl .pin:focus-visible .pl{display:block!important}
+.cam .ovl .pin:focus-visible .pd{outline:2px solid #ffe0a5;outline-offset:3px}
+.cam .ovl .pin .rb{animation:none}
+/* Quest and Rune dock in a permanent right-hand 40% column. */
+body.journal-open #scene{width:60%;grid-template-columns:minmax(0,1fr)}
+body.journal-open #scene .panel{display:none}
+body.journal-open #scene .stage{min-width:0}
+body.journal-open .qlog{position:fixed;inset:var(--top-h) 0 0 60%;
+z-index:45;padding:0;display:flex;pointer-events:none;background:none}
+body.journal-open .qlog[hidden]{display:none}
+body.journal-open .qlog .qwin{height:100%;max-height:100%;width:100%;
+border-radius:0;border-top:0;border-right:0;border-bottom:0;box-shadow:-7px 0 22px #0005;
+pointer-events:auto}
+body.journal-open .qlog .qwin header{min-height:65px;flex:none}
+body.journal-open .qlog .qwin h2{font:600 16px var(--display);letter-spacing:.035em}
+body.journal-open .qlist{flex:1;overflow:auto}
+body.journal-open .qitem{align-items:flex-start;padding:16px 19px;gap:12px}
+body.journal-open .qitem b{font:600 13px/1.3 var(--display);letter-spacing:.035em}
+body.journal-open .qitem p{font:18px/1.42 var(--body);color:#e1d2b9;margin-top:5px}
+.qstar{flex:none;width:17px;font:16px/1.2 var(--display);color:#d8b779;margin-top:2px;text-align:center}
+.qgem{box-shadow:none}
+body.journal-open .qitem .rbl{align-self:flex-start}
+@media(max-width:860px){
+ .world{height:auto;overflow:visible;gap:18px;padding:22px 12px 28px}
+ .wgrid{grid-template-columns:repeat(2,minmax(0,150px));max-width:335px;gap:12px}
+ .wcrest{height:174px;padding:11px 7px}
+ .wcr{max-width:100px}
+ .whead h1 strong{font-size:45px}
+ body.journal-open #scene{display:none}
+ body.journal-open .qlog{left:0;top:var(--top-h)}
+ body.journal-open .qlog .qwin{width:100%}
+}

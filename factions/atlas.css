@@ -36,3 +36,7 @@ h1 { font:600 clamp(31px,5vw,60px)/1.1 'Cinzel',serif; letter-spacing:.15em; }
 @media(max-width:540px) { header { padding-top:24px; } .grid { grid-template-columns:1fr; }
  .card { padding:20px 19px 24px; } .crest-wrap { height:125px; } .description { font-size:19px; } }
 @media(prefers-reduced-motion:reduce) { .card { transition:none; } }
+
+body{background:radial-gradient(ellipse 80% 55% at 50% -10%,#453126,#281c16 52%,#170f0b 96%)}
+.card{background:linear-gradient(150deg,#3b2a21,#271b15 68%,#201711);border-color:#74573b;box-shadow:0 6px 15px #0005;transition:none}
+.card:hover{transform:none;background:linear-gradient(150deg,#473227,#2a1d17);box-shadow:0 6px 15px #0005}
