@@ -4,7 +4,7 @@
 (() => {
 'use strict';
 
-const VER = '62';
+const VER = '63';
 const EDIT = new URLSearchParams(location.search).has('edit');
 const $ = (s, r = document) => r.querySelector(s);
 const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
@@ -182,7 +182,7 @@ const around = (p, w = 0.14) => ({ x: p.x - w / 2, y: p.y - w / 2, w, h: w });
 
 function ensureChrome() {
   if ($('.fog', stageEl)) return;
-  stageEl.insertAdjacentHTML('beforeend', '<div class="fog"></div><div class="mapcap" id="mapcap"></div><div class="mprev" id="mprev" hidden></div><div class="maptools" id="maptools" aria-label="Commandes de la carte"><button type="button" data-map-zoom="in" aria-label="Zoom avant" title="Zoom avant">+</button><button type="button" data-map-zoom="out" aria-label="Zoom arrière" title="Zoom arrière">−</button><button type="button" data-map-zoom="reset" aria-label="Recentrer la carte" title="Recentrer la carte">⌖</button></div>');
+  stageEl.insertAdjacentHTML('beforeend', '<div class="fog"></div><div class="mapcap" id="mapcap"></div><div class="maptools" id="maptools" aria-label="Commandes de la carte"><button type="button" data-map-zoom="in" aria-label="Zoom avant" title="Zoom avant">+</button><button type="button" data-map-zoom="out" aria-label="Zoom arrière" title="Zoom arrière">−</button><button type="button" data-map-zoom="reset" aria-label="Recentrer la carte" title="Recentrer la carte">⌖</button></div>');
   $('#maptools').addEventListener('click', ev => {
     const action = ev.target.closest('[data-map-zoom]')?.dataset.mapZoom;
     if (!action || !S.map || S.map.stack || S.gal) return;
@@ -300,15 +300,18 @@ function castOf(e) {
   return ps.filter(p => !seen.has(p.id) && seen.add(p.id) && ((p.formes && p.formes[0] && p.formes[0].img) || p.img)).sort((a, b) => (a.ordre ?? 99) - (b.ordre ?? 99));
 }
 function withCast(sc, e) {
-  if (!sc || !sc.gallery || sc.kind === 'stack') return sc;
+  if (!sc) return sc;
   const cast = castOf(e);
   if (!cast.length) return sc;
-  const bg = sc.gallery[0];
+  // Everyone at this location appears first, including if there are no
+  // authored landscapes, or the parent city has several map sheets.
+  const gallery = (sc.gallery && sc.gallery.length) ? sc.gallery : (fallbackLand(e) || [PH_LAND]);
+  const bg = gallery[0];
   const extra = cast.map(p => {
     const f = formeFor(p, e.id);
     return { img: bg.img, legende: p.nom, who: p, cut: f && f.img ? f : { img: p.img, teinte: p.teinte, label: '' } };
   });
-  return { ...sc, gallery: extra.concat(sc.gallery) };
+  return { ...sc, gallery: extra.concat(gallery) };
 }
 function stackScene(host, focus) {
   const cs = host.cartes, lieux = collectLieux(host);
@@ -463,23 +466,16 @@ function renderOverlay(layer, sc) {
     const ru = BY[p.id] && BY[p.id].rune;
     if (ru) a.classList.add('rune', 'r-' + ru.etat);
     a.innerHTML = `<span class="in"><span class="pd"></span>${ru ? `<span class="rb" title="Rune Raido de Philippa">${RAIDO}</span>` : ''}<span class="pl">${esc(p.label)}</span></span>`;
-    addAnchor(a, p.x, p.y);
+    // Keep dots in the map's affine coordinate system: no independent
+    // translation animation or geographical drift during zoom and pan.
+    a.style.left = (p.x * 100) + '%';
+    a.style.top = (p.y * 100) + '%';
+    ov.appendChild(a);
   });
-  hud.querySelectorAll('.pin, .rlab').forEach(n => { n.addEventListener('mouseenter', () => showPrev(n.dataset.id)); n.addEventListener('mouseleave', hidePrev); });
-  ov.querySelectorAll('.reg:not(.solo)').forEach(g => { g.addEventListener('mouseenter', () => showPrev(g.dataset.id)); g.addEventListener('mouseleave', hidePrev); });
+  // No image/text card on region hover; map labels and panels provide context.
   if (layer.labels && layer.rect && layer.info) positionMapAnchors(layer, camFor(layer.rect, layer.info, layer.pad), false);
   ov.classList.add('fresh');
 }
-function showPrev(id) {
-  const e = BY[id], el = $('#mprev'); if (!e || !el) return;
-  const t = tgt(e);
-  const img = t.type === 'ville' || t.type === 'region' || t.type === 'faction' ? (t.blason || t.vignette || '') : '';
-  if (!img) { el.hidden = true; return; }
-  el.innerHTML = `${img ? `<img src="${esc(img)}" alt="">` : ''}<div><b>${esc(t.nom)}</b><i>${esc(t.titre || t.typeLabel || '')}</i>${t.resume ? `<p>${esc(t.resume.length > 150 ? t.resume.slice(0, 147) + '…' : t.resume)}</p>` : ''}</div>`;
-  el.hidden = false;
-}
-function hidePrev() { const el = $('#mprev'); if (el) el.hidden = true; }
-
 function sheetEls() { return S.map && S.map.stack ? [...S.map.el.querySelectorAll('.sheet')] : []; }
 function scrollSheet(i, pos, smooth = true) {
   const stk = S.map && S.map.stack ? $('.stk', S.map.el) : null; if (!stk) return;
@@ -747,18 +743,13 @@ window.addEventListener('resize', () => {
 /* ---------- vue monde ---------- */
 function buildWorld() {
   const cont = DB.filter(e => e.type === 'continent').sort((a, b) => (a.ordre ?? 0) - (b.ordre ?? 0));
-  worldEl.innerHTML = `<div class="whead"><h1>Thaldera <span>Codex</span></h1><div class="wrule"><i></i></div><p class="wintro">Les terres explorées, les rencontres et les chroniques de votre aventure.</p></div><div class="wgrid">` + cont.map(c => {
+  worldEl.innerHTML = `<div class="whead"><h1><span>Thaldera</span><strong>Codex</strong></h1><div class="wrule"><i></i></div></div><div class="wgrid">` + cont.map(c => {
     const inner = `<span class="wcr"><img loading="lazy" decoding="async" src="${esc(c.blason || 'img/blasons/vide.svg')}" alt=""></span><span class="wn">${esc(c.nom)}</span><span class="ws">${esc(c.sousTitre || '')}</span>`;
     return c.locked
       ? `<div class="wcrest locked" id="world-${c.id}" aria-disabled="true">${inner}</div>`
       : `<a class="wcrest" id="world-${c.id}" href="#/${c.id}" data-id="${c.id}"${c.accent ? ` style="--accent:${c.accent}"` : ''}>${inner}</a>`;
   }).join('') + `</div><div class="wbar">${worldBar()}</div>`;
-  worldEl.querySelectorAll('a.wcrest').forEach(a => a.addEventListener('click', ev => {
-    if (ev.metaKey || ev.ctrlKey || ev.shiftKey || ev.altKey || ev.button !== 0) return;
-    ev.preventDefault();
-    worldEl.classList.add('leaving'); a.classList.add('chosen');
-    setTimeout(() => { if (a.isConnected) location.hash = '#/' + a.dataset.id; }, 240);
-  }));
+  // Crest links use normal, immediate navigation.
 }
 function worldBar() {
   const pj = DB.filter(e => e.type === 'pj');
@@ -770,7 +761,6 @@ function showWorld() {
   document.title = 'Thaldera Codex';
   sceneEl.classList.add('is-world');
   worldEl.classList.remove('leaving');
-  worldEl.querySelectorAll('.chosen').forEach(c => c.classList.remove('chosen'));
   S.entry = null;
   document.querySelectorAll('.nav a').forEach(a => a.classList.toggle('on', a.dataset.nav === 'monde'));
 }
@@ -993,6 +983,7 @@ let TOKEN = 0;
 function goUp(e) { const u = upOf(e); location.hash = u ? '#/' + tgt(u).id : '#/'; }
 
 async function route() {
+  journalMode(null, false);
   const my = ++TOKEN;
   const raw = location.hash.replace(/^#\/?/, '');
   const [path, qs] = raw.split('?');
@@ -1138,6 +1129,21 @@ function initEdit() {
 
 /* ---------- demarrage ---------- */
 
+/* ---------- journal latéral : 60% contexte / 40% journal ---------- */
+function journalMode(box, open) {
+  for (const [id, buttonId] of [['qlog','qbtn'],['rlog','rbtn']]) {
+    const panel = document.getElementById(id), trigger = document.getElementById(buttonId);
+    if (!panel || !trigger) continue;
+    const active = !!open && panel === box;
+    panel.hidden = !active;
+    trigger.setAttribute('aria-expanded', String(active));
+  }
+  document.body.classList.toggle('journal-open', !!open);
+  requestAnimationFrame(() => {
+    syncTop(); measure();
+    if (S.map && !S.map.stack && S.map.rect) setCam(S.map, S.map.rect, false, S.map.pad);
+  });
+}
 /* ---------- journal de quêtes ---------- */
 async function initQuests() {
   const btn = $('#qbtn'), box = $('#qlog');
@@ -1145,13 +1151,13 @@ async function initQuests() {
   let Q = null;
   const draw = () => {
     const n = Q.length;
-    box.innerHTML = `<div class="qwin" role="document"><header><span class="qgem"></span><h2>Journal de quêtes</h2><span class="qcount">${n} en cours</span><button type="button" class="qx" aria-label="Fermer">×</button></header><ol class="qlist">${Q.map(x => `<li class="qitem"><i class="qdia"></i><div><b>${esc(x.titre)}</b><p>${L(x.texte, '')}</p></div></li>`).join('') || '<li class="qempty">Aucune quête renseignée pour le moment.</li>'}</ol></div>`;
+    box.innerHTML = `<div class="qwin" role="document"><header><span class="qgem"></span><h2>Journal de quêtes</h2><span class="qcount">${n} en cours</span><button type="button" class="qx" aria-label="Fermer">×</button></header><ol class="qlist">${Q.map(x => `<li class="qitem"><span class="qstar" aria-hidden="true">✦</span><div><b>${esc(x.titre)}</b><p>${L(x.texte, '')}</p></div></li>`).join('') || '<li class="qempty">Aucune quête renseignée pour le moment.</li>'}</ol></div>`;
     box.querySelector('.qx').addEventListener('click', () => toggle(false));
     box.querySelectorAll('.qitem a').forEach(a => a.addEventListener('click', () => toggle(false)));
   };
   const toggle = async open => {
     if (open && !Q) { try { Q = (await (await fetch('data/quetes.json?v=' + VER)).json()).quetes || []; } catch (e) { Q = []; } }
-    box.hidden = !open; btn.setAttribute('aria-expanded', String(open));
+    journalMode(box, open);
     if (open) draw();
   };
   btn.addEventListener('click', ev => { ev.stopPropagation(); toggle(box.hidden); });
@@ -1172,7 +1178,7 @@ function initRunes() {
     box.querySelectorAll('.qitem a').forEach(a => a.addEventListener('click', () => toggle(false)));
   };
   const toggle = open => {
-    box.hidden = !open; btn.setAttribute('aria-expanded', String(open));
+    journalMode(box, open);
     if (open) draw();
   };
   btn.addEventListener('click', ev => { ev.stopPropagation(); toggle(box.hidden); });
