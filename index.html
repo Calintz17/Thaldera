@@ -7,8 +7,9 @@
   <meta name="description" content="Le codex des joueurs de la campagne Thaldera : cartes, lieux, personnages et liens.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Cinzel+Decorative:wght@700;900&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/codex.css?v=56">
+  <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Alegreya+Sans:wght@400;500;600;700;800&family=Cinzel:wght@400;500;600;700&family=Cinzel+Decorative:wght@700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/codex.css?v=57">
+  <link rel="stylesheet" href="assets/arcane-theme.css?v=57">
 </head>
 <body>
 <header class="top">
@@ -17,15 +18,15 @@
     <span class="brand-codex">Codex</span>
   </a>
   <div class="search">
-    <input id="q" type="search" aria-label="Rechercher dans le codex" placeholder="Rechercher un lieu, un personnage, un clan" autocomplete="off" spellcheck="false">
+    <input id="q" type="search" aria-label="Rechercher dans le codex" placeholder="Chercher un lieu, un personnage, un clan..." autocomplete="off" spellcheck="false">
     <div id="results" role="listbox" hidden></div>
   </div>
-  <nav class="nav">
-    <a href="#/" data-nav="monde">Monde</a>
-    <button type="button" id="ebtn" class="qbtn" aria-haspopup="dialog" aria-expanded="false">Explorer</button>
-    <a href="factions/">Factions</a>
-    <button type="button" id="rbtn" class="qbtn" aria-haspopup="dialog" aria-expanded="false">Runes de Philippa</button>
-    <button type="button" id="qbtn" class="qbtn" aria-haspopup="dialog" aria-expanded="false">Quêtes</button>
+  <nav class="nav" aria-label="Navigation principale">
+    <a href="#/" data-nav="monde"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m15.8 8.2-2 5.6-5.6 2 2-5.6z"/></svg><span>Atlas</span></a>
+    <button type="button" id="ebtn" class="qbtn" aria-haspopup="dialog" aria-expanded="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6.5 12 3l8 3.5v12L12 22l-8-3.5z"/><path d="M4 6.5 12 10l8-3.5M12 10v12"/></svg><span>Explorer</span></button>
+    <a href="factions/"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m3 5 6-2 6 2 6-2v16l-6 2-6-2-6 2zM9 3v16m6-14v16"/><circle cx="14.5" cy="11" r="1.5"/></svg><span>Factions</span></a>
+    <button type="button" id="rbtn" class="qbtn" aria-haspopup="dialog" aria-expanded="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 3v18M8 4l9 7-9 5m0-7 10 12"/></svg><span>Runes</span></button>
+    <button type="button" id="qbtn" class="qbtn" aria-haspopup="dialog" aria-expanded="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4h11a3 3 0 0 1 3 3v11a3 3 0 0 1-3 3H8a4 4 0 0 1-4-4V7a3 3 0 0 1 3-3z"/><path d="M7 4a3 3 0 0 1 3 3v9a2 2 0 1 1-4 0m6-6h6m-6 4h6"/></svg><span>Quêtes</span></button>
   </nav>
 </header>
 
@@ -40,6 +41,6 @@
 <div id="rlog" class="qlog" role="dialog" aria-label="Runes de Philippa" hidden></div>
 
 <noscript><p style="padding:2rem">Le codex demande JavaScript.</p></noscript>
-<script src="assets/app.js?v=56"></script>
+<script src="assets/app.js?v=57"></script>
 </body>
 </html>
