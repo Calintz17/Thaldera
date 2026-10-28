@@ -2378,6 +2378,7 @@
    "y": 0.37
   },
   "rune": {
+   "ordre": 1,
    "etat": "active",
    "note": "Craie posée par Philippa au Pavillon Vert, chez Liora."
   }
@@ -3098,8 +3099,10 @@
    "Le groupe donne l'assaut et tue Spezza. Naberoth est renvoyé aux Enfers."
   ],
   "rune": {
-   "etat": "tbc",
-   "note": "Rune actuelle de Port Doëlan : le campement de Vespera, sur les ruines du château."
+   "ordre": 5,
+   "etat": "active",
+   "label": "Campement de Vespera",
+   "note": "Craie posée par Philippa au campement de Vespera, sur les ruines du château Spezza."
   },
   "chapeau": "Une forteresse qui domine la ville. La porte est une masse de chêne ferrée, haute comme trois hommes, encadrée de deux tours qui crachent une lumière orange. Elle abrite une chambre forte et une trappe qui mène à la crique secrète.",
   "galerie": [
@@ -4132,6 +4135,7 @@
    "y": 0.626
   },
   "rune": {
+   "ordre": 2,
    "etat": "active",
    "note": "Craie posée par Philippa à la Caverne aux Butins."
   }
@@ -5607,6 +5611,7 @@
   "parent": "port-doelan",
   "resume": "Tour de pierre claire à lanterne stable, escalier extérieur battu par le vent.",
   "rune": {
+   "ordre": 4,
    "etat": "detruite",
    "note": "Craie posée dans le phare, détruit lors de l'attaque."
   },
@@ -7840,6 +7845,7 @@
    "y": 0.45
   },
   "rune": {
+   "ordre": 3,
    "etat": "active",
    "note": "Craie posée par Philippa dans la basilique d'Héliandros."
   }

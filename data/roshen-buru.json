@@ -1309,6 +1309,7 @@
    "Le combat se déplace dans la ruelle voisine, où le groupe tue Kirin."
   ],
   "rune": {
+   "ordre": 8,
    "etat": "active",
    "note": "Craie interdimensionnelle posée par Philippa à l'auberge d'Azuren Kai."
   },
@@ -3651,8 +3652,9 @@
   "carte": "ville",
   "zoom": 0.12,
   "rune": {
+   "ordre": 9,
    "etat": "active",
-   "note": "Craie posée par Philippa dans le salon de thé de Rochenborough."
+   "note": "Craie posée par Philippa dans le salon de thé de Roshen Buru."
   },
   "chapeau": "La porte coulisse sur une odeur de feuilles brûlées et de bois humide. Il fait sombre, d'une pénombre chaude : les lanternes sont basses, la lumière rampe au sol, et le plafond noirci de fumée retient les voix. Derrière le comptoir, un homme massif essuie une tasse sans lever les yeux. Le thé coûte trois pièces, une chambre quinze, et on ne pose pas de questions sur les autres."
  },

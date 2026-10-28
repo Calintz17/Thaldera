@@ -1950,6 +1950,7 @@
    "C'est un point de retour permanent vers Keras Tauroc."
   ],
   "rune": {
+   "ordre": 6,
    "etat": "active",
    "note": "Craie posée par Philippa à la Mandragora Viridis d'Ursinus."
   },
@@ -3007,6 +3008,7 @@
    "Le cercle de téléportation vers Port Doëlan y est installé."
   ],
   "rune": {
+   "ordre": 7,
    "etat": "active",
    "note": "Craie posée par Philippa dans la tour d'Eamonn."
   },
@@ -6386,13 +6388,13 @@
   "resume": "Petite racine tordue au visage creusé, couronnée d'une fleur jaune.",
   "connu": [
    "Une petite racine tordue au visage creusé, couronnée d'une fleur jaune, qui grignote tout ce qui lui passe sous la main, pas forcément des pousses.",
-   "Les Nubbés sont connues pour habiter la forêt d'Azuren, en bordure de Rochenborough.",
+   "Les Nubbés sont connues pour habiter la forêt d'Azuren, en bordure de Roshen Buru.",
    "Les joueurs ont rencontré une Nubbé. Philippa en a cueilli une avec sa main spectrale."
   ],
   "scenar": {
    "titre": "Où en est le scénario",
    "texte": [
-    "Rencontre dans la forêt d'Azuren, sur la route de Rochenborough.",
+    "Rencontre dans la forêt d'Azuren, sur la route de Roshen Buru.",
     "Philippa a cueilli une Nubbé de sa main spectrale. La créature est restée neutre envers le groupe."
    ]
   },

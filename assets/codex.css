@@ -487,7 +487,11 @@ li.key { border-left: 2px solid var(--gold); padding-left: 10px; margin-left: -1
 .qitem p { margin-top: 4px; font-family: 'EB Garamond', serif; font-size: 16.5px; line-height: 1.45; color: #d8d2c2; }
 .qitem p a { color: var(--gold-hi); text-decoration: underline; text-decoration-color: rgba(230,200,114,.4); }
 .qitem .rbl { flex: 0 0 28px; }
-.qitem.r-detruite { opacity: .6; }
+.qitem.r-detruite { opacity: 1; }
+.qitem.r-detruite b, .qitem.r-detruite b a, .qitem.r-detruite p { color: #7d7a72; }
+.qitem .rbl { align-self: center; }
+.qitem.r-detruite .rbl { filter: grayscale(1) brightness(.7); animation: none; box-shadow: none; }
+.qitem p { margin-top: 2px; }
 .qitem b a { color: inherit; text-decoration: none; }
 .qitem b a:hover { text-decoration: underline; }
 .qempty { font-family: 'EB Garamond', serif; font-style: italic; color: #8d8777; padding: 14px 18px; }

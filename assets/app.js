@@ -4,7 +4,7 @@
 (() => {
 'use strict';
 
-const VER = '44';
+const VER = '45';
 const EDIT = new URLSearchParams(location.search).has('edit');
 const $ = (s, r = document) => r.querySelector(s);
 const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
@@ -912,11 +912,11 @@ async function initQuests() {
 function initRunes() {
   const btn = $('#rbtn'), box = $('#rlog');
   if (!btn || !box) return;
-  const ETAT = { active: 'Active', detruite: 'Détruite', tbc: 'À confirmer' };
+  const ETAT = { active: 'Active', detruite: 'Détruite', tbc: 'Active' };
   const where = e => { let p = BY[e.parent], g = 0; while (p && g++ < 8) { if (p.type === 'ville' || p.type === 'continent') return p; p = BY[p.parent]; } return null; };
   const draw = () => {
-    const R = Object.values(BY).filter(x => x.rune).sort((a, b) => ({ active: 0, tbc: 1, detruite: 2 }[a.rune.etat] - { active: 0, tbc: 1, detruite: 2 }[b.rune.etat]) || a.nom.localeCompare(b.nom, 'fr'));
-    box.innerHTML = `<div class="qwin" role="document"><header><span class="qgem"></span><h2>Runes de Philippa</h2><span class="qcount">${R.length} posées</span><button type="button" class="qx" aria-label="Fermer">×</button></header><ol class="qlist">${R.map(x => { const w = where(x); return `<li class="qitem r-${esc(x.rune.etat)}"><span class="rb rbl">${RAIDO}</span><div><b><a href="#/${esc(x.id)}">${esc(x.nom)}</a>${w ? ' · ' + esc(w.nom) : ''}</b><p><i>${esc(ETAT[x.rune.etat] || x.rune.etat)}.</i> ${esc(x.rune.note || '')}</p></div></li>`; }).join('') || '<li class="qempty">Aucune rune posée pour le moment.</li>'}</ol></div>`;
+    const R = Object.values(BY).filter(x => x.rune).sort((a, b) => (a.rune.ordre || 99) - (b.rune.ordre || 99));
+    box.innerHTML = `<div class="qwin" role="document"><header><span class="qgem"></span><h2>Runes de Philippa</h2><span class="qcount">${R.length} posées</span><button type="button" class="qx" aria-label="Fermer">×</button></header><ol class="qlist">${R.map(x => { const w = where(x); return `<li class="qitem r-${esc(x.rune.etat)}"><span class="rb rbl">${RAIDO}</span><div><b><a href="#/${esc(x.id)}">${esc(x.rune.label || x.nom)}</a>${w ? ' · ' + esc(w.nom) : ''}</b><p>${esc(ETAT[x.rune.etat] || x.rune.etat)}</p></div></li>`; }).join('') || '<li class="qempty">Aucune rune posée pour le moment.</li>'}</ol></div>`;
     box.querySelector('.qx').addEventListener('click', () => toggle(false));
     box.querySelectorAll('.qitem a').forEach(a => a.addEventListener('click', () => toggle(false)));
   };
