@@ -1201,6 +1201,13 @@
     "type": "Rêve",
     "ton": "neutre"
    }
+  ],
+  "cartes": [
+   {
+    "id": "plan",
+    "img": "img/cartes/camont.webp",
+    "legende": "Plan de Camont"
+   }
   ]
  },
  {
@@ -1216,7 +1223,11 @@
   "alias": [
    "Abattoir"
   ],
-  "chapeau": "Les ruelles qui mènent à l'auberge s'effondrent presque sur elles-mêmes. Des planches remplacent les pavés, l'eau du fleuve s'infiltre jusque dans les caniveaux. L'auberge apparaît enfin : façade lézardée, toit de travers, enseigne pendue par une chaîne, lampe à huile qui vacille sur un comptoir bancal."
+  "chapeau": "Les ruelles qui mènent à l'auberge s'effondrent presque sur elles-mêmes. Des planches remplacent les pavés, l'eau du fleuve s'infiltre jusque dans les caniveaux. L'auberge apparaît enfin : façade lézardée, toit de travers, enseigne pendue par une chaîne, lampe à huile qui vacille sur un comptoir bancal.",
+  "pos": {
+   "x": 0.717,
+   "y": 0.547
+  }
  },
  {
   "id": "teka",
@@ -1257,7 +1268,11 @@
   "connu": [
    "Les rues sont des pontons de bois détrempé. Les rats nagent dans les creux."
   ],
-  "chapeau": "Un dédale de passerelles branlantes entre les pilotis du quartier du fleuve. L'air est lourd, saturé d'algues et de bois pourri, et sous les planches clapote la Veyra où flottent débris et poisson mort. Des cabanes se superposent au-dessus de l'eau, reliées par des cordes et des planches disjointes."
+  "chapeau": "Un dédale de passerelles branlantes entre les pilotis du quartier du fleuve. L'air est lourd, saturé d'algues et de bois pourri, et sous les planches clapote la Veyra où flottent débris et poisson mort. Des cabanes se superposent au-dessus de l'eau, reliées par des cordes et des planches disjointes.",
+  "pos": {
+   "x": 0.772,
+   "y": 0.321
+  }
  },
  {
   "id": "eve",
@@ -1360,7 +1375,11 @@
   "connu": [
    "Les Yeux y vivent dans des cavernes d'acier, à l'abri des radiations et de la lumière."
   ],
-  "chapeau": "Au nord de Camont, la ville s'arrête là où les entrepôts se sont écroulés sur eux-mêmes. Des silos éventrés s'élèvent comme des tours rongées, dans une odeur âcre de métal brûlé et d'humidité stagnante. Les flaques luisent d'un vert malsain. Des silhouettes maigres, à la peau parcheminée et aux yeux étrangement luisants, se déplacent dans les décombres."
+  "chapeau": "Au nord de Camont, la ville s'arrête là où les entrepôts se sont écroulés sur eux-mêmes. Des silos éventrés s'élèvent comme des tours rongées, dans une odeur âcre de métal brûlé et d'humidité stagnante. Les flaques luisent d'un vert malsain. Des silhouettes maigres, à la peau parcheminée et aux yeux étrangement luisants, se déplacent dans les décombres.",
+  "pos": {
+   "x": 0.583,
+   "y": 0.139
+  }
  },
  {
   "id": "iris",
@@ -1415,7 +1434,11 @@
    "Les Brûleurs y dorment sous drogue. Tous parlent d'une seule voix douce et invitent à les rejoindre.",
    "Une présence observe à travers eux. Le groupe est parti sans insister."
   ],
-  "chapeau": "À l'ouest de la ville basse, le dôme domine l'horizon comme une coque fendue. Sa coupole de cuivre terni reflète à peine la lumière et des traînées de fumée s'échappent par les fissures. À l'intérieur, la chaleur étouffe : le sol est couvert de cendres et de silhouettes allongées dans la pénombre."
+  "chapeau": "À l'ouest de la ville basse, le dôme domine l'horizon comme une coque fendue. Sa coupole de cuivre terni reflète à peine la lumière et des traînées de fumée s'échappent par les fissures. À l'intérieur, la chaleur étouffe : le sol est couvert de cendres et de silhouettes allongées dans la pénombre.",
+  "pos": {
+   "x": 0.417,
+   "y": 0.702
+  }
  },
  {
   "id": "usine-camont",
@@ -1427,7 +1450,11 @@
   "connu": [
    "Les habitants du quartier paient une contribution aux Épingles pour la paix."
   ],
-  "chapeau": "Au sud de Camont, les planches laissent place à des ruines plus sèches, chargées de cendres et de fibres anciennes. Les restes d'une fabrique de tissu dominent le quartier : hautes façades éventrées, métiers à tisser renversés, fils de laine et de chanvre accrochés aux poutres comme des toiles d'araignée."
+  "chapeau": "Au sud de Camont, les planches laissent place à des ruines plus sèches, chargées de cendres et de fibres anciennes. Les restes d'une fabrique de tissu dominent le quartier : hautes façades éventrées, métiers à tisser renversés, fils de laine et de chanvre accrochés aux poutres comme des toiles d'araignée.",
+  "pos": {
+   "x": 0.844,
+   "y": 0.525
+  }
  },
  {
   "id": "nix",
@@ -1520,7 +1547,11 @@
   "connu": [
    "Remise de 25 % pour qui vient de la part des Yeux."
   ],
-  "chapeau": "La boutique se cache dans une ruelle propre de la ville haute, entre deux façades aux volets sculptés. Des vitraux projettent sur le sol des éclats bleus et verts, l'air sent la menthe séchée, la cire et le métal poli. Chaque fiole est rangée par taille, chaque étiquette tracée d'une main régulière."
+  "chapeau": "La boutique se cache dans une ruelle propre de la ville haute, entre deux façades aux volets sculptés. Des vitraux projettent sur le sol des éclats bleus et verts, l'air sent la menthe séchée, la cire et le métal poli. Chaque fiole est rangée par taille, chaque étiquette tracée d'une main régulière.",
+  "pos": {
+   "x": 0.111,
+   "y": 0.108
+  }
  },
  {
   "id": "arin-veyr",
@@ -1565,7 +1596,11 @@
   "connu": [
    "Pièges mécaniques et magiques. Les coffres sont au sous-sol, avec deux gardes et un cube gélatineux."
   ],
-  "chapeau": "Sur une butte de pierre claire, entourée de jardins taillés au cordeau, la villa Graham est conçue autant pour être admirée que pour décourager les curieux : fenêtres hautes, ferronneries épaisses, marches cirées. L'air y est calme, trop calme. On dit que personne n'a jamais rien volé ici sans y laisser un morceau de soi."
+  "chapeau": "Sur une butte de pierre claire, entourée de jardins taillés au cordeau, la villa Graham est conçue autant pour être admirée que pour décourager les curieux : fenêtres hautes, ferronneries épaisses, marches cirées. L'air y est calme, trop calme. On dit que personne n'a jamais rien volé ici sans y laisser un morceau de soi.",
+  "pos": {
+   "x": 0.092,
+   "y": 0.744
+  }
  },
  {
   "id": "graham-gonn",
@@ -1689,6 +1724,13 @@
     "img": "img/paysages/port-blanc/route.webp",
     "legende": "La route de Port Blanc"
    }
+  ],
+  "cartes": [
+   {
+    "id": "plan",
+    "img": "img/cartes/port-blanc.webp",
+    "legende": "Plan de Port-Blanc"
+   }
   ]
  },
  {
@@ -1707,7 +1749,11 @@
     "img": "img/paysages/port-blanc/saloon.webp",
     "legende": "Le saloon"
    }
-  ]
+  ],
+  "pos": {
+   "x": 0.436,
+   "y": 0.522
+  }
  },
  {
   "id": "susie",
@@ -1782,7 +1828,11 @@
     "img": "img/paysages/port-blanc/quais-rouges.webp",
     "legende": "Les Quais Rouges"
    }
-  ]
+  ],
+  "pos": {
+   "x": 0.517,
+   "y": 0.228
+  }
  },
  {
   "id": "june",
@@ -1825,7 +1875,11 @@
     "img": "img/paysages/port-blanc/prison.webp",
     "legende": "Le bureau du shérif"
    }
-  ]
+  ],
+  "pos": {
+   "x": 0.492,
+   "y": 0.414
+  }
  },
  {
   "id": "wyatt-hale",
@@ -1904,7 +1958,11 @@
   "connu": [
    "Chaque famille garde son domaine. Les étrangers ne s'approchent pas des bêtes."
   ],
-  "chapeau": "Des clôtures de bois épais découpent l'horizon en domaines distincts, chacun marqué de couleurs, de bannières et de symboles peints à même les poteaux. Les troupeaux labourent la terre jusqu'à la rendre pâle et sèche, et la nuit, des feux ponctuent les pâtures comme des frontières vivantes."
+  "chapeau": "Des clôtures de bois épais découpent l'horizon en domaines distincts, chacun marqué de couleurs, de bannières et de symboles peints à même les poteaux. Les troupeaux labourent la terre jusqu'à la rendre pâle et sèche, et la nuit, des feux ponctuent les pâtures comme des frontières vivantes.",
+  "pos": {
+   "x": 0.069,
+   "y": 0.778
+  }
  },
  {
   "id": "harlan",
@@ -1971,7 +2029,12 @@
    "Au vignoble de Dimir et Iulia, le groupe libère l'esclave Spano.",
    "Ivy est retrouvée morte, empoisonnée.",
    "Le marchand Qadim, agent de la Lumière Noire, traquait Magdalena. Il s'enfuit une fois découvert."
-  ]
+  ],
+  "pos": {
+   "x": 0.272,
+   "y": 0.749
+  },
+  "voyage": "x"
  },
  {
   "id": "qadim-al-makir",
@@ -2178,6 +2241,13 @@
     "img": "img/paysages/havre-noir/pavillon-vert.webp",
     "legende": "Le Pavillon Vert"
    }
+  ],
+  "cartes": [
+   {
+    "id": "plan",
+    "img": "img/cartes/havre-noir.webp",
+    "legende": "Plan de Havre Noir"
+   }
   ]
  },
  {
@@ -2194,7 +2264,11 @@
   "alias": [
    "Assemblage"
   ],
-  "chapeau": "Au centre de la baie, plus d'une quinzaine de gigantesques navires entrelacés, soudés par des chaînes et du goudron, comme un monstrueux récif de bois et de fer. Flancs hérissés de canons et de passerelles, voiles déchirées en guise de bannières, feux de veille qui brûlent nuit et jour. Le trône de Sycomore Brise-Pavois."
+  "chapeau": "Au centre de la baie, plus d'une quinzaine de gigantesques navires entrelacés, soudés par des chaînes et du goudron, comme un monstrueux récif de bois et de fer. Flancs hérissés de canons et de passerelles, voiles déchirées en guise de bannières, feux de veille qui brûlent nuit et jour. Le trône de Sycomore Brise-Pavois.",
+  "pos": {
+   "x": 0.511,
+   "y": 0.644
+  }
  },
  {
   "id": "sycomore-brise-pavois",
@@ -2298,7 +2372,11 @@
     "img": "img/paysages/havre-noir/pavillon-vert.webp",
     "legende": "Le Pavillon Vert"
    }
-  ]
+  ],
+  "pos": {
+   "x": 0.675,
+   "y": 0.37
+  }
  },
  {
   "id": "liora",
@@ -2430,7 +2508,11 @@
   "connu": [
    "Sycomore a fait incendier le temple et bannir le diacre Malrik Solbrun qui prêchait pour le Dominion."
   ],
-  "chapeau": "Vestige calciné au cœur de Havre Noir : colonnes effondrées, murs noircis, odeur du brasier qui l'a détruit. Les jeunes Lapidès viennent s'y battre dans la poussière des idoles brisées. Sur les murs, des graffitis : « Ici pas de dieux, seulement Sycomore »."
+  "chapeau": "Vestige calciné au cœur de Havre Noir : colonnes effondrées, murs noircis, odeur du brasier qui l'a détruit. Les jeunes Lapidès viennent s'y battre dans la poussière des idoles brisées. Sur les murs, des graffitis : « Ici pas de dieux, seulement Sycomore ».",
+  "pos": {
+   "x": 0.508,
+   "y": 0.085
+  }
  },
  {
   "id": "wilhelm-der-treue",
@@ -2510,7 +2592,14 @@
    "x": 0.607,
    "y": 0.6
   },
-  "accent": "#7a9a5a"
+  "accent": "#7a9a5a",
+  "cartes": [
+   {
+    "id": "plan",
+    "img": "img/cartes/lunsk.webp",
+    "legende": "Plan de Lunsk"
+   }
+  ]
  },
  {
   "id": "mezzek",
@@ -2518,7 +2607,7 @@
   "nom": "Mezzek",
   "titre": "Responsable de la Griffe à Lunsk",
   "parent": "lunsk",
-  "lieu": "lunsk",
+  "lieu": "repaire-de-mezzek",
   "statut": "mort",
   "resume": "Trafiquant local, qui cite « le Berger » comme donneur d'ordres.",
   "connu": [
@@ -2575,7 +2664,7 @@
   "nom": "Mirek « Trois-Pierres »",
   "titre": "Aubergiste de Lunsk",
   "parent": "lunsk",
-  "lieu": "lunsk",
+  "lieu": "auberge-du-brouillard-attable",
   "statut": "vivant",
   "resume": "Aubergiste à l'œil de verre. Point de chute et de rumeurs.",
   "attitude": "neutre"
@@ -2595,7 +2684,11 @@
    "Philippa libère Liora, prisonnière de la Griffe.",
    "Le groupe affronte Absalom, appelée le Berger, qui s'échappe."
   ],
-  "fusion": true
+  "fusion": true,
+  "pos": {
+   "x": 0.524,
+   "y": 0.775
+  }
  },
  {
   "id": "frere-augustus-carrow",
@@ -2639,8 +2732,8 @@
    "Le groupe y vainc Barakel, parasite de l'Aube déguisé en prêtre."
   ],
   "pos": {
-   "x": 0.313,
-   "y": 0.78
+   "x": 0.316,
+   "y": 0.779
   },
   "chapeau": "La jungle se resserre et laisse place à une clairière envahie par une brume laiteuse qui colle aux pierres. Entre les lianes et les troncs moussus, la façade effondrée d'un ancien temple, mangé par les racines. L'air sent l'humidité et la moisissure, et seul le ruissellement d'une source invisible trouble le silence.",
   "galerie": [
@@ -2660,7 +2753,8 @@
     "img": "img/paysages/temple-brumeux/frere-augustus.webp",
     "legende": "Frère Augustus dans le temple"
    }
-  ]
+  ],
+  "voyage": true
  },
  {
   "id": "barakel",
@@ -2721,8 +2815,8 @@
   "cartes": [
    {
     "id": "carte",
-    "img": "img/placeholder/carte-noire.svg",
-    "legende": ""
+    "img": "img/cartes/agran.webp",
+    "legende": "Plan d'Agran"
    }
   ],
   "typeLabel": "Cité engloutie",
@@ -2767,7 +2861,7 @@
   "nom": "La Suuraal",
   "titre": "Dirigeante d'Agran",
   "parent": "agran",
-  "lieu": "agran",
+  "lieu": "demeure-de-la-suuraal",
   "statut": "vivant",
   "resume": "Autorité spirituelle et temporelle. Kataron parle à travers elle.",
   "connu": [
@@ -2874,6 +2968,13 @@
   "blason": "img/blasons/pyrrah.webp",
   "alias": [
    "Pyrrah"
+  ],
+  "cartes": [
+   {
+    "id": "plan",
+    "img": "img/cartes/pyrrah.webp",
+    "legende": "Plan de Pyrrah"
+   }
   ]
  },
  {
@@ -3487,6 +3588,13 @@
     "img": "img/paysages/leyenmil/orphelinat.webp",
     "legende": "L'orphelinat Merigold"
    }
+  ],
+  "cartes": [
+   {
+    "id": "plan",
+    "img": "img/cartes/leyenmil.webp",
+    "legende": "Plan de Leyenmil"
+   }
   ]
  },
  {
@@ -3513,7 +3621,11 @@
     "img": "img/paysages/leyenmil/orphelinat-chambre.webp",
     "legende": "L'orphelinat, la chambre de déguisement"
    }
-  ]
+  ],
+  "pos": {
+   "x": 0.2,
+   "y": 0.92
+  }
  },
  {
   "id": "la-rectrice",
@@ -3657,7 +3769,11 @@
   "chapeau": "À l'entrée de la baie, un immense mât fiché dans la roche, couvert de centaines de cordages et de nœuds marins. Chaque marin qui entre au service de Sycomore y attache son nœud en signe de loyauté. La légende dit que les cordes tombées à la mer s'animent et viennent étrangler les traîtres dans leur sommeil.",
   "alias": [
    "Rocher aux Noeuds"
-  ]
+  ],
+  "pos": {
+   "x": 0.439,
+   "y": 0.9
+  }
  },
  {
   "id": "quais-de-poix",
@@ -3671,7 +3787,11 @@
    "Les navires de Havre Noir à étrave de fer et coque goudronnée s'appellent les Coques-Noires.",
    "Havre Noir pense que l'Île aux Moines est inhabitée."
   ],
-  "chapeau": "D'immenses quais transformés en chantier naval permanent. Des chaudrons de poix bouillonnent sur des brasiers, où des marins en disgrâce plongent des seaux fumants. Le sol colle aux bottes, l'air est saturé de fumées épaisses, rythmé par les marteaux et les chaînes."
+  "chapeau": "D'immenses quais transformés en chantier naval permanent. Des chaudrons de poix bouillonnent sur des brasiers, où des marins en disgrâce plongent des seaux fumants. Le sol colle aux bottes, l'air est saturé de fumées épaisses, rythmé par les marteaux et les chaînes.",
+  "pos": {
+   "x": 0.469,
+   "y": 0.322
+  }
  },
  {
   "id": "brask-le-clocheur",
@@ -3704,7 +3824,11 @@
   "connu": [
    "On y boit, on y joue, on y complote."
   ],
-  "chapeau": "L'auberge s'étend sur deux étages, en bois sombre, toujours bruissante de rires, de chants ivres et de récits de mer. Un immense foyer en longueur flambe au centre, et au-dessus du bar, un gigantesque harpon rouge sang, relique volée à un navire de guerre du Dominion. On y boit, on y joue, on y complote."
+  "chapeau": "L'auberge s'étend sur deux étages, en bois sombre, toujours bruissante de rires, de chants ivres et de récits de mer. Un immense foyer en longueur flambe au centre, et au-dessus du bar, un gigantesque harpon rouge sang, relique volée à un navire de guerre du Dominion. On y boit, on y joue, on y complote.",
+  "pos": {
+   "x": 0.258,
+   "y": 0.233
+  }
  },
  {
   "id": "ergott",
@@ -3947,7 +4071,11 @@
   "connu": [
    "Parmi les condamnés, un homme de la Griffe, preuve que la Griffe n'a jamais pris pied à Havre Noir."
   ],
-  "chapeau": "Une jetée battue par les vents et les vagues, sur de hauts pieux de bois goudronné. Des cages de fer rouillées oscillent en grinçant : certaines abritent des squelettes blanchis par le sel, d'autres des prisonniers haletants. L'air est lourd de sel, de rouille et de charogne. C'est le lieu d'exécution et d'exemple public."
+  "chapeau": "Une jetée battue par les vents et les vagues, sur de hauts pieux de bois goudronné. Des cages de fer rouillées oscillent en grinçant : certaines abritent des squelettes blanchis par le sel, d'autres des prisonniers haletants. L'air est lourd de sel, de rouille et de charogne. C'est le lieu d'exécution et d'exemple public.",
+  "pos": {
+   "x": 0.3,
+   "y": 0.468
+  }
  },
  {
   "id": "filver-brandepoix",
@@ -3994,7 +4122,11 @@
   "connu": [
    "Tout y est à vendre : vaisselle d'argent, uniformes, potions, objets magiques."
   ],
-  "chapeau": "Un vaste entrepôt creusé dans la falaise, consolidé par des poutres arrachées à des carcasses de navires. Les murs sont tapissés de coffres entrouverts, de cordages maculés de sang, d'armes entassées et de trophées arrachés à des vaisseaux vaincus. Les Lapidès montent la garde, et jamais une bagarre n'éclate ici."
+  "chapeau": "Un vaste entrepôt creusé dans la falaise, consolidé par des poutres arrachées à des carcasses de navires. Les murs sont tapissés de coffres entrouverts, de cordages maculés de sang, d'armes entassées et de trophées arrachés à des vaisseaux vaincus. Les Lapidès montent la garde, et jamais une bagarre n'éclate ici.",
+  "pos": {
+   "x": 0.083,
+   "y": 0.626
+  }
  },
  {
   "id": "marek-le-calfat",
@@ -4034,7 +4166,11 @@
    "Toutes les cargaisons forgées viennent de Havre Noir, jamais de l'Île aux Moines.",
    "Un apprenti laisse échapper qu'un capitaine parlait d'or venant de Port Doëlan."
   ],
-  "chapeau": "La forge gronde jour et nuit dans un vieux bâtiment renforcé de poutres et de plaques de métal. On y martèle les étraves, on y coule le fer et on y entretient les armes des Lapidès. Le sol est jonché de braises et de scories, l'air saturé d'étincelles et de vapeur."
+  "chapeau": "La forge gronde jour et nuit dans un vieux bâtiment renforcé de poutres et de plaques de métal. On y martèle les étraves, on y coule le fer et on y entretient les armes des Lapidès. Le sol est jonché de braises et de scories, l'air saturé d'étincelles et de vapeur.",
+  "pos": {
+   "x": 0.831,
+   "y": 0.667
+  }
  },
  {
   "id": "korga-brise-lame",
@@ -4397,7 +4533,11 @@
   "alias": [
    "Ville Haute"
   ],
-  "chapeau": "Derrière les murailles, des avenues pavées bordées d'arbres taillés au cordeau, des demeures claires aux balcons de fer forgé, des fontaines propres. Mais sous la peinture fraîche, les pierres se fendent et les dorures ternissent. La noblesse s'accroche à sa façade de marbre pendant que la ville s'effrite sous ses pieds."
+  "chapeau": "Derrière les murailles, des avenues pavées bordées d'arbres taillés au cordeau, des demeures claires aux balcons de fer forgé, des fontaines propres. Mais sous la peinture fraîche, les pierres se fendent et les dorures ternissent. La noblesse s'accroche à sa façade de marbre pendant que la ville s'effrite sous ses pieds.",
+  "pos": {
+   "x": 0.167,
+   "y": 0.381
+  }
  },
  {
   "id": "jardins-de-l-eternite",
@@ -4623,7 +4763,11 @@
     "img": "img/paysages/port-blanc/abattoirs-de-chaux.webp",
     "legende": "Les abattoirs de chaux"
    }
-  ]
+  ],
+  "pos": {
+   "x": 0.442,
+   "y": 0.292
+  }
  },
  {
   "id": "tiberius",
@@ -4705,7 +4849,11 @@
   "connu": [
    "Les Familles y fixent les rapports de force. Infos, dettes et trahisons y circulent."
   ],
-  "chapeau": "Le marché s'étend comme une ville dans la ville, ouvert, bruyant, saturé de poussière et de cris. Des milliers de têtes de bétail s'y déplacent en vagues lentes. Des estrades d'enchères en bois dominent certaines zones, où les prix se hurlent à la cadence d'un cœur collectif. Le bétail change de mains, mais les rancunes restent."
+  "chapeau": "Le marché s'étend comme une ville dans la ville, ouvert, bruyant, saturé de poussière et de cris. Des milliers de têtes de bétail s'y déplacent en vagues lentes. Des estrades d'enchères en bois dominent certaines zones, où les prix se hurlent à la cadence d'un cœur collectif. Le bétail change de mains, mais les rancunes restent.",
+  "pos": {
+   "x": 0.628,
+   "y": 0.358
+  }
  },
  {
   "id": "abby",
@@ -4755,7 +4903,11 @@
     "img": "img/paysages/port-blanc/tannerie.webp",
     "legende": "Les tanneries"
    }
-  ]
+  ],
+  "pos": {
+   "x": 0.633,
+   "y": 0.532
+  }
  },
  {
   "id": "cornelius",
@@ -4795,7 +4947,11 @@
     "img": "img/paysages/port-blanc/general-store.webp",
     "legende": "Le General Store"
    }
-  ]
+  ],
+  "pos": {
+   "x": 0.283,
+   "y": 0.436
+  }
  },
  {
   "id": "royce",
@@ -4833,7 +4989,11 @@
     "img": "img/paysages/port-blanc/marechal-ferrant.webp",
     "legende": "Le maréchal-ferrant"
    }
-  ]
+  ],
+  "pos": {
+   "x": 0.314,
+   "y": 0.514
+  }
  },
  {
   "id": "otis",
@@ -4868,7 +5028,11 @@
   "connu": [
    "Accès très limité aux étrangers. Gardes privés nombreux."
   ],
-  "chapeau": "Le bâtiment forme un large arc de cercle, massif, posé comme une mâchoire sur la ville. Chaque segment est aux couleurs d'une maison régnante. À l'intérieur, le bois sombre et les trophées de chasse rappellent la domination sur la terre et les bêtes. Des gardes privés, nombreux et bien équipés, veillent."
+  "chapeau": "Le bâtiment forme un large arc de cercle, massif, posé comme une mâchoire sur la ville. Chaque segment est aux couleurs d'une maison régnante. À l'intérieur, le bois sombre et les trophées de chasse rappellent la domination sur la terre et les bêtes. Des gardes privés, nombreux et bien équipés, veillent.",
+  "pos": {
+   "x": 0.244,
+   "y": 0.303
+  }
  },
  {
   "id": "chapelle-des-betes-silencieuses",
@@ -4887,7 +5051,11 @@
     "img": "img/paysages/port-blanc/chapelle-des-betes.webp",
     "legende": "La Chapelle des Bêtes Silencieuses"
    }
-  ]
+  ],
+  "pos": {
+   "x": 0.55,
+   "y": 0.628
+  }
  },
  {
   "id": "edrin-boeuf-cendre",
@@ -6842,7 +7010,11 @@
     "img": "img/paysages/agran/auberge-de-thaloor.webp",
     "legende": "L'auberge de Thaloor"
    }
-  ]
+  ],
+  "pos": {
+   "x": 0.561,
+   "y": 0.381
+  }
  },
  {
   "id": "temple-de-kataron",
@@ -6869,7 +7041,11 @@
     "img": "img/paysages/agran/temple-de-kataron-3.webp",
     "legende": "Le temple de Kataron, le pupitre central"
    }
-  ]
+  ],
+  "pos": {
+   "x": 0.508,
+   "y": 0.35
+  }
  },
  {
   "id": "echoppe-de-peraalys",
@@ -6884,7 +7060,11 @@
     "img": "img/paysages/agran/echoppe-de-peraalys.webp",
     "legende": "L'échoppe de Peraalys"
    }
-  ]
+  ],
+  "pos": {
+   "x": 0.569,
+   "y": 0.256
+  }
  },
  {
   "id": "peraalys",
@@ -6950,7 +7130,11 @@
   "titre": "Forge thermique et récupération",
   "parent": "agran",
   "resume": "Forge creusée autour d'une colonne d'eau bouillante. Corail compressé, lames de coquille, métal abyssal.",
-  "chapeau": "Une chaleur sourde monte de la roche et tranche avec l'eau froide de la faille. La forge est creusée autour d'une colonne d'eau bouillante qui jaillit du plancher. Coraux séchés empilés, coquilles taillées en lames, métal abyssal brut sur des crochets de roche."
+  "chapeau": "Une chaleur sourde monte de la roche et tranche avec l'eau froide de la faille. La forge est creusée autour d'une colonne d'eau bouillante qui jaillit du plancher. Coraux séchés empilés, coquilles taillées en lames, métal abyssal brut sur des crochets de roche.",
+  "pos": {
+   "x": 0.531,
+   "y": 0.299
+  }
  },
  {
   "id": "drisuun",
@@ -6987,7 +7171,11 @@
     "img": "img/paysages/agran/salle-de-l-orant.webp",
     "legende": "La salle de l'Orant"
    }
-  ]
+  ],
+  "pos": {
+   "x": 0.617,
+   "y": 0.176
+  }
  },
  {
   "id": "uruukaysal",
@@ -7199,7 +7387,11 @@
    "Une procession doit avoir lieu bientôt.",
    "La sécurité de la ville est étonnamment faible."
   ],
-  "chapeau": "Une auberge de basalte poli, traversée de veines orangées qui diffusent une lueur constante. L'air est chaud mais contrôlé, comme dans un hammam sec, et sent l'épice grillée, la viande rôtie et la fumée résineuse. Des lanternes de verre fumé abritent de petites flammes bleutées, et une vasque de braises sert de foyer, de cuisine et de décor."
+  "chapeau": "Une auberge de basalte poli, traversée de veines orangées qui diffusent une lueur constante. L'air est chaud mais contrôlé, comme dans un hammam sec, et sent l'épice grillée, la viande rôtie et la fumée résineuse. Des lanternes de verre fumé abritent de petites flammes bleutées, et une vasque de braises sert de foyer, de cuisine et de décor.",
+  "pos": {
+   "x": 0.317,
+   "y": 0.4
+  }
  },
  {
   "id": "serevya",
@@ -7226,7 +7418,11 @@
    "Les prêtres du Temple surveillent surtout les Genasi de feu.",
    "Prophétie : « Les cheveux de flamme éteindront un jour la Flamme éternelle. »"
   ],
-  "chapeau": "Façade de cuivre poli et tentures couleur braise. À l'intérieur, une chaleur douce, des volutes de vapeur parfumée au safran, des vasques de verre rouge qui tamisent la lumière. Les mosaïques montrent des silhouettes dansantes faites de flammes stylisées. Les voix sont basses, rien n'est brusque ici."
+  "chapeau": "Façade de cuivre poli et tentures couleur braise. À l'intérieur, une chaleur douce, des volutes de vapeur parfumée au safran, des vasques de verre rouge qui tamisent la lumière. Les mosaïques montrent des silhouettes dansantes faites de flammes stylisées. Les voix sont basses, rien n'est brusque ici.",
+  "pos": {
+   "x": 0.078,
+   "y": 0.644
+  }
  },
  {
   "id": "kaldon",
@@ -7416,7 +7612,11 @@
   "connu": [
    "Les livraisons de pyrracier ont cessé : la mine est fermée."
   ],
-  "chapeau": "Une forge taillée directement dans une masse de basalte rouge. Des canaux de métal fondu serpentent autour des établis et éclairent la salle d'une lueur orange pulsée. Au centre, une enclume circulaire repose au-dessus d'un bassin incandescent gravé de symboles anciens, dont les flammes montent et redescendent comme une respiration."
+  "chapeau": "Une forge taillée directement dans une masse de basalte rouge. Des canaux de métal fondu serpentent autour des établis et éclairent la salle d'une lueur orange pulsée. Au centre, une enclume circulaire repose au-dessus d'un bassin incandescent gravé de symboles anciens, dont les flammes montent et redescendent comme une respiration.",
+  "pos": {
+   "x": 0.197,
+   "y": 0.196
+  }
  },
  {
   "id": "fyra",
@@ -7468,7 +7668,11 @@
   "titre": "Dôme de verre rouge",
   "parent": "pyrrah",
   "resume": "Atelier d'arcaniste sous un dôme de verre rouge, cristaux suspendus et rouages enchantés.",
-  "chapeau": "Un dôme de verre rouge traversé de nervures de métal fondu solidifié. Des cristaux suspendus diffusent des vagues d'air frais. À l'intérieur : étagères de minerais incandescents, fioles luminescentes, manuscrits sur peau ignifugée, rouages enchantés qui tournent autour d'un brasero violet. L'air sent la cendre douce et l'ozone."
+  "chapeau": "Un dôme de verre rouge traversé de nervures de métal fondu solidifié. Des cristaux suspendus diffusent des vagues d'air frais. À l'intérieur : étagères de minerais incandescents, fioles luminescentes, manuscrits sur peau ignifugée, rouages enchantés qui tournent autour d'un brasero violet. L'air sent la cendre douce et l'ozone.",
+  "pos": {
+   "x": 0.392,
+   "y": 0.626
+  }
  },
  {
   "id": "ashkalyon",
@@ -7505,7 +7709,11 @@
   "titre": "Bric-à-brac",
   "parent": "pyrrah",
   "resume": "Atelier improvisé sous un dais de toile rouge, objets incandescents ou refroidis, reliques de créatures du feu.",
-  "chapeau": "Un bric-à-brac installé dans une ruelle secondaire, sous un dais de toile rouge qui pulse sous la chaleur. Coffres de métal noir, fioles pendues à des cordelettes de cuivre, reliques de créatures du feu, outils étranges. Cliquetis et crépitements constants, chaleur tempérée pour ne pas effrayer la clientèle venue d'autres plans."
+  "chapeau": "Un bric-à-brac installé dans une ruelle secondaire, sous un dais de toile rouge qui pulse sous la chaleur. Coffres de métal noir, fioles pendues à des cordelettes de cuivre, reliques de créatures du feu, outils étranges. Cliquetis et crépitements constants, chaleur tempérée pour ne pas effrayer la clientèle venue d'autres plans.",
+  "pos": {
+   "x": 0.894,
+   "y": 0.326
+  }
  },
  {
   "id": "krixis",
@@ -7536,7 +7744,11 @@
   "connu": [
    "Le bain tempéré retire un niveau d'épuisement lié à la chaleur."
   ],
-  "chapeau": "Un complexe monumental enterré sous la cité. Un escalier de marbre rouge plonge vers une rotonde colossale éclairée par un puits où la lumière dorée tombe comme une pluie chaude. Plus bas, une grotte aménagée aux larges bassins turquoise, des cascades qui refroidissent les eaux brûlantes du plan."
+  "chapeau": "Un complexe monumental enterré sous la cité. Un escalier de marbre rouge plonge vers une rotonde colossale éclairée par un puits où la lumière dorée tombe comme une pluie chaude. Plus bas, une grotte aménagée aux larges bassins turquoise, des cascades qui refroidissent les eaux brûlantes du plan.",
+  "pos": {
+   "x": 0.722,
+   "y": 0.259
+  }
  },
  {
   "id": "ephyrion",
@@ -7610,7 +7822,11 @@
   "titre": "Temple de Pyrrah",
   "parent": "pyrrah",
   "resume": "Façade flanquée de statues de guerriers solaires, parvis de bassins aux flammes bleues. Nef sous une coupole d'étincelles.",
-  "chapeau": "Le temple domine la cité comme une enclave de lumière condensée. La façade est flanquée de statues colossales de guerriers solaires, un parvis circulaire est bordé de bassins de flammes bleues qui ne consument rien. Dans la nef, la voûte se perd dans une mer d'étincelles et des rayons dorés tracent un damier mouvant de lumière sur le sol."
+  "chapeau": "Le temple domine la cité comme une enclave de lumière condensée. La façade est flanquée de statues colossales de guerriers solaires, un parvis circulaire est bordé de bassins de flammes bleues qui ne consument rien. Dans la nef, la voûte se perd dans une mer d'étincelles et des rayons dorés tracent un damier mouvant de lumière sur le sol.",
+  "pos": {
+   "x": 0.556,
+   "y": 0.45
+  }
  },
  {
   "id": "pretres-de-la-flamme",
@@ -8177,7 +8393,11 @@
     "img": "img/paysages/leyenmil/maison-kornwald.webp",
     "legende": "La maison Kornwald"
    }
-  ]
+  ],
+  "pos": {
+   "x": 0.817,
+   "y": 0.33
+  }
  },
  {
   "id": "gardes-de-kornwald",
@@ -8478,7 +8698,11 @@
     "img": "img/paysages/brakka/sanctuaire-de-la-maree.webp",
     "legende": "Le sanctuaire de la marée"
    }
-  ]
+  ],
+  "pos": {
+   "x": 0.222,
+   "y": 0.485
+  }
  },
  {
   "id": "boru-pretre-de-brakka",
@@ -8531,7 +8755,11 @@
     "img": "img/paysages/brakka/fumerie-de-shoba.webp",
     "legende": "La fumerie de Shoba"
    }
-  ]
+  ],
+  "pos": {
+   "x": 0.459,
+   "y": 0.333
+  }
  },
  {
   "id": "campement-detruit-steppes",
@@ -8604,5 +8832,174 @@
   "alias": [
    "Ashvûr-tesh"
   ]
+ },
+ {
+  "id": "tour-du-pentacle-lunsk",
+  "type": "lieu",
+  "nom": "La Tour du Pentacle",
+  "titre": "Tour sur l'îlot",
+  "parent": "lunsk",
+  "resume": "Tour dressée sur un îlot boisé, au nord de la ville, reliée à la rive par une passerelle.",
+  "pos": {
+   "x": 0.356,
+   "y": 0.244
+  }
+ },
+ {
+  "id": "repaire-de-mezzek",
+  "type": "lieu",
+  "nom": "Chez Mezzek",
+  "titre": "Rive ouest",
+  "parent": "lunsk",
+  "resume": "Bâtisse isolée sur la rive ouest, côté forêt, où Mezzek tient ses affaires.",
+  "pos": {
+   "x": 0.103,
+   "y": 0.256
+  }
+ },
+ {
+  "id": "scierie-lunsk",
+  "type": "lieu",
+  "nom": "La scierie",
+  "titre": "Rive ouest",
+  "parent": "lunsk",
+  "resume": "Scierie et hangars à bois sur la rive ouest, face à la ville.",
+  "pos": {
+   "x": 0.267,
+   "y": 0.526
+  }
+ },
+ {
+  "id": "auberge-du-brouillard-attable",
+  "type": "lieu",
+  "nom": "L'auberge du Brouillard Attablé",
+  "titre": "Auberge de Lunsk",
+  "parent": "lunsk",
+  "resume": "Grande auberge de l'île centrale, point de chute et de rumeurs tenu par Mirek.",
+  "pos": {
+   "x": 0.489,
+   "y": 0.548
+  }
+ },
+ {
+  "id": "herboristerie-la-sous-corolle",
+  "type": "lieu",
+  "nom": "L'herboristerie « La sous-corolle »",
+  "titre": "Quartier est",
+  "parent": "lunsk",
+  "resume": "Herboristerie du quartier est, près des quais nord.",
+  "pos": {
+   "x": 0.778,
+   "y": 0.252
+  }
+ },
+ {
+  "id": "port-de-lunsk",
+  "type": "lieu",
+  "nom": "Le port de Lunsk",
+  "titre": "Quais sud",
+  "parent": "lunsk",
+  "resume": "Appontements et quais au sud de la ville.",
+  "pos": {
+   "x": 0.5,
+   "y": 0.859
+  }
+ },
+ {
+  "id": "docks-camont",
+  "type": "lieu",
+  "nom": "Les docks",
+  "titre": "Cœur de Camont",
+  "parent": "camont",
+  "resume": "Quais, entrepôts et étals du cœur de la ville basse.",
+  "pos": {
+   "x": 0.569,
+   "y": 0.646
+  }
+ },
+ {
+  "id": "fabrique-camont",
+  "type": "lieu",
+  "nom": "La Fabrique",
+  "titre": "Sud de Camont",
+  "parent": "camont",
+  "resume": "Fabrique du sud de la ville basse.",
+  "pos": {
+   "x": 0.561,
+   "y": 0.934
+  }
+ },
+ {
+  "id": "garnison-leyenmil",
+  "type": "lieu",
+  "nom": "La garnison Von Leyenmil",
+  "titre": "Nord-ouest",
+  "parent": "leyenmil",
+  "resume": "Garnison de Leyenmil, fortifiée, au nord-ouest du village.",
+  "pos": {
+   "x": 0.142,
+   "y": 0.1
+  }
+ },
+ {
+  "id": "reserve-du-vent-gris",
+  "type": "lieu",
+  "nom": "La Réserve du Vent Gris",
+  "titre": "Centre",
+  "parent": "leyenmil",
+  "resume": "La Réserve du Vent Gris, au centre du village.",
+  "pos": {
+   "x": 0.467,
+   "y": 0.437
+  }
+ },
+ {
+  "id": "auberge-du-moulin",
+  "type": "lieu",
+  "nom": "L'auberge du Moulin",
+  "titre": "Centre",
+  "parent": "leyenmil",
+  "resume": "Auberge proche du moulin.",
+  "pos": {
+   "x": 0.65,
+   "y": 0.533
+  }
+ },
+ {
+  "id": "demeure-de-la-suuraal",
+  "type": "lieu",
+  "nom": "La demeure de la Suuraal",
+  "titre": "Cité d'Agran",
+  "parent": "agran",
+  "resume": "Haut des marches où la Suuraal reçoit.",
+  "pos": {
+   "x": 0.664,
+   "y": 0.196
+  }
+ },
+ {
+  "id": "epave-d-ossyraal",
+  "type": "lieu",
+  "nom": "L'épave d'Ossyraal",
+  "titre": "À l'ouest de la cité",
+  "parent": "agran",
+  "resume": "Épave marquée sur le plan, à l'ouest de la cité.",
+  "pos": {
+   "x": 0.172,
+   "y": 0.756
+  }
+ },
+ {
+  "id": "coeur-de-la-corruption",
+  "nom": "Le Cœur de la corruption",
+  "titre": "Épicentre de la corruption du Repos des Épées",
+  "parent": "repos-des-epees",
+  "resume": "Point de la plaine vitrifiée où la corruption est la plus dense.",
+  "pos": {
+   "x": 0.428,
+   "y": 0.706
+  },
+  "type": "ville",
+  "voyage": "x"
  }
 ]

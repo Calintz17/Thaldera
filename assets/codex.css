@@ -200,6 +200,9 @@ a.wcrest:hover .wn { color: var(--gold-hi); }
   position: absolute; inset: 4px; border-radius: 50%; background: radial-gradient(circle at 35% 30%, #fff3c4, var(--gold) 55%, #7a5f1b);
   border: 2px solid #1a1306; box-shadow: 0 0 0 2px rgba(230,200,114,.65), 0 3px 10px rgba(0,0,0,.7);
 }
+.pin.k-voyage .pd { border-radius: 3px; transform: rotate(45deg); background: #8f1d1d; border-color: #1a0606; box-shadow: 0 0 0 2px rgba(240,120,100,.7), 0 3px 10px rgba(0,0,0,.7); }
+.pin.k-voyage:hover .pd { transform: rotate(45deg) scale(1.18); }
+.pin.k-voyage .in::before { border-color: rgba(240,120,100,.75); }
 .pin .in::before { content: ''; position: absolute; inset: -6px; border-radius: 50%; border: 2px solid rgba(230,200,114,.75); animation: ring 2.4s ease-out infinite; }
 @keyframes ring { 0% { transform: scale(.55); opacity: .9; } 100% { transform: scale(1.7); opacity: 0; } }
 .pin .pl {

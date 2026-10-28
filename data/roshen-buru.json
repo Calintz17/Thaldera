@@ -1911,7 +1911,11 @@
     "img": "img/paysages/roshen-buru/palais-uramei.webp",
     "legende": "Le palais Urameï"
    }
-  ]
+  ],
+  "pos": {
+   "x": 0.231,
+   "y": 0.225
+  }
  },
  {
   "id": "pavillon-mariage",
@@ -3206,7 +3210,11 @@
     "img": "img/paysages/roshen-buru/palais-tsuren.webp",
     "legende": "Le palais Tsuren"
    }
-  ]
+  ],
+  "pos": {
+   "x": 0.15,
+   "y": 0.169
+  }
  },
  {
   "id": "ascenseurs",
@@ -3380,7 +3388,11 @@
     "img": "img/paysages/roshen-buru/palais-kovacz.webp",
     "legende": "Le palais Kovacz"
    }
-  ]
+  ],
+  "pos": {
+   "x": 0.158,
+   "y": 0.028
+  }
  },
  {
   "id": "salon-anadori",
@@ -3400,7 +3412,11 @@
     "img": "img/paysages/roshen-buru/salon-anadori.webp",
     "legende": "Le salon Anadori"
    }
-  ]
+  ],
+  "pos": {
+   "x": 0.061,
+   "y": 0.083
+  }
  },
  {
   "id": "caspian-anadori",
@@ -4045,7 +4061,7 @@
   "nom": "Maître Siharen",
   "titre": "Chef du clan Siharen",
   "parent": "clan-siharen",
-  "lieu": "clan-siharen",
+  "lieu": "domaine-siharen",
   "statut": "vivant",
   "resume": "Chef du clan Siharen. Figé sur son estrade, casque ailé et visage lisse comme de la cire, il ne dit pas un mot.",
   "galerie": [
@@ -4998,5 +5014,18 @@
   "img": "img/pnj/le-goryo.webp",
   "attitude": "ennemi",
   "teinte": "#753c19"
+ },
+ {
+  "id": "domaine-siharen",
+  "type": "lieu",
+  "nom": "Le domaine Siharen",
+  "titre": "Ville haute",
+  "parent": "roshen-buru",
+  "resume": "Domaine du clan Siharen.",
+  "pos": {
+   "x": 0.081,
+   "y": 0.233
+  },
+  "carte": "palais"
  }
 ]

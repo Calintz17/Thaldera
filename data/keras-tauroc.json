@@ -1420,6 +1420,13 @@
     "img": "img/paysages/brakka/maison-d-urrak.webp",
     "legende": "La maison d'Urrak"
    }
+  ],
+  "cartes": [
+   {
+    "id": "plan",
+    "img": "img/cartes/brakka.webp",
+    "legende": "Plan de Brakka"
+   }
   ]
  },
  {
@@ -1428,7 +1435,7 @@
   "nom": "Tembo",
   "titre": "Jeune Pachidan du quai",
   "parent": "brakka",
-  "lieu": "brakka",
+  "lieu": "quai-de-tembo",
   "statut": "vivant",
   "resume": "Premier habitant d'Istra rencontré par le groupe.",
   "connu": [
@@ -1458,7 +1465,7 @@
   "nom": "Urrak",
   "titre": "Ancien de Brakka, Loxodon",
   "parent": "brakka",
-  "lieu": "brakka",
+  "lieu": "maison-d-urrak",
   "statut": "vivant",
   "resume": "Le seul à savoir traiter avec des étrangers.",
   "connu": [
@@ -1792,6 +1799,13 @@
     "img": "img/paysages/keras-tauroc/la-balance.webp",
     "legende": "La Balance"
    }
+  ],
+  "cartes": [
+   {
+    "id": "plan",
+    "img": "img/cartes/keras-tauroc.webp",
+    "legende": "Plan de Keras Tauroc"
+   }
   ]
  },
  {
@@ -1815,7 +1829,11 @@
     "img": "img/paysages/keras-tauroc/colisee-3.webp",
     "legende": "Le Colisée"
    }
-  ]
+  ],
+  "pos": {
+   "x": 0.078,
+   "y": 0.815
+  }
  },
  {
   "id": "cathedrale-de-kord",
@@ -1837,7 +1855,11 @@
     "img": "img/paysages/keras-tauroc/cathedrale-de-kord.webp",
     "legende": "La cathédrale de Kord"
    }
-  ]
+  ],
+  "pos": {
+   "x": 0.853,
+   "y": 0.237
+  }
  },
  {
   "id": "angues-dormientes",
@@ -1858,7 +1880,11 @@
     "img": "img/paysages/keras-tauroc/angues-dormientes.webp",
     "legende": "L'auberge des Angues Dormientes"
    }
-  ]
+  ],
+  "pos": {
+   "x": 0.567,
+   "y": 0.585
+  }
  },
  {
   "id": "cornua-fracta",
@@ -1879,7 +1905,11 @@
     "img": "img/paysages/keras-tauroc/cornua-fracta.webp",
     "legende": "Cornua Fracta"
    }
-  ]
+  ],
+  "pos": {
+   "x": 0.358,
+   "y": 0.73
+  }
  },
  {
   "id": "malleus-cadens",
@@ -1900,7 +1930,11 @@
     "img": "img/paysages/keras-tauroc/malleus-cadens.webp",
     "legende": "Le Malleus Cadens"
    }
-  ]
+  ],
+  "pos": {
+   "x": 0.3,
+   "y": 0.544
+  }
  },
  {
   "id": "mandragora-viridis",
@@ -1925,7 +1959,11 @@
     "img": "img/paysages/keras-tauroc/mandragora-viridis.webp",
     "legende": "Mandragora Viridis"
    }
-  ]
+  ],
+  "pos": {
+   "x": 0.219,
+   "y": 0.407
+  }
  },
  {
   "id": "cinis-et-caligo",
@@ -1946,7 +1984,11 @@
     "img": "img/paysages/keras-tauroc/cinis-et-caligo.webp",
     "legende": "Cinis et Caligo"
    }
-  ]
+  ],
+  "pos": {
+   "x": 0.661,
+   "y": 0.415
+  }
  },
  {
   "id": "docks-keras-tauroc",
@@ -1970,7 +2012,11 @@
     "img": "img/paysages/keras-tauroc/docks.webp",
     "legende": "Les docks"
    }
-  ]
+  ],
+  "pos": {
+   "x": 0.2,
+   "y": 0.124
+  }
  },
  {
   "id": "vieille-tannerie",
@@ -1991,7 +2037,11 @@
     "img": "img/paysages/keras-tauroc/planque-hematome.webp",
     "legende": "La vieille tannerie"
    }
-  ]
+  ],
+  "pos": {
+   "x": 0.886,
+   "y": 0.593
+  }
  },
  {
   "id": "villa-ferox",
@@ -2013,7 +2063,11 @@
     "img": "img/paysages/keras-tauroc/villa-ferox-2.webp",
     "legende": "La villa de Ferox, une autre salle"
    }
-  ]
+  ],
+  "pos": {
+   "x": 0.697,
+   "y": 0.179
+  }
  },
  {
   "id": "draval-tauroc",
@@ -2539,7 +2593,7 @@
   ],
   "img": "img/pnj/capella.webp",
   "attitude": "neutre",
-  "lieu": "keras-tauroc",
+  "lieu": "chez-capella",
   "teinte": "#755219"
  },
  {
@@ -5154,7 +5208,11 @@
     "img": "img/paysages/keras-tauroc/atelier-de-chrysodoros.webp",
     "legende": "L'orfèvrerie de Chrysodoros"
    }
-  ]
+  ],
+  "pos": {
+   "x": 0.422,
+   "y": 0.389
+  }
  },
  {
   "id": "mine-de-lapidus",
@@ -5172,7 +5230,11 @@
     "img": "img/paysages/keras-tauroc/mine-de-lapidus.webp",
     "legende": "La mine de Lapidus"
    }
-  ]
+  ],
+  "pos": {
+   "x": 0.039,
+   "y": 0.25
+  }
  },
  {
   "id": "cabinet-de-cordus",
@@ -5187,7 +5249,11 @@
     "img": "img/paysages/keras-tauroc/cabinet-de-cordus.webp",
     "legende": "Le cabinet de Cordus"
    }
-  ]
+  ],
+  "pos": {
+   "x": 0.483,
+   "y": 0.55
+  }
  },
  {
   "id": "hopital-du-colisee",
@@ -5202,7 +5268,11 @@
     "img": "img/paysages/keras-tauroc/hopital.webp",
     "legende": "L'hôpital du Colisée"
    }
-  ]
+  ],
+  "pos": {
+   "x": 0.197,
+   "y": 0.789
+  }
  },
  {
   "id": "moulins-de-keras-tauroc",
@@ -5217,7 +5287,11 @@
     "img": "img/paysages/keras-tauroc/moulins.webp",
     "legende": "Les moulins"
    }
-  ]
+  ],
+  "pos": {
+   "x": 0.9,
+   "y": 0.837
+  }
  },
  {
   "id": "scene-de-crime-ambassadeur",
@@ -5808,7 +5882,11 @@
     "img": "img/paysages/keras-tauroc/palais-tauroc.webp",
     "legende": "L'intérieur du palais Tauroc"
    }
-  ]
+  ],
+  "pos": {
+   "x": 0.528,
+   "y": 0.296
+  }
  },
  {
   "id": "longue-vue",
@@ -6093,7 +6171,14 @@
   "nom": "Corvalis",
   "titre": "Ville du Dominion Sol",
   "parent": "dominion-sol",
-  "resume": "Ville connue par son nom seulement."
+  "resume": "Ville connue par son nom seulement.",
+  "cartes": [
+   {
+    "id": "plan",
+    "img": "img/cartes/corvalis.webp",
+    "legende": "Plan de Corvalis"
+   }
+  ]
  },
  {
   "id": "teravane",
@@ -6112,7 +6197,14 @@
   "nom": "Obaline",
   "titre": "Ville du Dominion Sol",
   "parent": "dominion-sol",
-  "resume": "Ville connue par son nom seulement."
+  "resume": "Ville connue par son nom seulement.",
+  "cartes": [
+   {
+    "id": "plan",
+    "img": "img/cartes/obaline.webp",
+    "legende": "Plan d'Obaline"
+   }
+  ]
  },
  {
   "id": "grisecroix",
@@ -6804,5 +6896,329 @@
   ],
   "attitude": "neutre",
   "teinte": "#753c19"
+ },
+ {
+  "id": "maison-lenach",
+  "type": "lieu",
+  "nom": "La maison Lenach",
+  "titre": "Quartier nord",
+  "parent": "obaline",
+  "resume": "Vaste demeure entourée de jardins, au nord de la ville.",
+  "pos": {
+   "x": 0.653,
+   "y": 0.149
+  }
+ },
+ {
+  "id": "skaparel-apparel",
+  "type": "lieu",
+  "nom": "Skaparel Apparel",
+  "titre": "Centre-ville",
+  "parent": "obaline",
+  "resume": "Boutique de vêtements du centre d'Obaline.",
+  "pos": {
+   "x": 0.472,
+   "y": 0.384
+  }
+ },
+ {
+  "id": "grand-palais-obaline",
+  "type": "lieu",
+  "nom": "Le Grand Palais (prison)",
+  "titre": "Quartier est",
+  "parent": "obaline",
+  "resume": "Le Grand Palais sert de prison, contre la muraille est.",
+  "pos": {
+   "x": 0.889,
+   "y": 0.35
+  }
+ },
+ {
+  "id": "garnison-obaline",
+  "type": "lieu",
+  "nom": "La garnison",
+  "titre": "Quartier est",
+  "parent": "obaline",
+  "resume": "Casernement de la ville, contre la muraille est.",
+  "pos": {
+   "x": 0.856,
+   "y": 0.473
+  }
+ },
+ {
+  "id": "cathedrale-de-gond",
+  "type": "lieu",
+  "nom": "La cathédrale de Gond",
+  "titre": "Centre-ville",
+  "parent": "obaline",
+  "resume": "Cathédrale dédiée à Gond, au cœur de la ville.",
+  "pos": {
+   "x": 0.469,
+   "y": 0.648
+  }
+ },
+ {
+  "id": "emporium-de-milo",
+  "type": "lieu",
+  "nom": "L'Emporium de Milo",
+  "titre": "Quartier sud-est",
+  "parent": "obaline",
+  "resume": "Emporium de Milo, vaste commerce du sud-est.",
+  "pos": {
+   "x": 0.719,
+   "y": 0.777
+  }
+ },
+ {
+  "id": "auberge-du-camelia",
+  "type": "lieu",
+  "nom": "L'auberge du Camélia",
+  "titre": "Quartier sud-ouest",
+  "parent": "obaline",
+  "resume": "Auberge du sud-ouest d'Obaline.",
+  "pos": {
+   "x": 0.25,
+   "y": 0.831
+  }
+ },
+ {
+  "id": "port-marchand-obaline",
+  "type": "lieu",
+  "nom": "Le Port Marchand",
+  "titre": "Quais est",
+  "parent": "obaline",
+  "resume": "Port marchand sur le fleuve, à l'est de la ville.",
+  "pos": {
+   "x": 0.922,
+   "y": 0.823
+  }
+ },
+ {
+  "id": "maison-augustine",
+  "type": "lieu",
+  "nom": "La maison Augustine",
+  "titre": "Quartier nord-ouest",
+  "parent": "corvalis",
+  "resume": "Maison Augustine, dans les ruelles du nord-ouest.",
+  "pos": {
+   "x": 0.186,
+   "y": 0.089
+  }
+ },
+ {
+  "id": "tour-du-pentacle-corvalis",
+  "type": "lieu",
+  "nom": "La Tour du Pentacle",
+  "titre": "Quartier nord-ouest",
+  "parent": "corvalis",
+  "resume": "Tour ruinée au bord du quartier nord-ouest.",
+  "pos": {
+   "x": 0.075,
+   "y": 0.27
+  }
+ },
+ {
+  "id": "omen-corvalis",
+  "type": "lieu",
+  "nom": "Omen",
+  "titre": "Quartier nord-ouest",
+  "parent": "corvalis",
+  "resume": "Quartier ou établissement nommé Omen, au nord-ouest.",
+  "pos": {
+   "x": 0.247,
+   "y": 0.3
+  }
+ },
+ {
+  "id": "cathedrale-de-waukyne",
+  "type": "lieu",
+  "nom": "La cathédrale de Waukyne",
+  "titre": "Cœur de la ville",
+  "parent": "corvalis",
+  "resume": "Cathédrale de Waukyne, entourée de jardins et de reliquaires.",
+  "pos": {
+   "x": 0.5,
+   "y": 0.29
+  }
+ },
+ {
+  "id": "portes-de-corvalis",
+  "type": "lieu",
+  "nom": "Les portes de la ville",
+  "titre": "Entrée est",
+  "parent": "corvalis",
+  "resume": "Portes de la ville, à l'est.",
+  "pos": {
+   "x": 0.955,
+   "y": 0.29
+  }
+ },
+ {
+  "id": "taverne-ganimede",
+  "type": "lieu",
+  "nom": "La taverne Ganimède",
+  "titre": "Quartier sud-ouest",
+  "parent": "corvalis",
+  "resume": "Taverne du sud-ouest de Corvalis.",
+  "pos": {
+   "x": 0.175,
+   "y": 0.67
+  }
+ },
+ {
+  "id": "jardins-suspendus-corvalis",
+  "type": "lieu",
+  "nom": "Les Jardins Suspendus",
+  "titre": "Quartier sud",
+  "parent": "corvalis",
+  "resume": "Jardins suspendus aux pieds du palais ducal.",
+  "pos": {
+   "x": 0.33,
+   "y": 0.78
+  }
+ },
+ {
+  "id": "forge-de-durnan-forgefeuil",
+  "type": "lieu",
+  "nom": "La forge de Durnan Forgefeuil",
+  "titre": "Quartier sud-ouest",
+  "parent": "corvalis",
+  "resume": "Forge de Durnan Forgefeuil.",
+  "pos": {
+   "x": 0.2,
+   "y": 0.8
+  }
+ },
+ {
+  "id": "greenwood-instruments",
+  "type": "lieu",
+  "nom": "Greenwood Instruments",
+  "titre": "Quartier sud-ouest",
+  "parent": "corvalis",
+  "resume": "Boutique d'instruments Greenwood.",
+  "pos": {
+   "x": 0.058,
+   "y": 0.922
+  }
+ },
+ {
+  "id": "palais-ducal-corvalis",
+  "type": "lieu",
+  "nom": "Le palais ducal",
+  "titre": "Cœur de la ville",
+  "parent": "corvalis",
+  "resume": "Palais ducal, au sud de la grande place.",
+  "pos": {
+   "x": 0.511,
+   "y": 0.856
+  }
+ },
+ {
+  "id": "theatre-vaelmore",
+  "type": "lieu",
+  "nom": "Le théâtre Vaelmore",
+  "titre": "Quartier est",
+  "parent": "corvalis",
+  "resume": "Théâtre Vaelmore, à l'est du palais.",
+  "pos": {
+   "x": 0.689,
+   "y": 0.607
+  }
+ },
+ {
+  "id": "ambassade-du-dominion",
+  "type": "lieu",
+  "nom": "L'ambassade du Dominion",
+  "titre": "Quartier des ambassades",
+  "parent": "corvalis",
+  "resume": "Ambassade du Dominion.",
+  "pos": {
+   "x": 0.933,
+   "y": 0.704
+  }
+ },
+ {
+  "id": "ambassade-d-altera",
+  "type": "lieu",
+  "nom": "L'ambassade d'Altéra",
+  "titre": "Quartier des ambassades",
+  "parent": "corvalis",
+  "resume": "Ambassade d'Altéra.",
+  "pos": {
+   "x": 0.744,
+   "y": 0.793
+  }
+ },
+ {
+  "id": "ambassade-de-rivegard",
+  "type": "lieu",
+  "nom": "L'ambassade de Rivegard",
+  "titre": "Quartier des ambassades",
+  "parent": "corvalis",
+  "resume": "Ambassade de Rivegard.",
+  "pos": {
+   "x": 0.744,
+   "y": 0.956
+  }
+ },
+ {
+  "id": "maison-d-urrak",
+  "type": "lieu",
+  "nom": "La maison d'Urrak",
+  "titre": "Village de Brakka",
+  "parent": "brakka",
+  "resume": "La plus grande maison du village, avec une porte de deux mètres de large.",
+  "pos": {
+   "x": 0.315,
+   "y": 0.443
+  }
+ },
+ {
+  "id": "quai-de-tembo",
+  "type": "lieu",
+  "nom": "Le quai de Brakka",
+  "titre": "Côte est",
+  "parent": "brakka",
+  "resume": "Quai de bois où Tembo recoud ses barques.",
+  "pos": {
+   "x": 0.663,
+   "y": 0.254
+  }
+ },
+ {
+  "id": "le-vesper",
+  "type": "lieu",
+  "nom": "Le Vesper",
+  "titre": "Sous-marin",
+  "parent": "brakka",
+  "resume": "Sous-marin signalé au large de la côte de Brakka.",
+  "pos": {
+   "x": 0.911,
+   "y": 0.625
+  }
+ },
+ {
+  "id": "chez-capella",
+  "type": "lieu",
+  "nom": "Chez Capella",
+  "titre": "Quartier nord-ouest",
+  "parent": "keras-tauroc",
+  "resume": "Maison de Capella, près des docks.",
+  "pos": {
+   "x": 0.208,
+   "y": 0.257
+  }
+ },
+ {
+  "id": "caserne-keras-tauroc",
+  "type": "lieu",
+  "nom": "La caserne",
+  "titre": "Quartier sud",
+  "parent": "keras-tauroc",
+  "resume": "Caserne de la ville, au sud.",
+  "pos": {
+   "x": 0.342,
+   "y": 0.874
+  }
  }
 ]

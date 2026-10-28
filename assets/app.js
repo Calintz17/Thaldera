@@ -4,7 +4,7 @@
 (() => {
 'use strict';
 
-const VER = '42';
+const VER = '43';
 const EDIT = new URLSearchParams(location.search).has('edit');
 const $ = (s, r = document) => r.querySelector(s);
 const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
@@ -172,7 +172,7 @@ function sceneOf(e, q, depth = 0) {
       return {
         kind: 'map', src: c.img, cam: FULL, owner: e, tabs: e.cartes, tab: Math.min(tab, e.cartes.length - 1),
         frames: kids(e.id).filter(k => k.poly).map(k => frameOf(k)),
-        pins: kids(e.id).filter(k => k.pos && k.type === 'ville').map(k => ({ id: k.id, ...k.pos, label: k.nom, kind: 'ville' }))
+        pins: kids(e.id).filter(k => k.pos && (k.type === 'ville' || k.type === 'lieu')).map(k => ({ id: k.id, ...k.pos, label: k.nom, kind: k.type === 'lieu' ? 'lieu' : 'ville' })).concat(collectVoyages(e).map(k => ({ id: k.id, ...k.pos, label: k.nom, kind: k.voyage === 'x' ? 'voyage' : 'ville' })))
       };
     }
     case 'region':
@@ -261,6 +261,12 @@ function fallbackLand(e) {
 }
 function frameOf(k, solo) {
   return { id: k.id, poly: k.poly, polyx: k.polyx, color: k.couleur || k.accent || '#d9402f', lab: k.lab, label: k.nom, sub: k.titre, solo: !!solo };
+}
+function collectVoyages(e) {
+  const out = [];
+  const walk = x => kids(x.id).forEach(k => { if (k.voyage && k.pos) out.push(k); walk(k); });
+  walk(e);
+  return out;
 }
 function collectVilles(e) {
   const out = [];
