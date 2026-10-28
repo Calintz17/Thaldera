@@ -4,7 +4,7 @@
 (() => {
 'use strict';
 
-const VER = '53';
+const VER = '54';
 const EDIT = new URLSearchParams(location.search).has('edit');
 const $ = (s, r = document) => r.querySelector(s);
 const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
@@ -21,7 +21,8 @@ const KID_GROUPS = [
 ];
 const ACCENTS = { dominion: '#c44510', altera: '#4a8fd9', consortium: '#c9a84c', istra: '#d96a28', agran: '#1e4f9c' };
 
-let DB = [], BY = {}, KIDS = {};
+let DB = [], BY = {}, KIDS = {}, NPC_AT = {}, REVERSE_REL = {};
+const COLLECTION_CACHE = new Map();
 let RX = null, LOOK = {};
 
 /* ---------- donnees ---------- */
@@ -30,12 +31,24 @@ async function load() {
   const parts = await Promise.all(idx.fichiers.map(f => fetch('data/' + f + '?v=' + VER).then(r => r.json())));
   DB = parts.flat();
   DB.forEach(e => { BY[e.id] = e; });
-  DB.forEach(e => { if (e.parent && BY[e.parent]) (KIDS[e.parent] ||= []).push(e); });
+  DB.forEach(e => {
+    if (e.parent && BY[e.parent]) (KIDS[e.parent] ||= []).push(e);
+    if (e.type === 'pnj') {
+      [...new Set([e.lieu, ...(e.lieux || [])])].filter(Boolean).forEach(id => (NPC_AT[id] ||= []).push(e));
+    }
+    (e.relations || []).forEach(r => {
+      if (BY[r.cible]) (REVERSE_REL[r.cible] ||= []).push({ source: e, relation: r });
+    });
+  });
   Object.values(KIDS).forEach(a => a.sort((x, y) => (x.ordre ?? 99) - (y.ordre ?? 99)));
   buildLinker();
 }
 
-const pnjsAt = pl => (kids(pl.id, 'pnj').concat(DB.filter(x => (x.lieu === pl.id || (x.lieux || []).includes(pl.id)) && x.parent !== pl.id && x.type === 'pnj'))).sort((a, b) => (a.ordre ?? 99) - (b.ordre ?? 99));
+const pnjsAt = pl => {
+  const seen = new Set();
+  return kids(pl.id, 'pnj').concat(NPC_AT[pl.id] || []).filter(p => !seen.has(p.id) && seen.add(p.id))
+    .sort((a, b) => (a.ordre ?? 99) - (b.ordre ?? 99));
+};
 const mainOf = pl => { if (!pl || !(pl.type === 'lieu' || pl.fusion) || pl.nofusion) return null; if (kids(pl.id, 'lieu').length) return null; const l = pnjsAt(pl); return l.length === 1 ? l[0] : null; };
 const mergedPlace = p => { const pl = p && p.type === 'pnj' ? (p.lieu && BY[p.lieu] ? BY[p.lieu] : (p.parent ? BY[p.parent] : null)) : null; return pl && mainOf(pl) ? pl : null; };
 const kids = (id, type) => (KIDS[id] || []).filter(k => !type || k.type === type);
@@ -106,6 +119,15 @@ function imgInfo(src) {
 }
 
 /* ---------- scene (carte persistante) ---------- */
+const SCENE_CACHE = new Map();
+function cachedScene(e, query) {
+  const key = e.id + '?' + (query?.toString() || '');
+  if (SCENE_CACHE.has(key)) return SCENE_CACHE.get(key);
+  const sc = sceneOf(e, query);
+  if (SCENE_CACHE.size >= 120) SCENE_CACHE.delete(SCENE_CACHE.keys().next().value);
+  SCENE_CACHE.set(key, sc);
+  return sc;
+}
 const sceneEl = $('#scene'), stageEl = $('#stage'), panelEl = $('#panel'), worldEl = $('#world');
 const PH_LAND = { img: 'img/placeholder/paysage.svg', legende: '', ph: true };
 const PH_SIL = 'img/placeholder/silhouette.svg';
@@ -116,7 +138,7 @@ const BIGMAP = /^img\/cartes\/(istra|thaldera|thaldera-factions)\.webp$/;
 const mapSrc = u => BIGMAP.test(u) ? u.replace('.webp', '-m.webp') : u;
 function syncTop() { const t = document.querySelector('.top'); if (t) document.documentElement.style.setProperty('--top-h', t.offsetHeight + 'px'); }
 window.addEventListener('resize', syncTop); window.addEventListener('orientationchange', syncTop); window.addEventListener('load', syncTop);
-function measure() { syncTop(); S.W = stageEl.clientWidth; S.H = stageEl.clientHeight; }
+function measure() { S.W = stageEl.clientWidth; S.H = stageEl.clientHeight; }
 function camFor(rect, info, pad = 0.94) {
   const s = Math.min(S.W / (rect.w * info.w), S.H / (rect.h * info.h)) * pad;
   return {
@@ -130,14 +152,22 @@ function setCam(layer, rect, animate, pad) {
   const c = camFor(rect, layer.info, pad);
   layer.rect = rect; layer.pad = pad;
   const el = layer.cam;
-  if (!animate) el.classList.add('notrans');
+  el.classList.toggle('notrans', !animate);
   el.style.setProperty('--s', c.s);
   const fs = camFor(FULL, layer.info, 0.94).s, rel = c.s / fs;
   el.classList.toggle('zl', !layer.zp && rect.w < 0.5);
   el.classList.toggle('zp', !!layer.zp);
   el.dataset.z = rel < 1.25 ? "0" : rel < 1.7 ? "1" : "2";
+  // Download full-resolution map only when the zoom actually requires it.
+  if (!SMALLMAP && BIGMAP.test(layer.src) && rel >= 1.65 && !layer.hiLoading) {
+    layer.hiLoading = true;
+    const high = new Image();
+    high.decoding = 'async';
+    high.onload = () => { const img = layer.cam.querySelector('img'); if (img) img.src = layer.src; };
+    high.src = layer.src;
+  }
   el.style.transform = `translate(${c.tx}px, ${c.ty}px) scale(${c.s})`;
-  if (!animate) { void el.offsetWidth; el.classList.remove('notrans'); }
+  // Keep transitions disabled during gestures; no synchronous layout flush.
 }
 const RAIDO = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3v18M7 4l11 6.5L7 14.5M7 13.5L18 21"/></svg>';
 const FULL = { x: 0, y: 0, w: 1, h: 1 };
@@ -145,7 +175,18 @@ const around = (p, w = 0.14) => ({ x: p.x - w / 2, y: p.y - w / 2, w, h: w });
 
 function ensureChrome() {
   if ($('.fog', stageEl)) return;
-  stageEl.insertAdjacentHTML('beforeend', '<div class="fog"></div><div class="mapcap" id="mapcap"></div><div class="mprev" id="mprev" hidden></div>');
+  stageEl.insertAdjacentHTML('beforeend', '<div class="fog"></div><div class="mapcap" id="mapcap"></div><div class="mprev" id="mprev" hidden></div><div class="maptools" id="maptools" aria-label="Commandes de la carte"><button type="button" data-map-zoom="in" aria-label="Zoom avant" title="Zoom avant">+</button><button type="button" data-map-zoom="out" aria-label="Zoom arrière" title="Zoom arrière">−</button><button type="button" data-map-zoom="reset" aria-label="Recentrer la carte" title="Recentrer la carte">⌖</button></div>');
+  $('#maptools').addEventListener('click', ev => {
+    const action = ev.target.closest('[data-map-zoom]')?.dataset.mapZoom;
+    if (!action || !S.map || S.map.stack || S.gal) return;
+    if (action === 'reset') {
+      const query = new URLSearchParams(location.hash.split('?')[1] || '');
+      return setCam(S.map, S.entry ? (cachedScene(S.entry, query)?.cam || FULL) : FULL, true);
+    }
+    const rect = S.map.rect, factor = action === 'in' ? 0.75 : 1.33;
+    const w = Math.min(1.1, Math.max(0.04, rect.w * factor)), ratio = w / rect.w;
+    setCam(S.map, { x: rect.x + rect.w * (1-ratio)/2, y: rect.y + rect.h * (1-ratio)/2, w, h: rect.h * ratio }, true);
+  });
   if (EDIT) initEdit();
 }
 
@@ -247,7 +288,7 @@ function sceneOf(e, q, depth = 0) {
   }
 }
 function castOf(e) {
-  const ps = kids(e.id, 'pnj').concat(DB.filter(x => (x.lieu === e.id || (x.lieux || []).includes(e.id)) && x.parent !== e.id && x.type === 'pnj'));
+  const ps = pnjsAt(e);
   const seen = new Set();
   return ps.filter(p => !seen.has(p.id) && seen.add(p.id) && ((p.formes && p.formes[0] && p.formes[0].img) || p.img)).sort((a, b) => (a.ordre ?? 99) - (b.ordre ?? 99));
 }
@@ -282,23 +323,34 @@ function fallbackLand(e) {
 function frameOf(k, solo) {
   return { id: k.id, poly: k.poly, polyx: k.polyx, color: k.couleur || k.accent || '#d9402f', lab: k.lab, label: k.nom, sub: k.titre, solo: !!solo };
 }
+function cachedCollection(kind, e, make) {
+  const key = kind + ':' + e.id;
+  if (!COLLECTION_CACHE.has(key)) COLLECTION_CACHE.set(key, make());
+  return COLLECTION_CACHE.get(key);
+}
 function collectVoyages(e) {
-  const out = [];
-  const walk = x => kids(x.id).forEach(k => { if (k.voyage && k.pos) out.push(k); walk(k); });
-  walk(e);
-  return out;
+  return cachedCollection('voyages', e, () => {
+    const out = [];
+    const walk = x => kids(x.id).forEach(k => { if (k.voyage && k.pos) out.push(k); walk(k); });
+    walk(e);
+    return out;
+  });
 }
 function collectVilles(e) {
-  const out = [];
-  const walk = x => kids(x.id).forEach(k => { if (k.type === 'ville' && k.pos) out.push(k); else if (k.type === 'region') walk(k); });
-  walk(e);
-  return out;
+  return cachedCollection('villes', e, () => {
+    const out = [];
+    const walk = x => kids(x.id).forEach(k => { if (k.type === 'ville' && k.pos) out.push(k); else if (k.type === 'region') walk(k); });
+    walk(e);
+    return out;
+  });
 }
 function collectLieux(v) {
-  const out = [];
-  const walk = x => kids(x.id).forEach(k => { if (k.type === 'lieu') { out.push(k); walk(k); } });
-  walk(v);
-  return out;
+  return cachedCollection('lieux', v, () => {
+    const out = [];
+    const walk = x => kids(x.id).forEach(k => { if (k.type === 'lieu') { out.push(k); walk(k); } });
+    walk(v);
+    return out;
+  });
 }
 
 function sceneKey(sc) {
@@ -309,21 +361,14 @@ function sceneKey(sc) {
 function makeLayer(src, info) {
   const layer = document.createElement('div');
   layer.className = 'layer';
-  layer.innerHTML = `<div class="drift"><div class="cam" style="width:${info.w}px;height:${info.h}px"><img src="${mapSrc(src)}" alt="" draggable="false"><div class="ovl"></div></div></div>`;
+  layer.innerHTML = `<div class="drift"><div class="cam" style="width:${info.w}px;height:${info.h}px"><img src="${mapSrc(src)}" alt="" decoding="async" draggable="false"><div class="ovl"></div></div></div>`;
   const o = { el: layer, cam: $('.cam', layer), ovl: $('.ovl', layer), info, src };
-  if (!SMALLMAP && BIGMAP.test(src)) { const im = $('img', layer), hi = new Image(); hi.onload = () => { im.src = src; }; hi.src = src; }
   return o;
 }
 function smoothPath(pts) {
-  // courbe fermee (Catmull-Rom vers Bezier), coins arrondis sans trop deborder
-  const n = pts.length; if (n < 3) return 'M' + pts.map(p => p.join(' ')).join('L');
-  const k = 0.1, f = v => +v.toFixed(5);
-  let d = 'M' + f(pts[0][0]) + ' ' + f(pts[0][1]);
-  for (let i = 0; i < n; i++) {
-    const p0 = pts[(i - 1 + n) % n], p1 = pts[i], p2 = pts[(i + 1) % n], p3 = pts[(i + 2) % n];
-    d += 'C' + f(p1[0] + (p2[0] - p0[0]) * k) + ' ' + f(p1[1] + (p2[1] - p0[1]) * k) + ' ' + f(p2[0] - (p3[0] - p1[0]) * k) + ' ' + f(p2[1] - (p3[1] - p1[1]) * k) + ' ' + f(p2[0]) + ' ' + f(p2[1]);
-  }
-  return d + 'Z';
+  // Atlas: preserve each authored geographical vertex; Bezier interpolation
+  // overshoots coastlines and moves borders away from their coordinates.
+  return pts.length ? 'M' + pts.map(p => p.join(' ')).join('L') + 'Z' : '';
 }
 function centroid(poly) {
   let x = 0, y = 0; poly.forEach(p => { x += p[0]; y += p[1]; }); return [x / poly.length, y / poly.length];
@@ -339,7 +384,7 @@ function renderOverlay(layer, sc) {
     sc.frames.forEach(f => {
       const d = smoothPath(f.poly) + (f.polyx || []).map(smoothPath).join('');
       const g = document.createElementNS(NS, 'g');
-      g.setAttribute('class', 'reg' + (f.solo ? ' solo' : '') + (f.act ? ' act' : '')); g.dataset.id = f.id; g.style.setProperty('--c', f.color);
+      g.setAttribute('class', 'reg' + (f.solo ? ' solo' : '') + (f.act ? ' act' : '')); g.setAttribute('fill-rule', 'evenodd'); g.dataset.id = f.id; g.style.setProperty('--c', f.color);
       ['fill', 'glow', 'glow2', 'line', 'run'].forEach(c => { const p = document.createElementNS(NS, 'path'); p.setAttribute('d', d); p.setAttribute('class', c); if (c === 'run') p.setAttribute('pathLength', '1'); g.appendChild(p); });
       svg.appendChild(g);
     });
@@ -354,8 +399,8 @@ function renderOverlay(layer, sc) {
       ov.appendChild(a);
     });
     const hot = (id, on) => ov.querySelectorAll(`[data-id="${id}"]`).forEach(n => n.classList.toggle('hot', on));
-    svg.addEventListener('mouseover', ev => { const g = ev.target.closest('.reg'); if (g) hot(g.dataset.id, true); });
-    svg.addEventListener('mouseout', ev => { const g = ev.target.closest('.reg'); if (g) hot(g.dataset.id, false); });
+    svg.addEventListener('mouseover', ev => { const g = ev.target.closest('.reg'); if (g && !g.contains(ev.relatedTarget)) hot(g.dataset.id, true); });
+    svg.addEventListener('mouseout', ev => { const g = ev.target.closest('.reg'); if (g && !g.contains(ev.relatedTarget)) hot(g.dataset.id, false); });
     svg.addEventListener('click', ev => { const g = ev.target.closest('.reg'); if (g && !g.classList.contains('solo')) location.hash = '#/' + g.dataset.id; });
     ov.querySelectorAll('.rlab').forEach(a => { a.addEventListener('mouseenter', () => hot(a.dataset.id, true)); a.addEventListener('mouseleave', () => hot(a.dataset.id, false)); });
   }
@@ -404,6 +449,8 @@ function makeStack(sc) {
     `<section class="sheet" data-i="${i}" style="--s:1"><div class="shcap">${esc(sh.carte.legende || '')}</div><div class="shw"><img src="${mapSrc(sh.carte.img)}" alt="" draggable="false"><div class="ovl"></div></div></section>`).join('') + '</div>';
   const layer = { el, stack: true, src: sc.src };
   const stk = $('.stk', el);
+  const listenerScope = new AbortController();
+  layer.cleanup = () => listenerScope.abort();
   /* deplacement haut/bas au clic : glisser a la souris + fleches */
   let dg = null, dmoved = false;
   stk.addEventListener('pointerdown', ev => { if (ev.button !== 0 || ev.pointerType === 'touch') return; dg = { y: ev.clientY, t: stk.scrollTop }; dmoved = false; });
@@ -413,8 +460,8 @@ function makeStack(sc) {
     if (!dmoved && Math.abs(dy) < 6) return;
     dmoved = true; stk.classList.add('grab'); stk.style.scrollBehavior = 'auto';
     stk.scrollTop = dg.t - dy;
-  });
-  window.addEventListener('pointerup', () => { if (!dg) return; dg = null; stk.classList.remove('grab'); stk.style.scrollBehavior = ''; if (dmoved) setTimeout(() => { dmoved = false; }, 0); });
+  }, { signal: listenerScope.signal });
+  window.addEventListener('pointerup', () => { if (!dg) return; dg = null; stk.classList.remove('grab'); stk.style.scrollBehavior = ''; if (dmoved) setTimeout(() => { dmoved = false; }, 0); }, { signal: listenerScope.signal });
   stk.addEventListener('click', ev => { if (dmoved) { ev.preventDefault(); ev.stopPropagation(); } }, true);
   if (sc.sheets.length > 1) {
     const nav = document.createElement('div');
@@ -433,7 +480,7 @@ function makeStack(sc) {
   }, { passive: true });
   return layer;
 }
-async function applyStack(sc, old) {
+async function applyStack(sc, old, token) {
   if (old && old.stack && old.src === sc.src) { fillStack(old, sc); scrollSheet(sc.focusSheet, sc.focusPos, true); return; }
   const layer = makeStack(sc);
   stageEl.insertBefore(layer.el, $('.fog', stageEl));
@@ -442,19 +489,22 @@ async function applyStack(sc, old) {
   void layer.el.offsetWidth;
   layer.el.classList.add('on');
   const imgs = [...layer.el.querySelectorAll('.shw img')];
-  await Promise.all(imgs.map(im => im.complete ? 0 : new Promise(r => { im.onload = im.onerror = r; })));
+  const through = imgs.slice(0, Math.max(0, sc.focusSheet) + 1);
+  await Promise.all(through.map(img => img.complete ? null : new Promise(resolve => { img.onload = img.onerror = resolve; })));
+  if (token !== TOKEN) { layer.cleanup?.(); layer.el.remove(); if (S.map === layer) S.map = null; return false; }
   scrollSheet(sc.focusSheet, sc.focusPos, false);
-  if (old) { setTimeout(() => old.el.classList.remove('on'), 120); setTimeout(() => old.el.remove(), 1200); }
+  if (old) { setTimeout(() => old.el.classList.remove('on'), 120); setTimeout(() => { old.cleanup?.(); old.el.remove(); }, 1200); }
 }
 
-async function applyMap(sc, dir, focus) {
+async function applyMap(sc, dir, focus, token) {
   ensureChrome();
-  if (sc.kind === 'stack') return applyStack(sc, S.map);
+  if (sc.kind === 'stack') return applyStack(sc, S.map, token);
   if (S.map && S.map.stack) {
     const o = S.map; S.map = null;
-    setTimeout(() => o.el.classList.remove('on'), 60); setTimeout(() => o.el.remove(), 1100);
+    setTimeout(() => o.el.classList.remove('on'), 60); setTimeout(() => { o.cleanup?.(); o.el.remove(); }, 1100);
   }
   const info = await imgInfo(sc.src);
+  if (token !== TOKEN) return false;
   const old = S.map;
   if (old && old.src === sc.src) {
     old.info = info; old.zp = !!sc.zp;
@@ -498,13 +548,13 @@ function showGallery(imgs, title, ent) {
   clearGal(true);
   const g = document.createElement('div');
   g.className = 'gal';
-  g.innerHTML = imgs.map((im, i) => `<div class="sl${i === 0 ? ' act' : ''}"${i < 2 ? ` style="--bg:url('${new URL(im.img, location.href).href}')"` : ''}><img ${i < 2 ? 'src' : 'data-src'}="${im.img}" alt="${esc(im.legende || title || '')}"></div>`).join('') +
-    `<div class="gcap"><span class="gt"></span>${imgs.length > 1 ? '<div class="gdots">' + imgs.map((_, i) => `<i data-i="${i}"${i === 0 ? ' class="on"' : ''}></i>`).join('') + '</div><div class="gnav"><button data-d="-1" aria-label="Précédente">‹</button><button data-d="1" aria-label="Suivante">›</button></div>' : ''}</div>`;
+  g.innerHTML = imgs.map((im, i) => `<div class="sl${i === 0 ? ' act' : ''}"><img ${i < 2 ? 'src' : 'data-src'}="${esc(im.img)}" decoding="async" alt="${esc(im.legende || title || '')}"></div>`).join('') +
+    `<div class="gcap"><span class="gt"></span>${imgs.length > 1 ? '<div class="gdots">' + imgs.map((_, i) => `<button type="button" data-i="${i}" aria-label="Illustration ${i + 1} sur ${imgs.length}"${i === 0 ? ' class="on"' : ''}></button>`).join('') + '</div><div class="gnav"><button data-d="-1" aria-label="Précédente">‹</button><button data-d="1" aria-label="Suivante">›</button></div>' : ''}</div>`;
   stageEl.insertBefore(g, $('.fog', stageEl));
   S.gal = g;
   const wake = n => [n, n + 1].forEach(k => {
     const sl = g.querySelectorAll('.sl')[k % imgs.length], im = sl && sl.querySelector('img');
-    if (im && im.dataset.src) { sl.style.setProperty('--bg', `url('${new URL(im.dataset.src, location.href).href}')`); im.src = im.dataset.src; delete im.dataset.src; }
+    if (im && im.dataset.src) { im.src = im.dataset.src; delete im.dataset.src; }
   });
   g.querySelectorAll('.sl img').forEach(im => {
     const fit = () => { if (!im.naturalWidth) return; const r = im.naturalWidth / im.naturalHeight; im.style.maxWidth = 'none'; im.style.width = Math.min(stageEl.clientWidth * 0.92, stageEl.clientHeight * 0.92 * r, im.naturalWidth * 2.04) + 'px'; };
@@ -515,7 +565,7 @@ function showGallery(imgs, title, ent) {
     cur = (n + imgs.length) % imgs.length;
     wake(cur);
     g.querySelectorAll('.sl').forEach((s, i) => { s.classList.toggle('act', i === cur); });
-    g.querySelectorAll('.gdots i').forEach((d, i) => d.classList.toggle('on', i === cur));
+    g.querySelectorAll('.gdots button').forEach((d, i) => d.classList.toggle('on', i === cur));
     const c = imgs[cur].cut, who = imgs[cur].who || ent;
     if (ent && ent.etapes && c) {
       $('.gt', g).textContent = `Étape ${cur + 1} sur ${imgs.length} : ${c.label}`;
@@ -526,12 +576,12 @@ function showGallery(imgs, title, ent) {
   };
   go(0);
   g.addEventListener('click', ev => {
-    const b = ev.target.closest('button[data-d]'); const d = ev.target.closest('i[data-i]');
+    const b = ev.target.closest('button[data-d]'); const d = ev.target.closest('button[data-i]');
     if (b) go(cur + parseInt(b.dataset.d, 10));
     if (d) go(parseInt(d.dataset.i, 10));
   });
   const forms = imgs.some(i => i.cut);
-  if (imgs.length > 1 && !forms) galTimer = setInterval(() => go(cur + 1), 8000);
+  // Player-controlled gallery: no automatic slideshow during reading.
   if (forms) {
     let lock = 0, ty = null;
     g.addEventListener('wheel', ev => {
@@ -588,6 +638,8 @@ function setCutout(e, form) {
 function renderCap(sc, entry) {
   const cap = $('#mapcap');
   if (!cap) return;
+  const maptools = $('#maptools');
+  if (maptools) maptools.hidden = !sc || sc.kind === 'stack' || !!sc.gallery;
   let h = '';
   if (sc && sc.kind === 'stack') {
     h += sc.tabs.map((t, i) => `<a class="tab${i === sc.tab ? ' on' : ''}" data-sheet="${i}" href="#/${sc.owner.id}">${esc(t.legende || 'Carte ' + (i + 1))}</a>`).join('');
@@ -603,7 +655,7 @@ function renderCap(sc, entry) {
 }
 
 async function applyScene(e, q, token) {
-  const sc = sceneOf(e, q);
+  const sc = cachedScene(e, q);
   ensureChrome();
   const prevEntry = S.entry;
   S.entry = e;
@@ -618,9 +670,9 @@ async function applyScene(e, q, token) {
     if (isAnc(prevEntry, e)) { dir = 'in'; focus = focusIn(e, S.map.src); }
     else if (isAnc(e, prevEntry)) { dir = 'out'; focus = focusIn(prevEntry, sc.src); }
   }
+  const applied = await applyMap(sc, dir, focus, token);
+  if (token !== TOKEN || applied === false) return;
   S.key = key;
-  await applyMap(sc, dir, focus);
-  if (token !== TOKEN) return;
   if (sc.gallery) {
     const sameGal = S.gal && S.galKey === JSON.stringify(sc.gallery.map(g => g.img + (g.cut ? g.cut.img : '')));
     if (!sameGal) { showGallery(sc.gallery, e.nom, sc.cutout); S.galKey = JSON.stringify(sc.gallery.map(g => g.img + (g.cut ? g.cut.img : ''))); }
@@ -645,12 +697,13 @@ window.addEventListener('resize', () => {
 function buildWorld() {
   const cont = DB.filter(e => e.type === 'continent').sort((a, b) => (a.ordre ?? 0) - (b.ordre ?? 0));
   worldEl.innerHTML = `<div class="whead"><h1>Thaldera <span>Codex</span></h1><div class="wrule"><i></i></div></div><div class="wgrid">` + cont.map(c => {
-    const inner = `<span class="wcr"><img src="${c.blason || 'img/blasons/vide.svg'}" alt=""></span><span class="wn">${esc(c.nom)}</span><span class="ws">${esc(c.sousTitre || '')}</span>`;
+    const inner = `<span class="wcr"><img loading="lazy" decoding="async" src="${esc(c.blason || 'img/blasons/vide.svg')}" alt=""></span><span class="wn">${esc(c.nom)}</span><span class="ws">${esc(c.sousTitre || '')}</span>`;
     return c.locked
       ? `<div class="wcrest locked" id="world-${c.id}" aria-disabled="true">${inner}</div>`
       : `<a class="wcrest" id="world-${c.id}" href="#/${c.id}" data-id="${c.id}"${c.accent ? ` style="--accent:${c.accent}"` : ''}>${inner}</a>`;
   }).join('') + `</div><div class="wbar">${worldBar()}</div>`;
   worldEl.querySelectorAll('a.wcrest').forEach(a => a.addEventListener('click', ev => {
+    if (ev.metaKey || ev.ctrlKey || ev.shiftKey || ev.altKey || ev.button !== 0) return;
     ev.preventDefault();
     worldEl.classList.add('leaving'); a.classList.add('chosen');
     setTimeout(() => { location.hash = '#/' + a.dataset.id; }, 480);
@@ -689,7 +742,9 @@ function network(e) {
   const rows = [], seen = new Set();
   const add = (id, type, ton, rev) => { if (BY[id] && id !== e.id && !seen.has(id)) { seen.add(id); rows.push({ id, type, ton, rev }); } };
   (e.relations || []).forEach(r => add(r.cible, r.type, r.ton));
-  DB.forEach(o => (o.relations || []).forEach(r => { if (r.cible === e.id && o.type !== 'sujet') add(o.id, r.inverse || r.type, r.ton); }));
+  (REVERSE_REL[e.id] || []).forEach(({ source: o, relation: r }) => {
+    if (o.type !== 'sujet') add(o.id, r.inverse || r.type, r.ton, true);
+  });
   const grp = (label, ton) => {
     const l = rows.filter(r => ton === 'neutre' ? (r.ton !== 'positif' && r.ton !== 'negatif') : r.ton === ton);
     return l.length ? `<div class="net ${ton}"><span class="nl">${label}</span><div class="rels">${l.map(r => `<a class="chip ${ton === 'positif' ? 'pos' : ton === 'negatif' ? 'neg' : ''}" href="#/${r.id}">${r.rev ? `${esc(BY[r.id].nom)} <small>(${esc(r.type.charAt(0).toLowerCase() + r.type.slice(1))})</small>` : `<b>${esc(r.type)}</b>${esc(BY[r.id].nom)}`}</a>`).join('')}</div></div>` : '';
@@ -739,7 +794,7 @@ function bubble(p, attrs = '') {
 }
 function kidCard(k) {
   const img = k.type === 'lieu' && k.galerie && k.galerie[0] ? k.galerie[0].img : (k.type !== 'pnj' && k.img ? k.img : '');
-  return `<a class="kcard${img ? ' has-img' : ''}" href="#/${k.id}"${k.accent ? ` style="--accent:${k.accent}"` : ''}>${img ? `<span class="kimg" style="background-image:url('${img}')"></span>` : ''}${k.blason ? `<img class="kc" src="${k.blason}" alt="">` : ''}<span class="kn">${esc(k.nom)}</span><span class="kt">${esc(k.titre || '')}</span></a>`;
+  return `<a class="kcard${img ? ' has-img' : ''}" href="#/${k.id}"${k.accent ? ` style="--accent:${k.accent}"` : ''}>${img ? `<span class="kimg"><img loading="lazy" decoding="async" src="${esc(img)}" alt=""></span>` : ''}${k.blason ? `<img class="kc" src="${k.blason}" alt="">` : ''}<span class="kn">${esc(k.nom)}</span><span class="kt">${esc(k.titre || '')}</span></a>`;
 }
 function descPNJ(e) {
   const out = [];
@@ -753,7 +808,10 @@ function descPNJ(e) {
 function relations(e) {
   const rows = [];
   (e.relations || []).forEach(r => { if (BY[r.cible]) rows.push({ id: r.cible, type: r.type, ton: r.ton, note: r.note }); });
-  DB.forEach(o => (o.relations || []).forEach(r => { if (r.cible === e.id && o.id !== e.id && !rows.some(x => x.id === o.id)) rows.push({ id: o.id, type: r.inverse || r.type, ton: r.ton, note: r.note, rev: true }); }));
+  (REVERSE_REL[e.id] || []).forEach(({ source: o, relation: r }) => {
+    if (o.id !== e.id && !rows.some(x => x.id === o.id))
+      rows.push({ id: o.id, type: r.inverse || r.type, ton: r.ton, note: r.note, rev: true });
+  });
   if (!rows.length) return '';
   const cls = t => t === 'positif' ? ' pos' : t === 'negatif' ? ' neg' : '';
   return '<div class="rels">' + rows.map(r => `<a class="chip${cls(r.ton)}" href="#/${r.id}" title="${esc(r.note || '')}"><b>${esc(r.type)}</b>${esc(BY[r.id].nom)}</a>`).join('') + '</div>';
@@ -762,7 +820,11 @@ function relations(e) {
 function relBullets(e) {
   const rows = [], seen = new Set();
   (e.relations || []).forEach(r => { if (BY[r.cible] && !seen.has(r.cible)) { seen.add(r.cible); rows.push([r.type, r.cible, r.note]); } });
-  DB.forEach(o => (o.relations || []).forEach(r => { if (r.cible === e.id && o.id !== e.id && !seen.has(o.id) && o.type !== 'sujet') { seen.add(o.id); rows.push([r.inverse || r.type, o.id, r.note]); } }));
+  (REVERSE_REL[e.id] || []).forEach(({ source: o, relation: r }) => {
+    if (o.id !== e.id && !seen.has(o.id) && o.type !== 'sujet') {
+      seen.add(o.id); rows.push([r.inverse || r.type, o.id, r.note]);
+    }
+  });
   return rows.map(([t, id, n]) => `${t ? t.charAt(0).toUpperCase() + t.slice(1) + ' : ' : ''}${BY[id].nom}${n ? ', ' + n : ''}`);
 }
 function savoirItems(e) {
@@ -787,13 +849,13 @@ function detailBlock(e) {
 function renderPanel(e, q) {
   const acc = e.accent ? ` style="--accent:${e.accent}"` : '';
   let h = `<div class="pin-pad"${acc}>` + crumbs(e);
-  const sc = sceneOf(e, q);
+  const sc = cachedScene(e, q);
   const asGallery = sc && sc.gallery;
   // chapeau (paysage 4:3) quand la scene est une carte
   if (e.galerie && e.galerie.length && !asGallery && !e.blason && ['region', 'faction', 'continent'].includes(e.type)) {
-    h += `<div class="hero"><img src="${e.galerie[0].img}" alt=""></div>`;
+    h += `<div class="hero"><img loading="lazy" decoding="async" src="${esc(e.galerie[0].img)}" alt=""></div>`;
   }
-  if (e.type !== 'pnj' && e.type !== 'pj' && e.blason) h += `<div class="crest"><img src="${e.blason}" alt=""></div>`;
+  if (e.type !== 'pnj' && e.type !== 'pj' && e.blason) h += `<div class="crest"><img loading="lazy" decoding="async" src="${esc(e.blason)}" alt=""></div>`;
   h += `<header class="head"><div class="tp">${esc(e.typeLabel || TYPES[e.type] || '')}</div><h1>${esc(e.nom)}</h1>${e.titre ? `<div class="ti">${L(e.titre, e.id)}</div>` : ''}${pills(e)}<div class="rule"><i></i></div></header>`;
   const mp0 = mergedPlace(e), ru0 = e.rune || (mp0 && mp0.rune);
   if (ru0) h += `<div class="runeline r-${esc(ru0.etat)}"><span class="rb">${RAIDO}</span><span><b>Rune Raido${ru0.etat === 'detruite' ? ' (détruite)' : ru0.etat === 'tbc' ? ' (à confirmer)' : ''}</b>${esc(ru0.note || '')}</span></div>`;
@@ -810,7 +872,7 @@ function renderPanel(e, q) {
 
   // lieu : personnages en bulles
   const isPlace = e.type === 'lieu';
-  const here = isPlace ? kids(e.id, 'pnj').concat(DB.filter(x => (x.lieu === e.id || (x.lieux || []).includes(e.id)) && x.parent !== e.id && (x.type === 'pnj'))) : [];
+  const here = isPlace ? pnjsAt(e) : [];
   if (isPlace && here.length) {
     h += `<section class="sec"><h3>Personnages présents</h3><div class="bubs" id="npcs">${here.map(p => bubble(p, 'data-npc="1"')).join('')}</div><div id="npcbox"></div></section>`;
   }
@@ -848,7 +910,7 @@ function renderPanel(e, q) {
   panelEl.scrollTop = 0;
   panelEl.querySelectorAll('.etape').forEach(li => li.addEventListener('click', ev => {
     if (ev.target.closest('a')) return;
-    const d = S.gal && S.gal.querySelectorAll('.gdots i')[+li.dataset.i];
+    const d = S.gal && S.gal.querySelectorAll('.gdots button')[+li.dataset.i];
     if (d) d.click();
   }));
 
@@ -887,6 +949,76 @@ async function route() {
   if (S.cut === e.id) { const c = panelEl.querySelector('.cut'); if (c) { const sp = c.nextElementSibling; c.remove(); if (sp && sp.classList.contains('sepline')) sp.remove(); } }
 }
 
+
+/* ---------- explorateur du codex ---------- */
+function initExplorer() {
+  const btn = $('#ebtn'), box = $('#elog');
+  if (!btn || !box) return;
+  const continents = DB.filter(e => e.type === 'continent' && !e.locked);
+  let continent = '', region = '', type = '', term = '';
+  const regions = DB.filter(e => (e.type === 'region' || e.type === 'faction') && !e.locked);
+  const types = [['', 'Tout'], ['region', 'Régions'], ['faction', 'Factions'],
+    ['ville', 'Villes'], ['lieu', 'Lieux'], ['pnj', 'PNJ'], ['pj', 'Joueurs']];
+  const render = () => {
+    const visible = DB.filter(e => {
+      if (e.locked) return false;
+      if (continent && continentOf(e)?.id !== continent) return false;
+      if (region && !chain(e).some(p => p.id === region)) return false;
+      if (type && e.type !== type) return false;
+      return !term || norm([e.nom, ...(e.alias || []), e.titre].filter(Boolean).join(' ')).includes(term);
+    }).sort((a, b) => {
+      const ca = chain(a).find(e => e.type === 'ville')?.nom || '';
+      const cb = chain(b).find(e => e.type === 'ville')?.nom || '';
+      return ca.localeCompare(cb, 'fr') || a.nom.localeCompare(b.nom, 'fr');
+    });
+    const items = visible.slice(0, 80).map(e => {
+      const parent = e.parent && BY[e.parent];
+      return `<a class="eitem" href="#/${encodeURIComponent(e.id)}"><span class="ekind">${esc(TYPES[e.type] || '')}</span><span class="ename">${esc(e.nom)}</span><span class="eparent">${esc(parent?.nom || '')}</span></a>`;
+    }).join('');
+    const matchingRegions = regions.filter(e => !continent || continentOf(e)?.id === continent);
+    if (region && !matchingRegions.some(e => e.id === region)) region = '';
+    $('#eregion', box).innerHTML = '<option value="">Toutes les régions</option>' +
+      matchingRegions.map(e => `<option value="${esc(e.id)}">${esc(e.nom)}</option>`).join('');
+    $('#eregion', box).value = region;
+    $('#efilters', box).innerHTML = types.map(([id, label]) =>
+      `<button type="button" class="efilter${id === type ? ' active' : ''}" data-type="${id}" aria-pressed="${id === type}">${label}</button>`).join('');
+    $('#eresults', box).innerHTML = items || '<p class="eempty">Aucune fiche trouvée.</p>';
+    $('#ecount', box).textContent = visible.length + ' fiches' + (visible.length > 80 ? ' (80 affichées, affinez votre recherche)' : '');
+  };
+  const toggle = open => {
+    box.hidden = !open;
+    btn.setAttribute('aria-expanded', String(open));
+    if (open) {
+      if (!box.firstElementChild) {
+        box.innerHTML = `<div class="ewin" role="document">
+          <header class="ehead"><div><span class="eeyebrow">Atlas & personnages</span><h2>Explorer le codex</h2></div><button class="eclose" type="button" aria-label="Fermer l’explorateur">×</button></header>
+          <div class="etools"><label for="econtinent">Continent</label><select id="econtinent"><option value="">Tous les continents</option>${continents.map(e => `<option value="${esc(e.id)}">${esc(e.nom)}</option>`).join('')}</select>
+          <label for="eregion">Région ou territoire</label><select id="eregion"><option value="">Toutes les régions</option></select>
+          <label for="equery">Rechercher une fiche</label><input id="equery" type="search" placeholder="Ville, lieu, personnage..." autocomplete="off"></div>
+          <div id="efilters" class="efilters" aria-label="Type de fiche"></div><p id="ecount" class="ecount" aria-live="polite"></p>
+          <div id="eresults" class="eresults"></div></div>`;
+      }
+      const current = S.entry && continentOf(S.entry);
+      if (current && !continent) continent = current.id;
+      $('#econtinent', box).value = continent;
+      render();
+      $('#equery', box).focus();
+    }
+  };
+  btn.addEventListener('click', () => toggle(box.hidden));
+  box.addEventListener('click', ev => {
+    if (ev.target === box || ev.target.closest('.eclose') || ev.target.closest('.eitem')) toggle(false);
+    const filter = ev.target.closest('[data-type]');
+    if (filter) { type = filter.dataset.type; render(); }
+  });
+  box.addEventListener('change', ev => {
+    if (ev.target.id === 'econtinent') { continent = ev.target.value; region = ''; render(); }
+    if (ev.target.id === 'eregion') { region = ev.target.value; render(); }
+  });
+  box.addEventListener('input', ev => { if (ev.target.id === 'equery') { term = norm(ev.target.value.trim()); render(); } });
+  document.addEventListener('keydown', ev => { if (ev.key === 'Escape' && !box.hidden) toggle(false); });
+}
+
 /* ---------- recherche ---------- */
 function initSearch() {
   const inp = $('#q'), box = $('#results');
@@ -901,6 +1033,11 @@ function initSearch() {
     box.innerHTML = hits.length ? hits.map(h => `<a href="#/${h.e.id}"><span class="rt">${esc(TYPES[h.e.type] || '')}</span><span class="rn">${esc(h.e.nom)}</span><span class="rp">${esc(h.e.parent && BY[h.e.parent] ? BY[h.e.parent].nom : '')}</span></a>`).join('') : '<div class="none">Aucun résultat</div>';
     box.hidden = false; sel = -1;
   };
+  document.addEventListener('keydown', ev => {
+    if (ev.key === '/' && !/^(INPUT|TEXTAREA|SELECT)$/.test(document.activeElement?.tagName || '') && !ev.ctrlKey && !ev.metaKey && $('#elog')?.hidden !== false) {
+      ev.preventDefault(); inp.focus();
+    }
+  });
   inp.addEventListener('input', run);
   inp.addEventListener('focus', run);
   inp.addEventListener('keydown', ev => {
@@ -986,9 +1123,11 @@ function initRunes() {
     console.error(err);
     return;
   }
+  syncTop();
   measure();
   buildWorld();
   initSearch();
+  initExplorer();
   initQuests();
   initRunes();
   window.addEventListener('hashchange', route);

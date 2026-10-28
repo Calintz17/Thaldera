@@ -6,8 +6,9 @@
   <title>Thaldera Codex</title>
   <meta name="description" content="Le codex des joueurs de la campagne Thaldera : cartes, lieux, personnages et liens.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Cinzel+Decorative:wght@700;900&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/codex.css?v=53">
+  <link rel="stylesheet" href="assets/codex.css?v=54">
 </head>
 <body>
 <header class="top">
@@ -16,11 +17,12 @@
     <span class="brand-codex">Codex</span>
   </a>
   <div class="search">
-    <input id="q" type="search" placeholder="Rechercher un lieu, un personnage, un clan" autocomplete="off" spellcheck="false">
+    <input id="q" type="search" aria-label="Rechercher dans le codex" placeholder="Rechercher un lieu, un personnage, un clan" autocomplete="off" spellcheck="false">
     <div id="results" role="listbox" hidden></div>
   </div>
   <nav class="nav">
     <a href="#/" data-nav="monde">Monde</a>
+    <button type="button" id="ebtn" class="qbtn" aria-haspopup="dialog" aria-expanded="false">Explorer</button>
     <a href="factions/">Factions</a>
     <button type="button" id="rbtn" class="qbtn" aria-haspopup="dialog" aria-expanded="false">Runes de Philippa</button>
     <button type="button" id="qbtn" class="qbtn" aria-haspopup="dialog" aria-expanded="false">Quêtes</button>
@@ -33,10 +35,11 @@
   <aside id="panel" class="panel"></aside>
 </main>
 
+<div id="elog" class="elog" role="dialog" aria-modal="true" aria-label="Explorer le codex" hidden></div>
 <div id="qlog" class="qlog" role="dialog" aria-label="Journal de quêtes" hidden></div>
 <div id="rlog" class="qlog" role="dialog" aria-label="Runes de Philippa" hidden></div>
 
 <noscript><p style="padding:2rem">Le codex demande JavaScript.</p></noscript>
-<script src="assets/app.js?v=53"></script>
+<script src="assets/app.js?v=54"></script>
 </body>
 </html>
