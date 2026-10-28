@@ -29,10 +29,6 @@
    "texte": "Kester Tauroc, « l'héritier », a juré de prendre sa revanche contre Olyssane, nous le recroiserons sûrement."
   },
   {
-   "titre": "Les zombies-araignées",
-   "texte": "Un étrange « zombie-araignée » nous a attaqués à Keras Tauroc. Et nous avons découvert des traces semblables à Roshen Buru. Balamor semble se cacher derrière cette discrète invasion."
-  },
-  {
    "titre": "Absalom aux Enfers",
    "texte": "Absalom nous a échappé, après avoir compris que Vassago l'avait trahie. Nous pourrions en faire une alliée de poids, encore faut-il la retrouver… aux Enfers."
   },
@@ -73,10 +69,6 @@
    "texte": "La Protectrice a fait un pacte avec Levistus pour protéger Roshen Buru. Elle a tenté de tuer Eamonn et mes compagnons. Elle doit être mise hors d'état de nuire."
   },
   {
-   "titre": "Le ravisseur de Roshen Buru",
-   "texte": "J'ai retrouvé l'auteur des disparitions de Roshen Buru et je l'ai mis hors d'état de nuire. Que faire de cette information ?"
-  },
-  {
    "titre": "Thibwick en danger",
    "texte": "Thibwick Rumple, le nain de There'Duun, est peut-être en danger : la Protectrice veut le capturer."
   },
@@ -94,15 +86,11 @@
   },
   {
    "titre": "La Mère de la Toile",
-   "texte": "Tobiya, corrompu dans les égouts de Roshen Buru, servait la Mère de la Toile, qui veut des araignées dans toutes les villes d'Istra pour lever une armée. La piste mène à Balamor."
-  },
-  {
-   "titre": "Les clans et la Gardienne",
-   "texte": "La Gardienne protège les clans quoi qu'ils fassent. Nous voulons l'attirer dans un endroit isolé, la faire sauter et placer quelqu'un d'autre à sa place."
+   "texte": "Un étrange « zombie-araignée » nous a attaqués à Keras Tauroc, et Tobiya, corrompu dans les égouts de Roshen Buru, servait la Mère de la Toile. Elle veut des araignées dans toutes les villes d'Istra pour lever une armée. La piste mène à Balamor."
   },
   {
    "titre": "Le secret de Sycomore",
-   "texte": "Tout Havre Noir croit que Sycomore Brise-Pavois est un homme. Elle est en réalité une jeune femme d'environ seize ans, balafrée. Son armure a une histoire. Est-ce l'armure qui lui confère son pouvoir ?"
+   "texte": "Tout Havre Noir croit que Sycomore Brise-Pavois est un homme. Elle est en réalité une jeune femme d'environ seize ans, balafrée. Qu'est-ce qui lui confère son immense pouvoir ?"
   }
  ]
 }
