@@ -61,7 +61,7 @@ img { display: block; }
   color: var(--gold); opacity: .85; padding-left: .1em;
 }
 .brand-codex {
-  font-family: 'Cinzel', serif; font-weight: 700; font-size: 32px; letter-spacing: .2em; text-transform: uppercase;
+  font-family: 'Cinzel Decorative', 'Cinzel', serif; font-weight: 900; font-size: 32px; letter-spacing: .14em; text-transform: uppercase;
   background: linear-gradient(180deg, #f4e3a6 0%, #c9a84c 55%, #8f7430 100%);
   -webkit-background-clip: text; background-clip: text; color: transparent;
 }
@@ -387,6 +387,7 @@ a.wcrest:hover .wn { color: var(--gold-hi); }
 .chip { display: inline-flex; align-items: baseline; gap: 7px; padding: 5px 12px; border-radius: 99px; border: 1px solid rgba(255,255,255,.14); background: rgba(255,255,255,.03); font-size: 15.5px; transition: border-color .2s, background .2s; }
 .chip b { font-family: 'Cinzel', serif; font-weight: 400; font-size: 9.5px; letter-spacing: .15em; text-transform: uppercase; color: var(--muted); }
 .chip:hover { border-color: var(--gold); background: rgba(201,168,76,.08); }
+.chip small { font-size: 13px; color: var(--muted); }
 .chip.pos { border-color: rgba(95,168,106,.5); }
 .chip.neg { border-color: rgba(192,80,77,.55); }
 .empty { color: var(--muted); font-style: italic; text-align: center; padding: 40px 0; }

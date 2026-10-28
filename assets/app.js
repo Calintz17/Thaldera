@@ -4,7 +4,7 @@
 (() => {
 'use strict';
 
-const VER = '51';
+const VER = '52';
 const EDIT = new URLSearchParams(location.search).has('edit');
 const $ = (s, r = document) => r.querySelector(s);
 const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
@@ -173,7 +173,7 @@ function sceneOf(e, q, depth = 0) {
     case 'continent': {
       const c = e.cartes[Math.min(tab, e.cartes.length - 1)];
       return {
-        kind: 'map', src: c.img, cam: FULL, owner: e, tabs: e.cartes, tab: Math.min(tab, e.cartes.length - 1), zp: true,
+        kind: 'map', src: c.img, cam: FULL, owner: e, tabs: e.cartes, tab: Math.min(tab, e.cartes.length - 1), zp: true, ...(e.galerie && e.galerie.length && /placeholder/.test(c.img) ? { gallery: e.galerie } : {}),
         frames: kids(e.id).filter(k => k.poly && (!ownerMap(k) || ownerMap(k).carte === c)).map(k => frameOf(k)),
         pins: collectLieux(e).filter(k => k.pos).map(k => ({ id: k.id, ...k.pos, label: k.nom, kind: 'lieu' })).concat(collectVilles(e).map(k => ({ id: k.id, ...k.pos, label: k.nom, kind: 'ville' }))).concat(collectVoyages(e).map(k => ({ id: k.id, ...k.pos, label: k.nom, kind: 'ville' })))
       };
@@ -196,7 +196,7 @@ function sceneOf(e, q, depth = 0) {
       const cs = e.cartes || [];
       if (!cs.length) {
         const ps = sceneOf(BY[e.parent], null, depth + 1);
-        if (ps && depth === 0 && ps.kind === 'map' && e.galerie && e.galerie.length) return { ...ps, gallery: e.galerie };
+        if (ps && depth === 0 && ps.kind === 'map') return withCast({ ...ps, gallery: (e.galerie && e.galerie.length) ? e.galerie : (ps.gallery || [PH_LAND]) }, e);
         return ps;
       }
       const t = Math.min(tab, cs.length - 1);
@@ -379,6 +379,7 @@ function showPrev(id) {
   const e = BY[id], el = $('#mprev'); if (!e || !el) return;
   const t = tgt(e);
   const img = t.type === 'ville' || t.type === 'region' || t.type === 'faction' ? (t.blason || t.vignette || '') : '';
+  if (!img) { el.hidden = true; return; }
   el.innerHTML = `${img ? `<img src="${esc(img)}" alt="">` : ''}<div><b>${esc(t.nom)}</b><i>${esc(t.titre || t.typeLabel || '')}</i>${t.resume ? `<p>${esc(t.resume.length > 150 ? t.resume.slice(0, 147) + '…' : t.resume)}</p>` : ''}</div>`;
   el.hidden = false;
 }
@@ -497,10 +498,14 @@ function showGallery(imgs, title, ent) {
   clearGal(true);
   const g = document.createElement('div');
   g.className = 'gal';
-  g.innerHTML = imgs.map((im, i) => `<div class="sl${i === 0 ? ' act' : ''}" style="--bg:url('${new URL(im.img, location.href).href}')"><img src="${im.img}" alt="${esc(im.legende || title || '')}"></div>`).join('') +
+  g.innerHTML = imgs.map((im, i) => `<div class="sl${i === 0 ? ' act' : ''}"${i < 2 ? ` style="--bg:url('${new URL(im.img, location.href).href}')"` : ''}><img ${i < 2 ? 'src' : 'data-src'}="${im.img}" alt="${esc(im.legende || title || '')}"></div>`).join('') +
     `<div class="gcap"><span class="gt"></span>${imgs.length > 1 ? '<div class="gdots">' + imgs.map((_, i) => `<i data-i="${i}"${i === 0 ? ' class="on"' : ''}></i>`).join('') + '</div><div class="gnav"><button data-d="-1" aria-label="Précédente">‹</button><button data-d="1" aria-label="Suivante">›</button></div>' : ''}</div>`;
   stageEl.insertBefore(g, $('.fog', stageEl));
   S.gal = g;
+  const wake = n => [n, n + 1].forEach(k => {
+    const sl = g.querySelectorAll('.sl')[k % imgs.length], im = sl && sl.querySelector('img');
+    if (im && im.dataset.src) { sl.style.setProperty('--bg', `url('${new URL(im.dataset.src, location.href).href}')`); im.src = im.dataset.src; delete im.dataset.src; }
+  });
   g.querySelectorAll('.sl img').forEach(im => {
     const fit = () => { if (!im.naturalWidth) return; const r = im.naturalWidth / im.naturalHeight; im.style.maxWidth = 'none'; im.style.width = Math.min(stageEl.clientWidth * 0.92, stageEl.clientHeight * 0.92 * r, im.naturalWidth * 2.04) + 'px'; };
     if (im.complete) fit(); else im.addEventListener('load', fit);
@@ -508,6 +513,7 @@ function showGallery(imgs, title, ent) {
   let cur = 0;
   const go = n => {
     cur = (n + imgs.length) % imgs.length;
+    wake(cur);
     g.querySelectorAll('.sl').forEach((s, i) => { s.classList.toggle('act', i === cur); });
     g.querySelectorAll('.gdots i').forEach((d, i) => d.classList.toggle('on', i === cur));
     const c = imgs[cur].cut, who = imgs[cur].who || ent;
@@ -681,14 +687,14 @@ function attPill(e) {
 const pills = e => { const p = statusPill(e) + attPill(e); return p ? `<div class="pills">${p}</div>` : ''; };
 function network(e) {
   const rows = [], seen = new Set();
-  const add = (id, type, ton) => { if (BY[id] && id !== e.id && !seen.has(id)) { seen.add(id); rows.push({ id, type, ton }); } };
+  const add = (id, type, ton, rev) => { if (BY[id] && id !== e.id && !seen.has(id)) { seen.add(id); rows.push({ id, type, ton, rev }); } };
   (e.relations || []).forEach(r => add(r.cible, r.type, r.ton));
   DB.forEach(o => (o.relations || []).forEach(r => { if (r.cible === e.id && o.type !== 'sujet') add(o.id, r.inverse || r.type, r.ton); }));
   const grp = (label, ton) => {
     const l = rows.filter(r => ton === 'neutre' ? (r.ton !== 'positif' && r.ton !== 'negatif') : r.ton === ton);
-    return l.length ? `<div class="net ${ton}"><span class="nl">${label}</span><div class="rels">${l.map(r => `<a class="chip ${ton === 'positif' ? 'pos' : ton === 'negatif' ? 'neg' : ''}" href="#/${r.id}"><b>${esc(r.type)}</b>${esc(BY[r.id].nom)}</a>`).join('')}</div></div>` : '';
+    return l.length ? `<div class="net ${ton}"><span class="nl">${label}</span><div class="rels">${l.map(r => `<a class="chip ${ton === 'positif' ? 'pos' : ton === 'negatif' ? 'neg' : ''}" href="#/${r.id}">${r.rev ? `${esc(BY[r.id].nom)} <small>(${esc(r.type.charAt(0).toLowerCase() + r.type.slice(1))})</small>` : `<b>${esc(r.type)}</b>${esc(BY[r.id].nom)}`}</a>`).join('')}</div></div>` : '';
   };
-  return grp('Alliés de', 'positif') + grp('Ennemis de', 'negatif') + grp('Autres liens', 'neutre');
+  return grp('Alliés', 'positif') + grp('Ennemis', 'negatif') + grp('Autres liens', 'neutre');
 }
 function parcours(e) {
   if (!e.etapes || !e.etapes.length) return '';

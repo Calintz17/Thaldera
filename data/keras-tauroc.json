@@ -1760,8 +1760,8 @@
   "titre": "Cité-état du colisée et de la forge",
   "parent": "maison-tauroc",
   "pos": {
-   "x": 0.687,
-   "y": 0.62
+   "x": 0.69,
+   "y": 0.636
   },
   "accent": "#d96a28",
   "blason": "img/blasons/keras-tauroc.webp",
@@ -4403,10 +4403,6 @@
   "nom": "Tzalanar",
   "titre": "Cœur de la jungle de Balamor",
   "parent": "balamor",
-  "pos": {
-   "x": 0.32,
-   "y": 0.251
-  },
   "resume": "Résidence du Grand Prêtre, inaccessible en pratique.",
   "connu": [
    "C'est là que vit le Grand Prêtre Ajaw Tzobal."
@@ -5174,8 +5170,8 @@
   "titre": "La porte extérieure de There'Duun",
   "parent": "there-duun",
   "pos": {
-   "x": 0.377,
-   "y": 0.552
+   "x": 0.371,
+   "y": 0.546
   },
   "resume": "Seule ville ouverte de There'Duun. La capitale reste fermée aux étrangers.",
   "connu": [
@@ -5600,7 +5596,7 @@
     "type": "a témoigné pour",
     "ton": "positif",
     "note": "Il parle parce que le groupe porte les Cornes d'Or.",
-    "inverse": "témoin de"
+    "inverse": "a témoigné pour elle devant"
    }
   ],
   "attitude": "neutre",
@@ -5817,11 +5813,7 @@
   "resume": "Cœur logistique de la Veyra, sous la coupe de Havre-Noir. Toits de tuiles rouges, quais bondés, réfugiés devenus artisans et bateliers.",
   "connu": [
    "Un conseil de bateliers et d'armateurs la dirige."
-  ],
-  "pos": {
-   "x": 0.399,
-   "y": 0.754
-  }
+  ]
  },
  {
   "id": "port-daman",
@@ -5915,11 +5907,7 @@
   "resume": "Point stratégique de pêche de la Maison Tauroc.",
   "alias": [
    "Port Goraik"
-  ],
-  "pos": {
-   "x": 0.557,
-   "y": 0.6615
-  }
+  ]
  },
  {
   "id": "ungar-keras",
@@ -5930,11 +5918,7 @@
   "resume": "Village orc fortifié de la zone la plus aride, au sud, allié de la Maison Tauroc.",
   "alias": [
    "Unear Keras"
-  ],
-  "pos": {
-   "x": 0.4258,
-   "y": 0.8675
-  }
+  ]
  },
  {
   "id": "khardun",
@@ -5942,11 +5926,7 @@
   "nom": "Khardun",
   "titre": "Ville monastique du sud",
   "parent": "maison-tauroc",
-  "resume": "Ville monastique de la Maison Tauroc, dans les steppes du sud.",
-  "pos": {
-   "x": 0.6025,
-   "y": 0.684
-  }
+  "resume": "Ville monastique de la Maison Tauroc, dans les steppes du sud."
  },
  {
   "id": "urnak",
@@ -5954,11 +5934,7 @@
   "nom": "Urnak",
   "titre": "Village orc allié des Tauroc",
   "parent": "maison-tauroc",
-  "resume": "Village orc de la zone la plus aride, au sud, allié de la Maison Tauroc.",
-  "pos": {
-   "x": 0.485,
-   "y": 0.834
-  }
+  "resume": "Village orc de la zone la plus aride, au sud, allié de la Maison Tauroc."
  },
  {
   "id": "pont-taurin",
@@ -5966,11 +5942,7 @@
   "nom": "Pont Taurin",
   "titre": "Hameau au pied des Grandes Dents",
   "parent": "maison-tauroc",
-  "resume": "Hameau porté sur la carte d'Istra, au bord de l'Abreuvoir et au pied des Grandes Dents. Le groupe n'y est pas allé.",
-  "pos": {
-   "x": 0.4515,
-   "y": 0.6858
-  }
+  "resume": "Hameau porté sur la carte d'Istra, au bord de l'Abreuvoir et au pied des Grandes Dents. Le groupe n'y est pas allé."
  },
  {
   "id": "port-suuren",
@@ -5978,11 +5950,7 @@
   "nom": "Port Suuren",
   "titre": "Port de la zone neutre",
   "parent": "istra",
-  "resume": "Port de la zone neutre, sur la Mer du Milieu, qui n'appartient à aucune des quatre maisons.",
-  "pos": {
-   "x": 0.6228,
-   "y": 0.496
-  }
+  "resume": "Port de la zone neutre, sur la Mer du Milieu, qui n'appartient à aucune des quatre maisons."
  },
  {
   "id": "la-rencontre",
@@ -6130,6 +6098,12 @@
   "alias": [
    "Manoir des ligaments",
    "Cabane de Gran Brijit"
+  ],
+  "galerie": [
+   {
+    "img": "img/paysages/cap-cornes/cabane-gran-brijit.webp",
+    "legende": "La cabane de Gran Brijit"
+   }
   ]
  },
  {
@@ -6138,10 +6112,6 @@
   "nom": "Uruzal",
   "titre": "Porte de la jungle de Balamor",
   "parent": "balamor",
-  "pos": {
-   "x": 0.401,
-   "y": 0.262
-  },
   "resume": "Ville de la côte de Balamor.",
   "connu": [
    "Le seul passage connu vers l'intérieur de la jungle de Balamor."
@@ -6153,10 +6123,6 @@
   "nom": "Tzakar",
   "titre": "Ville de la lagune",
   "parent": "balamor",
-  "pos": {
-   "x": 0.325,
-   "y": 0.282
-  },
   "resume": "Ville de Balamor, en amont d'Uruzal.",
   "connu": [
    "Elle se trouve sur la route de Tzalanar."
@@ -6532,7 +6498,7 @@
    "Petite fée maigre, les cheveux noirs et le front couronné de bois, vêtue de feuilles cousues. Une fumée violette tourbillonne autour d'elle.",
    "Elle a prélevé trois cheveux à chacun du groupe, sans qu'ils s'en aperçoivent, et les a laissés alignés sur la mousse derrière eux.",
    "Elle connaît des choses intimes sur chaque membre du groupe et les place dans la conversation comme des cadeaux.",
-   "Elle propose un troc : la cuirasse de Harfang contre une clé qui n'ouvre rien, le bâton à plumes d'Olyssane, que Sorenka promet de casser en deux, et la Mâchoire de Philippa.",
+   "Elle propose un troc : l'armure de Philippa, l'épée d'Olyssane et le bâton de Harfang contre une clé qui n'ouvre rien. Elle convoite surtout ces trois pièces d'équipement.",
    "Devant le refus, elle déclare le groupe « méchant » et le punit : elle dresse contre lui des doubles de fumée noire, copies de chacun.",
    "Olyssane et Ink sont restés enfermés hors de la zone de combat pendant l'affrontement.",
    "Les doubles sont tombés après un exploit de Harfang et de Philippa. L'un d'eux, métamorphosé en Nubbé, est rangé dans un Sac sans fond."
@@ -6550,19 +6516,22 @@
   },
   "relations": [
    {
-    "cible": "harfang-tsuren",
-    "type": "Convoite sa cuirasse",
-    "ton": "negatif"
-   },
-   {
     "cible": "philippa-rougetoison",
-    "type": "Convoite la Mâchoire",
-    "ton": "negatif"
+    "type": "Convoite l'armure",
+    "ton": "negatif",
+    "inverse": "armure convoitée par"
    },
    {
     "cible": "olyssane-veythar",
-    "type": "Convoite son bâton",
-    "ton": "negatif"
+    "type": "Convoite l'épée",
+    "ton": "negatif",
+    "inverse": "épée convoitée par"
+   },
+   {
+    "cible": "harfang-tsuren",
+    "type": "Convoite le bâton",
+    "ton": "negatif",
+    "inverse": "bâton convoité par"
    },
    {
     "cible": "nubbe",
@@ -8787,9 +8756,15 @@
   "parent": "brakka",
   "resume": "La plus grande maison du village, avec une porte de deux mètres de large.",
   "pos": {
-   "x": 0.315,
-   "y": 0.443
-  }
+   "x": 0.33,
+   "y": 0.43
+  },
+  "galerie": [
+   {
+    "img": "img/paysages/brakka/maison-d-urrak.webp",
+    "legende": "La maison d'Urrak"
+   }
+  ]
  },
  {
   "id": "quai-de-tembo",
@@ -8799,9 +8774,15 @@
   "parent": "brakka",
   "resume": "Quai de bois où Tembo recoud ses barques.",
   "pos": {
-   "x": 0.663,
-   "y": 0.254
-  }
+   "x": 0.665,
+   "y": 0.3
+  },
+  "galerie": [
+   {
+    "img": "img/paysages/brakka/maison-de-tembo.webp",
+    "legende": "Le quai et la maison de Tembo"
+   }
+  ]
  },
  {
   "id": "le-vesper",

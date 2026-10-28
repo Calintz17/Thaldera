@@ -1441,10 +1441,6 @@
   "nom": "Seiran Vale",
   "titre": "La porte terrestre de Roshen Buru",
   "parent": "region-roshen-buru",
-  "pos": {
-   "x": 0.807,
-   "y": 0.367
-  },
   "accent": "#3fae7a",
   "cartes": [
    {

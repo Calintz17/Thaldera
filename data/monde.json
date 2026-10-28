@@ -465,7 +465,13 @@
     "ton": "positif"
    }
   ],
-  "teinte": "#753c19"
+  "teinte": "#753c19",
+  "galerie": [
+   {
+    "img": "img/paysages/roshen-buru/palais-tsuren.webp",
+    "legende": ""
+   }
+  ]
  },
  {
   "id": "jane-merigold",
@@ -534,7 +540,13 @@
     "teinte": "#752519"
    }
   ],
-  "teinte": "#756919"
+  "teinte": "#756919",
+  "galerie": [
+   {
+    "img": "img/paysages/roshen-buru/rue.webp",
+    "legende": ""
+   }
+  ]
  },
  {
   "id": "philippa-rougetoison",
@@ -561,22 +573,17 @@
   "relations": [
    {
     "cible": "gran-brijit",
-    "type": "Désignée championne",
+    "type": "Désignée championne par",
     "ton": "neutre"
    },
    {
-    "cible": "yurei-poison",
-    "type": "Yureï flirte avec elle",
-    "ton": "positif"
-   },
-   {
     "cible": "sera",
-    "type": "Admiratrice",
+    "type": "Admirée par",
     "ton": "positif"
    },
    {
     "cible": "eamonn",
-    "type": "Point de retour",
+    "type": "Point de retour : tour d'Eamonn",
     "ton": "neutre"
    },
    {
@@ -605,7 +612,13 @@
     "teinte": "#751925"
    }
   ],
-  "teinte": "#753c19"
+  "teinte": "#753c19",
+  "galerie": [
+   {
+    "img": "img/paysages/cap-cornes/cabane-gran-brijit.webp",
+    "legende": ""
+   }
+  ]
  },
  {
   "id": "altera",

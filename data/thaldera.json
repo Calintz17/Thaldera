@@ -7889,7 +7889,13 @@
    "Nolbrim y travaille sur ses prototypes.",
    "La harpe de chair faite du Landsknecht vaincu y est exposée."
   ],
-  "chapeau": "Une clairière enveloppée d'une lueur tamisée, où les feuilles épaisses filtrent la lumière en un vert profond, presque stagnant. À l'intérieur, l'odeur dense de terre humide se mêle aux parfums secs des poudres, des racines et des herbes pendues au plafond. Des masques effacés par le temps veillent depuis les murs, et le sol de bois sombre se plaint à chaque pas."
+  "chapeau": "Une clairière enveloppée d'une lueur tamisée, où les feuilles épaisses filtrent la lumière en un vert profond, presque stagnant. À l'intérieur, l'odeur dense de terre humide se mêle aux parfums secs des poudres, des racines et des herbes pendues au plafond. Des masques effacés par le temps veillent depuis les murs, et le sol de bois sombre se plaint à chaque pas.",
+  "galerie": [
+   {
+    "img": "img/paysages/cap-cornes/cabane-gran-brijit.webp",
+    "legende": "La cabane de Gran Brijit"
+   }
+  ]
  },
  {
   "id": "nolbrim",
@@ -8725,8 +8731,8 @@
    }
   ],
   "pos": {
-   "x": 0.222,
-   "y": 0.485
+   "x": 0.235,
+   "y": 0.472
   }
  },
  {
@@ -8784,8 +8790,8 @@
    }
   ],
   "pos": {
-   "x": 0.459,
-   "y": 0.333
+   "x": 0.48,
+   "y": 0.345
   }
  },
  {
