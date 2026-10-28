@@ -421,3 +421,12 @@ a.wcrest:hover { transform:translateY(-6px); border-color:#d4ad69; background:li
   .map-labels .rlab:not(.act):hover .fl { border-bottom-color:#f0d4a0; }
   .maptools button:hover { box-shadow:inset 0 0 0 1px rgba(235,203,142,.24); }
 }
+
+/* v62: the parchment vignette stays behind screen-space labels.
+   Ambient overlays formerly darkened the text at map edges. */
+.stage .fog { z-index:3; }
+.stage::after { z-index:4; }
+.map-labels { z-index:7; }
+/* Native-screen label visibility must not depend on the border glow. */
+.map-labels .rlab .fl { -webkit-font-smoothing:antialiased; }
+.map-labels .rlab.act .fl { color:#fff0cb; }

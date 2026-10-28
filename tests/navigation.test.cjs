@@ -46,5 +46,5 @@ assert.ok(theme.includes('.map-labels .rlab { pointer-events:auto;'), 'Region la
 assert.ok(theme.includes('--atlas-motion'), 'Map labels must match zoom duration');
 assert.ok(source.includes('class="map-labels"'), 'Screen-space map-label layer required');
 assert.ok(source.includes('current-territory'), 'Selected region title must remain visible');
-assert.ok(page.includes('arcane-theme.css?v=61'), 'Fantasy theme revision must load');
+assert.ok(page.includes('arcane-theme.css?v=62'), 'Fantasy theme revision must load');
 console.log('Atlas regression OK: city pins, label interaction, camera bounds, 783+ unique fiches.');
