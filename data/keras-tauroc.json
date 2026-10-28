@@ -3144,7 +3144,7 @@
   "titre": "Vieux mage de Cap Cornes",
   "parent": "tour-eamonn",
   "lieu": "tour-eamonn",
-  "statut": "inconnu",
+  "statut": "vivant",
   "question": "Eamonn est-il mort ? Le cercle de téléportation est-il détruit ?",
   "resume": "Mage de la tour de Cap Cornes. A ouvert le cercle de téléportation vers Port Doëlan.",
   "connu": [
@@ -3183,6 +3183,10 @@
   ],
   "img": "img/pnj/eamonn-moorwich.webp",
   "attitude": "positif",
+  "histoire": [
+   "Attaqué par l'Oni aux masques, il appelle le groupe au secours. Une fois sauvé, il leur parle de Vespera et les téléporte à son camp.",
+   "Il renvoie ensuite le groupe à Roshen Buru."
+  ],
   "teinte": "#753c19"
  },
  {

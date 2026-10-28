@@ -1599,6 +1599,7 @@
    "Harfang y avait accès au réseau administratif de presque toutes les villes du continent."
   ],
   "histoire": [
+   "Le groupe s'y infiltre pour voler le registre des Mirenai, le collier et le parchemin d'Ankou. Il y apprend que le Miren de la Protectrice est un phénix et celui de Darrek une phalène.",
    "Roven Moto reçoit Harfang et lui tire les oreilles sur la qualité de ses rapports.",
    "Le groupe fouille les archives. Il y trouve les rapports d'enquête sur les jeunes femmes mortes, une lettre de Brodek Kovacz au magistrat de l'époque et un coffre du clan Urameï."
   ],
@@ -2159,6 +2160,7 @@
   ],
   "resume": "Le Prétendant, fils du clan Kovacz. Auteur de l'enlèvement d'Ayano et des disparitions de filles. Tué par le groupe.",
   "connu": [
+   "Son Miren est une phalène, inscrite au registre des Mirenai de la Magistrature.",
    "Fils de Brodek, accro à la vesine, endetté au jeu. Ancien prétendant éconduit d'Ayano Kaben.",
    "Son Miren est lié aux phalènes. En combat, il passe d'un niveau à l'autre par les murs.",
    "Il a tué des prostituées pendant sept mois.",
@@ -2314,6 +2316,7 @@
    "Il refuse l'aide de la garde, payée par les clans, car il pense qu'un noble est derrière tout cela. Il propose de payer le groupe et ajoute : « Si je ne me trompe pas, je ne veux pas être seul. »"
   ],
   "histoire": [
+   "Il supplie Harfang de venir : son mariage risque de mal se passer, il a reçu des lettres de menace.",
    "Il ne lâche pas Ayano du regard après le sauvetage et tient à ce que le groupe soit invité à la seconde cérémonie."
   ],
   "relations": [
@@ -2402,6 +2405,7 @@
    "Il fait servir le thé avant qu'on ait dit un mot, même le lendemain de la chute du Temple."
   ],
   "histoire": [
+   "Il redirige le groupe vers Yurei. Après l'enlèvement d'Ayano, il identifie le Miren ravisseur comme une phalène, listée dans le registre des Mirenai de la Magistrature.",
    "Le groupe retrouve Tobiya, un de ses hommes, pour le compte de Yureï, qui paie 2 000 pièces d'or.",
    "Il fait voler un parchemin qui semble écrit sur de la peau humaine, et un collier orné d'une pièce, dans un coffre de la Magistrature.",
    "Philippa identifie la pièce comme une pièce d'âme, la monnaie des Enfers.",
@@ -2509,7 +2513,8 @@
   "statut": "vivant",
   "alias": [
    "Yureï",
-   "Poison"
+   "Poison",
+   "Yurei Uramei"
   ],
   "resume": "Contrebandière du clan Urameï, fournisseuse principale de vésine en ville. Insolente, drôle, elle travaille avec une autonomie réelle et flirte ouvertement avec Philippa.",
   "connu": [
@@ -2570,6 +2575,7 @@
   "question": "Que devient Tobiya, en pleine transformation ?",
   "resume": "Homme de main de Yurëi disparu, retrouvé dans les égouts de Roshen Buru en pleine mue arachnide.",
   "connu": [
+   "Un avis affiché à l'auberge le dit disparu, recherché par Yurei Uramei.",
    "Chez lui, une maison en désordre et des symboles étranges.",
    "Dans les égouts : des araignées en nombre, des toiles épaisses comme du caoutchouc, une salle gravée de symboles de Balamor.",
    "Il avait entamé une transformation et disait servir « la Mère de la toile », à Balamor.",
@@ -2598,6 +2604,9 @@
   ],
   "img": "img/pnj/tobiya.webp",
   "attitude": "neutre",
+  "alias": [
+   "Tobia"
+  ],
   "teinte": "#751925"
  },
  {
@@ -2636,6 +2645,8 @@
    "Dans les ruines du Temple, elle exige le parchemin : « Il appartient à notre divinité et à notre peuple. » Face à Gran Brijit, elle ouvre son Miren, avatar de Mélora, et lâche l'Aspect de la Mort."
   ],
   "histoire": [
+   "Elle protège systématiquement les clans, jusqu'à fermer les yeux sur des disparitions, un démon et des meurtres, parce qu'ils sont névralgiques pour la ville.",
+   "Au Temple, elle contre le sort de Harfang et accepte de se faire voler le parchemin. Elle retient le toit avec Gran Brijit.",
    "Le groupe la voit pour la première fois au sommet du Temple du Tenraku. Elle fait apparaître des lianes pour empêcher sa destruction.",
    "Elle recule devant Gran Brijit et la laisse récupérer le parchemin.",
    "Quand Carnage apparaît, elle se détourne de Gran Brijit et ne protège plus que son peuple."
@@ -2708,6 +2719,7 @@
    "Elle écrit entendre une voix dans sa tête et résister de plus en plus difficilement à la tentation."
   ],
   "histoire": [
+   "Pendant que Harfang lui fait un point d'étape, Philippa et Jane fouillent ses papiers : elle le fait espionner, connaît son ami nain, et son pacte avec Levistus est confirmé.",
    "Elle est mise hors d'état de nuire par l'explosion du Temple du Tenraku."
   ],
   "relations": [
@@ -2828,6 +2840,10 @@
   ],
   "img": "img/pnj/tessei-kanae.webp",
   "attitude": "neutre",
+  "histoire": [
+   "Jane lui vole Ruine Holoraine, un tanto, sans qu'elle s'en aperçoive.",
+   "Omen Broken Sky est à 50 000 pièces d'or et destiné au clan Anadori."
+  ],
   "teinte": "#753c19"
  },
  {
@@ -2863,6 +2879,9 @@
   ],
   "img": "img/pnj/oren-sidai.webp",
   "attitude": "neutre",
+  "histoire": [
+   "Philippa lui vend Requiem pour 1 800 pièces d'or. L'épée se téléporte et revient seule dans son inventaire."
+  ],
   "teinte": "#755219"
  },
  {
@@ -2895,6 +2914,9 @@
   ],
   "img": "img/pnj/saori-velmaka.webp",
   "attitude": "neutre",
+  "histoire": [
+   "Le groupe lui achète quelques potions. Accueil sympathique."
+  ],
   "teinte": "#753c19"
  },
  {
@@ -3135,7 +3157,11 @@
    "Elle réveille la Clé d'Anachronie d'un souffle et prévient que son usage est un aller simple jusqu'à la résolution du donjon.",
    "Dans une ruelle, une femme à la peau violette, Gikyo Noshi Buru, l'attend avec hostilité. Un djinn d'eau les sépare et les deux femmes disparaissent en duel."
   ],
-  "histoire": [],
+  "histoire": [
+   "Elle décapite Bourpif, recueille et purifie son âme, puis la remet à Nolbrim pour compléter Jane.",
+   "Au Temple du Tenraku, elle réclame le parchemin, traite Anaru de petite fille perdue et la menace. Jane le lui remet.",
+   "Avec la Gardienne, elle retient le toit du temple pour protéger les gens du temple et ceux d'en bas."
+  ],
   "relations": [
    {
     "cible": "anaru-miren-buru",
@@ -3178,9 +3204,11 @@
   "titre": "Arrivé au Temple du Tenraku",
   "parent": "temple-du-tenraku",
   "lieu": "temple-du-tenraku",
-  "statut": "inconnu",
+  "statut": "vaincu",
   "resume": "Masse informe de dizaines de cadavres soudés, née d'une bille de lumière tombée sur un corps du Temple écroulé.",
   "connu": [
+   "Le rire de Vassago retentit quand la bille tombe.",
+   "Le groupe la vainc. Harfang se retrouve alors aux pieds de la Gardienne, qui se tourne vers lui pour parler.",
    "Le groupe l'affronte après la destruction du sommet du temple.",
    "Le corps frappé se convulse, se jette sur un deuxième, puis les deux roulent vers un troisième, jusqu'à former une masse agglomérée.",
    "Gran Brijit présente ce combat comme la force qu'elle ne peut déchaîner en personne : le groupe doit être l'instrument de sa main."
@@ -3666,6 +3694,8 @@
   "statut": "vivant",
   "resume": "Patron massif de la maison de thé, base du groupe à Roshen Buru. Ancien, lourd, économe de ses mots, il ne juge personne et ne raconte rien gratuitement.",
   "connu": [
+   "Il tient la maison de thé avec Orissa. Il explique aux joueurs que des gens disparaissent en ville depuis plusieurs mois.",
+   "À l'entrée, un panneau signale des patrouilles et demande de rapporter à la garde tout étranger ou comportement inhabituel.",
    "Les Kovacz déclinent et le fils est un problème connu. Les Urameï tiennent le bas quartier. Les Anadori se battent partout en ville.",
    "Un homme massif qui essuie la même tasse sans lever les yeux, le geste répété jusqu'à l'usure. Le thé coûte trois pièces, la chambre quinze, payables d'avance.",
    "Il connaît la ville par les gens qui y dorment. Sa clientèle est surtout de passage, et il renvoie vers les domestiques et ceux qui travaillent pour les clans ou pour le Magistrat.",
@@ -3686,6 +3716,9 @@
    }
   ],
   "attitude": "neutre",
+  "histoire": [
+   "À leur retour en ville, le groupe s'installe dans sa maison de thé, mange et débriefe sur la façon de retrouver Absalom."
+  ],
   "teinte": "#753c19"
  },
  {
@@ -3745,6 +3778,7 @@
   "statut": "vivant",
   "resume": "Tenancière élégante et calculatrice du quartier des plaisirs. Elle vend l'information comme le reste, ne ment pas, mais ne donne que ce qui est payé.",
   "connu": [
+   "Un avis de recherche affiché à l'auberge la montre à la recherche d'Iko, disparue depuis plusieurs semaines.",
    "Maeko, l'une de ses courtisanes, connaît Darrek, qui ne vient plus depuis des mois.",
    "Elle reçoit en versant elle-même à boire : « Tout se discute, tout se monnaye. » Elle connaît Yurëi et peut orienter vers elle.",
    "Pour les rumeurs sur les nobles, il faut payer : les Anadori paient bien et se tiennent mal, les Kovacz venaient beaucoup, plus maintenant.",
@@ -3805,6 +3839,9 @@
    "Sa boutique est tout au fond de la ville basse, à l'ouest, la dernière avant les murailles. À l'intérieur, pas de rayons mais des piles d'objets jusqu'au plafond, sans un grain de poussière.",
    "Il connaît la provenance de tout ce qu'il possède et refuse de vendre à quelqu'un qui ne comprend pas ce qu'il achète. Un intérêt sincère pour un objet le pousse à baisser son prix de lui-même.",
    "Il parle d'une longue-vue d'émeraude censée montrer les altérations et les mensonges de forme, sans garantir ce pouvoir."
+  ],
+  "histoire": [
+   "Le groupe ne lui achète rien."
   ],
   "teinte": "#753c19"
  },
@@ -4277,6 +4314,9 @@
   "img": "img/pnj/muji.webp",
   "relations": [],
   "attitude": "neutre",
+  "histoire": [
+   "Les joueurs la prennent pour Absalom. Elle est la femme du magistrat Sabo de Seiran Vale et a fui son foyer pour recommencer à Roshen Buru."
+  ],
   "teinte": "#753c19"
  },
  {
@@ -4349,6 +4389,10 @@
   ],
   "img": "img/pnj/soko.webp",
   "attitude": "neutre",
+  "histoire": [
+   "Les gardes la soupçonnent des toiles d'araignée et des disparitions. Elle est innocente : elle s'est cachée toute sa vie et vit aujourd'hui de la musique.",
+   "Philippa lui achète un shamisen."
+  ],
   "teinte": "#752519"
  },
  {
@@ -4574,6 +4618,8 @@
   ],
   "attitude": "ennemi",
   "connu": [
+   "Vaincu par le groupe dans la tour d'Eamonn, il disparaît dans un nuage de soufre.",
+   "Il laisse la liste du tribunal à sceau démoniaque et le bâton Fukuro Kaen.",
    "Il se retourne lentement vers le groupe au centre de la tour dévastée, entouré de gardes : un Porteur de Hallebarde et une Faucheuse d'Échos.",
    "Après le combat, le groupe trouve une naginata, une liste de cibles du Tribunal de Chair et un objet de feu, Fukuro Kaen, la Fureur du Bûcher.",
    "La liste cite Eamonn, Olyssane, Jane, Philippa et Ink. Le nom de Harfang y figure suivi d'un point d'interrogation."
@@ -4608,10 +4654,14 @@
   "nom": "Le parchemin PSA-87",
   "titre": "Parchemin gardé au Temple du Tenraku",
   "parent": "temple-du-tenraku",
-  "resume": "Parchemin conservé derrière la jarre Miren. Absalom l'a lu pendant la cérémonie avant de s'enfuir. La Gardienne Anaru l'a repris dans les ruines.",
+  "resume": "Parchemin conservé derrière la jarre Miren. Absalom l'a lu pendant la cérémonie. Gran Brijit l'a réclamé comme sien et Jane le lui a remis.",
   "alias": [
    "PSA-87",
    "PSA 87"
+  ],
+  "connu": [
+   "Anaru affirme qu'il appartient à sa divinité et à son peuple. Gran Brijit répond qu'il n'appartient pas à leur histoire.",
+   "Gran Brijit l'obtient : la Gardienne recule devant les menaces d'une divinité et contre le sort de dissipation de Harfang."
   ]
  },
  {
@@ -5014,6 +5064,67 @@
   "img": "img/pnj/le-goryo.webp",
   "attitude": "ennemi",
   "teinte": "#753c19"
+ },
+ {
+  "id": "bourpif",
+  "type": "pnj",
+  "nom": "Bourpif",
+  "titre": "Robot de Nolbrim, compagnon de Gran Brijit",
+  "parent": "cabane-de-gran-brijit",
+  "resume": "Petit robot bâti par Nolbrim autour d'un fragment de l'Hexacore. Il suit Gran Brijit.",
+  "statut": "mort",
+  "attitude": "neutre",
+  "lieu": "cabane-de-gran-brijit",
+  "connu": [
+   "Gran Brijit le décapite sous les yeux de Jane et recueille son âme, une petite orbe de fumée qui tournoie dans sa paume.",
+   "Elle l'inspire puis la recrache lentement dans une fiole, pour la purifier, avant de la tendre à Nolbrim."
+  ]
+ },
+ {
+  "id": "fukuro-kaen",
+  "type": "sujet",
+  "nom": "Fukuro Kaen",
+  "titre": "La Fureur du Bûcher, bâton de feu",
+  "parent": "oni-aux-masques",
+  "resume": "Bâton de feu pris sur l'Oni aux masques, qui convient parfaitement à Harfang.",
+  "connu": [
+   "Butin du combat de la tour d'Eamonn, avec la liste du tribunal à sceau démoniaque."
+  ]
+ },
+ {
+  "id": "couronne-de-corail-noir",
+  "type": "sujet",
+  "nom": "La Couronne de Corail Noir",
+  "titre": "Objet légendaire",
+  "parent": "vespera-merigold",
+  "resume": "Diadème d'un ancien roi abyssal, de grande valeur. Jane l'a remis à Vespera.",
+  "connu": [
+   "Revendue, elle doit financer l'achat de l'archène de Keras Tauroc par l'intermédiaire de Lapidus."
+  ]
+ },
+ {
+  "id": "mere-de-la-toile",
+  "type": "sujet",
+  "nom": "La Mère de la Toile",
+  "titre": "Maîtresse des araignées de Balamor",
+  "parent": "balamor",
+  "resume": "Entité de Balamor qui sert de maître à Tobiya. Elle veut des araignées dans toutes les villes d'Istra.",
+  "connu": [
+   "Tobiya, corrompu au fond des égouts de Roshen Buru, a avoué travailler pour elle.",
+   "Son plan : faire apparaître des araignées dans chaque ville, prendre le contrôle mental de gens insoupçonnés et lever une armée pour conquérir toutes les villes d'Istra.",
+   "Le groupe pense que Balamor sera l'occasion d'y mettre un terme."
+  ]
+ },
+ {
+  "id": "temple-de-tako-alvaki",
+  "type": "lieu",
+  "nom": "Le temple de Tako Alvaki",
+  "titre": "Temple de Roshen Buru",
+  "parent": "roshen-buru",
+  "resume": "Temple où Harfang se recueille et entre en communion avec son Miren.",
+  "connu": [
+   "Harfang demande à son Miren s'il peut faire confiance à la Protectrice. La réponse est non."
+  ]
  },
  {
   "id": "ascenseur-nord-est",

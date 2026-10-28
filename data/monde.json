@@ -414,6 +414,8 @@
    "Il connaît bien Keras Tauroc, où il est allé quatre fois sous couverture diplomatique, et ne connaissait Cap Cornes que par les rapports."
   ],
   "histoire": [
+   "Il se recueille au temple de Tako Alvaki : son Miren lui déconseille de faire confiance à la Protectrice.",
+   "Au Temple du Tenraku, il tente de dissiper la magie de Gran Brijit et la Gardienne contre son sort.",
    "Rejoint le groupe de Jane et Philippa à Istra et chasse Absalom avec elles jusqu'à Roshen Buru.",
    "À Roshen Buru, il enquête sur les lettres de menace du mariage Sokabeï-Kaben, sur ordre de la Protectrice, puis retrouve et tue Darrek Kovacz avec ses compagnes.",
    "Il lit le journal de la Protectrice et apprend son pacte avec Levistus, ainsi que le projet d'alliance de la Gardienne avec Eryndel d'Altéra.",
@@ -474,11 +476,14 @@
   "statut": "vivant",
   "resume": "Demi-elfe, roublarde Arcane Trickster de niveau 11. Elle porte des cristaux de titan dans le dos.",
   "connu": [
+   "Nolbrim estimait que son exosquelette incomplet finirait par lui faire mal ou la tuer : il lui manquait une âme.",
    "Elle a volé à Naevia, à Keras Tauroc, une « Hache Étrange » qui est la garde d'une épée brisée aux glyphes non décoratifs.",
    "Pendant le mois perdu, elle a travaillé pour Hématome sans qu'elle ou le groupe s'en souviennent.",
    "Déguisée en Olyssane, elle a attiré Kester Tauroc dans une ruelle de Cap Cornes."
   ],
   "histoire": [
+   "Flashback au camp : Nolbrim l'emmène seule chez Gran Brijit. Attachée à plat ventre sur une table d'opération, elle perd son exosquelette incomplet, arraché avec la moitié de son dos.",
+   "Elle se réveille avec un gant de cristal à la main gauche et une main fantomatique qui suit ses gestes. Elle devient Arcane Trickster.",
    "À Keras Tauroc, elle bat Hématome dans l'arène du festival.",
    "Elle retrouve son carnet, sa chambre chez Capella et le nom de Calvinus Ferox.",
    "À Roshen Buru, elle prend part à l'enquête du mariage et à la chute de Darrek Kovacz.",

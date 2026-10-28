@@ -3326,13 +3326,17 @@
   "statut": "vivant",
   "resume": "Tieffeline qui dirige désormais Port Doëlan en ruine. Seule enfant Merigold retrouvée par Jane.",
   "connu": [
+   "La grande majorité de sa ville est au chômage : elle cherche des rentrées d'argent sec.",
+   "Jane lui remet la Couronne de Corail Noir. Revendue, elle financera Lapidus pour acheminer deux tonnes d'archène de Keras Tauroc à la tour d'Eamonn, puis au camp par téléportation. Jane touche 1 % des ventes.",
+   "Elle est allée à Cap Cornes, y a croisé Eamonn qu'elle juge drogué jusqu'aux yeux, et ses charmes n'ont pas pris sur lui.",
+   "Quête ouverte : des mercenaires attaquent ceux qui sortent de la ville, et son émissaire du sud de Leyenmil n'est pas revenu.",
    "Elle a hérité du pouvoir après la chute de Spezza et reconstruit la ville avec l'aide du groupe.",
    "Des mercenaires sous pavillon inconnu rôdent. Un de ses hommes n'est pas revenu de Leyenmil.",
    "Elle attend la livraison de l'Arshen à Cap Cornes pour relancer le commerce.",
    "Le pacte avec l'Aile d'Argent a apporté des capitaux, très loin de ce qu'il faudrait. Un ambassadeur de Rivegard presse Sycomore de lâcher Port Doëlan.",
    "Elle reçoit les joueurs sur le chantier, cordiale mais occupée, assise sur un bloc de maçonnerie comme sur un trône de fortune. Autour d'elle veillent Tina et Nina en armures bricolées, Kralik et Nesk, deux hommes-rats aux aguets.",
    "Elle est jeune cheffe, calme, calculatrice, avec un charme froid, et parle en dirigeante qui compte ses pertes.",
-   "Elle s'est rendue à Cap Cornes et y a croisé le mage Eamonn, qu'elle juge drogué jusqu'aux yeux. Ses charmes ont mal pris sur lui, ce qui la contrarie.",
+   "Ses charmes ont mal pris sur lui, ce qui la contrarie.",
    "Elle pèse l'idée d'envoyer des émissaires sur le nouveau continent, mais préfère la discrétion pour l'instant."
   ],
   "histoire": [
@@ -5894,6 +5898,7 @@
   ],
   "attitude": "positif",
   "connu": [
+   "Elle est désormais armée et garde le camp de Vespera avec Nina.",
    "Ancienne prostituée de la maison de Vespera que le groupe connaît, désormais en armure de fortune dans la garde de Vespera, avec sa sœur Nina."
   ],
   "alias": [
@@ -6423,6 +6428,7 @@
   ],
   "attitude": "positif",
   "connu": [
+   "Embauché comme garde, il patrouille le camp de Vespera avec Nesk.",
    "Wererat libéré par le groupe, il patrouille Port Doëlan pour le compte de Vespera."
   ],
   "teinte": "#195275"
@@ -6452,6 +6458,7 @@
   ],
   "attitude": "positif",
   "connu": [
+   "Embauché comme garde, il patrouille le camp de Vespera avec Kralik.",
    "Wererat libéré par le groupe, il patrouille Port Doëlan pour le compte de Vespera."
   ],
   "teinte": "#195275"
@@ -7902,6 +7909,7 @@
    "qui": "Nolbrim"
   },
   "histoire": [
+   "Il arrache le dos de Jane avec son exosquelette, après que Gran Brijit a purifié l'âme de Bourpif.",
    "Pendant son coma, il a percé le Voile et trouvé une solution pour Jane : il manquait une âme pour stabiliser son exo-squelette.",
    "!! Dans son laboratoire, il attaque Jane sur une table d'opération. Avec l'âme de Bourre-Piff que Gran Brijit lui tend, il arrache l'exo-squelette et le dos de Jane. Elle se réveille avec un gant de cristaux rouge."
   ],
