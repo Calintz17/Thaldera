@@ -2,7 +2,6 @@
 """Audit des ressources du Codex, sans changer les données ni les images."""
 import json
 import sys
-from collections import Counter
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -55,11 +54,36 @@ for entity in entries:
             if len(pt) != 2 or any(not isinstance(v, (int, float)) or not 0 <= v <= 1 for v in pt):
                 warnings.append(f"POLYGONE HORS CARTE [{ident}]: {pt}")
 
+def point_in_polygon(point, polygon):
+    """Ray-casting in normalized atlas coordinates, restricted to the correct map."""
+    inside = False
+    x, y = point["x"], point["y"]
+    for i, curr in enumerate(polygon):
+        prev = polygon[i - 1]
+        if (curr[1] > y) != (prev[1] > y):
+            if x < (prev[0] - curr[0]) * (y - curr[1]) / (prev[1] - curr[1]) + curr[0]:
+                inside = not inside
+    return inside
+
+manual_map_review = []
+for entity in entries:
+    parent = by_id.get(entity.get("parent"))
+    pos = entity.get("pos")
+    if not parent or not parent.get("poly") or not isinstance(pos, dict):
+        continue
+    if not point_in_polygon(pos, parent["poly"]) or any(
+        point_in_polygon(pos, hole) for hole in parent.get("polyx", [])
+    ):
+        manual_map_review.append((entity["id"], entity["nom"], parent["nom"], pos))
+
 unused_npcs = sorted(p for p in images - references if "/pnj/" in p or p.startswith("img/pnj/"))
 print(f"{len(entries)} fiches | {len(images)} images | {len(references)} références visuelles")
 print(f"{len(unused_npcs)} portraits PNJ sans référence directe :")
 for p in unused_npcs:
     print("  [À VÉRIFIER]", p)
+print(f"{len(manual_map_review)} points à vérifier visuellement sur la carte source :")
+for ident, name, region, point in manual_map_review:
+    print(f"  [CARTE À VÉRIFIER] {name} ({ident}), territoire {region}, coordonnées {point}")
 print(f"{len(warnings)} erreurs ou anomalies de structure :")
 for line in warnings:
     print("  [ERREUR]", line)

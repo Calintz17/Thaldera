@@ -4,7 +4,7 @@
 (() => {
 'use strict';
 
-const VER = '55';
+const VER = '56';
 const EDIT = new URLSearchParams(location.search).has('edit');
 const $ = (s, r = document) => r.querySelector(s);
 const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
@@ -797,13 +797,27 @@ function kidCard(k) {
   return `<a class="kcard${img ? ' has-img' : ''}" href="#/${k.id}"${k.accent ? ` style="--accent:${k.accent}"` : ''}>${img ? `<span class="kimg"><img loading="lazy" decoding="async" src="${esc(img)}" alt=""></span>` : ''}${k.blason ? `<img class="kc" src="${k.blason}" alt="">` : ''}<span class="kn">${esc(k.nom)}</span><span class="kt">${esc(k.titre || '')}</span></a>`;
 }
 function descPNJ(e) {
-  const out = [];
-  const walk = x => kids(x.id).forEach(k => {
-    if (k.type === 'pnj') out.push(k);
-    if (['lieu', 'clan', 'organisation', 'pnj'].includes(k.type)) walk(k);
+  return cachedCollection('pnj-desc', e, () => {
+    const out = [], seen = new Set(), traversed = new Set();
+    const add = p => { if (!seen.has(p.id)) { seen.add(p.id); out.push(p); } };
+    const walk = x => {
+      if (traversed.has(x.id)) return;
+      traversed.add(x.id);
+      kids(x.id).forEach(k => {
+        if (k.type === 'pnj') add(k);
+        if (['region', 'faction', 'ville', 'lieu', 'clan', 'organisation', 'pnj'].includes(k.type)) walk(k);
+      });
+    };
+    walk(e);
+    // A character may be classified under a clan yet appear at a city/location.
+    // Show them in the relevant regional/city index without changing their parent.
+    DB.forEach(p => {
+      if (p.type !== 'pnj' || seen.has(p.id)) return;
+      const locations = [p.lieu, ...(p.lieux || [])].filter(id => BY[id]);
+      if (locations.some(id => chain(BY[id]).some(ancestor => ancestor.id === e.id))) add(p);
+    });
+    return out;
   });
-  walk(e);
-  return out;
 }
 function relations(e) {
   const rows = [];

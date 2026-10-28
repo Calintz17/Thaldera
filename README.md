@@ -28,3 +28,7 @@ fiche et les éventuelles formes avant tout rattachement.
 Les coordonnées cartographiques sont relatives à chaque carte (0–1). Pour relever des points,
 ouvrir le site avec `?edit` et utiliser Alt + clic (point) ou Shift + deux clics (zone).
 Les retouches géographiques précises nécessitent une comparaison visuelle avec la carte source.
+
+## Contrôles continus
+Le workflow GitHub Actions `Codex integrity` exécute les contrôles à chaque push.
+Diagnostic et limites dans `AUDIT_UX_TECHNIQUE.md`.
