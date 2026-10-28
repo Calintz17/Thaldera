@@ -8184,6 +8184,36 @@
   }
  },
  {
+  "id": "gritz",
+  "type": "pnj",
+  "nom": "Gritz",
+  "titre": "Professeur adjoint de l'École de la Vaillance",
+  "parent": "ecole-de-la-vaillance",
+  "lieu": "ecole-de-la-vaillance",
+  "statut": "vivant",
+  "resume": "Petit gobelin à la tunique écarlate, qui mène l'entraînement dans la cour de l'école.",
+  "attitude": "neutre",
+  "connu": [
+   "Il commente chaque geste avec énergie et mêle ses consignes techniques à des refrains d'anciens chants de guerre.",
+   "Il enseigne aux côtés de Tharamund Skeldraxis."
+  ]
+ },
+ {
+  "id": "balasar",
+  "type": "pnj",
+  "nom": "Balasar",
+  "titre": "Professeur adjoint de l'École de la Création",
+  "parent": "ecole-de-la-creation",
+  "lieu": "ecole-de-la-creation",
+  "statut": "vivant",
+  "resume": "Drakéide massif au souffle rauque, en robe bleue tachée d'encre, aux doigts boudinés.",
+  "attitude": "neutre",
+  "connu": [
+   "Il fait recommencer les élèves devant un cristal suspendu qui vibre d'une note claire, et laisse naître un kaléidoscope de sons.",
+   "Il enseigne aux côtés d'Aeon Calaryn."
+  ]
+ },
+ {
   "id": "maison-lenach",
   "type": "lieu",
   "nom": "La maison Lenach",
