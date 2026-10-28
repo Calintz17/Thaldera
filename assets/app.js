@@ -4,7 +4,7 @@
 (() => {
 'use strict';
 
-const VER = '63';
+const VER = '64';
 const EDIT = new URLSearchParams(location.search).has('edit');
 const $ = (s, r = document) => r.querySelector(s);
 const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
@@ -51,7 +51,7 @@ const pnjsAt = pl => {
 };
 const mainOf = pl => { if (!pl || !(pl.type === 'lieu' || pl.fusion) || pl.nofusion) return null; if (kids(pl.id, 'lieu').length) return null; const l = pnjsAt(pl); return l.length === 1 ? l[0] : null; };
 const mergedPlace = p => { const pl = p && p.type === 'pnj' ? (p.lieu && BY[p.lieu] ? BY[p.lieu] : (p.parent ? BY[p.parent] : null)) : null; return pl && mainOf(pl) ? pl : null; };
-const kids = (id, type) => (KIDS[id] || []).filter(k => !type || k.type === type);
+const kids = (id, type) => (KIDS[id] || []).filter(k => !k.redirige && (!type || k.type === type));
 const chain = e => { const a = []; let c = e; let g = 0; while (c && g++ < 12) { a.unshift(c); c = c.parent ? BY[c.parent] : null; } return a; };
 const isAnc = (a, e) => { let c = e; let g = 0; while (c && g++ < 12) { if (c === a) return true; c = c.parent ? BY[c.parent] : null; } return false; };
 const continentOf = e => chain(e).find(x => x.type === 'continent');
@@ -86,8 +86,8 @@ function buildLinker() {
     if (seen[k]) return;
     seen[k] = id; LOOK[k] = id; names.push(n);
   };
-  DB.forEach(e => add(e.nom, e.id));
-  DB.forEach(e => (e.alias || []).forEach(a => add(a, e.id)));
+  DB.filter(e => !e.redirige).forEach(e => add(e.nom, e.id));
+  DB.filter(e => !e.redirige).forEach(e => (e.alias || []).forEach(a => add(a, e.id)));
   names.sort((a, b) => b.length - a.length);
   RX = new RegExp('(?<![\\p{L}\\p{N}])(?:' + names.map(pat).join('|') + ')(?![\\p{L}\\p{N}])', 'gu');
 }
@@ -132,6 +132,14 @@ const sceneEl = $('#scene'), stageEl = $('#stage'), panelEl = $('#panel'), world
 const PH_LAND = { img: 'img/placeholder/paysage.svg', legende: '', ph: true };
 const PH_SIL = 'img/placeholder/silhouette.svg';
 const S = { map: null, gal: null, entry: null, key: '', cut: null, W: 0, H: 0 };
+const RETURN_TO = new Map();
+document.addEventListener('click', ev => {
+  const a = ev.target.closest('a[href^="#/"]');
+  if (!a || !S.entry) return;
+  const target = decodeURIComponent(a.getAttribute('href').slice(2).split('?')[0]);
+  const dest = BY[target];
+  if (dest?.type === 'pnj' && target !== S.entry.id) RETURN_TO.set(dest.id, S.entry.id);
+}, true);
 
 const BIGMAP = /^img\/cartes\/(istra|thaldera|thaldera-factions)\.webp$/;
 const mapSrc = u => BIGMAP.test(u) ? u.replace('.webp', '-m.webp') : u;
@@ -155,7 +163,8 @@ function setCam(layer, rect, animate, pad) {
   const c = camFor(rect, layer.info, pad);
   layer.rect = rect; layer.pad = pad;
   const el = layer.cam;
-  el.classList.toggle('notrans', !animate);
+  // Instant projection keeps crisp fixed-size pins geometrically locked to the map.
+  el.classList.add('notrans');
   // Keep the screen-space label movement in lockstep with the image transform.
   layer.labels?.style.setProperty('--atlas-motion', animate ? (el.classList.contains('wz') ? '.28s' : '.95s') : '0s');
   el.style.setProperty('--s', c.s);
@@ -173,7 +182,7 @@ function setCam(layer, rect, animate, pad) {
     high.src = layer.src;
   }
   el.style.transform = `translate(${c.tx}px, ${c.ty}px) scale(${c.s})`;
-  positionMapAnchors(layer, c, animate);
+  positionMapAnchors(layer, c, false);
   // Keep transitions disabled during gestures; no synchronous layout flush.
 }
 const RAIDO = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3v18M7 4l11 6.5L7 14.5M7 13.5L18 21"/></svg>';
@@ -220,11 +229,12 @@ function sceneOf(e, q, depth = 0) {
   switch (e.type) {
     case 'continent': {
       const c = e.cartes[Math.min(tab, e.cartes.length - 1)];
-      return {
+      const scene = {
         kind: 'map', src: c.img, cam: FULL, owner: e, tabs: e.cartes, tab: Math.min(tab, e.cartes.length - 1), zp: true, ...(e.galerie && e.galerie.length && /placeholder/.test(c.img) ? { gallery: e.galerie } : {}),
-        frames: kids(e.id).filter(k => k.poly && (!ownerMap(k) || ownerMap(k).carte === c)).map(k => frameOf(k)),
+        frames: [], // Atlas territories belong in the explorer, not on the map.
         pins: collectLieux(e).filter(k => k.pos).map(k => ({ id: k.id, ...k.pos, label: k.nom, kind: 'lieu' })).concat(collectVilles(e).map(k => ({ id: k.id, ...k.pos, label: k.nom, kind: 'ville' }))).concat(collectVoyages(e).map(k => ({ id: k.id, ...k.pos, label: k.nom, kind: 'ville' })))
       };
+      return e.id === 'manoir-des-ligaments' ? withCast(scene, e) : scene;
     }
     case 'region':
     case 'faction': {
@@ -235,7 +245,7 @@ function sceneOf(e, q, depth = 0) {
       const host = om.host;
       return {
         kind: 'map', src: om.carte.img, cam, owner: host, tabs: host.cartes, tab: host.cartes.indexOf(om.carte), zp: true,
-        frames: kids(host.id).filter(k => k.poly && (!ownerMap(k) || ownerMap(k).carte === om.carte)).map(k => ({ ...frameOf(k), act: k === e })),
+        frames: [],
         pins: collectVilles(host).map(v => ({ id: v.id, ...v.pos, label: v.nom, kind: 'ville' })).concat(collectVoyages(host).map(k => ({ id: k.id, ...k.pos, label: k.nom, kind: 'ville' }))),
         focus: z ? { x: z.x + z.w / 2, y: z.y + z.h / 2 } : null
       };
@@ -285,8 +295,12 @@ function sceneOf(e, q, depth = 0) {
         if (e.etapes && e.etapes.length) {
           gal = e.etapes.map(f => ({ img: f.fond || PH_LAND.img, ph: !f.fond, legende: f.label, cut: f }));
         } else if (e.formes && e.formes.length > 1) {
-          const bg = (f, d) => f.fond ? { img: f.fond, legende: '' } : d;
-          gal = gal.map(g => ({ ...bg(e.formes[0], g), cut: e.formes[0] })).concat(e.formes.slice(1).map(f => ({ ...bg(f, gal[0]), cut: f })));
+          if (e.galerie?.some(g => Number.isInteger(g.forme))) {
+            gal = gal.map(g => ({ ...g, cut: e.formes[g.forme] || e.formes[0] }));
+          } else {
+            const bg = (f, d) => f.fond ? { img: f.fond, legende: '' } : d;
+            gal = gal.map(g => ({ ...bg(e.formes[0], g), cut: e.formes[0] })).concat(e.formes.slice(1).map(f => ({ ...bg(f, gal[0]), cut: f })));
+          }
         }
         s = { ...s, gallery: gal, cutout: e };
       }
@@ -466,11 +480,9 @@ function renderOverlay(layer, sc) {
     const ru = BY[p.id] && BY[p.id].rune;
     if (ru) a.classList.add('rune', 'r-' + ru.etat);
     a.innerHTML = `<span class="in"><span class="pd"></span>${ru ? `<span class="rb" title="Rune Raido de Philippa">${RAIDO}</span>` : ''}<span class="pl">${esc(p.label)}</span></span>`;
-    // Keep dots in the map's affine coordinate system: no independent
-    // translation animation or geographical drift during zoom and pan.
-    a.style.left = (p.x * 100) + '%';
-    a.style.top = (p.y * 100) + '%';
-    ov.appendChild(a);
+    // Screen-space pin: geographic anchor computed from camera each frame,
+    // visual size independent of the image zoom and always pixel sharp.
+    addAnchor(a, p.x, p.y);
   });
   // No image/text card on region hover; map labels and panels provide context.
   if (layer.labels && layer.rect && layer.info) positionMapAnchors(layer, camFor(layer.rect, layer.info, layer.pad), false);
@@ -690,8 +702,7 @@ function renderCap(sc, entry) {
   if (sc && sc.kind === 'stack') {
     h += sc.tabs.map((t, i) => `<a class="tab${i === sc.tab ? ' on' : ''}" data-sheet="${i}" href="#/${sc.owner.id}">${esc(t.legende || 'Carte ' + (i + 1))}</a>`).join('');
   } else if (sc && sc.owner && sc.owner.type === 'continent') {
-    const territory = entry && (entry.type === 'region' || entry.type === 'faction');
-    h = territory ? `<span class="cap current-territory"><span class="territory-kicker">Territoire exploré</span><strong>${esc(entry.nom)}</strong></span>` : '';
+    h = '';
   } else if (sc && sc.tabs && sc.tabs.length > 1) {
     h += sc.tabs.map((t, i) => `<a class="tab${i === sc.tab ? ' on' : ''}" href="#/${sc.owner.id}${i ? '?c=' + i : ''}">${esc(t.legende || 'Carte ' + (i + 1))}</a>`).join('');
   } else if (sc && !sc.gallery && sc.tabs && sc.tabs[0] && sc.tabs[0].legende) {
@@ -819,11 +830,12 @@ function upOf(e) {
 }
 function crumbs(e) {
   const mp = mergedPlace(e);
-  const ch = chain(e).filter(c => c !== mp && c !== e && tgt(c) !== e);
+  const previous = e.type === 'pnj' && RETURN_TO.has(e.id) ? BY[RETURN_TO.get(e.id)] : null;
+  const ch = previous ? [previous] : chain(e).filter(c => c !== mp && c !== e && tgt(c) !== e);
   const parts = ['<a href="#/">Monde</a>'];
   ch.forEach(c => parts.push(`<a href="#/${tgt(c).id}">${esc(c.nom)}</a>`));
   parts.push(`<span>${esc(e.nom)}</span>`);
-  const upE = upOf(e);
+  const upE = previous || upOf(e);
   const up = upE ? '#/' + tgt(upE).id : '#/';
   const upName = upE ? upE.nom : 'Monde';
   return `<nav class="crumbs"><a class="back" href="${up}" title="Retour : ${esc(upName)}">‹ Retour</a>${parts.join('<span class="sep">›</span>')}</nav>`;
@@ -937,6 +949,11 @@ function renderPanel(e, q) {
   if (e.etapes) h += sec('Parcours', parcours(e), 'parcsec');
   if (e.type === 'pj') h += sec('Enjeux et quête en cours', ul(e.histoire, e.id), 'past');
   if (e.question) h += sec('En suspens', `<p class="qs">${L(e.question, e.id)}</p>`);
+  if (e.type === 'pnj' && (e.lieux || []).length >= 2) {
+    const places = [...new Set(e.lieux)].map(id => BY[id]).filter(p => p && !p.redirige);
+    if (places.length > 1) h += sec('Lieux traversés',
+      `<div class="rels">${places.map(p => `<a class="chip" href="#/${p.id}">${esc(p.nom)}</a>`).join('')}</div>`);
+  }
   if (mp) { const sib = pnjsAt(mp).filter(x => x.id !== e.id); if (sib.length) h += sec('Aussi présents', `<div class="bubs">${sib.map(q2 => bubble(q2)).join('')}</div>`); }
   if (e.citation) h += `<blockquote class="cite"><p>${esc(e.citation.texte)}</p>${e.citation.qui ? `<cite>${esc(e.citation.qui)}</cite>` : ''}</blockquote>`;
   if (e.type !== 'pnj' && e.type !== 'pj') { const rel = relations(e); if (rel) h += sec('Liens', rel); }
@@ -1012,12 +1029,12 @@ function initExplorer() {
   if (!btn || !box) return;
   const continents = DB.filter(e => e.type === 'continent' && !e.locked);
   let continent = '', region = '', type = '', term = '';
-  const regions = DB.filter(e => (e.type === 'region' || e.type === 'faction') && !e.locked);
+  const regions = DB.filter(e => (e.type === 'region' || e.type === 'faction') && !e.locked && !e.redirige);
   const types = [['', 'Tout'], ['region', 'Régions'], ['faction', 'Factions'],
     ['ville', 'Villes'], ['lieu', 'Lieux'], ['pnj', 'PNJ'], ['pj', 'Joueurs']];
   const render = () => {
     const visible = DB.filter(e => {
-      if (e.locked) return false;
+      if (e.locked || e.redirige) return false;
       if (continent && continentOf(e)?.id !== continent) return false;
       if (region && !chain(e).some(p => p.id === region)) return false;
       if (type && e.type !== type) return false;
@@ -1078,7 +1095,7 @@ function initExplorer() {
 /* ---------- recherche ---------- */
 function initSearch() {
   const inp = $('#q'), box = $('#results');
-  const idx = DB.filter(e => !e.locked).map(e => ({ e, k: norm([e.nom, ...(e.alias || []), e.titre, e.resume, ...(e.tags || [])].filter(Boolean).join(' ')), n: norm(e.nom) }));
+  const idx = DB.filter(e => !e.locked && !e.redirige).map(e => ({ e, k: norm([e.nom, ...(e.alias || []), e.titre, e.resume, ...(e.tags || [])].filter(Boolean).join(' ')), n: norm(e.nom) }));
   let sel = -1;
   const run = () => {
     const t = norm(inp.value.trim());
@@ -1131,7 +1148,7 @@ function initEdit() {
 
 /* ---------- journal latéral : 60% contexte / 40% journal ---------- */
 function journalMode(box, open) {
-  for (const [id, buttonId] of [['qlog','qbtn'],['rlog','rbtn']]) {
+  for (const [id, buttonId] of [['qlog','qbtn'],['rlog','rbtn'],['slog','sbtn']]) {
     const panel = document.getElementById(id), trigger = document.getElementById(buttonId);
     if (!panel || !trigger) continue;
     const active = !!open && panel === box;
@@ -1143,6 +1160,33 @@ function journalMode(box, open) {
     syncTop(); measure();
     if (S.map && !S.map.stack && S.map.rect) setCam(S.map, S.map.rect, false, S.map.pad);
   });
+}
+/* ---------- compte-rendus des séances en panneau latéral ---------- */
+function initSessions() {
+  const btn = $('#sbtn'), box = $('#slog'); if (!btn || !box) return;
+  let sessions = null;
+  const draw = () => {
+    const items = sessions || [];
+    box.innerHTML = `<div class="qwin" role="document">
+      <header><span class="qgem"></span><h2>Résumé des parties</h2><span class="qcount">${items.length} séances</span><button type="button" class="qx" aria-label="Fermer">×</button></header>
+      <div class="qlist session-entries">${items.length
+        ? items.map((s,i) => `<details class="session-entry"><summary><span class="qstar" aria-hidden="true">✦</span><span class="session-label">${esc(s.titre || 'Partie ' + (i + 1))}<small>${esc(s.date || '')}</small></span><span class="session-arrow" aria-hidden="true">›</span></summary><div class="session-body"><p>${esc(s.resume || 'Résumé à rédiger.')}</p>${(s.liens || []).filter(x => BY[x.id] && !BY[x.id].locked).map(x => `<a href="#/${esc(x.id)}">${esc(x.label || BY[x.id].nom)}</a>`).join('')}</div></details>`).join('')
+        : '<p class="qempty">Les résumés des séances jouées apparaîtront ici dès leur rédaction.</p>'}</div></div>`;
+    $('.qx', box).addEventListener('click', () => journalMode(box,false));
+    box.querySelectorAll('a[href^="#/"]').forEach(a => a.addEventListener('click',()=>journalMode(box,false)));
+  };
+  const toggle = async open => {
+    if (open && !sessions) {
+      try {
+        const r = await fetch('data/parties.json?v=' + VER);
+        if (!r.ok) throw new Error('Journal HTTP ' + r.status);
+        sessions = (await r.json()).parties || [];
+      } catch(error) { console.error(error); sessions = []; }
+    }
+    journalMode(box,open); if(open) draw();
+  };
+  btn.addEventListener('click', () => toggle(box.hidden));
+  document.addEventListener('keydown', ev => { if(ev.key==='Escape' && !box.hidden) journalMode(box,false); });
 }
 /* ---------- journal de quêtes ---------- */
 async function initQuests() {
@@ -1201,6 +1245,7 @@ function initRunes() {
   initExplorer();
   initQuests();
   initRunes();
+  initSessions();
   window.addEventListener('hashchange', route);
   route();
 })();
