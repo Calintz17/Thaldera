@@ -2949,12 +2949,16 @@
       "Le chef officiel est Oswin, un vieux Scalvern posé. Une tour de mage domine la ville.",
       "Un grand aqueduc de pierre transporte le poisson vivant vers Keras Tauroc. Il faut environ 28 jours de trajet par le fleuve et la lande.",
       "Une caserne Tauroc s'est installée récemment et pèse sur la ville.",
-      "Un portail relie la tour d'Eamonn à Havre Noir, et un cercle de téléportation relie la tour aux ruines du château de Port Doëlan."
+      "Un cercle de téléportation relie la tour d'Eamonn aux ruines du château de Port Doëlan. La marque de craie de Philippa sur la porte de la tour sert de point de retour."
     ],
     "histoire": [
-      "Le groupe retrouve Olyssane et Ink, qui préparent un portail pour établir un comptoir commercial.",
-      "Eamonn ouvre un cercle de téléportation entre sa tour et les ruines du château de Port Doëlan, contre des composants et du suud.",
-      "Gran Brijit confie deux missions à Philippa avant le départ."
+      "Le groupe quitte Keras Tauroc sur le Tenrai-Buru de Yorisa et fait un détour par Cap Cornes à sa demande. Sur la lande, il croise un gibet où pendent des gardes Tauroc.",
+      "En ville, il retrouve Olyssane et Ink, qui préparent un portail pour établir un comptoir commercial. Lorcán indique la tour d'Eamonn.",
+      "Le groupe règle les deux problèmes d'Olyssane : Kester Tauroc, que Jane éconduit en se faisant passer pour elle, et la négociation avec Eamonn.",
+      "Il réunit les composants du rituel : clous de Rory, vésine de Fennick, trois cœurs de ghoules des marées.",
+      "Eamonn ouvre un cercle de téléportation entre sa tour et les ruines du château de Port Doëlan, contre les composants et du suud. Philippa marque la porte à la craie.",
+      "Gran Brijit confie deux missions à Philippa avant le départ : ne pas ouvrir de portail vers Cap Cornes ou Havre Noir, et tuer Oren Sidaï.",
+      "Plus tard, depuis Roshen Buru, le groupe revient en urgence par la craie de Philippa pour défendre la tour d'Eamonn contre le Tribunal de Chair."
     ],
     "relations": [
       {
@@ -2995,8 +2999,8 @@
     ],
     "resume": "Quartier général d'Olyssane. Porte marquée de la craie de Philippa.",
     "connu": [
-      "Massive, rongée de lierre, à l'est de la ville. Olyssane y passe ses journées.",
-      "Le cercle de téléportation vers Port Doëlan y est installé."
+      "Massive et vénérable, à l'est de la ville, au bout d'une ruelle en pente. La pierre est rongée de lierre et de lichen, les fanions sont usés. La porte est entrebâillée. À l'intérieur, une odeur de tabac froid et de parchemin moisi.",
+      "C'est le quartier général d'Olyssane et le cœur de la quête de Cap Cornes. Le cercle de téléportation vers les ruines du château de Port Doëlan y est installé, et la porte porte la marque de craie de Philippa."
     ],
     "rune": {
       "ordre": 7,
@@ -3005,8 +3009,12 @@
     },
     "chapeau": "Au bout d'une ruelle en pente, massive et vénérable, la tour est rongée de lierre et de lichen, ses fanions usés immobiles. La porte est entrebâillée. À l'intérieur, une odeur de tabac froid et de parchemin moisi.",
     "histoire": [
-      "!! Eamonn appelle les joueuses en urgence : la tour est attaquée. Elles battent les agresseurs, qui disparaissent dans un nuage de soufre en laissant une liste de cibles estampillée du sceau du Tribunal de Chair.",
-      "!! La liste porte les noms : Eamonn, Olyssane, Jane, Philippa, Ink, et Harfang suivi d'un point d'interrogation."
+      "Olyssane y passe ses journées à travailler avec Eamonn sur l'ancrage du portail. Le groupe l'y retrouve en arrivant à Cap Cornes.",
+      "Le groupe y reçoit la demande de composants d'Eamonn, puis y revient avec les clous rouillés, la vésine de Fennick et les trois cœurs de ghoules des marées.",
+      "Après la négociation contre du suud, Eamonn ouvre dans la tour un cercle de téléportation vers les ruines du château de Port Doëlan. Philippa trace sa marque de craie sur la porte.",
+      "!! Plus tard, Eamonn appelle les joueuses en urgence : la tour est attaquée. Elles arrivent en plein combat, battent l'Oni aux masques et ses gardes, qui disparaissent dans un nuage de soufre en laissant une liste de cibles estampillée du sceau du Tribunal de Chair.",
+      "!! La liste porte les noms : Eamonn, Olyssane, Jane, Philippa, Ink, et Harfang suivi d'un point d'interrogation.",
+      "Après la bataille, Eamonn téléporte le groupe au camp de Vespera depuis la tour, puis les renvoie à Roshen Buru."
     ],
     "galerie": [
       {
@@ -3041,6 +3049,9 @@
         "img": "img/paysages/cap-cornes/caserne.webp",
         "legende": "La caserne"
       }
+    ],
+    "histoire": [
+      "Installée récemment à Cap Cornes, elle pèse sur la ville. Sa présence est à l'origine des tensions que le groupe constate à son arrivée."
     ]
   },
   {
@@ -3066,6 +3077,9 @@
         "img": "img/paysages/cap-cornes/auberge-la-machoire.webp",
         "legende": "L'auberge La Mâchoire"
       }
+    ],
+    "histoire": [
+      "Le groupe y loge en arrivant à Cap Cornes. Lorcán l'oriente vers la tour d'Eamonn pour retrouver Olyssane."
     ]
   },
   {
@@ -3090,6 +3104,9 @@
         "img": "img/paysages/cap-cornes/marche.webp",
         "legende": "Le marché"
       }
+    ],
+    "histoire": [
+      "Le groupe y menace Fennick pour obtenir de la vésine, l'un des composants de la quête d'Eamonn."
     ]
   },
   {
@@ -3119,12 +3136,14 @@
     "parent": "cap-cornes",
     "resume": "Le groupe aide Olyssane à obtenir d'Eamonn un cercle de téléportation vers Port Doëlan.",
     "histoire": [
-      "Olyssane expose deux problèmes : Kester Tauroc veut la défier en duel, et elle doit convaincre Eamonn d'ouvrir un portail pour un comptoir commercial.",
+      "Le groupe arrive à Cap Cornes et retrouve Olyssane et Ink. Olyssane expose deux problèmes : Kester Tauroc veut la défier en duel, et elle doit convaincre Eamonn d'ouvrir un portail pour un comptoir commercial.",
       "Jane, déguisée en Olyssane, attire Kester dans une ruelle. Il fuit, apeuré, et jure vengeance.",
-      "Pour les composants, le groupe obtient de Fennick de la vesine en le menaçant, vainc des ghoules des marées avec l'aide d'Ink, et rapporte trois cœurs flétris.",
-      "Eamonn négocie contre du suud et ouvre le cercle. Philippa trace sa marque de craie sur la porte.",
-      "Chez Gran Brijit, Philippa a une vision d'une balance désaxée. Harfang et Ink rencontrent Brijit pour la première fois, et elle semble déjà les connaître.",
-      "Le groupe réveille Nolbrim, dans le coma depuis Malquessar, en le tuant puis en le ressuscitant avec la potion d'Ursinus. Philippa envoie un message à Bourre-Pif."
+      "Pour réunir les composants du rituel, le groupe obtient de Fennick de la vésine en le menaçant, vainc des ghoules des marées avec l'aide d'Ink, et rapporte trois cœurs flétris. Les clous rouillés viennent de la pêcherie de Rory.",
+      "Eamonn négocie enfin, contre du suud, puis ouvre un cercle de téléportation entre sa tour et les ruines du château de Port Doëlan. Philippa trace sa marque de craie sur la porte, point de retour permanent.",
+      "Avant le départ pour Azuren Kai, chez Gran Brijit, Philippa a une vision d'une balance désaxée. Olyssane ouvre le passage en faisant couler son sang. Harfang et Ink rencontrent Brijit pour la première fois, et elle semble déjà les connaître.",
+      "Le groupe réveille Nolbrim, dans le coma depuis Malquessar, en le tuant puis en le ressuscitant avec la potion d'Ursinus. Philippa envoie un message à Bourre-Pif.",
+      "Vespera vient à Cap Cornes et croise Eamonn.",
+      "Plus tard, depuis Roshen Buru, le groupe utilise la craie de Philippa pour répondre à l'appel d'Eamonn lors de l'attaque du Tribunal de Chair, puis Eamonn téléporte le groupe au camp de Vespera."
     ]
   },
   {
@@ -3138,11 +3157,11 @@
     "question": "Eamonn est-il mort ? Le cercle de téléportation est-il détruit ?",
     "resume": "Mage de la tour de Cap Cornes. A ouvert le cercle de téléportation vers Port Doëlan.",
     "connu": [
-      "Vieux Mirenaï à la peau grise et violacée, affalé dans un fauteuil trop grand pour lui, longue pipe, paupières lourdes. Fatigué et paresseux, mais pas hostile.",
-      "Il a d'abord résisté, puis négocié contre du suud. Il a ouvert un cercle de téléportation entre sa tour et les ruines du château de Port Doëlan.",
-      "Philippa a tracé une marque de craie sur sa porte, point de retour permanent. Sa condition : lui envoyer un message avant de débarquer dans son salon.",
-      "La Protectrice a envoyé le Tribunal de chair pour le tuer et détruire le cercle, afin de préserver l'isolationnisme d'Istra.",
-      "Il appelle à l'aide par la pierre de communication, la voix brisée : des masques flottants sont entrés dans la tour, il va ouvrir un passage, puis un cri et la ligne se coupe."
+      "Vieux Mirenaï à la peau grise et violacée, affalé dans un fauteuil trop grand pour lui, longue pipe, paupières lourdes. Il ne se lève pas et regarde les visiteurs comme une corvée qui arrive. Fatigué et paresseux, mais pas hostile.",
+      "C'est lui qui monte le rituel du portail de Cap Cornes. Sans lui, pas d'ancrage : tout passe par sa tour, où Olyssane passe ses journées.",
+      "Il a ouvert un cercle de téléportation entre sa tour et les ruines du château de Port Doëlan. La marque de craie de Philippa sur sa porte en fait un point de retour permanent. Sa seule condition : « Envoyez-moi un message avant de débarquer dans mon salon. »",
+      "Vespera, venue le voir à Cap Cornes, le juge drogué jusqu'aux yeux. Ses charmes n'ont pas pris sur lui, ce qui l'a contrariée.",
+      "La Protectrice a envoyé le Tribunal de chair pour le tuer et détruire le cercle, afin de préserver l'isolationnisme d'Istra."
     ],
     "relations": [
       {
@@ -3174,8 +3193,15 @@
     "img": "img/pnj/eamonn-moorwich.webp",
     "attitude": "positif",
     "histoire": [
-      "Attaqué par l'Oni aux masques, il appelle le groupe au secours. Une fois sauvé, il leur parle de Vespera et les téléporte à son camp.",
-      "Il renvoie ensuite le groupe à Roshen Buru."
+      "Le groupe arrive à Cap Cornes à la recherche d'Olyssane et d'Ink. Tous les habitants pointent la tour du mage, où elle passe le plus clair de son temps.",
+      "Eamonn reçoit les joueuses dans sa tour, sans se lever de son fauteuil. Olyssane lui demande depuis des jours d'ouvrir un portail pour établir un comptoir commercial. Il traîne, récalcitrant, et ne lâche rien.",
+      "Pour monter le rituel, il exige des composants : des clous rouillés, qu'on trouve par caisses à la pêcherie de Rory, et trois cœurs de ghoules des marées. Le groupe obtient de la vésine de Fennick en le menaçant, puis vainc les ghoules des marées avec l'aide d'Ink et rapporte les cœurs flétris.",
+      "Eamonn négocie enfin, contre du suud. Il monte le rituel et ouvre un cercle de téléportation entre sa tour et les ruines du château de Port Doëlan, ce qui jette un pont entre Vespera et Istra.",
+      "Philippa trace une marque de craie sur sa porte, point de retour permanent. Eamonn pose sa condition : un message avant toute arrivée dans son salon.",
+      "Vespera vient ensuite à Cap Cornes en personne. Elle le juge drogué jusqu'aux yeux et ses charmes mal pris sur lui la contrarient.",
+      "!! Depuis Roshen Buru, Eamonn appelle à l'aide par la pierre de communication, la voix brisée : des masques flottants sont entrés dans la tour, il va ouvrir un passage, puis un cri et la ligne se coupe. Philippa ouvre une téléportation avec sa craie et le groupe arrive en plein combat contre l'Oni aux masques.",
+      "Une fois les assassins vaincus, Eamonn, très reconnaissant, parle de son lien avec Vespera. Il téléporte le groupe jusqu'au camp de Vespera à Port Doëlan.",
+      "Au retour, il renvoie le groupe à Roshen Buru. Par la suite, le groupe apprend par les papiers de la Protectrice qu'elle avait envoyé le Tribunal de chair pour l'éliminer."
     ],
     "teinte": "#753c19"
   },
@@ -3194,13 +3220,10 @@
     ],
     "resume": "Mage qui prépare un portail entre les deux continents. Le groupe la retrouve à Cap Cornes avec Ink.",
     "connu": [
-      "Elle passe ses journées dans la tour d'Eamonn à préparer un portail pour établir un comptoir commercial.",
-      "Kester Tauroc veut la défier en duel. Elle veut éviter de le tuer.",
-      "Elle laisse Ink vagabonder librement.",
-      "Elle se présente comme Premier-Capitaine de la seconde flotte goudron, envoyée par Sycomore Brise-Pavois. Elle affirme avoir combattu pour Veyrann Krag, le Boucher des Abysses, et fait couler le sang des traîtres dans la Veyra.",
-      "Le voyage vers Camont dure un peu plus d'une semaine. Elle conseille de se ravitailler avant le départ : après le port, plus rien d'humain avant Camont.",
-      "Au sixième jour, des silhouettes armées attaquent depuis les berges. Elle prononce son avertissement, puis libère un blast runique qui arrache la canopée et fait fuir les brigands.",
-      "À Camont, elle n'attend que quarante-huit heures avant de lever l'ancre, avec ou sans le groupe."
+      "Tieffeline à la peau grise, Premier-Capitaine de la seconde flotte goudron de Sycomore Brise-Pavois. Silhouette de fer et de cicatrices, regard qui ne vacille pas.",
+      "Elle dit avoir combattu pour Veyrann Krag, le Boucher des Abysses, et fait couler le sang des traîtres dans la Veyra.",
+      "Elle se bat avec une épée runique et des sorts de tempête et de foudre.",
+      "Elle laisse Ink vagabonder librement, mais veille sur elle de loin."
     ],
     "relations": [
       {
@@ -3255,7 +3278,20 @@
       }
     ],
     "attitude": "allie",
-    "teinte": "#753c19"
+    "teinte": "#753c19",
+    "histoire": [
+      "À Havre Noir, elle se présente comme Premier-Capitaine de la seconde flotte goudron, envoyée par Sycomore Brise-Pavois pour conduire le groupe à Camont. Elle prévient que le voyage dure un peu plus d'une semaine et conseille de se ravitailler : après ce port, plus rien d'humain avant Camont.",
+      "Au départ, Sycomore apparaît au sommet de l'Assemblage et commande aux marées, ce qui propulse le navire à une vitesse surnaturelle dans l'embouchure de la Veyra.",
+      "Au sixième jour, des silhouettes armées attaquent depuis les berges. Elle prononce son avertissement puis libère un blast runique qui arrache la canopée et fait fuir les brigands.",
+      "À Camont, elle prévient qu'elle n'attendra que quarante-huit heures avant de lever l'ancre, avec ou sans le groupe.",
+      "Elle assiste au retour du groupe après le combat contre Argonath. En voyant de près les formes monstrueuses de Jane et de Philippa, elle panique et attaque, par peur autant que par sentiment de trahison. Gran Brijit l'arrête net. Depuis, elle a accepté ce qu'elles sont.",
+      "Elle fournit des plantes à Liora pour replanter des arbres au Repos des Épées. La boutique de Liora triple ses ventes grâce à ses commandes.",
+      "Elle rejoint Cap Cornes, à Istra, en emmenant Ink. Elle y prépare, avec Eamonn, un portail pour établir un comptoir commercial.",
+      "Quand le groupe la retrouve, elle expose deux problèmes : Kester Tauroc, qui la harcèle pour obtenir un duel, et la négociation avec Eamonn pour le portail. Elle ne veut pas tuer Kester, de peur d'attirer l'attention sur elle.",
+      "Jane, déguisée en Olyssane, attire Kester dans une ruelle. Il s'enfuit, apeuré, en jurant vengeance.",
+      "Elle aide à réunir les composants du rituel. Eamonn ouvre le cercle de téléportation vers Port Doëlan, et non vers Havre Noir.",
+      "Lors de l'attaque du Tribunal de Chair, elle défend Eamonn, l'acier à la main, quand le groupe arrive dans la tour."
+    ]
   },
   {
     "id": "ink",
@@ -3365,6 +3401,13 @@
         "legende": "Les rues de Roshen Buru",
         "forme": 1
       }
+    ],
+    "histoire": [
+      "À Agran, le groupe rencontre Ink à l'auberge de Thaloor. Il l'adopte, tente de la confier à Urnak sans succès, et c'est Olyssane qui l'emmène partout avec elle.",
+      "À Cap Cornes, le groupe retrouve Ink accroupie au bord d'une flaque, en train de jouer avec Maeve, une jeune Ophidienne. Olyssane la laisse vagabonder, mais la surveille de loin.",
+      "Elle raconte qu'un homme les a embêtées, qu'un œil vert a brillé sur les toits et que l'homme a disparu dans un cri. Pour elle, les esprits des marées la protègent.",
+      "Elle aide le groupe à vaincre les ghoules des marées, dont il rapporte trois cœurs flétris pour le rituel d'Eamonn.",
+      "Elle figure sur la liste de cibles du Tribunal de Chair laissée dans la tour d'Eamonn."
     ]
   },
   {
@@ -3424,7 +3467,10 @@
     ],
     "img": "img/pnj/lorca-n.webp",
     "attitude": "positif",
-    "teinte": "#753c19"
+    "teinte": "#753c19",
+    "histoire": [
+      "Quand le groupe arrive à Cap Cornes et cherche Olyssane, Lorcán pointe sans hésiter la tour d'Eamonn. Le groupe loge à son auberge."
+    ]
   },
   {
     "id": "fennick",
@@ -3453,7 +3499,11 @@
     ],
     "img": "img/pnj/fennick.webp",
     "attitude": "neutre",
-    "teinte": "#753c19"
+    "teinte": "#753c19",
+    "histoire": [
+      "Le groupe le trouve au marché de Cap Cornes, où il vend ses babioles. Il propose de la vésine, première apparition de cette drogue que le groupe retrouvera à Roshen Buru.",
+      "Le groupe le menace pour obtenir de la vésine plutôt que de l'acheter, dans le cadre de la quête des composants d'Eamonn. Il cède."
+    ]
   },
   {
     "id": "kester-tauroc",
@@ -3489,7 +3539,12 @@
       }
     ],
     "attitude": "ennemi",
-    "teinte": "#752519"
+    "teinte": "#752519",
+    "histoire": [
+      "Exilé à Cap Cornes parce qu'il est insupportable, il défie à peu près tout le monde au Cercle Écarlate. Il se fixe sur Olyssane et réclame un duel avec elle.",
+      "Le groupe arrive à Cap Cornes. Kester lui demande de dire à Olyssane qu'il l'attend, persuadé que personne ne refuse à Kester Tauroc.",
+      "Jane, déguisée en Olyssane, l'attire dans une ruelle. Il se bat, puis s'enfuit, apeuré, en jurant vengeance."
+    ]
   },
   {
     "id": "balamor",
@@ -6740,7 +6795,14 @@
     "citation": {
       "texte": "Mes renverseuses de despote préférées ! Les voici ! On leur doit la ruine de Spezza, et c'est pas rien !",
       "qui": "Vespera"
-    }
+    },
+    "histoire": [
+      "Après l'attaque du Tribunal de Chair sur la tour d'Eamonn, Eamonn téléporte le groupe au camp de Vespera, dans les ruines du château de Port Doëlan.",
+      "Jane remet à Vespera la Couronne de Corail Noir, qui sera revendue pour financer l'achat d'Arshen à Keras Tauroc. Jane négocie 1 % des ventes.",
+      "Vespera expose son problème de mercenaires. Le groupe met un pin sur le sud de Leyenmill et compte y revenir.",
+      "Tina et Nina, armées, et les wererats Kralik et Nesk, engagés comme gardes, ont rejoint son camp.",
+      "Eamonn renvoie ensuite le groupe à Roshen Buru depuis la tour de Cap Cornes."
+    ]
   },
   {
     "id": "omen-of-many-hands",

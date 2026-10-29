@@ -4623,7 +4623,11 @@
       "Après le combat, le groupe trouve une naginata, une liste de cibles du Tribunal de Chair et un objet de feu, Fukuro Kaen, la Fureur du Bûcher.",
       "La liste cite Eamonn, Olyssane, Jane, Philippa et Ink. Le nom de Harfang y figure suivi d'un point d'interrogation."
     ],
-    "teinte": "#753c19"
+    "teinte": "#753c19",
+    "histoire": [
+      "Le Tribunal de Chair, envoyé par la Protectrice, prend d'assaut la tour d'Eamonn avec ses gardes, un Porteur de Hallebarde et une Faucheuse d'Échos.",
+      "Le groupe, appelé en urgence, arrive en plein combat. L'Oni est vaincu et disparaît dans un nuage de soufre en laissant la liste de cibles, une naginata et Fukuro Kaen, la Fureur du Bûcher."
+    ]
   },
   {
     "id": "porteur-de-hallebarde",
