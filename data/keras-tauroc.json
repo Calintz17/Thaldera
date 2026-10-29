@@ -9753,5 +9753,35 @@
       "Pendant la traversée, il présente son équipage, bras écartés comme un trésor, puis tient la barre pendant la tempête nocturne où des Nagas remontent des fonds : « À vos postes, bordel de mille goélands hydrophobes ! »",
       "Il dépose Philippa à Voros."
     ]
+  },
+  {
+    "id": "arianthil",
+    "type": "pnj",
+    "nom": "Arianthil",
+    "titre": "Elfe de l'Ordre d'Argent",
+    "parent": "creux-d-azur",
+    "lieu": "creux-d-azur",
+    "statut": "vivant",
+    "resume": "Elfe de l'Ordre d'Argent qui sauve Philippa de Creux d'Azur et la récupère sur l'île du Vesper.",
+    "connu": [
+      "Il répond à la pierre de message de Philippa d'un ton calme et posé."
+    ],
+    "citation": {
+      "texte": "Je t'ai entendue, Philippa. Je suis en route.",
+      "qui": "Arianthil"
+    },
+    "histoire": [
+      "À Creux d'Azur, il attend Philippa à la surface après la destruction du cristal et la téléporte hors de la ville.",
+      "Il ouvre un portail pour la sauver et murmure une incantation pour briser son lien avec Vassago. Vassago tente une dernière possession, le portail est perturbé et Philippa est projetée en pleine mer.",
+      "Sur l'île du Vesper, Philippa active la pierre de message avec le rameau magique. Il répond : « Je t'ai entendue, Philippa. Je suis en route. » Il la téléporte loin de l'île."
+    ],
+    "relations": [
+      {
+        "cible": "philippa-rougetoison",
+        "type": "protège",
+        "ton": "positif",
+        "inverse": "protégée par"
+      }
+    ]
   }
 ]

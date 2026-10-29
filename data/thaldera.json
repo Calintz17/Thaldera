@@ -2537,7 +2537,10 @@
       "Elle a donné trois Bandle Scouts au groupe."
     ],
     "histoire": [
-      "Après sa libération à l'Île aux Moines, Liora ouvre le Pavillon Vert à Havre Noir.",
+      "Première mention : à Malquessar, Mira, l'apprentie de la fleuriste Liora, aide Philippa avec trois fausses pistes. La vraie Mira est morte, remplacée par un changeforme.",
+      "Liora quitte Malquessar pour voir le monde. Elle est attaquée près de Havre Noir, où on lui vole son médaillon, puis capturée par la Griffe.",
+      "Sous la cathédrale de l'île aux Moines, Philippa et Jane la trouvent dans une cage rouillée et la libèrent. Le Démon des Mains attaque aussitôt.",
+      "Après sa libération, Liora ouvre le Pavillon Vert à Havre Noir.",
       "Philippa et Jane la retrouvent en train de dresser ses premiers pots. Elle leur donne trois Bandle Scouts et promet des fleurs contre des plantes rares.",
       "Elle contacte ensuite le groupe par une pierre de communication pendant le voyage vers Keras Tauroc : sa boutique a triplé grâce aux achats d'Olyssane."
     ],
@@ -3602,6 +3605,12 @@
       "Elle pèse l'idée d'envoyer des émissaires sur le nouveau continent, mais préfère la discrétion pour l'instant."
     ],
     "histoire": [
+      "Flashback joué : fillette de l'orphelinat Merigold, à Leyenmil, elle partage la chambre de Jane et s'endort en serrant sa peluche d'owlbear. Le lien de sœur naît là.",
+      "Adulte, elle dirige la maison close de Port Doëlan, où travaillent Tina et Nina, et se retrouve à la tête du pouvoir local après la chute de Spezza.",
+      "À Keras Tauroc, le groupe reçoit un message d'elle : elle négocie un marché de pierre de 10 000 po et cherche des livraisons de matériaux rares venus d'Istra.",
+      "Elle se rend à Cap Cornes et y croise Eamonn, qu'elle juge drogué jusqu'aux yeux. Ses charmes ne prennent pas sur lui.",
+      "Après l'attaque du Tribunal de Chair sur la tour d'Eamonn, le groupe arrive à son camp, dans les ruines du château. Elle y expose son problème de mercenaires et un émissaire parti dans le sud de Leyenmil qui n'est pas revenu.",
+      "Jane lui remet la Couronne de Corail Noir, qui sera revendue pour financer Lapidus et l'envoi de deux tonnes d'archène de Keras Tauroc à la tour d'Eamonn. Jane touche 1 % des ventes.",
       "Elle appelle le groupe au chantier de Port Doëlan et propose un roadtrip vers Leyenmil."
     ],
     "img": "img/thaldera/pnj/vespera-merigold.webp",
@@ -3863,7 +3872,11 @@
       "Le village sait ce qui se passe à l'orphelinat et détourne les yeux."
     ],
     "histoire": [
-      "Jane y revit son passé : sa première mission pour la Rectrice, le meurtre d'Edmund von Kornwald."
+      "Flashback joué : Jane revit son enfance à l'orphelinat Merigold, à Leyenmil, sous la pluie. Elle y partage la chambre de Vespera.",
+      "Soren lui demande de chercher Luka, disparu, sans alerter les adultes. Luka est retrouvé muet, mutilé, dans une pièce vide.",
+      "La Rectrice lui confie son premier meurtre commandité : Edmund von Kornwald.",
+      "Dans le village de nuit, personne n'intervient. Jane tue Kornwald et découvre les documents qui prouvent qu'il enquêtait pour faire tomber la Rectrice.",
+      "Bien plus tard, au camp de Port Doëlan, Vespera explique qu'un de ses hommes envoyé fouiller le sud de Leyenmil n'est pas revenu. Le groupe met un pin sur la carte et propose un roadtrip."
     ],
     "pos": {
       "x": 0.32,
@@ -3915,7 +3928,14 @@
     "pos": {
       "x": 0.2,
       "y": 0.92
-    }
+    },
+    "histoire": [
+      "Flashback de Jane : elle est félicitée par la Rectrice pour sa discipline, rend la bourse volée et gagne une chambre à partager avec Vespera.",
+      "Soren vient la chercher : Luka a disparu. Elle fouille l'orphelinat sans alerter les adultes.",
+      "Elle retrouve Luka dans une pièce vide, muet, un œil manquant.",
+      "M. Falken sort de la chapelle en félicitant la Rectrice pour un service rendu comme d'habitude.",
+      "La Rectrice distribue à chaque enfant un objet dans la salle des déguisements, derrière la chapelle, avant la mission de Leyenmil."
+    ]
   },
   {
     "id": "la-rectrice",
@@ -3949,7 +3969,14 @@
       }
     ],
     "attitude": "ennemi",
-    "teinte": "#75193c"
+    "teinte": "#75193c",
+    "histoire": [
+      "Flashback de Jane : elle félicite brièvement Jane, récupère la bourse volée et lui accorde une chambre à partager avec Vespera.",
+      "Elle reçoit en privé M. Falken, qui attend le même niveau de service à chaque fois.",
+      "Elle confie à Jane son premier meurtre : Edmund von Kornwald. « Certaines mauvaises herbes doivent être arrachées avant qu'elles n'étouffent le jardin. Tu comprends cela, n'est-ce pas, Jane ? »",
+      "Elle laisse Jane choisir deux enfants pour l'accompagner, et distribue les objets de la mission (fléchettes silencieuses, anneau d'étranglement, plume de téléportation).",
+      "Plus tard, elle est tuée par des mercenaires."
+    ]
   },
   {
     "id": "edmund-von-kornwald",
@@ -3973,7 +4000,13 @@
     ],
     "img": "img/pnj/leyenmil-edmund-von-kornwald.webp",
     "attitude": "neutre",
-    "teinte": "#752519"
+    "teinte": "#752519",
+    "histoire": [
+      "La Rectrice le désigne comme première cible de Jane, au motif qu'il voudrait nuire à l'orphelinat.",
+      "Jane le trouve dans sa maison isolée à l'orée des bois, gardée de nuit. Ce n'est pas un combattant d'élite.",
+      "Il meurt de la main de Jane.",
+      "Dans son bureau, les documents montrent qu'il enquêtait pour faire tomber la Rectrice et protéger les enfants."
+    ]
   },
   {
     "id": "soren",
@@ -3994,6 +4027,10 @@
     "attitude": "positif",
     "connu": [
       "Voleur de quinze ans au service de la Rectrice. Il veille sur Luka comme sur un petit frère et demande à Jane de l'aider à le retrouver sans alerter les adultes."
+    ],
+    "histoire": [
+      "Voleur de quinze ans au service de la Rectrice, il veille sur Luka comme sur un petit frère.",
+      "Quand Luka disparaît, il demande à Jane de le chercher sans alerter les adultes."
     ]
   },
   {
@@ -4009,7 +4046,11 @@
       "Jane veut le retrouver.",
       "Enfant de dix ans de l'orphelinat. Retrouvé dans une pièce vide, mutique, un œil manquant, le visage griffé et le corps marqué de coups. Il refuse de parler et personne n'ose demander ce qui s'est passé."
     ],
-    "attitude": "positif"
+    "attitude": "positif",
+    "histoire": [
+      "Enfant de dix ans de l'orphelinat, il disparaît un après-midi.",
+      "Jane le retrouve assis contre le mur d'une pièce vide, muet, un œil manquant, le visage griffé, le corps marqué de coups récents. Personne n'ose demander ce qui s'est passé."
+    ]
   },
   {
     "id": "m-falken",
@@ -4043,7 +4084,11 @@
       }
     ],
     "attitude": "ennemi",
-    "teinte": "#753c19"
+    "teinte": "#753c19",
+    "histoire": [
+      "Dans le flashback, Jane le voit sortir de la chapelle en félicitant la Rectrice pour un service rendu comme à l'habitude.",
+      "Jane compte le tuer s'il se représente."
+    ]
   },
   {
     "id": "rocher-aux-noeuds",
@@ -9132,7 +9177,10 @@
     "titre": "Bureau de la Rectrice",
     "parent": "orphelinat-merigold",
     "resume": "Chapelle de l'orphelinat où la Rectrice reçoit. Un bâtiment annexe confortable lui sert de salle à manger.",
-    "chapeau": "Les portes de la chapelle restent entrouvertes sur une lumière chaude. Derrière, une salle annexe dissimulée sert de salle des déguisements : costumes, masques, capes et coffres verrouillés. C'est ici que la Rectrice reçoit ses enfants et distribue ses ordres."
+    "chapeau": "Les portes de la chapelle restent entrouvertes sur une lumière chaude. Derrière, une salle annexe dissimulée sert de salle des déguisements : costumes, masques, capes et coffres verrouillés. C'est ici que la Rectrice reçoit ses enfants et distribue ses ordres.",
+    "histoire": [
+      "La Rectrice y reçoit Jane, puis M. Falken. La salle des déguisements est cachée derrière."
+    ]
   },
   {
     "id": "klaus",
@@ -9185,6 +9233,9 @@
         "img": "img/paysages/leyenmil/auberge-copperworth.webp",
         "legende": "L'auberge de Mr. Copperworth"
       }
+    ],
+    "histoire": [
+      "Nuit de la mission de Jane : pluie battante, boue épaisse, village refermé sur lui-même. Le poissonnier lui tend du poisson salé, l'armurier ferme sa porte, l'aubergiste abrite les enfants. Personne n'intervient."
     ]
   },
   {
@@ -9202,6 +9253,9 @@
     "attitude": "positif",
     "connu": [
       "Vendeur de poisson du village."
+    ],
+    "histoire": [
+      "Pendant la nuit de la mission, il tend aux enfants un morceau de poisson salé sans poser de question."
     ]
   },
   {
@@ -9220,6 +9274,9 @@
     "attitude": "neutre",
     "connu": [
       "Armurier du village. Il ferme la porte au nez des enfants : trop jeunes pour tout ça."
+    ],
+    "histoire": [
+      "Pendant la nuit de la mission, il jauge les enfants puis leur ferme la porte : « Revenez quand vous serez grands. »"
     ]
   },
   {
@@ -9256,7 +9313,10 @@
     "connu": [
       "Aubergiste du village. Il fait entrer les enfants pour les abriter, leur offre lait chaud et feu, et fait taire Otto quand celui-ci les insulte."
     ],
-    "teinte": "#755219"
+    "teinte": "#755219",
+    "histoire": [
+      "Pendant la nuit de la mission, il abrite les enfants avec du lait chaud et un feu, et fait taire Otto qui les insulte."
+    ]
   },
   {
     "id": "otto",
@@ -9293,7 +9353,11 @@
     "pos": {
       "x": 0.817,
       "y": 0.33
-    }
+    },
+    "histoire": [
+      "Cible de la première mission de Jane, la nuit sous la pluie : deux lanternes, des gardes, un jardin détrempé et une fontaine.",
+      "Dans le bureau, Jane trouve les documents de Kornwald contre la Rectrice."
+    ]
   },
   {
     "id": "gardes-de-kornwald",
@@ -9301,7 +9365,10 @@
     "nom": "Les gardes de Kornwald",
     "titre": "Garde de la maison",
     "parent": "maison-kornwald",
-    "resume": "Deux gardes à l'entrée, possiblement un troisième en patrouille latérale."
+    "resume": "Deux gardes à l'entrée, possiblement un troisième en patrouille latérale.",
+    "histoire": [
+      "Jane et les deux enfants qu'elle a choisis les croisent à l'entrée de la maison Kornwald, la nuit de la mission."
+    ]
   },
   {
     "id": "statues-gardiennes-lathandre",
