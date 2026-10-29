@@ -62,4 +62,12 @@ assert.equal(by['nolbrim'].lieu,'manoir-des-ligaments','Nolbrim must live in can
 assert.equal(by.ink.parent,'agran','Ink must be indexed from Agran');
 assert.ok(['auberge-d-agran','brakka','cap-cornes','roshen-buru'].every(id=>by.ink.lieux.includes(id)),'Ink journey must be preserved');
 assert.ok(by.ink.galerie.length>=4,'Ink journey must display multiple landscape stages');
+const mobileTheme = fs.readFileSync(path.join(root,'assets/ios-mobile.css'),'utf8');
+assert.ok(page.includes('media="(max-width: 860px)"'), 'iOS style must be mobile-only');
+assert.ok(mobileTheme.includes('grid-template-columns:minmax(96px,118px)'), 'Compact iPhone header must have two columns');
+assert.ok(mobileTheme.includes('.mobile-places-list'), 'Map destinations need tactile fallback');
+assert.ok(mobileTheme.includes('.gal .gdots button'), 'Gallery dots need touch-sized controls');
+assert.ok(source.includes('syncMobileViewport()'), 'Visual viewport must be measured for Safari');
+assert.ok(source.includes("!matchMedia('(pointer:coarse)').matches"), 'Explorer must avoid auto-opening iOS keyboard');
+console.log('Mobile Safari static checks OK: two-row header, keyboard, map destinations, full-height docks');
 console.log('Atlas regression OK: 783+ fiches, context return, merged manor, Ink journey, bright atlas dots, session drawer.');

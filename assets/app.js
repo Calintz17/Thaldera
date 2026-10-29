@@ -4,7 +4,7 @@
 (() => {
 'use strict';
 
-const VER = '85';
+const VER = '86';
 const EDIT = new URLSearchParams(location.search).has('edit');
 const $ = (s, r = document) => r.querySelector(s);
 const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
@@ -145,7 +145,15 @@ document.addEventListener('click', ev => {
 const BIGMAP = /^img\/cartes\/(istra|thaldera|thaldera-factions)\.webp$/;
 const mapSrc = u => BIGMAP.test(u) ? u.replace('.webp', '-m.webp') : u;
 function syncTop() { const t = document.querySelector('.top'); if (t) document.documentElement.style.setProperty('--top-h', t.offsetHeight + 'px'); }
-window.addEventListener('resize', syncTop); window.addEventListener('orientationchange', syncTop); window.addEventListener('load', syncTop);
+function syncMobileViewport() {
+  if (!matchMedia('(max-width:860px)').matches) return;
+  const view = window.visualViewport;
+  document.documentElement.style.setProperty('--ios-visible-height', Math.round(view ? view.height : innerHeight) + 'px');
+}
+window.addEventListener('resize', syncTop);
+window.addEventListener('orientationchange', () => { syncTop(); syncMobileViewport(); });
+window.addEventListener('load', () => { syncTop(); syncMobileViewport(); });
+window.visualViewport?.addEventListener('resize', syncMobileViewport, { passive: true });
 function measure() { S.W = stageEl.clientWidth; S.H = stageEl.clientHeight; }
 function camFor(rect, info, pad = 0.94) {
   const s = Math.min(S.W / (rect.w * info.w), S.H / (rect.h * info.h)) * pad;
@@ -709,6 +717,20 @@ function renderCap(sc, entry) {
   } else if (sc && !sc.gallery && sc.tabs && sc.tabs[0] && sc.tabs[0].legende) {
     h += `<span class="cap">${esc(sc.tabs[0].legende)}</span>`;
   }
+  // On touch devices the geographic pins have no hover state. Provide a
+  // visible-name list with identical destinations, without changing desktop.
+  if (sc?.pins?.length) {
+    const seen = new Set();
+    const available = sc.pins.filter(p => {
+      if (seen.has(p.id) || !BY[p.id] || BY[p.id].locked || BY[p.id].redirige) return false;
+      seen.add(p.id); return true;
+    });
+    if (available.length) h += `<details class="mobile-places">
+      <summary aria-label="Lieux sur cette carte">Lieux sur la carte <span>${available.length}</span></summary>
+      <nav class="mobile-places-list" aria-label="Destinations sur la carte">
+      ${available.map(p => `<a href="#/${encodeURIComponent(p.id)}">${esc(p.label)}</a>`).join('')}
+      </nav></details>`;
+  }
   cap.innerHTML = h;
   cap.querySelectorAll('a[data-sheet]').forEach(a => a.addEventListener('click', ev => { ev.preventDefault(); scrollSheet(parseInt(a.dataset.sheet, 10)); }));
 }
@@ -1061,6 +1083,7 @@ function initExplorer() {
   };
   const toggle = open => {
     box.hidden = !open;
+    document.body.classList.toggle('explorer-open', open);
     btn.setAttribute('aria-expanded', String(open));
     if (open) {
       if (!box.firstElementChild) {
@@ -1076,7 +1099,8 @@ function initExplorer() {
       if (current && !continent) continent = current.id;
       $('#econtinent', box).value = continent;
       render();
-      $('#equery', box).focus();
+      // Safari otherwise opens the iOS keyboard immediately over the results.
+      if (!matchMedia('(pointer:coarse)').matches) $('#equery', box).focus();
     }
   };
   btn.addEventListener('click', () => toggle(box.hidden));
@@ -1148,7 +1172,16 @@ function initEdit() {
 /* ---------- demarrage ---------- */
 
 /* ---------- journal latéral : 60% contexte / 40% journal ---------- */
+let mobileJournalScroll = null;
 function journalMode(box, open) {
+  if (matchMedia('(max-width:860px)').matches) {
+    if (open && mobileJournalScroll === null) mobileJournalScroll = scrollY;
+    if (!open && mobileJournalScroll !== null) {
+      const restore = mobileJournalScroll;
+      mobileJournalScroll = null;
+      requestAnimationFrame(() => scrollTo(0, restore));
+    }
+  } else mobileJournalScroll = null;
   for (const [id, buttonId] of [['qlog','qbtn'],['rlog','rbtn'],['slog','sbtn']]) {
     const panel = document.getElementById(id), trigger = document.getElementById(buttonId);
     if (!panel || !trigger) continue;
@@ -1246,6 +1279,11 @@ function initRunes() {
     return;
   }
   syncTop();
+  syncMobileViewport();
+  if ('ResizeObserver' in window) {
+    new ResizeObserver(() => { if (matchMedia('(max-width:860px)').matches) syncTop(); })
+      .observe(document.querySelector('.top'));
+  }
   measure();
   buildWorld();
   initSearch();
