@@ -8140,7 +8140,7 @@
     "resume": "Ancien établissement de bains, brumeux, traversé de canalisations rouillées et de nappes de vapeur.",
     "chapeau": "Une porte de cuivre gravée s'ouvre sur l'humidité, qui engloutit aussitôt le visiteur. Elle est mêlée aux relents d'algues, d'encens et de peau chaude. Des canalisations rouillées courent sous des plafonds voûtés, et des nappes de vapeur montent paresseusement au-dessus des bassins. L'odeur du sel, du musc et des corps fatigués imprègne les murs. Des silhouettes floues se déplacent en silence entre les bassins, drapées de serviettes, anonymes dans la brume.",
     "histoire": [
-      "Philippa y trouve Skrell, étendu dans des coussins détrempés. Elle y suit plus tard un voleur du Voile et comprend que Skrell dirige le trafic de Suud."
+      "Philippa y trouve Skrell, étendu dans des coussins détrempés. Elle y suit plus tard un voleur du Voile et comprend que Skrell dirige le trafic de Suud. Plus tard, avec Helka, elle revient l'y chercher, sans succès : il n'est pas là."
     ]
   },
   {
@@ -8165,7 +8165,7 @@
     "histoire": [
       "Philippa le rencontre aux bains publics. Il nie connaître le Voile ou la Griffe et la renvoie vers les quêtes du tableau public.",
       "Quand elle remonte jusqu'à lui le voleur de l'entrepôt de Jericho, il lui lance : « Bravo, Sherlock. »",
-      "Helka veut prendre sa place à la tête du Voile de Voros. Skrell est tué."
+      "Avec Helka, Philippa le débusque dans la maison condamnée, un laboratoire de drogue sous une trappe cachée derrière une étagère vermoulue. Il reconnaît Helka « la repentie » et Philippa « celle qui cherche sa mère ». Il est tué au combat, et sur lui se trouve une lettre de Lavande qui lui est adressée."
     ]
   },
   {
@@ -9018,7 +9018,10 @@
       "Depuis la tour, on voit des feux de camp sur la côte opposée : un camp gobelin organisé et mieux équipé qu'il n'en a l'air.",
       "Les gobelins sont payés pour garder ce poste et se plaignent de la boue. Traverser leur camp risque l'affrontement, contourner par les marais ralentit."
     ],
-    "chapeau": "Une tour de guet abandonnée émerge des marais : pierres humides, escalier brisé, bois gonflé de moisissure. Au loin, au milieu des brumes marines, l'île aux moines se tient sombre sous un voile de brouillard. Sur la côte opposée, des lueurs de feux de camp percent la nuit."
+    "chapeau": "Une tour de guet abandonnée émerge des marais : pierres humides, escalier brisé, bois gonflé de moisissure. Au loin, au milieu des brumes marines, l'île aux moines se tient sombre sous un voile de brouillard. Sur la côte opposée, des lueurs de feux de camp percent la nuit.",
+    "histoire": [
+      "En arrivant sur la côte, Philippa et Jane trouvent le quai de contrebande et la tour de guet, d'où elles repèrent le camp de gobelins mercenaires de l'autre côté du bras de mer."
+    ]
   },
   {
     "id": "village-monastique-ile-aux-moines",
@@ -9033,7 +9036,10 @@
       "Au quartier nord, un réverbère isolé brûle contre toute logique. C'est un démon-alarme, qui hurle si on s'approche et invoque des Mains gardiennes.",
       "Une maison faiblement éclairée est le seul lieu animé du village : des hommes de la Griffe y patrouillent, nerveux."
     ],
-    "chapeau": "Un ancien village monastique, mangé par la végétation, dont les pierres humides suintent de mousse. Les maisons en ruine s'écroulent sur elles-mêmes, certaines à moitié englouties par la boue et les racines. Partout, des statues brisées de Lathandre gisent à demi renversées, les visages martelés. L'air est lourd, saturé de sel et de pierre humide, et le silence est presque total."
+    "chapeau": "Un ancien village monastique, mangé par la végétation, dont les pierres humides suintent de mousse. Les maisons en ruine s'écroulent sur elles-mêmes, certaines à moitié englouties par la boue et les racines. Partout, des statues brisées de Lathandre gisent à demi renversées, les visages martelés. L'air est lourd, saturé de sel et de pierre humide, et le silence est presque total.",
+    "histoire": [
+      "Philippa et Jane traversent le village : statues de Lathandre aux visages martelés, réverbère allumé au quartier nord qui est en fait un démon-alarme, et une maison éclairée, gardée par les hommes de la Griffe. Elles y récupèrent le journal d'un moine qui explique le départ : un fléau s'est abattu sur l'île."
+    ]
   },
   {
     "id": "grande-cathedrale-ile-aux-moines",
@@ -9047,7 +9053,12 @@
       "Absalom attend près de l'autel et ne prend pas l'initiative : elle réagit à l'agression, d'abord par une boule de feu sur l'autel.",
       "Elle a laissé une lettre brûlée où l'on lit encore « Havre Noir », « contrat » et « mission », un anneau de protection +1 et un sac de 3 400 pièces d'or."
     ],
-    "chapeau": "La cathédrale est vaste, son toit éventré laisse filtrer un rai de lune dans la poussière. Les colonnes sont éventrées par le temps, le sol jonché de gravats. Dans un recoin, une lueur douce perce l'obscurité."
+    "chapeau": "La cathédrale est vaste, son toit éventré laisse filtrer un rai de lune dans la poussière. Les colonnes sont éventrées par le temps, le sol jonché de gravats. Dans un recoin, une lueur douce perce l'obscurité.",
+    "histoire": [
+      "Philippa et Jane y trouvent la Sphère de l'Aube, intacte, ignorée par les pillards.",
+      "Après avoir libéré les prisonniers des souterrains, elles affrontent Absalom, le Berger, qui attend près de l'autel. Elle réagit à l'agression par une boule de feu sur l'autel, combat avec elles, puis prend ses quartiers.",
+      "Philippa trouve sur place une lettre brûlée, un anneau de protection +1 et 3 400 po."
+    ]
   },
   {
     "id": "souterrains-ile-aux-moines",
@@ -9062,7 +9073,11 @@
       "Le Démon des Mains guette dans les fissures et attaque dès que les prisonniers sont libérés.",
       "Plus loin, une porte massive de pierre et de fer, gravée de symboles effacés, ouvre sur des couloirs plus propres."
     ],
-    "chapeau": "Un réseau de salles humides, envahies de mousse et de moisissures. Des cages de fer rouillées s'alignent le long des couloirs, certaines ouvertes, d'autres encore occupées par des silhouettes faméliques. Dans l'ombre, on entend des couinements métalliques et des doigts qui rampent sur la pierre."
+    "chapeau": "Un réseau de salles humides, envahies de mousse et de moisissures. Des cages de fer rouillées s'alignent le long des couloirs, certaines ouvertes, d'autres encore occupées par des silhouettes faméliques. Dans l'ombre, on entend des couinements métalliques et des doigts qui rampent sur la pierre.",
+    "histoire": [
+      "Philippa et Jane descendent sous la cathédrale, où la Griffe garde des prisonniers dans des cages rouillées. Elles y trouvent Liora, qui leur explique avoir quitté Malquessar pour voir le monde et avoir été attaquée près de Havre Noir, où on lui a volé son médaillon.",
+      "Le Démon des Mains attaque dès que les prisonniers sont libérés."
+    ]
   },
   {
     "id": "porte-de-la-jungle",
@@ -9075,7 +9090,10 @@
       "Au sol est gravé : « Rendez hommage à la forêt. »",
       "Trois arbres majestueux s'élèvent à égale distance du seuil, chacun marqué d'une immense rune entourée de petits symboles. Au pied de chaque tronc repose un bol de pierre vide."
     ],
-    "chapeau": "Le sentier s'interrompt brusquement, avalé par une lourde porte de pierre enchâssée dans un pan rocheux. Au centre, taillé dans la roche, un motif de vingt-cinq cases, cinq par cinq, chacune marquée d'un symbole ancien usé par le temps. La clairière est silencieuse, presque solennelle."
+    "chapeau": "Le sentier s'interrompt brusquement, avalé par une lourde porte de pierre enchâssée dans un pan rocheux. Au centre, taillé dans la roche, un motif de vingt-cinq cases, cinq par cinq, chacune marquée d'un symbole ancien usé par le temps. La clairière est silencieuse, presque solennelle.",
+    "histoire": [
+      "Après des jours de marche dans la jungle, Philippa et Jane butent sur cette porte de pierre. Le sol porte la phrase « Rendez hommage à la forêt. » et chacun des trois arbres de la clairière porte une rune et un bol de pierre vide."
+    ]
   },
   {
     "id": "relais-des-sables",
@@ -9086,6 +9104,9 @@
     "resume": "Relais de caravane perdu dans le désert, sur la route de Khazad-Marun. Quatre tenanciers y accueillent les voyageurs.",
     "connu": [
       "On y trouve des provisions, des capes, des armes discrètes, de la poudre et des potions. Une chambre coûte vingt pièces."
+    ],
+    "histoire": [
+      "Philippa et Jane s'y arrêtent pendant la traversée du désert vers l'île aux Moines. Le Marchand Sahir Al-Basma, la cuisinière Grikka Marmiton, la patronne Nashara-aux-Anneaux et le prophète Oba l'Errant tiennent ce relais de caravane."
     ]
   },
   {
@@ -9099,7 +9120,10 @@
       "Une trappe cachée derrière une étagère vermoulue mène à un laboratoire où l'on raffine la Suud en poudre (Perception ou Investigation, DD 14).",
       "Un alchimiste maigre, aux doigts tachés d'acide, et deux colosses drogués y travaillaient sous les ordres de Skrell."
     ],
-    "chapeau": "Une bâtisse aux volets cloués, murs fissurés, herbes folles poussant entre les pierres."
+    "chapeau": "Une bâtisse aux volets cloués, murs fissurés, herbes folles poussant entre les pierres.",
+    "histoire": [
+      "Helka y conduit Philippa après avoir fouillé les bains. Sous une trappe cachée derrière une étagère vermoulue, elles trouvent un laboratoire de Suud et tuent Skrell, son alchimiste et ses gros bras."
+    ]
   },
   {
     "id": "demon-des-mains",
@@ -9116,6 +9140,7 @@
       "Il frappe à la masse cloutée, allonge une langue empoisonnée et crache un cône de feu et de nécrotique avec une lanterne."
     ],
     "histoire": [
+      "Dans les souterrains de la cathédrale de l'île aux Moines, il bondit sur Philippa et Jane quand elles libèrent les prisonniers de la Griffe.",
       "Un démon des mains du même nom attaque le groupe dans les catacombes de la cathédrale de Kord, à Keras Tauroc, quand il fouille l'autel détourné par Absalom. Il est vaincu."
     ]
   },
@@ -9135,7 +9160,10 @@
     "citation": {
       "texte": "Rien d'extraordinaire, juste des provisions, des capes, ce genre de choses.",
       "qui": "Sahir Al-Basma"
-    }
+    },
+    "histoire": [
+      "Philippa et Jane le croisent au relais. Il leur propose d'abord des provisions et des capes, puis, devant leur insistance, montre des marchandises que « ça ne quitte pas cette table »."
+    ]
   },
   {
     "id": "grikka-marmiton",
@@ -9153,7 +9181,10 @@
     "citation": {
       "texte": "Sérieux ? Vous voulez manger maintenant ?",
       "qui": "Grikka Marmiton"
-    }
+    },
+    "histoire": [
+      "Philippa et Jane la trouvent derrière ses fourneaux, qui n'a pas grand-chose à faire mijoter par cette chaleur."
+    ]
   },
   {
     "id": "nashara-aux-anneaux",
@@ -9171,7 +9202,10 @@
     "citation": {
       "texte": "Tiens donc… c'est pas souvent que je vois des voyageurs par ici.",
       "qui": "Nashara-aux-Anneaux"
-    }
+    },
+    "histoire": [
+      "Elle loue à Philippa et Jane une chambre à vingt pièces, en avouant que ce n'est pas sa clientèle."
+    ]
   },
   {
     "id": "oba-l-errant",
@@ -9189,7 +9223,10 @@
     "citation": {
       "texte": "Je sens deux pouvoirs en toi… le cœur rusé de la renarde et la fureur du monstre. Les marais où tu vas t'enfoncer sont traîtres : là, ne lâche pas la bête. Là, suis la renarde, et laisse sa ruse ouvrir ton chemin.",
       "qui": "Oba l'Errant, à Jane"
-    }
+    },
+    "histoire": [
+      "Il dit à Philippa : « Je sens deux pouvoirs en toi… le cœur rusé de la renarde et la fureur du monstre. Les marais où tu vas t'enfoncer sont traîtres : là, ne lâche pas la bête. Là, suis la renarde, et laisse sa ruse ouvrir ton chemin. »"
+    ]
   },
   {
     "id": "maison-lenach",
@@ -9571,6 +9608,103 @@
     "histoire": [
       "Le quartier de la caserne abrite la villa de Ferox, que le pli de Sera désigne.",
       "Cordus, l'haruspex, a son cabinet adjacent à la caserne."
+    ]
+  },
+  {
+    "id": "helka-von-leyemil",
+    "type": "pnj",
+    "nom": "Helka von Leyemil",
+    "titre": "Landsknecht repentie du Voile",
+    "parent": "voros",
+    "lieu": "voros",
+    "statut": "vivant",
+    "resume": "Grande guerrière en armure rouge aux sceaux de cire, ancienne landsknecht de l'Impératrice, passée au Voile.",
+    "attitude": "allie",
+    "connu": [
+      "Son plastron porte de nombreux sceaux de cire et la croix d'honneur de l'Empire d'Altéra, rarement remise.",
+      "Elle décrit la Griffe comme une organisation qui recrute les pires raclures, équipée, entraînée, et qui ne bouge jamais à moins de cinq : un soigneur, un arcaniste, quelques brutes.",
+      "Elle veut prendre la place de Skrell à la tête du Voile de Voros."
+    ],
+    "citation": {
+      "texte": "Skrell est un imbécile au cerveau défoncé par la Suud, je comprends même pas ce qu'il fait encore là.",
+      "qui": "Helka von Leyemil"
+    },
+    "histoire": [
+      "Elle aborde Philippa à Voros, remarquée depuis le port de Lunsk : « Tu t'es fait remarquer. Depuis le port de Lunsk. » Elle lui donne deux jours à vivre si elle continue à fouiner.",
+      "Elle se présente comme ancienne landsknecht de l'Impératrice, passée au Voile, et lui demande un coup de main pour prendre la place de Skrell. En échange, elle l'aidera à ne pas mourir face à la Griffe.",
+      "Elle la prévient que la Griffe est une meute et lui présente Bernard.",
+      "Elle conduit Philippa aux bains puis à la maison condamnée de Skrell, où elles le tuent. Elle promet de s'occuper du Voile de Voros et de rappeler Philippa dans quelques semaines."
+    ]
+  },
+  {
+    "id": "bernard",
+    "type": "pnj",
+    "nom": "Bernard",
+    "titre": "Goliath couvert de champignons",
+    "parent": "voros",
+    "lieu": "voros",
+    "statut": "vivant",
+    "resume": "Colosse silencieux, assis dans un coin, recouvert de champignons.",
+    "attitude": "neutre",
+    "connu": [
+      "Il ne parle jamais. Helka dit qu'il déteste les types de la Griffe, sans en être sûre.",
+      "Il combat avec des spores et une symbiose fongique."
+    ],
+    "citation": {
+      "texte": "Voilà, je te présente Bernard.",
+      "qui": "Helka von Leyemil"
+    },
+    "histoire": [
+      "Helka le présente à Philippa à Voros comme « un très bon ami » : « Me demande pas. Je sais pas. Il m'a jamais décroché un mot non plus. »",
+      "Il reste à Voros, aux sources chaudes."
+    ]
+  },
+  {
+    "id": "gallywix",
+    "type": "pnj",
+    "nom": "Gallywix",
+    "titre": "Prince-Marchand de Voros",
+    "parent": "palais-de-gallywix",
+    "lieu": "palais-de-gallywix",
+    "statut": "vivant",
+    "resume": "Prince-Marchand de Voros, qui siège sur un trône sculpté en forme de navire et lève à peine les yeux.",
+    "attitude": "neutre",
+    "connu": [
+      "Son palais est taillé dans la falaise qui surplombe Voros, luxueux sans ostentation, ouvert sur la mer.",
+      "Il ne combat pas la Griffe et le dit sans détour : elle remplit ses coffres.",
+      "On peut l'intimider (DC 18), le manipuler en inventant une menace plus grande (DC 16) ou l'amener à raisonner en plaidant l'équilibre des forces (DC 14)."
+    ],
+    "citation": {
+      "texte": "Pourquoi je chasserai la Griffe, qui remplit mes coffres mieux que n'importe quelle loi ? Nous vivons du commerce libre, ici.",
+      "qui": "Gallywix"
+    },
+    "histoire": [
+      "Philippa apprend à Voros que la guilde des marchands obéit à un seul maître, le Prince-Marchand, et qu'on ne fait pas de business sans sa bénédiction.",
+      "Elle le rencontre dans son palais, entouré de scribes et de gardes. Il lui demande qui elle est et ce qu'elle cherche, puis cède une information capitale : l'adresse d'un entrepôt isolé au nord de la ville, qu'il surveille sans jamais y mettre les pieds."
+    ]
+  },
+  {
+    "id": "vano-meredzi",
+    "type": "pnj",
+    "nom": "Vano Meredzi",
+    "titre": "Capitaine de l'Aile d'Avalon",
+    "parent": "laile-d-avalon",
+    "lieu": "laile-d-avalon",
+    "statut": "vivant",
+    "resume": "Capitaine rond et jovial, boucle d'oreille en cuivre battu et tatouages marins, ancien corsaire de Havre Noir.",
+    "attitude": "neutre",
+    "connu": [
+      "Ancien corsaire de Havre Noir sous l'ancien régime, il est aujourd'hui auto-entrepreneur basé à Voros.",
+      "Ses règles à bord : dormir où l'on veut sans déranger personne, ne pas traîner dans ses pattes et ne pas mettre l'équipage en danger, sous peine de finir à la mer."
+    ],
+    "citation": {
+      "texte": "Garde la tête haute, petite mouette des plaines, Voros est comme une mer d'huile, chiante quand on n'a rien à y faire, traîtresse si on essaie de lui planter un couteau dans le dos.",
+      "qui": "Vano Meredzi"
+    },
+    "histoire": [
+      "Il accueille Philippa sur le port de Lunsk, au petit matin : « Lunsk, hein ? Vous avez l'air encore entière, c'est bon signe ! » Voros est à trois jours par le sud.",
+      "Pendant la traversée, il présente son équipage, bras écartés comme un trésor, puis tient la barre pendant la tempête nocturne où des Nagas remontent des fonds : « À vos postes, bordel de mille goélands hydrophobes ! »",
+      "Il dépose Philippa à Voros."
     ]
   }
 ]

@@ -2572,10 +2572,11 @@
     ],
     "histoire": [
       "Après trois jours et demi de mer sur l'Aile d'Avalon, dont une tempête nocturne où des Nagas remontent des fonds, Philippa arrive à Voros, cité suspendue entre falaise et mer, dont la guilde des marchands de Gallywix contrôle tout.",
-      "Ghassan Tarek, l'aubergiste, lui dit que le Voile opère depuis les bains publics. Elle y trouve Skrell, qui nie tout, puis prend une quête sur le tableau public : le marchand Jericho se fait piller chaque nuit.",
+      "Ghassan Tarek, l'aubergiste, lui dit que le Voile opère depuis les bains publics. Elle y trouve Skrell, qui nie tout et la renvoie vers les quêtes du tableau public. Elle prend celle du marchand Jericho, qu'on pille chaque nuit.",
       "Elle patrouille la nuit dans l'entrepôt de Jericho, y découvre du Suud, suit un voleur du Voile jusqu'aux bains et comprend que Skrell orchestre lui-même les vols et le trafic de cette drogue brune vers les ports du Consortium.",
-      "La landsknecht repentie Helka von Leyemil l'avertit sur la Griffe et lui présente Bernard. Skrell est tué. Gallywix donne à Philippa l'adresse d'un entrepôt isolé au nord, où elle découvre des cages de prisonniers et apprend que les captifs viennent de l'île aux Moines par caravane à travers le désert.",
-      "Jane et Philippa se rencontrent à Voros, et Jane propose de les guider vers l'île aux Moines."
+      "La landsknecht repentie Helka von Leyemil l'avertit sur la Griffe et lui présente Bernard. Le Prince-Marchand Gallywix, qui profite du commerce de la Griffe, lui indique l'adresse d'un entrepôt isolé au nord. Dans les tunnels qu'il cache, Philippa trouve des cages de prisonniers et apprend que les captifs viennent de l'île aux Moines par caravane à travers le désert.",
+      "Avec Helka, elle retourne aux bains puis à la maison condamnée où se terre Skrell, et le tue. Helka prend la tête du Voile de Voros et promet de rappeler Philippa dans quelques semaines.",
+      "Jane Merigold surgit alors des ombres : elle sait où se trouve la Griffe et propose d'accompagner Philippa vers l'île aux Moines."
     ],
     "pos": {
       "x": 0.55,
@@ -2712,8 +2713,10 @@
       "Une lettre brûlée signée Spezza prouve son financement du trafic."
     ],
     "histoire": [
-      "Philippa libère Liora, prisonnière de la Griffe.",
-      "Le groupe affronte Absalom, appelée le Berger, qui s'échappe."
+      "Philippa et Jane gagnent l'île depuis la côte, par un quai de contrebande et une barque bringuebalante, au milieu des brumes marines.",
+      "Elles découvrent un monastère de Lathandre volontairement profané, aux statues brisées et aux visages martelés. Les moines sont partis pour un temple brumeux dans la jungle à l'ouest de Port Lagon.",
+      "Dans les souterrains de la cathédrale, la Griffe détient des prisonniers. Philippa libère Liora et le Démon des Mains attaque.",
+      "Elle affronte Absalom, le Berger, dans la cathédrale effondrée. Absalom s'échappe en disant qu'elle sent qu'elles se reverront, et laisse derrière elle une lettre brûlée, signée Spezza, qui prouve son financement du trafic."
     ],
     "fusion": true,
     "pos": {
@@ -2731,7 +2734,8 @@
     "statut": "mort",
     "resume": "Moine de Lathander devenu fou. Son journal raconte la présence démoniaque et « le navire qui n'existait pas ».",
     "histoire": [
-      "Il attaque le groupe, d'abord à l'Île aux Moines puis au Temple Brumeux."
+      "Au Temple Brumeux, dans le dédale du sous-sol, Philippa et Jane tombent sur lui, amaigri, les yeux brillants d'une lueur maladive. Pris de convulsions, il crie : « Il est en moi… il arrive… il m'a choisi ! Moi et moi seul ! »",
+      "Il les attaque. Le journal de Frère Septim, trouvé dans le bureau du frère supérieur, raconte sa chute : il psalmodiait la nuit dans la salle du reliquaire une prière plus ancienne et plus noire que celle de l'Aube."
     ],
     "citation": "Il est en moi, il arrive, il m'a choisi ! Moi et moi seul ! Pas les autres, juste moi !",
     "galerie": [
@@ -2760,7 +2764,10 @@
       "La grande porte-soleil du second sous-sol cache un pentacle."
     ],
     "histoire": [
-      "Le groupe y vainc Barakel, parasite de l'Aube déguisé en prêtre."
+      "Au terme de la piste des moines, Philippa et Jane atteignent une clairière envahie de brume où se dresse la façade effondrée d'un temple. Elles font pivoter une statue de moine pour actionner un levier de bronze, et la dalle s'ouvre sur un escalier.",
+      "Au sous-sol, une porte porte le graffiti « Fuyez. Les portes sont closes. Lathande a abandonné ce lieu. » Elles explorent un dortoir ravagé, le bureau du frère supérieur et une sépulture, puis forcent la porte d'une salle cyclopéenne où deux statues de Lathandre se relèvent.",
+      "Elles croisent Frère Augustus, devenu fou, puis descendent au niveau inférieur : une porte-soleil éteinte, un autel entravé de chaînes noires et un pentacle gravé au sol.",
+      "Barakel, déguisé en prêtre de Lathandre, les y attend. À sa mort, le pentacle s'éteint, les chaînes se fissurent et le Reliquaire de Lathandre brille au centre du sanctuaire."
     ],
     "pos": {
       "x": 0.316,
@@ -2797,7 +2804,8 @@
     "statut": "mort",
     "resume": "Démon déguisé en prêtre au fond du Temple Brumeux.",
     "histoire": [
-      "Le groupe le détruit."
+      "Philippa et Jane le trouvent au niveau inférieur du temple, sous les traits d'un prêtre de Lathandre au sourire trop large. Il se dévoile : « J'ai senti la faiblesse des hommes. Leur foi vacillait, et j'ai soufflé dessus, jusqu'à ce que la flamme s'éteigne. »",
+      "Elles le détruisent. Le pentacle s'éteint et les chaînes noires se fissurent."
     ],
     "citation": "J'ai senti la faiblesse des hommes. Leur foi vacillait, et j'ai soufflé dessus, jusqu'à ce que la flamme s'éteigne.",
     "galerie": [
@@ -8517,7 +8525,10 @@
     ],
     "attitude": "ennemi",
     "lieu": "temple-brumeux",
-    "teinte": "#755219"
+    "teinte": "#755219",
+    "histoire": [
+      "Deux statues de Lathandre se relèvent dans la salle cyclopéenne quand Philippa et Jane avancent, vides de toute âme, et les attaquent sans un mot. Elles sont détruites."
+    ]
   },
   {
     "id": "reliquaire-de-lathandre",
@@ -8525,7 +8536,10 @@
     "nom": "Le Reliquaire de Lathandre",
     "titre": "Relique du temple",
     "parent": "temple-brumeux",
-    "resume": "Relique sacrée trouvée intacte au centre du reliquaire après la chute de Barakel."
+    "resume": "Relique sacrée trouvée intacte au centre du reliquaire après la chute de Barakel.",
+    "histoire": [
+      "Après la défaite de Barakel, le Reliquaire brille au centre du sanctuaire, intact malgré la profanation du temple."
+    ]
   },
   {
     "id": "abomination-des-yeux",
