@@ -1,0 +1,35 @@
+name: iPhone Safari WebKit smoke
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'index.html'
+      - 'assets/app.js'
+      - 'assets/ios-mobile.css'
+      - 'tests/mobile/**'
+      - '.github/workflows/mobile-webkit.yml'
+permissions:
+  contents: read
+jobs:
+  iphone-webkit:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 18
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install browser test runner
+        run: npm install --no-save --no-package-lock @playwright/test@1.56.1
+      - name: Install WebKit and OS dependencies
+        run: npx playwright install --with-deps webkit
+      - name: iPhone WebKit responsiveness and navigation
+        run: npx playwright test --config=tests/mobile/playwright.config.cjs
+      - name: Keep failed screenshots
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: iphone-webkit-failure
+          path: test-results/
+          if-no-files-found: ignore
