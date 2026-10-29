@@ -2792,7 +2792,23 @@
       "texte": "T'approche pas. Tu pues les racines mortes. T'avancer encore d'un pas… c'est mourir.",
       "qui": "Gikyo Noshi Buru"
     },
-    "attitude": "ennemi"
+    "attitude": "ennemi",
+    "formes": [
+      {
+        "label": "Forme habituelle",
+        "lieux": [],
+        "img": "img/pnj/ginko-noshi-buru-khazad-maruun-ginko-noshi-buru-normal-form.webp",
+        "teinte": "#75194c"
+      },
+      {
+        "label": "Forme Miren",
+        "lieux": [],
+        "img": "img/pnj/ginko-noshi-buru-khazad-maruun-ginko-noshi-buru-miren-form.webp",
+        "teinte": "#196d75"
+      }
+    ],
+    "img": "img/pnj/ginko-noshi-buru-khazad-maruun-ginko-noshi-buru-normal-form.webp",
+    "teinte": "#75194c"
   },
   {
     "id": "tessei-kanae",
@@ -3189,7 +3205,27 @@
       }
     ],
     "attitude": "allie",
-    "teinte": "#753c19"
+    "teinte": "#753c19",
+    "formes": [
+      {
+        "img": "img/pnj/gran-brijit.webp",
+        "label": "Au manoir",
+        "lieux": [],
+        "teinte": "#753c19"
+      },
+      {
+        "img": "img/pnj/gran-brijit-gran-brijit-premie-re-apparition.webp",
+        "label": "Première apparition",
+        "lieux": [],
+        "teinte": "#755719"
+      },
+      {
+        "img": "img/pnj/gran-brijit-kazad-maruun-gran-brijit.webp",
+        "label": "À Kazad Marunn",
+        "lieux": [],
+        "teinte": "#755619"
+      }
+    ]
   },
   {
     "id": "carnage",
@@ -4586,7 +4622,9 @@
     ],
     "attitude": "neutre",
     "redirige": "bourpif",
-    "histoire": []
+    "histoire": [],
+    "img": "img/pnj/bourre-piff.webp",
+    "teinte": "#753519"
   },
   {
     "id": "oni-aux-masques",

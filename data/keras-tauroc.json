@@ -3148,6 +3148,14 @@
       {
         "img": "img/paysages/cap-cornes/cabane-gran-brijit.webp",
         "legende": "L'intérieur de la maison de Gran Brijit"
+      },
+      {
+        "img": "img/paysages/cap-cornes/chez-gran-brijit.webp",
+        "legende": "Chez Gran Brijit"
+      },
+      {
+        "img": "img/paysages/cap-cornes/vassago-et-philippa.webp",
+        "legende": "Vassago et le passé de Philippa"
       }
     ],
     "redirige": "manoir-des-ligaments"
@@ -6399,7 +6407,49 @@
       "Lumeverre identifie la peau grise : celle d'un changeforme. Philippa démasque Mira, qui change de forme, se moque avec sa voix et fuit dans les bois. Le changeforme avait volé la Pierre en se faisant passer pour Mira, la vraie Mira est morte. Il est tué et la Pierre est récupérée à temps.",
       "Erdem active la Pierre avec le bon parchemin. Malquessar repart pour Avernus. Gran Brijit s'est intéressée aux inventions de Nolbrim et les a récupérées. Philippa retrouve Nolbrim plus tard, au Manoir des Ligaments."
     ],
-    "histoire": []
+    "histoire": [],
+    "galerie": [
+      {
+        "img": "img/paysages/malquessar/vue-ville.webp",
+        "legende": "Malquessar, vue d'ensemble"
+      },
+      {
+        "img": "img/paysages/malquessar/accueil-du-feywild.webp",
+        "legende": "L'accueil du Feywild"
+      },
+      {
+        "img": "img/paysages/malquessar/les-portes.webp",
+        "legende": "Les portes de Malquessar"
+      },
+      {
+        "img": "img/paysages/malquessar/foret-alentour.webp",
+        "legende": "La forêt alentour"
+      },
+      {
+        "img": "img/paysages/malquessar/atelier-de-nolbrim.webp",
+        "legende": "L'atelier de Nolbrim"
+      },
+      {
+        "img": "img/paysages/malquessar/fleuristerie-de-liora.webp",
+        "legende": "La fleuristerie de Liora"
+      },
+      {
+        "img": "img/paysages/malquessar/berrund-hrakkal.webp",
+        "legende": "Berrund Hrakkal"
+      },
+      {
+        "img": "img/paysages/malquessar/erdem-brelmott.webp",
+        "legende": "Erdem Brelmott"
+      },
+      {
+        "img": "img/paysages/malquessar/mellioen-lumeverre.webp",
+        "legende": "Mellioen Lumeverre"
+      },
+      {
+        "img": "img/paysages/malquessar/couverture.webp",
+        "legende": "Malquessar, illustration"
+      }
+    ]
   },
   {
     "id": "helios",
@@ -6447,6 +6497,12 @@
       "Au bal masqué, Cecilia est tuée par les aventuriers. Le « Joyau tombé du ciel » présenté par le Duc est un Nephilim, remis à Gran Brijit.",
       "Après le bal, Regus est emprisonné pour trahison, le Duc Reginald est accusé du meurtre de sa femme et écarté. Un régent du Dominion gouverne désormais la ville. Un avis de recherche est lancé contre Philippa, qu'elle retrouve ensuite affiché à Obaline.",
       "Philippa quitte Corvalis pour Lumenlid."
+    ],
+    "galerie": [
+      {
+        "img": "img/paysages/corvalis/course-de-miren.webp",
+        "legende": "La course de Miren"
+      }
     ]
   },
   {
@@ -6483,7 +6539,41 @@
         "legende": "Plan d'Obaline"
       }
     ],
-    "histoire": []
+    "histoire": [],
+    "galerie": [
+      {
+        "img": "img/paysages/obaline/vue-ville.webp",
+        "legende": "Obaline, vue d'ensemble"
+      },
+      {
+        "img": "img/paysages/obaline/porte-de-la-ville.webp",
+        "legende": "La porte de la ville"
+      },
+      {
+        "img": "img/paysages/obaline/fuite-de-la-ville.webp",
+        "legende": "La fuite hors de la ville"
+      },
+      {
+        "img": "img/paysages/obaline/arbre-bleu.webp",
+        "legende": "L'arbre bleu et la fée"
+      },
+      {
+        "img": "img/paysages/obaline/rue-emma-balambour.webp",
+        "legende": "Une rue d'Obaline, Emma Balambour"
+      },
+      {
+        "img": "img/paysages/obaline/alwin-et-gerhard.webp",
+        "legende": "Alwin et Gerhard"
+      },
+      {
+        "img": "img/paysages/obaline/sous-sol-secret.webp",
+        "legende": "Le sous-sol secret d'Ira Malden"
+      },
+      {
+        "img": "img/paysages/obaline/chasseur-du-dominion.webp",
+        "legende": "Le chasseur du Dominion"
+      }
+    ]
   },
   {
     "id": "grisecroix",
@@ -6520,7 +6610,49 @@
       "La directrice Lyrianne Velarion lui fait visiter les dortoirs, la salle commune et les quatre écoles. Elle lui propose de valider en un mois les quatre épreuves de fin d'année, une par école, devant témoins et professeurs, pour être reconnue diplômée.",
       "Philippa passe les épreuves de l'Éloquence, de la Vaillance, de la Création et du Savoir, puis reprend la route vers Obaline."
     ],
-    "histoire": []
+    "histoire": [],
+    "galerie": [
+      {
+        "img": "img/paysages/lumenlid/vue-ville.webp",
+        "legende": "Lumenlid, vue d'ensemble"
+      },
+      {
+        "img": "img/paysages/lumenlid/entree.webp",
+        "legende": "L'entrée de l'académie"
+      },
+      {
+        "img": "img/paysages/lumenlid/arene.webp",
+        "legende": "L'arène"
+      },
+      {
+        "img": "img/paysages/lumenlid/cours.webp",
+        "legende": "Le cours"
+      },
+      {
+        "img": "img/paysages/lumenlid/etudiant.webp",
+        "legende": "Un étudiant"
+      },
+      {
+        "img": "img/paysages/lumenlid/epreuve-severin.webp",
+        "legende": "L'épreuve de Severin"
+      },
+      {
+        "img": "img/paysages/lumenlid/epreuve-tharamund.webp",
+        "legende": "L'épreuve de Tharamund Skeldraxis"
+      },
+      {
+        "img": "img/paysages/lumenlid/cours-de-lyrianne.webp",
+        "legende": "Le cours de Lyrianne Velarion"
+      },
+      {
+        "img": "img/paysages/lumenlid/visite-de-lyrianne.webp",
+        "legende": "La visite guidée de Lyrianne Velarion"
+      },
+      {
+        "img": "img/paysages/lumenlid/epreuve-aeon-calaryn.webp",
+        "legende": "L'épreuve d'Aeon Calaryn"
+      }
+    ]
   },
   {
     "id": "einsenmarch",
@@ -7230,7 +7362,9 @@
     "alias": [
       "Brem Legemor"
     ],
-    "histoire": []
+    "histoire": [],
+    "img": "img/pnj/bren-legemor.webp",
+    "teinte": "#754119"
   },
   {
     "id": "bandits-de-corvalis",
@@ -7252,7 +7386,29 @@
       "texte": "Le Duc appelle ça des taxes… moi j'dis que c'est du vol, et qu'c'est les pauvres qui paient.",
       "qui": "Un bandit"
     },
-    "histoire": []
+    "histoire": [],
+    "formes": [
+      {
+        "label": "Garth",
+        "lieux": [],
+        "img": "img/pnj/bandits-de-corvalis-bandit-garth.webp",
+        "teinte": "#754419"
+      },
+      {
+        "label": "Alma",
+        "lieux": [],
+        "img": "img/pnj/bandits-de-corvalis-bandit-alma.webp",
+        "teinte": "#755319"
+      },
+      {
+        "label": "Bob",
+        "lieux": [],
+        "img": "img/pnj/bandits-de-corvalis-bandit-bob.webp",
+        "teinte": "#754b19"
+      }
+    ],
+    "img": "img/pnj/bandits-de-corvalis-bandit-garth.webp",
+    "teinte": "#754419"
   },
   {
     "id": "gardes-soleil",
@@ -7269,7 +7425,35 @@
       "Selon Madame Augustine, ils ne retirent jamais leur armure et rien ne les distrait, contrairement aux soldats du Duc. La rumeur dit que leurs lèvres sont cousues pendant leur formation.",
       "Après la mort de Cecilia, la ville est gouvernée par un régent du Dominion, que ces gardes continuent de soutenir."
     ],
-    "histoire": []
+    "histoire": [],
+    "formes": [
+      {
+        "label": "Garde-Soleil",
+        "lieux": [],
+        "img": "img/pnj/gardes-soleil-garde-soleil.webp",
+        "teinte": "#755419"
+      },
+      {
+        "label": "Garde-Soleil, seconde vue",
+        "lieux": [],
+        "img": "img/pnj/gardes-soleil-garde-soleil-2.webp",
+        "teinte": "#754e19"
+      },
+      {
+        "label": "Garde-Soleil, troisième vue",
+        "lieux": [],
+        "img": "img/pnj/gardes-soleil-garde-soleil-3.webp",
+        "teinte": "#755519"
+      },
+      {
+        "label": "Garde du Dominion à Corvalis",
+        "lieux": [],
+        "img": "img/pnj/gardes-soleil-garde-du-dominion-corvalis.webp",
+        "teinte": "#753e19"
+      }
+    ],
+    "img": "img/pnj/gardes-soleil-garde-soleil.webp",
+    "teinte": "#755419"
   },
   {
     "id": "ganimede",
@@ -7286,7 +7470,9 @@
       "Il lui donne six informations : le bal masqué du Duc pour présenter le Joyau tombé du ciel, l'invitation obligatoire au sceau du Duc, la corruption douanière aux portes Est et Ouest, les meubles de luxe bloqués à l'entrepôt faute de taxe payée, la contrebande qui ruine son commerce dans les quartiers nobles et la prise de la ville par le Dominion Sol grâce au Duc.",
       "Il lui donne aussi le code de la porte : « J'apporte l'encre violette et les plumes pour écrire »."
     ],
-    "histoire": []
+    "histoire": [],
+    "img": "img/pnj/ganimede.webp",
+    "teinte": "#755719"
   },
   {
     "id": "omen",
@@ -7303,7 +7489,9 @@
       "Elle confirme les informations de Ganimède avec quelques nuances : son commerce prospère malgré l'appauvrissement, ou grâce à lui.",
       "Elle n'aime pas la Garde-Soleil, qu'elle perçoit comme une force d'oppression."
     ],
-    "histoire": []
+    "histoire": [],
+    "img": "img/pnj/omen.webp",
+    "teinte": "#753f19"
   },
   {
     "id": "lavande",
@@ -7327,7 +7515,9 @@
       "texte": "Oh notre petite cambrioleuse ! Quel plaisir ineffable d'avoir de tes nouvelles.",
       "qui": "Lavande, par télépathie"
     },
-    "histoire": []
+    "histoire": [],
+    "img": "img/pnj/lavande.webp",
+    "teinte": "#753f19"
   },
   {
     "id": "durnan-forgefeuil",
@@ -7351,7 +7541,9 @@
       "Cristal de mana brut (150 po) : une charge pour lancer un sort de niveau 1 sans emplacement.",
       "Encens des Ancêtres (80 po) : brûlé 1 h, il éclaire l'esprit sur les rites et l'histoire jusqu'au prochain repos long."
     ],
-    "histoire": []
+    "histoire": [],
+    "img": "img/pnj/durnan-forgefeuil.webp",
+    "teinte": "#754719"
   },
   {
     "id": "regus-vaelmor",
@@ -7373,7 +7565,9 @@
       "texte": "Je suis un feu, madame. Certains s'y brûlent. D'autres… y trouvent la lumière.",
       "qui": "Regus Vaelmor"
     },
-    "histoire": []
+    "histoire": [],
+    "img": "img/pnj/regus-vaelmor.webp",
+    "teinte": "#754919"
   },
   {
     "id": "reginald-de-vaelmor",
@@ -7397,7 +7591,9 @@
       "Le Duc de Vaelmor",
       "Le Duc"
     ],
-    "histoire": []
+    "histoire": [],
+    "img": "img/pnj/reginald-de-vaelmor.webp",
+    "teinte": "#755519"
   },
   {
     "id": "cecilia-de-vaelmor",
@@ -7420,7 +7616,9 @@
     "alias": [
       "La Duchesse"
     ],
-    "histoire": []
+    "histoire": [],
+    "img": "img/pnj/cecilia-de-vaelmor.webp",
+    "teinte": "#754a19"
   },
   {
     "id": "madame-augustine",
@@ -7442,7 +7640,9 @@
       "texte": "Le pauvre garçon… il croit que c'est lui qui séduit. Mais c'est son père qui paie. Alors, on joue le jeu.",
       "qui": "Madame Augustine, sur Regus"
     },
-    "histoire": []
+    "histoire": [],
+    "img": "img/pnj/madame-augustine.webp",
+    "teinte": "#753a19"
   },
   {
     "id": "greenwood",
@@ -7463,7 +7663,9 @@
       "texte": "La musique est un chemin… mais pour avancer, il faut de bons maîtres. Lumenlid pourra t'offrir ce que mes vieux doigts ne peuvent plus donner.",
       "qui": "Greenwood"
     },
-    "histoire": []
+    "histoire": [],
+    "img": "img/pnj/greenwood.webp",
+    "teinte": "#754b19"
   },
   {
     "id": "route-de-lumenlid",
@@ -7476,6 +7678,12 @@
     "histoire": [],
     "connu": [
       "Philippa y rencontre Nezbrok, qui lui fait essayer son Lance-Tempête avant son arrivée à l'académie."
+    ],
+    "galerie": [
+      {
+        "img": "img/paysages/lumenlid/route-de-lumenlid.webp",
+        "legende": "Sur la route de Lumenlid, Nezbrok"
+      }
     ]
   },
   {
@@ -7501,7 +7709,9 @@
     "alias": [
       "Nezdrok"
     ],
-    "histoire": []
+    "histoire": [],
+    "img": "img/pnj/nezbrok.webp",
+    "teinte": "#751922"
   },
   {
     "id": "ecole-de-l-eloquence",
@@ -7534,7 +7744,9 @@
       "texte": "Convaincs-moi que le soleil est une illusion.",
       "qui": "Severin d'Aurenze"
     },
-    "histoire": []
+    "histoire": [],
+    "img": "img/pnj/severin-d-aurenze.webp",
+    "teinte": "#754019"
   },
   {
     "id": "ecole-de-la-vaillance",
@@ -7564,7 +7776,9 @@
       "Philippa l'affronte en duel scénique dans l'arène bardique pour valider l'épreuve de la Vaillance. Il cherche surtout à lui voler la scène.",
       "Ses attaques : estoc avant et illusion mineure, estafilade circulaire et mur de feu, frappe tournoyante et Thunderclap, charge en ligne droite et Lightning Bolt."
     ],
-    "histoire": []
+    "histoire": [],
+    "img": "img/pnj/tharamund-skeldraxis.webp",
+    "teinte": "#753319"
   },
   {
     "id": "ecole-de-la-creation",
@@ -7593,7 +7807,9 @@
       "Il enseigne la magie harmonique pure, la création par la vibration et la beauté.",
       "Il supervise l'épreuve de la Création de Philippa dans une salle suspendue au-dessus du vide, qui résonne à la moindre note."
     ],
-    "histoire": []
+    "histoire": [],
+    "img": "img/pnj/aeon-calaryn.webp",
+    "teinte": "#753319"
   },
   {
     "id": "ecole-du-savoir",
@@ -7628,7 +7844,9 @@
       "texte": "Tu ne peux pas défier un lieu que tu ne comprends pas.",
       "qui": "Lyrianne Velarion"
     },
-    "histoire": []
+    "histoire": [],
+    "img": "img/pnj/lyrianne-velarion.webp",
+    "teinte": "#751920"
   },
   {
     "id": "emma-balambour",
@@ -7649,7 +7867,9 @@
       "texte": "Je vends ce que je peux… mais je ne veux surtout pas déranger, oh !",
       "qui": "Emma Balambour"
     },
-    "histoire": []
+    "histoire": [],
+    "img": "img/pnj/emma-balambour.webp",
+    "teinte": "#754519"
   },
   {
     "id": "torren-tweedy",
@@ -7671,7 +7891,9 @@
       "texte": "Elle a tout ouvert, tout ! Une nuit, hop, les portes grandes ouvertes comme à la foire !",
       "qui": "Torren Tweedy"
     },
-    "histoire": []
+    "histoire": [],
+    "img": "img/pnj/torren-tweedy.webp",
+    "teinte": "#754419"
   },
   {
     "id": "milo",
@@ -7692,7 +7914,9 @@
       "texte": "Pas de mot de passe ? Alors pas d'accès.",
       "qui": "Milo"
     },
-    "histoire": []
+    "histoire": [],
+    "img": "img/pnj/milo.webp",
+    "teinte": "#754319"
   },
   {
     "id": "ira-malden",
@@ -7714,7 +7938,9 @@
       "texte": "Tu veux quitter cette ville ? Très bien. Mais y'a un prix.",
       "qui": "Ira Malden"
     },
-    "histoire": []
+    "histoire": [],
+    "img": "img/pnj/ira-malden.webp",
+    "teinte": "#754119"
   },
   {
     "id": "elza-skaparel",
@@ -7734,7 +7960,9 @@
     "alias": [
       "Skaparel"
     ],
-    "histoire": []
+    "histoire": [],
+    "img": "img/pnj/elza-skaparel.webp",
+    "teinte": "#754f19"
   },
   {
     "id": "tiffany",
@@ -7753,7 +7981,9 @@
       "texte": "Non, on ne fait pas de crédit. Même pour les… aventurières, hein ?",
       "qui": "Tiffany"
     },
-    "histoire": []
+    "histoire": [],
+    "img": "img/pnj/tiffany.webp",
+    "teinte": "#754c19"
   },
   {
     "id": "alwin-et-gerhard-kern",
@@ -7774,7 +8004,9 @@
       "Alwin Kern",
       "Gerhard Kern"
     ],
-    "histoire": []
+    "histoire": [],
+    "img": "img/pnj/alwin-et-gerhard-kern.webp",
+    "teinte": "#756b19"
   },
   {
     "id": "capitaine-cassar",
@@ -7795,7 +8027,9 @@
       "texte": "Enfin… une occasion de tester les dons du Seigneur-Soleil.",
       "qui": "Cassar"
     },
-    "histoire": []
+    "histoire": [],
+    "img": "img/pnj/capitaine-cassar.webp",
+    "teinte": "#755019"
   },
   {
     "id": "thoros-ven",
@@ -7817,7 +8051,9 @@
       "texte": "Ne me laissez pas seul. Amenez-moi jusqu'à Malden.",
       "qui": "Thoros Ven"
     },
-    "histoire": []
+    "histoire": [],
+    "img": "img/pnj/thoros-ven.webp",
+    "teinte": "#754919"
   },
   {
     "id": "darn",
@@ -7832,7 +8068,9 @@
     "connu": [
       "Il prépare en silence deux barques, une pour Thoros Ven et une pour Philippa, qui descendent le fleuve vers Lunsk."
     ],
-    "histoire": []
+    "histoire": [],
+    "img": "img/pnj/darn.webp",
+    "teinte": "#754319"
   },
   {
     "id": "nella-fanwyk",
@@ -7852,7 +8090,9 @@
       "texte": "Ce n'est pas en buvant avec des voleurs qu'on construit un avenir.",
       "qui": "Nella Fanwyk"
     },
-    "histoire": []
+    "histoire": [],
+    "img": "img/pnj/nella-fanwyk.webp",
+    "teinte": "#754619"
   },
   {
     "id": "karst",
@@ -7871,7 +8111,9 @@
       "texte": "Je préfère crever dans la brume que vivre sous leurs chaînes dorées.",
       "qui": "Karst"
     },
-    "histoire": []
+    "histoire": [],
+    "img": "img/pnj/karst.webp",
+    "teinte": "#755a19"
   },
   {
     "id": "oswald-brumier",
@@ -7887,7 +8129,9 @@
       "Philippa le croise à l'auberge pendant la dispute entre Nella et Karst.",
       "Pour lui, Lunsk devrait se concentrer sur l'exploitation du bois et le commerce, et le Dominion peut y aider."
     ],
-    "histoire": []
+    "histoire": [],
+    "img": "img/pnj/oswald-brumier.webp",
+    "teinte": "#755e19"
   },
   {
     "id": "auberge-de-voros",
@@ -7900,6 +8144,12 @@
     "histoire": [],
     "connu": [
       "Philippa y arrive à Voros. L'aubergiste Ghassan Tarek lui explique que la guilde des marchands contrôle tout et lui souffle l'emplacement du Voile."
+    ],
+    "galerie": [
+      {
+        "img": "img/paysages/voros/auberge.webp",
+        "legende": "L'auberge de Voros"
+      }
     ]
   },
   {
@@ -7921,7 +8171,9 @@
       "texte": "On ne fait pas de business ici sans sa bénédiction. Et croyez-moi, il bénit quand ça l'arrange.",
       "qui": "Ghassan Tarek"
     },
-    "histoire": []
+    "histoire": [],
+    "img": "img/pnj/ghassan-tarek.webp",
+    "teinte": "#754819"
   },
   {
     "id": "bains-publics-de-voros",
@@ -7936,6 +8188,12 @@
       "Philippa y trouve Skrell, étendu dans des coussins détrempés.",
       "Elle y suit plus tard un voleur du Voile et comprend que Skrell dirige le trafic de Suud.",
       "Plus tard, avec Helka, elle revient l'y chercher, sans succès : il n'est pas là."
+    ],
+    "galerie": [
+      {
+        "img": "img/paysages/voros/bains-skrell.webp",
+        "legende": "Les bains publics, Skrell"
+      }
     ]
   },
   {
@@ -7959,7 +8217,9 @@
       "texte": "Bravo, Sherlock. T'as suivi un type qui bosse pour moi, jusqu'à moi.",
       "qui": "Skrell"
     },
-    "histoire": []
+    "histoire": [],
+    "img": "img/pnj/skrell.webp",
+    "teinte": "#755019"
   },
   {
     "id": "entrepot-de-jericho",
@@ -7972,6 +8232,12 @@
     "histoire": [],
     "connu": [
       "Philippa y patrouille une nuit, découvre dans une caisse un double fond avec de la poudre brune de Suud, et surprend un voleur qu'elle suit jusqu'aux bains publics."
+    ],
+    "galerie": [
+      {
+        "img": "img/paysages/voros/marchand-jericho.webp",
+        "legende": "Le marchand Jericho"
+      }
     ]
   },
   {
@@ -7993,7 +8259,9 @@
       "texte": "Je veux des yeux, des oreilles… une présence. Quelqu'un pour surprendre ces rats.",
       "qui": "Jericho"
     },
-    "histoire": []
+    "histoire": [],
+    "img": "img/pnj/jericho.webp",
+    "teinte": "#755619"
   },
   {
     "id": "vrex",
@@ -8009,7 +8277,9 @@
       "Philippa le surprend en train de piller une caisse dans l'entrepôt de Jericho et le suit jusqu'aux bains publics.",
       "Il rencontre toujours son donneur d'ordre aux bains."
     ],
-    "histoire": []
+    "histoire": [],
+    "img": "img/pnj/vrex.webp",
+    "teinte": "#753219"
   },
   {
     "id": "palais-de-gallywix",
@@ -8022,6 +8292,12 @@
     "histoire": [],
     "connu": [
       "Philippa y est reçue par Gallywix, qui lui indique l'adresse d'un entrepôt isolé au nord de la ville."
+    ],
+    "galerie": [
+      {
+        "img": "img/paysages/voros/palais-du-prince-marchand.webp",
+        "legende": "Le palais du Prince-Marchand"
+      }
     ]
   },
   {
@@ -8036,7 +8312,17 @@
       "Philippa y découvre les captifs et apprend qu'on les fait venir de l'Île aux Moines par caravane à travers le désert.",
       "Le chef de la Griffe, interrogé, explique que l'argent sert à faire passer la marchandise vivante à Lunsk."
     ],
-    "histoire": []
+    "histoire": [],
+    "galerie": [
+      {
+        "img": "img/paysages/voros/entrepot-de-nuit.webp",
+        "legende": "L'entrepôt de nuit"
+      },
+      {
+        "img": "img/paysages/voros/repaire-de-la-griffe.webp",
+        "legende": "Le repaire de la Griffe"
+      }
+    ]
   },
   {
     "id": "laile-d-avalon",
@@ -8070,7 +8356,9 @@
     "alias": [
       "Brugo Dent-Molle"
     ],
-    "histoire": []
+    "histoire": [],
+    "img": "img/pnj/brugo-dentmolle.webp",
+    "teinte": "#754f19"
   },
   {
     "id": "daska-voll",
@@ -8086,7 +8374,9 @@
       "Philippa la voit à la barre pendant la traversée.",
       "Le capitaine conseille d'éviter de lui parler quand elle regarde. Il faut border net quand elle donne un ordre."
     ],
-    "histoire": []
+    "histoire": [],
+    "img": "img/pnj/daska-voll.webp",
+    "teinte": "#754519"
   },
   {
     "id": "vyzza",
@@ -8102,7 +8392,9 @@
       "Philippa la voit dans la mâture, imitant le capitaine, puis pendant la tempête dans les haubans, sabre entre les dents.",
       "Née dans les bas-quartiers de Solarius, elle rêve de devenir capitaine à son tour."
     ],
-    "histoire": []
+    "histoire": [],
+    "img": "img/pnj/vyzza.webp",
+    "teinte": "#754419"
   },
   {
     "id": "djan-kassadi",
@@ -8118,7 +8410,9 @@
       "Il a le pied marin et l'œil plus vif que tous les gabiers du capitaine. Il protège Izzri discrètement.",
       "Philippa le voit ajuster une drisse en silence pendant la traversée, puis retenir les Nagas sur bâbord pendant la tempête."
     ],
-    "histoire": []
+    "histoire": [],
+    "img": "img/pnj/djan-kassadi.webp",
+    "teinte": "#754a19"
   },
   {
     "id": "creux-d-azur",
@@ -8169,7 +8463,9 @@
       "Autour du siphon d'âmes de son camp, des cadavres de Githzerai, la peau striée de veines noires.",
       "Vassago pousse Philippa à massacrer et lui offre un nouveau sort."
     ],
-    "histoire": []
+    "histoire": [],
+    "img": "img/pnj/varroth.webp",
+    "teinte": "#754f19"
   },
   {
     "id": "caravane-de-darren",
@@ -8205,7 +8501,9 @@
       "texte": "Fais demi-tour si tu le peux, cette région est maudite, cette ville est infernale, et ses habitants sont damnés !",
       "qui": "Darren"
     },
-    "histoire": []
+    "histoire": [],
+    "img": "img/pnj/darren.webp",
+    "teinte": "#753219"
   },
   {
     "id": "salon-funeraire-de-sorem",
@@ -8240,7 +8538,9 @@
       "texte": "Vous devriez retourner d'où vous venez, voyez-vous ? Et quoi qu'il arrive, évitez la toile.",
       "qui": "Sorem"
     },
-    "histoire": []
+    "histoire": [],
+    "img": "img/pnj/sorem.webp",
+    "teinte": "#751950"
   },
   {
     "id": "forge-de-korrik",
@@ -8270,7 +8570,9 @@
       "Philippa le trouve frappant une enclume vide, sans réagir à sa présence.",
       "Il ne parle pas, prisonnier d'une horreur que lui seul semble percevoir. Il ne transmet rien du massacre."
     ],
-    "histoire": []
+    "histoire": [],
+    "img": "img/pnj/korrik-marteaucreux.webp",
+    "teinte": "#754119"
   },
   {
     "id": "boucherie-de-tommen",
@@ -8300,7 +8602,9 @@
       "Il sursaute à chaque bruit venu de l'extérieur et fixe la porte, comme s'il s'attendait à ce qu'elle explose.",
       "Sa seule terreur confirme l'occupation et la surveillance de la ville."
     ],
-    "histoire": []
+    "histoire": [],
+    "img": "img/pnj/tommen-peaunoire.webp",
+    "teinte": "#756119"
   },
   {
     "id": "la-chope-fendue",
@@ -8330,7 +8634,9 @@
       "Enchaîné au pilier central par un collier de fer, il sert, nettoie et obéit sous les ricanements des Duergar. Chaque geste trop lent lui vaut un coup de botte.",
       "Philippa le libère. Après la destruction du cristal, il tient de nouveau son auberge."
     ],
-    "histoire": []
+    "histoire": [],
+    "img": "img/pnj/bilpi-tournebock.webp",
+    "teinte": "#754619"
   },
   {
     "id": "ruelle-de-la-cage",
@@ -8368,7 +8674,9 @@
     "alias": [
       "Natharim Zortah"
     ],
-    "histoire": []
+    "histoire": [],
+    "img": "img/pnj/natharim-zorath.webp",
+    "teinte": "#757419"
   },
   {
     "id": "temple-de-l-essence-volee",
@@ -8403,7 +8711,9 @@
       "texte": "Il me suffit d'un seul instant pour t'anéantir, une seule chance, une seule fois.",
       "qui": "Xaelith"
     },
-    "histoire": []
+    "histoire": [],
+    "img": "img/pnj/xaelith.webp",
+    "teinte": "#75192b"
   },
   {
     "id": "vaerion",
@@ -8420,7 +8730,9 @@
       "Il dispose de sorts de chute, de distorsion gravitationnelle et de singularité.",
       "Le rituel prend fin avec la destruction du cristal par Philippa."
     ],
-    "histoire": []
+    "histoire": [],
+    "img": "img/pnj/vaerion.webp",
+    "teinte": "#751970"
   },
   {
     "id": "gorrak",
@@ -8437,7 +8749,9 @@
       "Il combat avec une hache, une frappe de titan et une rage élémentaire.",
       "Le rituel prend fin avec la destruction du cristal par Philippa."
     ],
-    "histoire": []
+    "histoire": [],
+    "img": "img/pnj/gorrak.webp",
+    "teinte": "#754c19"
   },
   {
     "id": "ile-du-vesper",
@@ -8459,7 +8773,29 @@
       "À la mort de Morwyn, la malédiction se brise : Dorian et Elias tombent en poussière. Philippa garde la lyre de Dorian en souvenir. Elle trouve 450 po, 2 émeraudes et 1 diamant.",
       "Elle contacte Arianthil avec le rameau et reçoit la réponse : « Je t'ai entendue, Philippa. Je suis en route. » Il la téléporte loin de l'île."
     ],
-    "histoire": []
+    "histoire": [],
+    "galerie": [
+      {
+        "img": "img/paysages/vesper/vue-ile.webp",
+        "legende": "L'île du Vesper, vue d'ensemble"
+      },
+      {
+        "img": "img/paysages/vesper/village-pirate.webp",
+        "legende": "Le village pirate"
+      },
+      {
+        "img": "img/paysages/vesper/la-derive.webp",
+        "legende": "La dérive"
+      },
+      {
+        "img": "img/paysages/vesper/conclusion.webp",
+        "legende": "Le Vesper, la conclusion"
+      },
+      {
+        "img": "img/paysages/vesper/mine.webp",
+        "legende": "Dans la mine"
+      }
+    ]
   },
   {
     "id": "dorian",
@@ -8476,7 +8812,9 @@
       "Avec Elias, il accompagne Philippa dans la mine contre trois araignées.",
       "À la mort d'Alaric Morwyn, la malédiction se brise : il redevient poussière en disant merci. Philippa garde sa lyre."
     ],
-    "histoire": []
+    "histoire": [],
+    "img": "img/pnj/dorian.webp",
+    "teinte": "#754d19"
   },
   {
     "id": "elias",
@@ -8497,7 +8835,9 @@
       "texte": "Merci…",
       "qui": "Elias et Dorian"
     },
-    "histoire": []
+    "histoire": [],
+    "img": "img/pnj/elias.webp",
+    "teinte": "#755119"
   },
   {
     "id": "drozzle",
@@ -8521,7 +8861,9 @@
     "alias": [
       "Drozzle le mage fou"
     ],
-    "histoire": []
+    "histoire": [],
+    "img": "img/pnj/drozzle.webp",
+    "teinte": "#754f19"
   },
   {
     "id": "alaric-morwyn",
@@ -8542,7 +8884,9 @@
       "texte": "Je n'ai plus d'âme à perdre. Mais toi, tu portes encore son espoir… Il suffit de l'éteindre.",
       "qui": "Alaric Morwyn"
     },
-    "histoire": []
+    "histoire": [],
+    "img": "img/pnj/alaric-morwyn.webp",
+    "teinte": "#757419"
   },
   {
     "id": "dren-malbar",
@@ -8562,7 +8906,9 @@
       "texte": "Faites attention à qui vous parlez. Cette ville a l'air paisible, mais les racines sont pourries bien plus souvent qu'on ne le croit.",
       "qui": "Dren Malbar"
     },
-    "histoire": []
+    "histoire": [],
+    "img": "img/pnj/dren-malbar.webp",
+    "teinte": "#197526"
   },
   {
     "id": "thalanir-veldorel",
@@ -8587,7 +8933,9 @@
     "alias": [
       "Thalanir"
     ],
-    "histoire": []
+    "histoire": [],
+    "img": "img/pnj/thalanir-veldorel.webp",
+    "teinte": "#727519"
   },
   {
     "id": "elarin-velasyr",
@@ -8609,7 +8957,9 @@
       "texte": "Votre ville n'est pas un coffre-fort : c'est une vitrine.",
       "qui": "Elarin Velasyr"
     },
-    "histoire": []
+    "histoire": [],
+    "img": "img/pnj/elarin-velasyr.webp",
+    "teinte": "#757419"
   },
   {
     "id": "mira-glindewyn",
@@ -8630,7 +8980,23 @@
       "texte": "Je suis tout le monde, Philippa. Je suis Mira, je suis toi, je suis ce que tu refuses de regarder dans le miroir.",
       "qui": "Le changeforme"
     },
-    "histoire": []
+    "histoire": [],
+    "img": "img/pnj/mira-glindewyn.webp",
+    "teinte": "#755319",
+    "formes": [
+      {
+        "img": "img/pnj/mira-glindewyn.webp",
+        "label": "Port Doëlan",
+        "lieux": [],
+        "teinte": "#755319"
+      },
+      {
+        "img": "img/pnj/mira-glindewyn-shapeshifter.webp",
+        "label": "Forme de changeforme",
+        "lieux": [],
+        "teinte": "#697519"
+      }
+    ]
   },
   {
     "id": "arlo-brisemousse",
@@ -8654,7 +9020,9 @@
     "alias": [
       "Arlo Brise-Mousse"
     ],
-    "histoire": []
+    "histoire": [],
+    "img": "img/pnj/arlo-brisemousse.webp",
+    "teinte": "#6f7519"
   },
   {
     "id": "berrund-hrakkal",
@@ -8676,7 +9044,9 @@
       "texte": "J'ai forgé une lame, autrefois. Une qui tranchait pas la chair… mais les serments.",
       "qui": "Berrund Hrakkal"
     },
-    "histoire": []
+    "histoire": [],
+    "img": "img/pnj/berrund-hrakkal.webp",
+    "teinte": "#754c19"
   },
   {
     "id": "mellioen-lumeverre",
@@ -8700,7 +9070,9 @@
     "alias": [
       "Mellioen"
     ],
-    "histoire": []
+    "histoire": [],
+    "img": "img/pnj/mellioen-lumeverre.webp",
+    "teinte": "#754d19"
   },
   {
     "id": "erdem-brelmott",
@@ -8721,7 +9093,9 @@
       "texte": "N'ouvrez pas la boîte aux lucioles. Elles mordent quand on ment.",
       "qui": "Erdem Brelmott"
     },
-    "histoire": []
+    "histoire": [],
+    "img": "img/pnj/erdem-brelmott.webp",
+    "teinte": "#754c19"
   },
   {
     "id": "gritz",
@@ -8738,7 +9112,9 @@
       "Il commente chaque geste avec énergie et mêle ses consignes techniques à des refrains d'anciens chants de guerre.",
       "Il enseigne aux côtés de Tharamund Skeldraxis."
     ],
-    "histoire": []
+    "histoire": [],
+    "img": "img/pnj/gritz.webp",
+    "teinte": "#754919"
   },
   {
     "id": "balasar",
@@ -8755,7 +9131,9 @@
       "Il fait recommencer les élèves devant le cristal, qui vibre d'une note claire, et laisse naître un kaléidoscope de sons.",
       "Il enseigne aux côtés d'Aeon Calaryn."
     ],
-    "histoire": []
+    "histoire": [],
+    "img": "img/pnj/balasar.webp",
+    "teinte": "#617519"
   },
   {
     "id": "tour-de-guet-des-marais",
@@ -8770,7 +9148,13 @@
       "Les gobelins sont payés pour garder ce poste et se plaignent de la boue."
     ],
     "chapeau": "Une tour de guet abandonnée émerge des marais : pierres humides, escalier brisé, bois gonflé de moisissure. Au loin, au milieu des brumes marines, l'île aux moines se tient sombre sous un voile de brouillard. Sur la côte opposée, des lueurs de feux de camp percent la nuit.",
-    "histoire": []
+    "histoire": [],
+    "galerie": [
+      {
+        "img": "img/paysages/ile-aux-moines/rituel-du-portail.webp",
+        "legende": "Le rituel du portail dans les marais"
+      }
+    ]
   },
   {
     "id": "village-monastique-ile-aux-moines",
@@ -8830,7 +9214,13 @@
       "Trois arbres majestueux s'élèvent à égale distance du seuil, chacun marqué d'une immense rune entourée de petits symboles. Au pied de chaque tronc repose un bol de pierre vide."
     ],
     "chapeau": "Le sentier s'interrompt brusquement, avalé par une lourde porte de pierre enchâssée dans un pan rocheux. Au centre, taillé dans la roche, un motif de vingt-cinq cases, cinq par cinq, chacune marquée d'un symbole ancien usé par le temps. La clairière est silencieuse, presque solennelle.",
-    "histoire": []
+    "histoire": [],
+    "galerie": [
+      {
+        "img": "img/paysages/ile-aux-moines/traversee-de-la-jungle.webp",
+        "legende": "La traversée de la jungle"
+      }
+    ]
   },
   {
     "id": "relais-des-sables",
@@ -8844,7 +9234,21 @@
       "Quatre tenanciers y accueillent les voyageurs : le marchand Sahir Al-Basma, la cuisinière Grikka Marmiton, la patronne Nashara-aux-Anneaux et le prophète Oba l'Errant.",
       "On y trouve des provisions, des capes, des armes discrètes, de la poudre et des potions. Une chambre coûte vingt pièces."
     ],
-    "histoire": []
+    "histoire": [],
+    "galerie": [
+      {
+        "img": "img/paysages/voros/traversee-du-desert.webp",
+        "legende": "La traversée du désert"
+      },
+      {
+        "img": "img/paysages/voros/relais-des-sables.webp",
+        "legende": "Le relais des sables"
+      },
+      {
+        "img": "img/paysages/voros/gorges-du-vent-sec.webp",
+        "legende": "Les gorges du Vent Sec"
+      }
+    ]
   },
   {
     "id": "maison-condamnee-skrell",
@@ -8859,7 +9263,13 @@
       "Philippa et Helka tuent Skrell, son alchimiste et ses gros bras."
     ],
     "chapeau": "Une bâtisse aux volets cloués, murs fissurés, herbes folles poussant entre les pierres.",
-    "histoire": []
+    "histoire": [],
+    "galerie": [
+      {
+        "img": "img/paysages/voros/piege-a-skrell.webp",
+        "legende": "Piéger Skrell"
+      }
+    ]
   },
   {
     "id": "demon-des-mains",
@@ -8896,7 +9306,9 @@
       "texte": "Rien d'extraordinaire, juste des provisions, des capes, ce genre de choses.",
       "qui": "Sahir Al-Basma"
     },
-    "histoire": []
+    "histoire": [],
+    "img": "img/pnj/sahir-al-basma.webp",
+    "teinte": "#754219"
   },
   {
     "id": "grikka-marmiton",
@@ -8915,7 +9327,9 @@
       "texte": "Sérieux ? Vous voulez manger maintenant ?",
       "qui": "Grikka Marmiton"
     },
-    "histoire": []
+    "histoire": [],
+    "img": "img/pnj/grikka-marmiton.webp",
+    "teinte": "#755319"
   },
   {
     "id": "nashara-aux-anneaux",
@@ -8934,7 +9348,9 @@
       "texte": "Tiens donc… c'est pas souvent que je vois des voyageurs par ici.",
       "qui": "Nashara-aux-Anneaux"
     },
-    "histoire": []
+    "histoire": [],
+    "img": "img/pnj/nashara-aux-anneaux.webp",
+    "teinte": "#754419"
   },
   {
     "id": "oba-l-errant",
@@ -8953,7 +9369,9 @@
       "texte": "Je sens deux pouvoirs en toi… le cœur rusé de la renarde et la fureur du monstre. Les marais où tu vas t'enfoncer sont traîtres : là, ne lâche pas la bête. Là, suis la renarde, et laisse sa ruse ouvrir ton chemin.",
       "qui": "Oba l'Errant, à Jane"
     },
-    "histoire": []
+    "histoire": [],
+    "img": "img/pnj/oba-l-errant.webp",
+    "teinte": "#753b19"
   },
   {
     "id": "maison-lenach",
@@ -8977,7 +9395,17 @@
     "pos": {
       "x": 0.472,
       "y": 0.384
-    }
+    },
+    "galerie": [
+      {
+        "img": "img/paysages/obaline/skaparel-boutique.webp",
+        "legende": "La boutique de Skaparel"
+      },
+      {
+        "img": "img/paysages/obaline/chez-elza-skaparel.webp",
+        "legende": "Chez Elza Skaparel"
+      }
+    ]
   },
   {
     "id": "grand-palais-obaline",
@@ -8989,7 +9417,17 @@
     "pos": {
       "x": 0.889,
       "y": 0.35
-    }
+    },
+    "galerie": [
+      {
+        "img": "img/paysages/obaline/prison-du-grand-palais.webp",
+        "legende": "La prison du Grand Palais"
+      },
+      {
+        "img": "img/paysages/obaline/prison-thoros-ven.webp",
+        "legende": "La prison du Grand Palais, Thoros Ven"
+      }
+    ]
   },
   {
     "id": "garnison-obaline",
@@ -9025,7 +9463,13 @@
     "pos": {
       "x": 0.719,
       "y": 0.777
-    }
+    },
+    "galerie": [
+      {
+        "img": "img/paysages/obaline/emporium-de-milo.webp",
+        "legende": "L'Emporium de Milo"
+      }
+    ]
   },
   {
     "id": "auberge-du-camelia",
@@ -9037,7 +9481,13 @@
     "pos": {
       "x": 0.25,
       "y": 0.831
-    }
+    },
+    "galerie": [
+      {
+        "img": "img/paysages/obaline/auberge-du-camelia.webp",
+        "legende": "L'auberge du Camélia"
+      }
+    ]
   },
   {
     "id": "port-marchand-obaline",
@@ -9049,7 +9499,13 @@
     "pos": {
       "x": 0.922,
       "y": 0.823
-    }
+    },
+    "galerie": [
+      {
+        "img": "img/paysages/obaline/port-marchand.webp",
+        "legende": "Le Port Marchand, Darn"
+      }
+    ]
   },
   {
     "id": "maison-augustine",
@@ -9106,7 +9562,13 @@
     "pos": {
       "x": 0.5,
       "y": 0.29
-    }
+    },
+    "galerie": [
+      {
+        "img": "img/paysages/corvalis/faveur-de-waukeen.webp",
+        "legende": "La faveur de Waukeen"
+      }
+    ]
   },
   {
     "id": "portes-de-corvalis",
@@ -9364,7 +9826,9 @@
       "texte": "Skrell est un imbécile au cerveau défoncé par la Suud, je comprends même pas ce qu'il fait encore là.",
       "qui": "Helka von Leyemil"
     },
-    "histoire": []
+    "histoire": [],
+    "img": "img/pnj/helka-von-leyemil.webp",
+    "teinte": "#754d19"
   },
   {
     "id": "bernard",
@@ -9386,7 +9850,9 @@
       "texte": "Voilà, je te présente Bernard.",
       "qui": "Helka von Leyemil"
     },
-    "histoire": []
+    "histoire": [],
+    "img": "img/pnj/bernard.webp",
+    "teinte": "#755d19"
   },
   {
     "id": "gallywix",
@@ -9408,7 +9874,9 @@
       "texte": "Pourquoi je chasserai la Griffe, qui remplit mes coffres mieux que n'importe quelle loi ? Nous vivons du commerce libre, ici.",
       "qui": "Gallywix"
     },
-    "histoire": []
+    "histoire": [],
+    "img": "img/pnj/gallywix.webp",
+    "teinte": "#755919"
   },
   {
     "id": "vano-meredzi",
@@ -9431,7 +9899,9 @@
       "texte": "Garde la tête haute, petite mouette des plaines, Voros est comme une mer d'huile, chiante quand on n'a rien à y faire, traîtresse si on essaie de lui planter un couteau dans le dos.",
       "qui": "Vano Meredzi"
     },
-    "histoire": []
+    "histoire": [],
+    "img": "img/pnj/vano-meredzi.webp",
+    "teinte": "#755a19"
   },
   {
     "id": "arianthil",

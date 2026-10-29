@@ -1857,6 +1857,10 @@
       {
         "img": "img/paysages/port-doelan/port.webp",
         "legende": "Le port"
+      },
+      {
+        "img": "img/paysages/port-doelan/arrivee-de-nuit.webp",
+        "legende": "L'arrivée à Port Doëlan de nuit"
       }
     ],
     "histoire": []
@@ -1901,7 +1905,33 @@
         "ton": "negatif"
       }
     ],
-    "histoire": []
+    "histoire": [],
+    "galerie": [
+      {
+        "img": "img/paysages/kazad-marunn/vue-ville.webp",
+        "legende": "Kazad Marunn, vue d'ensemble"
+      },
+      {
+        "img": "img/paysages/kazad-marunn/arrivee.webp",
+        "legende": "L'arrivée à Kazad Marunn"
+      },
+      {
+        "img": "img/paysages/kazad-marunn/al-batun.webp",
+        "legende": "Al Batun"
+      },
+      {
+        "img": "img/paysages/kazad-marunn/maison-d-ashur.webp",
+        "legende": "La maison d'Ashur"
+      },
+      {
+        "img": "img/paysages/kazad-marunn/maison-d-ashur-2.webp",
+        "legende": "La maison d'Ashur, seconde vue"
+      },
+      {
+        "img": "img/paysages/kazad-marunn/atelier-de-poterie.webp",
+        "legende": "L'atelier de poterie"
+      }
+    ]
   },
   {
     "id": "eryndel",
@@ -1928,6 +1958,8 @@
       "texte": "Deux petits soleils, brillants seuls dans le froid du cosmos infini…",
       "qui": "Impératrice Eryndel"
     },
-    "attitude": "neutre"
+    "attitude": "neutre",
+    "img": "img/pnj/eryndel.webp",
+    "teinte": "#194e75"
   }
 ]

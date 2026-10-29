@@ -1104,7 +1104,13 @@
       "w": 0.182,
       "h": 0.082
     },
-    "couleur": "#7fbf7a"
+    "couleur": "#7fbf7a",
+    "galerie": [
+      {
+        "img": "img/paysages/repos-des-epees/terres-ravagees.webp",
+        "legende": "Les terres ravagées"
+      }
+    ]
   },
   {
     "id": "repaire-du-passeur",
@@ -1120,7 +1126,17 @@
       "repaire d'Argonath"
     ],
     "chapeau": "Le repaire du Passeur a poussé comme un organe. C'est une suite de tunnels organiques, moites, parcourus de battements sourds, où le sol spongieux s'affaisse sous les pas. L'air est chaud, saturé de vapeur et de soufre, et une faible lueur rouge pulse depuis le fond.",
-    "histoire": []
+    "histoire": [],
+    "galerie": [
+      {
+        "img": "img/paysages/repos-des-epees/repaire-du-passeur.webp",
+        "legende": "Le repaire du Passeur"
+      },
+      {
+        "img": "img/paysages/repos-des-epees/repaire-du-passeur-2.webp",
+        "legende": "Le repaire du Passeur, seconde vue"
+      }
+    ]
   },
   {
     "id": "argonath",
@@ -1157,7 +1173,23 @@
       "texte": "On ne tue pas un démon, insolente. Pas plus qu'on ne tue la soif ou l'envie. On les subit, on les prie, on s'y consume.",
       "qui": "Argonath"
     },
-    "attitude": "ennemi"
+    "attitude": "ennemi",
+    "formes": [
+      {
+        "label": "Forme humaine",
+        "lieux": [],
+        "img": "img/pnj/argonath-repos-des-e-pe-es-argonath-human-form.webp",
+        "teinte": "#754c19"
+      },
+      {
+        "label": "Forme démoniaque",
+        "lieux": [],
+        "img": "img/pnj/argonath-repos-des-e-pe-es-argonath-demon-form.webp",
+        "teinte": "#752d19"
+      }
+    ],
+    "img": "img/pnj/argonath-repos-des-e-pe-es-argonath-human-form.webp",
+    "teinte": "#754c19"
   },
   {
     "id": "camont",
@@ -1209,6 +1241,20 @@
         "img": "img/cartes/camont.webp",
         "legende": "Plan de Camont"
       }
+    ],
+    "galerie": [
+      {
+        "img": "img/paysages/camont/vue-ville.webp",
+        "legende": "Camont, vue d'ensemble"
+      },
+      {
+        "img": "img/paysages/camont/tentative-du-landsknecht.webp",
+        "legende": "La tentative du Landsknecht"
+      },
+      {
+        "img": "img/paysages/camont/vendeur-a-la-sauvette.webp",
+        "legende": "Le vendeur à la sauvette, Ssilik"
+      }
     ]
   },
   {
@@ -1230,7 +1276,13 @@
       "x": 0.717,
       "y": 0.547
     },
-    "histoire": []
+    "histoire": [],
+    "galerie": [
+      {
+        "img": "img/paysages/camont/abattoir-auberge.webp",
+        "legende": "L'Abattoir et l'auberge"
+      }
+    ]
   },
   {
     "id": "teka",
@@ -1260,7 +1312,9 @@
       }
     ],
     "attitude": "neutre",
-    "histoire": []
+    "histoire": [],
+    "img": "img/pnj/teka.webp",
+    "teinte": "#754319"
   },
   {
     "id": "planches-camont",
@@ -1279,7 +1333,13 @@
       "x": 0.772,
       "y": 0.321
     },
-    "histoire": []
+    "histoire": [],
+    "galerie": [
+      {
+        "img": "img/paysages/camont/planches.webp",
+        "legende": "Les Planches"
+      }
+    ]
   },
   {
     "id": "eve",
@@ -1307,7 +1367,9 @@
         "ton": "positif"
       }
     ],
-    "attitude": "neutre"
+    "attitude": "neutre",
+    "img": "img/pnj/eve.webp",
+    "teinte": "#755019"
   },
   {
     "id": "irna",
@@ -1340,7 +1402,9 @@
       }
     ],
     "attitude": "neutre",
-    "histoire": []
+    "histoire": [],
+    "img": "img/pnj/irna.webp",
+    "teinte": "#755119"
   },
   {
     "id": "ssilik",
@@ -1370,7 +1434,9 @@
       }
     ],
     "attitude": "neutre",
-    "histoire": []
+    "histoire": [],
+    "img": "img/pnj/ssilik.webp",
+    "teinte": "#754919"
   },
   {
     "id": "silos-camont",
@@ -1388,7 +1454,13 @@
       "x": 0.583,
       "y": 0.139
     },
-    "histoire": []
+    "histoire": [],
+    "galerie": [
+      {
+        "img": "img/paysages/camont/silos.webp",
+        "legende": "Les Silos des Yeux"
+      }
+    ]
   },
   {
     "id": "iris",
@@ -1428,7 +1500,9 @@
       "texte": "J'pensais pas te revoir ici, Jane. Les temps changent, mais pas nos emmerdes.",
       "qui": "Iris, cheffe des Yeux"
     },
-    "attitude": "allie"
+    "attitude": "allie",
+    "img": "img/pnj/iris.webp",
+    "teinte": "#754919"
   },
   {
     "id": "dome-camont",
@@ -1447,7 +1521,13 @@
       "x": 0.417,
       "y": 0.702
     },
-    "histoire": []
+    "histoire": [],
+    "galerie": [
+      {
+        "img": "img/paysages/camont/dome.webp",
+        "legende": "Le Dôme des Brûleurs"
+      }
+    ]
   },
   {
     "id": "usine-camont",
@@ -1507,7 +1587,9 @@
         "inverse": "sous les ordres de"
       }
     ],
-    "attitude": "neutre"
+    "attitude": "neutre",
+    "img": "img/pnj/nix.webp",
+    "teinte": "#754919"
   },
   {
     "id": "porte-ville-haute",
@@ -1519,7 +1601,13 @@
       "Les Gardes gris empêchent la basse-ville d'entrer, sur ordre du conseil. Philippa et Jane y ont trouvé la porte fermée : il faut un laissez-passer délivré par un propriétaire."
     ],
     "chapeau": "La grande porte se dresse comme une cicatrice entre deux mondes : lourds vantaux de métal et de bois clouté, hérissés de fers, verrouillés par des barres épaisses. Au sommet des remparts, des silhouettes grises veillent. L'air change à mesure qu'on s'approche, l'odeur de fumier laissant place à celle du cuir huilé et du métal poli.",
-    "histoire": []
+    "histoire": [],
+    "galerie": [
+      {
+        "img": "img/paysages/camont/porte-ville-haute.webp",
+        "legende": "La porte de la Ville Haute"
+      }
+    ]
   },
   {
     "id": "capitaine-gardes-gris",
@@ -1547,7 +1635,9 @@
       }
     ],
     "attitude": "neutre",
-    "histoire": []
+    "histoire": [],
+    "img": "img/pnj/capitaine-gardes-gris.webp",
+    "teinte": "#754c19"
   },
   {
     "id": "potion-shop-camont",
@@ -1565,7 +1655,13 @@
       "x": 0.111,
       "y": 0.108
     },
-    "histoire": []
+    "histoire": [],
+    "galerie": [
+      {
+        "img": "img/paysages/camont/boutique-de-potions.webp",
+        "legende": "La boutique de potions"
+      }
+    ]
   },
   {
     "id": "arin-veyr",
@@ -1596,7 +1692,9 @@
         "inverse": "créancière d'"
       }
     ],
-    "attitude": "neutre"
+    "attitude": "neutre",
+    "img": "img/pnj/arin-veyr.webp",
+    "teinte": "#755119"
   },
   {
     "id": "villa-graham",
@@ -1614,7 +1712,21 @@
       "x": 0.092,
       "y": 0.744
     },
-    "histoire": []
+    "histoire": [],
+    "galerie": [
+      {
+        "img": "img/paysages/camont/villa-graham.webp",
+        "legende": "La villa Graham"
+      },
+      {
+        "img": "img/paysages/camont/villa-graham-interieur.webp",
+        "legende": "L'intérieur de la villa Graham"
+      },
+      {
+        "img": "img/paysages/camont/villa-graham-salle-des-coffres.webp",
+        "legende": "La salle des coffres de la villa Graham"
+      }
+    ]
   },
   {
     "id": "graham-gonn",
@@ -1652,7 +1764,9 @@
       }
     ],
     "attitude": "neutre",
-    "histoire": []
+    "histoire": [],
+    "img": "img/pnj/graham-gonn.webp",
+    "teinte": "#756119"
   },
   {
     "id": "vira",
@@ -1669,7 +1783,9 @@
       "Les Épingles se sont fait arrêter pour l'effraction."
     ],
     "histoire": [],
-    "attitude": "neutre"
+    "attitude": "neutre",
+    "img": "img/pnj/vira.webp",
+    "teinte": "#754c19"
   },
   {
     "id": "nibb",
@@ -1686,7 +1802,9 @@
       "Les Épingles se sont fait arrêter pour l'effraction."
     ],
     "attitude": "neutre",
-    "histoire": []
+    "histoire": [],
+    "img": "img/pnj/nibb.webp",
+    "teinte": "#754619"
   },
   {
     "id": "ash",
@@ -1703,7 +1821,9 @@
       "Les Épingles se sont fait arrêter pour l'effraction."
     ],
     "attitude": "neutre",
-    "histoire": []
+    "histoire": [],
+    "img": "img/pnj/ash.webp",
+    "teinte": "#755419"
   },
   {
     "id": "port-blanc",
@@ -2064,7 +2184,21 @@
       "x": 0.272,
       "y": 0.749
     },
-    "voyage": "x"
+    "voyage": "x",
+    "galerie": [
+      {
+        "img": "img/paysages/caravane/la-caravane.webp",
+        "legende": "La caravane"
+      },
+      {
+        "img": "img/paysages/caravane/attaque-de-bandits.webp",
+        "legende": "L'attaque des bandits"
+      },
+      {
+        "img": "img/paysages/caravane/attaque-de-gobelins.webp",
+        "legende": "L'attaque des gobelins"
+      }
+    ]
   },
   {
     "id": "qadim-al-makir",
@@ -2089,7 +2223,9 @@
       }
     ],
     "attitude": "ennemi",
-    "histoire": []
+    "histoire": [],
+    "img": "img/pnj/qadim-al-makir.webp",
+    "teinte": "#753f19"
   },
   {
     "id": "magdalena",
@@ -2152,6 +2288,12 @@
         "label": "Vraie apparence",
         "lieux": [],
         "teinte": "#752519"
+      },
+      {
+        "img": "img/pnj/barok-la-caravane-barok-de-guise.webp",
+        "label": "Pendant la caravane",
+        "lieux": [],
+        "teinte": "#756819"
       }
     ],
     "attitude": "positif",
@@ -2189,6 +2331,12 @@
         "label": "Vraie apparence",
         "lieux": [],
         "teinte": "#755219"
+      },
+      {
+        "img": "img/pnj/almar-la-caravane-almar.webp",
+        "label": "Pendant la caravane",
+        "lieux": [],
+        "teinte": "#757119"
       }
     ],
     "relations": [
@@ -2267,8 +2415,20 @@
     "blason": "img/blasons/havre-noir.webp",
     "galerie": [
       {
+        "img": "img/paysages/havre-noir/vue-ville.webp",
+        "legende": "Havre Noir, vue d'ensemble"
+      },
+      {
         "img": "img/paysages/havre-noir/pavillon-vert.webp",
         "legende": "Le Pavillon Vert"
+      },
+      {
+        "img": "img/paysages/havre-noir/rue.webp",
+        "legende": "Une rue de Havre Noir"
+      },
+      {
+        "img": "img/paysages/havre-noir/medecin-legiste.webp",
+        "legende": "Le médecin légiste"
       }
     ],
     "cartes": [
@@ -2320,7 +2480,7 @@
       "Elle accorde sa protection au groupe et leur ouvre une route sûre hors de la ville avec Olyssane."
     ],
     "histoire": [],
-    "img": "img/thaldera/pnj/sycomore-brise-pavois.webp",
+    "img": "img/pnj/sycomore-brise-pavois-havre-noir-sycomore-brise-pavois.webp",
     "relations": [
       {
         "cible": "olyssane-veythar",
@@ -2359,7 +2519,21 @@
       "qui": "Sycomore Brise-Pavois"
     },
     "attitude": "allie",
-    "teinte": "#756919"
+    "teinte": "#755c19",
+    "formes": [
+      {
+        "label": "Brise-Pavois",
+        "lieux": [],
+        "img": "img/pnj/sycomore-brise-pavois-havre-noir-sycomore-brise-pavois.webp",
+        "teinte": "#755c19"
+      },
+      {
+        "label": "Vraie forme",
+        "lieux": [],
+        "img": "img/pnj/sycomore-brise-pavois-havre-noir-sycomore-brise-pavois-true-form-reveal.webp",
+        "teinte": "#754a19"
+      }
+    ]
   },
   {
     "id": "thargan",
@@ -2381,7 +2555,9 @@
       "texte": "Regarde-moi bien, étrangère… je vais peindre ces planches avec ton sang.",
       "qui": "Thargan l'Écaillé"
     },
-    "attitude": "neutre"
+    "attitude": "neutre",
+    "img": "img/pnj/thargan.webp",
+    "teinte": "#756519"
   },
   {
     "id": "pavillon-vert",
@@ -2404,6 +2580,10 @@
       {
         "img": "img/paysages/havre-noir/pavillon-vert.webp",
         "legende": "Le Pavillon Vert"
+      },
+      {
+        "img": "img/paysages/havre-noir/pavillon-vert-debuts.webp",
+        "legende": "Le Pavillon Vert à ses débuts"
       }
     ],
     "pos": {
@@ -2435,7 +2615,7 @@
       "Elle contacte ensuite le groupe par une pierre de communication pendant le voyage vers Keras Tauroc : sa boutique a triplé grâce aux achats d'Olyssane."
     ],
     "histoire": [],
-    "img": "img/thaldera/pnj/liora.webp",
+    "img": "img/pnj/liora-havre-noir-liora-human-form.webp",
     "lieux": [
       "souterrains-ile-aux-moines"
     ],
@@ -2463,40 +2643,40 @@
         "label": "Fleuriste à Malquessar",
         "lieu": "malquessar",
         "attitude": "positif",
-        "img": "img/thaldera/pnj/liora.webp",
+        "img": "img/pnj/liora-havre-noir-liora-human-form.webp",
         "texte": "Philippa la rencontre dans sa fleuristerie de la cité mouvante. Liora quitte ensuite la ville et part errer dans le sud de Thaldera.",
         "lieux": [],
-        "teinte": "#755219"
+        "teinte": "#754e19"
       },
       {
         "label": "Esclave de la Griffe à l'Île aux Moines",
         "lieu": "ile-aux-moines",
         "attitude": "positif",
-        "img": "img/thaldera/pnj/liora.webp",
+        "img": "img/pnj/liora-liora-rescape-e-de-lile-aux-moines.webp",
         "texte": "La Griffe l'a capturée, enchaînée et réduite en esclavage. Philippa la découvre à peine vivante dans une salle de survivants alignés comme du bétail et la libère.",
         "lieux": [],
-        "teinte": "#755219"
+        "teinte": "#753b19"
       },
       {
         "label": "Le Pavillon Vert à ses débuts",
         "lieu": "pavillon-vert",
         "attitude": "positif",
-        "img": "img/thaldera/pnj/liora.webp",
+        "img": "img/pnj/liora-liora-forme-de-tieffelin.webp",
         "texte": "À Havre Noir, elle dispose ses premiers pots sur une table récupérée. Elle propose un troc : bourgeons rares, semences étranges ou plantes inhabituelles contre compositions florales. Elle offre trois Bandle Scouts au groupe.",
         "lieux": [],
         "fond": "img/paysages/havre-noir/pavillon-vert-interieur.webp",
-        "teinte": "#755219"
+        "teinte": "#755019"
       },
       {
         "label": "Le Pavillon Vert florissant",
         "lieu": "pavillon-vert",
         "attitude": "allie",
-        "img": "img/thaldera/pnj/liora.webp",
+        "img": "img/pnj/liora-liora-forme-de-tieffelin.webp",
         "fond": "img/paysages/havre-noir/pavillon-vert-interieur.webp",
         "texte": "Philippa finance l'agrandissement. Liora livre des plantes à Olyssane pour ses reboisements au Repos des Épées, et la boutique a triplé. Elle veut maintenant se diversifier vers l'alchimie.",
         "lieux": [],
         "statut": "vivant",
-        "teinte": "#755219"
+        "teinte": "#755019"
       }
     ],
     "formes": [
@@ -2504,43 +2684,43 @@
         "label": "Fleuriste à Malquessar",
         "lieu": "malquessar",
         "attitude": "positif",
-        "img": "img/thaldera/pnj/liora.webp",
+        "img": "img/pnj/liora-havre-noir-liora-human-form.webp",
         "texte": "Philippa la rencontre dans sa fleuristerie de la cité mouvante. Liora quitte ensuite la ville et part errer dans le sud de Thaldera.",
         "lieux": [],
-        "teinte": "#755219"
+        "teinte": "#754e19"
       },
       {
         "label": "Esclave de la Griffe à l'Île aux Moines",
         "lieu": "ile-aux-moines",
         "attitude": "positif",
-        "img": "img/thaldera/pnj/liora.webp",
+        "img": "img/pnj/liora-liora-rescape-e-de-lile-aux-moines.webp",
         "texte": "La Griffe l'a capturée, enchaînée et réduite en esclavage. Philippa la découvre à peine vivante dans une salle de survivants alignés comme du bétail et la libère.",
         "lieux": [],
-        "teinte": "#755219"
+        "teinte": "#753b19"
       },
       {
         "label": "Le Pavillon Vert à ses débuts",
         "lieu": "pavillon-vert",
         "attitude": "positif",
-        "img": "img/thaldera/pnj/liora.webp",
+        "img": "img/pnj/liora-liora-forme-de-tieffelin.webp",
         "texte": "À Havre Noir, elle dispose ses premiers pots sur une table récupérée. Elle propose un troc : bourgeons rares, semences étranges ou plantes inhabituelles contre compositions florales. Elle offre trois Bandle Scouts au groupe.",
         "lieux": [],
         "fond": "img/paysages/havre-noir/pavillon-vert-interieur.webp",
-        "teinte": "#755219"
+        "teinte": "#755019"
       },
       {
         "label": "Le Pavillon Vert florissant",
         "lieu": "pavillon-vert",
         "attitude": "allie",
-        "img": "img/thaldera/pnj/liora.webp",
+        "img": "img/pnj/liora-liora-forme-de-tieffelin.webp",
         "fond": "img/paysages/havre-noir/pavillon-vert-interieur.webp",
         "texte": "Philippa finance l'agrandissement. Liora livre des plantes à Olyssane pour ses reboisements au Repos des Épées, et la boutique a triplé. Elle veut maintenant se diversifier vers l'alchimie.",
         "lieux": [],
         "statut": "vivant",
-        "teinte": "#755219"
+        "teinte": "#755019"
       }
     ],
-    "teinte": "#755219"
+    "teinte": "#754e19"
   },
   {
     "id": "temple-de-thalos",
@@ -2557,7 +2737,13 @@
       "x": 0.508,
       "y": 0.085
     },
-    "histoire": []
+    "histoire": [],
+    "galerie": [
+      {
+        "img": "img/paysages/havre-noir/temple-de-thalos.webp",
+        "legende": "Le temple en ruines de Thalos"
+      }
+    ]
   },
   {
     "id": "wilhelm-der-treue",
@@ -2593,7 +2779,9 @@
         "inverse": "traquée par"
       }
     ],
-    "attitude": "ennemi"
+    "attitude": "ennemi",
+    "img": "img/pnj/wilhelm-der-treue.webp",
+    "teinte": "#755519"
   },
   {
     "id": "voros",
@@ -2616,7 +2804,25 @@
       "x": 0.55,
       "y": 0.673
     },
-    "accent": "#4aa7a3"
+    "accent": "#4aa7a3",
+    "galerie": [
+      {
+        "img": "img/paysages/voros/pied-du-palais-helka.webp",
+        "legende": "Au pied du palais de Helka"
+      },
+      {
+        "img": "img/paysages/voros/canalisations.webp",
+        "legende": "Les canalisations, Bernard"
+      },
+      {
+        "img": "img/paysages/voros/rencontre-avec-jane.webp",
+        "legende": "La rencontre avec Jane Merigold"
+      },
+      {
+        "img": "img/paysages/voros/village-abandonne.webp",
+        "legende": "Le village abandonné"
+      }
+    ]
   },
   {
     "id": "lunsk",
@@ -2646,6 +2852,16 @@
         "img": "img/cartes/lunsk.webp",
         "legende": "Plan de Lunsk"
       }
+    ],
+    "galerie": [
+      {
+        "img": "img/paysages/lunsk/depart-pour-voros.webp",
+        "legende": "Le départ pour Voros"
+      },
+      {
+        "img": "img/paysages/lunsk/silex.webp",
+        "legende": "Silex"
+      }
     ]
   },
   {
@@ -2670,7 +2886,9 @@
       }
     ],
     "attitude": "ennemi",
-    "histoire": []
+    "histoire": [],
+    "img": "img/pnj/mezzek.webp",
+    "teinte": "#755a19"
   },
   {
     "id": "silex",
@@ -2686,7 +2904,9 @@
     "connu": [
       "Philippa le rencontre à l'église en ruine, capuchon rabattu, nerveux. Il lui demande de prouver qu'elle peut payer et lui dit de retourner à l'auberge, qu'il viendra la chercher.",
       "Il la conduit à l'entrepôt de Mezzek. Philippa l'épargne."
-    ]
+    ],
+    "img": "img/pnj/silex.webp",
+    "teinte": "#19756b"
   },
   {
     "id": "selva",
@@ -2716,7 +2936,9 @@
       "Philippa la rencontre dans les ruelles de Lunsk, brouillard et silhouette fine, au moment où elle parle de la Griffe. Elle lui propose de se faire passer pour une commanditaire de Sol Novem afin de piéger un sbire.",
       "Après la mort de Mezzek, elle déclare : « C'était propre. On a récupéré ce qu'il fallait. » Elle l'envoie voir Skrell à Voros.",
       "Depuis l'annexion de Lunsk par le Dominion, elle a dû fuir, on ignore où."
-    ]
+    ],
+    "img": "img/pnj/selva.webp",
+    "teinte": "#755119"
   },
   {
     "id": "mirek-trois-pierres",
@@ -2732,7 +2954,9 @@
     "connu": [
       "Philippa le trouve dans son auberge, accoudé à une poutre, un œil fatigué et l'autre de verre. Il explique les tensions pro et anti Dominion de la ville.",
       "Après la dispute entre Nella et Karst, il lui parle à voix basse."
-    ]
+    ],
+    "img": "img/pnj/mirek-trois-pierres.webp",
+    "teinte": "#754419"
   },
   {
     "id": "ile-aux-moines",
@@ -3090,7 +3314,9 @@
       }
     ],
     "attitude": "allie",
-    "histoire": []
+    "histoire": [],
+    "img": "img/pnj/kaldros-emberforge.webp",
+    "teinte": "#754919"
   },
   {
     "id": "l-incarnat",
@@ -3110,7 +3336,9 @@
       "Il attend Philippa dans le sanctuaire du temple : « Je savais que vous viendriez. La Flamme me l'a murmuré, hier. » Il dit aussi que la Flamme lui a murmuré qu'il ne devait pas la porter pour toujours.",
       "Philippa refuse de prendre la Première Flamme."
     ],
-    "histoire": []
+    "histoire": [],
+    "img": "img/pnj/l-incarnat.webp",
+    "teinte": "#754119"
   },
   {
     "id": "solemnar",
@@ -3162,7 +3390,9 @@
       }
     ],
     "attitude": "neutre",
-    "histoire": []
+    "histoire": [],
+    "img": "img/pnj/ashur.webp",
+    "teinte": "#754b19"
   },
   {
     "id": "chateau-spezza",
@@ -3591,11 +3821,25 @@
         "legende": "La ruelle où Matthias est retrouvé"
       }
     ],
-    "img": "img/pnj/port-doe-lan-matthias-holbrekt-mort.webp",
+    "img": "img/pnj/matthias-holbrekt-la-caravane-matthias-holbrekt-vivant.webp",
     "relations": [],
     "attitude": "neutre",
     "teinte": "#753c19",
-    "histoire": []
+    "histoire": [],
+    "formes": [
+      {
+        "img": "img/pnj/matthias-holbrekt-la-caravane-matthias-holbrekt-vivant.webp",
+        "label": "Vivant, pendant la caravane",
+        "lieux": [],
+        "teinte": "#753819"
+      },
+      {
+        "img": "img/pnj/port-doe-lan-matthias-holbrekt-mort.webp",
+        "label": "Mort à Port Doëlan",
+        "lieux": [],
+        "teinte": "#753c19"
+      }
+    ]
   },
   {
     "id": "serna",
@@ -3908,7 +4152,13 @@
       "x": 0.469,
       "y": 0.322
     },
-    "histoire": []
+    "histoire": [],
+    "galerie": [
+      {
+        "img": "img/paysages/havre-noir/docks.webp",
+        "legende": "Les docks"
+      }
+    ]
   },
   {
     "id": "brask-le-clocheur",
@@ -3930,7 +4180,9 @@
       "qui": "Brask le Clocheur, crieur de rue"
     },
     "attitude": "neutre",
-    "histoire": []
+    "histoire": [],
+    "img": "img/pnj/brask-le-clocheur.webp",
+    "teinte": "#754619"
   },
   {
     "id": "taverne-harpon-rouge",
@@ -3947,7 +4199,13 @@
       "x": 0.258,
       "y": 0.233
     },
-    "histoire": []
+    "histoire": [],
+    "galerie": [
+      {
+        "img": "img/paysages/havre-noir/taverne.webp",
+        "legende": "La taverne du Harpon Rouge"
+      }
+    ]
   },
   {
     "id": "ergott",
@@ -3962,7 +4220,9 @@
     "histoire": [],
     "connu": [
       "Il tient la taverne le soir où Wilhelm der Treue s'en prend à Philippa."
-    ]
+    ],
+    "img": "img/pnj/ergott.webp",
+    "teinte": "#755019"
   },
   {
     "id": "maison-crochemer",
@@ -3976,7 +4236,13 @@
       "Le groupe y rencontre Alrik, qui vit encore dans la maison du dernier mort."
     ],
     "chapeau": "Une bâtisse de bois fatigué sur le quai Est, la façade humide de sel, des cordages pendants. Sur la porte, gravé grossièrement dans le bois, un 7 inversé. À l'intérieur, une odeur lourde de rhum éventé, de poisson séché et de linge mouillé.",
-    "histoire": []
+    "histoire": [],
+    "galerie": [
+      {
+        "img": "img/paysages/havre-noir/maison-crochemer.webp",
+        "legende": "La maison Crochemer"
+      }
+    ]
   },
   {
     "id": "alrik-crochemer",
@@ -3998,7 +4264,9 @@
     },
     "relations": [],
     "attitude": "ennemi",
-    "histoire": []
+    "histoire": [],
+    "img": "img/pnj/alrik-crochemer.webp",
+    "teinte": "#755319"
   },
   {
     "id": "ruelle-des-cordages",
@@ -4070,7 +4338,9 @@
       }
     ],
     "attitude": "neutre",
-    "histoire": []
+    "histoire": [],
+    "img": "img/pnj/melior-skarne.webp",
+    "teinte": "#754a19"
   },
   {
     "id": "registres-du-port",
@@ -4084,7 +4354,13 @@
       "Le 7 inversé n'apparaît dans aucun registre."
     ],
     "chapeau": "Un vieux bâtiment de bois sombre et d'encre. Odeur d'humidité, de goudron et de papier moisi. Des étagères croulent sous les registres reliés de cuir, certains tachés de sel, et des chandelles grésillent sur des piles de parchemins.",
-    "histoire": []
+    "histoire": [],
+    "galerie": [
+      {
+        "img": "img/paysages/havre-noir/registres-du-port.webp",
+        "legende": "Les registres du port, Arvik Denholm"
+      }
+    ]
   },
   {
     "id": "arvik-denholm",
@@ -4119,7 +4395,9 @@
       }
     ],
     "attitude": "neutre",
-    "histoire": []
+    "histoire": [],
+    "img": "img/pnj/arvik-denholm.webp",
+    "teinte": "#754419"
   },
   {
     "id": "maison-derek-varn",
@@ -4133,6 +4411,16 @@
     "connu": [
       "Le groupe y trouve Derek Varn terrorisé, puis veille avec lui. Le 7 inversé est gravé sur la porte.",
       "À minuit, Eldran Korr force la porte et attaque."
+    ],
+    "galerie": [
+      {
+        "img": "img/paysages/havre-noir/maison-derek-varn.webp",
+        "legende": "La maison de Derek Varn"
+      },
+      {
+        "img": "img/paysages/havre-noir/maison-derek-varn-attaque.webp",
+        "legende": "L'attaque de Korr chez Derek Varn"
+      }
     ]
   },
   {
@@ -4161,7 +4449,9 @@
       }
     ],
     "attitude": "neutre",
-    "histoire": []
+    "histoire": [],
+    "img": "img/pnj/derek-varn.webp",
+    "teinte": "#754619"
   },
   {
     "id": "eldran-korr",
@@ -4190,7 +4480,9 @@
         "inverse": "traqué par"
       }
     ],
-    "attitude": "ennemi"
+    "attitude": "ennemi",
+    "img": "img/pnj/eldran-korr.webp",
+    "teinte": "#195a75"
   },
   {
     "id": "pont-du-jugement",
@@ -4208,7 +4500,13 @@
       "x": 0.3,
       "y": 0.468
     },
-    "histoire": []
+    "histoire": [],
+    "galerie": [
+      {
+        "img": "img/paysages/havre-noir/pont-du-jugement.webp",
+        "legende": "Le Pont du Jugement"
+      }
+    ]
   },
   {
     "id": "filver-brandepoix",
@@ -4243,7 +4541,9 @@
       }
     ],
     "attitude": "ennemi",
-    "histoire": []
+    "histoire": [],
+    "img": "img/pnj/filver-brandepoix.webp",
+    "teinte": "#755219"
   },
   {
     "id": "caverne-aux-butins",
@@ -4265,7 +4565,13 @@
       "etat": "active",
       "note": "Craie posée par Philippa à la Caverne aux Butins."
     },
-    "histoire": []
+    "histoire": [],
+    "galerie": [
+      {
+        "img": "img/paysages/havre-noir/caverne-aux-butins.webp",
+        "legende": "La Caverne aux Butins"
+      }
+    ]
   },
   {
     "id": "marek-le-calfat",
@@ -4293,7 +4599,9 @@
       }
     ],
     "attitude": "neutre",
-    "histoire": []
+    "histoire": [],
+    "img": "img/pnj/marek-le-calfat.webp",
+    "teinte": "#754f19"
   },
   {
     "id": "gueule-de-feu",
@@ -4311,7 +4619,13 @@
       "x": 0.831,
       "y": 0.667
     },
-    "histoire": []
+    "histoire": [],
+    "galerie": [
+      {
+        "img": "img/paysages/havre-noir/gueule-de-feu.webp",
+        "legende": "La Gueule de Feu"
+      }
+    ]
   },
   {
     "id": "korga-brise-lame",
@@ -4344,7 +4658,9 @@
       }
     ],
     "attitude": "neutre",
-    "histoire": []
+    "histoire": [],
+    "img": "img/pnj/korga-brise-lame.webp",
+    "teinte": "#755419"
   },
   {
     "id": "ponton-assemblage",
@@ -4357,7 +4673,13 @@
       "Le groupe y est arrêté par les gardes, qui exigent un laissez-passer signé par Sycomore ou son scribe."
     ],
     "chapeau": "Une passerelle unique mène aux pontons extérieurs de l'Assemblage. Des chaînes énormes maintiennent l'ensemble, des canons pointent dans toutes les directions. L'air est saturé de goudron brûlé, de poudre et de sueur. Deux gardes Lapidès surveillent en permanence.",
-    "histoire": []
+    "histoire": [],
+    "galerie": [
+      {
+        "img": "img/paysages/havre-noir/assemblage-ponton.webp",
+        "legende": "Le ponton de l'Assemblage"
+      }
+    ]
   },
   {
     "id": "lapides-garde",
@@ -4387,7 +4709,29 @@
     "connu": [
       "Le groupe croise deux gardes à l'entrée de l'Assemblage. Ils surveillent en permanence la passerelle unique, armés de mousquets et de hallebardes. Il faut un laissez-passer signé de Sycomore ou de son scribe pour entrer."
     ],
-    "histoire": []
+    "histoire": [],
+    "formes": [
+      {
+        "label": "Lapidès",
+        "lieux": [],
+        "img": "img/pnj/lapides-garde-havre-noir-un-lapides.webp",
+        "teinte": "#756319"
+      },
+      {
+        "label": "Lapidès, seconde vue",
+        "lieux": [],
+        "img": "img/pnj/lapides-garde-havre-noir-un-lapides-2.webp",
+        "teinte": "#754a19"
+      },
+      {
+        "label": "Lapidès, troisième vue",
+        "lieux": [],
+        "img": "img/pnj/lapides-garde-havre-noir-un-lapides-3.webp",
+        "teinte": "#755119"
+      }
+    ],
+    "img": "img/pnj/lapides-garde-havre-noir-un-lapides.webp",
+    "teinte": "#756319"
   },
   {
     "id": "reserve-armes",
@@ -4399,7 +4743,13 @@
     "connu": [
       "On y trouve le Sabre Croc-de-Requin, le Filet de poix et l'Arbalète Brise-Flanc."
     ],
-    "chapeau": "Dans les entrailles goudronnées de l'Assemblage, une ancienne cale transformée en arsenal. Mousquets huilés dans des râteliers branlants, sabres recourbés en caisses, énormes barils de poudre. Le sol est couvert de sciure imbibée, et chaque pas crisse dans un silence tendu."
+    "chapeau": "Dans les entrailles goudronnées de l'Assemblage, une ancienne cale transformée en arsenal. Mousquets huilés dans des râteliers branlants, sabres recourbés en caisses, énormes barils de poudre. Le sol est couvert de sciure imbibée, et chaque pas crisse dans un silence tendu.",
+    "galerie": [
+      {
+        "img": "img/paysages/havre-noir/assemblage-reserve-d-armes.webp",
+        "legende": "La réserve d'armes"
+      }
+    ]
   },
   {
     "id": "salle-des-cartes",
@@ -4453,7 +4803,13 @@
       "Sycomore y reçoit le groupe et parle plus posément, sans tout livrer. Elle laisse entendre que des fonds viennent d'un seigneur pirate."
     ],
     "chapeau": "Derrière la Capitainerie, un escalier étroit mène aux quartiers privés du capitaine. La pièce tranche avec la rudesse de l'Assemblage : tentures volées sur des navires marchands, bureau massif en bois sombre gravé de symboles nautiques et de cicatrices de lames, hamac richement brodé.",
-    "histoire": []
+    "histoire": [],
+    "galerie": [
+      {
+        "img": "img/paysages/havre-noir/assemblage-quartiers-du-capitaine.webp",
+        "legende": "Sycomore, quartiers du capitaine"
+      }
+    ]
   },
   {
     "id": "dortoir-des-lapides",
@@ -4493,7 +4849,13 @@
       "Sycomore a commandé une enquête sur Port Doëlan et Titan Inc, la compagnie de Spezza."
     ],
     "chapeau": "Une salle étroite et humide, aménagée en bureau de scribe pirate. Les murs sont tapissés de registres reliés de cuir usé, couverts de sceaux. Une chandelle fumeuse éclaire le pupitre où siège le maître-scribe de Sycomore. Odeur de parchemin moisi, de cire brûlée et de sueur contenue.",
-    "histoire": []
+    "histoire": [],
+    "galerie": [
+      {
+        "img": "img/paysages/havre-noir/assemblage-gratte-papier.webp",
+        "legende": "Le Gratte-papier"
+      }
+    ]
   },
   {
     "id": "le-gratte-papier",
@@ -4520,7 +4882,9 @@
       }
     ],
     "attitude": "neutre",
-    "histoire": []
+    "histoire": [],
+    "img": "img/pnj/le-gratte-papier.webp",
+    "teinte": "#755119"
   },
   {
     "id": "draven-corbeal",
@@ -4535,7 +4899,9 @@
       "Capitaine de fortune. C'est la sortie de secours si le groupe rompt avec Sycomore : il ne mène qu'à Port Lagon, contre une lourde somme d'or."
     ],
     "attitude": "neutre",
-    "histoire": []
+    "histoire": [],
+    "img": "img/pnj/draven-corbeal.webp",
+    "teinte": "#754119"
   },
   {
     "id": "malrik-solbrun",
@@ -4617,7 +4983,9 @@
         "ton": "neutre"
       }
     ],
-    "histoire": []
+    "histoire": [],
+    "img": "img/pnj/les-yeux.webp",
+    "teinte": "#754d19"
   },
   {
     "id": "les-bruleurs",
@@ -4662,7 +5030,9 @@
         "ton": "neutre"
       }
     ],
-    "histoire": []
+    "histoire": [],
+    "img": "img/pnj/les-epingles.webp",
+    "teinte": "#754a19"
   },
   {
     "id": "gardes-gris",
@@ -4699,7 +5069,13 @@
       "x": 0.167,
       "y": 0.381
     },
-    "histoire": []
+    "histoire": [],
+    "galerie": [
+      {
+        "img": "img/paysages/camont/ville-haute.webp",
+        "legende": "La Ville Haute"
+      }
+    ]
   },
   {
     "id": "jardins-de-l-eternite",
@@ -4718,7 +5094,13 @@
       "Jardins de l'Eternité"
     ],
     "chapeau": "Un rêve d'une beauté irréelle. La lumière dorée du soir éclaire des jardins parfaits, aux lignes épurées, dans une odeur de jasmin et de métal poli. Puis un souffle éteint le jour, et le ciel laisse place à un firmament infini.",
-    "histoire": []
+    "histoire": [],
+    "galerie": [
+      {
+        "img": "img/paysages/camont/jardins-de-l-eternite.webp",
+        "legende": "Les Jardins de l'Éternité"
+      }
+    ]
   },
   {
     "id": "marteau-du-brise-pavois",
@@ -6003,7 +6385,21 @@
     ],
     "attitude": "positif",
     "teinte": "#753c19",
-    "histoire": []
+    "histoire": [],
+    "formes": [
+      {
+        "img": "img/pnj/port-doe-lan-eloi-a-la-rue.webp",
+        "label": "Dans la rue",
+        "lieux": [],
+        "teinte": "#753c19"
+      },
+      {
+        "img": "img/pnj/eloi-bonbarique-la-caravane-eloi-bombarique.webp",
+        "label": "Pendant la caravane",
+        "lieux": [],
+        "teinte": "#752e19"
+      }
+    ]
   },
   {
     "id": "entrepots-abandonnes-doelan",
@@ -7795,7 +8191,13 @@
       "x": 0.317,
       "y": 0.4
     },
-    "histoire": []
+    "histoire": [],
+    "galerie": [
+      {
+        "img": "img/paysages/pyrrah/auberge.webp",
+        "legende": "L'auberge de Pyrrah"
+      }
+    ]
   },
   {
     "id": "serevya",
@@ -7810,7 +8212,9 @@
     "connu": [
       "Elle accueille le groupe à l'Auberge de l'Étincelle, à Pyrrah : basalte poli veiné d'orange, salle commune éclairée de lanternes à flammes bleutées, vasque de braises qui sert de foyer et de cuisine."
     ],
-    "histoire": []
+    "histoire": [],
+    "img": "img/pnj/serevya.webp",
+    "teinte": "#753119"
   },
   {
     "id": "temple-des-ardeurs",
@@ -7829,7 +8233,17 @@
       "x": 0.078,
       "y": 0.644
     },
-    "histoire": []
+    "histoire": [],
+    "galerie": [
+      {
+        "img": "img/paysages/pyrrah/maison-des-ardeurs.webp",
+        "legende": "La Maison des Ardeurs"
+      },
+      {
+        "img": "img/paysages/pyrrah/maison-des-ardeurs-2.webp",
+        "legende": "La Maison des Ardeurs, seconde vue"
+      }
+    ]
   },
   {
     "id": "kaldon",
@@ -7858,7 +8272,9 @@
     "connu": [
       "Le groupe le rencontre au Temple des Ardeurs, à Pyrrah. Il y tient avec Kóressa et Thaleia la maison de passe : tentures couleur braise, vapeur de safran, on y parle bas."
     ],
-    "histoire": []
+    "histoire": [],
+    "img": "img/pnj/kaldon.webp",
+    "teinte": "#752b19"
   },
   {
     "id": "koressa",
@@ -7884,7 +8300,9 @@
     "connu": [
       "Le groupe la rencontre au Temple des Ardeurs, à Pyrrah, où elle travaille avec Kaldon et Thaleia."
     ],
-    "histoire": []
+    "histoire": [],
+    "img": "img/pnj/koressa.webp",
+    "teinte": "#753019"
   },
   {
     "id": "thaleia",
@@ -7899,7 +8317,9 @@
     "connu": [
       "Le groupe la rencontre au Temple des Ardeurs, à Pyrrah, où elle travaille avec Kaldon et Kóressa."
     ],
-    "histoire": []
+    "histoire": [],
+    "img": "img/pnj/thaleia.webp",
+    "teinte": "#753919"
   },
   {
     "id": "taverne-de-la-griffe-pyrrah",
@@ -7955,7 +8375,9 @@
       "Il se plaint de l'arrêt soudain des commandes : « On a livré les dernières caisses comme prévu, et depuis plus rien. » Les dernières caisses, marquées du symbole de la Griffe, sont parties vers Port Doëlan.",
       "Il parle d'un intermédiaire, le Pêcheur, qui faisait suivre les instructions et ne donne plus signe de vie."
     ],
-    "histoire": []
+    "histoire": [],
+    "img": "img/pnj/morve.webp",
+    "teinte": "#756619"
   },
   {
     "id": "vire",
@@ -7990,7 +8412,9 @@
       "Il se demande à qui refourguer sa came : tout ce qui partait de Pyrrah passait par Port Doëlan, et il reste des échantillons sans acheteur.",
       "Il évoque l'idée de s'associer avec le Voile."
     ],
-    "histoire": []
+    "histoire": [],
+    "img": "img/pnj/vire.webp",
+    "teinte": "#755219"
   },
   {
     "id": "ishra",
@@ -8019,7 +8443,9 @@
       "Elle s'inquiète de ce que deviendra le réseau sans nouvelles commandes.",
       "« Et si on tentait une association avec le Voile ? »"
     ],
-    "histoire": []
+    "histoire": [],
+    "img": "img/pnj/ishra.webp",
+    "teinte": "#755719"
   },
   {
     "id": "forge-eternelle-pyrrah",
@@ -8037,7 +8463,13 @@
       "x": 0.197,
       "y": 0.196
     },
-    "histoire": []
+    "histoire": [],
+    "galerie": [
+      {
+        "img": "img/paysages/pyrrah/forge-eternelle.webp",
+        "legende": "La Forge éternelle"
+      }
+    ]
   },
   {
     "id": "fyra",
@@ -8054,7 +8486,9 @@
       "Jeune apprentie de Kaldros à la Forge éternelle, volubile et maladroite. Elle porte les fioles de sang-magma et vante la qualité et les prix de la forge à chaque client.",
       "Elle accueille le groupe : « Yeaaah, des clients ! » Kaldros la rappelle à l'ordre sur la modestie."
     ],
-    "histoire": []
+    "histoire": [],
+    "img": "img/pnj/fyra.webp",
+    "teinte": "#754019"
   },
   {
     "id": "mine-de-pyrrah",
@@ -8068,7 +8502,13 @@
       "Le groupe y descend sur la demande de Kaldros, y trouve un portail abyssal instable d'où sortent des magmins enflammés, et sécurise la mine."
     ],
     "chapeau": "Sous la montagne, la mine s'est tue, et avec elle le battement régulier de la cité. À l'entrée, des mineurs blessés et démoralisés. Dans les galeries, des traces de panique brutale : cadavres calcinés, matériel abandonné, parois noircies.",
-    "histoire": []
+    "histoire": [],
+    "galerie": [
+      {
+        "img": "img/paysages/pyrrah/mine.webp",
+        "legende": "La mine de pyrracier"
+      }
+    ]
   },
   {
     "id": "milos",
@@ -8085,7 +8525,9 @@
     ],
     "citation": "Dans la mine, des créatures en feu ont attaqué. Trois mineurs ont disparu. Le reste refuse de descendre.",
     "attitude": "neutre",
-    "histoire": []
+    "histoire": [],
+    "img": "img/pnj/milos.webp",
+    "teinte": "#753219"
   },
   {
     "id": "athanor-d-ashkalyon",
@@ -8102,6 +8544,12 @@
     "histoire": [],
     "connu": [
       "Le groupe y passe et y apprend que la prophétie est authentique."
+    ],
+    "galerie": [
+      {
+        "img": "img/paysages/pyrrah/athanor-d-ashkalyon.webp",
+        "legende": "L'Athanor d'Ashkalyon"
+      }
     ]
   },
   {
@@ -8131,7 +8579,9 @@
       "Il a vu l'Incarnat plusieurs fois, venu bénir des rituels. Il confirme que la prophétie des cheveux de flamme est authentique et que les prêtres sont nerveux à l'approche de la procession.",
       "Il perçoit la marque de lumière sur Philippa, même quand elle tente de la masquer. Son inventaire est réduit, mais il peut réaliser des objets, sorts et enchantements sur mesure."
     ],
-    "histoire": []
+    "histoire": [],
+    "img": "img/pnj/ashkalyon.webp",
+    "teinte": "#753319"
   },
   {
     "id": "brasero-aux-merveilles",
@@ -8148,6 +8598,12 @@
     "histoire": [],
     "connu": [
       "Le groupe y passe fouiller le bric-à-brac."
+    ],
+    "galerie": [
+      {
+        "img": "img/paysages/pyrrah/brasero-aux-merveilles.webp",
+        "legende": "Le Brasero aux Merveilles"
+      }
     ]
   },
   {
@@ -8169,7 +8625,9 @@
       "Il connaît bien les zones dangereuses autour de Pyrrah et adore les gadgets mécaniques.",
       "Il commerce avec le groupe, une personne à la fois."
     ],
-    "histoire": []
+    "histoire": [],
+    "img": "img/pnj/krixis.webp",
+    "teinte": "#754319"
   },
   {
     "id": "thermes-solaires",
@@ -8227,7 +8685,9 @@
       "Tient les Thermes Solaires de Pyrrah, vaste complexe enterré aux arches immenses, avec bassins tempérés, bains de vapeur et bassin de refroidissement. Il observe le groupe et le conseille.",
       "Des prêtres fréquentent les thermes."
     ],
-    "histoire": []
+    "histoire": [],
+    "img": "img/pnj/pyrokles.webp",
+    "teinte": "#754419"
   },
   {
     "id": "oresias",
@@ -8274,6 +8734,12 @@
     "histoire": [],
     "connu": [
       "Le groupe y entre, voit les prêtres chanter et apprend que l'Incarnat réside au sommet."
+    ],
+    "galerie": [
+      {
+        "img": "img/paysages/pyrrah/basilique-d-heliandros.webp",
+        "legende": "La basilique d'Héliandros"
+      }
     ]
   },
   {
@@ -8288,7 +8754,9 @@
     ],
     "histoire": [
       "Le groupe les voit surveiller les Genasi, qu'ils interrogent avant tout accès à la chambre solaire, et éviter de parler de la prophétie."
-    ]
+    ],
+    "img": "img/pnj/pretres-de-la-flamme.webp",
+    "teinte": "#754b19"
   },
   {
     "id": "gardes-de-pyrrah",
@@ -8299,7 +8767,9 @@
     "resume": "Gardes nains qui observent les voyageurs sans bloquer l'entrée.",
     "alias": [
       "Gardes de Pyrrah"
-    ]
+    ],
+    "img": "img/pnj/gardes-de-pyrrah.webp",
+    "teinte": "#754019"
   },
   {
     "id": "cabane-de-gran-brijit",
@@ -8427,7 +8897,13 @@
       "Le groupe y prend une chambre pour la nuit. Un homme du village y entre pour le détrousser, et Gran Brijit demande au groupe s'il veut gérer ça seul."
     ],
     "chapeau": "Une maison basse adossée à la paroi rocheuse, où l'ombre s'accumule comme une seconde façade. L'air est lourd et frais, chargé de sable humide et d'huile brûlée. Une faible lampe vacille au-dessus d'un comptoir taillé dans la pierre brute. La nuit tombe vite, et le silence est si dense qu'on a l'impression qu'il écoute.",
-    "histoire": []
+    "histoire": [],
+    "galerie": [
+      {
+        "img": "img/paysages/kazad-marunn/auberge-dans-la-roche.webp",
+        "legende": "L'auberge dans la roche"
+      }
+    ]
   },
   {
     "id": "zababa-mahir",
@@ -8453,7 +8929,9 @@
       "Opportuniste porté par la misère et la méfiance envers les étrangers, il tremble en apercevant Gran Brijit."
     ],
     "citation": "Vous n'êtes pas les bienvenus ici, les étrangers. Et si vous voulez rester, il faut payer pour notre protection !",
-    "histoire": []
+    "histoire": [],
+    "img": "img/pnj/zababa-mahir.webp",
+    "teinte": "#754d19"
   },
   {
     "id": "ur-kalmesh",
@@ -8472,7 +8950,9 @@
     "connu": [
       "Autre brigand de Khazad-Marûn, impliqué dans l'incident nocturne de l'auberge dans la roche. Il réclame au groupe de l'argent pour sa protection."
     ],
-    "histoire": []
+    "histoire": [],
+    "img": "img/pnj/ur-kalmesh.webp",
+    "teinte": "#754d19"
   },
   {
     "id": "herboriste-la-vie-des-dunes",
@@ -8485,6 +8965,12 @@
     "histoire": [],
     "connu": [
       "Le groupe y entre pour se ravitailler en herbes du désert."
+    ],
+    "galerie": [
+      {
+        "img": "img/paysages/kazad-marunn/herboriste.webp",
+        "legende": "La Vie des Dunes"
+      }
     ]
   },
   {
@@ -8503,7 +8989,9 @@
       "Il vend des plantes du désert : cactus à eau, racine antidote, fruits contre l'épuisement, lys rare qui soigne.",
       "Il reçoit le groupe : « Dites-moi ce qu'il vous faut, et je verrai ce que le désert peut vous donner. »"
     ],
-    "histoire": []
+    "histoire": [],
+    "img": "img/pnj/ashran.webp",
+    "teinte": "#755919"
   },
   {
     "id": "tanneur-peau-de-sable",
@@ -8516,6 +9004,12 @@
     "histoire": [],
     "connu": [
       "Le groupe y passe acheter du cuir adapté au désert."
+    ],
+    "galerie": [
+      {
+        "img": "img/paysages/kazad-marunn/tanneur.webp",
+        "legende": "Peau de Sable, le tanneur"
+      }
     ]
   },
   {
@@ -8536,7 +9030,9 @@
       "Tanneuse de Peau de Sable, à Khazad-Marûn. Femme fine à la peau ridée par le vent, cheveux tressés serrés, elle observe avant de parler. Elle ne vend que ce que le désert offre : brassards, masques coupe-sable, armures légères en cuir durci au sel.",
       "Elle reçoit le groupe sans familiarité : « Si vous êtes venus pour du solide, vous êtes au bon endroit. »"
     ],
-    "histoire": []
+    "histoire": [],
+    "img": "img/pnj/maara-namtarun.webp",
+    "teinte": "#754719"
   },
   {
     "id": "atelier-sahrim",
@@ -8570,7 +9066,9 @@
       "Il continue son travail pendant que le groupe lui parle. Il se juge un génie méconnu, incompris à Khazad-Marûn.",
       "Il affirme que ses pièces vaudraient une fortune auprès des collectionneurs de Rivegard."
     ],
-    "histoire": []
+    "histoire": [],
+    "img": "img/pnj/sahrim.webp",
+    "teinte": "#754e19"
   },
   {
     "id": "bibliotheque-enfouie",
@@ -8583,7 +9081,13 @@
       "Le groupe y explore des rayonnages effondrés et lit les chroniques de la Bataille des Sables, qui décrivent la bataille et nomment le mage Aram Sharûn."
     ],
     "chapeau": "Une excroissance à moitié avalée par les dunes : un fronton brisé, des escaliers à demi submergés, une porte de pierre fendue dont l'ouverture respire un souffle froid. À l'intérieur, la poussière ancienne et l'encre séchée. Les rayonnages effondrés se mêlent au sable, et les livres sont gonflés, craquelés, parfois scellés par des dépôts minéraux.",
-    "histoire": []
+    "histoire": [],
+    "galerie": [
+      {
+        "img": "img/paysages/kazad-marunn/bibliotheque-enfouie.webp",
+        "legende": "La Bibliothèque Enfouie"
+      }
+    ]
   },
   {
     "id": "bataille-des-sables",
@@ -8620,7 +9124,9 @@
       "Les rois réclamaient sa science. Sa réponse est restée dans les chants : il servait ce qui fut avant les trônes."
     ],
     "lieu": "kazad-marunn",
-    "histoire": []
+    "histoire": [],
+    "img": "img/pnj/aram-sharun.webp",
+    "teinte": "#754d19"
   },
   {
     "id": "cle-d-anachronie",
@@ -8635,7 +9141,9 @@
       "Gran Brijit la réveille chez Ashur d'un souffle.",
       "Devant la dalle des ruines, elle ouvre une faille vers la tour telle qu'elle était.",
       "Elle se brise à la sortie du donjon."
-    ]
+    ],
+    "img": "img/pnj/cle-d-anachronie.webp",
+    "teinte": "#755319"
   },
   {
     "id": "al-batun",
@@ -8668,7 +9176,9 @@
       "Il revient à intervalles irréguliers : aucun répit durable près de la fosse."
     ],
     "lieu": "kazad-marunn",
-    "histoire": []
+    "histoire": [],
+    "img": "img/pnj/al-batun.webp",
+    "teinte": "#753719"
   },
   {
     "id": "la-gueule-des-sables",
@@ -8684,6 +9194,16 @@
     "histoire": [],
     "connu": [
       "Le groupe y descend après avoir battu Al Batun et y trouve cadavres anciens, artefacts brisés et le corps d'Aram Sharûn."
+    ],
+    "galerie": [
+      {
+        "img": "img/paysages/kazad-marunn/gueule-des-sables.webp",
+        "legende": "La Gueule des Sables"
+      },
+      {
+        "img": "img/paysages/kazad-marunn/gueule-des-sables-2.webp",
+        "legende": "La Gueule des Sables, seconde vue"
+      }
     ]
   },
   {
@@ -8699,7 +9219,29 @@
       "Un golem de résonance temporelle y gardait l'Hexacore. Le groupe le vainc, prend l'Hexacore et sort avant l'effondrement."
     ],
     "chapeau": "Les ruines du complexe d'Aram Sharûn se dressent au milieu du désert comme un squelette brisé. La pierre est fendillée, creusée par le vent, et les colonnes effondrées forment un cercle irrégulier où le sable s'accumule. L'air y est plus froid qu'ailleurs, comme si le lieu respirait encore une mémoire ancienne. Au centre, une dalle gravée traversée d'une fente lumineuse.",
-    "histoire": []
+    "histoire": [],
+    "galerie": [
+      {
+        "img": "img/paysages/kazad-marunn/donjon-d-aram-sharun.webp",
+        "legende": "Le donjon d'Aram Sharûn"
+      },
+      {
+        "img": "img/paysages/kazad-marunn/donjon-d-aram-sharun-2.webp",
+        "legende": "Le donjon d'Aram Sharûn, étage 2"
+      },
+      {
+        "img": "img/paysages/kazad-marunn/donjon-d-aram-sharun-3.webp",
+        "legende": "Le donjon d'Aram Sharûn, étage 3"
+      },
+      {
+        "img": "img/paysages/kazad-marunn/donjon-d-aram-sharun-4.webp",
+        "legende": "Le donjon d'Aram Sharûn, étage 4"
+      },
+      {
+        "img": "img/paysages/kazad-marunn/donjon-d-aram-sharun-5.webp",
+        "legende": "Le donjon d'Aram Sharûn, étage 5"
+      }
+    ]
   },
   {
     "id": "tique-d-arcane",
@@ -8725,7 +9267,9 @@
     "histoire": [],
     "connu": [
       "Le groupe en détruit dans le donjon d'Aram Sharûn."
-    ]
+    ],
+    "img": "img/pnj/tique-d-arcane.webp",
+    "teinte": "#754c19"
   },
   {
     "id": "grands-mages-du-desert",
@@ -9032,7 +9576,9 @@
       "Les résidus d'arcane alentour réagissent à sa présence."
     ],
     "lieu": "coeur-de-la-corruption",
-    "histoire": []
+    "histoire": [],
+    "img": "img/pnj/abomination-des-yeux.webp",
+    "teinte": "#753b19"
   },
   {
     "id": "guerre-de-la-veyra",
@@ -9064,7 +9610,17 @@
       "Elles y reviennent avec Spano, fouillent le bureau et y trouvent 860 po, du bon vin et deux chevaux en bon état."
     ],
     "chapeau": "Une clairière dans l'épaisseur du bois, où subsiste un vignoble oublié : quelques rangs de vignes maigres, mal taillées, aux ceps tordus. Au centre, un vieux corps de ferme massif et solide, mais malsain, dont certaines pierres semblent prêtes à céder. Pas de fumée, pas de voix, pas de pas. La nuit s'annonce, patiente.",
-    "histoire": []
+    "histoire": [],
+    "galerie": [
+      {
+        "img": "img/paysages/caravane/vignoble.webp",
+        "legende": "Le vignoble"
+      },
+      {
+        "img": "img/paysages/caravane/vignoble-2.webp",
+        "legende": "Le vignoble, seconde vue"
+      }
+    ]
   },
   {
     "id": "dimir",
@@ -9096,7 +9652,9 @@
       "Il leur demande de ramener son employé disparu et leur fait promettre une récompense : « La forêt est cruelle, surtout pour ceux qui ne savent pas obéir. Vous le ramènerez, n'est-ce pas ? »",
       "Au retour avec Spano, il nie toute cruauté et minimise la captivité : discipline et motivation, dit-il."
     ],
-    "histoire": []
+    "histoire": [],
+    "img": "img/pnj/dimir.webp",
+    "teinte": "#754e19"
   },
   {
     "id": "iulia",
@@ -9122,7 +9680,9 @@
       "Elle jure que sans lui la vigne ne survivra pas, ni eux.",
       "Au retour avec Spano, elle explique, sans crier, l'amour et la patience."
     ],
-    "histoire": []
+    "histoire": [],
+    "img": "img/pnj/iulia.webp",
+    "teinte": "#754819"
   },
   {
     "id": "spano",
@@ -9148,7 +9708,9 @@
       "Il leur dit : « Je pensais mourir ici. Ils m'avaient dit que personne ne viendrait. » Il révèle avoir été enchaîné et forcé de travailler par Dimir et Iulia.",
       "Elles le ramènent au vignoble. Il peut y rester libre, et en devenir le responsable après la chute de ses geôliers."
     ],
-    "histoire": []
+    "histoire": [],
+    "img": "img/pnj/spano.webp",
+    "teinte": "#755019"
   },
   {
     "id": "ivy",
@@ -9182,7 +9744,9 @@
       "Elle voyage à cheval avec sa monture Justine, épée longue au côté, et raconte des anecdotes de route. Elle boit volontiers au coin du feu et se lie d'amitié avec Magdalena.",
       "Elle est retrouvée morte une nuit au camp, à l'écart du feu, adossée à une roue, empoisonnée par un poison qui ne la visait pas."
     ],
-    "histoire": []
+    "histoire": [],
+    "img": "img/pnj/ivy.webp",
+    "teinte": "#752419"
   },
   {
     "id": "constance-brisemousse",
@@ -9209,7 +9773,9 @@
       "Philippa et Jane la croisent dans la caravane. Seule du convoi à ne pas avoir de caravane, elle voyage avec un petit chariot découvert tiré par un âne nommé Plop. Épée lourde, blessures anciennes.",
       "Elle voit la pluie comme une bénédiction de Sylvanus et cherche des indices sur la disparition de sa famille."
     ],
-    "histoire": []
+    "histoire": [],
+    "img": "img/pnj/constance-brisemousse.webp",
+    "teinte": "#753719"
   },
   {
     "id": "solkah-barrow",
@@ -9234,7 +9800,9 @@
       "Il n'est ni cruel ni malveillant : passionné par les serpents, il rejette les dogmes violents de Lolth.",
       "Il veut découvrir la surface et espère embarquer depuis Port Doëlan vers un autre continent. Il continue vers Port Doëlan avec le convoi."
     ],
-    "histoire": []
+    "histoire": [],
+    "img": "img/pnj/solkah-barrow.webp",
+    "teinte": "#751921"
   },
   {
     "id": "seravine",
@@ -9248,7 +9816,9 @@
     "attitude": "neutre",
     "connu": [
       "Immense serpent très venimeux et d'une intelligence notable, compagnon de Solkah Barrow. Son nom signifie Le Poison en elfique."
-    ]
+    ],
+    "img": "img/pnj/seravine.webp",
+    "teinte": "#751921"
   },
   {
     "id": "sanctuaire-de-la-maree",
@@ -9443,6 +10013,12 @@
     "histoire": [],
     "connu": [
       "Philippa y affronte Mezzek et ses hommes, et récupère son livre de comptes."
+    ],
+    "galerie": [
+      {
+        "img": "img/paysages/lunsk/entrepot-de-mezzek.webp",
+        "legende": "L'entrepôt de Mezzek"
+      }
     ]
   },
   {
@@ -9471,6 +10047,12 @@
     "histoire": [],
     "connu": [
       "Philippa y rencontre Mirek et assiste à la dispute entre Nella et Karst."
+    ],
+    "galerie": [
+      {
+        "img": "img/paysages/lunsk/auberge.webp",
+        "legende": "L'auberge du Brouillard Attablé"
+      }
     ]
   },
   {
@@ -9499,6 +10081,12 @@
     "histoire": [],
     "connu": [
       "Philippa y arrive par barque dans la brume. Plus tard, elle y embarque sur l'Aile d'Avalon."
+    ],
+    "galerie": [
+      {
+        "img": "img/paysages/lunsk/aile-d-avalon.webp",
+        "legende": "L'Aile d'Avalon au port de Lunsk"
+      }
     ]
   },
   {
@@ -9531,6 +10119,12 @@
     "histoire": [],
     "connu": [
       "Philippa et Jane s'en approchent et se font repérer par les gardes des Épingles."
+    ],
+    "galerie": [
+      {
+        "img": "img/paysages/camont/fabrique.webp",
+        "legende": "La Fabrique des Épingles"
+      }
     ]
   },
   {
@@ -9616,6 +10210,20 @@
     "histoire": [],
     "connu": [
       "Philippa et Jane y affrontent l'abomination aux yeux, née des séquelles de la guerre."
+    ],
+    "galerie": [
+      {
+        "img": "img/paysages/repos-des-epees/salle-du-coeur.webp",
+        "legende": "La salle du Cœur"
+      },
+      {
+        "img": "img/paysages/repos-des-epees/salle-du-coeur-2.webp",
+        "legende": "La salle du Cœur, seconde vue"
+      },
+      {
+        "img": "img/paysages/repos-des-epees/coeur-de-la-corruption.webp",
+        "legende": "Le Cœur de la corruption"
+      }
     ]
   }
 ]
