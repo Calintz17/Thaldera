@@ -719,7 +719,7 @@ function renderCap(sc, entry) {
   }
   // On touch devices the geographic pins have no hover state. Provide a
   // visible-name list with identical destinations, without changing desktop.
-  if (sc?.pins?.length) {
+  if (sc?.pins?.length && matchMedia('(max-width:860px)').matches) {
     const seen = new Set();
     const available = sc.pins.filter(p => {
       if (seen.has(p.id) || !BY[p.id] || BY[p.id].locked || BY[p.id].redirige) return false;
