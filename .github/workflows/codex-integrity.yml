@@ -18,5 +18,7 @@ jobs:
         run: python3 tools/check_data.py
       - name: Audit images, positions and structure
         run: python3 tools/audit_assets.py
+      - name: Audit linked visual assets and image dimensions
+        run: python3 tools/audit_visual_assets.py
       - name: Report narrative repetition candidates
         run: python3 tools/audit_repetitions.py

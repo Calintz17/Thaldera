@@ -44,7 +44,7 @@ const theme = fs.readFileSync(path.join(root, 'assets/arcane-theme.css'), 'utf8'
 const page = fs.readFileSync(path.join(root, 'index.html'), 'utf8');
 const sessions = JSON.parse(fs.readFileSync(path.join(root, 'data/parties.json'), 'utf8'));
 assert.match(page, /arcane-theme\.css\?v=\d+/, 'Atlas theme must be linked');
-assert.match(page, /assets\/app\.js\?v=86/, 'App cache must match the mobile release');
+assert.match(page, /assets\/app\.js\?v=88/, 'App and stylesheet cache versions must match the v88 release');
 assert.ok(page.includes('id="sbtn"') && page.includes('id="slog"'), 'Recap drawer must be present');
 assert.ok(Array.isArray(sessions.parties), 'Session summaries schema must be an array');
 assert.ok(source.includes("['slog','sbtn']"), 'Summary drawer must share side-dock controller');
@@ -70,5 +70,18 @@ assert.ok(mobileTheme.includes('.mobile-places-list'), 'Map destinations need ta
 assert.ok(mobileTheme.includes('.gal .gdots button'), 'Gallery dots need touch-sized controls');
 assert.ok(source.includes('syncMobileViewport()'), 'Visual viewport must be measured for Safari');
 assert.ok(source.includes("!matchMedia('(pointer:coarse)').matches"), 'Explorer must avoid auto-opening iOS keyboard');
+assert.equal(by.outreterre?.locked, undefined, "Outreterre must be unlocked for Creux d'Azur");
+assert.equal(by['creux-d-azur']?.parent, 'outreterre', "Creux d'Azur belongs under Outreterre");
+const forms = entries.filter(e => ['pnj','pj'].includes(e.type) && (e.formes?.length || 0) > 1);
+assert.ok(forms.length >= 30, 'Multimodal character forms must remain in the codex');
+for (const e of forms) {
+  for (const g of e.galerie || []) if (g.forme !== undefined) {
+    assert.ok(Number.isInteger(g.forme) && g.forme >= 0 && g.forme < e.formes.length,
+      'Bad carousel form index in ' + e.id + ': ' + g.forme);
+  }
+}
+assert.ok(source.includes('readyCutouts'), 'Adjacent form assets should prefetch for smooth browsing');
+assert.ok(source.includes('cutout steady'), 'Character images must remain mounted between forms');
+console.log('Underdark and multimodal carousel assertions OK');
 console.log('Mobile Safari static checks OK: two-row header, keyboard, map destinations, full-height docks');
 console.log('Atlas regression OK: 783+ fiches, context return, merged manor, Ink journey, bright atlas dots, session drawer.');
