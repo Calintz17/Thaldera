@@ -4,7 +4,7 @@
 (() => {
 'use strict';
 
-const VER = '87';
+const VER = '88';
 const EDIT = new URLSearchParams(location.search).has('edit');
 const $ = (s, r = document) => r.querySelector(s);
 const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
@@ -241,7 +241,7 @@ function sceneOf(e, q, depth = 0) {
       const scene = {
         kind: 'map', src: c.img, cam: FULL, owner: e, tabs: e.cartes, tab: Math.min(tab, e.cartes.length - 1), zp: true, ...(e.galerie && e.galerie.length && /placeholder/.test(c.img) ? { gallery: e.galerie } : {}),
         frames: [], // Atlas territories belong in the explorer, not on the map.
-        pins: collectLieux(e).filter(k => k.pos).map(k => ({ id: k.id, ...k.pos, label: k.nom, kind: 'lieu' })).concat(collectVilles(e).map(k => ({ id: k.id, ...k.pos, label: k.nom, kind: 'ville' }))).concat(collectVoyages(e).map(k => ({ id: k.id, ...k.pos, label: k.nom, kind: 'ville' })))
+        pins: collectLieux(e).filter(k => k.pos).map(k => ({ id: k.id, ...k.pos, label: k.nom, kind: 'lieu' })).concat(collectVilles(e).filter(k => k.pos).map(k => ({ id: k.id, ...k.pos, label: k.nom, kind: 'ville' }))).concat(collectVoyages(e).filter(k => k.pos).map(k => ({ id: k.id, ...k.pos, label: k.nom, kind: 'ville' })))
       };
       return e.id === 'manoir-des-ligaments' ? withCast(scene, e) : scene;
     }
@@ -609,7 +609,15 @@ async function applyMap(sc, dir, focus, token) {
 let galTimer = null;
 function clearGal(hard) {
   clearInterval(galTimer); galTimer = null;
-  if (S.gal) { const g = S.gal; g.classList.remove('on'); setTimeout(() => g.remove(), hard ? 0 : 950); S.gal = null; }
+  if (S.gal) {
+    const g = S.gal;
+    g.classList.remove('on');
+    setTimeout(() => g.remove(), hard ? 0 : 950);
+    S.gal = null;
+  }
+  const stale = $('.cutout', stageEl);
+  if (stale) stale.remove();
+  S.cut = null;
 }
 function showGallery(imgs, title, ent) {
   clearGal(true);
@@ -619,12 +627,28 @@ function showGallery(imgs, title, ent) {
     `<div class="gcap"><span class="gt"></span>${imgs.length > 1 ? '<div class="gdots">' + imgs.map((_, i) => `<button type="button" data-i="${i}" aria-label="Illustration ${i + 1} sur ${imgs.length}"${i === 0 ? ' class="on"' : ''}></button>`).join('') + '</div><div class="gnav"><button data-d="-1" aria-label="Précédente">‹</button><button data-d="1" aria-label="Suivante">›</button></div>' : ''}</div>`;
   stageEl.insertBefore(g, $('.fog', stageEl));
   S.gal = g;
-  const wake = n => [n, n + 1].forEach(k => {
-    const sl = g.querySelectorAll('.sl')[k % imgs.length], im = sl && sl.querySelector('img');
+  const readyCutouts = new Map();
+  const wake = n => [n - 1, n, n + 1].forEach(k => {
+    const sl = g.querySelectorAll('.sl')[(k + imgs.length) % imgs.length], im = sl && sl.querySelector('img');
     if (im && im.dataset.src) { im.src = im.dataset.src; delete im.dataset.src; }
+    const c = imgs[(k + imgs.length) % imgs.length]?.cut;
+    if (c?.img && !readyCutouts.has(c.img)) {
+      const preloaded = new Image();
+      preloaded.decoding = 'async';
+      preloaded.src = c.img;
+      readyCutouts.set(c.img, preloaded);
+    }
   });
   g.querySelectorAll('.sl img').forEach(im => {
-    const fit = () => { if (!im.naturalWidth) return; const r = im.naturalWidth / im.naturalHeight; im.style.maxWidth = 'none'; im.style.width = Math.min(stageEl.clientWidth * 0.92, stageEl.clientHeight * 0.92 * r, im.naturalWidth * 2.04) + 'px'; };
+    const fit = () => {
+      if (!im.naturalWidth || !im.naturalHeight) return;
+      const ratio = im.naturalWidth / im.naturalHeight;
+      const w = Math.min(stageEl.clientWidth * .94, stageEl.clientHeight * .92 * ratio, im.naturalWidth * 1.7);
+      im.style.width = Math.max(1, Math.round(w)) + 'px';
+      im.style.height = 'auto';
+      im.style.maxWidth = '94%';
+      im.style.maxHeight = '92%';
+    };
     if (im.complete) fit(); else im.addEventListener('load', fit);
   });
   let cur = 0;
@@ -639,7 +663,7 @@ function showGallery(imgs, title, ent) {
       panelEl.querySelectorAll('.etape').forEach((x, i) => x.classList.toggle('on', i === cur));
     } else $('.gt', g).textContent = [imgs[cur].legende, c && who && who.formes && who.formes.length > 1 && c !== who.formes[0] ? c.label : ''].filter(Boolean).join(', ');
     if (who && c) { S.curForm = c; S.curFormOf = who.id; setCutout(who, c); }
-    else if (imgs.some(i => i.who)) { S.curForm = null; S.curFormOf = null; setCutout(null); }
+    else { S.curForm = null; S.curFormOf = null; setCutout(null); }
   };
   go(0);
   g.addEventListener('click', ev => {
@@ -650,7 +674,7 @@ function showGallery(imgs, title, ent) {
   const forms = imgs.some(i => i.cut);
   // Player-controlled gallery: no automatic slideshow during reading.
   if (forms) {
-    let lock = 0, ty = null;
+    let lock = 0, touchOrigin = null;
     g.addEventListener('wheel', ev => {
       const now = Date.now();
       if (Math.abs(ev.deltaY) < 8 || now - lock < 700) return;
@@ -658,12 +682,22 @@ function showGallery(imgs, title, ent) {
       if (n < 0 || n >= imgs.length) return;
       lock = now; go(n);
     }, { passive: true });
-    g.addEventListener('touchstart', ev => { ty = ev.touches[0].clientY; }, { passive: true });
-    g.addEventListener('touchend', ev => {
-      if (ty == null) return;
-      const d = ty - ev.changedTouches[0].clientY; ty = null;
-      if (Math.abs(d) > 50) { const n = cur + (d > 0 ? 1 : -1); if (n >= 0 && n < imgs.length) go(n); }
+    g.addEventListener('touchstart', ev => {
+      if (ev.touches.length !== 1 || ev.target.closest('button')) return;
+      touchOrigin = { x: ev.touches[0].clientX, y: ev.touches[0].clientY };
     }, { passive: true });
+    g.addEventListener('touchend', ev => {
+      if (!touchOrigin) return;
+      const dx = touchOrigin.x - ev.changedTouches[0].clientX;
+      const dy = touchOrigin.y - ev.changedTouches[0].clientY;
+      touchOrigin = null;
+      // Horizontal slide gestures, preserving vertical document scrolling.
+      if (Math.abs(dx) > 45 && Math.abs(dx) > Math.abs(dy) * 1.35) {
+        const n = cur + (dx > 0 ? 1 : -1);
+        if (n >= 0 && n < imgs.length) go(n);
+      }
+    }, { passive: true });
+    g.addEventListener('touchcancel', () => { touchOrigin = null; }, { passive: true });
   }
   requestAnimationFrame(() => g.classList.add('on'));
   S.gal = g;
@@ -675,32 +709,60 @@ function formeFor(e, ctx) {
 function hashSide(id) { let h = 0; for (const ch of id) h = (h * 31 + ch.charCodeAt(0)) >>> 0; return h % 2; }
 function setCutout(e, form) {
   let c = $('.cutout', stageEl);
-  if (!e || !S.gal || !((form && form.img) || e.img)) { if (c) c.remove(); S.cut = null; return; }
+  if (!e || !S.gal || !((form && form.img) || e.img)) {
+    if (c) c.remove();
+    S.cut = null;
+    return;
+  }
   if (!form && e.formes && S.curFormOf === e.id) form = S.curForm;
   const src = (form && form.img) || e.img;
-  const ck = e.id + '|' + (src || '');
-  if (S.cut === ck && c) return;
-  if (c) c.remove();
-  c = document.createElement('div');
-  c.className = 'cutout';
-  c.className = 'cutout' + (src ? '' : ' ph') + (hashSide(e.id) ? ' lf' : '');
-  const tn = (form && form.teinte) || e.teinte || '#3a2a14';
-  c.style.setProperty('--tn', tn);
-  c.innerHTML = `<i class="glow"></i><img src="${src}" alt="${esc(e.nom)}">`;
-  stageEl.insertBefore(c, $('.fog', stageEl));
-  const ci = $('img', c);
-  const cfit = () => { if (ci.naturalHeight && src) { const mh = stageEl.clientHeight * (innerWidth <= 760 ? 0.78 : 0.86); ci.style.height = mh + 'px'; ci.style.maxHeight = mh + 'px'; ci.style.width = 'auto'; ci.style.maxWidth = (stageEl.clientWidth * 0.6) + 'px'; } };
-  if (ci.complete) cfit(); else ci.addEventListener('load', cfit);
+  const key = e.id + '|' + src;
+  const tint = (form && form.teinte) || e.teinte || '#3a2a14';
+  // Reuse the portrait container across forms; rebuilding it on every slide
+  // retriggered the entrance animation and caused a visible flicker.
+  if (!c) {
+    c = document.createElement('div');
+    c.innerHTML = '<i class="glow"></i><img alt="">';
+    stageEl.insertBefore(c, $('.fog', stageEl));
+  }
+  c.className = 'cutout steady' + (hashSide(e.id) ? ' lf' : '');
+  c.style.setProperty('--tn', tint);
+  const img = $('img', c);
+  img.alt = e.nom;
+  const fit = () => {
+    if (!img.naturalWidth || !img.naturalHeight || !c.isConnected) return;
+    const maxH = stageEl.clientHeight * (innerWidth <= 760 ? .79 : .87);
+    const maxW = stageEl.clientWidth * (innerWidth <= 760 ? .68 : .62);
+    const ratio = img.naturalWidth / img.naturalHeight;
+    const width = Math.min(maxW, maxH * ratio, img.naturalWidth * 1.85);
+    img.style.width = Math.max(1, Math.round(width)) + 'px';
+    img.style.height = 'auto';
+    img.style.maxHeight = Math.round(maxH) + 'px';
+    img.style.maxWidth = Math.round(maxW) + 'px';
+  };
   const anchor = () => {
-    const bg = S.gal && $('.sl.act img', S.gal); if (!bg || !bg.naturalWidth) return;
+    if (!c.isConnected) return;
+    const bg = S.gal && $('.sl.act img', S.gal);
+    if (!bg || !bg.naturalWidth) return;
     const sr = stageEl.getBoundingClientRect(), br = bg.getBoundingClientRect();
     c.style.setProperty('--cb', Math.max(0, sr.bottom - br.bottom) + 'px');
     c.style.setProperty('--cx', Math.max(0, sr.right - br.right) + 'px');
     c.style.setProperty('--cl', Math.max(0, br.left - sr.left) + 'px');
   };
-  setTimeout(anchor, 60); setTimeout(anchor, 600);
-  const bgi = S.gal && $('.sl.act img', S.gal); if (bgi && !bgi.complete) bgi.addEventListener('load', anchor);
-  S.cut = ck;
+  if (img.getAttribute('src') !== src) {
+    img.style.opacity = '0';
+    img.onload = () => { fit(); requestAnimationFrame(anchor); img.style.opacity = '1'; };
+    img.onerror = () => { img.style.opacity = '0'; };
+    img.src = src;
+    if (img.complete && img.naturalWidth) img.onload();
+  } else {
+    fit();
+    img.style.opacity = '1';
+  }
+  const bg = S.gal && $('.sl.act img', S.gal);
+  if (bg && !bg.complete) bg.addEventListener('load', anchor, { once: true });
+  requestAnimationFrame(anchor);
+  S.cut = key;
 }
 function renderCap(sc, entry) {
   const cap = $('#mapcap');
@@ -772,6 +834,15 @@ function focusIn(e, mapSrc) {
 window.addEventListener('resize', () => {
   measure();
   if (S.map && !S.map.stack) setCam(S.map, S.map.rect, false, S.map.pad);
+  if (S.gal) {
+    S.gal.querySelectorAll('.sl img').forEach(im => {
+      if (!im.naturalWidth || !im.naturalHeight) return;
+      const ratio = im.naturalWidth / im.naturalHeight;
+      im.style.width = Math.max(1, Math.round(Math.min(stageEl.clientWidth * .94,
+        stageEl.clientHeight * .92 * ratio, im.naturalWidth * 1.7))) + 'px';
+    });
+    if (S.curFormOf && BY[S.curFormOf]) setCutout(BY[S.curFormOf], S.curForm);
+  }
 });
 
 /* ---------- vue monde ---------- */
