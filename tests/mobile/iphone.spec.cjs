@@ -33,7 +33,7 @@ test('iPhone portrait: compact header, world cards and Explorer without keyboard
 
 test('iPhone: continent map points and labelled touch destinations', async ({ page }) => {
   await page.goto('/#/istra', { waitUntil: 'domcontentloaded' });
-  await expect(page.locator('.map-labels .pin:not(.offscreen)').first()).toBeVisible({ timeout: 20000 });
+  await expect(page.locator('.map-labels .pin:not(.offscreen) .in').first()).toBeVisible({ timeout: 20000 });
   await expect(page.locator('.mobile-places summary')).toBeVisible();
   await page.locator('.mobile-places summary').click();
   await expect(page.locator('.mobile-places-list a').first()).toBeVisible();
