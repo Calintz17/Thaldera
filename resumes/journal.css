@@ -9,3 +9,14 @@
 .journal-reader{padding:clamp(24px,4vw,55px);min-width:0}.journal-reader h2{font:600 clamp(21px,2.3vw,33px)/1.3 var(--display);color:#f3ddac;margin:12px 0 20px}.journal-reader p{margin:0 0 16px;white-space:pre-wrap;overflow-wrap:anywhere;color:#e4d8c3}.journal-reader .metadata{font:700 11px var(--ui);letter-spacing:.16em;color:#c5a06e;text-transform:uppercase}.empty-marker{font:20px var(--display);color:#cda66c}.journal-empty{padding:25px 22px;font:italic 18px var(--body);color:#cdbb9e}.journal-reader a{color:#e9c68c;text-decoration:underline;text-underline-offset:3px}.journal-reader a:hover{color:#fff1cb}
 @media(max-width:720px){.journal-top{height:70px;padding:8px 12px}.journal-brand strong{font-size:22px}.journal-shell{padding:28px 13px}.journal-layout{display:block}.journal-list{border-right:0;border-bottom:1px solid #796046}.session-links{max-height:245px}.journal-reader{min-height:230px;padding:26px 20px}.extra{font-size:10px}}
 @media(prefers-reduced-motion:reduce){.session-chevron{transition:none}}
+/* iPhone Safari: fullscreen reading and comfortable touch navigation. */
+@media(max-width:720px) {
+ .journal-top { height:auto; min-height:70px;
+   padding:max(8px,env(safe-area-inset-top)) max(12px,env(safe-area-inset-right)) 8px max(12px,env(safe-area-inset-left));
+ }
+ .back,.extra { display:inline-flex; align-items:center; min-height:44px; padding:10px 7px; }
+ .journal-shell { padding-bottom:max(60px,calc(30px + env(safe-area-inset-bottom))); }
+ .session-link { min-height:54px; }
+ .journal-reader { overflow-wrap:anywhere; }
+ .journal-layout { min-width:0; overflow:hidden; }
+}

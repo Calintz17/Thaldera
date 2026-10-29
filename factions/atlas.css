@@ -40,3 +40,13 @@ h1 { font:600 clamp(31px,5vw,60px)/1.1 'Cinzel',serif; letter-spacing:.15em; }
 body{background:radial-gradient(ellipse 80% 55% at 50% -10%,#453126,#281c16 52%,#170f0b 96%)}
 .card{background:linear-gradient(150deg,#3b2a21,#271b15 68%,#201711);border-color:#74573b;box-shadow:0 6px 15px #0005;transition:none}
 .card:hover{transform:none;background:linear-gradient(150deg,#473227,#2a1d17);box-shadow:0 6px 15px #0005}
+
+/* iPhone Safari: align standalone Factions to the safe area and touch targets. */
+@media(max-width:540px) {
+ body { padding-left:max(14px,env(safe-area-inset-left)); padding-right:max(14px,env(safe-area-inset-right));
+   padding-bottom:max(65px,calc(40px + env(safe-area-inset-bottom)));
+ }
+ .back-codex { display:inline-flex; align-items:center; justify-content:center; min-height:44px;
+   left:max(12px,env(safe-area-inset-left)); }
+ .card { min-width:0; }
+}
