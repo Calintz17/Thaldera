@@ -6041,7 +6041,8 @@
     ],
     "attitude": "positif",
     "lieu": "leyenmil",
-    "teinte": "#755219"
+    "teinte": "#755219",
+    "redirige": "luka"
   },
   {
     "id": "valar-tauroc",
@@ -9935,5 +9936,54 @@
         "inverse": "protégée par"
       }
     ]
+  },
+  {
+    "id": "aster-invictus",
+    "type": "pnj",
+    "nom": "Aster Invictus",
+    "titre": "Dragon cosmique de l'épreuve du Savoir",
+    "parent": "ecole-du-savoir",
+    "lieu": "ecole-du-savoir",
+    "img": "img/pnj/aster-invictus.webp",
+    "publication": "joue",
+    "resume": "Dragon cosmique invoqué par la mémoire des contes lors de l'épreuve du Savoir de Philippa à Lumenlid.",
+    "connu": [
+      "À l'École du Savoir, Lyrianne Velarion présente Aster Invictus dans un cours tiré du Tractatus Draconicum Caelestis, manuscrit attribué aux Moines du Septentrion.",
+      "Selon ce manuscrit, le dragon serait issu de la neuvième sphère astrale. Sa structure est décrite comme lumino-cristalline et son souffle comme brûlant et chargé de rémanences mémorielles.",
+      "Le texte lui prête des effets sur les saisons, les souvenirs récents et les marées lunaires lorsqu'il demeure trop longtemps sur un plan matériel.",
+      "Philippa affronte une incarnation d'Aster Invictus dans la grande bibliothèque de Lumenlid, au cours de l'épreuve de la Force du Souvenir."
+    ],
+    "histoire": [],
+    "relations": [
+      {
+        "cible": "lyrianne-velarion",
+        "type": "Épreuve supervisée par",
+        "ton": "neutre"
+      }
+    ],
+    "statut": "inconnu",
+    "attitude": "neutre",
+    "teinte": "#665286"
+  },
+  {
+    "id": "aolus-magna",
+    "type": "pnj",
+    "nom": "Aolus Magna",
+    "titre": "Commandant de la caserne",
+    "alias": [
+      "Commandant Aolus Magna"
+    ],
+    "parent": "cap-cornes",
+    "lieu": "cap-cornes",
+    "img": "img/pnj/commandant-aolus-magna.webp",
+    "publication": "joue",
+    "resume": "Commandant de la caserne de Cap Cornes.",
+    "connu": [
+      "Aolus Magna commande la caserne de Cap Cornes."
+    ],
+    "histoire": [],
+    "statut": "inconnu",
+    "attitude": "neutre",
+    "teinte": "#855330"
   }
 ]

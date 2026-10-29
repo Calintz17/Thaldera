@@ -84,4 +84,19 @@ assert.ok(source.includes('readyCutouts'), 'Adjacent form assets should prefetch
 assert.ok(source.includes('cutout steady'), 'Character images must remain mounted between forms');
 console.log('Underdark and multimodal carousel assertions OK');
 console.log('Mobile Safari static checks OK: two-row header, keyboard, map destinations, full-height docks');
+for (const [id, location, portrait] of [
+  ['aster-invictus','ecole-du-savoir','img/pnj/aster-invictus.webp'],
+  ['sahime-kaben','roshen-buru','img/pnj/sahime-kaben.webp'],
+  ['aolus-magna','cap-cornes','img/pnj/commandant-aolus-magna.webp'],
+  ['sazed','azuren-kai','img/pnj/sazed.webp']
+]) {
+  assert.equal(by[id]?.lieu, location, 'NPC location not confirmed: '+id);
+  assert.equal(by[id]?.img, portrait, 'NPC portrait missing: '+id);
+  assert.equal(by[id]?.publication,'joue','NPC should be player-visible: '+id);
+}
+assert.equal(by.lukas?.redirige,'luka','Historical Lukas link should redirect');
+assert.equal(by.luka?.img,'img/pnj/leyenmil-lukas.webp','Luka should inherit original portrait');
+assert.equal(by.bourpif?.img,'img/pnj/bourre-piff.webp','Bourpif should inherit legacy portrait');
+assert.ok(!by.emelka,'Unplayed Balamor NPCs must never be exposed in public JSON');
+console.log('Player-safe NPC publication OK: four new characters, Luka alias, Bourpif portrait.');
 console.log('Atlas regression OK: 783+ fiches, context return, merged manor, Ink journey, bright atlas dots, session drawer.');

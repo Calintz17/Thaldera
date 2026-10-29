@@ -2277,6 +2277,12 @@
         "cible": "darrek-kovacz",
         "type": "Ravisseur",
         "ton": "negatif"
+      },
+      {
+        "cible": "sahime-kaben",
+        "type": "Sœur de",
+        "inverse": "Sœur de",
+        "ton": "positif"
       }
     ],
     "galerie": [
@@ -5174,7 +5180,8 @@
         "inverse": "a arraché"
       }
     ],
-    "histoire": []
+    "histoire": [],
+    "img": "img/pnj/bourre-piff.webp"
   },
   {
     "id": "fukuro-kaen",
@@ -5325,5 +5332,46 @@
       "y": 0.233
     },
     "carte": "palais"
+  },
+  {
+    "id": "sahime-kaben",
+    "type": "pnj",
+    "nom": "Sahime Kaben",
+    "titre": "Sœur d'Ayano Kaben",
+    "parent": "roshen-buru",
+    "lieu": "roshen-buru",
+    "img": "img/pnj/sahime-kaben.webp",
+    "publication": "joue",
+    "resume": "Membre de la famille Kaben, sœur d'Ayano.",
+    "connu": [
+      "Sahime est la sœur d'Ayano Kaben."
+    ],
+    "histoire": [],
+    "relations": [
+      {
+        "cible": "ayano-kaben",
+        "type": "Sœur de",
+        "inverse": "Sœur de",
+        "ton": "positif"
+      }
+    ],
+    "statut": "inconnu",
+    "attitude": "neutre",
+    "teinte": "#704c39"
+  },
+  {
+    "id": "sazed",
+    "type": "pnj",
+    "nom": "Sazed",
+    "parent": "azuren-kai",
+    "lieu": "azuren-kai",
+    "img": "img/pnj/sazed.webp",
+    "publication": "joue",
+    "resume": "Personnage lié à Azuren Kai.",
+    "connu": [],
+    "histoire": [],
+    "statut": "inconnu",
+    "attitude": "neutre",
+    "teinte": "#47746f"
   }
 ]

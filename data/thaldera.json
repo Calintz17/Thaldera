@@ -4077,7 +4077,20 @@
       "Jane le retrouve assis contre le mur d'une pièce vide, mutique, un œil manquant, le visage griffé, le corps marqué de coups récents. Il refuse de parler et personne n'ose demander ce qui s'est passé."
     ],
     "attitude": "positif",
-    "histoire": []
+    "histoire": [],
+    "img": "img/pnj/leyenmil-lukas.webp",
+    "alias": [
+      "Lukas"
+    ],
+    "publication": "joue",
+    "relations": [
+      {
+        "cible": "soren",
+        "type": "protégé par",
+        "ton": "positif",
+        "inverse": "protège"
+      }
+    ]
   },
   {
     "id": "m-falken",
