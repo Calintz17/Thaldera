@@ -123,6 +123,66 @@ test('iPhone city plan: header scrolls off, map rises then sticks at viewport to
   await noHorizontalOverflow(page);
 });
 
+
+test('Outreterre: unlocked crest and Creux d’Azur under the correct continent', async ({ page }) => {
+  await page.goto('/#/', { waitUntil:'domcontentloaded' });
+  const outreterre = page.locator('#world-outreterre');
+  await expect(outreterre).toBeVisible({ timeout:20000 });
+  await expect(outreterre).toHaveAttribute('href','#/outreterre');
+  await outreterre.click();
+  await expect(page.locator('#panel .pin-pad')).toBeVisible();
+  await expect(page.locator('#panel a[href="#/creux-d-azur"]').first()).toBeVisible();
+  await page.locator('#panel a[href="#/creux-d-azur"]').first().click();
+  await expect(page.locator('.head h1')).toContainText("Creux d'Azur");
+  const bread = await page.locator('.crumbs').innerText();
+  expect(bread).toContain('Outreterre');
+});
+
+test('multimodal PNJ gallery: forms stay in frame and load on forward / backward navigation', async ({ page }) => {
+  for (const [id, count] of [['ink',7],['liora',4],['absalom',5],['gran-brijit',3]]) {
+    await page.goto('/#/' + id, {waitUntil:'domcontentloaded'});
+    const slides = page.locator('.gal .sl');
+    await expect(slides).toHaveCount(count,{timeout:30000});
+    const cutout = page.locator('#stage .cutout img');
+    await expect(cutout).toBeVisible({timeout:20000});
+    await expect.poll(() => cutout.evaluate(el => el.naturalWidth)).toBeGreaterThan(0);
+    const oldSrc = await cutout.getAttribute('src');
+    const next = page.locator('.gal .gnav button[data-d="1"]');
+    await next.click();
+    await expect.poll(() => cutout.getAttribute('src')).not.toBe(oldSrc);
+    await expect.poll(() => cutout.evaluate(el => el.naturalWidth)).toBeGreaterThan(0);
+    const size = await page.evaluate(() => {
+      const stage=document.querySelector('#stage').getBoundingClientRect();
+      const portrait=document.querySelector('#stage .cutout img').getBoundingClientRect();
+      return {s:[stage.left,stage.top,stage.right,stage.bottom],
+              p:[portrait.left,portrait.top,portrait.right,portrait.bottom],
+              w:portrait.width,h:portrait.height};
+    });
+    expect(size.w).toBeGreaterThan(30);
+    expect(size.h).toBeGreaterThan(50);
+    expect(size.p[0]).toBeGreaterThanOrEqual(size.s[0]-3);
+    expect(size.p[2]).toBeLessThanOrEqual(size.s[2]+3);
+    expect(size.p[1]).toBeGreaterThanOrEqual(size.s[1]-4);
+    expect(size.p[3]).toBeLessThanOrEqual(size.s[3]+4);
+    await page.locator('.gal .gnav button[data-d="-1"]').click();
+    await expect.poll(() => cutout.getAttribute('src')).toBe(oldSrc);
+  }
+});
+
+test('Large scene galleries load their assets without cropping or overflowing', async ({ page }) => {
+  await page.goto('/#/malquessar',{waitUntil:'domcontentloaded'});
+  await expect(page.locator('.gal .sl')).toHaveCount(10,{timeout:30000});
+  for (let step=0; step<7; step++) {
+    const img=page.locator('.gal .sl.act img');
+    await expect.poll(() => img.evaluate(el=>el.naturalWidth)).toBeGreaterThan(0);
+    const bounds=await img.boundingBox();
+    const stage=await page.locator('#stage').boundingBox();
+    expect(bounds.width).toBeLessThanOrEqual(stage.width+3);
+    expect(bounds.height).toBeLessThanOrEqual(stage.height+3);
+    await page.locator('.gal .gnav button[data-d="1"]').click();
+  }
+});
+
 test('narrow iPhone SE and landscape: no horizontal scrolling or clipped header', async ({ page }) => {
   await page.setViewportSize({ width: 375, height: 667 });
   await page.goto('/#/', { waitUntil: 'domcontentloaded' });
