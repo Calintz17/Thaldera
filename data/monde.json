@@ -262,6 +262,10 @@
         "type": "Agents prêtés",
         "ton": "negatif"
       }
+    ],
+    "histoire": [
+      "Le groupe apprend son nom en fouillant les papiers de la Protectrice, à Roshen Buru : elle a passé un pacte avec lui.",
+      "Il comprend que le Tribunal de Chair, envoyé contre Eamonn, est composé de ses agents."
     ]
   },
   {
@@ -305,6 +309,11 @@
       "À Roshen Buru, Yureï Poison en est la fournisseuse principale pour le clan Urameï.",
       "Le cuisinier Kabo est mort d'une dose d'une pureté qu'un homme de son rang ne pouvait pas acheter.",
       "Darrek Kovacz y était accro."
+    ],
+    "histoire": [
+      "À Cap Cornes, le groupe obtient de la vésine auprès de Fennick, petit escroc du marché, en le menaçant.",
+      "À Roshen Buru, il apprend que Yureï Poison en est la fournisseuse principale pour le clan Urameï.",
+      "Le cuisinier Kabo meurt d'une dose d'une pureté qu'un homme de son rang ne pouvait pas acheter. Darrek Kovacz y était accro."
     ]
   },
   {
@@ -391,6 +400,11 @@
         "type": "Mandataire",
         "ton": "negatif"
       }
+    ],
+    "histoire": [
+      "Le groupe apprend son existence quand le Tribunal attaque la tour d'Eamonn, à Cap Cornes.",
+      "Dans la fouille après le combat, le groupe trouve une liste de cibles à son sceau : Eamonn, Olyssane, Jane, Philippa, Ink, Harfang suivi d'un point d'interrogation.",
+      "À Roshen Buru, en fouillant les papiers de la Protectrice, le groupe comprend qu'elle l'a envoyé et que ses agents sont prêtés par Levistus."
     ]
   },
   {

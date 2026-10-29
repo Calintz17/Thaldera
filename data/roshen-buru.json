@@ -1333,7 +1333,10 @@
     "connu": [
       "C'est ici que le groupe a achevé Kirin Anadori."
     ],
-    "chapeau": "Une ruelle étroite derrière l'auberge, entre échoppes et lanternes rouges, à l'écart du brouhaha du port."
+    "chapeau": "Une ruelle étroite derrière l'auberge, entre échoppes et lanternes rouges, à l'écart du brouhaha du port.",
+    "histoire": [
+      "Au Ryokan de Noshka, le groupe affronte Kirin Anadori et l'achève dans cette ruelle derrière l'auberge."
+    ]
   },
   {
     "id": "noshka",
@@ -1433,7 +1436,10 @@
       "Il agit en même temps que Kirin et s'évanouit quand celui-ci tombe."
     ],
     "attitude": "ennemi",
-    "teinte": "#196975"
+    "teinte": "#196975",
+    "histoire": [
+      "Pendant le combat contre Kirin Anadori dans la ruelle d'Azuren Kai, son Miren agit en même temps que lui et s'évanouit quand il tombe."
+    ]
   },
   {
     "id": "seiran-vale",
@@ -1455,6 +1461,9 @@
       "Depuis l'assassinat de l'ambassadeur Otoba, le pont est fermé par une grille magique et la rivière est embouteillée de barges et de jonques.",
       "La fermeture est un ordre direct de la Gardienne.",
       "Le groupe a choisi la forêt par Azuren Kai pour l'éviter."
+    ],
+    "histoire": [
+      "Après l'assassinat de l'ambassadeur Otoba, le pont est fermé par une grille magique. Le groupe renonce à passer par la ville et prend la forêt d'Azuren."
     ]
   },
   {
@@ -1489,7 +1498,10 @@
     "connu": [
       "Fermé par une grille magique depuis l'assassinat d'Otoba."
     ],
-    "chapeau": "Un grand pont de pierre à arche unique, fermé par une grille magique vibrante. Autour, des toits de pagode empilés, des lanternes rouges par centaines, et un fleuve totalement embouteillé de barges, de sampans et de jonques flanc contre flanc."
+    "chapeau": "Un grand pont de pierre à arche unique, fermé par une grille magique vibrante. Autour, des toits de pagode empilés, des lanternes rouges par centaines, et un fleuve totalement embouteillé de barges, de sampans et de jonques flanc contre flanc.",
+    "histoire": [
+      "Fermé par une grille magique depuis l'assassinat d'Otoba, il pousse le groupe à contourner Seiran Vale."
+    ]
   },
   {
     "id": "roshen-buru",
@@ -1753,6 +1765,9 @@
         "img": "img/paysages/roshen-buru/calligraphie.webp",
         "legende": "L'atelier de calligraphie"
       }
+    ],
+    "histoire": [
+      "Pendant l'enquête sur les lettres de menace, le groupe y apprend que le papier est un papier noble, réservé aux clans."
     ]
   },
   {
@@ -1927,7 +1942,11 @@
     "pos": {
       "x": 0.231,
       "y": 0.225
-    }
+    },
+    "histoire": [
+      "Le groupe y rencontre Ankou Urameï, assis sans table ni bureau, Sabaké à sa gauche et Nyssra à sa droite. Il fait sombre dans la pièce, sans ombres.",
+      "Ankou l'envoie vers Yureï pour retrouver Tobiya, puis lui indique la phalène et le registre des Mirenaï à la magistrature."
+    ]
   },
   {
     "id": "pavillon-mariage",
@@ -2396,6 +2415,10 @@
       "Ankou Urameï, son chef, est un démon du cercle de Minauros, le troisième des Enfers.",
       "Ses deux femmes, Sabaké et Nyssra, semblent aussi être des démons.",
       "Le clan tient la ville basse et fait commerce de vesine, d'âmes et de contrats."
+    ],
+    "histoire": [
+      "Le groupe rencontre Ankou Urameï, chef du clan, à sa maison. Il apprend que ses deux femmes, Sabaké et Nyssra, semblent aussi être des démons.",
+      "Ankou aide le groupe pendant l'affaire du mariage Sokabeï-Kaben."
     ]
   },
   {
@@ -2494,7 +2517,10 @@
     ],
     "img": "img/pnj/sabake.webp",
     "attitude": "neutre",
-    "teinte": "#753c19"
+    "teinte": "#753c19",
+    "histoire": [
+      "Le groupe la voit debout à gauche d'Ankou, tatouée jusqu'aux mains. Elle n'a pas vraiment pris la parole."
+    ]
   },
   {
     "id": "nyssra",
@@ -2517,7 +2543,10 @@
     ],
     "img": "img/pnj/nyssra.webp",
     "attitude": "neutre",
-    "teinte": "#753c19"
+    "teinte": "#753c19",
+    "histoire": [
+      "Le groupe la voit debout à droite d'Ankou, tatouée jusqu'aux mains. Elle sourit quand on demande pourquoi Ankou aide."
+    ]
   },
   {
     "id": "yurei-poison",
@@ -3483,7 +3512,10 @@
     "pos": {
       "x": 0.158,
       "y": 0.028
-    }
+    },
+    "histoire": [
+      "Le groupe se présente au domaine Kovacz pendant l'enquête sur les lettres de menace et les filles disparues. Un vieux domestique essoufflé lui ouvre."
+    ]
   },
   {
     "id": "salon-anadori",
@@ -3583,7 +3615,11 @@
     },
     "carte": "ville",
     "zoom": 0.12,
-    "chapeau": "La maison est dans le quartier des marchands, propre, sans ornement, avec une cour minuscule où sèche du linge. Tout est déjà prêt pour la fête : caisses empilées contre le mur, rouleaux de tissu, lanternes emballées. Sur une table, une lettre que personne n'a touchée depuis qu'elle est arrivée."
+    "chapeau": "La maison est dans le quartier des marchands, propre, sans ornement, avec une cour minuscule où sèche du linge. Tout est déjà prêt pour la fête : caisses empilées contre le mur, rouleaux de tissu, lanternes emballées. Sur une table, une lettre que personne n'a touchée depuis qu'elle est arrivée.",
+    "histoire": [
+      "Le groupe s'y rend à la demande de Konya, la veille de son mariage. La lettre de menace est posée sur la table.",
+      "Wano, la mère de Konya, a vu quelqu'un rôder dans la rue."
+    ]
   },
   {
     "id": "kazen-sokabei",
@@ -4233,6 +4269,10 @@
     "alias": [
       "Kaben",
       "Les Kaben"
+    ],
+    "histoire": [
+      "Au mariage, Doryen Kaben, père d'Ayano, humilie Konya devant tout le monde pendant le discours.",
+      "Ayano est ensuite enlevée par un Miren. Le groupe la délivre."
     ]
   },
   {
@@ -4551,7 +4591,10 @@
         "inverse": "domestiques de"
       }
     ],
-    "attitude": "neutre"
+    "attitude": "neutre",
+    "histoire": [
+      "Il ouvre les portes du domaine Kovacz au groupe, en s'excusant sans qu'on lui demande rien."
+    ]
   },
   {
     "id": "ohana",
@@ -4583,7 +4626,10 @@
     "connu": [
       "Elle a vu Tobiya passer devant son étal trois jours avant, pâle, marchant de travers, parlant tout seul. Il a refusé le bao gratuit qu'elle lui tendait, et elle a su que quelque chose clochait."
     ],
-    "teinte": "#753c19"
+    "teinte": "#753c19",
+    "histoire": [
+      "En enquêtant sur la disparition de Tobiya, le groupe l'interroge. Elle a vu Tobiya passer devant son étal trois jours plus tôt, pâle, marchant de travers, parlant tout seul, et refuser un bao gratuit."
+    ]
   },
   {
     "id": "bhamir",
@@ -4612,7 +4658,10 @@
     "connu": [
       "Il se souvient d'une odeur âcre et chimique, aucune senteur ne la couvrait, qui flottait depuis une semaine autour de la maison de Tobiya et remontait des égouts."
     ],
-    "teinte": "#753c19"
+    "teinte": "#753c19",
+    "histoire": [
+      "En enquêtant sur la disparition de Tobiya, le groupe l'interroge. Il se souvient d'une odeur âcre et chimique qui flottait depuis une semaine autour de la maison de Tobiya et remontait des égouts."
+    ]
   },
   {
     "id": "poki",
@@ -4641,7 +4690,10 @@
     "connu": [
       "Il signale qu'une odeur infâme s'échappe de la maison de Tobiya depuis quelques semaines. Il prend lui-même un bain par mois."
     ],
-    "teinte": "#753c19"
+    "teinte": "#753c19",
+    "histoire": [
+      "En enquêtant sur la disparition de Tobiya, le groupe l'interroge. Il signale une odeur infâme qui s'échappe de la maison de Tobiya depuis quelques semaines."
+    ]
   },
   {
     "id": "bourre-piff",
@@ -4724,7 +4776,10 @@
     "lieu": "tour-eamonn",
     "statut": "vaincu",
     "resume": "Assassin armé d'une naginata, vaincu à la tour.",
-    "attitude": "ennemi"
+    "attitude": "ennemi",
+    "histoire": [
+      "Il attaque la tour d'Eamonn avec l'Oni aux masques. Le groupe le vainc et récupère sa naginata."
+    ]
   },
   {
     "id": "faucheuse-d-echos",
@@ -4735,7 +4790,10 @@
     "lieu": "tour-eamonn",
     "statut": "vaincu",
     "resume": "Assassine du Tribunal de Chair, vaincue à la tour.",
-    "attitude": "ennemi"
+    "attitude": "ennemi",
+    "histoire": [
+      "Elle attaque la tour d'Eamonn avec l'Oni aux masques. Le groupe la vainc."
+    ]
   },
   {
     "id": "psa-87",
@@ -5049,7 +5107,10 @@
       }
     ],
     "attitude": "neutre",
-    "teinte": "#753c19"
+    "teinte": "#753c19",
+    "histoire": [
+      "Il observait le carnage du ryokan à Azuren Kai. Il vend au groupe une carte de la forêt d'Azuren, 500 po, qui évite patrouilles et regards."
+    ]
   },
   {
     "id": "doryo-kovacz",
@@ -5082,7 +5143,10 @@
       }
     ],
     "attitude": "neutre",
-    "teinte": "#753c19"
+    "teinte": "#753c19",
+    "histoire": [
+      "Greffier qui tient les registres de fret depuis vingt ans. Il reçoit Harfang comme délégué."
+    ]
   },
   {
     "id": "nuala",
@@ -5161,7 +5225,12 @@
       "Le groupe en déduit plus tard, sans certitude, qu'il s'agit d'un démon qui prend la forme d'un cryptide de la culture populaire.",
       "Le groupe soupçonne que la Protectrice l'a envoyé pour le tuer, probablement grâce à son pacte avec Levistus."
     ],
-    "histoire": [],
+    "histoire": [
+      "Le groupe le croise pour la première fois sur les berges, avant d'atteindre Azuren Kai.",
+      "À Azuren Kai, il frappe puis disparaît, puis revient attaquer le groupe à l'auberge.",
+      "Le groupe le tue. Il murmure « elle sait… ». Le groupe pense à Absalom.",
+      "Plus tard, le groupe soupçonne que la Protectrice l'a envoyé, probablement grâce à son pacte avec Levistus."
+    ],
     "alias": [
       "Goryo",
       "Goryo des berges",
@@ -5219,6 +5288,9 @@
     "resume": "Bâton de feu pris sur l'Oni aux masques, qui convient parfaitement à Harfang.",
     "connu": [
       "Butin du combat de la tour d'Eamonn, avec la liste du tribunal à sceau démoniaque."
+    ],
+    "histoire": [
+      "Le groupe prend ce bâton de feu sur l'Oni aux masques après le combat de la tour d'Eamonn. Il convient parfaitement à Harfang."
     ]
   },
   {
@@ -5268,7 +5340,10 @@
     "nom": "La capitainerie d'Azuren Kai",
     "titre": "Le port d'Azuren Kai",
     "parent": "azuren-kai",
-    "resume": "La capitainerie tient les registres de fret du port d'Azuren Kai. Doryo Kovacz, le greffier, y reçoit Harfang comme délégué."
+    "resume": "La capitainerie tient les registres de fret du port d'Azuren Kai. Doryo Kovacz, le greffier, y reçoit Harfang comme délégué.",
+    "histoire": [
+      "Harfang s'y présente comme délégué, et Doryo Kovacz, greffier, lui ouvre les registres de fret."
+    ]
   },
   {
     "id": "ascenseur-nord-est",

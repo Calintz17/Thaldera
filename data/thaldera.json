@@ -4105,7 +4105,10 @@
     "pos": {
       "x": 0.439,
       "y": 0.9
-    }
+    },
+    "histoire": [
+      "À l'arrivée du groupe à Havre Noir, le Rocher aux Nœuds est le premier repère de la baie, avant les Quais de Poix."
+    ]
   },
   {
     "id": "quais-de-poix",
@@ -5767,6 +5770,10 @@
         "img": "img/paysages/port-doelan/ecuries.webp",
         "legende": "Les écuries du Clos Vieux"
       }
+    ],
+    "histoire": [
+      "À l'arrivée, le groupe y laisse ses montures chez Gorok.",
+      "Sur une colonne de la cour, un avis de recherche de 36 000 po vise Philippa et Jane."
     ]
   },
   {
@@ -5936,6 +5943,9 @@
         "img": "img/paysages/port-doelan/comptoir-de-l-ether-2.webp",
         "legende": "Le Comptoir de l'Éther, l'étal"
       }
+    ],
+    "histoire": [
+      "Le groupe y rencontre Korvin Lustracier, gnome arcaniste à la barbe violette, qui aime les récits d'aventures extraordinaires."
     ]
   },
   {
@@ -5985,6 +5995,9 @@
         "img": "img/paysages/port-doelan/maison-du-fer.webp",
         "legende": "La Maison du Fer"
       }
+    ],
+    "histoire": [
+      "Le groupe y rencontre Giorgio Malvento, forgeron du chantier naval, qui lui parle de l'Invicta, de la Sentinella et de l'Arsenal."
     ]
   },
   {
@@ -6053,6 +6066,9 @@
         "img": "img/paysages/port-doelan/plage.webp",
         "legende": "La plage"
       }
+    ],
+    "histoire": [
+      "Le groupe s'arrête au stand de Lina, au pied d'une partie de volley de plage."
     ]
   },
   {
@@ -6096,6 +6112,9 @@
         "img": "img/paysages/port-doelan/port.webp",
         "legende": "Le port"
       }
+    ],
+    "histoire": [
+      "Sur la jetée, le groupe interroge Falco et Mirella, qui lui parlent de l'homme disparu à la cour de Spezza et des deux femmes que Spezza traque."
     ]
   },
   {
@@ -6184,6 +6203,9 @@
         "img": "img/paysages/port-doelan/phare.webp",
         "legende": "Le phare"
       }
+    ],
+    "histoire": [
+      "Le groupe y apprend par Serna que le phare peut être éteint pour rendre la navigation dangereuse et que sa lanterne, modulée par des volets, permet de faire signe à Sycomore."
     ]
   },
   {
@@ -6199,6 +6221,9 @@
         "img": "img/paysages/port-doelan/haute-vigie.webp",
         "legende": "La Haute Vigie"
       }
+    ],
+    "histoire": [
+      "Le groupe y monte voir Amôn, qui lui recommande de consulter Makandral Toussaint."
     ]
   },
   {
@@ -6300,6 +6325,9 @@
         "img": "img/paysages/port-doelan/rue-le-soir.webp",
         "legende": "La rue marchande le soir"
       }
+    ],
+    "histoire": [
+      "Le groupe y retrouve Éloi Bonbarique, ruiné, à mendier contre un mur."
     ]
   },
   {
@@ -6358,6 +6386,9 @@
         "img": "img/paysages/port-doelan/entrepots.webp",
         "legende": "Les entrepôts"
       }
+    ],
+    "histoire": [
+      "Dans ce quartier que la ville préfère oublier, le groupe cherche Magdalena, qui a disparu en laissant son chariot sur la route."
     ]
   },
   {
@@ -6376,6 +6407,10 @@
         "img": "img/paysages/port-doelan/ancien-quartier-brule.webp",
         "legende": "L'ancien quartier brûlé"
       }
+    ],
+    "histoire": [
+      "Le groupe y croise Tomas, qui coupe d'anciennes poutres, puis Malka et sa tribu d'hommes-rats chassée par les mercenaires de Spezza.",
+      "Il accepte de reprendre le fortin pour elle."
     ]
   },
   {
@@ -6591,6 +6626,9 @@
         "img": "img/paysages/port-doelan/mine-d-argent.webp",
         "legende": "La vieille mine d'argent"
       }
+    ],
+    "histoire": [
+      "Le groupe rencontre Aldo à l'entrée brisée. Spezza a fait dynamiter la mine par crainte d'un accès discret vers son château : aucune route par là."
     ]
   },
   {
@@ -6646,6 +6684,9 @@
         "img": "img/paysages/port-doelan/carriere-de-pierre.webp",
         "legende": "La carrière de pierre"
       }
+    ],
+    "histoire": [
+      "Le groupe y interroge Maela, qui confirme que les murs de la ville ont été renforcés sous la pression du château, avec des doubles shifts depuis des mois."
     ]
   },
   {
@@ -6674,7 +6715,10 @@
       "Les dernières livraisons ont renforcé les murailles de la ville. Spezza a exigé des doubles shifts depuis des mois.",
       "Persuasion DD 12 : elle confirme le renforcement des murs. Persuasion DD 14 : la pression vient directement du château. Insight DD 13 : elle en veut à Spezza."
     ],
-    "teinte": "#755219"
+    "teinte": "#755219",
+    "histoire": [
+      "Le groupe l'aborde à la carrière, large marteau en main. Elle confirme à contrecœur le renforcement des murs de la ville, exigé par le château."
+    ]
   },
   {
     "id": "voile-doelan",
@@ -6776,6 +6820,9 @@
         "img": "img/paysages/port-doelan/bains-publics.webp",
         "legende": "Les bains publics"
       }
+    ],
+    "histoire": [
+      "Le groupe y rencontre Octavia, qui lui parle des nains recrutés par Spezza puis plus jamais revus."
     ]
   },
   {
@@ -6825,6 +6872,9 @@
         "img": "img/paysages/port-doelan/chez-edouardo.webp",
         "legende": "Chez Edouardo"
       }
+    ],
+    "histoire": [
+      "Le groupe y fait soigner Jane (4 po) et couper les cheveux de Philippa (2 po)."
     ]
   },
   {
@@ -6863,7 +6913,10 @@
     "titre": "Pain chaud",
     "parent": "port-doelan",
     "resume": "Miches dorées, focaccia et petits pains garnis.",
-    "chapeau": "La rue descend vers la mer, bordée d'échoppes éclairées à la lanterne. L'odeur du pain chaud dépasse la porte ouverte, des miches dorées s'alignent derrière le comptoir, le bois du four craque à l'arrière. L'endroit est simple, propre, vivant."
+    "chapeau": "La rue descend vers la mer, bordée d'échoppes éclairées à la lanterne. L'odeur du pain chaud dépasse la porte ouverte, des miches dorées s'alignent derrière le comptoir, le bois du four craque à l'arrière. L'endroit est simple, propre, vivant.",
+    "histoire": [
+      "Le groupe y achète du pain à bas prix auprès de Bruno Rossi."
+    ]
   },
   {
     "id": "bruno-rossi",
@@ -6898,7 +6951,10 @@
         "legende": "Fleurs Nicea"
       }
     ],
-    "chapeau": "Le kiosque est posé face à la mer, sous des pins larges et tordus. Des pots débordent de fleurs colorées, des rubans pendent au vent. L'air sent le sel et le pollen."
+    "chapeau": "Le kiosque est posé face à la mer, sous des pins larges et tordus. Des pots débordent de fleurs colorées, des rubans pendent au vent. L'air sent le sel et le pollen.",
+    "histoire": [
+      "Le groupe y discute avec Nicea, qui lui parle des navires qui ne rentrent jamais au port."
+    ]
   },
   {
     "id": "nicea",
@@ -6939,6 +6995,10 @@
         "img": "img/paysages/port-doelan/chantier-naval.webp",
         "legende": "Le chantier naval"
       }
+    ],
+    "histoire": [
+      "Le groupe y rencontre Enzo, maître charpentier, et étudie quatre points critiques : cales, goudron et poix, grues et palans, ateliers.",
+      "Le chantier est l'une des opérations de sabotage contre la jauge militaire de Spezza."
     ]
   },
   {
@@ -6993,7 +7053,8 @@
       }
     ],
     "histoire": [
-      "Le groupe, allié aux hommes-rats de Malka, s'en prend au fortin des mercenaires de Spezza, ce qui affaiblit sa jauge militaire."
+      "Le groupe apprend de Malka que les mercenaires de Spezza l'ont bâti sur le terrier de sa tribu.",
+      "Capitaine Krezz y commande. Le groupe le reprend avec les hommes-rats."
     ]
   },
   {
@@ -7234,6 +7295,9 @@
         "img": "img/paysages/port-doelan/bravala.webp",
         "legende": "Bravala, compagnie navale"
       }
+    ],
+    "histoire": [
+      "Le groupe y rencontre Giovanni et Dario Bravala, étranglés par Titan Inc. Giovanni lui apprend que Titan Inc. détourne des fonds et commerce avec Havre Noir."
     ]
   },
   {
@@ -7320,6 +7384,9 @@
         "img": "img/paysages/port-doelan/titan-inc.webp",
         "legende": "Titan Inc."
       }
+    ],
+    "histoire": [
+      "Le groupe y retrouve Lucio Bellanera, le comptable, dont les registres codés prouvent les détournements et les cargaisons venues de Havre Noir."
     ]
   },
   {
@@ -7382,6 +7449,10 @@
         "img": "img/paysages/port-doelan/vaisseaux-amiraux-3.webp",
         "legende": "Les vaisseaux amiraux, au coucher du soleil"
       }
+    ],
+    "histoire": [
+      "Le groupe apprend par Nicea et Giorgio que ces deux navires restent dans la baie, relevés par des barques.",
+      "Les couler est l'une des opérations contre la jauge militaire de Spezza."
     ]
   },
   {
@@ -7525,6 +7596,10 @@
         "img": "img/paysages/port-doelan/bibliotheque.webp",
         "legende": "La bibliothèque"
       }
+    ],
+    "histoire": [
+      "Le groupe y interroge Aurelian Thorex, qui panique et laisse deviner les combles.",
+      "Dans les combles, une presse arcanique imprime de la propagande pour Spezza : cible d'une opération de sabotage politique."
     ]
   },
   {
@@ -7580,6 +7655,10 @@
         "img": "img/paysages/port-doelan/crique.webp",
         "legende": "La crique du sous-marin"
       }
+    ],
+    "histoire": [
+      "Spezza fuit par la trappe du château vers cette crique.",
+      "Le groupe y découvre le sous-marin de pyrracier et les nains de Borim Brise-Montagne, qui proposent de partir avec lui."
     ]
   },
   {
@@ -8727,7 +8806,10 @@
         "legende": "Le Manoir des Ligaments"
       }
     ],
-    "redirige": "manoir-des-ligaments"
+    "redirige": "manoir-des-ligaments",
+    "histoire": [
+      "Au Manoir des Ligaments, le groupe retrouve Nolbrim, qui y travaille sur ses prototypes, et la harpe de chair faite du Landsknecht vaincu."
+    ]
   },
   {
     "id": "nolbrim",
@@ -9199,7 +9281,10 @@
       }
     ],
     "attitude": "positif",
-    "connu": []
+    "connu": [],
+    "histoire": [
+      "Jane le choisit avec Freya pour l'accompagner à Leyenmil lors de la mission contre Edmund von Kornwald."
+    ]
   },
   {
     "id": "freya",
@@ -9218,7 +9303,10 @@
       }
     ],
     "attitude": "positif",
-    "connu": []
+    "connu": [],
+    "histoire": [
+      "Jane la choisit avec Klaus pour l'accompagner à Leyenmil lors de la mission contre Edmund von Kornwald."
+    ]
   },
   {
     "id": "village-de-leyenmil",
@@ -9334,6 +9422,9 @@
     "attitude": "neutre",
     "connu": [
       "Ivrogne de l'auberge du village. Il ricane en voyant les enfants de l'orphelinat et lance des allusions grossières."
+    ],
+    "histoire": [
+      "Pendant la nuit de la mission de Jane, il ricane en voyant les enfants de l'orphelinat à l'auberge et lance des allusions grossières. Copperworth le coupe net."
     ]
   },
   {

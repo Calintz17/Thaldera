@@ -2898,7 +2898,12 @@
     "img": "img/pnj/otoba-kessai.webp",
     "attitude": "neutre",
     "lieu": "keras-tauroc",
-    "teinte": "#752519"
+    "teinte": "#752519",
+    "histoire": [
+      "Au festival des Cornes Rouges, le groupe remporte le tournoi du Colisée.",
+      "Le soir du banquet, Otoba, ambassadeur de Roshen Buru, est assassiné. Le groupe est sur les lieux, couvert de sang, sans en avoir le souvenir.",
+      "Sa mort ferme les accès à Roshen Buru, Seiran Vale et Azuren Kai compris. Le groupe se réveille en prison, accusé du crime."
+    ]
   },
   {
     "id": "yorisa",
@@ -3088,7 +3093,12 @@
     ],
     "img": "img/pnj/silas-mortdore-e.webp",
     "attitude": "ennemi",
-    "teinte": "#755219"
+    "teinte": "#755219",
+    "histoire": [
+      "Sur la berge de la Khor Selash, il agite les bras. Il se présente comme un marchand en détresse, perdu depuis des jours, et le groupe l'invite à bord.",
+      "À bord, courtois et un peu trop reconnaissant, il interroge Philippa sur les dettes et l'ingratitude.",
+      "La nuit, il tente de lui voler le Fragment dans son sac. Découvert, il se bat sur le pont et est vaincu par le groupe."
+    ]
   },
   {
     "id": "cap-cornes",
@@ -6031,6 +6041,10 @@
     "resume": "Pierre rare de Keras Tauroc qui prend la magie et la conduit. Idéale pour rituels, cercles d'invocation et portails.",
     "connu": [
       "Le groupe a identifié l'arshen en enquêtant sur le collier de l'autel."
+    ],
+    "histoire": [
+      "À Keras Tauroc, le groupe identifie l'arshen en enquêtant sur le collier de l'autel.",
+      "Vespera réclame ensuite l'achat d'arshen pour relancer Port Doëlan : Jane lui remet la Couronne de Corail Noir pour le financer."
     ]
   },
   {
@@ -6042,6 +6056,9 @@
     "resume": "Hache de métal non reconnaissable, glyphes non décoratifs, vendue 2000 po par Naevia.",
     "alias": [
       "Hache Etrange"
+    ],
+    "histoire": [
+      "À Keras Tauroc, Jane vole la hache à Naevia, qui la vendait 2000 po : une garde d'épée brisée aux glyphes non décoratifs."
     ]
   },
   {
@@ -6512,7 +6529,10 @@
       "Le groupe l'a traversée depuis Azuren Kai pour être plus discret.",
       "Le groupe l'a traversée pour éviter Seiran Vale."
     ],
-    "histoire": [],
+    "histoire": [
+      "Après Cap Cornes et Azuren Kai, le groupe choisit la forêt d'Azuren plutôt que Seiran Vale pour rester discret.",
+      "Il y croise le Goryo, puis arrive à Roshen Buru avec Harfang."
+    ],
     "chapeau": "Une forêt dense qui entoure Roshen Buru, cernée d'un océan de sakura. La route passe par là, loin des postes de garde et des regards."
   },
   {
@@ -6549,7 +6569,11 @@
       "Un charognard rôdait au pied des piliers à l'arrivée du groupe."
     ],
     "fusion": true,
-    "chapeau": "Un ancien aqueduc en ruine, arches de pierre sur trois niveaux, se dresse seul au milieu de la lande. Dans chaque alcove pend un corps retenu par une chaîne, des gardes de Keras Tauroc reconnaissables à leurs uniformes. Le vent fait grincer le métal et tourner lentement les cadavres. L'air est lourd, sucré, écœurant."
+    "chapeau": "Un ancien aqueduc en ruine, arches de pierre sur trois niveaux, se dresse seul au milieu de la lande. Dans chaque alcove pend un corps retenu par une chaîne, des gardes de Keras Tauroc reconnaissables à leurs uniformes. Le vent fait grincer le métal et tourner lentement les cadavres. L'air est lourd, sucré, écœurant.",
+    "histoire": [
+      "Sur la lande, le groupe croise ce gibet : un ancien aqueduc en ruine dont les statues brisées ont laissé la place à des gardes Tauroc pendus à des chaînes.",
+      "Il y relève les empreintes d'Absalom, le message d'une tueuse qui a une large avance."
+    ]
   },
   {
     "id": "malquessar",
@@ -6760,7 +6784,10 @@
     },
     "typeLabel": "Trajet",
     "resume": "Là où le groupe croise le Goryo pour la première fois.",
-    "redirige": "le-goryo"
+    "redirige": "le-goryo",
+    "histoire": [
+      "Sur les berges, avant d'atteindre Azuren Kai, le groupe croise le Goryo pour la première fois."
+    ]
   },
   {
     "id": "combat-de-silas",
@@ -6792,7 +6819,13 @@
       "La traversée descend la Khor Selash jusqu'à la lande plate, sous un ciel ambré, puis le groupe continue à pied vers Cap Cornes.",
       "En chemin, le groupe recueille un voyageur égaré : Silas Mort-Dorée. Il est vaincu à bord par le groupe."
     ],
-    "chapeau": "Un navire élancé, la coque sombre rehaussée de dorures, aux voiles ajourées comme des ailes d'insecte. Il détonne dans le port de Keras Tauroc. À bord, une capitaine aveugle qui fume sa pipe, et un équipage venu de Roshen Buru. Puis la rivière, et la lande plate de chaque côté, sous un ciel d'ambre."
+    "chapeau": "Un navire élancé, la coque sombre rehaussée de dorures, aux voiles ajourées comme des ailes d'insecte. Il détonne dans le port de Keras Tauroc. À bord, une capitaine aveugle qui fume sa pipe, et un équipage venu de Roshen Buru. Puis la rivière, et la lande plate de chaque côté, sous un ciel d'ambre.",
+    "histoire": [
+      "Capito guide le groupe jusqu'au ponton du Tenrai Buru et se porte garant auprès de la capitaine Yorisa. Le passage coûte 40 po par tête, ou un service.",
+      "Le Tenrai Buru descend la Khor Selash jusqu'à la lande plate, sous un ciel ambré.",
+      "En chemin, le groupe recueille Silas Mort-Dorée. La nuit, celui-ci tente de voler le Fragment. Le groupe le vainc sur le pont.",
+      "Le groupe continue à pied vers Cap Cornes."
+    ]
   },
   {
     "id": "rituel-du-tier-voyage",
@@ -7047,7 +7080,10 @@
       "Elle fuit quand on s'avance franchement vers elle."
     ],
     "attitude": "neutre",
-    "teinte": "#753c19"
+    "teinte": "#753c19",
+    "histoire": [
+      "À l'arrivée du groupe au gibet, cette créature rôde au pied des piliers et fuit quand le groupe s'avance franchement."
+    ]
   },
   {
     "id": "camp-de-vespera",
@@ -7098,7 +7134,10 @@
       "Il a surgi pendant la fouille des catacombes, sous la cathédrale de Kord.",
       "Le groupe l'a vaincu."
     ],
-    "teinte": "#755219"
+    "teinte": "#755219",
+    "histoire": [
+      "Pendant la fouille des catacombes de la cathédrale de Kord, près d'un autel secondaire aux armes de Vassago, il surgit. Le groupe le vainc."
+    ]
   },
   {
     "id": "temple-de-valkur",
@@ -9438,7 +9477,10 @@
     "pos": {
       "x": 0.955,
       "y": 0.29
-    }
+    },
+    "histoire": [
+      "À la porte de l'Est, les gardes réclament 50 po par tête. Des bandits détroussent Philippa pour payer leur propre entrée, et Bren Legemor lui explique le péage."
+    ]
   },
   {
     "id": "taverne-ganimede",
@@ -9618,6 +9660,9 @@
         "img": "img/paysages/agran/sous-marin-interieur.webp",
         "legende": "L'intérieur du Vesper"
       }
+    ],
+    "histoire": [
+      "Le sous-marin remonte devant Brakka. Le groupe gagne la côte à la nage tandis que les nains restent à bord, et le Vesper replonge derrière lui."
     ]
   },
   {
