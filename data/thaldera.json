@@ -2987,8 +2987,16 @@
       "Kataron, Dame des Marées Profondes, y est vénérée."
     ],
     "histoire": [
-      "Le groupe y rencontre Ink, la prend sous son aile, puis parle à Kataron au Cœur Immergé.",
-      "Algari apprend à Philippa à appliquer le thuun sur sa lyre pour que le son porte sous l'eau."
+      "Philippa et Jane quittent la crique du château de Spezza à bord d'un sous-marin de pyrracier, piloté par les nains de Borim Brise-Montagne.",
+      "Deux tempêtes de courants frappent la coque. Les joueuses aident aux postes pendant que les nains gèrent les propulseurs, puis le sous-marin plonge dans une faille.",
+      "Des créatures de la faille, mi-tritons mi-kuo-toa, attaquent par vagues. Le groupe sort repousser les attaquants.",
+      "À l'arrivée, Reshaar et Ghor interceptent le sous-marin et laissent entrer le groupe, que la ville appelle « les Noyés ».",
+      "À l'auberge, Thaloor les sert et Ink surgit, pleine de questions sur la surface. Le groupe la prend sous son aile.",
+      "Le groupe visite le temple de Kataron : le pupitre brille à leur approche et Glooglugogg leur dit d'aller voir la Suuraal. Il passe aussi chez Peraalys, Drisuun, l'Orant et Algari, qui apprend à Philippa à poser le thuun sur sa lyre.",
+      "Sur la piste d'un fragment, le groupe fouille l'épave du Grauwacht, où Ink les guide, et y trouve la lettre qui désigne l'Astariel. À l'Astariel, il affronte Ossyraal pour le fragment de Nyrrh.",
+      "La Suuraal reconnaît le fragment. Kataron parle alors par toutes les voix présentes et donne au groupe une marque.",
+      "La traversée du varech mène au Cœur Immergé. Kataron y reçoit le groupe, ne s'inquiète pas et le congédie : « Vous avez été reçu. »",
+      "Le sous-marin repart vers Istra, avec Ink à bord."
     ],
     "accent": "#1e4f9c",
     "blason": "img/blasons/agran.webp",
@@ -3039,7 +3047,11 @@
       "Il sert sans un mot de trop, jauge les PJ du coin de l'œil et répond aux questions directes par des phrases courtes. Le rouge est de la viande, rare et plus chère, le blanc du poisson.",
       "Il conseille de rester dans les rues principales, d'éviter les courants du haut et de dormir quand les coraux s'éteignent. Il protège Ink en la rappelant à l'ordre une fois, pas deux."
     ],
-    "teinte": "#755219"
+    "teinte": "#755219",
+    "histoire": [
+      "Il sert le groupe à l'auberge en phrases courtes et rappelle Ink à l'ordre : « Laisse-les. Ils viennent d'arriver. »",
+      "Ink part dans le sillage du groupe."
+    ]
   },
   {
     "id": "la-suuraal",
@@ -3075,7 +3087,12 @@
       }
     ],
     "attitude": "neutre",
-    "teinte": "#753c19"
+    "teinte": "#753c19",
+    "histoire": [
+      "Elle reçoit le groupe en haut des marches et se lève quand elle voit le fragment de Nyrrh.",
+      "Kataron parle par sa bouche et par celle de tous les présents, et donne au groupe une marque.",
+      "Elle les envoie vers le Cœur Immergé."
+    ]
   },
   {
     "id": "algari",
@@ -3104,7 +3121,10 @@
     ],
     "img": "img/pnj/agran-algari.webp",
     "attitude": "neutre",
-    "teinte": "#755219"
+    "teinte": "#755219",
+    "histoire": [
+      "Il sent le silence de la lyre de Philippa et lui explique le thuun, gel qui remplace l'air pour porter le son : « Le thuun leur apprend. »"
+    ]
   },
   {
     "id": "glooglugogg",
@@ -3133,7 +3153,10 @@
       "Quand le pupitre s'illumine au contact des PJ, il recule d'un pas, regarde le pupitre, puis les PJ, puis le pupitre : ce qu'il voit n'entre dans aucune catégorie connue de lui (Insight DC 13). Il les envoie voir la Suuraal sur-le-champ.",
       "Religion DC 12 : le pupitre sert à lire les pulsations de Kataron. Arcanes DC 14 : la lumière est une résonance, quelque chose dans les PJ vibre à la fréquence des coraux d'Agran."
     ],
-    "teinte": "#755219"
+    "teinte": "#755219",
+    "histoire": [
+      "Il demande une offrande, puis voit le pupitre s'illuminer au contact du groupe. Il envoie le groupe chez la Suuraal sans attendre."
+    ]
   },
   {
     "id": "pyrrah",
@@ -7338,7 +7361,10 @@
       "Dans la Faille, les créatures qui respirent sous l'eau ne subissent aucune pénalité de pression.",
       "Les armes perforantes marchent normalement, les armes tranchantes et contondantes sont gênées."
     ],
-    "chapeau": "La faille s'ouvre sur quelque chose d'impossible : des lumières orangées et dorées en dômes et en arches, comme une ville endormie sous une couverture de coraux. Les coraux brillent, bleus et froids, au rythme lent d'un cœur énorme. Les parois encadrent l'ensemble comme deux mains qui tiendraient un trésor."
+    "chapeau": "La faille s'ouvre sur quelque chose d'impossible : des lumières orangées et dorées en dômes et en arches, comme une ville endormie sous une couverture de coraux. Les coraux brillent, bleus et froids, au rythme lent d'un cœur énorme. Les parois encadrent l'ensemble comme deux mains qui tiendraient un trésor.",
+    "histoire": [
+      "Le sous-marin y plonge pour fuir la deuxième tempête, y est attaqué par les bandits, puis découvre la ville au fond."
+    ]
   },
   {
     "id": "sous-marin-borim",
@@ -7359,7 +7385,9 @@
       }
     ],
     "histoire": [
-      "Après la descente de la faille et ses attaques, il remonte à la surface devant Brakka, côte est d'Istra-Belig. Il a besoin de réparations et plonge de nouveau lentement quand le groupe gagne le rivage."
+      "Le groupe embarque dans la crique du château de Spezza avec les nains de Borim Brise-Montagne.",
+      "Il traverse deux tempêtes de courants, puis plonge dans la faille et repousse l'attaque des bandits.",
+      "Après Agran, il remonte à la surface devant Brakka. Il a besoin de réparations et replonge lentement quand le groupe gagne le rivage."
     ]
   },
   {
@@ -7389,7 +7417,10 @@
       }
     ],
     "attitude": "neutre",
-    "teinte": "#197569"
+    "teinte": "#197569",
+    "histoire": [
+      "Elle intercepte le sous-marin à l'entrée d'Agran, regarde dans le hublot et laisse passer le groupe."
+    ]
   },
   {
     "id": "ghor",
@@ -7406,7 +7437,10 @@
       "Garde d'Agran à côté de Reshaar : roche vivante, tentacules, coquillages incrustés dans une chair blanchâtre, yeux orange brûlants. Une mutation des eaux de surface, poussée sur plusieurs générations.",
       "Insight DC 14 : il ne surveille pas les PJ, il surveille ce qui vient derrière eux. Il reste immobile comme un récif qui attend."
     ],
-    "teinte": "#752519"
+    "teinte": "#752519",
+    "histoire": [
+      "Il se tient à côté de Reshaar à l'interception et surveille ce qui vient derrière le groupe."
+    ]
   },
   {
     "id": "auberge-d-agran",
@@ -7428,7 +7462,10 @@
     "pos": {
       "x": 0.561,
       "y": 0.381
-    }
+    },
+    "histoire": [
+      "Le groupe y mange pour la première fois à Agran et y rencontre Ink."
+    ]
   },
   {
     "id": "temple-de-kataron",
@@ -7459,7 +7496,10 @@
     "pos": {
       "x": 0.508,
       "y": 0.35
-    }
+    },
+    "histoire": [
+      "Le groupe y entre, dépose une offrande, et le pupitre brille à son approche."
+    ]
   },
   {
     "id": "echoppe-de-peraalys",
@@ -7478,7 +7518,10 @@
     "pos": {
       "x": 0.569,
       "y": 0.256
-    }
+    },
+    "histoire": [
+      "Le groupe y vend ses objets de surface et y reçoit trois potions mineures de Kel."
+    ]
   },
   {
     "id": "peraalys",
@@ -7512,7 +7555,10 @@
       "Son échoppe n'a pas de devanture : une alcôve dans la roche, des étagères de corail noir chargées d'objets d'épaves. Un rideau de petits poissons argentés s'écarte quand on entre.",
       "Persuasion DC 11 : réduction de 10 % pour qui lui apporte d'abord un objet de surface. Elle laisse Kel distribuer ses potions et passe cela en perte dans ses comptes."
     ],
-    "teinte": "#753c19"
+    "teinte": "#753c19",
+    "histoire": [
+      "Le groupe vend à Peraalys ses objets de surface."
+    ]
   },
   {
     "id": "kel",
@@ -7535,7 +7581,10 @@
       "Il a de bonnes intentions et aucune notion du commerce : il donne, convaincu de rendre service. Perception DC 18 : il est déjà dans la poche d'un PJ avant trois mots.",
       "Dextérité DC 12 pour l'attraper : il est rapide, déterminé et sincèrement surpris d'être arrêté."
     ],
-    "teinte": "#755219"
+    "teinte": "#755219",
+    "histoire": [
+      "Il glisse trois potions mineures au groupe dans l'échoppe de Peraalys."
+    ]
   },
   {
     "id": "atelier-de-drisuun",
@@ -7548,7 +7597,10 @@
     "pos": {
       "x": 0.531,
       "y": 0.299
-    }
+    },
+    "histoire": [
+      "Le groupe y passe voir ce que Drisuun récupère des épaves."
+    ]
   },
   {
     "id": "drisuun",
@@ -7570,7 +7622,10 @@
       "Trois techniques : compression du corail (armures, aussi dense que la pierre mais plus léger), taille de coquilles (lames légères, silencieuses, résistantes à la corrosion, plus fragiles que le métal), forge thermique du métal abyssal (armes lourdes).",
       "Le métal de surface tient peu longtemps ici, la pression et le sel finissent par tout avoir."
     ],
-    "teinte": "#753c19"
+    "teinte": "#753c19",
+    "histoire": [
+      "Le groupe le rencontre à son atelier. Il lui indique les épaves de la faille basse."
+    ]
   },
   {
     "id": "salle-de-l-orant",
@@ -7589,7 +7644,10 @@
     "pos": {
       "x": 0.617,
       "y": 0.176
-    }
+    },
+    "histoire": [
+      "Le groupe y rencontre Uruukaysal."
+    ]
   },
   {
     "id": "uruukaysal",
@@ -7624,7 +7682,10 @@
       }
     ],
     "attitude": "positif",
-    "teinte": "#196975"
+    "teinte": "#196975",
+    "histoire": [
+      "Il explique au groupe que Kataron ne se rejoint pas par des routes et l'envoie vers la Suuraal."
+    ]
   },
   {
     "id": "epave-du-grauwacht",
@@ -7643,6 +7704,9 @@
         "img": "img/paysages/agran/epave-du-grauwacht.webp",
         "legende": "L'épave du Grauwacht"
       }
+    ],
+    "histoire": [
+      "Le groupe y descend avec Ink et y trouve, dans la cabine du capitaine, la lettre de mission scellée qui désigne l'Astariel."
     ]
   },
   {
@@ -7665,6 +7729,9 @@
     "connu": [
       "Capitaine du Grauwacht, vaisseau d'escorte altéran. Son ordre de mission, signé Arkhavel Dorn pour la Chancellerie impériale, lui demande une escorte strictement défensive de l'Astariel.",
       "En cas de naufrage de l'Astariel, il devait récupérer en priorité la caisse de pierre scellée de la cabine du capitaine. La mission est classifiée sous peine des sanctions de l'Ordre de la Racine."
+    ],
+    "histoire": [
+      "Le groupe lit son ordre de mission dans la boîte scellée de la cabine : escorter l'Astariel et récupérer la caisse de pierre en cas de naufrage."
     ]
   },
   {
@@ -7682,7 +7749,10 @@
     "pos": {
       "x": 0.172,
       "y": 0.722
-    }
+    },
+    "histoire": [
+      "Le groupe la rejoint plus bas dans la faille, y trouve le journal du capitaine Voryn Kael et le fragment de Nyrrh, gardé par Ossyraal."
+    ]
   },
   {
     "id": "ossyraal",
@@ -7719,7 +7789,11 @@
     ],
     "relations": [],
     "attitude": "ennemi",
-    "teinte": "#196975"
+    "teinte": "#196975",
+    "histoire": [
+      "Elle accueille le groupe dans l'épave : « Des Noyés. Dans mon épave. »",
+      "Elle garde le fragment de Nyrrh, qui chante."
+    ]
   },
   {
     "id": "fragment-de-nyrrh",
@@ -7743,7 +7817,10 @@
         "legende": "Le fragment de Nyrrh"
       }
     ],
-    "img": "img/pnj/agran-fragment-de-nyrrh.webp"
+    "img": "img/pnj/agran-fragment-de-nyrrh.webp",
+    "histoire": [
+      "Le groupe le rapporte de l'Astariel et le présente à la Suuraal, qui le reconnaît immédiatement."
+    ]
   },
   {
     "id": "kataron",
@@ -7774,7 +7851,11 @@
         "legende": "Le Cœur immergé"
       }
     ],
-    "attitude": "neutre"
+    "attitude": "neutre",
+    "histoire": [
+      "Elle parle au groupe par la bouche de tous les habitants dans la salle de la Suuraal.",
+      "Au Cœur Immergé, elle sent le groupe venir depuis les courants de surface, l'écoute parler de Vassago, refuse de s'inquiéter et le congédie : « Vous avez été reçu. »"
+    ]
   },
   {
     "id": "thaladrassyl",
@@ -7791,6 +7872,9 @@
         "img": "img/paysages/agran/coeur-immerge.webp",
         "legende": "Le Cœur immergé"
       }
+    ],
+    "histoire": [
+      "Le groupe le voit au fond de la tranchée, au terme de la traversée."
     ]
   },
   {
@@ -8317,9 +8401,14 @@
       "qui": "Nolbrim"
     },
     "histoire": [
-      "Il arrache le dos de Jane avec son exosquelette, après que Gran Brijit a purifié l'âme de Bourpif.",
-      "Pendant son coma, il a percé le Voile et trouvé une solution pour Jane : il manquait une âme pour stabiliser son exo-squelette.",
-      "!! Dans son laboratoire, il attaque Jane sur une table d'opération. Avec l'âme de Bourre-Piff que Gran Brijit lui tend, il arrache l'exo-squelette et le dos de Jane. Elle se réveille avec un gant de cristaux rouge."
+      "Il travaille chez Gran Brijit, au Manoir des Ligaments, sur ses prototypes, dont Horizon Brûlée.",
+      "Il descend l'escalier du manoir, comme chez sa tante, et diagnostique Jane : ses cristaux tirent chacun sur une fréquence différente, il lui faut un Hexacore.",
+      "Il remet à Philippa Horizon Brûlée, prototype qu'il dit stable : « Normalement. Probablement. » Gran Brijit y ajoute le souffle de vie.",
+      "Le groupe revient du désert avec l'Hexacore. Il s'en saisit avec une excitation presque enfantine et promet de stabiliser le moteur cristallin de Jane.",
+      "Quand Philippa refuse la Première Flamme à Pyrrah, la hutte de Gran Brijit est détruite et il tombe dans le coma.",
+      "À Cap Cornes, le groupe le réveille en le tuant puis en le ressuscitant avec la potion d'Ursinus. Philippa envoie un message à Bourpif : mission accomplie.",
+      "Pendant son coma, il a percé le Voile et trouvé une solution pour Jane : il lui manque une âme pour stabiliser son exosquelette.",
+      "Avant l'arrivée à Roshen Buru, il attire Jane dans son laboratoire et l'attache sur une table d'opération. Avec l'âme que Gran Brijit lui tend, il arrache l'exosquelette et le dos de Jane. Elle se réveille avec un gant de cristaux rouge."
     ],
     "img": "img/pnj/nolbrim.webp",
     "relations": [
@@ -8352,6 +8441,9 @@
       "Landsknecht mélomane",
       "Capitaine Brunhild",
       "Brunhild"
+    ],
+    "histoire": [
+      "Gran Brijit la façonne avec les restes du Landsknecht vaincu et en tire un son grave pour lire les échos de la chair devant Jane et Philippa."
     ]
   },
   {
@@ -8374,6 +8466,10 @@
     "resume": "Prototype de Nolbrim, censé répondre à l'énergie de Philippa sans exploser.",
     "alias": [
       "Horizon Brulée"
+    ],
+    "histoire": [
+      "Nolbrim la remet à Philippa, à l'état de prototype stable, au Manoir des Ligaments.",
+      "Gran Brijit y ajoute un souffle de vie pour qu'elle puisse l'invoquer à volonté."
     ]
   },
   {
@@ -9475,7 +9571,10 @@
     "pos": {
       "x": 0.619,
       "y": 0.313
-    }
+    },
+    "histoire": [
+      "Philippa y essaie sa lyre, qui ne produit aucun son, et Algari lui montre le thuun."
+    ]
   },
   {
     "id": "demeure-de-la-suuraal",
@@ -9487,7 +9586,10 @@
     "pos": {
       "x": 0.664,
       "y": 0.196
-    }
+    },
+    "histoire": [
+      "Le groupe y monte les marches et y présente le fragment."
+    ]
   },
   {
     "id": "coeur-de-la-corruption",

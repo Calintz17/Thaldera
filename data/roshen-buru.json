@@ -3192,10 +3192,25 @@
       "Dans une ruelle, une femme à la peau violette, Gikyo Noshi Buru, l'attend avec hostilité. Un djinn d'eau les sépare et les deux femmes disparaissent en duel."
     ],
     "histoire": [
-      "Elle arrive chez Nolbrim avec Bourpif quand Jane est sur la table d'opération. Elle le décapite, recueille et purifie son âme, puis la remet à Nolbrim pour compléter Jane.",
-      "Au Temple du Tenraku, elle surgit après l'explosion d'Absalom et réclame le parchemin, qui lui appartient. Jane le lui remet. Elle traite Anaru de petite fille perdue dans les arbres et la menace.",
+      "Sur l'île du Vesper, Philippa, seule, trouve la cabane d'une sorcière, Gran Brijit, qui reconnaît sur elle l'empreinte de Vassago et lui propose un marché. Une potion l'envoie dans le Feywild, où l'Arbre-Soleil bénit Philippa et lui donne sa marque brûlante.",
+      "À la fin de Malquessar, Gran Brijit attend Philippa sur les marches d'un temple de pierre, de l'autre côté du portail : « Te v'là revenue… et toujours vivante. »",
+      "Elle lui rappelle sa dette envers l'Arbre-Soleil et envers elle, et touche son œil : « mwen ka gade ou, tout le temps ».",
+      "Au Manoir des Ligaments, dans le marais, elle reçoit Philippa et Jane. Nolbrim y travaille sur ses prototypes et sur Horizon Brûlée.",
+      "Après le combat contre Argonath au Repos des Épées, Olyssane panique en voyant les formes monstrueuses de Jane et Philippa et les attaque. Gran Brijit l'immobilise net.",
+      "Elle leur montre la harpe de chair tirée du corps du Landsknecht vaincu, dont elle lit les échos : Vassago manipule le plan, des ouvertures temporelles anormales apparaissent, plusieurs plans convergent.",
+      "Elle envoie Philippa chercher la Première Flamme à Pyrrah : « Tu dois le rallumer. » Nolbrim diagnostique de son côté qu'il faut un Hexacore à Jane.",
+      "Elle achève Horizon Brûlée de Philippa : « Un petit souffle de vie, pour que tu puisses l'invoquer quand tu le souhaites. »",
+      "Elle donne à chacun une tenue du désert et téléporte le groupe à l'orée du désert au sud de Rivegard. Elle dit avoir un rendez-vous à Khazad-Marûn.",
+      "À Khazad-Marûn, les habitants murmurent le nom d'Ereshkigal sur son passage et Ashur, vieil ami, la reconnaît. Une femme à la peau violette, Ginko Noshi-Buru, l'attend avec hostilité. Elles disparaissent en duel.",
+      "Elle accueille le groupe de retour avec l'Hexacore. Nolbrim s'en saisit, et elle observe longuement Philippa.",
+      "À Pyrrah, Philippa refuse de prendre la Première Flamme. L'Arbre-Soleil, quasi éteint, détruit la hutte de Gran Brijit et Nolbrim tombe dans le coma.",
+      "À Cap Cornes, elle reçoit le groupe dans son manoir. Philippa y a une vision d'une balance désaxée et Olyssane ouvre le passage en faisant couler son sang. Elle parle à un vieux monsieur que le groupe interrompt : « l'équilibre doit être préservé ».",
+      "Le groupe réveille Nolbrim en le tuant puis en le ressuscitant avec la potion d'Ursinus.",
+      "Elle nomme Philippa sa championne et lui confie deux missions : ne pas ouvrir de portail entre Cap Cornes et Havre Noir, et trouver puis tuer Oren Sidaï à Roshen Buru.",
+      "Avant d'arriver à Roshen Buru, pendant un feu de camp, elle ouvre un portail pour Nolbrim et attire Jane dans son laboratoire. Elle décapite Bourpif, recueille son âme, la purifie et la tend à Nolbrim, qui arrache l'exosquelette de Jane.",
+      "Au Temple du Tenraku, elle surgit après l'explosion d'Absalom et réclame le parchemin, que Jane lui remet. Elle menace la Gardienne Anaru, qui recule.",
       "Elle explique que les dieux ne peuvent pas frapper en personne : le groupe sera l'instrument de sa main.",
-      "Avec la Gardienne, elle retient le toit du temple pour protéger les gens du temple et ceux d'en bas. Carnage se forme, et le groupe le vainc."
+      "Avec la Gardienne, elle retient le toit du temple pour protéger ceux du temple et ceux d'en bas. Carnage se forme, et le groupe le vainc."
     ],
     "relations": [
       {
@@ -4650,6 +4665,7 @@
     "attitude": "neutre",
     "redirige": "bourpif",
     "histoire": [
+      "Il suit Gran Brijit dans le laboratoire de Nolbrim, au moment où Jane est attachée sur la table.",
       "Gran Brijit l'arrête d'un geste et en extrait l'âme. Il s'effondre comme une boîte de conserve. Cette âme est destinée à compléter l'exosquelette de Jane."
     ]
   },
@@ -4802,7 +4818,10 @@
       "texte": "Les courants qui mènent à Thaladrassyl ne sont pas des routes. Ce sont des invitations. Et les invitations ne se forcent pas.",
       "qui": "Uruukaysal, l'Orant de la Faille"
     },
-    "attitude": "neutre"
+    "attitude": "neutre",
+    "histoire": [
+      "Il bénit le départ du groupe d'Agran."
+    ]
   },
   {
     "id": "frere-aldric",
@@ -5176,7 +5195,9 @@
       }
     ],
     "histoire": [
-      "Gran Brijit le décapite devant Jane et recueille son âme, une petite orbe de fumée qu'elle inspire puis recrache dans une fiole pour la purifier. Elle tend la fiole à Nolbrim."
+      "Nolbrim le bâtit autour d'un fragment de l'Hexacore et il suit Gran Brijit.",
+      "Philippa lui envoie un message à Cap Cornes pour lui annoncer que Nolbrim est réveillé.",
+      "Avant Roshen Buru, Gran Brijit le décapite devant Jane et recueille son âme pour la tendre à Nolbrim."
     ]
   },
   {

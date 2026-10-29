@@ -3569,10 +3569,13 @@
       }
     ],
     "histoire": [
-      "À Agran, le groupe rencontre Ink à l'auberge de Thaloor. Il l'adopte, tente de la confier à Urnak sans succès, et c'est Olyssane qui l'emmène partout avec elle.",
+      "À Agran, Ink surgit à l'auberge de Thaloor, queue agitée, avide d'entendre parler de la surface. Thaloor la rappelle à l'ordre : « Laisse-les. Ils viennent d'arriver. »",
+      "Elle suit discrètement le groupe, le guide jusqu'à l'épave du Grauwacht et lui parle de l'épave plus bas, au pavillon encore accroché, dont Thaloor lui interdit de s'approcher.",
+      "Le groupe l'adopte, tente de la confier à Urnak sans succès, et c'est Olyssane qui l'emmène partout avec elle.",
       "À Cap Cornes, le groupe retrouve Ink accroupie au bord d'une flaque, en train de jouer avec Maeve, une jeune Ophidienne. Olyssane la laisse vagabonder, mais la surveille de loin.",
       "Elle raconte qu'un homme les a embêtées, qu'un œil vert a brillé sur les toits et que l'homme a disparu dans un cri. Pour elle, les esprits des marées la protègent.",
       "Elle aide le groupe à vaincre les ghoules des marées, dont il rapporte trois cœurs flétris pour le rituel d'Eamonn.",
+      "Elle rencontre Gran Brijit à Cap Cornes, qui semble déjà la connaître.",
       "Elle figure sur la liste de cibles du Tribunal de Chair laissée dans la tour d'Eamonn."
     ]
   },
@@ -6448,7 +6451,11 @@
       "La harpe de chair faite du Landsknecht vaincu y est exposée.",
       "Philippa y a eu une vision d'une balance désaxée. Olyssane y a ouvert le passage en faisant couler son sang."
     ],
-    "chapeau": "Une clairière enveloppée d'une lueur tamisée, où les feuilles épaisses filtrent la lumière en un vert profond, presque stagnant. À l'intérieur, l'odeur dense de terre humide se mêle aux parfums secs des poudres, des racines et des herbes pendues au plafond. Des masques effacés par le temps veillent depuis les murs, et le sol de bois sombre se plaint à chaque pas.\n\nUn salon encombré de fioles, de grimoires ouverts et de fragments de créatures gelés dans des bocaux. La lumière tombe en nappes calmes d'une fenêtre étroite, les herbes suspendues diffusent une odeur amère, mêlée à celle du thé noir oublié. Sur la table, les restes du Landsknecht forment une harpe de chair dont les cordes tintent au moindre courant d'air."
+    "chapeau": "Une clairière enveloppée d'une lueur tamisée, où les feuilles épaisses filtrent la lumière en un vert profond, presque stagnant. À l'intérieur, l'odeur dense de terre humide se mêle aux parfums secs des poudres, des racines et des herbes pendues au plafond. Des masques effacés par le temps veillent depuis les murs, et le sol de bois sombre se plaint à chaque pas.\n\nUn salon encombré de fioles, de grimoires ouverts et de fragments de créatures gelés dans des bocaux. La lumière tombe en nappes calmes d'une fenêtre étroite, les herbes suspendues diffusent une odeur amère, mêlée à celle du thé noir oublié. Sur la table, les restes du Landsknecht forment une harpe de chair dont les cordes tintent au moindre courant d'air.",
+    "histoire": [
+      "Philippa et Jane y sont reçues par Gran Brijit et y retrouvent Nolbrim.",
+      "À Cap Cornes, le groupe retrouve le manoir. Philippa y a une vision de balance désaxée et Olyssane ouvre le passage en faisant couler son sang."
+    ]
   },
   {
     "id": "uruzal",
@@ -7165,7 +7172,10 @@
     ],
     "img": "img/pnj/agran-attaque-de-bandits.webp",
     "attitude": "ennemi",
-    "teinte": "#195275"
+    "teinte": "#195275",
+    "histoire": [
+      "Ils attaquent le sous-marin dans la faille, en demi-cercle et par vagues. Le groupe les repousse."
+    ]
   },
   {
     "id": "dogrun",
@@ -7182,7 +7192,10 @@
     ],
     "img": "img/pnj/nain-du-sous-marin-dogrun.webp",
     "attitude": "positif",
-    "teinte": "#755219"
+    "teinte": "#755219",
+    "histoire": [
+      "Il pilote le sous-marin avec ses camarades et reste à bord tout au long de la traversée."
+    ]
   },
   {
     "id": "thram",
@@ -7199,7 +7212,10 @@
     ],
     "img": "img/pnj/nain-du-sous-marin-thram.webp",
     "attitude": "positif",
-    "teinte": "#753c19"
+    "teinte": "#753c19",
+    "histoire": [
+      "Il pilote le sous-marin avec ses camarades et reste à bord tout au long de la traversée."
+    ]
   },
   {
     "id": "orik",
@@ -7216,7 +7232,10 @@
     ],
     "img": "img/pnj/nain-du-sous-marin-orik.webp",
     "attitude": "positif",
-    "teinte": "#755219"
+    "teinte": "#755219",
+    "histoire": [
+      "Il pilote le sous-marin avec ses camarades et reste à bord tout au long de la traversée."
+    ]
   },
   {
     "id": "eleanor-holsten",
@@ -7257,6 +7276,9 @@
         "img": "img/paysages/agran/coeur-immerge.webp",
         "legende": "Le Cœur immergé"
       }
+    ],
+    "histoire": [
+      "Le groupe arrive au pied de l'arbre et Kataron lui parle sans intermédiaire."
     ]
   },
   {
@@ -7275,6 +7297,9 @@
         "img": "img/paysages/agran/traversee-vers-le-coeur.webp",
         "legende": "La traversée vers le Cœur"
       }
+    ],
+    "histoire": [
+      "Le groupe traverse la tranchée de varech jusqu'au Cœur Immergé."
     ]
   },
   {
