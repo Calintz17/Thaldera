@@ -237,3 +237,27 @@ body.explorer-open { overflow:hidden; }
 @media (prefers-reduced-motion:reduce) {
   .gal,.gal .sl,.cutout img,.pin-pad { animation:none !important; transition:none !important; }
 }
+
+/* v87 | City/map reading: the masthead exits with the page; the map follows
+   in normal document flow until it touches the top, then stays there.
+   Keeping the header sticky while offsetting the map by --top-h caused the
+   map to appear frozen and allowed the fiche to scroll behind it. */
+@media (max-width:860px) {
+  body:has(#scene:not(.is-world)) > .top {
+    position:relative !important;
+    top:auto !important;
+  }
+  #scene:not(.is-world) > .stage {
+    position:-webkit-sticky;
+    position:sticky;
+    top:0 !important;
+    z-index:5;
+  }
+}
+@media (max-width:860px) and (orientation:landscape) and (max-height:500px) {
+  #scene:not(.is-world) > .stage {
+    position:-webkit-sticky;
+    position:sticky;
+    top:0 !important;
+  }
+}

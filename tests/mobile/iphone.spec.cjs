@@ -76,6 +76,53 @@ test('iPhone: gallery carousel touch controls remain tappable', async ({ page })
   expect(second).not.toBe(first);
 });
 
+
+test('iPhone city plan: header scrolls off, map rises then sticks at viewport top', async ({ page }) => {
+  await page.goto('/#/roshen-buru', { waitUntil: 'domcontentloaded' });
+  await expect(page.locator('#scene:not(.is-world) #stage')).toBeVisible({ timeout: 25000 });
+  await expect(page.locator('#panel .pin-pad')).toBeVisible({ timeout: 25000 });
+  const initial = await page.evaluate(() => {
+    const header = document.querySelector('.top');
+    const map = document.querySelector('#stage');
+    const panel = document.querySelector('#panel');
+    return {
+      headerHeight: header.getBoundingClientRect().height,
+      mapTop: map.getBoundingClientRect().top,
+      panelTop: panel.getBoundingClientRect().top,
+      docHeight: document.documentElement.scrollHeight,
+      viewport: innerHeight,
+      headerPosition: getComputedStyle(header).position,
+      mapPosition: getComputedStyle(map).position,
+    };
+  });
+  expect(initial.docHeight).toBeGreaterThan(initial.viewport + initial.headerHeight + 140);
+  expect(initial.headerPosition).not.toBe('sticky');
+  expect(initial.mapPosition).toBe('sticky');
+  expect(initial.mapTop).toBeGreaterThan(0);
+
+  // Before the original map top reaches the viewport, it must move with the page.
+  const halfway = Math.floor(initial.headerHeight / 2);
+  await page.evaluate(y => window.scrollTo(0, y), halfway);
+  await expect.poll(() => page.evaluate(() => Math.round(scrollY))).toBeGreaterThanOrEqual(halfway - 2);
+  const moving = await page.evaluate(() => document.querySelector('#stage').getBoundingClientRect().top);
+  expect(moving).toBeLessThan(initial.mapTop - halfway + 3);
+  expect(moving).toBeGreaterThan(0);
+
+  // Past the header, the map must sit flush with the top while the fiche advances.
+  await page.evaluate(y => window.scrollTo(0, y), Math.ceil(initial.headerHeight + 180));
+  await expect.poll(() => page.evaluate(() => Math.round(scrollY))).toBeGreaterThan(initial.headerHeight + 150);
+  const stuck = await page.evaluate(() => ({
+    mapTop: document.querySelector('#stage').getBoundingClientRect().top,
+    headerBottom: document.querySelector('.top').getBoundingClientRect().bottom,
+    panelTop: document.querySelector('#panel').getBoundingClientRect().top
+  }));
+  expect(stuck.headerBottom).toBeLessThanOrEqual(2);
+  expect(stuck.mapTop).toBeGreaterThanOrEqual(-2);
+  expect(stuck.mapTop).toBeLessThanOrEqual(2);
+  expect(stuck.panelTop).toBeLessThan(initial.panelTop - 170);
+  await noHorizontalOverflow(page);
+});
+
 test('narrow iPhone SE and landscape: no horizontal scrolling or clipped header', async ({ page }) => {
   await page.setViewportSize({ width: 375, height: 667 });
   await page.goto('/#/', { waitUntil: 'domcontentloaded' });
