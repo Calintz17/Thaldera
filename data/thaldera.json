@@ -2017,19 +2017,13 @@
     "parent": "prison-port-blanc",
     "lieu": "prison-port-blanc",
     "statut": "vivant",
-    "resume": "Prisonnière aidée à fuir par le groupe. Elle lui doit 1000 po.",
+    "resume": "Cheffe de gang surnommée Red, libérée par le groupe. Elle leur doit 2 000 po.",
     "connu": [
-      "Elle est toujours dans la nature.",
-      "Sa dette n'a jamais été payée.",
       "Cheffe de gang surnommée Red, transportée dans une cage sur la charrette. Elle observe en silence, dos droit, avec une patience calme.",
-      "Pendant le trajet, elle flatte, insinue que Doëlan veut l'éliminer, lance Charm Person (DC 15), puis propose 2000 po et un coffre caché dans les collines, jusqu'à 4000 po si elle sent une faiblesse.",
-      "Insight DD 14 : elle ment en partie. Insight DD 16 : elle sait que quelqu'un est en position. Insight DD 18 : elle prépare quelque chose."
+      "Pendant le trajet, elle flatte les deux femmes, insinue que Doëlan veut l'éliminer, lance Charm Person et propose 2 000 po.",
+      "Philippa et Jane l'aident à s'échapper. Elle reste dans la nature et sa dette n'a jamais été payée."
     ],
-    "histoire": [
-      "Philippa et Jane la voient dans sa cage, dos droit, devant la prison.",
-      "Pendant le trajet, elle flatte, lance Charm Person et propose 2 000 po, jusqu'à 4 000 po.",
-      "Philippa et Jane l'aident à s'échapper. Elle leur doit 1 000 po et reste dans la nature."
-    ],
+    "histoire": [],
     "alias": [
       "Red Callahan",
       "Mara Callahan"
