@@ -1765,9 +1765,12 @@
       "Les abattoirs de chaux sont interdits aux étrangers."
     ],
     "histoire": [
-      "Des bêtes dorées meurent entourées d'or fondu. Une fausse piste accuse les Reth.",
-      "Au saloon, une prostituée nommée Sadie s'est révélée plus tard être Absalom.",
-      "Le groupe aide Mara Callahan à s'évader de la prison du shérif."
+      "Philippa et Jane voient Port Blanc de loin, par son voile de poussière sur les plaines. Le gardien Harlan, qui bégaie, leur dit que la ville n'est pas un port : « ici c'est le bétail ».",
+      "Au saloon, Susie les accueille avec du bœuf grillé, Boon les invite à une partie de poker et Sadie se présente à elles.",
+      "Elles parcourent la ville : quais rouges, marché aux bestiaux, tanneries, abattoirs de chaux interdits aux étrangers, Cercle des Éleveurs et chapelle des Bêtes Silencieuses. Abby, du Voile, leur décrit les quatre familles.",
+      "Des vaches meurent chaque nuit, entourées de pièces d'or fondues. La famille Varkel accuse publiquement les Reth d'un rituel païen. La fausse piste est surtout politique.",
+      "Le shérif Wyatt Hale leur propose 1 000 po pour escorter Mara « Red » Callahan jusqu'à une auberge isolée où des gens de Port Doëlan la prendront. Elles finissent par l'aider à s'échapper et Mara leur doit 1 000 po.",
+      "Plus tard à Port Doëlan, elles découvrent que Sadie était Absalom."
     ],
     "pos": {
       "x": 0.32,
@@ -1819,7 +1822,10 @@
     "pos": {
       "x": 0.436,
       "y": 0.522
-    }
+    },
+    "histoire": [
+      "Philippa et Jane y entrent à leur arrivée. Susie les accueille, Boon les invite à jouer et Sadie se présente."
+    ]
   },
   {
     "id": "susie",
@@ -1856,7 +1862,10 @@
       }
     ],
     "attitude": "neutre",
-    "teinte": "#755219"
+    "teinte": "#755219",
+    "histoire": [
+      "Elle accueille Philippa et Jane au saloon : « Hé bien, regardez-moi ça… des voyageurs ! Bienvenue au saloon. »"
+    ]
   },
   {
     "id": "boon",
@@ -1876,7 +1885,10 @@
       "texte": "Tiens donc… des nouvelles têtes. On n'en voit pas souvent passer par ici.",
       "qui": "Boon"
     },
-    "attitude": "neutre"
+    "attitude": "neutre",
+    "histoire": [
+      "Il remarque les nouvelles têtes au saloon et leur offre une chaise à sa table de poker."
+    ]
   },
   {
     "id": "quais-rouges",
@@ -1898,7 +1910,10 @@
     "pos": {
       "x": 0.517,
       "y": 0.228
-    }
+    },
+    "histoire": [
+      "Philippa et Jane y voient le bois imbibé de sang et les barges réfrigérées où la viande est salée avant l'expédition. June leur explique que la pêche n'existe plus."
+    ]
   },
   {
     "id": "june",
@@ -1924,7 +1939,10 @@
     ],
     "img": "img/pnj/port-blanc-june.webp",
     "attitude": "neutre",
-    "teinte": "#753c19"
+    "teinte": "#753c19",
+    "histoire": [
+      "Philippa et Jane la rencontrent dans sa boutique des Quais Rouges. Elle leur explique que le fleuve est mort depuis la Guerre de la Veyra et que le sang des abattoirs a donné son nom aux quais."
+    ]
   },
   {
     "id": "prison-port-blanc",
@@ -1945,7 +1963,10 @@
     "pos": {
       "x": 0.492,
       "y": 0.414
-    }
+    },
+    "histoire": [
+      "Philippa et Jane y croisent le shérif Wyatt Hale, qui garde Mara Callahan dans une charrette renforcée."
+    ]
   },
   {
     "id": "wyatt-hale",
@@ -1982,7 +2003,11 @@
       }
     ],
     "attitude": "positif",
-    "teinte": "#753c19"
+    "teinte": "#753c19",
+    "histoire": [
+      "Il interpelle Philippa et Jane devant la prison : ses deux adjoints ont disparu et il refuse de partir seul. Il leur offre 1 000 po pour escorter Mara à l'auberge isolée où l'attendent les autorités de Port Doëlan.",
+      "Il laisse les joueuses décider pendant le trajet."
+    ]
   },
   {
     "id": "mara-callahan",
@@ -2001,7 +2026,9 @@
       "Insight DD 14 : elle ment en partie. Insight DD 16 : elle sait que quelqu'un est en position. Insight DD 18 : elle prépare quelque chose."
     ],
     "histoire": [
-      "Le groupe l'aide à s'évader."
+      "Philippa et Jane la voient dans sa cage, dos droit, devant la prison.",
+      "Pendant le trajet, elle flatte, lance Charm Person et propose 2 000 po, jusqu'à 4 000 po.",
+      "Philippa et Jane l'aident à s'échapper. Elle leur doit 1 000 po et reste dans la nature."
     ],
     "alias": [
       "Red Callahan",
@@ -2028,7 +2055,10 @@
     "pos": {
       "x": 0.069,
       "y": 0.778
-    }
+    },
+    "histoire": [
+      "Philippa et Jane longent ces enclos à leur arrivée et y trouvent Harlan."
+    ]
   },
   {
     "id": "harlan",
@@ -2060,7 +2090,10 @@
       }
     ],
     "attitude": "neutre",
-    "teinte": "#755219"
+    "teinte": "#755219",
+    "histoire": [
+      "Philippa et Jane croisent ce gardien de pâture avant d'atteindre la ville. Il leur dit, en bégayant, que Port Blanc n'est pas un port et que les bêtes malades tremblent, les yeux blancs : « Ici on dit qu'il vaut mieux pas trop regarder. »"
+    ]
   },
   {
     "id": "quatre-familles",
@@ -2079,6 +2112,9 @@
       "Elles arbitrent leurs différends ensemble pour que la ville tienne.",
       "Les Varkel ont accusé publiquement les Reth dans l'affaire des bêtes dorées.",
       "Eleanor Holsten est à la tête de la maison Holsten."
+    ],
+    "histoire": [
+      "Abby les décrit à Philippa et Jane au marché aux bestiaux. Les Varkel accusent publiquement les Reth dans l'affaire des bêtes dorées, qui ont demandé l'arbitrage des Quatre Familles."
     ]
   },
   {
@@ -2311,9 +2347,15 @@
       "Un portail relie Cap Cornes à Havre Noir. Le groupe l'a rerouté vers Port Doëlan."
     ],
     "histoire": [
-      "Philippa affronte Thargan lors du duel rituel du pont de parade.",
-      "Le groupe résout une série de meurtres déguisés en Malepeste.",
-      "Liora y ouvre sa boutique, le Pavillon Vert."
+      "Le groupe entre dans la baie et passe devant le Rocher aux Nœuds, puis accoste aux Quais de Poix, où chaque navire est répertorié par les Lapidès.",
+      "À la Taverne du Harpon Rouge, Wilhelm der Treue sort de la foule pour s'en prendre à Philippa. Le groupe le vainc.",
+      "Sur la place des quais, Brask le Clocheur crie la mort d'un marin à la peau verte et le 7 inversé sur sa porte. Le groupe enquête chez Alrik Crochemer, dans la ruelle des Cordages où gît Calven, puis aux registres du port.",
+      "Les registres montrent que toutes les victimes étaient marins du Brumeux, navire disparu il y a vingt ans. Derek Varn est le dernier survivant.",
+      "Dans la masure de Derek Varn, Eldran Korr, mort-vivant revenu se venger de la mutinerie, force la porte à minuit. Le groupe le vainc : la Malepeste n'était qu'un masque.",
+      "Le groupe visite le Pont du Jugement, la Caverne aux Butins, le temple de Thalos en ruines et la forge de Korga.",
+      "À l'Assemblage, Philippa passe le duel rituel du pont de parade face à Thargan, puis parle avec Sycomore, qui garde ses secrets mais laisse entendre que des fonds viennent d'un seigneur pirate.",
+      "Le groupe retrouve Liora, qui installe le Pavillon Vert.",
+      "Plus tard, le groupe reroute le portail de Cap Cornes vers Port Doëlan plutôt que vers Havre Noir."
     ],
     "pos": {
       "x": 0.437,
@@ -2353,7 +2395,10 @@
     "pos": {
       "x": 0.511,
       "y": 0.644
-    }
+    },
+    "histoire": [
+      "Le groupe y entre par le ponton, descend aux salles de l'Assemblage et se présente devant Sycomore à la Capitainerie."
+    ]
   },
   {
     "id": "sycomore-brise-pavois",
@@ -2372,7 +2417,10 @@
       "Olyssane est sa Première-Capitaine."
     ],
     "histoire": [
-      "Le groupe passe son duel rituel puis parle avec elle dans ses quartiers."
+      "Philippa passe le duel rituel du pont de parade sous son regard.",
+      "Le groupe lui demande audience à la Capitainerie. Elle écoute, amusée, puis les emmène dans ses quartiers privés.",
+      "Elle dit connaître l'odeur de la Griffe mais ne pas lui chercher querelle tant qu'on ne s'invite pas chez elle, et laisse entendre qu'un seigneur pirate finance des opérations.",
+      "Elle accorde sa protection au groupe et leur ouvre une route sûre hors de la ville avec Olyssane."
     ],
     "img": "img/thaldera/pnj/sycomore-brise-pavois.webp",
     "relations": [
@@ -2429,7 +2477,9 @@
       "Triton renégat à la peau bleutée striée de cicatrices, cheveux raides et humides, yeux jaunes aux pupilles fendues, trident cabossé. Moqueur et sadique, il rit rauque comme le ressac dans une cale.",
       "Ancien soldat d'un royaume marin, il a déserté et trouvé chez Sycomore une famille qui ne le juge pas tant qu'il reste utile. Il affronte Philippa en duel sur le Pont de Parade."
     ],
-    "histoire": [],
+    "histoire": [
+      "Il est l'adversaire désigné par Sycomore pour le duel de Philippa sur le pont de parade, et la raille tout du long : « Sycomore me regarde… et toi ? »"
+    ],
     "citation": {
       "texte": "Regarde-moi bien, étrangère… je vais peindre ces planches avec ton sang.",
       "qui": "Thargan l'Écaillé"
@@ -2466,7 +2516,12 @@
       "ordre": 2,
       "etat": "active",
       "note": "Craie posée par Philippa au Pavillon Vert, chez Liora."
-    }
+    },
+    "histoire": [
+      "Liora y dispose ses premiers pots sur une longue table de récupération et peint une feuille sur la vitrine.",
+      "Elle propose au groupe un troc : bourgeons rares et plantes inhabituelles contre compositions florales.",
+      "La boutique s'agrandit ensuite, financée par Philippa, avec un contrat de plantes pour les reboisements d'Olyssane."
+    ]
   },
   {
     "id": "liora",
@@ -2482,8 +2537,9 @@
       "Elle a donné trois Bandle Scouts au groupe."
     ],
     "histoire": [
-      "Elle est libérée par Philippa à l'Île aux Moines, puis s'installe à Havre Noir avec une boutique de fleurs.",
-      "Elle contacte le groupe par une pierre de communication pendant le voyage vers Keras Tauroc, maladroite mais chaleureuse : sa boutique a triplé grâce aux achats d'Olyssane, qui vient chercher des plantes par brouettes entières."
+      "Après sa libération à l'Île aux Moines, Liora ouvre le Pavillon Vert à Havre Noir.",
+      "Philippa et Jane la retrouvent en train de dresser ses premiers pots. Elle leur donne trois Bandle Scouts et promet des fleurs contre des plantes rares.",
+      "Elle contacte ensuite le groupe par une pierre de communication pendant le voyage vers Keras Tauroc : sa boutique a triplé grâce aux achats d'Olyssane."
     ],
     "img": "img/thaldera/pnj/liora.webp",
     "lieux": [
@@ -2606,7 +2662,10 @@
     "pos": {
       "x": 0.508,
       "y": 0.085
-    }
+    },
+    "histoire": [
+      "Le groupe visite ce temple en ruines et apprend l'histoire du diacre Malrik."
+    ]
   },
   {
     "id": "wilhelm-der-treue",
@@ -2623,6 +2682,7 @@
       "Les trois sceaux des racines lui donnent plus de points de vie, une peau durcie comme l'écorce et le poids du ciel dans ses coups."
     ],
     "histoire": [
+      "Il surgit à la Taverne du Harpon Rouge, Zweihänder à l'épaule : « Allons ! Pas de panique… je ne suis pas venu pour ton sang, mais pour ta compagnie. »",
       "Le groupe le vainc."
     ],
     "citation": {
@@ -3920,7 +3980,10 @@
     "pos": {
       "x": 0.469,
       "y": 0.322
-    }
+    },
+    "histoire": [
+      "Le groupe accoste ici et apprend que tout navire est répertorié et que l'Île aux Moines passe pour déserte."
+    ]
   },
   {
     "id": "brask-le-clocheur",
@@ -3941,7 +4004,11 @@
       "texte": "Nouvelles du jour ! Encore un cadavre trouvé ce matin, peau verte, yeux exorbités !",
       "qui": "Brask le Clocheur, crieur de rue"
     },
-    "attitude": "neutre"
+    "attitude": "neutre",
+    "histoire": [
+      "Il crie les nouvelles aux quais : le duc de Corvalis accusé du meurtre de la duchesse, l'Assemblage fermé aux visiteurs, un nouveau cadavre à la peau verte.",
+      "Il raconte la peste des noyés d'il y a soixante ans et envoie le groupe chez Alrik Crochemer."
+    ]
   },
   {
     "id": "taverne-harpon-rouge",
@@ -3957,7 +4024,10 @@
     "pos": {
       "x": 0.258,
       "y": 0.233
-    }
+    },
+    "histoire": [
+      "Wilhelm der Treue y défie Philippa et la foule s'écarte pour le combat."
+    ]
   },
   {
     "id": "ergott",
@@ -3968,7 +4038,10 @@
     "lieu": "taverne-harpon-rouge",
     "statut": "vivant",
     "resume": "Figure de la taverne où Wilhelm der Treue s'attaque à Philippa.",
-    "attitude": "neutre"
+    "attitude": "neutre",
+    "histoire": [
+      "Il tient la taverne le soir où Wilhelm der Treue s'en prend à Philippa."
+    ]
   },
   {
     "id": "maison-crochemer",
@@ -3980,7 +4053,10 @@
     "connu": [
       "Le marin Crochemer a été retrouvé mort, peau verte, yeux exorbités. Les Lapidès ont emporté le corps au mortuaire."
     ],
-    "chapeau": "Une bâtisse de bois fatigué sur le quai Est, la façade humide de sel, des cordages pendants. Sur la porte, gravé grossièrement dans le bois, un 7 inversé. À l'intérieur, une odeur lourde de rhum éventé, de poisson séché et de linge mouillé."
+    "chapeau": "Une bâtisse de bois fatigué sur le quai Est, la façade humide de sel, des cordages pendants. Sur la porte, gravé grossièrement dans le bois, un 7 inversé. À l'intérieur, une odeur lourde de rhum éventé, de poisson séché et de linge mouillé.",
+    "histoire": [
+      "Le groupe y rencontre Alrik, qui vit encore dans la maison du dernier mort."
+    ]
   },
   {
     "id": "alrik-crochemer",
@@ -4001,7 +4077,11 @@
       "qui": "Alrik Crochemer"
     },
     "relations": [],
-    "attitude": "ennemi"
+    "attitude": "ennemi",
+    "histoire": [
+      "Il reçoit le groupe, terrifié, et confirme que les Lapidès ont emporté le corps de son frère au mortuaire.",
+      "Il renvoie le groupe vers le médecin."
+    ]
   },
   {
     "id": "ruelle-des-cordages",
@@ -4013,7 +4093,10 @@
     "connu": [
       "Le 7 inversé sur la porte est gravé d'un coup de lame sûr, pas d'une main d'enfant."
     ],
-    "chapeau": "Devant la boutique de cordages de Calven, une petite foule. Deux Lapidès soulèvent un brancard couvert d'un drap trempé. La porte porte à nouveau le 7 inversé, sombre et humide. La ruelle empeste la corde goudronnée, mais aussi une odeur métallique, presque celle du sang."
+    "chapeau": "Devant la boutique de cordages de Calven, une petite foule. Deux Lapidès soulèvent un brancard couvert d'un drap trempé. La porte porte à nouveau le 7 inversé, sombre et humide. La ruelle empeste la corde goudronnée, mais aussi une odeur métallique, presque celle du sang.",
+    "histoire": [
+      "Le groupe y arrive devant la boutique de Calven, où les Lapidès soulèvent un brancard sous un drap trempé."
+    ]
   },
   {
     "id": "calven",
@@ -4043,6 +4126,9 @@
     "connu": [
       "Marchand de cordages, mêmes symptômes que les précédentes victimes : peau verdâtre, yeux exorbités. Le 7 inversé, gravé d'un coup de lame sûr, est encore frais sur sa porte, avec des copeaux au sol.",
       "Ses effets personnels sont saisis et transférés au bureau des registres du port."
+    ],
+    "histoire": [
+      "Le groupe trouve son cadavre devant sa boutique, mêmes symptômes que les précédentes victimes."
     ]
   },
   {
@@ -4071,7 +4157,10 @@
         "inverse": "assisté par"
       }
     ],
-    "attitude": "neutre"
+    "attitude": "neutre",
+    "histoire": [
+      "Il supervise l'enlèvement du corps de Calven, note ses observations et invite le groupe à le retrouver au mortuaire."
+    ]
   },
   {
     "id": "registres-du-port",
@@ -4084,7 +4173,10 @@
       "Tous les morts étaient marins du Brumeux, navire disparu il y a vingt ans au large des récifs de Solcarne.",
       "Le 7 inversé n'apparaît dans aucun registre."
     ],
-    "chapeau": "Un vieux bâtiment de bois sombre et d'encre. Odeur d'humidité, de goudron et de papier moisi. Des étagères croulent sous les registres reliés de cuir, certains tachés de sel, et des chandelles grésillent sur des piles de parchemins."
+    "chapeau": "Un vieux bâtiment de bois sombre et d'encre. Odeur d'humidité, de goudron et de papier moisi. Des étagères croulent sous les registres reliés de cuir, certains tachés de sel, et des chandelles grésillent sur des piles de parchemins.",
+    "histoire": [
+      "Le groupe y consulte les registres et apprend que les victimes sont toutes des marins du Brumeux."
+    ]
   },
   {
     "id": "arvik-denholm",
@@ -4118,7 +4210,10 @@
         "inverse": "renseignée par"
       }
     ],
-    "attitude": "neutre"
+    "attitude": "neutre",
+    "histoire": [
+      "Il reçoit le groupe, agacé mais fasciné, et lit dans le registre les noms des marins du Brumeux dont Derek Varn, le seul survivant encore à Havre Noir."
+    ]
   },
   {
     "id": "maison-derek-varn",
@@ -4128,7 +4223,8 @@
     "parent": "havre-noir",
     "resume": "Masure aux fenêtres barricadées, battue par les embruns. Le 7 inversé est gravé sur la porte.",
     "histoire": [
-      "Eldran Korr y force la porte à minuit et attaque Derek."
+      "Le groupe y trouve Derek Varn terrorisé, puis veille avec lui.",
+      "À minuit, Eldran Korr force la porte et attaque."
     ],
     "chapeau": "Une masure isolée au bord du quai Nord, battue par les embruns. Fenêtres barricadées de planches clouées, porte renforcée par des barres de bois. À l'intérieur, une lampe à huile à peine allumée et une odeur de rhum renversé et de moisissure."
   },
@@ -4156,7 +4252,11 @@
         "ton": "negatif"
       }
     ],
-    "attitude": "neutre"
+    "attitude": "neutre",
+    "histoire": [
+      "Le groupe le trouve terrorisé dans sa masure et il avoue la mutinerie du Brumeux contre Eldran Korr.",
+      "Le groupe veille avec lui la nuit où Eldran vient le chercher."
+    ]
   },
   {
     "id": "eldran-korr",
@@ -4173,7 +4273,9 @@
       "Les meurtres ne sont pas liés à la peste : il tue ses anciens frères d'armes et maquille ses crimes avec le 7 inversé, rappel des vieilles pestes maritimes, pour détourner les soupçons."
     ],
     "histoire": [
-      "Le groupe le vainc dans la masure de Derek Varn."
+      "Il y a vingt ans, l'équipage du Brumeux le jette par-dessus bord pour avoir supplié d'arrêter la mutinerie.",
+      "Revenu mort-vivant, il tue ses anciens compagnons un par un et grave un 7 inversé sur leurs portes.",
+      "Il force la porte de Derek Varn à minuit, sabre à la main, et le groupe le vainc."
     ],
     "citation": {
       "texte": "On a levé l'fer contre not' capitaine. Tous unis. Tous sauf lui. Korr… son second, son chien fidèle.",
@@ -4203,7 +4305,10 @@
     "pos": {
       "x": 0.3,
       "y": 0.468
-    }
+    },
+    "histoire": [
+      "Le groupe y découvre les cages d'exécution et croise Filver Brandepoix."
+    ]
   },
   {
     "id": "filver-brandepoix",
@@ -4238,7 +4343,10 @@
         "inverse": "geôlière de"
       }
     ],
-    "attitude": "ennemi"
+    "attitude": "ennemi",
+    "histoire": [
+      "Le groupe le rencontre en cage au Pont du Jugement. Il accuse le Passeur de Camont de l'avoir envoyé monter un comptoir à Havre Noir et propose or et contacts contre sa libération."
+    ]
   },
   {
     "id": "caverne-aux-butins",
@@ -4259,7 +4367,10 @@
       "ordre": 1,
       "etat": "active",
       "note": "Craie posée par Philippa à la Caverne aux Butins."
-    }
+    },
+    "histoire": [
+      "Le groupe y passe et y voit les butins vendus par Marek."
+    ]
   },
   {
     "id": "marek-le-calfat",
@@ -4286,7 +4397,10 @@
         "ton": "positif"
       }
     ],
-    "attitude": "neutre"
+    "attitude": "neutre",
+    "histoire": [
+      "Il vend ses butins au groupe : « Ici tout est à vendre, capitaine… »"
+    ]
   },
   {
     "id": "gueule-de-feu",
@@ -4303,7 +4417,10 @@
     "pos": {
       "x": 0.831,
       "y": 0.667
-    }
+    },
+    "histoire": [
+      "Le groupe y passe voir la forge de Korga."
+    ]
   },
   {
     "id": "korga-brise-lame",
@@ -4336,7 +4453,10 @@
         "inverse": "forgeronne de"
       }
     ],
-    "attitude": "neutre"
+    "attitude": "neutre",
+    "histoire": [
+      "Le groupe la rencontre à sa forge : « Ici, on ne jure que par la flamme et le marteau. »"
+    ]
   },
   {
     "id": "ponton-assemblage",
@@ -4348,7 +4468,10 @@
     "connu": [
       "Il faut un laissez-passer signé par Sycomore ou son scribe."
     ],
-    "chapeau": "Une passerelle unique mène aux pontons extérieurs de l'Assemblage. Des chaînes énormes maintiennent l'ensemble, des canons pointent dans toutes les directions. L'air est saturé de goudron brûlé, de poudre et de sueur. Deux gardes Lapidès surveillent en permanence."
+    "chapeau": "Une passerelle unique mène aux pontons extérieurs de l'Assemblage. Des chaînes énormes maintiennent l'ensemble, des canons pointent dans toutes les directions. L'air est saturé de goudron brûlé, de poudre et de sueur. Deux gardes Lapidès surveillent en permanence.",
+    "histoire": [
+      "Le groupe y est arrêté par les gardes, qui exigent un laissez-passer."
+    ]
   },
   {
     "id": "lapides-garde",
@@ -4378,6 +4501,9 @@
     "connu": [
       "Deux gardes surveillent en permanence la passerelle unique vers l'Assemblage, armés de mousquets et de hallebardes. Il faut un laissez-passer signé de Sycomore ou de son scribe pour entrer.",
       "Une attaque à l'entrée déclenche l'alerte : une demi-douzaine de Lapidès sortent des entrailles du lieu."
+    ],
+    "histoire": [
+      "Le groupe croise ces gardes à l'entrée de l'Assemblage."
     ]
   },
   {
@@ -4403,7 +4529,10 @@
       "Aucune carte ne relie l'Île aux Moines à Havre Noir.",
       "Des annotations pointent vers Port Doëlan et une cargaison mystérieuse."
     ],
-    "chapeau": "Un ancien gaillard transformé en salle de stratégie. Les murs sont couverts de cartes maritimes volées, tachées de vin et de sang séché, annotées de coups de charbon gras. Au centre, une lourde table piquée de couteaux, où se réunissent les capitaines Lapidès."
+    "chapeau": "Un ancien gaillard transformé en salle de stratégie. Les murs sont couverts de cartes maritimes volées, tachées de vin et de sang séché, annotées de coups de charbon gras. Au centre, une lourde table piquée de couteaux, où se réunissent les capitaines Lapidès.",
+    "histoire": [
+      "Le groupe y apprend qu'aucune route ne relie l'Île aux Moines à Havre Noir et que des annotations pointent vers Port Doëlan."
+    ]
   },
   {
     "id": "cale-aux-vivres",
@@ -4430,6 +4559,9 @@
         "img": "img/paysages/azuren-kai/capitainerie.webp",
         "legende": "La Capitainerie"
       }
+    ],
+    "histoire": [
+      "Le groupe y obtient audience auprès de Sycomore."
     ]
   },
   {
@@ -4442,7 +4574,10 @@
     "connu": [
       "Sycomore y parle plus posément, sans tout livrer. Elle laisse entendre que des fonds viennent d'un seigneur pirate."
     ],
-    "chapeau": "Derrière la Capitainerie, un escalier étroit mène aux quartiers privés du capitaine. La pièce tranche avec la rudesse de l'Assemblage : tentures volées sur des navires marchands, bureau massif en bois sombre gravé de symboles nautiques et de cicatrices de lames, hamac richement brodé."
+    "chapeau": "Derrière la Capitainerie, un escalier étroit mène aux quartiers privés du capitaine. La pièce tranche avec la rudesse de l'Assemblage : tentures volées sur des navires marchands, bureau massif en bois sombre gravé de symboles nautiques et de cicatrices de lames, hamac richement brodé.",
+    "histoire": [
+      "Sycomore y reçoit le groupe et y parle plus posément."
+    ]
   },
   {
     "id": "dortoir-des-lapides",
@@ -4454,7 +4589,10 @@
     "connu": [
       "Les Lapidès s'y disputent sur l'origine de l'épidémie : flotte, moines ou Dominion."
     ],
-    "chapeau": "Un vaste pont aménagé en dortoir collectif, saturé de sueur, de rhum et de goudron. Des rangées de hamacs aux poutres grinçantes, des armes accrochées aux cloisons, des boucliers récupérés qui servent d'assiettes ou de cibles pour des jeux d'alcool. Rires gras et dés jetés sans cesse."
+    "chapeau": "Un vaste pont aménagé en dortoir collectif, saturé de sueur, de rhum et de goudron. Des rangées de hamacs aux poutres grinçantes, des armes accrochées aux cloisons, des boucliers récupérés qui servent d'assiettes ou de cibles pour des jeux d'alcool. Rires gras et dés jetés sans cesse.",
+    "histoire": [
+      "Le groupe y écoute les rumeurs sur l'épidémie."
+    ]
   },
   {
     "id": "pont-de-parade",
@@ -4466,7 +4604,10 @@
     "connu": [
       "Victoire ou chute, aucune interruption tolérée."
     ],
-    "chapeau": "Une passerelle branlante au-dessus de l'eau noire. L'air empeste le sel et le goudron, les cris des Lapidès résonnent comme une clameur sauvage. Les pirates hurlent, parient et frappent du pied sur les planches, tandis que Sycomore observe en silence, assise sur son trône flottant."
+    "chapeau": "Une passerelle branlante au-dessus de l'eau noire. L'air empeste le sel et le goudron, les cris des Lapidès résonnent comme une clameur sauvage. Les pirates hurlent, parient et frappent du pied sur les planches, tandis que Sycomore observe en silence, assise sur son trône flottant.",
+    "histoire": [
+      "Philippa y affronte Thargan devant les Lapidès hurlants et Sycomore impassible."
+    ]
   },
   {
     "id": "gratte-papier",
@@ -4479,7 +4620,10 @@
       "Les registres prouvent que Sycomore interdit toute contrebande et qu'aucun navire de l'Île aux Moines n'a accosté.",
       "Sycomore a commandé une enquête sur Port Doëlan et Titan Inc, la compagnie de Spezza."
     ],
-    "chapeau": "Une salle étroite et humide, aménagée en bureau de scribe pirate. Les murs sont tapissés de registres reliés de cuir usé, couverts de sceaux. Une chandelle fumeuse éclaire le pupitre où siège le maître-scribe de Sycomore. Odeur de parchemin moisi, de cire brûlée et de sueur contenue."
+    "chapeau": "Une salle étroite et humide, aménagée en bureau de scribe pirate. Les murs sont tapissés de registres reliés de cuir usé, couverts de sceaux. Une chandelle fumeuse éclaire le pupitre où siège le maître-scribe de Sycomore. Odeur de parchemin moisi, de cire brûlée et de sueur contenue.",
+    "histoire": [
+      "Le groupe fouille les registres et apprend que Sycomore a commandé une enquête sur Port Doëlan et Titan Inc."
+    ]
   },
   {
     "id": "le-gratte-papier",
@@ -4505,7 +4649,10 @@
         "ton": "positif"
       }
     ],
-    "attitude": "neutre"
+    "attitude": "neutre",
+    "histoire": [
+      "Le groupe tombe sur sa note personnelle : Sycomore se méfie de Spezza mais manque de preuves."
+    ]
   },
   {
     "id": "draven-corbeal",
@@ -4520,7 +4667,10 @@
       "C'est la sortie de secours si le groupe se brouille avec Sycomore.",
       "Capitaine de fortune, opportuniste et cupide. Si les PJ rompent avec Sycomore, il ne les mène qu'à Port Lagon, contre une lourde somme d'or."
     ],
-    "attitude": "neutre"
+    "attitude": "neutre",
+    "histoire": [
+      "Il est la sortie de secours pour qui rompt avec Sycomore : il ne mène qu'à Port Lagon, contre une lourde somme."
+    ]
   },
   {
     "id": "malrik-solbrun",
@@ -4548,7 +4698,10 @@
         "inverse": "a banni"
       }
     ],
-    "attitude": "ennemi"
+    "attitude": "ennemi",
+    "histoire": [
+      "Le groupe apprend par les habitants qu'il a prêché pour le Dominion, que Sycomore a brûlé le temple et qu'elle l'a banni."
+    ]
   },
   {
     "id": "brague",
@@ -4573,7 +4726,10 @@
         "inverse": "ancien équipage du Brumeux avec"
       }
     ],
-    "attitude": "neutre"
+    "attitude": "neutre",
+    "histoire": [
+      "Arvik Denholm le cite parmi les marins du Brumeux déjà morts."
+    ]
   },
   {
     "id": "les-yeux",
@@ -4914,7 +5070,11 @@
     ],
     "img": "img/pnj/port-doe-lan-absalom-de-guise-e-en-sadie.webp",
     "attitude": "neutre",
-    "teinte": "#2d2d2d"
+    "teinte": "#2d2d2d",
+    "histoire": [
+      "Elle se présente à Philippa et Jane au saloon : « Sadie. Enchantée. »",
+      "Plus tard, chez Makandral à Port Doëlan, un claquement de doigts lui retire son déguisement : elle redevient Absalom."
+    ]
   },
   {
     "id": "abattoirs-de-chaux",
@@ -4937,7 +5097,10 @@
     "pos": {
       "x": 0.442,
       "y": 0.292
-    }
+    },
+    "histoire": [
+      "Philippa et Jane s'en approchent et Tiberius et Ezekiel leur barrent la route : « Les abattoirs, c'est pas une promenade. »"
+    ]
   },
   {
     "id": "tiberius",
@@ -4972,7 +5135,10 @@
       "Calme, professionnel, inflexible. Les refus sont nets et répétés, sans provocation. En cas d'insistance, ils bloquent le passage et appellent du renfort, en évitant l'escalade.",
       "Leur fermeté inhabituelle trahit l'importance de l'enjeu."
     ],
-    "teinte": "#755219"
+    "teinte": "#755219",
+    "histoire": [
+      "Il bloque l'entrée des abattoirs devant Philippa et Jane avec Ezekiel : « Accès fermé. Demi-tour. »"
+    ]
   },
   {
     "id": "ezekiel",
@@ -5007,7 +5173,10 @@
     "connu": [
       "Posté avec Tiberius à l'entrée des abattoirs de chaux. Il répète les consignes des Familles et refuse l'accès aux étrangers."
     ],
-    "teinte": "#753c19"
+    "teinte": "#753c19",
+    "histoire": [
+      "Il refuse l'accès aux abattoirs à Philippa et Jane : « Ordres des Familles. Pas d'étrangers. »"
+    ]
   },
   {
     "id": "marche-aux-bestiaux",
@@ -5023,7 +5192,10 @@
     "pos": {
       "x": 0.628,
       "y": 0.358
-    }
+    },
+    "histoire": [
+      "Philippa et Jane y rencontrent Abby, qui leur explique les quatre familles, et croisent Cornelius."
+    ]
   },
   {
     "id": "abby",
@@ -5058,7 +5230,11 @@
       }
     ],
     "attitude": "positif",
-    "teinte": "#755219"
+    "teinte": "#755219",
+    "histoire": [
+      "Elle explique à Philippa et Jane qu'elle travaille pour le Voile : « Le Voile veut savoir comment ça tient, combien de temps, et à quel prix réel. »",
+      "Elle leur décrit les quatre familles et dit que des cargaisons transitent par la terre depuis que le port est mort."
+    ]
   },
   {
     "id": "tanneries-port-blanc",
@@ -5077,7 +5253,10 @@
     "pos": {
       "x": 0.633,
       "y": 0.532
-    }
+    },
+    "histoire": [
+      "Philippa et Jane passent près des tanneries en traversant le marché aux bestiaux."
+    ]
   },
   {
     "id": "cornelius",
@@ -5102,7 +5281,10 @@
     ],
     "img": "img/pnj/port-blanc-corne-lius.webp",
     "attitude": "neutre",
-    "teinte": "#753c19"
+    "teinte": "#753c19",
+    "histoire": [
+      "Philippa et Jane croisent ce tanneur près du marché aux bestiaux. Il vend du cuir sans boutique fixe et sait quand il vaut mieux se taire."
+    ]
   },
   {
     "id": "general-store-port-blanc",
@@ -5121,7 +5303,10 @@
     "pos": {
       "x": 0.283,
       "y": 0.436
-    }
+    },
+    "histoire": [
+      "Philippa et Jane s'y équipent sur les quais, chez Royce."
+    ]
   },
   {
     "id": "royce",
@@ -5144,7 +5329,10 @@
       "Il tient le général store des quais : cordes, lampes de piste, rations du désert, gourdes, couvertures de selle, chapeaux de frontière, onguents, selles et armes simples.",
       "Il vend aussi une carte grossière de Port Blanc, imprécise mais utile."
     ],
-    "teinte": "#753c19"
+    "teinte": "#753c19",
+    "histoire": [
+      "Philippa et Jane passent dans son général store des quais."
+    ]
   },
   {
     "id": "marechal-ferrant-port-blanc",
@@ -5163,7 +5351,10 @@
     "pos": {
       "x": 0.314,
       "y": 0.514
-    }
+    },
+    "histoire": [
+      "Philippa et Jane passent chez le maréchal-ferrant Otis sur les quais."
+    ]
   },
   {
     "id": "otis",
@@ -5186,7 +5377,10 @@
       "Maréchal-ferrant des quais. Il vend fers, clous de maréchal, rations pour cheval, graisse de sabot, marteaux et kits de ferrage de voyage.",
       "Son fer gravé de frontière, décoré de symboles tribaux, est une marque de reconnaissance locale."
     ],
-    "teinte": "#755219"
+    "teinte": "#755219",
+    "histoire": [
+      "Philippa et Jane passent dans sa forge des quais."
+    ]
   },
   {
     "id": "cercle-des-eleveurs",
@@ -5202,7 +5396,10 @@
     "pos": {
       "x": 0.244,
       "y": 0.303
-    }
+    },
+    "histoire": [
+      "Philippa et Jane voient ce bâtiment en arc de cercle, siège de l'oligarchie locale, auquel les étrangers n'ont presque pas accès."
+    ]
   },
   {
     "id": "chapelle-des-betes-silencieuses",
@@ -5225,7 +5422,10 @@
     "pos": {
       "x": 0.55,
       "y": 0.628
-    }
+    },
+    "histoire": [
+      "Philippa et Jane y entrent et y voient la statue d'un homme mi-cerf aux bois brisés, devant laquelle Edrin leur explique l'origine du culte."
+    ]
   },
   {
     "id": "edrin-boeuf-cendre",
@@ -5257,7 +5457,10 @@
     ],
     "img": "img/pnj/port-blanc-edrin-boeuf-cendre.webp",
     "attitude": "neutre",
-    "teinte": "#755219"
+    "teinte": "#755219",
+    "histoire": [
+      "Il explique à Philippa et Jane que le culte est né après la guerre, quand le bétail tombait sans raison claire. Sur la statue, il dit : « Les gens aiment mettre des noms sur les choses, surtout quand ils ont peur. »"
+    ]
   },
   {
     "id": "betes-dorees",
@@ -5284,6 +5487,10 @@
         "img": "img/paysages/port-blanc/grange-abandonnee.webp",
         "legende": "La grange abandonnée"
       }
+    ],
+    "histoire": [
+      "Philippa et Jane apprennent que des vaches sont retrouvées mortes chaque nuit, avec des pièces d'or fondues autour d'elles.",
+      "Les Varkel accusent les Reth. Absalom est de passage, sous une identité banale, et relève des bandits marqués par l'Avarice."
     ]
   },
   {
@@ -5303,6 +5510,9 @@
         "img": "img/paysages/port-blanc/auberge-des-trois-pins.webp",
         "legende": "L'auberge des Trois Pins"
       }
+    ],
+    "histoire": [
+      "Philippa et Jane y font étape avec Wyatt Hale et Mara. Dans la réserve, elles découvrent les cadavres des vrais aubergistes : le patron et les deux clients sont des hommes de Mara."
     ]
   },
   {
@@ -5334,7 +5544,10 @@
       "Faux patron de l'auberge des Trois Pins, il essuie un verre sans lever les yeux. Lui et les deux faux clients sont des hommes de Mara.",
       "Dans la réserve, deux cadavres récents : les véritables aubergistes, aux traces de lutte brève."
     ],
-    "teinte": "#755219"
+    "teinte": "#755219",
+    "histoire": [
+      "Faux patron de l'auberge des Trois Pins, il essuie un verre sans lever les yeux. Philippa et Jane démasquent ses hommes."
+    ]
   },
   {
     "id": "turner",
@@ -5350,7 +5563,10 @@
       "Mme Turner",
       "Turner"
     ],
-    "attitude": "neutre"
+    "attitude": "neutre",
+    "histoire": [
+      "Philippa et Jane trouvent leurs cadavres récents dans la réserve de l'auberge des Trois Pins."
+    ]
   },
   {
     "id": "gue-port-blanc",
@@ -5368,6 +5584,9 @@
         "img": "img/paysages/port-blanc/gue.webp",
         "legende": "Le gué"
       }
+    ],
+    "histoire": [
+      "Philippa et Jane butent sur ce gué trop haut, où un arbre frais abattu barre le passage : un piège préparé par la bande de Mara."
     ]
   },
   {
@@ -5384,6 +5603,9 @@
     "connu": [
       "Les bandits de Mara tendent une embuscade au gué : un arbre fraîchement abattu en travers du passage, une rivière anormalement haute pour la saison, des reflets métalliques dans les rochers.",
       "S'il n'y a pas de découverte, l'attaque vient en pleine nuit : trois hommes à l'intérieur de l'auberge, deux autres qui surgissent de l'écurie."
+    ],
+    "histoire": [
+      "Les bandits de Mara tendent une embuscade au gué pendant l'escorte de Philippa et Jane."
     ]
   },
   {
