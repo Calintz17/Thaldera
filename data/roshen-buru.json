@@ -25,7 +25,7 @@
     "connu": [
       "La maison verte Miren-Buru est gouvernée par la Gardienne Anaru Miren-Buru, championne de Mélora.",
       "Ses villes sont Roshen Buru, Azuren Kai et Seiran Vale. Azuren Kai est le port, Seiran Vale la porte terrestre.",
-      "Le meurtre de l'ambassadeur Otoba à Keras Tauroc a fermé les accès à la cité, Seiran Vale et Azuren Kai compris.",
+      "Le meurtre de l'ambassadeur Otoba à Keras Tauroc a fermé les accès à la cité, au moins à Seiran Vale.",
       "Le rituel du Tenraku donne à chaque guerrier un Miren, esprit céleste lié à lui à vie."
     ],
     "relations": [
@@ -1240,17 +1240,15 @@
         "legende": "Le canal la nuit"
       }
     ],
-    "resume": "Ville-port mirenaï ouverte aux étrangers, dernier ravitaillement avant la forêt d'Azuren.",
+    "resume": "Ville-port mirenaï, premier arrêt du groupe sur le territoire Miren-Buru.",
     "connu": [
-      "Un port ouvert, vivant et cosmopolite, plus tourné vers le commerce extérieur que le reste du territoire Miren-Buru.",
+      "Un port ouvert, vivant et cosmopolite, plus tourné vers le commerce extérieur que le reste du territoire Miren-Buru. La garde laisse passer les étrangers sans contrôle particulier.",
       "C'est le dernier point de ravitaillement avant la forêt d'Azuren et la route de Roshen Buru.",
-      "La garde laisse passer les étrangers sans contrôle particulier."
-    ],
-    "histoire": [
       "Le groupe arrive par le port, juste après Cap Cornes, avec l'accusation du meurtre d'Otoba sur le dos.",
       "Il choisit de passer par la forêt d'Azuren plutôt que par Seiran Vale pour rester discret.",
       "Au Ryokan de Noshka, il affronte Kirin Anadori et le tue dans une ruelle."
     ],
+    "histoire": [],
     "cartes": [
       {
         "id": "ville",
@@ -1298,15 +1296,14 @@
     "alias": [
       "Ryokan"
     ],
-    "resume": "Auberge de port bien remplie, brouhaha permanent, nattes de bambou au sol.",
+    "resume": "Auberge du port d'Azuren Kai.",
     "connu": [
-      "Noshka, un homme-sanglier, tient l'établissement.",
-      "Une noble mirenaï, Kirin Anadori, y dînait seule."
-    ],
-    "histoire": [
-      "Le groupe entre dans la salle commune. Un incident éclate avec Kirin Anadori et son Miren, le Génie de Suie.",
+      "Noshka tient l'établissement.",
+      "Une noble mirenaï, Kirin Anadori, y dînait seule.",
+      "Le groupe entre dans la salle commune. Un incident éclate avec Kirin et son Miren, le Génie de Suie.",
       "Le combat se déplace dans la ruelle voisine, où le groupe tue Kirin."
     ],
+    "histoire": [],
     "rune": {
       "ordre": 8,
       "etat": "active",
@@ -1329,14 +1326,12 @@
     "alias": [
       "ruelle"
     ],
-    "resume": "Une ruelle étroite derrière l'auberge, entre échoppes et lanternes rouges.",
+    "resume": "Ruelle derrière le Ryokan d'Azuren Kai.",
     "connu": [
-      "C'est ici que le groupe a achevé Kirin Anadori."
+      "Le groupe affronte Kirin Anadori au Ryokan de Noshka et l'achève dans cette ruelle."
     ],
     "chapeau": "Une ruelle étroite derrière l'auberge, entre échoppes et lanternes rouges, à l'écart du brouhaha du port.",
-    "histoire": [
-      "Au Ryokan de Noshka, le groupe affronte Kirin Anadori et l'achève dans cette ruelle derrière l'auberge."
-    ]
+    "histoire": []
   },
   {
     "id": "noshka",
@@ -1347,14 +1342,13 @@
     "lieu": "ryokan",
     "img": "img/pnj/noshka.webp",
     "statut": "vivant",
-    "resume": "Homme-sanglier, patron du Ryokan. Impassible devant la violence.",
+    "resume": "Patron du Ryokan d'Azuren Kai.",
     "connu": [
-      "Il tient le Ryokan d'Azuren Kai et grogne qu'il n'y a pas de place, mais laisse les clients s'asseoir.",
-      "Rien ne semble le troubler, pas même un combat dans sa salle."
-    ],
-    "histoire": [
+      "Homme-sanglier, il tient le Ryokan d'Azuren Kai et grogne qu'il n'y a pas de place, mais laisse les clients s'asseoir.",
+      "Rien ne semble le troubler, pas même un combat dans sa salle.",
       "Le groupe entre dans son auberge juste avant l'incident avec Kirin Anadori."
     ],
+    "histoire": [],
     "galerie": [
       {
         "img": "img/paysages/azuren-kai/ryokan-1.webp",
@@ -1376,17 +1370,15 @@
     "alias": [
       "Kirin"
     ],
-    "resume": "Noble mirenaï du clan Anadori, tué par le groupe à Azuren Kai.",
+    "resume": "Noble violent, tombé face au groupe.",
     "connu": [
       "Un noble mirenaï du clan Anadori, aux cheveux d'elfe bouclés, qui dînait seul au Ryokan de Noshka.",
       "Son Miren est le Génie de Suie, intangible, qui agit sur son initiative.",
       "Il a tué toute une bande de soudards qui se moquaient de lui, sous les yeux d'Oboré.",
-      "Il est violent et méthodique quand on le provoque."
+      "Il est violent et méthodique quand on le provoque.",
+      "Un incident éclate avec lui dans la salle commune du ryokan. Le combat se poursuit dans la ruelle voisine, où le groupe le tue."
     ],
-    "histoire": [
-      "Un incident éclate dans la salle commune du ryokan, avec lui et son Miren.",
-      "Le combat se poursuit dans la ruelle voisine. Le groupe le tue."
-    ],
+    "histoire": [],
     "relations": [
       {
         "cible": "genie-de-suie",
@@ -1430,16 +1422,14 @@
     "alias": [
       "Génie de Suie"
     ],
-    "resume": "Le Miren de Kirin. Il disparaît avec lui.",
+    "resume": "Esprit lié à Kirin Anadori.",
     "connu": [
       "Intangible et impossible à cibler.",
-      "Il agit en même temps que Kirin et s'évanouit quand celui-ci tombe."
+      "Pendant le combat contre Kirin dans la ruelle d'Azuren Kai, il agit en même temps que lui et s'évanouit quand celui-ci tombe."
     ],
     "attitude": "ennemi",
     "teinte": "#196975",
-    "histoire": [
-      "Pendant le combat contre Kirin Anadori dans la ruelle d'Azuren Kai, son Miren agit en même temps que lui et s'évanouit quand il tombe."
-    ]
+    "histoire": []
   },
   {
     "id": "seiran-vale",
@@ -1455,16 +1445,13 @@
         "legende": "Plan de Seiran Vale"
       }
     ],
-    "resume": "Ville de pont et de rivière, esthétique dense de toits en pagode et de lanternes rouges.",
+    "resume": "Ville de rivière aux toits en pagode et aux lanternes rouges.",
     "connu": [
       "Un grand pont de pierre à arche unique, le Pont Miren, enjambe la rivière. L'entrée officielle vers Roshen Buru passe par ici.",
-      "Depuis l'assassinat de l'ambassadeur Otoba, le pont est fermé par une grille magique et la rivière est embouteillée de barges et de jonques.",
-      "La fermeture est un ordre direct de la Gardienne.",
-      "Le groupe a choisi la forêt par Azuren Kai pour l'éviter."
+      "Depuis l'assassinat de l'ambassadeur Otoba, le pont est fermé par une grille magique sur ordre direct de la Gardienne, et la rivière est embouteillée de barges et de jonques.",
+      "Le groupe renonce à passer par la ville et prend la forêt d'Azuren, par Azuren Kai."
     ],
-    "histoire": [
-      "Après l'assassinat de l'ambassadeur Otoba, le pont est fermé par une grille magique. Le groupe renonce à passer par la ville et prend la forêt d'Azuren."
-    ]
+    "histoire": []
   },
   {
     "id": "magistrat-seiran-vale",
@@ -1477,7 +1464,7 @@
       "y": 0.19
     },
     "carte": "ville",
-    "resume": "Le bâtiment qui garde la porte vers Roshen Buru.",
+    "resume": "Maison du magistrat de Seiran Vale.",
     "connu": [
       "Il se trouve à l'entrée de la ville, côté Roshen Buru."
     ],
@@ -1496,12 +1483,10 @@
     "carte": "ville",
     "resume": "Il enjambe la rivière à l'entrée de la ville.",
     "connu": [
-      "Fermé par une grille magique depuis l'assassinat d'Otoba."
+      "Fermé depuis l'assassinat d'Otoba, il pousse le groupe à contourner Seiran Vale."
     ],
     "chapeau": "Un grand pont de pierre à arche unique, fermé par une grille magique vibrante. Autour, des toits de pagode empilés, des lanternes rouges par centaines, et un fleuve totalement embouteillé de barges, de sampans et de jonques flanc contre flanc.",
-    "histoire": [
-      "Fermé par une grille magique depuis l'assassinat d'Otoba, il pousse le groupe à contourner Seiran Vale."
-    ]
+    "histoire": []
   },
   {
     "id": "roshen-buru",
@@ -1530,27 +1515,25 @@
         "legende": "Ville haute, palais et temple du Tenraku"
       }
     ],
-    "resume": "Cité sacrée des Mirenaï, bâtie dans une cuvette de la forêt d'Azuren. Magistrature en bas, palais de la Gardienne en haut.",
+    "resume": "Cité sacrée des Mirenaï, bâtie dans une cuvette de la forêt d'Azuren.",
     "connu": [
       "La ville fonctionne avec deux pouvoirs. La Magistrature gère le quotidien avec une ferveur administrative sans égal. Le palais de la Gardienne pilote la politique extérieure et la religion.",
       "La ville haute abrite les cinq clans nobles : Tsuren, Kovacz, Anadori, Urameï et Siharen. La ville basse rassemble le peuple et les marchands.",
       "Au centre se dresse le Pillier, un monolithe habité de haut en bas, couronné par le Temple du Tenraku. Trois ascenseurs géants desservent la ville haute et le palais.",
       "Les cerisiers roses sont l'incarnation de l'esprit de Mélora.",
-      "La Gardienne, et sur son ordre la Magistrature, protègent les clans avant tout le reste, jugeant leur survie indispensable à l'équilibre de la ville."
-    ],
-    "histoire": [
+      "La Gardienne, et sur son ordre la Magistrature, protègent les clans avant tout le reste, jugeant leur survie indispensable à l'équilibre de la ville.",
       "Le groupe arrive à Roshen Buru par la forêt d'Azuren, après Cap Cornes et Azuren Kai, avec Harfang. La garde est en alerte à cause de la présence d'Absalom.",
       "Avant l'entrée en ville, autour du feu de camp, Nolbrim ouvre un portail et entraîne Jane chez Gran Brijit. Gran Brijit décapite Bourpif, recueille son âme et la tend à Nolbrim, qui arrache l'exosquelette de Jane. Jane se réveille avec un gant de cristal à la main gauche et une main fantomatique. Elle devient Arcane Trickster.",
       "En ville, le groupe s'installe au salon de thé d'Hoshka et Orisa. Un tableau d'affichage annonce des filles disparues chez Madame Renka, un contrebandier manquant pour Yureï, des patrouilles renforcées et les réclames d'Oren Sidaï, de Sumeren Daïko et d'autres marchands.",
       "Eamonn appelle en panique : l'Oni aux masques attaque sa tour à Cap Cornes. Philippa ouvre une téléportation à la craie et le groupe bat les agresseurs. Il récupère la liste du Tribunal de Chair et Fukuro Kaen, la Fureur du Bûcher. Eamonn le téléporte ensuite chez Vespera, au camp de Port Doëlan, puis le renvoie à Roshen Buru.",
-      "Le groupe visite les marchands : Soko, accusée à tort des toiles d'araignée, Saori Velmaka, Maven Ako, Tessei Kanae chez qui Jane vole Ruine Holoraine, puis Oren Sidaï, à qui Philippa vend Requiem. Harfang rend son rapport au magistrat Roven Moto, qui en réclamait quarante feuillets. Il se recueille ensuite au temple de Tako Alvaki, où son Miren lui conseille de se méfier de la Protectrice.",
+      "Le groupe visite les marchands : Soko, accusée à tort des toiles d'araignée, Saori Velmaka, Maven Ako, Tessei Kanaë chez qui Jane vole Ruine Holoraine, puis Oren Sidaï, à qui Philippa vend Requiem. Harfang rend son rapport au magistrat Roven Moto, qui en réclamait quarante feuillets. Il se recueille ensuite au temple de Tako Alvaki, où son Miren lui conseille de se méfier de la Protectrice.",
       "Une rumeur d'une femme en noir près du temple mène le groupe chez Muji, l'épouse de Sabo, magistrat de Seiran Vale, qui a fui son foyer et qui n'est pas Absalom.",
-      "Au deuxième palier, Konya Sokabeï supplie Harfang de venir à son mariage du lendemain, après des lettres de menace. Le groupe rencontre Ankou Urameï, qui l'envoie vers Yureï. Elle lui confie la disparition de Tobiya. Il suit la piste jusqu'aux égouts, y trouve Tobiya devenu hôte des araignées de la Mère de la Toile, et Yureï le paie.",
+      "Au deuxième palier, Konya Sokabeï supplie Harfang de venir à son mariage du lendemain, après des lettres de menace. Le groupe rencontre Ankou Urameï, qui l'envoie vers Yureï. Celle-ci lui confie la disparition de Tobiya. Le groupe suit la piste jusqu'aux égouts, y trouve Tobiya devenu hôte des araignées de la Mère de la Toile, et Yureï le paie.",
       "Au mariage, la salle est éteinte par une nuée de phalènes et Ayano Kaben est enlevée par un Miren. Ankou identifie la phalène et envoie le groupe à la magistrature chercher le registre des Mirenaï, un collier et un parchemin. Le Miren de la Protectrice y est un phénix, celui de Darrek Kovacz une phalène.",
       "Chez la Protectrice, pendant le point d'étape de Harfang, Philippa et Jane fouillent ses papiers : elle fait espionner Harfang, elle est derrière le Tribunal de Chair et son pacte avec Levistus est confirmé.",
-      "Le lendemain, Neryn Yosa présente les excuses de la Gardienne et ouvre le Temple du Tenraku pour une seconde cérémonie. Absalom y brise la Jarre Miren, lit le parchemin et détruit le sommet du temple d'un cri. Gran Brijit réclame le parchemin et Anaru recule. Puis Carnage se forme, et le groupe le vainc.",
-      "Le lendemain, Neryn Yosa présente les excuses de la Gardienne et ouvre le Temple du Tenraku pour une seconde cérémonie. Absalom y brise la Jarre Miren, lit le parchemin et détruit le sommet du temple d'un cri. Gran Brijit réclame le parchemin, Anaru recule, puis Carnage se forme, et le groupe le vainc."
+      "Le lendemain, Neryn Yosa présente les excuses de la Gardienne et ouvre le Temple du Tenraku pour une seconde cérémonie. Absalom y brise la Jarre Miren, lit le parchemin et détruit le sommet du temple d'un cri. Gran Brijit réclame le parchemin et Anaru recule. Puis Carnage se forme, et le groupe le vainc."
     ],
+    "histoire": [],
     "relations": [
       {
         "cible": "anaru-miren-buru",
@@ -1603,17 +1586,15 @@
       "Magistrat",
       "magistrat"
     ],
-    "resume": "Salle circulaire coiffée de rouge, au centre de la ville haute. Le point d'attache de Harfang avant sa démission.",
+    "resume": "Administration où Harfang travaillait pour la ville.",
     "connu": [
-      "Couloirs en anneaux concentriques, dizaines de bureaux, scribes, plaignants sur des bancs depuis le matin. Odeur d'encre et de cire à cacheter.",
       "Le bureau de Roven Moto se trouve au centre, sous la coupole rouge. Les archives sont dans l'aile est.",
-      "Harfang y avait accès au réseau administratif de presque toutes les villes du continent."
-    ],
-    "histoire": [
+      "Harfang y avait accès au réseau administratif de presque toutes les villes du continent.",
       "Harfang y rend son rapport à Roven Moto, qui en réclamait quarante feuillets.",
       "Plus tard, le groupe s'y infiltre pour voler le registre des Mirenaï, le collier et le parchemin d'Ankou. Il y apprend que le Miren de la Protectrice est un phénix et que celui de Darrek est une phalène.",
       "Il y trouve aussi les rapports d'enquête sur les jeunes femmes mortes et un coffre du clan Urameï. Une lettre de Brodek Kovacz au magistrat de l'époque protège son fils. Des rapports laissent penser, sans le prouver, qu'Ankou et Yureï trafiquent la vésine."
     ],
+    "histoire": [],
     "chapeau": "La Magistrature occupe le centre du quartier haut : une salle circulaire coiffée de rouge, des couloirs en anneaux concentriques, des dizaines de bureaux le long de la courbe. Des scribes traversent avec des piles de papiers, des plaignants attendent sur des bancs depuis le matin. Ça sent l'encre et la cire à cacheter.",
     "galerie": [
       {
@@ -1638,17 +1619,15 @@
     "parent": "magistrature",
     "lieu": "magistrature",
     "statut": "vivant",
-    "resume": "Grand Magistrat de Roshen Buru. Rigide, procédurier, incorruptible : un homme de règles qui croit qu'elles empêchent la ville de s'effondrer.",
+    "resume": "Magistrat procédurier et incorruptible.",
     "connu": [
       "Rigide et fidèle aux règles, qu'il croit nécessaires pour que la ville ne s'effondre pas.",
       "Il reçoit debout, écoute jusqu'au bout sans interrompre, puis explique pourquoi la réponse est non.",
-      "Il exige de Harfang au moins quarante feuillets de rapport : « notre métier c'est avant tout la bureaucratie ».",
+      "Il exige de Harfang au moins quarante feuillets de rapport : « notre métier c'est avant tout la bureaucratie ». Quand Harfang lui rend son rapport sur le voyage, il le tire par les oreilles. Harfang, agacé, se promet d'arrêter de travailler pour la magistrature.",
       "Il refuse l'accès au registre cadastral, document privé qui appartient aux personnes qui y figurent. Même pour sauver une vie : « À partir du moment où la règle souffre une exception, elle devient une faveur. »",
       "L'affaire des jeunes femmes mortes a été classée sans suite, comme l'enquête sur le trafic de vésine où le nom des Urameï revient sans preuve."
     ],
-    "histoire": [
-      "Il reçoit Harfang, qui lui rend son rapport sur le voyage. Il le tire par les oreilles : il attendait au moins quarante feuillets. Harfang, agacé, se promet d'arrêter de travailler pour la magistrature."
-    ],
+    "histoire": [],
     "relations": [
       {
         "cible": "harfang-tsuren",
@@ -1682,7 +1661,7 @@
     },
     "carte": "ville",
     "zoom": 0.2,
-    "resume": "Un monolithe rocheux moussu, habité de haut en bas, couvert de planches et de passerelles jusqu'à sa cime.",
+    "resume": "Monolithe habité au centre de la cuvette.",
     "connu": [],
     "chapeau": "Un monolithe rocheux moussu au centre de la cuvette, habité de haut en bas, couvert de planches et de passerelles jusqu'à sa cime. Des ponts vermillon le relient aux falaises, trois ascenseurs géants desservent la ville haute, et le Temple du Tenraku couronne son sommet."
   },
@@ -1702,17 +1681,16 @@
       "Temple du Tenraku",
       "temple"
     ],
-    "resume": "Salle immense et presque vide, taillée dans le sommet du Pillier, où la Jarre Miren était scellée.",
+    "resume": "Temple sacré des Mirenaï, dont Absalom a détruit le sommet.",
     "connu": [
-      "Au fond, sur un socle bas, la Jarre Miren scellée, et derrière elle, le parchemin sacré.",
-      "Le temple ne se prête jamais : l'ouvrir pour un mariage était un honneur inédit."
-    ],
-    "histoire": [
+      "Derrière la Jarre Miren se trouve le parchemin sacré.",
+      "Le temple ne se prête jamais : l'ouvrir pour un mariage était un honneur inédit.",
       "La seconde cérémonie de mariage y est célébrée, en présence de la Gardienne et de Maître Orashay, avec les têtes connues de la ville.",
       "Absalom apparaît derrière la jarre Miren, enchaîne l'assemblée, brise la jarre vide et se saisit du parchemin. En le lisant, elle comprend que son maître l'a trompée et pousse un cri qui détruit le sommet du temple.",
       "La Gardienne fait apparaître des lianes pour empêcher l'effondrement total. Gran Brijit réclame le parchemin, Jane le lui remet, la Gardienne recule.",
       "Carnage se forme à partir des morts du temple. Le groupe le bat."
     ],
+    "histoire": [],
     "chapeau": "On monte au Temple par la porte haute, celle qui ne s'ouvre pas. La salle est immense et presque vide, taillée dans le sommet du Pillier, et la lumière tombe d'une ouverture au plafond en une colonne blanche qui frappe le sol au centre exact. Pas de bancs. Ça sent la pierre froide et l'encens. Au fond, sur un socle bas, la jarre Miren, scellée.",
     "galerie": [
       {
@@ -1757,7 +1735,7 @@
     ],
     "resume": "L'atelier de la calligraphe Sumeren Daïko.",
     "connu": [
-      "Le groupe y apprend que le papier des lettres de menace est un papier noble, réservé aux clans."
+      "Pendant l'enquête sur les lettres de menace, le groupe y apprend que le papier est un papier noble, réservé aux clans."
     ],
     "chapeau": "L'atelier est au bord du canal, sous les cerisiers. La lumière entre par une paroi entière de papier tendu, blanche, sans ombre. Ça sent l'encre fraîche, la colle de riz et le papier neuf. Des feuilles sèchent sur des fils et bougent quand on passe, des pinceaux sont rangés par centaines. Au fond, une femme en tailleur, de l'encre sur le nez sans qu'elle s'en soit rendu compte.",
     "galerie": [
@@ -1766,9 +1744,7 @@
         "legende": "L'atelier de calligraphie"
       }
     ],
-    "histoire": [
-      "Pendant l'enquête sur les lettres de menace, le groupe y apprend que le papier est un papier noble, réservé aux clans."
-    ]
+    "histoire": []
   },
   {
     "id": "forge-oyoroi",
@@ -1788,7 +1764,8 @@
     ],
     "resume": "La forge de Tessei Kanaë.",
     "connu": [
-      "La forgeronne a perdu une commande à 50 000 pièces d'or du clan Anadori."
+      "La forgeronne a perdu une commande à 50 000 pièces d'or du clan Anadori.",
+      "Le groupe y passe pendant sa tournée des marchands. Jane y vole Ruine Holoraine, un tanto."
     ],
     "chapeau": "On entend la forge deux carrefours avant de la voir. La chaleur sort par la porte ouverte et déforme l'air au-dessus du seuil. Dedans il fait rouge et noir, le sol est jonché de limaille qui craque sous les pas. Une trentaine de lames pendent au mur, toutes différentes. Ça sent le charbon, l'huile chaude et le métal. Une femme travaille au marteau, dos tourné, sans se retourner quand on entre.",
     "galerie": [
@@ -1797,9 +1774,7 @@
         "legende": "La forge Oyoroï"
       }
     ],
-    "histoire": [
-      "Le groupe y passe pendant sa tournée des marchands. Jane y vole Ruine Holoraine, un tanto."
-    ]
+    "histoire": []
   },
   {
     "id": "apothicaire",
@@ -1815,7 +1790,8 @@
     "zoom": 0.2,
     "resume": "L'apothicaire de la ville basse, où officie Saori Velmaka.",
     "connu": [
-      "Saori y prépare ses remèdes et fait aussi office de médecin légiste."
+      "Saori y prépare ses remèdes et fait aussi office de médecin légiste.",
+      "Le groupe y achète quelques potions pendant sa tournée des marchands."
     ],
     "chapeau": "La boutique est coincée entre deux maisons plus hautes qu'elle, dans une rue qui remonte vers l'Académie. Des bocaux par centaines, étiquetés à la main, des herbes pendues au plafond en bouquets serrés. Ça sent le vinaigre, la menthe froissée et une odeur de sirop. Une jeune femme à cornes, perchée sur un tabouret, la queue enroulée autour d'un montant, sourit avant d'avoir vu qui entre.",
     "galerie": [
@@ -1824,9 +1800,7 @@
         "legende": "L'apothicaire"
       }
     ],
-    "histoire": [
-      "Le groupe y achète quelques potions auprès de Saori Velmaka, pendant sa tournée des marchands."
-    ]
+    "histoire": []
   },
   {
     "id": "boutique-oren",
@@ -1842,7 +1816,8 @@
     "zoom": 0.2,
     "resume": "La boutique d'Oren Sidaï, marchand louche.",
     "connu": [
-      "Philippa l'a dévalisée après la mort d'Oren."
+      "Le groupe s'y retrouve. Philippa y vend Requiem à Oren Sidaï, mais l'épée revient dans son inventaire.",
+      "Philippa a dévalisé la boutique après la mort d'Oren."
     ],
     "chapeau": "L'échoppe est étroite, coincée entre deux bâtiments plus larges, et la porte est si basse qu'on entre en se courbant. Tout est derrière une grille : des objets exposés sur des étagères, chacun avec un numéro et rien d'autre. La seule lampe éclaire le visage du client, pas celui du tenancier. Ça sent le métal froid, le papier moisi et la cire. Derrière la grille, un homme maigre, assis très droit, sourit sans plus jamais bouger.",
     "galerie": [
@@ -1851,9 +1826,7 @@
         "legende": "Le prêteur sur gage"
       }
     ],
-    "histoire": [
-      "Le groupe s'y retrouve. Philippa y vend Requiem à Oren Sidaï, mais l'épée revient dans son inventaire."
-    ]
+    "histoire": []
   },
   {
     "id": "planque-darrek",
@@ -1864,15 +1837,13 @@
     "alias": [
       "garçonnière"
     ],
-    "resume": "Une garçonnière au fond de la ville basse, dans une rue si étroite que deux hommes ne s'y croisent pas.",
+    "resume": "Repaire de Darrek Kovacz.",
     "connu": [
-      "Des trous ronds propres, de la taille d'un poing, percent les murs, avec de la poussière grise en petits tas dessous.",
-      "Une mezzanine de bois court le long du mur du fond."
-    ],
-    "histoire": [
+      "De la poussière grise s'accumule en petits tas sous les trous des murs.",
       "Le groupe affronte Darrek à l'intérieur et le tue.",
       "Ayano Kaben est retrouvée attachée à la rambarde de la mezzanine, bâillonnée."
     ],
+    "histoire": [],
     "relations": [
       {
         "cible": "darrek-kovacz",
@@ -1898,9 +1869,10 @@
     "nom": "La planque de Yureï",
     "titre": "Ville basse, côté est",
     "parent": "roshen-buru",
-    "resume": "Une pièce petite et trop chaude derrière un comptoir qui n'est pas le sien, caisses jusqu'au plafond.",
+    "resume": "Cachette de la contrebandière Yureï.",
     "connu": [
-      "Ankou Urameï en donne l'adresse au groupe."
+      "Ankou Urameï en donne l'adresse au groupe.",
+      "Le groupe y rencontre Yureï, qui lui demande de retrouver Tobiya. Une fois Tobiya retrouvé, Yureï y paie le groupe."
     ],
     "pos": {
       "x": 0.68,
@@ -1913,9 +1885,7 @@
         "legende": "La planque de Yureï"
       }
     ],
-    "histoire": [
-      "Le groupe y rencontre Yureï, qui lui demande de retrouver Tobiya. Elle y revient le payer."
-    ]
+    "histoire": []
   },
   {
     "id": "maison-uramei",
@@ -1926,10 +1896,10 @@
     "alias": [
       "maison Urameï"
     ],
-    "resume": "Une maison propre et silencieuse, sans personne à l'entrée.",
+    "resume": "Siège des Urameï, tenu par Ankou.",
     "connu": [
-      "Ankou y reçoit assis, sans table ni bureau, Sabaké à sa gauche et Nyssra à sa droite.",
-      "Il fait sombre dans la pièce, et pourtant il n'y a pas d'ombres."
+      "Ankou y reçoit assis, Sabaké à sa gauche et Nyssra à sa droite.",
+      "Le groupe y rencontre Ankou Urameï. Il envoie le groupe vers Yureï pour retrouver Tobiya, puis lui indique la phalène et le registre des Mirenaï à la magistrature."
     ],
     "carte": "palais",
     "chapeau": "La maison Urameï ne ressemble pas à ce qu'on imagine d'une maison de contrebandiers. Elle est propre, silencieuse, sans personne à l'entrée. On traverse deux pièces vides avant la troisième, où Ankou est assis, sans table ni bureau. Il fait sombre, et pourtant il n'y a pas d'ombres.",
@@ -1943,10 +1913,7 @@
       "x": 0.231,
       "y": 0.225
     },
-    "histoire": [
-      "Le groupe y rencontre Ankou Urameï, assis sans table ni bureau, Sabaké à sa gauche et Nyssra à sa droite. Il fait sombre dans la pièce, sans ombres.",
-      "Ankou l'envoie vers Yureï pour retrouver Tobiya, puis lui indique la phalène et le registre des Mirenaï à la magistrature."
-    ]
+    "histoire": []
   },
   {
     "id": "pavillon-mariage",
@@ -1954,15 +1921,14 @@
     "nom": "Le pavillon de mariage",
     "titre": "Rues de la petite noblesse",
     "parent": "roshen-buru",
-    "resume": "Un bâtiment loué de pierre et de bois sombre, avec une grande salle et un jardin clos.",
+    "resume": "Salle louée pour le mariage Sokabeï-Kaben.",
     "connu": [
-      "Une porte principale, une porte de service côté cuisines, un jardin clos.",
-      "Le mur du fond donne sur une ruelle que personne ne surveille."
-    ],
-    "histoire": [
+      "Une porte principale et une porte de service côté cuisines.",
+      "Le mur du fond donne sur une ruelle que personne ne surveille.",
       "La première cérémonie s'y tient, avec la présence des Urameï, le discours de Doryen Kaben et l'ouverture du gâteau.",
       "Une nuée de phalènes éteint la salle et Ayano Kaben est enlevée par une fenêtre du fond."
     ],
+    "histoire": [],
     "pos": {
       "x": 0.45,
       "y": 0.12
@@ -1988,14 +1954,13 @@
     "alias": [
       "égouts"
     ],
-    "resume": "Un réseau de galeries sous la ville basse, envahi d'araignées.",
+    "resume": "Repaire de Tobiya et des araignées de la Mère de la Toile.",
     "connu": [
-      "Toiles épaisses comme du caoutchouc, araignées en nombre, et une salle gravée et peinte de symboles de Balamor."
-    ],
-    "histoire": [
       "Harfang suit les traînées de bave de Tobiya jusqu'ici. Le groupe affronte un labyrinthe de pierre, des araignées proches de celles de Keras Tauroc et un gaz irrespirable.",
+      "Les toiles sont épaisses comme du caoutchouc. Une salle est gravée et peinte de symboles de Balamor.",
       "Au fond, il découvre Tobiya, corrompu par les araignées."
     ],
+    "histoire": [],
     "pos": {
       "x": 0.38,
       "y": 0.385
@@ -2019,11 +1984,10 @@
       "Le clan Tsuren est celui de Harfang. Il achète le papier noble de deuxième catégorie, comme les Anadori et les Kovacz.",
       "Havoc Tsuren, son père, est un Grand-Duc respecté.",
       "Rysei Tsuren, sa sœur, a reçu un Tenrai lors du Tenraku.",
-      "La famille ignore que Harfang est espion."
-    ],
-    "histoire": [
+      "La famille ignore que Harfang est espion.",
       "Harfang n'a pas rendu visite à sa famille pendant l'enquête du mariage."
     ],
+    "histoire": [],
     "relations": [
       {
         "cible": "harfang-tsuren",
@@ -2039,7 +2003,7 @@
     "titre": "Père de Harfang",
     "parent": "clan-tsuren",
     "statut": "vivant",
-    "resume": "Grand-Duc du clan Tsuren, père de Harfang. Sec, exigeant, structurellement déçu : incapable de dire une chose qui ne soit pas une correction.",
+    "resume": "Père de Harfang, sec et exigeant.",
     "connu": [
       "Grand-Duc du clan Tsuren et figure martiale respectée de Roshen Buru.",
       "Les apparences comptent beaucoup pour lui.",
@@ -2081,7 +2045,7 @@
     "titre": "Sœur de Harfang, porteuse d'un Tenrai",
     "parent": "clan-tsuren",
     "statut": "vivant",
-    "resume": "Sœur de Harfang, porteuse d'un Tenrai. Puissante, sûre d'elle, convaincue d'être la seule des deux enfants à mériter le nom Tsuren.",
+    "resume": "Sœur de Harfang, puissante et sûre d'elle.",
     "connu": [
       "Elle a reçu un Tenrai lors du Tenraku, preuve que le sang des Tsuren portait encore quelque chose de grand.",
       "Elle parle peu aux gens qui ne sont pas à sa hauteur, et peu à Harfang.",
@@ -2135,7 +2099,7 @@
     "titre": "Mère de Harfang",
     "parent": "clan-tsuren",
     "statut": "vivant",
-    "resume": "Mère de Harfang. Chaleureuse, envahissante, sincère, elle parle sans s'arrêter et refuse de voir ce qui se passe entre son mari et son fils.",
+    "resume": "Mère de Harfang, chaleureuse et bavarde.",
     "connu": [
       "Elle trouve les mots pour que les repas de famille ne finissent pas en silence total.",
       "Elle a toujours regardé Harfang autrement que les autres, sans jamais mettre de mots dessus.",
@@ -2170,7 +2134,7 @@
     "nom": "Clan Kovacz",
     "titre": "Clan noble de la ville haute",
     "parent": "roshen-buru",
-    "resume": "Clan sur le déclin dont le fils a tué des filles pendant sept mois. Protégé par la Magistrature.",
+    "resume": "Clan noble sur le déclin, protégé par la Magistrature.",
     "connu": [
       "Darrek Kovacz, fils du clan, a tué des prostituées de la ville pendant sept mois, atrocement d'après les rapports d'enquête.",
       "Son père, Brodek, a écrit au magistrat pour qu'il n'accuse pas son fils à tort et en réfère à la Gardienne, dans l'espoir de sa protection.",
@@ -2189,21 +2153,18 @@
     "alias": [
       "Darrek"
     ],
-    "resume": "Le Prétendant, fils du clan Kovacz. Auteur de l'enlèvement d'Ayano et des disparitions de filles. Tué par le groupe.",
+    "resume": "Prétendant éconduit devenu ravisseur et assassin.",
     "connu": [
-      "Son Miren est une phalène, inscrite au registre des Mirenai de la Magistrature.",
-      "Fils de Brodek, accro à la vesine, endetté au jeu. Ancien prétendant éconduit d'Ayano Kaben.",
-      "Son Miren est lié aux phalènes. En combat, il passe d'un niveau à l'autre par les murs.",
+      "Fils de Brodek, accro à la vésine et endetté au jeu. Ancien prétendant éconduit d'Ayano Kaben.",
       "Il a tué des prostituées pendant sept mois.",
+      "Il apprend le mariage par Rysei et enlève Ayano pendant la première cérémonie, sous couvert d'une nuée de phalènes, par la fenêtre du fond.",
+      "Son Miren est une phalène, inscrite au registre des Mirenaï de la Magistrature. En combat, il passe d'un niveau à l'autre par les murs.",
+      "Ankou donne son adresse au groupe, qui le retrouve dans une garçonnière de la ville basse et le tue.",
       "Sa planque s'ouvre directement sur une pièce haute avec mezzanine : bouteilles vides, brûle-parfum à l'odeur écœurante, et dans les murs des trous ronds de la taille d'un poing, avec de la poussière grise en dessous.",
       "Sur le lit, une inconnue droguée à la vésine ne se réveillera pas. Ayano est attachée à la rambarde de la mezzanine.",
       "Il prend le groupe pour des « nouvelles filles » arrivées sur commande."
     ],
-    "histoire": [
-      "Prétendant éconduit d'Ayano, fils du clan Kovacz, il apprend le mariage par Rysei.",
-      "Il enlève Ayano pendant la première cérémonie, sous couvert d'une nuée de phalènes, par la fenêtre du fond.",
-      "Le groupe apprend que son Miren est une phalène. Ankou donne son adresse au groupe, qui le retrouve dans une garçonnière de la ville basse et le tue."
-    ],
+    "histoire": [],
     "relations": [
       {
         "cible": "brodek-kovacz",
@@ -2259,7 +2220,7 @@
     "titre": "Chef du clan Kovacz",
     "parent": "clan-kovacz",
     "statut": "vivant",
-    "resume": "Patriarche demi-orc du clan Kovacz, retraité de fait. Il refuse de céder les clés à son fils, dernière chose qu'il contrôle encore.",
+    "resume": "Patriarche du clan Kovacz, retraité de fait, qui refuse de céder les clés à son fils.",
     "connu": [
       "Un demi-orc massif que l'âge a vidé.",
       "Sa lettre au magistrat a suffi à clore l'enquête, au prix de la mort de plusieurs innocents.",
@@ -2297,17 +2258,15 @@
     "parent": "roshen-buru",
     "lieu": "planque-darrek",
     "statut": "vivant",
-    "resume": "Jeune mariée enlevée par Darrek Kovacz, retrouvée vivante par le groupe. Elle reçoit les mêmes lettres de menace que son fiancé.",
+    "resume": "Jeune mariée, sauvée par le groupe.",
     "connu": [
-      "Enlevée pendant la nuée de phalènes de la première cérémonie.",
+      "Elle a reçu les mêmes lettres de menace que son fiancé Konya.",
       "Elle a eu autrefois une relation avec un fils de clan noble, arrogant, qu'elle a rompue.",
-      "Sauvée, elle est assise à table avec une couverture sur les épaules, vivante, et Konya ne la lâche pas du regard."
-    ],
-    "histoire": [
       "Elle est enlevée en pleine cérémonie, dans la nuée de phalènes.",
-      "Le groupe la retrouve attachée à la rambarde de la mezzanine de la planque de Darrek, bâillonnée, consciente et furieuse. Il la délivre.",
+      "Le groupe la retrouve attachée à la rambarde de la mezzanine de la planque de Darrek, bâillonnée, consciente et furieuse. Il la délivre. Sauvée, elle est assise à table avec une couverture sur les épaules, vivante, et Konya ne la lâche pas du regard.",
       "Le lendemain, Konya et elle sont enfin mari et femme, lors d'une seconde cérémonie au Temple du Tenraku."
     ],
+    "histoire": [],
     "relations": [
       {
         "cible": "konya-sokabei",
@@ -2341,19 +2300,17 @@
     "titre": "Le marié, ami de Harfang",
     "parent": "roshen-buru",
     "statut": "vivant",
-    "resume": "Le marié, ami de Harfang. Bon garçon, honnête et dépassé, qui n'a aucune expérience de ce genre de menace.",
+    "resume": "Bon garçon, honnête et dépassé par la menace.",
     "connu": [
-      "Il vient chez Harfang avec la lettre de menace reçue avant son mariage.",
+      "Il vient chez Harfang avec la lettre de menace reçue avant son mariage et le supplie de venir à son mariage du lendemain. Harfang accepte, plus par le geste que par sympathie.",
       "Il demande à Harfang et à ses compagnes de venir comme invités et de garder l'œil ouvert.",
       "Il habite le quartier des marchands, dans une maison propre sans ornement, avec une cour minuscule où sèche du linge. Il ouvre lui-même la porte, les yeux de quelqu'un qui n'a pas dormi.",
       "La lettre dit : « Elle n'est pas pour toi. Renonce, ou je prendrais tout. » Papier de qualité noble, écriture soignée mais volontairement dégradée, sans signature. Ayano en a reçu une identique.",
-      "Il refuse l'aide de la garde, payée par les clans, car il pense qu'un noble est derrière tout cela. Il propose de payer le groupe et ajoute : « Si je ne me trompe pas, je ne veux pas être seul. »"
-    ],
-    "histoire": [
-      "Il supplie Harfang de venir à son mariage du lendemain, après des lettres de menace. Harfang accepte, plus par le geste que par sympathie.",
+      "Il refuse l'aide de la garde, payée par les clans, car il pense qu'un noble est derrière tout cela. Il propose de payer le groupe et ajoute : « Si je ne me trompe pas, je ne veux pas être seul. »",
       "Pendant la cérémonie, Ayano est enlevée devant lui par un Miren.",
-      "Après le sauvetage, il ne lâche pas Ayano du regard et tient à ce que le groupe soit invité à la seconde cérémonie. Il est enfin son époux, mais la première cérémonie n'avait pas pu aller jusqu'au bout."
+      "Après le sauvetage, il tient à ce que le groupe soit invité à la seconde cérémonie, où il devient enfin l'époux d'Ayano, la première n'ayant pas pu aller jusqu'au bout."
     ],
+    "histoire": [],
     "relations": [
       {
         "cible": "ayano-kaben",
@@ -2393,7 +2350,7 @@
     "nom": "Clan Anadori",
     "titre": "Clan noble de la ville haute",
     "parent": "roshen-buru",
-    "resume": "Clan impatient, peu connu pour son self-control. Il a commandé deux armes à 50 000 pièces d'or.",
+    "resume": "Clan impatient, peu connu pour son self-control.",
     "alias": [
       "Caspian"
     ],
@@ -2410,16 +2367,14 @@
     "nom": "Clan Urameï",
     "titre": "Clan noble mené par un démon de Minauros",
     "parent": "roshen-buru",
-    "resume": "Clan mené par un démon de Minauros. La Gardienne le tolère.",
+    "resume": "Clan de la ville basse, toléré par la Gardienne.",
     "connu": [
       "Ankou Urameï, son chef, est un démon du cercle de Minauros, le troisième des Enfers.",
-      "Ses deux femmes, Sabaké et Nyssra, semblent aussi être des démons.",
-      "Le clan tient la ville basse et fait commerce de vesine, d'âmes et de contrats."
-    ],
-    "histoire": [
-      "Le groupe rencontre Ankou Urameï, chef du clan, à sa maison. Il apprend que ses deux femmes, Sabaké et Nyssra, semblent aussi être des démons.",
+      "Ses deux femmes, Sabaké et Nyssra, semblent aussi être des démons. Le groupe les a vues en rencontrant Ankou à sa maison.",
+      "Le clan tient la ville basse et fait commerce de vésine, d'âmes et de contrats.",
       "Ankou aide le groupe pendant l'affaire du mariage Sokabeï-Kaben."
-    ]
+    ],
+    "histoire": []
   },
   {
     "id": "ankou-uramei",
@@ -2433,24 +2388,21 @@
     "alias": [
       "Ankou"
     ],
-    "resume": "Démon de Minauros, chef du clan Urameï, qui reçoit sans table ni bureau, simplement assis. Il semble savoir depuis un moment pourquoi on vient.",
+    "resume": "Chef du clan Urameï, qui semble savoir depuis un moment pourquoi on vient.",
     "connu": [
-      "Il est tatoué jusqu'au visage, comme ses deux femmes, Sabaké et Nyssra.",
+      "Il est tatoué jusqu'au visage, du même dessin que ses deux femmes, Sabaké et Nyssra, tatouées jusqu'aux mains.",
+      "Sa maison est propre et silencieuse, personne à l'entrée : on traverse deux pièces vides avant d'arriver à la sienne. Il reçoit assis, sans table ni bureau, Sabaké à sa gauche et Nyssra à sa droite. Il fait sombre dans la pièce, pourtant il n'y a pas d'ombres.",
+      "Au deuxième palier, le groupe lui expose ses problèmes. Il les redirige vers Yureï, dans sa planque. Les joueuses lui font instinctivement confiance, Harfang reste réservé.",
       "Il a répondu qu'il savait qu'Absalom était en ville, et que c'était amusant.",
       "Se rendre aux Enfers est complexe et coûteux. Un démon ne peut accéder qu'à son propre plan.",
-      "Sa maison est propre et silencieuse, personne à l'entrée : on traverse deux pièces vides avant d'arriver à la sienne. Sabaké se tient à sa gauche, Nyssra à sa droite, tatouées jusqu'aux mains du même dessin que lui.",
-      "Il fait sombre dans la pièce, pourtant il n'y a pas d'ombres.",
-      "Il vient en invité non invité au mariage Kaben pour encaisser une dette de présence, avec ses deux femmes. Il prend une coupe et s'assoit dans un coin d'où il voit toute la salle.",
-      "Il fait servir le thé avant qu'on ait dit un mot, même le lendemain de la chute du Temple."
-    ],
-    "histoire": [
-      "Au deuxième palier, le groupe lui expose ses problèmes. Il les redirige vers Yureï, dans sa planque. Les joueuses lui font instinctivement confiance, Harfang reste réservé.",
-      "Il vient au mariage Kaben en invité non invité, avec ses deux femmes, pour encaisser une dette de présence.",
+      "Il vient au mariage Kaben en invité non invité, avec ses deux femmes, pour encaisser une dette de présence. Il prend une coupe et s'assoit dans un coin d'où il voit toute la salle.",
       "Après l'enlèvement d'Ayano, il identifie le Miren ravisseur comme une phalène, listée dans le registre des Mirenaï de la magistrature. Il marchande l'infiltration : rapporter un parchemin qui semble écrit sur de la peau humaine et un collier orné d'une pièce, sans ouvrir le parchemin.",
       "Le groupe les lui rapporte. Philippa identifie la pièce comme une pièce d'âme, la monnaie des Enfers.",
       "Le groupe lui apprend que la Protectrice a un pacte avec Levistus et que Balamor tente de prendre possession de citoyens. Il ne réagit à aucune des deux informations.",
-      "Le groupe lui parle de son plan de renverser la Gardienne. Il est satisfait de l'échange."
+      "Le groupe lui parle de son plan de renverser la Gardienne. Il est satisfait de l'échange.",
+      "Il fait servir le thé avant qu'on ait dit un mot, même le lendemain de la chute du Temple."
     ],
+    "histoire": [],
     "relations": [
       {
         "cible": "yurei-poison",
@@ -2504,9 +2456,9 @@
     "parent": "clan-uramei",
     "lieu": "maison-uramei",
     "statut": "vivant",
-    "resume": "Une des deux épouses d'Ankou, debout à sa gauche, tatouée jusqu'aux mains. Elle semble être un démon.",
+    "resume": "Une des deux épouses d'Ankou. Elle semble être un démon.",
     "connu": [
-      "Tatouée du même dessin que lui. Elle n'a pas vraiment pris la parole.",
+      "Debout à gauche d'Ankou, tatouée jusqu'aux mains du même dessin que lui. Elle n'a pas vraiment pris la parole.",
       "Immobile, elle ne bouge pas quand le groupe entre. Personne dans la pièce ne semble avoir chaud ni froid."
     ],
     "galerie": [
@@ -2518,9 +2470,7 @@
     "img": "img/pnj/sabake.webp",
     "attitude": "neutre",
     "teinte": "#753c19",
-    "histoire": [
-      "Le groupe la voit debout à gauche d'Ankou, tatouée jusqu'aux mains. Elle n'a pas vraiment pris la parole."
-    ]
+    "histoire": []
   },
   {
     "id": "nyssra",
@@ -2530,9 +2480,9 @@
     "parent": "clan-uramei",
     "lieu": "maison-uramei",
     "statut": "vivant",
-    "resume": "Une des deux épouses d'Ankou, debout à sa droite, tatouée jusqu'aux mains. Elle semble être un démon.",
+    "resume": "Une des deux épouses d'Ankou. Elle semble être un démon.",
     "connu": [
-      "Tatouée du même dessin que lui. Elle n'a pas vraiment pris la parole.",
+      "Debout à droite d'Ankou, tatouée jusqu'aux mains du même dessin que lui. Elle n'a pas vraiment pris la parole.",
       "Immobile, elle ne bouge pas quand le groupe entre. Elle sourit quand on demande pourquoi Ankou aide."
     ],
     "galerie": [
@@ -2544,9 +2494,7 @@
     "img": "img/pnj/nyssra.webp",
     "attitude": "neutre",
     "teinte": "#753c19",
-    "histoire": [
-      "Le groupe la voit debout à droite d'Ankou, tatouée jusqu'aux mains. Elle sourit quand on demande pourquoi Ankou aide."
-    ]
+    "histoire": []
   },
   {
     "id": "yurei-poison",
@@ -2562,19 +2510,16 @@
       "Poison",
       "Yurei Uramei"
     ],
-    "resume": "Contrebandière du clan Urameï, fournisseuse principale de vésine en ville. Insolente, drôle, elle travaille avec une autonomie réelle et flirte ouvertement avec Philippa.",
+    "resume": "Contrebandière insolente et drôle, qui flirte ouvertement avec Philippa.",
     "connu": [
-      "Fournisseuse principale de vesine en ville.",
-      "Elle a refusé de parler jusqu'à ce que le groupe revienne avec un nom.",
+      "Fournisseuse principale de vésine en ville.",
       "Elle opère dans la ville basse, à l'est, derrière un comptoir qui n'est pas le sien : pièce petite et chaude, caisses jusqu'au plafond, bouteilles sans étiquette, odeur de résine et d'alcool.",
-      "Elle ne connaît pas Darrek. Elle connaît celui qui vient chercher les doses : Bruska, visage bandé, régulier, qui paie bien. Elle supposait qu'il achetait pour un noble.",
-      "Elle propose une mission : retrouver Tobiya, un de ses hommes disparu, dont l'appartement a été saccagé, maculé d'une substance étrange et de symboles gravés."
-    ],
-    "histoire": [
-      "Elle cherche un de ses hommes, Tobiya, disparu depuis plusieurs jours, et le groupe la trouve dans sa planque, envoyé par Ankou. Elle flirte avec Philippa, lui confie l'adresse de la chaumière de Tobiya et demande de le retrouver.",
+      "Le groupe, envoyé par Ankou, la trouve dans sa planque. Elle cherche Tobiya, un de ses hommes disparu depuis plusieurs jours, dont l'appartement a été saccagé, maculé d'une substance étrange et de symboles gravés. Elle confie à Philippa l'adresse de sa chaumière et demande au groupe de le retrouver.",
+      "Elle a refusé de parler jusqu'à ce que le groupe revienne avec un nom. Elle ne connaît pas Darrek. Elle connaît celui qui vient chercher les doses : Bruska, visage bandé, régulier, qui paie bien. Elle supposait qu'il achetait pour un noble.",
       "Elle paie 2 000 pièces d'or au groupe pour avoir retrouvé Tobiya.",
       "Elle assiste à la première cérémonie pour accompagner et protéger Ankou, mais n'est pas à la seconde."
     ],
+    "histoire": [],
     "relations": [
       {
         "cible": "ankou-uramei",
@@ -2619,16 +2564,16 @@
     "lieu": "egouts",
     "statut": "inconnu",
     "question": "Que devient Tobiya, en pleine transformation ?",
-    "resume": "Homme de main de Yurëi disparu, retrouvé dans les égouts de Roshen Buru en pleine mue arachnide.",
+    "resume": "Homme de main disparu, retrouvé en pleine mue arachnide.",
     "connu": [
-      "Un avis affiché à l'auberge le dit disparu, recherché par Yurei Uramei.",
-      "Chez lui, une maison en désordre et des symboles étranges.",
-      "Dans les égouts : des araignées en nombre, des toiles épaisses comme du caoutchouc, une salle gravée de symboles de Balamor.",
-      "Il avait entamé une transformation et disait servir « la Mère de la toile », à Balamor.",
-      "Un grand plan viserait à corrompre les habitants pour conquérir les villes.",
-      "Sa chaumière de style Edo, à deux pas de la rue marchande, avait la porte fracassée de l'intérieur, des cloisons déchirées et des symboles d'araignée tracés dans un fluide poisseux, comme ceux vus à Keras Tauroc.",
+      "Un avis affiché à l'auberge le dit disparu depuis plusieurs jours, recherché par Yureï.",
+      "Sa chaumière de style Edo, à deux pas de la rue marchande, a la porte fracassée de l'intérieur, des cloisons déchirées et des symboles d'araignée tracés dans un fluide poisseux, le même fluide que celui de l'homme de Keras Tauroc.",
+      "Ses voisins Ohana, Bhamir et Poki disent l'avoir vu passer pâle, parlant seul, et signalent une odeur acide.",
       "Les traces gluantes mènent aux égouts. L'air y est un gaz jaunâtre irrespirable, que seule la soufflerie, obstruée de toiles, pourrait chasser.",
-      "Au fond, dans une salle à puits de lumière, il siège sur un trône de pierre : crâne ouvert, araignée tapie dedans, pattes chitineuses jaillissant du dos. Il n'a plus rien d'un homme."
+      "Dans les égouts : des araignées en nombre, des toiles épaisses comme du caoutchouc, une salle gravée de symboles de Balamor.",
+      "Au fond, dans une salle à puits de lumière, il siège sur un trône de pierre : crâne ouvert, araignée tapie dedans, pattes chitineuses jaillissant du dos. Il n'a plus rien d'un homme, entièrement corrompu par les araignées.",
+      "Un sort l'oblige à parler : il avait entamé une transformation et dit servir « la Mère de la toile », à Balamor. Il veut faire apparaître des araignées dans toutes les villes, prendre le contrôle mental de gens insoupçonnés et lever une armée pour conquérir les villes d'Istra.",
+      "Le groupe y voit une piste pour Balamor, où il compte mettre un terme à ce plan. Yureï le paie pour avoir retrouvé Tobiya."
     ],
     "relations": [
       {
@@ -2654,12 +2599,7 @@
       "Tobia"
     ],
     "teinte": "#751925",
-    "histoire": [
-      "Il disparaît plusieurs jours avant l'arrivée du groupe. Yureï le fait chercher, et un avis de recherche est affiché.",
-      "Sa chaumière est saccagée, les murs couverts de symboles d'araignée dans un fluide poisseux, le même que celui de l'homme de Keras Tauroc. Ses voisins Ohana, Bhamir et Poki disent l'avoir vu passer pâle, parlant seul, et sentent une odeur acide.",
-      "Le groupe le retrouve dans les égouts, entièrement corrompu par les araignées. Un sort l'oblige à parler : il travaille pour la Mère de la Toile. Il veut faire apparaître des araignées dans toutes les villes, prendre le contrôle mental de gens insoupçonnés et lever une armée pour conquérir les villes d'Istra.",
-      "Le groupe y voit une piste pour Balamor, où il compte mettre un terme à ce plan. Yureï le paie pour avoir retrouvé Tobiya."
-    ]
+    "histoire": []
   },
   {
     "id": "clan-siharen",
@@ -2686,22 +2626,19 @@
       "Anaru Miren-Buru",
       "la Gardienne"
     ],
-    "resume": "Guide spirituelle de Roshen Buru et championne de Mélora. A reculé devant Gran Brijit.",
+    "resume": "Guide spirituelle de Roshen Buru.",
     "connu": [
       "Autorité absolue de Roshen Buru, religion et politique. On la dit incarnation de Mélora sur terre.",
-      "Il remplit la pièce de pouvoir brut.",
+      "Elle remplit la pièce de pouvoir brut.",
       "Elle est la cousine de Ginko Noshi-Buru.",
       "D'après son journal, elle prépare une alliance avec Eryndel, l'impératrice d'Altéra.",
       "Elle ne reçoit pas sur demande : elle convoque. Sans convocation, on n'entre pas au Palais, et les gardes refusent poliment, sans négociation.",
       "Elle intervient de sa propre initiative après le sauvetage d'Ayano. Par la voix de Neryn Yosa, elle présente les excuses officielles de la ville aux deux familles et offre le Temple du Tenraku pour bénir l'union.",
-      "Dans les ruines du Temple, elle exige le parchemin : « Il appartient à notre divinité et à notre peuple. » Face à Gran Brijit, elle ouvre son Miren, avatar de Mélora, et lâche l'Aspect de la Mort."
-    ],
-    "histoire": [
-      "Le groupe la voit pour la première fois au sommet du Temple du Tenraku, quand Absalom en détruit le sommet. Elle fait apparaître des lianes pour empêcher son effondrement total.",
-      "Elle exige le parchemin, qui appartient à son peuple et à sa divinité. Gran Brijit le réclame à son tour. Anaru la traite de bête immonde, mais recule devant ses menaces et la laisse reprendre le parchemin. Elle contre le sort de Harfang.",
-      "Elle retient le toit avec Gran Brijit pour protéger les gens du temple et ceux d'en bas.",
+      "Le groupe la voit pour la première fois au sommet du Temple du Tenraku, quand Absalom en détruit le sommet. Elle fait apparaître des lianes pour empêcher son effondrement total, puis retient le toit avec Gran Brijit pour protéger les gens du temple et ceux d'en bas.",
+      "Dans les ruines du Temple, elle exige le parchemin : « Il appartient à notre divinité et à notre peuple. » Gran Brijit le réclame à son tour. Anaru la traite de bête immonde, mais recule devant ses menaces et la laisse reprendre le parchemin. Elle contre le sort de Harfang. Face à Gran Brijit, elle ouvre son Miren, avatar de Mélora, et lâche l'Aspect de la Mort.",
       "Quand Carnage apparaît, elle se détourne de Gran Brijit et ne protège plus que son peuple. Carnage tombe, et elle se tourne vers Harfang, à ses pieds, pour prononcer ses premiers mots."
     ],
+    "histoire": [],
     "relations": [
       {
         "cible": "neryn-yosa",
@@ -2760,21 +2697,19 @@
       "Protectrice",
       "la Protectrice"
     ],
-    "resume": "Bras armé de la ville et patronne du réseau d'espions de Harfang. Elle a passé un pacte avec Levistus.",
+    "resume": "Bras armé de la ville et patronne du réseau d'espions de Harfang.",
     "connu": [
       "Stricte, militaire, femme de peu de mots. Elle est aveugle et forte.",
       "Elle est l'interface entre la Gardienne et le reste du monde. Son Miren est un phénix.",
-      "Elle a envoyé le Tribunal de chair tuer Eamonn et détruire le cercle de téléportation, pour préserver l'isolationnisme d'Istra.",
       "Elle s'est donné pour mission de protéger la ville et le continent à tout prix, et de faire dans l'ombre ce que la Gardienne n'a pas le courage de faire.",
-      "Le Tribunal de chair est composé d'agents de Levistus.",
-      "Elle écrit entendre une voix dans sa tête et résister de plus en plus difficilement à la tentation."
-    ],
-    "histoire": [
+      "Le Tribunal de Chair est composé d'agents de Levistus. Elle l'a envoyé tuer Eamonn et détruire le cercle de téléportation, pour préserver l'isolationnisme d'Istra.",
       "Elle reçoit Harfang en privé après son retour et veut savoir ce qu'il a vu à Istra, ce qui s'est passé à Keras Tauroc, et qui sont ces étrangères. Elle lui demande de continuer à les suivre et de lui rapporter, et dit que Cap Cornes sera réglé.",
-      "Pendant un point d'étape de Harfang, Philippa et Jane fouillent ses papiers et apprennent qu'elle fait espionner Harfang, connaît son ami nain, est derrière le Tribunal de Chair, qui a tenté d'assassiner Eamonn, et a passé un pacte avec Levistus.",
+      "Pendant un point d'étape de Harfang, Philippa et Jane fouillent ses papiers et apprennent qu'elle fait espionner Harfang, connaît son ami nain et a passé un pacte avec Levistus.",
+      "Elle écrit entendre une voix dans sa tête et résister de plus en plus difficilement à la tentation.",
       "Le lendemain du mariage, elle se déplace en personne chez les deux familles pour présenter les excuses de la Gardienne, et ouvre le Temple du Tenraku pour une seconde cérémonie.",
       "Elle est mise hors d'état de nuire par l'explosion du Temple du Tenraku."
     ],
+    "histoire": [],
     "relations": [
       {
         "cible": "anaru-miren-buru",
@@ -2825,13 +2760,13 @@
       "Gikyo Noshi Buru"
     ],
     "question": "Qu'est devenue Ginko depuis son combat contre Gran Brijit ?",
-    "resume": "Puissante guerrière, souvent en voyage. Son Miren est un djinn.",
+    "resume": "Puissante guerrière.",
     "connu": [
       "Elle est souvent en voyage et rarement en ville.",
       "Son Miren, un Tenrai de niveau 3, est un djinn.",
       "Le groupe l'a croisée à Thaldera.",
       "Elle a affronté Gran Brijit dans les sables de Kazad Marunn. Gran Brijit semblait lui vouloir quelque chose.",
-      "Femme à la peau violette parée de métal et de tissus du désert, qui attendait Gran Brijit dans une ruelle. Elle appelle un djinn d'eau."
+      "Femme à la peau violette parée de métal et de tissus du désert, elle attend Gran Brijit dans une ruelle : « T'approche pas. Tu pues les racines mortes. » Elle appelle un djinn d'eau qui les sépare, et elles disparaissent en duel."
     ],
     "relations": [
       {
@@ -2852,9 +2787,7 @@
       }
     ],
     "lieu": "palais-miren-buru",
-    "histoire": [
-      "À Kazad Marunn, elle attend Gran Brijit dans une ruelle : « T'approche pas. Tu pues les racines mortes. » Un djinn d'eau les sépare et elles disparaissent en duel."
-    ],
+    "histoire": [],
     "citation": {
       "texte": "T'approche pas. Tu pues les racines mortes. T'avancer encore d'un pas… c'est mourir.",
       "qui": "Gikyo Noshi Buru"
@@ -2869,12 +2802,14 @@
     "parent": "forge-oyoroi",
     "lieu": "forge-oyoroi",
     "statut": "vivant",
-    "resume": "Forgeronne, la meilleure de la ville et elle le sait. Directe, moqueuse et franchement conflictuelle quand cela l'amuse, elle ne craint personne car tous les clans ont besoin d'elle.",
+    "resume": "Meilleure forgeronne de la ville, directe et moqueuse. Tous les clans ont besoin d'elle.",
     "connu": [
+      "Sa forge, la forge Oyoroï, existe depuis 200 ans au centre-ouest de la ville. On l'entend deux carrefours avant de la voir, et la chaleur déforme l'air au-dessus du seuil.",
+      "Elle est la fille de Kaban Kanaë, célèbre forgeron qui a fait la réputation de la forge. Il a emporté son secret de fabrication dans la tombe : on dit qu'il partait des mois dans les montagnes forger au cœur de la roche.",
+      "Elle méprise à peu près également tous ses clients nobles. Elle vient de livrer un set de lames aux Anadori, et ne sait rien de l'enlèvement.",
       "Elle est dans le pétrin : le clan Anadori n'est pas connu pour sa patience.",
-      "Sa forge, la forge Oyoroi, existe depuis 200 ans au centre-ouest de la ville. On l'entend deux carrefours avant de la voir, et la chaleur déforme l'air au-dessus du seuil.",
-      "Elle est la fille de Kaban Kanae, célèbre forgeron qui a fait la réputation de la forge. Il a emporté son secret de fabrication dans la tombe : on dit qu'il partait des mois dans les montagnes forger au cœur de la roche.",
-      "Elle méprise à peu près également tous ses clients nobles. Elle vient de livrer un set de lames aux Anadori, et ne sait rien de l'enlèvement."
+      "Pendant la tournée des marchands, le groupe passe dans sa forge. Jane lui vole Ruine Holoraine, un tanto, sans qu'elle s'en aperçoive.",
+      "Philippa lorgne Omen Broken Sky, à 50 000 pièces d'or, destiné au clan Anadori. Elle a d'autres plans pour cette arme."
     ],
     "relations": [
       {
@@ -2895,10 +2830,7 @@
     ],
     "img": "img/pnj/tessei-kanae.webp",
     "attitude": "neutre",
-    "histoire": [
-      "Pendant la tournée des marchands, le groupe passe dans sa forge. Jane lui vole Ruine Holoraine, un tanto, sans qu'elle s'en aperçoive.",
-      "Philippa lorgne Omen Broken Sky, à 50 000 pièces d'or, destiné au clan Anadori. Elle a d'autres plans pour cette arme."
-    ],
+    "histoire": [],
     "teinte": "#753c19"
   },
   {
@@ -2909,15 +2841,15 @@
     "parent": "boutique-oren",
     "lieu": "boutique-oren",
     "statut": "mort",
-    "resume": "Prêteur sur gage sournois, visqueux et mielleux. Il rachète tout sans poser de questions, et connaît Harfang et son clan.",
+    "resume": "Prêteur sur gage sournois, visqueux et mielleux. Il rachète tout sans poser de questions.",
     "connu": [
-      "Il a été accusé du vol des armes commandées par les Anadori.",
-      "Il a été retrouvé éventré, les bras en croix, deux plumes de paon spectrales plantées dans les mains.",
-      "Sa boutique a été dévalisée par Philippa.",
-      "Gran Brijit avait demandé à Philippa de le tuer pour préserver l'équilibre. Les Anadori l'ont fait avant elle.",
       "Son échoppe est étroite, la porte basse oblige à se courber. Tout est derrière une grille, chaque objet porte une étiquette numérotée, et la seule lampe éclaire le visage du client, pas le sien.",
-      "Il sourit dès l'entrée, d'un sourire qui ne bouge plus. Il sait qui est endetté en ville et vend cette information cher. Il connaît aussi Yurëi et les Urameï.",
-      "Il vend des babioles magiques récupérées, non identifiées, de provenance douteuse, et ne garantit rien : « On m'apporte. Je prends. On ne revient pas. »"
+      "Il sourit dès l'entrée, d'un sourire qui ne bouge plus. Il sait qui est endetté en ville et vend cette information cher. Il connaît Harfang et son clan, ainsi que Yureï et les Urameï.",
+      "Il vend des babioles magiques récupérées, non identifiées, de provenance douteuse, et ne garantit rien : « On m'apporte. Je prends. On ne revient pas. »",
+      "Philippa tilte en voyant son nom sur le tableau d'affichage : sa mission secrète, qu'elle ne partage pas avec le groupe, est de le tuer. Gran Brijit lui avait demandé de le faire pour préserver l'équilibre.",
+      "Le groupe se retrouve chez lui. Philippa lui vend Requiem pour 1 800 pièces d'or, sans contrepartie réelle : l'épée se téléporte et revient seule dans son inventaire.",
+      "Il a été accusé du vol des armes commandées par les Anadori. Philippa a dévalisé sa boutique après sa mort.",
+      "Il a été retrouvé éventré, les bras en croix, deux plumes de paon spectrales plantées dans les mains. Les Anadori l'ont tué avant Philippa."
     ],
     "alias": [
       "Oren Shidaï"
@@ -2934,10 +2866,7 @@
     ],
     "img": "img/pnj/oren-sidai.webp",
     "attitude": "neutre",
-    "histoire": [
-      "Philippa tilte en voyant son nom sur le tableau d'affichage : sa mission secrète, qu'elle ne partage pas avec le groupe, est de le tuer.",
-      "Le groupe se retrouve chez lui. Philippa lui vend Requiem pour 1 800 pièces d'or, sans contrepartie réelle : l'épée se téléporte et revient seule dans son inventaire."
-    ],
+    "histoire": [],
     "teinte": "#755219"
   },
   {
@@ -2949,14 +2878,14 @@
     "lieu": "apothicaire",
     "statut": "inconnu",
     "question": "Saori a-t-elle survécu à l'arrivée de Carnage au Temple du Tenraku ?",
-    "resume": "Jeune tieffeline chaleureuse et rieuse, apothicaire de la ville et médecin légiste par défaut, faute de volontaire. Ce travail la marque plus qu'elle ne le montre.",
+    "resume": "Jeune tieffeline chaleureuse et rieuse.",
     "connu": [
-      "Invitée au mariage, elle a servi de médecin légiste lors de la première cérémonie.",
-      "Le cuisinier est mort empoisonné à la vesine.",
-      "Pendant la seconde cérémonie, elle était dans la foule du Temple du Tenraku.",
+      "Apothicaire de la ville, elle est médecin légiste par défaut, faute de volontaire.",
       "Sa boutique est dans une rue étroite qui remonte vers l'Académie : des centaines de bocaux étiquetés à la main, des herbes en bouquets au plafond, une odeur de vinaigre, de menthe et de sirop. Sa queue s'enroule autour d'un montant quand elle grimpe sur son tabouret.",
       "Elle vend surtout des onguents pour les brûlures, des remèdes pour dormir ou ne pas dormir, et garde derrière les potions plus sérieuses.",
-      "Elle conclut que le chef cuisinier Kabo est mort d'une overdose de vésine d'une pureté trop élevée pour de la drogue de rue : une dose qu'on offre, pas qu'on achète."
+      "Le groupe lui achète quelques potions. Accueil sympathique.",
+      "Invitée au mariage, elle a servi de médecin légiste lors de la première cérémonie. Elle conclut que le chef cuisinier Kabo est mort d'une overdose de vésine d'une pureté trop élevée pour de la drogue de rue : une dose qu'on offre, pas qu'on achète.",
+      "Invitée à la seconde cérémonie, elle était dans la foule du Temple du Tenraku."
     ],
     "citation": {
       "texte": "Yaaaaa, Bonjour ! Attendez deux secondes, je pose ça et je suis à vous. Vous avez mal quelque part, ou vous entrez juste parce que ça sentait bon dehors ?",
@@ -2970,10 +2899,7 @@
     ],
     "img": "img/pnj/saori-velmaka.webp",
     "attitude": "neutre",
-    "histoire": [
-      "Le groupe lui achète quelques potions. Accueil sympathique.",
-      "Elle est invitée à la seconde cérémonie, au Temple du Tenraku."
-    ],
+    "histoire": [],
     "teinte": "#753c19"
   },
   {
@@ -2990,18 +2916,15 @@
     ],
     "resume": "Calligraphe curieuse jusqu'à l'indiscrétion, bavarde et drôle, sans méchanceté. Elle s'ennuie et adore qu'on lui apporte un problème.",
     "connu": [
-      "Elle confirme que le papier des lettres n'est vendu qu'aux clans, à dix pièces d'or la feuille.",
-      "Très romantique, elle a été facilement convaincue par l'amour des deux mariés.",
-      "Elle était dans la foule du Temple du Tenraku pendant la seconde cérémonie.",
       "Son atelier est au bord du canal, sous les cerisiers, avec une paroi entière de papier tendu. Il y flotte une odeur d'encre fraîche et de colle de riz. Des centaines de pinceaux sont rangés par taille. Elle a de l'encre sur le nez sans le savoir.",
-      "Elle reconnaît le papier des lettres de menace : qualité noble, deuxième catégorie, jamais vendu en boutique. Trois maisons en achètent : les Anadori, les Kovacz et les Tsuren.",
+      "Elle reconnaît le papier des lettres de menace : qualité noble, deuxième catégorie, jamais vendu en boutique et réservé aux clans, à dix pièces d'or la feuille. Trois maisons en achètent : les Anadori, les Kovacz et les Tsuren.",
       "L'écriture est volontairement dégradée, mais par quelqu'un qui sait tenir un pinceau. L'auteur craignait d'être reconnu.",
-      "Elle nie tout si on se réclame d'elle chez les nobles, et réclame qu'on lui rapporte la suite de l'affaire."
-    ],
-    "histoire": [
-      "Elle est invitée à la seconde cérémonie, au Temple du Tenraku, avec les têtes connues de la ville.",
+      "Elle ne veut pas qu'on se réclame d'elle chez les nobles et réclame qu'on lui rapporte la suite de l'affaire.",
+      "Très romantique, elle a été facilement convaincue par l'amour des deux mariés.",
+      "Invitée à la seconde cérémonie, elle était dans la foule du Temple du Tenraku, avec les têtes connues de la ville.",
       "Sa réclame figure sur le tableau d'affichage de l'auberge."
     ],
+    "histoire": [],
     "citation": {
       "texte": "Bienvenue dans ma boutique, vous êtes là pour apprendre à écrire ? C'est Yen qui vous envoie ?",
       "qui": "Sumeren Daïko, en les voyant entrer"
@@ -3026,25 +2949,23 @@
     "statut": "inconnu",
     "img": "img/istra-belig/roshen-buru/pnj/absalom.webp",
     "question": "Absalom est-elle retournée aux Enfers ? Qu'en feront ceux à qui elle a désobéi ?",
-    "resume": "A détruit le Temple du Tenraku. Attirée vers les Enfers.",
+    "resume": "Démone insaisissable que le groupe traque de ville en ville.",
     "connu": [
       "Elle agit pour le compte de Vassago et vole pour son maître des fragments de titans.",
       "Elle semble posséder un fragment du vrai nom de l'avarice dont le groupe a besoin.",
-      "Elle a ouvert le Temple du Tenraku sans avoir à le forcer.",
-      "Elle passe par Keras Tauroc à la recherche d'un artefact ancien, interroge la cathédrale, l'orfèvre, la mine et l'haruspex, puis fait aménager une barge pour partir vers le nord.",
-      "Au port, elle surgit derrière les PJ, pose ses paumes sur leurs fronts et les plonge dans le noir ; elles se réveillent semaines plus tard en prison.",
-      "Elle déclare vouloir renverser l'ordre établi, ouvrir les portes des enfers et mettre les plus forts sur les trônes."
-    ],
-    "histoire": [
       "À Lunsk, Mezzek, chef local de la Griffe, cite le Berger comme son patron, sans savoir où il se trouve.",
       "À Voros, un chef de la Griffe explique que les captifs viennent de l'île aux Moines, par caravanes à travers le désert.",
       "Sur l'île aux Moines, Philippa et Jane affrontent Absalom, le Berger, dans la cathédrale effondrée. Elle les accuse d'entraver sa logistique depuis Corvalis, Lunsk et Voros, se plaint qu'on lise la correspondance d'une dame et promet de recommencer ailleurs tant que sa mission n'est pas accomplie. Elle s'échappe en annonçant qu'elles se reverront.",
-      "Le groupe la suit depuis Port Doëlan, puis Keras Tauroc, où elle efface un mois de sa mémoire. Elle franchit la frontière de Roshen Buru trois semaines avant le meurtre d'Otoba, avec des papiers en règle.",
+      "Le groupe la suit depuis Port Doëlan, puis à Keras Tauroc, où elle cherche un artefact ancien, interroge la cathédrale, l'orfèvre, la mine et l'haruspex, puis fait aménager une barge pour partir vers le nord.",
+      "Au port de Keras Tauroc, elle surgit derrière les PJ, pose ses paumes sur leurs fronts et les plonge dans le noir, effaçant un mois de leur mémoire ; elles se réveillent semaines plus tard en prison.",
+      "Elle franchit la frontière de Roshen Buru trois semaines avant le meurtre d'Otoba, avec des papiers en règle.",
       "À Roshen Buru, le groupe la cherche en ville : la garde est en alerte, une rumeur de femme en noir mène à Muji, qui n'est pas Absalom.",
-      "Au Temple du Tenraku, en pleine seconde cérémonie, elle apparaît derrière la jarre Miren, enchaîne l'assemblée, brise la jarre, qui est vide, et prend le parchemin.",
+      "Elle déclare vouloir renverser l'ordre établi, ouvrir les portes des enfers et mettre les plus forts sur les trônes.",
+      "Elle a ouvert le Temple du Tenraku sans avoir à le forcer. En pleine seconde cérémonie, elle apparaît derrière la jarre Miren, enchaîne l'assemblée, brise la jarre, qui est vide, et prend le parchemin.",
       "En le lisant, elle comprend que son maître l'a trompée. Elle pousse un cri de tristesse, de désespoir et de rage qui détruit le sommet du temple.",
       "Elle disparaît ensuite, vers les Enfers ou attirée par quelqu'un."
     ],
+    "histoire": [],
     "relations": [
       {
         "cible": "vassago",
@@ -3208,21 +3129,9 @@
       "Ereshkigal",
       "Brijit"
     ],
-    "resume": "Divinité de la Mort, froide et dérangeante. Chaque culture de Thaldera lui donne un nom différent. Elle règne sur l'équilibre entre la vie et la mort.",
+    "resume": "Divinité de la Mort, froide et dérangeante.",
     "connu": [
-      "Noms selon les régions : Hécate à Keras Tauroc, Hanaré à Roshen Buru, Ereshkigal à Khazad Marunn.",
-      "Cap Cornes : le groupe la rencontre dans son manoir. Philippa y a une vision d'une balance désaxée.",
-      "Elle parle à un vieux monsieur inconnu que le groupe interrompt : « l'équilibre doit être préservé ».",
-      "Elle désigne Philippa championne et lui donne deux missions : ne pas ouvrir de portail entre Cap Cornes et Havre Noir, trouver puis tuer Oren Sidaï à Roshen Buru.",
-      "Elle dit que chaque création de Mélora est un cadeau que celle-ci lui envoie.",
-      "Khazad Marunn : elle affronte Ginko Noshi-Buru et semble lui vouloir quelque chose.",
-      "Roshen Buru, Temple du Tenraku : elle menace la Gardienne, qui recule, et emporte le parchemin sacré.",
-      "À Khazad-Marûn, des habitants murmurent le nom d'Ereshkigal en la voyant passer, sans oser approcher. Ashur affirme la connaître depuis qu'il est enfant, et s'étonne qu'il ait vieilli et pas elle.",
-      "Elle donne à chacun une tenue du désert et téléporte le groupe à l'orée du désert, au sud de Rivegard. Elle dit avoir un rendez-vous à Khazad-Marûn.",
-      "Elle réveille la Clé d'Anachronie d'un souffle et prévient que son usage est un aller simple jusqu'à la résolution du donjon.",
-      "Dans une ruelle, une femme à la peau violette, Gikyo Noshi Buru, l'attend avec hostilité. Un djinn d'eau les sépare et les deux femmes disparaissent en duel."
-    ],
-    "histoire": [
+      "Elle règne sur l'équilibre entre la vie et la mort. Chaque culture de Thaldera lui donne un nom différent : Hécate à Keras Tauroc, Hanaré à Roshen Buru, Ereshkigal à Khazad Marunn.",
       "Sur l'île du Vesper, Philippa, seule, trouve la cabane d'une sorcière, Gran Brijit, qui reconnaît sur elle l'empreinte de Vassago et lui propose un marché. Une potion l'envoie dans le Feywild, où l'Arbre-Soleil bénit Philippa et lui donne sa marque brûlante.",
       "À la fin de Malquessar, Gran Brijit attend Philippa sur les marches d'un temple de pierre, de l'autre côté du portail : « Te v'là revenue… et toujours vivante. »",
       "Elle lui rappelle sa dette envers l'Arbre-Soleil et envers elle, et touche son œil : « mwen ka gade ou, tout le temps ».",
@@ -3231,21 +3140,22 @@
       "Elle leur montre la harpe de chair tirée du corps du Landsknecht vaincu, dont elle lit les échos : Vassago manipule le plan, des ouvertures temporelles anormales apparaissent, plusieurs plans convergent.",
       "Elle envoie Philippa chercher la Première Flamme à Pyrrah : « Tu dois le rallumer. » Nolbrim diagnostique de son côté qu'il faut un Hexacore à Jane.",
       "Elle achève Horizon Brûlée de Philippa : « Un petit souffle de vie, pour que tu puisses l'invoquer quand tu le souhaites. »",
-      "Elle donne à chacun une tenue du désert et téléporte le groupe à l'orée du désert au sud de Rivegard. Elle dit avoir un rendez-vous à Kazad Marunn.",
-      "À Kazad Marunn, les habitants murmurent le nom d'Ereshkigal sur son passage et Ashur, vieil ami, la reconnaît. Elle réveille la Clé d'Anachronie d'un souffle.",
-      "Ginko Noshi-Buru, une femme à la peau violette, l'attend avec hostilité dans une ruelle. Un djinn d'eau les sépare et elles disparaissent en duel.",
+      "Elle donne à chacun une tenue du désert et téléporte le groupe à l'orée du désert, au sud de Rivegard. Elle dit avoir un rendez-vous à Khazad Marunn.",
+      "À Khazad Marunn, des habitants murmurent le nom d'Ereshkigal en la voyant passer, sans oser approcher. Ashur affirme la connaître depuis qu'il est enfant, et s'étonne qu'il ait vieilli et pas elle. Elle réveille la Clé d'Anachronie d'un souffle et prévient que son usage est un aller simple jusqu'à la résolution du donjon.",
+      "Dans une ruelle, Ginko Noshi-Buru, une femme à la peau violette, l'attend avec hostilité. Gran Brijit semble lui vouloir quelque chose. Un djinn d'eau les sépare et les deux femmes disparaissent en duel.",
       "Elle accueille le groupe de retour avec l'Hexacore. Nolbrim s'en saisit, et elle observe longuement Philippa. Dans la clairière, elle trace le cercle du rituel de Jane et la ramène à la vie après chacune de ses six morts.",
       "Dans sa hutte, elle propose à Olyssane, qui cherche la rédemption, un échange : un œil et un serment contre un fragment de son essence et un chemin vers la rédemption. Elle arrache l'œil d'Olyssane et grave de runes le fond de l'orbite.",
       "Elle trace dans la clairière un immense cercle d'où surgit un Astral Dreadnaught, qui avale le groupe pour le transporter dans le Plan du Feu. Elle regarde le combat depuis sa terrasse, un verre à la main.",
       "À Pyrrah, Philippa refuse de prendre la Première Flamme. De retour dans la clairière, l'Arbre-Soleil, qui refuse ce rejet, explose en onde de feu. La hutte de Gran Brijit brûle, le Héraut de la Flamme surgit et le groupe l'affronte. Nolbrim tombe ensuite dans le coma.",
-      "À Cap Cornes, elle reçoit le groupe dans son manoir. Philippa y a une vision d'une balance désaxée et Olyssane ouvre le passage en faisant couler son sang. Elle parle à un vieux monsieur que le groupe interrompt : « l'équilibre doit être préservé ».",
+      "À Cap Cornes, elle reçoit le groupe dans son manoir. Philippa y a une vision d'une balance désaxée et Olyssane ouvre le passage en faisant couler son sang. Elle dit que chaque création de Mélora est un cadeau que celle-ci lui envoie. Elle parle à un vieux monsieur inconnu que le groupe interrompt : « l'équilibre doit être préservé ».",
       "Le groupe réveille Nolbrim en le tuant puis en le ressuscitant avec la potion d'Ursinus.",
       "Elle nomme Philippa sa championne et lui confie deux missions : ne pas ouvrir de portail entre Cap Cornes et Havre Noir, et trouver puis tuer Oren Sidaï à Roshen Buru.",
       "Avant d'arriver à Roshen Buru, pendant un feu de camp, elle ouvre un portail pour Nolbrim et attire Jane dans son laboratoire. Elle décapite Bourpif, recueille son âme, la purifie et la tend à Nolbrim, qui arrache l'exosquelette de Jane.",
-      "Au Temple du Tenraku, elle surgit après l'explosion d'Absalom et réclame le parchemin, que Jane lui remet. Elle menace la Gardienne Anaru, qui recule.",
+      "Au Temple du Tenraku, elle surgit après l'explosion d'Absalom et réclame le parchemin, que Jane lui remet et qu'elle emporte. Elle menace la Gardienne Anaru, qui recule.",
       "Elle explique que les dieux ne peuvent pas frapper en personne : le groupe sera l'instrument de sa main.",
       "Avec la Gardienne, elle retient le toit du temple pour protéger ceux du temple et ceux d'en bas. Carnage se forme, et le groupe le vainc."
     ],
+    "histoire": [],
     "relations": [
       {
         "cible": "anaru-miren-buru",
@@ -3289,22 +3199,18 @@
     "parent": "temple-du-tenraku",
     "lieu": "temple-du-tenraku",
     "statut": "vaincu",
-    "resume": "Masse informe de dizaines de cadavres soudés, née d'une bille de lumière tombée sur un corps du Temple écroulé.",
+    "resume": "Masse de cadavres soudés, née au Temple du Tenraku.",
     "connu": [
-      "Le rire de Vassago retentit quand la bille tombe.",
-      "Le groupe la vainc. Harfang se retrouve alors aux pieds de la Gardienne, qui se tourne vers lui pour parler.",
-      "Le groupe l'affronte après la destruction du sommet du temple.",
-      "Le corps frappé se convulse, se jette sur un deuxième, puis les deux roulent vers un troisième, jusqu'à former une masse agglomérée.",
+      "Une bille de lumière tombe du plafond du Temple du Tenraku et s'incarne dans un cadavre. Le rire de Vassago retentit.",
+      "Le corps frappé se convulse, se jette sur un deuxième, puis les deux roulent vers un troisième, jusqu'à absorber tous les morts du temple en une masse agglomérée de dizaines de cadavres.",
+      "Le groupe l'affronte après la destruction du sommet du temple et la vainc. Harfang se retrouve alors aux pieds de la Gardienne, qui se tourne vers lui pour parler.",
       "Gran Brijit présente ce combat comme la force qu'elle ne peut déchaîner en personne : le groupe doit être l'instrument de sa main."
     ],
     "question": "Qui est Carnage, et qu'est devenue la foule du temple ?",
     "img": "img/pnj/carnage.webp",
     "attitude": "ennemi",
     "teinte": "#753c19",
-    "histoire": [
-      "Une bille de lumière tombe du plafond du Temple du Tenraku et s'incarne dans un cadavre, puis dans un autre, jusqu'à absorber tous les morts du temple. Le rire de Vassago retentit.",
-      "Le groupe affronte et bat Carnage."
-    ]
+    "histoire": []
   },
   {
     "id": "domaine-tsuren",
@@ -3336,11 +3242,12 @@
     "nom": "Les ascenseurs géants",
     "titre": "Seul accès au quartier noble",
     "parent": "roshen-buru",
-    "resume": "Trois cabines plus grandes qu'une maison, tirées par des roues de pierre et de bois, au nord-ouest, au nord-est et au sud du Pillier.",
+    "resume": "Trois cabines, au nord-ouest, au nord-est et au sud du Pillier.",
     "connu": [
       "Des gardes filtrent la montée : laissez-passer, convocation ou nom de clan.",
       "Le nom Tsuren de Harfang suffit à couvrir ses compagnes.",
-      "Depuis la cabine, on voit les quartiers bas bien plus denses qu'ils n'en ont l'air."
+      "Depuis la cabine, on voit les quartiers bas bien plus denses qu'ils n'en ont l'air.",
+      "Le groupe emprunte l'ascenseur pour monter au deuxième palier. Meshi y vend les billets."
     ],
     "pos": {
       "x": 0.394,
@@ -3359,9 +3266,7 @@
         "legende": "Les ascenseurs, la cabine"
       }
     ],
-    "histoire": [
-      "Le groupe emprunte l'ascenseur pour monter au deuxième palier. Meshi y vend les billets."
-    ]
+    "histoire": []
   },
   {
     "id": "academie-tenraku",
@@ -3369,7 +3274,7 @@
     "nom": "L'Académie Tenraku",
     "titre": "Cour d'entraînement des jeunes Mirenai",
     "parent": "roshen-buru",
-    "resume": "Grande cour de terre battue ceinte de bâtiments bas, pieds nus et bois contre bois, une trentaine d'élèves.",
+    "resume": "Une trentaine de jeunes Mirenai s'y entraînent.",
     "carte": "ville",
     "zoom": 0.12,
     "chapeau": "L'Académie occupe tout l'angle sud-ouest de la ville, contre les murailles, un des rares endroits de Roshen Buru où l'on a laissé de la place. Une cour immense en terre battue, entourée de bâtiments bas. Le bruit est constant : pieds nus sur le sol, cris courts, bois qui frappe du bois. Ça sent la sueur, la poussière et le thé refroidi.",
@@ -3394,11 +3299,10 @@
     "statut": "vivant",
     "resume": "Vieil instructeur calme et économe de l'Académie Tenraku. Il laisse passer trois erreurs, en corrige une, et retourne à son silence.",
     "connu": [
-      "Rysei s'entraîne seule deux ou trois fois par semaine, à une force qui dépasse déjà son enseignement.",
-      "Il demande à Harfang comment se passe la cohabitation avec Stryge.",
-      "L'Académie occupe l'angle sud-ouest de la ville, contre les murailles : une immense cour de terre battue, une trentaine d'élèves, une odeur de sueur, de poussière et de thé refroidi.",
       "Il finit sa série avant de saluer Harfang. Il se demande sincèrement si la nouvelle génération est bête ou si c'est lui qui vieillit.",
-      "Il ne sait rien de l'enquête. Il affirme que Rysei est si forte qu'il n'a plus rien à lui apprendre et se contente de la regarder depuis deux ans."
+      "Il demande à Harfang comment se passe la cohabitation avec Stryge.",
+      "Rysei s'entraîne seule deux ou trois fois par semaine, à une force qui dépasse déjà son enseignement. Il affirme qu'il n'a plus rien à lui apprendre et se contente de la regarder depuis deux ans.",
+      "Il ne sait rien de l'enquête."
     ],
     "citation": {
       "texte": "Rien de neuf ici. Ils arrivent, ils sont mauvais, on les corrige, ils repartent, et on recommence l'année suivante avec les mêmes gestes.",
@@ -3429,7 +3333,7 @@
     "nom": "Le temple de Mélora Sylvestre",
     "titre": "Temple ouvert à la végétation",
     "parent": "roshen-buru",
-    "resume": "Temple sans porte, mousse sur les colonnes, racines qui soulèvent les dalles et eau qui court sous les pierres.",
+    "resume": "Temple sans porte dédié à Mélora Sylvestre.",
     "connu": [
       "Les fidèles s'y assoient sans rien dire, et personne ne les dérange."
     ],
@@ -3458,16 +3362,14 @@
     "parent": "temple-de-melora",
     "lieu": "temple-de-melora",
     "statut": "vivant",
-    "resume": "Prêtre de Mélora Sylvestre, ami d'enfance de Harfang. Il croit sincèrement que son temple est protégé et qu'aucun mal ne peut y entrer.",
+    "resume": "Prêtre de Mélora Sylvestre, ami d'enfance de Harfang.",
     "connu": [
-      "Il n'a rien vu et jure que le temple est protégé.",
-      "Son temple est au sud de la ville basse, adossé aux murailles, ouvert sur trois côtés, mousse sur les colonnes et racines qui soulèvent les dalles. On entend l'eau courir sous le sol.",
+      "Il n'a rien vu et jure que le temple est protégé et qu'aucun mal ne peut y entrer.",
+      "Son temple est au sud de la ville basse, ouvert sur trois côtés ; on entend l'eau courir sous le sol.",
       "Il taille un rosier en tablier, les mains dans la terre. Il propose de bénir tout le monde, tout le temps.",
-      "Il célèbre le premier mariage de Konya et Ayano, celui qui sera interrompu."
+      "Il célèbre la première cérémonie de mariage de Konya et Ayano, celle de la salle des fêtes, interrompue par la nuée de phalènes."
     ],
-    "histoire": [
-      "Il célèbre la première cérémonie de mariage, celle de la salle des fêtes, interrompue par la nuée de phalènes."
-    ],
+    "histoire": [],
     "citation": {
       "texte": "Vous n'avez rien à faire ici si vous n'avez rien à donner, mais vous pouvez rester assises aussi longtemps que vous voulez.",
       "qui": "Takko Halvaki, aux deux femmes"
@@ -3496,9 +3398,9 @@
     "nom": "Le domaine Kovacz",
     "titre": "Un clan qui vend ses biens un à un",
     "parent": "roshen-buru",
-    "resume": "Portail ouvert, jardins mal tenus, pièces froides où des traces claires marquent les objets disparus.",
+    "resume": "Domaine d'un clan en déclin.",
     "connu": [
-      "Un vieux domestique essoufflé s'excuse sans qu'on lui demande rien."
+      "Le groupe se présente au domaine pendant l'enquête sur les lettres de menace et les filles disparues. Un vieux domestique essoufflé lui ouvre et s'excuse sans qu'on lui demande rien."
     ],
     "carte": "palais",
     "zoom": 0.12,
@@ -3513,9 +3415,7 @@
       "x": 0.158,
       "y": 0.028
     },
-    "histoire": [
-      "Le groupe se présente au domaine Kovacz pendant l'enquête sur les lettres de menace et les filles disparues. Un vieux domestique essoufflé lui ouvre."
-    ]
+    "histoire": []
   },
   {
     "id": "salon-anadori",
@@ -3523,7 +3423,7 @@
     "nom": "Le salon Anadori",
     "titre": "Quartier noble",
     "parent": "roshen-buru",
-    "resume": "Salon aux volets clos en plein jour, fumée lourde et deux chiens endormis devant une cheminée éteinte.",
+    "resume": "Pièce où Caspian Anadori reçoit ses visiteurs.",
     "connu": [],
     "carte": "palais",
     "zoom": 0.12,
@@ -3547,15 +3447,14 @@
     "parent": "clan-anadori",
     "lieu": "salon-anadori",
     "statut": "vivant",
-    "resume": "Chef du clan Anadori. Arrogant jusqu'à l'absurde, il ne travaille pas, ne sort pas, fume et méprise. Il fait attendre ses visiteurs.",
+    "resume": "Chef du clan Anadori. Arrogant jusqu'à l'absurde, il ne travaille pas, ne sort pas, fume et méprise.",
     "connu": [
-      "Il jure qu'un Anadori n'épouserait jamais en dessous de son rang, donc n'aurait aucun motif.",
-      "Il charge Rysei Tsuren sans preuve, par pure méchanceté.",
-      "Il ne nomme jamais Darrek Kovacz.",
       "Il fait patienter vingt minutes dans un vestibule vide, puis reçoit dans un salon aux volets fermés en plein jour : fumée épaisse à mi-hauteur, deux chiens endormis devant la cheminée, un fauteuil trop grand pour lui.",
       "Il ne se lève pas et laisse durer le silence pour que chacun comprenne qui décide du moment.",
-      "Il propose un pari sur les épées commandées au clan : survivre une minute pour les emporter. En cas d'échec, il prend une arme du groupe pour l'offrir à son mari.",
-      "Il avoue charger Rysei « pour nuire », sans chercher à rendre service."
+      "Il jure qu'un Anadori n'épouserait jamais en dessous de son rang, donc n'aurait aucun motif.",
+      "Il ne nomme jamais Darrek Kovacz.",
+      "Il charge Rysei Tsuren sans preuve et avoue le faire « pour nuire », sans chercher à rendre service.",
+      "Il propose un pari sur les épées commandées au clan : survivre une minute pour les emporter. En cas d'échec, il prend une arme du groupe pour l'offrir à son mari."
     ],
     "relations": [
       {
@@ -3605,9 +3504,11 @@
     "nom": "La maison Sokabeï",
     "titre": "Marchands de tissus",
     "parent": "roshen-buru",
-    "resume": "Maison propre, cour minuscule où sèche du linge, caisses et lanternes prêtes pour la fête.",
+    "resume": "Maison de la famille de Konya.",
     "connu": [
-      "Une lettre de menace est posée sur la table."
+      "Le groupe s'y rend à la demande de Konya, la veille de son mariage.",
+      "La lettre posée sur la table est une lettre de menace.",
+      "Wano, la mère de Konya, a vu quelqu'un rôder dans la rue."
     ],
     "pos": {
       "x": 0.461,
@@ -3616,10 +3517,7 @@
     "carte": "ville",
     "zoom": 0.12,
     "chapeau": "La maison est dans le quartier des marchands, propre, sans ornement, avec une cour minuscule où sèche du linge. Tout est déjà prêt pour la fête : caisses empilées contre le mur, rouleaux de tissu, lanternes emballées. Sur une table, une lettre que personne n'a touchée depuis qu'elle est arrivée.",
-    "histoire": [
-      "Le groupe s'y rend à la demande de Konya, la veille de son mariage. La lettre de menace est posée sur la table.",
-      "Wano, la mère de Konya, a vu quelqu'un rôder dans la rue."
-    ]
+    "histoire": []
   },
   {
     "id": "kazen-sokabei",
@@ -3659,7 +3557,7 @@
     "parent": "roshen-buru",
     "lieu": "maison-sokabei",
     "statut": "vivant",
-    "resume": "Mère de Konya. Elle coud, écoute et ne dit rien. C'est elle qui a vu quelqu'un rôder dans la rue.",
+    "resume": "Mère de Konya, discrète.",
     "img": "img/pnj/wano-sokabei.webp",
     "relations": [
       {
@@ -3671,7 +3569,8 @@
     ],
     "attitude": "neutre",
     "connu": [
-      "Elle coud dans un coin sans lever les yeux pendant que son fils parle."
+      "Elle coud dans un coin sans lever les yeux pendant que son fils parle, sans rien dire.",
+      "C'est elle qui a vu quelqu'un rôder dans la rue."
     ],
     "teinte": "#753c19"
   },
@@ -3681,7 +3580,7 @@
     "nom": "La maison Kaben",
     "titre": "Famille de la mariée",
     "parent": "roshen-buru",
-    "resume": "Maison où le clan Kaben se referme après l'enlèvement.",
+    "resume": "Maison de la famille d'Ayano, la mariée.",
     "carte": "palais",
     "zoom": 0.12,
     "chapeau": "La maison du clan Kaben, qui se referme sur elle-même depuis l'enlèvement d'Ayano. L'accès y est difficile, et il faut passer par les Sokabeï ou entrer autrement."
@@ -3696,16 +3595,12 @@
     "statut": "vivant",
     "resume": "Père de la mariée, clan de petite noblesse. D'une courtoisie parfaite qui blesse plus qu'un cri.",
     "connu": [
-      "Il humilie poliment Konya devant tous pendant le discours.",
-      "Son clan doit quelque chose aux Urameï, dettes de jeu.",
-      "Pendant le discours, il remercie la famille Sokabeï d'être venue : « Chez nous, mais vous m'avez compris. » Le conflit de classe est posé sans jamais être nommé.",
-      "La présence des Urameï au mariage l'humilie, sans qu'il puisse rien y faire.",
-      "Après l'enlèvement, il répète à Konya, sans élever la voix : « Je ne vous accuse de rien. Mais je vous ai confié ma fille il y a trois heures. »"
-    ],
-    "histoire": [
-      "À la première cérémonie, il humilie poliment Konya devant tout le monde. Après l'enlèvement, il dit à Konya qu'il ne l'accuse de rien, mais lui a confié sa fille.",
+      "Son clan doit quelque chose aux Urameï, dettes de jeu. Leur présence au mariage l'humilie, sans qu'il puisse rien y faire.",
+      "À la première cérémonie, pendant le discours, il humilie poliment Konya devant tous et remercie la famille Sokabeï d'être venue : « Chez nous, mais vous m'avez compris. »",
+      "Après l'enlèvement, il répète à Konya, sans élever la voix : « Je ne vous accuse de rien. Mais je vous ai confié ma fille il y a trois heures. »",
       "Après le sauvetage d'Ayano, il sert lui-même les Sokabeï, ce qu'il n'aurait jamais fait avant."
     ],
+    "histoire": [],
     "citation": {
       "texte": "Je ne vous accuse de rien. Mais je vous ai confié ma fille il y a trois heures. Et elle n'est plus là.",
       "qui": "Doryen Kaben, à Konya, sans élever la voix"
@@ -3765,9 +3660,10 @@
     "nom": "La maison de thé",
     "titre": "Base du groupe à Roshen Buru",
     "parent": "roshen-buru",
-    "resume": "Maison de thé où le groupe loge. On y apprend ce que les domestiques racontent quand ils sont fatigués.",
+    "resume": "On y apprend ce que les domestiques racontent quand ils sont fatigués.",
     "connu": [
-      "Au tableau d'affichage de l'auberge, le groupe lit que la garde est en alerte à cause de la présence d'Absalom, que des filles ont disparu au bordel, qu'un contrebandier manque à l'appel, et que des commerçants font leur publicité."
+      "Le groupe y établit sa base à Roshen Buru.",
+      "Au tableau d'affichage, il lit que la garde est en alerte à cause de la présence d'Absalom, que des filles ont disparu au bordel, qu'un contrebandier manque à l'appel, et que des commerçants font leur publicité."
     ],
     "pos": {
       "x": 0.469,
@@ -3781,9 +3677,7 @@
       "note": "Craie posée par Philippa dans le salon de thé de Roshen Buru."
     },
     "chapeau": "La porte coulisse sur une odeur de feuilles brûlées et de bois humide. Il fait sombre, d'une pénombre chaude : les lanternes sont basses, la lumière rampe au sol, et le plafond noirci de fumée retient les voix. Derrière le comptoir, un homme massif essuie une tasse sans lever les yeux. Le thé coûte trois pièces, une chambre quinze, et on ne pose pas de questions sur les autres.",
-    "histoire": [
-      "Le groupe y établit sa base à Roshen Buru. Il y lit le tableau d'affichage : filles disparues, contrebandier manquant, patrouilles renforcées, et réclames des marchands."
-    ]
+    "histoire": []
   },
   {
     "id": "hoshka",
@@ -3793,14 +3687,13 @@
     "parent": "roshen-buru",
     "lieu": "maison-de-the",
     "statut": "vivant",
-    "resume": "Patron massif de la maison de thé, base du groupe à Roshen Buru. Ancien, lourd, économe de ses mots, il ne juge personne et ne raconte rien gratuitement.",
+    "resume": "Patron de la maison de thé, ancien, lourd, économe de ses mots. Il ne juge personne et ne raconte rien gratuitement.",
     "connu": [
-      "Il tient la maison de thé avec Orissa. Il explique aux joueurs que des gens disparaissent en ville depuis plusieurs mois.",
+      "Il tient la maison de thé avec Orisa. Il essuie la même tasse sans lever les yeux, le geste répété jusqu'à l'usure. Le thé coûte trois pièces, la chambre quinze, payables d'avance.",
+      "À leur retour en ville, le groupe s'installe chez lui. Il explique que des gens disparaissent en ville depuis plusieurs mois. Le groupe mange, puis fait le point sur la façon de retrouver Absalom.",
       "À l'entrée, un panneau signale des patrouilles et demande de rapporter à la garde tout étranger ou comportement inhabituel.",
-      "Les Kovacz déclinent et le fils est un problème connu.",
-      "Un homme massif qui essuie la même tasse sans lever les yeux, le geste répété jusqu'à l'usure. Le thé coûte trois pièces, la chambre quinze, payables d'avance.",
       "Il connaît la ville par les gens qui y dorment. Sa clientèle est surtout de passage, et il renvoie vers les domestiques et ceux qui travaillent pour les clans ou pour le Magistrat.",
-      "Pour les rumeurs sur les clans, il faut payer ou obtenir sa confiance : les Kovacz déclinent, les Urameï tiennent le bas quartier, les Anadori se battent partout en ville.",
+      "Pour les rumeurs sur les clans, il faut payer ou obtenir sa confiance : les Kovacz déclinent et le fils est un problème connu, les Urameï tiennent le bas quartier, les Anadori se battent partout en ville.",
       "Dans la salle, un client au fond ne boit pas et regarde. Il part quand on le remarque, sans suite."
     ],
     "citation": {
@@ -3817,9 +3710,7 @@
       }
     ],
     "attitude": "neutre",
-    "histoire": [
-      "À leur retour en ville, le groupe s'installe dans sa maison de thé. Hoshka explique qu'il y a des disparitions depuis plusieurs mois. Le groupe mange, puis fait le point sur la façon de retrouver Absalom."
-    ],
+    "histoire": [],
     "teinte": "#753c19"
   },
   {
@@ -3830,11 +3721,10 @@
     "parent": "roshen-buru",
     "lieu": "maison-de-the",
     "statut": "vivant",
-    "resume": "Jeune serveuse de la maison de thé, pieds nus sur le bois ciré. Elle entend tout et parle plus volontiers que Hoshka, mais redoute les ennuis.",
+    "resume": "Jeune serveuse, pieds nus sur le bois ciré. Elle entend tout et parle plus volontiers que Hoshka, mais redoute les ennuis.",
     "connu": [
-      "Le mariage Sokabeï-Kaben fait jaser, scandaleux ou romantique selon la table.",
-      "Elle circule entre les tables avec un plateau, silencieuse. On l'interroge plus facilement que son patron, à condition de consommer ou de se montrer aimable.",
-      "Elle raconte que le mariage fait jaser : une fille de noble qui épouse un fils de marchand. Sa mère trouve cela beau, d'autres disent que tout fout le camp."
+      "Elle sert le groupe à son arrivée et circule entre les tables avec un plateau, silencieuse. On l'interroge plus facilement que son patron.",
+      "Elle raconte que le mariage Sokabeï-Kaben fait jaser, scandaleux ou romantique selon la table : une fille de noble qui épouse un fils de marchand. Sa mère trouve cela beau, d'autres disent que tout fout le camp."
     ],
     "citation": {
       "texte": "Vous êtes au sujet du mariage, c'est ça ? Tout le monde en parle. Une fille de noble qui épouse un fils de marchand. Ma mère dit que c'est beau.",
@@ -3843,9 +3733,7 @@
     "img": "img/pnj/orisa.webp",
     "attitude": "neutre",
     "teinte": "#753c19",
-    "histoire": [
-      "Elle sert le groupe à son arrivée au salon de thé, et parle du mariage Sokabeï-Kaben qui fait jaser la ville."
-    ]
+    "histoire": []
   },
   {
     "id": "quartier-des-plaisirs",
@@ -3882,12 +3770,10 @@
     "statut": "vivant",
     "resume": "Tenancière élégante et calculatrice du quartier des plaisirs. Elle vend l'information comme le reste, ne ment pas, mais ne donne que ce qui est payé.",
     "connu": [
-      "Un avis de recherche affiché à l'auberge la montre à la recherche d'Iko, disparue depuis plusieurs semaines.",
-      "Maeko, l'une de ses courtisanes, connaît Darrek, qui ne vient plus depuis des mois.",
       "Elle reçoit en versant elle-même à boire : « Tout se discute, tout se monnaye. » Elle connaît Yurëi et peut orienter vers elle.",
-      "Pour les rumeurs sur les nobles, il faut payer : les Anadori paient bien et se tiennent mal, les Kovacz venaient beaucoup, plus maintenant.",
-      "Plusieurs de ses collaboratrices ont disparu cette dernière année, toutes de celles qui travaillent chez le client. Depuis la disparition d'Ako, plus de visites à domicile, plus de client anonyme, et elle a engagé Venta pour garder la porte. Elle a peu d'espoir de retrouver Ako et les autres.",
-      "Si le calme est troublé, la porte est fermée définitivement et elle prévient les Urameï."
+      "Un avis de recherche affiché à l'auberge la montre à la recherche d'Iko, disparue depuis plusieurs semaines. Plusieurs de ses collaboratrices ont disparu cette dernière année, toutes de celles qui travaillent chez le client. Depuis, plus de visites à domicile, plus de client anonyme, et elle a engagé Venta pour garder la porte. Elle a peu d'espoir de retrouver Iko et les autres. Le groupe l'interroge pendant son enquête.",
+      "Maeko, l'une de ses courtisanes, connaît Darrek, qui ne vient plus depuis des mois.",
+      "Sur les nobles : les Anadori paient bien et se tiennent mal, les Kovacz venaient beaucoup, plus maintenant."
     ],
     "citation": {
       "texte": "Qu'est-ce que vous cherchez ici ? Du plaisir ? Du divertissement ? De l'évasion ? Tout se discute, tout se monaye.",
@@ -3896,9 +3782,7 @@
     "img": "img/pnj/madame-renka.webp",
     "attitude": "neutre",
     "teinte": "#755219",
-    "histoire": [
-      "Elle fait afficher un avis de recherche pour Iko, disparue depuis plusieurs semaines. Elle a fermé les visites à domicile depuis ces disparitions. Le groupe l'interroge pendant son enquête."
-    ]
+    "histoire": []
   },
   {
     "id": "curiosites-maven",
@@ -3944,12 +3828,11 @@
     "attitude": "neutre",
     "connu": [
       "Sa boutique est tout au fond de la ville basse, à l'ouest, la dernière avant les murailles. À l'intérieur, pas de rayons mais des piles d'objets jusqu'au plafond, sans un grain de poussière.",
-      "Il connaît la provenance de tout ce qu'il possède et refuse de vendre à quelqu'un qui ne comprend pas ce qu'il achète. Un intérêt sincère pour un objet le pousse à baisser son prix de lui-même.",
+      "Le groupe y passe pendant la tournée des marchands, mais ne lui achète rien.",
+      "Il connaît la provenance de tout ce qu'il possède et refuse de vendre à quelqu'un qui ne comprend pas ce qu'il achète.",
       "Il parle d'une longue-vue d'émeraude censée montrer les altérations et les mensonges de forme, sans garantir ce pouvoir."
     ],
-    "histoire": [
-      "Le groupe passe dans sa boutique pendant la tournée des marchands, mais ne lui achète rien."
-    ],
+    "histoire": [],
     "teinte": "#753c19"
   },
   {
@@ -3981,7 +3864,7 @@
     "parent": "roshen-buru",
     "lieu": "echoppe-ilvaro",
     "statut": "vivant",
-    "resume": "Marchand de rue ambulant, bavard et jovial, un peu filou sur les prix sans être malhonnête. Il tient la rue plus qu'une boutique.",
+    "resume": "Marchand de rue ambulant, bavard et jovial, un peu filou sur les prix sans être malhonnête.",
     "citation": {
       "texte": "Approchez, approchez ! Vous savez que vous voulez quelque chose, même si vous ne savez pas encore que vous savez vouloir savoir !",
       "qui": "Ilvaro, hélant un passant"
@@ -4009,16 +3892,13 @@
     "parent": "roshen-buru",
     "lieu": "temple-du-tenraku",
     "statut": "vivant",
-    "resume": "Grand Officiant du Temple du Tenraku. Il ne parle pas fort et ne recommence pas : quand il s'exprime, tout le monde se tait.",
+    "resume": "Il ne parle pas fort et ne recommence pas : quand il s'exprime, tout le monde se tait.",
     "connu": [
-      "Aucune union n'avait été bénie sous cette voûte depuis que la pierre fut ouverte.",
       "Le temple est taillé dans le sommet du Pillier : une salle immense et presque vide, une colonne de lumière blanche tombant d'une ouverture au plafond, la jarre Miren scellée sur un socle et le parchemin au fond.",
-      "Il célèbre l'union de Konya et Ayano : « Ce que vous venez faire ici, aucune main ne le défera. Ce sera une racine. »"
-    ],
-    "histoire": [
-      "Il officie la seconde cérémonie de mariage, au Temple du Tenraku, où aucune union n'avait jamais été bénie.",
+      "Aucune union n'avait été bénie sous cette voûte depuis que la pierre fut ouverte. Il officie la seconde cérémonie de mariage de Konya et Ayano : « Ce que vous venez faire ici, aucune main ne le défera. Ce sera une racine. »",
       "Quand Absalom brise la jarre Miren, il murmure : « Vous venez de briser un objet vieux de neuf cents ans. »"
     ],
+    "histoire": [],
     "citation": {
       "texte": "Aucune union n'a jamais été bénie sous cette voûte. Aucune, depuis que la pierre fut ouverte.",
       "qui": "Maître Orashay"
@@ -4065,7 +3945,7 @@
     "parent": "roshen-buru",
     "lieu": "roshen-buru",
     "statut": "vivant",
-    "resume": "Mendiant d'une rue de Roshen Buru, idiot et à moitié fou en surface. Il est en réalité un indic fin et observateur de Harfang.",
+    "resume": "Mendiant d'une rue de Roshen Buru, idiot et à moitié fou en surface, indic de Harfang.",
     "citation": {
       "texte": "Une pièce, braves gens, une pièce pour le vieux Doku... pitié pour un pauvre homme qui n'a plus rien...",
       "qui": "Doku, mendiant"
@@ -4074,7 +3954,7 @@
     "attitude": "neutre",
     "connu": [
       "Assis dans la poussière, une sébile ébréchée devant lui, il marmonne des bribes que personne n'écoute. Sous son feutre crasseux, deux yeux vifs suivent chaque bourse trop lourde.",
-      "Il ne parle vraiment que si Harfang se signale. Il a compté quatre filles disparues et dit que Renka a fermé le robinet des visites à domicile.",
+      "Il ne se confie vraiment qu'à Harfang. Il a compté quatre filles disparues et dit que Renka a fermé le robinet des visites à domicile.",
       "Il affirme que celui qui ramènera Tobiya à Yurëi aura une dette qui vaut de l'or, et refuse de parler de la Protectrice."
     ],
     "teinte": "#753c19"
@@ -4087,16 +3967,13 @@
     "parent": "clan-kovacz",
     "lieu": "planque-darrek",
     "statut": "vaincu",
-    "resume": "Homme de main de Darrek, de garde devant la planque. Sous son bandage, aucune blessure : un homme ordinaire aux anneaux d'oreille.",
+    "resume": "Homme de main de Darrek, un homme ordinaire aux anneaux d'oreille.",
     "connu": [
-      "La planque est achetée à son nom, payée comptant il y a quatre ans.",
-      "Yurëi le connaît comme l'acheteur régulier.",
-      "Il attend assis sur une caisse au fond d'une ruelle étroite. Il se lève sans se presser, prend une masse d'hast, retire son bandage en le roulant autour de sa main.",
+      "Il garde la planque de Darrek, achetée à son nom et payée comptant il y a quatre ans. Yurëi le connaît comme l'acheteur régulier.",
+      "Le groupe ne le croise pas devant la porte : il attend assis sur une caisse au fond d'une ruelle étroite. Il se lève sans se presser, prend une masse d'hast, retire son bandage en le roulant autour de sa main. Dessous, aucune blessure.",
       "Il refuse de négocier : « On me paye. Vous, vous me payez pas. »"
     ],
-    "histoire": [
-      "Il garde la planque de Darrek. Le groupe ne le croise pas devant la porte."
-    ],
+    "histoire": [],
     "citation": {
       "texte": "Je pourrai faire un super discours, mais je vais pas le faire. On me paye. Vous, vous me payez pas. C'est pour ça que je vais vous casser les jambes.",
       "qui": "Bruska, si les joueurs tentent de négocier"
@@ -4164,7 +4041,7 @@
     "parent": "roshen-buru",
     "lieu": "pavillon-mariage",
     "statut": "vivant",
-    "resume": "Ivrogne du bas quartier qui tente d'entrer au mariage pour boire à l'œil. Fausse alerte.",
+    "resume": "Ivrogne du bas quartier qui tente d'entrer au mariage pour boire à l'œil.",
     "citation": {
       "texte": "Non mais attendez. Attendez. Attendez deux secondes. Je vous dis que je suis invité. Enfin je suis pas invité invité, mais je connais le père.",
       "qui": "Otta, à la porte du pavillon"
@@ -4207,7 +4084,7 @@
     "parent": "clan-siharen",
     "lieu": "domaine-siharen",
     "statut": "vivant",
-    "resume": "Chef du clan Siharen. Figé sur son estrade, casque ailé et visage lisse comme de la cire, il ne dit pas un mot.",
+    "resume": "Chef du clan Siharen, figé sur son estrade, il ne dit pas un mot.",
     "galerie": [
       {
         "img": "img/paysages/roshen-buru/palais-siharen.webp",
@@ -4217,7 +4094,7 @@
     "img": "img/pnj/maitre-siharen.webp",
     "attitude": "neutre",
     "connu": [
-      "Il porte soie et métal précieux. On ne voit pas ses yeux sous le heaume, ni un cil ni un souffle. L'audience n'est accordée que si Harfang joue de son rang et de son galon."
+      "Il porte soie et métal précieux, casque ailé et visage lisse comme de la cire. On ne voit pas ses yeux sous le heaume, ni un cil ni un souffle. Harfang n'obtient l'audience qu'en jouant de son rang et de son galon."
     ],
     "teinte": "#753c19"
   },
@@ -4229,7 +4106,7 @@
     "parent": "clan-siharen",
     "lieu": "clan-siharen",
     "statut": "vivant",
-    "resume": "Voix du clan Siharen. Épouse effacée en apparence, elle mène l'audience d'un ton autoritaire et parle toujours au « nous ».",
+    "resume": "Voix du clan Siharen, épouse de Maître Siharen. Elle parle toujours au « nous ».",
     "galerie": [
       {
         "img": "img/paysages/roshen-buru/palais-siharen.webp",
@@ -4247,8 +4124,8 @@
     ],
     "attitude": "neutre",
     "connu": [
-      "Elle se tient en retrait derrière son époux, tête inclinée, mais c'est elle qui lève le menton quand on entre et qui décide.",
-      "Si on insiste ou manque d'égards, elle avertit que le clan a congédié des hommes plus titrés avec moins de patience."
+      "Elle se tient en retrait derrière son époux, tête inclinée, mais c'est elle qui lève le menton quand on entre et qui mène l'audience d'un ton autoritaire.",
+      "Elle avertit que le clan a congédié des hommes plus titrés avec moins de patience."
     ],
     "citation": {
       "texte": "Approchez. Nous vous recevons. Soyez bref.",
@@ -4262,18 +4139,16 @@
     "nom": "Le clan Kaben",
     "titre": "Petite noblesse de Roshen Buru",
     "parent": "roshen-buru",
-    "resume": "Famille de la mariée Ayano. Elle semble avoir des dettes de jeu envers les Urameï.",
+    "resume": "Famille de la mariée Ayano, qui semble avoir des dettes de jeu envers les Urameï.",
     "connu": [
-      "Doryen Kaben, père d'Ayano, a humilié Konya devant tout le monde pendant le discours."
+      "Au mariage, Doryen Kaben, père d'Ayano, humilie Konya devant tout le monde pendant le discours.",
+      "Ayano est ensuite enlevée par un Miren. Le groupe la délivre."
     ],
     "alias": [
       "Kaben",
       "Les Kaben"
     ],
-    "histoire": [
-      "Au mariage, Doryen Kaben, père d'Ayano, humilie Konya devant tout le monde pendant le discours.",
-      "Ayano est ensuite enlevée par un Miren. Le groupe la délivre."
-    ]
+    "histoire": []
   },
   {
     "id": "velsha",
@@ -4295,7 +4170,7 @@
     ],
     "attitude": "neutre",
     "connu": [
-      "Elle travaille pour Madame Renka avec Lysha et Maeko, dans la maison éclairée de rouge au bout de la ruelle."
+      "Elle travaille pour Madame Renka avec Lysha et Maeko, dans la maison éclairée de vert au bout de la ruelle."
     ],
     "teinte": "#752519"
   },
@@ -4319,7 +4194,7 @@
     ],
     "attitude": "neutre",
     "connu": [
-      "Elle travaille pour Madame Renka avec Velsha et Maeko, dans la maison éclairée de rouge au bout de la ruelle."
+      "Elle travaille pour Madame Renka avec Velsha et Maeko, dans la maison éclairée de vert au bout de la ruelle."
     ],
     "teinte": "#755219"
   },
@@ -4385,7 +4260,7 @@
     "parent": "quartier-des-plaisirs",
     "lieu": "quartier-des-plaisirs",
     "statut": "vivant",
-    "resume": "Homme de main engagé par Renka après les disparitions. Planté devant la maison éclairée de vert, il fouille, désarme et ne discute pas.",
+    "resume": "Homme de main de Renka, planté devant la maison éclairée de vert. Il fouille, désarme et ne discute pas.",
     "img": "img/pnj/venta.webp",
     "relations": [
       {
@@ -4397,8 +4272,7 @@
     ],
     "attitude": "neutre",
     "connu": [
-      "Il n'a pas bougé de la soirée. Personne d'armé n'entre.",
-      "Il a été embauché après les disparitions de courtisanes, pour aider sur site."
+      "Il a été embauché après les disparitions de courtisanes, pour aider sur site. Il n'a pas bougé de la soirée : personne d'armé n'entre."
     ],
     "teinte": "#753c19"
   },
@@ -4410,13 +4284,14 @@
     "parent": "roshen-buru",
     "lieu": "roshen-buru",
     "statut": "vivant",
-    "resume": "Femme voilée, mince et droite, installée près du temple depuis peu. Elle ne reçoit pas, ne sort qu'à la nuit tombée, et brandit le nom de son mari, le magistrat Sabō de Seiran Vale.",
+    "resume": "Femme voilée, mince et droite, installée près du temple depuis peu. Elle ne reçoit pas et ne sort qu'à la nuit tombée.",
     "connu": [
-      "Ce n'est pas Absalom : l'enquête sur la femme en noir n'a rien révélé d'infernal.",
+      "Le groupe apprend par une rumeur qu'une femme en noir vit près de la cathédrale et frappe à sa porte. Elle ressemble à Absalom, mais l'enquête n'a rien révélé d'infernal chez elle.",
+      "Elle est l'épouse du magistrat Sabō de Seiran Vale, a fui son foyer et cherche à refaire sa vie à Roshen Buru. Elle se dit encore mariée à Sabō et affirme qu'il peut le faire payer.",
       "Sa maison est au fond d'une impasse, volets tirés en plein jour, un cerisier mort dans la cour. Son voile ne se lève jamais tout à fait.",
       "Elle refuse d'entrer en conversation : « Je ne reçois pas. Vous vous êtes trompés de porte. »",
       "Elle écarte les questions sur son identité : « J'ai payé ma tranquillité, je compte en profiter. »",
-      "Si on la presse, la peur affleure : elle se dit encore mariée à Sabō et affirme qu'il peut le faire payer."
+      "Elle paraît relativement détestable."
     ],
     "citation": {
       "texte": "Je ne reçois pas. Vous vous êtes trompés de porte.",
@@ -4425,9 +4300,7 @@
     "img": "img/pnj/muji.webp",
     "relations": [],
     "attitude": "neutre",
-    "histoire": [
-      "Le groupe apprend par une rumeur qu'une femme en noir vit près de la cathédrale et frappe à sa porte. Elle ressemble à Absalom mais n'est pas Absalom : elle est l'épouse du magistrat Sabo de Seiran Vale, a fui son foyer et cherche à refaire sa vie à Roshen Buru. Elle paraît relativement détestable."
-    ],
+    "histoire": [],
     "teinte": "#753c19"
   },
   {
@@ -4438,7 +4311,7 @@
     "parent": "roshen-buru",
     "lieu": "roshen-buru",
     "statut": "vivant",
-    "resume": "Passante bavarde, ancienne aubergiste, simple et prudente. Elle a indiqué au groupe la dame en noir derrière le temple.",
+    "resume": "Passante bavarde, ancienne aubergiste, simple et prudente.",
     "citation": {
       "texte": "Absalom, Absalom... connais pas le nom. Mais si vous cherchez louche, y a la dame en noir, derrière le temple.",
       "qui": "Nusei, la passante"
@@ -4454,12 +4327,10 @@
     ],
     "attitude": "neutre",
     "connu": [
-      "Elle ne connaît pas le nom d'Absalom, mais signale la dame en noir arrivée récemment, juste à côté du sanctuaire. Elle conclut : « Moi j'dis ça, j'dis rien. »"
+      "Interrogée par le groupe sur une femme en noir, elle ne connaît pas le nom d'Absalom, mais l'oriente vers une dame arrivée récemment, derrière le temple, juste à côté du sanctuaire. Elle conclut : « Moi j'dis ça, j'dis rien. »"
     ],
     "teinte": "#755219",
-    "histoire": [
-      "Interrogée par le groupe sur une femme en noir, elle l'oriente vers une dame arrivée récemment, derrière le temple."
-    ]
+    "histoire": []
   },
   {
     "id": "boutique-de-soko",
@@ -4475,7 +4346,8 @@
         "legende": "La boutique de Soko"
       }
     ],
-    "histoire": [
+    "histoire": [],
+    "connu": [
       "Le groupe y entre juste après le départ de deux gardes qui accusaient Soko. Philippa y achète un shamisen."
     ]
   },
@@ -4483,16 +4355,17 @@
     "id": "soko",
     "type": "pnj",
     "nom": "Soko",
-    "titre": "Strider, vendeuse d'instruments",
+    "titre": "Drider, vendeuse d'instruments",
     "parent": "boutique-de-soko",
     "lieu": "boutique-de-soko",
     "statut": "vivant",
-    "resume": "Strider qui attend au plafond de sa boutique, un shamisen entre les mains. Courtoise et économe de mots, elle parle d'elle à la troisième personne.",
+    "resume": "Elle attend au plafond de sa boutique, un shamisen entre les mains. Courtoise et économe de mots.",
     "connu": [
-      "Des gardes ont soupçonné ses toiles d'araignée, à tort selon elle.",
+      "Soko est une Drider, ce qui surprend Philippa hors de l'Underdark. Elle parle d'elle à la troisième personne.",
       "Sa boutique est en sous-sol, longue et basse, tapissée d'instruments suspendus et de fils presque invisibles tendus d'une poutre à l'autre. Une corde vibre toute seule pour signaler sa présence.",
+      "Au moment où le groupe entre, deux gardes en sortent : ils la soupçonnent des toiles d'araignée vues partout et des disparitions. Elle est innocente, ne sait rien de ce qui se passe en ville et nie faire disparaître des gens.",
       "Elle est née en ville et a grandi cachée, dans une cave puis un grenier, à écouter les musiciens de la rue, car les gens l'attaquaient. Aujourd'hui elle peut se défendre et vivre de sa passion.",
-      "Elle ne sait rien de ce qui se passe en ville et nie faire disparaître des gens. Les gardes l'ont soupçonnée à cause des toiles d'araignée vues partout."
+      "Philippa lui achète un shamisen et lui souhaite bon courage."
     ],
     "citation": {
       "texte": "Des visiteurs dans ma boutique. Des égarés, ou des musiciens ? Soko se demande.",
@@ -4506,10 +4379,7 @@
     ],
     "img": "img/pnj/soko.webp",
     "attitude": "neutre",
-    "histoire": [
-      "Au moment où le groupe entre dans sa boutique, deux gardes en sortent : ils la soupçonnent des toiles d'araignée et des disparitions. Elle est innocente.",
-      "Soko est une Drider, ce qui surprend Philippa hors de l'Underdark. Elle parle d'elle à la troisième personne, s'est cachée toute sa vie et vit aujourd'hui de sa passion. Philippa lui achète un shamisen et lui souhaite bon courage."
-    ],
+    "histoire": [],
     "teinte": "#752519"
   },
   {
@@ -4545,7 +4415,7 @@
     "parent": "ascenseurs",
     "lieu": "ascenseurs",
     "statut": "vivant",
-    "resume": "Garde d'ascenseur qui filtre l'accès au quartier noble. Sans laissez-passer, convocation ou nom de clan, on ne monte pas.",
+    "resume": "Garde d'ascenseur qui filtre les montées.",
     "citation": {
       "texte": "Vous avez de quoi justifier ? Je vous demande pas ça pour vous embêter. C'est juste que s'il y a un souci là-haut, c'est moi qui saute.",
       "qui": "Meshi, le garde d'ascenseur, sans agressivité"
@@ -4559,14 +4429,13 @@
     "img": "img/pnj/meshi.webp",
     "attitude": "neutre",
     "connu": [
-      "Trois ascenseurs desservent la ville : un au nord-ouest, un au nord-est, un au sud. C'est le seul accès au quartier noble et au palais.",
+      "Trois ascenseurs desservent la ville : un au nord-ouest, un au nord-est, un au sud. C'est le seul accès au quartier noble et au palais. Sans laissez-passer, convocation ou nom de clan, on ne monte pas.",
+      "Il vend les billets d'ascenseur pour monter au deuxième palier. Le groupe y monte pour voir les clans.",
       "Il ne cherche pas à embêter : si un souci survient là-haut, c'est lui qui saute. Un nom, un sceau ou une convocation suffisent.",
-      "Si Harfang se présente comme Tsuren, il monte. Ses compagnes aussi, à condition qu'il réponde d'elles : le garde note son nom."
+      "Harfang monte en se présentant comme Tsuren. Ses compagnes montent avec lui, le garde note son nom et Harfang répond d'elles."
     ],
     "teinte": "#752519",
-    "histoire": [
-      "Il vend les billets d'ascenseur pour monter au deuxième palier. Le groupe y monte pour voir les clans."
-    ]
+    "histoire": []
   },
   {
     "id": "vosko",
@@ -4576,7 +4445,7 @@
     "parent": "domaine-kovacz",
     "lieu": "domaine-kovacz",
     "statut": "vivant",
-    "resume": "Domestique essoufflé qui ouvre les portes du domaine.",
+    "resume": "Domestique essoufflé.",
     "galerie": [
       {
         "img": "img/paysages/roshen-buru/palais-kovacz.webp",
@@ -4592,7 +4461,8 @@
       }
     ],
     "attitude": "neutre",
-    "histoire": [
+    "histoire": [],
+    "connu": [
       "Il ouvre les portes du domaine Kovacz au groupe, en s'excusant sans qu'on lui demande rien."
     ]
   },
@@ -4624,12 +4494,10 @@
     ],
     "attitude": "neutre",
     "connu": [
-      "Elle a vu Tobiya passer devant son étal trois jours avant, pâle, marchant de travers, parlant tout seul. Il a refusé le bao gratuit qu'elle lui tendait, et elle a su que quelque chose clochait."
+      "Interrogée pendant l'enquête sur la disparition de Tobiya, elle dit l'avoir vu passer devant son étal trois jours plus tôt, pâle, marchant de travers, parlant tout seul. Il a refusé le bao gratuit qu'elle lui tendait, et elle a su que quelque chose clochait."
     ],
     "teinte": "#753c19",
-    "histoire": [
-      "En enquêtant sur la disparition de Tobiya, le groupe l'interroge. Elle a vu Tobiya passer devant son étal trois jours plus tôt, pâle, marchant de travers, parlant tout seul, et refuser un bao gratuit."
-    ]
+    "histoire": []
   },
   {
     "id": "bhamir",
@@ -4656,12 +4524,10 @@
     ],
     "attitude": "neutre",
     "connu": [
-      "Il se souvient d'une odeur âcre et chimique, aucune senteur ne la couvrait, qui flottait depuis une semaine autour de la maison de Tobiya et remontait des égouts."
+      "Interrogé pendant l'enquête sur la disparition de Tobiya, il se souvient d'une odeur âcre et chimique, qu'aucune senteur ne couvrait, qui flottait depuis une semaine autour de la maison de Tobiya et remontait des égouts."
     ],
     "teinte": "#753c19",
-    "histoire": [
-      "En enquêtant sur la disparition de Tobiya, le groupe l'interroge. Il se souvient d'une odeur âcre et chimique qui flottait depuis une semaine autour de la maison de Tobiya et remontait des égouts."
-    ]
+    "histoire": []
   },
   {
     "id": "poki",
@@ -4688,12 +4554,10 @@
     ],
     "attitude": "neutre",
     "connu": [
-      "Il signale qu'une odeur infâme s'échappe de la maison de Tobiya depuis quelques semaines. Il prend lui-même un bain par mois."
+      "Interrogé pendant l'enquête sur la disparition de Tobiya, il signale qu'une odeur infâme s'échappe de la maison de Tobiya depuis quelques semaines. Il prend lui-même un bain par mois."
     ],
     "teinte": "#753c19",
-    "histoire": [
-      "En enquêtant sur la disparition de Tobiya, le groupe l'interroge. Il signale une odeur infâme qui s'échappe de la maison de Tobiya depuis quelques semaines."
-    ]
+    "histoire": []
   },
   {
     "id": "bourre-piff",
@@ -4703,13 +4567,14 @@
     "parent": "manoir-des-ligaments",
     "lieu": "manoir-des-ligaments",
     "statut": "mort",
-    "resume": "Mécanique à l'essence arrachée par Gran Brijit devant Jane, pour la purifier.",
+    "resume": "Mécanique à l'essence arrachée, pour la purifier.",
     "alias": [
       "Bourre Pif",
       "Bourre-Pif"
     ],
     "connu": [
-      "!! Gran Brijit l'a tué sur-le-champ dans le laboratoire de Nolbrim, puis a aspiré son âme pour la donner à Nolbrim."
+      "Il suit Gran Brijit dans le laboratoire de Nolbrim, au moment où Jane est attachée sur la table.",
+      "Gran Brijit l'arrête d'un geste, le tue sur-le-champ et en extrait l'âme. Il s'effondre comme une boîte de conserve. Elle donne cette âme à Nolbrim, pour compléter l'exosquelette de Jane."
     ],
     "relations": [
       {
@@ -4721,10 +4586,7 @@
     ],
     "attitude": "neutre",
     "redirige": "bourpif",
-    "histoire": [
-      "Il suit Gran Brijit dans le laboratoire de Nolbrim, au moment où Jane est attachée sur la table.",
-      "Gran Brijit l'arrête d'un geste et en extrait l'âme. Il s'effondre comme une boîte de conserve. Cette âme est destinée à compléter l'exosquelette de Jane."
-    ]
+    "histoire": []
   },
   {
     "id": "oni-aux-masques",
@@ -4734,7 +4596,7 @@
     "parent": "tour-eamonn",
     "lieu": "tour-eamonn",
     "statut": "vaincu",
-    "resume": "Chef des assassins du Tribunal de Chair. Une silhouette immense, drapée de masques flottants, qui a pris d'assaut la tour d'Eamonn.",
+    "resume": "Silhouette immense, drapée de masques flottants.",
     "img": "img/pnj/oni-aux-masques.webp",
     "relations": [
       {
@@ -4755,17 +4617,13 @@
     ],
     "attitude": "ennemi",
     "connu": [
-      "Vaincu par le groupe dans la tour d'Eamonn, il disparaît dans un nuage de soufre.",
-      "Il laisse la liste du tribunal à sceau démoniaque et le bâton Fukuro Kaen.",
-      "Il se retourne lentement vers le groupe au centre de la tour dévastée, entouré de gardes : un Porteur de Hallebarde et une Faucheuse d'Échos.",
-      "Après le combat, le groupe trouve une naginata, une liste de cibles du Tribunal de Chair et un objet de feu, Fukuro Kaen, la Fureur du Bûcher.",
+      "Le Tribunal de Chair, envoyé par la Protectrice, prend d'assaut la tour d'Eamonn avec ses gardes, un Porteur de Hallebarde et une Faucheuse d'Échos.",
+      "Le groupe, appelé en urgence, arrive en plein combat. L'Oni se retourne lentement vers lui au centre de la tour dévastée, entouré de ses gardes.",
+      "Vaincu, il disparaît dans un nuage de soufre. Le groupe trouve ensuite une naginata, une liste de cibles du Tribunal de Chair à sceau démoniaque et un objet de feu, le bâton Fukuro Kaen, la Fureur du Bûcher.",
       "La liste cite Eamonn, Olyssane, Jane, Philippa et Ink. Le nom de Harfang y figure suivi d'un point d'interrogation."
     ],
     "teinte": "#753c19",
-    "histoire": [
-      "Le Tribunal de Chair, envoyé par la Protectrice, prend d'assaut la tour d'Eamonn avec ses gardes, un Porteur de Hallebarde et une Faucheuse d'Échos.",
-      "Le groupe, appelé en urgence, arrive en plein combat. L'Oni est vaincu et disparaît dans un nuage de soufre en laissant la liste de cibles, une naginata et Fukuro Kaen, la Fureur du Bûcher."
-    ]
+    "histoire": []
   },
   {
     "id": "porteur-de-hallebarde",
@@ -4775,9 +4633,10 @@
     "parent": "tour-eamonn",
     "lieu": "tour-eamonn",
     "statut": "vaincu",
-    "resume": "Assassin armé d'une naginata, vaincu à la tour.",
+    "resume": "Assassin du Tribunal de Chair.",
     "attitude": "ennemi",
-    "histoire": [
+    "histoire": [],
+    "connu": [
       "Il attaque la tour d'Eamonn avec l'Oni aux masques. Le groupe le vainc et récupère sa naginata."
     ]
   },
@@ -4789,9 +4648,10 @@
     "parent": "tour-eamonn",
     "lieu": "tour-eamonn",
     "statut": "vaincu",
-    "resume": "Assassine du Tribunal de Chair, vaincue à la tour.",
+    "resume": "Assassine du Tribunal de Chair.",
     "attitude": "ennemi",
-    "histoire": [
+    "histoire": [],
+    "connu": [
       "Elle attaque la tour d'Eamonn avec l'Oni aux masques. Le groupe la vainc."
     ]
   },
@@ -4801,14 +4661,15 @@
     "nom": "Le parchemin PSA-87",
     "titre": "Parchemin gardé au Temple du Tenraku",
     "parent": "temple-du-tenraku",
-    "resume": "Parchemin conservé derrière la jarre Miren. Absalom l'a lu pendant la cérémonie. Gran Brijit l'a réclamé comme sien et Jane le lui a remis.",
+    "resume": "Parchemin conservé derrière la jarre Miren, au Temple du Tenraku.",
     "alias": [
       "PSA-87",
       "PSA 87"
     ],
     "connu": [
+      "Absalom l'a lu pendant la cérémonie.",
       "Anaru affirme qu'il appartient à sa divinité et à son peuple. Gran Brijit répond qu'il n'appartient pas à leur histoire.",
-      "Gran Brijit l'obtient : la Gardienne recule devant les menaces d'une divinité et contre le sort de dissipation de Harfang."
+      "Gran Brijit l'obtient, Jane le lui remet : la Gardienne recule devant les menaces d'une divinité et contre le sort de dissipation de Harfang."
     ]
   },
   {
@@ -4832,14 +4693,13 @@
     "nom": "L'Aile d'Argent",
     "titre": "Pacte de reconstruction",
     "parent": "port-doelan",
-    "resume": "Le pacte avec l'Aile d'Argent a fait entrer des capitaux pour la reconstruction de Port Doëlan, très en dessous de ce qu'il faudrait.",
+    "resume": "Le pacte de Vespera avec l'Aile d'Argent a fait entrer des capitaux pour la reconstruction de Port Doëlan, très en dessous de ce qu'il faudrait.",
     "alias": [
       "Aile d'Argent"
     ],
     "histoire": [
-      "Mention la plus ancienne : à Creux d'Azur, Arianthil, elfe de l'Ordre d'Argent, téléporte Philippa hors de la ville.",
-      "Sur l'île du Vesper, devant le village de Nagas, Philippa trouve un agent de l'Aile d'Argent mort, avec une lettre.",
-      "Plus tard à Port Doëlan, le pacte de Vespera avec l'Aile d'Argent fait entrer des capitaux, très en dessous de ce qu'il faudrait."
+      "À Creux d'Azur, Arianthil, elfe de l'Ordre d'Argent, téléporte Philippa hors de la ville.",
+      "Sur l'île du Vesper, devant le village de Nagas, Philippa trouve un agent de l'Aile d'Argent mort, avec une lettre."
     ]
   },
   {
@@ -4858,7 +4718,7 @@
     "parent": "camont",
     "lieu": "camont",
     "statut": "vivant",
-    "resume": "Passe à L'Abattoir, la taverne de Teka.",
+    "resume": "Relais du Voile.",
     "relations": [
       {
         "cible": "teka",
@@ -4869,8 +4729,9 @@
       }
     ],
     "attitude": "positif",
-    "histoire": [
-      "Passe à L'Abattoir, que tient Teka, pendant le séjour de Philippa et Jane."
+    "histoire": [],
+    "connu": [
+      "Il passe à L'Abattoir, que tient Teka, pendant le séjour de Philippa et Jane."
     ]
   },
   {
@@ -4881,13 +4742,14 @@
     "parent": "agran",
     "lieu": "agran",
     "statut": "vivant",
-    "resume": "Il bénit les départs et planifie les routes sous-marines.",
+    "resume": "Planifie les routes sous-marines.",
     "citation": {
       "texte": "Les courants qui mènent à Thaladrassyl ne sont pas des routes. Ce sont des invitations. Et les invitations ne se forcent pas.",
       "qui": "Uruukaysal, l'Orant de la Faille"
     },
     "attitude": "neutre",
-    "histoire": [
+    "histoire": [],
+    "connu": [
       "Il bénit le départ du groupe d'Agran."
     ]
   },
@@ -4898,11 +4760,12 @@
     "titre": "Moine du monastère des steppes",
     "parent": "monastere-des-steppes",
     "lieu": "monastere-des-steppes",
-    "statut": "vivant",
-    "resume": "Moine dont la bourse figure au loot.",
+    "statut": "mort",
+    "resume": "Moine dont il ne reste qu'un squelette.",
     "attitude": "neutre",
-    "histoire": [
-      "Il fait partie des moines du monastère des steppes. Le groupe retrouve sa bourse (34 po et 12 pa) sur son squelette."
+    "histoire": [],
+    "connu": [
+      "Il faisait partie des moines du monastère des steppes. Le groupe retrouve sa bourse (34 po et 12 pa) sur son squelette."
     ]
   },
   {
@@ -4954,7 +4817,7 @@
     "parent": "eglise-mere-des-marees",
     "lieu": "eglise-mere-des-marees",
     "statut": "vivant",
-    "resume": "Lutriel en robe bleu et or, doux et légèrement excentrique. Il demande volontiers un galet poli en offrande. Expert des ghoules des marées.",
+    "resume": "Lutriel en robe bleu et or, doux et légèrement excentrique. Il demande volontiers un galet poli en offrande.",
     "alias": [
       "Niall"
     ],
@@ -4968,7 +4831,8 @@
     "img": "img/pnj/pe-re-niall.webp",
     "attitude": "positif",
     "teinte": "#195275",
-    "histoire": [
+    "histoire": [],
+    "connu": [
       "Il explique au groupe comment tuer les ghoules des marées en gardant leur cœur au froid, pour le rituel d'Eamonn."
     ]
   },
@@ -4980,7 +4844,7 @@
     "parent": "cap-cornes",
     "lieu": "cap-cornes",
     "statut": "vivant",
-    "resume": "Écailles bleutées, queue de poisson. Elle attrape des têtards avec Ink.",
+    "resume": "Écailles bleutées et queue de poisson.",
     "galerie": [
       {
         "img": "img/paysages/cap-cornes/rues-maeve.webp",
@@ -4990,8 +4854,9 @@
     "img": "img/pnj/mae-ve.webp",
     "attitude": "positif",
     "teinte": "#751925",
-    "histoire": [
-      "Le groupe la voit jouer avec Ink au bord d'une flaque, au milieu de Cap Cornes. Elle est une jeune Ophidienne."
+    "histoire": [],
+    "connu": [
+      "Le groupe la voit attraper des têtards avec Ink, au bord d'une flaque, au milieu de Cap Cornes."
     ]
   },
   {
@@ -5022,7 +4887,7 @@
     "parent": "pecherie-cap-cornes",
     "lieu": "pecherie-cap-cornes",
     "statut": "vivant",
-    "resume": "Gaffe de pêche à l'épaule, accueillant. Il fournit les clous rouillés du cercle d'Eamonn.",
+    "resume": "Gaffe de pêche à l'épaule, accueillant.",
     "ordre": 1,
     "galerie": [
       {
@@ -5041,7 +4906,8 @@
     ],
     "attitude": "positif",
     "teinte": "#755219",
-    "histoire": [
+    "histoire": [],
+    "connu": [
       "Le groupe passe par sa pêcherie pour les clous rouillés demandés par Eamonn. Rory les fournit."
     ]
   },
@@ -5092,7 +4958,7 @@
     "parent": "azuren-kai",
     "lieu": "azuren-kai",
     "statut": "vivant",
-    "resume": "Il observait le carnage du ryokan. Il vend une carte de la forêt d'Azuren qui évite patrouilles et regards, 500 po.",
+    "resume": "Il observait le carnage du ryokan, à Azuren Kai.",
     "alias": [
       "Obore",
       "Le Passeur d'Azuren Kai"
@@ -5108,8 +4974,9 @@
     ],
     "attitude": "neutre",
     "teinte": "#753c19",
-    "histoire": [
-      "Il observait le carnage du ryokan à Azuren Kai. Il vend au groupe une carte de la forêt d'Azuren, 500 po, qui évite patrouilles et regards."
+    "histoire": [],
+    "connu": [
+      "Il vend au groupe une carte de la forêt d'Azuren, 500 po, qui évite patrouilles et regards."
     ]
   },
   {
@@ -5120,7 +4987,7 @@
     "parent": "capitainerie-azuren-kai",
     "lieu": "capitainerie-azuren-kai",
     "statut": "vivant",
-    "resume": "Il tient les registres de fret du port depuis vingt ans et reçoit Harfang comme délégué.",
+    "resume": "Il tient les registres de fret du port depuis vingt ans.",
     "galerie": [
       {
         "img": "img/paysages/azuren-kai/magistrature-doryo-kovacz.webp",
@@ -5144,8 +5011,9 @@
     ],
     "attitude": "neutre",
     "teinte": "#753c19",
-    "histoire": [
-      "Greffier qui tient les registres de fret depuis vingt ans. Il reçoit Harfang comme délégué."
+    "histoire": [],
+    "connu": [
+      "Il reçoit Harfang comme délégué et lui ouvre les registres de fret."
     ]
   },
   {
@@ -5215,22 +5083,16 @@
     "titre": "Fantôme des berges, assassin d'Azuren Kai",
     "parent": "azuren-kai",
     "lieu": "azuren-kai",
-    "statut": "inconnu",
-    "resume": "Fantôme croisé sur les berges, puis assassin éclair qui a attaqué le groupe à Azuren Kai.",
+    "statut": "vaincu",
+    "resume": "Assassin éclair venu des berges.",
     "connu": [
       "Selon la légende, les Goryo sont les fantômes de paysans noyés dans les rizières. Ils protègent Roshen Buru contre les voyageurs qui lui veulent du mal.",
       "Le groupe le croise une première fois sur les berges, avant d'atteindre Azuren Kai.",
-      "Il frappe puis disparaît.",
-      "Le groupe le tue à l'auberge. Il murmure « elle sait… ». Le groupe pense à Absalom.",
-      "Le groupe en déduit plus tard, sans certitude, qu'il s'agit d'un démon qui prend la forme d'un cryptide de la culture populaire.",
-      "Le groupe soupçonne que la Protectrice l'a envoyé pour le tuer, probablement grâce à son pacte avec Levistus."
-    ],
-    "histoire": [
-      "Le groupe le croise pour la première fois sur les berges, avant d'atteindre Azuren Kai.",
       "À Azuren Kai, il frappe puis disparaît, puis revient attaquer le groupe à l'auberge.",
       "Le groupe le tue. Il murmure « elle sait… ». Le groupe pense à Absalom.",
-      "Plus tard, le groupe soupçonne que la Protectrice l'a envoyé, probablement grâce à son pacte avec Levistus."
+      "Plus tard, le groupe en déduit, sans certitude, qu'il s'agit d'un démon qui prend la forme d'un cryptide de la culture populaire, et soupçonne que la Protectrice l'a envoyé pour le tuer, probablement grâce à son pacte avec Levistus."
     ],
+    "histoire": [],
     "alias": [
       "Goryo",
       "Goryo des berges",
@@ -5252,13 +5114,14 @@
     "nom": "Bourpif",
     "titre": "Robot de Nolbrim, compagnon de Gran Brijit",
     "parent": "manoir-des-ligaments",
-    "resume": "Petit robot bâti par Nolbrim autour d'un fragment de l'Hexacore. Il suit Gran Brijit.",
+    "resume": "Petit robot qui suit Gran Brijit partout.",
     "statut": "mort",
     "attitude": "neutre",
     "lieu": "manoir-des-ligaments",
     "connu": [
-      "Gran Brijit le décapite sous les yeux de Jane et recueille son âme, une petite orbe de fumée qui tournoie dans sa paume.",
-      "Elle l'inspire puis la recrache lentement dans une fiole, pour la purifier, avant de la tendre à Nolbrim."
+      "Nolbrim le bâtit autour d'un fragment de l'Hexacore.",
+      "Philippa lui envoie un message à Cap Cornes pour lui annoncer que Nolbrim est réveillé.",
+      "Avant Roshen Buru, Gran Brijit le décapite sous les yeux de Jane et recueille son âme, une petite orbe de fumée qui tournoie dans sa paume. Elle l'inspire puis la recrache lentement dans une fiole, pour la purifier, avant de la tendre à Nolbrim."
     ],
     "alias": [
       "Bourre-Piff",
@@ -5273,11 +5136,7 @@
         "inverse": "a arraché"
       }
     ],
-    "histoire": [
-      "Nolbrim le bâtit autour d'un fragment de l'Hexacore et il suit Gran Brijit.",
-      "Philippa lui envoie un message à Cap Cornes pour lui annoncer que Nolbrim est réveillé.",
-      "Avant Roshen Buru, Gran Brijit le décapite devant Jane et recueille son âme pour la tendre à Nolbrim."
-    ]
+    "histoire": []
   },
   {
     "id": "fukuro-kaen",
@@ -5285,13 +5144,11 @@
     "nom": "Fukuro Kaen",
     "titre": "La Fureur du Bûcher, bâton de feu",
     "parent": "oni-aux-masques",
-    "resume": "Bâton de feu pris sur l'Oni aux masques, qui convient parfaitement à Harfang.",
+    "resume": "Bâton de feu pris sur l'Oni aux masques.",
     "connu": [
-      "Butin du combat de la tour d'Eamonn, avec la liste du tribunal à sceau démoniaque."
+      "Butin du combat de la tour d'Eamonn, avec la liste du tribunal à sceau démoniaque. Il convient parfaitement à Harfang."
     ],
-    "histoire": [
-      "Le groupe prend ce bâton de feu sur l'Oni aux masques après le combat de la tour d'Eamonn. Il convient parfaitement à Harfang."
-    ]
+    "histoire": []
   },
   {
     "id": "couronne-de-corail-noir",
@@ -5310,15 +5167,13 @@
     "nom": "La Mère de la Toile",
     "titre": "Maîtresse des araignées de Balamor",
     "parent": "balamor",
-    "resume": "Entité de Balamor qui sert de maître à Tobiya. Elle veut des araignées dans toutes les villes d'Istra.",
+    "resume": "Entité de Balamor, maître de Tobiya.",
     "connu": [
-      "Tobiya, corrompu au fond des égouts de Roshen Buru, a avoué travailler pour elle.",
+      "Le groupe apprend son nom par Tobiya, corrompu au fond des égouts de Roshen Buru, qui avoue travailler pour elle.",
       "Son plan : faire apparaître des araignées dans chaque ville, prendre le contrôle mental de gens insoupçonnés et lever une armée pour conquérir toutes les villes d'Istra.",
       "Le groupe pense que Balamor sera l'occasion d'y mettre un terme."
     ],
-    "histoire": [
-      "Le groupe apprend son nom par la bouche de Tobiya, dans les égouts de Roshen Buru : elle l'a pris à son service pour étendre les araignées à toutes les villes d'Istra."
-    ]
+    "histoire": []
   },
   {
     "id": "temple-de-tako-alvaki",
@@ -5328,11 +5183,9 @@
     "parent": "roshen-buru",
     "resume": "Temple où Harfang se recueille et entre en communion avec son Miren.",
     "connu": [
-      "Harfang demande à son Miren s'il peut faire confiance à la Protectrice. La réponse est non."
+      "Harfang y demande à son Miren s'il peut faire confiance à la Protectrice. La réponse est non."
     ],
-    "histoire": [
-      "Harfang s'y recueille et entre en communion avec son Miren. Il demande s'il peut faire confiance à la Protectrice. La réponse est non."
-    ]
+    "histoire": []
   },
   {
     "id": "capitainerie-azuren-kai",
@@ -5340,9 +5193,10 @@
     "nom": "La capitainerie d'Azuren Kai",
     "titre": "Le port d'Azuren Kai",
     "parent": "azuren-kai",
-    "resume": "La capitainerie tient les registres de fret du port d'Azuren Kai. Doryo Kovacz, le greffier, y reçoit Harfang comme délégué.",
-    "histoire": [
-      "Harfang s'y présente comme délégué, et Doryo Kovacz, greffier, lui ouvre les registres de fret."
+    "resume": "Elle tient les registres de fret du port.",
+    "histoire": [],
+    "connu": [
+      "Harfang s'y présente comme délégué. Doryo Kovacz, greffier, lui ouvre les registres de fret."
     ]
   },
   {

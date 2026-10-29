@@ -20,20 +20,18 @@
       "Istrane",
       "Istrans"
     ],
-    "resume": "Un continent coupé du reste du monde, à l'ouest de Thaldera, gouverné par quatre grandes maisons.",
+    "resume": "Un continent coupé du reste du monde, à l'ouest de Thaldera.",
     "connu": [
       "Istra est séparée de Thaldera par la mer d'Émeraude. Des tempêtes gigantesques en rendent la traversée impossible.",
       "Quatre maisons se partagent le continent : la maison rouge Tauroc (Keras Tauroc, Kord), la maison verte Miren-Buru (Roshen Buru, Mélora), la maison blanche There'Duun (royaume nain, Moradin) et la maison noire Tzobal (Balamor, Balam).",
       "Chaque année, les maisons se retrouvent à La Rencontre, un rituel qui empêche l'une d'elles d'écraser les autres.",
       "La langue commune de Thaldera n'est pas parlée ici. Le groupe se débrouille avec l'istran, que Harfang lit et parle.",
-      "Les habitants d'Istra ne connaissent pas Thaldera. Seuls quelques proches du pouvoir de Roshen Buru semblent au courant."
+      "Les habitants d'Istra ne connaissent pas Thaldera. Seuls quelques proches du pouvoir de Roshen Buru semblent au courant.",
+      "Le groupe a traversé la mer d'Émeraude à bord d'un sous-marin de coque pyrracier, piloté par des nains de chantier menés par Brise-Montagne. Il a débarqué à Brakka, les derniers mètres à la nage, et le sous-marin a plongé derrière lui.",
+      "Il a remonté les steppes rouges jusqu'à Keras Tauroc, gagné le festival des Cornes Rouges, perdu un mois de mémoire, puis descendu la Khor Selash jusqu'à Cap Cornes.",
+      "Un portail a été ouvert à Cap Cornes vers Port Doëlan. Le groupe est reparti vers le nord, a traversé la forêt d'Azuren depuis Azuren Kai et est arrivé à Roshen Buru."
     ],
-    "histoire": [
-      "Le groupe traverse la mer d'Émeraude à bord d'un sous-marin de coque pyrracier, piloté par des nains de chantier menés par Brise-Montagne.",
-      "Il débarque à Brakka, les derniers mètres à la nage, et le sous-marin plonge derrière lui.",
-      "Il remonte ensuite les steppes rouges jusqu'à Keras Tauroc, gagne le festival des Cornes Rouges, perd un mois de mémoire, puis descend la Khor Selash jusqu'à Cap Cornes.",
-      "Un portail est ouvert à Cap Cornes vers Port Doëlan. Le groupe repart vers le nord, traverse la forêt d'Azuren depuis Azuren Kai et arrive à Roshen Buru."
-    ],
+    "histoire": [],
     "blason": "img/blasons/istra.webp"
   },
   {
@@ -61,7 +59,7 @@
       "Thalderran",
       "Thalderrans"
     ],
-    "resume": "Le continent voisin d'Istra, au-delà de la mer d'Émeraude. Il parle une autre langue et se partage entre plusieurs factions.",
+    "resume": "Un continent de factions rivales, voisin d'Istra.",
     "connu": [
       "Thaldera est séparée d'Istra par la mer d'Émeraude. Des tempêtes gigantesques rendent la traversée impossible. Elles naissent de l'arbre d'un titan, faisceau de sa puissance disparue sous l'océan.",
       "Ses habitants parlent une autre langue qu'Istra.",
@@ -69,7 +67,8 @@
       "Le groupe a visité Port Doëlan, une ville rasée en pleine reconstruction.",
       "Un portail relie Cap Cornes, sur Istra, à Port Doëlan. Le groupe ne l'a pas ouvert vers Havre Noir."
     ],
-    "blason": "img/blasons/thaldera.webp"
+    "blason": "img/blasons/thaldera.webp",
+    "histoire": []
   },
   {
     "id": "dieux",
@@ -119,10 +118,9 @@
       "championne",
       "championnes"
     ],
-    "resume": "Les dieux agissent sur terre par des champions, vecteurs de leur pouvoir et de leur volonté.",
+    "resume": "Les mortels qui portent la puissance d'un dieu sur terre.",
     "connu": [
-      "Les dieux ne peuvent pas agir directement auprès des mortels.",
-      "Ils utilisent des champions comme véhicule de leur pouvoir et de leur volonté.",
+      "Les dieux ne peuvent pas agir directement auprès des mortels. Ils passent par des champions, véhicules de leur pouvoir et de leur volonté.",
       "La Gardienne est la championne de Mélora. Gran Brijit déclare que Philippa en est une aussi.",
       "Les champions défendent les intérêts de leur dieu. Ils sont bien plus forts que le commun des mortels, sans pouvoir vaincre un dieu."
     ]
@@ -133,10 +131,9 @@
     "nom": "Vassago",
     "titre": "Celui qui veut devenir dieu",
     "accueil": true,
-    "resume": "Vassago veut utiliser le rituel du Tenraku à l'envers pour s'élever au rang de dieu.",
+    "resume": "Un ennemi qui détourne un rituel sacré pour son ascension.",
     "connu": [
-      "Vassago connaît le rituel du Tenraku, par lequel Roshen Buru fait descendre des Miren sur terre.",
-      "Il prévoit de l'utiliser dans l'autre sens, pour s'élever lui-même au rang de dieu.",
+      "Vassago connaît le rituel du Tenraku, par lequel Roshen Buru fait descendre des Miren sur terre. Il prévoit de l'utiliser dans l'autre sens, pour s'élever lui-même au rang de dieu.",
       "Absalom et d'autres agents agissent pour son compte et collectionnent des fragments de titans.",
       "À distance, il a pu fomenter l'attaque du Temple du Tenraku."
     ],
@@ -177,9 +174,9 @@
       "infernale",
       "infernaux"
     ],
-    "resume": "Les démons obéissent à la loi cosmique. Leur société repose sur les dettes, les pactes, les serments et la servitude.",
+    "resume": "Une société infernale régie par la loi cosmique.",
     "connu": [
-      "Chaque démon répond à son supérieur. Personne, pas même un dieu, ne peut briser un pacte conclu.",
+      "Les démons obéissent à la loi cosmique. Leur société repose sur les dettes, les pactes, les serments et la servitude : chaque démon répond à son supérieur, et personne, pas même un dieu, ne peut briser un pacte conclu.",
       "Il existe 9 strates infernales. S'y rendre et passer de l'une à l'autre est difficile et coûteux. Un portail ne suffit pas, car les deux mondes sont hermétiques.",
       "Un démon ne peut accéder qu'à son propre plan.",
       "Les démons majeurs comme Absalom semblent obéir au maître de leur plan, l'équivalent d'un dieu du plan matériel.",
@@ -216,7 +213,7 @@
     "nom": "Mélora",
     "titre": "Déesse de la nature",
     "accueil": true,
-    "resume": "Déesse protectrice de Roshen Buru. Sa championne est la Gardienne.",
+    "resume": "Déesse protectrice de Roshen Buru.",
     "connu": [
       "Mélora a une championne, la Gardienne Anaru Miren-Buru.",
       "Son pouvoir fait pousser des fleurs à sa seule présence.",
@@ -245,10 +242,10 @@
       "Prince Gelé",
       "Stygia"
     ],
-    "resume": "Archidiable de Stygia, le Prince Gelé. Pactisant de Neryn Yosa.",
+    "resume": "Un archidiable lié par pacte à la Protectrice.",
     "connu": [
       "Levistus est l'Archidiable du 5ème enfer, Stygia, le Prince Gelé.",
-      "La Protectrice a passé un pacte avec lui.",
+      "Le groupe a appris son nom en fouillant les papiers de la Protectrice, à Roshen Buru : elle a passé un pacte avec lui.",
       "Le Tribunal de chair, qu'elle a envoyé contre Eamonn, est composé d'agents de Levistus prêtés à ses ordres."
     ],
     "relations": [
@@ -263,10 +260,7 @@
         "ton": "negatif"
       }
     ],
-    "histoire": [
-      "Le groupe apprend son nom en fouillant les papiers de la Protectrice, à Roshen Buru : elle a passé un pacte avec lui.",
-      "Il comprend que le Tribunal de Chair, envoyé contre Eamonn, est composé de ses agents."
-    ]
+    "histoire": []
   },
   {
     "id": "miren",
@@ -289,11 +283,10 @@
       "Un Miren ne peut être ni volé ni effacé. Le révéler relève de la pudeur sociale, comme se mettre torse nu.",
       "Le Miren de Harfang est Stryge, un hibou. Celui de Rysei Tsuren est un Tenrai. Celui de Ginko Noshi-Buru est un djinn. Celui de la Gardienne est un avatar de Mélora.",
       "Le Temple du Tenraku, au sommet du Pillier de Roshen Buru, gardait la Jarre Miren scellée.",
+      "Absalom a brisé la Jarre Miren pendant la seconde cérémonie de mariage, puis a détruit une partie du temple d'un cri de rage.",
       "Vassago voulait détourner le rituel pour s'élever au rang de dieu."
     ],
-    "histoire": [
-      "Absalom a brisé la Jarre Miren pendant la seconde cérémonie de mariage, puis a détruit une partie du temple d'un cri de rage."
-    ]
+    "histoire": []
   },
   {
     "id": "vesine",
@@ -305,16 +298,11 @@
     ],
     "resume": "Drogue dont la contrebande traverse Istra, de Balamor à Roshen Buru.",
     "connu": [
-      "Fennick, petit escroc du marché de Cap Cornes, en vend. Le groupe l'a obtenue en le menaçant.",
+      "À Cap Cornes, le groupe a obtenu de la vesine auprès de Fennick, petit escroc du marché, en le menaçant.",
       "À Roshen Buru, Yureï Poison en est la fournisseuse principale pour le clan Urameï.",
-      "Le cuisinier Kabo est mort d'une dose d'une pureté qu'un homme de son rang ne pouvait pas acheter.",
-      "Darrek Kovacz y était accro."
+      "Le cuisinier Kabo est mort d'une dose d'une pureté qu'un homme de son rang ne pouvait pas acheter. Darrek Kovacz y était accro."
     ],
-    "histoire": [
-      "À Cap Cornes, le groupe obtient de la vésine auprès de Fennick, petit escroc du marché, en le menaçant.",
-      "À Roshen Buru, il apprend que Yureï Poison en est la fournisseuse principale pour le clan Urameï.",
-      "Le cuisinier Kabo meurt d'une dose d'une pureté qu'un homme de son rang ne pouvait pas acheter. Darrek Kovacz y était accro."
-    ]
+    "histoire": []
   },
   {
     "id": "kord",
@@ -347,12 +335,11 @@
     "resume": "Grands félins des steppes rouges, capables de porter un cavalier.",
     "connu": [
       "Un mâle et une femelle chassent en tandem, la femelle attaque en premier.",
-      "Ce sont des prédateurs affamés, pas des monstres. Quand l'un d'eux passe sous la moitié de ses points de vie, la paire marque une pause, ce qui permet de la dresser avec de la nourriture.",
-      "Les montures du groupe viennent de là. Chez les Taurok, avoir dompté un prédateur des plaines vaut présentation."
+      "Ce sont des prédateurs affamés. Quand l'un d'eux est gravement blessé, la paire marque une pause, ce qui permet de la dresser avec de la nourriture.",
+      "À l'aube, deux Rakh ont attaqué le campement du groupe dans les steppes. Il les a dressés avec le poisson séché d'Urrak. Ce sont ses montures aujourd'hui.",
+      "Chez les Taurok, avoir dompté un prédateur des plaines vaut présentation."
     ],
-    "histoire": [
-      "À l'aube, deux Rakh attaquent le campement du groupe dans les steppes. Il les dresse avec le poisson séché d'Urrak."
-    ],
+    "histoire": [],
     "galerie": [
       {
         "img": "img/paysages/steppes-rouges/steppes-rakh.webp",
@@ -383,11 +370,11 @@
     "nom": "Le Tribunal de chair",
     "titre": "Agents de Levistus",
     "parent": "levistus",
-    "resume": "Agents de Levistus prêtés à la Protectrice.",
+    "resume": "Assassins envoyés contre Eamonn.",
     "connu": [
-      "La Protectrice les a envoyés tuer Eamonn et détruire le cercle de téléportation de Cap Cornes.",
-      "Ce sont des agents de Levistus, prêtés à la Protectrice pour servir ses desseins.",
-      "!! Les assassins laissent une liste de cibles à son sceau : Eamonn, Olyssane, Jane, Philippa, Ink, et Harfang suivi d'un point d'interrogation."
+      "Agents de Levistus prêtés à la Protectrice pour servir ses desseins. Le groupe a appris leur existence quand ils ont attaqué la tour d'Eamonn, à Cap Cornes.",
+      "La Protectrice les a envoyés tuer Eamonn et détruire le cercle de téléportation de Cap Cornes. Le groupe l'a compris à Roshen Buru en fouillant ses papiers.",
+      "Dans la fouille après le combat, le groupe a trouvé une liste de cibles à son sceau : Eamonn, Olyssane, Jane, Philippa, Ink, et Harfang suivi d'un point d'interrogation."
     ],
     "relations": [
       {
@@ -401,11 +388,7 @@
         "ton": "negatif"
       }
     ],
-    "histoire": [
-      "Le groupe apprend son existence quand le Tribunal attaque la tour d'Eamonn, à Cap Cornes.",
-      "Dans la fouille après le combat, le groupe trouve une liste de cibles à son sceau : Eamonn, Olyssane, Jane, Philippa, Ink, Harfang suivi d'un point d'interrogation.",
-      "À Roshen Buru, en fouillant les papiers de la Protectrice, le groupe comprend qu'elle l'a envoyé et que ses agents sont prêtés par Levistus."
-    ]
+    "histoire": []
   },
   {
     "id": "harfang-tsuren",
@@ -417,9 +400,9 @@
     "alias": [
       "Harfang"
     ],
-    "resume": "Mirenaï du clan Tsuren, druide du Cercle de la Chouette, devenu marchand après avoir quitté la Magistrature.",
+    "resume": "Druide mirenaï du Cercle de la Chouette.",
     "connu": [
-      "Elfe mirenaï de Roshen Buru, druide de niveau 11 du Cercle de la Chouette. Son Miren est Stryge, un hibou.",
+      "Elfe de Roshen Buru, druide de niveau 11. Son Miren est Stryge, un hibou.",
       "Noble du clan Tsuren, fils du Grand-Duc Havoc Tsuren et de Kynn Tsuren, frère de Rysei Tsuren. Sa famille ignore qu'il est espion.",
       "Assistant d'un diplomate à la Magistrature, il rédigeait des rapports et voyageait avec une bonne couverture. En réalité, il espionnait pour la Protectrice Neryn Yosa.",
       "Il a quitté la Magistrature après que le grand Magistrat Roven Moto lui a tiré les oreilles sur la qualité de ses rapports. Il est maintenant marchand, avec l'accord de la Protectrice.",
@@ -429,11 +412,10 @@
     ],
     "histoire": [
       "Il se recueille au temple de Tako Alvaki : son Miren lui déconseille de faire confiance à la Protectrice.",
-      "Au Temple du Tenraku, il tente de dissiper la magie de Gran Brijit et la Gardienne contre son sort.",
+      "Au Temple du Tenraku, il tente de dissiper la magie de Gran Brijit et de la Gardienne contre son sort.",
       "Rejoint le groupe de Jane et Philippa à Istra et chasse Absalom avec elles jusqu'à Roshen Buru.",
       "À Roshen Buru, il enquête sur les lettres de menace du mariage Sokabeï-Kaben, sur ordre de la Protectrice, puis retrouve et tue Darrek Kovacz avec ses compagnes.",
       "Il lit le journal de la Protectrice et apprend son pacte avec Levistus, ainsi que le projet d'alliance de la Gardienne avec Eryndel d'Altéra.",
-      "Il donne sa démission de la Magistrature et devient marchand.",
       "Il est présent au Temple du Tenraku lors de la seconde cérémonie, face à Absalom, puis face à Carnage.",
       "À Roshen Buru, il va rendre son rapport au Magistrat, qui se fâche de ne pas recevoir quarante pages. Harfang est agacé et ne veut plus être diplomate."
     ],
@@ -497,26 +479,24 @@
     "resume": "Demi-elfe, roublarde Arcane Trickster de niveau 11. Elle porte des cristaux de titan dans le dos.",
     "connu": [
       "Nolbrim estimait que son exosquelette incomplet finirait par lui faire mal ou la tuer : il lui manquait une âme.",
-      "Elle a volé à Naevia, à Keras Tauroc, une « Hache Étrange » qui est la garde d'une épée brisée aux glyphes non décoratifs.",
-      "Pendant le mois perdu, elle a travaillé pour Hématome sans qu'elle ou le groupe s'en souviennent.",
-      "Déguisée en Olyssane, elle a attiré Kester Tauroc dans une ruelle de Cap Cornes."
+      "Elle a volé à Naevia, à Keras Tauroc, une « Hache Étrange » qui est la garde d'une épée brisée aux glyphes non décoratifs."
     ],
     "histoire": [
       "Elle surgit des ombres à Voros devant Philippa : elle sait où se trouve la Griffe et propose de l'accompagner vers l'île aux Moines.",
       "À l'île aux Moines, elle aide à libérer Liora et croise Absalom.",
       "À Camont, elle retrouve les Yeux aux Silos et cambriole la villa Graham.",
       "Au Repos des Épées, elle vainc Argonath. Gran Brijit arrête Olyssane quand celle-ci découvre ses formes monstrueuses.",
-      "Nolbrim estime que son exosquelette incomplet finira par lui faire mal ou la tuer. À Kazad Marunn, le groupe va chercher l'Hexacore. Nolbrim s'en saisit et un rituel plonge Jane dans six métamorphoses mortelles que Gran Brijit ramène à chaque fois, jusqu'à l'exosquelette d'os et de cristaux.",
+      "À Kazad Marunn, le groupe va chercher l'Hexacore. Nolbrim s'en saisit et un rituel plonge Jane dans six métamorphoses mortelles que Gran Brijit ramène à chaque fois, jusqu'à l'exosquelette d'os et de cristaux.",
       "À Pyrrah, elle va seule à la taverne de la Griffe et tue les trois producteurs.",
       "Dans la caravane vers Port Doëlan, elle croise Magdalena, rescapée des expériences de cristaux comme elle. Au temple brumeux, elle affronte Barakel.",
       "Flashback joué : enfant de l'orphelinat Merigold à Leyenmil, elle reçoit de la Rectrice son premier meurtre commandité et tue Edmund von Kornwald.",
       "À Port Doëlan, elle retrouve Vespera, sa sœur d'orphelinat, et Tina et Nina. Elle aide à faire tomber Spezza.",
       "À Agran, elle prend Ink sous son aile.",
-      "À Keras Tauroc, elle bat Hématome dans l'arène du festival et vole à Naevia une « Hache Étrange », garde d'une épée brisée aux glyphes non décoratifs.",
+      "À Keras Tauroc, elle bat Hématome dans l'arène du festival.",
       "Pendant le mois perdu, elle travaille pour Hématome sans qu'elle ni le groupe s'en souviennent. Elle retrouve ensuite son carnet, sa chambre chez Capella et le nom de Calvinus Ferox.",
       "À Cap Cornes, déguisée en Olyssane, elle attire Kester Tauroc dans une ruelle.",
-      "!! Avant Roshen Buru, au feu de camp dans la forêt d'Azuren, Gran Brijit ouvre un portail pour Nolbrim, qui attire Jane dans son laboratoire. Il a percé le Voile pendant son coma : il manque une âme pour stabiliser son exo-squelette. Il l'attaque sur une table d'opération. Gran Brijit arrive avec Bourre-Piff, qu'elle tue aussitôt, aspire son âme et la tend à Nolbrim, qui arrache l'exo-squelette (et le dos) de Jane.",
-      "!! Elle se réveille avec un gant rouge de cristaux sur la main et change de sous-classe : Arcane Trickster.",
+      "Avant Roshen Buru, au feu de camp dans la forêt d'Azuren, Gran Brijit ouvre un portail pour Nolbrim, qui attire Jane dans son laboratoire. Il a percé le Voile pendant son coma. Il l'attaque sur une table d'opération. Gran Brijit arrive avec Bourre-Piff, qu'elle tue aussitôt, aspire son âme et la tend à Nolbrim, qui arrache l'exosquelette (et le dos) de Jane.",
+      "Elle se réveille avec un gant rouge de cristaux sur la main et change de sous-classe : Arcane Trickster.",
       "À Roshen Buru, elle prend part à l'enquête du mariage et à la chute de Darrek Kovacz. Chez la Protectrice, elle fouille les papiers avec Philippa.",
       "Jane remet à Vespera la Couronne de Corail Noir au camp de Port Doëlan et négocie 1 % des ventes."
     ],
@@ -584,9 +564,8 @@
     ],
     "resume": "Drow demi-elfe, occultiste de niveau 8 et barde de niveau 3. Gran Brijit déclare qu'elle est une championne.",
     "connu": [
-      "Gran Brijit lui a confié deux missions : ne pas ouvrir de portail entre Cap Cornes et Havre Noir, et trouver puis tuer Oren Sidaï à Roshen Buru pour préserver l'équilibre.",
+      "Gran Brijit lui a confié à Cap Cornes deux missions : ne pas ouvrir de portail entre Cap Cornes et Havre Noir, et trouver puis tuer Oren Sidaï à Roshen Buru pour préserver l'équilibre.",
       "Elle a marqué à la craie la porte d'Ursinus, celle de la tour d'Eamonn et d'autres lieux, qui servent de points de retour.",
-      "Elle chantait chaque soir au Cornua Fracta pendant le mois perdu, sans en garder le moindre souvenir.",
       "Elle comprend les langues par magie, ce qui sert de passerelle avec les habitants d'Istra."
     ],
     "histoire": [
@@ -606,7 +585,6 @@
       "Elle traverse la mer d'Émeraude en sous-marin, passe par Agran (fragment de Nyrrh, marque de Kataron) et débarque à Brakka.",
       "Elle remonte les steppes jusqu'à Keras Tauroc, gagne le tournoi du Colisée et perd un mois de mémoire face à Absalom. Elle chante chaque soir au Cornua Fracta sans en garder le moindre souvenir.",
       "Elle se réveille en prison, accusée du meurtre de l'ambassadeur Otoba, et aide à démasquer le général Calvinus Ferox.",
-      "À Cap Cornes, Gran Brijit lui confie deux missions : ne pas ouvrir de portail entre Cap Cornes et Havre Noir, et tuer Oren Sidaï. Elle marque à la craie la porte d'Ursinus, celle de la tour d'Eamonn et d'autres lieux.",
       "À Azuren Kai puis à Roshen Buru, elle aide à retrouver Darrek Kovacz, vend Requiem à Oren Sidaï et fouille les papiers de la Protectrice.",
       "Elle ouvre une téléportation à la craie pour défendre la tour d'Eamonn contre le Tribunal de Chair, puis est envoyée chez Vespera.",
       "Au Temple du Tenraku, elle affronte Absalom puis Carnage."
@@ -681,7 +659,7 @@
       "altérane",
       "altérans"
     ],
-    "resume": "Faction dirigée par l'impératrice Eryndel. La Gardienne envisage une alliance.",
+    "resume": "Une des factions de Thaldera.",
     "connu": [
       "Altéra est dirigée par l'impératrice Eryndel.",
       "La Gardienne envisage une alliance avec elle, d'après son journal."
@@ -1836,19 +1814,24 @@
     "alias": [
       "Doëlan"
     ],
-    "resume": "Ville rasée par le géant en armure, dirigée de fortune par une tieffeline rouge. Alliée du groupe.",
+    "resume": "Une ville à genoux, dirigée de fortune par une alliée du groupe.",
     "connu": [
       "Cité portuaire du Consortium, sur une eau turquoise, aux rues de pierre blonde, d'arcades et de terrasses. Elle vivait de son port, de sa mine d'argent et de sa carrière.",
       "Bartolomeo Spezza, seigneur pirate et warlock lié à Vassago, la tenait depuis son château. Il finançait la Griffe, le trafic humain et un sous-marin en pyrracier par l'intermédiaire de Titan Inc.",
-      "Le groupe a donné l'assaut au château et tué Spezza. Naberoth, le démon qui rôdait sous les caves, a été renvoyé aux Enfers.",
-      "La ville est aujourd'hui en ruines : le géant en armure l'a rasée, et l'assaut du groupe a aussi fait des dégâts. Des équipes déblaient les gravats et la reconstruction est en cours.",
-      "Vespera Merigold, la tieffeline rouge, à cornes et légèrement vêtue, a hérité du pouvoir. Ancienne Madame de la maison close, sœur d'orphelinat de Jane, elle dirige les ruines de fortune depuis un bloc de maçonnerie qui lui sert de trône.",
+      "Philippa et Jane y sont arrivées avec les marchands de la caravane, après les quatre gardes en livrée bleue du poste de contrôle. Un avis de recherche de 36 000 po vise Jane et Philippa. Il est affiché en ville, notamment devant les écuries du Clos Vieux.",
+      "Le groupe a enquêté sur la ville : la jetée, la Haute Vigie, le phare, les bains, la caserne, la mine d'argent fermée, le chantier naval, la bibliothèque, le quartier brûlé.",
+      "Il a retrouvé Matthias Holbrekt mort dans une ruelle, avec une lettre de mission qui parle de pyrracier et d'un navire capable de traverser la mer d'Émeraude.",
+      "Il a sabordé l'emprise de Spezza sur la ville (chantier naval, fortin des mercenaires et des wererats, preuves contre Titan Inc., navires de la flotte, prisonniers politiques, propagande).",
+      "Il a rencontré Makandral Toussaint au magasin Requiem. Sadie y est redevenue Absalom et a proposé une alliance de circonstance contre Spezza et Naberoth.",
+      "Le groupe a donné l'assaut au château Spezza et tué Spezza. Naberoth, le démon qui rôdait sous les caves, a été renvoyé aux Enfers. Le groupe a découvert la crique secrète et le sous-marin en pyrracier.",
+      "Le géant en armure a ensuite rasé la ville, et l'assaut du groupe a aussi fait des dégâts. Des équipes déblaient les gravats et la reconstruction est en cours.",
+      "Vespera Merigold, la tieffeline rouge, à cornes et légèrement vêtue, a hérité du pouvoir. Ancienne Madame de la maison close, sœur d'orphelinat de Jane, elle dirige de fortune depuis un camp dans les ruines du château, depuis un bloc de maçonnerie qui lui sert de trône.",
       "Sa garde se compose de Tina et Nina, en armures bricolées, et de Kralik et Nesk, les deux wererats libérés par le groupe, qui patrouillent la ville.",
       "La plupart des habitants sont au chômage et la flotte est en miettes. Le pacte avec l'Aile d'Argent a apporté des capitaux, très loin de ce qu'il faudrait.",
-      "Vespera attend la livraison de l'Arshen à Cap Cornes pour relancer le commerce. Jane lui a remis la Couronne de Corail Noir, dont la revente doit financer l'archène de Keras Tauroc, avec 1 % des ventes pour Jane.",
+      "Après l'attaque du Tribunal de Chair sur la tour d'Eamonn, le groupe a été téléporté chez Vespera. Un cercle de téléportation relie les ruines du château à la tour d'Eamonn, à Cap Cornes.",
+      "Jane a remis la Couronne de Corail Noir à Vespera, dont la revente doit financer l'Arshen de Keras Tauroc, avec 1 % des ventes pour Jane. Vespera attend la livraison de l'Arshen à Cap Cornes pour relancer le commerce.",
       "Un ambassadeur de Rivegard presse Sycomore Brise-Pavois de lâcher Port Doëlan.",
-      "Des mercenaires sous pavillon inconnu attaquent ceux qui sortent de la ville. L'émissaire que Vespera a envoyé au sud de Leyenmil n'est pas revenu.",
-      "Ce sont des alliés du groupe. Un cercle de téléportation relie les ruines du château à la tour d'Eamonn, à Cap Cornes."
+      "Des mercenaires sous pavillon inconnu attaquent ceux qui sortent de la ville. L'émissaire que Vespera a envoyé au sud de Leyenmil n'est pas revenu. Vespera et sa garde sont alliées du groupe, et elle lui a exposé son problème de mercenaires."
     ],
     "relations": [
       {
@@ -1876,18 +1859,7 @@
         "legende": "Le port"
       }
     ],
-    "histoire": [
-      "Mention la plus ancienne : Port Doëlan est le terme de la route de la caravane. Philippa et Jane y arrivent avec les marchands, après les quatre gardes en livrée bleue du poste de contrôle.",
-      "Un avis de recherche de 36 000 po vise Jane et Philippa. Il est affiché en ville, notamment devant les écuries du Clos Vieux.",
-      "Le groupe enquête sur la ville : la jetée, la Haute Vigie, le phare, les bains, la caserne, la mine d'argent fermée, le chantier naval, la bibliothèque, le quartier brûlé.",
-      "Il retrouve Matthias Holbrekt mort dans une ruelle, avec une lettre de mission qui parle de pyrracier et d'un navire capable de traverser la mer d'Émeraude.",
-      "Le groupe saborde l'emprise de Spezza sur la ville (chantier naval, fortin des mercenaires et hommes-rats, preuves contre Titan Inc., navires de la flotte, prisonniers politiques, propagande).",
-      "Il rencontre Makandral Toussaint au magasin Requiem. Sadie y redevient Absalom et propose une alliance de circonstance contre Spezza et Naberoth.",
-      "Assaut du château Spezza. Spezza est tué, Naberoth est renvoyé aux Enfers. Le groupe découvre la crique secrète et le sous-marin en pyrracier.",
-      "Le géant en armure rase la ville.",
-      "Vespera, sœur d'orphelinat de Jane, hérite du pouvoir et reconstruit depuis un camp dans les ruines du château.",
-      "Après l'attaque du Tribunal de Chair sur la tour d'Eamonn, le groupe y est téléporté. Jane remet la Couronne de Corail Noir à Vespera, qui expose son problème de mercenaires."
-    ]
+    "histoire": []
   },
   {
     "id": "kazad-marunn",
@@ -1903,9 +1875,19 @@
       "x": 0.727,
       "y": 0.927
     },
-    "resume": "Ville des sables où Gran Brijit a affronté Ginko Noshi-Buru.",
+    "resume": "Ville des sables, étape de la quête de l'Hexacore.",
     "connu": [
-      "Le groupe a traversé le désert avec Gran Brijit, que les gens du pays appellent Ereshkigal."
+      "Gran Brijit a téléporté Philippa et Jane à l'orée du désert, au sud de Rivegard, pour chercher l'Hexacore dont Jane a besoin. Dans les gorges de Vent Sec, des gobelins des sables ont tendu une embuscade. Gran Brijit est restée en retrait et le groupe les a mis en fuite.",
+      "Après plusieurs jours de marche, le groupe est arrivé à Kazad Marunn. Les habitants murmurent « Ereshkigal » sur le passage de Gran Brijit, que les gens du pays appellent ainsi.",
+      "À l'auberge, un homme du village a tenté de détrousser le groupe de nuit. Le groupe a visité l'herboriste Ashran, la tanneuse Maara Namtarûn et le potier Sahrim.",
+      "Chez Ashur, vieil ami de Gran Brijit, le groupe a parlé de l'Hexacore et de la Clé d'Anachronie. Ashur l'a envoyé à la Bibliothèque Enfouie.",
+      "À la bibliothèque, le groupe a lu la Bataille des Sables et découvert Aram Sharûn, dernier gardien de la Clé, mort dans cette bataille. Il n'a trouvé aucune trace de la tombe.",
+      "De retour chez Ashur, le groupe a vu les gravures de la bataille. Ashur a reconnu Aram Sharûn parmi les figures et dit que les mages ont été jetés dans la Fosse sans Fond, gardée par Al Batun.",
+      "Guidé par la mesa, le groupe a affronté Al Batun, qui a recraché l'Anneau des Sables, puis est descendu dans la Gueule des Sables. Il a trouvé le corps d'Aram Sharûn, la Clé d'Anachronie en main.",
+      "Gran Brijit a réveillé la Clé d'un souffle et prévenu que son usage est un aller simple jusqu'à la fin de l'expédition.",
+      "Dans une ruelle, Ginko Noshi-Buru attendait Gran Brijit avec hostilité. Un djinn d'eau les a séparées et les deux femmes ont disparu en duel.",
+      "Le groupe a atteint les ruines de la tour de Résonance. La Clé a ouvert une faille vers la tour telle qu'elle était. Il a vaincu le golem temporel et pris l'Hexacore dans son cœur. La Clé s'est brisée.",
+      "Le groupe est rentré chez Gran Brijit avec l'Hexacore et Nolbrim s'en est saisi. Dans la clairière, un rituel a plongé Jane dans six métamorphoses mortelles, que Gran Brijit a ramenées à chaque fois, jusqu'à l'exosquelette d'os et de cristaux."
     ],
     "relations": [
       {
@@ -1919,21 +1901,7 @@
         "ton": "negatif"
       }
     ],
-    "histoire": [
-      "Gran Brijit téléporte Philippa et Jane à l'orée du désert, au sud de Rivegard, pour chercher l'Hexacore dont Jane a besoin.",
-      "Dans les gorges de Vent Sec, des gobelins des sables tendent une embuscade. Gran Brijit reste en retrait et le groupe les met en fuite.",
-      "Après plusieurs jours de marche, le groupe arrive à Kazad Marunn. Les habitants murmurent « Ereshkigal » sur le passage de Gran Brijit.",
-      "À l'auberge, un homme du village tente de détrousser le groupe de nuit.",
-      "Le groupe visite l'herboriste Ashran, la tanneuse Maara Namtarûn et le potier Sahrim.",
-      "Chez Ashur, vieil ami de Gran Brijit, le groupe parle de l'Hexacore et de la Clé d'Anachronie. Ashur l'envoie à la Bibliothèque Enfouie.",
-      "À la bibliothèque, le groupe lit la Bataille des Sables et découvre Aram Sharûn, dernier gardien de la Clé, mort dans cette bataille. Il ne trouve aucune trace de la tombe.",
-      "De retour chez Ashur, le groupe voit les gravures de la bataille. Ashur reconnaît Aram Sharûn parmi les figures et dit que les mages ont été jetés dans la Fosse sans Fond, gardée par Al Batun.",
-      "Guidé par la mesa, le groupe affronte Al Batun, qui recrache l'Anneau des Sables, et descend dans la Gueule des Sables. Il trouve le corps d'Aram Sharûn, la Clé d'Anachronie en main.",
-      "Gran Brijit réveille la Clé d'un souffle et prévient que son usage est un aller simple jusqu'à la résolution du donjon.",
-      "Dans une ruelle, Ginko Noshi-Buru attend Gran Brijit avec hostilité. Un djinn d'eau les sépare et les deux femmes disparaissent en duel.",
-      "Le groupe atteint les ruines de la tour de Résonance. La Clé ouvre une faille vers la tour telle qu'elle était. Il vainc le golem temporel et prend l'Hexacore dans son cœur. La Clé se brise.",
-      "Le groupe rentre chez Gran Brijit avec l'Hexacore et Nolbrim s'en saisit. Dans la clairière, un rituel plonge Jane dans six métamorphoses mortelles, que Gran Brijit ramène à chaque fois, jusqu'à l'exosquelette d'os et de cristaux."
-    ]
+    "histoire": []
   },
   {
     "id": "eryndel",
@@ -1942,11 +1910,11 @@
     "titre": "Impératrice d'Altéra",
     "parent": "altera",
     "statut": "vivant",
-    "resume": "Impératrice d'Altéra. La Gardienne envisage une alliance avec elle.",
+    "resume": "Impératrice d'Altéra, vue en rêve par le groupe.",
     "connu": [
       "Le journal de la Gardienne montre qu'elle prépare une alliance avec elle.",
       "La Protectrice la traite de « pétasse ».",
-      "Dans un rêve partagé, elle accueille les PJ aux Jardins de l'Éternité : peau de marbre fissurée laissant passer la lumière des galaxies, chevelure blanche mouvante, aucun visage mais un vide rempli de constellations.",
+      "Dans un rêve partagé, elle accueille le groupe aux Jardins de l'Éternité : peau de marbre fissurée laissant passer la lumière des galaxies, chevelure blanche mouvante, aucun visage mais un vide rempli de constellations.",
       "Elle parle de deux petits soleils qui brillent seuls dans le froid du cosmos : l'un est allumé des restes d'un Titan faiblissant, l'autre par le génie fou d'un homme seul. Elle demande si leurs trajectoires gravitent autour du même point."
     ],
     "relations": [
