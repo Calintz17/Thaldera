@@ -171,7 +171,9 @@ test('multimodal PNJ gallery: forms stay in frame and load on forward / backward
 
 test('Large scene galleries load their assets without cropping or overflowing', async ({ page }) => {
   await page.goto('/#/malquessar',{waitUntil:'domcontentloaded'});
-  await expect(page.locator('.gal .sl')).toHaveCount(10,{timeout:30000});
+  // Malquessar shows its residents first, then its ten authored landscapes.
+  await expect.poll(() => page.locator('.gal .sl').count(), {timeout:30000}).toBeGreaterThanOrEqual(10);
+  await expect(page.locator('.gal .sl')).toHaveCount(18);
   for (let step=0; step<7; step++) {
     const img=page.locator('.gal .sl.act img');
     await expect.poll(() => img.evaluate(el=>el.naturalWidth)).toBeGreaterThan(0);
