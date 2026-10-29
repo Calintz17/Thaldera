@@ -6599,6 +6599,14 @@
         "img": "img/cartes/corvalis.webp",
         "legende": "Plan de Corvalis"
       }
+    ],
+    "histoire": [
+      "Philippa arrive par la plaine, file d'attente à la Porte de l'Est : les gardes réclament 50 po par tête. Des bandits de grand chemin la détroussent pour payer leur propre entrée et le marchand Bren Legemor lui explique le péage. Elle franchit la porte, payant, volant l'or d'un convoi voisin ou bernant les gardes, et entre dans une ville aux parfums d'épices et de vice, occupée par le Dominion Sol.",
+      "Elle recueille des informations auprès de Ganimède en ville haute et d'Omen en ville basse, croise une patrouille de Gardes-Soleil, puis apprend de Madame Augustine l'existence d'une porte dérobée au sud-ouest du palais et le nom de Lavande, chef du Voile.",
+      "Lavande lui propose un accès aux égouts qui mènent au bal masqué du Duc, en échange de l'assassinat de la Duchesse Cecilia de Vaelmor. Elle séduit aussi Regus, le fils du Duc, pour entrer au palais. Elle passe chez Durnan Forgefeuil et reçoit chez le luthier Greenwood un cours de harpe et le conseil d'aller à l'académie de Lumenlid.",
+      "Au bal masqué, Cecilia est tuée par les aventuriers. Le « Joyau tombé du ciel » présenté par le Duc est un Nephilim, remis à Gran Brijit.",
+      "Après le bal, Regus est emprisonné pour trahison, le Duc Reginald est accusé du meurtre de sa femme et écarté. Un régent du Dominion gouverne désormais la ville. Un avis de recherche est lancé contre Philippa, qu'elle retrouvera affiché à Obaline.",
+      "Philippa quitte Corvalis pour Lumenlid."
     ]
   },
   {
@@ -6631,6 +6639,13 @@
         "img": "img/cartes/obaline.webp",
         "legende": "Plan d'Obaline"
       }
+    ],
+    "histoire": [
+      "Philippa quitte Lumenlid pour six jours de marche. Elle recroise sur les plaines les trois voleurs et aperçoit un chasseur du Dominion et ses deux molosses infernaux, lancé sur la piste de Varsha la Furie. Il laisse tomber une note derrière lui.",
+      "Elle entre sans vérification sérieuse dans Obaline, ville marchande prise par le Dominion Sol, où l'ambiance est tendue mais pas hostile. À l'entrée, un panneau d'avis de recherche affiche son signalement.",
+      "Elle rencontre Emma Balambour, l'aubergiste du Camélia Torren Tweedy, qui l'oriente vers Milo, et le mot de passe que Lavande lui souffle par télépathie lui ouvre l'Emporium de Milo. Dans le sous-sol secret, Ira Malden lui propose un marché : libérer l'ancien bourgmestre Thoros Ven de la prison du Grand Palais, en échange d'un sauf-conduit pour Lunsk.",
+      "Philippa pénètre dans la prison, tue le capitaine Cassar, qui se mue en semi-démon, et libère Thoros Ven, qu'elle conduit à Ira.",
+      "Darn, le maître du port, prépare deux barques pour elle et pour le bourgmestre, qui descendent le fleuve vers Lunsk. Obaline reste sous occupation."
     ]
   },
   {
@@ -6665,6 +6680,12 @@
       "Elle est dirigée par un quartet de quatre directeurs, un par école. Des épreuves de fin de cycle illustrent chacune une facette du métier de barde.",
       "La rumeur dit qu'elle a été bâtie sur les ruines d'un collège oublié dont une partie des fondations reste inaccessible. L'administration nie l'existence d'un tel lieu.",
       "Lyrianne Velarion propose à Philippa de valider en un mois les quatre épreuves de fin d'année, devant témoins et professeurs, pour être reconnue diplômée."
+    ],
+    "histoire": [
+      "Sur le conseil du luthier Greenwood de Corvalis, Philippa prend la route de Lumenlid à travers une forêt aux arbres tordus.",
+      "Avant la ville, elle essaie sur le bas-côté un prototype du gnome Nezbrok, le Lance-Tempête, qui explose entre ses mains.",
+      "La directrice Lyrianne Velarion lui propose un marché : si elle réussit les quatre épreuves de fin d'année, une par collège, avant la fin du mois, elle sera reconnue diplômée. Elle lui fait visiter les dortoirs, la salle commune et les quatre écoles, en rappelant que l'académie est un territoire neutre reconnu par l'Empire d'Altéra comme par le Dominion Sol.",
+      "Philippa passe les épreuves de l'Éloquence, de la Vaillance, de la Création et du Savoir, puis reprend la route vers Obaline."
     ]
   },
   {
@@ -7358,6 +7379,11 @@
     },
     "alias": [
       "Brem Legemor"
+    ],
+    "histoire": [
+      "Premier habitant que Philippa rencontre dans la file d'attente de la Porte de l'Est. Il lui fait goûter un fromage crémeux aux notes salées et bavarde comme avec une vieille amie.",
+      "Il lui donne le montant du péage, les caprices récents des autorités et les tensions qui pèsent sur les commerçants, puis l'invite à passer à Grisecroix, son village d'origine.",
+      "Philippa n'a pas suivi l'invitation."
     ]
   },
   {
@@ -7377,7 +7403,11 @@
     "citation": {
       "texte": "Le Duc appelle ça des taxes… moi j'dis que c'est du vol, et qu'c'est les pauvres qui paient.",
       "qui": "Un bandit"
-    }
+    },
+    "histoire": [
+      "Trois bandits de grand chemin (un guerrier, un magicien et un paladin) interceptent Philippa à la sortie de la plaine, pour trouver un sponsor qui paie leur entrée : 150 po pour eux trois.",
+      "Philippa les recroise plus tard sur la route. Ils ne la reconnaissent d'abord pas, puis se confondent en excuses ou s'enfuient."
+    ]
   },
   {
     "id": "gardes-soleil",
@@ -7391,6 +7421,10 @@
     "attitude": "neutre",
     "connu": [
       "Selon Madame Augustine, ils ne retirent jamais leur armure et rien ne les distrait, contrairement aux soldats du Duc. La rumeur dit que leurs lèvres sont cousues pendant leur formation."
+    ],
+    "histoire": [
+      "Philippa croise une patrouille de Gardes-Soleil dans les rues de Corvalis, déjà aux mains du Dominion.",
+      "Après la mort de Cecilia, la ville est gouvernée par un régent du Dominion, que ces gardes continuent de soutenir."
     ]
   },
   {
@@ -7406,6 +7440,10 @@
     "connu": [
       "Il donne à Philippa six informations : le Duc organise un bal masqué pour présenter le Joyau tombé du ciel, l'invitation officielle avec sceau du Duc est obligatoire, le Duc pratique une corruption douanière aux portes Est et Ouest, les meubles de luxe du bal sont bloqués à l'entrepôt faute de taxe payée, la contrebande ruine ses affaires dans les quartiers nobles, et le Dominion Sol a pris la ville grâce au Duc.",
       "Si Philippa le convainc, il lui donne le code de la porte : « J'apporte l'encre violette et les plumes pour écrire »."
+    ],
+    "histoire": [
+      "Philippa le rencontre dans sa taverne de ville haute, fréquentée par les nobles. Il lui donne six informations : le bal masqué du Duc pour présenter le Joyau tombé du ciel, l'invitation obligatoire avec le sceau du Duc, la corruption douanière aux portes Est et Ouest, les meubles de luxe bloqués à l'entrepôt faute de taxe, la contrebande qui ruine son commerce, et la prise de la ville par le Dominion grâce au Duc.",
+      "S'il est convaincu, il lui donne aussi le code de la porte : « J'apporte l'encre violette et les plumes pour écrire »."
     ]
   },
   {
@@ -7421,6 +7459,10 @@
     "connu": [
       "Elle confirme les informations de Ganimède avec quelques nuances : son commerce prospère malgré l'appauvrissement, ou grâce à lui.",
       "Elle n'aime pas la Garde-Soleil, qu'elle perçoit comme une force d'oppression. Madame Augustine renvoie vers elle quiconque cherche Lavande."
+    ],
+    "histoire": [
+      "Madame Augustine renvoie Philippa vers sa taverne de la ville basse pour trouver Lavande.",
+      "Elle confirme les informations de Ganimède avec quelques nuances et déplore la Garde-Soleil, qu'elle perçoit comme une force d'oppression."
     ]
   },
   {
@@ -7443,7 +7485,13 @@
     "citation": {
       "texte": "Oh notre petite cambrioleuse ! Quel plaisir ineffable d'avoir de tes nouvelles.",
       "qui": "Lavande, par télépathie"
-    }
+    },
+    "histoire": [
+      "Philippa le rencontre à Corvalis, où il dirige le Voile. Il l'accueille après le mot de passe « J'apporte l'encre violette et les plumes pour écrire ».",
+      "Il lui propose un accès aux égouts menant au bal masqué, en échange de l'assassinat de Cecilia de Vaelmor, responsable du trafic d'êtres humains et de l'influence du Dominion. Il magouille avec le Duc, mais refuse la cruauté de Cecilia.",
+      "Plus tard à Obaline, il répond à Philippa par télépathie, via l'esprit messager Gédé Nebo. Il la raille sur la Duchesse (« Oh notre petite cambrioleuse ! ») et lui donne le mot de passe du Voile : « Mon ourlet s'est défait. J'ai besoin d'une aiguille sûre. »",
+      "À Lunsk, la représentante du Voile Selva parle de lui avec adoration."
+    ]
   },
   {
     "id": "durnan-forgefeuil",
@@ -7465,6 +7513,9 @@
       "Vin de Moine (60 po) : une gorgée accorde Inspiration, une fois par jour.",
       "Cristal de mana brut (150 po) : une charge pour lancer un sort de niveau 1 sans emplacement.",
       "Encens des Ancêtres (80 po) : brûlé 1 h, avantage aux jets de Religion et d'Histoire jusqu'au prochain repos long."
+    ],
+    "histoire": [
+      "Philippa passe dans sa boutique de ville haute pendant son séjour à Corvalis."
     ]
   },
   {
@@ -7484,7 +7535,12 @@
     "citation": {
       "texte": "Je suis un feu, madame. Certains s'y brûlent. D'autres… y trouvent la lumière.",
       "qui": "Regus Vaelmor"
-    }
+    },
+    "histoire": [
+      "Philippa le rencontre au théâtre Vaelmore. Il la prend pour une admiratrice, lui propose d'être sa cavalière au bal et lui parle de sa mère, qui lit enfermée dans son bureau à l'étage.",
+      "Elle le séduit pour obtenir une invitation au bal et des détails sur les plans de son père.",
+      "Après le bal et la mort de sa mère, il est emprisonné pour trahison."
+    ]
   },
   {
     "id": "reginald-de-vaelmor",
@@ -7507,6 +7563,10 @@
     "alias": [
       "Le Duc de Vaelmor",
       "Le Duc"
+    ],
+    "histoire": [
+      "Ancien marchand devenu Duc, il organise un bal masqué pour toutes les puissances afin de présenter le Joyau tombé du ciel.",
+      "Après la mort de Cecilia au bal, il est accusé du meurtre et écarté. Un régent du Dominion le remplace."
     ]
   },
   {
@@ -7516,7 +7576,7 @@
     "titre": "Duchesse de Corvalis",
     "parent": "palais-ducal-corvalis",
     "lieu": "palais-ducal-corvalis",
-    "statut": "vivant",
+    "statut": "mort",
     "resume": "Magicienne noire liée au Dominion Sol. Responsable du trafic humain dans les bas-fonds.",
     "attitude": "neutre",
     "connu": [
@@ -7528,6 +7588,10 @@
     },
     "alias": [
       "La Duchesse"
+    ],
+    "histoire": [
+      "Lavande désigne Cecilia à Philippa comme responsable du trafic d'êtres humains et de l'influence du Dominion.",
+      "Elle est tuée par les aventuriers pendant le bal masqué du Duc."
     ]
   },
   {
@@ -7548,7 +7612,11 @@
     "citation": {
       "texte": "Le pauvre garçon… il croit que c'est lui qui séduit. Mais c'est son père qui paie. Alors, on joue le jeu.",
       "qui": "Madame Augustine, sur Regus"
-    }
+    },
+    "histoire": [
+      "Philippa la rencontre dans sa maison de passe. Elle lui parle de Regus (« il croit que c'est lui qui séduit, mais c'est son père qui paie »), de la Garde-Soleil, et lui indique la porte dérobée au sud-ouest du palais.",
+      "Elle dénonce le trafic des Vaelmor : « Je vends du jeu, pas de la souffrance. » Elle conseille de voir Lavande, à la taverne du bas quartier, en demandant Omen."
+    ]
   },
   {
     "id": "greenwood",
@@ -7567,7 +7635,10 @@
     "citation": {
       "texte": "La musique est un chemin… mais pour avancer, il faut de bons maîtres. Lumenlid pourra t'offrir ce que mes vieux doigts ne peuvent plus donner.",
       "qui": "Greenwood"
-    }
+    },
+    "histoire": [
+      "Philippa entre dans son atelier d'instruments. Il lui donne un cours de harpe improvisé et lui recommande de poursuivre son apprentissage à l'académie de Lumenlid : « La musique est un chemin, mais pour avancer, il faut de bons maîtres. »"
+    ]
   },
   {
     "id": "route-de-lumenlid",
@@ -7576,7 +7647,10 @@
     "titre": "Forêt de bois tordus, avant l'académie",
     "parent": "lumenlid",
     "resume": "Une caravane immobilisée au bord de la route, entourée d'herbe noircie par une explosion.",
-    "chapeau": "La forêt s'épaissit à mesure qu'on approche de Lumenlid. Des arbres tordus s'élancent vers le ciel pâle et leurs branches craquent au vent comme des doigts d'os. L'air sent la poudre brûlée. Sur le bord de la route, une caravane bringuebalante est immobilisée, entourée d'herbe noircie, de terre retournée et d'éclats de métal. À l'avant, une table croule sous les engrenages, les bobines et les fioles de cuivre. Des étincelles bleutées zèbrent l'ombre des arbres à chaque réglage d'une machine grinçante."
+    "chapeau": "La forêt s'épaissit à mesure qu'on approche de Lumenlid. Des arbres tordus s'élancent vers le ciel pâle et leurs branches craquent au vent comme des doigts d'os. L'air sent la poudre brûlée. Sur le bord de la route, une caravane bringuebalante est immobilisée, entourée d'herbe noircie, de terre retournée et d'éclats de métal. À l'avant, une table croule sous les engrenages, les bobines et les fioles de cuivre. Des étincelles bleutées zèbrent l'ombre des arbres à chaque réglage d'une machine grinçante.",
+    "histoire": [
+      "Philippa y rencontre Nezbrok, qui lui fait essayer son Lance-Tempête avant son arrivée à l'académie."
+    ]
   },
   {
     "id": "nezbrok",
@@ -7598,6 +7672,11 @@
     },
     "alias": [
       "Nezdrok"
+    ],
+    "histoire": [
+      "Philippa le trouve sur la route de Lumenlid, sa caravane immobilisée, le sol marqué par une explosion récente. Il l'élit « parfait sujet d'expérience » et lui met entre les mains le Lance-Tempête.",
+      "L'arme explose, projetant Philippa en arrière, couverte de suie. Nezbrok, hilare et furieux, griffonne déjà des corrections.",
+      "Le prototype sera plus tard repris et stabilisé par Nolbrim, puis achevé par Gran Brijit pour devenir Horizon Brûlée. Philippa n'a pas revu Nezbrok."
     ]
   },
   {
@@ -7610,6 +7689,9 @@
     "chapeau": "Un amphithéâtre de pierre polie s'ouvre sur le ciel, et la voix y porte jusqu'au dernier gradin. Au centre de la scène, un homme en manteau or et ivoire pointe un élève du doigt et lance un défi. Un murmure d'excitation parcourt la pierre. Les élèves montent à tour de rôle, improvisent tirades, mensonges ou vérités brûlantes. Les applaudissements sont réels, les regards aussi : chaque mot mal posé est une faiblesse, chaque pause bien tenue une lame invisible.",
     "connu": [
       "Épreuve, la Commandante aux Cent Voix : sur une plateforme enchantée devant le lac, Philippa doit convaincre sans magie trois archétypes d'illusions : un soldat blessé proche de la désertion (Persuasion DC 12), un général renégat et cynique (Intimidation DC 14), un espion neutre et sarcastique (Tromperie DC 16). Deux réussites sur trois valident l'épreuve."
+    ],
+    "histoire": [
+      "Philippa y passe l'épreuve de la Commandante aux Cent Voix : convaincre sans magie un soldat blessé, un général renégat et un espion neutre."
     ]
   },
   {
@@ -7628,7 +7710,10 @@
     "citation": {
       "texte": "Convaincs-moi que le soleil est une illusion.",
       "qui": "Severin d'Aurenze"
-    }
+    },
+    "histoire": [
+      "Il supervise l'épreuve de l'Éloquence de Philippa devant le lac, sur une plateforme enchantée où trois fronts militaires illusoires se succèdent."
+    ]
   },
   {
     "id": "ecole-de-la-vaillance",
@@ -7640,6 +7725,9 @@
     "chapeau": "Dans la cour extérieure de l'école, les graviers clairs crissent sous les pas. Deux élèves croisent le fer avec des fleurets en bois, au rythme d'un tambour posé à même le sol. Un petit gobelin à la tunique écarlate commente chaque geste et mêle ses consignes à des refrains d'anciens chants de guerre. L'écho des lames répond comme une chorégraphie. Tout autour, d'autres élèves observent, instrument en main, prêts à changer leur souffle en cadence.",
     "connu": [
       "Épreuve, le Chant du Sang et du Fer : dans l'arène bardique, devant un jury d'élèves et de professeurs, Philippa affronte un duelliste excentrique dans un combat scénique mêlant épée de bois et lyre. À chaque round, un jet de Performance DC 12 valide son attaque. Trois échecs font perdre le duel. L'adversaire ne cherche pas à blesser, mais à voler la scène."
+    ],
+    "histoire": [
+      "Philippa y passe l'épreuve du Chant du Sang et du Fer : un duel scénique à l'épée de bois et à la lyre, jugé par les élèves et les professeurs."
     ]
   },
   {
@@ -7654,6 +7742,9 @@
     "attitude": "neutre",
     "connu": [
       "Il enseigne le chant martial et l'inspiration sur le champ de bataille. Il est l'adversaire de l'épreuve de Philippa : estoc avant et illusion mineure, estafilade circulaire et mur de feu, frappe tournoyante et Thunderclap, charge en ligne droite et Lightning Bolt."
+    ],
+    "histoire": [
+      "Philippa l'affronte en duel scénique dans l'arène bardique pour valider l'épreuve de la Vaillance. Il ne cherche pas à la blesser, mais à lui voler la scène."
     ]
   },
   {
@@ -7666,6 +7757,9 @@
     "chapeau": "Dans une vaste salle aux murs couverts de fresques musicales qui bougent, un drakéide massif au souffle rauque s'agite entre les pupitres. Sa robe bleue est tachée d'encre, ses doigts boudinés glissent sur un cristal suspendu qui vibre d'une note claire. Il fait signe de recommencer, et un kaléidoscope de sons prend forme : harpe flottante, luth luminescent, tambour spectral. Chaque note devient couleur, matière ou émotion. Le silence entre les accords est aussi dense que la musique.",
     "connu": [
       "Épreuve, l'Harmonique Originelle : dans une salle suspendue au-dessus du vide, Philippa compose une mélodie magique unique qui deviendra un sort. Cinq jets de Performance (DC 10, 12, 14, 16, 18). Zéro ou une réussite : échec. Deux ou trois : Feather Fall et Cure Wounds. Quatre : Mirror Image et Silence. Cinq : Hypnotic Pattern, Shatter, ou un sort sur mesure. Chaque échec désaccorde l'harmonie."
+    ],
+    "histoire": [
+      "Philippa y passe l'épreuve de l'Harmonique Originelle : composer une mélodie magique unique, qui devient un sort."
     ]
   },
   {
@@ -7680,6 +7774,9 @@
     "attitude": "neutre",
     "connu": [
       "Il enseigne la magie harmonique pure, la création par la vibration et la beauté."
+    ],
+    "histoire": [
+      "Il supervise l'épreuve de la Création de Philippa dans une salle suspendue au-dessus du vide, qui résonne à la moindre note."
     ]
   },
   {
@@ -7692,6 +7789,9 @@
     "chapeau": "À l'ombre d'un vieux hêtre noueux, derrière la bibliothèque, les élèves sont assis en cercle dans l'herbe. Le vent fait danser les pages de leurs carnets, mais aucun ne bronche. Une femme parle, un manuscrit posé sur les genoux, ses doigts fins suivant les lignes d'une écriture oubliée. Sa voix est douce, presque effacée, et chaque mot semble tirer un fil dans l'air, comme si elle recousait la mémoire d'un monde plus ancien que le jour. Le soleil perce les branches, et l'instant semble suspendu.",
     "connu": [
       "Épreuve, la Force du Souvenir : dans la grande bibliothèque, Philippa affronte Aster Invictus, un dragon cosmique né des étoiles, invoqué par la mémoire des contes. Cinq tours, un jet d'Histoire par tour (DC 12, 14, 16, 18, 20). Chaque réussite débloque une faiblesse légendaire et un sort lancé juste après inflige dix fois les dégâts. Objectif : 1 000 dégâts ou plus en 5 tours."
+    ],
+    "histoire": [
+      "Philippa y passe l'épreuve de la Force du Souvenir dans la grande bibliothèque : affronter le dragon cosmique Aster Invictus en retrouvant ses faiblesses légendaires grâce à l'Histoire."
     ]
   },
   {
@@ -7711,7 +7811,12 @@
     "citation": {
       "texte": "Tu ne peux pas défier un lieu que tu ne comprends pas.",
       "qui": "Lyrianne Velarion"
-    }
+    },
+    "histoire": [
+      "Elle reçoit Philippa dans son bureau, au cœur de la bibliothèque : « Tu arrives bien tard dans l'année, Philippa… mais l'histoire regorge d'âmes qui marchent hors des sentiers. »",
+      "Elle lui propose de réussir les quatre épreuves d'ici la fin du mois pour être reconnue diplômée, puis lui fait visiter l'académie.",
+      "Elle supervise l'épreuve du Savoir, contre Aster Invictus."
+    ]
   },
   {
     "id": "emma-balambour",
@@ -7730,7 +7835,10 @@
     "citation": {
       "texte": "Je vends ce que je peux… mais je ne veux surtout pas déranger, oh !",
       "qui": "Emma Balambour"
-    }
+    },
+    "histoire": [
+      "Philippa la croise dans la Grande Rue, colporteuse de breloques, timide et polie à l'extrême. Elle lui offre le Pendentif du Petit Ronron en remerciement de sa gentillesse."
+    ]
   },
   {
     "id": "torren-tweedy",
@@ -7749,7 +7857,11 @@
     "citation": {
       "texte": "Elle a tout ouvert, tout ! Une nuit, hop, les portes grandes ouvertes comme à la foire !",
       "qui": "Torren Tweedy"
-    }
+    },
+    "histoire": [
+      "Philippa le rencontre à l'auberge du Camélia, où il colle une affiche pour retrouver Lenach. Il dénonce avec amertume la trahison de Lenach : « Elle a tout ouvert, tout ! »",
+      "Il lui parle de Cassar, du port et de la prison, et lui conseille de voir Milo avant Ira Malden."
+    ]
   },
   {
     "id": "milo",
@@ -7768,7 +7880,11 @@
     "citation": {
       "texte": "Pas de mot de passe ? Alors pas d'accès.",
       "qui": "Milo"
-    }
+    },
+    "histoire": [
+      "Philippa le trouve à la tête de son emporium d'apothicaire. Il feint de ne pas connaître Ira Malden et refuse tout accès sans mot de passe.",
+      "Quand elle lui donne la phrase de Lavande, il actionne un levier caché sous une étagère et la fait descendre dans une cave humide."
+    ]
   },
   {
     "id": "ira-malden",
@@ -7788,7 +7904,12 @@
     "citation": {
       "texte": "Tu veux quitter cette ville ? Très bien. Mais y'a un prix.",
       "qui": "Ira Malden"
-    }
+    },
+    "histoire": [
+      "Philippa la rencontre dans le sous-sol secret de l'Emporium de Milo. Elle dirige une cellule de résistance et dessine à même le sol le plan de la prison du Grand Palais.",
+      "Elle lui offre un sauf-conduit vers Lunsk si elle libère Thoros Ven, et un Bag of Holding cousu aux ateliers Lenach si elle tue Cassar.",
+      "Philippa revient avec Thoros. Ira l'aide à traverser la ville jusqu'au fleuve : « Tu l'as fait. J'y croyais à peine. Maintenant file. Lunsk t'attend. »"
+    ]
   },
   {
     "id": "elza-skaparel",
@@ -7806,6 +7927,9 @@
     ],
     "alias": [
       "Skaparel"
+    ],
+    "histoire": [
+      "Philippa voit la vitrine de sa boutique de couture et apprend qu'elle est la rivale de Lenach."
     ]
   },
   {
@@ -7824,7 +7948,10 @@
     "citation": {
       "texte": "Non, on ne fait pas de crédit. Même pour les… aventurières, hein ?",
       "qui": "Tiffany"
-    }
+    },
+    "histoire": [
+      "Philippa l'entend lui refuser tout crédit chez Skaparel Apparel, où un sac coûte 3 500 po."
+    ]
   },
   {
     "id": "alwin-et-gerhard-kern",
@@ -7843,6 +7970,9 @@
     "alias": [
       "Alwin Kern",
       "Gerhard Kern"
+    ],
+    "histoire": [
+      "Philippa apprend qu'ils ont repris la Maison Lenach après la fuite de Lenach et qu'ils fabriquent des onguents au lieu de soieries."
     ]
   },
   {
@@ -7852,7 +7982,7 @@
     "titre": "Capitaine zélote du Dominion",
     "parent": "grand-palais-obaline",
     "lieu": "grand-palais-obaline",
-    "statut": "inconnu",
+    "statut": "mort",
     "resume": "Capitaine ambitieux promu par le Dominion, passé par des expériences de modification arcanique à Sol Novem.",
     "attitude": "neutre",
     "connu": [
@@ -7862,7 +7992,11 @@
     "citation": {
       "texte": "Enfin… une occasion de tester les dons du Seigneur-Soleil.",
       "qui": "Cassar"
-    }
+    },
+    "histoire": [
+      "Philippa le trouve dans la cour de la prison du Grand Palais. Il laisse les Gardes-Soleil patrouiller sans retenue et fait coller la propagande du Dominion partout.",
+      "Il enfonce une gemme démoniaque dans sa chair, se mue en semi-démon et combat avec deux bras indépendants. Philippa le tue."
+    ]
   },
   {
     "id": "thoros-ven",
@@ -7881,7 +8015,11 @@
     "citation": {
       "texte": "Ne me laissez pas seul. Amenez-moi jusqu'à Malden.",
       "qui": "Thoros Ven"
-    }
+    },
+    "histoire": [
+      "Philippa le trouve dans une cellule obscure du Grand Palais, blessé à la jambe. Il craint que son évasion ne soit qu'un répit et demande à être conduit à Ira Malden.",
+      "Elle le soutient jusqu'à Ira. Obaline reste occupée par le Dominion."
+    ]
   },
   {
     "id": "darn",
@@ -7895,6 +8033,9 @@
     "attitude": "neutre",
     "connu": [
       "Il prépare deux barques, l'une pour le bourgmestre, l'autre pour Philippa, direction Lunsk. Facilement corruptible."
+    ],
+    "histoire": [
+      "Maître du port, il prépare en silence deux barques, une pour Thoros Ven et une pour Philippa, qui descendent le fleuve vers Lunsk."
     ]
   },
   {
@@ -7913,7 +8054,10 @@
     "citation": {
       "texte": "Ce n'est pas en buvant avec des voleurs qu'on construit un avenir.",
       "qui": "Nella Fanwyk"
-    }
+    },
+    "histoire": [
+      "Philippa l'entend défendre le Dominion à l'auberge face à Karst : « Ce n'est pas en buvant avec des voleurs qu'on construit un avenir. »"
+    ]
   },
   {
     "id": "karst",
@@ -7931,7 +8075,10 @@
     "citation": {
       "texte": "Je préfère crever dans la brume que vivre sous leurs chaînes dorées.",
       "qui": "Karst"
-    }
+    },
+    "histoire": [
+      "Philippa l'entend dénoncer à l'auberge les taxes et les fouilles du Dominion : « Je préfère crever dans la brume que vivre sous leurs chaînes dorées. »"
+    ]
   },
   {
     "id": "oswald-brumier",
@@ -7945,6 +8092,9 @@
     "attitude": "neutre",
     "connu": [
       "Pour lui, Lunsk devrait se concentrer sur l'exploitation du bois et le commerce, et le Dominion peut y aider."
+    ],
+    "histoire": [
+      "Philippa le croise à l'auberge pendant la dispute entre Nella et Karst. Il juge la contrebande déshonorante pour la ville."
     ]
   },
   {
@@ -7954,7 +8104,10 @@
     "titre": "Petite bâtisse de bois aux lanternes rouges",
     "parent": "voros",
     "resume": "Petite auberge de bois, lanternes rouges suspendues, tenue par un homme gras.",
-    "chapeau": "Le navire glisse entre deux falaises abruptes, comme s'il s'enfonçait dans la gueule d'une bête antique. Les murailles de roche encadrent une cité suspendue entre la mer et la pierre. Sur les quais de bois, des crieurs, des mercenaires, des marchands chamarrés et des contrebandiers aux dents dorées se croisent en grondant dans toutes les langues. À l'auberge, une petite bâtisse de bois, des lanternes rouges oscillent au-dessus de la porte. L'air est moite, chargé d'algues et d'épices."
+    "chapeau": "Le navire glisse entre deux falaises abruptes, comme s'il s'enfonçait dans la gueule d'une bête antique. Les murailles de roche encadrent une cité suspendue entre la mer et la pierre. Sur les quais de bois, des crieurs, des mercenaires, des marchands chamarrés et des contrebandiers aux dents dorées se croisent en grondant dans toutes les langues. À l'auberge, une petite bâtisse de bois, des lanternes rouges oscillent au-dessus de la porte. L'air est moite, chargé d'algues et d'épices.",
+    "histoire": [
+      "Philippa y arrive à Voros. L'aubergiste Ghassan Tarek lui explique que la guilde des marchands contrôle tout et lui souffle l'emplacement du Voile."
+    ]
   },
   {
     "id": "ghassan-tarek",
@@ -7973,7 +8126,10 @@
     "citation": {
       "texte": "On ne fait pas de business ici sans sa bénédiction. Et croyez-moi, il bénit quand ça l'arrange.",
       "qui": "Ghassan Tarek"
-    }
+    },
+    "histoire": [
+      "Aubergiste à la voix aiguë, il accueille Philippa à son arrivée à Voros et lui dit que le Voile opère depuis les bains publics, près de la terrasse d'onyx."
+    ]
   },
   {
     "id": "bains-publics-de-voros",
@@ -7982,7 +8138,10 @@
     "titre": "Fief du Voile",
     "parent": "voros",
     "resume": "Ancien établissement de bains, brumeux, traversé de canalisations rouillées et de nappes de vapeur.",
-    "chapeau": "Une porte de cuivre gravée s'ouvre sur l'humidité, qui engloutit aussitôt le visiteur. Elle est mêlée aux relents d'algues, d'encens et de peau chaude. Des canalisations rouillées courent sous des plafonds voûtés, et des nappes de vapeur montent paresseusement au-dessus des bassins. L'odeur du sel, du musc et des corps fatigués imprègne les murs. Des silhouettes floues se déplacent en silence entre les bassins, drapées de serviettes, anonymes dans la brume."
+    "chapeau": "Une porte de cuivre gravée s'ouvre sur l'humidité, qui engloutit aussitôt le visiteur. Elle est mêlée aux relents d'algues, d'encens et de peau chaude. Des canalisations rouillées courent sous des plafonds voûtés, et des nappes de vapeur montent paresseusement au-dessus des bassins. L'odeur du sel, du musc et des corps fatigués imprègne les murs. Des silhouettes floues se déplacent en silence entre les bassins, drapées de serviettes, anonymes dans la brume.",
+    "histoire": [
+      "Philippa y trouve Skrell, étendu dans des coussins détrempés. Elle y suit plus tard un voleur du Voile et comprend que Skrell dirige le trafic de Suud."
+    ]
   },
   {
     "id": "skrell",
@@ -8002,7 +8161,12 @@
     "citation": {
       "texte": "Bravo, Sherlock. T'as suivi un type qui bosse pour moi, jusqu'à moi.",
       "qui": "Skrell"
-    }
+    },
+    "histoire": [
+      "Philippa le rencontre aux bains publics. Il nie connaître le Voile ou la Griffe et la renvoie vers les quêtes du tableau public.",
+      "Quand elle remonte jusqu'à lui le voleur de l'entrepôt de Jericho, il lui lance : « Bravo, Sherlock. »",
+      "Helka veut prendre sa place à la tête du Voile de Voros. Skrell est tué."
+    ]
   },
   {
     "id": "entrepot-de-jericho",
@@ -8011,7 +8175,10 @@
     "titre": "Entrepôt à l'odeur d'épices éventées",
     "parent": "voros",
     "resume": "Entrepôt encombré de caisses et de ballots, patrouillé par deux gardes peu motivés.",
-    "chapeau": "Dans les entrepôts à l'odeur d'épices éventées, l'ombre est moite et les caisses montent jusqu'aux poutres. Deux gardes peu motivés patrouillent à distance. L'atmosphère est tendue mais calme. Certaines caisses portent des marques étranges, et l'une d'elles cache un double fond rempli d'une fine poudre brune. Plus tard dans la nuit, une silhouette s'introduit et s'affaire à piller une caisse."
+    "chapeau": "Dans les entrepôts à l'odeur d'épices éventées, l'ombre est moite et les caisses montent jusqu'aux poutres. Deux gardes peu motivés patrouillent à distance. L'atmosphère est tendue mais calme. Certaines caisses portent des marques étranges, et l'une d'elles cache un double fond rempli d'une fine poudre brune. Plus tard dans la nuit, une silhouette s'introduit et s'affaire à piller une caisse.",
+    "histoire": [
+      "Philippa y patrouille une nuit, découvre dans une caisse un double fond avec de la poudre brune de Suud, et surprend un voleur qu'elle suit jusqu'aux bains publics."
+    ]
   },
   {
     "id": "jericho",
@@ -8030,7 +8197,11 @@
     "citation": {
       "texte": "Je veux des yeux, des oreilles… une présence. Quelqu'un pour surprendre ces rats.",
       "qui": "Jericho"
-    }
+    },
+    "histoire": [
+      "Philippa prend sa quête sur le tableau public. Il lui demande des yeux et des oreilles pour surprendre ses pillards et promet de la couvrir d'or si elle découvre qui tire les ficelles.",
+      "Elle découvre qu'il n'est qu'un pion aveugle du trafic de Skrell."
+    ]
   },
   {
     "id": "vrex",
@@ -8044,6 +8215,9 @@
     "attitude": "neutre",
     "connu": [
       "Si Philippa le suit, il la mène aux bains publics. S'il est confronté, il admet travailler pour un donneur d'ordre qu'il rencontre toujours aux bains."
+    ],
+    "histoire": [
+      "Philippa surprend ce voleur du Voile en train de piller une caisse dans l'entrepôt de Jericho et le suit jusqu'aux bains publics."
     ]
   },
   {
@@ -8053,7 +8227,10 @@
     "titre": "Palais de pierre blanche taillé dans la falaise",
     "parent": "voros",
     "resume": "Palais de pierre blanche taillé dans la falaise qui surplombe Voros, ouvert sur la mer.",
-    "chapeau": "Les lourdes portes du palais s'ouvrent sur la pierre blanche, taillée dans la falaise même qui surplombe Voros. L'intérieur est luxueux sans ostentation : de l'or terni, des tentures exotiques, des vitrines pleines d'objets rares. Au centre d'une vaste salle ouverte sur la mer, un trône sculpté en forme de navire domine l'espace. Des scribes et des gardes aux couleurs de la ville l'entourent. Le bruit des vagues monte en dessous."
+    "chapeau": "Les lourdes portes du palais s'ouvrent sur la pierre blanche, taillée dans la falaise même qui surplombe Voros. L'intérieur est luxueux sans ostentation : de l'or terni, des tentures exotiques, des vitrines pleines d'objets rares. Au centre d'une vaste salle ouverte sur la mer, un trône sculpté en forme de navire domine l'espace. Des scribes et des gardes aux couleurs de la ville l'entourent. Le bruit des vagues monte en dessous.",
+    "histoire": [
+      "Philippa y est reçue par Gallywix, qui lui indique l'adresse d'un entrepôt isolé au nord de la ville."
+    ]
   },
   {
     "id": "entrepot-de-la-griffe",
@@ -8065,6 +8242,9 @@
     "chapeau": "Sur les collines arides qui surplombent Voros, une maison en ruines se cache derrière des pans de pierre effondrés et des murs rongés par le sel. Des hommes armés montent la garde, nerveux. Sous des débris, une trappe dissimule une échelle de corde qui plonge dans l'obscurité. En bas, un réseau de tunnels humides est éclairé par des lanternes tremblantes. Des cages de métal, des prisonniers hagards et des caisses estampillées de sceaux exotiques y attendent.",
     "connu": [
       "Le chef de la Griffe, interrogé, explique que la marchandise vivante vient de l'Île aux Moines, par caravanes à travers le désert, et que l'argent sert à les faire passer à Lunsk."
+    ],
+    "histoire": [
+      "Philippa y découvre des cages, des prisonniers hagards et des caisses de sceaux exotiques, et apprend qu'on fait venir les captifs de l'île aux Moines par caravane à travers le désert."
     ]
   },
   {
@@ -8074,7 +8254,12 @@
     "titre": "Navire à voiles noires bordées d'or",
     "parent": "voros",
     "resume": "Grand navire aux voiles noires bordées d'or, qui relie Lunsk à Voros en trois jours et demi.",
-    "chapeau": "Un immense navire fend la brume du petit matin, ses voiles noires bordées d'or. Une corne de brume déchire le silence. Sur le quai, des contrebandiers déchargent des caisses sous le regard placide du capitaine. À bord, les cordages claquent, les vergues grincent et les voiles se gonflent lentement sous la brise du sud. La lumière dorée de fin de journée baigne le pont et les quais de Lunsk s'effacent dans le sillage."
+    "chapeau": "Un immense navire fend la brume du petit matin, ses voiles noires bordées d'or. Une corne de brume déchire le silence. Sur le quai, des contrebandiers déchargent des caisses sous le regard placide du capitaine. À bord, les cordages claquent, les vergues grincent et les voiles se gonflent lentement sous la brise du sud. La lumière dorée de fin de journée baigne le pont et les quais de Lunsk s'effacent dans le sillage.",
+    "histoire": [
+      "Philippa embarque à Lunsk sur ce navire aux voiles noires bordées d'or, que commande Vano Meredzi.",
+      "Au cours de la traversée de trois jours et demi, une tempête nocturne attire des Nagas, qu'elle repousse avec l'équipage.",
+      "Elle débarque à Voros."
+    ]
   },
   {
     "id": "brugo-dentmolle",
@@ -8091,6 +8276,9 @@
     ],
     "alias": [
       "Brugo Dent-Molle"
+    ],
+    "histoire": [
+      "Philippa le voit pendant la tempête, trempé et hilare, une louche à la main : « J'vous jure Cap'tain, y'en a un qui m'a mordu la cuisse ! »"
     ]
   },
   {
@@ -8105,6 +8293,9 @@
     "attitude": "neutre",
     "connu": [
       "Le capitaine conseille d'éviter de lui parler quand elle regarde. Il faut border net quand elle donne un ordre."
+    ],
+    "histoire": [
+      "Philippa la voit à la barre pendant la traversée. Le capitaine prévient : si elle regarde, évite de parler."
     ]
   },
   {
@@ -8119,6 +8310,9 @@
     "attitude": "neutre",
     "connu": [
       "Née dans les bas-quartiers de Solarius, elle rêve de devenir capitaine à son tour."
+    ],
+    "histoire": [
+      "Philippa la voit dans la mâture, imitant le capitaine, puis pendant la tempête dans les haubans, sabre entre les dents."
     ]
   },
   {
@@ -8133,6 +8327,9 @@
     "attitude": "neutre",
     "connu": [
       "Il a le pied marin et l'œil plus vif que tous les gabiers du capitaine. Il protège Izzri discrètement."
+    ],
+    "histoire": [
+      "Philippa le voit ajuster une drisse en silence pendant la traversée, puis retenir les Nagas sur bâbord pendant la tempête."
     ]
   },
   {
@@ -8786,6 +8983,9 @@
     "connu": [
       "Il commente chaque geste avec énergie et mêle ses consignes techniques à des refrains d'anciens chants de guerre.",
       "Il enseigne aux côtés de Tharamund Skeldraxis."
+    ],
+    "histoire": [
+      "Philippa le voit mener l'entraînement de la cour extérieure de l'école de la Vaillance, entre fleurets de bois et refrains de guerre."
     ]
   },
   {
@@ -8801,6 +9001,9 @@
     "connu": [
       "Il fait recommencer les élèves devant un cristal suspendu qui vibre d'une note claire, et laisse naître un kaléidoscope de sons.",
       "Il enseigne aux côtés d'Aeon Calaryn."
+    ],
+    "histoire": [
+      "Philippa croise ce drakéide massif en robe bleue tachée d'encre, qui dirige les élèves de la Création autour d'un cristal suspendu."
     ]
   },
   {
@@ -9094,7 +9297,10 @@
     "pos": {
       "x": 0.186,
       "y": 0.089
-    }
+    },
+    "histoire": [
+      "Philippa y apprend l'existence de la porte dérobée du palais et le nom de Lavande."
+    ]
   },
   {
     "id": "tour-du-pentacle-corvalis",
@@ -9106,7 +9312,10 @@
     "pos": {
       "x": 0.075,
       "y": 0.27
-    }
+    },
+    "histoire": [
+      "Philippa y rencontre Lavande, qui lui propose le passage par les égouts jusqu'au bal masqué."
+    ]
   },
   {
     "id": "omen-corvalis",
@@ -9118,7 +9327,10 @@
     "pos": {
       "x": 0.247,
       "y": 0.3
-    }
+    },
+    "histoire": [
+      "Philippa y vient sur le conseil de Madame Augustine pour trouver Lavande."
+    ]
   },
   {
     "id": "cathedrale-de-waukyne",
@@ -9154,7 +9366,10 @@
     "pos": {
       "x": 0.175,
       "y": 0.67
-    }
+    },
+    "histoire": [
+      "Philippa y recueille ses premières informations sur le bal masqué et sur le Dominion."
+    ]
   },
   {
     "id": "jardins-suspendus-corvalis",
@@ -9190,7 +9405,10 @@
     "pos": {
       "x": 0.058,
       "y": 0.922
-    }
+    },
+    "histoire": [
+      "Philippa y prend un cours de harpe et reçoit le conseil de se rendre à l'académie de Lumenlid."
+    ]
   },
   {
     "id": "palais-ducal-corvalis",
@@ -9202,7 +9420,10 @@
     "pos": {
       "x": 0.511,
       "y": 0.856
-    }
+    },
+    "histoire": [
+      "Philippa s'y infiltre pendant le bal masqué du Duc, où la Duchesse Cecilia est tuée. Le Nephilim présenté comme le Joyau tombé du ciel y est remis à Gran Brijit."
+    ]
   },
   {
     "id": "theatre-vaelmore",
@@ -9214,7 +9435,10 @@
     "pos": {
       "x": 0.689,
       "y": 0.607
-    }
+    },
+    "histoire": [
+      "Philippa y rencontre Regus, qui rêve de devenir acteur."
+    ]
   },
   {
     "id": "ambassade-du-dominion",

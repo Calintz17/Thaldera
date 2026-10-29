@@ -2571,9 +2571,11 @@
       "Gallywix ne combat pas la Griffe, qui remplit ses coffres."
     ],
     "histoire": [
-      "Jane et Philippa se rencontrent ici.",
-      "Le groupe tue Skrell, relais du Voile et trafiquant de Suud, dans les anciens bains publics.",
-      "Helka von Leyenmil reprend le Voile local et présente Bernard à Philippa."
+      "Après trois jours et demi de mer sur l'Aile d'Avalon, dont une tempête nocturne où des Nagas remontent des fonds, Philippa arrive à Voros, cité suspendue entre falaise et mer, dont la guilde des marchands de Gallywix contrôle tout.",
+      "Ghassan Tarek, l'aubergiste, lui dit que le Voile opère depuis les bains publics. Elle y trouve Skrell, qui nie tout, puis prend une quête sur le tableau public : le marchand Jericho se fait piller chaque nuit.",
+      "Elle patrouille la nuit dans l'entrepôt de Jericho, y découvre du Suud, suit un voleur du Voile jusqu'aux bains et comprend que Skrell orchestre lui-même les vols et le trafic de cette drogue brune vers les ports du Consortium.",
+      "La landsknecht repentie Helka von Leyemil l'avertit sur la Griffe et lui présente Bernard. Skrell est tué. Gallywix donne à Philippa l'adresse d'un entrepôt isolé au nord, où elle découvre des cages de prisonniers et apprend que les captifs viennent de l'île aux Moines par caravane à travers le désert.",
+      "Jane et Philippa se rencontrent à Voros, et Jane propose de les guider vers l'île aux Moines."
     ],
     "pos": {
       "x": 0.55,
@@ -2593,8 +2595,12 @@
       "Le Dominion n'y était présent que sur le papier avant l'annexion."
     ],
     "histoire": [
-      "Philippa se fait passer pour une acheteuse de Sol Novem et infiltre la Griffe.",
-      "Le groupe tue Mezzek et récupère son livre de comptes, qui désigne Voros comme destination."
+      "Après neuf jours et demi de barque, avec une attaque de crocodiles près du lac, Philippa arrive à Lunsk, ville lacustre où le Dominion n'est présent que sur le papier.",
+      "Dans l'auberge de Mirek Trois-Pierres, elle assiste à la dispute entre Nella Fanwyk, pro-Dominion, et Karst, anti-Dominion.",
+      "Selva, du Voile, lui propose de jouer une acheteuse de Sol Novem pour approcher la Griffe. Silex la conduit à l'église en ruine puis à un entrepôt du nord-ouest, où Mezzek démasque la ruse. Philippa l'affronte et le tue.",
+      "Avant de mourir, Mezzek cite le Berger comme patron de la Griffe. Le livre de comptes mentionne de la « marchandise vive scellée » à décharger de nuit à Voros. Selva se réjouit que le Voile puisse désormais déloger la Griffe de Lunsk.",
+      "Elle l'envoie à Skrell à Voros. Philippa embarque sur l'Aile d'Avalon du capitaine Vano Meredzi.",
+      "Depuis, le Dominion Sol a annexé Lunsk. Une tour de pentacle y est construite sur les ruines de l'église."
     ],
     "pos": {
       "x": 0.607,
@@ -2629,7 +2635,11 @@
         "inverse": "sbire de"
       }
     ],
-    "attitude": "ennemi"
+    "attitude": "ennemi",
+    "histoire": [
+      "Philippa l'affronte à l'entrepôt du nord-ouest, entre la scierie et la berge. Il démasque sa ruse : « Une acheteuse ? Silex imbécile ! » et appelle ses hommes.",
+      "Il cite le Berger comme patron, dont il ignore l'emplacement. Philippa le tue et récupère son livre de comptes."
+    ]
   },
   {
     "id": "silex",
@@ -2640,7 +2650,11 @@
     "lieu": "lunsk",
     "statut": "vivant",
     "resume": "Sous-fifre de Mezzek, épargné par Philippa.",
-    "attitude": "ennemi"
+    "attitude": "ennemi",
+    "histoire": [
+      "Philippa le rencontre à l'église en ruine, capuchon rabattu, nerveux. Il lui demande de prouver qu'elle peut payer et lui dit de retourner à l'auberge, qu'il viendra la chercher.",
+      "Il la conduit à l'entrepôt de Mezzek. Philippa l'épargne."
+    ]
   },
   {
     "id": "selva",
@@ -2664,7 +2678,12 @@
         "inverse": "même réseau du Voile que"
       }
     ],
-    "attitude": "positif"
+    "attitude": "positif",
+    "histoire": [
+      "Philippa la rencontre dans les ruelles de Lunsk, brouillard et silhouette fine, au moment où elle parle de la Griffe. Elle lui propose de se faire passer pour une commanditaire de Sol Novem afin de piéger un sbire.",
+      "Après la mort de Mezzek, elle déclare : « C'était propre. On a récupéré ce qu'il fallait. » Elle l'envoie voir Skrell à Voros.",
+      "Depuis l'annexion de Lunsk par le Dominion, elle a dû fuir, on ignore où."
+    ]
   },
   {
     "id": "mirek-trois-pierres",
@@ -2675,7 +2694,11 @@
     "lieu": "auberge-du-brouillard-attable",
     "statut": "vivant",
     "resume": "Aubergiste à l'œil de verre. Point de chute et de rumeurs.",
-    "attitude": "neutre"
+    "attitude": "neutre",
+    "histoire": [
+      "Philippa le trouve dans son auberge, accoudé à une poutre, un œil fatigué et l'autre de verre. Il explique les tensions pro et anti Dominion de la ville.",
+      "Après la dispute entre Nella et Karst, il lui parle à voix basse."
+    ]
   },
   {
     "id": "ile-aux-moines",
@@ -8919,7 +8942,10 @@
     "pos": {
       "x": 0.103,
       "y": 0.256
-    }
+    },
+    "histoire": [
+      "Philippa y affronte Mezzek et ses hommes, et récupère son livre de comptes."
+    ]
   },
   {
     "id": "scierie-lunsk",
@@ -8943,7 +8969,10 @@
     "pos": {
       "x": 0.489,
       "y": 0.548
-    }
+    },
+    "histoire": [
+      "Philippa y rencontre Mirek et assiste à la dispute entre Nella et Karst."
+    ]
   },
   {
     "id": "herboristerie-la-sous-corolle",
@@ -8967,7 +8996,10 @@
     "pos": {
       "x": 0.5,
       "y": 0.859
-    }
+    },
+    "histoire": [
+      "Philippa y arrive par barque dans la brume. Plus tard, elle y embarque sur l'Aile d'Avalon."
+    ]
   },
   {
     "id": "docks-camont",
