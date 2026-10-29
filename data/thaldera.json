@@ -3169,9 +3169,16 @@
       "Prophétie : « Les cheveux de flamme éteindront la Flamme éternelle »."
     ],
     "histoire": [
-      "Philippa refuse de voler la Première Flamme et choisit la voie de la Balance.",
-      "Le groupe nettoie la mine de Pyrrite, bloquée par un portail abyssal.",
-      "Jane tue les trois agents de la Griffe de la taverne."
+      "Dans la hutte de Gran Brijit, Philippa apprend qu'elle doit retrouver la Première Flamme, source éteinte mais non perdue du Titan solaire.",
+      "Un Astral Dreadnaught surgit d'un cercle rituel et avale le groupe. Il le recrache dans le Plan du Feu, sur une plaine de roche brûlante, avec la ville visible au loin.",
+      "Le groupe marche deux heures sous la chaleur. Sur le pont de roche noire au-dessus d'une rivière de lave, un élémentaire de feu et trois méphites l'attaquent. Les golems de brasier ouvrent ensuite les portes de bronze.",
+      "Il entre à Pyrrah, où les habitants lui indiquent l'auberge, les bains, la grande forge et le temple du sommet. Une procession approche et l'Incarnat porte la Première Flamme.",
+      "À l'auberge de l'Étincelle et au Temple des Ardeurs, il apprend que les prêtres sont nerveux, surveillent les Genasi de feu et croient de plus en plus à la prophétie des cheveux de flamme.",
+      "Jane se rend seule à la taverne de la Griffe, où elle surprend trois producteurs inquiets de l'arrêt des commandes, des caisses envoyées à Port Doëlan et du silence du Pêcheur. Elle les tue.",
+      "À la Forge éternelle, Kaldros dit que les livraisons de pyrracier ont cessé. À l'entrée de la mine, Milos explique que des créatures de feu ont attaqué ses hommes. Le groupe nettoie la mine, bloquée par un portail abyssal.",
+      "Il visite l'Athanor d'Ashkalyon, le Brasero aux Merveilles et les Thermes Solaires, puis la basilique d'Héliandros.",
+      "Dans le sanctuaire, l'Incarnat dit avoir su que le groupe viendrait. Philippa refuse de voler la Première Flamme et choisit la voie de la Balance. La ville reste protégée.",
+      "De retour dans la clairière, l'Arbre-Soleil explose de colère et le Héraut de la Flamme attaque Philippa."
     ],
     "accent": "#e0602a",
     "blason": "img/blasons/pyrrah.webp",
@@ -3218,7 +3225,10 @@
     ],
     "attitude": "allie",
     "histoire": [
-      "La Forge éternelle se présente comme la meilleure de tous les plans. Son apprentie Fyra lui a déjà valu un rappel à l'ordre sur la modestie."
+      "Le groupe entre dans la Forge éternelle, où il accueille sa jeune apprentie Fyra par un rappel à l'ordre sur la modestie.",
+      "Il dit que les livraisons de pyrracier ont cessé et qu'il ne peut plus forger sur mesure.",
+      "Après le nettoyage de la mine, il peut transformer la pyrrite rapportée en pyrracier et forger un objet pour l'un des personnages.",
+      "Il devient l'allié et le crafteur de confiance du groupe, avec l'écaille d'Al Batun et la pyrrite."
     ]
   },
   {
@@ -3237,6 +3247,10 @@
       "Il vit seul dans le sanctuaire supérieur du temple, sans garde ni prêtre. Autour de son cou pend la Première Flamme, un cristal incandescent sur une chaîne noire.",
       "Les habitants l'adorent : il se promène dans les rues, parle aux gens et accepte les offrandes.",
       "Il dit savoir que les PJ viendraient et que la Flamme lui a murmuré qu'il ne devait pas la porter pour toujours."
+    ],
+    "histoire": [
+      "Il attend Philippa dans le sanctuaire du temple : « Je savais que vous viendriez. La Flamme me l'a murmuré, hier. »",
+      "Philippa refuse de prendre la Première Flamme. Il reste vivant."
     ]
   },
   {
@@ -3258,6 +3272,9 @@
     "attitude": "neutre",
     "connu": [
       "Prêtre de la basilique d'Héliandros, à Pyrrah. Il officie sous la coupole solaire où brûlent douze braseros rituels."
+    ],
+    "histoire": [
+      "Le groupe le croise à la basilique, parmi les prêtres qui interrogent les Genasi."
     ]
   },
   {
@@ -3286,7 +3303,13 @@
         "inverse": "amie de"
       }
     ],
-    "attitude": "neutre"
+    "attitude": "neutre",
+    "histoire": [
+      "Il accueille Gran Brijit : « Eh… Ereshkigal Rabâyandeh. Cela fait longtemps que tes pas n'ont pas foulé cette porte. »",
+      "Il offre le thé au groupe et lui parle de la Bibliothèque Enfouie.",
+      "Il reconnaît Aram Sharûn sur les gravures de sa maison et envoie le groupe vers la Fosse sans Fond, gardée par Al Batun.",
+      "Il voit le groupe revenir avec la Clé."
+    ]
   },
   {
     "id": "chateau-spezza",
@@ -7892,7 +7915,10 @@
     "pos": {
       "x": 0.317,
       "y": 0.4
-    }
+    },
+    "histoire": [
+      "Le groupe y apprend l'existence de la procession de l'Incarnat et de la faible sécurité de la ville."
+    ]
   },
   {
     "id": "serevya",
@@ -7906,6 +7932,9 @@
     "attitude": "neutre",
     "connu": [
       "Tient l'Auberge de l'Étincelle à Pyrrah : basalte poli veiné d'orange, salle commune éclairée de lanternes à flammes bleutées, vasque de braises qui sert de foyer et de cuisine."
+    ],
+    "histoire": [
+      "Elle accueille le groupe à l'auberge de l'Étincelle."
     ]
   },
   {
@@ -7923,7 +7952,10 @@
     "pos": {
       "x": 0.078,
       "y": 0.644
-    }
+    },
+    "histoire": [
+      "Le groupe y entend que l'Incarnat se promène librement mais que les prêtres du temple sont nerveux depuis des semaines."
+    ]
   },
   {
     "id": "kaldon",
@@ -7951,6 +7983,9 @@
     "attitude": "neutre",
     "connu": [
       "Tient avec Kóressa et Thaleia la maison de passe du Temple des Ardeurs, à Pyrrah. Tentures couleur braise, vapeur de safran, on y parle bas."
+    ],
+    "histoire": [
+      "Il fait partie des compagnons que le groupe rencontre au Temple des Ardeurs."
     ]
   },
   {
@@ -7976,6 +8011,9 @@
     "attitude": "neutre",
     "connu": [
       "Travaille au Temple des Ardeurs, à Pyrrah, avec Kaldon et Thaleia."
+    ],
+    "histoire": [
+      "Elle fait partie des compagnes que le groupe rencontre au Temple des Ardeurs."
     ]
   },
   {
@@ -7990,6 +8028,9 @@
     "attitude": "neutre",
     "connu": [
       "Travaille au Temple des Ardeurs, à Pyrrah, avec Kaldon et Kóressa."
+    ],
+    "histoire": [
+      "Elle fait partie des compagnes que le groupe rencontre au Temple des Ardeurs."
     ]
   },
   {
@@ -8003,7 +8044,10 @@
       "Jane y a découvert un message à l'encre invisible de la Griffe.",
       "Les commandes de pyrracier se sont arrêtées d'un coup, et les dernières caisses sont parties vers Port Doëlan."
     ],
-    "chapeau": "À la lisière des quartiers de forge, dans une rue étroite encore tiède de la chaleur du jour. Murs noircis de suie, plafond bas qui retient la fumée, foyer mal entretenu. Une arrière-salle se cache derrière un rideau épais, pour les discussions qui ne doivent pas porter."
+    "chapeau": "À la lisière des quartiers de forge, dans une rue étroite encore tiède de la chaleur du jour. Murs noircis de suie, plafond bas qui retient la fumée, foyer mal entretenu. Une arrière-salle se cache derrière un rideau épais, pour les discussions qui ne doivent pas porter.",
+    "histoire": [
+      "Jane y entre seule, trouve une feuille à l'encre invisible marquée du symbole de la Griffe, puis surprend trois producteurs dans l'arrière-salle. Elle les tue."
+    ]
   },
   {
     "id": "morve",
@@ -8042,6 +8086,9 @@
     "connu": [
       "Membre de la Griffe à Pyrrah, lié à la production locale. Il se plaint de l'arrêt soudain des commandes : les dernières caisses, marquées du symbole de la Griffe, sont parties vers Port Doëlan.",
       "Il parle d'un intermédiaire, le Pêcheur, qui faisait suivre les instructions et ne donne plus signe de vie."
+    ],
+    "histoire": [
+      "Jane le surprend dans l'arrière-salle de la taverne de la Griffe : « On a livré les dernières caisses comme prévu, et depuis plus rien. » Jane le tue."
     ]
   },
   {
@@ -8075,6 +8122,9 @@
     "connu": [
       "Agent de la Griffe à Pyrrah. Avec Morve et Ishra, il discute dans l'arrière-salle du Rendez-vous de la Griffe : tout ce qui partait de Pyrrah passait par Port Doëlan, et il reste des échantillons sans acheteur.",
       "Il évoque l'idée de s'associer avec le Voile."
+    ],
+    "histoire": [
+      "Jane le surprend dans l'arrière-salle de la taverne de la Griffe, se demandant à qui refourguer sa came. Jane le tue."
     ]
   },
   {
@@ -8101,6 +8151,9 @@
     "attitude": "ennemi",
     "connu": [
       "Agent de la Griffe à Pyrrah, présent avec Morve et Vire dans l'arrière-salle du Rendez-vous de la Griffe. Elle s'inquiète de ce que deviendra le réseau sans nouvelles commandes."
+    ],
+    "histoire": [
+      "Jane la surprend dans l'arrière-salle de la taverne de la Griffe : « Et si on tentait une association avec le Voile ? » Jane la tue."
     ]
   },
   {
@@ -8117,7 +8170,11 @@
     "pos": {
       "x": 0.197,
       "y": 0.196
-    }
+    },
+    "histoire": [
+      "Le groupe y rencontre Kaldros et Fyra et apprend que le minerai manque.",
+      "Il y revient forger avec la pyrrite de la mine."
+    ]
   },
   {
     "id": "fyra",
@@ -8132,6 +8189,9 @@
     "attitude": "positif",
     "connu": [
       "Jeune apprentie de Kaldros à la Forge éternelle, volubile et maladroite. Elle porte les fioles de sang-magma et vante la qualité et les prix de la forge à chaque client."
+    ],
+    "histoire": [
+      "Elle accueille le groupe dans la forge : « Yeaaah, des clients ! » Kaldros la rappelle à l'ordre sur la modestie."
     ]
   },
   {
@@ -8144,7 +8204,10 @@
     "connu": [
       "Trois mineurs ont disparu."
     ],
-    "chapeau": "Sous la montagne, la mine s'est tue, et avec elle le battement régulier de la cité. À l'entrée, des mineurs blessés et démoralisés. Dans les galeries, des traces de panique brutale : cadavres calcinés, matériel abandonné, parois noircies."
+    "chapeau": "Sous la montagne, la mine s'est tue, et avec elle le battement régulier de la cité. À l'entrée, des mineurs blessés et démoralisés. Dans les galeries, des traces de panique brutale : cadavres calcinés, matériel abandonné, parois noircies.",
+    "histoire": [
+      "Le groupe y descend sur la demande de Kaldros, y trouve un portail abyssal d'où sortent des magmins enflammés, et sécurise la mine."
+    ]
   },
   {
     "id": "milos",
@@ -8160,7 +8223,11 @@
       "Contremaître de la mine de Pyrrah. Ses hommes ont été attaqués dans les galeries par des créatures en feu, trois mineurs ont disparu et aucun survivant ne redescendra tant que la menace persiste."
     ],
     "citation": "Dans la mine, des créatures en feu ont attaqué. Trois mineurs ont disparu. Le reste refuse de descendre.",
-    "attitude": "neutre"
+    "attitude": "neutre",
+    "histoire": [
+      "Il attend le groupe à l'entrée de la mine avec ses mineurs blessés : « Trois mineurs ont disparu. Le reste refuse de descendre. »",
+      "Après le nettoyage de la mine, elle rouvre."
+    ]
   },
   {
     "id": "athanor-d-ashkalyon",
@@ -8173,7 +8240,10 @@
     "pos": {
       "x": 0.392,
       "y": 0.626
-    }
+    },
+    "histoire": [
+      "Le groupe y passe et y apprend que la prophétie est authentique."
+    ]
   },
   {
     "id": "ashkalyon",
@@ -8201,6 +8271,9 @@
       "Drakéide arcaniste de l'Athanor, à Pyrrah. Il ne se soucie pas de politique et ne jure que par la recherche.",
       "Il a vu l'Incarnat plusieurs fois, venu bénir des rituels. Il confirme que la prophétie des cheveux de flamme est authentique et que les prêtres sont nerveux à l'approche de la procession.",
       "Il perçoit la marque de lumière sur Philippa, même quand elle tente de la masquer. Son inventaire est réduit, mais il peut réaliser des objets, sorts et enchantements sur mesure."
+    ],
+    "histoire": [
+      "Il confirme la prophétie des cheveux de flamme et détecte la marque de lumière sur Philippa."
     ]
   },
   {
@@ -8214,7 +8287,10 @@
     "pos": {
       "x": 0.894,
       "y": 0.326
-    }
+    },
+    "histoire": [
+      "Le groupe y passe fouiller le bric-à-brac."
+    ]
   },
   {
     "id": "krixis",
@@ -8233,6 +8309,9 @@
     "connu": [
       "Marchand du Bric-à-brac Le Brasero aux Merveilles, dans une ruelle secondaire de Pyrrah. Il rachète ce que les habitants trouvent dans les dunes de magma et sait reconnaître l'origine titanique, féerique ou élémentaire d'un objet.",
       "Il connaît bien les zones dangereuses autour de Pyrrah et adore les gadgets mécaniques."
+    ],
+    "histoire": [
+      "Il commerce avec le groupe, une personne à la fois."
     ]
   },
   {
@@ -8249,7 +8328,10 @@
     "pos": {
       "x": 0.722,
       "y": 0.259
-    }
+    },
+    "histoire": [
+      "Le groupe s'y repose."
+    ]
   },
   {
     "id": "ephyrion",
@@ -8289,6 +8371,9 @@
     "connu": [
       "Tient les Thermes Solaires de Pyrrah, vaste complexe enterré aux arches immenses, avec bassins tempérés, bains de vapeur et bassin de refroidissement. Il observe les clients et peut les conseiller.",
       "Des prêtres fréquentent les thermes : une oreille attentive peut y glaner des rumeurs."
+    ],
+    "histoire": [
+      "Il observe et conseille le groupe aux thermes."
     ]
   },
   {
@@ -8332,7 +8417,10 @@
       "ordre": 3,
       "etat": "active",
       "note": "Craie posée par Philippa dans la basilique d'Héliandros."
-    }
+    },
+    "histoire": [
+      "Le groupe y entre, voit les prêtres chanter et apprend que l'Incarnat réside au sommet."
+    ]
   },
   {
     "id": "pretres-de-la-flamme",
@@ -8343,6 +8431,9 @@
     "resume": "Prêtres nerveux, qui interrogent les Genasi avant tout accès à la chambre solaire.",
     "alias": [
       "Prêtres de la Flamme"
+    ],
+    "histoire": [
+      "Le groupe les voit surveiller les Genasi et éviter de parler de la prophétie."
     ]
   },
   {
@@ -8455,6 +8546,11 @@
     "resume": "Pièce qui aligne les résonances des cristaux de Jane. Elle était dans le noyau du golem du donjon d'Aram Sharûn.",
     "alias": [
       "HexaCore"
+    ],
+    "histoire": [
+      "Le groupe le retire du cœur du golem avant l'effondrement du donjon.",
+      "Nolbrim s'en saisit chez Gran Brijit et dit qu'il va stabiliser le moteur cristallin de Jane.",
+      "Il sert au rituel qui plonge Jane dans six métamorphoses."
     ]
   },
   {
@@ -8482,7 +8578,10 @@
     "connu": [
       "Gran Brijit a demandé au groupe s'il voulait gérer ça seul."
     ],
-    "chapeau": "Une maison basse adossée à la paroi rocheuse, où l'ombre s'accumule comme une seconde façade. L'air est lourd et frais, chargé de sable humide et d'huile brûlée. Une faible lampe vacille au-dessus d'un comptoir taillé dans la pierre brute. La nuit tombe vite, et le silence est si dense qu'on a l'impression qu'il écoute."
+    "chapeau": "Une maison basse adossée à la paroi rocheuse, où l'ombre s'accumule comme une seconde façade. L'air est lourd et frais, chargé de sable humide et d'huile brûlée. Une faible lampe vacille au-dessus d'un comptoir taillé dans la pierre brute. La nuit tombe vite, et le silence est si dense qu'on a l'impression qu'il écoute.",
+    "histoire": [
+      "Le groupe y prend une chambre pour la nuit. Un homme du village y entre pour le détrousser et Gran Brijit demande aux joueuses si elles gèrent seules."
+    ]
   },
   {
     "id": "zababa-mahir",
@@ -8506,7 +8605,10 @@
     "connu": [
       "Brigand de Khazad-Marûn. Il entre de nuit dans la chambre des PJ au couteau pour les détrousser, en exigeant de l'argent pour leur protection. Opportuniste porté par la misère et la méfiance envers les étrangers, il tremble en apercevant Gran Brijit."
     ],
-    "citation": "Vous n'êtes pas les bienvenus ici, les étrangers. Et si vous voulez rester, il faut payer pour notre protection !"
+    "citation": "Vous n'êtes pas les bienvenus ici, les étrangers. Et si vous voulez rester, il faut payer pour notre protection !",
+    "histoire": [
+      "Il réclame au groupe de l'argent pour sa protection, à l'auberge dans la roche : « Vous n'êtes pas les bienvenus ici, les étrangers… »"
+    ]
   },
   {
     "id": "ur-kalmesh",
@@ -8524,6 +8626,9 @@
     "attitude": "neutre",
     "connu": [
       "Autre brigand de Khazad-Marûn, impliqué dans l'incident nocturne de l'auberge taillée dans la roche."
+    ],
+    "histoire": [
+      "Il réclame au groupe de l'argent pour sa protection, à l'auberge dans la roche."
     ]
   },
   {
@@ -8533,7 +8638,10 @@
     "titre": "Herboriste",
     "parent": "kazad-marunn",
     "resume": "Échoppe creusée dans la roche, rideau de perles d'argile, fleurs séchées et racines torsadées.",
-    "chapeau": "Une échoppe creusée à même la roche, à l'ouverture basse marquée par un rideau de perles d'argile que le vent fait cliqueter. La lumière descend d'un puits discret sur des étagères de pierre couvertes de fleurs séchées, de racines torsadées et de fioles. L'air est frais, parfumé d'herbes brûlées et de terre sèche."
+    "chapeau": "Une échoppe creusée à même la roche, à l'ouverture basse marquée par un rideau de perles d'argile que le vent fait cliqueter. La lumière descend d'un puits discret sur des étagères de pierre couvertes de fleurs séchées, de racines torsadées et de fioles. L'air est frais, parfumé d'herbes brûlées et de terre sèche.",
+    "histoire": [
+      "Le groupe y entre pour se ravitailler en herbes du désert."
+    ]
   },
   {
     "id": "ashran",
@@ -8549,6 +8657,9 @@
     "connu": [
       "Genasi de Terre, herboriste de La Vie des Dunes, à Khazad-Marûn. Visage carré, peau tannée, tablier de cuir marqué de cicatrices, voix rauque. Direct, un peu méfiant envers les étrangers mais professionnel.",
       "Il vend des plantes du désert : cactus à eau, racine antidote, fruits contre l'épuisement, lys rare qui soigne."
+    ],
+    "histoire": [
+      "Il reçoit le groupe : « Dites-moi ce qu'il vous faut, et je verrai ce que le désert peut vous donner. »"
     ]
   },
   {
@@ -8558,7 +8669,10 @@
     "titre": "Tanneur",
     "parent": "kazad-marunn",
     "resume": "Cour intérieure de pierre sèche, peaux qui durcissent au soleil.",
-    "chapeau": "Une petite cour intérieure protégée par des murs de pierre sèche, où des peaux tannées pendent à des cordes en durcissant au soleil. L'odeur de cuir chauffé se mêle à celle du sable chaud. La boutique n'est qu'une pièce sombre et fraîche, remplie de sacs, de brassards et de vestes suspendues."
+    "chapeau": "Une petite cour intérieure protégée par des murs de pierre sèche, où des peaux tannées pendent à des cordes en durcissant au soleil. L'odeur de cuir chauffé se mêle à celle du sable chaud. La boutique n'est qu'une pièce sombre et fraîche, remplie de sacs, de brassards et de vestes suspendues.",
+    "histoire": [
+      "Le groupe y passe acheter du cuir adapté au désert."
+    ]
   },
   {
     "id": "maara-namtarun",
@@ -8576,6 +8690,9 @@
     "attitude": "neutre",
     "connu": [
       "Tanneuse de Peau de Sable, à Khazad-Marûn. Femme fine à la peau ridée par le vent, cheveux tressés serrés, elle observe avant de parler. Elle ne vend que ce que le désert offre : brassards, masques coupe-sable, armures légères en cuir durci au sel."
+    ],
+    "histoire": [
+      "Elle reçoit le groupe sans familiarité : « Si vous êtes venus pour du solide, vous êtes au bon endroit. »"
     ]
   },
   {
@@ -8585,7 +8702,10 @@
     "titre": "Potier",
     "parent": "kazad-marunn",
     "resume": "Façade ouverte sur la ruelle, grandes poteries ocre qui sèchent.",
-    "chapeau": "Un atelier à la façade entièrement ouverte sur la ruelle, comme une bouche de pierre. De grandes poteries ocre sèchent dehors, et à l'intérieur l'air est frais, saturé d'argile humide et de cendres froides. Un tour de potier en pierre occupe le centre. Rien n'est brillant : tout est mat, minéral, taillé pour durer."
+    "chapeau": "Un atelier à la façade entièrement ouverte sur la ruelle, comme une bouche de pierre. De grandes poteries ocre sèchent dehors, et à l'intérieur l'air est frais, saturé d'argile humide et de cendres froides. Un tour de potier en pierre occupe le centre. Rien n'est brillant : tout est mat, minéral, taillé pour durer.",
+    "histoire": [
+      "Le groupe y passe en parcourant le quartier des artisans."
+    ]
   },
   {
     "id": "sahrim",
@@ -8604,6 +8724,9 @@
     "connu": [
       "Potier genasi de Terre de l'Atelier Sahrim, à Khazad-Marûn : massif, peau couleur grès, voix au grondement d'éboulement lointain. Il travaille même quand on lui parle et se juge un génie méconnu.",
       "Il affirme que ses pièces vaudraient une fortune auprès des collectionneurs de Rivegard."
+    ],
+    "histoire": [
+      "Il continue son travail pendant que le groupe lui parle et se dit incompris à Kazad Marunn."
     ]
   },
   {
@@ -8616,7 +8739,10 @@
     "connu": [
       "Les chroniques y décrivent la Bataille des Sables et le mage Aram Sharûn."
     ],
-    "chapeau": "Une excroissance à moitié avalée par les dunes : un fronton brisé, des escaliers à demi submergés, une porte de pierre fendue dont l'ouverture respire un souffle froid. À l'intérieur, la poussière ancienne et l'encre séchée. Les rayonnages effondrés se mêlent au sable, et les livres sont gonflés, craquelés, parfois scellés par des dépôts minéraux."
+    "chapeau": "Une excroissance à moitié avalée par les dunes : un fronton brisé, des escaliers à demi submergés, une porte de pierre fendue dont l'ouverture respire un souffle froid. À l'intérieur, la poussière ancienne et l'encre séchée. Les rayonnages effondrés se mêlent au sable, et les livres sont gonflés, craquelés, parfois scellés par des dépôts minéraux.",
+    "histoire": [
+      "Le groupe y explore des rayonnages effondrés et lit les chroniques de la Bataille des Sables, qui nomment Aram Sharûn."
+    ]
   },
   {
     "id": "bataille-des-sables",
@@ -8627,6 +8753,9 @@
     "resume": "Affrontement de mages près de Khazad-Marûn, il y a dix-sept siècles avant la fondation d'Altenheim. Tous les maîtres en lice périrent.",
     "connu": [
       "Les corps et les artefacts brisés furent jetés dans la Fosse des Mille Sables."
+    ],
+    "histoire": [
+      "Le groupe en lit le récit à la Bibliothèque Enfouie et en voit les gravures chez Ashur."
     ]
   },
   {
@@ -8647,7 +8776,13 @@
       "Il bâtit sa demeure dans un donjon de pierre blanche, loin des hommes, qui n'obéissait pas aux jours. Une porte donnait sur hier, une autre sur demain.",
       "Les rois réclamaient sa science. Sa réponse est restée dans les chants : il servait ce qui fut avant les trônes."
     ],
-    "lieu": "kazad-marunn"
+    "lieu": "kazad-marunn",
+    "histoire": [
+      "Le groupe découvre son nom dans les archives de la Bibliothèque Enfouie.",
+      "Ashur l'identifie sur les gravures de sa maison.",
+      "Le groupe retrouve son corps au fond de la Gueule des Sables, la Clé d'Anachronie dans sa main crispée.",
+      "Le groupe visite sa tour de Résonance dans le passé et affronte ses gardiens."
+    ]
   },
   {
     "id": "cle-d-anachronie",
@@ -8656,7 +8791,13 @@
     "titre": "Prisme qui ouvre les instants",
     "parent": "kazad-marunn",
     "resume": "Artefact d'Aram Sharûn, réveillé par Gran Brijit. Elle a mené le groupe dans le passé du donjon, puis s'est brisée.",
-    "statut": "détruit"
+    "statut": "détruit",
+    "histoire": [
+      "Le groupe la prend dans la main d'Aram Sharûn au fond de la Gueule des Sables.",
+      "Gran Brijit la réveille chez Ashur d'un souffle.",
+      "Devant la dalle des ruines, elle ouvre une faille vers la tour telle qu'elle était.",
+      "Elle se brise à la sortie du donjon."
+    ]
   },
   {
     "id": "al-batun",
@@ -8687,7 +8828,11 @@
       "L'Anneau des Sables est incrusté dans sa carapace, et le ver ne le recrache que lorsqu'il est gravement blessé.",
       "Il revient à intervalles irréguliers : aucun répit durable près de la fosse."
     ],
-    "lieu": "kazad-marunn"
+    "lieu": "kazad-marunn",
+    "histoire": [
+      "Ashur avertit le groupe que la Fosse est gardée par Al Batun, qui possède la clé pour y accéder.",
+      "Près de la mesa, le sol vibre et Al Batun surgit, l'Anneau des Sables incrusté dans sa carapace. Le groupe le blesse jusqu'à ce qu'il recrache l'anneau."
+    ]
   },
   {
     "id": "la-gueule-des-sables",
@@ -8699,7 +8844,10 @@
     "alias": [
       "Fosse des Mille Sables"
     ],
-    "chapeau": "Aux abords de Khazad-Marûn, le désert se creuse en un gouffre immense, une faille sombre qui semble avaler la lumière. Le vent y descend en un sifflement grave. La paroi est striée d'érosion, et en contrebas on distingue des ossements blanchis, des fragments de tissu et des restes d'armures anciennes. Même la gravité semble hésiter à y pénétrer."
+    "chapeau": "Aux abords de Khazad-Marûn, le désert se creuse en un gouffre immense, une faille sombre qui semble avaler la lumière. Le vent y descend en un sifflement grave. La paroi est striée d'érosion, et en contrebas on distingue des ossements blanchis, des fragments de tissu et des restes d'armures anciennes. Même la gravité semble hésiter à y pénétrer.",
+    "histoire": [
+      "Le groupe y descend après avoir battu Al Batun et y trouve cadavres anciens, artefacts brisés et le corps d'Aram Sharûn."
+    ]
   },
   {
     "id": "tour-de-resonance",
@@ -8712,7 +8860,11 @@
       "Un golem de résonance temporelle y gardait l'Hexacore.",
       "Des tiques d'arcane, un golem de verre et un golem de bronze en défendaient les salles."
     ],
-    "chapeau": "Les ruines du complexe d'Aram Sharûn se dressent au milieu du désert comme un squelette brisé. La pierre est fendillée, creusée par le vent, et les colonnes effondrées forment un cercle irrégulier où le sable s'accumule. L'air y est plus froid qu'ailleurs, comme si le lieu respirait encore une mémoire ancienne. Au centre, une dalle gravée traversée d'une fente lumineuse."
+    "chapeau": "Les ruines du complexe d'Aram Sharûn se dressent au milieu du désert comme un squelette brisé. La pierre est fendillée, creusée par le vent, et les colonnes effondrées forment un cercle irrégulier où le sable s'accumule. L'air y est plus froid qu'ailleurs, comme si le lieu respirait encore une mémoire ancienne. Au centre, une dalle gravée traversée d'une fente lumineuse.",
+    "histoire": [
+      "Le groupe y entre par la faille ouverte par la Clé et se retrouve dans la tour telle qu'elle était.",
+      "Il y vainc le golem temporel, prend l'Hexacore, et sort avant l'effondrement."
+    ]
   },
   {
     "id": "tique-d-arcane",
@@ -8734,7 +8886,10 @@
       }
     ],
     "attitude": "ennemi",
-    "lieu": "tour-de-resonance"
+    "lieu": "tour-de-resonance",
+    "histoire": [
+      "Le groupe en détruit dans le donjon d'Aram Sharûn."
+    ]
   },
   {
     "id": "grands-mages-du-desert",
@@ -8748,6 +8903,9 @@
       "Ishannar Bel-Kumri",
       "Daramat al-Huzar",
       "Bel-Amdar Tachrir"
+    ],
+    "histoire": [
+      "Le groupe lit leurs noms dans les chroniques de la Bataille des Sables."
     ]
   },
   {
