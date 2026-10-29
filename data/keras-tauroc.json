@@ -6552,6 +6552,14 @@
       "Au centre de la grande place fleurie, un dôme d'énergie irisé protège un ancien autel. Deux orbes y brillent. Le troisième socle est vide, fendu, noirci et encore fumant.",
       "L'ambassadeur de la Cour Seelie donne vingt-quatre heures : au-delà, la Cour prendra les deux Pierres restantes pour les mettre en sécurité.",
       "Philippa y arrive après son passage dans le Feywild, envoyée par Gran Brijit. Elle démasque le changeforme qui avait volé la Pierre en se faisant passer pour Mira."
+    ],
+    "histoire": [
+      "Gran Brijit conduit Philippa devant l'Arbre-Soleil, dans le Feywild. Elle a vu en vision un feu noir qui rampe sous les racines. Elle rappelle à Philippa sa dette, lui ordonne de marcher dans le Fey pour éteindre la source du mal, puis touche son œil : « mwen ka gade ou, tout le temps ».",
+      "Philippa arrive en Féerie par une clairière à lumière violette, où une plante-lamproie géante l'accueille. Elle rejoint Malquessar, cité voyageuse qui change de plan tous les cinq ans grâce à trois Pierres de Seuil. L'une d'elles vient d'être volée.",
+      "Dren Malbar l'accueille aux portes et l'oriente vers Thalanir. Au palais, l'ambassadeur Elarin exige le retour de la Pierre sous vingt-quatre heures, et Thalanir accuse aussitôt Nolbrim.",
+      "Elle examine la scène de crime : la Pierre a été arrachée de force, et un fragment de peau grise est resté près du socle. Elle interroge Nolbrim, Arlo, Berrund, Lumeverre et Erdem. Mira, apprentie de la fleuriste Liora, l'aide volontiers et lui donne trois fausses pistes.",
+      "Lumeverre identifie la peau grise : celle d'un changeforme. Philippa démasque Mira, qui change de forme, se moque avec sa voix et fuit dans les bois. La vraie Mira est morte. Le changeforme est tué et la Pierre est récupérée à temps.",
+      "Erdem active la Pierre avec le bon parchemin. Malquessar repart pour Avernus. Gran Brijit s'est intéressée aux inventions de Nolbrim et les a récupérées. Philippa retrouvera Nolbrim plus tard, au Manoir des Ligaments."
     ]
   },
   {
@@ -8138,6 +8146,15 @@
     "connu": [
       "Philippa y arrive après sa chute dans l'Underdark, guidée par le murmure de Vassago.",
       "Sorem le croque-mort et d'autres habitants répètent une phrase : la toile voit, la toile sait, ses yeux sont légions et ils sont braqués sur nous."
+    ],
+    "histoire": [
+      "Philippa, tout juste ressuscitée par Vassago après sa chute de 200 mètres, atterrit dans l'Underdark. Le murmure de Vassago la guide vers une ville de pierre sombre, couverte de toiles épaisses comme du chanvre.",
+      "Devant l'entrée, la caravane de Darren campe et l'avertit de faire demi-tour. Le camp des braconniers de Varroth verrouille la seule sortie vers l'extérieur.",
+      "Sous une arche effondrée, elle passe les barricades et découvre la ville morte : maisons à demi réparées comme après un massacre, brume au ras du sol, marteau qui frappe au loin. Un panneau accueille toujours les visiteurs : « Bienvenue à Creux d'Azur, joyau des montagnes, là où la pierre chante ».",
+      "Elle visite le salon funéraire de Sorem, la forge de Korrik, la boucherie de Tommen et l'auberge de la Chope Fendue, où les Duergar de la Bande des Crocs Gris ont enchaîné l'aubergiste Bilpi. Partout revient la même phrase : la toile voit, la toile sait, ses yeux sont légions.",
+      "Dans une ruelle, elle trouve Natharim, un Githzerai mourant dans une cage. Il lui parle par la pensée et la supplie de détruire le cristal et l'artefact qui attirent les gens vers un piège, une offrande à la reine araignée.",
+      "Elle libère Bilpi, puis descend au Temple de l'Essence volée, où le drider Xaelith, le mage Vaerion et le barbare Gorrak incantent un rituel autour du cristal de Lolth, siphon d'âmes de la ville. Vassago la pousse au massacre pendant tout le combat.",
+      "Philippa détruit le cristal. La ville reprend vie. Natharim est mort seul dans sa cage. À la surface, un elfe de l'Ordre d'Argent, Arianthil, l'attend et la téléporte, sans que Philippa ne se retourne vers les survivants."
     ]
   },
   {
@@ -8147,7 +8164,11 @@
     "titre": "Enclave abandonnée de l'Underdark",
     "parent": "creux-d-azur",
     "resume": "Camp de bandits dans une cavité rocheuse, bloquant la seule sortie vers l'extérieur.",
-    "chapeau": "Dans un tunnel étroit, une ancienne enclave abandonnée surgit, pleine de lumières tremblantes et d'ombres mouvantes, les murs couverts de toiles d'araignée. Un camp de bandits s'est installé dans une cavité rocheuse : des tentes, des caisses éventrées, un chaos de bivouac. Autour d'un feu, plusieurs hommes boivent de la bière en riant, inconscients de l'obscurité qui les entoure. Au centre, un cercle runique désactivé entoure une structure d'ossements et de métal noir, un prototype de siphon d'âmes."
+    "chapeau": "Dans un tunnel étroit, une ancienne enclave abandonnée surgit, pleine de lumières tremblantes et d'ombres mouvantes, les murs couverts de toiles d'araignée. Un camp de bandits s'est installé dans une cavité rocheuse : des tentes, des caisses éventrées, un chaos de bivouac. Autour d'un feu, plusieurs hommes boivent de la bière en riant, inconscients de l'obscurité qui les entoure. Au centre, un cercle runique désactivé entoure une structure d'ossements et de métal noir, un prototype de siphon d'âmes.",
+    "histoire": [
+      "Premier obstacle de Philippa à l'arrivée : les tentes, caisses éventrées et patrouilles à la torche du camp des braconniers, qui bloque la seule sortie de la ville.",
+      "Autour du siphon d'âmes se trouvent des cadavres de Githzerai aux veines noires. Vassago pousse Philippa à massacrer et lui offre un nouveau sort."
+    ]
   },
   {
     "id": "varroth",
@@ -8162,6 +8183,10 @@
     "connu": [
       "Autour du siphon d'âmes, des cadavres de Githzerai, la peau striée de veines noires.",
       "Vassago pousse Philippa à massacrer et lui offre un nouveau sort."
+    ],
+    "histoire": [
+      "Philippa tombe sur son camp en arrivant à Creux d'Azur. Archer redoutable, il verrouille la seule sortie de la ville.",
+      "Vassago lui souffle de massacrer autour du siphon d'âmes pour gagner un nouveau sort."
     ]
   },
   {
@@ -8171,7 +8196,11 @@
     "titre": "Voyageurs bloqués devant la ville",
     "parent": "creux-d-azur",
     "resume": "Tentes de fortune et deux chariots, devant la ville aux murs larges.",
-    "chapeau": "Passé le camp des braconniers, on arrive aux abords d'une ville encerclée de larges murs. Devant, une caravane est bloquée. Des tentes de fortune ont été montées à la hâte et deux chariots stationnent plus loin. Un vieil homme salue de loin d'un hochement de tête."
+    "chapeau": "Passé le camp des braconniers, on arrive aux abords d'une ville encerclée de larges murs. Devant, une caravane est bloquée. Des tentes de fortune ont été montées à la hâte et deux chariots stationnent plus loin. Un vieil homme salue de loin d'un hochement de tête.",
+    "histoire": [
+      "Philippa trouve la caravane arrêtée devant les murs de Creux d'Azur : la mine s'est effondrée derrière elle et les braconniers refusent le passage.",
+      "Après la destruction du cristal, la caravane n'est plus en vue. Darren et les siens errent encore dans l'Underdark."
+    ]
   },
   {
     "id": "darren",
@@ -8190,7 +8219,11 @@
     "citation": {
       "texte": "Fais demi-tour si tu le peux, cette région est maudite, cette ville est infernale, et ses habitants sont damnés !",
       "qui": "Darren"
-    }
+    },
+    "histoire": [
+      "Premier à accueillir Philippa à l'entrée de Creux d'Azur. Il lui explique la malchance de sa caravane et lui conseille de faire demi-tour.",
+      "Il n'a plus de lien avec elle après la libération de la ville. Il erre toujours dans l'Underdark avec sa caravane."
+    ]
   },
   {
     "id": "salon-funeraire-de-sorem",
@@ -8199,7 +8232,10 @@
     "titre": "Petite maison carrée à l'ouest du village",
     "parent": "creux-d-azur",
     "resume": "Petite maison carrée d'une propreté presque irréelle, éclairée d'une lumière douce.",
-    "chapeau": "À l'ouest du village, une petite maison carrée tranche par son ordre presque irréel. Le salon funéraire est propre, éclairé d'une lumière douce, presque chaleureuse. Derrière le comptoir, une porte entrebâillée laisse voir la salle d'embaumement, où plusieurs cadavres sont étendus. Des bandelettes trempent dans des huiles sombres et des aiguilles sont encore fichées dans la chair. Les corps semblent intacts, avec une rigidité maladive et une teinte cireuse."
+    "chapeau": "À l'ouest du village, une petite maison carrée tranche par son ordre presque irréel. Le salon funéraire est propre, éclairé d'une lumière douce, presque chaleureuse. Derrière le comptoir, une porte entrebâillée laisse voir la salle d'embaumement, où plusieurs cadavres sont étendus. Des bandelettes trempent dans des huiles sombres et des aiguilles sont encore fichées dans la chair. Les corps semblent intacts, avec une rigidité maladive et une teinte cireuse.",
+    "histoire": [
+      "Philippa y entre au début de sa visite de la ville. Le salon, propre et chaleureux au milieu du chaos, tranche avec le reste, avec sa salle d'embaumement entrebâillée derrière le comptoir."
+    ]
   },
   {
     "id": "sorem",
@@ -8217,7 +8253,12 @@
     "citation": {
       "texte": "Vous devriez retourner d'où vous venez, voyez-vous ? Et quoi qu'il arrive, évitez la toile.",
       "qui": "Sorem"
-    }
+    },
+    "histoire": [
+      "Il accueille Philippa en lui demandant si elle vient pour un proche ou pour elle-même, et ponctue chaque phrase d'un « voyez-vous ? ».",
+      "Il l'avertit d'éviter la toile, qui est connectée, voit, entend et sait, et lui conseille de partir sans se retourner.",
+      "Après la libération de la ville, il continue d'exercer son métier."
+    ]
   },
   {
     "id": "forge-de-korrik",
@@ -8226,7 +8267,11 @@
     "titre": "Forge ensanglantée",
     "parent": "creux-d-azur",
     "resume": "Forge où un forgeron frappe une enclume vide, au milieu de traînées de sang.",
-    "chapeau": "Une lueur tremblante danse derrière la fenêtre crasseuse de la forge. Le forgeron est debout devant son enclume, le bras monte et descend avec une régularité mécanique, comme un métronome funèbre. Son tablier est déchiré et taché de sang séché. Quelqu'un a nettoyé le sol, mais mal : les traînées brunes s'étalent jusqu'à la porte arrière, où une serrure brisée pend encore. Dans l'arrière-boutique, des étagères renversées, un établi fendu et des outils brisés."
+    "chapeau": "Une lueur tremblante danse derrière la fenêtre crasseuse de la forge. Le forgeron est debout devant son enclume, le bras monte et descend avec une régularité mécanique, comme un métronome funèbre. Son tablier est déchiré et taché de sang séché. Quelqu'un a nettoyé le sol, mais mal : les traînées brunes s'étalent jusqu'à la porte arrière, où une serrure brisée pend encore. Dans l'arrière-boutique, des étagères renversées, un établi fendu et des outils brisés.",
+    "histoire": [
+      "Philippa y voit une scène de crime figée : étagères renversées, outils brisés, griffures sur les murs et une large traînée de sang qui part vers la porte arrière, où un corps a été traîné.",
+      "Korrik continue de marteler son enclume vide pendant tout son passage."
+    ]
   },
   {
     "id": "korrik-marteaucreux",
@@ -8240,6 +8285,9 @@
     "attitude": "neutre",
     "connu": [
       "Il ne parle pas, prisonnier d'une horreur que lui seul semble percevoir."
+    ],
+    "histoire": [
+      "Philippa le trouve frappant une enclume vide, le regard laiteux, sans réagir à sa présence. Il ne transmet rien du massacre."
     ]
   },
   {
@@ -8249,7 +8297,10 @@
     "titre": "Boutique aux crochets vides",
     "parent": "creux-d-azur",
     "resume": "Boucherie pillée, où des crochets vides oscillent au plafond.",
-    "chapeau": "À la lumière d'une lanterne à huile, un homme massif se tient derrière son comptoir. La boutique sent la chair et le sel, mais aussi la peur moite. Des crochets vides balancent au plafond, certains tachés de sang noirci. Le sol est un chaos de viande oubliée, de caisses brisées et de toiles d'araignée collées aux murs et aux vitres. Sur le mur, gravée à la pointe d'un couteau, une phrase griffe le bois : « Ses yeux sont légions et ils sont braqués sur toi. »"
+    "chapeau": "À la lumière d'une lanterne à huile, un homme massif se tient derrière son comptoir. La boutique sent la chair et le sel, mais aussi la peur moite. Des crochets vides balancent au plafond, certains tachés de sang noirci. Le sol est un chaos de viande oubliée, de caisses brisées et de toiles d'araignée collées aux murs et aux vitres. Sur le mur, gravée à la pointe d'un couteau, une phrase griffe le bois : « Ses yeux sont légions et ils sont braqués sur toi. »",
+    "histoire": [
+      "Philippa y trouve des crochets vides, des étals renversés et une phrase gravée au couteau dans le bois : « Ses yeux sont légions et ils sont braqués sur toi »."
+    ]
   },
   {
     "id": "tommen-peaunoire",
@@ -8263,6 +8314,10 @@
     "attitude": "neutre",
     "connu": [
       "Il sursaute à chaque bruit venu de l'extérieur et fixe la porte, comme s'il s'attendait à ce qu'elle explose."
+    ],
+    "histoire": [
+      "Philippa le rencontre terrorisé dans sa boucherie pillée, épargné sans qu'elle comprenne pourquoi. Ses mains tremblent trop pour découper.",
+      "Il confirme par sa seule terreur l'occupation et la surveillance de la ville."
     ]
   },
   {
@@ -8272,7 +8327,11 @@
     "titre": "Ancienne auberge, poste avancé des Duergar",
     "parent": "creux-d-azur",
     "resume": "Auberge aux fenêtres barricadées, enseigne gravée d'un marteau brisé surmonté d'un œil noir.",
-    "chapeau": "L'ancienne fierté de Creux d'Azur porte aujourd'hui bien son nom. Les fenêtres sont barricadées de l'intérieur, la porte pend sur ses gonds, et l'enseigne, jadis une chope taillée dans un cristal bleu, a été gravée d'un marteau brisé surmonté d'un œil noir. Des tables renversées, des chaises éclatées et une mer de tessons couvrent le sol. L'odeur d'alcool éventé et de nourriture pourrie flotte dans l'air. Des Duergar de la Bande des Crocs Gris s'y sont installés comme dans un campement de guerre."
+    "chapeau": "L'ancienne fierté de Creux d'Azur porte aujourd'hui bien son nom. Les fenêtres sont barricadées de l'intérieur, la porte pend sur ses gonds, et l'enseigne, jadis une chope taillée dans un cristal bleu, a été gravée d'un marteau brisé surmonté d'un œil noir. Des tables renversées, des chaises éclatées et une mer de tessons couvrent le sol. L'odeur d'alcool éventé et de nourriture pourrie flotte dans l'air. Des Duergar de la Bande des Crocs Gris s'y sont installés comme dans un campement de guerre.",
+    "histoire": [
+      "Philippa y entre : l'ancienne fierté de la ville, enseigne gravée du marteau brisé et de l'œil noir des Duergar, est devenue le poste avancé de la Bande des Crocs Gris.",
+      "Elle y libère Bilpi du pilier auquel il était enchaîné. Après la destruction du cristal, l'auberge retrouve sa fonction."
+    ]
   },
   {
     "id": "bilpi-tournebock",
@@ -8286,6 +8345,10 @@
     "attitude": "neutre",
     "connu": [
       "Il sert, nettoie et obéit sous les ricanements des Duergar. Chaque geste trop lent lui vaut un coup de botte."
+    ],
+    "histoire": [
+      "Philippa le trouve enchaîné au pilier central de la Chope Fendue, servant les Duergar sous les coups.",
+      "Elle le libère. Après la destruction du cristal, il tient de nouveau son auberge et reste le point de chute naturel du groupe s'il repasse dans cette région de l'Underdark."
     ]
   },
   {
@@ -8295,7 +8358,10 @@
     "titre": "Ruelle étroite avalée par la brume",
     "parent": "creux-d-azur",
     "resume": "Au fond d'une ruelle, une cage de fer tordue abrite un Githzerai mourant.",
-    "chapeau": "Plus loin dans les entrailles de Creux d'Azur, la ruelle est étroite, presque entièrement avalée par la brume et les toiles d'araignée qui s'accrochent aux murs comme une seconde peau. L'air y est plus froid, chargé de fer et de moisi, avec une pointe acide de chair malade. Au fond, à moitié cachée par une charrette renversée, une cage de fer tordue par endroits, comme si quelqu'un avait essayé en vain de l'arracher du sol."
+    "chapeau": "Plus loin dans les entrailles de Creux d'Azur, la ruelle est étroite, presque entièrement avalée par la brume et les toiles d'araignée qui s'accrochent aux murs comme une seconde peau. L'air y est plus froid, chargé de fer et de moisi, avec une pointe acide de chair malade. Au fond, à moitié cachée par une charrette renversée, une cage de fer tordue par endroits, comme si quelqu'un avait essayé en vain de l'arracher du sol.",
+    "histoire": [
+      "Au fond d'une ruelle avalée par la brume et les toiles, Philippa trouve la cage tordue où les Duergar ont laissé mourir Natharim."
+    ]
   },
   {
     "id": "natharim-zorath",
@@ -8304,7 +8370,7 @@
     "titre": "Githzerai prisonnier",
     "parent": "ruelle-de-la-cage",
     "lieu": "ruelle-de-la-cage",
-    "statut": "vivant",
+    "statut": "mort",
     "resume": "Githzerai au crâne rasé couvert de cicatrices géométriques, laissé mourir dans une cage par les Duergar.",
     "attitude": "neutre",
     "connu": [
@@ -8317,6 +8383,11 @@
     },
     "alias": [
       "Natharim Zortah"
+    ],
+    "histoire": [
+      "Philippa le découvre en cage au fond d'une ruelle, mourant. Il s'infiltre dans son esprit par la pensée et lui dit : « Tu portes tes propres démons. »",
+      "Il lui apprend que le cristal est un piège, une offrande à la reine araignée, et la supplie de détruire l'artefact pour rendre le soleil à la ville.",
+      "Il meurt seul dans sa cage. Philippa n'a pas pu le sauver, mais c'est lui qui l'oriente vers le Temple de l'Essence volée."
     ]
   },
   {
@@ -8330,6 +8401,11 @@
     "connu": [
       "Au sous-sol, un ancien dortoir de prieuré, dominé par un autel de fortune. L'artefact, source d'une énergie obscure, lévite au-dessus du sol.",
       "Pour s'échapper, Philippa retrouve la surface. Un elfe de l'Ordre d'Argent l'attend et la téléporte."
+    ],
+    "histoire": [
+      "Dernière étape de Philippa à Creux d'Azur : un temple antique de Callarduran, dieu des gnomes des profondeurs, retourné en autel de Lolth. Un cristal lévite au centre, source de l'énergie obscure.",
+      "Elle y affronte Xaelith, Vaerion et Gorrak et détruit le cristal, ce qui libère la ville.",
+      "À la surface, Arianthil l'attend pour la téléporter loin de l'Underdark."
     ]
   },
   {
@@ -8348,7 +8424,11 @@
     "citation": {
       "texte": "Il me suffit d'un seul instant pour t'anéantir, une seule chance, une seule fois.",
       "qui": "Xaelith"
-    }
+    },
+    "histoire": [
+      "Boss du Temple de l'Essence volée. Philippa le trouve en plein rituel autour du cristal de Lolth, avec Vaerion et Gorrak.",
+      "Le rituel prend fin avec la destruction du cristal par Philippa."
+    ]
   },
   {
     "id": "vaerion",
@@ -8362,6 +8442,10 @@
     "attitude": "neutre",
     "connu": [
       "Il trace des runes dans l'air et dispose de sorts de chute, de distorsion gravitationnelle et de singularité."
+    ],
+    "histoire": [
+      "Philippa le voit tracer des runes autour du cristal aux côtés de Xaelith et de Gorrak.",
+      "Le rituel prend fin avec la destruction du cristal par Philippa."
     ]
   },
   {
@@ -8376,6 +8460,10 @@
     "attitude": "neutre",
     "connu": [
       "Il combat avec une hache, une frappe de titan et une rage élémentaire."
+    ],
+    "histoire": [
+      "Philippa le trouve adossé à un mur du temple, jouant avec la garde de son épée, au moment où Xaelith et Vaerion incantent.",
+      "Le rituel prend fin avec la destruction du cristal par Philippa."
     ]
   },
   {
@@ -8390,6 +8478,16 @@
       "Les pirates squelettes dessinent sur le sable la carte de l'île et offrent leur aide si Philippa retrouve leur capitaine, disparu dans la jungle.",
       "Le capitaine du Vesper, Alaric Morwyn, a été maudit par Vassago après avoir volé un artefact d'immortalité.",
       "Philippa détruit l'artefact au cœur du temple. La malédiction est brisée et Elias et Dorian redeviennent poussière. Elle trouve 450 po, 2 émeraudes et 1 diamant, puis contacte Arianthil avec le rameau magique et se fait téléporter loin de l'île."
+    ],
+    "histoire": [
+      "Arianthil ouvre un portail pour sortir Philippa de Creux d'Azur et incante pour briser son lien avec Vassago. Vassago tente une dernière possession, le portail est perturbé et Philippa est projetée en pleine mer, seule.",
+      "Elle dérive, trouve un navire marchand échoué sur des rochers, bricole un radeau (elle y gagne un niveau d'épuisement), reprend la mer et aperçoit l'île.",
+      "Sur la plage, au milieu d'une immense épave ouverte en deux, des pirates squelettes ont monté une taverne improvisée. Dorian et Elias dessinent la carte de l'île sur le sable. Philippa ramasse une épée sur la plage. L'épée du capitaine traîne aussi sur le sable, personne n'ose la prendre.",
+      "Elle descend dans la mine, infestée d'araignées, avec Dorian et Elias. Au fond, elle affronte Drozzle, le mage fou, et récupère le Shard of the Mad Arcanist et une lettre des druides de l'équilibre tordu.",
+      "Dans la cabane de la sorcière, Gran Brijit reconnaît l'empreinte de Vassago, propose un marché et la projette dans le Feywild par une potion. Elle lui arrache le tatouage de Vassago et appose une marque similaire. Elle lui remet un rameau magique pour activer le cristal au sommet du temple.",
+      "À l'Arbre-Soleil, Philippa reçoit sa bénédiction, la Scythe of the Burning Bloom et une marque brûlante gravée dans la chair, qui lui donne un pouvoir contre Vassago et l'invocation d'armes.",
+      "Elle gravit le sommet : devant le village de Nagas, un agent de l'Aile d'Argent est mort avec une lettre. Dans le temple piégé, elle affronte Alaric Morwyn et ses pirates spectraux et détruit l'artefact d'immortalité.",
+      "À la mort de Morwyn, la malédiction se brise : Dorian et Elias tombent en poussière. Philippa garde la lyre de Dorian en souvenir. Elle contacte Arianthil avec le rameau et reçoit la réponse : « Je t'ai entendue, Philippa. Je suis en route. » Il la téléporte loin de l'île."
     ]
   },
   {
@@ -8404,6 +8502,11 @@
     "attitude": "neutre",
     "connu": [
       "Avec Elias, il accompagne Philippa dans la mine contre trois araignées. À la fin, il redevient poussière en disant merci."
+    ],
+    "histoire": [
+      "Premier pirate squelette que Philippa rencontre sur la plage. Il fait les présentations, l'invite dans la taverne improvisée de l'épave et dessine la carte de l'île sur le sable.",
+      "Il accompagne Philippa dans la mine avec Elias.",
+      "À la mort d'Alaric Morwyn, la malédiction se brise : il tombe en poussière en disant merci. Philippa garde sa lyre."
     ]
   },
   {
@@ -8422,7 +8525,12 @@
     "citation": {
       "texte": "Merci…",
       "qui": "Elias et Dorian"
-    }
+    },
+    "histoire": [
+      "Il se joint à Dorian pour accueillir Philippa sur la plage de l'épave.",
+      "Il accompagne Philippa dans la mine contre les araignées.",
+      "À la mort d'Alaric Morwyn, la malédiction se brise : il tombe en poussière avec Dorian."
+    ]
   },
   {
     "id": "drozzle",
@@ -8443,6 +8551,11 @@
     },
     "alias": [
       "Drozzle le mage fou"
+    ],
+    "histoire": [
+      "Gran Brijit envoie Philippa le tuer dans la mine, en échange de son aide contre Vassago.",
+      "Philippa le trouve au fond de la mine, statue de mage fou entre deux pierres runiques enchaînées, une rouge et une bleue. Il hurle que l'Éclat le veut et l'accuse d'être griffée par la sorcière.",
+      "Elle le vainc et récupère le Shard of the Mad Arcanist et une lettre des druides de l'équilibre tordu."
     ]
   },
   {
@@ -8461,7 +8574,12 @@
     "citation": {
       "texte": "Je n'ai plus d'âme à perdre. Mais toi, tu portes encore son espoir… Il suffit de l'éteindre.",
       "qui": "Alaric Morwyn"
-    }
+    },
+    "histoire": [
+      "Les pirates squelettes racontent que leur capitaine, disparu, a été maudit par Vassago après avoir volé un artefact d'immortalité.",
+      "Philippa le trouve au cœur du temple des Nagas. Il voit la chaîne invisible qui la relie à Vassago et lui dit qu'il n'a plus d'âme à perdre, alors qu'elle porte encore son espoir.",
+      "Elle le vainc malgré les cinq pirates spectraux qu'il invoque, détruit l'artefact et brise la malédiction de l'équipage."
+    ]
   },
   {
     "id": "dren-malbar",
@@ -8479,7 +8597,11 @@
     "citation": {
       "texte": "Faites attention à qui vous parlez. Cette ville a l'air paisible, mais les racines sont pourries bien plus souvent qu'on ne le croit.",
       "qui": "Dren Malbar"
-    }
+    },
+    "histoire": [
+      "Il repère Philippa à son arrivée : « Vous n'êtes pas d'ici. » Poli mais méfiant, il se présente comme capitaine des gardes et précise que la ville n'est pas fermée, mais surveillée.",
+      "Il l'envoie à la porte sud puis à la place principale chercher Thalanir. Il évoque un vol récent sans en dire plus."
+    ]
   },
   {
     "id": "thalanir-veldorel",
@@ -8501,6 +8623,11 @@
     },
     "alias": [
       "Thalanir"
+    ],
+    "histoire": [
+      "Philippa le trouve au palais, transpirant et balbutiant devant l'ambassadeur Elarin. Il s'incline de mauvaise grâce et accuse aussitôt Nolbrim, qui a toujours haï les Pierres.",
+      "Il tolère l'enquête de Philippa tant qu'elle ne trouble pas l'ordre.",
+      "La Pierre récupérée, la ville part vers Avernus."
     ]
   },
   {
@@ -8519,7 +8646,12 @@
     "citation": {
       "texte": "Votre ville n'est pas un coffre-fort : c'est une vitrine.",
       "qui": "Elarin Velasyr"
-    }
+    },
+    "histoire": [
+      "Philippa le rencontre au palais : il donne vingt-quatre heures avant que la Cour Seelie ne prenne les deux Pierres restantes en sécurité.",
+      "Au fil de l'enquête, elle apprend qu'une potion lui a été volée pendant une livraison de fleurs et qu'il en a honte.",
+      "Il repart une fois l'enquête terminée et la Pierre rendue."
+    ]
   },
   {
     "id": "mira-glindewyn",
@@ -8538,7 +8670,12 @@
     "citation": {
       "texte": "Je suis tout le monde, Philippa. Je suis Mira, je suis toi, je suis ce que tu refuses de regarder dans le miroir.",
       "qui": "Le changeforme"
-    }
+    },
+    "histoire": [
+      "Apprentie de la fleuriste Liora, ravie et bavarde, elle se propose d'aider Philippa dans son enquête.",
+      "Elle lui donne trois fausses pistes : l'achat de verveine de Nolbrim, la plume et l'encre d'Arlo, Thalanir sortant de la taverne de nuit.",
+      "Philippa la démasque : elle change de forme, se moque avec la voix de Mira et fuit dans les bois. La vraie Mira était déjà morte. Le changeforme est tué par la suite."
+    ]
   },
   {
     "id": "arlo-brisemousse",
@@ -8559,6 +8696,10 @@
     },
     "alias": [
       "Arlo Brise-Mousse"
+    ],
+    "histoire": [
+      "Philippa le rencontre chez Lumeverre : le firbolg apprend à écrire en secret pour envoyer une lettre à quelqu'un de sa forêt natale. L'achat de plume et d'encre qu'on lui prête est l'une des fausses pistes de Mira.",
+      "Philippa ne le revoit jamais après Malquessar."
     ]
   },
   {
@@ -8578,7 +8719,11 @@
     "citation": {
       "texte": "J'ai forgé une lame, autrefois. Une qui tranchait pas la chair… mais les serments.",
       "qui": "Berrund Hrakkal"
-    }
+    },
+    "histoire": [
+      "Philippa le rencontre dans sa forge, où il ne fait plus que des outils et des armes défensives. Il méprise les Pierres mais nie toute implication dans le vol.",
+      "Il lâche à demi-mot son passé d'armurier de guerre et l'histoire de GlassBane : « J'ai forgé une lame, autrefois. Une qui tranchait pas la chair mais les serments. Ils l'appelaient GlassBane. C'est moi qui l'ai nommée. Et j'en suis pas fier. »"
+    ]
   },
   {
     "id": "mellioen-lumeverre",
@@ -8599,6 +8744,10 @@
     },
     "alias": [
       "Mellioen"
+    ],
+    "histoire": [
+      "Philippa le trouve dans son atelier d'enchantement, où il enseigne l'écriture à Arlo sans se moquer.",
+      "Il analyse le fragment de peau grise : c'est un changeforme, qui copie l'apparence mais rarement la mémoire, et qui devra se soigner s'il est blessé, ce qui peut le trahir. Cette clé permet à Philippa de démasquer Mira."
     ]
   },
   {
@@ -8618,7 +8767,11 @@
     "citation": {
       "texte": "N'ouvrez pas la boîte aux lucioles. Elles mordent quand on ment.",
       "qui": "Erdem Brelmott"
-    }
+    },
+    "histoire": [
+      "Philippa le trouve dans son bureau reclus derrière une barrière magique, parlant par énigmes. Il la reconnaît comme « la fille du feu qui parle au Soleil ».",
+      "Une fois la Pierre récupérée, c'est lui qui l'active avec le bon parchemin, avant le départ de la ville pour Avernus."
+    ]
   },
   {
     "id": "gritz",
