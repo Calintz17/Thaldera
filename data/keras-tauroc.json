@@ -7116,6 +7116,9 @@
         "img": "img/paysages/port-doelan/temple-de-valkur.webp",
         "legende": "Le temple de Valkur"
       }
+    ],
+    "histoire": [
+      "Le groupe y rencontre Isuun des Profondeurs, qui lui remet deux orbes de respiration sous-marine avant le voyage vers Agran."
     ]
   },
   {
@@ -7345,7 +7348,10 @@
     "connu": [
       "Capitaine pirate de la flotte de Spezza."
     ],
-    "teinte": "#752519"
+    "teinte": "#752519",
+    "histoire": [
+      "Le groupe apprend qu'il commande un des navires pirates de la flotte de Spezza."
+    ]
   },
   {
     "id": "capitaine-tiberio",
@@ -7374,7 +7380,10 @@
     "connu": [
       "Capitaine pirate de la flotte de Spezza."
     ],
-    "teinte": "#753c19"
+    "teinte": "#753c19",
+    "histoire": [
+      "Le groupe apprend qu'il commande un des navires pirates de la flotte de Spezza."
+    ]
   },
   {
     "id": "madame-lucrece",

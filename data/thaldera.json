@@ -3323,7 +3323,12 @@
       "Une crique secrète en dessous abritait le sous-marin en pyrracier."
     ],
     "histoire": [
-      "Le groupe donne l'assaut et tue Spezza. Naberoth est renvoyé aux Enfers."
+      "Au début de l'enquête, le château est inaccessible : Spezza ne se montre plus et la garde y est inhabituellement tendue. Eloi Bonbarique s'est vu fermer ses portes.",
+      "Serna jure que des démons vivent sous les caves. Une silhouette de Spezza dans une loge du théâtre Rusconi est un leurre.",
+      "Après les opérations de sabotage en ville, le groupe donne l'assaut au château.",
+      "Spezza fuit par une trappe vers la crique secrète où est amarré le sous-marin.",
+      "Le groupe tue Spezza. Naberoth est vaincu et renvoyé aux Enfers.",
+      "Après la chute de Spezza et la destruction de la ville par le géant en armure, le château n'est plus que ruines. Vespera y installe son camp."
     ],
     "rune": {
       "ordre": 5,
@@ -3410,7 +3415,14 @@
       }
     ],
     "attitude": "ennemi",
-    "teinte": "#753c19"
+    "teinte": "#753c19",
+    "histoire": [
+      "Premier signe de lui : l'avis de recherche de 36 000 po sur Jane et Philippa, à son nom, affiché dans la ville à l'arrivée du groupe.",
+      "Le groupe apprend qu'il s'est retranché dans son château, qu'il a fait dynamiter la vieille mine d'argent par crainte qu'on creuse sous ses pieds, et que sa silhouette au théâtre Rusconi est un leurre.",
+      "Les chiffres de Titan Inc. révèlent 68 000 po détournés vers un compte privé au château.",
+      "Makandral perçoit que son pacte avec Vassago n'est pas soldé.",
+      "À l'assaut, il fuit par la trappe vers la crique du sous-marin. Le groupe le tue."
+    ]
   },
   {
     "id": "naberoth",
@@ -3427,7 +3439,11 @@
       "Dans sa seconde forme, Ordonnateur du Blasphème, il déploie des tentacules d'os, un canon organique et des tourelles embryonnaires."
     ],
     "histoire": [
-      "Le groupe le vainc au château. Il est renvoyé à Dis."
+      "Première trace : Serna entend des bruits sous le château, la nuit.",
+      "Makandral perçoit une distorsion mécanique et artificielle sous le château. Les PJ apprennent qu'un sous-marin en pyrracier y est amarré.",
+      "Absalom propose son alliance contre Spezza et Naberoth.",
+      "Au château, il se bat en deux phases, d'abord lame-scie, mine infernale, baliste et harpon, puis en Ordonnateur du Blasphème avec tentacules d'os, canon organique et tourelles.",
+      "Le groupe le vainc. Il est renvoyé à Dis."
     ],
     "img": "img/pnj/port-doe-lan-le-pe-cheur-forme-humaine.webp",
     "formes": [
@@ -3467,6 +3483,11 @@
       "Rusconi",
       "Russconi",
       "théâtre Russconi"
+    ],
+    "histoire": [
+      "Barok, croisé dans la caravane, est invité à y jouer par Spezza en personne. Il retrouve le groupe devant le théâtre.",
+      "Almar y remarque que le nombre de gardes est disproportionné pour un spectacle.",
+      "Le groupe apprend que la silhouette de Spezza dans la loge est un leurre."
     ]
   },
   {
@@ -3484,6 +3505,10 @@
         "img": "img/paysages/port-doelan/requiem.webp",
         "legende": "Le magasin de musique Requiem"
       }
+    ],
+    "histoire": [
+      "Le groupe y vient sur le conseil d'Amôn pour consulter Makandral Toussaint.",
+      "Absalom s'y révèle comme Sadie, appelée par Makandral."
     ]
   },
   {
@@ -3502,7 +3527,9 @@
       "Il prédit la mort des PJ face à une coalition plus puissante que toutes les précédentes, puis propose d'appeler quelqu'un pour ouvrir une autre voie."
     ],
     "histoire": [
-      "C'est chez lui qu'Absalom se révèle aux joueuses.",
+      "Amôn à la Haute Vigie recommande au groupe d'aller le voir.",
+      "Au magasin Requiem, il lit trois échos : le pacte de Spezza avec Vassago jamais soldé, une distorsion active sous le château, et l'intérêt de Spezza pour Thaladrassyl, Titan de l'Eau.",
+      "Il prédit la mort des PJ face à une coalition plus puissante que les précédentes et propose d'appeler quelqu'un pour ouvrir une autre voie.",
       "Il appelle Sadie, qui perd son déguisement d'un claquement de doigts et redevient Absalom. Elle propose une alliance de circonstance contre Spezza et Naberoth, à condition de frapper en pleine lumière."
     ],
     "citation": "« Pile entre le bien et le mal, il y a une porte. Êtes-vous prête à ouvrir votre esprit ? »",
@@ -3543,6 +3570,12 @@
         "img": "img/paysages/port-doelan/maison-de-vespera.webp",
         "legende": "La maison de Vespera"
       }
+    ],
+    "histoire": [
+      "Le groupe y retrouve Tina et Nina, que Jane connaît.",
+      "Anquiri di Velarossa y reçoit les visiteurs et accepte de témoigner sur les pratiques privées d'un noble de la cour de Spezza.",
+      "Cassiopée Vorn y tient son QG de la Griffe.",
+      "Après la chute de Spezza, Vespera, qui dirigeait la maison, prend le pouvoir sur la ville."
     ]
   },
   {
@@ -3703,7 +3736,11 @@
     "img": "img/pnj/port-doe-lan-lirenne.webp",
     "relations": [],
     "attitude": "allie",
-    "teinte": "#755219"
+    "teinte": "#755219",
+    "histoire": [
+      "Le groupe visite son Officine, échoppe circulaire autour d'un bassin clair.",
+      "Il remarque la poudre noire sur ses manches et l'odeur de soufre qui trahissent un atelier d'explosifs."
+    ]
   },
   {
     "id": "matthias-holbrekt",
@@ -3731,7 +3768,12 @@
     "img": "img/pnj/port-doe-lan-matthias-holbrekt-mort.webp",
     "relations": [],
     "attitude": "neutre",
-    "teinte": "#753c19"
+    "teinte": "#753c19",
+    "histoire": [
+      "Le groupe le trouve mort, sur le dos, dans une ruelle en pente vers la mer, le corps encore tiède, un coup de poignard dans les côtes.",
+      "Sa lettre de mission, aux ordres de la Chancellerie impériale d'Altéra, lui demandait d'observer Spezza, les importations de pyrracier et les rumeurs de navire traversant la mer d'Émeraude.",
+      "Il portait aussi un avis de recherche de Jane et Philippa. L'assassin n'a emporté aucun document."
+    ]
   },
   {
     "id": "serna",
@@ -3763,7 +3805,12 @@
       "Elle n'a aucune preuve et aucun allié. Personne ne la croit.",
       "Le phare peut être éteint pour rendre la navigation dangereuse, et sa lanterne se module avec des volets internes, ce qui permet de faire signe à Sycomore."
     ],
-    "teinte": "#755219"
+    "teinte": "#755219",
+    "histoire": [
+      "Le groupe croise cette vieille femme près du phare. Tous la prennent pour une folle.",
+      "Elle affirme entendre des démons sous le château, la nuit : « Sous la pierre. Sous les caves. Ça gratte. Ça respire. »",
+      "Ses propos se confirment plus tard : un diable, Naberoth, travaillait sous le château avec un sous-marin."
+    ]
   },
   {
     "id": "isuun-des-profondeurs",
@@ -3798,7 +3845,12 @@
       "Il vient d'Agran, cité sous-marine de la mer d'Émeraude, et remet deux orbes de respiration sous-marine aux PJ.",
       "Il explique que les failles du plancher marin servent de routes aux Aquans. Les eaux du milieu appartiennent à la tempête, et Agran repose au fond d'une faille, ancrée à la roche."
     ],
-    "teinte": "#755219"
+    "teinte": "#755219",
+    "histoire": [
+      "Le groupe rencontre cet Aquan au temple de Valkur, mis à l'écart de sa tribu qui vénère Kataron.",
+      "Il leur remet deux orbes de respiration sous-marine.",
+      "Il leur explique que les failles du plancher marin sont les routes des Aquans et que sa cité, Agran, repose au fond d'une faille. Ces orbes serviront à descendre à Agran."
+    ]
   },
   {
     "id": "leyenmil",
@@ -5697,7 +5749,11 @@
       "Il ne négocie pas. Une Persuasion DD 15 lui fait accepter 9 pa pour un paiement de plusieurs jours, une tentative d'Intimidation met fin à la discussion.",
       "Sur une colonne devant les écuries, un avis de recherche vise Philippa et Jane : 36 000 po pour leur capture. La discrétion s'impose en ville."
     ],
-    "teinte": "#755219"
+    "teinte": "#755219",
+    "histoire": [
+      "Le groupe laisse ses chevaux aux écuries du Clos Vieux, à 1 po par jour et par cheval.",
+      "Sur une colonne devant les écuries, un avis de recherche de 36 000 po vise Philippa et Jane."
+    ]
   },
   {
     "id": "portes-doelan",
@@ -5715,6 +5771,10 @@
         "img": "img/paysages/port-doelan/portes-de-la-ville.webp",
         "legende": "Les portes de la ville"
       }
+    ],
+    "histoire": [
+      "La caravane passe le poste de contrôle des gardes en livrée bleue à l'entrée de Port Doëlan.",
+      "Magdalena a disparu en laissant son chariot sur la route."
     ]
   },
   {
@@ -5746,7 +5806,10 @@
       "Le sergent mène l'interrogatoire pendant que les autres fouillent les sacs. La procédure est lente et méthodique.",
       "Il conclut d'ordinaire par un conseil : éviter de faire parler de soi en ville."
     ],
-    "teinte": "#753c19"
+    "teinte": "#753c19",
+    "histoire": [
+      "À l'arrivée de la caravane, le sergent et ses trois gardes interrogent le groupe sur son identité, sa provenance et sa cargaison."
+    ]
   },
   {
     "id": "ancre-seche",
@@ -5764,6 +5827,9 @@
         "img": "img/paysages/port-doelan/ancre-seche.webp",
         "legende": "L'Ancre Sèche"
       }
+    ],
+    "histoire": [
+      "Le groupe y prend chambre et repas. Tout le monde y loue Spezza, mécène et défenseur de la baie."
     ]
   },
   {
@@ -5802,7 +5868,11 @@
       }
     ],
     "attitude": "neutre",
-    "teinte": "#753c19"
+    "teinte": "#753c19",
+    "histoire": [
+      "Le groupe loge à l'Ancre Sèche (chambre 2 po, repas 50 pa).",
+      "L'aubergiste vante Spezza, bienfaiteur de la baie, et évoque un chantier naval discret lié au château."
+    ]
   },
   {
     "id": "comptoir-de-l-ether",
@@ -5852,7 +5922,10 @@
       "Il apprécie les clients curieux, les lanceurs de sorts et les histoires exotiques. Il méprise les acheteurs hésitants et le marchandage grossier.",
       "Persuasion DD 14 : réduction de 10 à 15 %. Investigation DD 13 : repérer un objet légèrement instable. Arcana DD 15 : comprendre qu'un artefact rare dort en arrière-boutique."
     ],
-    "teinte": "#521975"
+    "teinte": "#521975",
+    "histoire": [
+      "Le groupe visite son Comptoir de l'Éther. Il aime les histoires d'aventures extraordinaires. Un artefact rare dort en arrière-boutique."
+    ]
   },
   {
     "id": "forge-maison-du-fer",
@@ -5904,7 +5977,11 @@
       }
     ],
     "attitude": "neutre",
-    "teinte": "#753c19"
+    "teinte": "#753c19",
+    "histoire": [
+      "Le groupe rencontre le forgeron du chantier naval, fier d'avoir bâti en partie l'Invicta et la Sentinella.",
+      "Il décrit l'Arsenal comme une ancienne caserne réaffectée depuis quelques mois à la logistique maritime. Il voit en Spezza un homme d'action qui a relancé la marine."
+    ]
   },
   {
     "id": "officine",
@@ -5913,7 +5990,10 @@
     "titre": "Alchimiste",
     "parent": "port-doelan",
     "resume": "Échoppe circulaire autour d'un bassin clair, alambics et étagères de fioles.",
-    "chapeau": "L'échoppe s'ouvre en cercle autour d'un bassin clair où l'eau repose sans ride. Étagères hautes chargées de livres et de fioles, alambics polis, odeur d'herbes séchées et d'alcool fort. Un cercle ancien est gravé au sol. Chaque objet est à sa place, étiqueté, classé."
+    "chapeau": "L'échoppe s'ouvre en cercle autour d'un bassin clair où l'eau repose sans ride. Étagères hautes chargées de livres et de fioles, alambics polis, odeur d'herbes séchées et d'alcool fort. Un cercle ancien est gravé au sol. Chaque objet est à sa place, étiqueté, classé.",
+    "histoire": [
+      "Le groupe y rencontre Lirenne, alchimiste qui vend potions, acides et poudres de fumée."
+    ]
   },
   {
     "id": "plage-doelan",
@@ -5952,7 +6032,11 @@
       "Persuasion DD 12 : petit rabais ou accessoire offert. Insight DD 11 : elle observe les aventuriers avec curiosité.",
       "Une partie de volley de plage se joue au pied de son stand : jet de Dextérité contre un DC qui monte à chaque renvoi."
     ],
-    "teinte": "#755219"
+    "teinte": "#755219",
+    "histoire": [
+      "Le groupe s'arrête à son stand de plage, où se joue un volley au pied du muret.",
+      "Elle aime les aventuriers et ne sait rien des intrigues de la ville."
+    ]
   },
   {
     "id": "port-et-jetee-doelan",
@@ -6003,7 +6087,12 @@
       "L'Arsenal a été modifié récemment : ancienne caserne devenue une forge particulière, avec une activité nocturne accrue.",
       "Persuasion DD 14 : le château est lourdement gardé, on parle de deux folles traquées par Spezza, et Spezza ne quitte plus ses murs."
     ],
-    "teinte": "#753c19"
+    "teinte": "#753c19",
+    "histoire": [
+      "Le groupe l'aborde sur la jetée, en train de discuter avec Mirella.",
+      "Il raconte qu'un homme est entré à la cour de Spezza il y a six mois et n'en est jamais ressorti, et que l'ancienne caserne de l'Arsenal est devenue une forge à l'activité nocturne.",
+      "Persuasion DD 14 : le château est lourdement gardé, on parle de deux folles traquées par Spezza."
+    ]
   },
   {
     "id": "mirella",
@@ -6027,7 +6116,10 @@
       "Elle trouve suspect qu'un homme cesse de se montrer en public."
     ],
     "citation": "« Deux femmes qu'il traquerait… des folles, paraît-il. »",
-    "teinte": "#753c19"
+    "teinte": "#753c19",
+    "histoire": [
+      "Sur la jetée, elle relaie avec Falco les mêmes rumeurs : trop de gardes au château, et un homme qui cesse de se montrer en public lui semble suspect."
+    ]
   },
   {
     "id": "phare-doelan",
@@ -6094,7 +6186,12 @@
       "Il peut lancer Scrying si la demande est justifiée : un nom clair ou un lien tangible est requis, et il refuse si l'intention trouble l'équilibre.",
       "Insight DD 14 : il dit la vérité. Insight DD 17 : il en sait plus qu'il ne révèle."
     ],
-    "teinte": "#755219"
+    "teinte": "#755219",
+    "histoire": [
+      "Le groupe monte à la Haute Vigie, tour étroite aux fenêtres éclairées à des heures où la ville dort.",
+      "Amôn les reçoit avec calme. Il dit la vérité, mais en sait plus qu'il ne révèle.",
+      "Il leur recommande de voir Makandral."
+    ]
   },
   {
     "id": "cesare",
@@ -6135,7 +6232,11 @@
       }
     ],
     "attitude": "neutre",
-    "teinte": "#753c19"
+    "teinte": "#753c19",
+    "histoire": [
+      "Le groupe l'aborde devant le théâtre Rusconi. Il réclame 15 po par personne pour la représentation d'après-demain et exige une tenue élégante.",
+      "Il remarque la silhouette de Spezza dans la loge haute, un leurre."
+    ]
   },
   {
     "id": "rue-marchande-doelan",
@@ -6195,7 +6296,8 @@
     "teinte": "#753c19",
     "histoire": [
       "Philippa et Jane le croisent dans la caravane, marchand nerveux qui refuse de partager ses provisions et déteste Magdalena.",
-      "Elles le retrouvent plus tard à Port Doëlan, ruiné, à mendier."
+      "À Port Doëlan, il trouve ses portes fermées : son contact s'est retiré, ses marchandises sont bradées et ses créanciers l'acculent. Il ne peut même pas entrer au château Spezza.",
+      "Le groupe le retrouve ruiné, à mendier contre un mur. Il éclate en sanglots en reconnaissant les PJ."
     ]
   },
   {
@@ -6260,7 +6362,11 @@
       "Il coupe d'anciennes poutres du Quartier Brûlé pour se chauffer, et en a un peu honte. Il vit avec sa famille près des décombres.",
       "Il confirme que la ville a tourné la page un peu vite. Le quartier est un vestige de la guerre de la Veyra, ravagé par Altéra et jamais reconstruit."
     ],
-    "teinte": "#753c19"
+    "teinte": "#753c19",
+    "histoire": [
+      "Dans le quartier brûlé, le groupe croise cet homme qui coupe d'anciennes poutres pour se chauffer.",
+      "Il explique que le quartier, vestige de la guerre de la Veyra ravagé par Altéra, n'a jamais été reconstruit."
+    ]
   },
   {
     "id": "malka",
@@ -6289,7 +6395,11 @@
     ],
     "img": "img/pnj/port-doe-lan-malka.webp",
     "attitude": "allie",
-    "teinte": "#193c75"
+    "teinte": "#193c75",
+    "histoire": [
+      "Dans le quartier brûlé, le groupe rencontre Malka, dont la tribu d'hommes-rats a été chassée de ses terriers par les mercenaires de Spezza.",
+      "Elle propose un accord : le groupe déloge les mercenaires du fortin, la tribu reprend son foyer. « Ramenez-nous le trou. Notre trou. »"
+    ]
   },
   {
     "id": "tina-et-nina",
@@ -6364,7 +6474,12 @@
         "teinte": "#753c19"
       }
     ],
-    "teinte": "#753c19"
+    "teinte": "#753c19",
+    "histoire": [
+      "Jane et Philippa retrouvent ces deux sœurs à la maison close de Vespera. Leur attachement à Jane est sincère.",
+      "Elles tiennent des informations sensibles sur la cour de Spezza et peuvent organiser la rencontre avec Cassiopée Vorn.",
+      "Après la chute de Spezza, elles gardent Vespera en armures de fortune au camp du château."
+    ]
   },
   {
     "id": "quartier-general-griffe",
@@ -6379,6 +6494,9 @@
         "img": "img/paysages/port-doelan/qg-de-la-griffe.webp",
         "legende": "Le QG de la Griffe"
       }
+    ],
+    "histoire": [
+      "Le groupe y rencontre Cassiopée Vorn, cheffe de la Griffe à Port Doëlan, qui propose une alliance contre Spezza."
     ]
   },
   {
@@ -6407,7 +6525,13 @@
       "Elle met en garde contre le combat final : Spezza, le Berger et le Pêcheur seront dans la même pièce.",
       "Elle peut prendre en charge certaines opérations : le fortin, le chantier naval, la chute d'un noble influent, le sabotage de Titan Inc."
     ],
-    "teinte": "#755219"
+    "teinte": "#755219",
+    "histoire": [
+      "Le groupe la rencontre au QG de la Griffe, dans la maison de Vespera. Elle annonce que Spezza a coupé la Griffe des flux d'or.",
+      "Elle propose une alliance temporaire contre Spezza, veut entrer dans le château avec eux et réclame sa part d'or.",
+      "Elle met en garde contre le combat final : Spezza, le Berger et le Pêcheur seront dans la même pièce.",
+      "Elle peut prendre en charge certaines opérations de sabotage : fortin, chantier naval, chute d'un noble, Titan Inc."
+    ]
   },
   {
     "id": "mine-d-argent-doelan",
@@ -6458,7 +6582,11 @@
       "Spezza a fait dynamiter la mine par crainte d'un accès discret vers le château, avec des galeries scellées et des kilomètres de tunnels impraticables.",
       "Investigation DD 14 : effondrement massif et volontaire, aucun passage exploitable. Survival DD 13 : aucune activité récente. Insight DD 12 : il ne ment pas."
     ],
-    "teinte": "#753c19"
+    "teinte": "#753c19",
+    "histoire": [
+      "Le groupe trouve ce mineur ivre devant l'entrée de la vieille mine d'argent.",
+      "Il explique que Spezza a tout fait dynamiter par peur qu'on creuse sous ses pieds. Investigation DD 14 : effondrement massif et volontaire, aucun passage vers le château."
+    ]
   },
   {
     "id": "carriere-de-pierre-doelan",
@@ -6516,6 +6644,10 @@
         "img": "img/paysages/port-doelan/repaire-du-voile.webp",
         "legende": "Le repaire du Voile"
       }
+    ],
+    "histoire": [
+      "Le groupe y rencontre Korrash et Saphir, qui souhaitent se rapprocher de Spezza.",
+      "Après la chute de Spezza, Korrash est retrouvé mort."
     ]
   },
   {
@@ -6554,7 +6686,12 @@
       }
     ],
     "attitude": "ennemi",
-    "teinte": "#753c19"
+    "teinte": "#753c19",
+    "histoire": [
+      "Le groupe le rencontre dans la maison du Voile, près du feu. Il a été jusque-là un allié pragmatique.",
+      "Il veut se rapprocher de Spezza pour l'argent et l'expansion vers l'Ouest, et demande aux PJ de faciliter une audience.",
+      "Après la chute de Spezza, on le retrouve mort."
+    ]
   },
   {
     "id": "saphir",
@@ -6576,7 +6713,10 @@
     "connu": [
       "Elle assiste aux échanges entre Korrash et les PJ et suit la décision de son chef."
     ],
-    "teinte": "#753c19"
+    "teinte": "#753c19",
+    "histoire": [
+      "Lieutenante du Voile, elle assiste aux échanges entre Korrash et le groupe et suit la décision de son chef."
+    ]
   },
   {
     "id": "bains-publics-doelan",
@@ -6620,7 +6760,12 @@
     ],
     "img": "img/pnj/port-doe-lan-octavia.webp",
     "attitude": "neutre",
-    "teinte": "#753c19"
+    "teinte": "#753c19",
+    "histoire": [
+      "Le groupe visite les bains publics (5 po l'entrée).",
+      "Elle partage les rumeurs : Spezza reste enfermé, un noble influent descend parfois dans les bas quartiers capuche sur la tête, et des nains recrutés par Spezza ont été vus en ville il y a quelques mois, puis plus jamais.",
+      "Ces nains se révéleront être l'équipe de Brise-Montagne, qui construisait le sous-marin."
+    ]
   },
   {
     "id": "barbier-edouardo",
@@ -6661,7 +6806,10 @@
       "2 po pour changer la coupe de cheveux, au choix. 4 po pour un soin complet de Jane : lavage, brossage, huile, pelage lisse et brillant.",
       "Philippa peut aussi se faire couper les cheveux, coupe simple ou plus marquée. Aucun enjeu politique ici."
     ],
-    "teinte": "#755219"
+    "teinte": "#755219",
+    "histoire": [
+      "Le groupe passe chez le barbier : soin complet pour Jane (4 po), coupe pour Philippa (2 po)."
+    ]
   },
   {
     "id": "boulangerie-rossi",
@@ -6687,7 +6835,10 @@
       "Boulanger à la boutique qui sent le pain chaud. Pain blanc, pain noir, pain marin, fougasse, brioche, pain farci et galettes de voyage.",
       "Il travaille sans lever beaucoup les yeux et vend à bas prix."
     ],
-    "teinte": "#753c19"
+    "teinte": "#753c19",
+    "histoire": [
+      "Le groupe achète du pain à bas prix dans sa boulangerie."
+    ]
   },
   {
     "id": "fleurs-nicea",
@@ -6724,7 +6875,11 @@
       "La Sentinella et l'Invicta ne rentrent jamais au port et restent dans la baie. Des barques font la relève de façon régulière.",
       "La librairie lui demande de poser des tracts à la gloire de Spezza sur son comptoir. Elle les met à côté des marguerites et trouve cela un peu insistant."
     ],
-    "teinte": "#755219"
+    "teinte": "#755219",
+    "histoire": [
+      "Le groupe discute avec cette vieille fleuriste sous les pins.",
+      "Elle observe que l'Invicta et la Sentinella ne rentrent jamais au port et que des barques font la relève. La librairie lui impose des tracts à la gloire de Spezza."
+    ]
   },
   {
     "id": "chantier-naval-doelan",
@@ -6772,7 +6927,11 @@
       "Il ne dénoncera pas spontanément les PJ, mais ne sacrifiera pas son atelier pour une cause abstraite. Si on lui prouve que Spezza met la ville en danger, il pourrait fermer les yeux quelques minutes.",
       "Quatre points critiques du chantier : les cales de construction, les réserves de goudron et de poix, les grues et palans lourds, les ateliers de charpenterie navale."
     ],
-    "teinte": "#753c19"
+    "teinte": "#753c19",
+    "histoire": [
+      "Le groupe rencontre ce maître charpentier au chantier naval. Il tient à son métier plus qu'à Spezza.",
+      "S'il est convaincu que Spezza met la ville en danger, il peut fermer les yeux quelques minutes. Le chantier a quatre points critiques : cales, goudron et poix, grues et palans, ateliers."
+    ]
   },
   {
     "id": "fortin-des-mercenaires",
@@ -6787,6 +6946,9 @@
         "img": "img/paysages/port-doelan/fortin-des-mercenaires.webp",
         "legende": "Le fortin des mercenaires"
       }
+    ],
+    "histoire": [
+      "Le groupe, allié aux hommes-rats de Malka, s'en prend au fortin des mercenaires de Spezza, ce qui affaiblit sa jauge militaire."
     ]
   },
   {
@@ -6822,7 +6984,11 @@
       "Le fortin est sous-occupé, la majorité des mercenaires gardant le château. Il sert de base avancée et de point de contrôle sur les routes forestières.",
       "Son sous-sol est un réseau d'anciens tunnels partiellement effondrés, encore praticables."
     ],
-    "teinte": "#753c19"
+    "teinte": "#753c19",
+    "histoire": [
+      "Le groupe apprend que ce capitaine commande le fortin, bâti sur les ruines du terrier des hommes-rats.",
+      "Le fortin, sous-occupé, sert de base avancée sur les routes forestières. Son sous-sol d'anciens tunnels reste praticable."
+    ]
   },
   {
     "id": "terrier-de-malka",
@@ -6837,6 +7003,10 @@
         "img": "img/paysages/port-doelan/terrier-des-wererats.webp",
         "legende": "Le terrier des wererats"
       }
+    ],
+    "histoire": [
+      "Au nid, Kralik et Nesk veulent attaquer tout de suite, Krelia et Nissek jugent l'assaut suicidaire et préfèrent attendre une faiblesse.",
+      "Le groupe arbitre avec un plan précis ou un sabotage discret, puis libère le fortin."
     ]
   },
   {
@@ -6872,7 +7042,11 @@
       "Embauché comme garde, il patrouille le camp de Vespera avec Nesk.",
       "Wererat libéré par le groupe, il patrouille Port Doëlan pour le compte de Vespera."
     ],
-    "teinte": "#195275"
+    "teinte": "#195275",
+    "histoire": [
+      "Il veut attaquer immédiatement le fortin avec Nesk.",
+      "Libéré par le groupe, il est engagé comme garde et patrouille ensuite Port Doëlan pour Vespera."
+    ]
   },
   {
     "id": "nesk",
@@ -6902,7 +7076,11 @@
       "Embauché comme garde, il patrouille le camp de Vespera avec Kralik.",
       "Wererat libéré par le groupe, il patrouille Port Doëlan pour le compte de Vespera."
     ],
-    "teinte": "#195275"
+    "teinte": "#195275",
+    "histoire": [
+      "Il veut du sang et attaquer tout de suite avec Kralik.",
+      "Libéré par le groupe, il est engagé comme garde et patrouille ensuite Port Doëlan pour Vespera."
+    ]
   },
   {
     "id": "krelia",
@@ -6932,7 +7110,10 @@
       "Au nid, elle débat avec Kralik et Nesk, qui veulent attaquer tout de suite. Elle connaît les galeries et les points faibles du sol sous le fortin.",
       "Les PJ peuvent arbitrer en proposant un plan précis ou un sabotage discret."
     ],
-    "teinte": "#195275"
+    "teinte": "#195275",
+    "histoire": [
+      "Au nid, elle débat avec Kralik et Nesk. Elle connaît les galeries et les points faibles du sol sous le fortin, et juge l'assaut frontal suicidaire : arbalètes, chiens, pièges."
+    ]
   },
   {
     "id": "nissek",
@@ -6961,7 +7142,10 @@
     "connu": [
       "Il soutient Krelia au nid : l'assaut frontal est un suicide. Il connaît les galeries sous le fortin."
     ],
-    "teinte": "#195275"
+    "teinte": "#195275",
+    "histoire": [
+      "Au nid, il soutient Krelia : l'assaut frontal est un suicide. Il connaît les galeries sous le fortin."
+    ]
   },
   {
     "id": "anquiri-di-velarossa",
@@ -6986,7 +7170,11 @@
       "Elle accueille les visiteurs dans la maison close, tentures rouges, lumière de bougies et parfums lourds.",
       "Elle accepte de témoigner de façon triviale et détaillée sur les pratiques privées d'un noble de haut rang de la cour de Spezza."
     ],
-    "teinte": "#753c19"
+    "teinte": "#753c19",
+    "histoire": [
+      "Le groupe la rencontre à la maison close de Vespera, tentures rouges et lumière de bougies.",
+      "Elle accepte de témoigner sur les habitudes d'un noble de haut rang de la cour de Spezza, ce qui sert une opération de sabotage politique."
+    ]
   },
   {
     "id": "bravala-compagnie-navale",
@@ -7043,7 +7231,11 @@
       "Spezza garde la compagnie sous perfusion commerciale pour éviter toute accusation de monopole : quelques contrats secondaires, jamais les grandes routes.",
       "Titan Inc. détourne des fonds via des sociétés écrans, falsifie des registres de cargaison et commerce discrètement avec Havre Noir, notamment du transport d'esclaves. Les preuves décisives sont dans les bureaux centraux de Titan Inc."
     ],
-    "teinte": "#753c19"
+    "teinte": "#753c19",
+    "histoire": [
+      "Le groupe rencontre le fondateur de la compagnie navale, amer et direct.",
+      "Il explique que Titan Inc. détourne des fonds, falsifie des registres de cargaison et commerce avec Havre Noir, notamment du transport d'esclaves. Les preuves sont au siège de Titan Inc."
+    ]
   },
   {
     "id": "dario-bravala",
@@ -7065,7 +7257,10 @@
     "connu": [
       "Il parle d'ouvrir de nouvelles lignes et de reconstruire une flotte, tout en sachant que Titan Inc. rafle tout ce qui compte."
     ],
-    "teinte": "#753c19"
+    "teinte": "#753c19",
+    "histoire": [
+      "Il parle d'ouvrir de nouvelles lignes et de reconstruire une flotte, tout en sachant que Titan Inc. rafle tout."
+    ]
   },
   {
     "id": "titan-inc",
@@ -7112,7 +7307,11 @@
       "Son bureau est au fond d'un couloir fermé par une porte lourde. Sous pression, il peut ouvrir les archives ou donner les clés du coffre de registres.",
       "Les registres contiennent livres codés, doubles écritures, fausses lignes de transport et références aux cargaisons venues de Havre Noir."
     ],
-    "teinte": "#755219"
+    "teinte": "#755219",
+    "histoire": [
+      "Le groupe s'en prend au comptable de Titan Inc. dans son bureau au fond du couloir.",
+      "Sous pression, il ouvre les archives. Les registres codés montrent des cargaisons venues de Havre Noir et des doubles écritures : ce sont les preuves contre Titan Inc."
+    ]
   },
   {
     "id": "l-invicta-sentinella",
@@ -7157,6 +7356,9 @@
         "img": "img/paysages/port-doelan/prison-2.webp",
         "legende": "La prison, la cour intérieure"
       }
+    ],
+    "histoire": [
+      "Le groupe en étudie les abords grâce à Monique, puis l'accueil avec Pam, pour libérer les prisonniers politiques et réduire l'emprise de Spezza."
     ]
   },
   {
@@ -7173,7 +7375,10 @@
       "Jeune femme au chignon soigné et aux lunettes rondes, à l'accueil de la prison. Toute consultation exige le nom exact du détenu, consigné dans le registre.",
       "Elle rougit si on la complimente. Un charme bien mené ou une invitation bien tournée, après son service, peut lui délier les scrupules."
     ],
-    "histoire": [],
+    "histoire": [
+      "Le groupe se présente à l'accueil de la prison. Pam consigne les entrées et exige le nom exact du détenu.",
+      "Une conversation polie ou une invitation après son service peut lui délier les scrupules."
+    ],
     "alias": [
       "La réceptionniste de la caserne"
     ],
@@ -7217,7 +7422,11 @@
       "Elle raconte qui entre et qui sort, note les heures de relève, et vante la moustache du capitaine Kessler.",
       "Elle sait que Kessler quitte la prison au crépuscule pour rentrer chez lui par la ruelle latérale."
     ],
-    "teinte": "#756919"
+    "teinte": "#756919",
+    "histoire": [
+      "Le groupe tombe sur cette vieille gobeline à la fenêtre qui fait face à la prison.",
+      "Elle raconte qui entre et qui sort et note les heures de relève. Elle sait que Kessler quitte la prison au crépuscule par la ruelle latérale."
+    ]
   },
   {
     "id": "capitaine-kessler",
@@ -7252,7 +7461,11 @@
       "Réputé incorruptible : ni pots-de-vin ni flatteries. Il reste un homme de chair que l'on peut suivre, surprendre, endormir ou enlever, au prix d'une ville dont la garde respecte son nom.",
       "Son bureau, au fond du bâtiment, abrite le trousseau de clés qui ouvre toutes les cellules."
     ],
-    "teinte": "#195275"
+    "teinte": "#195275",
+    "histoire": [
+      "Le groupe apprend par Monique qu'il traverse la cour chaque soir à heure fixe et rentre chez lui par la ruelle latérale.",
+      "Incorruptible, il ne cède ni aux pots-de-vin ni aux flatteries. Le trousseau qui ouvre toutes les cellules est dans son bureau, au fond de la prison."
+    ]
   },
   {
     "id": "bibliotheque-de-port-doelan",
@@ -7303,7 +7516,11 @@
       "Il ment par omission, jamais frontalement. Intimidation DC 14 : il panique et mentionne les commandes spéciales de Monsieur Spezza. Insight DC 12 : il cache quelque chose à propos des combles.",
       "Les combles abritent une presse arcanique qui imprime en boucle flyers, chroniques et pamphlets favorables à Spezza. Un escalier de service est caché derrière une étagère mobile."
     ],
-    "teinte": "#755219"
+    "teinte": "#755219",
+    "histoire": [
+      "Le groupe interroge ce libraire dévoué à Spezza. Sous Intimidation, il panique et évoque les commandes spéciales de Monsieur Spezza.",
+      "Dans les combles, une presse arcanique imprime en boucle de la propagande pour Spezza, ce qui sert une opération de sabotage politique."
+    ]
   },
   {
     "id": "crique-du-sous-marin",
