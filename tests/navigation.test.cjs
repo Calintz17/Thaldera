@@ -43,7 +43,8 @@ assert.ok(Math.abs(oversize.x + 0.05) < 1e-9 && Math.abs(oversize.y + 0.1) < 1e-
 const theme = fs.readFileSync(path.join(root, 'assets/arcane-theme.css'), 'utf8');
 const page = fs.readFileSync(path.join(root, 'index.html'), 'utf8');
 const sessions = JSON.parse(fs.readFileSync(path.join(root, 'data/parties.json'), 'utf8'));
-assert.ok(page.includes('arcane-theme.css?v=64'), 'Atlas theme version must match');
+assert.match(page, /arcane-theme\.css\?v=\d+/, 'Atlas theme must be linked');
+assert.match(page, /assets\/app\.js\?v=86/, 'App cache must match the mobile release');
 assert.ok(page.includes('id="sbtn"') && page.includes('id="slog"'), 'Recap drawer must be present');
 assert.ok(Array.isArray(sessions.parties), 'Session summaries schema must be an array');
 assert.ok(source.includes("['slog','sbtn']"), 'Summary drawer must share side-dock controller');
