@@ -129,6 +129,8 @@ body { overscroll-behavior-y: auto; }
 .mobile-places-list a:last-child { border:0; }
 .mobile-places-list a:active { background:#76552f; }
 .stage:has(.gal) .mobile-places { display:none; }
+/* Map tabs are not gallery controls. They must not intercept slider taps. */
+.stage:has(.gal) .mapcap { display:none !important; pointer-events:none !important; }
 .gal .gcap {
   position:absolute; right:8px; left:8px;
   bottom:max(8px,env(safe-area-inset-bottom));

@@ -33,7 +33,7 @@ test('iPhone portrait: compact header, world cards and Explorer without keyboard
 
 test('iPhone: continent map points and labelled touch destinations', async ({ page }) => {
   await page.goto('/#/istra', { waitUntil: 'domcontentloaded' });
-  await expect(page.locator('.map-labels .pin').first()).toBeVisible({ timeout: 60000 });
+  await expect(page.locator('.map-labels .pin:not(.offscreen)').first()).toBeVisible({ timeout: 20000 });
   await expect(page.locator('.mobile-places summary')).toBeVisible();
   await page.locator('.mobile-places summary').click();
   await expect(page.locator('.mobile-places-list a').first()).toBeVisible();
@@ -69,6 +69,7 @@ test('iPhone: gallery carousel touch controls remain tappable', async ({ page })
   const dotRect = await dots.first().boundingBox();
   expect(dotRect.height).toBeGreaterThanOrEqual(40);
   expect(dotRect.width).toBeGreaterThanOrEqual(30);
+  await expect(page.locator('#mapcap')).toBeHidden();
   const first = await page.locator('.gal .sl.act').evaluate(el => [...el.parentElement.children].indexOf(el));
   await next.click();
   const second = await page.locator('.gal .sl.act').evaluate(el => [...el.parentElement.children].indexOf(el));
