@@ -6223,20 +6223,19 @@
     "id": "outreterre",
     "type": "continent",
     "nom": "L'Outreterre",
-    "titre": "Verrouillé",
-    "sousTitre": "Verrouillé",
+    "titre": "L'Outreterre",
+    "sousTitre": "Creux d'Azur",
     "ordre": 2.5,
     "cartes": [
       {
         "id": "carte",
         "img": "img/placeholder/carte-noire.svg",
-        "legende": ""
+        "legende": "Carte de l'Outreterre en préparation"
       }
     ],
     "blason": "img/blasons/outreterre.webp",
-    "locked": true,
     "typeLabel": "Plan",
-    "resume": "",
+    "resume": "Les profondeurs où Philippa traverse Creux d'Azur après sa chute dans l'Underdark.",
     "alias": [
       "Outreterre",
       "Underdark"
@@ -8419,7 +8418,7 @@
     "type": "ville",
     "nom": "Creux d'Azur",
     "titre": "Ville de l'Underdark aux mains des Duergar",
-    "parent": "thaldera",
+    "parent": "outreterre",
     "resume": "Ville de pierre sombre occupée par la Bande des Crocs Gris.",
     "chapeau": "Les barricades, dressées à la hâte avec des planches, des chariots retournés et même des meubles, ont volé en éclats. La brume rampe au ras du sol et cache les pavés irréguliers. Les maisons, bâties à même la roche, sont éventrées : volets déchirés, portes fracassées puis raccrochées de travers. Des toiles épaisses comme du chanvre se tendent entre les bâtiments et chaque pas les fait vibrer. Un marteau frappe au loin sur du métal, et l'air sent la terre humide, le fer et la viande avariée. Un panneau de pierre dit encore : « Bienvenue à Creux-d'Azur, joyau des montagnes. Là où la pierre chante. »",
     "connu": [
