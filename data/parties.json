@@ -1,4 +1,483 @@
 {
   "version": 1,
-  "parties": []
+  "parties": [
+    {
+      "titre": "Creux-d'Azur : La toile voit, la toile sait",
+      "date": "Philippa",
+      "resume": "• Philippa chute de 200 mètres, meurt, et Vassago la ressuscite dans l'Underdark. Son murmure la guide vers Creux-d'Azur.\n• La caravane de Darren campe devant la ville et l'avertit de faire demi-tour. Les braconniers de Varroth verrouillent la seule sortie.\n• La ville est morte, couverte de toiles. Partout revient la même phrase : « la toile voit, la toile sait, ses yeux sont légions ».\n• Les Duergar de la Bande des Crocs Gris occupent la ville et ont enchaîné l'aubergiste Bilpi. Un culte de Lolth siphonne les âmes des habitants.\n• Natharim, Githzerai mourant dans une cage, la supplie de détruire le cristal et l'artefact qui attirent les gens vers un piège.\n• Philippa détruit le cristal de Lolth. La ville reprend vie, Natharim meurt seul.\n• Arianthil, elfe de l'Ordre d'Argent, l'attend à la surface et la téléporte.",
+      "liens": [
+        {
+          "id": "creux-d-azur"
+        },
+        {
+          "id": "arianthil"
+        },
+        {
+          "id": "caravane-de-darren"
+        }
+      ]
+    },
+    {
+      "titre": "Île du Vesper : La malédiction du capitaine",
+      "date": "Philippa",
+      "resume": "• Arianthil ouvre un portail et tente de briser le lien de Philippa avec Vassago. Vassago tente une dernière possession et la projette en pleine mer.\n• Après une dérive sur un radeau de fortune, elle atteint une île maudite où des pirates squelettes campent dans une épave ouverte en deux.\n• Dorian et Elias, deux pirates spectraux, l'aident à explorer l'île. Leur capitaine, Alaric Morwyn, a été maudit par Vassago pour avoir volé un artefact d'immortalité.\n• Gran Brijit, déguisée en sorcière, reconnaît l'empreinte de Vassago. Elle lui arrache son tatouage et appose sa propre marque. À l'Arbre-Soleil, Philippa reçoit une bénédiction et le pouvoir d'invoquer des armes.\n• Un agent de l'Aile d'Argent gît mort devant le village de Nagas, une lettre à la main.\n• Philippa détruit l'artefact, la malédiction se brise et Dorian et Elias redeviennent poussière.\n• Elle contacte Arianthil par la pierre de message : « Je t'ai entendue, Philippa. Je suis en route. »",
+      "liens": [
+        {
+          "id": "ile-du-vesper"
+        },
+        {
+          "id": "gran-brijit"
+        },
+        {
+          "id": "arianthil"
+        },
+        {
+          "id": "aile-d-argent"
+        }
+      ]
+    },
+    {
+      "titre": "Malquessar : La Pierre de Seuil",
+      "date": "Philippa",
+      "resume": "• Gran Brijit rappelle à Philippa sa dette et l'envoie dans le Feywild éteindre la source d'un feu noir qui rampe sous les racines de l'Arbre-Soleil.\n• Malquessar est une cité voyageuse qui change de plan tous les cinq ans grâce à trois Pierres de Seuil. L'une vient d'être volée.\n• L'ambassadeur Elarin exige son retour sous vingt-quatre heures. Thalanir accuse aussitôt Nolbrim, l'inventeur.\n• Philippa interroge Nolbrim, Arlo, Berrund, Lumeverre et Erdem. Mira, apprentie de la fleuriste Liora, l'aide avec trois fausses pistes.\n• Une peau grise trouvée sur la scène de crime trahit un changeforme. Mira est une imposture : la vraie Mira est morte. La Pierre est récupérée à temps.\n• Malquessar repart pour Avernus. Gran Brijit s'intéresse aux inventions de Nolbrim et les récupère.",
+      "liens": [
+        {
+          "id": "malquessar"
+        },
+        {
+          "id": "liora"
+        },
+        {
+          "id": "nolbrim"
+        }
+      ]
+    },
+    {
+      "titre": "Corvalis : Le bal masqué du Duc",
+      "date": "Philippa",
+      "resume": "• À la porte de l'Est, les gardes réclament 50 po par tête. Des bandits détroussent les voyageurs pour payer leur propre entrée.\n• La ville est occupée par le Dominion Sol. Les Gardes-Soleil patrouillent.\n• Madame Augustine donne à Philippa le nom de Lavande, chef du Voile à Corvalis, et l'existence d'une porte dérobée au palais.\n• Lavande propose l'accès au bal masqué du Duc en échange de l'assassinat de la Duchesse Cecilia de Vaelmor.\n• Au bal, la Duchesse est tuée. Le « Joyau tombé du ciel » présenté par le Duc est un Nephilim, remis à Gran Brijit.\n• Regus, fils du Duc, est emprisonné pour trahison. Le Duc Reginald est accusé du meurtre de sa femme. Un régent du Dominion gouverne désormais Corvalis.\n• Le luthier Greenwood donne un cours de harpe à Philippa et lui conseille l'académie de Lumenlid.",
+      "liens": [
+        {
+          "id": "corvalis"
+        },
+        {
+          "id": "lavande"
+        }
+      ]
+    },
+    {
+      "titre": "Lumenlid : Les quatre épreuves",
+      "date": "Philippa",
+      "resume": "• Sur la route, le Lance-Tempête du gnome Nezbrok explose entre les mains de Philippa.\n• La directrice Lyrianne Velarion lui propose de décrocher son diplôme en réussissant, avant la fin du mois, une épreuve dans chacun des quatre collèges.\n• L'académie est un territoire neutre, reconnu par l'Empire d'Altéra comme par le Dominion Sol.\n• Philippa passe les épreuves de l'Éloquence, de la Vaillance, de la Création et du Savoir, puis reprend la route vers Obaline.",
+      "liens": [
+        {
+          "id": "lumenlid"
+        }
+      ]
+    },
+    {
+      "titre": "Obaline et Lunsk : Descente du fleuve",
+      "date": "Philippa",
+      "resume": "• Obaline est occupée par le Dominion Sol. Un avis de recherche à l'entrée affiche le signalement de Philippa, à cause de Corvalis.\n• Lavande lui souffle par télépathie le mot de passe de l'Emporium de Milo. Ira Malden y propose de libérer l'ancien bourgmestre Thoros Ven en échange d'un sauf-conduit.\n• Philippa s'introduit dans la prison du Grand Palais et libère Thoros Ven. Le capitaine Cassar se révèle un semi-démon.\n• Ils descendent le fleuve en barque jusqu'à Lunsk, ville lacustre où le Dominion n'est présent que sur le papier.\n• Selva, du Voile, lui fait jouer une acheteuse de Sol Novem pour approcher la Griffe. Mezzek démasque la ruse avant de mourir.\n• Avant de mourir, Mezzek nomme le Berger comme patron de la Griffe. Son livre de comptes mentionne de la « marchandise vive scellée » à décharger de nuit à Voros.\n• Philippa embarque pour Voros sur l'Aile d'Avalon.",
+      "liens": [
+        {
+          "id": "obaline"
+        },
+        {
+          "id": "lunsk"
+        }
+      ]
+    },
+    {
+      "titre": "Voros : Le Suud et la Griffe",
+      "date": "Philippa",
+      "resume": "• Voros est une cité suspendue entre falaise et mer, dont la guilde des marchands de Gallywix contrôle tout.\n• Le Voile opère depuis les bains publics. Skrell, son chef local, orchestre en réalité les vols et le trafic du Suud, une drogue brune, vers les ports du Consortium.\n• Helka von Leyemil, landsknecht repentie, avertit Philippa sur la Griffe et lui présente Bernard.\n• Gallywix, qui profite du commerce de la Griffe, indique un entrepôt isolé. Dans ses tunnels, des cages de prisonniers venus de l'île aux Moines par caravane à travers le désert.\n• Philippa tue Skrell. Helka prend la tête du Voile de Voros.\n• Jane Merigold surgit des ombres : elle sait où se trouve la Griffe et propose de l'accompagner vers l'île aux Moines.",
+      "liens": [
+        {
+          "id": "voros"
+        },
+        {
+          "id": "helka-von-leyemil"
+        },
+        {
+          "id": "skrell"
+        },
+        {
+          "id": "jane-merigold"
+        }
+      ]
+    },
+    {
+      "titre": "Île aux Moines : Le monastère profané",
+      "date": "Philippa + Jane",
+      "resume": "• Le monastère de Lathandre a été volontairement profané : statues brisées, visages martelés. Les moines sont partis vers un temple brumeux dans la jungle à l'ouest de Port Lagon.\n• Sous la cathédrale, la Griffe détient des prisonniers. Philippa libère Liora.\n• Philippa et Jane affrontent Absalom, le Berger. Elle s'échappe en promettant qu'elles se reverront.\n• Absalom laisse derrière elle une lettre brûlée signée Spezza, qui prouve son financement du trafic.",
+      "liens": [
+        {
+          "id": "ile-aux-moines"
+        },
+        {
+          "id": "liora"
+        },
+        {
+          "id": "absalom"
+        }
+      ]
+    },
+    {
+      "titre": "Havre-Noir : Le Brumeux",
+      "date": "Philippa + Jane",
+      "resume": "• Havre Noir est le fief de Sycomore Brise-Pavois et de la flotte Goudron. Chaque navire est répertorié aux Quais de Poix.\n• Des marins meurent un à un, un 7 inversé sur leur porte. Tous étaient de l'équipage du Brumeux, navire disparu il y a vingt ans. Derek Varn est le dernier survivant.\n• Eldran Korr, mort-vivant revenu se venger de la mutinerie, se cachait derrière la légende de la Malepeste.\n• Philippa passe le duel rituel du pont de parade et parle à Sycomore. Il garde ses secrets mais laisse entendre que des fonds viennent d'un seigneur pirate.\n• Le groupe retrouve Liora, qui ouvre le Pavillon Vert.",
+      "liens": [
+        {
+          "id": "havre-noir"
+        },
+        {
+          "id": "sycomore-brise-pavois"
+        },
+        {
+          "id": "pavillon-vert"
+        },
+        {
+          "id": "liora"
+        }
+      ]
+    },
+    {
+      "titre": "Camont et Repos des Épées : Le rubis de la villa Graham",
+      "date": "Philippa + Jane",
+      "resume": "• Olyssane dépose le groupe à Camont après un voyage en bateau de plus d'une semaine.\n• Jane retrouve les Yeux aux Silos, une bande de voleurs. Iris leur demande de cambrioler la villa Graham avant le gang rival des Épingles.\n• Le groupe rapporte le rubis. Une lettre de Leth des Épingles fait arrêter le gang rival pour l'effraction.\n• Un Landsknecht d'Altéra se jette sur elles. Gran Brijit le saisit à la gorge par un portail de spores et les téléporte au Repos des Épées.\n• Le Repos des Épées est une terre brûlée, vestige de la guerre de la Veyra. Une abomination à l'œil gigantesque en sort.\n• Dans le repaire d'Argonath, le groupe l'affronte.\n• Olyssane découvre les formes monstrueuses de Jane et Philippa et les attaque. Gran Brijit l'arrête net.",
+      "liens": [
+        {
+          "id": "camont"
+        },
+        {
+          "id": "repos-des-epees"
+        },
+        {
+          "id": "olyssane-veythar"
+        },
+        {
+          "id": "gran-brijit"
+        }
+      ]
+    },
+    {
+      "titre": "Khazad-Marûn : L'Hexacore",
+      "date": "Philippa + Jane",
+      "resume": "• Gran Brijit téléporte le groupe aux portes du désert, au sud de Rivegard, chercher l'Hexacore dont Jane a besoin pour stabiliser ses cristaux.\n• À Kazad Marunn, les habitants murmurent « Ereshkigal » sur le passage de Gran Brijit.\n• Ashur, vieil ami de Gran Brijit, parle de la Clé d'Anachronie et de la Bibliothèque Enfouie. La Bataille des Sables y révèle Aram Sharûn, dernier gardien de la Clé.\n• Les mages de la bataille ont été jetés dans la Fosse sans Fond, gardée par Al Batun. Le groupe y retrouve le corps d'Aram Sharûn, la Clé en main.\n• Dans une ruelle, Ginko Noshi-Buru attend Gran Brijit avec hostilité. Elles disparaissent en duel.\n• Dans la tour de Résonance, la Clé ouvre une faille vers le passé. Le groupe prend l'Hexacore au golem temporel.\n• Nolbrim s'empare de l'Hexacore. Un rituel plonge Jane dans six métamorphoses mortelles que Gran Brijit ramène à chaque fois, jusqu'à l'exosquelette d'os et de cristaux.",
+      "liens": [
+        {
+          "id": "kazad-marunn"
+        },
+        {
+          "id": "gran-brijit"
+        },
+        {
+          "id": "nolbrim"
+        }
+      ]
+    },
+    {
+      "titre": "Pyrrah : La Première Flamme",
+      "date": "Philippa + Jane",
+      "resume": "• Gran Brijit envoie Philippa retrouver la Première Flamme, source éteinte mais non perdue du Titan solaire.\n• Un Astral Dreadnaught avale le groupe et le recrache dans le Plan du Feu, devant la cité de Pyrrah.\n• Les Genasi de feu sont surveillés par les prêtres de la Flamme : une prophétie annonce que des « cheveux de flamme » éteindront un jour la Flamme éternelle.\n• Jane surprend à la taverne de la Griffe trois agents inquiets de l'arrêt des commandes et du silence du Pêcheur. Les caisses partaient vers Port Doëlan.\n• La forge de Kaldros ne reçoit plus de pyrracier : la mine est bloquée par un portail abyssal que le groupe nettoie.\n• L'Incarnat dit avoir su que le groupe viendrait. Philippa refuse de voler la Première Flamme et choisit la voie de la Balance.\n• De retour, l'Arbre-Soleil explose de colère et le Héraut de la Flamme attaque Philippa.",
+      "liens": [
+        {
+          "id": "pyrrah"
+        },
+        {
+          "id": "gran-brijit"
+        }
+      ]
+    },
+    {
+      "titre": "Caravane vers Port-Doëlan et Temple Brumeux",
+      "date": "Philippa + Jane",
+      "resume": "• Le groupe est téléporté de façon imprécise entre Camont et Port Doëlan, près d'un vignoble abandonné. Dimir et Iulia l'accueillent avec une cordialité excessive.\n• Ils l'envoient chercher leur employé Spano, qui raconte avoir été enchaîné et forcé de travailler.\n• Le groupe rejoint une caravane d'une dizaine de marchands. Qadim, marchand charismatique, propose 500 po pour l'escorter jusqu'à Port Doëlan.\n• Parmi les voyageurs : Barok et Almar, Magdalena (une rescapée comme Jane, aux cristaux dans le dos), Ivy, Solkah Barrow, Constance Brisemousse, Umberto Hevalan.\n• En route : bandits affamés, gobelins sur wargs. Ivy est retrouvée empoisonnée un matin, par un poison destiné à Magdalena.\n• Qadim, agent de la Lumière Noire, est démasqué et s'enfuit. La caravane arrive en vue de Port Doëlan au soir.\n• La piste des moines mène à un temple effondré dans la brume. Une statue pivote, un levier s'actionne, un escalier s'ouvre.\n• Sur une porte, le graffiti : « Fuyez. Les portes sont closes. Lathandre a abandonné ce lieu. »\n• Frère Augustus, devenu fou, erre dans les salles. Plus bas, une porte-soleil éteinte, un autel entravé de chaînes noires, un pentacle.\n• Barakel, déguisé en prêtre de Lathandre, attend le groupe. À sa mort, le pentacle s'éteint et le Reliquaire de Lathandre brille.",
+      "liens": [
+        {
+          "id": "caravane-port-doelan"
+        },
+        {
+          "id": "qadim-al-makir"
+        },
+        {
+          "id": "magdalena"
+        },
+        {
+          "id": "barok"
+        },
+        {
+          "id": "almar"
+        },
+        {
+          "id": "ivy"
+        },
+        {
+          "id": "temple-brumeux"
+        }
+      ]
+    },
+    {
+      "titre": "Leyenmil : L'orphelinat Merigold",
+      "date": "Philippa + Jane",
+      "resume": "• Flashback joué : Jane revit son enfance à l'orphelinat de Leyenmil. Elle partage la chambre de Vespera, récompense des enfants méritants.\n• Soren lui demande de chercher Luka sans alerter les adultes. Luka est retrouvé muet, un œil manquant, le corps marqué de coups. Personne n'ose dire ce qui s'est passé.\n• M. Falken, client régulier de la Rectrice, quitte la chapelle en la félicitant pour un service rendu. Jane compte le retrouver.\n• La Rectrice confie à Jane son premier meurtre : Edmund von Kornwald. Elle remet à chaque enfant un objet de meurtre silencieux.\n• Le village sait ce qui se passe à l'orphelinat et détourne les yeux.\n• Jane tue Kornwald. Dans son bureau, des documents prouvent qu'il enquêtait pour faire tomber la Rectrice et protéger les enfants.",
+      "liens": [
+        {
+          "id": "leyenmil"
+        },
+        {
+          "id": "orphelinat-merigold"
+        },
+        {
+          "id": "la-rectrice"
+        },
+        {
+          "id": "edmund-von-kornwald"
+        },
+        {
+          "id": "m-falken"
+        },
+        {
+          "id": "vespera-merigold"
+        }
+      ]
+    },
+    {
+      "titre": "Port Blanc : Les vaches d'or",
+      "date": "Philippa + Jane",
+      "resume": "• Port Blanc est une ville d'élevage où « ici c'est le bétail ». Quatre familles se disputent la ville.\n• Sadie se présente au saloon. Abby, du Voile, décrit les quatre familles.\n• Des vaches meurent chaque nuit, entourées de pièces d'or fondues. La famille Varkel accuse les Reth d'un rituel païen. L'enquête tourne surtout à la politique.\n• Le shérif Wyatt Hale propose 1 000 po pour escorter Mara « Red » Callahan vers une auberge isolée où des gens de Port Doëlan la prendront. Le groupe l'aide à s'échapper, et Mara lui doit 1 000 po.\n• Plus tard, à Port Doëlan, le groupe découvre que Sadie était Absalom.",
+      "liens": [
+        {
+          "id": "port-blanc"
+        },
+        {
+          "id": "absalom"
+        }
+      ]
+    },
+    {
+      "titre": "Port Doëlan : La chute de Spezza",
+      "date": "Philippa + Jane",
+      "resume": "• Un avis de recherche de 36 000 po vise Jane et Philippa. Spezza, seigneur pirate, ne quitte plus son château.\n• Le groupe enquête en ville : Matthias Holbrekt est retrouvé mort avec une lettre de mission, Amôn recommande Makandral, Serna jure que des démons vivent sous le château.\n• Plusieurs opérations de sabotage affaiblissent Spezza : chantier naval, fortin des mercenaires avec l'aide des hommes-rats, preuves contre Titan Inc., flotte, propagande.\n• Chez Makandral, Absalom se révèle sous les traits de Sadie et propose une alliance de circonstance contre Spezza et Naberoth.\n• Assaut du château : Spezza est tué, Naberoth est renvoyé aux Enfers. La crique cache un sous-marin en pyrracier et les nains de Borim Brise-Montagne.\n• Le géant en armure rase la ville. Vespera Merigold, sœur d'orphelinat de Jane, prend le pouvoir.\n• Korrash, relais du Voile, est retrouvé mort.",
+      "liens": [
+        {
+          "id": "port-doelan"
+        },
+        {
+          "id": "chateau-spezza"
+        },
+        {
+          "id": "spezza"
+        },
+        {
+          "id": "naberoth"
+        },
+        {
+          "id": "makandral-toussaint"
+        },
+        {
+          "id": "vespera-merigold"
+        },
+        {
+          "id": "borim-brise-montagne"
+        }
+      ]
+    },
+    {
+      "titre": "Agran : La cité des Noyés",
+      "date": "Philippa + Jane",
+      "resume": "• Le sous-marin de pyrracier des nains de Borim traverse deux tempêtes de courants puis plonge dans une faille.\n• Agran est une cité sous-marine, ancrée à la roche, éclairée par la bioluminescence. Ses habitants appellent le groupe « les Noyés ».\n• À l'auberge de Thaloor, Ink, jeune créature marine, veut tout savoir de la surface. Le groupe l'adopte.\n• Le pupitre du temple de Kataron brille à l'approche du groupe. Glooglugogg l'envoie voir la Suuraal.\n• Le groupe cherche un fragment : l'épave du Grauwacht désigne l'Astariel, où Ossyraal garde le fragment de Nyrrh.\n• Kataron parle par toutes les voix de la salle d'audience et donne au groupe une marque.\n• Au Cœur Immergé, Kataron reçoit le groupe sans s'inquiéter et le congédie : « Vous avez été reçu. »",
+      "liens": [
+        {
+          "id": "agran"
+        },
+        {
+          "id": "ink"
+        },
+        {
+          "id": "thaloor"
+        },
+        {
+          "id": "kataron"
+        }
+      ]
+    },
+    {
+      "titre": "Brakka : Premier pas en Istra",
+      "date": "Philippa + Jane",
+      "resume": "• Absalom est passée avant eux : épuisée, soignée par Boru, elle a gravé le symbole de Vassago au sanctuaire de la marée avant de partir vers les steppes.\n• Le sous-marin remonte devant la côte, abîmé. Le groupe gagne le village à la nage, les nains restent à bord.\n• Personne ne parle le commun. Tembo, sur le quai, les envoie vers Urrak, l'ancien, qui parle les langues des étrangers.\n• Urrak raconte le passage d'Absalom et résume le continent : Keras Tauroc au centre des steppes, Roshen Buru au nord, There'Duun chez les nains. Il refuse de parler de Balamor.\n• Le groupe tente de lui confier Ink, sans succès.\n• Urrak remet des vivres et recommande de voir Vibia à l'Angues Dormientes, à Keras Tauroc. Le groupe part dans les steppes rouges.",
+      "liens": [
+        {
+          "id": "brakka"
+        },
+        {
+          "id": "urrak"
+        },
+        {
+          "id": "ink"
+        }
+      ]
+    },
+    {
+      "titre": "Keras Tauroc : Le Colisée",
+      "date": "Philippa + Jane",
+      "resume": "• Le groupe arrive à dos de rakh en plein festival des Cornes Rouges. La ville est inhospitalière aux étrangers.\n• À l'auberge Angues Dormientes, Vibia apprend au groupe qu'Absalom y a passé une nuit.\n• Dans les sous-sols de la cathédrale, Absalom a détourné l'autel de Kord au profit d'un autel dédié à Vassago. Un collier repose sur l'autel.\n• L'orfèvre Chrysodoros refuse de parler aux étrangers tant qu'ils ne sont pas « connus ». Pour s'en faire connaître, le groupe entre au Colisée.\n• Il bat tous ses adversaires, dont l'abomination Grûl, et remporte les Cornes d'Or.\n• Chrysodoros révèle qu'Absalom cherchait un artefact de grande puissance, introuvable ici. Le collier est fait d'arshen, une pierre rare qui conduit la magie.\n• Vespera, en difficulté à Port Doëlan, demande des ressources en exclusivité. Le groupe négocie avec Lapidus deux tonnes de pierre pour 10 000 po.\n• Vitiosa remet la récompense de 5 600 po et se révèle démone du septième cercle, la Ruine de Maladomini.\n• Au port, Absalom surgit derrière le groupe, plaque ses paumes sur leurs fronts, et tout s'éteint.",
+      "liens": [
+        {
+          "id": "keras-tauroc"
+        },
+        {
+          "id": "vitiosa"
+        },
+        {
+          "id": "absalom"
+        },
+        {
+          "id": "chrysodoros"
+        },
+        {
+          "id": "ursinus"
+        },
+        {
+          "id": "arshen"
+        }
+      ]
+    },
+    {
+      "titre": "Keras Tauroc : Le mois perdu",
+      "date": "Philippa + Jane + Harfang",
+      "resume": "• Le groupe se réveille en prison, privé de ses affaires, un collier bridant ses sorts autour du cou. Il y rencontre Harfang, assistant ambassadeur de Roshen Buru, lui aussi emprisonné.\n• Un mois s'est écoulé. L'ambassadeur Otoba Ketaï a été assassiné le soir du banquet et le groupe est accusé du crime.\n• Tarcus, conseiller de la Maison Tauroc, doute : le groupe a été guéri d'un envoûtement dès son arrestation. Il le relâche pour qu'il s'innocente lui-même.\n• Sur la scène de crime, des témoins confirment que ce sont leurs doubles qui ont tué l'ambassadeur, guidés par un vieux minotaure aux cheveux blancs.\n• L'enquête remonte du Cornua Fracta à Sera, éprise de Philippa, puis à la logeuse de Jane, jusqu'à Hématome, bandit pour qui Jane travaillait.\n• Hématome livre le nom du commanditaire : le général Calvinus Ferox. Dans sa villa, une lettre d'Absalom l'incite à tuer l'ambassadeur pour « rétablir le nom de la cité ».\n• Tarcus fait arrêter Ferox. Harfang alerte la Protectrice qu'un démon fait route vers Roshen Buru.\n• Le groupe règle ses dettes. Il doit encore 6 000 po à Egnatus. Il embarque sur le Tenrai Buru vers Cap Cornes.",
+      "liens": [
+        {
+          "id": "keras-tauroc"
+        },
+        {
+          "id": "otoba"
+        },
+        {
+          "id": "tarcus"
+        },
+        {
+          "id": "calvinus-ferox"
+        },
+        {
+          "id": "harfang-tsuren"
+        },
+        {
+          "id": "absalom"
+        }
+      ]
+    },
+    {
+      "titre": "Voyage vers Cap Cornes : La lande du gibet",
+      "date": "Philippa + Jane + Harfang",
+      "resume": "• Le groupe embarque sur le Tenrai Buru de la capitaine Yorisa, avec deux rakh.\n• Il recueille un voyageur perdu, Silas Mort-Dorée, qui est un agent de Vassago. Silas tente de voler le Fragment et il est vaincu.\n• À Cap Cornes, le groupe retrouve Ink et Olyssane. Olyssane a besoin d'aide pour convaincre le mage Eamonn de lui ouvrir un portail entre Havre Noir et Cap Cornes, et un membre de la Maison Tauroc, Kester, veut absolument la défier.\n• Sur la lande, un gibet improvisé : des gardes Tauroc pendus par Absalom. Le groupe y chasse un petit monstre charognard.\n• Jane, déguisée en Olyssane, attire Kester dans une ruelle et le met en fuite. Il a promis vengeance.",
+      "liens": [
+        {
+          "id": "cap-cornes"
+        },
+        {
+          "id": "olyssane-veythar"
+        },
+        {
+          "id": "ink"
+        },
+        {
+          "id": "route-keras-tauroc-cap-cornes"
+        },
+        {
+          "id": "silas-mort-doree"
+        }
+      ]
+    },
+    {
+      "titre": "Cap Cornes : Le portail d'Eamonn",
+      "date": "Philippa + Jane + Harfang",
+      "resume": "• Philippa a une vision de la balance désaxée : quelque chose se trame et doit être réglé. Au matin, Olyssane ouvre le passage vers Gran Brijit en faisant couler son sang.\n• Gran Brijit semble déjà connaître Harfang et Ink. Elle interrompt un vieux monsieur et rappelle que l'équilibre doit être préservé.\n• Nolbrim est réveillé en étant tué puis ressuscité avec la potion d'Ursinus. Philippa prévient Bourpif que sa mission est achevée.\n• Gran Brijit confie à Philippa deux missions : ne jamais ouvrir de portail entre Cap Cornes et Havre Noir, et trouver puis tuer Oren Sidaï à Roshen Buru.\n• Eamonn Moorwich, haut mage drogué et récalcitrant, accepte de négocier contre du Suud. Il réclame des ingrédients : vésine (Fennick, menacé par le groupe), clous de Rory, trois cœurs flétris de ghoules des marées.\n• Eamonn ouvre un cercle de téléportation entre sa tour et les ruines du château de Port Doëlan : un pont entre Vespera et le nouveau continent. Olyssane craint pour sa vie et les représailles de Sycomore.\n• Philippa trace une marque à la craie sur la porte d'Eamonn pour revenir à tout moment.",
+      "liens": [
+        {
+          "id": "cap-cornes"
+        },
+        {
+          "id": "eamonn"
+        },
+        {
+          "id": "gran-brijit"
+        },
+        {
+          "id": "nolbrim"
+        },
+        {
+          "id": "olyssane-veythar"
+        },
+        {
+          "id": "oren-sidai"
+        }
+      ]
+    },
+    {
+      "titre": "Cap Cornes et Azuren Kai : Le Goryo",
+      "date": "Philippa + Jane + Harfang",
+      "resume": "• En bateau, Philippa prévient Sera qu'une mission la retient loin de Keras Tauroc. Jane apprend que Nolbrim est réveillé et travaille déjà à sa prochaine invention.\n• Vespera signale un cercle de téléportation apparu à Port Doëlan : le portail avec Eamonn fonctionne. Elle l'a installé dans son QG.\n• Harfang explique la légende du Goryo : un fantôme sur échasses qui noie les ennemis de Roshen Buru.\n• À Azuren Kai, le groupe découvre le corps d'Olyssane couvert de tatouages marquant son appartenance à la flotte de Sycomore.\n• Au Ryokan Kaï, Kirin, du clan Anadori, tue trois personnes avant d'être arrêté par Harfang. Son Miren est le même que celui de Ginko Noshi-Buru face à Gran Brijit.\n• Harfang comprend que l'autre continent n'était pas ignoré : la cousine de l'impératrice y est allée, et « Brijit » semble connaître son peuple. Quelqu'un lui ment, à lui et à son peuple.\n• Harfang tue Kirin, alors que Philippa avait désamorcé la situation. Tension dans le groupe. Oboré vend une carte de la forêt.\n• La nuit, le Goryo attaque. Il est tué, murmurant : « elle sait… »",
+      "liens": [
+        {
+          "id": "azuren-kai"
+        },
+        {
+          "id": "le-goryo"
+        },
+        {
+          "id": "kirin-anadori"
+        },
+        {
+          "id": "harfang-tsuren"
+        },
+        {
+          "id": "obore"
+        }
+      ]
+    },
+    {
+      "titre": "Azuren Kai : La traversée de la forêt",
+      "date": "Philippa + Jane + Harfang",
+      "resume": "• Le lendemain de l'attaque du Goryo, le groupe parcourt la ville. Nuala, de Cap Cornes, vend des babioles. Rokka, du Cuir et l'Écaille, évoque le Balam Kaal, un navire attendu sous peu à Azuren Kai.\n• Philippa trace une croix à la craie à l'auberge pour pouvoir revenir à Azuren Kai.\n• Harfang relève la contrebande en ville mais n'en dit rien au groupe.\n• Guidé par la carte d'Oboré, le groupe traverse la forêt d'Azuren. Il rencontre une Nubbe, petite racine qui grignote des pousses.\n• Dans une tour abandonnée, il récupère des deuils-de-mai et une page de glyphes : le sort Mémoire de la Chair pour Philippa.\n• La fée Sorenka tente d'extorquer l'équipement du groupe, puis le met face à ses propres clones de fumée noire. Les clones tombent. L'un d'eux finit dans un Bag of Holding.\n• Le groupe arrive aux portes de Roshen Buru.",
+      "liens": [
+        {
+          "id": "azuren-kai"
+        },
+        {
+          "id": "foret-d-aruzen"
+        },
+        {
+          "id": "obore"
+        }
+      ]
+    },
+    {
+      "titre": "Roshen Buru : Le Tribunal de Chair et le Tenraku",
+      "date": "Philippa + Jane + Harfang",
+      "resume": "• Flashback : au feu de camp, Nolbrim emmène Jane chez Gran Brijit. Son exosquelette est incomplet : il manque une âme. Gran Brijit sacrifie Bourpif. Jane se réveille avec un gant de cristal et une main fantomatique, et devient Arcane Trickster.\n• À Roshen Buru, le groupe s'installe au salon de thé d'Oshka et Orissa. Des filles et Tobiya ont disparu, les patrouilles sont renforcées.\n• Eamonn appelle à l'aide : l'Oni aux masques et le Tribunal de Chair attaquent sa tour. Le groupe y arrive par la craie de Philippa et trouve une liste de cibles : Eamonn, Olyssane, Jane, Philippa, Ink, Harfang suivi d'un point d'interrogation.\n• Eamonn téléporte le groupe au camp de Vespera. Jane lui donne la Couronne de Corail Noir pour financer l'achat de deux tonnes d'arshen. Des mercenaires attaquent ses gens, et son émissaire au sud de Leyenmil n'est pas revenu.\n• Philippa vend Requiem à Oren Sidaï. Harfang rend son rapport au magistrat, qui en voulait quarante pages, et décide d'arrêter la diplomatie.\n• Le mariage de Konya Sokabeï est menacé. Ankou Urameï, démon de Minauros, aide le groupe. Tobiya est retrouvé dans les égouts, corrompu par les araignées : il sert la Mère de la Toile et prépare la conquête des villes d'Istra, depuis Balamor.\n• Ayano est enlevée en pleine cérémonie par le Miren phalène de Darrek Kovacz. Le groupe infiltre la magistrature et la Protectrice. Neryn Yosa fait espionner Harfang, a envoyé le Tribunal de Chair et a passé un pacte avec Levistus.\n• Le groupe tue Darrek Kovacz. La Gardienne protège systématiquement les clans, ce qui laisse impunis un clan mené par un démon et un autre dont un membre tue.\n• Seconde cérémonie au temple du Tenraku : Absalom brise la jarre Miren, lit le parchemin et détruit le temple d'un cri. Gran Brijit réclame le parchemin face à la Gardienne.\n• Le rire de Vassago retentit : Carnage, amalgame de tous les cadavres du temple, est vaincu. Harfang se retrouve aux pieds de la Gardienne, qui s'apprête à parler.",
+      "liens": [
+        {
+          "id": "roshen-buru"
+        },
+        {
+          "id": "tribunal-de-chair"
+        },
+        {
+          "id": "neryn-yosa"
+        },
+        {
+          "id": "temple-du-tenraku"
+        },
+        {
+          "id": "eamonn"
+        },
+        {
+          "id": "vespera-merigold"
+        }
+      ]
+    }
+  ]
 }
