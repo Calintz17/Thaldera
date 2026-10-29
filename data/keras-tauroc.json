@@ -6239,6 +6239,12 @@
     "alias": [
       "Outreterre",
       "Underdark"
+    ],
+    "galerie": [
+      {
+        "img": "img/blasons/outreterre.webp",
+        "legende": "Blason de l'Outreterre"
+      }
     ]
   },
   {
