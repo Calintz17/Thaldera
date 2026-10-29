@@ -1397,10 +1397,11 @@
       "C'est ici que le groupe voit pour la première fois le symbole de Vassago."
     ],
     "histoire": [
-      "Le groupe fait les derniers mètres à la nage, matériel sur le dos. Le sous-marin plonge derrière lui.",
-      "Tembo, un jeune Pachidan, l'oriente vers Urrak, l'ancien du village.",
-      "Shoba, la fumeuse de poisson, lui parle d'une étrangère nommée Vasha, restée une semaine : Absalom.",
-      "Urrak accueille officiellement le groupe, qui repart dans les steppes avec du poisson séché."
+      "Absalom y arrive la première, par les airs depuis la mer, épuisée et à moitié morte. Boru la soigne plusieurs jours. Elle reste une semaine au village, passe ses nuits au sanctuaire de la marée et y grave le symbole de Vassago, puis part vers les steppes sans un mot.",
+      "Quelques semaines plus tard, le sous-marin des nains remonte à la surface devant la côte. Borim diagnostique des dégâts de coque et de propulsion, des réparations de trois à sept jours. Le groupe gagne le village à la nage, matériel sur le dos, et les nains restent à bord. Le sous-marin replonge derrière elles.",
+      "Sur le quai, Tembo les accueille avec curiosité. Ne parlant qu'istran, il les envoie vers Urrak.",
+      "Urrak les reçoit chez lui. Il raconte le passage d'Absalom, résume le continent et refuse de parler de Balamor. Le groupe visite le sanctuaire de la marée, où Boru médite, puis la fumerie de Shoba, qui lui parle de Vasha.",
+      "Urrak remet un paquet de vivres au groupe, lui indique de voir Vibia à l'Angues Dormientes à Keras Tauroc, et le groupe quitte Brakka pour les steppes rouges. Le village lui donne la monnaie locale : son or ne vaut rien ici."
     ],
     "chapeau": "Les falaises ocre et sang tombent droit dans une eau devenue turquoise. En dessous, une plage de sable roux et de galets sombres, et quelques constructions basses en pisé rougeâtre, comme poussées là par la colline. Toits de chaume tressé, une tour au centre qui regarde la mer, une maison sur pilotis au bout d'un ponton. L'odeur est celle du sel, du poisson séché et du bois chauffé par le soleil.",
     "galerie": [
@@ -1444,7 +1445,8 @@
       "Il ne parle qu'Istran et compense par des gestes larges et des mimiques claires. Il regarde les PJ avec une curiosité sans méfiance, les salue (Tharnak, Philippa, Tharnak, Jane) et les envoie voir Urrak, le vieux, qui comprend les étrangers."
     ],
     "histoire": [
-      "Il renvoie le groupe vers Urrak, qui comprend les étrangers."
+      "Il est le premier habitant d'Istra rencontré par le groupe, quand elle atteint le quai de Brakka à la nage. Il recoud une barque abîmée par une tempête trois jours plus tôt et s'interrompt, fasciné, en voyant le sous-marin au large.",
+      "Il ne comprend pas ce que le groupe dit et l'envoie vers Urrak, qui comprend les étrangers."
     ],
     "citation": {
       "texte": "Bienvenue, Philippa. Bienvenue, Jane. Vous êtes à Brakka, en terre d'Istra-Belig.",
@@ -1478,7 +1480,9 @@
       "Au départ, il remet un paquet de vivres (poisson séché, sel, galettes plates) et pose une main sur l'épaule de chacune."
     ],
     "histoire": [
-      "Il fournit au groupe du poisson séché, qui servira à dresser les Rakh."
+      "Il a vu passer Absalom quelques semaines plus tôt. Il a remarqué son istran trop parfait, sans accent, et a été soulagé de la voir partir.",
+      "Il attend le groupe dans sa maison. Il lance lui-même Tongues si personne n'agit, par patience résignée, et raconte le passage d'Absalom. Il résume Istra-Belig : Keras Taurok au centre, Roshen Buru au nord, There'duun à l'ouest. Il ne veut pas parler de Balamor.",
+      "Au départ, il remet un paquet de vivres, du poisson séché, du sel et des galettes, pose une main sur l'épaule de chacune, et conseille d'aller voir Vibia à Keras Taurok."
     ],
     "relations": [
       {
@@ -1535,7 +1539,10 @@
     ],
     "img": "img/pnj/brakka-shoba.webp",
     "attitude": "neutre",
-    "teinte": "#753c19"
+    "teinte": "#753c19",
+    "histoire": [
+      "Elle a hébergé et supporté Absalom, qu'elle appelle Vasha, une semaine entière. Le groupe vient la trouver à sa fumerie. Elle lui apprend que Vasha dormait dehors, passait ses nuits au sanctuaire et souriait quand elle croyait que personne ne regardait."
+    ]
   },
   {
     "id": "gorge-du-mesa",
@@ -1553,9 +1560,13 @@
       "Le sage Thaal a vu dans les braises que le groupe porte quelque chose de lourd, et parle d'une vieille route."
     ],
     "histoire": [
-      "À l'aube, deux Rakh affamés attaquent le campement. Le groupe les dresse avec le poisson d'Urrak.",
-      "Voraan, chef de la caravane, voit dans leur arrivée un signe favorable. Sa fille Sevik, humaine élevée chez les Taurok, est furieuse que des étrangers troublent son rituel de passage.",
-      "Le groupe monte à la falaise cueillir les œufs du rituel de Sevik, sous les yeux de la caravane."
+      "Au troisième jour de marche dans les steppes, le groupe est attaqué à l'aube par deux Rakh affamés, un mâle et une femelle. Il les dresse avec le poisson d'Urrak et obtient deux montures.",
+      "Il découvre ensuite le campement détruit : cinq jeunes hommes de bonne famille, morts d'un coup lourd chacun, un totem de bois sombre planté au centre.",
+      "À l'entrée de la gorge, deux gardes Taurok le bloquent. Voraan, chef de la caravane, lui apprend que la gorge est fermée pendant un rituel. Sevik, sa fille, exige qu'on expulse les étrangers.",
+      "Thaal consulte les braises. Il juge leur arrivée comme un signe et les invite au rituel. Iku, moine de Roshen Buru, et Szara, une githyanki accompagnée de Zyrith, viennent observer les nouveaux arrivants.",
+      "Philippa et Jane escaladent la falaise pour aller chercher les œufs du rituel de Sevik, quarante mètres plus haut, jusqu'au plateau du monastère des steppes.",
+      "À la redescente, Thaal bénit les œufs, le sang des deux joueuses est mêlé au jaune dans le bol, et la caravane festoie. Voraan demande ce que le groupe cherche à Keras Taurok.",
+      "Trois jours plus tard, le groupe quitte la gorge pour Keras Taurok et croise un arbre mort où pendent sept assemblages de paille et de breloques, le symbole de Vassago, laissé par Absalom."
     ],
     "chapeau": "La gorge s'ouvre sans prévenir dans la plaine rouge, comme une blessure dans la terre. Les parois montent à pic, ocre et noires de stries anciennes. Au milieu du passage, une caravane entière installée comme si elle avait toujours été là : tentes de cuir brun et de toile safran, feux bas, et sur une table de pierre naturelle, cinq œufs verts et écailleux. Autour, personne ne parle fort.",
     "galerie": [
@@ -1607,7 +1618,11 @@
     },
     "img": "img/pnj/brakka-voraan.webp",
     "attitude": "positif",
-    "teinte": "#755219"
+    "teinte": "#755219",
+    "histoire": [
+      "Il apprend par les gardes l'arrivée de deux étrangères à dos de Rakh à l'entrée de la gorge. Il leur dit que la gorge est fermée pendant le rituel, mais voit dans leur arrivée un signe favorable et les invite à y participer.",
+      "À la fin, il sert lui-même les joueuses au repas et leur demande à voix basse ce qu'elles cherchent vraiment à Keras Taurok."
+    ]
   },
   {
     "id": "sevik",
@@ -1637,7 +1652,11 @@
     },
     "img": "img/pnj/steppes-rouge-sevik.webp",
     "attitude": "positif",
-    "teinte": "#755219"
+    "teinte": "#755219",
+    "histoire": [
+      "Elle est en plein Ashkral, son premier rituel de passage, quand le groupe arrive. Elle exige son expulsion, puis accepte à contrecœur le verdict du sage.",
+      "Au repas de la fin, après l'escalade, elle apporte deux bols sans un mot, s'assoit à côté des joueuses, boit trop vite et finit par dire qu'elles ne sont pas si mal."
+    ]
   },
   {
     "id": "thaal",
@@ -1668,7 +1687,11 @@
       }
     ],
     "attitude": "positif",
-    "teinte": "#2d2d2d"
+    "teinte": "#2d2d2d",
+    "histoire": [
+      "Il reçoit le groupe sous sa tente, consulte les braises après la fumée, et rend son verdict : le passage est fermé pendant le rituel, mais leur arrivée est un signe, ils sont les bienvenus.",
+      "À la fin, il bénit les œufs un à un, les brise dans un bol de pierre noire et mêle le sang des joueuses au jaune."
+    ]
   },
   {
     "id": "monastere-des-steppes",
@@ -1708,6 +1731,12 @@
         "img": "img/paysages/steppes-rouges/escalade.webp",
         "legende": "L'escalade"
       }
+    ],
+    "histoire": [
+      "Le monastère abritait les Quatre Lames, ordre de moines-soldats. Il a été attaqué et vidé, bien avant l'arrivée du groupe.",
+      "Deux hommes morts depuis deux à trois semaines gisent dans l'herbe, écrasés par quelque chose de très lourd venu du ciel. Ils cherchaient les œufs de Roc.",
+      "Le groupe y monte en escaladant la falaise de la gorge. Il y trouve les squelettes des moines, la bibliothèque vidée, un registre quotidien de la fin et une trappe vidée.",
+      "Il emporte le registre, rédigé en istran."
     ]
   },
   {
@@ -1729,7 +1758,11 @@
         "ton": "positif"
       }
     ],
-    "attitude": "neutre"
+    "attitude": "neutre",
+    "histoire": [
+      "Il bat Frère Tomek au bâton quatre fois de suite, et note que le voyageur de passage connaît les nœuds de corde. Il lui propose de partir.",
+      "Le registre du monastère se termine peu après, par la mort des moines, que le groupe découvre plus tard."
+    ]
   },
   {
     "id": "frere-tomek",
@@ -1751,7 +1784,10 @@
         "ton": "positif"
       }
     ],
-    "attitude": "neutre"
+    "attitude": "neutre",
+    "histoire": [
+      "Il perd quatre fois de suite contre Frère Ossian, se foule la cheville et veut reprendre l'entraînement. À la fin du registre, il bat enfin Ossian pour la première fois."
+    ]
   },
   {
     "id": "keras-tauroc",
@@ -1775,13 +1811,15 @@
       "La religion de Kord prône la force, l'honneur, le combat. Le clergé est très proche du pouvoir militaire."
     ],
     "histoire": [
-      "Le groupe arrive en plein festival des Cornes Rouges, sur la piste d'Absalom, passée quelques jours plus tôt.",
-      "Après avoir gagné le tournoi du colisée, il reçoit les Cornes d'Or. Les mêmes habitants deviennent chaleureux.",
-      "Le lendemain, le Consul Chrysodoros coopère. Absalom cherchait un artefact puissant.",
-      "Une araignée prend le contrôle d'un homme du peuple, qui attaque le groupe dans la rue. Des symboles de Balamor sont gravés dans le bois de sa chambre.",
-      "Sur les docks, Absalom tend une embuscade au groupe et efface un mois de sa mémoire.",
-      "Le groupe se réveille en prison. L'ambassadeur Otoba a été assassiné le soir du banquet du festival et le groupe est accusé du crime.",
-      "Tarcus propose un marché au groupe, qui enquête sur lui-même et démasque Calvinus Ferox."
+      "Absalom y passe la première, quelques semaines avant le groupe, et y laisse sa marque : une nuit à l'auberge, les catacombes de la cathédrale, une visite chez l'orfèvre, à la mine, chez l'haruspex, puis la commande d'une barge au port.",
+      "Le groupe arrive à dos de rakh, depuis Brakka et la gorge du Mesa, en plein festival des Cornes Rouges, devant les remparts noirs et le campement de tentes qui entoure la ville. Les gardes s'écartent devant les rakh. Il apprend vite que rien ne s'obtient sans prouver sa valeur au colisée.",
+      "Il enquête sur le passage d'Absalom : l'auberge Angues Dormientes, la cathédrale de Kord et ses catacombes, où il vainc le Démon des Mains, puis la boutique de l'orfèvre Chrysodoros, qui le refuse.",
+      "Il gagne le tournoi du Colisée et reçoit les Cornes d'Or. Les mêmes habitants deviennent accueillants. Chrysodoros, la mine de Lapidus, l'haruspex Cordus et les docks de Capito confirment la piste d'Absalom, qui part vers le nord.",
+      "Le groupe reçoit un message de Vespera, négocie un marché de pierre de 10 000 po, fait le tour des boutiques et se prend d'affection pour Ursinus.",
+      "Vitiosa remet la récompense de 5 600 po et apprend au groupe qu'Absalom s'apprête à quitter la ville. Sur le chemin du port, une araignée contrôlant un passant attaque le groupe. Sur les docks, Absalom prend le groupe de court et efface un mois de sa mémoire.",
+      "Le groupe se réveille en prison. L'ambassadeur Otoba a été assassiné le soir du banquet du festival, et le groupe est accusé du crime.",
+      "Tarcus propose un marché. Le groupe enquête sur lui-même et remonte la piste d'Hématome jusqu'au général Calvinus Ferox, qu'il démasque. Tarcus lève les sceaux de localisation.",
+      "Le groupe fait ses adieux, rembourse Ursinus, règle ses rakh, et embarque sur le Tenrai Buru de Yorisa, en direction de Cap Cornes puis de Roshen Buru."
     ],
     "galerie": [
       {
@@ -1830,7 +1868,14 @@
     "pos": {
       "x": 0.078,
       "y": 0.815
-    }
+    },
+    "histoire": [
+      "Le groupe y arrive en étranger, juste après la clôture des inscriptions. Fulvia refuse, Vitiosa force l'inscription.",
+      "Il y affronte successivement Vrakul le Monolithe, Hématome, Voshara, que Philippa tue (seule mort de l'arène), puis un Mirenaï anonyme qui refuse de donner son nom.",
+      "Pour départager Philippa et Jane, Vitiosa organise un duel entre elles. Philippa l'emporte grâce à un sort vil.",
+      "Les deux joueuses affrontent ensemble Grûl, l'Abomination des Cornes Rouges, et le vainquent. Elles reçoivent les Cornes d'Or.",
+      "Le soir suivant, Vitiosa les attend dans le Colisée désert, au lendemain de la fête, pour leur remettre 5 600 po."
+    ]
   },
   {
     "id": "cathedrale-de-kord",
@@ -1843,7 +1888,10 @@
       "Les catacombes abritent les grands combattants de la lignée Tauroc."
     ],
     "histoire": [
-      "Le groupe y trouve un autel secondaire aux armes de Vassago et combat le Démon des Mains."
+      "Absalom y passe avant le groupe et loge dans les catacombes, avec l'accord de Pius.",
+      "Orientés par Vibia, les joueuses s'y rendent à leur arrivée, sans avoir besoin des Cornes d'Or, puisque les lieux de culte ne font pas de distinction. Pius les reçoit.",
+      "Dans les catacombes, elles découvrent l'autel de Kord détourné au profit d'un autel secondaire aux armes de Vassago, le symbole déjà vu à Brakka et dans les steppes. Un démon des mains surgit et les attaque. Elles le vainquent.",
+      "Elles repèrent un collier sur l'autel et vont l'étudier chez l'orfèvre Chrysodoros."
     ],
     "chapeau": "La cathédrale s'élève sur la place centrale comme une déclaration d'intention. La pierre est ancienne, les colonnes portent des bas-reliefs de guerriers en marche. Mais quelque chose ne va pas : l'encens est trop épais, comme s'il compensait quelque chose, et une pression légèrement froide pèse derrière les yeux, comme un son trop aigu pour être entendu.",
     "galerie": [
@@ -1880,7 +1928,12 @@
     "pos": {
       "x": 0.567,
       "y": 0.585
-    }
+    },
+    "histoire": [
+      "Le groupe y loge dès son arrivée à Keras Tauroc et y apprend le passage d'Absalom.",
+      "Après le tournoi, il y reçoit la missive de Vitiosa.",
+      "Il y passe aussi la nuit qui suit la victoire sur Grûl."
+    ]
   },
   {
     "id": "cornua-fracta",
@@ -1905,7 +1958,11 @@
     "pos": {
       "x": 0.358,
       "y": 0.73
-    }
+    },
+    "histoire": [
+      "Philippa y a chanté chaque soir pendant le mois perdu, gîte et couvert en échange, sans s'en souvenir.",
+      "Une fois sortis de prison, les joueuses y interrogent Volusius, qui confirme sa présence et la visite assidue de la fille du meunier."
+    ]
   },
   {
     "id": "malleus-cadens",
@@ -1930,7 +1987,10 @@
     "pos": {
       "x": 0.3,
       "y": 0.544
-    }
+    },
+    "histoire": [
+      "Le groupe y achète Mâchoire, Caput Tauri et la Cuirasse Aurée, et y contracte une dette envers Egnatius."
+    ]
   },
   {
     "id": "mandragora-viridis",
@@ -1960,7 +2020,11 @@
     "pos": {
       "x": 0.219,
       "y": 0.407
-    }
+    },
+    "histoire": [
+      "Le groupe y rencontre Ursinus pendant sa tournée des boutiques, et y achète un élixir de vie.",
+      "Philippa marque la porte à la craie, point de retour permanent vers Keras Tauroc."
+    ]
   },
   {
     "id": "cinis-et-caligo",
@@ -1985,7 +2049,10 @@
     "pos": {
       "x": 0.661,
       "y": 0.415
-    }
+    },
+    "histoire": [
+      "Le groupe y est d'abord refusé, puis y est servi une fois qu'il porte les Cornes d'Or."
+    ]
   },
   {
     "id": "docks-keras-tauroc",
@@ -2001,7 +2068,9 @@
       "Absalom y avait fait aménager une barge : grand lit, draperies, vaisselle de qualité, vin rouge."
     ],
     "histoire": [
-      "Sur les docks, Absalom prend le groupe de court avec Modify Memory. Le groupe se réveille en prison, un mois plus tard."
+      "Absalom y a fait aménager une barge de fret avant de quitter la ville.",
+      "Le groupe y vient enquêter après avoir appris que la barge est prête au départ. Il s'y met en embuscade, mais Absalom surgit derrière lui, plaque ses paumes sur leurs fronts, et tout s'éteint.",
+      "Un mois plus tard, à la fin de l'enquête, le groupe retrouve le quai : le navire d'Absalom est resté amarré, elle a filé discrètement. Le groupe embarque ses rakh sur le Tenrai Buru, de la capitaine Yorisa."
     ],
     "chapeau": "Le quartier des docks commence là où les rues pavées laissent place aux planches et à la boue compacte. Le fleuve est large, lent, d'une couleur ocre qui vient des steppes en amont. Des barges à fond plat attendent contre les piliers. Ça sent le bois humide, le poisson séché et la graisse de corde.",
     "galerie": [
@@ -2026,7 +2095,9 @@
       "C'est ici qu'a été commandée la surveillance de l'ambassadeur Otoba."
     ],
     "histoire": [
-      "Le groupe y est attaqué par deux soldats en permission payés par Ferox. Il les capture."
+      "Pendant le mois perdu, Jane y travaille pour Hématome sans le savoir.",
+      "Quand Jane y retourne, Hématome lui donne le nom de Ferox.",
+      "Dans la ruelle derrière, le groupe est ensuite pris en embuscade par deux soldats en permission payés par Ferox, qui veulent le carnet. Il les bat et en capture un."
     ],
     "chapeau": "La tannerie sent encore le cuir et la cendre. La ruelle derrière elle sent le cuir raté et l'eau stagnante. Hématome est assis sur une caisse retournée, deux de ses hommes derrière lui, et regarde entrer sans bouger.",
     "galerie": [
@@ -2064,7 +2135,11 @@
     "pos": {
       "x": 0.697,
       "y": 0.179
-    }
+    },
+    "histoire": [
+      "Le groupe y vient après avoir remonté la piste d'Hématome. Il y neutralise les gardes et fouille le bureau, où il trouve la correspondance d'Absalom signée du sceau de Vassago.",
+      "Ferox les affronte, une épée prise au mur. Après sa défaite, Harfang, transformé en chouette, porte les preuves à Tarcus, qui arrive avec sa cohorte."
+    ]
   },
   {
     "id": "draval-tauroc",
@@ -2151,7 +2226,14 @@
       }
     ],
     "attitude": "positif",
-    "teinte": "#751925"
+    "teinte": "#751925",
+    "histoire": [
+      "À l'arrivée des joueuses au Colisée, elle surgit après le refus de Fulvia, voit le potentiel de spectacle et force leur inscription. Elle leur détaille le format du tournoi.",
+      "Elle présente la cérémonie du duel Philippa contre Jane, déguisée en hommage diplomatique à l'ambassadeur Otoba et à sa délégation de Roshen Buru. Philippa l'emporte.",
+      "Elle remet les Cornes d'Or après la victoire sur Grûl, d'un seul mot en taurokh.",
+      "Le lendemain, sa missive, remise par Vibia, fixe un rendez-vous dans le Colisée vide. Elle y remet 5 600 po, interroge le groupe sur son origine, flaire l'odeur d'Hécate chez les joueuses et se révèle être un démon du septième cercle, la Ruine de Maladomini. Elle apprend au groupe qu'Absalom s'apprête à quitter la ville par le port.",
+      "Au moment des adieux, le groupe la revoit une dernière fois."
+    ]
   },
   {
     "id": "fulvia",
@@ -2174,7 +2256,12 @@
     },
     "img": "img/pnj/fulvia.webp",
     "attitude": "neutre",
-    "teinte": "#755219"
+    "teinte": "#755219",
+    "histoire": [
+      "À l'arrivée du groupe au Colisée, elle refuse l'inscription : les inscriptions sont closes depuis la veille. Vitiosa force l'inscription.",
+      "Elle explique le format du tournoi, change l'ordre pour les joueuses et annonce chaque combat devant la foule : Vrakul, Hématome, Voshara, Peu Importe, le duel entre Philippa et Jane, puis Grûl.",
+      "Elle remet les Cornes d'Or aux deux joueuses. En aparté, elle les invite à revenir pour d'autres combats et précise que le Colisée se réserve la commercialisation de leur nom et de leur image."
+    ]
   },
   {
     "id": "pius",
@@ -2210,7 +2297,12 @@
       }
     ],
     "attitude": "neutre",
-    "teinte": "#755219"
+    "teinte": "#755219",
+    "histoire": [
+      "Il a accueilli Absalom, lui a prêté les catacombes pour qu'elle se repose et l'a orientée vers l'orfèvre Chrysodoros.",
+      "Quand le groupe arrive à la cathédrale, il le reçoit avec un enthousiasme déplacé, diminué, parlant d'Absalom comme d'une personne extraordinaire. Il confirme qu'elle loge dans les sous-sols et pense qu'elle est partie vers le nord, vers Roshen Buru.",
+      "Le groupe découvre ensuite dans les catacombes l'autel détourné aux armes de Vassago, puis affronte le Démon des Mains."
+    ]
   },
   {
     "id": "chrysodoros",
@@ -2240,7 +2332,13 @@
     ],
     "img": "img/pnj/chrysodoros.webp",
     "attitude": "neutre",
-    "teinte": "#755219"
+    "teinte": "#755219",
+    "histoire": [
+      "Absalom est venue le voir pour un artefact précis, lié à un pouvoir ancien. Il n'avait rien. Elle posait des questions sur la provenance des pierres, donc sur les mines de l'ouest, et il l'a envoyée vers la Maison Tauroc.",
+      "Quand le groupe se présente avec le collier de l'autel, il refuse poliment mais définitivement de parler à des étrangères inconnues.",
+      "Après la victoire aux Cornes d'Or, le groupe retourne le voir : il l'accueille cette fois chaleureusement. Il confirme le passage d'Absalom, la revue le lendemain au port, regardant longuement les barges, comme une femme qui avait pris une décision.",
+      "En enquêtant sur le collier, le groupe identifie ensuite l'arshen, la pierre rare des mines."
+    ]
   },
   {
     "id": "naevia",
@@ -2284,7 +2382,10 @@
     ],
     "attitude": "neutre",
     "lieu": "keras-tauroc",
-    "teinte": "#755219"
+    "teinte": "#755219",
+    "histoire": [
+      "Au marché, le groupe tombe sur ses dagues. Elle propose aussi une Hache étrange, aux glyphes non décoratifs, qu'elle cède pour 2 000 po avant de proposer 200 po."
+    ]
   },
   {
     "id": "eshkal",
@@ -2310,7 +2411,10 @@
     "img": "img/pnj/eshkal.webp",
     "attitude": "neutre",
     "lieu": "keras-tauroc",
-    "teinte": "#753c19"
+    "teinte": "#753c19",
+    "histoire": [
+      "Dans la rue, il tente de vendre ses potions aux joueuses. Il échoue : Jane lui en écrase une sur la tête."
+    ]
   },
   {
     "id": "comatus",
@@ -2338,7 +2442,10 @@
     "img": "img/pnj/comatus.webp",
     "attitude": "neutre",
     "lieu": "keras-tauroc",
-    "teinte": "#752519"
+    "teinte": "#752519",
+    "histoire": [
+      "Le groupe passe dans son bric-à-brac pendant la tournée des boutiques, et y trouve une tablette de pierre gravée de glyphes anciens sur les Architectes."
+    ]
   },
   {
     "id": "capito",
@@ -2367,7 +2474,13 @@
     ],
     "img": "img/pnj/capito.webp",
     "attitude": "positif",
-    "teinte": "#755219"
+    "teinte": "#755219",
+    "histoire": [
+      "Avant les Cornes d'Or, il refuse de parler au groupe, trop occupé.",
+      "Après la victoire, il confirme qu'une femme en noir a commandé des modifications sur une barge de fret, avec un grand lit, des draperies, de la vaisselle et du vin rouge, en payant trois fois le tarif. La barge part par le grand fleuve, vers le nord.",
+      "Il est présent sur le quai le soir où Absalom surprend le groupe.",
+      "Quand les joueuses quittent Keras Tauroc, il les conduit au ponton du Tenrai Buru et se porte garant auprès de la capitaine Yorisa, qu'il connaît de longue date."
+    ]
   },
   {
     "id": "vibia",
@@ -2399,7 +2512,13 @@
     ],
     "img": "img/pnj/vibia.webp",
     "attitude": "neutre",
-    "teinte": "#755219"
+    "teinte": "#755219",
+    "histoire": [
+      "À l'arrivée du groupe à Keras Tauroc, à dos de rakh depuis Brakka, c'est la première personne qui l'aide. Elle le loge à l'Angues Dormientes et lui apprend qu'Absalom y a passé une seule nuit, se plaignant du bruit, avant de demander où se trouvait la cathédrale et de repartir au petit matin sans aucun sac.",
+      "Elle explique que sans victoire à l'arène, personne ne donnera rien aux étrangères, et oriente le groupe vers la cathédrale.",
+      "Après la victoire aux Cornes d'Or, c'est elle qui remet au réveil la missive de Vitiosa, qui fixe un rendez-vous le soir même au Colisée pour la récompense.",
+      "Plus tard, le carnet d'Hématome révèle qu'elle emploie la pègre locale, avec un contrat pour fouiller un entrepôt désaffecté."
+    ]
   },
   {
     "id": "egnatius",
@@ -2441,7 +2560,11 @@
     ],
     "img": "img/pnj/egnatius.webp",
     "attitude": "positif",
-    "teinte": "#755219"
+    "teinte": "#755219",
+    "histoire": [
+      "Pendant son séjour, le groupe lui achète Mâchoire, Caput Tauri et la Cuirasse Aurée, au Malleus Cadens. Il lui reste devoir de l'argent.",
+      "Plus tard, quand le groupe quitte la ville, il lui doit toujours 6 000 po, et ne peut le revoir avant le départ."
+    ]
   },
   {
     "id": "ursinus",
@@ -2471,7 +2594,12 @@
     ],
     "img": "img/pnj/ursinus.webp",
     "attitude": "positif",
-    "teinte": "#755219"
+    "teinte": "#755219",
+    "histoire": [
+      "Le groupe fait le tour des boutiques de Keras Tauroc et se prend d'affection pour lui. Il leur offre le thé et échange sur les coutumes de la ville.",
+      "Elles lui achètent un élixir de vie, flacon scellé à la cire noire, pensant à leur allié dans le coma. Elles achètent aussi diverses potions.",
+      "Avant de quitter la ville, elles le remboursent. Sa potion servira plus tard à ressusciter Nolbrim."
+    ]
   },
   {
     "id": "thessala",
@@ -2496,7 +2624,11 @@
     ],
     "img": "img/pnj/thessala.webp",
     "attitude": "neutre",
-    "teinte": "#753c19"
+    "teinte": "#753c19",
+    "histoire": [
+      "Avant les Cornes d'Or, elle chasse le groupe de sa boutique, sans recommandation.",
+      "Après la victoire, les Cornes d'Or comptent comme recommandation. Elle sert le groupe, mais d'abord elle l'évalue longuement."
+    ]
   },
   {
     "id": "volusius",
@@ -2530,7 +2662,12 @@
     ],
     "img": "img/pnj/volusius.webp",
     "attitude": "neutre",
-    "teinte": "#753c19"
+    "teinte": "#753c19",
+    "histoire": [
+      "Pendant le mois perdu, il héberge Philippa, qui chante chaque soir. Il remarque qu'une jeune fille vient tous les soirs sans exception.",
+      "Quand Philippa revient, il s'arrête net, soulagé. Il lui apprend que c'est la fille du meunier, des grands moulins de l'ouest.",
+      "Son nom sert plus tard de recommandation auprès de Thessala."
+    ]
   },
   {
     "id": "sera",
@@ -2559,7 +2696,13 @@
     "img": "img/pnj/sera.webp",
     "attitude": "positif",
     "lieu": "keras-tauroc",
-    "teinte": "#753c19"
+    "teinte": "#753c19",
+    "histoire": [
+      "Pendant le mois perdu, elle vient chaque soir écouter Philippa à l'auberge. Elles se promènent parfois après les représentations. Philippa posait beaucoup de questions sur la ville.",
+      "La veille du meurtre, un vieil homme aux cheveux blancs et au maintien militaire remet un pli à Philippa entre deux chansons. Philippa le lit, le met dans sa poche, puis le laisse tomber en partant. Sera le ramasse et le garde.",
+      "Quand Philippa arrive aux moulins après la prison, elle la reconnaît de loin, la main sur la bouche, et lui rend le pli : une adresse dans le quartier de la caserne, une heure, sceau administratif militaire, pas de nom.",
+      "À la fin, Harfang lui propose un futur marché : il pourrait avoir besoin d'elle."
+    ]
   },
   {
     "id": "capella",
@@ -2586,7 +2729,11 @@
     "img": "img/pnj/capella.webp",
     "attitude": "neutre",
     "lieu": "chez-capella",
-    "teinte": "#755219"
+    "teinte": "#755219",
+    "histoire": [
+      "Pendant le mois perdu, Jane loue une chambre chez elle. Capella l'entend rentrer tard chaque soir et lui reproche de travailler pour Hématome. Jane lui porte ses courses le mardi.",
+      "Quand Jane revient, Capella lui indique qu'Hématome se trouve dans la vieille tannerie, comme toujours."
+    ]
   },
   {
     "id": "hematome",
@@ -2605,7 +2752,10 @@
       "Les PJ l'ont battu au Colisée."
     ],
     "histoire": [
-      "Jane le bat dans l'arène du festival."
+      "Deuxième adversaire du groupe au tournoi, annoncé par Fulvia comme le chat sans titre, sans clan et sans maître que la ville n'a jamais réussi à chasser. Les joueuses le battent.",
+      "Pendant le mois perdu, Jane travaille pour lui sans le savoir : surveillance de rues, livraisons de colis, un contrat qu'il a accepté d'un client nommé Ferox, qui lui a demandé de surveiller l'ambassadeur de Roshen Buru pendant trois semaines.",
+      "Quand Jane retrouve sa trace dans la vieille tannerie, il la laisse entrer, la respecte et lui livre le nom de Calvinus Ferox sans négocier. Il ignore où celui-ci habite.",
+      "Il garde ensuite les captifs de l'embuscade derrière la tannerie, à la disposition de Tarcus."
     ],
     "relations": [
       {
@@ -2673,7 +2823,13 @@
     ],
     "img": "img/pnj/calvinus-ferox.webp",
     "attitude": "ennemi",
-    "teinte": "#2d2d2d"
+    "teinte": "#2d2d2d",
+    "histoire": [
+      "Humilié, jeté après avoir été usé, il reçoit la lettre d'Absalom signée du sceau de Vassago, qui lui promet de rétablir l'honneur de Tauroc. Il commande aux deux doubles de surveiller l'ambassadeur, puis les laisse agir. Il paie Hématome pour surveiller l'ambassadeur pendant trois semaines.",
+      "Après le meurtre, il envoie deux soldats en permission pour récupérer le carnet d'Hématome et renvoyer les joueuses en cellule.",
+      "Le groupe vient chez lui, dans la villa décrépite, quand il leur dit : « Je savais que vous viendriez. J'aurais dû vous faire tuer dans la ruelle. » Il saisit une épée du mur et se bat. Sa lettre est retrouvée dans son bureau, avec la copie de sa réponse.",
+      "Tarcus le fait arrêter."
+    ]
   },
   {
     "id": "tarcus",
@@ -2717,7 +2873,14 @@
     "img": "img/pnj/tarcus.webp",
     "attitude": "allie",
     "lieu": "keras-tauroc",
-    "teinte": "#755219"
+    "teinte": "#755219",
+    "histoire": [
+      "Il fait lancer Greater Restoration sur Philippa et Jane dès leur arrestation, car elles avaient la bave aux lèvres et le regard vide depuis le meurtre.",
+      "Il les interroge en prison sur le meurtre de l'ambassadeur Otoba et expose les faits sans émotion : elles étaient sur les lieux, couvertes de sang, et elles sont en ville depuis un mois, non deux jours.",
+      "Il revient seul, tard, et propose l'accord : sceau de localisation, liberté en ville, interdiction de franchir les murailles, en échange de preuves exploitables.",
+      "Après l'enquête, le groupe lui présente la lettre signée du sceau de Vassago, la copie de la réponse de Ferox et le pli de Sera. Il lève les sceaux de localisation, restitue les armes et fait arrêter Ferox.",
+      "Il révèle qu'Absalom a franchi la frontière de Roshen Buru trois semaines avant le meurtre, avec des papiers en règle. Ils n'ont pas pu être signés par Ferox, qui n'avait pas ce niveau d'accès."
+    ]
   },
   {
     "id": "otoba",
@@ -2772,7 +2935,10 @@
     ],
     "img": "img/pnj/capitaine-yorisa.webp",
     "attitude": "neutre",
-    "teinte": "#751925"
+    "teinte": "#751925",
+    "histoire": [
+      "Quand le groupe quitte Keras Tauroc, Capito se porte garant auprès d'elle. Elle embarque les joueuses et leurs rakh à bord du Tenrai Buru, en direction de Cap Cornes puis de Roshen Buru."
+    ]
   },
   {
     "id": "saoren",
@@ -5287,7 +5453,13 @@
       "Un collier a été repéré sur l'autel et mené chez Chrysodoros."
     ],
     "nofusion": true,
-    "chapeau": "L'escalier descend sur trente marches avant de déboucher sur une galerie basse et longue. Les niches abritent les grands combattants de la lignée Taurok, figures de pierre aux visages sévères, certaines couronnées de vraies cornes dorées patinées par le temps. Ça sent la pierre froide et la cire noire brûlée, une fumée qui n'est pas celle des bougies habituelles."
+    "chapeau": "L'escalier descend sur trente marches avant de déboucher sur une galerie basse et longue. Les niches abritent les grands combattants de la lignée Taurok, figures de pierre aux visages sévères, certaines couronnées de vraies cornes dorées patinées par le temps. Ça sent la pierre froide et la cire noire brûlée, une fumée qui n'est pas celle des bougies habituelles.",
+    "histoire": [
+      "Absalom y a logé, avec l'accord de Pius, laissant un campement récent et un grand divan déplacé.",
+      "En fouillant, le groupe relève de plus en plus d'indices : le campement, l'autel de Kord modifié, puis un autel secondaire aux armes de Vassago.",
+      "Le Démon des Mains surgit des murs, du sol et de l'obscurité. Le groupe le vainc.",
+      "Il en sort avec un collier pris sur l'autel, qu'il va montrer à Chrysodoros."
+    ]
   },
   {
     "id": "atelier-de-chrysodoros",
@@ -5306,7 +5478,11 @@
     "pos": {
       "x": 0.422,
       "y": 0.389
-    }
+    },
+    "histoire": [
+      "Le groupe y vient une première fois avec le collier de l'autel et en est éconduit.",
+      "Après les Cornes d'Or, il y est reçu et y apprend les recherches d'Absalom."
+    ]
   },
   {
     "id": "mine-de-lapidus",
@@ -5328,7 +5504,12 @@
     "pos": {
       "x": 0.039,
       "y": 0.25
-    }
+    },
+    "histoire": [
+      "Absalom est passée avant le groupe, partie bredouille.",
+      "Le groupe y visite une galerie superficielle et y apprend l'existence de l'arshen, pierre qui conduit la magie et convient aux cercles d'invocation et aux portails.",
+      "Il y conclut un marché de 10 000 po pour deux tonnes de pierre, livraison à organiser."
+    ]
   },
   {
     "id": "cabinet-de-cordus",
@@ -5347,7 +5528,10 @@
     "pos": {
       "x": 0.483,
       "y": 0.55
-    }
+    },
+    "histoire": [
+      "Absalom y est venue avant le groupe. Après les Cornes d'Or, les joueuses y sont reçues et apprennent qu'elle a été orientée vers le nord, en suivant le fleuve."
+    ]
   },
   {
     "id": "hopital-du-colisee",
@@ -5366,7 +5550,10 @@
     "pos": {
       "x": 0.197,
       "y": 0.789
-    }
+    },
+    "histoire": [
+      "Le groupe s'y fait soigner entre les combats du tournoi des Cornes d'Or."
+    ]
   },
   {
     "id": "moulins-de-keras-tauroc",
@@ -5385,7 +5572,10 @@
     "pos": {
       "x": 0.9,
       "y": 0.837
-    }
+    },
+    "histoire": [
+      "Philippa y retrouve Sera, qui a gardé le pli remis par le vieillard aux cheveux blancs."
+    ]
   },
   {
     "id": "scene-de-crime-ambassadeur",
@@ -5400,6 +5590,10 @@
         "img": "img/paysages/keras-tauroc/rue-grixus.webp",
         "legende": "Une rue de Keras Tauroc"
       }
+    ],
+    "histoire": [
+      "La nuit du banquet, les doubles de Philippa et Jane, guidés par un vieillard aux cheveux blancs, y assassinent l'ambassadeur Otoba.",
+      "Après la prison, le groupe y retrouve une scène à demi nettoyée : entaille d'épée, brûlures de souffle, grandes griffes, cristaux dans la pierre, des traces qui désignent leur propre panoplie. Grixus leur raconte ce qu'il a vu."
     ]
   },
   {
@@ -5415,6 +5609,10 @@
         "img": "img/paysages/keras-tauroc/prison.webp",
         "legende": "La prison"
       }
+    ],
+    "histoire": [
+      "Le groupe s'y réveille un mois après le blackout du port, les mains couvertes de sang, désarmé, avec un collier de fer rune autour du cou. Harfang, assistant de l'ambassadeur, y est lui aussi détenu.",
+      "Tarcus vient les interroger, puis leur propose un accord pour s'innocenter."
     ]
   },
   {
@@ -5438,7 +5636,10 @@
     "connu": [
       "Soigneuse de l'hôpital des combattants du Colisée. Gestes économes, regard qui évalue en une seconde. Elle vend des potions de soin et des soins sur mesure : soins d'urgence, soin complet, repos long accéléré, PV temporaires ou avantage aux jets de CON avant un combat."
     ],
-    "teinte": "#193c75"
+    "teinte": "#193c75",
+    "histoire": [
+      "Pendant le tournoi, le groupe passe par son hôpital entre les combats. Elle soigne et vend ses potions et ses soins, à prix fixes."
+    ]
   },
   {
     "id": "vrakul",
@@ -5477,7 +5678,10 @@
     "connu": [
       "Le Monolithe, combattant du Colisée. La légende le dit né dans le sud des plaines rouges, fils d'une tempête et d'un tremblement de terre, seul à trouver encore un adversaire à sa taille dans l'arène. Les PJ l'ont affronté et battu."
     ],
-    "teinte": "#753c19"
+    "teinte": "#753c19",
+    "histoire": [
+      "Premier adversaire du groupe au tournoi des Cornes d'Or. Fulvia l'annonce comme le Monolithe, force de la nature. Les joueuses le battent."
+    ]
   },
   {
     "id": "voshara",
@@ -5513,7 +5717,10 @@
     "connu": [
       "Combattante du Colisée surnommée La Cendre du Monastère. Elle a prié et médité vingt ans, puis est sortie seule d'un monastère, couverte de cendres et riant. Elle cherche à se sentir vivante. Elle a été tuée par Philippa dans l'arène."
     ],
-    "teinte": "#753c19"
+    "teinte": "#753c19",
+    "histoire": [
+      "Troisième adversaire du groupe au tournoi, annoncée par Fulvia comme La Cendre du Monastère. Philippa la tue dans l'arène, seul meurtre du tournoi."
+    ]
   },
   {
     "id": "peu-importe",
@@ -5552,7 +5759,10 @@
     "connu": [
       "Combattant anonyme du Colisée, qui refuse de donner son nom ou ses origines. Fulvia, exaspérée, doit improviser son annonce. Les PJ l'ont battu."
     ],
-    "teinte": "#753c19"
+    "teinte": "#753c19",
+    "histoire": [
+      "Dernier adversaire du tournoi avant le duel Philippa contre Jane : un Mirenaï anonyme, qui refuse de donner son nom. Les joueuses le battent."
+    ]
   },
   {
     "id": "gruel",
@@ -5590,7 +5800,10 @@
       }
     ],
     "attitude": "ennemi",
-    "teinte": "#755219"
+    "teinte": "#755219",
+    "histoire": [
+      "Adversaire final du tournoi. Il a exigé deux adversaires, pour en faire des offrandes. Philippa et Jane le combattent ensemble, après le duel qui les a départagées, et le vainquent."
+    ]
   },
   {
     "id": "cordus",
@@ -5629,7 +5842,11 @@
       "Haruspex minotaure âgé, cornes usées, dont le cabinet jouxte la caserne. Il n'ouvre qu'à ceux qui portent les Cornes d'Or.",
       "Il a lu pour Absalom des présages vers le nord : une présence ancienne qui dort dans une forêt. Il lui a conseillé de suivre le fleuve. Elle a payé sans un mot de remerciement."
     ],
-    "teinte": "#755219"
+    "teinte": "#755219",
+    "histoire": [
+      "Absalom l'a consulté. Il a lu des présages vers le nord : une présence ancienne endormie dans une forêt. Il lui a conseillé de suivre le fleuve. Elle l'a bien payé et est repartie sans remerciement.",
+      "Les Cornes d'Or permettent au groupe d'être reçu dans son cabinet et d'entendre le même récit."
+    ]
   },
   {
     "id": "lapidus",
@@ -5665,7 +5882,12 @@
       "L'arshen, pierre rare, conduit la magie comme un grand chemin et convient aux cercles d'invocation et aux portails.",
       "Les PJ concluent avec lui un marché de 10 000 po pour deux tonnes de pierre, sous réserve d'organiser la livraison."
     ],
-    "teinte": "#753c19"
+    "teinte": "#753c19",
+    "histoire": [
+      "Absalom est venue lui demander s'il avait déjà trouvé une pierre étrange, qui brille seule ou réagit à la magie. Il lui a répondu qu'il n'y avait rien de tel.",
+      "Après le tournoi, le groupe le rencontre à la mine, qui lui montre l'arshen. En enquêtant sur le collier de l'autel, le groupe a identifié cette pierre spéciale.",
+      "Le groupe négocie avec lui un marché de 10 000 po pour deux tonnes de pierre, sous réserve d'organiser la livraison. Cette pierre répond à la demande de Vespera, qui a écrit au groupe pour obtenir des ressources en exclusivité."
+    ]
   },
   {
     "id": "grixus",
@@ -5700,7 +5922,11 @@
     "connu": [
       "Voisin de la scène de crime, caché dans un renfoncement la nuit du meurtre, sans oser aller voir la garde. Il a vu deux femmes au regard mort guidées par un vieil homme aux cheveux blancs, et accepte de parler parce que les PJ portent les Cornes d'Or."
     ],
-    "teinte": "#755219"
+    "teinte": "#755219",
+    "histoire": [
+      "La nuit du meurtre, il se cache dans un renfoncement de la ruelle, sans oser aller voir la garde. Il voit deux femmes au regard mort, guidées par un vieil homme aux cheveux blancs.",
+      "Des semaines plus tard, il accepte de parler aux joueuses parce qu'elles portent les Cornes d'Or."
+    ]
   },
   {
     "id": "goelo",
@@ -5720,7 +5946,12 @@
     "connu": [
       "Homme devenu renfermé depuis des mois, dont le corps a été contrôlé par une araignée pâle qui lui rongeait le visage. Les voisins entendaient griffures et marmonnements la nuit. Dans son logement, un symbole gravé aux ongles dans le plancher se déforme."
     ],
-    "teinte": "#527519"
+    "teinte": "#527519",
+    "histoire": [
+      "Pendant plusieurs mois, il devient renfermé, puis étrange : il ne sort presque plus, on entend des griffures la nuit et des marmonnements.",
+      "Le soir de la remise de la récompense, sur le chemin du port, il attaque le groupe, ivre en apparence, en réalité contrôlé par une araignée pâle nichée dans son visage dévoré par l'acide. L'araignée est tuée aussitôt.",
+      "Sur lui, une clé de logement. Le groupe retrouve son appartement abandonné, rongé de moisissure, avec un symbole gravé aux ongles dans le plancher."
+    ]
   },
   {
     "id": "hommes-de-main-de-ferox",
@@ -5781,7 +6012,11 @@
     "connu": [
       "Deux soldats en permission payés par Ferox pour récupérer le carnet d'Hématome et renvoyer les PJ en cellule. Ils usent de menaces sur les proches. Ils se rendent si l'un d'eux tombe à 0 PV."
     ],
-    "teinte": "#753c19"
+    "teinte": "#753c19",
+    "histoire": [
+      "Un minotaure et un Pachidan, en tuniques civiles, bloquent la ruelle derrière la tannerie. Ils exigent le carnet et menacent les proches des joueuses.",
+      "Le combat est quasi inévitable. Les captifs sont gardés au fond de la tannerie pour Tarcus."
+    ]
   },
   {
     "id": "arshen",
@@ -8523,6 +8758,9 @@
     "connu": [
       "Il attaque dès que les prisonniers sont libérés, ou quand les PJ sont vulnérables.",
       "Il frappe à la masse cloutée, allonge une langue empoisonnée et crache un cône de feu et de nécrotique avec une lanterne."
+    ],
+    "histoire": [
+      "Un démon des mains du même nom attaque le groupe dans les catacombes de la cathédrale de Kord, à Keras Tauroc, quand il fouille l'autel détourné par Absalom. Il est vaincu."
     ]
   },
   {
@@ -8877,6 +9115,9 @@
         "img": "img/paysages/brakka/maison-d-urrak.webp",
         "legende": "La maison d'Urrak"
       }
+    ],
+    "histoire": [
+      "Le groupe y est reçu par Urrak, qui lui apprend le passage d'Absalom. Il y repart au matin avec un paquet de vivres."
     ]
   },
   {
@@ -8895,6 +9136,9 @@
         "img": "img/paysages/brakka/maison-de-tembo.webp",
         "legende": "Le quai et la maison de Tembo"
       }
+    ],
+    "histoire": [
+      "Le groupe y pose le pied pour la première fois en Istra. Tembo y recoud sa barque et l'accueille."
     ]
   },
   {
@@ -8925,7 +9169,10 @@
     "pos": {
       "x": 0.208,
       "y": 0.257
-    }
+    },
+    "histoire": [
+      "Jane y retrouve la chambre de bonne louée pendant le mois perdu : un lit, une table, un crochet, rien de personnel. Capella lui donne la piste d'Hématome."
+    ]
   },
   {
     "id": "caserne-keras-tauroc",
@@ -8943,6 +9190,10 @@
         "img": "img/paysages/cap-cornes/caserne-2.webp",
         "legende": "La caserne"
       }
+    ],
+    "histoire": [
+      "Le quartier de la caserne abrite la villa de Ferox, que le pli de Sera désigne.",
+      "Cordus, l'haruspex, a son cabinet adjacent à la caserne."
     ]
   }
 ]

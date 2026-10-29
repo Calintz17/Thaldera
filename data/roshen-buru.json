@@ -4745,7 +4745,10 @@
     "lieu": "monastere-des-steppes",
     "statut": "vivant",
     "resume": "Moine dont la bourse figure au loot.",
-    "attitude": "neutre"
+    "attitude": "neutre",
+    "histoire": [
+      "Il fait partie des moines du monastère des steppes. Le groupe retrouve sa bourse (34 po et 12 pa) sur son squelette."
+    ]
   },
   {
     "id": "vexil",

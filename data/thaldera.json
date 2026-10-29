@@ -2396,7 +2396,8 @@
       "Elle a donné trois Bandle Scouts au groupe."
     ],
     "histoire": [
-      "Philippa la libère à l'Île aux Moines."
+      "Elle est libérée par Philippa à l'Île aux Moines, puis s'installe à Havre Noir avec une boutique de fleurs.",
+      "Elle contacte le groupe par une pierre de communication pendant le voyage vers Keras Tauroc, maladroite mais chaleureuse : sa boutique a triplé grâce aux achats d'Olyssane, qui vient chercher des plantes par brouettes entières."
     ],
     "img": "img/thaldera/pnj/liora.webp",
     "lieux": [
@@ -6934,7 +6935,12 @@
       "Spezza leur a commandé un vaisseau, ils l'ont construit. Ce qu'il en fait ensuite ne les concerne pas. Les nains pilotent le sous-marin, donc ils partent avec les PJ.",
       "Il désigne la mer d'Émeraude sur une carte : là où personne ne va."
     ],
-    "teinte": "#753c19"
+    "teinte": "#753c19",
+    "histoire": [
+      "Il pilote le sous-marin pendant le voyage et remonte à la surface devant Brakka, après des jours de navigation. Il diagnostique des dégâts de coque et de propulsion dus aux courants et aux tempêtes.",
+      "Il annonce trois jours minimum, peut-être cinq, et sept si le groupe le regarde travailler. Le sous-marin ne peut pas naviguer en rivière, et les nains ne descendent pas à terre.",
+      "Il conseille au groupe d'aller voir au village s'il y a du matériel ou de la main d'œuvre."
+    ]
   },
   {
     "id": "la-faille-d-agran",
@@ -6966,6 +6972,9 @@
         "img": "img/paysages/agran/sous-marin-interieur.webp",
         "legende": "L'intérieur du sous-marin"
       }
+    ],
+    "histoire": [
+      "Après la descente de la faille et ses attaques, il remonte à la surface devant Brakka, côte est d'Istra-Belig. Il a besoin de réparations et plonge de nouveau lentement quand le groupe gagne le rivage."
     ]
   },
   {
@@ -8734,7 +8743,11 @@
     "pos": {
       "x": 0.235,
       "y": 0.472
-    }
+    },
+    "histoire": [
+      "Absalom y passe ses nuits pendant son séjour et y grave le symbole de Vassago à l'ongle, profanation involontaire ou délibérée.",
+      "Le groupe découvre le symbole, le premier de Vassago qu'il rencontre en Istra."
+    ]
   },
   {
     "id": "boru-pretre-de-brakka",
@@ -8774,7 +8787,11 @@
       "Il a soigné Absalom, arrivée entre mort et vie. Elle est restée des jours au rituel de la mer et parlait à la pierre sacrée, à son ami plutôt qu'à Ashvûr-tesh.",
       "Dans la pierre de gauche, à hauteur de main accroupie, un symbole de Vassago a été gravé à l'ongle."
     ],
-    "teinte": "#195275"
+    "teinte": "#195275",
+    "histoire": [
+      "Il a soigné Absalom, arrivée entre mort et vie, pendant plusieurs jours. Elle est restée au rituel de la mer et parlait à la pierre sacrée.",
+      "Quand le groupe vient au sanctuaire, il médite et ne parle pas. Il répond brièvement aux questions sur Absalom."
+    ]
   },
   {
     "id": "fumerie-de-shoba",
@@ -8793,7 +8810,10 @@
     "pos": {
       "x": 0.48,
       "y": 0.345
-    }
+    },
+    "histoire": [
+      "Le groupe y rencontre Shoba et entend parler de Vasha, c'est-à-dire d'Absalom."
+    ]
   },
   {
     "id": "campement-detruit-steppes",
@@ -8812,6 +8832,10 @@
         "img": "img/paysages/steppes-rouges/campement-detruit.webp",
         "legende": "Le campement détruit"
       }
+    ],
+    "histoire": [
+      "Le groupe y arrive à la fin d'une journée de marche, avant la gorge du Mesa. Il y trouve cinq corps de jeunes hommes de bonne famille, un totem de bois sombre, une bague à armoiries plantée près du totem.",
+      "Il relève une sandale de femme, deux écuelles au feu, une tente lacérée de l'intérieur et une seule paire de traces venue du nord, larges et régulières."
     ]
   },
   {
@@ -8827,6 +8851,9 @@
     "alias": [
       "Khardun",
       "Kimath"
+    ],
+    "histoire": [
+      "Le groupe découvre leur monastère des steppes, vidé et pillé. Il y trouve un registre d'où il apprend qu'un courrier a été envoyé au Frère Supérieur Kimath, à Khardun, après le passage d'un voyageur qui avait laissé un nom ancien."
     ]
   },
   {
@@ -8854,7 +8881,10 @@
     "img": "img/pnj/steppes-rouge-roc.webp",
     "attitude": "neutre",
     "lieu": "monastere-des-steppes",
-    "teinte": "#2d2d2d"
+    "teinte": "#2d2d2d",
+    "histoire": [
+      "Le groupe y trouve un nid vide au sommet du monastère des steppes. Le Roc revient, et le groupe l'affronte pour récupérer un œuf du rituel de Sevik."
+    ]
   },
   {
     "id": "ashvur-tesh",
