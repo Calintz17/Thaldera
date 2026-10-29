@@ -49,7 +49,7 @@
     {
       "titre": "Malquessar : Les pierres de seuil",
       "date": "Philippa",
-      "resume": "• Gran Brijit rappelle à Philippa sa dette et l'envoie dans le Feywild éteindre la source d'un feu noir qui rampe sous les racines de l'Arbre-Soleil.\n• Malquessar est une cité voyageuse qui change de plan tous les cinq ans grâce à trois Pierres de Seuil. L'une vient d'être volée.\n• L'ambassadeur Elarin exige son retour sous vingt-quatre heures. Thalanir accuse aussitôt Nolbrim, l'inventeur.\n• Philippa interroge Nolbrim, Arlo, Berrund, Lumeverre et Erdem. Mira, apprentie de la fleuriste Liora, l'aide avec trois fausses pistes.\n• Une peau grise trouvée sur la scène de crime trahit un changeforme. Mira est une imposture : la vraie Mira est morte. La Pierre est récupérée à temps.\n• Malquessar repart pour Avernus. Gran Brijit s'intéresse aux inventions de Nolbrim et les récupère.",
+      "resume": "• Gran Brijit rappelle à Philippa sa dette et l'envoie dans le Feywild éteindre la source d'un feu noir qui rampe sous les racines de l'Arbre-Soleil.\n• Malquessar est une cité voyageuse qui change de plan tous les cinq ans grâce à trois Pierres de Seuil. L'une vient d'être volée.\n• L'ambassadeur Elarin exige son retour sous vingt-quatre heures. Thalanir accuse aussitôt Nolbrim, l'inventeur.\n• Philippa interroge Nolbrim, Arlo, Berrund, Lumeverre et Erdem. Mira, apprentie de la fleuriste Liora, l'aide avec trois fausses pistes.\n• Une peau grise trouvée sur la scène de crime trahit un changeforme. Mira est un changeforme : Philippa l'affronte et le tue. La vraie Mira était déjà morte. La Pierre est récupérée à temps.\n• Malquessar repart pour Avernus. Gran Brijit s'intéresse aux inventions de Nolbrim et les récupère.",
       "liens": [
         {
           "id": "malquessar"
@@ -81,7 +81,8 @@
       ],
       "secrets": [
         "Le « Joyau tombé du ciel » du Duc est un Nephilim, remis à Gran Brijit.",
-        "Madame Augustine renvoie vers Lavande, chef du Voile à Corvalis, et une porte dérobée du palais."
+        "Madame Augustine renvoie vers Lavande, chef du Voile à Corvalis, et une porte dérobée du palais.",
+        "Philippa raconte à Gran Brijit l'origine de Vassago : l'un des tout premiers hommes, enchaîné par les dieux, qui s'est mis à garder et posséder tout ce qui brille et ce qui est magique."
       ]
     },
     {
