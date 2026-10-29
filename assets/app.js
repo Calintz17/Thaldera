@@ -4,7 +4,7 @@
 (() => {
 'use strict';
 
-const VER = '79';
+const VER = '80';
 const EDIT = new URLSearchParams(location.search).has('edit');
 const $ = (s, r = document) => r.querySelector(s);
 const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
@@ -91,14 +91,15 @@ function buildLinker() {
   names.sort((a, b) => b.length - a.length);
   RX = new RegExp('(?<![\\p{L}\\p{N}])(?:' + names.map(pat).join('|') + ')(?![\\p{L}\\p{N}])', 'gu');
 }
-function L(text, selfId) {
+function L(text, selfId, seen) {
   if (!text) return '';
   if (!RX) return esc(text);
   let out = '', last = 0, m;
   RX.lastIndex = 0;
   while ((m = RX.exec(text))) {
     const id = LOOK[norm(m[0])];
-    if (!id || id === selfId) continue;
+    if (!id || id === selfId || (seen && seen.has(id))) continue;
+    if (seen) seen.add(id);
     const e = BY[id];
     out += esc(text.slice(last, m.index));
     out += `<a class="ln t-${e.type}" href="#/${id}" title="${esc(e.resume || e.titre || e.nom)}">${esc(m[0])}</a>`;
@@ -1162,6 +1163,12 @@ function journalMode(box, open) {
   });
 }
 /* ---------- compte-rendus des séances en panneau latéral ---------- */
+function sessionBody(s) {
+  const seen = new Set();
+  const blk = (label, arr) => arr && arr.length ? `<div class="sx"><b>${label}</b><p>${arr.map(t => '• ' + L(t, '', seen)).join('\n')}</p></div>` : '';
+  const main = `<p>${L(s.resume || 'Résumé à rédiger.', '', seen)}</p>`;
+  return main + blk('Boss vaincus', s.boss) + blk('Butin majeur', s.loot) + blk('Secrets découverts', s.secrets);
+}
 function initSessions() {
   const btn = $('#sbtn'), box = $('#slog'); if (!btn || !box) return;
   let sessions = null;
@@ -1170,7 +1177,7 @@ function initSessions() {
     box.innerHTML = `<div class="qwin" role="document">
       <header><span class="qgem"></span><h2>Résumé des parties</h2><span class="qcount">${items.length} séances</span><button type="button" class="qx" aria-label="Fermer">×</button></header>
       <div class="qlist session-entries">${items.length
-        ? items.map((s,i) => `<details class="session-entry"><summary><span class="qstar" aria-hidden="true">✦</span><span class="session-label">${esc(s.titre || 'Partie ' + (i + 1))}<small>${esc(s.date || '')}</small></span><span class="session-arrow" aria-hidden="true">›</span></summary><div class="session-body"><p>${esc(s.resume || 'Résumé à rédiger.')}</p>${(s.liens || []).filter(x => BY[x.id] && !BY[x.id].locked).map(x => `<a href="#/${esc(x.id)}">${esc(x.label || BY[x.id].nom)}</a>`).join('')}</div></details>`).join('')
+        ? items.map((s,i) => `<details class="session-entry"><summary><span class="qstar" aria-hidden="true">✦</span><span class="session-label">${esc(s.titre || 'Partie ' + (i + 1))}<small>${esc(s.date || '')}</small></span><span class="session-arrow" aria-hidden="true">›</span></summary><div class="session-body">${sessionBody(s)}${(s.liens || []).filter(x => BY[x.id] && !BY[x.id].locked).map(x => `<a href="#/${esc(x.id)}">${esc(x.label || BY[x.id].nom)}</a>`).join('')}</div></details>`).join('')
         : '<p class="qempty">Les résumés des séances jouées apparaîtront ici dès leur rédaction.</p>'}</div></div>`;
     $('.qx', box).addEventListener('click', () => journalMode(box,false));
     box.querySelectorAll('a[href^="#/"]').forEach(a => a.addEventListener('click',()=>journalMode(box,false)));
