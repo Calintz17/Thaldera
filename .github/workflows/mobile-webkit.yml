@@ -9,6 +9,9 @@ on:
       - 'assets/ios-mobile.css'
       - 'tests/mobile/**'
       - '.github/workflows/mobile-webkit.yml'
+concurrency:
+  group: mobile-webkit-${{ github.ref }}
+  cancel-in-progress: true
 permissions:
   contents: read
 jobs:

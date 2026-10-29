@@ -1,5 +1,10 @@
 const { test, expect } = require('@playwright/test');
 
+test.beforeEach(async ({ page }) => {
+  // Avoid external font CDN availability controlling the CI UI tests.
+  await page.route('https://fonts.googleapis.com/**', route => route.abort());
+  await page.route('https://fonts.gstatic.com/**', route => route.abort());
+});
 async function noHorizontalOverflow(page) {
   const metrics = await page.evaluate(() => ({
     width: window.innerWidth,

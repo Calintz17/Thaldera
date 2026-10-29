@@ -3,9 +3,9 @@ module.exports = defineConfig({
   testDir: __dirname,
   testMatch: '**/iphone.spec.cjs',
   fullyParallel: false,
-  timeout: 60000,
-  expect: { timeout: 20000 },
-  retries: process.env.CI ? 1 : 0,
+  timeout: 45000,
+  expect: { timeout: 14000 },
+  retries: 0,
   reporter: 'line',
   use: {
     baseURL: 'http://127.0.0.1:4173',
