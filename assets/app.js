@@ -4,7 +4,7 @@
 (() => {
 'use strict';
 
-const VER = '70';
+const VER = '71';
 const EDIT = new URLSearchParams(location.search).has('edit');
 const $ = (s, r = document) => r.querySelector(s);
 const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));

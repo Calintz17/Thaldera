@@ -6173,7 +6173,10 @@
     "nom": "La Garde Grise",
     "titre": "Garde de la Ville Haute de Camont",
     "parent": "camont",
-    "resume": "Garde qui protège la Ville Haute. Jane a dû en abattre plusieurs lors d'un vol dans son passé."
+    "resume": "Garde qui protège la Ville Haute. Jane a dû en abattre plusieurs lors d'un vol dans son passé.",
+    "histoire": [
+      "Philippa et Jane butent sur la Garde Grise à la porte de la Ville Haute."
+    ]
   },
   {
     "id": "lukas",

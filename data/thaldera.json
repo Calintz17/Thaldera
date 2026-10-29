@@ -895,7 +895,10 @@
       "Olyssane veut y replanter des arbres pour racheter son rôle dans la ruine de ce lieu. Liora fournit les plantes, Philippa finance."
     ],
     "histoire": [
-      "Le groupe y descend au repaire d'Argonath et le vainc, avec l'aide d'Olyssane."
+      "Après l'épisode de Camont, Philippa et Jane sont téléportées en pleine terre brûlée, parmi des carcasses de machines de guerre et des cratères de la guerre de la Veyra.",
+      "Des abominations larvaires sortent des fissures. Après le combat, une abomination obèse s'avance, un œil gigantesque s'ouvre sur son ventre.",
+      "Elles descendent dans le repaire d'Argonath, ouvert dans la chair du sol, et le vainquent.",
+      "Olyssane découvre alors les formes monstrueuses de Jane et Philippa et les attaque. Gran Brijit l'arrête net."
     ],
     "relations": [
       {
@@ -1118,7 +1121,10 @@
     "alias": [
       "repaire d'Argonath"
     ],
-    "chapeau": "Le repaire du Passeur n'est pas construit : il est né. Une suite de tunnels organiques, moites, parcourus de battements sourds, où le sol spongieux s'affaisse sous les pas. L'air est chaud, saturé de vapeur et de soufre, et une faible lueur rouge pulse depuis le fond."
+    "chapeau": "Le repaire du Passeur n'est pas construit : il est né. Une suite de tunnels organiques, moites, parcourus de battements sourds, où le sol spongieux s'affaisse sous les pas. L'air est chaud, saturé de vapeur et de soufre, et une faible lueur rouge pulse depuis le fond.",
+    "histoire": [
+      "Philippa et Jane s'enfoncent dans une plaie de la terre où les tunnels organiques mènent à la salle du cœur, autel de chair et d'os, où elles trouvent Argonath."
+    ]
   },
   {
     "id": "argonath",
@@ -1137,8 +1143,11 @@
       "Il vole la magie et les objets : Larcin d'Essence, Poigne du Troc. Il ne parle jamais directement, ses mots sortent de la bouche d'autres créatures présentes."
     ],
     "histoire": [
-      "Le groupe le combat dans sa salle du cœur et le vainc.",
-      "Après ce combat, Olyssane découvre les formes monstrueuses de Jane et Philippa et attaque. Gran Brijit l'arrête net."
+      "Les Épingles de Camont ont été contactées par le Passeur pour un vol chez l'Impératrice Eryndel, selon la lettre de Leth.",
+      "Au Repos des Épées, Philippa et Jane entrent dans sa salle du cœur. Il leur demande : « Alors ? Qu'êtes-vous venus chercher ? Un pacte ? Une faveur ? Ou bien me tuer ? » Il se présente comme le Passeur du Sang Noir.",
+      "Il méprise Absalom, « la plus faible » d'entre eux, et promet de crever les yeux de ceux qui les ont aidées. Elles le vainquent.",
+      "Elles récupèrent le Pickpocket l'Impératrice, le Fragment of Avarice's True Name, la Dagger of Absorption et 3 500 po de bijoux.",
+      "Après le combat, Olyssane découvre les formes monstrueuses de Jane et Philippa et attaque. Gran Brijit l'arrête net."
     ],
     "relations": [
       {
@@ -1172,10 +1181,12 @@
       "On y vole tout le monde. Les enfants des Planches ont dévalisé Philippa dès l'arrivée."
     ],
     "histoire": [
-      "Le groupe arrive par la Veyra à bord du navire d'Olyssane, après une attaque de brigands sur les berges.",
-      "Il récupère ses affaires volées, aide les Yeux contre les Épingles et prend le rubis de la villa Graham.",
-      "Un Landsknecht d'Altéra fonce sur le groupe. Gran Brijit le saisit par un portail et l'emporte.",
-      "Pendant le voyage, Eryndel apparaît en rêve aux deux joueuses dans les Jardins de l'Éternité."
+      "Après un voyage d'un peu plus d'une semaine à bord du Marteau du Brise-Pavois avec Olyssane, dont une attaque de brigands au sixième jour, Philippa et Jane arrivent de nuit par la Veyra, déposées à l'écart de la jetée principale. Olyssane leur laisse quarante-huit heures avant de lever l'ancre.",
+      "En remontant la rue principale, des enfants des Planches les bousculent et les dévalisent. Teka les héberge à l'auberge L'Abattoir, puis elles retrouvent Irna, Tilda et Cleff sous l'autorité d'Eve, qui les force à tout rendre.",
+      "Jane retrouve les Yeux aux Silos. Iris leur demande de cambrioler la villa Graham avant les Épingles pour rapporter un gros rubis. Elles passent par le Dôme des Brûleurs, l'usine de Nix, la porte de la Ville Haute et la boutique d'Arin Veyr, qui leur fait un rabais pour les Yeux.",
+      "Dans la villa Graham, elles évitent les pièges, affrontent les gardes du coffre et une gélatine verte, et trouvent une lettre de Leth des Épingles. Elles rapportent le rubis à Iris. Les Épingles se font arrêter pour l'effraction.",
+      "Un Landsknecht d'Altéra fonce sur elles. Un portail de spores s'ouvre contre un mur et Gran Brijit saisit le soldat à la gorge.",
+      "Elles quittent la ville et sont téléportées au Repos des Épées."
     ],
     "pos": {
       "x": 0.477,
@@ -1227,7 +1238,10 @@
     "pos": {
       "x": 0.717,
       "y": 0.547
-    }
+    },
+    "histoire": [
+      "Philippa et Jane y passent la nuit à leur arrivée à Camont. Teka leur propose l'arrière-boutique et un repas maigre de poisson sec, pain dur et eau tiède."
+    ]
   },
   {
     "id": "teka",
@@ -1256,7 +1270,11 @@
         "ton": "positif"
       }
     ],
-    "attitude": "neutre"
+    "attitude": "neutre",
+    "histoire": [
+      "Elle accueille Philippa et Jane à L'Abattoir, un poulpe au bout de ses tentacules, et les met en garde : « Si vous dormez là, évitez d'ouvrir les fenêtres. Les gosses passent les bras pour voler les bottes. »",
+      "Elle leur indique le quartier des Planches, où vivent les gamins sans toit, après le vol de la bourse et du Bag of Many Things."
+    ]
   },
   {
     "id": "planches-camont",
@@ -1272,7 +1290,11 @@
     "pos": {
       "x": 0.772,
       "y": 0.321
-    }
+    },
+    "histoire": [
+      "Philippa et Jane y retrouvent les enfants voleurs, après un dédale de passerelles branlantes. Eve les force à rendre la bourse et le Bag of Many Things.",
+      "Elles y croisent aussi le vendeur à la sauvette Ssilik."
+    ]
   },
   {
     "id": "eve",
@@ -1290,7 +1312,8 @@
       "Elle gronde Irna sévèrement, force les enfants à tout rendre, et leur répète de ne pas voler les voyageurs armés."
     ],
     "histoire": [
-      "Elle gronde Irna devant les joueuses et force les enfants à tout restituer."
+      "Philippa et Jane la découvrent après une courte poursuite, à la tête de la couvée d'enfants des Planches. Elle gronde Irna : « Je vous ai dit cent fois : pas les voyageurs armés. Vous finirez égorgés dans une ruelle ! »",
+      "Elle force les enfants à tout rendre."
     ],
     "citation": {
       "texte": "Rendez tout, et vite. On trouvera autre chose à bouffer.",
@@ -1335,7 +1358,11 @@
         "ton": "positif"
       }
     ],
-    "attitude": "neutre"
+    "attitude": "neutre",
+    "histoire": [
+      "Elle vole la bourse de Philippa avec Tilda et Cleff dès l'arrivée à Camont.",
+      "Elle fait face aux deux joueuses aux Planches : « On vous voulait rien de mal. C'est juste… vous aviez l'air d'en avoir trop. » Eve la force à rendre."
+    ]
   },
   {
     "id": "ssilik",
@@ -1363,7 +1390,10 @@
         "inverse": "même ruelles que"
       }
     ],
-    "attitude": "neutre"
+    "attitude": "neutre",
+    "histoire": [
+      "Philippa et Jane croisent ce marchand lézard à la sauvette dans les ruelles des Planches. Il leur propose, manteau ouvert, une dizaine de bibelots dont presque tous sont faux : « Ssssalut lesssami ! »"
+    ]
   },
   {
     "id": "silos-camont",
@@ -1379,7 +1409,10 @@
     "pos": {
       "x": 0.583,
       "y": 0.139
-    }
+    },
+    "histoire": [
+      "Jane y emmène Philippa : les Yeux la reconnaissent. Iris leur confie le cambriolage de la villa Graham."
+    ]
   },
   {
     "id": "iris",
@@ -1398,7 +1431,9 @@
       "Elle les envoie voir le marchand de potions de la Ville Haute, qui fera un prix pour les Yeux."
     ],
     "histoire": [
-      "Le groupe lui rapporte le rubis."
+      "Jane retrouve Iris aux Silos : « J'pensais pas te revoir ici, Jane. Les temps changent, mais pas nos emmerdes. »",
+      "Elle leur dit que les Épingles bougent le soir même et que ses voleurs sont à Voros : « Toi et ta copine, vous ferez l'affaire. » Elle les envoie voir le marchand de potions de la Ville Haute.",
+      "Elles lui rapportent le rubis."
     ],
     "relations": [
       {
@@ -1438,7 +1473,10 @@
     "pos": {
       "x": 0.417,
       "y": 0.702
-    }
+    },
+    "histoire": [
+      "Philippa et Jane y trouvent les Brûleurs, qui leur parlent d'une seule voix : « Bonjour, bonjour, voyageurs de passage… » Elles sentent une présence qui les observe et quittent les lieux."
+    ]
   },
   {
     "id": "usine-camont",
@@ -1454,7 +1492,10 @@
     "pos": {
       "x": 0.844,
       "y": 0.525
-    }
+    },
+    "histoire": [
+      "Philippa et Jane se font refouler à distance de l'usine textile, camp central des Épingles. Nix les menace de coudre leurs bottes à leurs chevilles."
+    ]
   },
   {
     "id": "nix",
@@ -1472,7 +1513,8 @@
       "Les Épingles protègent leur quartier du sud et les habitants leur paient une contribution pour la paix. L'ancienne usine textile, barricadée, leur sert de camp central."
     ],
     "histoire": [
-      "Le groupe se heurte à ses gardes devant l'usine."
+      "Elle intervient quand Philippa et Jane insistent aux abords de l'usine : « Encore un pas et je couds vos bottes à vos chevilles. »",
+      "Son gang est ensuite arrêté pour l'effraction de la villa Graham."
     ],
     "citation": {
       "texte": "L'usine, c'est chez nous. Vous rentrez pas, point.",
@@ -1509,7 +1551,10 @@
     "connu": [
       "Les Gardes gris empêchent la basse-ville d'entrer, sur ordre du conseil."
     ],
-    "chapeau": "La grande porte se dresse comme une cicatrice entre deux mondes : lourds vantaux de métal et de bois clouté, hérissés de fers, verrouillés par des barres épaisses. Au sommet des remparts, des silhouettes grises veillent. L'air change à mesure qu'on s'approche, l'odeur de fumier laissant place à celle du cuir huilé et du métal poli."
+    "chapeau": "La grande porte se dresse comme une cicatrice entre deux mondes : lourds vantaux de métal et de bois clouté, hérissés de fers, verrouillés par des barres épaisses. Au sommet des remparts, des silhouettes grises veillent. L'air change à mesure qu'on s'approche, l'odeur de fumier laissant place à celle du cuir huilé et du métal poli.",
+    "histoire": [
+      "Philippa et Jane arrivent à la grande porte, fermée par des Gardes gris qui exigent un laissez-passer délivré par un propriétaire."
+    ]
   },
   {
     "id": "capitaine-gardes-gris",
@@ -1535,7 +1580,10 @@
         "inverse": "commandés par"
       }
     ],
-    "attitude": "neutre"
+    "attitude": "neutre",
+    "histoire": [
+      "Il les arrête à la porte de la Ville Haute : « Halte. Motif de passage ? Laissez-passer ? »"
+    ]
   },
   {
     "id": "potion-shop-camont",
@@ -1551,7 +1599,10 @@
     "pos": {
       "x": 0.111,
       "y": 0.108
-    }
+    },
+    "histoire": [
+      "Sur le conseil d'Iris, Philippa et Jane viennent y acheter des potions."
+    ]
   },
   {
     "id": "arin-veyr",
@@ -1569,7 +1620,7 @@
       "Quand on vient de la part des Yeux, Arin se fige, hoche la tête et accorde 25 % de remise sans poser de questions, en précisant leur devoir une dette. Il reste une tension non réglée avec les Yeux."
     ],
     "histoire": [
-      "Le groupe y achète des potions avec la remise des Yeux."
+      "Philippa et Jane le trouvent dans sa boutique de Ville Haute. Quand elles disent venir de la part des Yeux, il se fige, hoche la tête et leur offre vingt-cinq pour cent de rabais : « Ne me demandez pas pourquoi je leur dois cela. Les dettes, voyez-vous, ont la délicatesse de ne pas disparaître. »"
     ],
     "citation": {
       "texte": "Les dettes, voyez-vous, ont la délicatesse de ne pas disparaître.",
@@ -1600,7 +1651,10 @@
     "pos": {
       "x": 0.092,
       "y": 0.744
-    }
+    },
+    "histoire": [
+      "Philippa et Jane s'y introduisent de nuit en même temps que les voleurs des Épingles. Elles évitent les pièges, affrontent les gardes du coffre et une gélatine verte, puis ramassent le butin, dont le rubis et une lettre de Leth."
+    ]
   },
   {
     "id": "graham-gonn",
@@ -1636,7 +1690,10 @@
         "inverse": "cambrioleuse de"
       }
     ],
-    "attitude": "neutre"
+    "attitude": "neutre",
+    "histoire": [
+      "Philippa et Jane cambriolent sa villa piégée en son absence et lui prennent le rubis."
+    ]
   },
   {
     "id": "vira",
@@ -1652,7 +1709,8 @@
       "Rôdeuse de l'équipe des Épingles qui s'infiltre en parallèle dans la villa Graham, avec Nibb et Ash. Les voleurs rivaux sont blessés si on les croise."
     ],
     "histoire": [
-      "Les Épingles sont arrêtées pour l'effraction."
+      "Elle fait partie des voleurs des Épingles que Philippa et Jane croisent dans la villa Graham, blessée dans les pièges.",
+      "Les Épingles se font arrêter pour l'effraction."
     ],
     "attitude": "neutre"
   },
@@ -1669,7 +1727,11 @@
       "Il agit avec Vira et Ash.",
       "Roublard de l'équipe des Épingles qui s'infiltre en parallèle dans la villa Graham, avec Vira et Ash."
     ],
-    "attitude": "neutre"
+    "attitude": "neutre",
+    "histoire": [
+      "Il fait partie des voleurs des Épingles que Philippa et Jane croisent dans la villa Graham.",
+      "Les Épingles se font arrêter pour l'effraction."
+    ]
   },
   {
     "id": "ash",
@@ -1683,7 +1745,11 @@
     "connu": [
       "Il agit avec Vira et Nibb."
     ],
-    "attitude": "neutre"
+    "attitude": "neutre",
+    "histoire": [
+      "Il fait partie des voleurs des Épingles que Philippa et Jane croisent dans la villa Graham.",
+      "Les Épingles se font arrêter pour l'effraction."
+    ]
   },
   {
     "id": "port-blanc",
@@ -2026,9 +2092,11 @@
       "Des voyageurs de passage : Barok et Almar, le marchand Qadim, Magdalena, Ivy, Solkah Barrow, Constance Brisemousse, Umberto Hevalan."
     ],
     "histoire": [
-      "Au vignoble de Dimir et Iulia, le groupe libère l'esclave Spano.",
-      "Ivy est retrouvée morte, empoisonnée.",
-      "Le marchand Qadim, agent de la Lumière Noire, traquait Magdalena. Il s'enfuit une fois découvert."
+      "Philippa et Jane sont téléportées de façon imprécise, entre Camont et Port Doëlan. Elles tombent sur un vignoble abandonné où Dimir et Iulia les accueillent avec une cordialité excessive et leur demandent de retrouver leur employé disparu.",
+      "Dans la forêt, elles sauvent Spano d'un loup. Il leur raconte avoir été enchaîné et forcé de travailler. Elles retournent au vignoble, fouillent le bureau (860 po) et prennent deux chevaux.",
+      "Elles rejoignent une caravane d'une dizaine de marchands arrêtée pour une halte. Le marchand Qadim leur propose 500 po pour assurer sa sécurité jusqu'à Port Doëlan.",
+      "En route, des bandits affamés bloquent le chemin par deux arbres abattus, puis des gobelins sur wargs chargent le camp à la tombée du jour. Ivy est retrouvée morte une nuit, empoisonnée.",
+      "Qadim, agent de la Lumière Noire, est démasqué et s'enfuit. La caravane arrive en vue de Port Doëlan, accrochée aux falaises, au soir."
     ],
     "pos": {
       "x": 0.272,
@@ -2059,7 +2127,12 @@
         "ton": "negatif"
       }
     ],
-    "attitude": "ennemi"
+    "attitude": "ennemi",
+    "histoire": [
+      "Philippa et Jane le rencontrent à la halte de la caravane, riche marchand charismatique qui a pris la tête du convoi. Il leur propose 500 po pour l'escorte.",
+      "Pendant le voyage, Ivy est empoisonnée à la place de sa cible, Magdalena.",
+      "Démasqué, il s'enfuit."
+    ]
   },
   {
     "id": "magdalena",
@@ -2089,7 +2162,11 @@
     ],
     "img": "img/pnj/port-doe-lan-magdalena.webp",
     "attitude": "positif",
-    "teinte": "#752519"
+    "teinte": "#752519",
+    "histoire": [
+      "Philippa et Jane la rencontrent dans la caravane, discrète. Elle s'est liée d'amitié avec Ivy et boit avec elle au coin du feu.",
+      "Ivy est empoisonnée par un poison qui la visait. Magdalena cherche à fuir le plus loin possible et atteint Port Doëlan."
+    ]
   },
   {
     "id": "barok",
@@ -2107,7 +2184,8 @@
       "Orc massif en uniforme élégant évoquant un serviteur de grande maison, présenté comme le garde du corps. Sociable, curieux, ravi du voyage, il cherche à s'intégrer à la caravane."
     ],
     "histoire": [
-      "Le groupe le recroise devant le théâtre Russconi."
+      "Philippa et Jane le croisent dans la caravane, orc massif en uniforme élégant, présenté comme garde du corps, sociable et ravi du voyage.",
+      "Elles le retrouvent devant le théâtre Russconi à Port Doëlan, où il doit jouer sur invitation de Bartolomeo Spezza."
     ],
     "citation": {
       "texte": "Regardez-moi ça. Ces lignes, ces volumes, cette courbe parfaite sous l'arche… C'est un écrin. Une promesse.",
@@ -2175,7 +2253,11 @@
       }
     ],
     "attitude": "positif",
-    "teinte": "#756919"
+    "teinte": "#756919",
+    "histoire": [
+      "Philippa et Jane la croisent dans la caravane, présentée comme la chanteuse d'opéra, renfermée et bougonne.",
+      "Elles la retrouvent à Port Doëlan devant le théâtre Rusconi : « Contente de vous voir en vie. Restez attentifs. La ville n'est pas aussi calme qu'elle en a l'air. »"
+    ]
   },
   {
     "id": "umberto-hevalan",
@@ -2209,7 +2291,11 @@
       }
     ],
     "attitude": "positif",
-    "teinte": "#753c19"
+    "teinte": "#753c19",
+    "histoire": [
+      "Philippa et Jane croisent ce sage de Rivegard dans la caravane : « Le savoir n'est jamais neutre. Il choisit toujours son camp. »",
+      "Il continue vers Port Doëlan, invité par le conservateur Riminar."
+    ]
   },
   {
     "id": "havre-noir",
@@ -4509,6 +4595,9 @@
         "type": "Dirigés par",
         "ton": "neutre"
       }
+    ],
+    "histoire": [
+      "Jane retrouve les Yeux aux Silos, où Iris lui confie le vol du rubis. Elles le leur rapportent."
     ]
   },
   {
@@ -4528,7 +4617,10 @@
     "citation": {
       "texte": "Bonjour, bonjour, voyageurs de passage… Venez, venez, il y a de la place sous le dôme.",
       "qui": "Les Brûleurs, d'une seule voix"
-    }
+    },
+    "histoire": [
+      "Philippa et Jane les rencontrent sous le Dôme : étendus, les yeux blancs, ils parlent d'une voix commune et les invitent à rester."
+    ]
   },
   {
     "id": "les-epingles",
@@ -4551,6 +4643,9 @@
         "type": "Dirigés par",
         "ton": "neutre"
       }
+    ],
+    "histoire": [
+      "Les Épingles refoulent Philippa et Jane à leur usine, puis se font prendre par les gardes en cambriolant la villa Graham."
     ]
   },
   {
@@ -4563,6 +4658,9 @@
     "alias": [
       "Garde gris",
       "Gardes Gris"
+    ],
+    "histoire": [
+      "Philippa et Jane butent sur eux à la porte de la Ville Haute."
     ]
   },
   {
@@ -4582,7 +4680,10 @@
     "pos": {
       "x": 0.167,
       "y": 0.381
-    }
+    },
+    "histoire": [
+      "Philippa et Jane la visitent pour aller chez l'apothicaire, puis à la villa Graham."
+    ]
   },
   {
     "id": "jardins-de-l-eternite",
@@ -4598,7 +4699,11 @@
       "Jardin d'Éternité",
       "Jardins de l'Eternité"
     ],
-    "chapeau": "Un rêve d'une beauté irréelle. La lumière dorée du soir éclaire des jardins parfaits, aux lignes épurées, dans une odeur de jasmin et de métal poli. Puis un souffle éteint le jour, et le ciel laisse place à un firmament infini."
+    "chapeau": "Un rêve d'une beauté irréelle. La lumière dorée du soir éclaire des jardins parfaits, aux lignes épurées, dans une odeur de jasmin et de métal poli. Puis un souffle éteint le jour, et le ciel laisse place à un firmament infini.",
+    "histoire": [
+      "Une nuit à bord du Marteau du Brise-Pavois, Philippa et Jane s'endorment et se retrouvent côte à côte dans un jardin suspendu au-dessus du vide, qui se dissout en firmament.",
+      "Eryndel apparaît, visage de constellations, et leur dit : « Je tenais tant à vous rencontrer. Deux êtres étranges, si loin, et pourtant si proches. »"
+    ]
   },
   {
     "id": "marteau-du-brise-pavois",
@@ -4614,7 +4719,12 @@
     "alias": [
       "Marteau du Brise-Pavois"
     ],
-    "chapeau": "La chaleur du port colle à la peau, saturée d'odeurs de goudron, de sel et de métal brûlé. Le Marteau du Brise-Pavois, un navire noir aux voiles raides comme des lames, attend amarré près des docks. Les ouvriers chargent les dernières caisses, les mouettes tournent dans un ciel sale."
+    "chapeau": "La chaleur du port colle à la peau, saturée d'odeurs de goudron, de sel et de métal brûlé. Le Marteau du Brise-Pavois, un navire noir aux voiles raides comme des lames, attend amarré près des docks. Les ouvriers chargent les dernières caisses, les mouettes tournent dans un ciel sale.",
+    "histoire": [
+      "Olyssane l'amène à quai à Havre Noir pour le départ vers Camont : Sycomore apparaît au sommet de l'Assemblage et commande les marées, propulsant le navire dans l'embouchure de la Veyra.",
+      "Au sixième jour, des silhouettes armées attaquent depuis les berges. Olyssane les repousse d'un blast runique qui arrache la canopée.",
+      "Pendant la traversée, Philippa et Jane rêvent des Jardins de l'Éternité."
+    ]
   },
   {
     "id": "tilda",
@@ -4633,7 +4743,10 @@
       "texte": "C'est pas du vol si on le rend, non ?",
       "qui": "Tilda"
     },
-    "attitude": "neutre"
+    "attitude": "neutre",
+    "histoire": [
+      "Elle s'accroche aux jambes d'Irna quand Philippa et Jane les rattrapent aux Planches : « C'est pas du vol si on le rend, non ? »"
+    ]
   },
   {
     "id": "cleff",
@@ -4647,6 +4760,9 @@
     "attitude": "neutre",
     "connu": [
       "Petit garçon qui porte le vieux sac de cuir volé avec Irna et Tilda."
+    ],
+    "histoire": [
+      "Il porte le vieux sac de cuir avec Irna et Tilda quand Philippa et Jane les rattrapent aux Planches. Eve les force à rendre."
     ]
   },
   {
@@ -4659,7 +4775,10 @@
     "statut": "vivant",
     "resume": "Petit poulpe qui vit au bout des tentacules de Teka.",
     "attitude": "neutre",
-    "connu": []
+    "connu": [],
+    "histoire": [
+      "Philippa et Jane le voient au bout des bras de Teka, à L'Abattoir."
+    ]
   },
   {
     "id": "leth",
@@ -4693,7 +4812,10 @@
         "inverse": "même gang que"
       }
     ],
-    "attitude": "neutre"
+    "attitude": "neutre",
+    "histoire": [
+      "Philippa et Jane trouvent dans la villa Graham sa lettre à Graham : un type envoyé du Passeur a demandé une équipe pour voler chez l'Impératrice, au Siège des Étoiles. Il écrit être paumé et avoir éloigné un homme qui parlait trop en l'envoyant monter un comptoir à Havre Noir."
+    ]
   },
   {
     "id": "damian",
@@ -4723,7 +4845,10 @@
         "inverse": "collègue de"
       }
     ],
-    "attitude": "neutre"
+    "attitude": "neutre",
+    "histoire": [
+      "Philippa et Jane surprennent sa conversation avec le vieux garde dans la salle des coffres : il rêve de monter en grade."
+    ]
   },
   {
     "id": "vieux-garde-graham",
@@ -4751,6 +4876,9 @@
     "connu": [
       "Garde du coffre de la villa Graham, il part à la retraite à la fin de la semaine et a tiré des ficelles auprès de Graham pour être posté ici.",
       "Il explique à son jeune collègue Damian qu'un poste où il ne se passe rien est une bénédiction."
+    ],
+    "histoire": [
+      "Philippa et Jane l'entendent dans la salle des coffres : « Un poste où il se passe rien, c'est pas une punition, c'est une bénédiction. »"
     ]
   },
   {
@@ -5796,7 +5924,11 @@
       }
     ],
     "attitude": "positif",
-    "teinte": "#753c19"
+    "teinte": "#753c19",
+    "histoire": [
+      "Philippa et Jane le croisent dans la caravane, marchand nerveux qui refuse de partager ses provisions et déteste Magdalena.",
+      "Elles le retrouvent plus tard à Port Doëlan, ruiné, à mendier."
+    ]
   },
   {
     "id": "entrepots-abandonnes-doelan",
@@ -8555,7 +8687,10 @@
     "connu": [
       "Abomination née de la guerre de la Veyra, qui surgit au Repos des Épées après le combat contre des créatures altérées. Masse de chair obèse et instable, un œil gigantesque et conscient s'ouvre lentement sur son ventre. Les résidus d'arcane alentour réagissent à sa présence."
     ],
-    "lieu": "coeur-de-la-corruption"
+    "lieu": "coeur-de-la-corruption",
+    "histoire": [
+      "Elle surgit après le combat contre les créatures altérées. Son ventre se distend et s'ouvre sur un œil immense, qui observe les deux joueuses."
+    ]
   },
   {
     "id": "guerre-de-la-veyra",
@@ -8585,7 +8720,10 @@
       "Les tonneaux sont anormalement grands pour l'exploitation.",
       "860 po cachées dans le bureau."
     ],
-    "chapeau": "Une clairière dans l'épaisseur du bois, où subsiste un vignoble oublié : quelques rangs de vignes maigres, mal taillées, aux ceps tordus. Au centre, un vieux corps de ferme massif sans être noble, solide sans être sain, dont certaines pierres semblent prêtes à céder. Pas de fumée, pas de voix, pas de pas. La nuit s'annonce, patiente."
+    "chapeau": "Une clairière dans l'épaisseur du bois, où subsiste un vignoble oublié : quelques rangs de vignes maigres, mal taillées, aux ceps tordus. Au centre, un vieux corps de ferme massif sans être noble, solide sans être sain, dont certaines pierres semblent prêtes à céder. Pas de fumée, pas de voix, pas de pas. La nuit s'annonce, patiente.",
+    "histoire": [
+      "Philippa et Jane y atterrissent après leur téléportation. Dimir et Iulia les reçoivent, puis elles y reviennent avec Spano, fouillent le bureau et y trouvent 860 po, du bon vin et deux chevaux en bon état."
+    ]
   },
   {
     "id": "dimir",
@@ -8615,6 +8753,11 @@
     "connu": [
       "Vieux paysan du vignoble abandonné, d'une amabilité excessive et dérangeante, sourire figé et mains tremblantes. Avec Iulia, il insiste pour que les voyageurs boivent, mangent et dorment sur place.",
       "Il fait promettre une récompense aux PJ pour retrouver leur employé disparu, tout en minimisant sa captivité : discipline et motivation, dit-il."
+    ],
+    "histoire": [
+      "Il ouvre la porte avant qu'elles aient frappé, avec Iulia, et leur propose du vin et un lit.",
+      "Il leur demande de ramener son employé : « La forêt est cruelle, surtout pour ceux qui ne savent pas obéir. Vous le ramènerez, n'est-ce pas ? »",
+      "Au retour avec Spano, il nie toute cruauté et parle de discipline et de motivation."
     ]
   },
   {
@@ -8639,6 +8782,10 @@
     "connu": [
       "Vieille paysanne du vignoble, voix trop douce et mielleuse. Avec Dimir, elle parle de l'employé disparu comme d'un garçon fragile qu'il fallait surveiller nuit et jour.",
       "Elle jure que sans lui la vigne ne survivra pas, ni eux."
+    ],
+    "histoire": [
+      "Elle accueille Philippa et Jane avec Dimir et leur dit de son employé : « Il était fragile, ce garçon. Il avait besoin qu'on veille sur lui, nuit et jour. »",
+      "Au retour avec Spano, elle explique, sans crier, l'amour et la patience."
     ]
   },
   {
@@ -8663,6 +8810,10 @@
     "connu": [
       "Employé du vignoble, que les PJ sauvent d'un loup dans la forêt. Épuisé, terrorisé, légèrement blessé. Il révèle avoir été enchaîné et forcé de travailler par Dimir et Iulia.",
       "Après leur chute, il peut rester au vignoble, libre, et en devenir le responsable."
+    ],
+    "histoire": [
+      "Philippa et Jane le sauvent d'un loup dans la forêt, recroquevillé contre un arbre. Il leur dit : « Je pensais mourir ici. Ils m'avaient dit que personne ne viendrait. »",
+      "Elles le ramènent au vignoble. Il peut y rester libre."
     ]
   },
   {
@@ -8695,6 +8846,10 @@
     "connu": [
       "Rôdeuse joviale surnommée la Voyageuse Joyeuse, rangeuse de niveau 7 venue de Havre Noir en quête d'or et de contrats. Elle voyage à cheval avec sa monture Justine, épée longue au côté.",
       "Elle boit volontiers au coin du feu, se lie d'amitié avec Magdalena, et est retrouvée morte une nuit au camp, empoisonnée par un poison qui ne la visait pas."
+    ],
+    "histoire": [
+      "Philippa et Jane la croisent dans la caravane, rangère joviale à cheval, qui raconte des anecdotes de route.",
+      "Elle est retrouvée morte une nuit à l'écart du feu, adossée à une roue, empoisonnée."
     ]
   },
   {
@@ -8721,6 +8876,9 @@
     "connu": [
       "Firbolg solitaire, seule du convoi à ne pas avoir de caravane : un petit chariot découvert tiré par un âne nommé Plop. Épée lourde, blessures anciennes, ferme et vigilante.",
       "Elle voit la pluie comme une bénédiction de Sylvanus et cherche des indices sur la disparition de sa famille."
+    ],
+    "histoire": [
+      "Philippa et Jane la croisent dans la caravane, avec son chariot ouvert tiré par l'âne Plop. Elle voit la pluie comme une bénédiction de Sylvanus."
     ]
   },
   {
@@ -8744,6 +8902,10 @@
     "connu": [
       "Drow originaire de Menzoberranzan, renfrogné et taciturne, qui évite le soleil et se tient à l'écart du convoi. Sa caravane rafistolée transporte des serpents.",
       "Il n'est ni cruel ni malveillant : passionné par les serpents, il rejette les dogmes violents de Lolth. Il veut découvrir la surface et espère embarquer depuis Port Doëlan vers un autre continent."
+    ],
+    "histoire": [
+      "Philippa et Jane le croisent dans la caravane, à l'écart, avec son serpent Seravine.",
+      "Il continue vers Port Doëlan avec le convoi."
     ]
   },
   {
@@ -9025,7 +9187,10 @@
     "pos": {
       "x": 0.569,
       "y": 0.646
-    }
+    },
+    "histoire": [
+      "Philippa et Jane y sont déposées à l'arrivée, par la barque du navire d'Olyssane."
+    ]
   },
   {
     "id": "fabrique-camont",
@@ -9037,7 +9202,10 @@
     "pos": {
       "x": 0.561,
       "y": 0.934
-    }
+    },
+    "histoire": [
+      "Philippa et Jane s'en approchent et se font repérer par les gardes des Épingles."
+    ]
   },
   {
     "id": "garnison-leyenmil",
@@ -9110,6 +9278,9 @@
       "y": 0.706
     },
     "type": "ville",
-    "voyage": "x"
+    "voyage": "x",
+    "histoire": [
+      "Philippa et Jane y affrontent l'abomination aux yeux, née des séquelles de la guerre."
+    ]
   }
 ]
