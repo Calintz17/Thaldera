@@ -1121,7 +1121,7 @@
     "alias": [
       "repaire d'Argonath"
     ],
-    "chapeau": "Le repaire du Passeur n'est pas construit : il est né. Une suite de tunnels organiques, moites, parcourus de battements sourds, où le sol spongieux s'affaisse sous les pas. L'air est chaud, saturé de vapeur et de soufre, et une faible lueur rouge pulse depuis le fond.",
+    "chapeau": "Le repaire du Passeur a poussé comme un organe. C'est une suite de tunnels organiques, moites, parcourus de battements sourds, où le sol spongieux s'affaisse sous les pas. L'air est chaud, saturé de vapeur et de soufre, et une faible lueur rouge pulse depuis le fond.",
     "histoire": [
       "Philippa et Jane s'enfoncent dans une plaie de la terre où les tunnels organiques mènent à la salle du cœur, autel de chair et d'os, où elles trouvent Argonath."
     ]
@@ -1181,7 +1181,7 @@
       "On y vole tout le monde. Les enfants des Planches ont dévalisé Philippa dès l'arrivée."
     ],
     "histoire": [
-      "Après un voyage d'un peu plus d'une semaine à bord du Marteau du Brise-Pavois avec Olyssane, dont une attaque de brigands au sixième jour, Philippa et Jane arrivent de nuit par la Veyra, déposées à l'écart de la jetée principale. Olyssane leur laisse quarante-huit heures avant de lever l'ancre.",
+      "Philippa et Jane voyagent un peu plus d'une semaine à bord du Marteau du Brise-Pavois avec Olyssane. Des brigands attaquent au sixième jour. Elles arrivent de nuit par la Veyra, déposées à l'écart de la jetée principale. Olyssane leur laisse quarante-huit heures avant de lever l'ancre.",
       "En remontant la rue principale, des enfants des Planches les bousculent et les dévalisent. Teka les héberge à l'auberge L'Abattoir, puis elles retrouvent Irna, Tilda et Cleff sous l'autorité d'Eve, qui les force à tout rendre.",
       "Jane retrouve les Yeux aux Silos. Iris leur demande de cambrioler la villa Graham avant les Épingles pour rapporter un gros rubis. Elles passent par le Dôme des Brûleurs, l'usine de Nix, la porte de la Ville Haute et la boutique d'Arin Veyr, qui leur fait un rabais pour les Yeux.",
       "Dans la villa Graham, elles évitent les pièges, affrontent les gardes du coffre et une gélatine verte, et trouvent une lettre de Leth des Épingles. Elles rapportent le rubis à Iris. Les Épingles se font arrêter pour l'effraction.",
@@ -1617,7 +1617,7 @@
       "Iel doit une dette aux Yeux, sans dire laquelle.",
       "Iel vend potions de soins, résistances, et quelques raretés comme l'essence de possibilité.",
       "Apothicaire de la Ville Haute à l'allure noble et au genre ambivalent, silhouette élancée, voix posée, manières impeccables.",
-      "Quand on vient de la part des Yeux, Arin se fige, hoche la tête et accorde 25 % de remise sans poser de questions, en précisant leur devoir une dette. Il reste une tension non réglée avec les Yeux."
+      "Quand on vient de la part des Yeux, Arin se fige, hoche la tête et accorde 25 % de remise sans poser de questions, en précisant devoir une dette aux Yeux. Une tension non réglée subsiste avec eux."
     ],
     "histoire": [
       "Philippa et Jane le trouvent dans sa boutique de Ville Haute. Quand elles disent venir de la part des Yeux, il se fige, hoche la tête et leur offre vingt-cinq pour cent de rabais : « Ne me demandez pas pourquoi je leur dois cela. Les dettes, voyez-vous, ont la délicatesse de ne pas disparaître. »"
@@ -1667,7 +1667,7 @@
     "resume": "Riche négociant qui a piégé sa villa après une série de cambriolages.",
     "connu": [
       "Il reçoit des lettres de Leth, un informateur des Épingles.",
-      "Riche négociant de la Ville Haute. Sa villa est une forteresse déguisée en maison de maître, truffée de pièges mécaniques, magiques et parfois mortels après une série de cambriolages venus de la basse-ville.",
+      "Riche négociant de la Ville Haute. Sa villa est une forteresse déguisée en maison de maître, truffée de pièges mécaniques, magiques et parfois mortels, depuis une série de cambriolages venus de la basse-ville.",
       "On dit que personne n'a jamais rien volé chez lui sans y laisser un morceau de soi."
     ],
     "citation": {
@@ -1761,7 +1761,7 @@
     "connu": [
       "Elle nourrit le Consortium et Altéra. Quatre familles d'éleveurs la dirigent : Varkel, Reth, Holsten et Calderon.",
       "La Veyra y est morte depuis la guerre. Les quais rouges sentent le sang et la chaux.",
-      "Les betes malades tremblent, les yeux blancs. Personne n'en parle : il vaut mieux ne pas trop regarder.",
+      "Les bêtes malades tremblent, les yeux blancs. Personne n'en parle : il vaut mieux ne pas trop regarder.",
       "Les abattoirs de chaux sont interdits aux étrangers."
     ],
     "histoire": [
@@ -2154,7 +2154,7 @@
       "Il a empoisonné Ivy à sa place.",
       "Riche marchand charismatique, qui a pris de fait la tête de la caravane vers Port Doëlan. Chaleureux, soucieux de l'harmonie du groupe, il regrette que l'escorte prévue ne soit jamais venue.",
       "Il propose aux PJ 500 po pour l'ensemble du groupe pour escorter la caravane. Son chariot est un salon roulant : soieries, peaux fines, colliers de verre et perles océanes de Voros.",
-      "Il dit voyager lui-même plutôt qu'envoyer des agents, pour comprendre les besoins réels des clients, et rêver de quitter le désert et la chaleur pour la côte ouest."
+      "Il dit voyager lui-même plutôt qu'envoyer des agents, pour comprendre les besoins réels des clients. Il dit rêver de quitter le désert et la chaleur pour la côte ouest."
     ],
     "relations": [
       {
@@ -2306,7 +2306,7 @@
     "resume": "Érudit incorruptible qui refuse de valider la propagande de Spezza.",
     "connu": [
       "Envoyé officieux de la Grande Bibliothèque de Rivegard, convié pour valider l'intégration des chroniques locales aux archives internationales.",
-      "Il constate que presque tous les ouvrages récents exaltent Spezza. S'il refuse brutalement, il provoque un incident entre institutions, s'il valide, il trahit Rivegard.",
+      "Il constate que presque tous les ouvrages récents exaltent Spezza. S'il refuse brutalement, il provoque un incident entre institutions. S'il valide, il trahit Rivegard.",
       "Il cherche une source indépendante ou un manuscrit non expurgé et peut présenter les PJ à Thorex, tout en les prévenant que ce dernier excelle à esquiver.",
       "Érudit de Rivegard, de la Bibliothèque Empyréenne, invité à Port Doëlan par Riminar, conservateur du musée Spezza, pour un séminaire de recherche. Il soupçonne Riminar de vouloir exploiter l'autorité intellectuelle de Rivegard.",
       "Sa caravane de bois noirci est sobre et discrète. Il est morne, grave, peu loquace, et dit ne pas se vendre."
@@ -2720,10 +2720,10 @@
       "Gallywix ne combat pas la Griffe, qui remplit ses coffres."
     ],
     "histoire": [
-      "Après trois jours et demi de mer sur l'Aile d'Avalon, dont une tempête nocturne où des Nagas remontent des fonds, Philippa arrive à Voros, cité suspendue entre falaise et mer, dont la guilde des marchands de Gallywix contrôle tout.",
+      "Après trois jours et demi de mer sur l'Aile d'Avalon, dont une tempête nocturne où des Nagas remontent des fonds, Philippa arrive à Voros. La cité est suspendue entre falaise et mer, et la guilde des marchands de Gallywix y contrôle tout.",
       "Ghassan Tarek, l'aubergiste, lui dit que le Voile opère depuis les bains publics. Elle y trouve Skrell, qui nie tout et la renvoie vers les quêtes du tableau public. Elle prend celle du marchand Jericho, qu'on pille chaque nuit.",
       "Elle patrouille la nuit dans l'entrepôt de Jericho, y découvre du Suud, suit un voleur du Voile jusqu'aux bains et comprend que Skrell orchestre lui-même les vols et le trafic de cette drogue brune vers les ports du Consortium.",
-      "La landsknecht repentie Helka von Leyemil l'avertit sur la Griffe et lui présente Bernard. Le Prince-Marchand Gallywix, qui profite du commerce de la Griffe, lui indique l'adresse d'un entrepôt isolé au nord. Dans les tunnels qu'il cache, Philippa trouve des cages de prisonniers et apprend que les captifs viennent de l'île aux Moines par caravane à travers le désert.",
+      "La landsknecht repentie Helka von Leyemil l'avertit sur la Griffe et lui présente Bernard. Le Prince-Marchand Gallywix, qui profite du commerce de la Griffe, lui indique l'adresse d'un entrepôt isolé au nord. Dans les tunnels cachés dessous, Philippa trouve des cages de prisonniers et apprend que les captifs viennent de l'île aux Moines, par caravane à travers le désert.",
       "Avec Helka, elle retourne aux bains puis à la maison condamnée où se terre Skrell, et le tue. Helka prend la tête du Voile de Voros et promet de rappeler Philippa dans quelques semaines.",
       "Jane Merigold surgit alors des ombres : elle sait où se trouve la Griffe et propose d'accompagner Philippa vers l'île aux Moines."
     ],
@@ -2865,7 +2865,7 @@
       "Philippa et Jane gagnent l'île depuis la côte, par un quai de contrebande et une barque bringuebalante, au milieu des brumes marines.",
       "Elles découvrent un monastère de Lathandre volontairement profané, aux statues brisées et aux visages martelés. Les moines sont partis pour un temple brumeux dans la jungle à l'ouest de Port Lagon.",
       "Dans les souterrains de la cathédrale, la Griffe détient des prisonniers. Philippa libère Liora et le Démon des Mains attaque.",
-      "Elle affronte Absalom, le Berger, dans la cathédrale effondrée. Absalom s'échappe en disant qu'elle sent qu'elles se reverront, et laisse derrière elle une lettre brûlée, signée Spezza, qui prouve son financement du trafic."
+      "Elle affronte Absalom, le Berger, dans la cathédrale effondrée. Absalom s'échappe en disant sentir qu'elles se reverront, et laisse derrière elle une lettre brûlée, signée Spezza, qui prouve son financement du trafic."
     ],
     "fusion": true,
     "pos": {
@@ -2914,7 +2914,7 @@
     ],
     "histoire": [
       "Au terme de la piste des moines, Philippa et Jane atteignent une clairière envahie de brume où se dresse la façade effondrée d'un temple. Elles font pivoter une statue de moine pour actionner un levier de bronze, et la dalle s'ouvre sur un escalier.",
-      "Au sous-sol, une porte porte le graffiti « Fuyez. Les portes sont closes. Lathande a abandonné ce lieu. » Elles explorent un dortoir ravagé, le bureau du frère supérieur et une sépulture, puis forcent la porte d'une salle cyclopéenne où deux statues de Lathandre se relèvent.",
+      "Au sous-sol, un graffiti sur une porte avertit : « Fuyez. Les portes sont closes. Lathande a abandonné ce lieu. » Elles explorent un dortoir ravagé, le bureau du frère supérieur et une sépulture, puis forcent la porte d'une salle cyclopéenne où deux statues de Lathandre se relèvent.",
       "Elles croisent Frère Augustus, devenu fou, puis descendent au niveau inférieur : une porte-soleil éteinte, un autel entravé de chaînes noires et un pentacle gravé au sol.",
       "Barakel, déguisé en prêtre de Lathandre, les y attend. À sa mort, le pentacle s'éteint, les chaînes se fissurent et le Reliquaire de Lathandre brille au centre du sanctuaire."
     ],
@@ -3210,7 +3210,7 @@
       "Même lui ne peut reforger la lame brisée.",
       "Sa forge est taillée dans une masse de basalte rouge, avec des canaux de métal fondu autour des établis et un bassin incandescent gravé de symboles anciens sous une enclume circulaire.",
       "Il travaille la pyrrite (bracelets, égide, gants-barrière) et l'écaille de ver des sables, qui dissipe la chaleur plutôt que de la conduire.",
-      "Il refuse d'être jugé pour l'acier vendu à la Griffe : le pyrracier n'a pas d'intention, il a une forme. Il fait des armures, la pyrrite protège, et forger une arme contre sa nature donne quelque chose de médiocre.",
+      "Il refuse d'être jugé pour l'acier vendu à la Griffe : selon lui, le pyrracier n'a pas d'intention, seulement une forme. Il fait des armures, la pyrrite protège, et forger une arme contre sa nature donne quelque chose de médiocre.",
       "Les livraisons de Pyrracier ont cessé depuis plusieurs jours : sans minerai, il ne peut plus forger, y compris les pièces sur mesure qu'il a laissé entendre pouvoir créer pour les aventuriers.",
       "Si les PJ sécurisent la mine et rapportent de la Pyrrite brute, il peut la transformer en Pyrracier et forger un objet personnalisé pour l'un d'eux."
     ],
@@ -3598,7 +3598,7 @@
       "Elle a hérité du pouvoir après la chute de Spezza et reconstruit la ville avec l'aide du groupe.",
       "Des mercenaires sous pavillon inconnu rôdent. Un de ses hommes n'est pas revenu de Leyenmil.",
       "Elle attend la livraison de l'Arshen à Cap Cornes pour relancer le commerce.",
-      "Le pacte avec l'Aile d'Argent a apporté des capitaux, très loin de ce qu'il faudrait. Un ambassadeur de Rivegard presse Sycomore de lâcher Port Doëlan.",
+      "Le pacte avec l'Aile d'Argent a apporté des capitaux, mais très loin de ce qu'il faudrait. Un ambassadeur de Rivegard presse Sycomore de lâcher Port Doëlan.",
       "Elle reçoit les joueurs sur le chantier, cordiale mais occupée, assise sur un bloc de maçonnerie comme sur un trône de fortune. Autour d'elle veillent Tina et Nina en armures bricolées, Kralik et Nesk, deux hommes-rats aux aguets.",
       "Elle est jeune cheffe, calme, calculatrice, avec un charme froid, et parle en dirigeante qui compte ses pertes.",
       "Ses charmes ont mal pris sur lui, ce qui la contrarie.",
@@ -3609,7 +3609,7 @@
       "Adulte, elle dirige la maison close de Port Doëlan, où travaillent Tina et Nina, et se retrouve à la tête du pouvoir local après la chute de Spezza.",
       "À Keras Tauroc, le groupe reçoit un message d'elle : elle négocie un marché de pierre de 10 000 po et cherche des livraisons de matériaux rares venus d'Istra.",
       "Elle se rend à Cap Cornes et y croise Eamonn, qu'elle juge drogué jusqu'aux yeux. Ses charmes ne prennent pas sur lui.",
-      "Après l'attaque du Tribunal de Chair sur la tour d'Eamonn, le groupe arrive à son camp, dans les ruines du château. Elle y expose son problème de mercenaires et un émissaire parti dans le sud de Leyenmil qui n'est pas revenu.",
+      "Après l'attaque du Tribunal de Chair sur la tour d'Eamonn, le groupe arrive à son camp, dans les ruines du château. Elle y expose deux problèmes : des mercenaires, et un émissaire parti dans le sud de Leyenmil qui n'est pas revenu.",
       "Jane lui remet la Couronne de Corail Noir, qui sera revendue pour financer Lapidus et l'envoi de deux tonnes d'archène de Keras Tauroc à la tour d'Eamonn. Jane touche 1 % des ventes.",
       "Elle appelle le groupe au chantier de Port Doëlan et propose un roadtrip vers Leyenmil."
     ],
@@ -5356,7 +5356,7 @@
       "Elle décrit les quatre familles et dit que des cargaisons transitent par la terre depuis que le port est mort.",
       "Elle est présente au marché aux bestiaux, simple acteur parmi d'autres. Elle travaille pour le Voile, qui veut savoir comment Port Blanc tient, combien de temps, et à quel prix réel.",
       "Elle passe ses journées dans les champs, enclos et granges, et ses nuits à écouter ce que les gens racontent quand ils pensent que personne ne compte.",
-      "Elle résume les quatre maisons : les Varkel font du bœuf bien compté pour le Consortium, les Reth le mouton, la laine et le cuir avec des rites de purification et la chapelle, les Holsten des chevaux de trait et de guerre pour des gens armés, les Calderon possèdent la plupart des terres et méprisent ce qui vient de l'extérieur.",
+      "Elle résume les quatre maisons : les Varkel font du bœuf bien compté pour le Consortium. Les Reth font le mouton, la laine et le cuir, avec des rites de purification et la chapelle. Les Holsten élèvent des chevaux de trait et de guerre pour des gens armés. Les Calderon possèdent la plupart des terres et méprisent ce qui vient de l'extérieur.",
       "Depuis que le port est mort, des cargaisons passent par la terre et changent de mains deux ou trois fois entre Altéra et le Consortium."
     ],
     "alias": [
@@ -6251,7 +6251,7 @@
     "img": "img/pnj/port-doe-lan-amo-n.webp",
     "attitude": "positif",
     "connu": [
-      "Vieux tieffelin aveugle aux longues cornes et à la voix posée. Il ne voit pas, il perçoit. Il ne siège pas à la cour de Spezza.",
+      "Vieux tieffelin aveugle aux longues cornes et à la voix posée. Il perçoit sans voir. Il ne siège pas à la cour de Spezza.",
       "Il veille à l'équilibre de la ville, reçoit les PJ avec calme, dissuade les menaces majeures et n'intervient pas dans les querelles ordinaires. Il ne vend rien et sourit quand on parle d'argent.",
       "Il peut lancer Scrying si la demande est justifiée : un nom clair ou un lien tangible est requis, et il refuse si l'intention trouble l'équilibre.",
       "Insight DD 14 : il dit la vérité. Insight DD 17 : il en sait plus qu'il ne révèle."
@@ -6568,7 +6568,7 @@
     "titre": "Arrière-boutique de la maison Vespera",
     "parent": "maison-de-vespera",
     "resume": "Pièce de cartes et de plans, armes visibles. La Griffe prépare des coups ici.",
-    "chapeau": "La pièce derrière les tentures change de ton. Moins de velours, plus de cartes. Des lampes basses éclairent des plans étalés sur une grande table. Des visages fermés lèvent les yeux, et des armes sont visibles. Ce lieu ne vend pas du plaisir, il prépare des coups.",
+    "chapeau": "La pièce derrière les tentures change de ton. Moins de velours, plus de cartes. Des lampes basses éclairent des plans étalés sur une grande table. Des visages fermés lèvent les yeux, et des armes sont visibles. Ici, on prépare des coups.",
     "galerie": [
       {
         "img": "img/paysages/port-doelan/qg-de-la-griffe.webp",
@@ -7462,7 +7462,7 @@
     "titre": "Bloc de pierre sèche",
     "parent": "port-doelan",
     "resume": "Carré massif flanqué de tours trapues, herse encadrée de torches.",
-    "chapeau": "La prison se dresse comme un bloc de pierre sèche au cœur d'un quartier administratif austère : un carré massif flanqué de tours trapues, aux murs épaissis de contreforts, des chaînes tendues entre les créneaux, une herse encadrée de torches même en plein jour.",
+    "chapeau": "La prison se dresse comme un bloc de pierre sèche au cœur d'un quartier administratif austère. C'est un carré massif flanqué de tours trapues, aux murs épaissis de contreforts. Des chaînes sont tendues entre les créneaux, et une herse est encadrée de torches même en plein jour.",
     "galerie": [
       {
         "img": "img/paysages/port-doelan/prison.webp",
@@ -7766,7 +7766,7 @@
     "connu": [
       "« Vous êtes vivants. C'est déjà inhabituel. »",
       "Elle regarde à l'intérieur du sous-marin puis s'écarte. La ville n'est pas fermée, dit-elle, elle n'a pas besoin de l'être.",
-      "Insight DC 13 : elle les observe encore après les avoir laissés passer. « Noyés » n'est pas une insulte : c'est le nom d'Agran pour ceux qui vivent là où l'eau finit par tout prendre."
+      "Insight DC 13 : elle les observe encore après les avoir laissés passer. « Noyés » est le nom d'Agran pour ceux qui vivent là où l'eau finit par tout prendre. Le mot n'a rien d'insultant."
     ],
     "citation": {
       "texte": "Vous êtes vivants. C'est déjà inhabituel.",
@@ -7799,7 +7799,7 @@
     "attitude": "neutre",
     "connu": [
       "Garde d'Agran à côté de Reshaar : roche vivante, tentacules, coquillages incrustés dans une chair blanchâtre, yeux orange brûlants. Une mutation des eaux de surface, poussée sur plusieurs générations.",
-      "Insight DC 14 : il ne surveille pas les PJ, il surveille ce qui vient derrière eux. Il reste immobile comme un récif qui attend."
+      "Insight DC 14 : il surveille ce qui vient derrière les PJ, pas les PJ eux-mêmes. Il reste immobile comme un récif qui attend."
     ],
     "teinte": "#752519",
     "histoire": [
@@ -8130,7 +8130,7 @@
     "connu": [
       "« Je ne vends pas. J'échange. »",
       "Peau bleue qui se fond dans la faille, lance en main, enroulée autour d'un mât brisé. Elle n'attaque pas, elle regarde. Ses tentacules bleus et roses traversent toute l'épave de l'Astariel, et elle en a pris possession comme des racines dans du bois mort.",
-      "Elle ne vend pas, elle échange : une odeur de surface, un souvenir, un mensonge bien fait. Si on force le passage, il faut se battre contre tout ce qui compose l'épave."
+      "Elle échange une odeur de surface, un souvenir, un mensonge bien fait, mais ne vend rien. Si on force le passage, il faut se battre contre tout ce qui compose l'épave."
     ],
     "citation": {
       "texte": "Des Noyés. Dans mon épave. Vous cherchez la boîte. Tout le monde cherche la boîte.",
@@ -9117,7 +9117,7 @@
     "attitude": "neutre",
     "connu": [
       "Mage puissant, dernier détenteur connu de la Clé d'Anachronie, mort lors de la Bataille des Sables avec les autres maîtres en lice. Son corps fut jeté dans la Fosse des Mille Sables.",
-      "Il bâtit sa demeure dans un donjon de pierre blanche, loin des hommes, qui n'obéissait pas aux jours. Une porte donnait sur hier, une autre sur demain.",
+      "Il bâtit sa demeure loin des hommes, dans un donjon de pierre blanche qui n'obéissait pas aux jours. Une porte donnait sur hier, une autre sur demain.",
       "Les rois réclamaient sa science. Sa réponse est restée dans les chants : il servait ce qui fut avant les trônes."
     ],
     "lieu": "kazad-marunn",
@@ -9571,7 +9571,7 @@
       "Les tonneaux sont anormalement grands pour l'exploitation.",
       "860 po cachées dans le bureau."
     ],
-    "chapeau": "Une clairière dans l'épaisseur du bois, où subsiste un vignoble oublié : quelques rangs de vignes maigres, mal taillées, aux ceps tordus. Au centre, un vieux corps de ferme massif sans être noble, solide sans être sain, dont certaines pierres semblent prêtes à céder. Pas de fumée, pas de voix, pas de pas. La nuit s'annonce, patiente.",
+    "chapeau": "Une clairière dans l'épaisseur du bois, où subsiste un vignoble oublié : quelques rangs de vignes maigres, mal taillées, aux ceps tordus. Au centre, un vieux corps de ferme massif et solide, mais malsain, dont certaines pierres semblent prêtes à céder. Pas de fumée, pas de voix, pas de pas. La nuit s'annonce, patiente.",
     "histoire": [
       "Philippa et Jane y atterrissent après leur téléportation. Dimir et Iulia les reçoivent, puis elles y reviennent avec Spano, fouillent le bureau et y trouvent 860 po, du bon vin et deux chevaux en bon état."
     ]
@@ -9903,7 +9903,7 @@
       "Kimath"
     ],
     "histoire": [
-      "Le groupe découvre leur monastère des steppes, vidé et pillé. Il y trouve un registre d'où il apprend qu'un courrier a été envoyé au Frère Supérieur Kimath, à Khardun, après le passage d'un voyageur qui avait laissé un nom ancien."
+      "Le groupe découvre leur monastère des steppes, vidé et pillé. Il y trouve un registre : après le passage d'un voyageur qui avait laissé un nom ancien, un courrier a été envoyé au Frère Supérieur Kimath, à Khardun."
     ]
   },
   {

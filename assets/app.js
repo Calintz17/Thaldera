@@ -4,7 +4,7 @@
 (() => {
 'use strict';
 
-const VER = '84';
+const VER = '85';
 const EDIT = new URLSearchParams(location.search).has('edit');
 const $ = (s, r = document) => r.querySelector(s);
 const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
@@ -1274,6 +1274,7 @@ function initRunes() {
     L.cam.classList.add('wz'); clearTimeout(L.wzT); L.wzT = setTimeout(() => L.cam.classList.remove('wz'), 450);
     setCam(L, clampMapRect({ x: cx - nw / 2, y: cy - nh / 2, w: nw, h: nh }), true, L.pad);
   }, { passive: false });
+  ['gesturestart','gesturechange'].forEach(t => stageEl.addEventListener(t, ev => { if (live()) ev.preventDefault(); }));
   const ptrs = new Map(); let pinch = null;
   const spread = () => { const [a, b] = [...ptrs.values()]; return { d: Math.hypot(a.x - b.x, a.y - b.y), cx: (a.x + b.x) / 2, cy: (a.y + b.y) / 2 }; };
   stageEl.addEventListener('pointerdown', ev => {

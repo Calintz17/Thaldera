@@ -640,3 +640,27 @@ li.key { border-left: 2px solid var(--gold); padding-left: 10px; margin-left: -1
 
 /* v55: hide inert map controls behind galleries and stacked plans */
 .stage:has(.gal) .maptools, .stage:has(.stackl) .maptools { display: none; }
+
+/* v85 mobile iOS: fluidité, zoom doigts, sans zoom parasite */
+html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; -webkit-tap-highlight-color: transparent; }
+body { overscroll-behavior-y: none; }
+a, button, summary, .chip, .pin .in, .wcrest, .eitem { touch-action: manipulation; }
+input, select, textarea { font-size: 16px; }
+.stage, .cam { touch-action: none; }
+@supports (padding: max(0px)) {
+  .top { padding-left: max(14px, env(safe-area-inset-left)); padding-right: max(14px, env(safe-area-inset-right)); }
+  .pin-pad { padding-bottom: max(60px, calc(30px + env(safe-area-inset-bottom))); }
+}
+@media (hover: none), (pointer: coarse) {
+  .wgroup, .mprev, .mapcap .cap, .maptools, .ovl > * { -webkit-backdrop-filter: none; backdrop-filter: none; }
+  .nav a, .nav .qbtn, .nav button { min-height: 40px; }
+  .maptools button { min-width: 42px; min-height: 42px; }
+  .panel, .qlist, .session-entries, .elog { -webkit-overflow-scrolling: touch; overscroll-behavior: contain; }
+}
+@media (max-width: 860px) {
+  .qwin, .elog > * { max-width: 100%; }
+  .session-body { padding-left: 24px; padding-right: 14px; }
+  .session-body p { font-size: 17px; }
+  .session-entry summary { min-height: 48px; }
+  img, canvas { max-width: 100%; }
+}

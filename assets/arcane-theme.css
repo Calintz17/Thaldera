@@ -617,6 +617,6 @@ body.journal-open .qlog .qwin{min-height:0}
 .session-body p { font:19px/1.55 var(--body); white-space:pre-line; color:#e5d8c2; }
 .session-body .sx { margin-top:14px; padding-top:10px; border-top:1px solid rgba(203,161,104,.25); }
 .session-body .sx b { font:600 13px var(--ui); letter-spacing:.08em; text-transform:uppercase; color:#cba168; }
-.session-body p a.ln { display:inline; margin:0; font:inherit; color:#f0b872; text-decoration:none; }
+.session-body p a.ln { display:inline; margin:0; font:inherit; color:#f0b872; text-decoration:none; border-bottom:0; }
 .session-body a { display:inline-block; margin:9px 9px 0 0; color:#edd19a;
  text-decoration:underline; text-underline-offset:3px; font:600 14px var(--ui); }

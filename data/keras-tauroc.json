@@ -1918,7 +1918,7 @@
     "connu": [
       "Tout y est ordonné comme un système. C'est l'auberge de référence pour les étrangers de qualité."
     ],
-    "chapeau": "L'atrium s'ouvre comme une respiration après l'étroitesse de la rue. L'air sent le bois de cèdre et quelque chose de propre, presque médical, qui vient des bains du sous-sol. Des colonnes de marbre pâle encadrent un bassin central où l'eau reflète les torches. Tout est ordonné avec une précision qui ressemble moins au confort qu'à un système.",
+    "chapeau": "L'atrium s'ouvre comme une respiration après l'étroitesse de la rue. L'air sent le bois de cèdre et quelque chose de propre, presque médical, qui vient des bains du sous-sol. Des colonnes de marbre pâle encadrent un bassin central où l'eau reflète les torches. Tout est ordonné avec la précision d'un système plus que d'un confort.",
     "galerie": [
       {
         "img": "img/paysages/keras-tauroc/angues-dormientes.webp",
@@ -2514,7 +2514,7 @@
     "attitude": "neutre",
     "teinte": "#755219",
     "histoire": [
-      "À l'arrivée du groupe à Keras Tauroc, à dos de rakh depuis Brakka, c'est la première personne qui l'aide. Elle le loge à l'Angues Dormientes et lui apprend qu'Absalom y a passé une seule nuit, se plaignant du bruit, avant de demander où se trouvait la cathédrale et de repartir au petit matin sans aucun sac.",
+      "À l'arrivée du groupe à Keras Tauroc, à dos de rakh depuis Brakka, c'est la première personne qui l'aide. Elle le loge à l'Angues Dormientes et lui apprend qu'Absalom y a passé une seule nuit. Absalom s'est plainte du bruit, a demandé où se trouvait la cathédrale, puis est repartie au petit matin sans aucun sac.",
       "Elle explique que sans victoire à l'arène, personne ne donnera rien aux étrangères, et oriente le groupe vers la cathédrale.",
       "Après la victoire aux Cornes d'Or, c'est elle qui remet au réveil la missive de Vitiosa, qui fixe un rendez-vous le soir même au Colisée pour la récompense.",
       "Plus tard, le carnet d'Hématome révèle qu'elle emploie la pègre locale, avec un contrat pour fouiller un entrepôt désaffecté."
@@ -2753,7 +2753,7 @@
     ],
     "histoire": [
       "Deuxième adversaire du groupe au tournoi, annoncé par Fulvia comme le chat sans titre, sans clan et sans maître que la ville n'a jamais réussi à chasser. Les joueuses le battent.",
-      "Pendant le mois perdu, Jane travaille pour lui sans le savoir : surveillance de rues, livraisons de colis, un contrat qu'il a accepté d'un client nommé Ferox, qui lui a demandé de surveiller l'ambassadeur de Roshen Buru pendant trois semaines.",
+      "Pendant le mois perdu, Jane travaille pour lui sans le savoir : surveillance de rues, livraisons de colis, et un contrat accepté d'un client nommé Ferox, qui lui a demandé de surveiller l'ambassadeur de Roshen Buru pendant trois semaines.",
       "Quand Jane retrouve sa trace dans la vieille tannerie, il la laisse entrer, la respecte et lui livre le nom de Calvinus Ferox sans négocier. Il ignore où celui-ci habite.",
       "Il garde ensuite les captifs de l'embuscade derrière la tannerie, à la disposition de Tarcus."
     ],
@@ -2798,7 +2798,7 @@
     "resume": "Général humilié, manipulé par Absalom pour faire tuer l'ambassadeur.",
     "connu": [
       "Sa villa est connue de tout le quartier. Son bureau contenait la lettre d'Absalom, signée du sceau de Vassago, et la copie de sa propre réponse.",
-      "Absalom lui promettait de lui rendre sa dignité en lui envoyant deux agents sous son contrôle total, le groupe, qu'il devait faire surveiller, puis lancer sur l'ambassadeur, avant de les laisser à la garde.",
+      "Absalom lui promettait de lui rendre sa dignité en lui envoyant deux agents sous son contrôle total, le groupe. Il devait les faire surveiller, puis les lancer sur l'ambassadeur, avant de les laisser à la garde.",
       "Ancien Grand-Général de la Maison Tauroc, jeté après avoir été usé, vivant dans une villa décrépite du quartier de la caserne. Il a commandé la surveillance de l'ambassadeur de Roshen Buru auprès d'Hématome.",
       "La correspondance retrouvée chez lui est signée du sceau de Vassago et émane d'Absalom, qui l'incitait à faire tuer l'ambassadeur pour rétablir l'honneur de Tauroc."
     ],
@@ -2846,7 +2846,7 @@
       "Il a aussi enquêté sur l'homme contrôlé par une araignée : sa chambre était dévastée, avec des symboles de Balamor gravés dans le bois, à coups d'ongles.",
       "Minotaure âgé en robe de fonction, conseiller juridique de la Maison Tauroc auprès du Consul Draven Tauroc. Il a fait lancer Greater Restoration sur Philippa et Jane à leur arrestation.",
       "Il leur propose un accord : sceau de localisation et liberté de mouvement en ville, sans franchir les murailles, contre des preuves exploitables. Leurs affaires leur sont rendues à l'innocentation.",
-      "À la fin, il lève les sceaux, rend les armes et révèle qu'Absalom a passé la frontière de Roshen Buru trois semaines avant le meurtre avec des papiers en règle, que Ferox n'avait pas les moyens de signer."
+      "À la fin, il lève les sceaux, rend les armes et révèle qu'Absalom a passé la frontière de Roshen Buru trois semaines avant le meurtre avec des papiers en règle. Ferox n'avait pas les moyens de les signer."
     ],
     "relations": [
       {
@@ -3456,7 +3456,7 @@
     "attitude": "allie",
     "teinte": "#753c19",
     "histoire": [
-      "À Havre Noir, elle se présente comme Premier-Capitaine de la seconde flotte goudron, envoyée par Sycomore Brise-Pavois pour conduire le groupe à Camont. Elle prévient que le voyage dure un peu plus d'une semaine et conseille de se ravitailler : après ce port, plus rien d'humain avant Camont.",
+      "À Havre Noir, elle se présente comme Premier-Capitaine de la seconde flotte goudron, envoyée par Sycomore Brise-Pavois pour conduire le groupe à Camont. Elle prévient que le voyage dure un peu plus d'une semaine et conseille de se ravitailler, car il n'y aura plus rien d'humain après ce port avant Camont.",
       "Au départ, Sycomore apparaît au sommet de l'Assemblage et commande aux marées, ce qui propulse le navire à une vitesse surnaturelle dans l'embouchure de la Veyra.",
       "Au sixième jour, des silhouettes armées attaquent depuis les berges. Elle prononce son avertissement puis libère un blast runique qui arrache la canopée et fait fuir les brigands.",
       "À Camont, elle prévient qu'elle n'attendra que quarante-huit heures avant de lever l'ancre, avec ou sans le groupe.",
@@ -5898,7 +5898,7 @@
     "teinte": "#753c19",
     "histoire": [
       "Absalom est venue lui demander s'il avait déjà trouvé une pierre étrange, qui brille seule ou réagit à la magie. Il lui a répondu qu'il n'y avait rien de tel.",
-      "Après le tournoi, le groupe le rencontre à la mine, qui lui montre l'arshen. En enquêtant sur le collier de l'autel, le groupe a identifié cette pierre spéciale.",
+      "Après le tournoi, le groupe le rencontre à la mine, où il lui montre l'arshen. En enquêtant sur le collier de l'autel, le groupe a identifié cette pierre spéciale.",
       "Le groupe négocie avec lui un marché de 10 000 po pour deux tonnes de pierre, sous réserve d'organiser la livraison. Cette pierre répond à la demande de Vespera, qui a écrit au groupe pour obtenir des ressources en exclusivité."
     ]
   },
@@ -6588,7 +6588,7 @@
       "Philippa y arrive après son passage dans le Feywild, envoyée par Gran Brijit. Elle démasque le changeforme qui avait volé la Pierre en se faisant passer pour Mira."
     ],
     "histoire": [
-      "Gran Brijit conduit Philippa devant l'Arbre-Soleil, dans le Feywild. Elle a vu en vision un feu noir qui rampe sous les racines. Elle rappelle à Philippa sa dette, lui ordonne de marcher dans le Fey pour éteindre la source du mal, puis touche son œil : « mwen ka gade ou, tout le temps ».",
+      "Gran Brijit conduit Philippa devant l'Arbre-Soleil, dans le Feywild. Elle a vu en vision un feu noir qui rampe sous les racines. Elle rappelle à Philippa sa dette et lui ordonne de marcher dans le Fey pour éteindre la source du mal. Puis elle touche son œil : « mwen ka gade ou, tout le temps ».",
       "Philippa arrive en Féerie par une clairière à lumière violette, où une plante-lamproie géante l'accueille. Elle rejoint Malquessar, cité voyageuse qui change de plan tous les cinq ans grâce à trois Pierres de Seuil. L'une d'elles vient d'être volée.",
       "Dren Malbar l'accueille aux portes et l'oriente vers Thalanir. Au palais, l'ambassadeur Elarin exige le retour de la Pierre sous vingt-quatre heures, et Thalanir accuse aussitôt Nolbrim.",
       "Elle examine la scène de crime : la Pierre a été arrachée de force, et un fragment de peau grise est resté près du socle. Elle interroge Nolbrim, Arlo, Berrund, Lumeverre et Erdem. Mira, apprentie de la fleuriste Liora, l'aide volontiers et lui donne trois fausses pistes.",
@@ -6635,9 +6635,9 @@
       }
     ],
     "histoire": [
-      "Philippa arrive par la plaine, file d'attente à la Porte de l'Est : les gardes réclament 50 po par tête. Des bandits de grand chemin la détroussent pour payer leur propre entrée et le marchand Bren Legemor lui explique le péage. Elle franchit la porte, payant, volant l'or d'un convoi voisin ou bernant les gardes, et entre dans une ville aux parfums d'épices et de vice, occupée par le Dominion Sol.",
+      "Philippa arrive par la plaine et fait la queue à la Porte de l'Est, où les gardes réclament 50 po par tête. Des bandits de grand chemin la détroussent pour payer leur propre entrée, et le marchand Bren Legemor lui explique le péage. Elle franchit la porte en payant, en volant l'or d'un convoi voisin ou en bernant les gardes. Elle entre dans une ville aux parfums d'épices et de vice, occupée par le Dominion Sol.",
       "Elle recueille des informations auprès de Ganimède en ville haute et d'Omen en ville basse, croise une patrouille de Gardes-Soleil, puis apprend de Madame Augustine l'existence d'une porte dérobée au sud-ouest du palais et le nom de Lavande, chef du Voile.",
-      "Lavande lui propose un accès aux égouts qui mènent au bal masqué du Duc, en échange de l'assassinat de la Duchesse Cecilia de Vaelmor. Elle séduit aussi Regus, le fils du Duc, pour entrer au palais. Elle passe chez Durnan Forgefeuil et reçoit chez le luthier Greenwood un cours de harpe et le conseil d'aller à l'académie de Lumenlid.",
+      "Lavande lui propose un accès aux égouts qui mènent au bal masqué du Duc, en échange de l'assassinat de la Duchesse Cecilia de Vaelmor. Elle séduit aussi Regus, le fils du Duc, pour entrer au palais. Elle passe chez Durnan Forgefeuil, puis chez le luthier Greenwood, qui lui donne un cours de harpe et lui conseille d'aller à l'académie de Lumenlid.",
       "Au bal masqué, Cecilia est tuée par les aventuriers. Le « Joyau tombé du ciel » présenté par le Duc est un Nephilim, remis à Gran Brijit.",
       "Après le bal, Regus est emprisonné pour trahison, le Duc Reginald est accusé du meurtre de sa femme et écarté. Un régent du Dominion gouverne désormais la ville. Un avis de recherche est lancé contre Philippa, qu'elle retrouvera affiché à Obaline.",
       "Philippa quitte Corvalis pour Lumenlid."
@@ -6677,7 +6677,7 @@
     "histoire": [
       "Philippa quitte Lumenlid pour six jours de marche. Elle recroise sur les plaines les trois voleurs et aperçoit un chasseur du Dominion et ses deux molosses infernaux, lancé sur la piste de Varsha la Furie. Il laisse tomber une note derrière lui.",
       "Elle entre sans vérification sérieuse dans Obaline, ville marchande prise par le Dominion Sol, où l'ambiance est tendue mais pas hostile. À l'entrée, un panneau d'avis de recherche affiche son signalement.",
-      "Elle rencontre Emma Balambour, l'aubergiste du Camélia Torren Tweedy, qui l'oriente vers Milo, et le mot de passe que Lavande lui souffle par télépathie lui ouvre l'Emporium de Milo. Dans le sous-sol secret, Ira Malden lui propose un marché : libérer l'ancien bourgmestre Thoros Ven de la prison du Grand Palais, en échange d'un sauf-conduit pour Lunsk.",
+      "Elle rencontre Emma Balambour, l'aubergiste du Camélia Torren Tweedy, qui l'oriente vers Milo. Le mot de passe que Lavande lui souffle par télépathie lui ouvre l'Emporium de Milo. Dans le sous-sol secret, Ira Malden lui propose un marché : libérer l'ancien bourgmestre Thoros Ven de la prison du Grand Palais, en échange d'un sauf-conduit pour Lunsk.",
       "Philippa pénètre dans la prison, tue le capitaine Cassar, qui se mue en semi-démon, et libère Thoros Ven, qu'elle conduit à Ira.",
       "Darn, le maître du port, prépare deux barques pour elle et pour le bourgmestre, qui descendent le fleuve vers Lunsk. Obaline reste sous occupation."
     ]
@@ -6718,7 +6718,7 @@
     "histoire": [
       "Sur le conseil du luthier Greenwood de Corvalis, Philippa prend la route de Lumenlid à travers une forêt aux arbres tordus.",
       "Avant la ville, elle essaie sur le bas-côté un prototype du gnome Nezbrok, le Lance-Tempête, qui explose entre ses mains.",
-      "La directrice Lyrianne Velarion lui propose un marché : si elle réussit les quatre épreuves de fin d'année, une par collège, avant la fin du mois, elle sera reconnue diplômée. Elle lui fait visiter les dortoirs, la salle commune et les quatre écoles, en rappelant que l'académie est un territoire neutre reconnu par l'Empire d'Altéra comme par le Dominion Sol.",
+      "La directrice Lyrianne Velarion lui propose un marché : si elle réussit les quatre épreuves de fin d'année, une par collège, avant la fin du mois, elle sera reconnue diplômée. Elle lui fait visiter les dortoirs, la salle commune et les quatre écoles, et rappelle que l'académie est un territoire neutre reconnu par l'Empire d'Altéra comme par le Dominion Sol.",
       "Philippa passe les épreuves de l'Éloquence, de la Vaillance, de la Création et du Savoir, puis reprend la route vers Obaline."
     ]
   },
@@ -7095,7 +7095,7 @@
     "connu": [
       "Sa garde : Tina et Nina, anciennes prostituées en armures de fortune, et les wererats Kralik et Nesk, libérés par le groupe, qui patrouillent la ville.",
       "Des mercenaires sous pavillon inconnu rôdent autour de la ville. Elle ne sait pas qui les paie. L'un de ses hommes envoyé fouiller du côté de Leyenmill n'est pas revenu.",
-      "Le pacte avec l'Aile d'Argent a fait entrer des capitaux, très loin de ce qu'il faudrait. La ville est au chômage, la flotte en miettes.",
+      "Le pacte avec l'Aile d'Argent a fait entrer des capitaux, mais très loin du nécessaire. La ville est au chômage, la flotte en miettes.",
       "Elle a échangé avec Sycomore, et avec un ambassadeur de Rivegard qui presse Sycomore de lâcher Port Doëlan.",
       "Elle attend que l'Arshen soit livré à Cap Cornes pour relancer le commerce. Sans navires, pas d'économie.",
       "Elle est allée à Cap Cornes et y a croisé le mage Eamonn, qu'elle juge drogué jusqu'aux yeux. Ses charmes ont mal pris sur lui.",
@@ -7333,7 +7333,7 @@
     "connu": [
       "Trois obstacles jalonnent la route : pression, instruments brouillés et gouffre pour le sous-marin, formations rocheuses, contre-courant et froid pour la nage."
     ],
-    "chapeau": "Le courant prend le groupe doucement à la sortie d'Agran, puis accélère. La faille s'élargit, les parois s'écartent jusqu'à disparaître dans le noir, et le canyon devient une tranchée sans bord visible, dont le fond est une obscurité absolue et le plafond une obscurité différente. Le varech commence ici, quelques tiges isolées d'abord, puis des forêts entières qui montent de nulle part et ondulent comme une fumée lente. La route n'est pas tracée, elle se devine à travers des rideaux d'algues, des grottes qui s'ouvrent sur d'autres grottes. Les créatures s'écartent, non par peur, mais parce que le courant le leur dit.",
+    "chapeau": "Le courant prend le groupe doucement à la sortie d'Agran, puis accélère. La faille s'élargit, les parois s'écartent jusqu'à disparaître dans le noir. Le canyon devient une tranchée sans bord visible, dont le fond est une obscurité absolue et le plafond une obscurité différente. Le varech commence ici, quelques tiges isolées d'abord, puis des forêts entières qui montent de nulle part et ondulent comme une fumée lente. La route n'est pas tracée : on la devine à travers des rideaux d'algues et des grottes qui s'ouvrent sur d'autres grottes. Les créatures s'écartent quand le courant le leur dit.",
     "galerie": [
       {
         "img": "img/paysages/agran/traversee-vers-le-coeur.webp",
@@ -7523,11 +7523,11 @@
     "resume": "Orc fatigué, propriétaire d'une taverne fréquentée par les nobles.",
     "attitude": "neutre",
     "connu": [
-      "Il donne à Philippa six informations : le Duc organise un bal masqué pour présenter le Joyau tombé du ciel, l'invitation officielle avec sceau du Duc est obligatoire, le Duc pratique une corruption douanière aux portes Est et Ouest, les meubles de luxe du bal sont bloqués à l'entrepôt faute de taxe payée, la contrebande ruine ses affaires dans les quartiers nobles, et le Dominion Sol a pris la ville grâce au Duc.",
+      "Il donne à Philippa six informations. Le Duc organise un bal masqué pour présenter le Joyau tombé du ciel, et l'invitation officielle au sceau du Duc est obligatoire. Le Duc pratique une corruption douanière aux portes Est et Ouest. Les meubles de luxe du bal sont bloqués à l'entrepôt faute de taxe payée. La contrebande ruine ses affaires dans les quartiers nobles. Le Dominion Sol a pris la ville grâce au Duc.",
       "Si Philippa le convainc, il lui donne le code de la porte : « J'apporte l'encre violette et les plumes pour écrire »."
     ],
     "histoire": [
-      "Philippa le rencontre dans sa taverne de ville haute, fréquentée par les nobles. Il lui donne six informations : le bal masqué du Duc pour présenter le Joyau tombé du ciel, l'invitation obligatoire avec le sceau du Duc, la corruption douanière aux portes Est et Ouest, les meubles de luxe bloqués à l'entrepôt faute de taxe, la contrebande qui ruine son commerce, et la prise de la ville par le Dominion grâce au Duc.",
+      "Philippa le rencontre dans sa taverne de ville haute, fréquentée par les nobles. Il lui donne six informations : le bal masqué du Duc pour présenter le Joyau tombé du ciel, l'invitation obligatoire au sceau du Duc, la corruption douanière aux portes Est et Ouest, les meubles de luxe bloqués à l'entrepôt faute de taxe, la contrebande qui ruine son commerce et la prise de la ville par le Dominion grâce au Duc.",
       "S'il est convaincu, il lui donne aussi le code de la porte : « J'apporte l'encre violette et les plumes pour écrire »."
     ]
   },
@@ -8250,7 +8250,7 @@
     "histoire": [
       "Philippa le rencontre aux bains publics. Il nie connaître le Voile ou la Griffe et la renvoie vers les quêtes du tableau public.",
       "Quand elle remonte jusqu'à lui le voleur de l'entrepôt de Jericho, il lui lance : « Bravo, Sherlock. »",
-      "Avec Helka, Philippa le débusque dans la maison condamnée, un laboratoire de drogue sous une trappe cachée derrière une étagère vermoulue. Il reconnaît Helka « la repentie » et Philippa « celle qui cherche sa mère ». Il est tué au combat, et sur lui se trouve une lettre de Lavande qui lui est adressée."
+      "Avec Helka, Philippa le débusque dans la maison condamnée, un laboratoire de drogue sous une trappe cachée derrière une étagère vermoulue. Il reconnaît Helka « la repentie » et Philippa « celle qui cherche sa mère ». Il est tué au combat, et Philippa trouve sur lui une lettre de Lavande qui lui est adressée."
     ]
   },
   {
@@ -8768,7 +8768,7 @@
       "Elle descend dans la mine, infestée d'araignées, avec Dorian et Elias. Au fond, elle affronte Drozzle, le mage fou, et récupère le Shard of the Mad Arcanist et une lettre des druides de l'équilibre tordu.",
       "Dans la cabane de la sorcière, Gran Brijit reconnaît l'empreinte de Vassago, propose un marché et la projette dans le Feywild par une potion. Elle lui arrache le tatouage de Vassago et appose une marque similaire. Elle lui remet un rameau magique pour activer le cristal au sommet du temple.",
       "À l'Arbre-Soleil, Philippa reçoit sa bénédiction, la Scythe of the Burning Bloom et une marque brûlante gravée dans la chair, qui lui donne un pouvoir contre Vassago et l'invocation d'armes.",
-      "Elle gravit le sommet : devant le village de Nagas, un agent de l'Aile d'Argent est mort avec une lettre. Dans le temple piégé, elle affronte Alaric Morwyn et ses pirates spectraux et détruit l'artefact d'immortalité.",
+      "Elle gravit le sommet. Devant le village de Nagas, un agent de l'Aile d'Argent est mort avec une lettre. Dans le temple piégé, elle affronte Alaric Morwyn et ses pirates spectraux et détruit l'artefact d'immortalité.",
       "À la mort de Morwyn, la malédiction se brise : Dorian et Elias tombent en poussière. Philippa garde la lyre de Dorian en souvenir. Elle contacte Arianthil avec le rameau et reçoit la réponse : « Je t'ai entendue, Philippa. Je suis en route. » Il la téléporte loin de l'île."
     ]
   },
@@ -8995,7 +8995,7 @@
     "resume": "Grand forgeron à la peau rugueuse, qui parle par grognements. Il méprise les Pierres mais nie toute implication.",
     "attitude": "neutre",
     "connu": [
-      "Il a autrefois forgé des armes pour un archifey banni, Vaelthorn Xil'Vanyr, le Cœur-Lame de l'Équinoxe Brisé, dont GlassBane, une hallebarde capable de fracturer les pactes magiques au contact du sang d'un pactisant.",
+      "Il a autrefois forgé des armes pour un archifey banni, Vaelthorn Xil'Vanyr, le Cœur-Lame de l'Équinoxe Brisé. Parmi elles, GlassBane, une hallebarde qui fracture les pactes magiques au contact du sang d'un pactisant.",
       "Il a honte de ce passé et ne forge plus que des outils agricoles ou des armes défensives."
     ],
     "citation": {
@@ -9116,7 +9116,7 @@
     "parent": "ile-aux-moines",
     "resume": "Ancien village de moines de Lathandre, aux statues brisées et aux visages martelés. Le lieu a été volontairement profané.",
     "connu": [
-      "Les moines vénéraient Lathandre : le lieu n'est pas seulement ruiné, il a été profané exprès.",
+      "Les moines vénéraient Lathandre. Le lieu a été ruiné, puis profané exprès.",
       "Le journal d'un moine explique les raisons du départ : un fléau s'est abattu sur l'île.",
       "Au quartier nord, un réverbère isolé brûle contre toute logique. C'est un démon-alarme, qui hurle si on s'approche et invoque des Mains gardiennes.",
       "Une maison faiblement éclairée est le seul lieu animé du village : des hommes de la Griffe y patrouillent, nerveux."
@@ -9713,7 +9713,7 @@
     "attitude": "allie",
     "connu": [
       "Son plastron porte de nombreux sceaux de cire et la croix d'honneur de l'Empire d'Altéra, rarement remise.",
-      "Elle décrit la Griffe comme une organisation qui recrute les pires raclures, équipée, entraînée, et qui ne bouge jamais à moins de cinq : un soigneur, un arcaniste, quelques brutes.",
+      "Elle décrit la Griffe comme une organisation équipée et entraînée, qui recrute les pires raclures et ne bouge jamais à moins de cinq : un soigneur, un arcaniste, quelques brutes.",
       "Elle veut prendre la place de Skrell à la tête du Voile de Voros."
     ],
     "citation": {
