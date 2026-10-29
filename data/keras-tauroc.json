@@ -3481,13 +3481,10 @@
     "statut": "vivant",
     "resume": "Jeune créature marine d'Agran, recueillie par Thaloor. Le groupe l'a adoptée et Olyssane l'emmène partout.",
     "connu": [
-      "Retrouvée près d'une flaque à Cap Cornes, elle joue avec Maeve, une jeune Ophidienne. Elle a aidé le groupe à vaincre les ghoules des marées.",
       "Elle surgit à côté d'un PJ, queue déjà agitée, et veut tout savoir sur la surface, les Léviathans et le soleil. Elle appelle les humains « les Noyés » et remue la queue quand elle est contente, comme un chien.",
       "Ses braies viennent d'une épave de la faille basse, de style altéran. Thaloor lui a interdit de s'approcher de l'épave plus bas, celle qui a encore un pavillon accroché. Elle sait où elle est, et elle en est fière.",
       "Thaloor l'a recueillie à Agran. Ses parents ont disparu, elle ne sait pas pourquoi, et personne ne le lui a jamais demandé.",
-      "Elle a deux formes, une jeune fille du peuple marin à queue de poisson et une otarie mage, mais c'est la même Ink.",
-      "Le groupe l'a adoptée à Agran et a tenté de la confier à Urnak, sans succès. C'est Olyssane qui l'emmène partout avec elle, jusqu'à Cap Cornes.",
-      "Elle raconte qu'un homme les a embêtées, qu'un œil vert a brillé sur les toits et que l'homme a disparu dans un cri. Pour elle, les esprits des marées la protègent."
+      "Elle a deux formes, une jeune fille du peuple marin à queue de poisson et une otarie mage, mais c'est la même Ink."
     ],
     "relations": [
       {
@@ -3581,8 +3578,10 @@
     ],
     "histoire": [
       "À Agran, Ink surgit à l'auberge de Thaloor, queue agitée, avide d'entendre parler de la surface. Thaloor la rappelle à l'ordre : « Laisse-les. Ils viennent d'arriver. »",
-      "Elle suit discrètement le groupe, le guide jusqu'à l'épave du Grauwacht et lui parle de l'épave plus bas, au pavillon encore accroché, dont Thaloor lui interdit de s'approcher.",
-      "Le groupe l'adopte, tente de la confier à Urnak sans succès, et c'est Olyssane qui l'emmène partout avec elle.",
+      "Elle suit discrètement le groupe, le guide jusqu'à l'épave du Grauwacht et lui parle de l'épave plus bas, au pavillon encore accroché.",
+      "Le groupe l'adopte à Agran et l'emmène à bord du sous-marin vers Istra.",
+      "À Brakka, le groupe tente de la confier à Urrak, sans succès.",
+      "Olyssane finit par l'emmener partout avec elle, jusqu'à Cap Cornes.",
       "À Cap Cornes, le groupe retrouve Ink accroupie au bord d'une flaque, en train de jouer avec Maeve, une jeune Ophidienne. Olyssane la laisse vagabonder, mais la surveille de loin.",
       "Elle raconte qu'un homme les a embêtées, qu'un œil vert a brillé sur les toits et que l'homme a disparu dans un cri. Pour elle, les esprits des marées la protègent.",
       "Elle aide le groupe à vaincre les ghoules des marées, dont il rapporte trois cœurs flétris pour le rituel d'Eamonn.",
