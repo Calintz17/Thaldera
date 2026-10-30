@@ -4,7 +4,7 @@
 (() => {
 'use strict';
 
-const VER = '97';
+const VER = '99';
 const LEGACY_IDS = { 'bourre-piff':'bourpif', 'seravine':'solkah-barrow', 'tilda':'irna', 'cleff':'irna' };
 const EDIT = new URLSearchParams(location.search).has('edit');
 const $ = (s, r = document) => r.querySelector(s);
@@ -50,7 +50,7 @@ async function load() {
   try {
     const response = await fetch('data/documents.json?v=' + VER);
     if (!response.ok) throw new Error('Documents HTTP ' + response.status);
-    DOCS = (await response.json()).documents || [];
+    DOCS = ((await response.json()).documents || []).sort((a, b) => (a.ordre || 9999) - (b.ordre || 9999));
     DOC_BY = Object.fromEntries(DOCS.map(d => [d.id, d]));
     DOC_LINKS = {};
     for (const d of DOCS) for (const note of d.liens || []) {
@@ -1181,9 +1181,9 @@ function docPage(p, d, i) {
     '</figure>';
 }
 function docSection(d) {
-  return '<article class="doc-reader-section" id="piece-' + esc(d.id) + '">' +
-    '<div class="doc-region">' + esc(d.region) + '</div><h2>' + esc(d.titre) + '</h2>' +
-    '<p class="doc-note">' + esc(d.decouverte) + '</p><div class="doc-pages">' +
+  // The original prop is the whole visual record. Metadata belongs in the right-hand catalog.
+  return '<article class="doc-reader-section" id="piece-' + esc(d.id) +
+    '" aria-label="' + esc(d.titre) + '"><div class="doc-pages">' +
     d.pages.map((p, i) => docPage(p, d, i)).join('') +
     '</div></article>';
 }
@@ -1247,13 +1247,9 @@ function renderDocumentReader(slug) {
   reader.className = 'docreader';
   reader.setAttribute('role', 'region');
   reader.setAttribute('aria-label', selected ? 'Lecture du document ' + selected.titre : 'Documents du groupe');
-  reader.innerHTML = '<div class="docreader-wrap"><header class="docreader-head">' +
+  reader.innerHTML = '<div class="docreader-wrap">' +
     '<a class="doc-back" href="' + esc(back) + '">' + backLabel + '</a>' +
-    '<span class="doc-kicker">Archives du groupe</span>' +
-    '<h1>' + esc(selected ? selected.titre : 'Documents retrouvés') + '</h1>' +
-    '<p>' + esc(selected ? selected.decouverte : 'Pièces consultables dans l’ordre du catalogue, page après page.') +
-    '</p></header><div class="doc-stack">' +
-    available.map(docSection).join('') + '</div></div>';
+    '<div class="doc-stack">' + available.map(docSection).join('') + '</div></div>';
   stageEl.appendChild(reader);
   reader.scrollTop = 0;
   if (!contextual) S.entry = null;
