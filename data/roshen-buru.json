@@ -4602,37 +4602,6 @@
     "histoire": []
   },
   {
-    "id": "bourre-piff",
-    "type": "pnj",
-    "nom": "Bourre-Piff",
-    "titre": "Construct de Gran Brijit",
-    "parent": "manoir-des-ligaments",
-    "lieu": "manoir-des-ligaments",
-    "statut": "mort",
-    "resume": "Mécanique à l'essence arrachée, pour la purifier.",
-    "alias": [
-      "Bourre Pif",
-      "Bourre-Pif"
-    ],
-    "connu": [
-      "Il suit Gran Brijit dans le laboratoire de Nolbrim, au moment où Jane est attachée sur la table.",
-      "Gran Brijit l'arrête d'un geste, le tue sur-le-champ et en extrait l'âme. Il s'effondre comme une boîte de conserve. Elle donne cette âme à Nolbrim, pour compléter l'exosquelette de Jane."
-    ],
-    "relations": [
-      {
-        "cible": "gran-brijit",
-        "type": "construct de",
-        "ton": "neutre",
-        "inverse": "a arraché"
-      }
-    ],
-    "attitude": "neutre",
-    "redirige": "bourpif",
-    "histoire": [],
-    "img": "img/pnj/bourre-piff.webp",
-    "teinte": "#753519"
-  },
-  {
     "id": "oni-aux-masques",
     "type": "pnj",
     "nom": "L'Oni aux Masques",
@@ -5165,7 +5134,9 @@
     "connu": [
       "Nolbrim le bâtit autour d'un fragment de l'Hexacore.",
       "Philippa lui envoie un message à Cap Cornes pour lui annoncer que Nolbrim est réveillé.",
-      "Avant Roshen Buru, Gran Brijit le décapite sous les yeux de Jane et recueille son âme, une petite orbe de fumée qui tournoie dans sa paume. Elle l'inspire puis la recrache lentement dans une fiole, pour la purifier, avant de la tendre à Nolbrim."
+      "Avant Roshen Buru, Gran Brijit le décapite sous les yeux de Jane et recueille son âme, une petite orbe de fumée qui tournoie dans sa paume. Elle l'inspire puis la recrache lentement dans une fiole, pour la purifier, avant de la tendre à Nolbrim.",
+      "Il suit Gran Brijit dans le laboratoire de Nolbrim, au moment où Jane est attachée sur la table.",
+      "Gran Brijit l'arrête d'un geste, le tue sur-le-champ et en extrait l'âme. Il s'effondre comme une boîte de conserve. Elle donne cette âme à Nolbrim, pour compléter l'exosquelette de Jane."
     ],
     "alias": [
       "Bourre-Piff",
