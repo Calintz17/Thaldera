@@ -10,7 +10,7 @@ const entityIds = new Set(entities.map(e => e.id));
 const docs = JSON.parse(fs.readFileSync(path.join(root, 'data/documents.json'), 'utf8')).documents;
 const ids = new Set();
 const pageRefs = new Set();
-assert.equal(docs.length, 41, 'All 41 discovered document collections must be indexed');
+assert.equal(docs.length, 44, 'All 44 discovered document collections must be indexed');
 for (const d of docs) {
   assert.ok(d.id && !ids.has(d.id), 'Unique stable document ID: ' + d.id);
   ids.add(d.id);
@@ -30,7 +30,7 @@ for (const d of docs) {
     'Document preview would reveal an interpretation before reading: ' + d.id);
 }
 const props = fs.readdirSync(path.join(root, 'img/props')).filter(p=>p.endsWith('.webp'));
-assert.equal(props.length, 51, 'The repository contains 51 source pages');
+assert.equal(props.length, 57, 'The repository contains 57 source pages');
 assert.equal(pageRefs.size, props.length, 'Every source page should appear exactly once');
 const multi = docs.filter(d=>d.pages.length>1);
 assert.ok(multi.length>=4, 'Multipage documents must remain intact');
@@ -46,4 +46,4 @@ assert.ok(js.includes("id.startsWith('documents/')"),'Deep-link document routing
 assert.ok(js.includes("DOC_LINKS[e.id]"),'Narrative hyperlinks to documents missing');
 assert.ok(js.includes("docPage(p, d, i)"),'Stacked multipage reader missing');
 assert.ok(css.includes('overflow-x:hidden')&&css.includes('width:100%'),'Responsive vertical-only reader constraints missing');
-console.log('Documents OK: 41 filesets, 51 readable sources, 0 broken links, 4+ multipage sections.');
+console.log('Documents OK: 44 filesets, 57 readable sources, 0 broken links, 4+ multipage sections.');
