@@ -7196,7 +7196,7 @@
     "type": "lieu",
     "nom": "Le Cœur immergé",
     "titre": "Le pied de Thaladrassyl, au fond de la tranchée",
-    "parent": "agran",
+    "parent": "cite-d-agran",
     "resume": "Le lieu de la rencontre avec Kataron.",
     "connu": [
       "Le groupe arrive au pied de l'arbre. Kataron lui parle sans intermédiaire et ne se montre ni hostile ni bienveillante.",
@@ -7217,7 +7217,7 @@
     "type": "lieu",
     "nom": "La traversée vers le Cœur",
     "titre": "La tranchée de varech au-delà d'Agran",
-    "parent": "agran",
+    "parent": "cite-d-agran",
     "resume": "La route entre Agran et le Cœur Immergé.",
     "connu": [
       "Le groupe traverse la tranchée de varech jusqu'au Cœur Immergé."
