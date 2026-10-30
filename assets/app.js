@@ -4,7 +4,7 @@
 (() => {
 'use strict';
 
-const VER = '96';
+const VER = '97';
 const LEGACY_IDS = { 'bourre-piff':'bourpif', 'seravine':'solkah-barrow', 'tilda':'irna', 'cleff':'irna' };
 const EDIT = new URLSearchParams(location.search).has('edit');
 const $ = (s, r = document) => r.querySelector(s);
@@ -25,6 +25,7 @@ const ACCENTS = { dominion: '#c44510', altera: '#4a8fd9', consortium: '#c9a84c',
 let DB = [], BY = {}, KIDS = {}, NPC_AT = {}, REVERSE_REL = {};
 /* Documents: catalogued props already found canonically by the party. */
 let DOCS = [], DOC_BY = {}, DOC_LINKS = {}, DOC_BACK = '', DOC_MOBILE_BROWSE = false;
+let DOC_CONTEXT = null; // Contextual reader preserves the original character/location panel.
 
 const COLLECTION_CACHE = new Map();
 let RX = null, LOOK = {};
@@ -860,6 +861,9 @@ function focusIn(e, mapSrc) {
 
 window.addEventListener('resize', () => {
   measure();
+  const documentReader = $('.docreader', stageEl);
+  if (documentReader) documentReader.style.setProperty('--doc-sheet-width',
+    Math.max(1, Math.floor(Math.min(stageEl.clientWidth * .94, stageEl.clientHeight * .88 * 4 / 3))) + 'px');
   if (S.map && !S.map.stack) setCam(S.map, S.map.rect, false, S.map.pad);
   if (S.gal) {
     S.gal.querySelectorAll('.sl img').forEach(im => {
@@ -1141,8 +1145,10 @@ async function route() {
     renderDocumentReader(docId);
     return;
   }
+  const contextReturn = DOC_CONTEXT && DOC_CONTEXT.hash === location.hash ? DOC_CONTEXT : null;
   leaveDocumentReader();
   DOC_BACK = '';
+  DOC_CONTEXT = null;
   journalMode(null, false);
   document.querySelectorAll('.nav a').forEach(a => a.classList.toggle('on', !id && a.dataset.nav === 'monde'));
   if (!id) { showWorld(); return; }
@@ -1156,6 +1162,9 @@ async function route() {
   measure();
   const q = new URLSearchParams(qs || '');
   renderPanel(e, q);
+  if (contextReturn && contextReturn.id === e.id) {
+    panelEl.scrollTop = contextReturn.scrollTop;
+  }
   document.title = e.nom + ' - Thaldera Codex';
   await applyScene(e, q, my);
   S.keepCam = false; S.navBusy = false;
@@ -1185,70 +1194,100 @@ function makeDocMenu(selected) {
   box.innerHTML = '<div class="qwin doc-catalog" role="document"><header><span class="qgem"></span>' +
     '<h2>Documents</h2><span class="qcount">' + DOCS.length + ' pièces</span>' +
     '<button type="button" class="qx" aria-label="Fermer le catalogue">×</button></header>' +
-    '<nav class="qlist" aria-label="Documents collectés">' +
+    '<nav class="qlist session-entries" aria-label="Documents collectés">' +
     regions.map((region, i) => {
       const docs = DOCS.filter(d => d.region === region);
-      return '<details class="doc-region-group"' +
-        (docs.some(d => d.id === selected) || (!selected && i === 0) ? ' open' : '') +
-        '><summary><span>' + esc(region) + '</span><small>' + docs.length + ' pièces</small></summary>' +
-        docs.map(d => '<details class="doc-entry' + (d.id === selected ? ' active' : '') +
-          '"' + (d.id === selected ? ' open' : '') +
-          '><summary>' + esc(d.titre) + '</summary><div class="doc-entry-body"><p>' +
-          esc(d.description) + '</p><a class="doc-open" href="#/documents/' +
-          encodeURIComponent(d.id) + '">Lire le document</a></div></details>').join('') +
-        '</details>';
+      const open = docs.some(d => d.id === selected) || (!selected && i === 0);
+      return '<details class="session-entry doc-region-group"' + (open ? ' open' : '') +
+        '><summary><span class="qstar" aria-hidden="true">✦</span>' +
+        '<span class="session-label">' + esc(region) + '<small>' + docs.length +
+        (docs.length > 1 ? ' pièces' : ' pièce') + '</small></span>' +
+        '<span class="session-arrow" aria-hidden="true">›</span></summary>' +
+        '<div class="session-body doc-region-body">' +
+        docs.map(d => '<a class="doc-list-row' + (d.id === selected ? ' active' : '') +
+          '" href="#/documents/' + encodeURIComponent(d.id) + '"' +
+          (d.id === selected ? ' aria-current="page"' : '') +
+          '><b>' + esc(d.titre) + '</b><small>' + esc(d.description) + '</small></a>').join('') +
+        '</div></details>';
     }).join('') + '</nav></div>';
   $('.qx', box).addEventListener('click', () => journalMode(null, false));
-  box.querySelectorAll('a.doc-open').forEach(a => a.addEventListener('click', () => {
+  box.querySelectorAll('a.doc-list-row').forEach(a => a.addEventListener('click', () => {
     DOC_MOBILE_BROWSE = false;
     if (location.hash === a.getAttribute('href')) {
-      journalMode(box, !matchMedia('(max-width:860px)').matches);
+      const id = decodeURIComponent(location.hash.split('/').slice(2).join('/'));
+      renderDocumentReader(id);
     }
   }));
 }
 function leaveDocumentReader() {
   const reader = $('.docreader', stageEl);
   if (reader) reader.remove();
-  document.body.classList.remove('document-reading');
+  document.body.classList.remove('document-reading', 'doc-context');
+}
+function docReaderWidth() {
+  const w = stageEl.clientWidth;
+  const h = stageEl.clientHeight;
+  // Exactly the same width formula as the 4:3 landscape frame.
+  return Math.max(1, Math.floor(Math.min(w * .94, h * .88 * 4 / 3)));
 }
 function renderDocumentReader(slug) {
+  const contextual = !!(slug && DOC_CONTEXT && BY[DOC_CONTEXT.id] &&
+    S.entry && S.entry.id === DOC_CONTEXT.id);
   if (S.entry && !DOC_BACK) DOC_BACK = S.entry.id;
   const selected = slug ? DOC_BY[slug] : null;
   const available = selected ? [selected] : DOCS;
-  const back = DOC_BACK && BY[DOC_BACK] ? '#/' + encodeURIComponent(DOC_BACK) : '#/';
+  const back = contextual ? DOC_CONTEXT.hash :
+    (DOC_BACK && BY[DOC_BACK] ? '#/' + encodeURIComponent(DOC_BACK) : '#/');
+  const backLabel = contextual ? '‹ Retour à l’illustration' : '‹ Retour au Codex';
   leaveDocumentReader();
   sceneEl.classList.remove('is-world');
   document.body.classList.add('document-reading');
+  document.body.classList.toggle('doc-context', contextual);
   const reader = document.createElement('div');
   reader.className = 'docreader';
   reader.setAttribute('role', 'region');
   reader.setAttribute('aria-label', selected ? 'Lecture du document ' + selected.titre : 'Documents du groupe');
   reader.innerHTML = '<div class="docreader-wrap"><header class="docreader-head">' +
-    '<a class="doc-back" href="' + back + '">‹ Retour au Codex</a>' +
+    '<a class="doc-back" href="' + esc(back) + '">' + backLabel + '</a>' +
     '<span class="doc-kicker">Archives du groupe</span>' +
     '<h1>' + esc(selected ? selected.titre : 'Documents retrouvés') + '</h1>' +
-    '<p>' + esc(selected ? selected.decouverte : 'Pièces consultables dans l’ordre du catalogue. Chaque document est affiché page après page, sans recadrage.') +
+    '<p>' + esc(selected ? selected.decouverte : 'Pièces consultables dans l’ordre du catalogue, page après page.') +
     '</p></header><div class="doc-stack">' +
     available.map(docSection).join('') + '</div></div>';
   stageEl.appendChild(reader);
   reader.scrollTop = 0;
-  S.entry = null;
+  if (!contextual) S.entry = null;
   document.title = (selected ? selected.titre : 'Documents') + ' - Thaldera Codex';
-  makeDocMenu(selected ? selected.id : '');
-  const box = $('#dlog');
-  journalMode(box, !matchMedia('(max-width:860px)').matches || DOC_MOBILE_BROWSE);
+  if (contextual) {
+    // The source fiche remains exactly as-is in the original right column.
+    journalMode(null, false);
+  } else {
+    makeDocMenu(selected ? selected.id : '');
+    journalMode($('#dlog'), !matchMedia('(max-width:860px)').matches || DOC_MOBILE_BROWSE);
+  }
   DOC_MOBILE_BROWSE = false;
+  const resize = () => { if (reader.isConnected) reader.style.setProperty('--doc-sheet-width', docReaderWidth() + 'px'); };
+  resize();
+  // No ResizeObserver / accumulated listeners per document: resize hook below reads DOM.
 }
 function initDocuments() {
   const btn = $('#dbtn'), box = $('#dlog');
   if (!btn || !box) return;
+  panelEl.addEventListener('click', ev => {
+    const a = ev.target.closest('a[href^="#/documents/"]');
+    if (!a || !S.entry) return;
+    DOC_CONTEXT = { id: S.entry.id, hash: location.hash, scrollTop: panelEl.scrollTop };
+    DOC_BACK = S.entry.id;
+  });
   btn.addEventListener('click', () => {
-    if (location.hash.startsWith('#/documents')) {
+    if (location.hash.startsWith('#/documents') && !document.body.classList.contains('doc-context')) {
       journalMode(box, box.hidden);
     } else {
+      DOC_CONTEXT = null;
       DOC_BACK = S.entry ? S.entry.id : '';
       DOC_MOBILE_BROWSE = true;
-      location.hash = '#/documents';
+      if (location.hash === '#/documents') renderDocumentReader('');
+      else location.hash = '#/documents';
     }
   });
   box.addEventListener('click', ev => { if (ev.target === box) journalMode(null, false); });
@@ -1256,7 +1295,6 @@ function initDocuments() {
     if (ev.key === 'Escape' && !box.hidden) journalMode(null, false);
   });
 }
-
 /* ---------- explorateur du codex ---------- */
 function initExplorer() {
   const btn = $('#ebtn'), box = $('#elog');
