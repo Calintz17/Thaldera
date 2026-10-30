@@ -1684,18 +1684,7 @@
       "Le groupe y monte en escaladant la falaise de la gorge. Il y trouve les squelettes des moines, la bibliothèque vidée, un registre quotidien de la fin et une trappe vidée.",
       "Il emporte le registre, rédigé en istran et non traduit. Il raconte le séjour d'un voyageur sans nom, qui a laissé un nom ancien avant de partir."
     ],
-    "relations": [
-      {
-        "cible": "frere-ossian",
-        "type": "Autorité réelle",
-        "ton": "neutre"
-      },
-      {
-        "cible": "frere-tomek",
-        "type": "Moine",
-        "ton": "neutre"
-      }
-    ],
+    "relations": [],
     "chapeau": "L'herbe rouge pousse ici plus dense, plus haute, portée par une humidité que les steppes en contrebas ne connaissent pas. Niché sous une voûte naturelle creusée dans la roche comme une mâchoire ouverte vers le ciel, un monastère de pierre ocre aux toits de tuile rouge fissurés. De la végétation partout. Beau et mort depuis longtemps, mais pas vide.",
     "galerie": [
       {
@@ -1707,52 +1696,6 @@
         "legende": "L'escalade"
       }
     ],
-    "histoire": []
-  },
-  {
-    "id": "frere-ossian",
-    "type": "pnj",
-    "nom": "Frère Ossian",
-    "titre": "Le plus fort à l'entraînement",
-    "parent": "monastere-des-steppes",
-    "lieu": "monastere-des-steppes",
-    "statut": "vivant",
-    "resume": "Autorité pratique du monastère, sans titre officiel.",
-    "connu": [
-      "Il bat Frère Tomek quatre fois de suite au bâton. Il remarque les détails, comme les nœuds de corde du voyageur de passage, et lui propose de partir.",
-      "Le registre du monastère se termine peu après, par la mort des moines, que le groupe découvre plus tard."
-    ],
-    "relations": [
-      {
-        "cible": "frere-aldric",
-        "type": "moine du monastère",
-        "ton": "positif"
-      }
-    ],
-    "attitude": "neutre",
-    "histoire": []
-  },
-  {
-    "id": "frere-tomek",
-    "type": "pnj",
-    "nom": "Frère Tomek",
-    "titre": "Le perdant obstiné",
-    "parent": "monastere-des-steppes",
-    "lieu": "monastere-des-steppes",
-    "statut": "vivant",
-    "resume": "Obstiné à l'entraînement.",
-    "connu": [
-      "Il perd quatre fois de suite contre Frère Ossian, se foule la cheville à l'entraînement et veut reprendre malgré le repos prescrit.",
-      "À la fin du registre, il bat enfin Ossian pour la première fois."
-    ],
-    "relations": [
-      {
-        "cible": "frere-aldric",
-        "type": "moine du monastère",
-        "ton": "positif"
-      }
-    ],
-    "attitude": "neutre",
     "histoire": []
   },
   {
@@ -9815,6 +9758,12 @@
     },
     "histoire": [
       "Jane y retrouve la chambre de bonne louée pendant le mois perdu : un lit, une table, un crochet, rien de personnel. Capella lui donne la piste d'Hématome."
+    ],
+    "galerie": [
+      {
+        "img": "img/paysages/keras-tauroc/chambre-de-bonne-capella.webp",
+        "legende": "Chez Capella"
+      }
     ]
   },
   {
@@ -10027,6 +9976,7 @@
     "connu": [
       "Présente lors de l'arrivée de Philippa à Creux d'Azur dans l'Outreterre."
     ],
-    "histoire": []
+    "histoire": [],
+    "img": "img/pnj/zeloth-de-lolth.webp"
   }
 ]
