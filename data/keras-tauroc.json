@@ -1674,7 +1674,7 @@
     "type": "lieu",
     "nom": "Le monastère des steppes",
     "titre": "Sur un plateau, entre Brakka et Keras Tauroc",
-    "parent": "maison-tauroc",
+    "parent": "rituel-du-tier-voyage",
     "pos": {
       "x": 0.715,
       "y": 0.665
