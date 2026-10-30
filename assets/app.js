@@ -4,7 +4,7 @@
 (() => {
 'use strict';
 
-const VER = '95';
+const VER = '96';
 const LEGACY_IDS = { 'bourre-piff':'bourpif', 'seravine':'solkah-barrow', 'tilda':'irna', 'cleff':'irna' };
 const EDIT = new URLSearchParams(location.search).has('edit');
 const $ = (s, r = document) => r.querySelector(s);
@@ -23,6 +23,9 @@ const KID_GROUPS = [
 const ACCENTS = { dominion: '#c44510', altera: '#4a8fd9', consortium: '#c9a84c', istra: '#d96a28', agran: '#1e4f9c' };
 
 let DB = [], BY = {}, KIDS = {}, NPC_AT = {}, REVERSE_REL = {};
+/* Documents: catalogued props already found canonically by the party. */
+let DOCS = [], DOC_BY = {}, DOC_LINKS = {}, DOC_BACK = '', DOC_MOBILE_BROWSE = false;
+
 const COLLECTION_CACHE = new Map();
 let RX = null, LOOK = {};
 
@@ -43,6 +46,16 @@ async function load() {
   });
   Object.values(KIDS).forEach(a => a.sort((x, y) => (x.ordre ?? 99) - (y.ordre ?? 99)));
   buildLinker();
+  try {
+    const response = await fetch('data/documents.json?v=' + VER);
+    if (!response.ok) throw new Error('Documents HTTP ' + response.status);
+    DOCS = (await response.json()).documents || [];
+    DOC_BY = Object.fromEntries(DOCS.map(d => [d.id, d]));
+    DOC_LINKS = {};
+    for (const d of DOCS) for (const note of d.liens || []) {
+      if (BY[note.id]) (DOC_LINKS[note.id] ||= []).push({ doc: d, texte: note.texte });
+    }
+  } catch (error) { console.error('Documents indisponibles', error); DOCS = []; DOC_BY = {}; DOC_LINKS = {}; }
 }
 
 const pnjsAt = pl => {
@@ -1010,6 +1023,13 @@ function savoirItems(e) {
   const vil = pl && pl.type === 'lieu' ? chain(pl).find(c => c.type === 'ville') : null;
   (e.connu || []).forEach(t => out.push(L(t, e.id)));
   if (e.type !== 'pj' && e.type !== 'evenement') (e.histoire || []).forEach(t => out.push(L(t, e.id)));
+  // Discovered source texts are cited at their discovery site, not summarized as lore.
+  (DOC_LINKS[e.id] || []).forEach(link => {
+    out.push('<span class="doc-evidence">' + esc(link.texte) +
+      ' <a href="#/documents/' + encodeURIComponent(link.doc.id) +
+      '" aria-label="Lire le document : ' + esc(link.doc.titre) + '">' +
+      esc(link.doc.titre) + '</a></span>');
+  });
   return out;
 }
 const savoirHtml = e => { const it = savoirItems(e); return it.length ? '<ul>' + it.map(t => `<li>${t}</li>`).join('') + '</ul>' : ''; };
@@ -1109,11 +1129,21 @@ let TOKEN = 0;
 function goUp(e) { const u = upOf(e); location.hash = u ? '#/' + tgt(u).id : '#/'; }
 
 async function route() {
-  journalMode(null, false);
   const my = ++TOKEN;
   const raw = location.hash.replace(/^#\/?/, '');
   const [path, qs] = raw.split('?');
   const id = decodeURIComponent(path || '');
+  if (id === 'documents' || id.startsWith('documents/')) {
+    const docId = id === 'documents' ? '' : id.slice('documents/'.length);
+    if (docId && !DOC_BY[docId]) {
+      location.replace('#/documents'); return;
+    }
+    renderDocumentReader(docId);
+    return;
+  }
+  leaveDocumentReader();
+  DOC_BACK = '';
+  journalMode(null, false);
   document.querySelectorAll('.nav a').forEach(a => a.classList.toggle('on', !id && a.dataset.nav === 'monde'));
   if (!id) { showWorld(); return; }
   const e = BY[id];
@@ -1132,6 +1162,101 @@ async function route() {
   if (S.cut === e.id) { const c = panelEl.querySelector('.cut'); if (c) { const sp = c.nextElementSibling; c.remove(); if (sp && sp.classList.contains('sepline')) sp.remove(); } }
 }
 
+
+
+/* ---------- documents retrouvés : lecture scrollable et catalogue latéral ---------- */
+function docPage(p, d, i) {
+  return '<figure class="doc-paper"><img loading="' + (i ? 'lazy' : 'eager') +
+    '" decoding="async" src="' + esc(p) + '" alt="' + esc(d.titre) +
+    ', page ' + (i + 1) + ' sur ' + d.pages.length + '">' +
+    (d.pages.length > 1 ? '<figcaption>Page ' + (i + 1) + ' sur ' + d.pages.length + '</figcaption>' : '') +
+    '</figure>';
+}
+function docSection(d) {
+  return '<article class="doc-reader-section" id="piece-' + esc(d.id) + '">' +
+    '<div class="doc-region">' + esc(d.region) + '</div><h2>' + esc(d.titre) + '</h2>' +
+    '<p class="doc-note">' + esc(d.decouverte) + '</p><div class="doc-pages">' +
+    d.pages.map((p, i) => docPage(p, d, i)).join('') +
+    '</div></article>';
+}
+function makeDocMenu(selected) {
+  const box = $('#dlog');
+  if (!box) return;
+  const regions = [...new Set(DOCS.map(d => d.region))];
+  box.innerHTML = '<div class="qwin doc-catalog" role="document"><header><span class="qgem"></span>' +
+    '<h2>Documents</h2><span class="qcount">' + DOCS.length + ' pièces</span>' +
+    '<button type="button" class="qx" aria-label="Fermer le catalogue">×</button></header>' +
+    '<nav class="qlist" aria-label="Documents collectés">' +
+    regions.map((region, i) => {
+      const docs = DOCS.filter(d => d.region === region);
+      return '<details class="doc-region-group"' +
+        (docs.some(d => d.id === selected) || (!selected && i === 0) ? ' open' : '') +
+        '><summary><span>' + esc(region) + '</span><small>' + docs.length + ' pièces</small></summary>' +
+        docs.map(d => '<details class="doc-entry' + (d.id === selected ? ' active' : '') +
+          '"' + (d.id === selected ? ' open' : '') +
+          '><summary>' + esc(d.titre) + '</summary><div class="doc-entry-body"><p>' +
+          esc(d.description) + '</p><a class="doc-open" href="#/documents/' +
+          encodeURIComponent(d.id) + '">Lire le document</a></div></details>').join('') +
+        '</details>';
+    }).join('') + '</nav></div>';
+  $('.qx', box).addEventListener('click', () => journalMode(null, false));
+  box.querySelectorAll('a.doc-open').forEach(a => a.addEventListener('click', () => {
+    DOC_MOBILE_BROWSE = false;
+    if (location.hash === a.getAttribute('href')) {
+      journalMode(box, !matchMedia('(max-width:860px)').matches);
+    }
+  }));
+}
+function leaveDocumentReader() {
+  const reader = $('.docreader', stageEl);
+  if (reader) reader.remove();
+  document.body.classList.remove('document-reading');
+}
+function renderDocumentReader(slug) {
+  if (S.entry && !DOC_BACK) DOC_BACK = S.entry.id;
+  const selected = slug ? DOC_BY[slug] : null;
+  const available = selected ? [selected] : DOCS;
+  const back = DOC_BACK && BY[DOC_BACK] ? '#/' + encodeURIComponent(DOC_BACK) : '#/';
+  leaveDocumentReader();
+  sceneEl.classList.remove('is-world');
+  document.body.classList.add('document-reading');
+  const reader = document.createElement('div');
+  reader.className = 'docreader';
+  reader.setAttribute('role', 'region');
+  reader.setAttribute('aria-label', selected ? 'Lecture du document ' + selected.titre : 'Documents du groupe');
+  reader.innerHTML = '<div class="docreader-wrap"><header class="docreader-head">' +
+    '<a class="doc-back" href="' + back + '">‹ Retour au Codex</a>' +
+    '<span class="doc-kicker">Archives du groupe</span>' +
+    '<h1>' + esc(selected ? selected.titre : 'Documents retrouvés') + '</h1>' +
+    '<p>' + esc(selected ? selected.decouverte : 'Pièces consultables dans l’ordre du catalogue. Chaque document est affiché page après page, sans recadrage.') +
+    '</p></header><div class="doc-stack">' +
+    available.map(docSection).join('') + '</div></div>';
+  stageEl.appendChild(reader);
+  reader.scrollTop = 0;
+  S.entry = null;
+  document.title = (selected ? selected.titre : 'Documents') + ' - Thaldera Codex';
+  makeDocMenu(selected ? selected.id : '');
+  const box = $('#dlog');
+  journalMode(box, !matchMedia('(max-width:860px)').matches || DOC_MOBILE_BROWSE);
+  DOC_MOBILE_BROWSE = false;
+}
+function initDocuments() {
+  const btn = $('#dbtn'), box = $('#dlog');
+  if (!btn || !box) return;
+  btn.addEventListener('click', () => {
+    if (location.hash.startsWith('#/documents')) {
+      journalMode(box, box.hidden);
+    } else {
+      DOC_BACK = S.entry ? S.entry.id : '';
+      DOC_MOBILE_BROWSE = true;
+      location.hash = '#/documents';
+    }
+  });
+  box.addEventListener('click', ev => { if (ev.target === box) journalMode(null, false); });
+  document.addEventListener('keydown', ev => {
+    if (ev.key === 'Escape' && !box.hidden) journalMode(null, false);
+  });
+}
 
 /* ---------- explorateur du codex ---------- */
 function initExplorer() {
@@ -1269,7 +1394,7 @@ function journalMode(box, open) {
       requestAnimationFrame(() => scrollTo(0, restore));
     }
   } else mobileJournalScroll = null;
-  for (const [id, buttonId] of [['qlog','qbtn'],['rlog','rbtn'],['slog','sbtn']]) {
+  for (const [id, buttonId] of [['qlog','qbtn'],['rlog','rbtn'],['slog','sbtn'],['dlog','dbtn']]) {
     const panel = document.getElementById(id), trigger = document.getElementById(buttonId);
     if (!panel || !trigger) continue;
     const active = !!open && panel === box;
@@ -1378,6 +1503,7 @@ function initRunes() {
   initQuests();
   initRunes();
   initSessions();
+  initDocuments();
   window.addEventListener('hashchange', route);
   route();
 })();
