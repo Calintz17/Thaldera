@@ -2968,7 +2968,7 @@
     "titre": "Démone majeure au service de Vassago",
     "parent": "temple-du-tenraku",
     "lieu": "temple-du-tenraku",
-    "statut": "inconnu",
+    "statut": "vivant",
     "img": "img/istra-belig/roshen-buru/pnj/absalom.webp",
     "question": "Absalom est-elle retournée aux Enfers ? Qu'en feront ceux à qui elle a désobéi ?",
     "resume": "Démone insaisissable que le groupe traque de ville en ville.",
@@ -3081,7 +3081,7 @@
         "teinte": "#752519"
       }
     ],
-    "attitude": "neutre",
+    "attitude": "ennemi",
     "etapes": [
       {
         "label": "Le Berger, à l'Île aux Moines",
