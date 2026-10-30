@@ -214,6 +214,16 @@ test('iPhone document reader: portrait pages, catalog and no horizontal overflow
   await page.locator('#dlog .qx').click();
   await expect(page.locator('#dlog')).toBeHidden();
   await page.locator('#stage .docreader').evaluate(el => el.scrollIntoView());
+  const overflowDebug = await page.evaluate(() => [...document.querySelectorAll('*')]
+    .filter(el => {
+      const b=el.getBoundingClientRect(),s=getComputedStyle(el);
+      return b.width>0 && (b.right > innerWidth+3 || b.left < -3) &&
+        s.display!=='none' && s.visibility!=='hidden';
+    }).slice(0,20).map(el => {
+      const b=el.getBoundingClientRect();
+      return { tag:el.tagName, id:el.id, cls:typeof el.className==='string'?el.className.slice(0,90):'', left:Math.round(b.left), right:Math.round(b.right), width:Math.round(b.width) };
+    }));
+  console.log('DOCUMENT_OVERFLOW_DIAG', JSON.stringify(overflowDebug));
   await noHorizontalOverflow(page);
   await page.goto('/#/magistrature', {waitUntil:'domcontentloaded'});
   await expect(page.locator('#panel a[href="#/documents/roshen-rapport-uramei"]')).toBeVisible({timeout:15000});
