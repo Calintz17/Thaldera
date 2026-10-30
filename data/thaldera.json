@@ -5128,41 +5128,6 @@
     "histoire": []
   },
   {
-    "id": "leth",
-    "type": "pnj",
-    "nom": "Leth",
-    "titre": "Informateur des Épingles",
-    "parent": "les-epingles",
-    "lieu": "usine-camont",
-    "statut": "inconnu",
-    "resume": "Il écrit derrière le dos de son chef.",
-    "connu": [
-      "Philippa et Jane trouvent dans la villa Graham sa lettre à Graham Gonn, écrite à l'insu de son chef : un homme envoyé du Passeur a demandé une équipe pour un coup important au Siège des Étoiles, chez l'Impératrice elle-même.",
-      "Le chef des Épingles est paniqué, certains veulent refuser, d'autres redoutent des représailles. Leth écrit être paumé. Un membre qui parlait trop a été éloigné pour monter un comptoir à Havre Noir pour le Passeur et la Griffe."
-    ],
-    "citation": {
-      "texte": "Si on me demande d'y aller, qu'est-ce que je fais, moi ? Je refuse et on nous pourchasse ?",
-      "qui": "Leth, dans sa lettre à Graham"
-    },
-    "relations": [
-      {
-        "cible": "graham-gonn",
-        "type": "informateur de",
-        "ton": "neutre",
-        "note": "Il le prévient du coup commandé par l'envoyé du Passeur.",
-        "inverse": "informé par"
-      },
-      {
-        "cible": "nix",
-        "type": "même gang que",
-        "ton": "neutre",
-        "inverse": "même gang que"
-      }
-    ],
-    "attitude": "neutre",
-    "histoire": []
-  },
-  {
     "id": "vieux-garde-graham",
     "type": "pnj",
     "nom": "Vieux garde de la villa Graham",
