@@ -1453,7 +1453,9 @@
         "legende": "La maison de Tembo"
       }
     ],
-    "attitude": "positif"
+    "attitude": "positif",
+    "img": "img/pnj/tembo.webp",
+    "teinte": "#754619"
   },
   {
     "id": "urrak",
@@ -1489,7 +1491,9 @@
         "legende": "La maison d'Urrak"
       }
     ],
-    "attitude": "positif"
+    "attitude": "positif",
+    "img": "img/pnj/urrak.webp",
+    "teinte": "#587519"
   },
   {
     "id": "shoba",
@@ -9321,7 +9325,9 @@
       "Il frappe à la masse cloutée, allonge une langue empoisonnée et crache un cône de feu et de nécrotique avec une lanterne.",
       "Un démon des mains du même nom attaque le groupe dans les catacombes de la cathédrale de Kord, à Keras Tauroc, quand il fouille l'autel détourné par Absalom. Il est vaincu."
     ],
-    "histoire": []
+    "histoire": [],
+    "img": "img/pnj/demon-des-mains.webp",
+    "teinte": "#755919"
   },
   {
     "id": "sahir-al-basma",

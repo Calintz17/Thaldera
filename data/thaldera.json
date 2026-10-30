@@ -4079,7 +4079,9 @@
     "connu": [
       "Voleur de quinze ans au service de la Rectrice. Il veille sur Luka comme sur un petit frère. Quand Luka disparaît, il demande à Jane de l'aider à le retrouver sans alerter les adultes."
     ],
-    "histoire": []
+    "histoire": [],
+    "img": "img/pnj/soren.webp",
+    "teinte": "#752d19"
   },
   {
     "id": "luka",

@@ -4519,7 +4519,9 @@
     "histoire": [],
     "connu": [
       "Il attaque la tour d'Eamonn avec l'Oni aux masques. Le groupe le vainc et récupère sa naginata."
-    ]
+    ],
+    "img": "img/pnj/porteur-de-hallebarde.webp",
+    "teinte": "#753419"
   },
   {
     "id": "faucheuse-d-echos",
@@ -4534,7 +4536,9 @@
     "histoire": [],
     "connu": [
       "Elle attaque la tour d'Eamonn avec l'Oni aux masques. Le groupe la vainc."
-    ]
+    ],
+    "img": "img/pnj/faucheuse-d-echos.webp",
+    "teinte": "#752f19"
   },
   {
     "id": "psa-87",
