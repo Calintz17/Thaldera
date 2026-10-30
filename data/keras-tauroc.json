@@ -3086,7 +3086,7 @@
     "type": "lieu",
     "nom": "L'intérieur du manoir",
     "titre": "Là où Gran Brijit reçoit le groupe",
-    "parent": "manoir-des-ligaments",
+    "parent": "cabane-de-gran-brijit",
     "resume": "Le manoir où Gran Brijit reçoit le groupe avant son départ de Cap Cornes.",
     "connu": [
       "Philippa y a eu une vision d'une balance désaxée. Olyssane y a ouvert le passage en faisant couler son sang."
@@ -6087,7 +6087,7 @@
   },
   {
     "id": "la-rencontre",
-    "type": "lieu",
+    "type": "ville",
     "nom": "La Rencontre",
     "titre": "Le lieu du rituel annuel",
     "parent": "istra",
@@ -6095,7 +6095,8 @@
     "pos": {
       "x": 0.616,
       "y": 0.5346
-    }
+    },
+    "typeLabel": "Lieu diplomatique"
   },
   {
     "id": "rangs-des-mirens",
