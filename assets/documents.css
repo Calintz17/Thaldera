@@ -95,3 +95,9 @@ body.document-reading.journal-open #scene .stage{width:100%}
     white-space:nowrap;
   }
 }
+
+/* Do not let dormant map, gallery or caption layers enlarge WebKit's document
+   scroll width when a source document is opened from a location profile. */
+body.document-reading #stage > :not(.docreader) {
+  display:none !important;
+}
