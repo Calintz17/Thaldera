@@ -14,6 +14,8 @@ jobs:
         run: node --check assets/app.js
       - name: Test navigation and map inventory
         run: node tests/navigation.test.cjs
+      - name: Validate player document inventory and spoiler-safe metadata
+        run: node tests/documents.test.cjs
       - name: Check entity and relation integrity
         run: python3 tools/check_data.py
       - name: Audit images, positions and structure
