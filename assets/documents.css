@@ -133,3 +133,30 @@ body.document-reading.doc-context .qlog[hidden]{display:none!important}
     border-left:0;border-top:1px solid rgba(196,163,106,.3)
   }
 }
+
+/* v99: show the source prop immediately. Its title, provenance and stakes
+   remain in the right-hand catalog, so the artwork needs no second heading. */
+.docreader{padding-top:clamp(7px,1vw,13px)}
+.docreader-wrap{position:relative}
+.docreader .doc-stack{padding-top:0}
+.doc-reader-section{margin-bottom:18px;padding-bottom:18px}
+.docreader .doc-reader-section:first-child{margin-top:0}
+.docreader .doc-back{
+  position:sticky;top:5px;z-index:6;float:left;
+  margin:3px 0 -36px 3px;padding:8px 12px;
+  border:1px solid rgba(224,185,113,.58);
+  border-radius:3px;
+  background:rgba(18,21,29,.92);
+  box-shadow:0 4px 17px rgba(0,0,0,.56);
+  color:#f3d9a6;font:700 12px/1.15 var(--ui);
+  text-decoration:none;
+  max-width:calc(100% - 12px);
+}
+.docreader .doc-back:hover{background:#3c3025;color:#fff0cf}
+.docreader .doc-back:focus-visible{outline:2px solid #f0c979;outline-offset:2px}
+.docreader .doc-pages{clear:both}
+@media(max-width:860px){
+ .docreader{padding-top:7px!important}
+ .docreader .doc-back{top:4px;padding:7px 9px;font-size:11px}
+ .docreader .doc-reader-section{margin-bottom:14px;padding-bottom:14px}
+}
