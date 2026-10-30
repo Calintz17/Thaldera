@@ -2,64 +2,278 @@
   "version": 1,
   "documents": [
     {
-      "id": "agran-astariel-journal",
-      "titre": "Journal de bord de l'Astariel",
-      "region": "Agran",
-      "type": "Journal",
-      "decouverte": "Trouvé à bord de l'Astariel, après le combat contre Ossyraal.",
-      "description": "Journal lié à l'exploration de l'Astariel et aux événements consignés à bord. Trouvé à bord de l'Astariel, après le combat contre Ossyraal.",
+      "id": "vesper-agent",
+      "titre": "Lettre d'un agent de l'Aile d'Argent",
+      "region": "Le Vesper",
+      "type": "Lettre",
+      "decouverte": "Sur le squelette d'un agent de l'Aile d'Argent, devant le village des Nagas.",
+      "description": "Lettre trouvée sur le squelette d'un agent de l'Aile d'Argent, devant le village des Nagas.",
       "pages": [
-        "img/props/agran-journal-de-bord-trouve-dans-le-vaisseau-imperial-astariel-apres-le-combat-contre-lossyraal.webp",
-        "img/props/agran-journal-de-bord-trouve-dans-le-vaisseau-imperial-astariel-apres-le-combat-contre-lossyraal2.webp",
-        "img/props/agran-journal-de-bord-trouve-dans-le-vaisseau-imperial-astariel-apres-le-combat-contre-lossyraal3.webp"
+        "img/props/le-vesper-lettre-dun-agent-de-laile-dargent.webp"
       ],
       "liens": [
         {
-          "id": "epave-de-l-astariel",
-          "texte": "Trouvé à bord de l'Astariel, après le combat contre Ossyraal. Le groupe conserve ce document."
+          "id": "ile-du-vesper",
+          "texte": "Devant le village des Nagas, le groupe trouve une lettre sur le squelette d'un agent de l'Aile d'Argent."
         },
         {
-          "id": "ossyraal",
-          "texte": "Trouvé à bord de l'Astariel, après le combat contre Ossyraal. Le groupe conserve ce document."
+          "id": "aile-d-argent",
+          "texte": "Devant le village des Nagas, le groupe trouve une lettre sur le squelette d'un agent de l'Aile d'Argent."
         }
       ],
-      "confirmation": "lieu-nommé"
+      "confirmation": "précisé-par-MJ",
+      "ordre": 1
     },
     {
-      "id": "agran-ordre-imperial",
-      "titre": "Ordre de mission impérial",
-      "region": "Agran",
-      "type": "Ordre",
-      "decouverte": "Retrouvé dans l'épave du Grauwacht, après le combat contre Ossyraal.",
-      "description": "Ordre officiel en rapport avec l'expédition du vaisseau impérial. Retrouvé dans l'épave du Grauwacht, après le combat contre Ossyraal.",
+      "id": "obaline-lettre-chasseur",
+      "titre": "Lettre portée par un chasseur du Dominion",
+      "region": "Obaline",
+      "type": "Lettre",
+      "decouverte": "Récupérée sur un chasseur du Dominion.",
+      "description": "Lettre récupérée sur un chasseur du Dominion à Obaline.",
       "pages": [
-        "img/props/agran-ordre-de-mission-de-limperatrice-trouvee-apres-le-combat-contre-lossyraal-dans-le-shipwreak-du-grauwacht.webp"
+        "img/props/obaline-lettre-retrouvee-sur-le-chasseur-du-dominion.webp"
       ],
       "liens": [
         {
-          "id": "epave-du-grauwacht",
-          "texte": "Retrouvé dans l'épave du Grauwacht, après le combat contre Ossyraal. Le groupe conserve ce document."
+          "id": "obaline",
+          "texte": "Récupérée sur un chasseur du Dominion."
         }
       ],
-      "confirmation": "lieu-nommé"
+      "confirmation": "lieu-nommé",
+      "ordre": 2
     },
     {
-      "id": "brakka-journal-mesa",
-      "titre": "Journal non traduit du monastère",
-      "region": "Steppes rouges",
+      "id": "obaline-avis-ira",
+      "titre": "Avis de recherche : Ira Malden",
+      "region": "Obaline",
+      "type": "Affiche",
+      "decouverte": "Sur le panneau d'affichage de la place de la ville.",
+      "description": "Avis visant Ira Malden, affiché sur la place de la ville.",
+      "pages": [
+        "img/props/obaline-avis-de-recherche-ira-malden.webp"
+      ],
+      "liens": [
+        {
+          "id": "obaline",
+          "texte": "Le groupe consulte un avis de recherche sur le panneau d'affichage de la place."
+        },
+        {
+          "id": "ira-malden",
+          "texte": "Le groupe consulte un avis de recherche sur le panneau d'affichage de la place."
+        }
+      ],
+      "confirmation": "précisé-par-MJ",
+      "ordre": 3
+    },
+    {
+      "id": "obaline-avis-philippa",
+      "titre": "Avis de recherche : Philippa",
+      "region": "Obaline",
+      "type": "Affiche",
+      "decouverte": "Sur le panneau d'affichage de la place de la ville.",
+      "description": "Avis visant Philippa, affiché sur la place de la ville.",
+      "pages": [
+        "img/props/obaline-avis-de-recherche-philippa.webp"
+      ],
+      "liens": [
+        {
+          "id": "obaline",
+          "texte": "Le groupe consulte un avis de recherche sur le panneau d'affichage de la place."
+        }
+      ],
+      "confirmation": "précisé-par-MJ",
+      "ordre": 4
+    },
+    {
+      "id": "obaline-avis-varsha",
+      "titre": "Avis de recherche : Varsha",
+      "region": "Obaline",
+      "type": "Affiche",
+      "decouverte": "Sur le panneau d'affichage de la place de la ville.",
+      "description": "Avis visant Varsha, affiché sur la place de la ville.",
+      "pages": [
+        "img/props/obaline-avis-de-recherche-varsha.webp"
+      ],
+      "liens": [
+        {
+          "id": "obaline",
+          "texte": "Le groupe consulte un avis de recherche sur le panneau d'affichage de la place."
+        }
+      ],
+      "confirmation": "précisé-par-MJ",
+      "ordre": 5
+    },
+    {
+      "id": "obaline-avis-lenach",
+      "titre": "Avis de recherche : Lenach",
+      "region": "Obaline",
+      "type": "Affiche",
+      "decouverte": "Affiche retrouvée à l'auberge du Camélia.",
+      "description": "Avis de recherche concernant Lenach, trouvé à l'auberge du Camélia.",
+      "pages": [
+        "img/props/obaline-lauberge-du-camelia-avis-de-recherche-lenach.webp"
+      ],
+      "liens": [
+        {
+          "id": "auberge-du-camelia",
+          "texte": "Affiche retrouvée à l'auberge du Camélia."
+        },
+        {
+          "id": "maison-lenach",
+          "texte": "Affiche retrouvée à l'auberge du Camélia."
+        }
+      ],
+      "confirmation": "lieu-nommé",
+      "ordre": 6
+    },
+    {
+      "id": "obaline-propagande-dominion",
+      "titre": "Propagande du Dominion",
+      "region": "Obaline",
+      "type": "Affiche",
+      "decouverte": "Affiche vue à Obaline.",
+      "description": "Affiche de propagande du Dominion, consultée à Obaline.",
+      "pages": [
+        "img/props/obaline-propagande-du-dominion.webp"
+      ],
+      "liens": [
+        {
+          "id": "obaline",
+          "texte": "Affiche vue à Obaline."
+        }
+      ],
+      "confirmation": "lieu-nommé",
+      "ordre": 7
+    },
+    {
+      "id": "voros-affiche-jericho",
+      "titre": "Affiche de Jericho",
+      "region": "Voros",
+      "type": "Affiche",
+      "decouverte": "Affiche trouvée à Voros ; emplacement exact à confirmer.",
+      "description": "Affiche liée à Jericho, vue à Voros.",
+      "pages": [
+        "img/props/voros-affiche-de-jericho.webp"
+      ],
+      "liens": [
+        {
+          "id": "jericho",
+          "texte": "Affiche trouvée à Voros ; emplacement exact à confirmer."
+        },
+        {
+          "id": "voros",
+          "texte": "Affiche trouvée à Voros ; emplacement exact à confirmer."
+        }
+      ],
+      "confirmation": "à-confirmer",
+      "ordre": 8
+    },
+    {
+      "id": "voros-lettre-village",
+      "titre": "Lettre du village abandonné",
+      "region": "Voros",
+      "type": "Lettre",
+      "decouverte": "Retrouvée dans le village abandonné après le combat contre la Griffe.",
+      "description": "Lettre découverte dans le village abandonné après le combat contre la Griffe.",
+      "pages": [
+        "img/props/voros-lettre-retrouvee-dans-le-village-abandonne-apres-le-combat-contre-la-griffe.webp",
+        "img/props/voros-lettre-retrouvee-dans-le-village-abandonne-apres-le-combat-contre-la-griffe2.webp"
+      ],
+      "liens": [
+        {
+          "id": "voros",
+          "texte": "Retrouvée dans le village abandonné après le combat contre la Griffe."
+        }
+      ],
+      "confirmation": "lieu-nommé",
+      "ordre": 9
+    },
+    {
+      "id": "voros-lettre-skrell",
+      "titre": "Lettre de Lavande à Skrell",
+      "region": "Voros",
+      "type": "Lettre",
+      "decouverte": "Retrouvée parmi les affaires de Skrell, après sa mort.",
+      "description": "Lettre de Lavande récupérée parmi les affaires de Skrell après sa mort.",
+      "pages": [
+        "img/props/voros-lettre-envoyee-par-lavande-a-skrell-retrouvee-apres-que-les-joueurs-ait-tue-skrell.webp"
+      ],
+      "liens": [
+        {
+          "id": "skrell",
+          "texte": "Retrouvée parmi les affaires de Skrell, après sa mort."
+        },
+        {
+          "id": "maison-condamnee-skrell",
+          "texte": "Retrouvée parmi les affaires de Skrell, après sa mort."
+        }
+      ],
+      "confirmation": "lieu-nommé",
+      "ordre": 10
+    },
+    {
+      "id": "ile-moines-journal-augustus",
+      "titre": "Extraits du journal de frère Augustus",
+      "region": "Île aux Moines",
       "type": "Journal",
-      "decouverte": "Retrouvé au monastère abandonné, sur une mesa, après l'affrontement contre le Roc.",
-      "description": "Journal non traduit, conservé comme indice de l'exploration du monastère. Retrouvé au monastère abandonné, sur une mesa, après l'affrontement contre le Roc.",
+      "decouverte": "Dans la maison éclairée des quartiers nord de l'Île aux Moines.",
+      "description": "Journal de frère Augustus trouvé dans la maison éclairée des quartiers nord de l'Île aux Moines.",
       "pages": [
-        "img/props/brakka-journal-trouve-non-traduit-dans-le-monastere-abandonne-au-sommet-dune-mesa-dans-les-steppes-rouges-apres-le-combat-contre-le-roc.webp"
+        "img/props/lile-aux-moines-extrait-du-journal-de-frere-augustus-jour-660.webp",
+        "img/props/lile-aux-moines-extrait-du-journal-de-frere-augustus-jours-661-a-664.webp",
+        "img/props/lile-aux-moines-extrait-du-journal-de-frere-augustus-jour-665.webp"
       ],
       "liens": [
         {
-          "id": "monastere-des-steppes",
-          "texte": "Retrouvé au monastère abandonné, sur une mesa, après l'affrontement contre le Roc. Le groupe conserve ce document."
+          "id": "village-monastique-ile-aux-moines",
+          "texte": "Dans la maison éclairée des quartiers nord, le groupe trouve le journal de frère Augustus."
+        },
+        {
+          "id": "frere-augustus-carrow",
+          "texte": "Le groupe découvre des pages du journal de frère Augustus dans la maison éclairée."
         }
       ],
-      "confirmation": "lieu-nommé"
+      "confirmation": "précisé-par-MJ",
+      "ordre": 11
+    },
+    {
+      "id": "ile-moines-journal-septim",
+      "titre": "Extrait du journal de frère Septim",
+      "region": "Île aux Moines",
+      "type": "Journal",
+      "decouverte": "Retrouvé dans la maison éclairée du village de l'Île aux Moines.",
+      "description": "Extrait du journal de frère Septim, trouvé dans la maison éclairée de l'Île aux Moines.",
+      "pages": [
+        "img/props/lile-aux-moines-extrait-du-journal-de-frere-septim-retrouvee-dans-la-maison-eclairee-4.webp"
+      ],
+      "liens": [
+        {
+          "id": "village-monastique-ile-aux-moines",
+          "texte": "Retrouvé dans la maison éclairée du village de l'Île aux Moines."
+        }
+      ],
+      "confirmation": "lieu-nommé",
+      "ordre": 12
+    },
+    {
+      "id": "ile-moines-lettre-berger",
+      "titre": "Lettre trouvée parmi les affaires du Berger",
+      "region": "Île aux Moines",
+      "type": "Lettre",
+      "decouverte": "Retrouvée dans les affaires du Berger, sur l'Île aux Moines.",
+      "description": "Lettre retrouvée parmi les affaires du Berger sur l'Île aux Moines.",
+      "pages": [
+        "img/props/lile-aux-moines-lettre-retrouvee-dans-les-affaires-du-berger.webp"
+      ],
+      "liens": [
+        {
+          "id": "ile-aux-moines",
+          "texte": "Retrouvée dans les affaires du Berger, sur l'Île aux Moines."
+        }
+      ],
+      "confirmation": "lieu-nommé",
+      "ordre": 13
     },
     {
       "id": "camont-lettre-graham",
@@ -67,97 +281,18 @@
       "region": "Camont",
       "type": "Lettre",
       "decouverte": "Retrouvée dans les coffres de la villa Graham.",
-      "description": "Correspondance récupérée pendant l'infiltration de la villa Graham. Retrouvée dans les coffres de la villa Graham.",
+      "description": "Lettre retrouvée dans les coffres de la villa Graham.",
       "pages": [
         "img/props/camont-lettre-retrouvee-dans-les-coffres-de-la-villa-graham-apres-les-avoirs-pilles.webp"
       ],
       "liens": [
         {
           "id": "villa-graham",
-          "texte": "Retrouvée dans les coffres de la villa Graham. Le groupe conserve ce document."
+          "texte": "Retrouvée dans les coffres de la villa Graham."
         }
       ],
-      "confirmation": "lieu-nommé"
-    },
-    {
-      "id": "cap-cornes-liste-oni",
-      "titre": "Liste trouvée sur l'Oni aux Masques",
-      "region": "Cap Cornes",
-      "type": "Liste",
-      "decouverte": "Retrouvée sur le corps de l'Oni aux Masques, après le combat.",
-      "description": "Liste associée à l'Oni aux Masques et à l'affrontement de la tour d'Eamonn. Retrouvée sur le corps de l'Oni aux Masques, après le combat.",
-      "pages": [
-        "img/props/cap-cornes-liste-du-tribunal-de-chair-retrouvee-sur-le-cadavre-de-loni-aux-masques.webp"
-      ],
-      "liens": [
-        {
-          "id": "oni-aux-masques",
-          "texte": "Retrouvée sur le corps de l'Oni aux Masques, après le combat. Le groupe conserve ce document."
-        },
-        {
-          "id": "tour-eamonn",
-          "texte": "Retrouvée sur le corps de l'Oni aux Masques, après le combat. Le groupe conserve ce document."
-        }
-      ],
-      "confirmation": "lieu-nommé"
-    },
-    {
-      "id": "keras-livre-hematome",
-      "titre": "Extrait du livre de combat d'Hématome",
-      "region": "Keras Tauroc",
-      "type": "Documents",
-      "decouverte": "Remis par Hématome au groupe pendant le mois perdu.",
-      "description": "Extrait remis par Hématome concernant ses pratiques de combat. Remis par Hématome au groupe pendant le mois perdu.",
-      "pages": [
-        "img/props/keras-tauroc-extrait-du-livre-de-combat-dhematome-donne-par-ce-dernier-au-groupe-lorsquils-le-rencontrent-pendant-le-mois-perdu.webp"
-      ],
-      "liens": [
-        {
-          "id": "hematome",
-          "texte": "Remis par Hématome au groupe pendant le mois perdu. Le groupe conserve ce document."
-        }
-      ],
-      "confirmation": "lieu-nommé"
-    },
-    {
-      "id": "keras-lettre-ferox",
-      "titre": "Lettre trouvée chez Ferox",
-      "region": "Keras Tauroc",
-      "type": "Lettre",
-      "decouverte": "Retrouvée dans les affaires de Ferox après sa confrontation avec le groupe.",
-      "description": "Correspondance utile à l'enquête du groupe autour de Ferox. Retrouvée dans les affaires de Ferox après sa confrontation avec le groupe.",
-      "pages": [
-        "img/props/keras-tauroc-lettre-dabsalom-retrouvee-chez-ferox-apres-lavoir-confondu-qui-prouve-quelle-la-manipule-et-quil-est-coupable-davoir-assassine-otoba.webp"
-      ],
-      "liens": [
-        {
-          "id": "villa-ferox",
-          "texte": "Retrouvée dans les affaires de Ferox après sa confrontation avec le groupe. Le groupe conserve ce document."
-        },
-        {
-          "id": "calvinus-ferox",
-          "texte": "Retrouvée dans les affaires de Ferox après sa confrontation avec le groupe. Le groupe conserve ce document."
-        }
-      ],
-      "confirmation": "lieu-nommé"
-    },
-    {
-      "id": "keras-lettre-cornua",
-      "titre": "Lettre reçue au Cornua Fracta",
-      "region": "Keras Tauroc",
-      "type": "Lettre",
-      "decouverte": "Glissée à Philippa alors qu'elle jouait de la musique au Cornua Fracta.",
-      "description": "Message privé remis à Philippa pendant sa prestation à l'auberge. Glissée à Philippa alors qu'elle jouait de la musique au Cornua Fracta.",
-      "pages": [
-        "img/props/keras-tauroc-lettre-glissee-a-philippa-alors-quelle-jouait-de-la-musique-a-lauberge-cornua-fracta-pendant-le-mois-perdu.webp"
-      ],
-      "liens": [
-        {
-          "id": "cornua-fracta",
-          "texte": "Glissée à Philippa alors qu'elle jouait de la musique au Cornua Fracta. Le groupe conserve ce document."
-        }
-      ],
-      "confirmation": "lieu-nommé"
+      "confirmation": "lieu-nommé",
+      "ordre": 14
     },
     {
       "id": "khazad-bibliotheque",
@@ -165,7 +300,7 @@
       "region": "Kazad Marunn",
       "type": "Documents",
       "decouverte": "Retrouvés pendant l'exploration de la Bibliothèque Enfouie.",
-      "description": "Pièces d'archives collectées dans la Bibliothèque Enfouie. Retrouvés pendant l'exploration de la Bibliothèque Enfouie.",
+      "description": "Pages d'archives recueillies dans la Bibliothèque Enfouie.",
       "pages": [
         "img/props/khazad-maruun-document-retrouve-dans-la-bibliotheque-enfouie.webp",
         "img/props/khazad-maruun-document-retrouve-dans-la-bibliotheque-enfouie2.webp"
@@ -173,10 +308,11 @@
       "liens": [
         {
           "id": "bibliotheque-enfouie",
-          "texte": "Retrouvés pendant l'exploration de la Bibliothèque Enfouie. Le groupe conserve ce document."
+          "texte": "Retrouvés pendant l'exploration de la Bibliothèque Enfouie."
         }
       ],
-      "confirmation": "lieu-nommé"
+      "confirmation": "lieu-nommé",
+      "ordre": 15
     },
     {
       "id": "khazad-donjon",
@@ -184,7 +320,7 @@
       "region": "Kazad Marunn",
       "type": "Documents",
       "decouverte": "Retrouvés pendant l'exploration du donjon d'Aram Sharûn.",
-      "description": "Pages récupérées lors de l'exploration du donjon. Retrouvés pendant l'exploration du donjon d'Aram Sharûn.",
+      "description": "Documents découverts dans le donjon d'Aram Sharûn.",
       "pages": [
         "img/props/khazad-maruun-document-retrouve-dans-le-donjon-daram-sharun.webp",
         "img/props/khazad-maruun-document-retrouve-dans-le-donjon-daram-sharun2.webp",
@@ -195,184 +331,30 @@
       "liens": [
         {
           "id": "tour-de-resonance",
-          "texte": "Retrouvés pendant l'exploration du donjon d'Aram Sharûn. Le groupe conserve ce document."
+          "texte": "Retrouvés pendant l'exploration du donjon d'Aram Sharûn."
         }
       ],
-      "confirmation": "lieu-nommé"
+      "confirmation": "lieu-nommé",
+      "ordre": 16
     },
     {
-      "id": "vesper-agent",
-      "titre": "Lettre d'un agent de l'Aile d'Argent",
-      "region": "Le Vesper",
-      "type": "Lettre",
-      "decouverte": "Devant le village de Nagas, pendant l'ascension du temple sur l'Île du Vesper.",
-      "description": "Lettre portée par un agent de l'Aile d'Argent rencontré à l'approche du village gardant l'accès au temple.",
-      "pages": [
-        "img/props/le-vesper-lettre-dun-agent-de-laile-dargent.webp"
-      ],
-      "liens": [
-        {
-          "id": "ile-du-vesper",
-          "texte": "Pendant l'ascension vers le temple, le groupe récupère une lettre sur un agent de l'Aile d'Argent à l'approche du village de Nagas."
-        },
-        {
-          "id": "aile-d-argent",
-          "texte": "Une lettre portée par un agent de l'Aile d'Argent est récupérée sur l'Île du Vesper."
-        }
-      ],
-      "confirmation": "scénario-PDF-localisé"
-    },
-    {
-      "id": "ile-moines-journal-septim",
+      "id": "temple-brumeux-journal-septim",
       "titre": "Extrait du journal de frère Septim",
-      "region": "Île aux Moines",
+      "region": "Temple Brumeux",
       "type": "Journal",
-      "decouverte": "Retrouvé dans la maison éclairée du village de l'Île aux Moines.",
-      "description": "Page de journal liée à frère Septim et au village de l'île. Retrouvé dans la maison éclairée du village de l'Île aux Moines.",
+      "decouverte": "Retrouvé après le combat contre Paladinis et Clericalis.",
+      "description": "Journal trouvé après le combat contre Paladinis et Clericalis au Temple Brumeux.",
       "pages": [
-        "img/props/lile-aux-moines-extrait-du-journal-de-frere-septim-retrouvee-dans-la-maison-eclairee-4.webp"
+        "img/props/temple-brumeux-extrait-du-journal-de-frere-septim-retrouve-apres-avoir-vaincu-les-statues-paladinis-et-clericalis.webp"
       ],
       "liens": [
         {
-          "id": "village-monastique-ile-aux-moines",
-          "texte": "Retrouvé dans la maison éclairée du village de l'Île aux Moines. Le groupe conserve ce document."
+          "id": "temple-brumeux",
+          "texte": "Retrouvé après le combat contre Paladinis et Clericalis."
         }
       ],
-      "confirmation": "lieu-nommé"
-    },
-    {
-      "id": "ile-moines-lettre-berger",
-      "titre": "Lettre trouvée parmi les affaires du Berger",
-      "region": "Île aux Moines",
-      "type": "Lettre",
-      "decouverte": "Retrouvée dans les affaires du Berger, sur l'Île aux Moines.",
-      "description": "Lettre découverte parmi les affaires du Berger. Retrouvée dans les affaires du Berger, sur l'Île aux Moines.",
-      "pages": [
-        "img/props/lile-aux-moines-lettre-retrouvee-dans-les-affaires-du-berger.webp"
-      ],
-      "liens": [
-        {
-          "id": "ile-aux-moines",
-          "texte": "Retrouvée dans les affaires du Berger, sur l'Île aux Moines. Le groupe conserve ce document."
-        }
-      ],
-      "confirmation": "lieu-nommé"
-    },
-    {
-      "id": "obaline-avis-ira",
-      "titre": "Avis de recherche : Ira Malden",
-      "region": "Obaline",
-      "type": "Affiche",
-      "decouverte": "Affiche consultée à Obaline ; emplacement précis inconnu.",
-      "description": "Avis public concernant Ira Malden. Affiche consultée à Obaline ; emplacement précis inconnu.",
-      "pages": [
-        "img/props/obaline-avis-de-recherche-ira-malden.webp"
-      ],
-      "liens": [
-        {
-          "id": "obaline",
-          "texte": "Affiche consultée à Obaline ; emplacement précis inconnu. Le groupe conserve ce document."
-        },
-        {
-          "id": "ira-malden",
-          "texte": "Affiche consultée à Obaline ; emplacement précis inconnu. Le groupe conserve ce document."
-        }
-      ],
-      "confirmation": "à-confirmer"
-    },
-    {
-      "id": "obaline-avis-philippa",
-      "titre": "Avis de recherche : Philippa",
-      "region": "Obaline",
-      "type": "Affiche",
-      "decouverte": "Affiche consultée à Obaline ; emplacement précis inconnu.",
-      "description": "Avis public concernant Philippa. Affiche consultée à Obaline ; emplacement précis inconnu.",
-      "pages": [
-        "img/props/obaline-avis-de-recherche-philippa.webp"
-      ],
-      "liens": [
-        {
-          "id": "obaline",
-          "texte": "Affiche consultée à Obaline ; emplacement précis inconnu. Le groupe conserve ce document."
-        }
-      ],
-      "confirmation": "à-confirmer"
-    },
-    {
-      "id": "obaline-avis-varsha",
-      "titre": "Avis de recherche : Varsha",
-      "region": "Obaline",
-      "type": "Affiche",
-      "decouverte": "Affiche consultée à Obaline ; emplacement précis inconnu.",
-      "description": "Avis public concernant Varsha. Affiche consultée à Obaline ; emplacement précis inconnu.",
-      "pages": [
-        "img/props/obaline-avis-de-recherche-varsha.webp"
-      ],
-      "liens": [
-        {
-          "id": "obaline",
-          "texte": "Affiche consultée à Obaline ; emplacement précis inconnu. Le groupe conserve ce document."
-        }
-      ],
-      "confirmation": "à-confirmer"
-    },
-    {
-      "id": "obaline-avis-lenach",
-      "titre": "Avis de recherche : Lenach",
-      "region": "Obaline",
-      "type": "Affiche",
-      "decouverte": "Affiche retrouvée à l'auberge du Camélia.",
-      "description": "Avis de recherche consulté à l'auberge du Camélia. Affiche retrouvée à l'auberge du Camélia.",
-      "pages": [
-        "img/props/obaline-lauberge-du-camelia-avis-de-recherche-lenach.webp"
-      ],
-      "liens": [
-        {
-          "id": "auberge-du-camelia",
-          "texte": "Affiche retrouvée à l'auberge du Camélia. Le groupe conserve ce document."
-        },
-        {
-          "id": "maison-lenach",
-          "texte": "Affiche retrouvée à l'auberge du Camélia. Le groupe conserve ce document."
-        }
-      ],
-      "confirmation": "lieu-nommé"
-    },
-    {
-      "id": "obaline-lettre-chasseur",
-      "titre": "Lettre portée par un chasseur du Dominion",
-      "region": "Obaline",
-      "type": "Lettre",
-      "decouverte": "Récupérée sur un chasseur du Dominion.",
-      "description": "Correspondance récupérée sur un chasseur du Dominion. Récupérée sur un chasseur du Dominion.",
-      "pages": [
-        "img/props/obaline-lettre-retrouvee-sur-le-chasseur-du-dominion.webp"
-      ],
-      "liens": [
-        {
-          "id": "obaline",
-          "texte": "Récupérée sur un chasseur du Dominion. Le groupe conserve ce document."
-        }
-      ],
-      "confirmation": "lieu-nommé"
-    },
-    {
-      "id": "obaline-propagande-dominion",
-      "titre": "Propagande du Dominion",
-      "region": "Obaline",
-      "type": "Affiche",
-      "decouverte": "Affiche vue à Obaline.",
-      "description": "Texte de propagande visible lors du passage à Obaline. Affiche vue à Obaline.",
-      "pages": [
-        "img/props/obaline-propagande-du-dominion.webp"
-      ],
-      "liens": [
-        {
-          "id": "obaline",
-          "texte": "Affiche vue à Obaline. Le groupe conserve ce document."
-        }
-      ],
-      "confirmation": "lieu-nommé"
+      "confirmation": "lieu-nommé",
+      "ordre": 17
     },
     {
       "id": "port-flyer-ether",
@@ -380,21 +362,22 @@
       "region": "Port Doëlan",
       "type": "Affiche",
       "decouverte": "Lue sur un panneau d'affichage de la ville.",
-      "description": "Annonce commerciale publique du Comptoir de l'Éther. Lue sur un panneau d'affichage de la ville.",
+      "description": "Annonce du Comptoir de l'Éther placardée à Port Doëlan.",
       "pages": [
         "img/props/port-doelan-flyer-trouve-sur-un-panneau-daffichage-pour-faire-la-publicite-du-comptoir-de-lether.webp"
       ],
       "liens": [
         {
           "id": "port-doelan",
-          "texte": "Lue sur un panneau d'affichage de la ville. Le groupe conserve ce document."
+          "texte": "Lue sur un panneau d'affichage de la ville."
         },
         {
           "id": "comptoir-de-l-ether",
-          "texte": "Lue sur un panneau d'affichage de la ville. Le groupe conserve ce document."
+          "texte": "Lue sur un panneau d'affichage de la ville."
         }
       ],
-      "confirmation": "lieu-nommé"
+      "confirmation": "lieu-nommé",
+      "ordre": 18
     },
     {
       "id": "port-flyer-valkur",
@@ -402,21 +385,22 @@
       "region": "Port Doëlan",
       "type": "Affiche",
       "decouverte": "Lue sur un panneau d'affichage de la ville.",
-      "description": "Annonce publique liée au temple de Valkur. Lue sur un panneau d'affichage de la ville.",
+      "description": "Annonce du temple de Valkur affichée à Port Doëlan.",
       "pages": [
         "img/props/port-doelan-flyer-trouve-sur-un-panneau-daffichage-pour-faire-la-publicite-du-temple-de-valkur.webp"
       ],
       "liens": [
         {
           "id": "port-doelan",
-          "texte": "Lue sur un panneau d'affichage de la ville. Le groupe conserve ce document."
+          "texte": "Lue sur un panneau d'affichage de la ville."
         },
         {
           "id": "temple-de-valkur",
-          "texte": "Lue sur un panneau d'affichage de la ville. Le groupe conserve ce document."
+          "texte": "Lue sur un panneau d'affichage de la ville."
         }
       ],
-      "confirmation": "lieu-nommé"
+      "confirmation": "lieu-nommé",
+      "ordre": 19
     },
     {
       "id": "port-flyer-mobilisation",
@@ -424,17 +408,18 @@
       "region": "Port Doëlan",
       "type": "Affiche",
       "decouverte": "Lu sur un panneau d'affichage de la ville.",
-      "description": "Appel public à la mobilisation dans la ville. Lu sur un panneau d'affichage de la ville.",
+      "description": "Appel à la mobilisation affiché dans les rues de Port Doëlan.",
       "pages": [
         "img/props/port-doelan-flyer-trouve-sur-un-panneau-daffichage-pour-mobiliser-les-troupes-dans-la-ville.webp"
       ],
       "liens": [
         {
           "id": "port-doelan",
-          "texte": "Lu sur un panneau d'affichage de la ville. Le groupe conserve ce document."
+          "texte": "Lu sur un panneau d'affichage de la ville."
         }
       ],
-      "confirmation": "lieu-nommé"
+      "confirmation": "lieu-nommé",
+      "ordre": 20
     },
     {
       "id": "port-flyer-spezza",
@@ -442,43 +427,45 @@
       "region": "Port Doëlan",
       "type": "Affiche",
       "decouverte": "Lue sur un panneau d'affichage de la ville.",
-      "description": "Affiche de propagande publique à la gloire de Spezza. Lue sur un panneau d'affichage de la ville.",
+      "description": "Affiche de propagande en l'honneur de Spezza, placardée en ville.",
       "pages": [
         "img/props/port-doelan-flyer-trouve-sur-un-panneau-daffichage-propagande-a-la-gloire-de-spezza.webp"
       ],
       "liens": [
         {
           "id": "port-doelan",
-          "texte": "Lue sur un panneau d'affichage de la ville. Le groupe conserve ce document."
+          "texte": "Lue sur un panneau d'affichage de la ville."
         },
         {
           "id": "chateau-spezza",
-          "texte": "Lue sur un panneau d'affichage de la ville. Le groupe conserve ce document."
+          "texte": "Lue sur un panneau d'affichage de la ville."
         }
       ],
-      "confirmation": "lieu-nommé"
+      "confirmation": "lieu-nommé",
+      "ordre": 21
     },
     {
       "id": "port-lettre-matthias",
       "titre": "Lettre de mission de Matthias Holbrekt",
       "region": "Port Doëlan",
       "type": "Lettre",
-      "decouverte": "Retrouvée sur le corps de Matthias Holbrekt.",
-      "description": "Lettre de mission récupérée après l'affrontement avec Matthias. Retrouvée sur le corps de Matthias Holbrekt.",
+      "decouverte": "Retrouvée sur le cadavre de Matthias Holbrekt, allié du groupe.",
+      "description": "Lettre de mission retrouvée sur le cadavre de Matthias Holbrekt, allié du groupe.",
       "pages": [
         "img/props/port-doelan-lettre-de-mission-retrouvee-sur-le-cadavre-de-matthias-hollbrekt.webp"
       ],
       "liens": [
         {
           "id": "matthias-holbrekt",
-          "texte": "Retrouvée sur le corps de Matthias Holbrekt. Le groupe conserve ce document."
+          "texte": "Le groupe retrouve sur le cadavre de son allié Matthias Holbrekt une lettre de mission."
         },
         {
           "id": "port-doelan",
-          "texte": "Retrouvée sur le corps de Matthias Holbrekt. Le groupe conserve ce document."
+          "texte": "Le groupe retrouve sur le cadavre de son allié Matthias Holbrekt une lettre de mission."
         }
       ],
-      "confirmation": "lieu-nommé"
+      "confirmation": "précisé-par-MJ",
+      "ordre": 22
     },
     {
       "id": "port-plan-vespera",
@@ -486,17 +473,18 @@
       "region": "Port Doëlan",
       "type": "Plan",
       "decouverte": "Rédigé par Vespera lors de la réunion de planification du groupe.",
-      "description": "Plan de travail partagé lors d'une réunion de préparation du groupe. Rédigé par Vespera lors de la réunion de planification du groupe.",
+      "description": "Plan écrit par Vespera pendant une réunion de préparation du groupe.",
       "pages": [
         "img/props/port-doelan-plan-daction-ecrit-par-madame-vespera-lors-de-la-reunion-planification-entre-les-joueurs-vespera-casspiopee-vorn-et-absalom.webp"
       ],
       "liens": [
         {
           "id": "vespera-merigold",
-          "texte": "Rédigé par Vespera lors de la réunion de planification du groupe. Le groupe conserve ce document."
+          "texte": "Rédigé par Vespera lors de la réunion de planification du groupe."
         }
       ],
-      "confirmation": "lieu-nommé"
+      "confirmation": "lieu-nommé",
+      "ordre": 23
     },
     {
       "id": "port-registres-titan",
@@ -504,7 +492,7 @@
       "region": "Port Doëlan",
       "type": "Registre",
       "decouverte": "Retrouvés dans les locaux de Titan Inc.",
-      "description": "Registres internes liés aux activités de Titan Inc. Retrouvés dans les locaux de Titan Inc.",
+      "description": "Registres internes retrouvés chez Titan Inc.",
       "pages": [
         "img/props/port-doelan-registre-interne-trouve-chez-titan-inc-qui-prouve-que-spezza-detourne-de-largent.webp",
         "img/props/port-doelan-registre-interne-trouve-chez-titan-inc-qui-prouve-que-spezza-detourne-de-largent2.webp",
@@ -513,10 +501,158 @@
       "liens": [
         {
           "id": "titan-inc",
-          "texte": "Retrouvés dans les locaux de Titan Inc. Le groupe conserve ce document."
+          "texte": "Retrouvés dans les locaux de Titan Inc."
         }
       ],
-      "confirmation": "lieu-nommé"
+      "confirmation": "lieu-nommé",
+      "ordre": 24
+    },
+    {
+      "id": "agran-astariel-journal",
+      "titre": "Journal de bord de l'Astariel",
+      "region": "Agran",
+      "type": "Journal",
+      "decouverte": "Trouvé à bord de l'Astariel, après le combat contre Ossyraal.",
+      "description": "Journal de bord découvert dans l'Astariel après le combat contre Ossyraal.",
+      "pages": [
+        "img/props/agran-journal-de-bord-trouve-dans-le-vaisseau-imperial-astariel-apres-le-combat-contre-lossyraal.webp",
+        "img/props/agran-journal-de-bord-trouve-dans-le-vaisseau-imperial-astariel-apres-le-combat-contre-lossyraal2.webp",
+        "img/props/agran-journal-de-bord-trouve-dans-le-vaisseau-imperial-astariel-apres-le-combat-contre-lossyraal3.webp"
+      ],
+      "liens": [
+        {
+          "id": "epave-de-l-astariel",
+          "texte": "Trouvé à bord de l'Astariel, après le combat contre Ossyraal."
+        },
+        {
+          "id": "ossyraal",
+          "texte": "Trouvé à bord de l'Astariel, après le combat contre Ossyraal."
+        }
+      ],
+      "confirmation": "lieu-nommé",
+      "ordre": 25
+    },
+    {
+      "id": "agran-ordre-imperial",
+      "titre": "Ordre de mission impérial",
+      "region": "Agran",
+      "type": "Ordre",
+      "decouverte": "Retrouvé dans l'épave du Grauwacht, après le combat contre Ossyraal.",
+      "description": "Ordre de mission impérial retrouvé dans l'épave du Grauwacht.",
+      "pages": [
+        "img/props/agran-ordre-de-mission-de-limperatrice-trouvee-apres-le-combat-contre-lossyraal-dans-le-shipwreak-du-grauwacht.webp"
+      ],
+      "liens": [
+        {
+          "id": "epave-du-grauwacht",
+          "texte": "Retrouvé dans l'épave du Grauwacht, après le combat contre Ossyraal."
+        }
+      ],
+      "confirmation": "lieu-nommé",
+      "ordre": 26
+    },
+    {
+      "id": "brakka-journal-mesa",
+      "titre": "Journal non traduit du monastère",
+      "region": "Steppes rouges",
+      "type": "Journal",
+      "decouverte": "Retrouvé au monastère abandonné, sur une mesa, après l'affrontement contre le Roc.",
+      "description": "Journal non traduit trouvé au monastère abandonné sur une mesa, après le combat contre le Roc.",
+      "pages": [
+        "img/props/brakka-journal-trouve-non-traduit-dans-le-monastere-abandonne-au-sommet-dune-mesa-dans-les-steppes-rouges-apres-le-combat-contre-le-roc.webp"
+      ],
+      "liens": [
+        {
+          "id": "monastere-des-steppes",
+          "texte": "Retrouvé au monastère abandonné, sur une mesa, après l'affrontement contre le Roc."
+        }
+      ],
+      "confirmation": "lieu-nommé",
+      "ordre": 27
+    },
+    {
+      "id": "keras-livre-hematome",
+      "titre": "Extrait du livre de missions d'Hématome",
+      "region": "Keras Tauroc",
+      "type": "Registre",
+      "decouverte": "Remis au groupe par Hématome pendant le mois perdu.",
+      "description": "Relevé de petits boulots confiés à Hématome, dont la surveillance des déplacements de l'ambassadeur de Roshen Buru demandée par Ferox.",
+      "pages": [
+        "img/props/keras-tauroc-extrait-du-livre-de-combat-dhematome-donne-par-ce-dernier-au-groupe-lorsquils-le-rencontrent-pendant-le-mois-perdu.webp"
+      ],
+      "liens": [
+        {
+          "id": "hematome",
+          "texte": "Hématome remet au groupe son relevé de missions, dont une commande de Ferox."
+        }
+      ],
+      "confirmation": "lieu-nommé",
+      "ordre": 28
+    },
+    {
+      "id": "keras-lettre-ferox",
+      "titre": "Lettre d'Absalom à Ferox",
+      "region": "Keras Tauroc",
+      "type": "Lettre",
+      "decouverte": "Retrouvée chez Ferox après sa confrontation avec le groupe.",
+      "description": "Lettre adressée par Absalom à Ferox pour l'inciter à tuer l'ambassadeur de Roshen Buru.",
+      "pages": [
+        "img/props/keras-tauroc-lettre-dabsalom-retrouvee-chez-ferox-apres-lavoir-confondu-qui-prouve-quelle-la-manipule-et-quil-est-coupable-davoir-assassine-otoba.webp"
+      ],
+      "liens": [
+        {
+          "id": "villa-ferox",
+          "texte": "Le groupe retrouve chez Ferox une lettre qu'Absalom lui a adressée."
+        },
+        {
+          "id": "calvinus-ferox",
+          "texte": "Le groupe retrouve chez Ferox une lettre qu'Absalom lui a adressée."
+        }
+      ],
+      "confirmation": "lieu-nommé",
+      "ordre": 29
+    },
+    {
+      "id": "keras-lettre-cornua",
+      "titre": "Lettre de Ferox remise au Cornua Fracta",
+      "region": "Keras Tauroc",
+      "type": "Lettre",
+      "decouverte": "Glissée à Philippa pendant sa prestation musicale au Cornua Fracta.",
+      "description": "Lettre envoyée par Ferox pour coordonner le meurtre de l'ambassadeur, remise à Philippa au Cornua Fracta.",
+      "pages": [
+        "img/props/keras-tauroc-lettre-glissee-a-philippa-alors-quelle-jouait-de-la-musique-a-lauberge-cornua-fracta-pendant-le-mois-perdu.webp"
+      ],
+      "liens": [
+        {
+          "id": "cornua-fracta",
+          "texte": "Philippa reçoit au Cornua Fracta une lettre rédigée par Ferox."
+        }
+      ],
+      "confirmation": "lieu-nommé",
+      "ordre": 30
+    },
+    {
+      "id": "cap-cornes-liste-oni",
+      "titre": "Liste trouvée sur l'Oni aux Masques",
+      "region": "Cap Cornes",
+      "type": "Liste",
+      "decouverte": "Retrouvée sur le corps de l'Oni aux Masques, après le combat.",
+      "description": "Liste du Tribunal de Chair retrouvée sur le corps de l'Oni aux Masques.",
+      "pages": [
+        "img/props/cap-cornes-liste-du-tribunal-de-chair-retrouvee-sur-le-cadavre-de-loni-aux-masques.webp"
+      ],
+      "liens": [
+        {
+          "id": "oni-aux-masques",
+          "texte": "Retrouvée sur le corps de l'Oni aux Masques, après le combat."
+        },
+        {
+          "id": "tour-eamonn",
+          "texte": "Retrouvée sur le corps de l'Oni aux Masques, après le combat."
+        }
+      ],
+      "confirmation": "lieu-nommé",
+      "ordre": 31
     },
     {
       "id": "roshen-avis-officiel",
@@ -524,17 +660,18 @@
       "region": "Roshen Buru",
       "type": "Affiche",
       "decouverte": "Consulté sur le panneau d'affichage de l'auberge.",
-      "description": "Communiqué officiel lu au tableau d'affichage de l'auberge. Consulté sur le panneau d'affichage de l'auberge.",
+      "description": "Avis officiel consulté sur le panneau d'affichage de l'auberge.",
       "pages": [
         "img/props/roshen-buru-avis-a-la-population-officiel-retrouve-sur-le-panneau-daffichage-de-lauberge.webp"
       ],
       "liens": [
         {
           "id": "maison-de-the",
-          "texte": "Consulté sur le panneau d'affichage de l'auberge. Le groupe conserve ce document."
+          "texte": "Consulté sur le panneau d'affichage de l'auberge."
         }
       ],
-      "confirmation": "lieu-nommé"
+      "confirmation": "lieu-nommé",
+      "ordre": 32
     },
     {
       "id": "roshen-avis-ako",
@@ -542,21 +679,22 @@
       "region": "Roshen Buru",
       "type": "Affiche",
       "decouverte": "Lu sur le panneau d'affichage de l'auberge.",
-      "description": "Avis relatif à la disparition d'Ako. Lu sur le panneau d'affichage de l'auberge.",
+      "description": "Avis de disparition d'Ako affiché à l'auberge.",
       "pages": [
         "img/props/roshen-buru-avis-de-recherche-publiee-sur-un-panneau-daffichage-a-lauberge-concernant-la-disparition-de-ako.webp"
       ],
       "liens": [
         {
           "id": "maison-de-the",
-          "texte": "Lu sur le panneau d'affichage de l'auberge. Le groupe conserve ce document."
+          "texte": "Lu sur le panneau d'affichage de l'auberge."
         },
         {
           "id": "maven-ako",
-          "texte": "Lu sur le panneau d'affichage de l'auberge. Le groupe conserve ce document."
+          "texte": "Lu sur le panneau d'affichage de l'auberge."
         }
       ],
-      "confirmation": "lieu-nommé"
+      "confirmation": "lieu-nommé",
+      "ordre": 33
     },
     {
       "id": "roshen-avis-tobiya",
@@ -564,43 +702,22 @@
       "region": "Roshen Buru",
       "type": "Affiche",
       "decouverte": "Lu sur le panneau d'affichage de l'auberge.",
-      "description": "Avis relatif à la disparition de Tobiya. Lu sur le panneau d'affichage de l'auberge.",
+      "description": "Avis de disparition de Tobiya affiché à l'auberge.",
       "pages": [
         "img/props/roshen-buru-avis-de-recherche-publiee-sur-un-panneau-daffichage-a-lauberge-concernant-la-disparition-de-tobiya.webp"
       ],
       "liens": [
         {
           "id": "maison-de-the",
-          "texte": "Lu sur le panneau d'affichage de l'auberge. Le groupe conserve ce document."
+          "texte": "Lu sur le panneau d'affichage de l'auberge."
         },
         {
           "id": "tobiya",
-          "texte": "Lu sur le panneau d'affichage de l'auberge. Le groupe conserve ce document."
+          "texte": "Lu sur le panneau d'affichage de l'auberge."
         }
       ],
-      "confirmation": "lieu-nommé"
-    },
-    {
-      "id": "roshen-journal-protectrice",
-      "titre": "Extrait du journal de la Protectrice",
-      "region": "Roshen Buru",
-      "type": "Journal",
-      "decouverte": "Dérobé dans le bureau de la Protectrice pendant l'infiltration.",
-      "description": "Page personnelle récupérée pendant l'infiltration du bureau de la Protectrice. Dérobé dans le bureau de la Protectrice pendant l'infiltration.",
-      "pages": [
-        "img/props/roshen-buru-extrait-du-journal-de-la-protectrice-vole-dans-son-bureau-lors-de-son-infiltration-par-le-groupe.webp"
-      ],
-      "liens": [
-        {
-          "id": "roshen-buru",
-          "texte": "Dérobé dans le bureau de la Protectrice pendant l'infiltration. Le groupe conserve ce document."
-        },
-        {
-          "id": "neryn-yosa",
-          "texte": "Dérobé dans le bureau de la Protectrice pendant l'infiltration. Le groupe conserve ce document."
-        }
-      ],
-      "confirmation": "lieu-nommé"
+      "confirmation": "lieu-nommé",
+      "ordre": 34
     },
     {
       "id": "roshen-flyer-sumeren",
@@ -608,21 +725,22 @@
       "region": "Roshen Buru",
       "type": "Affiche",
       "decouverte": "Consultée sur le panneau d'affichage de l'auberge.",
-      "description": "Annonce commerciale pour la boutique de Sumeren Daïko. Consultée sur le panneau d'affichage de l'auberge.",
+      "description": "Publicité de la boutique de Sumeren Daïko affichée à l'auberge.",
       "pages": [
         "img/props/roshen-buru-flyer-publicitaire-retrouve-sur-le-panneau-daffichage-de-lauberge-pour-la-boutique-de-sumeren-daiko.webp"
       ],
       "liens": [
         {
           "id": "maison-de-the",
-          "texte": "Consultée sur le panneau d'affichage de l'auberge. Le groupe conserve ce document."
+          "texte": "Consultée sur le panneau d'affichage de l'auberge."
         },
         {
           "id": "atelier-calligraphie",
-          "texte": "Consultée sur le panneau d'affichage de l'auberge. Le groupe conserve ce document."
+          "texte": "Consultée sur le panneau d'affichage de l'auberge."
         }
       ],
-      "confirmation": "lieu-nommé"
+      "confirmation": "lieu-nommé",
+      "ordre": 35
     },
     {
       "id": "roshen-flyer-oren",
@@ -630,43 +748,22 @@
       "region": "Roshen Buru",
       "type": "Affiche",
       "decouverte": "Consultée sur le panneau d'affichage de l'auberge.",
-      "description": "Annonce commerciale pour la boutique d'Oren Sidaï. Consultée sur le panneau d'affichage de l'auberge.",
+      "description": "Publicité de la boutique d'Oren Sidaï affichée à l'auberge.",
       "pages": [
         "img/props/roshen-buru-flyer-publicitaire-retrouve-sur-le-panneau-daffichage-de-lauberge-pour-la-boutique-doren-sidai.webp"
       ],
       "liens": [
         {
           "id": "maison-de-the",
-          "texte": "Consultée sur le panneau d'affichage de l'auberge. Le groupe conserve ce document."
+          "texte": "Consultée sur le panneau d'affichage de l'auberge."
         },
         {
           "id": "boutique-oren",
-          "texte": "Consultée sur le panneau d'affichage de l'auberge. Le groupe conserve ce document."
+          "texte": "Consultée sur le panneau d'affichage de l'auberge."
         }
       ],
-      "confirmation": "lieu-nommé"
-    },
-    {
-      "id": "roshen-lettre-brodek",
-      "titre": "Lettre de Brodek Kovacz au magistrat",
-      "region": "Roshen Buru",
-      "type": "Lettre",
-      "decouverte": "Retrouvée dans les bureaux de la magistrature lors de l'infiltration.",
-      "description": "Courrier adressé au magistrat, retrouvé parmi les dossiers administratifs. Retrouvée dans les bureaux de la magistrature lors de l'infiltration.",
-      "pages": [
-        "img/props/roshen-buru-lettre-de-brodeck-kovacz-envoyee-au-magistrat-pour-innocenter-son-fils-trouvee-par-les-joueurs-en-volant-la-magistrature.webp"
-      ],
-      "liens": [
-        {
-          "id": "magistrature",
-          "texte": "Retrouvée dans les bureaux de la magistrature lors de l'infiltration. Le groupe conserve ce document."
-        },
-        {
-          "id": "brodek-kovacz",
-          "texte": "Retrouvée dans les bureaux de la magistrature lors de l'infiltration. Le groupe conserve ce document."
-        }
-      ],
-      "confirmation": "lieu-nommé"
+      "confirmation": "lieu-nommé",
+      "ordre": 36
     },
     {
       "id": "roshen-lettre-konya",
@@ -674,62 +771,45 @@
       "region": "Roshen Buru",
       "type": "Lettre",
       "decouverte": "Montrée au groupe par Konya avant son mariage.",
-      "description": "Message montré par Konya au groupe avant son mariage. Montrée au groupe par Konya avant son mariage.",
+      "description": "Lettre de menace montrée par Konya Sokabeï au groupe avant son mariage.",
       "pages": [
         "img/props/roshen-buru-lettre-de-menace-laissee-a-lattention-de-konya-sokabei-avant-son-mariage-montree-au-groupe-par-ce-dernier.webp"
       ],
       "liens": [
         {
           "id": "konya-sokabei",
-          "texte": "Montrée au groupe par Konya avant son mariage. Le groupe conserve ce document."
+          "texte": "Montrée au groupe par Konya avant son mariage."
         },
         {
           "id": "maison-sokabei",
-          "texte": "Montrée au groupe par Konya avant son mariage. Le groupe conserve ce document."
+          "texte": "Montrée au groupe par Konya avant son mariage."
         }
       ],
-      "confirmation": "lieu-nommé"
+      "confirmation": "lieu-nommé",
+      "ordre": 37
     },
     {
-      "id": "roshen-parchemin-psa84",
-      "titre": "Parchemin PSA-84",
+      "id": "roshen-menace-inconnue",
+      "titre": "Lettre adressée à Ayano Kaben",
       "region": "Roshen Buru",
-      "type": "Parchemin",
-      "decouverte": "Lieu précis de découverte à confirmer.",
-      "description": "Parchemin conservé parmi les documents de Roshen Buru ; contexte à confirmer. Lieu précis de découverte à confirmer.",
+      "type": "Lettre",
+      "decouverte": "Montrée par Ayano Kaben après la première cérémonie du mariage.",
+      "description": "Lettre adressée à Ayano Kaben, montrée par celle-ci après la première cérémonie du mariage.",
       "pages": [
-        "img/props/roshen-buru-parchemin-psa-84.webp"
+        "img/props/roshen-buru-lettre-de-menace-tu-croyais-que-cetait-fini.webp"
       ],
       "liens": [
         {
-          "id": "roshen-buru",
-          "texte": "Lieu précis de découverte à confirmer. Le groupe conserve ce document."
-        }
-      ],
-      "confirmation": "à-confirmer"
-    },
-    {
-      "id": "roshen-rapport-uramei",
-      "titre": "Rapport d'enquête sur les Urameï",
-      "region": "Roshen Buru",
-      "type": "Rapport",
-      "decouverte": "Retrouvé dans les bureaux de la magistrature lors de l'infiltration.",
-      "description": "Pièce d'enquête retrouvée dans les archives de la magistrature. Retrouvé dans les bureaux de la magistrature lors de l'infiltration.",
-      "pages": [
-        "img/props/roshen-buru-rapport-denquete-contre-les-uramei-trouvee-par-les-joueurs-dans-les-bureaux-de-la-magistrature-pendant-leur-infiltration.webp",
-        "img/props/roshen-buru-rapport-denquete-contre-les-uramei-trouvee-par-les-joueurs-dans-les-bureaux-de-la-magistrature-pendant-leur-infiltration2.webp"
-      ],
-      "liens": [
-        {
-          "id": "magistrature",
-          "texte": "Retrouvé dans les bureaux de la magistrature lors de l'infiltration. Le groupe conserve ce document."
+          "id": "ayano-kaben",
+          "texte": "Après la première cérémonie du mariage, Ayano Kaben montre au groupe la lettre qu'elle a reçue."
         },
         {
-          "id": "clan-uramei",
-          "texte": "Retrouvé dans les bureaux de la magistrature lors de l'infiltration. Le groupe conserve ce document."
+          "id": "roshen-buru",
+          "texte": "Après la première cérémonie du mariage, Ayano Kaben présente une lettre au groupe."
         }
       ],
-      "confirmation": "lieu-nommé"
+      "confirmation": "précisé-par-MJ",
+      "ordre": 38
     },
     {
       "id": "roshen-liste-tobiya",
@@ -737,154 +817,126 @@
       "region": "Roshen Buru",
       "type": "Liste",
       "decouverte": "Retrouvée cachée dans la planque de Tobiya pendant l'enquête.",
-      "description": "Liste récupérée dans la planque de Tobiya pendant les recherches. Retrouvée cachée dans la planque de Tobiya pendant l'enquête.",
+      "description": "Liste de missions retrouvée dans la planque de Tobiya.",
       "pages": [
         "img/props/roshen-buru-to-do-liste-des-missions-de-tobiya-retrouvee-cachee-dans-sa-planque-lors-de-linvestigation-des-joueurs.webp"
       ],
       "liens": [
         {
           "id": "tobiya",
-          "texte": "Retrouvée cachée dans la planque de Tobiya pendant l'enquête. Le groupe conserve ce document."
+          "texte": "Retrouvée cachée dans la planque de Tobiya pendant l'enquête."
         }
       ],
-      "confirmation": "lieu-nommé"
+      "confirmation": "lieu-nommé",
+      "ordre": 39
     },
     {
-      "id": "temple-brumeux-journal-septim",
-      "titre": "Extrait du journal de frère Septim",
-      "region": "Temple Brumeux",
-      "type": "Journal",
-      "decouverte": "Retrouvé après le combat contre Paladinis et Clericalis.",
-      "description": "Journal retrouvé au Temple Brumeux après un affrontement. Retrouvé après le combat contre Paladinis et Clericalis.",
-      "pages": [
-        "img/props/temple-brumeux-extrait-du-journal-de-frere-septim-retrouve-apres-avoir-vaincu-les-statues-paladinis-et-clericalis.webp"
-      ],
-      "liens": [
-        {
-          "id": "temple-brumeux",
-          "texte": "Retrouvé après le combat contre Paladinis et Clericalis. Le groupe conserve ce document."
-        }
-      ],
-      "confirmation": "lieu-nommé"
-    },
-    {
-      "id": "voros-affiche-jericho",
-      "titre": "Affiche de Jericho",
-      "region": "Voros",
-      "type": "Affiche",
-      "decouverte": "Affiche trouvée à Voros ; emplacement exact à confirmer.",
-      "description": "Affiche concernant Jericho, repérée à Voros. Affiche trouvée à Voros ; emplacement exact à confirmer.",
-      "pages": [
-        "img/props/voros-affiche-de-jericho.webp"
-      ],
-      "liens": [
-        {
-          "id": "jericho",
-          "texte": "Affiche trouvée à Voros ; emplacement exact à confirmer. Le groupe conserve ce document."
-        },
-        {
-          "id": "voros",
-          "texte": "Affiche trouvée à Voros ; emplacement exact à confirmer. Le groupe conserve ce document."
-        }
-      ],
-      "confirmation": "à-confirmer"
-    },
-    {
-      "id": "voros-lettre-skrell",
-      "titre": "Lettre de Lavande à Skrell",
-      "region": "Voros",
-      "type": "Lettre",
-      "decouverte": "Retrouvée parmi les affaires de Skrell, après sa mort.",
-      "description": "Correspondance récupérée sur Skrell après l'affrontement. Retrouvée parmi les affaires de Skrell, après sa mort.",
-      "pages": [
-        "img/props/voros-lettre-envoyee-par-lavande-a-skrell-retrouvee-apres-que-les-joueurs-ait-tue-skrell.webp"
-      ],
-      "liens": [
-        {
-          "id": "skrell",
-          "texte": "Retrouvée parmi les affaires de Skrell, après sa mort. Le groupe conserve ce document."
-        },
-        {
-          "id": "maison-condamnee-skrell",
-          "texte": "Retrouvée parmi les affaires de Skrell, après sa mort. Le groupe conserve ce document."
-        }
-      ],
-      "confirmation": "lieu-nommé"
-    },
-    {
-      "id": "voros-lettre-village",
-      "titre": "Lettre du village abandonné",
-      "region": "Voros",
-      "type": "Lettre",
-      "decouverte": "Retrouvée dans le village abandonné après le combat contre la Griffe.",
-      "description": "Lettre découverte dans le village abandonné après le combat. Retrouvée dans le village abandonné après le combat contre la Griffe.",
-      "pages": [
-        "img/props/voros-lettre-retrouvee-dans-le-village-abandonne-apres-le-combat-contre-la-griffe.webp",
-        "img/props/voros-lettre-retrouvee-dans-le-village-abandonne-apres-le-combat-contre-la-griffe2.webp"
-      ],
-      "liens": [
-        {
-          "id": "voros",
-          "texte": "Retrouvée dans le village abandonné après le combat contre la Griffe. Le groupe conserve ce document."
-        }
-      ],
-      "confirmation": "lieu-nommé"
-    },
-    {
-      "id": "ile-moines-journal-augustus",
-      "titre": "Extraits du journal de frère Augustus",
-      "region": "Île aux Moines",
-      "type": "Journal",
-      "decouverte": "L'Île aux Moines ; lieu exact de découverte à confirmer.",
-      "description": "Extraits datés du journal de frère Augustus, conservés par le groupe. Le lieu de récupération précis reste à confirmer.",
-      "pages": [
-        "img/props/lile-aux-moines-extrait-du-journal-de-frere-augustus-jour-660.webp",
-        "img/props/lile-aux-moines-extrait-du-journal-de-frere-augustus-jours-661-a-664.webp",
-        "img/props/lile-aux-moines-extrait-du-journal-de-frere-augustus-jour-665.webp"
-      ],
-      "liens": [
-        {
-          "id": "ile-aux-moines",
-          "texte": "Au cours de son passage sur l'Île aux Moines, le groupe conserve des extraits du journal de frère Augustus ; le lieu précis de leur découverte reste à confirmer."
-        }
-      ],
-      "confirmation": "à-confirmer"
-    },
-    {
-      "id": "roshen-menace-inconnue",
-      "titre": "Lettre de menace retrouvée à Roshen Buru",
+      "id": "roshen-journal-protectrice",
+      "titre": "Extrait du journal de la Protectrice",
       "region": "Roshen Buru",
-      "type": "Lettre",
-      "decouverte": "Roshen Buru ; destinataire et lieu exact de découverte à confirmer.",
-      "description": "Lettre menaçante conservée parmi les documents de Roshen Buru. Destinataire et récupération à confirmer.",
+      "type": "Journal",
+      "decouverte": "Dérobé dans le bureau de la Protectrice pendant l'infiltration.",
+      "description": "Extrait du journal dérobé dans le bureau de la Protectrice pendant l'infiltration.",
       "pages": [
-        "img/props/roshen-buru-lettre-de-menace-tu-croyais-que-cetait-fini.webp"
+        "img/props/roshen-buru-extrait-du-journal-de-la-protectrice-vole-dans-son-bureau-lors-de-son-infiltration-par-le-groupe.webp"
       ],
       "liens": [
         {
           "id": "roshen-buru",
-          "texte": "Le groupe conserve une lettre de menace liée à Roshen Buru ; sa provenance exacte reste à confirmer."
+          "texte": "Dérobé dans le bureau de la Protectrice pendant l'infiltration."
+        },
+        {
+          "id": "neryn-yosa",
+          "texte": "Dérobé dans le bureau de la Protectrice pendant l'infiltration."
         }
       ],
-      "confirmation": "à-confirmer"
+      "confirmation": "lieu-nommé",
+      "ordre": 40
+    },
+    {
+      "id": "roshen-rapport-uramei",
+      "titre": "Rapport d'enquête sur les Urameï",
+      "region": "Roshen Buru",
+      "type": "Rapport",
+      "decouverte": "Retrouvé dans les bureaux de la magistrature lors de l'infiltration.",
+      "description": "Rapport d'enquête sur les Urameï découvert dans les bureaux de la magistrature.",
+      "pages": [
+        "img/props/roshen-buru-rapport-denquete-contre-les-uramei-trouvee-par-les-joueurs-dans-les-bureaux-de-la-magistrature-pendant-leur-infiltration.webp",
+        "img/props/roshen-buru-rapport-denquete-contre-les-uramei-trouvee-par-les-joueurs-dans-les-bureaux-de-la-magistrature-pendant-leur-infiltration2.webp"
+      ],
+      "liens": [
+        {
+          "id": "magistrature",
+          "texte": "Retrouvé dans les bureaux de la magistrature lors de l'infiltration."
+        },
+        {
+          "id": "clan-uramei",
+          "texte": "Retrouvé dans les bureaux de la magistrature lors de l'infiltration."
+        }
+      ],
+      "confirmation": "lieu-nommé",
+      "ordre": 41
     },
     {
       "id": "roshen-rapport-cloture-019",
       "titre": "Rapport de clôture, dossier 019-08",
       "region": "Roshen Buru",
       "type": "Rapport",
-      "decouverte": "Roshen Buru ; endroit exact où le dossier a été consulté à confirmer.",
-      "description": "Rapport administratif relatif à un ancien dossier concernant Darrek Kovacz. Lieu de récupération à confirmer.",
+      "decouverte": "Dossier d'enquête conservé parmi les documents de Roshen Buru.",
+      "description": "Rapport de clôture 019-08 concernant l'affaire Darrek Kovacz, retrouvé parmi les documents de Roshen Buru.",
       "pages": [
         "img/props/roshen-buru-rapport-de-cloture-019-dossier-019-08-darrek-kovacz.webp"
       ],
       "liens": [
         {
           "id": "roshen-buru",
-          "texte": "Un rapport de clôture portant la référence 019-08 figure parmi les documents du groupe ; son lieu précis de récupération reste à confirmer."
+          "texte": "Le groupe possède un rapport de clôture relatif à l'affaire Darrek Kovacz."
         }
       ],
-      "confirmation": "à-confirmer"
+      "confirmation": "source-nommée",
+      "ordre": 42
+    },
+    {
+      "id": "roshen-lettre-brodek",
+      "titre": "Lettre de Brodek Kovacz au magistrat",
+      "region": "Roshen Buru",
+      "type": "Lettre",
+      "decouverte": "Retrouvée dans les bureaux de la magistrature lors de l'infiltration.",
+      "description": "Lettre de Brodek Kovacz adressée au magistrat, retrouvée lors de l'infiltration.",
+      "pages": [
+        "img/props/roshen-buru-lettre-de-brodeck-kovacz-envoyee-au-magistrat-pour-innocenter-son-fils-trouvee-par-les-joueurs-en-volant-la-magistrature.webp"
+      ],
+      "liens": [
+        {
+          "id": "magistrature",
+          "texte": "Retrouvée dans les bureaux de la magistrature lors de l'infiltration."
+        },
+        {
+          "id": "brodek-kovacz",
+          "texte": "Retrouvée dans les bureaux de la magistrature lors de l'infiltration."
+        }
+      ],
+      "confirmation": "lieu-nommé",
+      "ordre": 43
+    },
+    {
+      "id": "roshen-parchemin-psa84",
+      "titre": "Parchemin PSA-84",
+      "region": "Roshen Buru",
+      "type": "Parchemin",
+      "decouverte": "Lieu précis de découverte à confirmer.",
+      "description": "Parchemin PSA-84, recueilli à Roshen Buru ; lieu précis à confirmer.",
+      "pages": [
+        "img/props/roshen-buru-parchemin-psa-84.webp"
+      ],
+      "liens": [
+        {
+          "id": "roshen-buru",
+          "texte": "Lieu précis de découverte à confirmer."
+        }
+      ],
+      "confirmation": "à-confirmer",
+      "ordre": 44
     }
   ]
 }
