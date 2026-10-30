@@ -7677,7 +7677,13 @@
     "connu": [
       "Épreuve, la Commandante aux Cent Voix : sur une plateforme enchantée devant le lac, Philippa doit convaincre sans magie trois archétypes d'illusions : un soldat blessé proche de la désertion, un général renégat et cynique, un espion neutre et sarcastique."
     ],
-    "histoire": []
+    "histoire": [],
+    "galerie": [
+      {
+        "img": "img/paysages/lumenlid/epreuve-severin.webp",
+        "legende": "L'École de l'Éloquence"
+      }
+    ]
   },
   {
     "id": "severin-d-aurenze",
@@ -7712,7 +7718,17 @@
     "connu": [
       "Épreuve, le Chant du Sang et du Fer : dans l'arène bardique, devant un jury d'élèves et de professeurs, Philippa affronte un duelliste excentrique dans un duel scénique mêlant épée de bois et lyre. L'adversaire cherche surtout à voler la scène."
     ],
-    "histoire": []
+    "histoire": [],
+    "galerie": [
+      {
+        "img": "img/paysages/lumenlid/arene.webp",
+        "legende": "L'École de la Vaillance"
+      },
+      {
+        "img": "img/paysages/lumenlid/epreuve-tharamund.webp",
+        "legende": "L'École de la Vaillance"
+      }
+    ]
   },
   {
     "id": "tharamund-skeldraxis",
@@ -7744,7 +7760,13 @@
     "connu": [
       "Épreuve, l'Harmonique Originelle : dans une salle suspendue au-dessus du vide, Philippa compose une mélodie magique unique qui devient un sort."
     ],
-    "histoire": []
+    "histoire": [],
+    "galerie": [
+      {
+        "img": "img/paysages/lumenlid/epreuve-aeon-calaryn.webp",
+        "legende": "L'École de la Création"
+      }
+    ]
   },
   {
     "id": "aeon-calaryn",
@@ -7775,7 +7797,13 @@
     "connu": [
       "Épreuve, la Force du Souvenir : dans la grande bibliothèque, Philippa affronte Aster Invictus, un dragon cosmique né des étoiles, invoqué par la mémoire des contes. Elle doit retrouver ses faiblesses légendaires grâce à l'Histoire."
     ],
-    "histoire": []
+    "histoire": [],
+    "galerie": [
+      {
+        "img": "img/paysages/lumenlid/cours-de-lyrianne.webp",
+        "legende": "L'École du Savoir"
+      }
+    ]
   },
   {
     "id": "lyrianne-velarion",
