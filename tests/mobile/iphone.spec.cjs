@@ -195,3 +195,29 @@ test('narrow iPhone SE and landscape: no horizontal scrolling or clipped header'
   const header = await page.locator('.top').boundingBox();
   expect(header.height).toBeLessThan(160);
 });
+
+test('iPhone document reader: portrait pages, catalog and no horizontal overflow', async ({ page }) => {
+  await page.goto('/#/documents/roshen-rapport-uramei', { waitUntil: 'domcontentloaded' });
+  await expect(page.locator('body.document-reading .docreader-head h1')).toContainText('Urameï');
+  await expect(page.locator('#stage .doc-paper')).toHaveCount(2);
+  await expect(page.locator('#dlog')).toBeHidden();
+  await noHorizontalOverflow(page);
+  const measures = await page.locator('#stage .doc-paper img').first().evaluate(el => {
+    const a=el.getBoundingClientRect(),p=el.closest('.docreader').getBoundingClientRect();
+    return { imageWidth:a.width,containerWidth:p.width,right:a.right,containerRight:p.right };
+  });
+  expect(measures.imageWidth).toBeGreaterThan(200);
+  expect(measures.right).toBeLessThanOrEqual(measures.containerRight+2);
+  await page.locator('#dbtn').click();
+  await expect(page.locator('#dlog .doc-catalog')).toBeVisible();
+  await expect(page.locator('#dlog .doc-region-group').first()).toBeVisible();
+  await page.locator('#dlog .qx').click();
+  await expect(page.locator('#dlog')).toBeHidden();
+  await page.locator('#stage .docreader').evaluate(el => el.scrollIntoView());
+  await noHorizontalOverflow(page);
+  await page.goto('/#/magistrature', {waitUntil:'domcontentloaded'});
+  await expect(page.locator('#panel a[href="#/documents/roshen-rapport-uramei"]')).toBeVisible({timeout:15000});
+  await page.locator('#panel a[href="#/documents/roshen-rapport-uramei"]').click();
+  await expect(page.locator('.docreader-head h1')).toContainText('Urameï');
+  await noHorizontalOverflow(page);
+});
