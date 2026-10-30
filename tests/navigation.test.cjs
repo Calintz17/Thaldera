@@ -44,7 +44,7 @@ const theme = fs.readFileSync(path.join(root, 'assets/arcane-theme.css'), 'utf8'
 const page = fs.readFileSync(path.join(root, 'index.html'), 'utf8');
 const sessions = JSON.parse(fs.readFileSync(path.join(root, 'data/parties.json'), 'utf8'));
 assert.match(page, /arcane-theme\.css\?v=\d+/, 'Atlas theme must be linked');
-assert.match(page, /assets\/app\.js\?v=90/, 'App and stylesheet cache versions must match the v90 release');
+assert.match(page, /assets\/app\.js\?v=90/, 'App and stylesheet cache versions must match the v91 release');
 assert.ok(page.includes('id="sbtn"') && page.includes('id="slog"'), 'Recap drawer must be present');
 assert.ok(Array.isArray(sessions.parties), 'Session summaries schema must be an array');
 assert.ok(source.includes("['slog','sbtn']"), 'Summary drawer must share side-dock controller');
