@@ -9,6 +9,17 @@ const entities = index.fichiers.flatMap(p => JSON.parse(fs.readFileSync(path.joi
 const entityIds = new Set(entities.map(e => e.id));
 const docs = JSON.parse(fs.readFileSync(path.join(root, 'data/documents.json'), 'utf8')).documents;
 const ids = new Set();
+assert.equal(docs[0].id, 'vesper-agent', 'First documented prop must follow the Vesper chapter');
+assert.deepEqual(docs.map(d=>d.ordre), docs.map((d,i)=>i+1), 'Document order must be chronological and stable');
+const roshen = docs.filter(d=>d.region==='Roshen Buru');
+assert.equal(roshen.at(-1).id,'roshen-parchemin-psa84','PSA-84 belongs at the end of Roshen Buru');
+assert.equal(roshen.at(-2).id,'roshen-lettre-brodek','Brodek letter precedes PSA-84');
+assert.equal(roshen.findIndex(d=>d.id==='roshen-lettre-konya')+1,roshen.findIndex(d=>d.id==='roshen-menace-inconnue'),'Konya and Ayano letters belong together');
+const augustus = docs.findIndex(d=>d.id==='ile-moines-journal-augustus');
+const septim = docs.findIndex(d=>d.id==='ile-moines-journal-septim');
+const berger = docs.findIndex(d=>d.id==='ile-moines-lettre-berger');
+assert.ok(augustus<septim&&septim<berger,'Monks Island documents must follow story order');
+
 const pageRefs = new Set();
 assert.equal(docs.length, 44, 'All 44 discovered document collections must be indexed');
 for (const d of docs) {
@@ -45,5 +56,6 @@ assert.ok(html.includes('assets/documents.css?v='),'Document CSS not loaded');
 assert.ok(js.includes("id.startsWith('documents/')"),'Deep-link document routing missing');
 assert.ok(js.includes("DOC_LINKS[e.id]"),'Narrative hyperlinks to documents missing');
 assert.ok(js.includes("docPage(p, d, i)"),'Stacked multipage reader missing');
+assert.ok(!js.includes("'<span class=\"doc-kicker\">Archives du groupe</span>'"),'Redundant archive header must stay removed');
 assert.ok(css.includes('overflow-x:hidden')&&css.includes('width:100%'),'Responsive vertical-only reader constraints missing');
 console.log('Documents OK: 44 filesets, 57 readable sources, 0 broken links, 4+ multipage sections.');
