@@ -9394,7 +9394,7 @@
     "type": "lieu",
     "nom": "Le vignoble oublié",
     "titre": "Corps de ferme dans la clairière",
-    "parent": "caravane-port-doelan",
+    "parent": "consortium",
     "resume": "Vignoble oublié entre Camont et Port Doëlan, tenu par Dimir et Iulia.",
     "connu": [
       "Philippa et Jane y atterrissent après leur téléportation. Dimir et Iulia les reçoivent.",
@@ -9411,6 +9411,13 @@
       {
         "img": "img/paysages/caravane/vignoble-2.webp",
         "legende": "Le vignoble, seconde vue"
+      }
+    ],
+    "relations": [
+      {
+        "cible": "caravane-port-doelan",
+        "type": "Étape du voyage",
+        "ton": "neutre"
       }
     ]
   },
