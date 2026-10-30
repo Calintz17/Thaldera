@@ -6258,6 +6258,16 @@
     "resume": "Ville de la côte de Balamor.",
     "connu": [
       "Le seul passage connu vers l'intérieur de la jungle de Balamor."
+    ],
+    "galerie": [
+      {
+        "img": "img/paysages/uruzal/arrivee.webp",
+        "legende": "Uruzal : arrivée"
+      },
+      {
+        "img": "img/paysages/uruzal/rue.webp",
+        "legende": "Uruzal : rue"
+      }
     ]
   },
   {
@@ -6269,6 +6279,16 @@
     "resume": "Ville de Balamor, en amont d'Uruzal.",
     "connu": [
       "Elle se trouve sur la route de Tzalanar."
+    ],
+    "galerie": [
+      {
+        "img": "img/paysages/tzakar/arrivee.webp",
+        "legende": "Tzakar : arrivée"
+      },
+      {
+        "img": "img/paysages/tzakar/rue.webp",
+        "legende": "Tzakar : rue"
+      }
     ]
   },
   {
