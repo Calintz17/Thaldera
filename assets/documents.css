@@ -55,7 +55,8 @@ body.document-reading.journal-open #scene .stage{width:100%}
   .doc-paper figcaption{font-size:11px;padding:7px 9px}
   .doc-pages{gap:12px}
   .docreader .doc-reader-section{margin-bottom:24px;padding-bottom:21px}
-  .top .nav{flex-wrap:wrap!important;overflow-x:hidden!important;overflow-y:visible!important;scroll-snap-type:none!important;justify-content:center}
-  .top .nav a,.top .nav .qbtn{flex:0 0 auto;min-height:40px;padding:7px 8px;font-size:10px}
+  /* Keep mobile navigation compact; the document itself never scrolls horizontally. */
   body.document-reading.journal-open .qlog{z-index:80;left:0;right:0;top:var(--top-h);height:calc(100dvh - var(--top-h));width:100%}
 }
+
+.doc-evidence{display:block;}
