@@ -235,3 +235,52 @@ test('iPhone document reader: portrait pages, catalog and no horizontal overflow
   await expect(page.locator('.docreader-head h1')).toContainText('Urameï');
   await noHorizontalOverflow(page);
 });
+
+test('document contextual: keep source fiche on right, restore landscape and scroll', async ({page}) => {
+  await page.goto('/#/magistrature', {waitUntil:'domcontentloaded'});
+  await expect(page.locator('#panel .pin-pad')).toBeVisible();
+  const original = await page.locator('#panel .pin-pad').evaluate(el => el.innerHTML);
+  const link = page.locator('#panel a[href="#/documents/roshen-rapport-uramei"]');
+  await expect(link).toBeVisible({timeout:20000});
+  const sceneScroll = await page.locator('#panel').evaluate(el=>{el.scrollTop=210;return el.scrollTop;});
+  await link.click();
+  await expect(page.locator('body.document-reading.doc-context')).toBeVisible();
+  await expect(page.locator('#panel .pin-pad')).toBeVisible();
+  await expect(page.locator('#stage .doc-paper')).toHaveCount(2);
+  expect(await page.locator('#panel .pin-pad').evaluate(el=>el.innerHTML)).toBe(original);
+  expect(await page.locator('#panel').evaluate(el=>el.scrollTop)).toBe(sceneScroll);
+  await expect(page.locator('#dlog')).toBeHidden();
+  await noHorizontalOverflow(page);
+  await page.locator('#stage .doc-back').click();
+  await expect(page).toHaveURL(/#\/magistrature/);
+  await expect(page.locator('body.doc-context')).toHaveCount(0);
+  await expect(page.locator('#panel .pin-pad')).toBeVisible();
+  await expect(page.locator('#stage .docreader')).toHaveCount(0);
+  await noHorizontalOverflow(page);
+});
+
+test('desktop document catalog: region accordion and one-click preview', async ({browser}) => {
+  const context=await browser.newContext({viewport:{width:1440,height:900},isMobile:false,hasTouch:false});
+  const page=await context.newPage();
+  await page.route('https://fonts.googleapis.com/**', route=>route.abort());
+  await page.route('https://fonts.gstatic.com/**', route=>route.abort());
+  try {
+    await page.goto('http://127.0.0.1:4173/#/documents', {waitUntil:'domcontentloaded'});
+    const group=page.locator('#dlog .doc-region-group').filter({has:page.locator('summary', {hasText:'Keras Tauroc'})});
+    await expect(group).toBeVisible();
+    await group.locator('summary').first().click();
+    await expect(group).toHaveAttribute('open','');
+    await expect(group.locator('a.doc-list-row').first()).toBeVisible();
+    await expect(group.locator('a.doc-list-row').first()).toContainText('combat');
+    await group.locator('a.doc-list-row').first().click();
+    await expect(page.locator('#stage .docreader-head h1')).toContainText('combat');
+    await expect(page.locator('#dlog')).toBeVisible();
+    const width=await page.locator('#stage').evaluate(el=>Math.floor(Math.min(el.clientWidth*.94,el.clientHeight*.88*4/3)));
+    const sheet=await page.locator('.doc-paper').first().boundingBox();
+    expect(sheet.width).toBeLessThanOrEqual(width+2);
+    expect(sheet.width).toBeGreaterThan(100);
+    await expect(page.locator('a.doc-open')).toHaveCount(0);
+  } finally {
+    await context.close();
+  }
+});
