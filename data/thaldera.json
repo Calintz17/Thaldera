@@ -9906,13 +9906,7 @@
     "pos": {
       "x": 0.65,
       "y": 0.533
-    },
-    "galerie": [
-      {
-        "img": "img/paysages/leyenmil/auberge-copperworth.webp",
-        "legende": "L'auberge du Moulin"
-      }
-    ]
+    }
   },
   {
     "id": "othuunra",
