@@ -213,7 +213,7 @@ test('iPhone document reader: portrait pages, catalog and no horizontal overflow
   await expect(page.locator('#dlog .doc-region-group').first()).toBeVisible();
   await page.locator('#dlog .qx').click();
   await expect(page.locator('#dlog')).toBeHidden();
-  await page.locator('#stage .docreader').evaluate(el => el.scrollIntoView());
+  await page.evaluate(() => window.scrollTo({left:0,top:280,behavior:'instant'}));
   const overflowDebug = await page.evaluate(() => [...document.querySelectorAll('*')]
     .filter(el => {
       const b=el.getBoundingClientRect(),s=getComputedStyle(el);
@@ -224,6 +224,10 @@ test('iPhone document reader: portrait pages, catalog and no horizontal overflow
       return { tag:el.tagName, id:el.id, cls:typeof el.className==='string'?el.className.slice(0,90):'', left:Math.round(b.left), right:Math.round(b.right), width:Math.round(b.width) };
     }));
   console.log('DOCUMENT_OVERFLOW_DIAG', JSON.stringify(overflowDebug));
+  const scrollDiag = await page.evaluate(() => [...document.querySelectorAll('html, body, .top, .nav, .scene, .stage, .docreader, .doc-paper, .docreader-head')]
+    .map(el => ({tag:el.tagName,cls:typeof el.className==='string'?el.className.slice(0,50):'',id:el.id,
+      sw:el.scrollWidth,cw:el.clientWidth,ow:el.offsetWidth,overflow:getComputedStyle(el).overflowX,scrollLeft:el.scrollLeft})));
+  console.log('DOCUMENT_SCROLLWIDTH_DIAG', JSON.stringify(scrollDiag));
   await noHorizontalOverflow(page);
   await page.goto('/#/magistrature', {waitUntil:'domcontentloaded'});
   await expect(page.locator('#panel a[href="#/documents/roshen-rapport-uramei"]')).toBeVisible({timeout:15000});
