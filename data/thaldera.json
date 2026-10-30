@@ -3150,6 +3150,19 @@
     ]
   },
   {
+    "id": "cite-d-agran",
+    "type": "ville",
+    "nom": "Cité d'Agran",
+    "titre": "La cité abyssale",
+    "parent": "agran",
+    "typeLabel": "Cité engloutie",
+    "resume": "Cité sous-marine établie dans la faille, au domaine de Kataron.",
+    "pos": {
+      "x": 0.5,
+      "y": 0.5
+    }
+  },
+  {
     "id": "thaloor",
     "type": "pnj",
     "nom": "Thaloor",
@@ -7481,7 +7494,7 @@
     "type": "lieu",
     "nom": "La Faille",
     "titre": "Canyon abyssal d'Agran",
-    "parent": "agran",
+    "parent": "cite-d-agran",
     "resume": "Canyon du fond de l'océan où repose la ville. Les courants passent au-dessus, et en sortir est mortel.",
     "connu": [
       "Le sous-marin y plonge pour fuir la deuxième tempête, y est attaqué par les bandits, puis découvre la ville au fond."
@@ -7563,7 +7576,7 @@
     "type": "lieu",
     "nom": "L'auberge d'Agran",
     "titre": "Salle creusée dans la roche",
-    "parent": "agran",
+    "parent": "cite-d-agran",
     "resume": "Salle taillée dans la faille, coraux bioluminescents le long des poutres. Rouge (viande, rare) ou blanc (poisson).",
     "connu": [
       "Les habitants appellent les voyageurs de la surface les Noyés.",
@@ -7587,7 +7600,7 @@
     "type": "lieu",
     "nom": "Le temple de Kataron",
     "titre": "Cavité de coraux rouges",
-    "parent": "agran",
+    "parent": "cite-d-agran",
     "resume": "Colonnes de roche incrustées de coraux qui brûlent comme des braises, trône en coquille vide, miroirs ovales de métal poli.",
     "connu": [
       "Le groupe y entre et dépose une offrande. Le pupitre central brille à leur approche.",
@@ -7619,7 +7632,7 @@
     "type": "lieu",
     "nom": "L'échoppe de Peraalys",
     "titre": "Alcôve de corail noir",
-    "parent": "agran",
+    "parent": "cite-d-agran",
     "resume": "Boutique sans devanture, rideau de petits poissons argentés. Objets d'épaves et créations locales.",
     "chapeau": "Une alcôve creusée dans la roche, sans devanture, tapissée d'étagères de corail noir. Objets d'épaves, créations locales et choses sans nom. Des poissons plats dorment accrochés aux parois comme des tableaux, et un rideau de perles laisse passer les clients : des centaines de petits poissons argentés.",
     "galerie": [
@@ -7703,7 +7716,7 @@
     "type": "lieu",
     "nom": "L'atelier de Drisuun",
     "titre": "Forge thermique et récupération",
-    "parent": "agran",
+    "parent": "cite-d-agran",
     "resume": "Forge creusée autour d'une colonne d'eau bouillante. Corail compressé, lames de coquille, métal abyssal.",
     "chapeau": "Une chaleur sourde monte de la roche et tranche avec l'eau froide de la faille. La forge est creusée autour d'une colonne d'eau bouillante qui jaillit du plancher. Coraux séchés empilés, coquilles taillées en lames, métal abyssal brut sur des crochets de roche.",
     "pos": {
@@ -7744,7 +7757,7 @@
     "type": "lieu",
     "nom": "La salle de l'Orant",
     "titre": "Face à la faille",
-    "parent": "agran",
+    "parent": "cite-d-agran",
     "resume": "Couloir de roche vive ouvert sur la faille, sans vitre ni barrière. Les courants se voient comme des rivières translucides.",
     "chapeau": "Au bout d'un couloir taillé dans la roche vive, face à une ouverture directe sur la faille : pas de vitre, juste le vide abyssal et les courants suspendus, visibles comme des rivières translucides. Les coraux pulsent au rythme de la respiration de l'Orant. Des poissons s'approchent de lui sans crainte.",
     "galerie": [
@@ -8511,7 +8524,7 @@
   },
   {
     "id": "cabane-de-gran-brijit",
-    "type": "lieu",
+    "type": "ville",
     "nom": "Le Manoir des Ligaments",
     "titre": "Clairière aux masques effacés",
     "parent": "manoir-des-ligaments",
@@ -8527,7 +8540,8 @@
       }
     ],
     "redirige": "manoir-des-ligaments",
-    "histoire": []
+    "histoire": [],
+    "typeLabel": "Domaine"
   },
   {
     "id": "nolbrim",
@@ -9927,7 +9941,7 @@
     "type": "lieu",
     "nom": "L'Othuunra",
     "titre": "Rebord de pierre",
-    "parent": "agran",
+    "parent": "cite-d-agran",
     "resume": "Rebord de pierre au-dessus d'un couloir ouvert sur la faille, où Algari joue de la lyre.",
     "pos": {
       "x": 0.619,
@@ -9949,7 +9963,7 @@
     "type": "lieu",
     "nom": "La demeure de la Suuraal",
     "titre": "Cité d'Agran",
-    "parent": "agran",
+    "parent": "cite-d-agran",
     "resume": "Haut des marches où la Suuraal reçoit.",
     "pos": {
       "x": 0.664,
