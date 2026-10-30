@@ -1304,13 +1304,7 @@
       "texte": "C'est pas grand-chose, mais c'est propre. Enfin… à peu près.",
       "qui": "Teka, l'aubergière"
     },
-    "relations": [
-      {
-        "cible": "mika",
-        "type": "familier",
-        "ton": "positif"
-      }
-    ],
+    "relations": [],
     "attitude": "neutre",
     "histoire": [],
     "img": "img/pnj/teka.webp",
