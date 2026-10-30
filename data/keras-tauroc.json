@@ -7001,7 +7001,17 @@
       "texte": "Mes renverseuses de despote préférées ! Les voici ! On leur doit la ruine de Spezza, et c'est pas rien !",
       "qui": "Vespera"
     },
-    "histoire": []
+    "histoire": [],
+    "galerie": [
+      {
+        "img": "img/paysages/port-doelan/vers-le-chateau-spezza.webp",
+        "legende": "Château de Spezza : décors de la zone du camp de Vespera"
+      },
+      {
+        "img": "img/paysages/port-doelan/portes-du-chateau-spezza.webp",
+        "legende": "Château de Spezza : décors de la zone du camp de Vespera (vue 2)"
+      }
+    ]
   },
   {
     "id": "omen-of-many-hands",
