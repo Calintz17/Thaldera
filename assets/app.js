@@ -1166,8 +1166,7 @@ async function route() {
 
 /* ---------- documents retrouvés : lecture scrollable et catalogue latéral ---------- */
 function docPage(p, d, i) {
-  return '<figure class="doc-paper"><img loading="' + (i ? 'lazy' : 'eager') +
-    '" decoding="async" src="' + esc(p) + '" alt="' + esc(d.titre) +
+  return '<figure class="doc-paper"><img loading="lazy" decoding="async" src="' + esc(p) + '" alt="' + esc(d.titre) +
     ', page ' + (i + 1) + ' sur ' + d.pages.length + '">' +
     (d.pages.length > 1 ? '<figcaption>Page ' + (i + 1) + ' sur ' + d.pages.length + '</figcaption>' : '') +
     '</figure>';
