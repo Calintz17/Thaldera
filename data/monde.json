@@ -495,7 +495,7 @@
       "À Keras Tauroc, elle bat Hématome dans l'arène du festival.",
       "Pendant le mois perdu, elle travaille pour Hématome sans qu'elle ni le groupe s'en souviennent. Elle retrouve ensuite son carnet, sa chambre chez Capella et le nom de Calvinus Ferox.",
       "À Cap Cornes, déguisée en Olyssane, elle attire Kester Tauroc dans une ruelle.",
-      "Avant Roshen Buru, au feu de camp dans la forêt d'Azuren, Gran Brijit ouvre un portail pour Nolbrim, qui attire Jane dans son laboratoire. Il a percé le Voile pendant son coma. Il l'attaque sur une table d'opération. Gran Brijit arrive avec Bourre-Piff, qu'elle tue aussitôt, aspire son âme et la tend à Nolbrim, qui arrache l'exosquelette (et le dos) de Jane.",
+      "Avant Roshen Buru, au feu de camp dans la forêt d'Azuren, Gran Brijit ouvre un portail pour Nolbrim, qui attire Jane dans son laboratoire. Il a percé le Voile pendant son coma. Il l'attaque sur une table d'opération. Gran Brijit arrive avec Bourpif, qu'elle tue aussitôt, aspire son âme et la tend à Nolbrim, qui arrache l'exosquelette (et le dos) de Jane.",
       "Elle se réveille avec un gant rouge de cristaux sur la main et change de sous-classe : Arcane Trickster.",
       "À Roshen Buru, elle prend part à l'enquête du mariage et à la chute de Darrek Kovacz. Chez la Protectrice, elle fouille les papiers avec Philippa.",
       "Jane remet à Vespera la Couronne de Corail Noir au camp de Port Doëlan et négocie 1 % des ventes."
@@ -1901,8 +1901,8 @@
       },
       {
         "cible": "gran-brijit",
-        "type": "Affrontement",
-        "ton": "negatif"
+        "type": "Passage d'Ereshkigal dans la cité",
+        "ton": "neutre"
       }
     ],
     "histoire": [],
