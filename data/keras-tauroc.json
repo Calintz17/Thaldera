@@ -6180,8 +6180,8 @@
     "cartes": [
       {
         "id": "carte",
-        "img": "img/placeholder/carte-noire.svg",
-        "legende": "Carte de l'Outreterre en préparation"
+        "img": "img/cartes/outreterre.webp",
+        "legende": "Carte de l'Outreterre"
       }
     ],
     "blason": "img/blasons/outreterre.webp",
