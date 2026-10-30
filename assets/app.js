@@ -4,7 +4,7 @@
 (() => {
 'use strict';
 
-const VER = '90';
+const VER = '91';
 const LEGACY_IDS = { 'bourre-piff':'bourpif', 'seravine':'solkah-barrow', 'tilda':'irna', 'cleff':'irna' };
 const EDIT = new URLSearchParams(location.search).has('edit');
 const $ = (s, r = document) => r.querySelector(s);
@@ -300,7 +300,7 @@ function sceneOf(e, q, depth = 0) {
       const lieu = e.lieu ? BY[e.lieu] : null;
       let s = lieu ? sceneOf(lieu, null, depth + 1) : (e.parent ? sceneOf(BY[e.parent], null, depth + 1) : null);
       if (!s && depth === 0) s = sceneOf(BY.istra, null, 1);
-      if (s && (e.type === 'pnj' || e.type === 'pj') && depth === 0) {
+      if (s && (e.type === 'pnj' || e.type === 'pj' || (e.type === 'sujet' && e.img)) && depth === 0) {
         let gal = (e.galerie && e.galerie.length) ? e.galerie : (s.gallery || fallbackLand(e) || [PH_LAND]);
         if (e.etapes && e.etapes.length) {
           gal = e.etapes.map(f => ({ img: f.fond || PH_LAND.img, ph: !f.fond, legende: f.label, cut: f }));
@@ -663,7 +663,11 @@ function showGallery(imgs, title, ent) {
     wake(cur);
     g.querySelectorAll('.sl').forEach((s, i) => { s.classList.toggle('act', i === cur); });
     g.querySelectorAll('.gdots button').forEach((d, i) => d.classList.toggle('on', i === cur));
-    const c = imgs[cur].cut, who = imgs[cur].who || ent;
+    const who = imgs[cur].who || ent;
+    // A background-only slide must keep the same character overlay.
+    // Only switching to another cast member or leaving the character gallery may clear it.
+    const ownForm = ent && who === ent ? (S.curFormOf === ent.id ? S.curForm : (ent.formes && ent.formes[0])) : null;
+    const c = imgs[cur].cut || ownForm || (who && who.img ? { img: who.img } : null);
     if (ent && ent.etapes && c) {
       $('.gt', g).textContent = `Étape ${cur + 1} sur ${imgs.length} : ${c.label}`;
       panelEl.querySelectorAll('.etape').forEach((x, i) => x.classList.toggle('on', i === cur));
@@ -742,7 +746,9 @@ function setCutout(e, form) {
     const maxH = Math.min(stageEl.clientHeight * .61, bounds.height * .73);
     const maxW = Math.min(stageEl.clientWidth * .44, bounds.width * .48);
     const ratio = img.naturalWidth / img.naturalHeight;
-    const width = Math.min(maxW, maxH * ratio, img.naturalWidth * 1.3);
+    const mini = e.tailleAsset === 'mini';
+    const cap = mini ? .55 : 1.3;
+    const width = Math.min(maxW * (mini ? .5 : 1), maxH * ratio * (mini ? .5 : 1), img.naturalWidth * cap);
     img.style.width = Math.max(1, Math.round(width)) + 'px';
     img.style.height = 'auto';
     img.style.maxHeight = Math.round(maxH) + 'px';
