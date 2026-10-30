@@ -198,7 +198,7 @@ test('narrow iPhone SE and landscape: no horizontal scrolling or clipped header'
 
 test('iPhone document reader: portrait pages, catalog and no horizontal overflow', async ({ page }) => {
   await page.goto('/#/documents/roshen-rapport-uramei', { waitUntil: 'domcontentloaded' });
-  await expect(page.locator('body.document-reading .docreader-head h1')).toContainText('Urameï');
+  await expect(page.locator('#stage .doc-reader-section[aria-label="Rapport d\'enquête sur les Urameï"]')).toBeVisible();
   await expect(page.locator('#stage .doc-paper')).toHaveCount(2);
   await expect(page.locator('#dlog')).toBeHidden();
   await noHorizontalOverflow(page);
@@ -232,7 +232,7 @@ test('iPhone document reader: portrait pages, catalog and no horizontal overflow
   await page.goto('/#/magistrature', {waitUntil:'domcontentloaded'});
   await expect(page.locator('#panel a[href="#/documents/roshen-rapport-uramei"]')).toBeVisible({timeout:15000});
   await page.locator('#panel a[href="#/documents/roshen-rapport-uramei"]').click();
-  await expect(page.locator('.docreader-head h1')).toContainText('Urameï');
+  await expect(page.locator('.doc-reader-section[aria-label="Rapport d\'enquête sur les Urameï"]')).toBeVisible();
   await noHorizontalOverflow(page);
 });
 
@@ -271,9 +271,10 @@ test('desktop document catalog: region accordion and one-click preview', async (
     await group.locator('summary').first().click();
     await expect(group).toHaveAttribute('open','');
     await expect(group.locator('a.doc-list-row').first()).toBeVisible();
-    await expect(group.locator('a.doc-list-row').first()).toContainText('combat');
+    await expect(group.locator('a.doc-list-row').first()).toContainText('missions');
     await group.locator('a.doc-list-row').first().click();
-    await expect(page.locator('#stage .docreader-head h1')).toContainText('combat');
+    await expect(page.locator('#stage .doc-reader-section[aria-label="Extrait du livre de missions d\'Hématome"]')).toBeVisible();
+    await expect(page.locator('#stage .docreader-head')).toHaveCount(0);
     await expect(page.locator('#dlog')).toBeVisible();
     const width=await page.locator('#stage').evaluate(el=>Math.floor(Math.min(el.clientWidth*.94,el.clientHeight*.88*4/3)));
     const sheet=await page.locator('.doc-paper').first().boundingBox();
@@ -283,4 +284,24 @@ test('desktop document catalog: region accordion and one-click preview', async (
   } finally {
     await context.close();
   }
+});
+
+test('Chronological document order and slim source-only reader', async ({page}) => {
+  await page.goto('/#/documents', {waitUntil:'domcontentloaded'});
+  await expect(page.locator('#dlog .doc-region-group summary').first()).toContainText('Vesper');
+  await expect(page.locator('#stage .docreader-head')).toHaveCount(0);
+  const first = page.locator('#stage .doc-paper').first();
+  await expect(first).toBeVisible();
+  await expect(page.locator('#stage .doc-reader-section h2')).toHaveCount(0);
+  const firstImageSrc = await first.locator('img').getAttribute('src');
+  expect(firstImageSrc).toContain('le-vesper-lettre');
+  const roshenGroup = page.locator('#dlog .doc-region-group').filter({has:page.locator('summary', {hasText:'Roshen Buru'})});
+  await roshenGroup.locator('summary').first().click();
+  const order = await roshenGroup.locator('a.doc-list-row b').allTextContents();
+  expect(order.slice(0,5)).toEqual([
+    'Avis officiel à la population','Avis de disparition : Ako','Avis de disparition : Tobiya',
+    'Affiche de la boutique de Sumeren Daïko',"Affiche de la boutique d'Oren Sidaï"
+  ]);
+  expect(order.slice(-2)).toEqual(['Lettre de Brodek Kovacz au magistrat','Parchemin PSA-84']);
+  expect(order.indexOf('Lettre adressée à Konya Sokabeï')+1).toBe(order.indexOf('Lettre adressée à Ayano Kaben'));
 });
