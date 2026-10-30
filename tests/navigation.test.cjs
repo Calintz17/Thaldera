@@ -29,8 +29,11 @@ for (const continent of entries.filter(e => e.type === 'continent')) {
       'Atlas pin without normalized coordinates: ' + city.id);
   }
 }
-assert.ok(entries.length >= 783, 'Codex entity count decreased below verified v59 baseline');
+assert.ok(entries.length >= 770, 'Codex entity count below validated v92 baseline after GM-approved removals');
 assert.equal(new Set(entries.map(e => e.id)).size, entries.length, 'Duplicate entity identifiers detected');
+for (const id of ['calven','malrik-solbrun','brague','edvar-sorn','frere-ossian','frere-tomek','kabo','tosha','obumi','sennai','maeko','kaban-kanae','vosko','harlow','frere-aldric']) {
+  assert.ok(!entries.some(e => e.id === id), `GM-deleted minor entry reappeared: ${id}`);
+}
 // Extract and exercise the exact runtime camera clamping function.
 const clampStart = source.indexOf('function clampMapRect(rect) {');
 const clampEnd = source.indexOf('\nfunction setCam(', clampStart);
@@ -108,4 +111,4 @@ assert.equal(by.luka?.img,'img/pnj/leyenmil-lukas.webp','Luka should inherit ori
 assert.equal(by.bourpif?.img,'img/pnj/bourre-piff.webp','Bourpif should inherit legacy portrait');
 assert.ok(!by.emelka,'Unplayed Balamor NPCs must never be exposed in public JSON');
 console.log('Player-safe NPC publication OK: four new characters, Luka alias, Bourpif portrait.');
-console.log('Atlas regression OK: 783+ fiches, context return, merged manor, Ink journey, bright atlas dots, session drawer.');
+console.log('Atlas regression OK: 770+ fiches, context return, merged manor, Ink journey, bright atlas dots, session drawer.');
