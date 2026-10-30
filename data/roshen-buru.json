@@ -4038,44 +4038,6 @@
     "teinte": "#755219"
   },
   {
-    "id": "kabo",
-    "type": "pnj",
-    "nom": "Kabo",
-    "titre": "Chef cuisinier",
-    "parent": "roshen-buru",
-    "lieu": "pavillon-mariage",
-    "statut": "mort",
-    "resume": "Retrouvé mort au petit matin, overdose de Vésine d'une pureté impossible à acheter pour son rang.",
-    "relations": [
-      {
-        "cible": "vesine",
-        "type": "mort d'une overdose de",
-        "ton": "negatif",
-        "inverse": "a tué"
-      }
-    ],
-    "attitude": "neutre"
-  },
-  {
-    "id": "tosha",
-    "type": "pnj",
-    "nom": "Tosha",
-    "titre": "Sous-chef",
-    "parent": "roshen-buru",
-    "lieu": "pavillon-mariage",
-    "statut": "vivant",
-    "resume": "Prend le relais après Kabo. Il sort discrètement par la porte de service.",
-    "relations": [
-      {
-        "cible": "kabo",
-        "type": "remplace",
-        "ton": "neutre",
-        "inverse": "remplacé par"
-      }
-    ],
-    "attitude": "neutre"
-  },
-  {
     "id": "otta",
     "type": "pnj",
     "nom": "Otta",
@@ -4095,28 +4057,6 @@
       "Il n'a rien à voir avec les événements."
     ],
     "teinte": "#753c19"
-  },
-  {
-    "id": "obumi",
-    "type": "pnj",
-    "nom": "Obumi",
-    "titre": "Fournisseur de lanternes",
-    "parent": "roshen-buru",
-    "lieu": "pavillon-mariage",
-    "statut": "vivant",
-    "resume": "Sa livraison a été remplacée. Il jure n'avoir rien changé.",
-    "attitude": "neutre"
-  },
-  {
-    "id": "sennai",
-    "type": "pnj",
-    "nom": "Sennaï",
-    "titre": "Livreur de fleurs",
-    "parent": "roshen-buru",
-    "lieu": "pavillon-mariage",
-    "statut": "vivant",
-    "resume": "Payé le double pour aller ailleurs. Il décrit un homme au visage bandé, voix rauque, pièces neuves.",
-    "attitude": "neutre"
   },
   {
     "id": "maitre-siharen",
@@ -4239,36 +4179,6 @@
       "Elle travaille pour Madame Renka avec Velsha et Maeko, dans la maison éclairée de vert au bout de la ruelle."
     ],
     "teinte": "#755219"
-  },
-  {
-    "id": "maeko",
-    "type": "pnj",
-    "nom": "Maeko",
-    "titre": "Courtisane",
-    "parent": "quartier-des-plaisirs",
-    "lieu": "quartier-des-plaisirs",
-    "statut": "vivant",
-    "resume": "Elle connaît Darrek Kovacz et le déteste. Il payait bien mais personne n'en voulait deux fois.",
-    "citation": {
-      "texte": "Le fils Kovacz, oui, je vois qui c'est. Il payait bien, mais il était pas facile. Personne n'en voulait deux fois.",
-      "qui": "Maeko, en rangeant ses affaires"
-    },
-    "relations": [
-      {
-        "cible": "madame-renka",
-        "type": "travaille pour",
-        "ton": "neutre",
-        "inverse": "emploie"
-      },
-      {
-        "cible": "darrek-kovacz",
-        "type": "déteste",
-        "ton": "negatif",
-        "note": "Il payait bien mais personne n'en voulait deux fois.",
-        "inverse": "détesté par"
-      }
-    ],
-    "attitude": "neutre"
   },
   {
     "id": "sevaki",
@@ -4425,31 +4335,6 @@
     "teinte": "#752519"
   },
   {
-    "id": "kaban-kanae",
-    "type": "pnj",
-    "nom": "Kaban Kanae",
-    "titre": "Forgeron célèbre, père de Tessei",
-    "parent": "forge-oyoroi",
-    "lieu": "forge-oyoroi",
-    "statut": "mort",
-    "resume": "Il a fait la réputation de la forge et emporté son secret de fabrication dans la tombe. On dit qu'il forgeait des mois durant au cœur des montagnes.",
-    "galerie": [
-      {
-        "img": "img/paysages/roshen-buru/forge-oyoroi.webp",
-        "legende": "La forge Oyoroï"
-      }
-    ],
-    "relations": [
-      {
-        "cible": "tessei-kanae",
-        "type": "père de",
-        "ton": "positif",
-        "inverse": "enfant de"
-      }
-    ],
-    "attitude": "neutre"
-  },
-  {
     "id": "meshi",
     "type": "pnj",
     "nom": "Meshi",
@@ -4478,35 +4363,6 @@
     ],
     "teinte": "#752519",
     "histoire": []
-  },
-  {
-    "id": "vosko",
-    "type": "pnj",
-    "nom": "Vosko",
-    "titre": "Vieux domestique du domaine Kovacz",
-    "parent": "domaine-kovacz",
-    "lieu": "domaine-kovacz",
-    "statut": "vivant",
-    "resume": "Domestique essoufflé.",
-    "galerie": [
-      {
-        "img": "img/paysages/roshen-buru/palais-kovacz.webp",
-        "legende": "Le palais Kovacz"
-      }
-    ],
-    "relations": [
-      {
-        "cible": "clan-kovacz",
-        "type": "domestique du",
-        "ton": "neutre",
-        "inverse": "domestiques de"
-      }
-    ],
-    "attitude": "neutre",
-    "histoire": [],
-    "connu": [
-      "Il ouvre les portes du domaine Kovacz au groupe, en s'excusant sans qu'on lui demande rien."
-    ]
   },
   {
     "id": "ohana",
@@ -4724,30 +4580,6 @@
     "resume": "Des navires venus de Liesch arborent la bannière de l'Impératrice devant Port Doëlan."
   },
   {
-    "id": "harlow",
-    "type": "pnj",
-    "nom": "Harlow",
-    "titre": "Relais du Voile à Camont",
-    "parent": "camont",
-    "lieu": "camont",
-    "statut": "vivant",
-    "resume": "Relais du Voile.",
-    "relations": [
-      {
-        "cible": "teka",
-        "type": "client de",
-        "ton": "neutre",
-        "note": "Il passe à L'Abattoir, la taverne de Teka.",
-        "inverse": "hôtesse de"
-      }
-    ],
-    "attitude": "positif",
-    "histoire": [],
-    "connu": [
-      "Il passe à L'Abattoir, que tient Teka, pendant le séjour de Philippa et Jane."
-    ]
-  },
-  {
     "id": "orant-des-failles",
     "type": "pnj",
     "nom": "Orant des Failles",
@@ -4764,21 +4596,13 @@
     "histoire": [],
     "connu": [
       "Il bénit le départ du groupe d'Agran."
-    ]
-  },
-  {
-    "id": "frere-aldric",
-    "type": "pnj",
-    "nom": "Frère Aldric",
-    "titre": "Moine du monastère des steppes",
-    "parent": "monastere-des-steppes",
-    "lieu": "monastere-des-steppes",
-    "statut": "mort",
-    "resume": "Moine dont il ne reste qu'un squelette.",
-    "attitude": "neutre",
-    "histoire": [],
-    "connu": [
-      "Il faisait partie des moines du monastère des steppes. Le groupe retrouve sa bourse (34 po et 12 pa) sur son squelette."
+    ],
+    "img": "img/pnj/agran-uruukaysal.webp",
+    "galerie": [
+      {
+        "img": "img/paysages/agran/salle-de-l-orant.webp",
+        "legende": "Orant des Failles"
+      }
     ]
   },
   {
@@ -5213,6 +5037,12 @@
     "histoire": [],
     "connu": [
       "Harfang s'y présente comme délégué. Doryo Kovacz, greffier, lui ouvre les registres de fret."
+    ],
+    "galerie": [
+      {
+        "img": "img/paysages/azuren-kai/capitainerie.webp",
+        "legende": "La capitainerie d'Azuren Kai"
+      }
     ]
   },
   {
@@ -5289,7 +5119,13 @@
       "x": 0.817,
       "y": 0.247
     },
-    "carte": "palais"
+    "carte": "palais",
+    "galerie": [
+      {
+        "img": "img/paysages/roshen-buru/neryn-yosa.webp",
+        "legende": "Les quartiers de Neryn Yosa"
+      }
+    ]
   },
   {
     "id": "domaine-siharen",
@@ -5302,7 +5138,13 @@
       "x": 0.081,
       "y": 0.233
     },
-    "carte": "palais"
+    "carte": "palais",
+    "galerie": [
+      {
+        "img": "img/paysages/roshen-buru/palais-siharen.webp",
+        "legende": "Le domaine Siharen"
+      }
+    ]
   },
   {
     "id": "sahime-kaben",
