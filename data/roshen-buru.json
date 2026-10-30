@@ -1663,7 +1663,13 @@
     "zoom": 0.2,
     "resume": "Monolithe habité au centre de la cuvette.",
     "connu": [],
-    "chapeau": "Un monolithe rocheux moussu au centre de la cuvette, habité de haut en bas, couvert de planches et de passerelles jusqu'à sa cime. Des ponts vermillon le relient aux falaises, trois ascenseurs géants desservent la ville haute, et le Temple du Tenraku couronne son sommet."
+    "chapeau": "Un monolithe rocheux moussu au centre de la cuvette, habité de haut en bas, couvert de planches et de passerelles jusqu'à sa cime. Des ponts vermillon le relient aux falaises, trois ascenseurs géants desservent la ville haute, et le Temple du Tenraku couronne son sommet.",
+    "galerie": [
+      {
+        "img": "img/paysages/roshen-buru/vue-ville.webp",
+        "legende": "Le Pillier et la cité vus dans leur environnement (illustration contextuelle)"
+      }
+    ]
   },
   {
     "id": "temple-du-tenraku",
@@ -3719,7 +3725,13 @@
       "note": "Craie posée par Philippa dans le salon de thé de Roshen Buru."
     },
     "chapeau": "La porte coulisse sur une odeur de feuilles brûlées et de bois humide. Il fait sombre, d'une pénombre chaude : les lanternes sont basses, la lumière rampe au sol, et le plafond noirci de fumée retient les voix. Derrière le comptoir, un homme massif essuie une tasse sans lever les yeux. Le thé coûte trois pièces, une chambre quinze, et on ne pose pas de questions sur les autres.",
-    "histoire": []
+    "histoire": [],
+    "galerie": [
+      {
+        "img": "img/paysages/roshen-buru/auberge.webp",
+        "legende": "L'auberge utilisée comme maison de thé (identification MJ)"
+      }
+    ]
   },
   {
     "id": "hoshka",
@@ -5025,7 +5037,13 @@
     "connu": [
       "Harfang y demande à son Miren s'il peut faire confiance à la Protectrice. La réponse est non."
     ],
-    "histoire": []
+    "histoire": [],
+    "galerie": [
+      {
+        "img": "img/paysages/roshen-buru/temple-de-melora.webp",
+        "legende": "Temple de Mélora sylvestre (identification MJ)"
+      }
+    ]
   },
   {
     "id": "capitainerie-azuren-kai",
