@@ -1374,37 +1374,33 @@
   {
     "id": "irna",
     "type": "pnj",
-    "nom": "Irna",
-    "titre": "Chef des enfants voleurs",
+    "nom": "Irna, Tilda et Cleff",
+    "titre": "Les trois enfants des Planches",
     "parent": "planches-camont",
     "lieu": "planches-camont",
     "statut": "vivant",
-    "resume": "Adolescente qui mène la bande des Planches.",
+    "resume": "Trois enfants des rues, dirigés par Irna.",
     "connu": [
       "Adolescente maigre et crasseuse au regard dur, qui fait face sans reculer. Elle protège Tilda et Cleff, accrochés à ses jambes.",
       "Elle a volé la bourse de Philippa avec Tilda et Cleff dès l'arrivée à Camont.",
-      "Aux Planches, face aux deux joueuses, elle a expliqué : « On vous voulait rien de mal. C'est juste… vous aviez l'air d'en avoir trop. » Eve l'a forcée à rendre."
+      "Aux Planches, face aux deux joueuses, elle a expliqué : « On vous voulait rien de mal. C'est juste… vous aviez l'air d'en avoir trop. » Eve l'a forcée à rendre.",
+      "Tilda : Petite fille accrochée aux jambes d'Irna quand Philippa et Jane les rattrapent aux Planches : « C'est pas du vol si on le rend, non ? »",
+      "Cleff : Petit garçon qui porte le vieux sac de cuir volé avec Irna et Tilda quand Philippa et Jane les rattrapent aux Planches. Eve les force à rendre.",
+      "Tilda : « C'est pas du vol si on le rend, non ? »"
     ],
     "citation": {
       "texte": "On vous voulait rien de mal. C'est juste… vous aviez l'air d'en avoir trop.",
       "qui": "Irna"
     },
-    "relations": [
-      {
-        "cible": "tilda",
-        "type": "chef de",
-        "ton": "positif"
-      },
-      {
-        "cible": "cleff",
-        "type": "chef de",
-        "ton": "positif"
-      }
-    ],
+    "relations": [],
     "attitude": "neutre",
     "histoire": [],
     "img": "img/pnj/irna.webp",
-    "teinte": "#755119"
+    "teinte": "#755119",
+    "alias": [
+      "Tilda",
+      "Cleff"
+    ]
   },
   {
     "id": "ssilik",
@@ -2296,7 +2292,7 @@
         "teinte": "#756819"
       }
     ],
-    "attitude": "positif",
+    "attitude": "allie",
     "teinte": "#752519"
   },
   {
@@ -2347,7 +2343,7 @@
         "inverse": "protégé par"
       }
     ],
-    "attitude": "positif",
+    "attitude": "allie",
     "teinte": "#756919",
     "histoire": []
   },
@@ -5134,55 +5130,6 @@
     "histoire": []
   },
   {
-    "id": "tilda",
-    "type": "pnj",
-    "nom": "Tilda",
-    "titre": "Enfant voleuse",
-    "parent": "planches-camont",
-    "lieu": "planches-camont",
-    "statut": "vivant",
-    "resume": "Petite voleuse des Planches.",
-    "connu": [
-      "Petite fille accrochée aux jambes d'Irna quand Philippa et Jane les rattrapent aux Planches : « C'est pas du vol si on le rend, non ? »"
-    ],
-    "citation": {
-      "texte": "C'est pas du vol si on le rend, non ?",
-      "qui": "Tilda"
-    },
-    "attitude": "neutre",
-    "histoire": []
-  },
-  {
-    "id": "cleff",
-    "type": "pnj",
-    "nom": "Cleff",
-    "titre": "Enfant voleur",
-    "parent": "planches-camont",
-    "lieu": "planches-camont",
-    "statut": "vivant",
-    "resume": "Gamin des Planches.",
-    "attitude": "neutre",
-    "connu": [
-      "Petit garçon qui porte le vieux sac de cuir volé avec Irna et Tilda quand Philippa et Jane les rattrapent aux Planches. Eve les force à rendre."
-    ],
-    "histoire": []
-  },
-  {
-    "id": "mika",
-    "type": "pnj",
-    "nom": "Mika",
-    "titre": "Poulpe de Teka",
-    "parent": "l-abattoir",
-    "lieu": "l-abattoir",
-    "statut": "vivant",
-    "resume": "Petit poulpe qui vit au bout des tentacules de Teka.",
-    "attitude": "neutre",
-    "connu": [
-      "Philippa et Jane le voient à L'Abattoir."
-    ],
-    "histoire": []
-  },
-  {
     "id": "leth",
     "type": "pnj",
     "nom": "Leth",
@@ -5278,7 +5225,8 @@
       "Garde du coffre de la villa Graham, il part à la retraite à la fin de la semaine et a tiré des ficelles auprès de Graham pour être posté ici.",
       "Philippa et Jane l'entendent dans la salle des coffres expliquer à son jeune collègue Damian : « Un poste où il se passe rien, c'est pas une punition, c'est une bénédiction. »"
     ],
-    "histoire": []
+    "histoire": [],
+    "img": "img/pnj/camont-garde-de-la-salle-des-coffres.webp"
   },
   {
     "id": "sadie",
@@ -5461,7 +5409,7 @@
         "inverse": "même réseau du Voile que"
       }
     ],
-    "attitude": "positif",
+    "attitude": "neutre",
     "teinte": "#755219",
     "histoire": []
   },
@@ -9751,7 +9699,7 @@
         "inverse": "compagne de caravane de"
       }
     ],
-    "attitude": "neutre",
+    "attitude": "positif",
     "connu": [
       "Rôdeuse joviale surnommée la Voyageuse Joyeuse, venue de Havre Noir en quête d'or et de contrats. Philippa et Jane la croisent dans la caravane.",
       "Elle voyage à cheval avec sa monture Justine, épée longue au côté, et raconte des anecdotes de route. Elle boit volontiers au coin du feu et se lie d'amitié avec Magdalena.",
@@ -9793,45 +9741,26 @@
   {
     "id": "solkah-barrow",
     "type": "pnj",
-    "nom": "Solkah Barrow",
-    "titre": "Dresseur de serpents",
+    "nom": "Solkah Barrow et Seravine",
+    "titre": "Dresseur de serpents et son familier",
     "parent": "caravane-port-doelan",
     "lieu": "caravane-port-doelan",
     "statut": "vivant",
-    "resume": "Drow solitaire du convoi.",
-    "relations": [
-      {
-        "cible": "seravine",
-        "type": "dresseur de",
-        "ton": "positif",
-        "inverse": "dressée par"
-      }
-    ],
-    "attitude": "neutre",
+    "resume": "Solkah, drow du convoi, voyage avec Seravine, son serpent.",
+    "relations": [],
+    "attitude": "positif",
     "connu": [
       "Drow originaire de Menzoberranzan, renfrogné et taciturne, qui évite le soleil et se tient à l'écart du convoi. Philippa et Jane le croisent dans la caravane. Sa caravane rafistolée transporte des serpents, dont Seravine.",
       "Il n'est ni cruel ni malveillant : passionné par les serpents, il rejette les dogmes violents de Lolth.",
-      "Il veut découvrir la surface et espère embarquer depuis Port Doëlan vers un autre continent. Il continue vers Port Doëlan avec le convoi."
+      "Il veut découvrir la surface et espère embarquer depuis Port Doëlan vers un autre continent. Il continue vers Port Doëlan avec le convoi.",
+      "Seravine : Immense serpent très venimeux et d'une intelligence notable, compagnon de Solkah Barrow. Son nom signifie Le Poison en elfique."
     ],
     "histoire": [],
     "img": "img/pnj/solkah-barrow.webp",
-    "teinte": "#751921"
-  },
-  {
-    "id": "seravine",
-    "type": "pnj",
-    "nom": "Seravine",
-    "titre": "Serpent de Solkah",
-    "parent": "caravane-port-doelan",
-    "lieu": "caravane-port-doelan",
-    "statut": "vivant",
-    "resume": "Serpent du convoi.",
-    "attitude": "neutre",
-    "connu": [
-      "Immense serpent très venimeux et d'une intelligence notable, compagnon de Solkah Barrow. Son nom signifie Le Poison en elfique."
-    ],
-    "img": "img/pnj/seravine.webp",
-    "teinte": "#751921"
+    "teinte": "#751921",
+    "alias": [
+      "Seravine"
+    ]
   },
   {
     "id": "sanctuaire-de-la-maree",
