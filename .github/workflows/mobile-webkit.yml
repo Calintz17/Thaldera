@@ -7,6 +7,8 @@ on:
       - 'index.html'
       - 'assets/app.js'
       - 'assets/ios-mobile.css'
+      - 'assets/documents.css'
+      - 'data/documents.json'
       - 'tests/mobile/**'
       - '.github/workflows/mobile-webkit.yml'
 concurrency:
