@@ -3173,7 +3173,7 @@
       "Pour réunir les composants du rituel, le groupe obtient de Fennick de la vésine en le menaçant, vainc des ghoules des marées avec l'aide d'Ink, et rapporte trois cœurs flétris. Les clous rouillés viennent de la pêcherie de Rory.",
       "Eamonn négocie enfin, contre du suud, puis ouvre un cercle de téléportation entre sa tour et les ruines du château de Port Doëlan. Philippa trace sa marque de craie sur la porte, point de retour permanent.",
       "Avant le départ pour Azuren Kai, chez Gran Brijit, Philippa a une vision d'une balance désaxée. Olyssane ouvre le passage en faisant couler son sang. Harfang et Ink rencontrent Brijit pour la première fois, et elle semble déjà les connaître.",
-      "Le groupe réveille Nolbrim, dans le coma depuis Malquessar, en le tuant puis en le ressuscitant avec la potion d'Ursinus. Philippa envoie un message à Bourre-Pif.",
+      "Le groupe réveille Nolbrim, dans le coma depuis Malquessar, en le tuant puis en le ressuscitant avec la potion d'Ursinus. Philippa envoie un message à Bourpif.",
       "Vespera vient à Cap Cornes et croise Eamonn.",
       "Plus tard, depuis Roshen Buru, le groupe utilise la craie de Philippa pour répondre à l'appel d'Eamonn lors de l'attaque du Tribunal de Chair, puis Eamonn téléporte le groupe au camp de Vespera."
     ]
@@ -7355,7 +7355,7 @@
     "lieu": "portes-de-corvalis",
     "statut": "vivant",
     "resume": "Marchand itinérant jovial.",
-    "attitude": "neutre",
+    "attitude": "positif",
     "connu": [
       "Premier habitant que Philippa rencontre dans la file d'attente de la Porte de l'Est de Corvalis. Il lui fait goûter un fromage crémeux aux notes salées et bavarde comme avec une vieille amie.",
       "Il lui donne le montant du péage exigé par les gardes, les caprices récents des autorités et les tensions qui pèsent sur les commerçants.",
@@ -7381,7 +7381,7 @@
     "lieu": "portes-de-corvalis",
     "statut": "inconnu",
     "resume": "Un trio de bandits croisé deux fois par Philippa.",
-    "attitude": "neutre",
+    "attitude": "ennemi",
     "connu": [
       "Trois bandits de grand chemin (un guerrier, un magicien et un paladin) interceptent Philippa à la sortie de la plaine avant Corvalis.",
       "Ils cherchent un sponsor pour payer leur entrée en ville : 150 po pour eux trois, car les gardes réclament 50 po par tête.",
@@ -7508,7 +7508,7 @@
     "lieu": "tour-du-pentacle-corvalis",
     "statut": "vivant",
     "resume": "Chef du réseau de contrebande de Corvalis, allié de Philippa.",
-    "attitude": "neutre",
+    "attitude": "allie",
     "connu": [
       "Philippa le rencontre à Corvalis. Il l'accueille après le mot de passe « J'apporte l'encre violette et les plumes pour écrire ».",
       "Il lui propose un accès aux égouts menant au bal masqué, en échange de l'assassinat de Cecilia de Vaelmor.",
@@ -7558,7 +7558,7 @@
     "titre": "Fils du Duc",
     "parent": "theatre-vaelmore",
     "lieu": "theatre-vaelmore",
-    "statut": "vivant",
+    "statut": "mort",
     "resume": "Fils du Duc, rêve de devenir acteur. Naïf, manipulable et mauvais comédien.",
     "attitude": "neutre",
     "connu": [
@@ -7582,12 +7582,13 @@
     "titre": "Duc de Corvalis",
     "parent": "palais-ducal-corvalis",
     "lieu": "palais-ducal-corvalis",
-    "statut": "vivant",
+    "statut": "arrêté",
     "resume": "Ancien marchand devenu noble, fier de sa réussite sociale.",
     "attitude": "neutre",
     "connu": [
       "Il organise un bal masqué pour toutes les puissances afin de présenter le « Joyau tombé du ciel ».",
-      "Après la mort de Cecilia au bal, il est accusé du meurtre et écarté. Un régent du Dominion le remplace."
+      "Après la mort de Cecilia au bal, il est accusé du meurtre et écarté. Un régent du Dominion le remplace.",
+      "Il est emprisonné après les événements du bal de Corvalis."
     ],
     "citation": {
       "texte": "Je suis un homme de chiffres. La loyauté s'achète, la beauté se vend, et le pouvoir… se construit, pierre par pierre.",
@@ -8255,7 +8256,7 @@
     "lieu": "entrepot-de-jericho",
     "statut": "vivant",
     "resume": "Marchand grassouillet, qu'on pille chaque nuit sans que personne ne voie rien.",
-    "attitude": "neutre",
+    "attitude": "allie",
     "connu": [
       "Philippa prend sa quête sur le tableau public. Il lui demande des yeux et des oreilles pour surprendre les pillards et découvrir qui tire les ficelles, et promet de la couvrir d'or.",
       "Dans une caisse à double fond, Philippa trouve du Suud, une drogue brune précieuse et illégale.",
@@ -8278,7 +8279,7 @@
     "lieu": "entrepot-de-jericho",
     "statut": "inconnu",
     "resume": "Voleur du Voile aux ordres d'un inconnu.",
-    "attitude": "neutre",
+    "attitude": "ennemi",
     "connu": [
       "Philippa le surprend en train de piller une caisse dans l'entrepôt de Jericho et le suit jusqu'aux bains publics.",
       "Il rencontre toujours son donneur d'ordre aux bains."
@@ -8343,6 +8344,12 @@
       "Philippa embarque à Lunsk sur ce navire, que commande Vano Meredzi. La traversée dure trois jours et demi.",
       "Une tempête nocturne attire des Nagas, qu'elle repousse avec l'équipage.",
       "Elle débarque à Voros."
+    ],
+    "galerie": [
+      {
+        "img": "img/paysages/lunsk/aile-d-avalon.webp",
+        "legende": "L'Aile d'Avalon, navire de Lunsk à Voros"
+      }
     ]
   },
   {
@@ -8354,7 +8361,7 @@
     "lieu": "laile-d-avalon",
     "statut": "vivant",
     "resume": "Cuisinier sympathique et bonne mine, spécialisé dans le poisson. Né à Rivegard.",
-    "attitude": "neutre",
+    "attitude": "allie",
     "connu": [
       "Philippa le voit pendant la tempête, trempé et hilare, une louche à la main : « J'vous jure Cap'tain, y'en a un qui m'a mordu la cuisse ! »",
       "Il aime le grand large."
@@ -8375,7 +8382,7 @@
     "lieu": "laile-d-avalon",
     "statut": "vivant",
     "resume": "Vieille femme autoritaire et sérieuse. Elle n'aime pas partager d'information sur elle.",
-    "attitude": "neutre",
+    "attitude": "allie",
     "connu": [
       "Philippa la voit à la barre pendant la traversée.",
       "Le capitaine conseille d'éviter de lui parler quand elle regarde. Il faut border net quand elle donne un ordre."
@@ -8393,7 +8400,7 @@
     "lieu": "laile-d-avalon",
     "statut": "vivant",
     "resume": "Jeune tieffeline violette à l'enthousiasme débordant, qui admire le capitaine.",
-    "attitude": "neutre",
+    "attitude": "allie",
     "connu": [
       "Philippa la voit dans la mâture, imitant le capitaine, puis pendant la tempête dans les haubans, sabre entre les dents.",
       "Née dans les bas-quartiers de Solarius, elle rêve de devenir capitaine à son tour."
@@ -8411,7 +8418,7 @@
     "lieu": "laile-d-avalon",
     "statut": "vivant",
     "resume": "Grand, solide et silencieux. Ancien pêcheur né à Havre Noir, très respecté.",
-    "attitude": "neutre",
+    "attitude": "allie",
     "connu": [
       "Il a le pied marin et l'œil plus vif que tous les gabiers du capitaine. Il protège Izzri discrètement.",
       "Philippa le voit ajuster une drisse en silence pendant la traversée, puis retenir les Nagas sur bâbord pendant la tempête."
@@ -9845,7 +9852,7 @@
     "lieu": "voros",
     "statut": "vivant",
     "resume": "Colosse assis dans un coin, couvert de champignons.",
-    "attitude": "neutre",
+    "attitude": "allie",
     "connu": [
       "Helka le présente à Philippa à Voros comme « un très bon ami » : « Me demande pas. Je sais pas. Il m'a jamais décroché un mot non plus. »",
       "Il ne parle jamais. Helka dit qu'il déteste les types de la Griffe, sans en être sûre.",
@@ -9893,7 +9900,7 @@
     "lieu": "laile-d-avalon",
     "statut": "vivant",
     "resume": "Capitaine rond et jovial, boucle d'oreille en cuivre battu et tatouages marins.",
-    "attitude": "neutre",
+    "attitude": "allie",
     "connu": [
       "Ancien corsaire de Havre Noir sous l'ancien régime, il est aujourd'hui auto-entrepreneur basé à Voros.",
       "Il accueille Philippa sur le port de Lunsk, au petit matin : « Lunsk, hein ? Vous avez l'air encore entière, c'est bon signe ! » Voros est à trois jours par le sud.",
