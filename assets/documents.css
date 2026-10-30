@@ -1,0 +1,61 @@
+/* Codex documents : reader, gallery and accordion. Layout isolated from atlas maps. */
+body.document-reading #scene{display:grid;grid-template-columns:minmax(0,1fr);min-width:0;overflow:hidden}
+body.document-reading #scene .world,body.document-reading #scene .panel{display:none!important}
+body.document-reading #scene .stage{display:block!important;min-width:0;width:100%;height:100%;min-height:0;overflow:hidden;position:relative;top:auto;max-height:none}
+body.document-reading #scene .stage>.docreader{position:absolute;inset:0;z-index:35}
+.docreader{overflow-y:auto;overflow-x:hidden;overscroll-behavior-x:none;overscroll-behavior-y:contain;scrollbar-width:thin;scrollbar-color:#826944 transparent;display:block;width:100%;height:100%;padding:clamp(14px,2.2vw,35px) clamp(12px,2.4vw,38px) 60px;background:radial-gradient(ellipse at 50% 0%,#242331,#0b0e16 56%,#090b11 100%)}
+.docreader,.docreader *{box-sizing:border-box;max-width:100%}
+.docreader-wrap{width:100%;max-width:none;margin:0 auto}
+.docreader-head{position:relative;text-align:center;margin:0 0 24px;padding:2px 12px 18px;border-bottom:1px solid rgba(196,163,106,.3)}
+.docreader-head .doc-kicker{display:block;color:#d5b77c;font:700 11px/1.35 var(--ui);text-transform:uppercase;letter-spacing:.21em;margin-bottom:8px}
+.docreader-head h1{color:#f3e2c3;font:600 clamp(21px,2.3vw,32px)/1.25 var(--display);margin:0 0 9px;overflow-wrap:anywhere}
+.docreader-head p{color:#c9bea9;font:17px/1.35 var(--body);margin:4px auto;max-width:750px}
+.docreader-head .doc-back{display:inline-block;margin-bottom:16px;color:#ddc18d;text-decoration:underline;text-underline-offset:3px;font:600 12px var(--ui)}
+.doc-stack{display:flex;flex-direction:column;align-items:stretch;gap:24px;min-width:0}
+.doc-paper{display:block;margin:0;width:100%;min-width:0;background:#e5d9c2;border:1px solid #907b59;box-shadow:0 10px 34px #0009,0 0 0 3px #0006;overflow:hidden}
+.doc-paper img{width:100%;height:auto;max-width:100%;max-height:none;display:block;object-fit:contain;vertical-align:top}
+.doc-paper figcaption{color:#312b24;background:#e8dcc6;padding:8px 14px;font:600 12px/1.3 var(--ui);border-top:1px solid #ac977b}
+.doc-reader-section{margin:0 auto 38px;max-width:100%;width:100%;border-bottom:1px solid rgba(196,163,106,.23);padding-bottom:26px}
+.doc-reader-section h2{color:#f3d9a0;font:600 clamp(18px,1.6vw,24px)/1.24 var(--display);letter-spacing:.025em;margin:0 0 5px;overflow-wrap:anywhere}
+.doc-reader-section .doc-note{font:16px/1.4 var(--body);color:#d8c9b1;margin:0 0 15px}
+.doc-pages{display:flex;flex-direction:column;gap:18px;min-width:0}
+.doc-reader-section .doc-region{color:#bd9f73;font:700 11px var(--ui);letter-spacing:.13em;text-transform:uppercase;margin-bottom:7px}
+.doc-evidence{border-left:2px solid #a88752;padding-left:10px;margin-top:9px}
+.doc-evidence a{color:#e8ca8d!important;text-decoration:underline!important;text-underline-offset:3px;text-decoration-thickness:1px}
+.doc-evidence a:focus-visible,.doc-evidence a:hover{color:#fff4d9!important}
+.doc-catalog .doc-region-group{border-bottom:1px solid rgba(196,163,106,.25)}
+.doc-catalog .doc-region-group>summary{list-style:none;cursor:pointer;padding:14px 18px;display:flex;justify-content:space-between;gap:12px;align-items:center;color:#f0d8ad;font:700 13px var(--display)}
+.doc-catalog .doc-region-group>summary::-webkit-details-marker,.doc-catalog .doc-entry>summary::-webkit-details-marker{display:none}
+.doc-catalog .doc-region-group>summary::after{content:'⌄';color:#c7a874;font:19px var(--ui)}
+.doc-catalog .doc-region-group[open]>summary::after{content:'⌃'}
+.doc-catalog .doc-region-group small{font:500 12px var(--ui);color:#b9a98b}
+.doc-catalog .doc-entry{margin:0 12px 9px;border:1px solid rgba(196,163,106,.25);border-radius:3px;background:#121822}
+.doc-catalog .doc-entry>summary{padding:11px 13px;cursor:pointer;list-style:none;display:flex;align-items:center;justify-content:space-between;gap:10px;color:#e9d5b0;font:600 13px/1.35 var(--ui)}
+.doc-catalog .doc-entry>summary::after{content:'+';font:17px var(--ui);color:#bd9c67}
+.doc-catalog .doc-entry[open]>summary::after{content:'−'}
+.doc-catalog .doc-entry.active{border-color:#c7a66c;background:#252431}
+.doc-catalog .doc-entry-body{padding:0 13px 13px;color:#d8ccb9;font:16px/1.4 var(--body)}
+.doc-catalog .doc-entry-body p{margin:4px 0 9px;overflow-wrap:anywhere}
+.doc-catalog .doc-open{display:inline-flex;align-items:center;min-height:37px;padding:8px 11px;border:1px solid #a68856;background:rgba(196,163,106,.13);color:#f2d7a3;font:700 12px var(--ui);text-decoration:none}
+.doc-catalog .doc-open:hover{background:#4b3a27}
+.doc-catalog .qlist{padding:0}
+.doc-catalog .qwin header{flex:none}
+body.document-reading.journal-open #scene{width:60%;grid-template-columns:minmax(0,1fr)}
+body.document-reading.journal-open #scene .stage{width:100%}
+@media(max-width:860px){
+  body.document-reading,body.document-reading.journal-open{overflow-x:hidden;overflow-y:auto}
+  body.document-reading #scene,body.document-reading.journal-open #scene{display:block!important;width:100%!important;overflow:visible;min-width:0;height:auto;min-height:calc(100dvh - var(--top-h))}
+  body.document-reading #scene .stage{position:relative!important;top:auto!important;height:auto!important;max-height:none!important;min-height:calc(100dvh - var(--top-h))!important;overflow:visible!important}
+  body.document-reading #scene .stage>.docreader{position:relative;inset:auto;height:auto;overflow-x:hidden;overflow-y:visible;padding:15px 10px max(65px,env(safe-area-inset-bottom))}
+  .docreader-head{padding:5px 5px 16px;margin-bottom:17px}
+  .docreader-head h1{font-size:clamp(19px,5.3vw,27px)}
+  .docreader-head p{font-size:16px}
+  .doc-stack{gap:18px}
+  .doc-paper{border-width:1px;box-shadow:0 4px 15px #0009}
+  .doc-paper figcaption{font-size:11px;padding:7px 9px}
+  .doc-pages{gap:12px}
+  .docreader .doc-reader-section{margin-bottom:24px;padding-bottom:21px}
+  .top .nav{flex-wrap:wrap!important;overflow-x:hidden!important;overflow-y:visible!important;scroll-snap-type:none!important;justify-content:center}
+  .top .nav a,.top .nav .qbtn{flex:0 0 auto;min-height:40px;padding:7px 8px;font-size:10px}
+  body.document-reading.journal-open .qlog{z-index:80;left:0;right:0;top:var(--top-h);height:calc(100dvh - var(--top-h));width:100%}
+}
