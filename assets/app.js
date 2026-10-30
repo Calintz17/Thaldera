@@ -1041,6 +1041,10 @@ function detailBlock(e) {
   return `<h4>${esc(e.nom)}</h4><div class="nt">${esc(e.titre || '')}${pills(e)}</div>` +
     (e.resume ? `<p class="resume" style="text-align:left;font-size:17px;margin:6px 0">${L(e.resume, e.id)}</p>` : '') +
     sec('Ce que le groupe sait', savoirHtml(e)) +
+    ((e.type === 'lieu' || e.type === 'ville') && (DOC_LINKS[e.id] || []).length
+      ? sec('Documents récupérés ici', '<ul>' + DOC_LINKS[e.id].map(link => '<li>' + esc(link.texte) +
+        ' <a href="#/documents/' + encodeURIComponent(link.doc.id) + '" aria-label="Lire le document : ' + esc(link.doc.titre) + '">' + esc(link.doc.titre) + '</a></li>').join('') + '</ul>')
+      : '') +
     (e.type === 'pj' ? sec('Enjeux et quête en cours', ul(e.histoire, e.id), 'past') : '') +
     (e.question ? sec('En suspens', `<p class="qs">${L(e.question, e.id)}</p>`) : '') +
     `<a class="more" href="#/${e.id}">Fiche complète ›</a>`;
