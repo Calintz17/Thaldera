@@ -2454,7 +2454,25 @@
       "x": 0.511,
       "y": 0.644
     },
-    "histoire": []
+    "histoire": [],
+    "galerie": [
+      {
+        "img": "img/paysages/havre-noir/assemblage-ponton.webp",
+        "legende": "L'Assemblage"
+      },
+      {
+        "img": "img/paysages/havre-noir/assemblage-gratte-papier.webp",
+        "legende": "L'Assemblage · 2"
+      },
+      {
+        "img": "img/paysages/havre-noir/assemblage-reserve-d-armes.webp",
+        "legende": "L'Assemblage · 3"
+      },
+      {
+        "img": "img/paysages/havre-noir/assemblage-quartiers-du-capitaine.webp",
+        "legende": "L'Assemblage · 4"
+      }
+    ]
   },
   {
     "id": "sycomore-brise-pavois",
@@ -2977,7 +2995,13 @@
     "pos": {
       "x": 0.514,
       "y": 0.774
-    }
+    },
+    "galerie": [
+      {
+        "img": "img/paysages/ile-aux-moines/traversee-de-la-jungle.webp",
+        "legende": "L'Île aux Moines"
+      }
+    ]
   },
   {
     "id": "frere-augustus-carrow",
@@ -4289,37 +4313,6 @@
     "histoire": []
   },
   {
-    "id": "calven",
-    "type": "pnj",
-    "nom": "Calven",
-    "titre": "Marchand de cordages",
-    "parent": "ruelle-des-cordages",
-    "lieu": "ruelle-des-cordages",
-    "statut": "mort",
-    "resume": "Dernière victime du 7 inversé.",
-    "relations": [
-      {
-        "cible": "eldran-korr",
-        "type": "victime d'",
-        "ton": "negatif",
-        "note": "Même signe du 7 inversé sur sa porte.",
-        "inverse": "a tué"
-      },
-      {
-        "cible": "derek-varn",
-        "type": "ancien équipage du Brumeux avec",
-        "ton": "neutre",
-        "inverse": "ancien équipage du Brumeux avec"
-      }
-    ],
-    "attitude": "neutre",
-    "connu": [
-      "Marchand de cordages. Le groupe trouve son cadavre devant sa boutique, avec les mêmes symptômes que les précédentes victimes : peau verdâtre, yeux exorbités. Le 7 inversé, gravé d'un coup de lame sûr, est encore frais sur sa porte, avec des copeaux au sol.",
-      "Ses effets personnels sont saisis et transférés au bureau des registres du port."
-    ],
-    "histoire": []
-  },
-  {
     "id": "melior-skarne",
     "type": "pnj",
     "nom": "Dr. Melior Skarne",
@@ -4911,64 +4904,6 @@
     "teinte": "#754119"
   },
   {
-    "id": "malrik-solbrun",
-    "type": "pnj",
-    "nom": "Diacre Malrik Solbrun",
-    "titre": "Prêtre banni de Thalos",
-    "parent": "temple-de-thalos",
-    "lieu": "temple-de-thalos",
-    "statut": "en fuite",
-    "resume": "Le diacre qui a défié Sycomore.",
-    "connu": [
-      "Diacre du temple de Thalos, il a basculé en prêchant pour le Dominion. Il placardait « la lumière de Sol » et accusait Sycomore d'hérésie sur des affiches.",
-      "Le groupe apprend par les habitants que Sycomore a fait brûler le temple et l'a banni, sans massacrer les fidèles.",
-      "Depuis, plus aucun culte extérieur n'a osé se relever à Havre Noir."
-    ],
-    "citation": {
-      "texte": "Malrik voulait qu'on se rallie tous à la cause du Dominion. Ici, on chante qu'pour l'goudron. Sycomore lui a montré la sortie à coups de torches, et basta.",
-      "qui": "Un charpentier borgne, à propos du Diacre"
-    },
-    "relations": [
-      {
-        "cible": "sycomore-brise-pavois",
-        "type": "banni par",
-        "ton": "negatif",
-        "inverse": "a banni"
-      }
-    ],
-    "attitude": "ennemi",
-    "histoire": []
-  },
-  {
-    "id": "brague",
-    "type": "pnj",
-    "nom": "Brague",
-    "titre": "Marin du Brumeux",
-    "parent": "registres-du-port",
-    "lieu": "registres-du-port",
-    "statut": "mort",
-    "resume": "Un nom sur la liste des morts.",
-    "relations": [
-      {
-        "cible": "eldran-korr",
-        "type": "victime d'",
-        "ton": "negatif",
-        "inverse": "a tué"
-      },
-      {
-        "cible": "derek-varn",
-        "type": "ancien équipage du Brumeux avec",
-        "ton": "neutre",
-        "inverse": "ancien équipage du Brumeux avec"
-      }
-    ],
-    "attitude": "neutre",
-    "histoire": [],
-    "connu": [
-      "Arvik Denholm le cite parmi les marins du Brumeux déjà morts."
-    ]
-  },
-  {
     "id": "les-yeux",
     "type": "organisation",
     "nom": "Les Yeux",
@@ -5330,14 +5265,7 @@
       "qui": "Abby"
     },
     "img": "img/pnj/port-blanc-abby.webp",
-    "relations": [
-      {
-        "cible": "harlow",
-        "type": "même réseau du Voile que",
-        "ton": "positif",
-        "inverse": "même réseau du Voile que"
-      }
-    ],
+    "relations": [],
     "attitude": "neutre",
     "teinte": "#755219",
     "histoire": []
@@ -7890,29 +7818,6 @@
     "histoire": []
   },
   {
-    "id": "edvar-sorn",
-    "type": "pnj",
-    "nom": "Edvar Sorn",
-    "titre": "Capitaine du Grauwacht",
-    "parent": "epave-du-grauwacht",
-    "lieu": "epave-du-grauwacht",
-    "statut": "mort",
-    "resume": "Capitaine d'une mission classifiée.",
-    "galerie": [
-      {
-        "img": "img/paysages/agran/epave-du-grauwacht.webp",
-        "legende": "L'épave du Grauwacht"
-      }
-    ],
-    "relations": [],
-    "attitude": "neutre",
-    "connu": [
-      "Capitaine du Grauwacht, vaisseau d'escorte altéran. Le groupe lit son ordre de mission dans la boîte scellée de la cabine : signé Arkhavel Dorn pour la Chancellerie impériale, il lui demande une escorte strictement défensive de l'Astariel.",
-      "En cas de naufrage de l'Astariel, il devait récupérer en priorité la caisse de pierre scellée de la cabine du capitaine. La mission est classifiée sous peine des sanctions de l'Ordre de la Racine."
-    ],
-    "histoire": []
-  },
-  {
     "id": "epave-de-l-astariel",
     "type": "lieu",
     "nom": "L'épave de l'Astariel",
@@ -8891,6 +8796,12 @@
     "histoire": [],
     "connu": [
       "Le groupe y passe en parcourant le quartier des artisans."
+    ],
+    "galerie": [
+      {
+        "img": "img/paysages/kazad-marunn/atelier-de-poterie.webp",
+        "legende": "L'atelier Sahrim"
+      }
     ]
   },
   {
@@ -9995,7 +9906,13 @@
     "pos": {
       "x": 0.65,
       "y": 0.533
-    }
+    },
+    "galerie": [
+      {
+        "img": "img/paysages/leyenmil/auberge-copperworth.webp",
+        "legende": "L'auberge du Moulin"
+      }
+    ]
   },
   {
     "id": "othuunra",
@@ -10033,6 +9950,12 @@
     "histoire": [],
     "connu": [
       "Le groupe y monte les marches et y présente le fragment."
+    ],
+    "galerie": [
+      {
+        "img": "img/paysages/agran/la-suuraal.webp",
+        "legende": "La demeure de la Suuraal"
+      }
     ]
   },
   {
