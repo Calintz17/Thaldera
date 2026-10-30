@@ -4,7 +4,8 @@
 (() => {
 'use strict';
 
-const VER = '89';
+const VER = '90';
+const LEGACY_IDS = { 'bourre-piff':'bourpif', 'seravine':'solkah-barrow', 'tilda':'irna', 'cleff':'irna' };
 const EDIT = new URLSearchParams(location.search).has('edit');
 const $ = (s, r = document) => r.querySelector(s);
 const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
@@ -350,7 +351,9 @@ function fallbackLand(e) {
   const chainUp = [];
   if (e.lieu && BY[e.lieu]) chainUp.push(...chain(BY[e.lieu]).reverse());
   chainUp.push(...chain(e).reverse().slice(1));
-  for (const x of chainUp) if (x.galerie && x.galerie.length) return x.type === 'ville' ? [x.galerie[0]] : x.galerie;
+  // A city-wide image often depicts a specific scene. Never inherit it for
+  // unrelated places or NPCs: Corvalis used to show the same race everywhere.
+  for (const x of chainUp) if (x.type === 'lieu' && x.galerie && x.galerie.length) return x.galerie;
   return null;
 }
 function frameOf(k, solo) {
@@ -896,11 +899,12 @@ function network(e) {
   (REVERSE_REL[e.id] || []).forEach(({ source: o, relation: r }) => {
     if (o.type !== 'sujet') add(o.id, r.inverse || r.type, r.ton, true);
   });
+  const isPerson = r => ['pnj','pj'].includes(BY[r.id]?.type);
   const grp = (label, ton) => {
-    const l = rows.filter(r => ton === 'neutre' ? (r.ton !== 'positif' && r.ton !== 'negatif') : r.ton === ton);
+    const l = rows.filter(r => ton === 'contextuel' ? !isPerson(r) : isPerson(r) && (ton === 'neutre' ? (r.ton !== 'positif' && r.ton !== 'negatif') : r.ton === ton));
     return l.length ? `<div class="net ${ton}"><span class="nl">${label}</span><div class="rels">${l.map(r => `<a class="chip ${ton === 'positif' ? 'pos' : ton === 'negatif' ? 'neg' : ''}" href="#/${r.id}">${r.rev ? `${esc(BY[r.id].nom)} <small>(${esc(r.type.charAt(0).toLowerCase() + r.type.slice(1))})</small>` : `<b>${esc(r.type)}</b>${esc(BY[r.id].nom)}`}</a>`).join('')}</div></div>` : '';
   };
-  return grp('Alliés', 'positif') + grp('Ennemis', 'negatif') + grp('Autres liens', 'neutre');
+  return grp('Alliés', 'positif') + grp('Ennemis', 'negatif') + grp('Autres liens', 'neutre') + grp('Lieux et factions', 'contextuel');
 }
 function parcours(e) {
   if (!e.etapes || !e.etapes.length) return '';
@@ -1107,6 +1111,7 @@ async function route() {
   document.querySelectorAll('.nav a').forEach(a => a.classList.toggle('on', !id && a.dataset.nav === 'monde'));
   if (!id) { showWorld(); return; }
   const e = BY[id];
+  if (!e && LEGACY_IDS[id] && BY[LEGACY_IDS[id]]) { location.replace('#/' + LEGACY_IDS[id]); return; }
   if (e && e.locked) { location.hash = '#/'; return; }
   if (!e) { sceneEl.classList.remove('is-world'); panelEl.innerHTML = '<div class="pin-pad"><nav class="crumbs"><a class="back" href="#/">‹ Monde</a></nav><p class="empty">Cette page n’existe pas encore.</p></div>'; return; }
   if (e.redirige && BY[e.redirige]) { location.replace('#/' + e.redirige); return; }
