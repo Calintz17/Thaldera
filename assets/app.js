@@ -4,7 +4,7 @@
 (() => {
 'use strict';
 
-const VER = '88';
+const VER = '89';
 const EDIT = new URLSearchParams(location.search).has('edit');
 const $ = (s, r = document) => r.querySelector(s);
 const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
@@ -278,7 +278,7 @@ function sceneOf(e, q, depth = 0) {
       const om = ownerMap(e);
       if (!om) {
         const ps = sceneOf(BY[e.parent], null, depth + 1);
-        if (ps && depth === 0 && ps.kind === 'map') return withCast({ ...ps, gallery: (e.galerie && e.galerie.length) ? e.galerie : (ps.gallery || [PH_LAND]) }, e);
+        if (ps && depth === 0 && ps.kind === 'map') return withCast({ ...ps, gallery: (e.galerie && e.galerie.length) ? e.galerie : [PH_LAND] }, e);
         return ps;
       }
       const host = om.host, cs = host.cartes;
@@ -611,6 +611,7 @@ function clearGal(hard) {
   clearInterval(galTimer); galTimer = null;
   if (S.gal) {
     const g = S.gal;
+    if (g._resizeGallery) window.removeEventListener('resize', g._resizeGallery);
     g.classList.remove('on');
     setTimeout(() => g.remove(), hard ? 0 : 950);
     S.gal = null;
@@ -623,7 +624,7 @@ function showGallery(imgs, title, ent) {
   clearGal(true);
   const g = document.createElement('div');
   g.className = 'gal';
-  g.innerHTML = imgs.map((im, i) => `<div class="sl${i === 0 ? ' act' : ''}"><img ${i < 2 ? 'src' : 'data-src'}="${esc(im.img)}" decoding="async" alt="${esc(im.legende || title || '')}"></div>`).join('') +
+  g.innerHTML = imgs.map((im, i) => `<div class="sl${i === 0 ? ' act' : ''}"><div class="landscape-frame"><img ${i < 2 ? 'src' : 'data-src'}="${esc(im.img)}" decoding="async" alt="${esc(im.legende || title || '')}"></div></div>`).join('') +
     `<div class="gcap"><span class="gt"></span>${imgs.length > 1 ? '<div class="gdots">' + imgs.map((_, i) => `<button type="button" data-i="${i}" aria-label="Illustration ${i + 1} sur ${imgs.length}"${i === 0 ? ' class="on"' : ''}></button>`).join('') + '</div><div class="gnav"><button data-d="-1" aria-label="Précédente">‹</button><button data-d="1" aria-label="Suivante">›</button></div>' : ''}</div>`;
   stageEl.insertBefore(g, $('.fog', stageEl));
   S.gal = g;
@@ -639,18 +640,20 @@ function showGallery(imgs, title, ent) {
       readyCutouts.set(c.img, preloaded);
     }
   });
-  g.querySelectorAll('.sl img').forEach(im => {
-    const fit = () => {
-      if (!im.naturalWidth || !im.naturalHeight) return;
-      const ratio = im.naturalWidth / im.naturalHeight;
-      const w = Math.min(stageEl.clientWidth * .94, stageEl.clientHeight * .92 * ratio, im.naturalWidth * 1.7);
-      im.style.width = Math.max(1, Math.round(w)) + 'px';
-      im.style.height = 'auto';
-      im.style.maxWidth = '94%';
-      im.style.maxHeight = '92%';
-    };
-    if (im.complete) fit(); else im.addEventListener('load', fit);
-  });
+  // One stable 4:3 display frame for every landscape, independent of source dimensions.
+  // Small originals are not enlarged beyond their native resolution, preventing blur.
+  const resizeFrames = () => {
+    if (!g.isConnected) return;
+    const width = Math.max(1, Math.floor(Math.min(stageEl.clientWidth * .94, stageEl.clientHeight * .88 * 4 / 3)));
+    g.style.setProperty('--landscape-width', width + 'px');
+    if (S.curFormOf && S.gal === g) {
+      const who = BY[S.curFormOf];
+      if (who) setCutout(who, S.curForm);
+    }
+  };
+  g._resizeGallery = resizeFrames;
+  resizeFrames();
+  window.addEventListener('resize', resizeFrames);
   let cur = 0;
   const go = n => {
     cur = (n + imgs.length) % imgs.length;
@@ -731,10 +734,12 @@ function setCutout(e, form) {
   img.alt = e.nom;
   const fit = () => {
     if (!img.naturalWidth || !img.naturalHeight || !c.isConnected) return;
-    const maxH = stageEl.clientHeight * (innerWidth <= 760 ? .79 : .87);
-    const maxW = stageEl.clientWidth * (innerWidth <= 760 ? .68 : .62);
+    const frame = S.gal && $('.sl.act .landscape-frame', S.gal);
+    const bounds = frame ? frame.getBoundingClientRect() : stageEl.getBoundingClientRect();
+    const maxH = Math.min(stageEl.clientHeight * .61, bounds.height * .73);
+    const maxW = Math.min(stageEl.clientWidth * .44, bounds.width * .48);
     const ratio = img.naturalWidth / img.naturalHeight;
-    const width = Math.min(maxW, maxH * ratio, img.naturalWidth * 1.85);
+    const width = Math.min(maxW, maxH * ratio, img.naturalWidth * 1.3);
     img.style.width = Math.max(1, Math.round(width)) + 'px';
     img.style.height = 'auto';
     img.style.maxHeight = Math.round(maxH) + 'px';
@@ -742,8 +747,8 @@ function setCutout(e, form) {
   };
   const anchor = () => {
     if (!c.isConnected) return;
-    const bg = S.gal && $('.sl.act img', S.gal);
-    if (!bg || !bg.naturalWidth) return;
+    const bg = S.gal && $('.sl.act .landscape-frame', S.gal);
+    if (!bg) return;
     const sr = stageEl.getBoundingClientRect(), br = bg.getBoundingClientRect();
     c.style.setProperty('--cb', Math.max(0, sr.bottom - br.bottom) + 'px');
     c.style.setProperty('--cx', Math.max(0, sr.right - br.right) + 'px');
@@ -759,7 +764,7 @@ function setCutout(e, form) {
     fit();
     img.style.opacity = '1';
   }
-  const bg = S.gal && $('.sl.act img', S.gal);
+  const bg = S.gal && $('.sl.act .landscape-frame img', S.gal);
   if (bg && !bg.complete) bg.addEventListener('load', anchor, { once: true });
   requestAnimationFrame(anchor);
   S.cut = key;
