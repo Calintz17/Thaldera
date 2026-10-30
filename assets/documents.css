@@ -60,3 +60,38 @@ body.document-reading.journal-open #scene .stage{width:100%}
 }
 
 .doc-evidence{display:block;}
+
+/* Six compact navigation actions fit within the iPhone viewport in reader mode.
+   Avoid WebKit promoting the horizontally scrolled header to page-level overflow. */
+@media(max-width:860px){
+  body.document-reading .top .nav{
+    display:grid!important;
+    grid-template-columns:repeat(6,minmax(0,1fr));
+    gap:2px!important;
+    width:100%!important;
+    max-width:100%!important;
+    min-width:0!important;
+    overflow:hidden!important;
+    scroll-snap-type:none!important;
+    margin:0!important;
+  }
+  body.document-reading .top .nav a,
+  body.document-reading .top .nav .qbtn{
+    min-width:0!important;
+    width:100%!important;
+    padding:4px 1px!important;
+    display:flex!important;
+    flex-direction:column;
+    gap:2px!important;
+    min-height:45px;
+    white-space:normal!important;
+    text-align:center;
+  }
+  body.document-reading .top .nav svg{width:16px;height:16px}
+  body.document-reading .top .nav span{
+    font-size:clamp(8px,2.15vw,10px);
+    line-height:1;
+    letter-spacing:0;
+    white-space:nowrap;
+  }
+}
