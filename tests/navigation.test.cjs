@@ -44,7 +44,7 @@ const theme = fs.readFileSync(path.join(root, 'assets/arcane-theme.css'), 'utf8'
 const page = fs.readFileSync(path.join(root, 'index.html'), 'utf8');
 const sessions = JSON.parse(fs.readFileSync(path.join(root, 'data/parties.json'), 'utf8'));
 assert.match(page, /arcane-theme\.css\?v=\d+/, 'Atlas theme must be linked');
-assert.match(page, /assets\/app\.js\?v=88/, 'App and stylesheet cache versions must match the v88 release');
+assert.match(page, /assets\/app\.js\?v=90/, 'App and stylesheet cache versions must match the v90 release');
 assert.ok(page.includes('id="sbtn"') && page.includes('id="slog"'), 'Recap drawer must be present');
 assert.ok(Array.isArray(sessions.parties), 'Session summaries schema must be an array');
 assert.ok(source.includes("['slog','sbtn']"), 'Summary drawer must share side-dock controller');
@@ -57,7 +57,16 @@ assert.ok(!source.includes('function showPrev(id)'), 'Redundant geographical too
 for (const id of ['cabane-de-gran-brijit','cabane-gran-brijit']) {
   assert.equal(by[id]?.redirige,'manoir-des-ligaments','Manor duplicate must redirect');
 }
-assert.equal(by['bourre-piff']?.redirige,'bourpif','Bourpif identity must be consolidated');
+assert.ok(!by['bourre-piff'] && by.bourpif, 'Bourpif must have one canonical ficha');
+assert.ok(['bourre-piff','seravine','tilda','cleff','mika'].every(id => !by[id]), 'Former duplicate NPCs must be removed');
+assert.equal(by['solkah-barrow']?.nom, 'Solkah Barrow et Seravine');
+assert.equal(by.irna?.nom, 'Irna, Tilda et Cleff');
+assert.equal(by['laile-d-avalon']?.galerie?.[0]?.img, 'img/paysages/lunsk/aile-d-avalon.webp');
+assert.equal(by['vieux-garde-graham']?.img, 'img/pnj/camont-garde-de-la-salle-des-coffres.webp');
+assert.equal(by['creux-d-azur']?.parent, 'outreterre');
+assert.ok(source.includes('landscape-frame'), 'Standard 4:3 landscape frame must exist');
+assert.ok(source.includes('LEGACY_IDS'), 'Old bookmarks must redirect to merged group fiches');
+assert.ok(source.includes('x.type === \'lieu\''), 'Landscape inheritance must not fall back to an unrelated city image');
 assert.equal(by['gran-brijit'].lieu,'manoir-des-ligaments','Gran Brijit must live in canonical manor');
 assert.equal(by['nolbrim'].lieu,'manoir-des-ligaments','Nolbrim must live in canonical manor');
 assert.equal(by.ink.parent,'agran','Ink must be indexed from Agran');
