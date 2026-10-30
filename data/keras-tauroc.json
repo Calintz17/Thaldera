@@ -2833,7 +2833,8 @@
     "ordre": 2,
     "img": "img/pnj/saoren.webp",
     "attitude": "neutre",
-    "teinte": "#752519"
+    "teinte": "#752519",
+    "tailleAsset": "standard"
   },
   {
     "id": "festival-cornes-rouges",
@@ -6021,7 +6022,8 @@
     "connu": [
       "Garde qui protège la Ville Haute.",
       "Philippa et Jane butent sur elle à la porte de la Ville Haute."
-    ]
+    ],
+    "redirige": "gardes-gris"
   },
   {
     "id": "lukas",
@@ -7008,7 +7010,8 @@
     ],
     "attitude": "neutre",
     "teinte": "#753c19",
-    "histoire": []
+    "histoire": [],
+    "tailleAsset": "mini"
   },
   {
     "id": "camp-de-vespera",
@@ -8468,9 +8471,9 @@
     "titre": "Chef des bandits",
     "parent": "camp-des-bandits-creux",
     "lieu": "camp-des-bandits-creux",
-    "statut": "inconnu",
+    "statut": "mort",
     "resume": "Il commande le camp des braconniers à l'entrée de Creux d'Azur.",
-    "attitude": "neutre",
+    "attitude": "ennemi",
     "connu": [
       "Archer redoutable. Philippa tombe sur son camp en arrivant à Creux d'Azur, et il verrouille la seule sortie de la ville.",
       "Autour du siphon d'âmes de son camp, des cadavres de Githzerai, la peau striée de veines noires.",
@@ -8713,9 +8716,9 @@
     "titre": "Drider déchu",
     "parent": "temple-de-l-essence-volee",
     "lieu": "temple-de-l-essence-volee",
-    "statut": "inconnu",
+    "statut": "mort",
     "resume": "Il incante le rituel du temple de l'Essence volée.",
-    "attitude": "neutre",
+    "attitude": "ennemi",
     "connu": [
       "Philippa le trouve en plein rituel autour du cristal de Lolth, avec Vaerion et Gorrak. Le rituel prend fin avec la destruction du cristal.",
       "Il se bat avec des lames chitineuses, des illusions ténébreuses et un cri qui effraie."
@@ -8735,9 +8738,9 @@
     "titre": "Elfe mage de la gravité",
     "parent": "temple-de-l-essence-volee",
     "lieu": "temple-de-l-essence-volee",
-    "statut": "inconnu",
+    "statut": "mort",
     "resume": "Mage calculateur qui assiste Xaelith.",
-    "attitude": "neutre",
+    "attitude": "ennemi",
     "connu": [
       "Philippa le voit tracer des runes dans l'air autour du cristal, aux côtés de Xaelith et de Gorrak.",
       "Il dispose de sorts de chute, de distorsion gravitationnelle et de singularité.",
@@ -8754,9 +8757,9 @@
     "titre": "Barbare imposant",
     "parent": "temple-de-l-essence-volee",
     "lieu": "temple-de-l-essence-volee",
-    "statut": "inconnu",
+    "statut": "mort",
     "resume": "Barbare nonchalant avant le combat.",
-    "attitude": "neutre",
+    "attitude": "ennemi",
     "connu": [
       "Philippa le trouve adossé à un mur du temple, jouant avec la garde de son immense épée, au moment où Xaelith et Vaerion incantent.",
       "Il combat avec une hache, une frappe de titan et une rage élémentaire.",
@@ -9059,7 +9062,13 @@
     },
     "histoire": [],
     "img": "img/pnj/berrund-hrakkal.webp",
-    "teinte": "#754c19"
+    "teinte": "#754c19",
+    "galerie": [
+      {
+        "img": "img/paysages/malquessar/berrund-hrakkal.webp",
+        "legende": "Berrund Hrakkal"
+      }
+    ]
   },
   {
     "id": "mellioen-lumeverre",
@@ -9085,7 +9094,13 @@
     ],
     "histoire": [],
     "img": "img/pnj/mellioen-lumeverre.webp",
-    "teinte": "#754d19"
+    "teinte": "#754d19",
+    "galerie": [
+      {
+        "img": "img/paysages/malquessar/mellioen-lumeverre.webp",
+        "legende": "Mellioen Lumeverre"
+      }
+    ]
   },
   {
     "id": "erdem-brelmott",
@@ -9108,7 +9123,13 @@
     },
     "histoire": [],
     "img": "img/pnj/erdem-brelmott.webp",
-    "teinte": "#754c19"
+    "teinte": "#754c19",
+    "galerie": [
+      {
+        "img": "img/paysages/malquessar/erdem-brelmott.webp",
+        "legende": "Erdem Brelmott"
+      }
+    ]
   },
   {
     "id": "gritz",
@@ -9992,5 +10013,20 @@
     "statut": "inconnu",
     "attitude": "neutre",
     "teinte": "#855330"
+  },
+  {
+    "id": "zelote-de-lolth",
+    "type": "pnj",
+    "nom": "La Zélote de Lolth",
+    "titre": "Zélote de Lolth, Creux d'Azur",
+    "parent": "creux-d-azur",
+    "lieu": "creux-d-azur",
+    "statut": "vivant",
+    "attitude": "ennemi",
+    "resume": "Zélote de Lolth présente dans la ville de Creux d'Azur.",
+    "connu": [
+      "Présente lors de l'arrivée de Philippa à Creux d'Azur dans l'Outreterre."
+    ],
+    "histoire": []
   }
 ]
