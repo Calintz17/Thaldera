@@ -640,3 +640,39 @@ body.journal-open .qlog .qwin{min-height:0}
 @media(prefers-reduced-motion:reduce) {
   .gal .sl, .cutout.steady img { transition:none !important; }
 }
+
+/* v89: fixed landscape frame and cutouts scaled to their actual background frame. */
+.gal .sl .landscape-frame {
+  position:relative;
+  flex:none;
+  width:var(--landscape-width, 90%);
+  aspect-ratio:4 / 3;
+  max-width:94%;
+  max-height:88%;
+  overflow:hidden;
+  background:#0e1119;
+  border:1px solid rgba(197,162,107,.20);
+  box-shadow:0 18px 50px rgba(0,0,0,.58);
+}
+.gal .sl .landscape-frame img {
+  width:100% !important;
+  height:100% !important;
+  max-width:100% !important;
+  max-height:100% !important;
+  object-fit:contain !important;
+  display:block;
+}
+.cutout.steady img {
+  right:calc(var(--cx, 0px) + 2%);
+  left:auto;
+  bottom:calc(var(--cb, 0px) + 1%);
+  max-height:61%;
+  max-width:44%;
+}
+.cutout.steady.lf img {
+  left:calc(var(--cl, 0px) + 2%);
+  right:auto;
+}
+@media(max-width:860px) {
+  .cutout.steady img { max-height:56%; max-width:44%; }
+}
