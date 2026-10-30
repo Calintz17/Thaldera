@@ -148,4 +148,23 @@ for location in ["creux-d-azur", "corvalis", "laile-d-avalon", "herboristerie-la
 print("Pixel count is a risk indicator: compression artifacts, blur and subject"
       " mismatches still require visual inspection before replacing a source.")
 
+# v91: exhaustive, machine-readable quality inventory for the GM's spreadsheet.
+# 'Miniature' is an intentional display decision, not a defective portrait.
+miniatures = {
+    "img/pnj/agran-kel-assistant-de-peraalys.webp",
+    "img/pnj/agran-fragment-de-nyrrh.webp",
+    "img/pnj/monstre-du-gibet.webp",
+}
+for category, canvas in [("LANDSCAPE", (960, 720)), ("PORTRAIT", (440, 560))]:
+    for scale, path, dims in quality_candidates(category, canvas):
+        classification = "MINIATURE" if path in miniatures else ("REPLACE" if scale >= 1.5 else "REVIEW")
+        print(f"MEDIA_AUDIT|{category}|{path}|{dims[0]}|{dims[1]}|{scale:.2f}|{classification}")
+# Any 4:3 display-frame mismatch is acceptable visually (letterboxing),
+# but original source ratios materially different from 4:3 should be reviewed.
+for path, dims in sorted(results.items()):
+    if path in used and (path.startswith("img/paysages/") or "/lieux/" in path):
+        source_ratio = dims[0] / dims[1]
+        if abs(source_ratio - 4 / 3) / (4 / 3) > 0.12:
+            print(f"MEDIA_RATIO|{path}|{dims[0]}|{dims[1]}|{source_ratio:.3f}")
+
 sys.exit(1 if linked_missing or linked_unreadable else 0)
