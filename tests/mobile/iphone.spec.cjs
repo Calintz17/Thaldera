@@ -295,6 +295,9 @@ test('Chronological document order and slim source-only reader', async ({page}) 
   await expect(page.locator('#stage .doc-reader-section h2')).toHaveCount(0);
   const firstImageSrc = await first.locator('img').getAttribute('src');
   expect(firstImageSrc).toContain('le-vesper-lettre');
+  // The mobile journal is intentionally closed until the player taps Documents.
+  await page.locator('#dbtn').click();
+  await expect(page.locator('#dlog')).toBeVisible();
   const roshenGroup = page.locator('#dlog .doc-region-group').filter({has:page.locator('summary', {hasText:'Roshen Buru'})});
   await roshenGroup.locator('summary').first().click();
   const order = await roshenGroup.locator('a.doc-list-row b').allTextContents();
