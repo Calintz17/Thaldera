@@ -112,4 +112,40 @@ for name in sorted(set(linked_missing + linked_unreadable)):
     print("  [BROKEN]", name)
 if unreadable:
     print(f"Unparsable or unsupported formats: {len(unreadable)} (inspect individually).")
+# v90: prioritize media by *actual display scaling*, not only an arbitrary
+# source-pixel cutoff. 960x720 is a representative desktop landscape frame,
+# and 440x560 approximates the largest character overlay.
+def enlargement(size, canvas):
+    w, h = size
+    return min(canvas[0] / w, canvas[1] / h)
+
+def quality_candidates(kind, canvas):
+    if kind == "LANDSCAPE":
+        candidates = ((p, dims) for p, dims in results.items()
+                      if p in used and ("paysages/" in p or "/lieux/" in p))
+    else:
+        candidates = ((p, dims) for p, dims in results.items()
+                      if p in used and (p.startswith("img/pnj/") or "/pnj/" in p))
+    ranked = sorted(((enlargement(dims, canvas), p, dims)
+                     for p, dims in candidates), reverse=True)
+    return [row for row in ranked if row[0] > 1.1]
+
+for kind, canvas in [("LANDSCAPE", (960, 720)), ("PORTRAIT", (440, 560))]:
+    ranked = quality_candidates(kind, canvas)
+    print(f"Upscaling review {kind}: {len(ranked)} linked files need >10% enlargement"
+          f" at an indicative {canvas[0]}x{canvas[1]} viewport.")
+    for scale, path, dims in ranked[:30]:
+        priority = "HIGH" if scale >= 1.5 else "MEDIUM"
+        print(f"  [{priority}] {path} {dims[0]}x{dims[1]} px"
+              f", estimated scale x{scale:.2f}")
+
+# Missing galleries are content gaps, not missing or corrupt files.
+for location in ["creux-d-azur", "corvalis", "laile-d-avalon", "herboristerie-la-sous-corolle"]:
+    owner = next((e for e in entries if e["id"] == location), None)
+    if owner:
+        print(f"  [COVERAGE] {owner['nom']}: {len(owner.get('galerie', []))} authored"
+              " landscape(s) linked to this ficha.")
+print("Pixel count is a risk indicator: compression artifacts, blur and subject"
+      " mismatches still require visual inspection before replacing a source.")
+
 sys.exit(1 if linked_missing or linked_unreadable else 0)
