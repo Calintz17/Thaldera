@@ -7834,7 +7834,13 @@
       "x": 0.172,
       "y": 0.722
     },
-    "histoire": []
+    "histoire": [],
+    "galerie": [
+      {
+        "img": "img/paysages/agran/epave-du-grauwacht.webp",
+        "legende": "Illustration commune des deux épaves (validée par le MJ)"
+      }
+    ]
   },
   {
     "id": "ossyraal",
@@ -9064,6 +9070,12 @@
     "connu": [
       "La Rectrice y reçoit Jane, puis M. Falken.",
       "Un bâtiment annexe confortable lui sert de salle à manger."
+    ],
+    "galerie": [
+      {
+        "img": "img/paysages/leyenmil/orphelinat-falken.webp",
+        "legende": "Intérieur de l'orphelinat, scène Falken (validé par le MJ)"
+      }
     ]
   },
   {
