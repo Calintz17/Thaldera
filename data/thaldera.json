@@ -1534,7 +1534,13 @@
       "x": 0.844,
       "y": 0.525
     },
-    "histoire": []
+    "histoire": [],
+    "galerie": [
+      {
+        "img": "img/paysages/camont/fabrique.webp",
+        "legende": "La fabrique textile de Camont"
+      }
+    ]
   },
   {
     "id": "nix",
@@ -2078,7 +2084,7 @@
       "qui": "Mara « Red » Callahan"
     },
     "img": "img/pnj/port-blanc-mara.webp",
-    "attitude": "positif",
+    "attitude": "allie",
     "teinte": "#753c19"
   },
   {
@@ -2895,7 +2901,13 @@
       "Il la conduit à l'entrepôt de Mezzek. Philippa l'épargne."
     ],
     "img": "img/pnj/silex.webp",
-    "teinte": "#19756b"
+    "teinte": "#19756b",
+    "galerie": [
+      {
+        "img": "img/paysages/lunsk/silex.webp",
+        "legende": "Silex à Lunsk"
+      }
+    ]
   },
   {
     "id": "selva",
@@ -2919,7 +2931,7 @@
         "inverse": "même réseau du Voile que"
       }
     ],
-    "attitude": "positif",
+    "attitude": "allie",
     "histoire": [],
     "connu": [
       "Philippa la rencontre dans les ruelles de Lunsk, brouillard et silhouette fine, au moment où elle parle de la Griffe. Elle lui propose de se faire passer pour une commanditaire de Sol Novem afin de piéger un sbire.",
@@ -3313,11 +3325,11 @@
     "nom": "L'Incarnat",
     "titre": "Porteur de la Première Flamme",
     "parent": "pyrrah",
-    "lieu": "pyrrah",
+    "lieu": "basilique-d-heliandros",
     "statut": "vivant",
     "resume": "Jeune gardien de la ville, épargné par le groupe.",
     "citation": "Je savais que vous viendriez. La Flamme me l'a murmuré, hier. Elle m'a dit que ce n'était pas moi qui devais la porter. Pas pour toujours.",
-    "attitude": "neutre",
+    "attitude": "positif",
     "connu": [
       "Adolescent de douze à quatorze ans, peau mate, traits doux, vêtu de tissus blancs et sable. Une couronne de flammes stable pulse au-dessus de sa tête.",
       "Il vit seul dans le sanctuaire supérieur du temple, sans garde ni prêtre. Autour de son cou pend la Première Flamme, un cristal incandescent sur une chaîne noire.",
@@ -3327,30 +3339,13 @@
     ],
     "histoire": [],
     "img": "img/pnj/l-incarnat.webp",
-    "teinte": "#754119"
-  },
-  {
-    "id": "solemnar",
-    "type": "pnj",
-    "nom": "Solemnar",
-    "titre": "Grand prêtre de la Flamme",
-    "parent": "pyrrah",
-    "lieu": "pyrrah",
-    "statut": "vivant",
-    "resume": "Autorité religieuse du sanctuaire. Les genasi sont interrogés avant d'approcher la chambre solaire.",
-    "relations": [
+    "teinte": "#754119",
+    "galerie": [
       {
-        "cible": "l-incarnat",
-        "type": "grand prêtre de",
-        "ton": "positif"
+        "img": "img/paysages/pyrrah/basilique-d-heliandros.webp",
+        "legende": "Basilique d'Héliandros"
       }
-    ],
-    "attitude": "neutre",
-    "connu": [
-      "Prêtre de la basilique d'Héliandros, à Pyrrah. Il officie sous la coupole solaire où brûlent douze braseros rituels.",
-      "Le groupe le croise à la basilique, parmi les prêtres."
-    ],
-    "histoire": []
+    ]
   },
   {
     "id": "ashur",
@@ -3378,10 +3373,20 @@
         "inverse": "amie de"
       }
     ],
-    "attitude": "neutre",
+    "attitude": "positif",
     "histoire": [],
     "img": "img/pnj/ashur.webp",
-    "teinte": "#754b19"
+    "teinte": "#754b19",
+    "galerie": [
+      {
+        "img": "img/paysages/kazad-marunn/maison-d-ashur.webp",
+        "legende": "Chez Ashur"
+      },
+      {
+        "img": "img/paysages/kazad-marunn/maison-d-ashur-2.webp",
+        "legende": "Chez Ashur, autre vue"
+      }
+    ]
   },
   {
     "id": "chateau-spezza",
@@ -5158,40 +5163,6 @@
     "histoire": []
   },
   {
-    "id": "damian",
-    "type": "pnj",
-    "nom": "Damian",
-    "titre": "Jeune garde de la villa Graham",
-    "parent": "villa-graham",
-    "lieu": "villa-graham",
-    "statut": "vivant",
-    "resume": "Jeune garde qui rêve de prouver sa valeur dans la ville basse.",
-    "citation": {
-      "texte": "Mais c'est pas enfermé au sous-sol que nos noms seront gravés dans l'histoire !",
-      "qui": "Damian"
-    },
-    "relations": [
-      {
-        "cible": "graham-gonn",
-        "type": "garde de",
-        "ton": "neutre",
-        "inverse": "gardé par"
-      },
-      {
-        "cible": "vieux-garde-graham",
-        "type": "collègue de",
-        "ton": "neutre",
-        "note": "Le vieux garde conseille au jeune de savourer les postes calmes.",
-        "inverse": "collègue de"
-      }
-    ],
-    "attitude": "neutre",
-    "histoire": [],
-    "connu": [
-      "Philippa et Jane surprennent sa conversation avec le vieux garde dans la salle des coffres."
-    ]
-  },
-  {
     "id": "vieux-garde-graham",
     "type": "pnj",
     "nom": "Vieux garde de la villa Graham",
@@ -5253,7 +5224,7 @@
       }
     ],
     "img": "img/pnj/port-doe-lan-absalom-de-guise-e-en-sadie.webp",
-    "attitude": "neutre",
+    "attitude": "ennemi",
     "teinte": "#2d2d2d",
     "histoire": []
   },
@@ -5309,7 +5280,7 @@
         "ton": "positif"
       }
     ],
-    "attitude": "neutre",
+    "attitude": "ennemi",
     "connu": [
       "Posté avec Ezekiel à l'entrée des abattoirs de chaux, où toute la viande de la ville est traitée. Les Familles ont interdit l'accès aux étrangers.",
       "Calme, professionnel, inflexible. Il bloque l'entrée devant Philippa et Jane : « Accès fermé. Demi-tour. » Les refus sont nets et répétés, sans provocation. Leur fermeté inhabituelle trahit l'importance de l'enjeu."
@@ -5346,7 +5317,7 @@
         "inverse": "garde avec"
       }
     ],
-    "attitude": "neutre",
+    "attitude": "ennemi",
     "connu": [
       "Posté avec Tiberius à l'entrée des abattoirs de chaux, il répète les consignes des Familles et refuse l'accès aux étrangers. À Philippa et Jane : « Ordres des Familles. Pas d'étrangers. »"
     ],
@@ -5703,26 +5674,6 @@
     ],
     "teinte": "#755219",
     "histoire": []
-  },
-  {
-    "id": "turner",
-    "type": "pnj",
-    "nom": "M. et Mme Turner",
-    "titre": "Aubergiers assassinés",
-    "parent": "auberge-des-trois-pins",
-    "lieu": "auberge-des-trois-pins",
-    "statut": "mort",
-    "resume": "Les véritables aubergistes des Trois Pins.",
-    "alias": [
-      "Mr Turner",
-      "Mme Turner",
-      "Turner"
-    ],
-    "attitude": "neutre",
-    "histoire": [],
-    "connu": [
-      "Philippa et Jane trouvent leurs cadavres récents dans la réserve de l'auberge."
-    ]
   },
   {
     "id": "gue-port-blanc",
@@ -7849,7 +7800,8 @@
       "Dans l'échoppe de Peraalys, il glisse trois potions mineures au groupe."
     ],
     "teinte": "#755219",
-    "histoire": []
+    "histoire": [],
+    "tailleAsset": "mini"
   },
   {
     "id": "atelier-de-drisuun",
@@ -8021,7 +7973,7 @@
     "titre": "Écho des Marées",
     "parent": "epave-de-l-astariel",
     "lieu": "epave-de-l-astariel",
-    "statut": "vivant",
+    "statut": "mort",
     "resume": "Écho des Marées, gardienne de l'épave.",
     "connu": [
       "« Je ne vends pas. J'échange. »",
@@ -8076,7 +8028,8 @@
       }
     ],
     "img": "img/pnj/agran-fragment-de-nyrrh.webp",
-    "histoire": []
+    "histoire": [],
+    "tailleAsset": "mini"
   },
   {
     "id": "kataron",
@@ -8601,28 +8554,6 @@
     "histoire": []
   },
   {
-    "id": "ephyrion",
-    "type": "pnj",
-    "nom": "Ephyrion",
-    "titre": "Employé des Thermes Solaires",
-    "parent": "thermes-solaires",
-    "lieu": "thermes-solaires",
-    "statut": "vivant",
-    "resume": "Un des trois serviteurs des thermes.",
-    "relations": [
-      {
-        "cible": "pyrokles",
-        "type": "serviteur de",
-        "ton": "neutre",
-        "inverse": "maître de"
-      }
-    ],
-    "attitude": "neutre",
-    "connu": [
-      "Employé des Thermes Solaires de Pyrrah, aux côtés de Pyroklès et Orésias."
-    ]
-  },
-  {
     "id": "pyrokles",
     "type": "pnj",
     "nom": "Pyroklès",
@@ -8642,31 +8573,6 @@
     "histoire": [],
     "img": "img/pnj/pyrokles.webp",
     "teinte": "#754419"
-  },
-  {
-    "id": "oresias",
-    "type": "pnj",
-    "nom": "Orésias",
-    "titre": "Employé des Thermes Solaires",
-    "parent": "thermes-solaires",
-    "lieu": "thermes-solaires",
-    "statut": "vivant",
-    "resume": "Un des trois serviteurs des thermes.",
-    "alias": [
-      "Oresias"
-    ],
-    "relations": [
-      {
-        "cible": "pyrokles",
-        "type": "serviteur de",
-        "ton": "neutre",
-        "inverse": "maître de"
-      }
-    ],
-    "attitude": "neutre",
-    "connu": [
-      "Employé des Thermes Solaires de Pyrrah, aux côtés de Pyroklès et Ephyrion."
-    ]
   },
   {
     "id": "basilique-d-heliandros",
@@ -8807,7 +8713,14 @@
       "Capitaine Brunhild",
       "Brunhild"
     ],
-    "histoire": []
+    "histoire": [],
+    "img": "img/pnj/le-manoir-des-ligaments-harpe-landsknecht.webp",
+    "galerie": [
+      {
+        "img": "img/paysages/cap-cornes/chez-gran-brijit.webp",
+        "legende": "L'intérieur du manoir"
+      }
+    ]
   },
   {
     "id": "hexacore",
@@ -8868,15 +8781,7 @@
     "lieu": "auberge-dans-la-roche",
     "statut": "vivant",
     "resume": "Un des deux brigands de l'auberge.",
-    "relations": [
-      {
-        "cible": "ur-kalmesh",
-        "type": "complice de",
-        "ton": "negatif",
-        "note": "Taxe de protection réclamée aux étrangers.",
-        "inverse": "complice de"
-      }
-    ],
+    "relations": [],
     "attitude": "neutre",
     "connu": [
       "Brigand de Khazad-Marûn. Il entre de nuit dans la chambre des PJ à l'auberge dans la roche, au couteau, pour les détrousser en exigeant de l'argent pour leur protection : « Vous n'êtes pas les bienvenus ici, les étrangers… »",
@@ -8885,28 +8790,50 @@
     "citation": "Vous n'êtes pas les bienvenus ici, les étrangers. Et si vous voulez rester, il faut payer pour notre protection !",
     "histoire": [],
     "img": "img/pnj/zababa-mahir.webp",
-    "teinte": "#754d19"
+    "teinte": "#754d19",
+    "redirige": "ur-kalmesh"
   },
   {
     "id": "ur-kalmesh",
     "type": "pnj",
-    "nom": "Ur Kalmesh",
-    "titre": "Villageois de Khazad-Marûn",
+    "nom": "Ur Kalmesh Zababa Mahir",
+    "titre": "Aubergiste de Kazad Marunn",
     "parent": "auberge-dans-la-roche",
     "lieu": "auberge-dans-la-roche",
     "statut": "vivant",
-    "resume": "Un des deux brigands de l'auberge.",
+    "resume": "Aubergiste de l'Auberge dans la Roche à Kazad Marunn.",
     "citation": {
       "texte": "Vous n'êtes pas les bienvenus ici, les étrangers… Et si vous voulez rester, il faut payer pour notre protection !",
       "qui": "Un brigand de l'auberge"
     },
-    "attitude": "neutre",
+    "attitude": "positif",
     "connu": [
-      "Autre brigand de Khazad-Marûn, impliqué dans l'incident nocturne de l'auberge dans la roche. Il réclame au groupe de l'argent pour sa protection."
+      "Il tient l'auberge dans la roche de Kazad Marunn, où le groupe séjourne.",
+      "Un homme du village s'introduit de nuit dans la chambre des voyageurs pour les détrousser. Son identité est distincte de celle de l'aubergiste."
     ],
     "histoire": [],
     "img": "img/pnj/ur-kalmesh.webp",
-    "teinte": "#754d19"
+    "teinte": "#754d19",
+    "alias": [
+      "Ur Kalmesh",
+      "Zababa Mahir"
+    ],
+    "galerie": [
+      {
+        "img": "img/paysages/kazad-marunn/auberge-dans-la-roche.webp",
+        "legende": "L'Auberge dans la Roche"
+      }
+    ],
+    "formes": [
+      {
+        "label": "Ur Kalmesh",
+        "img": "img/pnj/ur-kalmesh.webp"
+      },
+      {
+        "label": "Autre portrait attribué à Zababa Mahir, à confirmer",
+        "img": "img/pnj/zababa-mahir.webp"
+      }
+    ]
   },
   {
     "id": "herboriste-la-vie-des-dunes",
@@ -9132,7 +9059,14 @@
     "lieu": "kazad-marunn",
     "histoire": [],
     "img": "img/pnj/al-batun.webp",
-    "teinte": "#753719"
+    "teinte": "#753719",
+    "statut": "vivant",
+    "galerie": [
+      {
+        "img": "img/paysages/kazad-marunn/al-batun.webp",
+        "legende": "Al Batun, ver des sables"
+      }
+    ]
   },
   {
     "id": "la-gueule-des-sables",
@@ -10112,6 +10046,12 @@
     "histoire": [],
     "connu": [
       "Philippa y essaie sa lyre, qui ne produit aucun son, et Algari lui montre le thuun."
+    ],
+    "galerie": [
+      {
+        "img": "img/paysages/agran/algari-et-othuunra.webp",
+        "legende": "Algari et l'Othuunra"
+      }
     ]
   },
   {
@@ -10160,5 +10100,27 @@
         "legende": "Le Cœur de la corruption"
       }
     ]
+  },
+  {
+    "id": "golems-d-arkhan",
+    "type": "pnj",
+    "nom": "Les Golems d'Arkhan",
+    "titre": "Gardiens arcaniques du donjon d'Aram Sharûn",
+    "parent": "tour-de-resonance",
+    "lieu": "tour-de-resonance",
+    "statut": "inconnu",
+    "attitude": "ennemi",
+    "resume": "Golems arcaniques rencontrés dans le donjon d'Aram Sharûn.",
+    "connu": [
+      "Des golems de garde et un golem de résonance temporelle défendent le donjon."
+    ],
+    "img": "img/pnj/kazad-maruun-golem.webp",
+    "galerie": [
+      {
+        "img": "img/paysages/kazad-marunn/donjon-d-aram-sharun-4.webp",
+        "legende": "Golems du donjon"
+      }
+    ],
+    "histoire": []
   }
 ]
