@@ -205,22 +205,22 @@
       "titre": "Lettre d'un agent de l'Aile d'Argent",
       "region": "Le Vesper",
       "type": "Lettre",
-      "decouverte": "Contexte de récupération précis à confirmer.",
-      "description": "Lettre liée à l'Aile d'Argent ; récupération précise à confirmer. Contexte de récupération précis à confirmer.",
+      "decouverte": "Devant le village de Nagas, pendant l'ascension du temple sur l'Île du Vesper.",
+      "description": "Lettre portée par un agent de l'Aile d'Argent rencontré à l'approche du village gardant l'accès au temple.",
       "pages": [
         "img/props/le-vesper-lettre-dun-agent-de-laile-dargent.webp"
       ],
       "liens": [
         {
-          "id": "le-vesper",
-          "texte": "Contexte de récupération précis à confirmer. Le groupe conserve ce document."
+          "id": "ile-du-vesper",
+          "texte": "Pendant l'ascension vers le temple, le groupe récupère une lettre sur un agent de l'Aile d'Argent à l'approche du village de Nagas."
         },
         {
           "id": "aile-d-argent",
-          "texte": "Contexte de récupération précis à confirmer. Le groupe conserve ce document."
+          "texte": "Une lettre portée par un agent de l'Aile d'Argent est récupérée sur l'Île du Vesper."
         }
       ],
-      "confirmation": "à-confirmer"
+      "confirmation": "scénario-PDF-localisé"
     },
     {
       "id": "ile-moines-journal-septim",
