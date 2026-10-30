@@ -188,6 +188,7 @@
       "pages": [
         "img/props/khazad-maruun-document-retrouve-dans-le-donjon-daram-sharun.webp",
         "img/props/khazad-maruun-document-retrouve-dans-le-donjon-daram-sharun2.webp",
+        "img/props/khazad-maruun-document-retrouve-dans-le-donjon-daram-sharun3.webp",
         "img/props/khazad-maruun-document-retrouve-dans-le-donjon-daram-sharun4.webp",
         "img/props/khazad-maruun-document-retrouve-dans-le-donjon-daram-sharun5.webp"
       ],
@@ -828,6 +829,62 @@
         }
       ],
       "confirmation": "lieu-nommé"
+    },
+    {
+      "id": "ile-moines-journal-augustus",
+      "titre": "Extraits du journal de frère Augustus",
+      "region": "Île aux Moines",
+      "type": "Journal",
+      "decouverte": "L'Île aux Moines ; lieu exact de découverte à confirmer.",
+      "description": "Extraits datés du journal de frère Augustus, conservés par le groupe. Le lieu de récupération précis reste à confirmer.",
+      "pages": [
+        "img/props/lile-aux-moines-extrait-du-journal-de-frere-augustus-jour-660.webp",
+        "img/props/lile-aux-moines-extrait-du-journal-de-frere-augustus-jours-661-a-664.webp",
+        "img/props/lile-aux-moines-extrait-du-journal-de-frere-augustus-jour-665.webp"
+      ],
+      "liens": [
+        {
+          "id": "ile-aux-moines",
+          "texte": "Au cours de son passage sur l'Île aux Moines, le groupe conserve des extraits du journal de frère Augustus ; le lieu précis de leur découverte reste à confirmer."
+        }
+      ],
+      "confirmation": "à-confirmer"
+    },
+    {
+      "id": "roshen-menace-inconnue",
+      "titre": "Lettre de menace retrouvée à Roshen Buru",
+      "region": "Roshen Buru",
+      "type": "Lettre",
+      "decouverte": "Roshen Buru ; destinataire et lieu exact de découverte à confirmer.",
+      "description": "Lettre menaçante conservée parmi les documents de Roshen Buru. Destinataire et récupération à confirmer.",
+      "pages": [
+        "img/props/roshen-buru-lettre-de-menace-tu-croyais-que-cetait-fini.webp"
+      ],
+      "liens": [
+        {
+          "id": "roshen-buru",
+          "texte": "Le groupe conserve une lettre de menace liée à Roshen Buru ; sa provenance exacte reste à confirmer."
+        }
+      ],
+      "confirmation": "à-confirmer"
+    },
+    {
+      "id": "roshen-rapport-cloture-019",
+      "titre": "Rapport de clôture, dossier 019-08",
+      "region": "Roshen Buru",
+      "type": "Rapport",
+      "decouverte": "Roshen Buru ; endroit exact où le dossier a été consulté à confirmer.",
+      "description": "Rapport administratif relatif à un ancien dossier concernant Darrek Kovacz. Lieu de récupération à confirmer.",
+      "pages": [
+        "img/props/roshen-buru-rapport-de-cloture-019-dossier-019-08-darrek-kovacz.webp"
+      ],
+      "liens": [
+        {
+          "id": "roshen-buru",
+          "texte": "Un rapport de clôture portant la référence 019-08 figure parmi les documents du groupe ; son lieu précis de récupération reste à confirmer."
+        }
+      ],
+      "confirmation": "à-confirmer"
     }
   ]
 }
