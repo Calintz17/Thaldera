@@ -8457,7 +8457,17 @@
       "Elle libère Bilpi, puis descend au Temple de l'Essence volée, où le drider Xaelith, le mage Vaerion et le barbare Gorrak incantent un rituel autour du cristal de Lolth, siphon d'âmes de la ville. Vassago la pousse au massacre pendant tout le combat.",
       "Philippa détruit le cristal. La ville reprend vie. Natharim est mort seul dans sa cage. À la surface, un elfe de l'Ordre d'Argent, Arianthil, l'attend et la téléporte, sans que Philippa ne se retourne vers les survivants."
     ],
-    "histoire": []
+    "histoire": [],
+    "galerie": [
+      {
+        "img": "img/paysages/creux-d-azur/vue-de-la-ville.webp",
+        "legende": "Creux d'Azur, vue de la ville"
+      },
+      {
+        "img": "img/paysages/creux-d-azur/rue-de-la-zelote.webp",
+        "legende": "La rue principale, sous les toiles de Lolth"
+      }
+    ]
   },
   {
     "id": "camp-des-bandits-creux",
@@ -8472,6 +8482,12 @@
       "Des patrouilles à la torche gardent le camp, qui bloque la seule sortie de la ville.",
       "Autour du siphon d'âmes se trouvent des cadavres de Githzerai aux veines noires.",
       "Vassago pousse Philippa à massacrer et lui offre un nouveau sort."
+    ],
+    "galerie": [
+      {
+        "img": "img/paysages/creux-d-azur/camp-des-braconniers.webp",
+        "legende": "Le camp des braconniers"
+      }
     ]
   },
   {
@@ -8505,6 +8521,12 @@
     "connu": [
       "Philippa la trouve arrêtée devant les murs de Creux d'Azur : la mine s'est effondrée derrière elle et les braconniers refusent le passage.",
       "Après la destruction du cristal, la caravane n'est plus en vue. Darren et les siens errent encore dans l'Underdark."
+    ],
+    "galerie": [
+      {
+        "img": "img/paysages/creux-d-azur/la-caravane.webp",
+        "legende": "La caravane de Darren"
+      }
     ]
   },
   {
@@ -8542,6 +8564,12 @@
     "histoire": [],
     "connu": [
       "Philippa y entre au début de sa visite de la ville."
+    ],
+    "galerie": [
+      {
+        "img": "img/paysages/creux-d-azur/salon-funeraire.webp",
+        "legende": "Le salon funéraire de Sorem"
+      }
     ]
   },
   {
@@ -8580,6 +8608,12 @@
     "connu": [
       "Philippa y voit une scène de crime figée : griffures sur les murs et large traînée de sang qui part vers la porte arrière, où un corps a été traîné.",
       "Korrik continue de marteler son enclume vide pendant tout son passage."
+    ],
+    "galerie": [
+      {
+        "img": "img/paysages/creux-d-azur/forge-de-korrik.webp",
+        "legende": "La forge de Korrik"
+      }
     ]
   },
   {
@@ -8611,6 +8645,12 @@
     "histoire": [],
     "connu": [
       "Philippa y trouve les étals renversés."
+    ],
+    "galerie": [
+      {
+        "img": "img/paysages/creux-d-azur/boucherie-de-tommen.webp",
+        "legende": "La boucherie de Tommen"
+      }
     ]
   },
   {
@@ -8644,6 +8684,12 @@
     "connu": [
       "Philippa y libère Bilpi du pilier auquel il était enchaîné.",
       "Après la destruction du cristal, l'auberge retrouve sa fonction."
+    ],
+    "galerie": [
+      {
+        "img": "img/paysages/creux-d-azur/la-chope-fendue.webp",
+        "legende": "La Chope Fendue"
+      }
     ]
   },
   {
@@ -8675,6 +8721,12 @@
     "histoire": [],
     "connu": [
       "Philippa y rencontre Natharim, enfermé dans la cage."
+    ],
+    "galerie": [
+      {
+        "img": "img/paysages/creux-d-azur/ruelle-et-cage.webp",
+        "legende": "La ruelle et la cage"
+      }
     ]
   },
   {
@@ -8717,7 +8769,17 @@
       "Philippa y affronte Xaelith, Vaerion et Gorrak et détruit le cristal, ce qui libère la ville.",
       "Elle retrouve ensuite la surface, où Arianthil, un elfe de l'Ordre d'Argent, l'attend et la téléporte loin de l'Underdark."
     ],
-    "histoire": []
+    "histoire": [],
+    "galerie": [
+      {
+        "img": "img/paysages/creux-d-azur/temple-facade.webp",
+        "legende": "Le temple de l'Essence volée"
+      },
+      {
+        "img": "img/paysages/creux-d-azur/temple-coeur.webp",
+        "legende": "Au cœur du temple"
+      }
+    ]
   },
   {
     "id": "xaelith",
@@ -8758,7 +8820,17 @@
     ],
     "histoire": [],
     "img": "img/pnj/vaerion.webp",
-    "teinte": "#751970"
+    "teinte": "#751970",
+    "galerie": [
+      {
+        "img": "img/paysages/creux-d-azur/temple-coeur.webp",
+        "legende": "Au cœur du temple"
+      },
+      {
+        "img": "img/paysages/creux-d-azur/temple-facade.webp",
+        "legende": "Le temple de l'Essence volée"
+      }
+    ]
   },
   {
     "id": "gorrak",
@@ -8777,7 +8849,17 @@
     ],
     "histoire": [],
     "img": "img/pnj/gorrak.webp",
-    "teinte": "#754c19"
+    "teinte": "#754c19",
+    "galerie": [
+      {
+        "img": "img/paysages/creux-d-azur/temple-coeur.webp",
+        "legende": "Au cœur du temple"
+      },
+      {
+        "img": "img/paysages/creux-d-azur/temple-facade.webp",
+        "legende": "Le temple de l'Essence volée"
+      }
+    ]
   },
   {
     "id": "ile-du-vesper",
@@ -10046,6 +10128,16 @@
       "Présente lors de l'arrivée de Philippa à Creux d'Azur dans l'Outreterre."
     ],
     "histoire": [],
-    "img": "img/pnj/zeloth-de-lolth.webp"
+    "img": "img/pnj/zeloth-de-lolth.webp",
+    "galerie": [
+      {
+        "img": "img/paysages/creux-d-azur/rue-de-la-zelote.webp",
+        "legende": "La rue principale, sous les toiles de Lolth"
+      },
+      {
+        "img": "img/paysages/creux-d-azur/vue-de-la-ville.webp",
+        "legende": "Creux d'Azur, vue de la ville"
+      }
+    ]
   }
 ]
