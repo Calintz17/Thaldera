@@ -1,7 +1,7 @@
 [
   {
     "id": "consortium",
-    "type": "faction",
+    "type": "region",
     "nom": "Le Consortium",
     "titre": "Les ports pirates et marchands du sud",
     "parent": "thaldera",

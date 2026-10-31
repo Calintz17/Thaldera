@@ -5893,18 +5893,33 @@
     ]
   },
   {
-    "id": "nord-sol-draken",
-    "type": "sujet",
-    "nom": "Le nord glacial",
-    "titre": "Clans Sol Draken",
+    "id": "clans-soldraken",
+    "type": "region",
+    "nom": "Les Clans Soldraken",
+    "titre": "Le nord glacial",
     "parent": "thaldera",
-    "resume": "Tribus guerrières du nord de Thaldera, qui se croient descendues des dragons. Porte-Hiver est la porte d'entrée du nord, Halsfjord le second point de passage. Le Grarjord est la région la plus au nord.",
+    "accent": "#8fb8d4",
+    "zone": {
+      "x": 0.1,
+      "y": 0.06,
+      "w": 0.76,
+      "h": 0.5
+    },
     "alias": [
+      "Soldraken",
       "Sol Draken",
       "Clans Sol Draken",
+      "Clans Soldraken",
+      "Le nord glacial",
       "Porte-Hiver",
       "Halsfjord",
       "Grarjord"
+    ],
+    "resume": "Tribus guerrières du nord de Thaldera, qui se croient descendues des dragons. Porte-Hiver est la porte d'entrée du nord, Halsfjord le second point de passage. Le Grarjord est la région la plus au nord.",
+    "connu": [
+      "Les clans sont des tribus guerrières qui se croient descendues des dragons.",
+      "Porte-Hiver est la porte d'entrée du nord, Halsfjord le second point de passage.",
+      "Le Grarjord est la région la plus au nord."
     ]
   },
   {
@@ -6483,7 +6498,11 @@
         "img": "img/paysages/corvalis/course-de-miren.webp",
         "legende": "La course de Miren"
       }
-    ]
+    ],
+    "pos": {
+      "x": 0.679,
+      "y": 0.552
+    }
   },
   {
     "id": "teravane",
@@ -6553,7 +6572,11 @@
         "img": "img/paysages/obaline/chasseur-du-dominion.webp",
         "legende": "Le chasseur du Dominion"
       }
-    ]
+    ],
+    "pos": {
+      "x": 0.5224,
+      "y": 0.4319
+    }
   },
   {
     "id": "grisecroix",
@@ -6632,7 +6655,11 @@
         "img": "img/paysages/lumenlid/epreuve-aeon-calaryn.webp",
         "legende": "L'épreuve d'Aeon Calaryn"
       }
-    ]
+    ],
+    "pos": {
+      "x": 0.5019,
+      "y": 0.341
+    }
   },
   {
     "id": "einsenmarch",

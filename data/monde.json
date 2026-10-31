@@ -51,7 +51,7 @@
       {
         "id": "factions",
         "img": "img/cartes/thaldera-factions.webp",
-        "legende": "Territoires des factions"
+        "legende": "Territoires des régions"
       }
     ],
     "alias": [
@@ -59,11 +59,11 @@
       "Thalderran",
       "Thalderrans"
     ],
-    "resume": "Un continent de factions rivales, voisin d'Istra.",
+    "resume": "Un continent de puissances rivales, voisin d'Istra.",
     "connu": [
       "Thaldera est séparée d'Istra par la mer d'Émeraude. Des tempêtes gigantesques rendent la traversée impossible. Elles naissent de l'arbre d'un titan, faisceau de sa puissance disparue sous l'océan.",
       "Ses habitants parlent une autre langue qu'Istra.",
-      "Au moins trois factions s'y distinguent : le Dominion Sol, Altéra et le Consortium.",
+      "Au moins trois puissances s'y distinguent : le Dominion Sol, Altéra et le Consortium.",
       "Le groupe a visité Port Doëlan, une ville rasée en pleine reconstruction.",
       "Un portail relie Cap Cornes, sur Istra, à Port Doëlan. Le groupe ne l'a pas ouvert vers Havre Noir."
     ],
@@ -641,7 +641,7 @@
   },
   {
     "id": "altera",
-    "type": "faction",
+    "type": "region",
     "nom": "Altéra",
     "titre": "Dynastie d'Altéra",
     "parent": "thaldera",
@@ -659,7 +659,7 @@
       "altérane",
       "altérans"
     ],
-    "resume": "Une des factions de Thaldera.",
+    "resume": "Une des grandes puissances de Thaldera.",
     "connu": [
       "Altéra est dirigée par l'impératrice Eryndel.",
       "La Gardienne envisage une alliance avec elle, d'après son journal."
@@ -1266,9 +1266,9 @@
   },
   {
     "id": "dominion-sol",
-    "type": "faction",
+    "type": "region",
     "nom": "Dominion Sol",
-    "titre": "Faction de Thaldera",
+    "titre": "Territoire de Thaldera",
     "parent": "thaldera",
     "blason": "img/blasons/dominion-sol.webp",
     "accent": "#c44510",
@@ -1281,7 +1281,7 @@
     "alias": [
       "le Dominion"
     ],
-    "resume": "Faction de Thaldera qui semble mener une guerre.",
+    "resume": "Puissance de Thaldera qui semble mener une guerre.",
     "connu": [],
     "poly": [
       [

@@ -4,7 +4,7 @@
 (() => {
 'use strict';
 
-const VER = '99';
+const VER = '100';
 const LEGACY_IDS = { 'bourre-piff':'bourpif', 'seravine':'solkah-barrow', 'tilda':'irna', 'cleff':'irna' };
 const EDIT = new URLSearchParams(location.search).has('edit');
 const $ = (s, r = document) => r.querySelector(s);
@@ -17,7 +17,7 @@ const TYPES = {
   pnj: 'Personnage', pj: 'Joueur', clan: 'Clan', organisation: 'Organisation', evenement: 'Événement', sujet: 'Savoir'
 };
 const KID_GROUPS = [
-  ['region', 'Régions'], ['faction', 'Factions'], ['ville', 'Villes'], ['lieu', 'Lieux'],
+  ['region', 'Régions'], ['ville', 'Villes'], ['lieu', 'Lieux'],
   ['clan', 'Clans'], ['organisation', 'Organisations'], ['pnj', 'Personnages'], ['evenement', 'Événements'], ['sujet', 'Savoirs']
 ];
 const ACCENTS = { dominion: '#c44510', altera: '#4a8fd9', consortium: '#c9a84c', istra: '#d96a28', agran: '#1e4f9c' };
@@ -392,6 +392,15 @@ function collectVilles(e) {
     const walk = x => kids(x.id).forEach(k => { if (k.type === 'ville' && k.pos) out.push(k); else if (k.type === 'region' || k.type === 'faction') walk(k); });
     walk(e);
     return out;
+  });
+}
+function allVilles(e) {
+  return cachedCollection('allvilles', e, () => {
+    const out = [];
+    const walk = x => kids(x.id).forEach(k => { if (k.type === 'ville') out.push(k); else if (k.type === 'region' || k.type === 'faction') walk(k); });
+    walk(e);
+    const key = k => k.nom.replace(/^(L['’]|Le |La |Les )/i, '');
+    return out.sort((a, b) => key(a).localeCompare(key(b), 'fr'));
   });
 }
 function collectLieux(v) {
@@ -1099,6 +1108,11 @@ function renderPanel(e, q) {
   // enfants
   const placed = new Set(here.map(x => x.id));
   KID_GROUPS.forEach(([t, label]) => {
+    if (e.type === 'continent' && (t === 'evenement' || t === 'sujet')) return;
+    if (e.type === 'continent' && t === 'ville') {
+      const l = allVilles(e); if (l.length) h += sec(label, `<div class="kids">${l.map(kidCard).join('')}</div>`);
+      return;
+    }
     if (t === 'pnj') {
       let list = e.type === 'ville' || e.type === 'region' ? descPNJ(e) : kids(e.id, 'pnj').filter(x => !placed.has(x.id));
       if (isPlace) list = [];
@@ -1302,7 +1316,7 @@ function initExplorer() {
   const continents = DB.filter(e => e.type === 'continent' && !e.locked);
   let continent = '', region = '', type = '', term = '';
   const regions = DB.filter(e => (e.type === 'region' || e.type === 'faction') && !e.locked && !e.redirige);
-  const types = [['', 'Tout'], ['region', 'Régions'], ['faction', 'Factions'],
+  const types = [['', 'Tout'], ['region', 'Régions'],
     ['ville', 'Villes'], ['lieu', 'Lieux'], ['pnj', 'PNJ'], ['pj', 'Joueurs']];
   const render = () => {
     const visible = DB.filter(e => {
