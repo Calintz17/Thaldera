@@ -9804,10 +9804,10 @@
   {
     "id": "forge-de-durnan-forgefeuil",
     "type": "lieu",
-    "nom": "La forge de Durnan Forgefeuil",
-    "titre": "Quartier sud-ouest",
+    "nom": "Boutique de Durnan Forgefeuil",
+    "titre": "Marchand de la ville haute",
     "parent": "corvalis",
-    "resume": "Forge de Durnan Forgefeuil.",
+    "resume": "Boutique de Durnan Forgefeuil, marchand de potions, huiles et élixirs de la ville haute.",
     "pos": {
       "x": 0.2,
       "y": 0.8
