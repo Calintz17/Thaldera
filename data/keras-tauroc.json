@@ -6422,6 +6422,10 @@
         "legende": "Mellioen Lumeverre"
       },
       {
+        "img": "img/paysages/malquessar/rue-de-la-ville.webp",
+        "legende": "La rue de la ville"
+      },
+      {
         "img": "img/paysages/malquessar/couverture.webp",
         "legende": "Malquessar, illustration"
       }
@@ -9016,7 +9020,13 @@
     },
     "histoire": [],
     "img": "img/pnj/dren-malbar.webp",
-    "teinte": "#197526"
+    "teinte": "#197526",
+    "galerie": [
+      {
+        "img": "img/paysages/malquessar/les-portes.webp",
+        "legende": "Les portes de la ville"
+      }
+    ]
   },
   {
     "id": "thalanir-veldorel",
@@ -9043,7 +9053,13 @@
     ],
     "histoire": [],
     "img": "img/pnj/thalanir-veldorel.webp",
-    "teinte": "#727519"
+    "teinte": "#727519",
+    "galerie": [
+      {
+        "img": "img/paysages/malquessar/rue-de-la-ville.webp",
+        "legende": "La rue de la ville"
+      }
+    ]
   },
   {
     "id": "elarin-velasyr",
@@ -9067,7 +9083,13 @@
     },
     "histoire": [],
     "img": "img/pnj/elarin-velasyr.webp",
-    "teinte": "#757419"
+    "teinte": "#757419",
+    "galerie": [
+      {
+        "img": "img/paysages/malquessar/rue-de-la-ville.webp",
+        "legende": "La rue de la ville"
+      }
+    ]
   },
   {
     "id": "mira-glindewyn",
@@ -9104,6 +9126,12 @@
         "lieux": [],
         "teinte": "#697519"
       }
+    ],
+    "galerie": [
+      {
+        "img": "img/paysages/malquessar/fleuristerie-de-liora.webp",
+        "legende": "La fleuristerie"
+      }
     ]
   },
   {
@@ -9130,7 +9158,13 @@
     ],
     "histoire": [],
     "img": "img/pnj/arlo-brisemousse.webp",
-    "teinte": "#6f7519"
+    "teinte": "#6f7519",
+    "galerie": [
+      {
+        "img": "img/paysages/malquessar/mellioen-lumeverre.webp",
+        "legende": "Mellioen Lumeverre et Arlo"
+      }
+    ]
   },
   {
     "id": "berrund-hrakkal",

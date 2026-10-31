@@ -2659,7 +2659,8 @@
         "img": "img/pnj/liora-havre-noir-liora-human-form.webp",
         "texte": "Philippa la rencontre dans sa fleuristerie de la cité mouvante. Liora quitte ensuite la ville et part errer dans le sud de Thaldera.",
         "lieux": [],
-        "teinte": "#754e19"
+        "teinte": "#754e19",
+        "fond": "img/paysages/malquessar/fleuristerie-de-liora.webp"
       },
       {
         "label": "Esclave de la Griffe à l'Île aux Moines",
@@ -2700,7 +2701,8 @@
         "img": "img/pnj/liora-havre-noir-liora-human-form.webp",
         "texte": "Philippa la rencontre dans sa fleuristerie de la cité mouvante. Liora quitte ensuite la ville et part errer dans le sud de Thaldera.",
         "lieux": [],
-        "teinte": "#754e19"
+        "teinte": "#754e19",
+        "fond": "img/paysages/malquessar/fleuristerie-de-liora.webp"
       },
       {
         "label": "Esclave de la Griffe à l'Île aux Moines",
@@ -3351,7 +3353,7 @@
         "inverse": "apprentie de"
       }
     ],
-    "attitude": "allie",
+    "attitude": "positif",
     "histoire": [],
     "img": "img/pnj/kaldros-emberforge.webp",
     "teinte": "#754919"
@@ -3815,8 +3817,8 @@
     "type": "pnj",
     "nom": "Lirenne",
     "titre": "Alchimiste",
-    "parent": "port-doelan",
-    "lieu": "port-doelan",
+    "parent": "officine",
+    "lieu": "officine",
     "statut": "vivant",
     "resume": "Alchimiste de l'Officine.",
     "connu": [
@@ -3828,7 +3830,13 @@
     "relations": [],
     "attitude": "allie",
     "teinte": "#755219",
-    "histoire": []
+    "histoire": [],
+    "galerie": [
+      {
+        "img": "img/paysages/port-doelan/officine.webp",
+        "legende": "L'officine de l'alchimiste"
+      }
+    ]
   },
   {
     "id": "matthias-holbrekt",
@@ -5895,6 +5903,12 @@
     "histoire": [],
     "connu": [
       "Le groupe y rencontre Lirenne, alchimiste qui vend potions, acides et poudres de fumée."
+    ],
+    "galerie": [
+      {
+        "img": "img/paysages/port-doelan/officine.webp",
+        "legende": "L'officine de l'alchimiste"
+      }
     ]
   },
   {
@@ -6729,6 +6743,12 @@
     "histoire": [],
     "connu": [
       "Le groupe y achète du pain à bas prix auprès de Bruno Rossi."
+    ],
+    "galerie": [
+      {
+        "img": "img/paysages/port-doelan/ancre-seche.webp",
+        "legende": "La rue de la boulangerie"
+      }
     ]
   },
   {
@@ -6747,7 +6767,13 @@
       "Il travaille sans lever beaucoup les yeux."
     ],
     "teinte": "#753c19",
-    "histoire": []
+    "histoire": [],
+    "galerie": [
+      {
+        "img": "img/paysages/port-doelan/ancre-seche.webp",
+        "legende": "La rue de la boulangerie"
+      }
+    ]
   },
   {
     "id": "fleurs-nicea",
@@ -8132,7 +8158,13 @@
       "Les commandes de pyrracier se sont arrêtées d'un coup, et les dernières caisses sont parties vers Port Doëlan."
     ],
     "chapeau": "À la lisière des quartiers de forge, dans une rue étroite encore tiède de la chaleur du jour. Murs noircis de suie, plafond bas qui retient la fumée, foyer mal entretenu. Une arrière-salle se cache derrière un rideau épais, pour les discussions qui ne doivent pas porter.",
-    "histoire": []
+    "histoire": [],
+    "galerie": [
+      {
+        "img": "img/paysages/pyrrah/taverne-du-rendez-vous.webp",
+        "legende": "La taverne du rendez-vous"
+      }
+    ]
   },
   {
     "id": "morve",
@@ -8371,7 +8403,7 @@
         "inverse": "prophétie confirmée par"
       }
     ],
-    "attitude": "positif",
+    "attitude": "neutre",
     "connu": [
       "Drakéide arcaniste de l'Athanor, à Pyrrah. Il ne se soucie pas de politique et ne jure que par la recherche.",
       "Il a vu l'Incarnat plusieurs fois, venu bénir des rituels. Il confirme que la prophétie des cheveux de flamme est authentique et que les prêtres sont nerveux à l'approche de la procession.",
@@ -8442,7 +8474,13 @@
       "x": 0.722,
       "y": 0.259
     },
-    "histoire": []
+    "histoire": [],
+    "galerie": [
+      {
+        "img": "img/paysages/pyrrah/thermes-solaires.webp",
+        "legende": "Les Thermes Solaires"
+      }
+    ]
   },
   {
     "id": "pyrokles",
@@ -8643,6 +8681,14 @@
     "histoire": [
       "Nolbrim, qui l'a conçue, la remet à Philippa au Manoir des Ligaments, à l'état de prototype stable.",
       "Gran Brijit y ajoute un souffle de vie pour qu'elle puisse l'invoquer à volonté."
+    ],
+    "img": "img/pnj/horizon-brulee.webp",
+    "teinte": "#193975",
+    "galerie": [
+      {
+        "img": "img/paysages/cap-cornes/chez-gran-brijit.webp",
+        "legende": "L'intérieur du manoir"
+      }
     ]
   },
   {
