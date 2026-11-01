@@ -1453,7 +1453,7 @@
         "legende": "La maison de Tembo"
       }
     ],
-    "attitude": "positif",
+    "attitude": "neutre",
     "img": "img/pnj/tembo.webp",
     "teinte": "#754619"
   },
@@ -1491,7 +1491,7 @@
         "legende": "La maison d'Urrak"
       }
     ],
-    "attitude": "positif",
+    "attitude": "neutre",
     "img": "img/pnj/urrak.webp",
     "teinte": "#587519"
   },
@@ -1545,8 +1545,6 @@
     },
     "resume": "Passage des steppes fermé par le rituel d'une caravane.",
     "connu": [
-      "Au troisième jour de marche dans les steppes, le groupe est attaqué à l'aube par deux Rakh affamés, un mâle et une femelle. Il les dresse avec le poisson d'Urrak et obtient deux montures.",
-      "Il découvre ensuite le campement détruit : cinq jeunes hommes de bonne famille, morts d'un coup lourd chacun, un totem de bois sombre planté au centre.",
       "À l'entrée de la gorge, deux gardes Taurok le bloquent. Ils reconnaissent les Rakh du groupe avec approbation. Voraan, chef de la caravane, lui apprend que la gorge est fermée pendant un rituel. Sevik, sa fille, exige qu'on expulse les étrangers.",
       "Thaal consulte les braises. Il juge leur arrivée comme un signe, voit que le groupe porte quelque chose de lourd, parle d'une vieille route, et l'invite au rituel. Iku, moine de Roshen Buru, et Szara, une githyanki accompagnée de Zyrith, viennent observer les nouveaux arrivants.",
       "Philippa et Jane escaladent la falaise pour aller chercher les œufs du rituel de Sevik, quarante mètres plus haut, jusqu'au plateau du monastère des steppes.",
@@ -2930,8 +2928,8 @@
     "titre": "Port de pêche de Keras Tauroc",
     "parent": "maison-tauroc",
     "pos": {
-      "x": 0.827,
-      "y": 0.544
+      "x": 0.8226,
+      "y": 0.559
     },
     "accent": "#d96a28",
     "cartes": [
@@ -6125,7 +6123,8 @@
       "x": 0.616,
       "y": 0.5346
     },
-    "typeLabel": "Lieu diplomatique"
+    "typeLabel": "Lieu diplomatique",
+    "locked": true
   },
   {
     "id": "rangs-des-mirens",
@@ -6338,10 +6337,6 @@
     ],
     "titre": "Entre Roshen Buru et Azuren Kai",
     "parent": "region-roshen-buru",
-    "pos": {
-      "x": 0.678,
-      "y": 0.375
-    },
     "typeLabel": "Trajet",
     "resume": "Chemin discret vers Roshen Buru.",
     "galerie": [
@@ -6359,7 +6354,66 @@
       "Il y croise le Goryo, puis arrive à Roshen Buru avec Harfang."
     ],
     "histoire": [],
-    "chapeau": "Une forêt dense qui entoure Roshen Buru, cernée d'un océan de sakura. La route passe par là, loin des postes de garde et des regards."
+    "chapeau": "Une forêt dense qui entoure Roshen Buru, cernée d'un océan de sakura. La route passe par là, loin des postes de garde et des regards.",
+    "redirige": "la-nubbe-foret"
+  },
+  {
+    "id": "la-nubbe-foret",
+    "type": "ville",
+    "nom": "La Nubée",
+    "titre": "Début de la forêt d'Azuren",
+    "parent": "region-roshen-buru",
+    "pos": {
+      "x": 0.6853,
+      "y": 0.4035
+    },
+    "typeLabel": "Trajet",
+    "alias": [
+      "Forêt d'Azuren",
+      "Azuren",
+      "Forêt d'Aruzen"
+    ],
+    "resume": "Premier pas dans la forêt, juste après le pont.",
+    "chapeau": "Une forêt dense qui entoure Roshen Buru, cernée d'un océan de sakura. La route passe par là, loin des postes de garde et des regards.",
+    "connu": [
+      "Après Cap Cornes et Azuren Kai, le groupe traverse la forêt d'Azuren plutôt que de passer par Seiran Vale, pour rester discret.",
+      "Peu après le pont, il croise une Nubbé. Philippa en cueille une avec sa main spectrale."
+    ],
+    "galerie": [
+      {
+        "img": "img/paysages/azuren-kai/foret-nubbe.webp",
+        "legende": "La traversée de la forêt"
+      }
+    ],
+    "histoire": []
+  },
+  {
+    "id": "sorenka-et-les-clones",
+    "type": "ville",
+    "nom": "Sorenka et les clones",
+    "titre": "Au cœur de la forêt d'Azuren",
+    "parent": "region-roshen-buru",
+    "pos": {
+      "x": 0.692,
+      "y": 0.3686
+    },
+    "typeLabel": "Trajet",
+    "alias": [
+      "Sorenka"
+    ],
+    "resume": "Une fée collectionneuse d'équipement et ses doubles de fumée.",
+    "chapeau": "Une forêt dense qui entoure Roshen Buru, cernée d'un océan de sakura. La route passe par là, loin des postes de garde et des regards.",
+    "connu": [
+      "Au quatrième jour dans la forêt, le groupe croise Sorenka, qui tente de lui extorquer son équipement puis lance des doubles de fumée contre lui.",
+      "Il poursuit ensuite vers Roshen Buru, où il arrive avec Harfang."
+    ],
+    "galerie": [
+      {
+        "img": "img/paysages/azuren-kai/foret-sorenka.webp",
+        "legende": "La traversée de la forêt"
+      }
+    ],
+    "histoire": []
   },
   {
     "id": "route-keras-tauroc-cap-cornes",
@@ -6453,25 +6507,139 @@
         "legende": "Mellioen Lumeverre"
       },
       {
-        "img": "img/paysages/malquessar/rue-de-la-ville.webp",
-        "legende": "La rue de la ville"
-      },
-      {
         "img": "img/paysages/malquessar/couverture.webp",
         "legende": "Malquessar, illustration"
-      }
-    ],
-    "cartes": [
-      {
-        "id": "carte",
-        "img": "img/placeholder/carte-noire.svg",
-        "legende": ""
       }
     ],
     "sousTitre": "Le plan des fées",
     "alias": [
       "Féerie",
       "Plan des fées"
+    ]
+  },
+  {
+    "id": "portes-de-malquessar",
+    "type": "lieu",
+    "nom": "Les portes de Malquessar",
+    "titre": "Camp de tentes et tour de garde",
+    "parent": "malquessar",
+    "resume": "Dren Malbar y accueille Philippa à son arrivée et l'oriente vers la place principale.",
+    "connu": [
+      "Dren Malbar y accueille Philippa à son arrivée et l'oriente vers la place principale."
+    ],
+    "galerie": [
+      {
+        "img": "img/paysages/malquessar/les-portes.webp",
+        "legende": "Les portes de Malquessar"
+      }
+    ]
+  },
+  {
+    "id": "place-des-pierres-malquessar",
+    "type": "lieu",
+    "nom": "La place des Pierres de Seuil",
+    "titre": "Dôme irisé, autel et socle fendu",
+    "parent": "malquessar",
+    "resume": "Au centre de la grande place fleurie, un dôme d'énergie irisé protège un ancien autel. Deux orbes y brillent. Le troisième socle est vide, fendu, noirci et encore fumant : l'une des Pierres vient d'être volée.",
+    "connu": [
+      "Au centre de la grande place fleurie, un dôme d'énergie irisé protège un ancien autel. Deux orbes y brillent. Le troisième socle est vide, fendu, noirci et encore fumant : l'une des Pierres vient d'être volée.",
+      "Philippa y examine la scène de crime : la Pierre a été arrachée de force, et un fragment de peau grise est resté près du socle."
+    ]
+  },
+  {
+    "id": "palais-de-malquessar",
+    "type": "lieu",
+    "nom": "Le palais de Malquessar",
+    "titre": "Siège du magistère et de la Cour Seelie",
+    "parent": "malquessar",
+    "resume": "Philippa y trouve Thalanir Vel'dorel devant l'ambassadeur Elarin, de la Cour Seelie, qui exige le retour de la Pierre sous vingt-quatre heures.",
+    "connu": [
+      "Philippa y trouve Thalanir Vel'dorel devant l'ambassadeur Elarin, de la Cour Seelie, qui exige le retour de la Pierre sous vingt-quatre heures."
+    ]
+  },
+  {
+    "id": "fleuristerie-de-liora",
+    "type": "lieu",
+    "nom": "La fleuristerie de Liora",
+    "titre": "Serre de fleurs",
+    "parent": "malquessar",
+    "resume": "Mira, apprentie de la fleuriste Liora, y aide volontiers Philippa dans son enquête.",
+    "connu": [
+      "Mira, apprentie de la fleuriste Liora, y aide volontiers Philippa dans son enquête."
+    ],
+    "galerie": [
+      {
+        "img": "img/paysages/malquessar/fleuristerie-de-liora.webp",
+        "legende": "La fleuristerie de Liora"
+      }
+    ]
+  },
+  {
+    "id": "atelier-de-nolbrim-malquessar",
+    "type": "lieu",
+    "nom": "L'atelier de Nolbrim",
+    "titre": "Établis, engrenages et lampes de cuivre",
+    "parent": "malquessar",
+    "resume": "Thalanir accuse Nolbrim, qui a toujours haï les Pierres. Philippa l'interroge dans son atelier.",
+    "connu": [
+      "Thalanir accuse Nolbrim, qui a toujours haï les Pierres. Philippa l'interroge dans son atelier."
+    ],
+    "galerie": [
+      {
+        "img": "img/paysages/malquessar/atelier-de-nolbrim.webp",
+        "legende": "L'atelier de Nolbrim"
+      }
+    ]
+  },
+  {
+    "id": "forge-de-berrund",
+    "type": "lieu",
+    "nom": "La forge de Berrund",
+    "titre": "Forge d'un ancien armurier de guerre",
+    "parent": "malquessar",
+    "resume": "Philippa y rencontre Berrund Hrakkal, qui méprise les Pierres mais nie toute implication dans le vol.",
+    "connu": [
+      "Philippa y rencontre Berrund Hrakkal, qui méprise les Pierres mais nie toute implication dans le vol."
+    ],
+    "galerie": [
+      {
+        "img": "img/paysages/malquessar/berrund-hrakkal.webp",
+        "legende": "La forge de Berrund"
+      }
+    ]
+  },
+  {
+    "id": "atelier-de-lumeverre",
+    "type": "lieu",
+    "nom": "L'atelier de Lumeverre",
+    "titre": "Atelier d'enchantement",
+    "parent": "malquessar",
+    "resume": "Mellioen Lumeverre y enseigne l'écriture à Arlo. Il y identifie le fragment de peau grise trouvé près des Pierres.",
+    "connu": [
+      "Mellioen Lumeverre y enseigne l'écriture à Arlo. Il y identifie le fragment de peau grise trouvé près des Pierres."
+    ],
+    "galerie": [
+      {
+        "img": "img/paysages/malquessar/mellioen-lumeverre.webp",
+        "legende": "L'atelier de Lumeverre"
+      }
+    ]
+  },
+  {
+    "id": "bureau-d-erdem",
+    "type": "lieu",
+    "nom": "Le bureau d'Erdem",
+    "titre": "Désordre absolu derrière une barrière magique",
+    "parent": "malquessar",
+    "resume": "Erdem Brelmott y vit reclus et parle par énigmes. Il est le seul à savoir activer la Pierre de Seuil.",
+    "connu": [
+      "Erdem Brelmott y vit reclus et parle par énigmes. Il est le seul à savoir activer la Pierre de Seuil."
+    ],
+    "galerie": [
+      {
+        "img": "img/paysages/malquessar/erdem-brelmott.webp",
+        "legende": "Le bureau d'Erdem"
+      }
     ]
   },
   {
@@ -6821,24 +6989,54 @@
       {
         "img": "img/paysages/steppes-rouges/vue-globale.webp",
         "legende": "Les steppes rouges la nuit"
-      },
+      }
+    ]
+  },
+  {
+    "id": "attaque-des-rakhs",
+    "type": "ville",
+    "nom": "L'attaque des Rakhs",
+    "titre": "Aube dans les steppes",
+    "parent": "maison-tauroc",
+    "pos": {
+      "x": 0.7934,
+      "y": 0.6967
+    },
+    "typeLabel": "Trajet",
+    "resume": "Deux Rakh affamés attaquent le campement à l'aube.",
+    "connu": [
+      "Au troisième jour de marche dans les steppes, le groupe est attaqué à l'aube par deux Rakh affamés, un mâle et une femelle.",
+      "Il les dresse avec le poisson séché d'Urrak et obtient deux montures : Carcadonne pour Philippa, Rashka pour Jane."
+    ],
+    "galerie": [
       {
         "img": "img/paysages/steppes-rouges/steppes-rakh.webp",
-        "legende": "Les steppes rouges"
+        "legende": "Carcadonne, monture de Philippa",
+        "cut": {
+          "img": "img/pnj/brakka-rakh-carcadonne-appartient-a-philippa.webp",
+          "label": ""
+        },
+        "who": "rakh"
       },
       {
         "img": "img/paysages/steppes-rouges/steppes-rakh-2.webp",
-        "legende": "Les steppes rouges, en plein jour"
+        "legende": "Rashka, monture de Jane",
+        "cut": {
+          "img": "img/pnj/brakka-rakh-rashka-appartient-a-jane.webp",
+          "label": ""
+        },
+        "who": "rakh"
       }
-    ]
+    ],
+    "histoire": []
   },
   {
     "id": "nubbe",
     "type": "pnj",
     "nom": "La Nubbé",
     "titre": "Créature de la forêt d'Azuren",
-    "parent": "foret-d-aruzen",
-    "lieu": "foret-d-aruzen",
+    "parent": "la-nubbe-foret",
+    "lieu": "la-nubbe-foret",
     "statut": "inconnu",
     "img": "img/pnj/nubbe.webp",
     "alias": [
@@ -6865,8 +7063,8 @@
     "type": "pnj",
     "nom": "Sorenka",
     "titre": "Fée de la forêt d'Azuren, collectionneuse d'équipement",
-    "parent": "foret-d-aruzen",
-    "lieu": "foret-d-aruzen",
+    "parent": "sorenka-et-les-clones",
+    "lieu": "sorenka-et-les-clones",
     "statut": "vivant",
     "img": "img/pnj/sorenka.webp",
     "resume": "Une rencontre qui tourne mal.",
@@ -7066,7 +7264,6 @@
     "attitude": "neutre",
     "teinte": "#753c19",
     "histoire": [],
-    "tailleAsset": "mini",
     "galerie": [
       {
         "img": "img/paysages/cap-cornes/route-gibet.webp",
@@ -8584,7 +8781,8 @@
         "img": "img/paysages/creux-d-azur/rue-de-la-zelote.webp",
         "legende": "La rue principale, sous les toiles de Lolth"
       }
-    ]
+    ],
+    "carrouselComplet": true
   },
   {
     "id": "camp-des-bandits-creux",
@@ -9118,8 +9316,8 @@
     "type": "pnj",
     "nom": "Dren Malbar",
     "titre": "Capitaine des gardes de Malquessar",
-    "parent": "malquessar",
-    "lieu": "malquessar",
+    "parent": "portes-de-malquessar",
+    "lieu": "portes-de-malquessar",
     "statut": "vivant",
     "resume": "Demi-orc en armure, aux portes de la ville.",
     "attitude": "neutre",
@@ -9146,8 +9344,8 @@
     "type": "pnj",
     "nom": "Thalanir Vel'dorel",
     "titre": "Magistère de Malquessar",
-    "parent": "malquessar",
-    "lieu": "malquessar",
+    "parent": "palais-de-malquessar",
+    "lieu": "palais-de-malquessar",
     "statut": "vivant",
     "resume": "Chef de la ville, en habits brodés.",
     "attitude": "neutre",
@@ -9169,8 +9367,8 @@
     "teinte": "#727519",
     "galerie": [
       {
-        "img": "img/paysages/malquessar/rue-de-la-ville.webp",
-        "legende": "La rue de la ville"
+        "img": "img/paysages/malquessar/vue-ville.webp",
+        "legende": "Une rue de Malquessar"
       }
     ]
   },
@@ -9179,8 +9377,8 @@
     "type": "pnj",
     "nom": "Elarin Velasyr",
     "titre": "Ambassadeur de la Cour Seelie",
-    "parent": "malquessar",
-    "lieu": "malquessar",
+    "parent": "palais-de-malquessar",
+    "lieu": "palais-de-malquessar",
     "statut": "vivant",
     "resume": "Ambassadeur calme, glacial et autoritaire.",
     "attitude": "neutre",
@@ -9199,8 +9397,8 @@
     "teinte": "#757419",
     "galerie": [
       {
-        "img": "img/paysages/malquessar/rue-de-la-ville.webp",
-        "legende": "La rue de la ville"
+        "img": "img/paysages/malquessar/vue-ville.webp",
+        "legende": "Une rue de Malquessar"
       }
     ]
   },
@@ -9209,8 +9407,8 @@
     "type": "pnj",
     "nom": "Mira Glindewyn",
     "titre": "Apprentie herboriste de Liora",
-    "parent": "malquessar",
-    "lieu": "malquessar",
+    "parent": "fleuristerie-de-liora",
+    "lieu": "fleuristerie-de-liora",
     "statut": "mort",
     "resume": "Elle est en réalité le changeforme qui a volé la Pierre.",
     "attitude": "neutre",
@@ -9252,8 +9450,8 @@
     "type": "pnj",
     "nom": "Arlo Brisemousse",
     "titre": "Firbolg de Malquessar",
-    "parent": "malquessar",
-    "lieu": "malquessar",
+    "parent": "atelier-de-lumeverre",
+    "lieu": "atelier-de-lumeverre",
     "statut": "vivant",
     "resume": "Firbolg timide qui apprend à écrire en secret.",
     "attitude": "neutre",
@@ -9284,8 +9482,8 @@
     "type": "pnj",
     "nom": "Berrund Hrakkal",
     "titre": "Forgeron de Malquessar",
-    "parent": "malquessar",
-    "lieu": "malquessar",
+    "parent": "forge-de-berrund",
+    "lieu": "forge-de-berrund",
     "statut": "vivant",
     "resume": "Grand forgeron à la peau rugueuse, qui parle par grognements.",
     "attitude": "neutre",
@@ -9314,8 +9512,8 @@
     "type": "pnj",
     "nom": "Mellioen Lumeverre",
     "titre": "Enchanteur de Malquessar",
-    "parent": "malquessar",
-    "lieu": "malquessar",
+    "parent": "atelier-de-lumeverre",
+    "lieu": "atelier-de-lumeverre",
     "statut": "vivant",
     "resume": "Enchanteur féérique patient.",
     "attitude": "neutre",
@@ -9346,8 +9544,8 @@
     "type": "pnj",
     "nom": "Erdem Brelmott",
     "titre": "Archiscribe de Malquessar",
-    "parent": "malquessar",
-    "lieu": "malquessar",
+    "parent": "bureau-d-erdem",
+    "lieu": "bureau-d-erdem",
     "statut": "vivant",
     "resume": "Très vieil archiscribe, chauve et ridé, entouré d'un désordre absolu.",
     "attitude": "neutre",

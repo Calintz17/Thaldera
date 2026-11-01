@@ -1191,8 +1191,8 @@
     "titre": "La porte maritime de Roshen Buru",
     "parent": "region-roshen-buru",
     "pos": {
-      "x": 0.638,
-      "y": 0.396
+      "x": 0.6493,
+      "y": 0.4174
     },
     "accent": "#3fae7a",
     "alias": [
@@ -1291,6 +1291,10 @@
       {
         "img": "img/azuren-kai/lieux/ryokan-chambre-nuit.webp",
         "legende": "La chambre la nuit"
+      },
+      {
+        "img": "img/azuren-kai/lieux/ruelle.webp",
+        "legende": "La ruelle"
       }
     ],
     "alias": [
@@ -1314,28 +1318,6 @@
       "x": 0.32,
       "y": 0.124
     }
-  },
-  {
-    "id": "ruelle-azuren-kai",
-    "type": "lieu",
-    "nom": "La ruelle du Ryokan",
-    "titre": "Le lieu où Kirin est tombé",
-    "parent": "ryokan",
-    "galerie": [
-      {
-        "img": "img/azuren-kai/lieux/ruelle.webp",
-        "legende": "La ruelle"
-      }
-    ],
-    "alias": [
-      "ruelle"
-    ],
-    "resume": "Ruelle derrière le Ryokan d'Azuren Kai.",
-    "connu": [
-      "Le groupe affronte Kirin Anadori au Ryokan de Noshka et l'achève dans cette ruelle."
-    ],
-    "chapeau": "Une ruelle étroite derrière l'auberge, entre échoppes et lanternes rouges, à l'écart du brouhaha du port.",
-    "histoire": []
   },
   {
     "id": "noshka",
@@ -1368,7 +1350,7 @@
     "nom": "Kirin Anadori",
     "titre": "Noble du clan Anadori",
     "parent": "clan-anadori",
-    "lieu": "ruelle-azuren-kai",
+    "lieu": "ryokan",
     "img": "img/pnj/kirin.webp",
     "statut": "mort",
     "alias": [
@@ -1420,7 +1402,7 @@
     "nom": "Le Génie de Suie",
     "titre": "Miren de Kirin Anadori",
     "parent": "kirin-anadori",
-    "lieu": "ruelle-azuren-kai",
+    "lieu": "ryokan",
     "img": "img/azuren-kai/pnj/genie-de-suie.webp",
     "statut": "mort",
     "alias": [
@@ -1499,8 +1481,8 @@
     "titre": "La ville des cerisiers roses",
     "parent": "region-roshen-buru",
     "pos": {
-      "x": 0.703,
-      "y": 0.329
+      "x": 0.7073,
+      "y": 0.348
     },
     "accent": "#3fae7a",
     "blason": "img/blasons/roshen-buru.webp",
@@ -4872,9 +4854,7 @@
     "connu": [
       "Il reçoit Harfang comme délégué et lui ouvre les registres de fret."
     ],
-    "lieux": [
-      "capitainerie-azuren-kai"
-    ]
+    "lieux": []
   },
   {
     "id": "nuala",
@@ -5002,6 +4982,28 @@
     "img": "img/pnj/bourre-piff.webp"
   },
   {
+    "id": "kinoleon",
+    "type": "pnj",
+    "nom": "Kinoleon",
+    "titre": "Chaton adopté par le groupe",
+    "parent": "manoir-des-ligaments",
+    "lieu": "manoir-des-ligaments",
+    "statut": "vivant",
+    "alias": [
+      "Kino",
+      "Kynoleon",
+      "Kinoléon"
+    ],
+    "resume": "Petit chat adopté par les joueurs après le voyage à Pyrrah.",
+    "connu": [
+      "Petit chat aux écailles dorées et aux rayures rouges, adopté par les joueurs après leur voyage à Pyrrah.",
+      "Il vit désormais au Manoir des Ligaments."
+    ],
+    "img": "img/pnj/pyrrah-kynoleon.webp",
+    "attitude": "positif",
+    "teinte": "#754c19"
+  },
+  {
     "id": "fukuro-kaen",
     "type": "sujet",
     "nom": "Fukuro Kaen",
@@ -5077,6 +5079,22 @@
       "x": 0.826,
       "y": 0.312
     }
+  },
+  {
+    "id": "karape",
+    "type": "pnj",
+    "nom": "Karapé",
+    "titre": "Maître du port d'Azuren Kai",
+    "parent": "capitainerie-azuren-kai",
+    "lieu": "capitainerie-azuren-kai",
+    "statut": "vivant",
+    "resume": "Maître du port, à la capitainerie d'Azuren Kai.",
+    "connu": [
+      "Il tient la capitainerie d'Azuren Kai, au bout du quai marchand."
+    ],
+    "img": "img/pnj/karape.webp",
+    "attitude": "neutre",
+    "teinte": "#697519"
   },
   {
     "id": "comptoir-de-nuala",

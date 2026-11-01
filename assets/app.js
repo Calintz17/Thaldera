@@ -4,7 +4,7 @@
 (() => {
 'use strict';
 
-const VER = '103';
+const VER = '104';
 const LEGACY_IDS = { 'bourre-piff':'bourpif', 'seravine':'solkah-barrow', 'tilda':'irna', 'cleff':'irna' };
 const EDIT = new URLSearchParams(location.search).has('edit');
 const $ = (s, r = document) => r.querySelector(s);
@@ -335,7 +335,7 @@ function sceneOf(e, q, depth = 0) {
   }
 }
 function castOf(e) {
-  const ps = pnjsAt(e);
+  const ps = e.type === 'ville' && e.carrouselComplet ? descPNJ(e) : pnjsAt(e);
   const seen = new Set();
   return ps.filter(p => !seen.has(p.id) && seen.add(p.id) && ((p.formes && p.formes[0] && p.formes[0].img) || p.img)).sort((a, b) => (a.ordre ?? 99) - (b.ordre ?? 99));
 }
@@ -692,7 +692,7 @@ function showGallery(imgs, title, ent) {
     wake(cur);
     g.querySelectorAll('.sl').forEach((s, i) => { s.classList.toggle('act', i === cur); });
     g.querySelectorAll('.gdots button').forEach((d, i) => d.classList.toggle('on', i === cur));
-    const who = imgs[cur].who || ent;
+    const who = (typeof imgs[cur].who === 'string' ? BY[imgs[cur].who] : imgs[cur].who) || ent;
     // A background-only slide must keep the same character overlay.
     // Only switching to another cast member or leaving the character gallery may clear it.
     const ownForm = ent && who === ent ? (S.curFormOf === ent.id ? S.curForm : (ent.formes && ent.formes[0])) : null;

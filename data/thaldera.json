@@ -3375,8 +3375,8 @@
     "type": "pnj",
     "nom": "Kaldros Emberforge",
     "titre": "Maître forgeron de Pyrrah",
-    "parent": "pyrrah",
-    "lieu": "pyrrah",
+    "parent": "forge-eternelle-pyrrah",
+    "lieu": "forge-eternelle-pyrrah",
     "statut": "vivant",
     "resume": "Allié et crafteur de confiance du groupe.",
     "connu": [
@@ -9841,10 +9841,10 @@
   },
   {
     "id": "campement-detruit-steppes",
-    "type": "lieu",
+    "type": "ville",
     "nom": "Le campement détruit",
     "titre": "Cinq jeunes nobles",
-    "parent": "gorge-du-mesa",
+    "parent": "maison-tauroc",
     "resume": "Camp de jeunes nobles massacrés dans les steppes.",
     "connu": [
       "Le groupe y arrive à la fin d'une journée de marche, avant la gorge du Mesa. Il y trouve cinq corps de jeunes hommes de bonne famille, tués chacun d'un seul coup lourd, et un totem de bois sombre planté au centre.",
@@ -9858,7 +9858,12 @@
         "legende": "Le campement détruit"
       }
     ],
-    "histoire": []
+    "histoire": [],
+    "pos": {
+      "x": 0.7304,
+      "y": 0.6633
+    },
+    "typeLabel": "Trajet"
   },
   {
     "id": "les-quatre-lames",
