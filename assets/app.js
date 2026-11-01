@@ -4,7 +4,7 @@
 (() => {
 'use strict';
 
-const VER = '106';
+const VER = '107';
 const LEGACY_IDS = { 'bourre-piff':'bourpif', 'seravine':'solkah-barrow', 'tilda':'irna', 'cleff':'irna' };
 const EDIT = new URLSearchParams(location.search).has('edit');
 const $ = (s, r = document) => r.querySelector(s);
@@ -328,7 +328,7 @@ function sceneOf(e, q, depth = 0) {
         }
         s = { ...s, gallery: gal, cutout: e };
       } else if (s && e.type === 'evenement' && depth === 0 && e.galerie && e.galerie.length && s.kind === 'map') {
-        s = { ...s, gallery: e.galerie };
+        s = withCast({ ...s, gallery: e.galerie }, e);
       }
       return s;
     }

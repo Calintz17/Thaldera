@@ -5218,7 +5218,11 @@
         "img": "img/paysages/roshen-buru/ascenseur.webp",
         "legende": "Ascenseur du Palais (illustration des ascenseurs de Roshen Buru)"
       }
-    ]
+    ],
+    "pos": {
+      "x": 0.817,
+      "y": 0.186
+    }
   },
   {
     "id": "ascenseur-sud",
@@ -5232,7 +5236,11 @@
         "img": "img/paysages/roshen-buru/ascenseur-2.webp",
         "legende": "Ascenseur du Temple (illustration des ascenseurs de Roshen Buru)"
       }
-    ]
+    ],
+    "pos": {
+      "x": 0.583,
+      "y": 0.764
+    }
   },
   {
     "id": "caserne-roshen-buru",

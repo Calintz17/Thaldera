@@ -1142,11 +1142,11 @@
     "id": "argonath",
     "type": "pnj",
     "nom": "Argonath",
-    "titre": "Le Passeur du Sang Noir",
+    "titre": "Le Passeur du Sang Noir, démon supérieur",
     "parent": "repaire-du-passeur",
     "lieu": "repaire-du-passeur",
     "statut": "mort",
-    "resume": "Démon voleur de magie qui règne sur son repaire.",
+    "resume": "Démon supérieur, lieutenant de Vassago et boss du Repos des Épées. Voleur de magie.",
     "connu": [
       "Démon sans déguisement, forme haute et immobile reliée aux nerfs de son repaire, au Repos des Épées. Il se présente comme le Passeur du Sang Noir, le berceau de la nouvelle chair.",
       "Il vole la magie et les objets de ceux qu'il touche : Larcin d'Essence, Poigne du Troc. Il ne parle jamais directement, ses mots sortent de la bouche d'autres créatures présentes.",
@@ -1154,7 +1154,10 @@
       "À Philippa et Jane entrées dans sa salle du cœur, il a demandé : « Alors ? Qu'êtes-vous venus chercher ? Un pacte ? Une faveur ? Ou bien me tuer ? »",
       "Il se dit d'un autre rang qu'Absalom, qu'il méprise : « la plus faible » d'entre eux, la plus sotte selon lui. Il promet de crever les yeux de tous ceux qui ont aidé le groupe.",
       "Elles l'ont vaincu et ont récupéré le Pickpocket l'Impératrice, le Fragment of Avarice's True Name, la Dagger of Absorption et 3 500 po de bijoux.",
-      "Après le combat, Olyssane a découvert les formes monstrueuses de Jane et Philippa et les a attaquées. Gran Brijit l'a arrêtée net."
+      "Après le combat, Olyssane a découvert les formes monstrueuses de Jane et Philippa et les a attaquées. Gran Brijit l'a arrêtée net.",
+      "Au Cœur de la corruption, il s'adresse au groupe sans détour : « Alors ? Qu'êtes-vous venus chercher ? Un pacte ? Une faveur ? Ou bien me tuer ? »",
+      "« Je dois vous féliciter. Peu atteignent mon seuil en un seul morceau. Ceux qui vous ont aidés, eux, en revanche... je leur crèverai les yeux avant la tombée du jour, tous leurs yeux. »",
+      "Pendant le combat, la salle entière le sert : flux de chair qui ralentit, bras spectral qui désarme, cris des morts du Repos des Épées, fissure vers le Néant."
     ],
     "histoire": [],
     "relations": [
@@ -1183,13 +1186,19 @@
       },
       {
         "label": "Forme démoniaque",
-        "lieux": [],
+        "lieux": [
+          "coeur-de-la-corruption"
+        ],
         "img": "img/pnj/argonath-repos-des-e-pe-es-argonath-demon-form.webp",
         "teinte": "#752d19"
       }
     ],
     "img": "img/pnj/argonath-repos-des-e-pe-es-argonath-human-form.webp",
-    "teinte": "#754c19"
+    "teinte": "#754c19",
+    "lieux": [
+      "coeur-de-la-corruption"
+    ],
+    "ordre": 0
   },
   {
     "id": "camont",
@@ -2249,7 +2258,23 @@
     "img": "img/pnj/port-doe-lan-magdalena.webp",
     "attitude": "positif",
     "teinte": "#752519",
-    "histoire": []
+    "histoire": [],
+    "formes": [
+      {
+        "label": "À Port Doëlan",
+        "lieux": [],
+        "img": "img/pnj/port-doe-lan-magdalena.webp",
+        "teinte": "#752519"
+      },
+      {
+        "label": "Pendant la caravane",
+        "lieux": [
+          "caravane-port-doelan"
+        ],
+        "img": "img/pnj/la-caravane-magdalena.webp",
+        "teinte": "#752519"
+      }
+    ]
   },
   {
     "id": "barok",
@@ -2287,7 +2312,9 @@
       {
         "img": "img/pnj/barok-la-caravane-barok-de-guise.webp",
         "label": "Pendant la caravane",
-        "lieux": [],
+        "lieux": [
+          "caravane-port-doelan"
+        ],
         "teinte": "#756819"
       }
     ],
@@ -2330,7 +2357,9 @@
       {
         "img": "img/pnj/almar-la-caravane-almar.webp",
         "label": "Pendant la caravane",
-        "lieux": [],
+        "lieux": [
+          "caravane-port-doelan"
+        ],
         "teinte": "#757119"
       }
     ],
@@ -2379,7 +2408,23 @@
     ],
     "attitude": "positif",
     "teinte": "#753c19",
-    "histoire": []
+    "histoire": [],
+    "formes": [
+      {
+        "label": "À Port Doëlan",
+        "lieux": [],
+        "img": "img/pnj/port-doe-lan-umberto-hevalan.webp",
+        "teinte": "#753c19"
+      },
+      {
+        "label": "Pendant la caravane",
+        "lieux": [
+          "caravane-port-doelan"
+        ],
+        "img": "img/pnj/la-caravane-umberto-hevalan.webp",
+        "teinte": "#753c19"
+      }
+    ]
   },
   {
     "id": "havre-noir",
@@ -2796,7 +2841,10 @@
     ],
     "attitude": "ennemi",
     "img": "img/pnj/wilhelm-der-treue.webp",
-    "teinte": "#755519"
+    "teinte": "#755519",
+    "lieux": [
+      "taverne-harpon-rouge"
+    ]
   },
   {
     "id": "voros",
@@ -6310,9 +6358,14 @@
       {
         "img": "img/pnj/eloi-bonbarique-la-caravane-eloi-bombarique.webp",
         "label": "Pendant la caravane",
-        "lieux": [],
+        "lieux": [
+          "caravane-port-doelan"
+        ],
         "teinte": "#752e19"
       }
+    ],
+    "lieux": [
+      "caravane-port-doelan"
     ]
   },
   {
@@ -9357,8 +9410,8 @@
     "type": "pnj",
     "nom": "Mr. Copperworth",
     "titre": "Aubergiste",
-    "parent": "village-de-leyenmil",
-    "lieu": "village-de-leyenmil",
+    "parent": "auberge-du-moulin",
+    "lieu": "auberge-du-moulin",
     "statut": "vivant",
     "resume": "Aubergiste bienveillant.",
     "alias": [
@@ -9394,8 +9447,8 @@
     "type": "pnj",
     "nom": "Otto",
     "titre": "Ivrogne de l'auberge",
-    "parent": "village-de-leyenmil",
-    "lieu": "village-de-leyenmil",
+    "parent": "auberge-du-moulin",
+    "lieu": "auberge-du-moulin",
     "statut": "vivant",
     "resume": "Il se moque des orphelins.",
     "citation": {
@@ -9521,7 +9574,33 @@
     "lieu": "coeur-de-la-corruption",
     "histoire": [],
     "img": "img/pnj/abomination-des-yeux.webp",
-    "teinte": "#753b19"
+    "teinte": "#753b19",
+    "formes": [
+      {
+        "label": "L'abomination aux yeux",
+        "lieux": [],
+        "img": "img/pnj/abomination-des-yeux.webp",
+        "teinte": "#753b19"
+      },
+      {
+        "label": "Forme larvaire 1",
+        "lieux": [],
+        "img": "img/pnj/repos-des-e-pe-es-abomination-larvaire1.webp",
+        "teinte": "#753b19"
+      },
+      {
+        "label": "Forme larvaire 2",
+        "lieux": [],
+        "img": "img/pnj/repos-des-e-pe-es-abomination-larvaire-2.webp",
+        "teinte": "#753b19"
+      },
+      {
+        "label": "Forme larvaire 3",
+        "lieux": [],
+        "img": "img/pnj/repos-des-e-pe-es-abomination-larvaire-3.webp",
+        "teinte": "#753b19"
+      }
+    ]
   },
   {
     "id": "guerre-de-la-veyra",
@@ -10069,15 +10148,34 @@
     "nom": "La Réserve du Vent Gris",
     "titre": "Centre",
     "parent": "leyenmil",
-    "resume": "La Réserve du Vent Gris, au centre du village."
+    "resume": "La Réserve du Vent Gris, au centre du village.",
+    "pos": {
+      "x": 0.467,
+      "y": 0.437
+    }
   },
   {
     "id": "auberge-du-moulin",
     "type": "lieu",
     "nom": "L'auberge du Moulin",
-    "titre": "Centre",
+    "titre": "Auberge du village",
     "parent": "leyenmil",
-    "resume": "Auberge proche du moulin."
+    "resume": "Auberge de Mr. Copperworth, seule source de chaleur du village la nuit de la mission de Jane.",
+    "pos": {
+      "x": 0.65,
+      "y": 0.533
+    },
+    "chapeau": "Pluie battante, boue épaisse, lanternes vacillantes. Le village se referme sur lui-même, et seule l'auberge diffuse une chaleur stable au cœur de la nuit. À l'intérieur, un feu dans l'âtre, du lait chaud, une voix douce. À une table, un ivrogne ricane et lance ses insultes, avant d'être coupé net.",
+    "connu": [
+      "Mr. Copperworth fait entrer les enfants de l'orphelinat pour les abriter pendant la nuit de la mission : lait chaud, feu et voix douce.",
+      "Otto, ivre, se moque d'eux (« La chair fraîche du vieil orphelinat... Alors, on vient voler ce soir ? »). Copperworth le coupe net, mais les regards se détournent : personne ne prend leur défense."
+    ],
+    "galerie": [
+      {
+        "img": "img/paysages/leyenmil/auberge-copperworth.webp",
+        "legende": "L'auberge de Mr. Copperworth"
+      }
+    ]
   },
   {
     "id": "othuunra",
@@ -10126,9 +10224,9 @@
   {
     "id": "coeur-de-la-corruption",
     "nom": "Le Cœur de la corruption",
-    "titre": "Épicentre de la corruption du Repos des Épées",
+    "titre": "Salle du Cœur, repaire d'Argonath",
     "parent": "repos-des-epees",
-    "resume": "Épicentre de la corruption du Repos des Épées.",
+    "resume": "La salle du Cœur du repaire d'Argonath, où le Passeur du Sang Noir attend Philippa et Jane.",
     "pos": {
       "x": 0.428,
       "y": 0.706
@@ -10137,7 +10235,12 @@
     "voyage": "x",
     "histoire": [],
     "connu": [
-      "Philippa et Jane y affrontent l'abomination aux yeux, née des séquelles de la guerre."
+      "Philippa et Jane affrontent Argonath, le Passeur du Sang Noir, démon supérieur et lieutenant de Vassago, au fond du Repos des Épées. Autour de lui, les ruines suintent et les visages dans la pierre gémissent.",
+      "Argonath : « Alors ? Qu'êtes-vous venus chercher ? Un pacte ? Une faveur ? Ou bien me tuer ? »",
+      "Argonath : « Contemplez. Vous êtes entrés dans le sang du monde. Et devant vous se tient Argonath, le Passeur du Sang Noir, le berceau de la nouvelle chair. »",
+      "Argonath sur Absalom : « De nous tous, elle a toujours été la plus faible. J'ai ri en apprenant sa chute. » Il se place d'un autre rang : « Je m'apprête à faire pleurer sur vous le chagrin de mille soleils. »",
+      "Il menace aussi ceux qui ont aidé le groupe : « Je leur crèverai les yeux avant la tombée du jour, tous leurs yeux. »",
+      "Aux abords de la salle, l'abomination aux yeux, née des séquelles de la guerre, observe les deux joueuses."
     ],
     "galerie": [
       {
@@ -10152,7 +10255,8 @@
         "img": "img/paysages/repos-des-epees/coeur-de-la-corruption.webp",
         "legende": "Le Cœur de la corruption"
       }
-    ]
+    ],
+    "chapeau": "L'ultime cavité s'ouvre comme une cage thoracique renversée : un volume immense, humide, irradié d'une lueur rouge sourde qui pulse au rythme d'un cœur. Les parois palpitent, couvertes de veines noires et de fines lamelles de peau. Un souffle chaud et fétide circule, chargé de fer et de suie. Au centre, un autel de chair et d'os est relié à la voûte par des filaments qui vibrent comme des cordes tendues. Là se tient une forme démoniaque sans déguisement, froide et évidente, qui parle sans détour."
   },
   {
     "id": "golems-d-arcane",
@@ -10175,5 +10279,215 @@
       }
     ],
     "histoire": []
+  },
+  {
+    "id": "aubergiste-du-harpon-rouge",
+    "type": "pnj",
+    "nom": "L'aubergiste du Harpon Rouge",
+    "titre": "Tient le bar de la taverne",
+    "parent": "taverne-harpon-rouge",
+    "lieu": "taverne-harpon-rouge",
+    "statut": "vivant",
+    "resume": "Tient le bar de la taverne",
+    "attitude": "neutre",
+    "connu": [
+      "Tient le comptoir de la taverne, sous le gigantesque harpon rouge sang volé à un navire de guerre du Dominion. Elle loue aussi des chambres pour quelques pièces.",
+      "Son nom n'est pas encore connu du groupe."
+    ],
+    "histoire": [],
+    "img": "img/pnj/havre-noir-aubergiste-du-harpon-rouge.webp",
+    "teinte": "#753c19"
+  },
+  {
+    "id": "habitantes-de-havre-noir",
+    "type": "pnj",
+    "nom": "Habitantes de Havre Noir",
+    "titre": "Poissonnière et charpentier borgne",
+    "parent": "temple-de-thalos",
+    "lieu": "temple-de-thalos",
+    "statut": "vivant",
+    "resume": "Poissonnière et charpentier borgne",
+    "attitude": "neutre",
+    "connu": [
+      "Une vieille poissonnière et un charpentier borgne racontent comment le diacre Malrik Solbrun prêchait pour le Dominion et comment Sycomore l'a chassé à coups de torches.",
+      "« Ici, on chante qu'pour l'goudron. »"
+    ],
+    "histoire": [],
+    "img": "img/pnj/havre-noir-habitantes-de-havre-noir.webp",
+    "teinte": "#755219",
+    "citation": {
+      "texte": "Ici, on chante qu'pour l'goudron. Sycomore lui a montré la sortie à coups de torches, et basta.",
+      "qui": "Charpentier borgne"
+    }
+  },
+  {
+    "id": "corruptions-volantes",
+    "type": "pnj",
+    "nom": "Corruptions volantes",
+    "titre": "Créatures ailées du Repos des Épées",
+    "parent": "coeur-de-la-corruption",
+    "lieu": "coeur-de-la-corruption",
+    "statut": "vivant",
+    "resume": "Créatures ailées du Repos des Épées",
+    "attitude": "ennemi",
+    "connu": [
+      "Créatures ailées nées de la corruption, rencontrées avec les corruptions rampantes au Repos des Épées."
+    ],
+    "histoire": [],
+    "img": "img/pnj/le-repos-des-e-pe-es-corruption-volantes.webp",
+    "teinte": "#752d19"
+  },
+  {
+    "id": "corruptions-rampantes",
+    "type": "pnj",
+    "nom": "Corruptions rampantes",
+    "titre": "Créatures de chair du Repos des Épées",
+    "parent": "coeur-de-la-corruption",
+    "lieu": "coeur-de-la-corruption",
+    "statut": "vivant",
+    "resume": "Créatures de chair du Repos des Épées",
+    "attitude": "ennemi",
+    "connu": [
+      "Créatures rampantes nées de la corruption, affrontées avant la salle du Cœur."
+    ],
+    "histoire": [],
+    "img": "img/pnj/le-repos-des-e-pe-es-corruptions-rampantes.webp",
+    "teinte": "#752d19"
+  },
+  {
+    "id": "arbre-maudit",
+    "type": "pnj",
+    "nom": "L'arbre maudit",
+    "titre": "Arbre d'os soudés",
+    "parent": "repaire-du-passeur",
+    "lieu": "repaire-du-passeur",
+    "statut": "vivant",
+    "resume": "Arbre d'os soudés",
+    "attitude": "ennemi",
+    "connu": [
+      "Arbre d'os soudés qui veille sur la colline voisine du repaire du Passeur."
+    ],
+    "histoire": [],
+    "img": "img/pnj/repos-des-e-pe-es-arbre-maudit.webp",
+    "teinte": "#752d19"
+  },
+  {
+    "id": "bandits-de-la-caravane",
+    "type": "pnj",
+    "nom": "Bandits affamés",
+    "titre": "Bloquent la route par deux arbres abattus",
+    "parent": "caravane-port-doelan",
+    "lieu": "caravane-port-doelan",
+    "statut": "vivant",
+    "resume": "Bloquent la route par deux arbres abattus",
+    "attitude": "ennemi",
+    "connu": [
+      "Des bandits affamés bloquent le chemin de la caravane avec deux arbres abattus."
+    ],
+    "histoire": [],
+    "img": "img/pnj/la-caravane-attaque-de-bandits.webp",
+    "teinte": "#752d19"
+  },
+  {
+    "id": "gobelins-wargs-caravane",
+    "type": "pnj",
+    "nom": "Gobelins sur wargs",
+    "titre": "Chargent le camp à la tombée du jour",
+    "parent": "caravane-port-doelan",
+    "lieu": "caravane-port-doelan",
+    "statut": "vivant",
+    "resume": "Chargent le camp à la tombée du jour",
+    "attitude": "ennemi",
+    "connu": [
+      "Des gobelins montés sur wargs chargent le camp de la caravane à la tombée du jour."
+    ],
+    "histoire": [],
+    "img": "img/pnj/la-caravane-attaque-de-gobelin.webp",
+    "teinte": "#752d19"
+  },
+  {
+    "id": "marchands-de-la-caravane",
+    "type": "pnj",
+    "nom": "Les marchands du convoi",
+    "titre": "Une dizaine de marchands",
+    "parent": "caravane-port-doelan",
+    "lieu": "caravane-port-doelan",
+    "statut": "vivant",
+    "resume": "Une dizaine de marchands",
+    "attitude": "neutre",
+    "connu": [
+      "Une dizaine de marchands, arrêtés pour une halte, dont Qadim prend de fait la tête."
+    ],
+    "histoire": [],
+    "img": "img/pnj/la-caravane-le-groupe.webp",
+    "teinte": "#755219"
+  },
+  {
+    "id": "loup-corrompu-du-vignoble",
+    "type": "pnj",
+    "nom": "Le loup corrompu",
+    "titre": "Loup de la forêt du vignoble",
+    "parent": "vignoble-abandonne",
+    "lieu": "vignoble-abandonne",
+    "statut": "vivant",
+    "resume": "Loup de la forêt du vignoble",
+    "attitude": "ennemi",
+    "connu": [
+      "Dans la forêt, Philippa et Jane sauvent Spano d'un loup."
+    ],
+    "histoire": [],
+    "img": "img/pnj/le-vignoble-loup-corrompu.webp",
+    "teinte": "#752d19"
+  },
+  {
+    "id": "chevaux-du-vignoble",
+    "type": "pnj",
+    "nom": "Les chevaux du vignoble",
+    "titre": "Deux chevaux pris au vignoble",
+    "parent": "vignoble-abandonne",
+    "lieu": "vignoble-abandonne",
+    "statut": "vivant",
+    "resume": "Deux chevaux pris au vignoble",
+    "attitude": "neutre",
+    "connu": [
+      "Après avoir fouillé le bureau, les deux joueuses prennent deux chevaux au vignoble."
+    ],
+    "histoire": [],
+    "img": "img/pnj/le-vignoble-chevaux.webp",
+    "teinte": "#755219"
+  },
+  {
+    "id": "plante-vivante-malquessar",
+    "type": "pnj",
+    "nom": "Plante vivante",
+    "titre": "Feywild Welcome",
+    "parent": "malquessar",
+    "lieu": "malquessar",
+    "statut": "vivant",
+    "resume": "Feywild Welcome",
+    "attitude": "ennemi",
+    "connu": [
+      "Plante carnivore de Malquessar : ses vignes entravent, sa brume violette étouffe."
+    ],
+    "histoire": [],
+    "img": "img/pnj/malquessar-plante-carnivore.webp",
+    "teinte": "#6a3a8a"
+  },
+  {
+    "id": "mineurs-de-pyrrah",
+    "type": "pnj",
+    "nom": "Les mineurs",
+    "titre": "Nains de la mine de Pyrrah",
+    "parent": "mine-de-pyrrah",
+    "lieu": "mine-de-pyrrah",
+    "statut": "vivant",
+    "resume": "Nains de la mine de Pyrrah",
+    "attitude": "neutre",
+    "connu": [
+      "Mineurs au travail dans la mine de Pyrrah."
+    ],
+    "histoire": [],
+    "img": "img/pnj/pyrrah-mineurs.webp",
+    "teinte": "#755219"
   }
 ]

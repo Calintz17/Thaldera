@@ -10018,20 +10018,6 @@
     ]
   },
   {
-    "id": "cathedrale-de-waukyne",
-    "type": "lieu",
-    "nom": "La cathédrale de Waukyne",
-    "titre": "Cœur de la ville",
-    "parent": "corvalis",
-    "resume": "Cathédrale de Waukyne, entourée de jardins et de reliquaires.",
-    "galerie": [
-      {
-        "img": "img/paysages/corvalis/faveur-de-waukeen.webp",
-        "legende": "La faveur de Waukeen"
-      }
-    ]
-  },
-  {
     "id": "portes-de-corvalis",
     "type": "lieu",
     "nom": "Les portes de la ville",

@@ -629,6 +629,12 @@
         "lieux": [],
         "fond": "img/paysages/roshen-buru/rue.webp",
         "teinte": "#751925"
+      },
+      {
+        "label": "Sous contrôle de Vassago (Main du Serment brisé)",
+        "lieux": [],
+        "img": "img/pnj/philippa-sous-controle-de-vassago-main-du-serment-brise.webp",
+        "teinte": "#753c19"
       }
     ],
     "teinte": "#753c19",
