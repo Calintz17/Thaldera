@@ -3270,6 +3270,14 @@
         "lieux": [],
         "fond": "img/paysages/roshen-buru/rue.webp",
         "teinte": "#753c19"
+      },
+      {
+        "label": "À Cap Cornes",
+        "lieux": [
+          "cap-cornes"
+        ],
+        "img": "img/keras-tauroc/cap-cornes/pnj/olyssane-veythar.webp",
+        "teinte": "#753c19"
       }
     ],
     "attitude": "allie",
@@ -9759,7 +9767,21 @@
     ],
     "histoire": [],
     "img": "img/pnj/demon-des-mains.webp",
-    "teinte": "#755919"
+    "teinte": "#755919",
+    "formes": [
+      {
+        "label": "Démon des Mains",
+        "lieux": [],
+        "img": "img/pnj/demon-des-mains.webp",
+        "teinte": "#755919"
+      },
+      {
+        "label": "Chien des mains",
+        "lieux": [],
+        "img": "img/pnj/chien-des-mains-lile-aux-moines.webp",
+        "teinte": "#755919"
+      }
+    ]
   },
   {
     "id": "sahir-al-basma",

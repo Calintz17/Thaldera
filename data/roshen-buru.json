@@ -2551,7 +2551,21 @@
       }
     ],
     "attitude": "neutre",
-    "teinte": "#753c19"
+    "teinte": "#753c19",
+    "formes": [
+      {
+        "label": "Yurëi",
+        "lieux": [],
+        "img": "img/pnj/yurei.webp",
+        "teinte": "#753c19"
+      },
+      {
+        "label": "Portrait",
+        "lieux": [],
+        "img": "img/istra-belig/roshen-buru/pnj/yurei-poison.webp",
+        "teinte": "#753c19"
+      }
+    ]
   },
   {
     "id": "tobiya",
@@ -5249,7 +5263,11 @@
     "titre": "Ville basse",
     "parent": "roshen-buru",
     "resume": "Caserne de la ville basse, au sud-est du Pillier.",
-    "carte": "ville"
+    "carte": "ville",
+    "pos": {
+      "x": 0.664,
+      "y": 0.827
+    }
   },
   {
     "id": "ecurie-roshen-buru",
@@ -5348,5 +5366,20 @@
     "attitude": "neutre",
     "teinte": "#47746f",
     "locked": true
+  },
+  {
+    "id": "jarre-miren",
+    "type": "sujet",
+    "nom": "La jarre Miren",
+    "titre": "Relique vieille de neuf cents ans",
+    "parent": "temple-du-tenraku",
+    "lieu": "temple-du-tenraku",
+    "resume": "Jarre scellée gardée au Temple du Tenraku.",
+    "connu": [
+      "Jarre scellée posée sur un socle bas, au fond du Temple. Absalom la brise : elle était vide."
+    ],
+    "histoire": [],
+    "img": "img/pnj/jarre-miren.webp",
+    "teinte": "#3a5a5a"
   }
 ]

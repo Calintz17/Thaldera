@@ -2778,6 +2778,15 @@
         "lieux": [],
         "statut": "vivant",
         "teinte": "#755019"
+      },
+      {
+        "label": "À Havre Noir",
+        "lieux": [
+          "pavillon-vert",
+          "havre-noir"
+        ],
+        "img": "img/thaldera/pnj/liora.webp",
+        "teinte": "#754e19"
       }
     ],
     "teinte": "#754e19"
@@ -10489,5 +10498,403 @@
     "histoire": [],
     "img": "img/pnj/pyrrah-mineurs.webp",
     "teinte": "#755219"
+  },
+  {
+    "id": "guerrier-griffe-mezzek",
+    "type": "pnj",
+    "nom": "Guerrier de la Griffe",
+    "titre": "Garde de l'entrepôt de Mezzek",
+    "parent": "repaire-de-mezzek",
+    "lieu": "repaire-de-mezzek",
+    "statut": "vivant",
+    "resume": "Garde de l'entrepôt de Mezzek",
+    "attitude": "ennemi",
+    "connu": [
+      "Affronté avec ses camarades dans l'entrepôt de Mezzek, à Lunsk."
+    ],
+    "histoire": [],
+    "img": "img/pnj/soldat-de-la-griffe1.webp",
+    "teinte": "#752d19"
+  },
+  {
+    "id": "sorcier-griffe-mezzek",
+    "type": "pnj",
+    "nom": "Sorcier de la Griffe",
+    "titre": "Lanceur de sorts de l'entrepôt de Mezzek",
+    "parent": "repaire-de-mezzek",
+    "lieu": "repaire-de-mezzek",
+    "statut": "vivant",
+    "resume": "Lanceur de sorts de l'entrepôt de Mezzek",
+    "attitude": "ennemi",
+    "connu": [
+      "Lance des traits de feu et immobilise ses cibles pendant le combat de l'entrepôt de Mezzek."
+    ],
+    "histoire": [],
+    "img": "img/pnj/soldat-de-la-griffe2.webp",
+    "teinte": "#752d19"
+  },
+  {
+    "id": "eviscerateur-griffe-mezzek",
+    "type": "pnj",
+    "nom": "Soldat de la Griffe",
+    "titre": "Tueur de l'entrepôt de Mezzek",
+    "parent": "repaire-de-mezzek",
+    "lieu": "repaire-de-mezzek",
+    "statut": "vivant",
+    "resume": "Tueur de l'entrepôt de Mezzek",
+    "attitude": "ennemi",
+    "connu": [
+      "Troisième combattant de la Griffe dans l'entrepôt de Mezzek."
+    ],
+    "histoire": [],
+    "img": "img/pnj/soldat-de-la-griffe3.webp",
+    "teinte": "#752d19"
+  },
+  {
+    "id": "guerriers-de-la-griffe-voros",
+    "type": "pnj",
+    "nom": "Guerriers de la Griffe",
+    "titre": "Gardes du repaire sous l'entrepôt",
+    "parent": "entrepot-de-la-griffe",
+    "lieu": "entrepot-de-la-griffe",
+    "statut": "vivant",
+    "resume": "Gardes du repaire sous l'entrepôt",
+    "attitude": "ennemi",
+    "connu": [
+      "Hommes armés et nerveux qui gardent la trappe, les cages de prisonniers et les caisses estampillées de sceaux exotiques.",
+      "Leur chef explique que la cargaison vient de l'île aux Moines par caravanes à travers le désert, et que l'argent sert à faire passer les captifs à Lunsk."
+    ],
+    "histoire": [],
+    "img": "img/pnj/guerrier-de-la-griffe-4.webp",
+    "teinte": "#752d19",
+    "formes": [
+      {
+        "label": "Guerriers de la Griffe",
+        "lieux": [],
+        "img": "img/pnj/guerrier-de-la-griffe-4.webp",
+        "teinte": "#752d19"
+      },
+      {
+        "label": "Chef de la Griffe",
+        "lieux": [],
+        "img": "img/pnj/guerrier-de-la-griffe-5.webp",
+        "teinte": "#752d19"
+      }
+    ]
+  },
+  {
+    "id": "gobelins-des-sables",
+    "type": "pnj",
+    "nom": "Gobelins des sables",
+    "titre": "Maraudeurs de Khazad Maruun",
+    "parent": "la-gueule-des-sables",
+    "lieu": "la-gueule-des-sables",
+    "statut": "vivant",
+    "resume": "Maraudeurs de Khazad Maruun",
+    "attitude": "ennemi",
+    "connu": [
+      "Gobelins du désert rencontrés autour de Khazad Maruun."
+    ],
+    "histoire": [],
+    "img": "img/pnj/khazad-maruun-gobelin-des-sables.webp",
+    "teinte": "#752d19",
+    "formes": [
+      {
+        "label": "Gobelins des sables",
+        "lieux": [],
+        "img": "img/pnj/khazad-maruun-gobelin-des-sables.webp",
+        "teinte": "#752d19"
+      },
+      {
+        "label": "Gobelin des sables, rôdeur",
+        "lieux": [],
+        "img": "img/pnj/khazad-maruun-gobelin-des-sables2.webp",
+        "teinte": "#752d19"
+      },
+      {
+        "label": "Gobelin des sables, guetteur",
+        "lieux": [],
+        "img": "img/pnj/khazad-maruun-gobelin-des-sables-3.webp",
+        "teinte": "#752d19"
+      },
+      {
+        "label": "Gobelin des sables, brute",
+        "lieux": [],
+        "img": "img/pnj/khazad-maruun-gobelin-des-sables-4.webp",
+        "teinte": "#752d19"
+      }
+    ]
+  },
+  {
+    "id": "mercenaire-gobelin-ile-aux-moines",
+    "type": "pnj",
+    "nom": "Mercenaire gobelin",
+    "titre": "Garde de l'île aux Moines",
+    "parent": "village-monastique-ile-aux-moines",
+    "lieu": "village-monastique-ile-aux-moines",
+    "statut": "vivant",
+    "resume": "Garde de l'île aux Moines",
+    "attitude": "ennemi",
+    "connu": [
+      "Mercenaire gobelin croisé sur l'île aux Moines."
+    ],
+    "histoire": [],
+    "img": "img/pnj/mercenaire-gobelin-lile-aux-moines.webp",
+    "teinte": "#752d19"
+  },
+  {
+    "id": "gang-de-la-ruche",
+    "type": "pnj",
+    "nom": "Le gang de la Ruche",
+    "titre": "Bande de Camont",
+    "parent": "camont",
+    "lieu": "camont",
+    "statut": "vivant",
+    "resume": "Bande de Camont",
+    "attitude": "neutre",
+    "connu": [
+      "Bande rencontrée à Camont."
+    ],
+    "histoire": [],
+    "img": "img/pnj/camont-gang-de-la-ruche.webp",
+    "teinte": "#755219"
+  },
+  {
+    "id": "landsknecht-de-camont",
+    "type": "pnj",
+    "nom": "Landsknecht de Camont",
+    "titre": "Soldate d'Altéra",
+    "parent": "camont",
+    "lieu": "camont",
+    "statut": "vivant",
+    "resume": "Soldate d'Altéra",
+    "attitude": "ennemi",
+    "connu": [
+      "Landsknecht d'Altéra croisée à Camont."
+    ],
+    "histoire": [],
+    "img": "img/pnj/camont-landsknecht.webp",
+    "teinte": "#7a2a19"
+  },
+  {
+    "id": "faune-de-cap-cornes",
+    "type": "pnj",
+    "nom": "Faune locale de Cap Cornes",
+    "titre": "Créature reptilienne côtière",
+    "parent": "cap-cornes",
+    "lieu": "cap-cornes",
+    "statut": "vivant",
+    "resume": "Créature reptilienne côtière",
+    "attitude": "neutre",
+    "connu": [
+      "Faune d'Istra non corrompue, à l'opposé du monstre du gibet. Un jet de Dressage est possible."
+    ],
+    "histoire": [],
+    "img": "img/pnj/faune-locale-de-cap-corne.webp",
+    "teinte": "#4a6a2a"
+  },
+  {
+    "id": "ghoules-des-marees",
+    "type": "pnj",
+    "nom": "Ghoules des marées",
+    "titre": "Créatures du bord de mer",
+    "parent": "cap-cornes",
+    "lieu": "cap-cornes",
+    "statut": "vivant",
+    "resume": "Créatures du bord de mer",
+    "attitude": "ennemi",
+    "connu": [
+      "Vaincues avec l'aide d'Ink pour récupérer trois cœurs fanés, composants du rituel de portail."
+    ],
+    "histoire": [],
+    "img": "img/pnj/hag-des-mare-es-ghoules.webp",
+    "teinte": "#752d19"
+  },
+  {
+    "id": "astral-dreadnaught",
+    "type": "pnj",
+    "nom": "Astral Dreadnaught",
+    "titre": "Créature du rituel de Gran Brijit",
+    "parent": "cabane-gran-brijit",
+    "lieu": "cabane-gran-brijit",
+    "statut": "vivant",
+    "resume": "Créature du rituel de Gran Brijit",
+    "attitude": "ennemi",
+    "connu": [
+      "Surgit du cercle rituel tracé par Gran Brijit. Le monstre est en réalité un portail vivant."
+    ],
+    "histoire": [],
+    "img": "img/pnj/pyrrah-astral-dreadnaught.webp",
+    "teinte": "#752d19"
+  },
+  {
+    "id": "elementaire-de-feu-pyrrah",
+    "type": "pnj",
+    "nom": "Élémentaire de feu",
+    "titre": "Esprit de la forge",
+    "parent": "forge-eternelle-pyrrah",
+    "lieu": "forge-eternelle-pyrrah",
+    "statut": "vivant",
+    "resume": "Esprit de la forge",
+    "attitude": "ennemi",
+    "connu": [
+      "Élémentaire de feu de Pyrrah."
+    ],
+    "histoire": [],
+    "img": "img/pnj/pyrrah-elementaire-de-feu.webp",
+    "teinte": "#b5521a"
+  },
+  {
+    "id": "emberron-pyrrah",
+    "type": "pnj",
+    "nom": "Emberron",
+    "titre": "Être de flammes",
+    "parent": "forge-eternelle-pyrrah",
+    "lieu": "forge-eternelle-pyrrah",
+    "statut": "vivant",
+    "resume": "Être de flammes",
+    "attitude": "ennemi",
+    "connu": [
+      "Être de flammes croisé à Pyrrah."
+    ],
+    "histoire": [],
+    "img": "img/pnj/pyrrah-emberron.webp",
+    "teinte": "#b5521a"
+  },
+  {
+    "id": "magmins-pyrrah",
+    "type": "pnj",
+    "nom": "Magmins invoqués",
+    "titre": "Petits êtres de magma",
+    "parent": "mine-de-pyrrah",
+    "lieu": "mine-de-pyrrah",
+    "statut": "vivant",
+    "resume": "Petits êtres de magma",
+    "attitude": "ennemi",
+    "connu": [
+      "Magmins invoqués dans la mine de Pyrrah."
+    ],
+    "histoire": [],
+    "img": "img/pnj/pyrrah-magmins-invoque-s.webp",
+    "teinte": "#b5521a"
+  },
+  {
+    "id": "pyrodrakon-pyrrah",
+    "type": "pnj",
+    "nom": "Pyrodrakon",
+    "titre": "Bête reptilienne de Pyrrah",
+    "parent": "mine-de-pyrrah",
+    "lieu": "mine-de-pyrrah",
+    "statut": "vivant",
+    "resume": "Bête reptilienne de Pyrrah",
+    "attitude": "ennemi",
+    "connu": [
+      "Pyrodrakon des environs de Pyrrah."
+    ],
+    "histoire": [],
+    "img": "img/pnj/pyrrah-pyrodrakon.webp",
+    "teinte": "#b5521a"
+  },
+  {
+    "id": "pyrrithe-pyrrah",
+    "type": "pnj",
+    "nom": "Pyrrithe",
+    "titre": "Roche en fusion",
+    "parent": "mine-de-pyrrah",
+    "lieu": "mine-de-pyrrah",
+    "statut": "vivant",
+    "resume": "Roche en fusion",
+    "attitude": "neutre",
+    "connu": [
+      "Masse de pyrrithe incandescente extraite à Pyrrah."
+    ],
+    "histoire": [],
+    "img": "img/pnj/pyrrah-pyrrithe.webp",
+    "teinte": "#b5521a"
+  },
+  {
+    "id": "lathandre-dieu",
+    "type": "pnj",
+    "nom": "Lathandre",
+    "titre": "Dieu de l'aube",
+    "parent": "temple-brumeux",
+    "lieu": "temple-brumeux",
+    "statut": "vivant",
+    "resume": "Dieu de l'aube",
+    "attitude": "positif",
+    "connu": [
+      "Le temple brumeux est dédié à Lathandre. Sa bénédiction revient sur le lieu une fois le démon vaincu."
+    ],
+    "histoire": [],
+    "img": "img/pnj/lathandre.webp",
+    "teinte": "#8a6a19"
+  },
+  {
+    "id": "oni-au-tambour",
+    "type": "pnj",
+    "nom": "Oni au tambour",
+    "titre": "Oni d'Absalom",
+    "parent": "temple-du-tenraku",
+    "lieu": "temple-du-tenraku",
+    "statut": "vivant",
+    "resume": "Oni d'Absalom",
+    "attitude": "ennemi",
+    "connu": [
+      "Absalom ordonne à ses onis de s'occuper des joueuses pendant qu'elle lit le parchemin PSA-87."
+    ],
+    "histoire": [],
+    "img": "img/pnj/oni-au-tambour.webp",
+    "teinte": "#752d19"
+  },
+  {
+    "id": "silencieuse-garde-gardienne",
+    "type": "pnj",
+    "nom": "La Silencieuse",
+    "titre": "Garde rapprochée de la Gardienne",
+    "parent": "temple-du-tenraku",
+    "lieu": "temple-du-tenraku",
+    "statut": "vivant",
+    "resume": "Garde rapprochée de la Gardienne",
+    "attitude": "neutre",
+    "connu": [
+      "Garde rapprochée de la Gardienne."
+    ],
+    "histoire": [],
+    "img": "img/pnj/silencieuse-garde-rapproche-e-de-la-gardienne.webp",
+    "teinte": "#2a2a3a"
+  },
+  {
+    "id": "gardes-de-la-caserne",
+    "type": "pnj",
+    "nom": "Gardes de la caserne",
+    "titre": "Gardes de Roshen Buru",
+    "parent": "caserne-roshen-buru",
+    "lieu": "caserne-roshen-buru",
+    "statut": "vivant",
+    "resume": "Gardes de Roshen Buru",
+    "attitude": "neutre",
+    "connu": [
+      "Gardes de la caserne de Roshen Buru."
+    ],
+    "histoire": [],
+    "img": "img/pnj/gardes-de-la-caserne.webp",
+    "teinte": "#7a2a19"
+  },
+  {
+    "id": "garde-de-la-magistrature",
+    "type": "pnj",
+    "nom": "Garde de la magistrature",
+    "titre": "Garde de Roshen Buru",
+    "parent": "magistrature",
+    "lieu": "magistrature",
+    "statut": "vivant",
+    "resume": "Garde de Roshen Buru",
+    "attitude": "neutre",
+    "connu": [
+      "Garde en faction à la magistrature de Roshen Buru."
+    ],
+    "histoire": [],
+    "img": "img/pnj/garde-de-la-magistrature-roshen-buru.webp",
+    "teinte": "#7a2a19"
   }
 ]

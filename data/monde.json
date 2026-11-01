@@ -302,7 +302,9 @@
       "À Roshen Buru, Yureï Poison en est la fournisseuse principale pour le clan Urameï.",
       "Le cuisinier Kabo est mort d'une dose d'une pureté qu'un homme de son rang ne pouvait pas acheter. Darrek Kovacz y était accro."
     ],
-    "histoire": []
+    "histoire": [],
+    "img": "img/pnj/ve-sine-drogue.webp",
+    "teinte": "#6a7a19"
   },
   {
     "id": "kord",
