@@ -4600,7 +4600,7 @@
     "type": "pnj",
     "nom": "Orant des Failles",
     "titre": "Liturge des courants d'Agran",
-    "parent": "agran",
+    "parent": "cite-d-agran",
     "lieu": "agran",
     "statut": "vivant",
     "resume": "Planifie les routes sous-marines.",
@@ -4789,8 +4789,8 @@
     "type": "pnj",
     "nom": "Madame Ari",
     "titre": "Couturière",
-    "parent": "azuren-kai",
-    "lieu": "azuren-kai",
+    "parent": "chez-madame-ari",
+    "lieu": "chez-madame-ari",
     "statut": "vivant",
     "resume": "Minuscule, très âgée, l'œil vif. Elle propose des tenues adaptées aux modes locales.",
     "galerie": [
@@ -4837,8 +4837,8 @@
     "type": "pnj",
     "nom": "Doryo Kovacz",
     "titre": "Greffier de la capitainerie",
-    "parent": "capitainerie-azuren-kai",
-    "lieu": "capitainerie-azuren-kai",
+    "parent": "magistrature-doryo-kovacz",
+    "lieu": "magistrature-doryo-kovacz",
     "statut": "vivant",
     "resume": "Il tient les registres de fret du port depuis vingt ans.",
     "galerie": [
@@ -4867,6 +4867,9 @@
     "histoire": [],
     "connu": [
       "Il reçoit Harfang comme délégué et lui ouvre les registres de fret."
+    ],
+    "lieux": [
+      "capitainerie-azuren-kai"
     ]
   },
   {
@@ -4874,8 +4877,8 @@
     "type": "pnj",
     "nom": "Nuala",
     "titre": "Marchande de fournitures de traversée",
-    "parent": "azuren-kai",
-    "lieu": "azuren-kai",
+    "parent": "comptoir-de-nuala",
+    "lieu": "comptoir-de-nuala",
     "statut": "vivant",
     "resume": "Antitoxines, remèdes contre le mal de mer, rations sèches. Prix fixes. Elle vient de Cap Cornes.",
     "galerie": [
@@ -4893,8 +4896,8 @@
     "type": "pnj",
     "nom": "Kanabé",
     "titre": "Petit matériel de bord et superstition maritime",
-    "parent": "azuren-kai",
-    "lieu": "azuren-kai",
+    "parent": "carriole-de-kanabe",
+    "lieu": "carriole-de-kanabe",
     "statut": "vivant",
     "resume": "Charmes en os, lanternes, aiguilles. Il refuse un charme d'embarquement à qui ne part pas.",
     "alias": [
@@ -4915,8 +4918,8 @@
     "type": "pnj",
     "nom": "Rokka",
     "titre": "Armurier d'armures légères, ancien moine",
-    "parent": "azuren-kai",
-    "lieu": "azuren-kai",
+    "parent": "le-cuir-et-l-ecaille",
+    "lieu": "le-cuir-et-l-ecaille",
     "statut": "vivant",
     "resume": "Cuir, écailles de saurien de Balamor, jaques matelassés. Il refuse plaque et métal lourd.",
     "galerie": [
@@ -5066,6 +5069,96 @@
         "legende": "La capitainerie d'Azuren Kai"
       }
     ]
+  },
+  {
+    "id": "comptoir-de-nuala",
+    "type": "lieu",
+    "nom": "Le comptoir de Nuala",
+    "titre": "Fournitures de traversée",
+    "parent": "azuren-kai",
+    "resume": "Antitoxines, remèdes contre le mal de mer et rations sèches, à prix fixes.",
+    "connu": [
+      "Nuala tient ce comptoir. Elle vient de Cap Cornes."
+    ],
+    "galerie": [
+      {
+        "img": "img/paysages/azuren-kai/comptoir-cap-cornes-nuala.webp",
+        "legende": "Le comptoir de Cap Cornes"
+      }
+    ],
+    "histoire": []
+  },
+  {
+    "id": "carriole-de-kanabe",
+    "type": "lieu",
+    "nom": "La carriole de Kanabé",
+    "titre": "Petit matériel de bord",
+    "parent": "azuren-kai",
+    "resume": "Charmes en os, lanternes et aiguilles pour les gens de mer.",
+    "connu": [
+      "Kanabé vend du petit matériel de bord et des charmes d'embarquement. Il refuse d'en céder un à qui ne part pas."
+    ],
+    "galerie": [
+      {
+        "img": "img/paysages/azuren-kai/carriole-kanabe.webp",
+        "legende": "La carriole de Kanabé"
+      }
+    ],
+    "histoire": []
+  },
+  {
+    "id": "le-cuir-et-l-ecaille",
+    "type": "lieu",
+    "nom": "Le Cuir et l'Écaille",
+    "titre": "Armurerie d'armures légères",
+    "parent": "azuren-kai",
+    "resume": "Cuir, écailles de saurien de Balamor et jaques matelassés.",
+    "connu": [
+      "Rokka, ancien moine, y forge des armures légères. Il refuse la plaque et le métal lourd."
+    ],
+    "galerie": [
+      {
+        "img": "img/paysages/azuren-kai/cuir-et-ecaille-rokka.webp",
+        "legende": "Le Cuir et l'Écaille"
+      }
+    ],
+    "histoire": []
+  },
+  {
+    "id": "chez-madame-ari",
+    "type": "lieu",
+    "nom": "Chez Madame Ari",
+    "titre": "Couturière",
+    "parent": "azuren-kai",
+    "resume": "Tenues adaptées aux modes locales.",
+    "connu": [
+      "Madame Ari, minuscule et très âgée, y propose des tenues adaptées aux modes locales."
+    ],
+    "galerie": [
+      {
+        "img": "img/paysages/azuren-kai/chez-madame-ari.webp",
+        "legende": "Chez Madame Ari"
+      }
+    ],
+    "histoire": []
+  },
+  {
+    "id": "magistrature-doryo-kovacz",
+    "type": "lieu",
+    "nom": "La Magistrature de Doryo Kovacz",
+    "titre": "Bureau du greffier",
+    "parent": "azuren-kai",
+    "resume": "Le bureau où Doryo Kovacz tient les registres du port.",
+    "connu": [
+      "Doryo Kovacz y reçoit Harfang comme délégué et lui ouvre les registres de fret."
+    ],
+    "galerie": [
+      {
+        "img": "img/paysages/azuren-kai/magistrature-doryo-kovacz.webp",
+        "legende": "La Magistrature de Doryo Kovacz"
+      }
+    ],
+    "histoire": []
   },
   {
     "id": "ascenseur-nord-est",
@@ -5219,6 +5312,7 @@
     "histoire": [],
     "statut": "inconnu",
     "attitude": "neutre",
-    "teinte": "#47746f"
+    "teinte": "#47746f",
+    "locked": true
   }
 ]

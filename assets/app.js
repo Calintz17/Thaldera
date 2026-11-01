@@ -4,7 +4,7 @@
 (() => {
 'use strict';
 
-const VER = '101';
+const VER = '102';
 const LEGACY_IDS = { 'bourre-piff':'bourpif', 'seravine':'solkah-barrow', 'tilda':'irna', 'cleff':'irna' };
 const EDIT = new URLSearchParams(location.search).has('edit');
 const $ = (s, r = document) => r.querySelector(s);
@@ -37,8 +37,8 @@ async function load() {
   DB = parts.flat();
   DB.forEach(e => { BY[e.id] = e; });
   DB.forEach(e => {
-    if (e.parent && BY[e.parent]) (KIDS[e.parent] ||= []).push(e);
-    if (e.type === 'pnj') {
+    if (e.parent && BY[e.parent] && !e.locked) (KIDS[e.parent] ||= []).push(e);
+    if (e.type === 'pnj' && !e.locked) {
       [...new Set([e.lieu, ...(e.lieux || [])])].filter(Boolean).forEach(id => (NPC_AT[id] ||= []).push(e));
     }
     (e.relations || []).forEach(r => {
@@ -101,8 +101,8 @@ function buildLinker() {
     if (seen[k]) return;
     seen[k] = id; LOOK[k] = id; names.push(n);
   };
-  DB.filter(e => !e.redirige).forEach(e => add(e.nom, e.id));
-  DB.filter(e => !e.redirige).forEach(e => (e.alias || []).forEach(a => add(a, e.id)));
+  DB.filter(e => !e.redirige && !e.locked).forEach(e => add(e.nom, e.id));
+  DB.filter(e => !e.redirige && !e.locked).forEach(e => (e.alias || []).forEach(a => add(a, e.id)));
   names.sort((a, b) => b.length - a.length);
   RX = new RegExp('(?<![\\p{L}\\p{N}])(?:' + names.map(pat).join('|') + ')(?![\\p{L}\\p{N}])', 'gu');
 }
@@ -314,8 +314,8 @@ function sceneOf(e, q, depth = 0) {
       const lieu = e.lieu ? BY[e.lieu] : null;
       let s = lieu ? sceneOf(lieu, null, depth + 1) : (e.parent ? sceneOf(BY[e.parent], null, depth + 1) : null);
       if (!s && depth === 0) s = sceneOf(BY.istra, null, 1);
-      if (s && (e.type === 'pnj' || e.type === 'pj' || (e.type === 'sujet' && e.img)) && depth === 0) {
-        let gal = (e.galerie && e.galerie.length) ? e.galerie : (s.gallery || fallbackLand(e) || [PH_LAND]);
+      if (s && (e.type === 'pnj' || e.type === 'pj' || (['sujet', 'organisation', 'clan'].includes(e.type) && e.img)) && depth === 0) {
+        let gal = (e.galerie && e.galerie.length) ? e.galerie : (s.gallery || fallbackLand(e) || (e.type === 'organisation' || e.type === 'clan' ? cityGallery(e) : null) || [PH_LAND]);
         if (e.etapes && e.etapes.length) {
           gal = e.etapes.map(f => ({ img: f.fond || PH_LAND.img, ph: !f.fond, legende: f.label, cut: f }));
         } else if (e.formes && e.formes.length > 1) {
@@ -327,6 +327,8 @@ function sceneOf(e, q, depth = 0) {
           }
         }
         s = { ...s, gallery: gal, cutout: e };
+      } else if (s && e.type === 'evenement' && depth === 0 && e.galerie && e.galerie.length && s.kind === 'map') {
+        s = { ...s, gallery: e.galerie };
       }
       return s;
     }
@@ -359,6 +361,10 @@ function stackScene(host, focus) {
     pins: lieux.filter(l => (l.carte || cs[0].id) === c.id && l.pos).map(l => ({ id: l.id, ...l.pos, label: l.nom, kind: 'lieu', dim: !!focus && l.id !== focus.id, here: !!focus && l.id === focus.id }))
   }));
   return { kind: 'stack', src: 'stack:' + host.id, owner: host, tabs: cs, tab: idx, sheets, pins: sheets.flatMap((sh, i) => sh.pins.map(p => ({ ...p, sheet: i }))), frames: [], focus: focus ? focus.id : null, focusSheet: idx, focusPos: focus && focus.pos ? focus.pos : null };
+}
+function cityGallery(e) {
+  const v = chain(e).reverse().find(x => x.type === 'ville' && x.galerie && x.galerie.length);
+  return v ? v.galerie : null;
 }
 function fallbackLand(e) {
   // paysage de repli : lieu, puis rue de la ville
@@ -914,8 +920,10 @@ function showWorld() {
 function statusPill(e) {
   const s = e.statut;
   if (!s) return '';
-  return `<span class="pill ${esc(s)}">${esc(s === 'pj' ? 'joueur' : s)}</span>`;
+  return `<span class="pill ${esc(stClass(s))}">${esc(s === 'pj' ? 'joueur' : s)}</span>`;
 }
+const DEAD_ST = new Set(['mort', 'vaincu', 'détruit', 'arrêté', 'renvoyé aux Enfers']);
+const stClass = s => DEAD_ST.has(s) ? 'mort' : (s === 'en fuite' ? 'inconnu' : s);
 const ATT_LABEL = { ennemi: 'ennemi', neutre: 'neutre', positif: 'positif', allie: 'allié' };
 const ATT_TIP = { ennemi: 'Ennemi du groupe', neutre: 'Neutre envers le groupe', positif: 'Bien disposé envers le groupe', allie: 'Allié : prêt à répondre à l’appel, à se sacrifier, à aider le groupe' };
 function attPill(e) {
@@ -944,7 +952,7 @@ function parcours(e) {
   return '<ol class="parc">' + e.etapes.map((f, i) => {
     const lp = f.lieu && BY[f.lieu] ? `<a href="#/${f.lieu}">${esc(BY[f.lieu].nom)}</a>` : (f.lieuNom ? esc(f.lieuNom) : '');
     const last = i === e.etapes.length - 1;
-    const st = f.statut ? `<span class="pill ${esc(f.statut)}">${esc(f.statut === 'pj' ? 'joueur' : f.statut)}</span>` : '';
+    const st = f.statut ? `<span class="pill ${esc(stClass(f.statut))}">${esc(f.statut === 'pj' ? 'joueur' : f.statut)}</span>` : '';
     const at = f.attitude ? `<span class="pill att ${esc(f.attitude)}" title="${esc(ATT_TIP[f.attitude] || '')}">${esc(ATT_LABEL[f.attitude] || f.attitude)}</span>` : '';
     return `<li class="etape${i === 0 ? ' on' : ''}${last ? ' now' : ''}" data-i="${i}"><div class="eh"><span class="en">${i + 1}</span><b>${esc(f.label)}</b>${last ? '<em>aujourd’hui</em>' : ''}</div>${lp ? `<div class="el">${lp}</div>` : ''}<div class="pills">${st}${at}</div><p>${L(f.texte || '', e.id)}</p></li>`;
   }).join('') + '</ol>';
@@ -976,7 +984,7 @@ function crumbs(e) {
   return `<nav class="crumbs"><a class="back" href="${up}" title="Retour : ${esc(upName)}">‹ Retour</a>${parts.join('<span class="sep">›</span>')}</nav>`;
 }
 function bubble(p, attrs = '') {
-  const st = p.statut ? ` st-${p.statut}` : '';
+  const st = p.statut ? ` st-${stClass(p.statut)}` : '';
   const initials = p.nom.split(/[\s'’-]+/).filter(Boolean).slice(0, 2).map(s => s[0]).join('');
   return `<a class="bub${st}" href="#/${p.id}" data-id="${p.id}" ${attrs}><span class="av">${p.img ? `<img src="${p.img}" alt="" loading="lazy">` : esc(initials)}</span>${p.statut ? '<i class="sd"></i>' : ''}<span class="nm">${esc(p.nom)}</span></a>`;
 }
@@ -1000,7 +1008,7 @@ function descPNJ(e) {
     // A character may be classified under a clan yet appear at a city/location.
     // Show them in the relevant regional/city index without changing their parent.
     DB.forEach(p => {
-      if (p.type !== 'pnj' || seen.has(p.id)) return;
+      if (p.type !== 'pnj' || p.locked || seen.has(p.id)) return;
       const locations = [p.lieu, ...(p.lieux || [])].filter(id => BY[id]);
       if (locations.some(id => chain(BY[id]).some(ancestor => ancestor.id === e.id))) add(p);
     });

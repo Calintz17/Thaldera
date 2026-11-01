@@ -47,7 +47,8 @@ const theme = fs.readFileSync(path.join(root, 'assets/arcane-theme.css'), 'utf8'
 const page = fs.readFileSync(path.join(root, 'index.html'), 'utf8');
 const sessions = JSON.parse(fs.readFileSync(path.join(root, 'data/parties.json'), 'utf8'));
 assert.match(page, /arcane-theme\.css\?v=\d+/, 'Atlas theme must be linked');
-assert.match(page, /assets\/app\.js\?v=99/, 'App and stylesheet cache versions must match the v99 release');
+const ver = (source.match(/const VER = '(\d+)'/) || [])[1];
+assert.ok(ver && page.includes('assets/app.js?v=' + ver) && page.includes('assets/codex.css?v=' + ver), 'App and stylesheet cache versions must match VER in app.js');
 assert.ok(page.includes('id="sbtn"') && page.includes('id="slog"'), 'Recap drawer must be present');
 assert.ok(Array.isArray(sessions.parties), 'Session summaries schema must be an array');
 assert.ok(source.includes("['slog','sbtn']"), 'Summary drawer must share side-dock controller');
@@ -72,7 +73,8 @@ assert.ok(source.includes('LEGACY_IDS'), 'Old bookmarks must redirect to merged 
 assert.ok(source.includes('x.type === \'lieu\''), 'Landscape inheritance must not fall back to an unrelated city image');
 assert.equal(by['gran-brijit'].lieu,'manoir-des-ligaments','Gran Brijit must live in canonical manor');
 assert.equal(by['nolbrim'].lieu,'manoir-des-ligaments','Nolbrim must live in canonical manor');
-assert.equal(by.ink.parent,'agran','Ink must be indexed from Agran');
+assert.equal(by.ink.parent,'cite-d-agran','Ink must be indexed from the city of Agran (single-city continent redirects to it)');
+assert.equal(by['cite-d-agran'].parent,'agran','The city of Agran must stay under the Agran continent');
 assert.ok(['auberge-d-agran','brakka','cap-cornes','roshen-buru'].every(id=>by.ink.lieux.includes(id)),'Ink journey must be preserved');
 assert.ok(by.ink.galerie.length>=4,'Ink journey must display multiple landscape stages');
 const mobileTheme = fs.readFileSync(path.join(root,'assets/ios-mobile.css'),'utf8');

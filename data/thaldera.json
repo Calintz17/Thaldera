@@ -3149,7 +3149,8 @@
         "img": "img/paysages/agran/route-vers-la-ville.webp",
         "legende": "La route vers la ville"
       }
-    ]
+    ],
+    "redirige": "cite-d-agran"
   },
   {
     "id": "cite-d-agran",
@@ -3162,7 +3163,44 @@
     "pos": {
       "x": 0.5,
       "y": 0.5
-    }
+    },
+    "connu": [
+      "Aucune surface visible. Des courants létaux coulent au-dessus de la faille.",
+      "Genasi d'eau, tritons, sirènes et kuo-toa y vivent. Ils appellent les humains « les Noyés ».",
+      "Kataron, Dame des Marées Profondes, y est vénérée.",
+      "Philippa et Jane quittent la crique du château de Spezza à bord d'un sous-marin de pyrracier, piloté par les nains de Borim Brise-Montagne.",
+      "Deux tempêtes de courants frappent la coque. Les joueuses aident aux postes pendant que les nains gèrent les propulseurs, puis le sous-marin plonge dans une faille.",
+      "Des créatures de la faille, mi-tritons mi-kuo-toa, attaquent par vagues. Le groupe sort repousser les attaquants.",
+      "À l'arrivée, Reshaar et Ghor interceptent le sous-marin et laissent entrer le groupe.",
+      "À l'auberge, Thaloor les sert et Ink surgit, pleine de questions sur la surface. Le groupe la prend sous son aile.",
+      "Le groupe visite le temple de Kataron : le pupitre brille à leur approche et Glooglugogg leur dit d'aller voir la Suuraal. Il passe aussi chez Peraalys, Drisuun, l'Orant et Algari, qui apprend à Philippa à poser le thuun sur sa lyre.",
+      "Sur la piste d'un fragment, le groupe fouille l'épave du Grauwacht, où Ink les guide, et y trouve la lettre qui désigne l'Astariel. À l'Astariel, il affronte Ossyraal pour le fragment de Nyrrh.",
+      "La Suuraal reconnaît le fragment. Kataron parle alors par toutes les voix présentes et donne au groupe une marque.",
+      "La traversée du varech mène au Cœur Immergé. Kataron y reçoit le groupe, ne s'inquiète pas et le congédie : « Vous avez été reçu. »",
+      "Le sous-marin repart vers Istra, avec Ink à bord."
+    ],
+    "galerie": [
+      {
+        "img": "img/paysages/agran/vue-ville.webp",
+        "legende": "Agran, vue d'ensemble"
+      },
+      {
+        "img": "img/paysages/agran/route-vers-la-ville.webp",
+        "legende": "La route vers la ville"
+      }
+    ],
+    "cartes": [
+      {
+        "id": "carte",
+        "img": "img/cartes/agran.webp",
+        "legende": "Plan d'Agran"
+      }
+    ],
+    "accent": "#1e4f9c",
+    "sousTitre": "La cité sous les flots",
+    "alias": [
+      "Agran"
+    ]
   },
   {
     "id": "thaloor",
@@ -3197,7 +3235,7 @@
     "type": "pnj",
     "nom": "La Suuraal",
     "titre": "Dirigeante d'Agran",
-    "parent": "agran",
+    "parent": "cite-d-agran",
     "lieu": "demeure-de-la-suuraal",
     "statut": "vivant",
     "resume": "Autorité spirituelle et temporelle de la cité.",
@@ -3234,7 +3272,7 @@
     "type": "pnj",
     "nom": "Algari",
     "titre": "Musicien d'Agran",
-    "parent": "agran",
+    "parent": "cite-d-agran",
     "lieu": "othuunra",
     "statut": "vivant",
     "resume": "Joue de la lyre, queue de poisson pendant dans le vide.",
@@ -3313,7 +3351,8 @@
     "accent": "#e0602a",
     "blason": "img/blasons/pyrrah.webp",
     "alias": [
-      "Pyrrah"
+      "Pyrrah",
+      "Plan du feu"
     ],
     "cartes": [
       {
@@ -3321,7 +3360,8 @@
         "img": "img/cartes/pyrrah.webp",
         "legende": "Plan de Pyrrah"
       }
-    ]
+    ],
+    "sousTitre": "Le plan élémentaire"
   },
   {
     "id": "kaldros-emberforge",
@@ -4950,7 +4990,13 @@
     ],
     "histoire": [],
     "img": "img/pnj/les-yeux.webp",
-    "teinte": "#754d19"
+    "teinte": "#754d19",
+    "galerie": [
+      {
+        "img": "img/paysages/camont/silos.webp",
+        "legende": "Les Silos"
+      }
+    ]
   },
   {
     "id": "les-bruleurs",
@@ -4997,7 +5043,13 @@
     ],
     "histoire": [],
     "img": "img/pnj/les-epingles.webp",
-    "teinte": "#754a19"
+    "teinte": "#754a19",
+    "galerie": [
+      {
+        "img": "img/paysages/camont/fabrique.webp",
+        "legende": "La Fabrique"
+      }
+    ]
   },
   {
     "id": "gardes-gris",
@@ -7554,7 +7606,7 @@
     "type": "pnj",
     "nom": "Reshaar",
     "titre": "Garde d'Agran",
-    "parent": "agran",
+    "parent": "cite-d-agran",
     "lieu": "la-faille-d-agran",
     "statut": "vivant",
     "resume": "Genasi d'eau à la peau bleu-vert, bâton de corail doré.",
@@ -7584,7 +7636,7 @@
     "type": "pnj",
     "nom": "Ghor",
     "titre": "Garde d'Agran",
-    "parent": "agran",
+    "parent": "cite-d-agran",
     "lieu": "la-faille-d-agran",
     "statut": "vivant",
     "resume": "Sentinelle d'Agran.",
@@ -7927,7 +7979,7 @@
     "type": "sujet",
     "nom": "Le fragment de Nyrrh",
     "titre": "Éclat d'Astaryll",
-    "parent": "agran",
+    "parent": "cite-d-agran",
     "resume": "Relique qui refuse d'appartenir à un seul endroit à la fois. Elle venait de Bollwerk sur l'Astariel.",
     "connu": [
       "Le groupe le rapporte de l'Astariel et le présente à la Suuraal, qui le reconnaît immédiatement.",
@@ -9351,23 +9403,17 @@
         "legende": "La salle des statues"
       }
     ],
-    "img": "img/pnj/lathandre.webp",
+    "img": "img/pnj/temple-brumeux-statue-paladinis.webp",
     "formes": [
       {
-        "img": "img/pnj/lathandre.webp",
-        "label": "Normal",
+        "img": "img/pnj/temple-brumeux-statue-paladinis.webp",
+        "label": "Statue Paladinis",
         "lieux": [],
         "teinte": "#755219"
       },
       {
         "img": "img/pnj/temple-brumeux-statue-clericalis.webp",
         "label": "Statue Clericalis",
-        "lieux": [],
-        "teinte": "#755219"
-      },
-      {
-        "img": "img/pnj/temple-brumeux-statue-paladinis.webp",
-        "label": "Statue Paladinis",
         "lieux": [],
         "teinte": "#755219"
       },
@@ -10065,17 +10111,17 @@
     ]
   },
   {
-    "id": "golems-d-arkhan",
+    "id": "golems-d-arcane",
     "type": "pnj",
-    "nom": "Les Golems d'Arkhan",
+    "nom": "Les Golems d'Arcane",
     "titre": "Gardiens arcaniques du donjon d'Aram Sharûn",
     "parent": "tour-de-resonance",
     "lieu": "tour-de-resonance",
-    "statut": "inconnu",
+    "statut": "vaincu",
     "attitude": "ennemi",
     "resume": "Golems arcaniques rencontrés dans le donjon d'Aram Sharûn.",
     "connu": [
-      "Des golems de garde et un golem de résonance temporelle défendent le donjon."
+      "Des golems de garde et un golem de résonance temporelle défendaient le donjon. Le groupe les a vaincus."
     ],
     "img": "img/pnj/kazad-maruun-golem.webp",
     "galerie": [

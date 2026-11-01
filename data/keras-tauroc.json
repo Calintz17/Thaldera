@@ -2852,12 +2852,30 @@
         "y": 0.544
       }
     ],
-    "resume": "Traversée sur le Tenrai Buru, combat contre Silas Mort-Dorée et le gibet d'Absalom.",
+    "resume": "Traversée sur le Tenrai Buru, mort de Silas Mort-Dorée et gibet d'Absalom.",
     "histoire": [
       "Capito guide le groupe jusqu'au Tenrai Buru, navire de Roshen Buru à la coque sombre dorée. Le groupe embarque avec ses deux rakh. La capitaine Yorisa prend 40 pièces d'or par tête.",
-      "Sur la Khor Selash, un voyageur égaré signale depuis la berge. Le groupe le recueille : c'est Silas Mort-Dorée, envoyé par Vassago pour récupérer le Fragment. Il le vainc sur le pont.",
+      "Sur la Khor Selash, un voyageur égaré signale depuis la berge. Le groupe le recueille : c'est Silas Mort-Dorée, envoyé par Vassago pour récupérer le Fragment. Le groupe le tue sur le pont.",
       "Sur la lande, un ancien aqueduc en ruine porte des gardes de Keras Tauroc pendus à des chaînes, à la place des statues de héros. Absalom l'a laissé comme message.",
       "Le groupe marche ensuite vers Cap Cornes. La lande offre une faune paisible : un grand herbivore moussu, une créature reptilienne bleutée qui pourrait servir de monture, un petit rongeur bondissant."
+    ],
+    "galerie": [
+      {
+        "img": "img/paysages/roshen-buru/voyage-navire.webp",
+        "legende": "Le Tenrai Buru"
+      },
+      {
+        "img": "img/paysages/roshen-buru/voyage-silas-mort-doree.webp",
+        "legende": "Le voyage avec Silas Mort-Dorée"
+      },
+      {
+        "img": "img/paysages/cap-cornes/route-gibet.webp",
+        "legende": "Le gibet"
+      },
+      {
+        "img": "img/paysages/cap-cornes/route-keras-tauroc.webp",
+        "legende": "La route"
+      }
     ]
   },
   {
@@ -2866,8 +2884,7 @@
     "nom": "Silas Mort-Dorée",
     "titre": "Fey rogue, agent de Vassago",
     "parent": "descente-khor-selash",
-    "statut": "inconnu",
-    "question": "Vassago renverra-t-il Silas ?",
+    "statut": "mort",
     "alias": [
       "Silas"
     ],
@@ -2875,7 +2892,7 @@
     "connu": [
       "Sur la lande plate de la Khor Selash, sous un ciel ambré, le groupe aperçoit une silhouette qui agite les bras sur la berge. Il se présente comme un marchand en détresse, perdu depuis des jours. Le groupe l'invite à bord.",
       "À bord, il est courtois, un peu trop reconnaissant, légèrement louche. Il interroge Philippa sur les dettes et l'ingratitude : celui qui vole son protecteur, et refuse de rendre ce qui ne lui appartient pas.",
-      "La nuit, il tente de lui voler le Fragment dans son sac. Découvert, il se bat sur le pont et est vaincu par le groupe, pas tué : Vassago pourrait le renvoyer."
+      "La nuit, il tente de lui voler le Fragment dans son sac. Découvert, il se bat sur le pont et meurt sous les coups du groupe."
     ],
     "relations": [
       {
@@ -3036,8 +3053,8 @@
     "titre": "Auberge du port",
     "parent": "cap-cornes",
     "pos": {
-      "x": 0.667,
-      "y": 0.355
+      "x": 0.605,
+      "y": 0.169
     },
     "carte": "ville",
     "zoom": 0.2,
@@ -3063,8 +3080,8 @@
     "titre": "Étals du port",
     "parent": "cap-cornes",
     "pos": {
-      "x": 0.62,
-      "y": 0.5
+      "x": 0.717,
+      "y": 0.481
     },
     "carte": "ville",
     "zoom": 0.2,
@@ -3120,10 +3137,7 @@
       "Jane, déguisée en Olyssane, attire Kester dans une ruelle. Il fuit, apeuré, et jure vengeance.",
       "Pour réunir les composants du rituel, le groupe obtient de Fennick de la vésine en le menaçant, vainc des ghoules des marées avec l'aide d'Ink, et rapporte trois cœurs flétris. Les clous rouillés viennent de la pêcherie de Rory.",
       "Eamonn négocie enfin, contre du suud, puis ouvre un cercle de téléportation entre sa tour et les ruines du château de Port Doëlan. Philippa trace sa marque de craie sur la porte, point de retour permanent.",
-      "Avant le départ pour Azuren Kai, chez Gran Brijit, Philippa a une vision d'une balance désaxée. Olyssane ouvre le passage en faisant couler son sang. Harfang et Ink rencontrent Brijit pour la première fois, et elle semble déjà les connaître.",
-      "Le groupe réveille Nolbrim, dans le coma depuis Malquessar, en le tuant puis en le ressuscitant avec la potion d'Ursinus. Philippa envoie un message à Bourpif.",
-      "Vespera vient à Cap Cornes et croise Eamonn.",
-      "Plus tard, depuis Roshen Buru, le groupe utilise la craie de Philippa pour répondre à l'appel d'Eamonn lors de l'attaque du Tribunal de Chair, puis Eamonn téléporte le groupe au camp de Vespera."
+      "Vespera vient à Cap Cornes et croise Eamonn."
     ]
   },
   {
@@ -3269,7 +3283,7 @@
     "type": "pnj",
     "nom": "Ink",
     "titre": "Jeune compagne d'Olyssane",
-    "parent": "agran",
+    "parent": "cite-d-agran",
     "lieu": "roshen-buru",
     "img": "img/pnj/ink.webp",
     "statut": "vivant",
@@ -6162,7 +6176,8 @@
     "alias": [
       "Féerie",
       "Plan des fées"
-    ]
+    ],
+    "redirige": "malquessar"
   },
   {
     "id": "plan-du-feu",
@@ -6183,7 +6198,8 @@
     "resume": "Territoire d'une beauté violente, hostile à toute vie qui n'y est pas née. Pyrrah en est la cité connue.",
     "alias": [
       "Plan du feu"
-    ]
+    ],
+    "redirige": "pyrrah"
   },
   {
     "id": "outreterre",
@@ -6444,6 +6460,18 @@
         "img": "img/paysages/malquessar/couverture.webp",
         "legende": "Malquessar, illustration"
       }
+    ],
+    "cartes": [
+      {
+        "id": "carte",
+        "img": "img/placeholder/carte-noire.svg",
+        "legende": ""
+      }
+    ],
+    "sousTitre": "Le plan des fées",
+    "alias": [
+      "Féerie",
+      "Plan des fées"
     ]
   },
   {
@@ -6755,7 +6783,7 @@
       "Capito guide le groupe jusqu'au ponton du Tenrai Buru et se porte garant auprès de la capitaine Yorisa. Le passage coûte 40 po par tête, ou un service.",
       "L'équipage compte quatre membres.",
       "Le Tenrai Buru descend la Khor Selash jusqu'à la lande plate.",
-      "En chemin, le groupe recueille un voyageur égaré, Silas Mort-Dorée. La nuit, celui-ci tente de voler le Fragment. Le groupe le vainc sur le pont.",
+      "En chemin, le groupe recueille un voyageur égaré, Silas Mort-Dorée. La nuit, celui-ci tente de voler le Fragment. Le groupe le tue sur le pont.",
       "Le groupe continue à pied vers Cap Cornes."
     ],
     "chapeau": "Un navire élancé, la coque sombre rehaussée de dorures, aux voiles ajourées comme des ailes d'insecte. Il détonne dans le port de Keras Tauroc. À bord, une capitaine aveugle qui fume sa pipe, et un équipage venu de Roshen Buru. Puis la rivière, et la lande plate de chaque côté, sous un ciel d'ambre.",
@@ -6897,7 +6925,11 @@
         "legende": "L'église de la Mère des Marées"
       }
     ],
-    "chapeau": "Au bout d'une placette, sobre et battue par le vent, la façade de pierre claire est ornée d'un trident sculpté. Une fontaine devant le portail, et des vitraux délavés qui baignent les bancs d'une clarté aqueuse."
+    "chapeau": "Au bout d'une placette, sobre et battue par le vent, la façade de pierre claire est ornée d'un trident sculpté. Une fontaine devant le portail, et des vitraux délavés qui baignent les bancs d'une clarté aqueuse.",
+    "pos": {
+      "x": 0.765,
+      "y": 0.183
+    }
   },
   {
     "id": "forge-des-rames",
@@ -6912,7 +6944,11 @@
         "legende": "La forge des Rames"
       }
     ],
-    "chapeau": "La forge ouvre sur la rue, gueule rougeoyante qui crache chaleur et étincelles. Rames, espars et pièces de coque s'entassent contre les murs. Odeur de métal chaud et de bois brûlé."
+    "chapeau": "La forge ouvre sur la rue, gueule rougeoyante qui crache chaleur et étincelles. Rames, espars et pièces de coque s'entassent contre les murs. Odeur de métal chaud et de bois brûlé.",
+    "pos": {
+      "x": 0.765,
+      "y": 0.542
+    }
   },
   {
     "id": "pecherie-cap-cornes",
@@ -6927,7 +6963,11 @@
         "legende": "La pêcherie"
       }
     ],
-    "chapeau": "La pêcherie s'étend le long du quai, ruche bruyante et glissante. Des centaines de poissons argentés sur les étals, vidés et triés à la chaîne, des filets qui sèchent, des tonneaux de saumure, l'eau et le sang mêlés dans les rigoles."
+    "chapeau": "La pêcherie s'étend le long du quai, ruche bruyante et glissante. Des centaines de poissons argentés sur les étals, vidés et triés à la chaîne, des filets qui sèchent, des tonneaux de saumure, l'eau et le sang mêlés dans les rigoles.",
+    "pos": {
+      "x": 0.908,
+      "y": 0.489
+    }
   },
   {
     "id": "reservoir-aux-poissons",
@@ -6942,7 +6982,11 @@
         "legende": "Le réservoir aux poissons"
       }
     ],
-    "chapeau": "Un grand bâtiment de pierre trapu, percé de portes basses, d'où s'échappent des effluves d'eau saumâtre et d'écailles. Des palans grincent en hissant des paniers ruisselants. À l'intérieur, l'eau clapote dans de vastes bassins pleins de bancs de poissons argentés."
+    "chapeau": "Un grand bâtiment de pierre trapu, percé de portes basses, d'où s'échappent des effluves d'eau saumâtre et d'écailles. Des palans grincent en hissant des paniers ruisselants. À l'intérieur, l'eau clapote dans de vastes bassins pleins de bancs de poissons argentés.",
+    "pos": {
+      "x": 0.678,
+      "y": 0.37
+    }
   },
   {
     "id": "aqueduc-cap-cornes",
@@ -6957,7 +7001,11 @@
         "legende": "L'aqueduc"
       }
     ],
-    "chapeau": "L'aqueduc enjambe les eaux de ses arches massives et achemine le poisson vers l'intérieur des terres. À sa base, un bâtiment gardé, portes closes, hommes en faction."
+    "chapeau": "L'aqueduc enjambe les eaux de ses arches massives et achemine le poisson vers l'intérieur des terres. À sa base, un bâtiment gardé, portes closes, hommes en faction.",
+    "pos": {
+      "x": 0.409,
+      "y": 0.351
+    }
   },
   {
     "id": "moustache-et-baguette",
@@ -6972,7 +7020,11 @@
         "legende": "Moustache et Baguette"
       }
     ],
-    "chapeau": "La devanture est ornée d'une étoile dorée et d'une enseigne sculptée. Dedans, des fioles colorées et des orbes lumineux sur des étagères poussiéreuses, une odeur d'encens éteint et de vieux grimoire."
+    "chapeau": "La devanture est ornée d'une étoile dorée et d'une enseigne sculptée. Dedans, des fioles colorées et des orbes lumineux sur des étagères poussiéreuses, une odeur d'encens éteint et de vieux grimoire.",
+    "pos": {
+      "x": 0.355,
+      "y": 0.584
+    }
   },
   {
     "id": "cercle-ecarlate",
@@ -6987,7 +7039,11 @@
         "legende": "Kester Tauroc au Cercle Écarlate"
       }
     ],
-    "chapeau": "Une cour pavée et close, ceinte d'une barrière de bois usée, des bannières bleues qui claquent au vent au-dessus de gradins de pierre. « C'est ici qu'on règle les comptes à Cap Cornes, dans les règles ou presque. »"
+    "chapeau": "Une cour pavée et close, ceinte d'une barrière de bois usée, des bannières bleues qui claquent au vent au-dessus de gradins de pierre. « C'est ici qu'on règle les comptes à Cap Cornes, dans les règles ou presque. »",
+    "pos": {
+      "x": 0.878,
+      "y": 0.257
+    }
   },
   {
     "id": "monstre-du-gibet",
@@ -7010,7 +7066,13 @@
     "attitude": "neutre",
     "teinte": "#753c19",
     "histoire": [],
-    "tailleAsset": "mini"
+    "tailleAsset": "mini",
+    "galerie": [
+      {
+        "img": "img/paysages/cap-cornes/route-gibet.webp",
+        "legende": "Le gibet"
+      }
+    ]
   },
   {
     "id": "camp-de-vespera",
