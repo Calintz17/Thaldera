@@ -7150,7 +7150,11 @@
         "legende": "Le temple de Valkur"
       }
     ],
-    "histoire": []
+    "histoire": [],
+    "pos": {
+      "x": 0.574,
+      "y": 0.55
+    }
   },
   {
     "id": "zombis-dores",
@@ -8259,7 +8263,11 @@
         "img": "img/paysages/voros/auberge.webp",
         "legende": "L'auberge de Voros"
       }
-    ]
+    ],
+    "pos": {
+      "x": 0.178,
+      "y": 0.269
+    }
   },
   {
     "id": "ghassan-tarek",
@@ -8303,7 +8311,11 @@
         "img": "img/paysages/voros/bains-skrell.webp",
         "legende": "Les bains publics, Skrell"
       }
-    ]
+    ],
+    "pos": {
+      "x": 0.147,
+      "y": 0.9625
+    }
   },
   {
     "id": "skrell",
@@ -8347,7 +8359,11 @@
         "img": "img/paysages/voros/marchand-jericho.webp",
         "legende": "Le marchand Jericho"
       }
-    ]
+    ],
+    "pos": {
+      "x": 0.0625,
+      "y": 0.056
+    }
   },
   {
     "id": "jericho",
@@ -8407,7 +8423,11 @@
         "img": "img/paysages/voros/palais-du-prince-marchand.webp",
         "legende": "Le palais du Prince-Marchand"
       }
-    ]
+    ],
+    "pos": {
+      "x": 0.241,
+      "y": 0.569
+    }
   },
   {
     "id": "entrepot-de-la-griffe",
@@ -8431,7 +8451,11 @@
         "img": "img/paysages/voros/repaire-de-la-griffe.webp",
         "legende": "Le repaire de la Griffe"
       }
-    ]
+    ],
+    "pos": {
+      "x": 0.281,
+      "y": 0.084
+    }
   },
   {
     "id": "laile-d-avalon",
@@ -9497,7 +9521,11 @@
         "img": "img/paysages/voros/gorges-du-vent-sec.webp",
         "legende": "Les gorges du Vent Sec"
       }
-    ]
+    ],
+    "pos": {
+      "x": 0.925,
+      "y": 0.0875
+    }
   },
   {
     "id": "maison-condamnee-skrell",

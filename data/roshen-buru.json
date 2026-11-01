@@ -1252,7 +1252,7 @@
     "cartes": [
       {
         "id": "ville",
-        "img": "img/placeholder/carte-noire.svg",
+        "img": "img/cartes/azuren-kai.webp",
         "legende": "Plan d'Azuren Kai"
       }
     ]
@@ -1309,7 +1309,11 @@
       "etat": "active",
       "note": "Craie interdimensionnelle posée par Philippa à l'auberge d'Azuren Kai."
     },
-    "chapeau": "Une auberge de port bien remplie, au brouhaha permanent, au va-et-vient de marins et de marchands de passage. Des nattes de bambou couvrent le sol. Dans la salle, un homme-sanglier grogne qu'il n'y a pas de place, puis laisse quand même les clients s'asseoir."
+    "chapeau": "Une auberge de port bien remplie, au brouhaha permanent, au va-et-vient de marins et de marchands de passage. Des nattes de bambou couvrent le sol. Dans la salle, un homme-sanglier grogne qu'il n'y a pas de place, puis laisse quand même les clients s'asseoir.",
+    "pos": {
+      "x": 0.32,
+      "y": 0.124
+    }
   },
   {
     "id": "ruelle-azuren-kai",
@@ -5068,7 +5072,11 @@
         "img": "img/paysages/azuren-kai/capitainerie.webp",
         "legende": "La capitainerie d'Azuren Kai"
       }
-    ]
+    ],
+    "pos": {
+      "x": 0.826,
+      "y": 0.312
+    }
   },
   {
     "id": "comptoir-de-nuala",
@@ -5086,7 +5094,11 @@
         "legende": "Le comptoir de Cap Cornes"
       }
     ],
-    "histoire": []
+    "histoire": [],
+    "pos": {
+      "x": 0.129,
+      "y": 0.41
+    }
   },
   {
     "id": "carriole-de-kanabe",
@@ -5104,7 +5116,11 @@
         "legende": "La carriole de Kanabé"
       }
     ],
-    "histoire": []
+    "histoire": [],
+    "pos": {
+      "x": 0.129,
+      "y": 0.531
+    }
   },
   {
     "id": "le-cuir-et-l-ecaille",
@@ -5122,7 +5138,11 @@
         "legende": "Le Cuir et l'Écaille"
       }
     ],
-    "histoire": []
+    "histoire": [],
+    "pos": {
+      "x": 0.214,
+      "y": 0.181
+    }
   },
   {
     "id": "chez-madame-ari",
@@ -5140,7 +5160,11 @@
         "legende": "Chez Madame Ari"
       }
     ],
-    "histoire": []
+    "histoire": [],
+    "pos": {
+      "x": 0.687,
+      "y": 0.137
+    }
   },
   {
     "id": "magistrature-doryo-kovacz",
@@ -5158,7 +5182,11 @@
         "legende": "La Magistrature de Doryo Kovacz"
       }
     ],
-    "histoire": []
+    "histoire": [],
+    "pos": {
+      "x": 0.438,
+      "y": 0.347
+    }
   },
   {
     "id": "ascenseur-nord-est",

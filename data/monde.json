@@ -1863,7 +1863,14 @@
         "legende": "L'arrivée à Port Doëlan de nuit"
       }
     ],
-    "histoire": []
+    "histoire": [],
+    "cartes": [
+      {
+        "id": "ville",
+        "img": "img/cartes/port-doelan.webp",
+        "legende": "Plan de Port Doëlan"
+      }
+    ]
   },
   {
     "id": "kazad-marunn",

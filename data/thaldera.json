@@ -2837,6 +2837,13 @@
         "img": "img/paysages/voros/village-abandonne.webp",
         "legende": "Le village abandonné"
       }
+    ],
+    "cartes": [
+      {
+        "id": "ville",
+        "img": "img/cartes/voros.webp",
+        "legende": "Plan de Voros"
+      }
     ]
   },
   {
@@ -3507,7 +3514,11 @@
         "img": "img/paysages/port-doelan/salle-du-trone-p2.webp",
         "legende": "La salle du trône, seconde phase"
       }
-    ]
+    ],
+    "pos": {
+      "x": 0.72,
+      "y": 0.144
+    }
   },
   {
     "id": "spezza",
@@ -5697,7 +5708,11 @@
         "legende": "Les écuries du Clos Vieux"
       }
     ],
-    "histoire": []
+    "histoire": [],
+    "pos": {
+      "x": 0.821,
+      "y": 0.519
+    }
   },
   {
     "id": "gorok",
@@ -5795,7 +5810,11 @@
         "legende": "L'Ancre Sèche"
       }
     ],
-    "histoire": []
+    "histoire": [],
+    "pos": {
+      "x": 0.574,
+      "y": 0.466
+    }
   },
   {
     "id": "raffaele-orsini",
@@ -5854,7 +5873,11 @@
     "histoire": [],
     "connu": [
       "Le groupe y rencontre Korvin Lustracier, gnome arcaniste à la barbe violette, qui aime les récits d'aventures extraordinaires."
-    ]
+    ],
+    "pos": {
+      "x": 0.536,
+      "y": 0.358
+    }
   },
   {
     "id": "korvin-lustracier",
@@ -5961,7 +5984,11 @@
         "img": "img/paysages/port-doelan/officine.webp",
         "legende": "L'officine de l'alchimiste"
       }
-    ]
+    ],
+    "pos": {
+      "x": 0.743,
+      "y": 0.594
+    }
   },
   {
     "id": "plage-doelan",
@@ -5980,7 +6007,11 @@
     "histoire": [],
     "connu": [
       "Le groupe s'arrête au stand de Lina, au pied d'une partie de volley de plage."
-    ]
+    ],
+    "pos": {
+      "x": 0.375,
+      "y": 0.625
+    }
   },
   {
     "id": "lina",
@@ -6022,7 +6053,11 @@
     "histoire": [],
     "connu": [
       "Sur la jetée, le groupe interroge Falco et Mirella, qui lui parlent de l'homme disparu à la cour de Spezza et des deux femmes que Spezza traque."
-    ]
+    ],
+    "pos": {
+      "x": 0.37,
+      "y": 0.44
+    }
   },
   {
     "id": "falco",
@@ -6318,7 +6353,11 @@
         "legende": "L'ancien quartier brûlé"
       }
     ],
-    "histoire": []
+    "histoire": [],
+    "pos": {
+      "x": 0.39,
+      "y": 0.245
+    }
   },
   {
     "id": "tomas",
@@ -6525,7 +6564,11 @@
     "connu": [
       "Le groupe rencontre Aldo à l'entrée brisée.",
       "Spezza a fait dynamiter la mine par crainte d'un accès discret vers son château : aucune route par là."
-    ]
+    ],
+    "pos": {
+      "x": 0.93,
+      "y": 0.826
+    }
   },
   {
     "id": "aldo",
@@ -6581,7 +6624,11 @@
     "histoire": [],
     "connu": [
       "Le groupe y interroge Maela, qui confirme que les murs de la ville ont été renforcés sous la pression du château, avec des doubles shifts depuis des mois."
-    ]
+    ],
+    "pos": {
+      "x": 0.795,
+      "y": 0.8875
+    }
   },
   {
     "id": "maela",
@@ -6756,7 +6803,11 @@
     "histoire": [],
     "connu": [
       "Le groupe y fait soigner Jane et couper les cheveux de Philippa."
-    ]
+    ],
+    "pos": {
+      "x": 0.394,
+      "y": 0.569
+    }
   },
   {
     "id": "edouardo",
@@ -6996,7 +7047,11 @@
     "connu": [
       "Au nid, Kralik et Nesk veulent attaquer tout de suite, Krelia et Nissek jugent l'assaut suicidaire et préfèrent attendre une faiblesse.",
       "Le groupe arbitre, puis libère le fortin."
-    ]
+    ],
+    "pos": {
+      "x": 0.435,
+      "y": 0.903
+    }
   },
   {
     "id": "kralik",
@@ -7168,7 +7223,11 @@
     "connu": [
       "Le groupe y rencontre Giovanni et Dario Bravala, étranglés par Titan Inc.",
       "Giovanni leur apprend que Titan Inc. détourne des fonds et commerce avec Havre Noir."
-    ]
+    ],
+    "pos": {
+      "x": 0.593,
+      "y": 0.781
+    }
   },
   {
     "id": "giovanni-bravala",
