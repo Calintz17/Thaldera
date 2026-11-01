@@ -5241,10 +5241,6 @@
     "nom": "Valedorn",
     "titre": "La porte extérieure de There'Duun",
     "parent": "there-duun",
-    "pos": {
-      "x": 0.371,
-      "y": 0.546
-    },
     "resume": "Seule ville du royaume nain où un étranger peut entrer.",
     "connu": [
       "Les nains y reçoivent les étrangers mais n'ouvrent jamais leur capitale."
@@ -9912,11 +9908,7 @@
     "nom": "La garnison",
     "titre": "Quartier est",
     "parent": "obaline",
-    "resume": "Casernement de la ville, contre la muraille est.",
-    "pos": {
-      "x": 0.856,
-      "y": 0.473
-    }
+    "resume": "Casernement de la ville, contre la muraille est."
   },
   {
     "id": "cathedrale-de-gond",
@@ -9924,11 +9916,7 @@
     "nom": "La cathédrale de Gond",
     "titre": "Centre-ville",
     "parent": "obaline",
-    "resume": "Cathédrale dédiée à Gond, au cœur de la ville.",
-    "pos": {
-      "x": 0.469,
-      "y": 0.648
-    }
+    "resume": "Cathédrale dédiée à Gond, au cœur de la ville."
   },
   {
     "id": "emporium-de-milo",
@@ -10036,10 +10024,6 @@
     "titre": "Cœur de la ville",
     "parent": "corvalis",
     "resume": "Cathédrale de Waukyne, entourée de jardins et de reliquaires.",
-    "pos": {
-      "x": 0.5,
-      "y": 0.29
-    },
     "galerie": [
       {
         "img": "img/paysages/corvalis/faveur-de-waukeen.webp",
@@ -10083,11 +10067,7 @@
     "nom": "Les Jardins Suspendus",
     "titre": "Quartier sud",
     "parent": "corvalis",
-    "resume": "Jardins suspendus aux pieds du palais ducal.",
-    "pos": {
-      "x": 0.33,
-      "y": 0.78
-    }
+    "resume": "Jardins suspendus aux pieds du palais ducal."
   },
   {
     "id": "forge-de-durnan-forgefeuil",
@@ -10152,11 +10132,7 @@
     "nom": "L'ambassade du Dominion",
     "titre": "Quartier des ambassades",
     "parent": "corvalis",
-    "resume": "Ambassade du Dominion.",
-    "pos": {
-      "x": 0.933,
-      "y": 0.704
-    }
+    "resume": "Ambassade du Dominion."
   },
   {
     "id": "ambassade-d-altera",
@@ -10164,11 +10140,7 @@
     "nom": "L'ambassade d'Altéra",
     "titre": "Quartier des ambassades",
     "parent": "corvalis",
-    "resume": "Ambassade d'Altéra.",
-    "pos": {
-      "x": 0.744,
-      "y": 0.793
-    }
+    "resume": "Ambassade d'Altéra."
   },
   {
     "id": "ambassade-de-rivegard",
@@ -10176,11 +10148,7 @@
     "nom": "L'ambassade de Rivegard",
     "titre": "Quartier des ambassades",
     "parent": "corvalis",
-    "resume": "Ambassade de Rivegard.",
-    "pos": {
-      "x": 0.744,
-      "y": 0.956
-    }
+    "resume": "Ambassade de Rivegard."
   },
   {
     "id": "maison-d-urrak",

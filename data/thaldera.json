@@ -9929,11 +9929,7 @@
     "nom": "La Tour du Pentacle",
     "titre": "Tour sur l'îlot",
     "parent": "lunsk",
-    "resume": "Tour dressée sur un îlot boisé, au nord de la ville, reliée à la rive par une passerelle.",
-    "pos": {
-      "x": 0.356,
-      "y": 0.244
-    }
+    "resume": "Tour dressée sur un îlot boisé, au nord de la ville, reliée à la rive par une passerelle."
   },
   {
     "id": "repaire-de-mezzek",
@@ -9963,11 +9959,7 @@
     "nom": "La scierie",
     "titre": "Rive ouest",
     "parent": "lunsk",
-    "resume": "Scierie et hangars à bois sur la rive ouest, face à la ville.",
-    "pos": {
-      "x": 0.267,
-      "y": 0.526
-    }
+    "resume": "Scierie et hangars à bois sur la rive ouest, face à la ville."
   },
   {
     "id": "auberge-du-brouillard-attable",
@@ -10069,11 +10061,7 @@
     "nom": "La garnison Von Leyenmil",
     "titre": "Nord-ouest",
     "parent": "leyenmil",
-    "resume": "Garnison de Leyenmil, fortifiée, au nord-ouest du village.",
-    "pos": {
-      "x": 0.142,
-      "y": 0.1
-    }
+    "resume": "Garnison de Leyenmil, fortifiée, au nord-ouest du village."
   },
   {
     "id": "reserve-du-vent-gris",
@@ -10081,11 +10069,7 @@
     "nom": "La Réserve du Vent Gris",
     "titre": "Centre",
     "parent": "leyenmil",
-    "resume": "La Réserve du Vent Gris, au centre du village.",
-    "pos": {
-      "x": 0.467,
-      "y": 0.437
-    }
+    "resume": "La Réserve du Vent Gris, au centre du village."
   },
   {
     "id": "auberge-du-moulin",
@@ -10093,11 +10077,7 @@
     "nom": "L'auberge du Moulin",
     "titre": "Centre",
     "parent": "leyenmil",
-    "resume": "Auberge proche du moulin.",
-    "pos": {
-      "x": 0.65,
-      "y": 0.533
-    }
+    "resume": "Auberge proche du moulin."
   },
   {
     "id": "othuunra",

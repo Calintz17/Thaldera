@@ -678,7 +678,8 @@ body.journal-open .qlog .qwin{min-height:0}
 }
 
 /* v105 | Cartes empilées (Roshen Buru) : mêmes repères ronds que les cartes simples. */
-.sheet .ovl .pin { display:block !important; pointer-events:auto; z-index:10; transition:none !important; }
+.layer.stackl { isolation:isolate; }
+.sheet .ovl .pin { display:block !important; pointer-events:auto; z-index:3; transition:none !important; }
 .sheet .ovl .pin .in { transform:translate(-50%,-50%) !important; width:44px !important; height:44px !important; }
 .sheet .ovl .pin .pd {
  inset:11px !important; border-radius:50% !important;

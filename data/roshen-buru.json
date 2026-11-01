@@ -5213,10 +5213,6 @@
     "titre": "Ville basse",
     "parent": "ascenseurs",
     "resume": "Ascenseur géant relié au palais, au nord-est.",
-    "pos": {
-      "x": 0.817,
-      "y": 0.186
-    },
     "galerie": [
       {
         "img": "img/paysages/roshen-buru/ascenseur.webp",
@@ -5231,10 +5227,6 @@
     "titre": "Ville basse",
     "parent": "ascenseurs",
     "resume": "Ascenseur géant relié au Temple du Tenraku, au sud.",
-    "pos": {
-      "x": 0.583,
-      "y": 0.764
-    },
     "galerie": [
       {
         "img": "img/paysages/roshen-buru/ascenseur-2.webp",
@@ -5249,10 +5241,6 @@
     "titre": "Ville basse",
     "parent": "roshen-buru",
     "resume": "Caserne de la ville basse, au sud-est du Pillier.",
-    "pos": {
-      "x": 0.664,
-      "y": 0.827
-    },
     "carte": "ville"
   },
   {
@@ -5262,10 +5250,6 @@
     "titre": "Ville basse",
     "parent": "roshen-buru",
     "resume": "Grande écurie au nord-est de la ville basse.",
-    "pos": {
-      "x": 0.697,
-      "y": 0.333
-    },
     "carte": "ville"
   },
   {
@@ -5275,10 +5259,6 @@
     "titre": "Ville basse",
     "parent": "roshen-buru",
     "resume": "Pavillon des Diplomates, au nord de la ville basse.",
-    "pos": {
-      "x": 0.725,
-      "y": 0.067
-    },
     "carte": "ville"
   },
   {
