@@ -7953,7 +7953,7 @@
     "type": "lieu",
     "nom": "La route de Lumenlid",
     "titre": "Forêt de bois tordus, avant l'académie",
-    "parent": "lumenlid",
+    "parent": "altera",
     "resume": "La route forestière qui mène à l'académie de Lumenlid.",
     "chapeau": "La forêt s'épaissit à mesure qu'on approche de Lumenlid. Des arbres tordus s'élancent vers le ciel pâle et leurs branches craquent au vent comme des doigts d'os. L'air sent la poudre brûlée. Sur le bord de la route, une caravane bringuebalante est immobilisée, entourée d'herbe noircie, de terre retournée et d'éclats de métal. À l'avant, une table croule sous les engrenages, les bobines et les fioles de cuivre. Des étincelles bleutées zèbrent l'ombre des arbres à chaque réglage d'une machine grinçante.",
     "histoire": [],
@@ -7965,7 +7965,12 @@
         "img": "img/paysages/lumenlid/route-de-lumenlid.webp",
         "legende": "Sur la route de Lumenlid, Nezbrok"
       }
-    ]
+    ],
+    "pos": {
+      "x": 0.535,
+      "y": 0.4
+    },
+    "typeLabel": "Trajet"
   },
   {
     "id": "nezbrok",
@@ -10162,6 +10167,10 @@
       "Philippa s'y infiltre pendant le bal masqué du Duc, où la Duchesse Cecilia est tuée. Le Nephilim présenté comme le Joyau tombé du ciel y est remis à Gran Brijit."
     ],
     "galerie": [
+      {
+        "img": "img/paysages/corvalis/cover-palais-ducal.webp",
+        "legende": "Le palais du duc de Vaelmor"
+      },
       {
         "img": "img/paysages/corvalis/bal-du-duc-de-vaelmor.webp",
         "legende": "Le bal du duc de Vaelmor"

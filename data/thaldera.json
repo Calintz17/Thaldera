@@ -2085,7 +2085,13 @@
       "x": 0.069,
       "y": 0.778
     },
-    "histoire": []
+    "histoire": [],
+    "galerie": [
+      {
+        "img": "img/paysages/port-blanc/route.webp",
+        "legende": "Les grands enclos"
+      }
+    ]
   },
   {
     "id": "harlan",
