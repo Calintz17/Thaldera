@@ -1542,6 +1542,10 @@
     ],
     "galerie": [
       {
+        "img": "img/paysages/roshen-buru/ville-vue.webp",
+        "legende": "Roshen Buru, vue de la ville"
+      },
+      {
         "img": "img/paysages/roshen-buru/rue.webp",
         "legende": "Une rue de Roshen Buru"
       },
@@ -1711,7 +1715,13 @@
       "Le palais pilote la politique extérieure et la religion de la ville.",
       "On n'y monte que par les ascenseurs, sous contrôle des gardes."
     ],
-    "chapeau": "En haut, l'air change. Il est plus froid, plus sec, et le grondement de la ville s'éteint d'un coup. Le sol est dallé, propre, entretenu par des gens qu'on ne voit jamais. Des sakuras bordent une allée qui monte encore, et au bout, le Palais de la Gardienne domine la cuvette. Des gardes en armure claire se tiennent aux portes, immobiles, et ne saluent personne."
+    "chapeau": "En haut, l'air change. Il est plus froid, plus sec, et le grondement de la ville s'éteint d'un coup. Le sol est dallé, propre, entretenu par des gens qu'on ne voit jamais. Des sakuras bordent une allée qui monte encore, et au bout, le Palais de la Gardienne domine la cuvette. Des gardes en armure claire se tiennent aux portes, immobiles, et ne saluent personne.",
+    "galerie": [
+      {
+        "img": "img/paysages/roshen-buru/palais-miren-buru.webp",
+        "legende": "Le palais Miren-Buru"
+      }
+    ]
   },
   {
     "id": "atelier-calligraphie",
@@ -3568,7 +3578,13 @@
     "carte": "ville",
     "zoom": 0.12,
     "chapeau": "La maison est dans le quartier des marchands, propre, sans ornement, avec une cour minuscule où sèche du linge. Tout est déjà prêt pour la fête : caisses empilées contre le mur, rouleaux de tissu, lanternes emballées. Sur une table, une lettre que personne n'a touchée depuis qu'elle est arrivée.",
-    "histoire": []
+    "histoire": [],
+    "galerie": [
+      {
+        "img": "img/paysages/roshen-buru/familles-sokabei-kaben.webp",
+        "legende": "Les maisons Sokabeï et Kaben"
+      }
+    ]
   },
   {
     "id": "kazen-sokabei",
@@ -3634,7 +3650,13 @@
     "resume": "Maison de la famille d'Ayano, la mariée.",
     "carte": "palais",
     "zoom": 0.12,
-    "chapeau": "La maison du clan Kaben, qui se referme sur elle-même depuis l'enlèvement d'Ayano. L'accès y est difficile, et il faut passer par les Sokabeï ou entrer autrement."
+    "chapeau": "La maison du clan Kaben, qui se referme sur elle-même depuis l'enlèvement d'Ayano. L'accès y est difficile, et il faut passer par les Sokabeï ou entrer autrement.",
+    "galerie": [
+      {
+        "img": "img/paysages/roshen-buru/familles-sokabei-kaben.webp",
+        "legende": "Les maisons Sokabeï et Kaben"
+      }
+    ]
   },
   {
     "id": "doryen-kaben",
@@ -5270,7 +5292,13 @@
     "pos": {
       "x": 0.664,
       "y": 0.827
-    }
+    },
+    "galerie": [
+      {
+        "img": "img/paysages/roshen-buru/ville-vue.webp",
+        "legende": "Roshen Buru"
+      }
+    ]
   },
   {
     "id": "pavillon-des-diplomates",
@@ -5279,7 +5307,13 @@
     "titre": "Ville basse",
     "parent": "roshen-buru",
     "resume": "Pavillon des Diplomates, au nord de la ville basse.",
-    "carte": "ville"
+    "carte": "ville",
+    "galerie": [
+      {
+        "img": "img/paysages/roshen-buru/pavillon-des-diplomates.webp",
+        "legende": "Le pavillon des Diplomates"
+      }
+    ]
   },
   {
     "id": "quartiers-de-neryn-yosa",

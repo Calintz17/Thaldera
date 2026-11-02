@@ -153,6 +153,12 @@
         "type": "Détourne le rituel",
         "ton": "negatif"
       }
+    ],
+    "galerie": [
+      {
+        "img": "img/paysages/enfers/vassago.webp",
+        "legende": "Vassago"
+      }
     ]
   },
   {

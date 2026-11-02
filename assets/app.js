@@ -4,7 +4,7 @@
 (() => {
 'use strict';
 
-const VER = '114';
+const VER = '115';
 const LEGACY_IDS = { 'bourre-piff':'bourpif', 'seravine':'solkah-barrow', 'tilda':'irna', 'cleff':'irna' };
 const EDIT = new URLSearchParams(location.search).has('edit');
 const $ = (s, r = document) => r.querySelector(s);
@@ -314,7 +314,9 @@ function sceneOf(e, q, depth = 0) {
       const lieu = e.lieu ? BY[e.lieu] : null;
       let s = lieu ? sceneOf(lieu, null, depth + 1) : (e.parent ? sceneOf(BY[e.parent], null, depth + 1) : null);
       if (!s && depth === 0) s = sceneOf(BY.istra, null, 1);
-      if (s && (e.type === 'pnj' || e.type === 'pj' || (['sujet', 'organisation', 'clan'].includes(e.type) && e.img)) && depth === 0) {
+      // Savoir, organisation, clan : paysage propre ou de repli seulement s'il existe, sinon la carte reste affichee.
+      const knowledgeLand = ['sujet', 'organisation', 'clan'].includes(e.type) && (e.img || (e.galerie && e.galerie.length)) && ((e.galerie && e.galerie.length) || s?.gallery || fallbackLand(e) || cityGallery(e));
+      if (s && (e.type === 'pnj' || e.type === 'pj' || knowledgeLand) && depth === 0) {
         let gal = (e.galerie && e.galerie.length) ? e.galerie : (s.gallery || fallbackLand(e) || (e.type === 'organisation' || e.type === 'clan' ? cityGallery(e) : null) || (e.type === 'pnj' ? nearGallery(e) : null) || [PH_LAND]);
         if (e.etapes && e.etapes.length) {
           gal = e.etapes.map(f => ({ img: f.fond || PH_LAND.img, ph: !f.fond, legende: f.label, cut: f }));
