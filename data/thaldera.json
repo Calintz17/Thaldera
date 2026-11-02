@@ -2833,6 +2833,12 @@
     "teinte": "#755519",
     "lieux": [
       "taverne-harpon-rouge"
+    ],
+    "galerie": [
+      {
+        "img": "img/paysages/havre-noir/taverne.webp",
+        "legende": "La taverne du Harpon Rouge"
+      }
     ]
   },
   {

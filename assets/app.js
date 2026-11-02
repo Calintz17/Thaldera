@@ -4,7 +4,7 @@
 (() => {
 'use strict';
 
-const VER = '113';
+const VER = '114';
 const LEGACY_IDS = { 'bourre-piff':'bourpif', 'seravine':'solkah-barrow', 'tilda':'irna', 'cleff':'irna' };
 const EDIT = new URLSearchParams(location.search).has('edit');
 const $ = (s, r = document) => r.querySelector(s);
@@ -315,7 +315,7 @@ function sceneOf(e, q, depth = 0) {
       let s = lieu ? sceneOf(lieu, null, depth + 1) : (e.parent ? sceneOf(BY[e.parent], null, depth + 1) : null);
       if (!s && depth === 0) s = sceneOf(BY.istra, null, 1);
       if (s && (e.type === 'pnj' || e.type === 'pj' || (['sujet', 'organisation', 'clan'].includes(e.type) && e.img)) && depth === 0) {
-        let gal = (e.galerie && e.galerie.length) ? e.galerie : (s.gallery || fallbackLand(e) || (e.type === 'organisation' || e.type === 'clan' || (e.type === 'pnj' && BY[e.lieu || e.parent]?.type === 'ville') ? cityGallery(e) : null) || [PH_LAND]);
+        let gal = (e.galerie && e.galerie.length) ? e.galerie : (s.gallery || fallbackLand(e) || (e.type === 'organisation' || e.type === 'clan' ? cityGallery(e) : null) || (e.type === 'pnj' ? nearGallery(e) : null) || [PH_LAND]);
         if (e.etapes && e.etapes.length) {
           gal = e.etapes.map(f => ({ img: f.fond || PH_LAND.img, ph: !f.fond, legende: f.label, cut: f }));
         } else if (e.formes && e.formes.length > 1) {
@@ -365,6 +365,14 @@ function stackScene(host, focus) {
 function cityGallery(e) {
   const v = chain(e).reverse().find(x => x.type === 'ville' && x.galerie && x.galerie.length);
   return v ? v.galerie : null;
+}
+function nearGallery(e) {
+  // PNJ : galerie du lieu, de la scène ou de la ville la plus proche (une ville seulement si le PNJ lui est directement rattaché)
+  const up = [];
+  if (e.lieu && BY[e.lieu]) up.push(...chain(BY[e.lieu]).reverse());
+  up.push(...chain(e).reverse().slice(1));
+  for (const x of up) if (x.galerie && x.galerie.length && (x.type !== 'ville' || x.id === (e.lieu || e.parent))) return x.galerie;
+  return null;
 }
 function fallbackLand(e) {
   // paysage de repli : lieu, puis rue de la ville
