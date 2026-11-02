@@ -1585,7 +1585,11 @@
         "img": "img/paysages/camont/porte-ville-haute.webp",
         "legende": "La porte de la Ville Haute"
       }
-    ]
+    ],
+    "pos": {
+      "x": 0.331,
+      "y": 0.226
+    }
   },
   {
     "id": "capitaine-gardes-gris",
@@ -4392,7 +4396,11 @@
         "img": "img/paysages/havre-noir/maison-crochemer.webp",
         "legende": "La maison Crochemer"
       }
-    ]
+    ],
+    "pos": {
+      "x": 0.116,
+      "y": 0.345
+    }
   },
   {
     "id": "alrik-crochemer",
@@ -4435,7 +4443,11 @@
         "img": "img/paysages/havre-noir/ruelle-des-cordages.webp",
         "legende": "La ruelle des Cordages"
       }
-    ]
+    ],
+    "pos": {
+      "x": 0.35,
+      "y": 0.261
+    }
   },
   {
     "id": "melior-skarne",
@@ -4485,7 +4497,11 @@
         "img": "img/paysages/havre-noir/registres-du-port.webp",
         "legende": "Les registres du port, Arvik Denholm"
       }
-    ]
+    ],
+    "pos": {
+      "x": 0.677,
+      "y": 0.527
+    }
   },
   {
     "id": "arvik-denholm",
@@ -4546,7 +4562,11 @@
         "img": "img/paysages/havre-noir/maison-derek-varn-attaque.webp",
         "legende": "L'attaque de Korr chez Derek Varn"
       }
-    ]
+    ],
+    "pos": {
+      "x": 0.216,
+      "y": 0.125
+    }
   },
   {
     "id": "derek-varn",
@@ -7729,7 +7749,11 @@
         "img": "img/paysages/agran/route-vers-la-ville.webp",
         "legende": "La Faille d'Agran"
       }
-    ]
+    ],
+    "pos": {
+      "x": 0.751,
+      "y": 0.879
+    }
   },
   {
     "id": "sous-marin-borim",

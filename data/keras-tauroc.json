@@ -5396,7 +5396,11 @@
     "connu": [
       "La nuit du banquet, les doubles de Philippa et Jane, guidés par un vieillard aux cheveux blancs, y ont assassiné l'ambassadeur Otoba.",
       "Après la prison, le groupe y retrouve la scène à demi nettoyée. Les traces, dont de grandes griffes et des brûlures de souffle, désignent sa propre panoplie. Grixus lui raconte ce qu'il a vu."
-    ]
+    ],
+    "pos": {
+      "x": 0.785,
+      "y": 0.483
+    }
   },
   {
     "id": "prison-de-keras-tauroc",
@@ -5416,7 +5420,11 @@
     "connu": [
       "Le groupe s'y réveille un mois après le blackout du port, les mains couvertes de sang, désarmé, avec un collier de fer à runes autour du cou. Harfang, assistant de l'ambassadeur, y est lui aussi détenu.",
       "Tarcus vient les interroger, puis leur propose un accord pour s'innocenter."
-    ]
+    ],
+    "pos": {
+      "x": 0.423,
+      "y": 0.497
+    }
   },
   {
     "id": "meditrina",
@@ -7516,7 +7524,11 @@
         "legende": "La traversée vers le Cœur"
       }
     ],
-    "histoire": []
+    "histoire": [],
+    "pos": {
+      "x": 0.177,
+      "y": 0.097
+    }
   },
   {
     "id": "maison-holsten",

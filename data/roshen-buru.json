@@ -3396,7 +3396,8 @@
     "parent": "roshen-buru",
     "resume": "Temple sans porte dédié à Mélora Sylvestre.",
     "connu": [
-      "Les fidèles s'y assoient sans rien dire, et personne ne les dérange."
+      "Les fidèles s'y assoient sans rien dire, et personne ne les dérange.",
+      "Harfang y demande à son Miren s'il peut faire confiance à la Protectrice. La réponse est non."
     ],
     "pos": {
       "x": 0.431,
@@ -4338,7 +4339,12 @@
     "histoire": [],
     "connu": [
       "Le groupe y entre juste après le départ de deux gardes qui accusaient Soko. Philippa y achète un shamisen."
-    ]
+    ],
+    "pos": {
+      "x": 0.297,
+      "y": 0.483
+    },
+    "carte": "ville"
   },
   {
     "id": "soko",
@@ -5078,24 +5084,6 @@
       "Le groupe pense que Balamor sera l'occasion d'y mettre un terme."
     ],
     "histoire": []
-  },
-  {
-    "id": "temple-de-tako-alvaki",
-    "type": "lieu",
-    "nom": "Le temple de Tako Alvaki",
-    "titre": "Temple de Roshen Buru",
-    "parent": "roshen-buru",
-    "resume": "Temple où Harfang se recueille et entre en communion avec son Miren.",
-    "connu": [
-      "Harfang y demande à son Miren s'il peut faire confiance à la Protectrice. La réponse est non."
-    ],
-    "histoire": [],
-    "galerie": [
-      {
-        "img": "img/paysages/roshen-buru/temple-de-melora.webp",
-        "legende": "Temple de Mélora sylvestre (identification MJ)"
-      }
-    ]
   },
   {
     "id": "capitainerie-azuren-kai",
