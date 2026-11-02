@@ -1113,38 +1113,12 @@
     ]
   },
   {
-    "id": "repaire-du-passeur",
-    "type": "lieu",
-    "nom": "Le repaire du Passeur",
-    "parent": "repos-des-epees",
-    "resume": "L'antre d'Argonath, le Passeur du Sang Noir.",
-    "connu": [
-      "Un arbre d'os soudés veille sur la colline voisine.",
-      "Philippa et Jane se sont enfoncées dans une plaie de la terre. Plus elles descendaient, plus la lumière rouge pulsait. Les tunnels organiques mènent à la salle du cœur, en forme de cage thoracique, autel de chair et d'os, où elles ont trouvé Argonath."
-    ],
-    "alias": [
-      "repaire d'Argonath"
-    ],
-    "chapeau": "Le repaire du Passeur a poussé comme un organe. C'est une suite de tunnels organiques, moites, parcourus de battements sourds, où le sol spongieux s'affaisse sous les pas. L'air est chaud, saturé de vapeur et de soufre, et une faible lueur rouge pulse depuis le fond.",
-    "histoire": [],
-    "galerie": [
-      {
-        "img": "img/paysages/repos-des-epees/repaire-du-passeur.webp",
-        "legende": "Le repaire du Passeur"
-      },
-      {
-        "img": "img/paysages/repos-des-epees/repaire-du-passeur-2.webp",
-        "legende": "Le repaire du Passeur, seconde vue"
-      }
-    ]
-  },
-  {
     "id": "argonath",
     "type": "pnj",
     "nom": "Argonath",
     "titre": "Le Passeur du Sang Noir, démon supérieur",
-    "parent": "repaire-du-passeur",
-    "lieu": "repaire-du-passeur",
+    "parent": "coeur-de-la-corruption",
+    "lieu": "coeur-de-la-corruption",
     "statut": "mort",
     "resume": "Démon supérieur, lieutenant de Vassago et boss du Repos des Épées. Voleur de magie.",
     "connu": [
@@ -3247,10 +3221,6 @@
       {
         "img": "img/paysages/agran/vue-ville.webp",
         "legende": "Agran, vue d'ensemble"
-      },
-      {
-        "img": "img/paysages/agran/route-vers-la-ville.webp",
-        "legende": "La route vers la ville"
       }
     ],
     "cartes": [
@@ -4295,7 +4265,13 @@
       "x": 0.439,
       "y": 0.9
     },
-    "histoire": []
+    "histoire": [],
+    "galerie": [
+      {
+        "img": "img/paysages/havre-noir/vue-ville.webp",
+        "legende": "Havre Noir"
+      }
+    ]
   },
   {
     "id": "quais-de-poix",
@@ -4441,7 +4417,13 @@
       "Le 7 inversé sur la porte est gravé d'un coup de lame sûr, pas d'une main d'enfant."
     ],
     "chapeau": "Devant la boutique de cordages de Calven, une petite foule. Deux Lapidès soulèvent un brancard couvert d'un drap trempé. La porte porte à nouveau le 7 inversé, sombre et humide. La ruelle empeste la corde goudronnée, mais aussi une odeur métallique, presque celle du sang.",
-    "histoire": []
+    "histoire": [],
+    "galerie": [
+      {
+        "img": "img/paysages/havre-noir/ruelle-des-cordages.webp",
+        "legende": "La ruelle des Cordages"
+      }
+    ]
   },
   {
     "id": "melior-skarne",
@@ -4893,7 +4875,13 @@
       "Le groupe y apprend qu'aucune carte ni route ne relie l'Île aux Moines à Havre Noir, et que des annotations pointent vers Port Doëlan et une cargaison mystérieuse."
     ],
     "chapeau": "Un ancien gaillard transformé en salle de stratégie. Les murs sont couverts de cartes maritimes volées, tachées de vin et de sang séché, annotées de coups de charbon gras. Au centre, une lourde table piquée de couteaux, où se réunissent les capitaines Lapidès.",
-    "histoire": []
+    "histoire": [],
+    "galerie": [
+      {
+        "img": "img/paysages/havre-noir/assemblage-gratte-papier.webp",
+        "legende": "La salle des cartes"
+      }
+    ]
   },
   {
     "id": "cale-aux-vivres",
@@ -4902,7 +4890,13 @@
     "titre": "Couloir de réserves",
     "parent": "assemblage",
     "resume": "Couloir de réserves gardé par un Lapidès.",
-    "chapeau": "Un couloir sombre et étroit, saturé d'odeurs de sel et de poisson rance. Des tonneaux de sel et des sacs de biscuits de mer s'empilent contre les parois. Le sol est glissant, couvert de filets abandonnés et de croûtes de sel cristallisées."
+    "chapeau": "Un couloir sombre et étroit, saturé d'odeurs de sel et de poisson rance. Des tonneaux de sel et des sacs de biscuits de mer s'empilent contre les parois. Le sol est glissant, couvert de filets abandonnés et de croûtes de sel cristallisées.",
+    "galerie": [
+      {
+        "img": "img/paysages/havre-noir/vue-ville.webp",
+        "legende": "Havre Noir"
+      }
+    ]
   },
   {
     "id": "capitainerie",
@@ -4953,7 +4947,13 @@
       "Le groupe y écoute les rumeurs sur l'épidémie. Les Lapidès s'y disputent sur son origine : flotte, moines ou Dominion."
     ],
     "chapeau": "Un vaste pont aménagé en dortoir collectif, saturé de sueur, de rhum et de goudron. Des rangées de hamacs aux poutres grinçantes, des armes accrochées aux cloisons, des boucliers récupérés qui servent d'assiettes ou de cibles pour des jeux d'alcool. Rires gras et dés jetés sans cesse.",
-    "histoire": []
+    "histoire": [],
+    "galerie": [
+      {
+        "img": "img/paysages/havre-noir/vue-ville.webp",
+        "legende": "Havre Noir"
+      }
+    ]
   },
   {
     "id": "pont-de-parade",
@@ -4966,7 +4966,13 @@
       "Philippa y affronte Thargan. Victoire ou chute, aucune interruption n'est tolérée."
     ],
     "chapeau": "Une passerelle branlante au-dessus de l'eau noire. L'air empeste le sel et le goudron, les cris des Lapidès résonnent comme une clameur sauvage. Les pirates hurlent, parient et frappent du pied sur les planches, tandis que Sycomore observe en silence, assise sur son trône flottant.",
-    "histoire": []
+    "histoire": [],
+    "galerie": [
+      {
+        "img": "img/paysages/havre-noir/vue-ville.webp",
+        "legende": "Havre Noir"
+      }
+    ]
   },
   {
     "id": "gratte-papier",
@@ -4980,13 +4986,7 @@
       "Sycomore a commandé une enquête sur Port Doëlan et Titan Inc, la compagnie de Spezza."
     ],
     "chapeau": "Une salle étroite et humide, aménagée en bureau de scribe pirate. Les murs sont tapissés de registres reliés de cuir usé, couverts de sceaux. Une chandelle fumeuse éclaire le pupitre où siège le maître-scribe de Sycomore. Odeur de parchemin moisi, de cire brûlée et de sueur contenue.",
-    "histoire": [],
-    "galerie": [
-      {
-        "img": "img/paysages/havre-noir/assemblage-gratte-papier.webp",
-        "legende": "Le Gratte-papier"
-      }
-    ]
+    "histoire": []
   },
   {
     "id": "le-gratte-papier",
@@ -5167,7 +5167,7 @@
     "type": "lieu",
     "nom": "Les Jardins de l'Éternité",
     "titre": "Rêve partagé",
-    "parent": "camont",
+    "parent": "altenheim",
     "resume": "Là où Eryndel parle à Philippa et Jane.",
     "connu": [
       "Une nuit à bord du Marteau du Brise-Pavois, Philippa et Jane s'endorment et se retrouvent côte à côte dans un jardin suspendu au-dessus du vide, qui se dissout en firmament.",
@@ -5383,7 +5383,13 @@
       "x": 0.628,
       "y": 0.358
     },
-    "histoire": []
+    "histoire": [],
+    "galerie": [
+      {
+        "img": "img/paysages/port-blanc/marche-aux-bestiaux.webp",
+        "legende": "Le marché aux bestiaux"
+      }
+    ]
   },
   {
     "id": "abby",
@@ -5570,7 +5576,13 @@
       "x": 0.244,
       "y": 0.303
     },
-    "histoire": []
+    "histoire": [],
+    "galerie": [
+      {
+        "img": "img/paysages/port-blanc/cercle-des-eleveurs.webp",
+        "legende": "Le cercle des éleveurs"
+      }
+    ]
   },
   {
     "id": "chapelle-des-betes-silencieuses",
@@ -7699,7 +7711,13 @@
       "Le sous-marin y plonge pour fuir la deuxième tempête, y est attaqué par les bandits, puis découvre la ville au fond."
     ],
     "chapeau": "La faille s'ouvre sur quelque chose d'impossible : des lumières orangées et dorées en dômes et en arches, comme une ville endormie sous une couverture de coraux. Les coraux brillent, bleus et froids, au rythme lent d'un cœur énorme. Les parois encadrent l'ensemble comme deux mains qui tiendraient un trésor.",
-    "histoire": []
+    "histoire": [],
+    "galerie": [
+      {
+        "img": "img/paysages/agran/route-vers-la-ville.webp",
+        "legende": "La Faille d'Agran"
+      }
+    ]
   },
   {
     "id": "sous-marin-borim",
@@ -7925,6 +7943,12 @@
     "histoire": [],
     "connu": [
       "Le groupe y passe voir ce que Drisuun récupère des épaves."
+    ],
+    "galerie": [
+      {
+        "img": "img/paysages/agran/atelier-de-drisuun.webp",
+        "legende": "L'atelier de Drisuun"
+      }
     ]
   },
   {
@@ -10012,14 +10036,6 @@
     ]
   },
   {
-    "id": "tour-du-pentacle-lunsk",
-    "type": "lieu",
-    "nom": "La Tour du Pentacle",
-    "titre": "Tour sur l'îlot",
-    "parent": "lunsk",
-    "resume": "Tour dressée sur un îlot boisé, au nord de la ville, reliée à la rive par une passerelle."
-  },
-  {
     "id": "repaire-de-mezzek",
     "type": "lieu",
     "nom": "Chez Mezzek",
@@ -10042,14 +10058,6 @@
     ]
   },
   {
-    "id": "scierie-lunsk",
-    "type": "lieu",
-    "nom": "La scierie",
-    "titre": "Rive ouest",
-    "parent": "lunsk",
-    "resume": "Scierie et hangars à bois sur la rive ouest, face à la ville."
-  },
-  {
     "id": "auberge-du-brouillard-attable",
     "type": "lieu",
     "nom": "L'auberge du Brouillard Attablé",
@@ -10070,18 +10078,6 @@
         "legende": "L'auberge du Brouillard Attablé"
       }
     ]
-  },
-  {
-    "id": "herboristerie-la-sous-corolle",
-    "type": "lieu",
-    "nom": "L'herboristerie « La sous-corolle »",
-    "titre": "Quartier est",
-    "parent": "lunsk",
-    "resume": "Herboristerie du quartier est, près des quais nord, tenue par une femme de Lunsk.",
-    "pos": {
-      "x": 0.778,
-      "y": 0.252
-    }
   },
   {
     "id": "port-de-lunsk",
@@ -10263,9 +10259,18 @@
       {
         "img": "img/paysages/repos-des-epees/coeur-de-la-corruption.webp",
         "legende": "Le Cœur de la corruption"
+      },
+      {
+        "img": "img/paysages/repos-des-epees/repaire-du-passeur.webp",
+        "legende": "Le repaire du Passeur"
+      },
+      {
+        "img": "img/paysages/repos-des-epees/repaire-du-passeur-2.webp",
+        "legende": "Le repaire du Passeur, seconde vue"
       }
     ],
-    "chapeau": "L'ultime cavité s'ouvre comme une cage thoracique renversée : un volume immense, humide, irradié d'une lueur rouge sourde qui pulse au rythme d'un cœur. Les parois palpitent, couvertes de veines noires et de fines lamelles de peau. Un souffle chaud et fétide circule, chargé de fer et de suie. Au centre, un autel de chair et d'os est relié à la voûte par des filaments qui vibrent comme des cordes tendues. Là se tient une forme démoniaque sans déguisement, froide et évidente, qui parle sans détour."
+    "chapeau": "L'ultime cavité s'ouvre comme une cage thoracique renversée : un volume immense, humide, irradié d'une lueur rouge sourde qui pulse au rythme d'un cœur. Les parois palpitent, couvertes de veines noires et de fines lamelles de peau. Un souffle chaud et fétide circule, chargé de fer et de suie. Au centre, un autel de chair et d'os est relié à la voûte par des filaments qui vibrent comme des cordes tendues. Là se tient une forme démoniaque sans déguisement, froide et évidente, qui parle sans détour.",
+    "carrouselComplet": true
   },
   {
     "id": "golems-d-arcane",
@@ -10368,8 +10373,8 @@
     "type": "pnj",
     "nom": "L'arbre maudit",
     "titre": "Arbre d'os soudés",
-    "parent": "repaire-du-passeur",
-    "lieu": "repaire-du-passeur",
+    "parent": "coeur-de-la-corruption",
+    "lieu": "coeur-de-la-corruption",
     "statut": "vivant",
     "resume": "Arbre d'os soudés",
     "attitude": "ennemi",

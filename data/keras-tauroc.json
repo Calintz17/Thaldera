@@ -2805,24 +2805,6 @@
     ]
   },
   {
-    "id": "mois-perdu",
-    "type": "evenement",
-    "nom": "Le mois perdu",
-    "titre": "L'assassinat de l'ambassadeur Otoba",
-    "parent": "keras-tauroc",
-    "resume": "Absalom efface un mois de la mémoire du groupe et le fait accuser du meurtre d'Otoba.",
-    "histoire": [
-      "Sur les docks, le groupe tente d'intercepter Absalom près de sa barge. Elle l'avait anticipé. Elle lance Modify Memory : un son aigu, puis rien.",
-      "Il se réveille en prison, plusieurs semaines plus tard, du sang sur les mains. Ses armes et objets magiques sont confisqués. Otoba a été assassiné le soir du banquet du festival.",
-      "Tarcus propose un marché : enquêter sur soi-même.",
-      "Philippa avait une clef du Cornua Fracta. Volusius confirme qu'elle y chantait chaque soir. Sera a gardé le pli d'un vieil homme aux cheveux blancs.",
-      "Jane avait un carnet et une chambre chez Capella. Hématome confirme qu'elle travaillait pour lui. Son carnet montre que la surveillance de l'ambassadeur a été commandée par Calvinus Ferox, en liquide.",
-      "Derrière la tannerie, deux soldats payés par Ferox tentent de récupérer le carnet.",
-      "Chez Ferox, le groupe trouve la lettre d'Absalom et la copie de sa réponse. Il était l'instrument et le coupable désigné du meurtre.",
-      "Le meurtre d'Otoba a fermé les accès à Roshen Buru, Seiran Vale et Azuren Kai compris."
-    ]
-  },
-  {
     "id": "descente-khor-selash",
     "type": "evenement",
     "nom": "La descente de la Khor Selash",
@@ -3128,7 +3110,7 @@
     "type": "evenement",
     "nom": "Le portail de Cap Cornes",
     "titre": "Le cercle d'Eamonn",
-    "parent": "cap-cornes",
+    "parent": "tour-eamonn",
     "resume": "Le groupe aide Olyssane à obtenir d'Eamonn un cercle de téléportation vers Port Doëlan.",
     "histoire": [
       "Le groupe arrive à Cap Cornes et retrouve Olyssane et Ink. Olyssane expose deux problèmes : Kester Tauroc veut la défier en duel, et elle doit convaincre Eamonn d'ouvrir un portail pour un comptoir commercial.",
@@ -5269,7 +5251,13 @@
     ],
     "nofusion": true,
     "chapeau": "L'escalier descend sur trente marches avant de déboucher sur une galerie basse et longue. Les niches abritent les grands combattants de la lignée Tauroc, figures de pierre aux visages sévères, certaines couronnées de vraies cornes dorées patinées par le temps. Ça sent la pierre froide et la cire noire brûlée, une fumée qui n'est pas celle des bougies habituelles.",
-    "histoire": []
+    "histoire": [],
+    "galerie": [
+      {
+        "img": "img/paysages/keras-tauroc/catacombes-de-kord.webp",
+        "legende": "Les catacombes de Kord"
+      }
+    ]
   },
   {
     "id": "atelier-de-chrysodoros",
@@ -6548,18 +6536,19 @@
     "connu": [
       "Au centre de la grande place fleurie, un dôme d'énergie irisé protège un ancien autel. Deux orbes y brillent. Le troisième socle est vide, fendu, noirci et encore fumant : l'une des Pierres vient d'être volée.",
       "Philippa y examine la scène de crime : la Pierre a été arrachée de force, et un fragment de peau grise est resté près du socle."
+    ],
+    "galerie": [
+      {
+        "img": "img/paysages/malquessar/vue-ville.webp",
+        "legende": "Malquessar"
+      }
     ]
   },
   {
-    "id": "palais-de-malquessar",
+    "id": "maison-du-bourgmestre-malquessar",
     "type": "lieu",
-    "nom": "Le palais de Malquessar",
-    "titre": "Siège du magistère et de la Cour Seelie",
-    "parent": "malquessar",
-    "resume": "Philippa y trouve Thalanir Vel'dorel devant l'ambassadeur Elarin, de la Cour Seelie, qui exige le retour de la Pierre sous vingt-quatre heures.",
-    "connu": [
-      "Philippa y trouve Thalanir Vel'dorel devant l'ambassadeur Elarin, de la Cour Seelie, qui exige le retour de la Pierre sous vingt-quatre heures."
-    ]
+    "nom": "La maison du bourgmestre",
+    "parent": "malquessar"
   },
   {
     "id": "fleuristerie-de-liora",
@@ -7802,7 +7791,13 @@
     },
     "histoire": [],
     "img": "img/pnj/lavande.webp",
-    "teinte": "#753f19"
+    "teinte": "#753f19",
+    "galerie": [
+      {
+        "img": "img/paysages/corvalis/lavande.webp",
+        "legende": "Lavande, chef du Voile"
+      }
+    ]
   },
   {
     "id": "durnan-forgefeuil",
@@ -8391,8 +8386,8 @@
     "type": "pnj",
     "nom": "Nella Fanwyk",
     "titre": "Herboriste et marchande",
-    "parent": "herboristerie-la-sous-corolle",
-    "lieu": "herboristerie-la-sous-corolle",
+    "parent": "auberge-du-brouillard-attable",
+    "lieu": "auberge-du-brouillard-attable",
     "statut": "vivant",
     "resume": "Herboriste pro-Dominion, droite comme une poutre.",
     "attitude": "neutre",
@@ -9348,8 +9343,8 @@
     "type": "pnj",
     "nom": "Thalanir Vel'dorel",
     "titre": "Magistère de Malquessar",
-    "parent": "palais-de-malquessar",
-    "lieu": "palais-de-malquessar",
+    "parent": "maison-du-bourgmestre-malquessar",
+    "lieu": "maison-du-bourgmestre-malquessar",
     "statut": "vivant",
     "resume": "Chef de la ville, en habits brodés.",
     "attitude": "neutre",
@@ -9381,8 +9376,8 @@
     "type": "pnj",
     "nom": "Elarin Velasyr",
     "titre": "Ambassadeur de la Cour Seelie",
-    "parent": "palais-de-malquessar",
-    "lieu": "palais-de-malquessar",
+    "parent": "maison-du-bourgmestre-malquessar",
+    "lieu": "maison-du-bourgmestre-malquessar",
     "statut": "vivant",
     "resume": "Ambassadeur calme, glacial et autoritaire.",
     "attitude": "neutre",
@@ -9644,7 +9639,13 @@
       "Une maison faiblement éclairée est le seul lieu animé du village : des hommes de la Griffe y patrouillent, nerveux. Philippa et Jane y récupèrent le journal d'un moine, qui explique le départ : un fléau s'est abattu sur l'île."
     ],
     "chapeau": "Un ancien village monastique, mangé par la végétation, dont les pierres humides suintent de mousse. Les maisons en ruine s'écroulent sur elles-mêmes, certaines à moitié englouties par la boue et les racines. Partout, des statues brisées de Lathandre gisent à demi renversées, les visages martelés. L'air est lourd, saturé de sel et de pierre humide, et le silence est presque total.",
-    "histoire": []
+    "histoire": [],
+    "galerie": [
+      {
+        "img": "img/paysages/ile-aux-moines/village-monastique.webp",
+        "legende": "Le village monastique"
+      }
+    ]
   },
   {
     "id": "grande-cathedrale-ile-aux-moines",
@@ -9659,7 +9660,13 @@
       "Elle a laissé une lettre brûlée où l'on lit encore « Havre Noir », « contrat » et « mission », un anneau de protection +1 et un sac de 3 400 pièces d'or."
     ],
     "chapeau": "La cathédrale est vaste, son toit éventré laisse filtrer un rai de lune dans la poussière. Les colonnes sont éventrées par le temps, le sol jonché de gravats. Dans un recoin, une lueur douce perce l'obscurité.",
-    "histoire": []
+    "histoire": [],
+    "galerie": [
+      {
+        "img": "img/paysages/ile-aux-moines/grande-cathedrale.webp",
+        "legende": "La Grande Cathédrale effondrée"
+      }
+    ]
   },
   {
     "id": "souterrains-ile-aux-moines",
@@ -9675,7 +9682,13 @@
       "Plus loin, une porte massive de pierre et de fer, gravée de symboles effacés, ouvre sur des couloirs plus propres."
     ],
     "chapeau": "Un réseau de salles humides, envahies de mousse et de moisissures. Des cages de fer rouillées s'alignent le long des couloirs, certaines ouvertes, d'autres encore occupées par des silhouettes faméliques. Dans l'ombre, on entend des couinements métalliques et des doigts qui rampent sur la pierre.",
-    "histoire": []
+    "histoire": [],
+    "galerie": [
+      {
+        "img": "img/paysages/ile-aux-moines/souterrains-de-la-cathedrale.webp",
+        "legende": "Les souterrains de la cathédrale"
+      }
+    ]
   },
   {
     "id": "porte-de-la-jungle",
@@ -9878,7 +9891,10 @@
     "pos": {
       "x": 0.653,
       "y": 0.149
-    }
+    },
+    "connu": [
+      "Ancienne maison de couture de Lenach, reprise par les frères Alwin et Gerhard Kern, qui ont abandonné la soierie pour les onguents. Façade fermée et barricadée."
+    ]
   },
   {
     "id": "skaparel-apparel",
@@ -9900,6 +9916,9 @@
         "img": "img/paysages/obaline/chez-elza-skaparel.webp",
         "legende": "Chez Elza Skaparel"
       }
+    ],
+    "connu": [
+      "Boutique de vêtements du centre d'Obaline, clinquante et trop chère, aux vitrines pleines de sacs luxueux. Enchantements et protections contre le vol."
     ]
   },
   {
@@ -9922,23 +9941,10 @@
         "img": "img/paysages/obaline/prison-thoros-ven.webp",
         "legende": "La prison du Grand Palais, Thoros Ven"
       }
+    ],
+    "connu": [
+      "Ancien palais du bourgmestre, occupé par le Dominion. La prison y retient Thoros Ven."
     ]
-  },
-  {
-    "id": "garnison-obaline",
-    "type": "lieu",
-    "nom": "La garnison",
-    "titre": "Quartier est",
-    "parent": "obaline",
-    "resume": "Casernement de la ville, contre la muraille est."
-  },
-  {
-    "id": "cathedrale-de-gond",
-    "type": "lieu",
-    "nom": "La cathédrale de Gond",
-    "titre": "Centre-ville",
-    "parent": "obaline",
-    "resume": "Cathédrale dédiée à Gond, au cœur de la ville."
   },
   {
     "id": "emporium-de-milo",
@@ -9956,6 +9962,9 @@
         "img": "img/paysages/obaline/emporium-de-milo.webp",
         "legende": "L'Emporium de Milo"
       }
+    ],
+    "connu": [
+      "Petit emporium d'alchimie tenu par Milo, apothicaire à la langue sèche. Il ne donne accès à rien sans le mot de passe et héberge en secret la représentante du Voile."
     ]
   },
   {
@@ -9974,6 +9983,9 @@
         "img": "img/paysages/obaline/auberge-du-camelia.webp",
         "legende": "L'auberge du Camélia"
       }
+    ],
+    "connu": [
+      "Auberge tenue par Torren Tweedy, frénétique et peu discret. Une affiche pour retrouver Lenach y est collée, et il connaît Ira Malden."
     ]
   },
   {
@@ -9992,6 +10004,9 @@
         "img": "img/paysages/obaline/port-marchand.webp",
         "legende": "Le Port Marchand, Darn"
       }
+    ],
+    "connu": [
+      "Port marchand d'Obaline, tenu par Darn, maître du port à la solde du Voile et corruptible. Elza Skaparel convoite son contrôle."
     ]
   },
   {
@@ -10007,6 +10022,12 @@
     },
     "histoire": [
       "Philippa y apprend l'existence de la porte dérobée du palais et le nom de Lavande."
+    ],
+    "galerie": [
+      {
+        "img": "img/paysages/corvalis/maison-augustine.webp",
+        "legende": "La maison de Madame Augustine"
+      }
     ]
   },
   {
@@ -10037,6 +10058,12 @@
     },
     "histoire": [
       "Philippa y vient sur le conseil de Madame Augustine pour trouver Lavande."
+    ],
+    "galerie": [
+      {
+        "img": "img/paysages/corvalis/omen-ville-basse.webp",
+        "legende": "Omen, ville basse"
+      }
     ]
   },
   {
@@ -10052,6 +10079,12 @@
     },
     "histoire": [
       "À la porte de l'Est, les gardes réclament 50 po par tête. Des bandits détroussent Philippa pour payer leur propre entrée, et Bren Legemor lui explique le péage."
+    ],
+    "galerie": [
+      {
+        "img": "img/paysages/corvalis/entree-de-la-ville.webp",
+        "legende": "Les portes de la ville"
+      }
     ]
   },
   {
@@ -10067,15 +10100,13 @@
     },
     "histoire": [
       "Philippa y recueille ses premières informations sur le bal masqué et sur le Dominion."
+    ],
+    "galerie": [
+      {
+        "img": "img/paysages/corvalis/taverne-ganimede.webp",
+        "legende": "La taverne de Ganimède, ville haute"
+      }
     ]
-  },
-  {
-    "id": "jardins-suspendus-corvalis",
-    "type": "lieu",
-    "nom": "Les Jardins Suspendus",
-    "titre": "Quartier sud",
-    "parent": "corvalis",
-    "resume": "Jardins suspendus aux pieds du palais ducal."
   },
   {
     "id": "forge-de-durnan-forgefeuil",
@@ -10087,7 +10118,13 @@
     "pos": {
       "x": 0.2,
       "y": 0.8
-    }
+    },
+    "galerie": [
+      {
+        "img": "img/paysages/corvalis/durnan-forgefeuil.webp",
+        "legende": "La forge de Durnan Forgefeuil"
+      }
+    ]
   },
   {
     "id": "greenwood-instruments",
@@ -10102,6 +10139,12 @@
     },
     "histoire": [
       "Philippa y prend un cours de harpe et reçoit le conseil de se rendre à l'académie de Lumenlid."
+    ],
+    "galerie": [
+      {
+        "img": "img/paysages/corvalis/greenwood-instrument.webp",
+        "legende": "Greenwood Instruments"
+      }
     ]
   },
   {
@@ -10117,6 +10160,16 @@
     },
     "histoire": [
       "Philippa s'y infiltre pendant le bal masqué du Duc, où la Duchesse Cecilia est tuée. Le Nephilim présenté comme le Joyau tombé du ciel y est remis à Gran Brijit."
+    ],
+    "galerie": [
+      {
+        "img": "img/paysages/corvalis/bal-du-duc-de-vaelmor.webp",
+        "legende": "Le bal du duc de Vaelmor"
+      },
+      {
+        "img": "img/paysages/corvalis/appartement-cecilia-de-vaelmor.webp",
+        "legende": "Les appartements privés de Cécilia"
+      }
     ]
   },
   {
@@ -10132,31 +10185,13 @@
     },
     "histoire": [
       "Philippa y rencontre Regus, qui rêve de devenir acteur."
+    ],
+    "galerie": [
+      {
+        "img": "img/paysages/corvalis/theatre-vaelmore.webp",
+        "legende": "Le théâtre de Vaelmor"
+      }
     ]
-  },
-  {
-    "id": "ambassade-du-dominion",
-    "type": "lieu",
-    "nom": "L'ambassade du Dominion",
-    "titre": "Quartier des ambassades",
-    "parent": "corvalis",
-    "resume": "Ambassade du Dominion."
-  },
-  {
-    "id": "ambassade-d-altera",
-    "type": "lieu",
-    "nom": "L'ambassade d'Altéra",
-    "titre": "Quartier des ambassades",
-    "parent": "corvalis",
-    "resume": "Ambassade d'Altéra."
-  },
-  {
-    "id": "ambassade-de-rivegard",
-    "type": "lieu",
-    "nom": "L'ambassade de Rivegard",
-    "titre": "Quartier des ambassades",
-    "parent": "corvalis",
-    "resume": "Ambassade de Rivegard."
   },
   {
     "id": "maison-d-urrak",
