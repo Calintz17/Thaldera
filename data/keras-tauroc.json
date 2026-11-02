@@ -10355,7 +10355,13 @@
     },
     "histoire": [],
     "img": "img/pnj/bernard.webp",
-    "teinte": "#755d19"
+    "teinte": "#755d19",
+    "galerie": [
+      {
+        "img": "img/paysages/voros/canalisations.webp",
+        "legende": "Les canalisations de Voros"
+      }
+    ]
   },
   {
     "id": "gallywix",

@@ -10163,7 +10163,13 @@
     "pos": {
       "x": 0.467,
       "y": 0.437
-    }
+    },
+    "galerie": [
+      {
+        "img": "img/paysages/leyenmil/auberge-copperworth.webp",
+        "legende": "La Réserve du Vent Gris"
+      }
+    ]
   },
   {
     "id": "auberge-du-moulin",
