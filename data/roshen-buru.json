@@ -2769,7 +2769,7 @@
       }
     ],
     "img": "img/pnj/neryn-yosa.webp",
-    "attitude": "ennemi",
+    "attitude": "neutre",
     "teinte": "#755219"
   },
   {
@@ -2817,7 +2817,7 @@
       "texte": "T'approche pas. Tu pues les racines mortes. T'avancer encore d'un pas… c'est mourir.",
       "qui": "Gikyo Noshi Buru"
     },
-    "attitude": "ennemi",
+    "attitude": "neutre",
     "formes": [
       {
         "label": "Forme habituelle",
@@ -2987,7 +2987,7 @@
     "titre": "Démone majeure au service de Vassago",
     "parent": "temple-du-tenraku",
     "lieu": "temple-du-tenraku",
-    "statut": "vivant",
+    "statut": "renvoyé aux Enfers",
     "img": "img/istra-belig/roshen-buru/pnj/absalom.webp",
     "question": "Absalom est-elle retournée aux Enfers ? Qu'en feront ceux à qui elle a désobéi ?",
     "resume": "Démone insaisissable que le groupe traque de ville en ville.",
@@ -4046,7 +4046,7 @@
     "titre": "Homme de main de Darrek",
     "parent": "clan-kovacz",
     "lieu": "planque-darrek",
-    "statut": "vaincu",
+    "statut": "inconnu",
     "resume": "Homme de main de Darrek, un homme ordinaire aux anneaux d'oreille.",
     "connu": [
       "Il garde la planque de Darrek, achetée à son nom et payée comptant il y a quatre ans. Yurëi le connaît comme l'acheteur régulier.",
@@ -4713,7 +4713,7 @@
       }
     ],
     "img": "img/pnj/pe-re-niall.webp",
-    "attitude": "positif",
+    "attitude": "neutre",
     "teinte": "#195275",
     "histoire": [],
     "connu": [
@@ -4760,7 +4760,7 @@
       }
     ],
     "img": "img/pnj/tormund.webp",
-    "attitude": "positif",
+    "attitude": "neutre",
     "teinte": "#755219"
   },
   {
@@ -4788,7 +4788,7 @@
         "inverse": "fournisseur du cercle de"
       }
     ],
-    "attitude": "positif",
+    "attitude": "neutre",
     "teinte": "#755219",
     "histoire": [],
     "connu": [
@@ -5001,7 +5001,7 @@
     "parent": "manoir-des-ligaments",
     "resume": "Petit robot qui suit Gran Brijit partout.",
     "statut": "mort",
-    "attitude": "neutre",
+    "attitude": "allie",
     "lieu": "manoir-des-ligaments",
     "connu": [
       "Nolbrim le bâtit autour d'un fragment de l'Hexacore.",
@@ -5045,7 +5045,7 @@
       "Il vit désormais au Manoir des Ligaments."
     ],
     "img": "img/pnj/pyrrah-kynoleon.webp",
-    "attitude": "positif",
+    "attitude": "allie",
     "teinte": "#754c19"
   },
   {

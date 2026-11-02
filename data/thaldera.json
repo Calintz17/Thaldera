@@ -1119,7 +1119,7 @@
     "titre": "Le Passeur du Sang Noir, démon supérieur",
     "parent": "coeur-de-la-corruption",
     "lieu": "coeur-de-la-corruption",
-    "statut": "mort",
+    "statut": "renvoyé aux Enfers",
     "resume": "Démon supérieur, lieutenant de Vassago et boss du Repos des Épées. Voleur de magie.",
     "connu": [
       "Démon sans déguisement, forme haute et immobile reliée aux nerfs de son repaire, au Repos des Épées. Il se présente comme le Passeur du Sang Noir, le berceau de la nouvelle chair.",
@@ -1532,7 +1532,7 @@
     "titre": "Cheffe des Épingles",
     "parent": "usine-camont",
     "lieu": "usine-camont",
-    "statut": "vivant",
+    "statut": "inconnu",
     "resume": "Une fée qui défend son territoire.",
     "connu": [
       "Fée au port altier, qui manie une épingle géante comme un fleuret. Elle dirige les Épingles, qui protègent leur quartier du sud. Les habitants leur paient une contribution pour la paix, et l'ancienne usine textile, barricadée, leur sert de camp central.",
@@ -1565,7 +1565,7 @@
         "inverse": "sous les ordres de"
       }
     ],
-    "attitude": "neutre",
+    "attitude": "ennemi",
     "img": "img/pnj/nix.webp",
     "teinte": "#754919"
   },
@@ -1795,14 +1795,14 @@
     "titre": "Guerrier des Épingles",
     "parent": "villa-graham",
     "lieu": "villa-graham",
-    "statut": "vivant",
+    "statut": "arrêté",
     "resume": "Rival du groupe dans la villa Graham.",
     "connu": [
       "Guerrier des Épingles. Il agit avec Vira et Nibb.",
       "Philippa et Jane l'ont croisé dans la villa Graham.",
       "Les Épingles se sont fait arrêter pour l'effraction."
     ],
-    "attitude": "neutre",
+    "attitude": "ennemi",
     "histoire": [],
     "img": "img/pnj/ash.webp",
     "teinte": "#755419"
@@ -2043,7 +2043,7 @@
         "ton": "negatif"
       }
     ],
-    "attitude": "positif",
+    "attitude": "neutre",
     "teinte": "#753c19",
     "histoire": []
   },
@@ -2302,7 +2302,7 @@
         "teinte": "#756819"
       }
     ],
-    "attitude": "allie",
+    "attitude": "positif",
     "teinte": "#752519"
   },
   {
@@ -2355,7 +2355,7 @@
         "inverse": "protégé par"
       }
     ],
-    "attitude": "allie",
+    "attitude": "positif",
     "teinte": "#756919",
     "histoire": []
   },
@@ -2968,7 +2968,7 @@
     "lieu": "lunsk",
     "statut": "vivant",
     "resume": "Petit sbire nerveux de la Griffe à Lunsk.",
-    "attitude": "ennemi",
+    "attitude": "neutre",
     "histoire": [],
     "connu": [
       "Philippa le rencontre à l'église en ruine, capuchon rabattu, nerveux. Il lui demande de prouver qu'elle peut payer et lui dit de retourner à l'auberge, qu'il viendra la chercher.",
@@ -4121,7 +4121,7 @@
     "titre": "Directrice de l'orphelinat",
     "parent": "orphelinat-merigold",
     "lieu": "orphelinat-merigold",
-    "statut": "mort",
+    "statut": "inconnu",
     "resume": "Directrice méthodique qui habillait le meurtre en devoir moral.",
     "connu": [
       "Elle dirige l'orphelinat de Merigold. Elle a été tuée plus tard par des mercenaires.",
@@ -4201,8 +4201,8 @@
   {
     "id": "luka",
     "type": "pnj",
-    "nom": "Luka",
-    "titre": "Enfant de l'orphelinat",
+    "nom": "Lukas",
+    "titre": "Enfant de l'orphelinat Merigold",
     "parent": "orphelinat-merigold",
     "lieu": "orphelinat-merigold",
     "statut": "inconnu",
@@ -4215,7 +4215,7 @@
     "histoire": [],
     "img": "img/pnj/leyenmil-lukas.webp",
     "alias": [
-      "Lukas"
+      "Luka"
     ],
     "publication": "joue",
     "relations": [
@@ -4365,15 +4365,15 @@
     "id": "ergott",
     "type": "pnj",
     "nom": "Ergott",
-    "titre": "Tavernier du Harpon Rouge",
-    "parent": "taverne-harpon-rouge",
-    "lieu": "taverne-harpon-rouge",
+    "titre": "Lapidès des Quais de Poix",
+    "parent": "quais-de-poix",
+    "lieu": "quais-de-poix",
     "statut": "vivant",
-    "resume": "Tient le Harpon Rouge.",
+    "resume": "Lapidès fier, il veille aux quais de poix où chaque navire entrant est répertorié.",
     "attitude": "neutre",
     "histoire": [],
     "connu": [
-      "Il tient la taverne le soir où Wilhelm der Treue s'en prend à Philippa."
+      "Lapidès fier : « Tu veux savoir qui accoste ici ? Tout est noté, tout est scellé. Sycomore ne laisse rien passer. »"
     ],
     "img": "img/pnj/ergott.webp",
     "teinte": "#755019"
@@ -4743,7 +4743,7 @@
         "ton": "positif"
       }
     ],
-    "attitude": "neutre",
+    "attitude": "ennemi",
     "histoire": [],
     "img": "img/pnj/marek-le-calfat.webp",
     "teinte": "#754f19"
@@ -5056,7 +5056,7 @@
     "titre": "Capitaine de fortune",
     "parent": "havre-noir",
     "lieu": "rocher-aux-noeuds",
-    "statut": "vivant",
+    "statut": "mort",
     "resume": "Opportuniste et cupide.",
     "connu": [
       "Capitaine de fortune. C'est la sortie de secours si le groupe rompt avec Sycomore : il ne mène qu'à Port Lagon, contre une lourde somme d'or."
@@ -5274,7 +5274,7 @@
     "titre": "Prostituée du saloon",
     "parent": "saloon-port-blanc",
     "lieu": "saloon-port-blanc",
-    "statut": "vivant",
+    "statut": "inconnu",
     "resume": "Elle n'était pas celle qu'elle prétendait.",
     "connu": [
       "Absalom est passée à Port Blanc sous une identité banale.",
@@ -5299,7 +5299,7 @@
       }
     ],
     "img": "img/pnj/port-doe-lan-absalom-de-guise-e-en-sadie.webp",
-    "attitude": "ennemi",
+    "attitude": "neutre",
     "teinte": "#2d2d2d",
     "histoire": []
   },
@@ -5730,7 +5730,7 @@
     "titre": "Faux patron de l'auberge",
     "parent": "auberge-des-trois-pins",
     "lieu": "auberge-des-trois-pins",
-    "statut": "vaincu",
+    "statut": "inconnu",
     "resume": "Faux aubergiste au service de Mara.",
     "galerie": [
       {
@@ -5747,7 +5747,7 @@
         "inverse": "chef de"
       }
     ],
-    "attitude": "ennemi",
+    "attitude": "neutre",
     "connu": [
       "Faux patron de l'auberge des Trois Pins, il essuie un verre sans lever les yeux. Lui et les deux faux clients sont des hommes de Mara, démasqués par Philippa et Jane.",
       "Dans la réserve, deux cadavres récents : les véritables aubergistes, aux traces de lutte brève."
@@ -6306,7 +6306,7 @@
     "titre": "Réceptionniste du théâtre Rusconi",
     "parent": "theatre-russconi",
     "lieu": "theatre-russconi",
-    "statut": "vivant",
+    "statut": "mort",
     "resume": "Il ajuste ses manchettes devant le théâtre Rusconi.",
     "connu": [
       "Il tient le comptoir extérieur du théâtre Rusconi, le regard lourd et mesuré. Le groupe l'aborde devant le théâtre.",
@@ -6630,7 +6630,7 @@
     "titre": "Cheffe de la Griffe",
     "parent": "quartier-general-griffe",
     "lieu": "quartier-general-griffe",
-    "statut": "mort",
+    "statut": "vaincu",
     "resume": "Droite, maîtrisée, le regard tranchant.",
     "alias": [
       "Cassiopee Vorn"
@@ -6871,7 +6871,7 @@
     "titre": "Tenancière des bains",
     "parent": "bains-publics-doelan",
     "lieu": "bains-publics-doelan",
-    "statut": "vivant",
+    "statut": "mort",
     "resume": "Sourire simple et regard attentif. Elle répète les rumeurs de l'accueil.",
     "connu": [
       "Spezza reste enfermé dans son château. Un noble influent descend parfois dans les bas quartiers, bien habillé, capuche sur la tête, mais reconnaissable.",
@@ -7106,7 +7106,7 @@
     "titre": "Commandant du fortin",
     "parent": "fortin-des-mercenaires",
     "lieu": "fortin-des-mercenaires",
-    "statut": "vivant",
+    "statut": "vaincu",
     "resume": "Capitaine des mercenaires de Spezza.",
     "alias": [
       "Krezz"
@@ -7292,7 +7292,7 @@
     "titre": "Maison close",
     "parent": "maison-de-vespera",
     "lieu": "maison-de-vespera",
-    "statut": "vivant",
+    "statut": "mort",
     "resume": "Visage public de l'établissement.",
     "img": "img/pnj/port-doe-lan-anquiri-di-velarossa.webp",
     "relations": [
@@ -7303,7 +7303,7 @@
         "inverse": "patronne de"
       }
     ],
-    "attitude": "positif",
+    "attitude": "ennemi",
     "connu": [
       "Le groupe la rencontre à la maison close de Vespera, où elle accueille les visiteurs : tentures rouges, lumière de bougies et parfums lourds.",
       "Elle accepte de témoigner de façon triviale et détaillée sur les pratiques privées d'un noble de haut rang de la cour de Spezza, ce qui sert une opération de sabotage politique."
@@ -7513,7 +7513,7 @@
     "titre": "Réceptionniste de la prison",
     "parent": "prison-de-port-doelan",
     "lieu": "prison-de-port-doelan",
-    "statut": "vivant",
+    "statut": "mort",
     "resume": "Tient le registre de la prison.",
     "connu": [
       "Jeune femme au chignon soigné et aux lunettes rondes, à l'accueil de la prison. Elle consigne les entrées et exige le dépôt des armes contre récépissé.",
@@ -7594,7 +7594,7 @@
         "inverse": "employeur de"
       }
     ],
-    "attitude": "neutre",
+    "attitude": "ennemi",
     "connu": [
       "Le groupe apprend par Monique qu'il traverse la cour chaque soir à heure fixe, manteau sombre boutonné jusqu'au col, monocle mécanique serti d'engrenages, démarche de parade, puis rentre chez lui par la ruelle latérale.",
       "Réputé incorruptible : ni pots-de-vin ni flatteries.",
@@ -7651,7 +7651,7 @@
         "inverse": "protecteur de"
       }
     ],
-    "attitude": "neutre",
+    "attitude": "ennemi",
     "connu": [
       "Libraire de Port Doëlan, fébrile, dévoué corps et âme à Spezza. Il prétend répertorier et conserver les ouvrages pour enrichir la cité.",
       "Il ment par omission, jamais frontalement. Interrogé par le groupe, il panique et évoque les commandes spéciales de Monsieur Spezza, et laisse deviner qu'il cache quelque chose dans les combles.",
@@ -7720,7 +7720,7 @@
         "inverse": "sous les ordres de"
       }
     ],
-    "attitude": "positif",
+    "attitude": "allie",
     "connu": [
       "Chef de chantier nain, petit et trapu, lunettes à double épaisseur qui agrandissent ses yeux. Il regarde les PJ avec une curiosité tranquille.",
       "Spezza leur a commandé un vaisseau, ils l'ont construit. Ce qu'il en fait ensuite ne les concerne pas. Les nains pilotent le sous-marin, donc ils partent avec les PJ.",
@@ -9226,7 +9226,7 @@
         "inverse": "gardée par"
       }
     ],
-    "attitude": "ennemi",
+    "attitude": "neutre",
     "connu": [
       "Ver des sables colossal qui circule sous les dunes près de la mesa, attiré par le mouvement et la chaleur. Son éruption ouvre momentanément la fosse qui mène au site enfoui.",
       "Ashur avertit le groupe que la Fosse est gardée par Al Batun, qui possède la clé pour y accéder.",
@@ -9315,7 +9315,7 @@
     "titre": "Automate du donjon",
     "parent": "tour-de-resonance",
     "resume": "Petits automates griffus qui libèrent des décharges d'énergie.",
-    "statut": "détruit",
+    "statut": "vaincu",
     "alias": [
       "Tique"
     ],
@@ -9380,7 +9380,7 @@
     "titre": "Enfant de l'orphelinat",
     "parent": "orphelinat-merigold",
     "lieu": "orphelinat-merigold",
-    "statut": "vivant",
+    "statut": "inconnu",
     "resume": "L'un des deux enfants emmenés par Jane.",
     "relations": [
       {
@@ -9402,7 +9402,7 @@
     "titre": "Enfant de l'orphelinat",
     "parent": "orphelinat-merigold",
     "lieu": "orphelinat-merigold",
-    "statut": "vivant",
+    "statut": "inconnu",
     "resume": "L'une des deux enfants emmenés par Jane.",
     "relations": [
       {
@@ -9573,7 +9573,7 @@
     "titre": "Statue Clericalis et Statue Paladinis",
     "parent": "temple-brumeux",
     "resume": "Gardiens de pierre du temple.",
-    "statut": "détruit",
+    "statut": "vaincu",
     "alias": [
       "Statue Clericalis",
       "Statue Paladinis"
@@ -10057,13 +10057,14 @@
       }
     ],
     "img": "img/pnj/steppes-rouge-roc.webp",
-    "attitude": "neutre",
+    "attitude": "ennemi",
     "lieu": "monastere-des-steppes",
     "teinte": "#2d2d2d",
     "histoire": [],
     "connu": [
       "Le nid était vide quand le groupe est monté au sommet du monastère des steppes. Le Roc revient, et le groupe l'affronte pour récupérer un œuf du rituel de Sevik."
-    ]
+    ],
+    "statut": "vaincu"
   },
   {
     "id": "ashvur-tesh",
@@ -10394,7 +10395,7 @@
     "titre": "Créatures ailées du Repos des Épées",
     "parent": "coeur-de-la-corruption",
     "lieu": "coeur-de-la-corruption",
-    "statut": "vivant",
+    "statut": "vaincu",
     "resume": "Créatures ailées du Repos des Épées",
     "attitude": "ennemi",
     "connu": [
@@ -10411,7 +10412,7 @@
     "titre": "Créatures de chair du Repos des Épées",
     "parent": "coeur-de-la-corruption",
     "lieu": "coeur-de-la-corruption",
-    "statut": "vivant",
+    "statut": "vaincu",
     "resume": "Créatures de chair du Repos des Épées",
     "attitude": "ennemi",
     "connu": [
@@ -10430,7 +10431,7 @@
     "lieu": "coeur-de-la-corruption",
     "statut": "vivant",
     "resume": "Arbre d'os soudés",
-    "attitude": "ennemi",
+    "attitude": "neutre",
     "connu": [
       "Arbre d'os soudés qui veille sur la colline voisine du repaire du Passeur."
     ],
@@ -10445,7 +10446,7 @@
     "titre": "Bloquent la route par deux arbres abattus",
     "parent": "caravane-port-doelan",
     "lieu": "caravane-port-doelan",
-    "statut": "vivant",
+    "statut": "vaincu",
     "resume": "Bloquent la route par deux arbres abattus",
     "attitude": "ennemi",
     "connu": [
@@ -10462,7 +10463,7 @@
     "titre": "Chargent le camp à la tombée du jour",
     "parent": "caravane-port-doelan",
     "lieu": "caravane-port-doelan",
-    "statut": "vivant",
+    "statut": "vaincu",
     "resume": "Chargent le camp à la tombée du jour",
     "attitude": "ennemi",
     "connu": [
@@ -10496,7 +10497,7 @@
     "titre": "Loup de la forêt du vignoble",
     "parent": "vignoble-abandonne",
     "lieu": "vignoble-abandonne",
-    "statut": "vivant",
+    "statut": "vaincu",
     "resume": "Loup de la forêt du vignoble",
     "attitude": "ennemi",
     "connu": [
@@ -10530,7 +10531,7 @@
     "titre": "Feywild Welcome",
     "parent": "malquessar",
     "lieu": "malquessar",
-    "statut": "vivant",
+    "statut": "vaincu",
     "resume": "Feywild Welcome",
     "attitude": "ennemi",
     "connu": [
@@ -10564,7 +10565,7 @@
     "titre": "Garde de l'entrepôt de Mezzek",
     "parent": "repaire-de-mezzek",
     "lieu": "repaire-de-mezzek",
-    "statut": "vivant",
+    "statut": "vaincu",
     "resume": "Garde de l'entrepôt de Mezzek",
     "attitude": "ennemi",
     "connu": [
@@ -10581,7 +10582,7 @@
     "titre": "Lanceur de sorts de l'entrepôt de Mezzek",
     "parent": "repaire-de-mezzek",
     "lieu": "repaire-de-mezzek",
-    "statut": "vivant",
+    "statut": "inconnu",
     "resume": "Lanceur de sorts de l'entrepôt de Mezzek",
     "attitude": "ennemi",
     "connu": [
@@ -10598,7 +10599,7 @@
     "titre": "Tueur de l'entrepôt de Mezzek",
     "parent": "repaire-de-mezzek",
     "lieu": "repaire-de-mezzek",
-    "statut": "vivant",
+    "statut": "inconnu",
     "resume": "Tueur de l'entrepôt de Mezzek",
     "attitude": "ennemi",
     "connu": [
@@ -10615,7 +10616,7 @@
     "titre": "Gardes du repaire sous l'entrepôt",
     "parent": "entrepot-de-la-griffe",
     "lieu": "entrepot-de-la-griffe",
-    "statut": "vivant",
+    "statut": "vaincu",
     "resume": "Gardes du repaire sous l'entrepôt",
     "attitude": "ennemi",
     "connu": [
@@ -10647,7 +10648,7 @@
     "titre": "Maraudeurs de Khazad Maruun",
     "parent": "la-gueule-des-sables",
     "lieu": "la-gueule-des-sables",
-    "statut": "vivant",
+    "statut": "mort",
     "resume": "Maraudeurs de Khazad Maruun",
     "attitude": "ennemi",
     "connu": [
@@ -10690,7 +10691,7 @@
     "titre": "Garde de l'île aux Moines",
     "parent": "village-monastique-ile-aux-moines",
     "lieu": "village-monastique-ile-aux-moines",
-    "statut": "vivant",
+    "statut": "vaincu",
     "resume": "Garde de l'île aux Moines",
     "attitude": "ennemi",
     "connu": [
@@ -10724,7 +10725,7 @@
     "titre": "Soldate d'Altéra",
     "parent": "camont",
     "lieu": "camont",
-    "statut": "vivant",
+    "statut": "vaincu",
     "resume": "Soldate d'Altéra",
     "attitude": "ennemi",
     "connu": [
@@ -10758,7 +10759,7 @@
     "titre": "Créatures du bord de mer",
     "parent": "cap-cornes",
     "lieu": "cap-cornes",
-    "statut": "vivant",
+    "statut": "mort",
     "resume": "Créatures du bord de mer",
     "attitude": "ennemi",
     "connu": [
@@ -10775,7 +10776,7 @@
     "titre": "Créature du rituel de Gran Brijit",
     "parent": "cabane-gran-brijit",
     "lieu": "cabane-gran-brijit",
-    "statut": "vivant",
+    "statut": "arrêté",
     "resume": "Créature du rituel de Gran Brijit",
     "attitude": "ennemi",
     "connu": [
@@ -10792,7 +10793,7 @@
     "titre": "Esprit de la forge",
     "parent": "forge-eternelle-pyrrah",
     "lieu": "forge-eternelle-pyrrah",
-    "statut": "vivant",
+    "statut": "vaincu",
     "resume": "Esprit de la forge",
     "attitude": "ennemi",
     "connu": [
@@ -10809,7 +10810,7 @@
     "titre": "Être de flammes",
     "parent": "forge-eternelle-pyrrah",
     "lieu": "forge-eternelle-pyrrah",
-    "statut": "vivant",
+    "statut": "vaincu",
     "resume": "Être de flammes",
     "attitude": "ennemi",
     "connu": [
@@ -10826,7 +10827,7 @@
     "titre": "Petits êtres de magma",
     "parent": "mine-de-pyrrah",
     "lieu": "mine-de-pyrrah",
-    "statut": "vivant",
+    "statut": "vaincu",
     "resume": "Petits êtres de magma",
     "attitude": "ennemi",
     "connu": [
@@ -10845,7 +10846,7 @@
     "lieu": "mine-de-pyrrah",
     "statut": "vivant",
     "resume": "Bête reptilienne de Pyrrah",
-    "attitude": "ennemi",
+    "attitude": "neutre",
     "connu": [
       "Pyrodrakon des environs de Pyrrah."
     ],
@@ -10894,7 +10895,7 @@
     "titre": "Oni d'Absalom",
     "parent": "temple-du-tenraku",
     "lieu": "temple-du-tenraku",
-    "statut": "vivant",
+    "statut": "vaincu",
     "resume": "Oni d'Absalom",
     "attitude": "ennemi",
     "connu": [

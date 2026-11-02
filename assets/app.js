@@ -4,7 +4,7 @@
 (() => {
 'use strict';
 
-const VER = '117';
+const VER = '118';
 const LEGACY_IDS = { 'bourre-piff':'bourpif', 'seravine':'solkah-barrow', 'tilda':'irna', 'cleff':'irna' };
 const EDIT = new URLSearchParams(location.search).has('edit');
 const $ = (s, r = document) => r.querySelector(s);
@@ -1463,7 +1463,7 @@ function journalMode(box, open) {
       requestAnimationFrame(() => scrollTo(0, restore));
     }
   } else mobileJournalScroll = null;
-  for (const [id, buttonId] of [['qlog','qbtn'],['rlog','rbtn'],['slog','sbtn'],['dlog','dbtn']]) {
+  for (const [id, buttonId] of [['qlog','qbtn'],['rlog','rbtn'],['slog','sbtn'],['dlog','dbtn'],['relog','relbtn']]) {
     const panel = document.getElementById(id), trigger = document.getElementById(buttonId);
     if (!panel || !trigger) continue;
     const active = !!open && panel === box;
@@ -1551,6 +1551,26 @@ function initRunes() {
   document.addEventListener('keydown', ev => { if (ev.key === 'Escape' && !box.hidden) toggle(false); });
 }
 
+/* ---------- relations : alliés et ennemis vivants du groupe ---------- */
+function initRelations() {
+  const btn = $('#relbtn'), box = $('#relog');
+  if (!btn || !box) return;
+  const pnj = Object.values(BY).filter(x => x.type === 'pnj' && !x.locked && !x.redirige && x.img);
+  const byName = (a, b) => a.nom.localeCompare(b.nom, 'fr');
+  const allies = pnj.filter(x => x.attitude === 'allie' && x.statut === 'vivant').sort(byName);
+  const ennemis = pnj.filter(x => x.attitude === 'ennemi' && (x.statut === 'vivant' || x.statut === 'renvoyé aux Enfers')).sort(byName);
+  const row = x => `<li class="qitem rel-item"><img class="rpic" src="${esc(x.img)}" alt="" loading="lazy"><div><b><a href="#/${esc(x.id)}">${esc(x.nom)}</a></b><p>${esc(x.titre || '')}${x.statut === 'renvoyé aux Enfers' ? ' · renvoyé aux Enfers' : ''}</p></div></li>`;
+  const draw = () => {
+    box.innerHTML = `<div class="qwin" role="document"><header><span class="qgem"></span><h2>Relations</h2><span class="qcount">${allies.length} alliés · ${ennemis.length} ennemis</span><button type="button" class="qx" aria-label="Fermer">×</button></header><div class="qlist"><h3 class="rel-h">Alliés du groupe</h3><ol class="rel-list">${allies.map(row).join('') || '<li class="qempty">Aucun allié.</li>'}</ol><h3 class="rel-h">Ennemis du groupe</h3><ol class="rel-list">${ennemis.map(row).join('') || '<li class="qempty">Aucun ennemi.</li>'}</ol></div></div>`;
+    box.querySelector('.qx').addEventListener('click', () => toggle(false));
+    box.querySelectorAll('.qitem a').forEach(a => a.addEventListener('click', () => toggle(false)));
+  };
+  const toggle = open => { journalMode(box, open); if (open) draw(); };
+  btn.addEventListener('click', ev => { ev.stopPropagation(); toggle(box.hidden); });
+  box.addEventListener('click', ev => { if (ev.target === box) toggle(false); });
+  document.addEventListener('keydown', ev => { if (ev.key === 'Escape' && !box.hidden) toggle(false); });
+}
+
 (async function init() {
   try {
     await load();
@@ -1571,6 +1591,7 @@ function initRunes() {
   initExplorer();
   initQuests();
   initRunes();
+  initRelations();
   initSessions();
   initDocuments();
   window.addEventListener('hashchange', route);
