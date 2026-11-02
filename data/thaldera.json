@@ -1826,8 +1826,8 @@
     ],
     "histoire": [],
     "pos": {
-      "x": 0.32,
-      "y": 0.716
+      "x": 0.33,
+      "y": 0.728
     },
     "accent": "#e9dfc0",
     "relations": [
@@ -2169,8 +2169,8 @@
       "Qadim, agent de la Lumière Noire, est démasqué et s'enfuit. La caravane arrive en vue de Port Doëlan, accrochée aux falaises, au soir."
     ],
     "pos": {
-      "x": 0.272,
-      "y": 0.749
+      "x": 0.284,
+      "y": 0.735
     },
     "voyage": "x",
     "galerie": [
@@ -3100,8 +3100,8 @@
     ],
     "histoire": [],
     "pos": {
-      "x": 0.316,
-      "y": 0.779
+      "x": 0.33,
+      "y": 0.791
     },
     "chapeau": "La jungle se resserre et laisse place à une clairière envahie par une brume laiteuse qui colle aux pierres. Entre les lianes et les troncs moussus, la façade effondrée d'un ancien temple, mangé par les racines. L'air sent l'humidité et la moisissure, et seul le ruissellement d'une source invisible trouble le silence.",
     "galerie": [
@@ -9718,7 +9718,12 @@
         "type": "Étape du voyage",
         "ton": "neutre"
       }
-    ]
+    ],
+    "pos": {
+      "x": 0.267,
+      "y": 0.762
+    },
+    "voyage": "x"
   },
   {
     "id": "dimir",
