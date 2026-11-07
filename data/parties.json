@@ -588,6 +588,34 @@
         "La Gardienne protège systématiquement les clans.",
         "Le Miren de Harfang lui déconseille de faire confiance à la Protectrice."
       ]
+    },
+    {
+      "titre": "Roshen Buru : Les quatre clans",
+      "date": "Philippa + Jane + Harfang",
+      "resume": "• Après la chute de Carnage, le groupe soigne les blessés : Harfang ressuscite Doryen Kaben, père de la mariée, et Jane soigne Ink.\n• Harfang s'adresse à la Gardienne. Elle lui répond que sa vie ne valait pas grand-chose avant qu'il décide d'agir lui-même, et qu'il lui revient désormais de prendre son destin en main.\n• Jane lui demande si elle connaît le parchemin PSA-84. C'est un vieux parchemin que son peuple étudie depuis des centaines d'années, et le groupe ferait mieux d'interroger Gran Brijit.\n• Le groupe se repose à l'auberge. Philippa fait un détour par le quartier des plaisirs, où elle rencontre Lisha, discrètement suivie par Olyssane. Les deux femmes se retrouvent le lendemain matin. Harfang médite pendant la nuit.\n• Le groupe décide de rencontrer les quatre clans, Kovacz, Anadori, Tsuren et Urameï, au deuxième étage de la ville. Pour descendre de la tour, tout le monde saute dans le vide et Jane lance Chute de plume sur le groupe.\n• Caspian Anadori, arrogant jusqu'à l'absurde, repère aussitôt la lame de Jane et défie le groupe en duel : si le groupe gagne, il garde les lames ; s'il perd, Caspian prend une de leurs épées pour l'offrir à son mari. Il frappe très fort. Le duel s'arrête sur un match nul, Caspian jugeant qu'on a assez combattu. Il respecte leur puissance : les Anadori leur devront un service.\n• Brodek Kovacz, vieil homme sénile et désargenté, affirme que son fils Darrek est parti à Azuren Kai il y a quatre jours, ce que le groupe sait faux puisqu'il l'a tué. Il plaide pour son garçon, un bon garçon parfois un peu perdu, son fils unique et son successeur : sans lui, le clan Kovacz disparaîtra.\n• Philippa rédige un acte de vente de la garçonnière de Darrek pour 500 pièces d'or : le groupe en est officiellement propriétaire et la garde comme point de chute.\n• Brodek leur offre des gâteaux. Les joueurs évoquent déjà des pistes pour le clan, par exemple un faux mariage entre Vespera et un Kovacz pour en reprendre la direction. Rien n'est décidé.\n• Ankou Urameï peut les aider à descendre à Dis, où s'est enfui Absalom, à condition de signer un contrat. Après hésitation, le groupe signe : Ankou fournit le passage et les informations nécessaires pour atteindre les Enfers, à condition de suivre ses instructions à la perfection, et le groupe lui devra un service.\n• Ankou ajoute qu'Argonath se cache quelque part à Minauros. Le groupe lui demande une carte des Enfers, qu'il n'a pas.\n• Itinéraire : gagner Azuren Kai, traverser la mer via le Balam Kaal jusqu'à Uruzal, remonter le Nahur jusqu'à Tzakar, au pied des monts Kar-Balam, puis ouvrir le temple du Visage de l'Aigle, qui offrira un trou de souris vers Minauros.\n• Ankou réclame aussi le Codex des Mirenaï. Avant de le lui rendre, le groupe lui demande le Miren de la sœur de Harfang. Ankou ouvre le livre : Rysei porte un Miren Hikari, un tout petit Miren animal en forme de serpent.\n• Pour Harfang, c'est une révélation : toute la ville, et la mythologie de sa famille, reposent sur une sœur dotée d'un puissant Miren Tenrai. Il s'apprête à la rencontrer.",
+      "liens": [
+        {
+          "id": "roshen-buru"
+        },
+        {
+          "id": "anaru-miren-buru"
+        },
+        {
+          "id": "caspian-anadori"
+        },
+        {
+          "id": "brodek-kovacz"
+        },
+        {
+          "id": "ankou-uramei"
+        },
+        {
+          "id": "rysei-tsuren"
+        },
+        {
+          "id": "psa-87"
+        }
+      ]
     }
   ]
 }

@@ -1846,7 +1846,8 @@
     "connu": [
       "De la poussière grise s'accumule en petits tas sous les trous des murs.",
       "Le groupe affronte Darrek à l'intérieur et le tue.",
-      "Ayano Kaben est retrouvée attachée à la rambarde de la mezzanine, bâillonnée."
+      "Ayano Kaben est retrouvée attachée à la rambarde de la mezzanine, bâillonnée.",
+      "Philippa rédige un acte de vente de la garçonnière pour 500 pièces d'or : le groupe en est officiellement propriétaire et s'en sert de point de chute."
     ],
     "histoire": [],
     "relations": [
@@ -1904,7 +1905,8 @@
     "resume": "Siège des Urameï, tenu par Ankou.",
     "connu": [
       "Ankou y reçoit assis, Sabaké à sa gauche et Nyssra à sa droite.",
-      "Le groupe y rencontre Ankou Urameï. Il envoie le groupe vers Yureï pour retrouver Tobiya, puis lui indique la phalène et le registre des Mirenaï à la magistrature."
+      "Le groupe y rencontre Ankou Urameï. Il envoie le groupe vers Yureï pour retrouver Tobiya, puis lui indique la phalène et le registre des Mirenaï à la magistrature.",
+      "Le groupe y signe un contrat avec Ankou pour atteindre les Enfers et lui rend le Codex des Mirenaï."
     ],
     "carte": "palais",
     "chapeau": "La maison Urameï ne ressemble pas à ce qu'on imagine d'une maison de contrebandiers. Elle est propre, silencieuse, sans personne à l'entrée. On traverse deux pièces vides avant la troisième, où Ankou est assis, sans table ni bureau. Il fait sombre, et pourtant il n'y a pas d'ombres.",
@@ -1988,7 +1990,7 @@
     "connu": [
       "Le clan Tsuren est celui de Harfang. Il achète le papier noble de deuxième catégorie, comme les Anadori et les Kovacz.",
       "Havoc Tsuren, son père, est un Grand-Duc respecté.",
-      "Rysei Tsuren, sa sœur, a reçu un Tenrai lors du Tenraku.",
+      "Rysei Tsuren, sa sœur, passait pour porteuse d'un Tenrai lors du Tenraku. Son Miren est en réalité un Hikari, un petit serpent.",
       "La famille ignore que Harfang est espion.",
       "Harfang n'a pas rendu visite à sa famille pendant l'enquête du mariage."
     ],
@@ -2047,12 +2049,12 @@
     "id": "rysei-tsuren",
     "type": "pnj",
     "nom": "Rysei Tsuren",
-    "titre": "Sœur de Harfang, porteuse d'un Tenrai",
+    "titre": "Sœur de Harfang, porteuse d'un Miren Hikari",
     "parent": "clan-tsuren",
     "statut": "vivant",
-    "resume": "Sœur de Harfang, puissante et sûre d'elle.",
+    "resume": "Sœur de Harfang, sûre d'elle, que la ville croyait Tenrai alors que son Miren est un Hikari.",
     "connu": [
-      "Elle a reçu un Tenrai lors du Tenraku, preuve que le sang des Tsuren portait encore quelque chose de grand.",
+      "Toute la ville, sa famille comprise, la croyait porteuse d'un Tenrai lors du Tenraku, preuve que le sang des Tsuren portait encore quelque chose de grand. Le registre des Mirenaï, ouvert par Ankou, dit autre chose : son Miren est un Hikari, un tout petit Miren animal en forme de serpent.",
       "Elle parle peu aux gens qui ne sont pas à sa hauteur, et peu à Harfang.",
       "Elle s'entraîne seule à l'Académie Tenraku deux ou trois fois par semaine.",
       "Elle reçoit en tenue d'entraînement, la tête haute, après avoir fait attendre Harfang juste assez. Elle salue les deux femmes d'un mouvement de menton et s'assoit sans y être invitée.",
@@ -2078,22 +2080,6 @@
       }
     ],
     "img": "img/pnj/rysei-tsuren.webp",
-    "formes": [
-      {
-        "img": "img/pnj/rysei-tsuren.webp",
-        "label": "Normal",
-        "lieux": [],
-        "teinte": "#752519"
-      },
-      {
-        "img": "img/pnj/rysei-tsuren-miren.webp",
-        "label": "Avec son Miren",
-        "lieux": [
-          "temple-du-tenraku"
-        ],
-        "teinte": "#196975"
-      }
-    ],
     "attitude": "neutre",
     "teinte": "#752519"
   },
@@ -2144,7 +2130,9 @@
       "Darrek Kovacz, fils du clan, a tué des prostituées de la ville pendant sept mois, atrocement d'après les rapports d'enquête.",
       "Son père, Brodek, a écrit au magistrat pour qu'il n'accuse pas son fils à tort et en réfère à la Gardienne, dans l'espoir de sa protection.",
       "Le groupe a traqué Darrek et l'a tué dans une garçonnière de la ville basse.",
-      "Les Kovacz n'auront aucune répercussion officielle."
+      "Les Kovacz n'auront aucune répercussion officielle.",
+      "Brodek est vieux et désargenté, et Darrek était son fils unique et son successeur : sans lui, le clan Kovacz disparaîtra.",
+      "Le groupe est officiellement propriétaire de la garçonnière de Darrek, achetée 500 pièces d'or."
     ]
   },
   {
@@ -2231,7 +2219,10 @@
       "Sa lettre au magistrat a suffi à clore l'enquête, au prix de la mort de plusieurs innocents.",
       "Le domaine borde le quartier noble. Les jardins sont mal tenus, le portail est ouvert, la moitié des lampes sont éteintes et des traces claires marquent les murs là où des objets étaient accrochés. Un domestique âgé, Vosko, reçoit en s'excusant.",
       "Il met un long moment à se lever, puis y renonce. Il croit sincèrement que Darrek est parti à Azuren Kai il y a quatre jours, et propose de faire visiter le domaine.",
-      "Il nie que son fils soit accro à la vésine, et rejette les rumeurs sur les filles disparues."
+      "Il nie que son fils soit accro à la vésine, et rejette les rumeurs sur les filles disparues.",
+      "Il est vieux, diminué et sans argent.",
+      "Revu après la mort de Darrek, qu'il ignore, il défend son fils : c'est un bon garçon, parfois un peu perdu, son fils unique et son successeur. Sans lui, le clan Kovacz disparaîtra.",
+      "Philippa rédige un acte de vente de la garçonnière de Darrek pour 500 pièces d'or : le groupe en devient officiellement propriétaire. Brodek leur offre des gâteaux."
     ],
     "relations": [
       {
@@ -2369,7 +2360,8 @@
       "Le groupe a combattu et tué Kirin, un membre du clan, à Azuren Kai.",
       "Caspian, le chef du clan, a commandé deux armes à Tessei Kanaë pour 50 000 pièces d'or.",
       "Le groupe les a volées avant la livraison et a fait accuser Oren Sidaï, un vendeur louche.",
-      "Oren a été tué par les Anadori dès le lendemain."
+      "Oren a été tué par les Anadori dès le lendemain.",
+      "Caspian défie le groupe en duel pour les lames. Le combat s'achève sur un match nul, et le clan leur doit désormais un service."
     ]
   },
   {
@@ -2383,7 +2375,8 @@
       "Ankou Urameï, son chef, est un démon du cercle de Minauros, le troisième des Enfers.",
       "Ses deux femmes, Sabaké et Nyssra, semblent aussi être des démons. Le groupe les a vues en rencontrant Ankou à sa maison.",
       "Le clan tient la ville basse et fait commerce de vésine, d'âmes et de contrats.",
-      "Ankou aide le groupe pendant l'affaire du mariage Sokabeï-Kaben."
+      "Ankou aide le groupe pendant l'affaire du mariage Sokabeï-Kaben.",
+      "Le groupe signe un contrat avec Ankou : le clan fournit le passage vers les Enfers, et le groupe lui doit un service."
     ],
     "histoire": []
   },
@@ -2411,7 +2404,11 @@
       "Le groupe les lui rapporte. Philippa identifie la pièce comme une pièce d'âme, la monnaie des Enfers.",
       "Le groupe lui apprend que la Protectrice a un pacte avec Levistus et que Balamor tente de prendre possession de citoyens. Il ne réagit à aucune des deux informations.",
       "Le groupe lui parle de son plan de renverser la Gardienne. Il est satisfait de l'échange.",
-      "Il fait servir le thé avant qu'on ait dit un mot, même le lendemain de la chute du Temple."
+      "Il fait servir le thé avant qu'on ait dit un mot, même le lendemain de la chute du Temple.",
+      "Il accepte d'aider le groupe à descendre jusqu'à Dis, où s'est enfui Absalom, à condition de signer un contrat. Après hésitation, le groupe signe : Ankou fournit le passage et les informations nécessaires pour atteindre les Enfers, à condition qu'on suive ses instructions à la perfection, et le groupe lui doit un service.",
+      "Il ajoute qu'Argonath se cache quelque part à Minauros. Le groupe lui demande une carte des Enfers, qu'il n'a pas.",
+      "Itinéraire à suivre : gagner Azuren Kai, traverser la mer via le Balam Kaal jusqu'à Uruzal, remonter le Nahur jusqu'à Tzakar, au pied des monts Kar-Balam, puis ouvrir le temple du Visage de l'Aigle, qui offrira un trou de souris vers Minauros.",
+      "Il réclame le Codex des Mirenaï. Le groupe le lui rend, après lui avoir demandé le Miren de la sœur de Harfang : en ouvrant le livre, Ankou révèle que Rysei porte un Miren Hikari, un tout petit Miren animal en forme de serpent."
     ],
     "histoire": [],
     "relations": [
@@ -2661,7 +2658,8 @@
       "Elle intervient de sa propre initiative après le sauvetage d'Ayano. Par la voix de Neryn Yosa, elle présente les excuses officielles de la ville aux deux familles et offre le Temple du Tenraku pour bénir l'union.",
       "Le groupe la voit pour la première fois au sommet du Temple du Tenraku, quand Absalom en détruit le sommet. Elle fait apparaître des lianes pour empêcher son effondrement total, puis retient le toit avec Gran Brijit pour protéger les gens du temple et ceux d'en bas.",
       "Dans les ruines du Temple, elle exige le parchemin : « Il appartient à notre divinité et à notre peuple. » Gran Brijit le réclame à son tour. Anaru la traite de bête immonde, mais recule devant ses menaces et la laisse reprendre le parchemin. Elle contre le sort de Harfang. Face à Gran Brijit, elle ouvre son Miren, avatar de Mélora, et lâche l'Aspect de la Mort.",
-      "Quand Carnage apparaît, elle se détourne de Gran Brijit et ne protège plus que son peuple. Carnage tombe, et elle se tourne vers Harfang, à ses pieds, pour prononcer ses premiers mots."
+      "Quand Carnage apparaît, elle se détourne de Gran Brijit et ne protège plus que son peuple. Carnage tombe, et elle s'adresse à Harfang, à ses pieds : sa vie ne valait pas grand-chose avant qu'il décide d'agir lui-même, et c'est désormais à lui de prendre son destin en main.",
+      "Jane lui demande si elle connaît le parchemin PSA-84. Elle répond que son peuple l'étudie depuis des centaines d'années, et que le groupe ferait mieux d'interroger Gran Brijit."
     ],
     "histoire": [],
     "relations": [
@@ -3462,7 +3460,8 @@
     "parent": "roshen-buru",
     "resume": "Domaine d'un clan en déclin.",
     "connu": [
-      "Le groupe se présente au domaine pendant l'enquête sur les lettres de menace et les filles disparues. Un vieux domestique essoufflé lui ouvre et s'excuse sans qu'on lui demande rien."
+      "Le groupe se présente au domaine pendant l'enquête sur les lettres de menace et les filles disparues. Un vieux domestique essoufflé lui ouvre et s'excuse sans qu'on lui demande rien.",
+      "Brodek y reçoit de nouveau le groupe après la mort de Darrek, qu'il ignore, et lui offre des gâteaux."
     ],
     "carte": "palais",
     "zoom": 0.12,
@@ -3486,7 +3485,9 @@
     "titre": "Quartier noble",
     "parent": "roshen-buru",
     "resume": "Pièce où Caspian Anadori reçoit ses visiteurs.",
-    "connu": [],
+    "connu": [
+      "Caspian y défie le groupe en duel pour la lame de Jane. Le combat s'arrête sur un match nul."
+    ],
     "carte": "palais",
     "zoom": 0.12,
     "chapeau": "On les fait attendre vingt minutes dans un vestibule où il n'y a rien à regarder. Le salon est au fond, plus sombre que le reste de la maison, les volets fermés en plein jour. La fumée stagne à mi-hauteur et sent le tabac lourd et quelque chose de sucré. Deux chiens dorment devant la cheminée éteinte sans se lever.",
@@ -3516,7 +3517,9 @@
       "Il jure qu'un Anadori n'épouserait jamais en dessous de son rang, donc n'aurait aucun motif.",
       "Il ne nomme jamais Darrek Kovacz.",
       "Il charge Rysei Tsuren sans preuve et avoue le faire « pour nuire », sans chercher à rendre service.",
-      "Il propose un pari sur les épées commandées au clan : survivre une minute pour les emporter. En cas d'échec, il prend une arme du groupe pour l'offrir à son mari."
+      "Il remarque aussitôt la lame que porte Jane et défie le groupe en duel : si le groupe gagne, il garde les lames ; s'il perd, Caspian prend une de leurs épées pour l'offrir à son mari.",
+      "Il frappe très fort. Le duel s'arrête sur un match nul : Caspian juge qu'on a assez combattu et remercie le groupe.",
+      "Il respecte leur puissance : les Anadori leur devront un service dans le futur."
     ],
     "relations": [
       {
@@ -3672,7 +3675,8 @@
       "Son clan doit quelque chose aux Urameï, dettes de jeu. Leur présence au mariage l'humilie, sans qu'il puisse rien y faire.",
       "À la première cérémonie, pendant le discours, il humilie poliment Konya devant tous et remercie la famille Sokabeï d'être venue : « Chez nous, mais vous m'avez compris. »",
       "Après l'enlèvement, il répète à Konya, sans élever la voix : « Je ne vous accuse de rien. Mais je vous ai confié ma fille il y a trois heures. »",
-      "Après le sauvetage d'Ayano, il sert lui-même les Sokabeï, ce qu'il n'aurait jamais fait avant."
+      "Après le sauvetage d'Ayano, il sert lui-même les Sokabeï, ce qu'il n'aurait jamais fait avant.",
+      "Harfang le ressuscite après le combat contre Carnage."
     ],
     "histoire": [],
     "citation": {
@@ -4580,12 +4584,15 @@
     "resume": "Parchemin conservé derrière la jarre Miren, au Temple du Tenraku.",
     "alias": [
       "PSA-87",
-      "PSA 87"
+      "PSA 87",
+      "PSA-84",
+      "PSA 84"
     ],
     "connu": [
       "Absalom l'a lu pendant la cérémonie.",
       "Anaru affirme qu'il appartient à sa divinité et à son peuple. Gran Brijit répond qu'il n'appartient pas à leur histoire.",
-      "Gran Brijit l'obtient, Jane le lui remet : la Gardienne recule devant les menaces d'une divinité et contre le sort de dissipation de Harfang."
+      "Gran Brijit l'obtient, Jane le lui remet : la Gardienne recule devant les menaces d'une divinité et contre le sort de dissipation de Harfang.",
+      "Interrogée par Jane, la Gardienne dit que son peuple l'étudie depuis des centaines d'années et renvoie le groupe vers Gran Brijit."
     ]
   },
   {

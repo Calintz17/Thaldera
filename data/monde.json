@@ -287,7 +287,7 @@
     "connu": [
       "Les rangs Hikari, Seiran et Tenrai dépendent de la capacité du guerrier au moment du rituel.",
       "Un Miren ne peut être ni volé ni effacé. Le révéler relève de la pudeur sociale, comme se mettre torse nu.",
-      "Le Miren de Harfang est Stryge, un hibou. Celui de Rysei Tsuren est un Tenrai. Celui de Ginko Noshi-Buru est un djinn. Celui de la Gardienne est un avatar de Mélora.",
+      "Le Miren de Harfang est Stryge, un hibou. Celui de Rysei Tsuren est un Hikari, un petit Miren animal en forme de serpent, alors que la ville la croyait Tenrai. Celui de Ginko Noshi-Buru est un djinn. Celui de la Gardienne est un avatar de Mélora.",
       "Le Temple du Tenraku, au sommet du Pillier de Roshen Buru, gardait la Jarre Miren scellée.",
       "Absalom a brisé la Jarre Miren pendant la seconde cérémonie de mariage, puis a détruit une partie du temple d'un cri de rage.",
       "Vassago voulait détourner le rituel pour s'élever au rang de dieu."
@@ -425,7 +425,10 @@
       "À Roshen Buru, il enquête sur les lettres de menace du mariage Sokabeï-Kaben, sur ordre de la Protectrice, puis retrouve et tue Darrek Kovacz avec ses compagnes.",
       "Il lit le journal de la Protectrice et apprend son pacte avec Levistus, ainsi que le projet d'alliance de la Gardienne avec Eryndel d'Altéra.",
       "Il est présent au Temple du Tenraku lors de la seconde cérémonie, face à Absalom, puis face à Carnage.",
-      "À Roshen Buru, il va rendre son rapport au Magistrat, qui se fâche de ne pas recevoir quarante pages. Harfang est agacé et ne veut plus être diplomate."
+      "À Roshen Buru, il va rendre son rapport au Magistrat, qui se fâche de ne pas recevoir quarante pages. Harfang est agacé et ne veut plus être diplomate.",
+      "Après Carnage, il ressuscite Doryen Kaben. La Gardienne lui dit que sa vie ne valait pas grand-chose avant qu'il décide d'agir lui-même, et qu'il lui revient de prendre son destin en main.",
+      "Il médite pendant la nuit, puis accompagne le groupe chez les clans du deuxième étage de la ville.",
+      "Chez Ankou, il apprend que sa sœur Rysei porte un Miren Hikari, un tout petit serpent, alors que toute la ville et sa famille la croyaient Tenrai. Il s'apprête à la rencontrer."
     ],
     "relations": [
       {
@@ -506,7 +509,9 @@
       "Avant Roshen Buru, au feu de camp dans la forêt d'Azuren, Gran Brijit ouvre un portail pour Nolbrim, qui attire Jane dans son laboratoire. Il a percé le Voile pendant son coma. Il l'attaque sur une table d'opération. Gran Brijit arrive avec Bourpif, qu'elle tue aussitôt, aspire son âme et la tend à Nolbrim, qui arrache l'exosquelette (et le dos) de Jane.",
       "Elle se réveille avec un gant rouge de cristaux sur la main et change de sous-classe : Arcane Trickster.",
       "À Roshen Buru, elle prend part à l'enquête du mariage et à la chute de Darrek Kovacz. Chez la Protectrice, elle fouille les papiers avec Philippa.",
-      "Jane remet à Vespera la Couronne de Corail Noir au camp de Port Doëlan et négocie 1 % des ventes."
+      "Jane remet à Vespera la Couronne de Corail Noir au camp de Port Doëlan et négocie 1 % des ventes.",
+      "Après Carnage, elle soigne Ink, puis demande à la Gardienne si elle connaît le parchemin PSA-84. Pour descendre de la tour, elle lance Chute de plume sur tout le groupe.",
+      "Caspian Anadori remarque sa lame et défie le groupe en duel, qui s'arrête sur un match nul."
     ],
     "relations": [
       {
@@ -595,7 +600,9 @@
       "Elle se réveille en prison, accusée du meurtre de l'ambassadeur Otoba, et aide à démasquer le général Calvinus Ferox.",
       "À Azuren Kai puis à Roshen Buru, elle aide à retrouver Darrek Kovacz, vend Requiem à Oren Sidaï et fouille les papiers de la Protectrice.",
       "Elle ouvre une téléportation à la craie pour défendre la tour d'Eamonn contre le Tribunal de Chair, puis est envoyée chez Vespera.",
-      "Au Temple du Tenraku, elle affronte Absalom puis Carnage."
+      "Au Temple du Tenraku, elle affronte Absalom puis Carnage.",
+      "Après Carnage, elle passe la soirée au quartier des plaisirs, où elle rencontre Lisha, discrètement suivie par Olyssane.",
+      "Elle rédige l'acte de vente de la garçonnière de Darrek Kovacz pour 500 pièces d'or : le groupe en est officiellement propriétaire."
     ],
     "relations": [
       {
