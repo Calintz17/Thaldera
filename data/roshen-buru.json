@@ -1990,7 +1990,7 @@
     "connu": [
       "Le clan Tsuren est celui de Harfang. Il achète le papier noble de deuxième catégorie, comme les Anadori et les Kovacz.",
       "Havoc Tsuren, son père, est un Grand-Duc respecté.",
-      "Rysei Tsuren, sa sœur, passait pour porteuse d'un Tenrai lors du Tenraku. Son Miren est en réalité un Hikari, un petit serpent.",
+      "Rysei Tsuren, sa sœur, passe pour porteuse d'un Tenrai, mais le registre des Mirenaï indique un Hikari. Les deux versions ne concordent pas.",
       "La famille ignore que Harfang est espion.",
       "Harfang n'a pas rendu visite à sa famille pendant l'enquête du mariage."
     ],
@@ -2049,12 +2049,12 @@
     "id": "rysei-tsuren",
     "type": "pnj",
     "nom": "Rysei Tsuren",
-    "titre": "Sœur de Harfang, porteuse d'un Miren Hikari",
+    "titre": "Sœur de Harfang, que la légende dit porteuse d'un Tenrai",
     "parent": "clan-tsuren",
     "statut": "vivant",
-    "resume": "Sœur de Harfang, sûre d'elle, que la ville croyait Tenrai alors que son Miren est un Hikari.",
+    "resume": "Sœur de Harfang, sûre d'elle, dont le Miren fait question.",
     "connu": [
-      "Toute la ville, sa famille comprise, la croyait porteuse d'un Tenrai lors du Tenraku, preuve que le sang des Tsuren portait encore quelque chose de grand. Le registre des Mirenaï, ouvert par Ankou, dit autre chose : son Miren est un Hikari, un tout petit Miren animal en forme de serpent.",
+      "La légende des Tsuren, que la ville répète, la dit porteuse d'un Tenrai lors du Tenraku, preuve que le sang des Tsuren portait encore quelque chose de grand. Le registre des Mirenaï, ouvert par Ankou, indique pourtant un Miren Hikari, un petit Miren animal en forme de serpent. Les deux versions ne concordent pas.",
       "Elle parle peu aux gens qui ne sont pas à sa hauteur, et peu à Harfang.",
       "Elle s'entraîne seule à l'Académie Tenraku deux ou trois fois par semaine.",
       "Elle reçoit en tenue d'entraînement, la tête haute, après avoir fait attendre Harfang juste assez. Elle salue les deux femmes d'un mouvement de menton et s'assoit sans y être invitée.",
@@ -2080,6 +2080,22 @@
       }
     ],
     "img": "img/pnj/rysei-tsuren.webp",
+    "formes": [
+      {
+        "img": "img/pnj/rysei-tsuren.webp",
+        "label": "Normal",
+        "lieux": [],
+        "teinte": "#752519"
+      },
+      {
+        "img": "img/pnj/rysei-tsuren-miren.webp",
+        "label": "Avec son Miren",
+        "lieux": [
+          "temple-du-tenraku"
+        ],
+        "teinte": "#196975"
+      }
+    ],
     "attitude": "neutre",
     "teinte": "#752519"
   },
@@ -2408,7 +2424,8 @@
       "Il accepte d'aider le groupe à descendre jusqu'à Dis, où s'est enfui Absalom, à condition de signer un contrat. Après hésitation, le groupe signe : Ankou fournit le passage et les informations nécessaires pour atteindre les Enfers, à condition qu'on suive ses instructions à la perfection, et le groupe lui doit un service.",
       "Il ajoute qu'Argonath se cache quelque part à Minauros. Le groupe lui demande une carte des Enfers, qu'il n'a pas.",
       "Itinéraire à suivre : gagner Azuren Kai, traverser la mer via le Balam Kaal jusqu'à Uruzal, remonter le Nahur jusqu'à Tzakar, au pied des monts Kar-Balam, puis ouvrir le temple du Visage de l'Aigle, qui offrira un trou de souris vers Minauros.",
-      "Il réclame le Codex des Mirenaï. Le groupe le lui rend, après lui avoir demandé le Miren de la sœur de Harfang : en ouvrant le livre, Ankou révèle que Rysei porte un Miren Hikari, un tout petit Miren animal en forme de serpent."
+      "Il réclame le Codex des Mirenaï. Le groupe le lui rend, après lui avoir demandé le Miren de la sœur de Harfang : Ankou ouvre le livre, et le registre indique que Rysei a un Miren Hikari, un petit Miren animal en forme de serpent.",
+      "Le contrat, le Pacte du Crépuscule Patient, le désigne comme Créancier : il choisira le service dans les douze mois suivant la signature. Il ne peut pas commander de porter la main contre un être cher ni de trahir l'un des leurs, et ne garantit pas leur survie."
     ],
     "histoire": [],
     "relations": [
@@ -5404,5 +5421,26 @@
     "histoire": [],
     "img": "img/pnj/jarre-miren.webp",
     "teinte": "#3a5a5a"
+  },
+  {
+    "id": "balam-kaal",
+    "type": "sujet",
+    "nom": "Le Balam Kaal",
+    "titre": "La baleine morte",
+    "parent": "azuren-kai",
+    "resume": "Navire rare qui relie Balamor à Azuren Kai, dont personne ne connaît le capitaine.",
+    "alias": [
+      "Balam Kaal",
+      "Balamkal",
+      "La baleine morte",
+      "baleine morte"
+    ],
+    "connu": [
+      "Chez Rokka, au Cuir et l'Écaille, le groupe apprend qu'un navire nommé le Balam Kaal est attendu sous peu à Azuren Kai, sans plus de détails.",
+      "Il vient à Azuren Kai tous les deux mois et fait l'aller-retour entre Balamor et Azuren Kai, ce que très peu de navires peuvent faire.",
+      "On ignore l'identité de son capitaine. Les marins en font des légendes et le surnomment la baleine morte.",
+      "Harfang en a entendu parler, mais ne l'a jamais vu. Le groupe ignore pourquoi on l'appelle ainsi.",
+      "Ankou Urameï indique au groupe de traverser via le Balam Kaal jusqu'à Uruzal, première étape vers Tzakar et les Enfers."
+    ]
   }
 ]

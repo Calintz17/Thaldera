@@ -12,8 +12,9 @@ const ids = new Set();
 assert.equal(docs[0].id, 'vesper-agent', 'First documented prop must follow the Vesper chapter');
 assert.deepEqual(docs.map(d=>d.ordre), docs.map((d,i)=>i+1), 'Document order must be chronological and stable');
 const roshen = docs.filter(d=>d.region==='Roshen Buru');
-assert.equal(roshen.at(-1).id,'roshen-parchemin-psa84','PSA-84 belongs at the end of Roshen Buru');
-assert.equal(roshen.at(-2).id,'roshen-lettre-brodek','Brodek letter precedes PSA-84');
+assert.equal(roshen.at(-1).id,'roshen-contrat-infernal','The infernal contract closes Roshen Buru');
+assert.equal(roshen.at(-2).id,'roshen-parchemin-psa84','PSA-84 precedes the infernal contract');
+assert.equal(roshen.at(-3).id,'roshen-lettre-brodek','Brodek letter precedes PSA-84');
 assert.equal(roshen.findIndex(d=>d.id==='roshen-lettre-konya')+1,roshen.findIndex(d=>d.id==='roshen-menace-inconnue'),'Konya and Ayano letters belong together');
 const augustus = docs.findIndex(d=>d.id==='ile-moines-journal-augustus');
 const septim = docs.findIndex(d=>d.id==='ile-moines-journal-septim');
@@ -21,7 +22,7 @@ const berger = docs.findIndex(d=>d.id==='ile-moines-lettre-berger');
 assert.ok(augustus<septim&&septim<berger,'Monks Island documents must follow story order');
 
 const pageRefs = new Set();
-assert.equal(docs.length, 44, 'All 44 discovered document collections must be indexed');
+assert.equal(docs.length, 45, 'All 45 discovered document collections must be indexed');
 for (const d of docs) {
   assert.ok(d.id && !ids.has(d.id), 'Unique stable document ID: ' + d.id);
   ids.add(d.id);
@@ -41,7 +42,7 @@ for (const d of docs) {
     'Document preview would reveal an interpretation before reading: ' + d.id);
 }
 const props = fs.readdirSync(path.join(root, 'img/props')).filter(p=>p.endsWith('.webp'));
-assert.equal(props.length, 57, 'The repository contains 57 source pages');
+assert.equal(props.length, 58, 'The repository contains 58 source pages');
 assert.equal(pageRefs.size, props.length, 'Every source page should appear exactly once');
 const multi = docs.filter(d=>d.pages.length>1);
 assert.ok(multi.length>=4, 'Multipage documents must remain intact');
@@ -58,4 +59,4 @@ assert.ok(js.includes("DOC_LINKS[e.id]"),'Narrative hyperlinks to documents miss
 assert.ok(js.includes("docPage(p, d, i)"),'Stacked multipage reader missing');
 assert.ok(!js.includes("'<span class=\"doc-kicker\">Archives du groupe</span>'"),'Redundant archive header must stay removed');
 assert.ok(css.includes('overflow-x:hidden')&&css.includes('width:100%'),'Responsive vertical-only reader constraints missing');
-console.log('Documents OK: 44 filesets, 57 readable sources, 0 broken links, 4+ multipage sections.');
+console.log('Documents OK: 45 filesets, 58 readable sources, 0 broken links, 4+ multipage sections.');

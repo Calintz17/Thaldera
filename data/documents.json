@@ -937,6 +937,33 @@
       ],
       "confirmation": "à-confirmer",
       "ordre": 44
+    },
+    {
+      "id": "roshen-contrat-infernal",
+      "titre": "Contrat infernal : Ankou Urameï",
+      "region": "Roshen Buru",
+      "type": "Contrat",
+      "decouverte": "Signé par le groupe chez Ankou Urameï, dans la maison Urameï.",
+      "description": "Contrat infernal signé entre Ankou Urameï et les joueurs pour leur promettre un passage vers les enfers.",
+      "pages": [
+        "img/props/roshen-buru-contrat-donne-aux-joueurs-par-uramei-pour-leur-assurer-le-passage-vers-les-enfers.webp"
+      ],
+      "liens": [
+        {
+          "id": "maison-uramei",
+          "texte": "Signé par le groupe chez Ankou Urameï."
+        },
+        {
+          "id": "ankou-uramei",
+          "texte": "Signé par le groupe chez Ankou Urameï."
+        },
+        {
+          "id": "clan-uramei",
+          "texte": "Signé par le groupe chez Ankou Urameï."
+        }
+      ],
+      "confirmation": "lieu-nommé",
+      "ordre": 45
     }
   ]
 }
