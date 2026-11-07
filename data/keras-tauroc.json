@@ -6291,20 +6291,15 @@
     "nom": "Uruzal",
     "titre": "Porte de la jungle de Balamor",
     "parent": "balamor",
-    "resume": "Ville de la côte de Balamor.",
+    "resume": "Port de la côte de Balamor, premier point d'accostage sur l'archipel.",
     "connu": [
-      "Le seul passage connu vers l'intérieur de la jungle de Balamor."
+      "Le seul passage connu vers l'intérieur de la jungle de Balamor.",
+      "Le Balam Kaal y dépose les passagers. De là, on remonte le fleuve Nahur vers Tzakar."
     ],
-    "galerie": [
-      {
-        "img": "img/paysages/uruzal/arrivee.webp",
-        "legende": "Uruzal : arrivée"
-      },
-      {
-        "img": "img/paysages/uruzal/rue.webp",
-        "legende": "Uruzal : rue"
-      }
-    ]
+    "pos": {
+      "x": 0.399,
+      "y": 0.273
+    }
   },
   {
     "id": "tzakar",
@@ -6312,20 +6307,16 @@
     "nom": "Tzakar",
     "titre": "Ville de la lagune",
     "parent": "balamor",
-    "resume": "Ville de Balamor, en amont d'Uruzal.",
+    "resume": "Ville de Balamor, au pied des monts Kar-Balam, en amont d'Uruzal.",
     "connu": [
-      "Elle se trouve sur la route de Tzalanar."
+      "Elle se trouve sur la route de Tzalanar.",
+      "On l'atteint depuis Uruzal en remontant le fleuve Nahur.",
+      "D'après Ankou Urameï, il faut y ouvrir le temple du Visage de l'Aigle pour trouver le passage discret vers Minauros."
     ],
-    "galerie": [
-      {
-        "img": "img/paysages/tzakar/arrivee.webp",
-        "legende": "Tzakar : arrivée"
-      },
-      {
-        "img": "img/paysages/tzakar/rue.webp",
-        "legende": "Tzakar : rue"
-      }
-    ]
+    "pos": {
+      "x": 0.325,
+      "y": 0.292
+    }
   },
   {
     "id": "foret-d-aruzen",
