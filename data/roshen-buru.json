@@ -1842,12 +1842,12 @@
     "alias": [
       "garçonnière"
     ],
-    "resume": "Repaire de Darrek Kovacz.",
+    "resume": "Ancien repaire de Darrek Kovacz, aujourd'hui propriété du groupe.",
     "connu": [
       "De la poussière grise s'accumule en petits tas sous les trous des murs.",
       "Le groupe affronte Darrek à l'intérieur et le tue.",
       "Ayano Kaben est retrouvée attachée à la rambarde de la mezzanine, bâillonnée.",
-      "Philippa rédige un acte de vente de la garçonnière pour 500 pièces d'or : le groupe en est officiellement propriétaire et s'en sert de point de chute."
+      "Philippa rédige un acte de vente de la garçonnière pour 500 pièces d'or : elle appartient désormais au groupe, qui s'en sert de point de chute."
     ],
     "histoire": [],
     "relations": [
@@ -2676,7 +2676,8 @@
       "Le groupe la voit pour la première fois au sommet du Temple du Tenraku, quand Absalom en détruit le sommet. Elle fait apparaître des lianes pour empêcher son effondrement total, puis retient le toit avec Gran Brijit pour protéger les gens du temple et ceux d'en bas.",
       "Dans les ruines du Temple, elle exige le parchemin : « Il appartient à notre divinité et à notre peuple. » Gran Brijit le réclame à son tour. Anaru la traite de bête immonde, mais recule devant ses menaces et la laisse reprendre le parchemin. Elle contre le sort de Harfang. Face à Gran Brijit, elle ouvre son Miren, avatar de Mélora, et lâche l'Aspect de la Mort.",
       "Quand Carnage apparaît, elle se détourne de Gran Brijit et ne protège plus que son peuple. Carnage tombe, et elle s'adresse à Harfang, à ses pieds : sa vie ne valait pas grand-chose avant qu'il décide d'agir lui-même, et c'est désormais à lui de prendre son destin en main.",
-      "Jane lui demande si elle connaît le parchemin PSA-84. Elle répond que son peuple l'étudie depuis des centaines d'années, et que le groupe ferait mieux d'interroger Gran Brijit."
+      "Jane lui demande si elle connaît le parchemin PSA-84. Elle répond que son peuple l'étudie depuis des centaines d'années, et que le groupe ferait mieux d'interroger Gran Brijit.",
+      "Sur le sort de Neryn Yosa, elle reconnaît à demi-mot que « l'amour fait parfois faire des choses étranges » et hésite : elle l'enverrait loin de la ville pour un temps, à Balamor ou à Thaldera."
     ],
     "histoire": [],
     "relations": [
@@ -2747,7 +2748,8 @@
       "Pendant un point d'étape de Harfang, Philippa et Jane fouillent ses papiers et apprennent qu'elle fait espionner Harfang, connaît son ami nain et a passé un pacte avec Levistus.",
       "Elle écrit entendre une voix dans sa tête et résister de plus en plus difficilement à la tentation.",
       "Le lendemain du mariage, elle se déplace en personne chez les deux familles pour présenter les excuses de la Gardienne, et ouvre le Temple du Tenraku pour une seconde cérémonie.",
-      "Elle est mise hors d'état de nuire par l'explosion du Temple du Tenraku."
+      "Elle est mise KO par l'explosion du Temple du Tenraku.",
+      "La Gardienne reconnaît à demi-mot que « l'amour fait parfois faire des choses étranges » et hésite sur son sort : elle l'enverrait loin de la ville pour un temps, à Balamor ou à Thaldera."
     ],
     "histoire": [],
     "relations": [
@@ -5424,10 +5426,14 @@
   },
   {
     "id": "balam-kaal",
-    "type": "sujet",
+    "type": "lieu",
     "nom": "Le Balam Kaal",
     "titre": "La baleine morte",
     "parent": "azuren-kai",
+    "pos": {
+      "x": 0.505,
+      "y": 0.66
+    },
     "resume": "Navire rare qui relie Balamor à Azuren Kai, dont personne ne connaît le capitaine.",
     "alias": [
       "Balam Kaal",
