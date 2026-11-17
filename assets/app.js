@@ -4,7 +4,7 @@
 (() => {
 'use strict';
 
-const VER = '126';
+const VER = '127';
 const LEGACY_IDS = { 'bourre-piff':'bourpif', 'seravine':'solkah-barrow', 'tilda':'irna', 'cleff':'irna' };
 const EDIT = new URLSearchParams(location.search).has('edit');
 const $ = (s, r = document) => r.querySelector(s);
@@ -1478,9 +1478,8 @@ function journalMode(box, open) {
 }
 /* ---------- compte-rendus des séances en panneau latéral ---------- */
 function sessionBody(s) {
-  const seen = new Set();
-  const blk = (label, arr) => arr && arr.length ? `<div class="sx"><b>${label}</b><p>${arr.map(t => '• ' + L(t, '', seen)).join('\n')}</p></div>` : '';
-  const main = `<p>${L(s.resume || 'Résumé à rédiger.', '', seen)}</p>`;
+  const blk = (label, arr) => arr && arr.length ? `<div class="sx"><b>${label}</b><p>${arr.map(t => '• ' + L(t, '', new Set())).join('\n')}</p></div>` : '';
+  const main = `<p>${(s.resume || 'Résumé à rédiger.').split('\n').map(t => L(t, '', new Set())).join('\n')}</p>`;
   return main + blk('Boss vaincus', s.boss) + blk('Butin majeur', s.loot) + blk('Secrets découverts', s.secrets);
 }
 function initSessions() {

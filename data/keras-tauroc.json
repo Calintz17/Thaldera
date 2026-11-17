@@ -1728,7 +1728,8 @@
       "Vitiosa remet la récompense de 5 600 po et apprend au groupe qu'Absalom s'apprête à quitter la ville. Sur le chemin du port, une araignée contrôlant un passant attaque le groupe. Sur les docks, Absalom prend le groupe de court et efface un mois de sa mémoire.",
       "Le groupe se réveille en prison. L'ambassadeur Otoba a été assassiné le soir du banquet du festival, et le groupe est accusé du crime.",
       "Tarcus propose un marché. Le groupe enquête sur lui-même et remonte la piste d'Hématome jusqu'au général Calvinus Ferox, qu'il démasque. Tarcus lève les sceaux de localisation.",
-      "Le groupe fait ses adieux, rembourse Ursinus, règle ses rakh, et embarque sur le Tenrai Buru de Yorisa, en direction de Cap Cornes puis de Roshen Buru."
+      "Le groupe fait ses adieux, rembourse Ursinus, règle ses rakh, et embarque sur le Tenrai Buru de Yorisa, en direction de Cap Cornes puis de Roshen Buru.",
+      "Roshen Buru voudrait obtenir le bois-fer Xalan de Balamor, qui lui donnerait un avantage stratégique sur Keras Tauroc."
     ],
     "histoire": [],
     "galerie": [
@@ -6261,6 +6262,9 @@
     "connu": [
       "Gran Brijit prévient que les humains y sont traqués, chassés et capturés aussitôt pour être transformés en esclaves, que le marais de Minauros s'est empoisonné, et que son influence y est faible.",
       "Elle charge le groupe de descendre, de tuer Argonath, Naberoth et Absalom et de remonter en se faisant le moins remarquer possible."
+    ],
+    "alias": [
+      "Minauros"
     ]
   },
   {
@@ -7433,7 +7437,8 @@
     "resume": "Nain du chantier de Borim Brise-Montagne. Il travaille en silence.",
     "connu": [
       "Il pilote pour les joueuses le sous-marin de pyrracier, avec ses camarades nains.",
-      "Les nains distinguent l'ouvrage du commanditaire et restent à bord quoi qu'il arrive, tout au long de la traversée."
+      "Les nains distinguent l'ouvrage du commanditaire et restent à bord quoi qu'il arrive, tout au long de la traversée.",
+      "Les nains ont débarqué du sous-marin et se reposent sur la plage de Brakka, après des mois de travail."
     ],
     "img": "img/pnj/nain-du-sous-marin-dogrun.webp",
     "attitude": "positif",
@@ -7451,7 +7456,8 @@
     "resume": "Nain du chantier de Borim Brise-Montagne. Il travaille en silence.",
     "connu": [
       "Il pilote pour les joueuses le sous-marin de pyrracier, avec ses camarades nains.",
-      "Les nains distinguent l'ouvrage du commanditaire et restent à bord quoi qu'il arrive, tout au long de la traversée."
+      "Les nains distinguent l'ouvrage du commanditaire et restent à bord quoi qu'il arrive, tout au long de la traversée.",
+      "Les nains ont débarqué du sous-marin et se reposent sur la plage de Brakka, après des mois de travail."
     ],
     "img": "img/pnj/nain-du-sous-marin-thram.webp",
     "attitude": "positif",
@@ -7469,7 +7475,8 @@
     "resume": "Nain du chantier de Borim Brise-Montagne. Il travaille en silence.",
     "connu": [
       "Il pilote pour les joueuses le sous-marin de pyrracier, avec ses camarades nains.",
-      "Les nains distinguent l'ouvrage du commanditaire et restent à bord quoi qu'il arrive, tout au long de la traversée."
+      "Les nains distinguent l'ouvrage du commanditaire et restent à bord quoi qu'il arrive, tout au long de la traversée.",
+      "Les nains ont débarqué du sous-marin et se reposent sur la plage de Brakka, après des mois de travail."
     ],
     "img": "img/pnj/nain-du-sous-marin-orik.webp",
     "attitude": "positif",
@@ -10568,7 +10575,7 @@
     "titre": "Composant de la vésine, importé de Balamor",
     "parent": "balamor",
     "alias": [
-      "Yaxal",
+      "sel Yaxal",
       "sel yaxal"
     ],
     "resume": "Sel importé difficilement de Balamor, un des composants de la vésine.",
@@ -10597,8 +10604,9 @@
     "titre": "Bois de la jungle de Balamor, dur comme l'acier",
     "parent": "balamor",
     "alias": [
+      "bois-fer Xalan",
+      "bois fer Xalan",
       "bois-fer",
-      "Xalan",
       "bois fer"
     ],
     "resume": "Bois très spécifique de la jungle de Balamor, importé difficilement.",

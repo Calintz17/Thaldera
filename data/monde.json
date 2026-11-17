@@ -87,7 +87,8 @@
       "Le groupe a vu Mélora à travers la Gardienne. Des fleurs ont poussé à sa seule présence.",
       "La Gardienne a appelé Gran Brijit « Hanaré ». Gran Brijit dit que chaque création de Mélora est un cadeau que celle-ci lui envoie.",
       "Un lien de fraternité unit les dieux.",
-      "Gran Brijit est la divinité de la Mort."
+      "Gran Brijit est la divinité de la Mort.",
+      "Selon l'histoire que l'on raconte, les dieux venus des étoiles ont chassé les titans. Gran Brijit dit que c'est faux : avant eux existaient les architectes."
     ],
     "relations": [
       {
@@ -105,7 +106,8 @@
         "type": "Agissent par leurs champions",
         "ton": "neutre"
       }
-    ]
+    ],
+    "question": "Les dieux sont-ils des architectes ? D'où viennent-ils, quelle était leur technologie et pourquoi ont-ils disparu ?"
   },
   {
     "id": "champions",
@@ -135,7 +137,8 @@
     "connu": [
       "Vassago connaît le rituel du Tenraku, par lequel Roshen Buru fait descendre des Miren sur terre. Il prévoit de l'utiliser dans l'autre sens, pour s'élever lui-même au rang de dieu.",
       "Absalom et d'autres agents agissent pour son compte et collectionnent des fragments de titans.",
-      "À distance, il a pu fomenter l'attaque du Temple du Tenraku."
+      "À distance, il a pu fomenter l'attaque du Temple du Tenraku.",
+      "D'après Gran Brijit, le parchemin PSA-84, fragment d'un rituel des architectes visant à élever les hommes au rang de dieux, est déjà tombé entre ses mains."
     ],
     "relations": [
       {
@@ -224,7 +227,8 @@
       "Mélora a une championne, la Gardienne Anaru Miren-Buru.",
       "Son pouvoir fait pousser des fleurs à sa seule présence.",
       "Les cerisiers roses de Roshen Buru sont l'incarnation de son esprit.",
-      "On dit qu'elle a fait sortir la ville du sol elle-même."
+      "On dit qu'elle a fait sortir la ville du sol elle-même.",
+      "Gran Brijit appelle Harfang l'envoyé de Mélora."
     ],
     "relations": [
       {
@@ -524,7 +528,8 @@
       "Caspian Anadori remarque sa lame et défie le groupe en duel, qui s'arrête sur un match nul.",
       "Convaincante, elle pousse Gran Brijit à lui parler du PSA-84 et en copie le contenu de mémoire.",
       "Au domaine Tsuren, elle fait sauter le verrou d'une pièce fermée et emporte trois fioles ambrées.",
-      "Elle fait écrire un mot sur une bouteille d'alcool pour Olyssane, qui rougit en la recevant."
+      "Elle fait écrire un mot sur une bouteille d'alcool pour Olyssane, qui rougit en la recevant.",
+      "Elle demande à Gran Brijit le secret de Sycomore. La déesse répond que son destin a commencé au Repos des Épées et s'y terminera probablement, sans rien ajouter."
     ],
     "relations": [
       {
@@ -576,6 +581,9 @@
         "img": "img/paysages/roshen-buru/rue.webp",
         "legende": ""
       }
+    ],
+    "alias": [
+      "Jane"
     ]
   },
   {

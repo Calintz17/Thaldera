@@ -1246,7 +1246,8 @@
       "C'est le dernier point de ravitaillement avant la forêt d'Azuren et la route de Roshen Buru.",
       "Le groupe arrive par le port, juste après Cap Cornes, avec l'accusation du meurtre d'Otoba sur le dos.",
       "Il choisit de passer par la forêt d'Azuren plutôt que par Seiran Vale pour rester discret.",
-      "Au Ryokan de Noshka, il affronte Kirin Anadori et le tue dans une ruelle."
+      "Au Ryokan de Noshka, il affronte Kirin Anadori et le tue dans une ruelle.",
+      "Le groupe y attend le Balam Kaal, qui part dans trois jours après la visite chez les Tsuren."
     ],
     "histoire": [],
     "cartes": [
@@ -1520,7 +1521,8 @@
       "Au deuxième palier, Konya Sokabeï supplie Harfang de venir à son mariage du lendemain, après des lettres de menace. Le groupe rencontre Ankou Urameï, qui l'envoie vers Yureï. Celle-ci lui confie la disparition de Tobiya. Le groupe suit la piste jusqu'aux égouts, y trouve Tobiya devenu hôte des araignées de la Mère de la Toile, et Yureï le paie.",
       "Au mariage, la salle est éteinte par une nuée de phalènes et Ayano Kaben est enlevée par un Miren. Ankou identifie la phalène et envoie le groupe à la magistrature chercher le registre des Mirenaï, un collier et un parchemin. Le Miren de la Protectrice y est un phénix, celui de Darrek Kovacz une phalène.",
       "Chez la Protectrice, pendant le point d'étape de Harfang, Philippa et Jane fouillent ses papiers : elle fait espionner Harfang, elle est derrière le Tribunal de Chair et son pacte avec Levistus est confirmé.",
-      "Le lendemain, Neryn Yosa présente les excuses de la Gardienne et ouvre le Temple du Tenraku pour une seconde cérémonie. Absalom y brise la Jarre Miren, lit le parchemin et détruit le sommet du temple d'un cri. Gran Brijit réclame le parchemin et Anaru recule. Puis Carnage se forme, et le groupe le vainc."
+      "Le lendemain, Neryn Yosa présente les excuses de la Gardienne et ouvre le Temple du Tenraku pour une seconde cérémonie. Absalom y brise la Jarre Miren, lit le parchemin et détruit le sommet du temple d'un cri. Gran Brijit réclame le parchemin et Anaru recule. Puis Carnage se forme, et le groupe le vainc.",
+      "Le groupe fait refaire la garçonnière de Darrek par Ina, visite le pavillon des Diplomates, retrouve Gran Brijit au Manoir des Ligaments et affronte Rysei au domaine Tsuren."
     ],
     "histoire": [],
     "relations": [
@@ -2002,7 +2004,8 @@
       "Havoc Tsuren, son père, est un Grand-Duc respecté.",
       "Rysei Tsuren, sa sœur, passe pour porteuse d'un Tenrai, mais le registre des Mirenaï indique un Hikari. Les deux versions ne concordent pas.",
       "La famille ignore que Harfang est espion.",
-      "Harfang n'a pas rendu visite à sa famille pendant l'enquête du mariage."
+      "Harfang n'a pas rendu visite à sa famille pendant l'enquête du mariage.",
+      "Au domaine Tsuren, Rysei invoque un immense Miren Tenrai aux yeux jaunes alors que le registre dit Hikari. Jane emporte trois fioles ambrées trouvées dans une pièce fermée. Kynn invite le groupe à dîner."
     ],
     "histoire": [],
     "relations": [
@@ -2122,6 +2125,9 @@
     "question": "Le registre s'est-il trompé sur le Miren de Rysei, ou a-t-elle fait évoluer son Miren, ce qui est censé être impossible ? Les trois fioles ambrées y sont-elles pour quelque chose ?",
     "lieux": [
       "terrain-d-entrainement-tsuren"
+    ],
+    "alias": [
+      "Rysei"
     ]
   },
   {
@@ -2161,7 +2167,10 @@
     ],
     "img": "img/pnj/kynn-tsuren.webp",
     "attitude": "neutre",
-    "teinte": "#753c19"
+    "teinte": "#753c19",
+    "alias": [
+      "Kynn"
+    ]
   },
   {
     "id": "clan-kovacz",
@@ -2707,7 +2716,8 @@
       "Dans les ruines du Temple, elle exige le parchemin : « Il appartient à notre divinité et à notre peuple. » Gran Brijit le réclame à son tour. Anaru la traite de bête immonde, mais recule devant ses menaces et la laisse reprendre le parchemin. Elle contre le sort de Harfang. Face à Gran Brijit, elle ouvre son Miren, avatar de Mélora, et lâche l'Aspect de la Mort.",
       "Quand Carnage apparaît, elle se détourne de Gran Brijit et ne protège plus que son peuple. Carnage tombe, et elle s'adresse à Harfang, à ses pieds : sa vie ne valait pas grand-chose avant qu'il décide d'agir lui-même, et c'est désormais à lui de prendre son destin en main.",
       "Jane lui demande si elle connaît le parchemin PSA-84. Elle répond que son peuple l'étudie depuis des centaines d'années, et que le groupe ferait mieux d'interroger Gran Brijit.",
-      "Sur le sort de Neryn Yosa, elle reconnaît à demi-mot que « l'amour fait parfois faire des choses étranges » et hésite : elle l'enverrait loin de la ville pour un temps, à Balamor ou à Thaldera."
+      "Sur le sort de Neryn Yosa, elle reconnaît à demi-mot que « l'amour fait parfois faire des choses étranges » et hésite : elle l'enverrait loin de la ville pour un temps, à Balamor ou à Thaldera.",
+      "Gran Brijit parle de la faiblesse d'Anaru : la Gardienne n'a pas su protéger le parchemin PSA-84, que Vassago s'est approprié. Elle ajoute que le monde en paye le prix alors qu'il chante les louanges de sa bonté."
     ],
     "histoire": [],
     "relations": [
@@ -2779,7 +2789,8 @@
       "Elle écrit entendre une voix dans sa tête et résister de plus en plus difficilement à la tentation.",
       "Le lendemain du mariage, elle se déplace en personne chez les deux familles pour présenter les excuses de la Gardienne, et ouvre le Temple du Tenraku pour une seconde cérémonie.",
       "Elle est mise KO par l'explosion du Temple du Tenraku.",
-      "La Gardienne reconnaît à demi-mot que « l'amour fait parfois faire des choses étranges » et hésite sur son sort : elle l'enverrait loin de la ville pour un temps, à Balamor ou à Thaldera."
+      "La Gardienne reconnaît à demi-mot que « l'amour fait parfois faire des choses étranges » et hésite sur son sort : elle l'enverrait loin de la ville pour un temps, à Balamor ou à Thaldera.",
+      "Dans les registres du pavillon des Diplomates, le nom de Harfang et de ses compagnons apparaît jusqu'à Cap Cornes, puis plus rien jusqu'à Roshen Buru. Harfang ignore si l'espionnage s'est arrêté, si les espions de la Protectrice ont perdu leur trace ou si elle a volé ou dissimulé les rapports."
     ],
     "histoire": [],
     "relations": [
@@ -2940,7 +2951,8 @@
       "Il a été retrouvé éventré, les bras en croix, deux plumes de paon spectrales plantées dans les mains. Les Anadori l'ont tué avant Philippa."
     ],
     "alias": [
-      "Oren Shidaï"
+      "Oren Shidaï",
+      "Oren"
     ],
     "citation": {
       "texte": "Je ne sais pas d'où ça vient. On m'apporte. Je prends. On ne revient pas.",
@@ -3052,7 +3064,8 @@
       "Elle déclare vouloir renverser l'ordre établi, ouvrir les portes des enfers et mettre les plus forts sur les trônes.",
       "Elle a ouvert le Temple du Tenraku sans avoir à le forcer. En pleine seconde cérémonie, elle apparaît derrière la jarre Miren, enchaîne l'assemblée, brise la jarre, qui est vide, et prend le parchemin.",
       "En le lisant, elle comprend que son maître l'a trompée. Elle pousse un cri de tristesse, de désespoir et de rage qui détruit le sommet du temple.",
-      "Elle disparaît ensuite, vers les Enfers ou attirée par quelqu'un."
+      "Elle disparaît ensuite, vers les Enfers ou attirée par quelqu'un.",
+      "Gran Brijit charge le groupe de descendre aux Enfers pour tuer Argonath, Naberoth et Absalom, puis de remonter en se faisant le moins remarquer possible."
     ],
     "histoire": [],
     "relations": [
@@ -3247,7 +3260,8 @@
       "Après une discussion où Jane se montre particulièrement convaincante, elle raconte une partie de l'histoire du parchemin et parle des architectes. Elle refuse de dire si elle en était une, et si elle est à l'origine du rituel.",
       "Elle prévient que sa craie interdimensionnelle, dont Philippa se sert pour voyager, sera difficile à utiliser aux Enfers : elle y a peu d'influence et il ne faudra pas trop compter sur elle. Le marais de Minauros s'est empoisonné et il faut s'y préparer. Les humains y sont traqués, chassés et capturés aussitôt pour être transformés en esclaves.",
       "Leur mission est claire : descendre, tuer Argonath, Naberoth et Absalom, puis remonter en se faisant le moins remarquer possible.",
-      "Elle se dit contente que Philippa et Jane aient trouvé un compagnon aussi solide que Harfang, qu'elle appelle l'envoyé de Mélora. Harfang, lui, se méfie d'elle et en a un peu peur."
+      "Elle se dit contente que Philippa et Jane aient trouvé un compagnon aussi solide que Harfang, qu'elle appelle l'envoyé de Mélora. Harfang, lui, se méfie d'elle et en a un peu peur.",
+      "Jane demande à Gran Brijit quel est le secret de Sycomore. Elle répond que son destin a commencé au Repos des Épées et que c'est probablement là qu'il se terminera. Jane n'en apprend pas davantage."
     ],
     "histoire": [],
     "relations": [
@@ -3586,7 +3600,8 @@
       "Il charge Rysei Tsuren sans preuve et avoue le faire « pour nuire », sans chercher à rendre service.",
       "Il remarque aussitôt la lame que porte Jane et défie le groupe en duel : si le groupe gagne, il garde les lames ; s'il perd, Caspian prend une de leurs épées pour l'offrir à son mari.",
       "Il frappe très fort. Le duel s'arrête sur un match nul : Caspian juge qu'on a assez combattu et remercie le groupe.",
-      "Il respecte leur puissance : les Anadori leur devront un service dans le futur."
+      "Il respecte leur puissance : les Anadori leur devront un service dans le futur.",
+      "Il fournit au groupe des potions pour se soigner après la visite."
     ],
     "relations": [
       {
@@ -5385,6 +5400,9 @@
     "connu": [
       "Le groupe y entre en se faisant passer pour les gardes du corps de Harfang, mais la garde le refoule manu militari de la pièce des registres et des rapports de diplomatie. Harfang seul y accède.",
       "On y apprend que la plupart des informations sur Balamor concernent la contrebande, notamment du sel Yaxal et du bois-fer Xalan, et qu'Onaya, aubergiste d'Uruzal, est un point de contact."
+    ],
+    "alias": [
+      "pavillon des Diplomates"
     ]
   },
   {

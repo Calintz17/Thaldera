@@ -895,7 +895,8 @@
       "Des abominations larvaires sortent des fissures dès qu'un souffle ou un battement de cœur passe. Après le combat, une abomination obèse s'est avancée, un œil gigantesque ouvert sur son ventre.",
       "Elles sont descendues dans le repaire d'Argonath, ouvert dans la chair du sol, et l'ont vaincu.",
       "Olyssane a alors découvert les formes monstrueuses de Jane et Philippa et les a attaquées. Gran Brijit l'a arrêtée net.",
-      "Olyssane veut y replanter des arbres pour racheter son rôle dans la ruine de ce lieu. Liora fournit les plantes, Philippa finance."
+      "Olyssane veut y replanter des arbres pour racheter son rôle dans la ruine de ce lieu. Liora fournit les plantes, Philippa finance.",
+      "Gran Brijit dit que le destin de Sycomore Brise-Pavois a commencé au Repos des Épées et qu'il s'y terminera probablement."
     ],
     "histoire": [],
     "relations": [
@@ -1131,7 +1132,8 @@
       "Après le combat, Olyssane a découvert les formes monstrueuses de Jane et Philippa et les a attaquées. Gran Brijit l'a arrêtée net.",
       "Au Cœur de la corruption, il s'adresse au groupe sans détour : « Alors ? Qu'êtes-vous venus chercher ? Un pacte ? Une faveur ? Ou bien me tuer ? »",
       "« Je dois vous féliciter. Peu atteignent mon seuil en un seul morceau. Ceux qui vous ont aidés, eux, en revanche... je leur crèverai les yeux avant la tombée du jour, tous leurs yeux. »",
-      "Pendant le combat, la salle entière le sert : flux de chair qui ralentit, bras spectral qui désarme, cris des morts du Repos des Épées, fissure vers le Néant."
+      "Pendant le combat, la salle entière le sert : flux de chair qui ralentit, bras spectral qui désarme, cris des morts du Repos des Épées, fissure vers le Néant.",
+      "Gran Brijit charge le groupe de descendre aux Enfers pour tuer Argonath, Naberoth et Absalom, puis de remonter en se faisant le moins remarquer possible."
     ],
     "histoire": [],
     "relations": [
@@ -2055,7 +2057,7 @@
     "parent": "prison-port-blanc",
     "lieu": "prison-port-blanc",
     "statut": "vivant",
-    "resume": "Prisonnière du shérif Hale, aujourd'hui en cavale.",
+    "resume": "Cheffe de gang en cavale, dans la région de Vespera, dont la dette envers le groupe peut servir à aider Vespera.",
     "connu": [
       "Cheffe de gang surnommée Red, transportée dans une cage sur la charrette. Elle observe en silence, dos droit, avec une patience calme.",
       "Pendant le trajet, elle flatte les deux femmes, insinue que Doëlan veut l'éliminer, lance Charm Person et propose 2 000 po.",
@@ -2520,7 +2522,8 @@
       "Olyssane est sa Première-Capitaine.",
       "Philippa passe le duel rituel du pont de parade sous son regard.",
       "Le groupe lui demande audience à la Capitainerie. Elle écoute, amusée, puis les emmène dans ses quartiers privés. Elle répond à une intrusion par l'attaque.",
-      "Elle accorde sa protection au groupe et leur ouvre une route sûre hors de la ville avec Olyssane."
+      "Elle accorde sa protection au groupe et leur ouvre une route sûre hors de la ville avec Olyssane.",
+      "Jane demande à Gran Brijit quel est le secret de Sycomore. Elle répond que son destin a commencé au Repos des Épées et que c'est probablement là qu'il se terminera. Jane n'en apprend pas davantage."
     ],
     "histoire": [],
     "img": "img/pnj/sycomore-brise-pavois-havre-noir-sycomore-brise-pavois.webp",
@@ -3641,7 +3644,8 @@
       "Première trace : Serna entend des bruits sous le château, la nuit. Makandral perçoit une distorsion mécanique et artificielle sous le château. Les PJ apprennent qu'un sous-marin en pyrracier y est amarré.",
       "Absalom exige sa vraie mort et propose son alliance contre Spezza et Naberoth.",
       "Au château, il se bat en deux phases : d'abord avec lame-scie, mine infernale, baliste et harpon, puis, dans sa seconde forme, Ordonnateur du Blasphème, avec tentacules d'os, canon organique et tourelles embryonnaires.",
-      "Le groupe le vainc. Il est renvoyé à Dis."
+      "Le groupe le vainc. Il est renvoyé à Dis.",
+      "Gran Brijit charge le groupe de descendre aux Enfers pour tuer Argonath, Naberoth et Absalom, puis de remonter en se faisant le moins remarquer possible."
     ],
     "histoire": [],
     "img": "img/pnj/port-doe-lan-le-pe-cheur-forme-humaine.webp",
@@ -3827,7 +3831,8 @@
       }
     ],
     "alias": [
-      "Madame Vespera"
+      "Madame Vespera",
+      "Vespera"
     ],
     "galerie": [
       {
