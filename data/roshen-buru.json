@@ -1845,9 +1845,6 @@
     ],
     "resume": "Ancien repaire de Darrek Kovacz, aujourd'hui propriété du groupe.",
     "connu": [
-      "De la poussière grise s'accumule en petits tas sous les trous des murs.",
-      "Le groupe affronte Darrek à l'intérieur et le tue.",
-      "Ayano Kaben est retrouvée attachée à la rambarde de la mezzanine, bâillonnée.",
       "Philippa rédige un acte de vente de la garçonnière pour 500 pièces d'or : elle appartient désormais au groupe, qui s'en sert de point de chute.",
       "Quand le groupe en prend possession, deux corps s'y trouvent encore : celui d'une prostituée morte et celui de Darrek Kovacz.",
       "Ina et son équipe refont entièrement la garçonnière, qui est nettoyée, réparée et redécorée au goût du groupe.",
@@ -1870,11 +1867,15 @@
       "x": 0.756,
       "y": 0.575
     },
-    "chapeau": "L'adresse mène tout au fond de la ville basse, dans une rue si étroite que deux hommes ne s'y croisent pas de front. La porte donne directement sur une pièce haute de plafond, avec une mezzanine de bois. Ça sent le renfermé, la cire froide et quelque chose de sucré, écœurant, qui vient d'un brûle-parfum. Sur les murs, des trous ronds de la taille d'un poing, comme si le bois avait été mangé de l'intérieur.",
+    "chapeau": "La porte rouge s'ouvre sur une grande pièce que les ouvriers d'Ina ont rendue méconnaissable. Au centre, un bassin d'eau verte, bordé de balustres laqués et de lanternes de papier rouge, laisse filer des poissons clairs entre des rochers immergés. L'air sent le bois ciré, la pierre fraîche et le thé tiède. Un grand tapis rouge aux motifs d'or recouvre le plancher du fond, des coussins sont jetés au pied du bassin. Trois lits attendent le long du mur, un rose, un bleu-vert, un blanc, et un escalier de bois rouge monte vers l'étage. La lumière dorée des lanternes tremble sur l'eau et teinte toute la pièce d'un rouge tendre.",
     "galerie": [
       {
-        "img": "img/paysages/roshen-buru/garconniere-darrek.webp",
-        "legende": "La garçonnière de Darrek Kovacz"
+        "img": "img/paysages/roshen-buru/garconniere-exterieure.webp",
+        "legende": "La garçonnière, vue de l'extérieur"
+      },
+      {
+        "img": "img/paysages/roshen-buru/garconniere-interieur.webp",
+        "legende": "L'intérieur après le passage d'Ina"
       }
     ]
   },
@@ -2110,7 +2111,8 @@
         "img": "img/pnj/rysei-tsuren-miren.webp",
         "label": "Avec son Miren",
         "lieux": [
-          "temple-du-tenraku"
+          "temple-du-tenraku",
+          "domaine-tsuren"
         ],
         "teinte": "#196975"
       }
@@ -2180,7 +2182,7 @@
     "nom": "Darrek Kovacz",
     "titre": "Le Prétendant, fils du clan Kovacz",
     "parent": "clan-kovacz",
-    "lieu": "planque-darrek",
+    "lieu": "garconniere-avant",
     "statut": "mort",
     "alias": [
       "Darrek"
@@ -2291,7 +2293,7 @@
     "nom": "Ayano Kaben",
     "titre": "La mariée",
     "parent": "roshen-buru",
-    "lieu": "planque-darrek",
+    "lieu": "garconniere-avant",
     "statut": "vivant",
     "resume": "Jeune mariée, sauvée par le groupe.",
     "connu": [
@@ -2449,7 +2451,8 @@
       "Il ajoute qu'Argonath se cache quelque part à Minauros. Le groupe lui demande une carte des Enfers, qu'il n'a pas.",
       "Itinéraire à suivre : gagner Azuren Kai, traverser la mer via le Balam Kaal jusqu'à Uruzal, remonter le Nahur jusqu'à Tzakar, au pied des monts Kar-Balam, puis ouvrir le temple du Visage de l'Aigle, qui offrira un trou de souris vers Minauros.",
       "Il réclame le Codex des Mirenaï. Le groupe le lui rend, après lui avoir demandé le Miren de la sœur de Harfang : Ankou ouvre le livre, et le registre indique que Rysei a un Miren Hikari, un petit Miren animal en forme de serpent.",
-      "Le contrat, le Pacte du Crépuscule Patient, le désigne comme Créancier : il choisira le service dans les douze mois suivant la signature. Il ne peut pas commander de porter la main contre un être cher ni de trahir l'un des leurs, et ne garantit pas leur survie."
+      "Le contrat, le Pacte du Crépuscule Patient, le désigne comme Créancier : il choisira le service dans les douze mois suivant la signature. Il ne peut pas commander de porter la main contre un être cher ni de trahir l'un des leurs, et ne garantit pas leur survie.",
+      "Il montre au groupe une illusion de la silhouette d'Ajaw Tzobal, le Grand Prêtre de Balamor."
     ],
     "histoire": [],
     "relations": [
@@ -4110,7 +4113,7 @@
     "nom": "Bruska",
     "titre": "Homme de main de Darrek",
     "parent": "clan-kovacz",
-    "lieu": "planque-darrek",
+    "lieu": "garconniere-avant",
     "statut": "inconnu",
     "resume": "Homme de main de Darrek, un homme ordinaire aux anneaux d'oreille.",
     "connu": [
@@ -5530,7 +5533,29 @@
       }
     ],
     "attitude": "positif",
-    "histoire": []
+    "histoire": [],
+    "img": "img/pnj/ina.webp",
+    "teinte": "#754919",
+    "formes": [
+      {
+        "img": "img/pnj/ina.webp",
+        "label": "Normal",
+        "lieux": [],
+        "teinte": "#754919"
+      },
+      {
+        "img": "img/pnj/ina-miren.webp",
+        "label": "Avec son Miren",
+        "lieux": [],
+        "teinte": "#754519"
+      }
+    ],
+    "galerie": [
+      {
+        "img": "img/paysages/roshen-buru/garconniere-exterieure.webp",
+        "legende": "Devant la garçonnière"
+      }
+    ]
   },
   {
     "id": "fioles-ambrees",
@@ -5561,5 +5586,26 @@
         "ton": "neutre"
       }
     ]
+  },
+  {
+    "id": "garconniere-avant",
+    "type": "lieu",
+    "nom": "La garçonnière avant les travaux",
+    "titre": "Ancien repaire de Darrek Kovacz",
+    "parent": "planque-darrek",
+    "resume": "La garçonnière telle que Darrek Kovacz l'occupait, avant que le groupe la fasse refaire.",
+    "connu": [
+      "De la poussière grise s'accumule en petits tas sous les trous des murs.",
+      "Le groupe affronte Darrek à l'intérieur et le tue.",
+      "Ayano Kaben est retrouvée attachée à la rambarde de la mezzanine, bâillonnée."
+    ],
+    "chapeau": "L'adresse mène tout au fond de la ville basse, dans une rue si étroite que deux hommes ne s'y croisent pas de front. La porte donne directement sur une pièce haute de plafond, avec une mezzanine de bois. Ça sent le renfermé, la cire froide et quelque chose de sucré, écœurant, qui vient d'un brûle-parfum. Sur les murs, des trous ronds de la taille d'un poing, comme si le bois avait été mangé de l'intérieur.",
+    "galerie": [
+      {
+        "img": "img/paysages/roshen-buru/garconniere-darrek.webp",
+        "legende": "La garçonnière de Darrek Kovacz"
+      }
+    ],
+    "histoire": []
   }
 ]

@@ -10613,5 +10613,45 @@
         "ton": "neutre"
       }
     ]
+  },
+  {
+    "id": "ajaw-tzobal",
+    "type": "pnj",
+    "nom": "Ajaw Tzobal",
+    "titre": "Grand Prêtre de Balamor",
+    "parent": "tzalanar",
+    "lieu": "tzalanar",
+    "statut": "vivant",
+    "alias": [
+      "Ajaw",
+      "Tzobal"
+    ],
+    "resume": "Grand Prêtre de Balamor, dont on ne connaît encore que la silhouette.",
+    "connu": [
+      "Il réside à Tzalanar, au cœur de la jungle de Balamor. Son autorité est avant tout religieuse.",
+      "Il donne son nom à la maison noire Tzobal, l'une des quatre maisons d'Istra.",
+      "Ankou Urameï a montré au groupe une illusion de sa silhouette. On ne sait rien d'autre de lui."
+    ],
+    "relations": [
+      {
+        "cible": "tzalanar",
+        "type": "Réside à",
+        "ton": "neutre"
+      },
+      {
+        "cible": "balamor",
+        "type": "Grand Prêtre de",
+        "ton": "neutre"
+      },
+      {
+        "cible": "ankou-uramei",
+        "type": "Silhouette montrée par",
+        "ton": "neutre"
+      }
+    ],
+    "img": "img/pnj/ajaw-tzobal.webp",
+    "attitude": "neutre",
+    "teinte": "#3b3b3b",
+    "histoire": []
   }
 ]
