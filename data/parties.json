@@ -644,6 +644,89 @@
         "Le groupe a signé un contrat infernal avec Ankou Urameï : il fournit le passage vers les Enfers contre un service, à préciser dans les douze mois.",
         "Argonath se cache quelque part à Minauros."
       ]
+    },
+    {
+      "titre": "Roshen Buru : Les architectes",
+      "date": "Philippa + Jane + Harfang",
+      "resume": "• Le groupe sort de chez Caspian Anadori, soigné par les potions qu'il a fournies. Il reste quatre jours avant le départ du Balam Kaal d'Azuren Kai.\n• Il prend possession de la garçonnière de Darrek, où gisent encore deux corps. Ina, ouvrière, propose pour 500 pièces d'or de la refaire entièrement et d'acheter son silence. Ses deux mains de pierre de Miren et son équipe nettoient, réparent et redécorent. Ink réclame une piscine, des lanternes rouges, des requins et une barrière de corail.\n• Harfang entre au pavillon des Diplomates en faisant passer ses compagnes pour ses gardes du corps. Elles sont refoulées de la salle des registres, lui seul y accède et y passe la soirée.\n• Les rapports sur Balamor traitent surtout de la contrebande du sel Yaxal et du bois-fer Xalan. Onaya, aubergiste d'Uruzal, est un contact sympathique. Les registres suivent le groupe jusqu'à Cap Cornes, puis plus rien jusqu'à Roshen Buru.\n• Pendant ce temps, Sumeren Daïko accepte de transférer l'enchantement du chapeau de Philippa vers le masque d'Oni, en une semaine pour 100 pièces d'or. La boutique d'Oren est toujours fermée. Le groupe fait ses courses chez Bhamir et prépare un festin. Olyssane fait subir un bootcamp à Ink.\n• Olyssane s'entaille le bras pour que Gran Brijit ouvre un portail. Elle admire le parchemin PSA-84 avec mélancolie. Jane la convainc de parler : avant les dieux existaient les architectes, qui bâtissaient des cités volantes et ont tenté, lors de leur 84e essai, d'élever les hommes au rang de dieux. Le parchemin est un fragment de ce rituel, tombé entre les mains de Vassago. Elle refuse de dire si elle était une architecte.\n• Elle prévient que la craie de Philippa sera difficile à utiliser aux Enfers, que le marais de Minauros s'est empoisonné et que les humains y sont réduits en esclavage. La mission : descendre, tuer Argonath, Naberoth et Absalom, remonter discrètement.\n• Harfang, mal à l'aise face à elle, est appelé l'envoyé de Mélora. Jane garde une copie du parchemin de mémoire.\n• Au domaine Tsuren, Jane force une pièce fermée et emporte trois fioles ambrées au liquide vivant. Rysei insulte le groupe et le combat. Son Miren est un immense léviathan aux yeux jaunes, un Tenrai, alors que le registre dit Hikari. Kynn arrête le combat et invite le groupe à dîner.\n• Il reste trois jours avant le départ du Balam Kaal.",
+      "liens": [
+        {
+          "id": "roshen-buru"
+        },
+        {
+          "id": "clan-anadori"
+        },
+        {
+          "id": "planque-darrek"
+        },
+        {
+          "id": "ina"
+        },
+        {
+          "id": "pavillon-des-diplomates"
+        },
+        {
+          "id": "balamor"
+        },
+        {
+          "id": "sel-yaxal"
+        },
+        {
+          "id": "bois-fer-xalan"
+        },
+        {
+          "id": "uruzal"
+        },
+        {
+          "id": "onaya"
+        },
+        {
+          "id": "sumeren-daiko"
+        },
+        {
+          "id": "bhamir"
+        },
+        {
+          "id": "gran-brijit"
+        },
+        {
+          "id": "psa-87"
+        },
+        {
+          "id": "architectes"
+        },
+        {
+          "id": "enfers"
+        },
+        {
+          "id": "domaine-tsuren"
+        },
+        {
+          "id": "fioles-ambrees"
+        },
+        {
+          "id": "rysei-tsuren"
+        },
+        {
+          "id": "kynn-tsuren"
+        },
+        {
+          "id": "harfang-tsuren"
+        },
+        {
+          "id": "balam-kaal"
+        }
+      ],
+      "secrets": [
+        "Le sel Yaxal, composant de la vésine, et le bois-fer Xalan sont importés de Balamor avec difficulté. Roshen Buru veut arrêter le premier et obtenir le second, qui lui donnerait un avantage stratégique sur Keras Tauroc.",
+        "Onaya, aubergiste d'Uruzal, est un contact sympathique, prête à parler aux étrangers.",
+        "Les registres du pavillon perdent la trace de Harfang et de ses compagnons entre Cap Cornes et Roshen Buru.",
+        "Avant les dieux, il y avait les architectes, une civilisation qui écrivait des runes, faisait vibrer la pierre et l'arcane et bâtissait des cités volantes.",
+        "Le PSA-84 est un fragment d'un rituel technologique et magique des architectes, leur 84e tentative, destiné à élever les hommes au rang de dieux. Il est tombé entre les mains de Vassago.",
+        "Gran Brijit se dit responsable d'avoir laissé les Mirenaï jouer trop longtemps avec une magie qui les dépasse, et reproche à Anaru sa faiblesse : elle n'a pas su protéger le parchemin.",
+        "Aux Enfers, les humains sont traqués et réduits en esclavage, le marais de Minauros s'est empoisonné et la craie interdimensionnelle sera difficile à utiliser.",
+        "Rysei porte un Miren Tenrai, un léviathan aux yeux jaunes, alors que le registre dit Hikari. Ses yeux sont jaunes, comme le liquide des trois fioles."
+      ]
     }
   ]
 }

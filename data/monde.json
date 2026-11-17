@@ -287,7 +287,7 @@
     "connu": [
       "Les rangs Hikari, Seiran et Tenrai dépendent de la capacité du guerrier au moment du rituel.",
       "Un Miren ne peut être ni volé ni effacé. Le révéler relève de la pudeur sociale, comme se mettre torse nu.",
-      "Le Miren de Harfang est Stryge, un hibou. Celui de Rysei Tsuren est un Tenrai selon la légende des Tsuren, un Hikari selon le registre des Mirenaï. Celui de Ginko Noshi-Buru est un djinn. Celui de la Gardienne est un avatar de Mélora.",
+      "Le Miren de Harfang est Stryge, un hibou. Celui de Rysei Tsuren est un Hikari selon le registre des Mirenaï, mais elle a invoqué devant le groupe un immense léviathan aux yeux jaunes, visiblement Tenrai, comme le dit la légende des Tsuren. Celui de Ginko Noshi-Buru est un djinn. Celui de la Gardienne est un avatar de Mélora.",
       "Le Temple du Tenraku, au sommet du Pillier de Roshen Buru, gardait la Jarre Miren scellée.",
       "Absalom a brisé la Jarre Miren pendant la seconde cérémonie de mariage, puis a détruit une partie du temple d'un cri de rage.",
       "Vassago voulait détourner le rituel pour s'élever au rang de dieu."
@@ -306,7 +306,8 @@
     "connu": [
       "À Cap Cornes, le groupe a obtenu de la vesine auprès de Fennick, petit escroc du marché, en le menaçant.",
       "À Roshen Buru, Yureï Poison en est la fournisseuse principale pour le clan Urameï.",
-      "Le cuisinier Kabo est mort d'une dose d'une pureté qu'un homme de son rang ne pouvait pas acheter. Darrek Kovacz y était accro."
+      "Le cuisinier Kabo est mort d'une dose d'une pureté qu'un homme de son rang ne pouvait pas acheter. Darrek Kovacz y était accro.",
+      "Le sel Yaxal, importé de Balamor, est un de ses composants. Elle est fabriquée quelque part dans la région. Roshen Buru cherche à arrêter l'importation de ce sel."
     ],
     "histoire": [],
     "img": "img/pnj/ve-sine-drogue.webp",
@@ -416,7 +417,10 @@
       "Il a quitté la Magistrature après que le grand Magistrat Roven Moto lui a tiré les oreilles sur la qualité de ses rapports. Il est maintenant marchand, avec l'accord de la Protectrice.",
       "Son statut de Tsuren ouvre les ascenseurs et le quartier noble à tout le groupe.",
       "Il lit et parle l'istran et le mirenaï. Son ami nain est l'inventeur Thibwick Rumple.",
-      "Il connaît bien Keras Tauroc, où il est allé quatre fois sous couverture diplomatique, et ne connaissait Cap Cornes que par les rapports."
+      "Il connaît bien Keras Tauroc, où il est allé quatre fois sous couverture diplomatique, et ne connaissait Cap Cornes que par les rapports.",
+      "Au pavillon des Diplomates, il passe une grande partie de la soirée dans les registres : les informations sur Balamor concernent surtout la contrebande du sel Yaxal et du bois-fer Xalan.",
+      "Le registre suit son nom et ceux de ses compagnons jusqu'à Cap Cornes, puis plus rien jusqu'à Roshen Buru. L'espionnage s'est peut-être arrêté, les espions de la Protectrice ont peut-être perdu sa trace, ou les rapports ont été volés ou dissimulés par elle. Il l'ignore.",
+      "Face à Gran Brijit, il est mal à l'aise, il se méfie d'elle et en a un peu peur. Elle l'appelle l'envoyé de Mélora."
     ],
     "histoire": [
       "Il se recueille au temple de Tako Alvaki : son Miren lui déconseille de faire confiance à la Protectrice.",
@@ -428,7 +432,11 @@
       "À Roshen Buru, il va rendre son rapport au Magistrat, qui se fâche de ne pas recevoir quarante pages. Harfang est agacé et ne veut plus être diplomate.",
       "Après Carnage, il ressuscite Doryen Kaben. La Gardienne lui dit que sa vie ne valait pas grand-chose avant qu'il décide d'agir lui-même, et qu'il lui revient de prendre son destin en main.",
       "Il médite pendant la nuit, puis accompagne le groupe chez les clans du deuxième étage de la ville.",
-      "Chez Ankou, il lit dans le registre des Mirenaï que sa sœur Rysei a un Miren Hikari, un petit serpent, alors que la légende familiale la dit Tenrai. Il s'apprête à la rencontrer."
+      "Chez Ankou, il lit dans le registre des Mirenaï que sa sœur Rysei a un Miren Hikari, un petit serpent, alors que la légende familiale la dit Tenrai. Il s'apprête à la rencontrer.",
+      "Il entre au pavillon des Diplomates en faisant passer ses compagnes pour ses gardes du corps. Elles sont refoulées de la salle des registres, lui seul y accède.",
+      "Il accompagne le groupe chez Gran Brijit, qui parle des architectes et du parchemin PSA-84.",
+      "Il fait visiter le domaine Tsuren, qui est sa maison. Face à Rysei, il reste en dehors du combat et se sert un verre de vin pour regarder.",
+      "Kynn lui reproche de ne pas avoir écrit et invite le groupe à dîner le soir même."
     ],
     "relations": [
       {
@@ -490,7 +498,9 @@
     "resume": "Demi-elfe, roublarde Arcane Trickster de niveau 11. Elle porte des cristaux de titan dans le dos.",
     "connu": [
       "Nolbrim estimait que son exosquelette incomplet finirait par lui faire mal ou la tuer : il lui manquait une âme.",
-      "Elle a volé à Naevia, à Keras Tauroc, une « Hache Étrange » qui est la garde d'une épée brisée aux glyphes non décoratifs."
+      "Elle a volé à Naevia, à Keras Tauroc, une « Hache Étrange » qui est la garde d'une épée brisée aux glyphes non décoratifs.",
+      "Elle possède une copie, au moins approximative, du parchemin PSA-84, faite de mémoire.",
+      "Elle détient trois petites fioles ambrées trouvées dans une pièce fermée du domaine Tsuren."
     ],
     "histoire": [
       "Elle surgit des ombres à Voros devant Philippa : elle sait où se trouve la Griffe et propose de l'accompagner vers l'île aux Moines.",
@@ -511,7 +521,10 @@
       "À Roshen Buru, elle prend part à l'enquête du mariage et à la chute de Darrek Kovacz. Chez la Protectrice, elle fouille les papiers avec Philippa.",
       "Jane remet à Vespera la Couronne de Corail Noir au camp de Port Doëlan et négocie 1 % des ventes.",
       "Après Carnage, elle soigne Ink, puis demande à la Gardienne si elle connaît le parchemin PSA-84. Pour descendre de la tour, elle lance Chute de plume sur tout le groupe.",
-      "Caspian Anadori remarque sa lame et défie le groupe en duel, qui s'arrête sur un match nul."
+      "Caspian Anadori remarque sa lame et défie le groupe en duel, qui s'arrête sur un match nul.",
+      "Convaincante, elle pousse Gran Brijit à lui parler du PSA-84 et en copie le contenu de mémoire.",
+      "Au domaine Tsuren, elle fait sauter le verrou d'une pièce fermée et emporte trois fioles ambrées.",
+      "Elle fait écrire un mot sur une bouteille d'alcool pour Olyssane, qui rougit en la recevant."
     ],
     "relations": [
       {
@@ -579,7 +592,9 @@
     "connu": [
       "Gran Brijit lui a confié à Cap Cornes deux missions : ne pas ouvrir de portail entre Cap Cornes et Havre Noir, et trouver puis tuer Oren Sidaï à Roshen Buru pour préserver l'équilibre.",
       "Elle a marqué à la craie la porte d'Ursinus, celle de la tour d'Eamonn et d'autres lieux, qui servent de points de retour.",
-      "Elle comprend les langues par magie, ce qui sert de passerelle avec les habitants d'Istra."
+      "Elle comprend les langues par magie, ce qui sert de passerelle avec les habitants d'Istra.",
+      "Elle a confié à Sumeren Daïko le transfert de l'enchantement de son chapeau magique vers le masque d'Oni qu'elle a récupéré. En attendant, elle n'a plus son chapeau.",
+      "Aucune rune de craie n'a été posée dans la garçonnière du groupe."
     ],
     "histoire": [
       "Après sa chute de 200 mètres, elle est ressuscitée par Vassago et atterrit dans l'Underdark. Son murmure la guide vers Creux d'Azur.",
@@ -602,7 +617,12 @@
       "Elle ouvre une téléportation à la craie pour défendre la tour d'Eamonn contre le Tribunal de Chair, puis est envoyée chez Vespera.",
       "Au Temple du Tenraku, elle affronte Absalom puis Carnage.",
       "Après Carnage, elle passe la soirée au quartier des plaisirs, où elle rencontre Lysha, discrètement suivie par Olyssane.",
-      "Elle rédige l'acte de vente de la garçonnière de Darrek Kovacz pour 500 pièces d'or : le groupe en est officiellement propriétaire."
+      "Elle rédige l'acte de vente de la garçonnière de Darrek Kovacz pour 500 pièces d'or : le groupe en est officiellement propriétaire.",
+      "Après le combat contre Carnage et les clans, le groupe prend possession de la garçonnière de Darrek et la fait refaire par Ina.",
+      "Chez Sumeren Daïko, elle transfère l'enchantement de son chapeau vers le masque d'Oni : une semaine de travail, 100 pièces d'or après négociation.",
+      "Elle fait les courses avec le groupe et prépare le festin à la garçonnière.",
+      "Elle retrouve Gran Brijit au Manoir des Ligaments avec Jane et Harfang, et montre la harpe de chair à Harfang.",
+      "Elle passe au domaine Tsuren et affronte Rysei avec ses compagnons."
     ],
     "relations": [
       {
@@ -1993,6 +2013,39 @@
       {
         "img": "img/paysages/altera/eryndel.webp",
         "legende": "Eryndel"
+      }
+    ]
+  },
+  {
+    "id": "architectes",
+    "type": "sujet",
+    "nom": "Les Architectes",
+    "titre": "La civilisation d'avant les dieux, selon Gran Brijit",
+    "alias": [
+      "architectes",
+      "architecte",
+      "Architectes",
+      "cités volantes"
+    ],
+    "resume": "Civilisation qui écrivait des runes et faisait vibrer la pierre et l'arcane, avant les dieux.",
+    "connu": [
+      "Gran Brijit raconte l'histoire du parchemin PSA-84 comme elle a été écrite : au début de la création, les titans déferlaient sur la terre et rendaient la vie impossible, puis les dieux venus des étoiles les ont chassés, les arbres sont restés et les humains sont nés. Elle ajoute : « Vous savez tout ça, mais c'est faux. »",
+      "Au début du monde, il y avait les architectes, une civilisation comme celle d'aujourd'hui, mais qui savait écrire des runes et faire vibrer la pierre et l'arcane.",
+      "Ils ont bâti des empires, les ont détruits, créé des royaumes sortis du sable et des cités volantes pour s'éloigner du sol et se rapprocher de la divinité.",
+      "L'un d'eux travaillait dans un laboratoire sur un projet secret arcanique, la 84e tentative. Leur volonté, l'hubris, était d'élever les hommes au rang de dieux eux-mêmes, par un rituel à la fois technologique et magique. Gran Brijit en tient aujourd'hui un fragment entre les mains : le PSA-84.",
+      "Interrogée sur son propre rôle, Gran Brijit refuse de dire si elle était une architecte et si elle est à l'origine du rituel."
+    ],
+    "question": "Gran Brijit était-elle une architecte, a-t-elle créé les dieux ? Les dieux sont-ils tous des architectes ? D'où viennent-ils, quelle est leur technologie et pourquoi ont-ils disparu ?",
+    "relations": [
+      {
+        "cible": "gran-brijit",
+        "type": "Refuse de répondre",
+        "ton": "neutre"
+      },
+      {
+        "cible": "psa-87",
+        "type": "Rituel d'origine",
+        "ton": "neutre"
       }
     ]
   }

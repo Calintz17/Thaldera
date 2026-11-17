@@ -3200,7 +3200,10 @@
       "Elle laisse Ink vagabonder librement, mais veille sur elle de loin. Elle rejoint Cap Cornes, à Istra, en l'emmenant, et y prépare avec Eamonn un portail pour établir un comptoir commercial.",
       "Quand le groupe la retrouve, elle expose deux problèmes : Kester Tauroc, qui la harcèle pour obtenir un duel, et la négociation avec Eamonn pour le portail. Elle ne veut pas tuer Kester, de peur d'attirer l'attention sur elle. Jane, déguisée en Olyssane, attire Kester dans une ruelle. Il s'enfuit, apeuré, en jurant vengeance.",
       "Elle aide à réunir les composants du rituel. Eamonn ouvre le cercle de téléportation vers Port Doëlan, et non vers Havre Noir.",
-      "Lors de l'attaque du Tribunal de Chair, elle défend Eamonn, l'acier à la main, quand le groupe arrive dans la tour."
+      "Lors de l'attaque du Tribunal de Chair, elle défend Eamonn, l'acier à la main, quand le groupe arrive dans la tour.",
+      "Elle s'entaille le bras pour que Gran Brijit ouvre gratuitement un portail vers elle.",
+      "À la garçonnière, elle soumet Ink à un bootcamp de tractions, pompes et planches, car elle estime qu'Ink doit être plus forte pour aller aux Enfers.",
+      "Elle reçoit en cadeau une bouteille d'alcool chère, emballée par le groupe, avec un mot de Jane qui la fait rougir."
     ],
     "relations": [
       {
@@ -3286,7 +3289,9 @@
       "Elle raconte qu'un homme les a embêtées, qu'un œil vert a brillé sur les toits et que l'homme a disparu dans un cri. Pour elle, les esprits des marées la protègent.",
       "Elle aide le groupe à vaincre les ghoules des marées, et le groupe rapporte trois cœurs flétris pour le rituel d'Eamonn.",
       "Elle rencontre Gran Brijit à Cap Cornes, qui semble déjà la connaître.",
-      "Elle figure sur la liste de cibles du Tribunal de Chair laissée dans la tour d'Eamonn."
+      "Elle figure sur la liste de cibles du Tribunal de Chair laissée dans la tour d'Eamonn.",
+      "À la garçonnière, elle réclame à l'ouvrière Ina une piscine, des lanternes rouges, des requins et une barrière de corail.",
+      "Olyssane lui fait subir un bootcamp de tractions, pompes et planches, qu'elle n'apprécie pas du tout."
     ],
     "relations": [
       {
@@ -3542,7 +3547,10 @@
       "Théocratie décentralisée. L'autorité du Grand Prêtre est avant tout religieuse.",
       "Rumeur persistante : Balamor aurait des espions partout sur le continent. Les étrangers qui s'intéressent de trop près à leurs rituels changent brutalement d'avis, ou disparaissent.",
       "Avec Roshen Buru, les relations sont formellement neutres, avec une méfiance sourde.",
-      "Tobiya, à Roshen Buru, et un homme du peuple à Keras Tauroc ont été contrôlés par des araignées, avec des symboles de Balamor."
+      "Tobiya, à Roshen Buru, et un homme du peuple à Keras Tauroc ont été contrôlés par des araignées, avec des symboles de Balamor.",
+      "Deux matériaux sont importés de Balamor avec difficulté : le sel Yaxal, un des composants de la vésine, et le bois-fer Xalan, dur comme l'acier.",
+      "Roshen Buru cherche à arrêter l'importation du sel Yaxal. À l'inverse, elle voudrait activer celle du bois-fer, qui lui donnerait un avantage stratégique sur Keras Tauroc, mais Balamor le protège fermement.",
+      "Les rapports du pavillon des Diplomates sur Balamor concernent surtout cette contrebande."
     ],
     "relations": [
       {
@@ -6246,7 +6254,11 @@
     "blason": "img/blasons/enfers.webp",
     "locked": true,
     "typeLabel": "Plan",
-    "resume": ""
+    "resume": "",
+    "connu": [
+      "Gran Brijit prévient que les humains y sont traqués, chassés et capturés aussitôt pour être transformés en esclaves, que le marais de Minauros s'est empoisonné, et que son influence y est faible.",
+      "Elle charge le groupe de descendre, de tuer Argonath, Naberoth et Absalom et de remonter en se faisant le moins remarquer possible."
+    ]
   },
   {
     "id": "manoir-des-ligaments",
@@ -6280,7 +6292,9 @@
     ],
     "connu": [
       "Philippa et Jane y sont reçues par Gran Brijit et y retrouvent Nolbrim, qui y travaille sur ses prototypes.",
-      "À Cap Cornes, le groupe retrouve le manoir. Philippa y a une vision d'une balance désaxée et Olyssane ouvre le passage en faisant couler son sang."
+      "À Cap Cornes, le groupe retrouve le manoir. Philippa y a une vision d'une balance désaxée et Olyssane ouvre le passage en faisant couler son sang.",
+      "Le groupe y arrive de Roshen Buru par un portail ouvert gratuitement, après qu'Olyssane s'est entaillé le bras. Gran Brijit y admire le parchemin PSA-84.",
+      "Philippa présente à Harfang la harpe de chair qui se trouve dans le manoir. Il est mal à l'aise face à elle."
     ],
     "chapeau": "Une clairière enveloppée d'une lueur tamisée, où les feuilles épaisses filtrent la lumière en un vert profond, presque stagnant. À l'intérieur, l'odeur dense de terre humide se mêle aux parfums secs des poudres, des racines et des herbes pendues au plafond. Des masques effacés par le temps veillent depuis les murs, et le sol de bois sombre se plaint à chaque pas.\n\nUn salon encombré de fioles, de grimoires ouverts et de fragments de créatures gelés dans des bocaux. La lumière tombe en nappes calmes d'une fenêtre étroite, les herbes suspendues diffusent une odeur amère, mêlée à celle du thé noir oublié. Sur la table, les restes du Landsknecht vaincu forment une harpe de chair dont les cordes tintent au moindre courant d'air.",
     "histoire": []
@@ -6294,7 +6308,8 @@
     "resume": "Port de la côte de Balamor, premier point d'accostage sur l'archipel.",
     "connu": [
       "Le seul passage connu vers l'intérieur de la jungle de Balamor.",
-      "Le Balam Kaal y dépose les passagers. De là, on remonte le fleuve Nahur vers Tzakar."
+      "Le Balam Kaal y dépose les passagers. De là, on remonte le fleuve Nahur vers Tzakar.",
+      "D'après les rapports du pavillon des Diplomates de Roshen Buru, Onaya, l'aubergiste, est un point de contact sympathique, prête à parler aux étrangers."
     ],
     "pos": {
       "x": 0.399,
@@ -10517,6 +10532,83 @@
       {
         "img": "img/paysages/creux-d-azur/vue-de-la-ville.webp",
         "legende": "Creux d'Azur, vue de la ville"
+      }
+    ]
+  },
+  {
+    "id": "onaya",
+    "type": "pnj",
+    "nom": "Onaya",
+    "titre": "Aubergiste d'Uruzal",
+    "parent": "uruzal",
+    "lieu": "uruzal",
+    "statut": "vivant",
+    "resume": "Aubergiste d'Uruzal, point de contact de Roshen Buru, plutôt sympathique d'après les rapports.",
+    "connu": [
+      "Les rapports du pavillon des Diplomates de Roshen Buru la désignent comme point de contact à Uruzal.",
+      "D'après ces rapports, elle est plutôt sympathique et prête à parler aux étrangers."
+    ],
+    "relations": [
+      {
+        "cible": "uruzal",
+        "type": "Aubergiste à",
+        "ton": "neutre"
+      }
+    ],
+    "attitude": "neutre",
+    "histoire": []
+  },
+  {
+    "id": "sel-yaxal",
+    "type": "sujet",
+    "nom": "Le sel Yaxal",
+    "titre": "Composant de la vésine, importé de Balamor",
+    "parent": "balamor",
+    "alias": [
+      "Yaxal",
+      "sel yaxal"
+    ],
+    "resume": "Sel importé difficilement de Balamor, un des composants de la vésine.",
+    "connu": [
+      "C'est un des composants de la vésine, qui est fabriquée quelque part dans la région de Roshen Buru.",
+      "Roshen Buru cherche à arrêter son importation.",
+      "Les rapports du pavillon des Diplomates sur Balamor concernent surtout la contrebande de ce sel et du bois-fer Xalan."
+    ],
+    "relations": [
+      {
+        "cible": "vesine",
+        "type": "Composant de",
+        "ton": "negatif"
+      },
+      {
+        "cible": "bois-fer-xalan",
+        "type": "Contrebande jumelle",
+        "ton": "neutre"
+      }
+    ]
+  },
+  {
+    "id": "bois-fer-xalan",
+    "type": "sujet",
+    "nom": "Le bois-fer Xalan",
+    "titre": "Bois de la jungle de Balamor, dur comme l'acier",
+    "parent": "balamor",
+    "alias": [
+      "bois-fer",
+      "Xalan",
+      "bois fer"
+    ],
+    "resume": "Bois très spécifique de la jungle de Balamor, importé difficilement.",
+    "connu": [
+      "On le trouve dans la jungle de Balamor. Il est dur comme l'acier.",
+      "Roshen Buru cherche à activer son importation, car il lui donnerait un avantage stratégique sur Keras Tauroc. Balamor le protège fermement, ce qui complique l'affaire.",
+      "Les rapports du pavillon des Diplomates sur Balamor concernent surtout la contrebande de ce bois et du sel Yaxal."
+    ],
+    "relations": [
+      {
+        "cible": "sel-yaxal",
+        "type": "Contrebande jumelle",
+        "ton": "neutre"
       }
     ]
   }

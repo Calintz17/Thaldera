@@ -1822,7 +1822,8 @@
     "resume": "La boutique d'Oren Sidaï, marchand louche.",
     "connu": [
       "Le groupe s'y retrouve. Philippa y vend Requiem à Oren Sidaï, mais l'épée revient dans son inventaire.",
-      "Philippa a dévalisé la boutique après la mort d'Oren."
+      "Philippa a dévalisé la boutique après la mort d'Oren.",
+      "Elle est toujours fermée."
     ],
     "chapeau": "L'échoppe est étroite, coincée entre deux bâtiments plus larges, et la porte est si basse qu'on entre en se courbant. Tout est derrière une grille : des objets exposés sur des étagères, chacun avec un numéro et rien d'autre. La seule lampe éclaire le visage du client, pas celui du tenancier. Ça sent le métal froid, le papier moisi et la cire. Derrière la grille, un homme maigre, assis très droit, sourit sans plus jamais bouger.",
     "galerie": [
@@ -1837,7 +1838,7 @@
     "id": "planque-darrek",
     "type": "lieu",
     "nom": "La garçonnière de Darrek",
-    "titre": "Fond de la ville basse",
+    "titre": "Point de chute du groupe, fond de la ville basse",
     "parent": "roshen-buru",
     "alias": [
       "garçonnière"
@@ -1847,7 +1848,10 @@
       "De la poussière grise s'accumule en petits tas sous les trous des murs.",
       "Le groupe affronte Darrek à l'intérieur et le tue.",
       "Ayano Kaben est retrouvée attachée à la rambarde de la mezzanine, bâillonnée.",
-      "Philippa rédige un acte de vente de la garçonnière pour 500 pièces d'or : elle appartient désormais au groupe, qui s'en sert de point de chute."
+      "Philippa rédige un acte de vente de la garçonnière pour 500 pièces d'or : elle appartient désormais au groupe, qui s'en sert de point de chute.",
+      "Quand le groupe en prend possession, deux corps s'y trouvent encore : celui d'une prostituée morte et celui de Darrek Kovacz.",
+      "Ina et son équipe refont entièrement la garçonnière, qui est nettoyée, réparée et redécorée au goût du groupe.",
+      "Le groupe y prépare un festin, y passe la soirée et y débriefe ses révélations. Aucune rune de craie n'y est posée."
     ],
     "histoire": [],
     "relations": [
@@ -1855,6 +1859,11 @@
         "cible": "darrek-kovacz",
         "type": "Planque",
         "ton": "negatif"
+      },
+      {
+        "cible": "ina",
+        "type": "Refaite par",
+        "ton": "positif"
       }
     ],
     "pos": {
@@ -2049,22 +2058,32 @@
     "id": "rysei-tsuren",
     "type": "pnj",
     "nom": "Rysei Tsuren",
-    "titre": "Sœur de Harfang, que la légende dit porteuse d'un Tenrai",
+    "titre": "Sœur de Harfang, dont le Miren est un Tenrai",
     "parent": "clan-tsuren",
     "statut": "vivant",
-    "resume": "Sœur de Harfang, sûre d'elle, dont le Miren fait question.",
+    "resume": "Sœur de Harfang, infâme avec lui et ses compagnons, dont le Miren est un immense Tenrai.",
     "connu": [
       "La légende des Tsuren, que la ville répète, la dit porteuse d'un Tenrai lors du Tenraku, preuve que le sang des Tsuren portait encore quelque chose de grand. Le registre des Mirenaï, ouvert par Ankou, indique pourtant un Miren Hikari, un petit Miren animal en forme de serpent. Les deux versions ne concordent pas.",
       "Elle parle peu aux gens qui ne sont pas à sa hauteur, et peu à Harfang.",
       "Elle s'entraîne seule à l'Académie Tenraku deux ou trois fois par semaine.",
       "Elle reçoit en tenue d'entraînement, la tête haute, après avoir fait attendre Harfang juste assez. Elle salue les deux femmes d'un mouvement de menton et s'assoit sans y être invitée.",
       "Elle tient pour acquis qu'un Tsuren se tient au-dessus, ne s'explique pas, ne s'abaisse pas à répondre. Elle rit franchement quand on l'accuse d'avoir fait enlever une fille de la petite noblesse.",
-      "Elle a parlé du mariage à Darrek Kovacz pour rire, pour voir sa tête, sans penser qu'il agirait."
+      "Elle a parlé du mariage à Darrek Kovacz pour rire, pour voir sa tête, sans penser qu'il agirait.",
+      "Au domaine Tsuren, elle s'entraîne avec ses gardes. Elle souhaite du mal à Harfang, dit qu'il voyage accompagné de la plèbe et qu'elle doit subir la vue et l'odeur d'un chat et d'une cornue dans sa maison.",
+      "Elle explique de manière très supérieure qu'un entraînement, c'est ce que font les gens dotés d'un potentiel pour rester à haut niveau. Aux provocations du groupe, elle répond : « Parfait, vous me servirez de mannequin, nos gardes ne tiennent de toute façon pas le rythme, et deux sont déjà morts. »",
+      "Elle se bat avec violence et force. Son Miren surgit vite : un immense léviathan couvert d'yeux jaunes sur tout le corps, qui remplit la pièce. C'est clairement un Miren Tenrai, et non le petit serpent Hikari du registre.",
+      "Le combat s'arrête alors qu'elle est plutôt en bonne forme. Elle a les yeux jaunes, peut-être du même jaune que le liquide des fioles trouvées dans le domaine.",
+      "Quand Kynn arrête le combat, elle tourne les talons et quitte la pièce. On ignore si elle assistera au dîner du soir."
     ],
     "relations": [
       {
         "cible": "harfang-tsuren",
         "type": "Frère",
+        "ton": "negatif"
+      },
+      {
+        "cible": "fioles-ambrees",
+        "type": "Yeux du même jaune ?",
         "ton": "neutre"
       }
     ],
@@ -2096,8 +2115,9 @@
         "teinte": "#196975"
       }
     ],
-    "attitude": "neutre",
-    "teinte": "#752519"
+    "attitude": "negatif",
+    "teinte": "#752519",
+    "question": "Le registre s'est-il trompé sur le Miren de Rysei, ou a-t-elle fait évoluer son Miren, ce qui est censé être impossible ? Les trois fioles ambrées y sont-elles pour quelque chose ?"
   },
   {
     "id": "kynn-tsuren",
@@ -2111,7 +2131,10 @@
       "Elle trouve les mots pour que les repas de famille ne finissent pas en silence total.",
       "Elle a toujours regardé Harfang autrement que les autres, sans jamais mettre de mots dessus.",
       "Elle arrive presque en courant, le tourne, le retourne : « Tu as maigri et tu as une tête épouvantable. » Elle impose que tout le monde s'assoie.",
-      "Elle lui reproche de ne pas écrire : « Ta sœur écrit à ton père. Ce n'est pas pareil. »"
+      "Elle lui reproche de ne pas écrire : « Ta sœur écrit à ton père. Ce n'est pas pareil. »",
+      "Elle arrête le combat entre Rysei et le groupe : « Oh, vous allez blesser mon enfant. »",
+      "Elle protège ses enfants quoi qu'il en coûte, aussi bien Rysei que Harfang, à qui elle reproche de ne pas avoir écrit. Elle est douce et semble ne pas voir la dureté de Rysei.",
+      "Elle invite le groupe à dîner le soir même avec Rysei, parce qu'elle n'a pas vu Harfang depuis longtemps."
     ],
     "relations": [
       {
@@ -2377,7 +2400,8 @@
       "Caspian, le chef du clan, a commandé deux armes à Tessei Kanaë pour 50 000 pièces d'or.",
       "Le groupe les a volées avant la livraison et a fait accuser Oren Sidaï, un vendeur louche.",
       "Oren a été tué par les Anadori dès le lendemain.",
-      "Caspian défie le groupe en duel pour les lames. Le combat s'achève sur un match nul, et le clan leur doit désormais un service."
+      "Caspian défie le groupe en duel pour les lames. Le combat s'achève sur un match nul, et le clan leur doit désormais un service.",
+      "Le groupe sort de chez Caspian un peu abîmé, mais Caspian lui a fourni des potions pour se soigner."
     ]
   },
   {
@@ -2967,8 +2991,7 @@
     "titre": "Calligraphe",
     "parent": "atelier-calligraphie",
     "lieu": "atelier-calligraphie",
-    "statut": "inconnu",
-    "question": "Sumeren a-t-elle survécu à l'arrivée de Carnage au Temple du Tenraku ?",
+    "statut": "vivant",
     "alias": [
       "Sumeren"
     ],
@@ -2980,7 +3003,9 @@
       "Elle ne veut pas qu'on se réclame d'elle chez les nobles et réclame qu'on lui rapporte la suite de l'affaire.",
       "Très romantique, elle a été facilement convaincue par l'amour des deux mariés.",
       "Invitée à la seconde cérémonie, elle était dans la foule du Temple du Tenraku, avec les têtes connues de la ville.",
-      "Sa réclame figure sur le tableau d'affichage de l'auberge."
+      "Sa réclame figure sur le tableau d'affichage de l'auberge.",
+      "Elle accepte de transférer l'enchantement du chapeau magique de Philippa vers le masque d'Oni : une semaine de travail et 120 pièces d'or, ramenées à 100 pièces d'or.",
+      "Elle remet à Philippa un petit parchemin magique, par lequel elle lui renverra le masque dans une semaine. Elle garde le chapeau en attendant."
     ],
     "histoire": [],
     "citation": {
@@ -3211,7 +3236,12 @@
       "Avant d'arriver à Roshen Buru, pendant un feu de camp, elle ouvre un portail pour Nolbrim et attire Jane dans son laboratoire. Elle décapite Bourpif, recueille son âme, la purifie et la tend à Nolbrim, qui arrache l'exosquelette de Jane.",
       "Au Temple du Tenraku, elle surgit après l'explosion d'Absalom et réclame le parchemin, que Jane lui remet et qu'elle emporte. Elle menace la Gardienne Anaru, qui recule.",
       "Elle explique que les dieux ne peuvent pas frapper en personne : le groupe sera l'instrument de sa main.",
-      "Avec la Gardienne, elle retient le toit du temple pour protéger ceux du temple et ceux d'en bas. Carnage se forme, et le groupe le vainc."
+      "Avec la Gardienne, elle retient le toit du temple pour protéger ceux du temple et ceux d'en bas. Carnage se forme, et le groupe le vainc.",
+      "Dans le Manoir des Ligaments, elle admire le parchemin PSA-84 avec beaucoup de mélancolie. Le groupe y est venu par un portail gratuit, ouvert quand Olyssane s'est entaillé le bras.",
+      "Après une discussion où Jane se montre particulièrement convaincante, elle raconte une partie de l'histoire du parchemin et parle des architectes. Elle refuse de dire si elle en était une, et si elle est à l'origine du rituel.",
+      "Elle prévient que sa craie interdimensionnelle, dont Philippa se sert pour voyager, sera difficile à utiliser aux Enfers : elle y a peu d'influence et il ne faudra pas trop compter sur elle. Le marais de Minauros s'est empoisonné et il faut s'y préparer. Les humains y sont traqués, chassés et capturés aussitôt pour être transformés en esclaves.",
+      "Leur mission est claire : descendre, tuer Argonath, Naberoth et Absalom, puis remonter en se faisant le moins remarquer possible.",
+      "Elle se dit contente que Philippa et Jane aient trouvé un compagnon aussi solide que Harfang, qu'elle appelle l'envoyé de Mélora. Harfang, lui, se méfie d'elle et en a un peu peur."
     ],
     "histoire": [],
     "relations": [
@@ -3233,6 +3263,16 @@
       {
         "cible": "dieux",
         "type": "Divinité de la Mort",
+        "ton": "neutre"
+      },
+      {
+        "cible": "harfang-tsuren",
+        "type": "L'appelle l'envoyé de Mélora",
+        "ton": "neutre"
+      },
+      {
+        "cible": "architectes",
+        "type": "Refuse de dire si elle en était",
         "ton": "neutre"
       }
     ],
@@ -3298,7 +3338,9 @@
     "parent": "roshen-buru",
     "resume": "Grand domaine du quartier noble, foyer de Havoc, Kynn et Rysei.",
     "connu": [
-      "Le statut Tsuren de Harfang ouvre les ascenseurs et le quartier noble à tout le groupe."
+      "Le statut Tsuren de Harfang ouvre les ascenseurs et le quartier noble à tout le groupe.",
+      "Harfang fait faire le tour du domaine au groupe. Dans une pièce fermée, Jane fait sauter le verrou et trouve trois fioles ambrées.",
+      "Le groupe y affronte Rysei dans une salle d'entraînement, puis Kynn les invite à dîner le soir même."
     ],
     "carte": "palais",
     "zoom": 0.12,
@@ -4488,7 +4530,8 @@
     ],
     "attitude": "neutre",
     "connu": [
-      "Interrogé pendant l'enquête sur la disparition de Tobiya, il se souvient d'une odeur âcre et chimique, qu'aucune senteur ne couvrait, qui flottait depuis une semaine autour de la maison de Tobiya et remontait des égouts."
+      "Interrogé pendant l'enquête sur la disparition de Tobiya, il se souvient d'une odeur âcre et chimique, qu'aucune senteur ne couvrait, qui flottait depuis une semaine autour de la maison de Tobiya et remontait des égouts.",
+      "En faisant les courses, le groupe le retrouve sur un marché : il vend du vin, du saké, de la viande, du poisson et de la viande en croûte, de quoi préparer le festin de la garçonnière."
     ],
     "teinte": "#753c19",
     "histoire": []
@@ -4597,21 +4640,33 @@
   {
     "id": "psa-87",
     "type": "sujet",
-    "nom": "Le parchemin PSA-87",
-    "titre": "Parchemin gardé au Temple du Tenraku",
+    "nom": "Le parchemin PSA-84",
+    "titre": "Parchemin gardé au Temple du Tenraku, fragment d'un rituel",
     "parent": "temple-du-tenraku",
     "resume": "Parchemin conservé derrière la jarre Miren, au Temple du Tenraku.",
     "alias": [
       "PSA-87",
       "PSA 87",
       "PSA-84",
-      "PSA 84"
+      "PSA 84",
+      "Le parchemin PSA-87"
     ],
     "connu": [
       "Absalom l'a lu pendant la cérémonie.",
       "Anaru affirme qu'il appartient à sa divinité et à son peuple. Gran Brijit répond qu'il n'appartient pas à leur histoire.",
       "Gran Brijit l'obtient, Jane le lui remet : la Gardienne recule devant les menaces d'une divinité et contre le sort de dissipation de Harfang.",
-      "Interrogée par Jane, la Gardienne dit que son peuple l'étudie depuis des centaines d'années et renvoie le groupe vers Gran Brijit."
+      "Interrogée par Jane, la Gardienne dit que son peuple l'étudie depuis des centaines d'années et renvoie le groupe vers Gran Brijit.",
+      "Au Manoir des Ligaments, le groupe trouve Gran Brijit en train de l'admirer avec beaucoup de mélancolie. Jane la convainc de parler et elle révèle une partie de son histoire : c'est un fragment du rituel des architectes, qui visait à élever les hommes au rang de dieux.",
+      "Gran Brijit : « C'est un vieux rituel, une vieille magie. Il est déjà tombé entre les mains de Vassago. Et ce qui pouvait se produire de pire s'est produit. C'est ma faute et mon fardeau. J'ai été trop douce avec les Mirenaï et je les ai laissés jouer avec une magie qui les dépasse. Trop longtemps. Ils n'ont pas su la protéger. Et aujourd'hui, le monde paye le prix de la faiblesse d'Anaru, alors même qu'il chante les louanges de sa bonté. »",
+      "Elle ne dit pas qu'Anaru a trahi les siens. Elle dit qu'à cause de sa faiblesse, la Gardienne n'a pas su protéger le parchemin et que Vassago s'en est emparé.",
+      "Jane en a fait une copie de mémoire : elle en possède au moins une version approximative."
+    ],
+    "relations": [
+      {
+        "cible": "architectes",
+        "type": "Fragment d'un rituel des",
+        "ton": "neutre"
+      }
     ]
   },
   {
@@ -5327,6 +5382,10 @@
         "img": "img/paysages/roshen-buru/pavillon-des-diplomates.webp",
         "legende": "Le pavillon des Diplomates"
       }
+    ],
+    "connu": [
+      "Le groupe y entre en se faisant passer pour les gardes du corps de Harfang, mais la garde le refoule manu militari de la pièce des registres et des rapports de diplomatie. Harfang seul y accède.",
+      "On y apprend que la plupart des informations sur Balamor concernent la contrebande, notamment du sel Yaxal et du bois-fer Xalan, et qu'Onaya, aubergiste d'Uruzal, est un point de contact."
     ]
   },
   {
@@ -5446,7 +5505,68 @@
       "Il vient à Azuren Kai tous les deux mois et fait l'aller-retour entre Balamor et Azuren Kai, ce que très peu de navires peuvent faire.",
       "On ignore l'identité de son capitaine. Les marins en font des légendes et le surnomment la baleine morte.",
       "Harfang en a entendu parler, mais ne l'a jamais vu. Le groupe ignore pourquoi on l'appelle ainsi.",
-      "Ankou Urameï indique au groupe de traverser via le Balam Kaal jusqu'à Uruzal, première étape vers Tzakar et les Enfers."
+      "Ankou Urameï indique au groupe de traverser via le Balam Kaal jusqu'à Uruzal, première étape vers Tzakar et les Enfers.",
+      "Après la visite chez les Tsuren, il reste trois jours avant son départ d'Azuren Kai."
+    ]
+  },
+  {
+    "id": "ina",
+    "type": "pnj",
+    "nom": "Ina",
+    "titre": "Ouvrière du bâtiment",
+    "parent": "planque-darrek",
+    "lieu": "planque-darrek",
+    "statut": "vivant",
+    "resume": "Ouvrière qui a refait la garçonnière de fond en comble pour 500 pièces d'or, silence compris.",
+    "connu": [
+      "Elle attend devant la garçonnière et propose au groupe de lui donner un coup de main pour refaire entièrement l'appartement à son goût, pour 500 pièces d'or. Le prix n'est pas négocié.",
+      "Les 500 pièces d'or achètent aussi son silence : elle s'engage à ne rien dire de ce qu'elle pourra trouver à l'intérieur.",
+      "Elle fait surgir deux immenses mains de pierre de Miren au-dessus de son corps et, avec son équipe, nettoie, répare et refait entièrement les lieux.",
+      "Ink lui réclame une piscine, des lanternes rouges, des requins et une barrière de corail."
+    ],
+    "relations": [
+      {
+        "cible": "planque-darrek",
+        "type": "A refait",
+        "ton": "positif"
+      },
+      {
+        "cible": "ink",
+        "type": "Commande d'Ink",
+        "ton": "neutre"
+      }
+    ],
+    "attitude": "positif",
+    "histoire": []
+  },
+  {
+    "id": "fioles-ambrees",
+    "type": "sujet",
+    "nom": "Les trois fioles ambrées",
+    "titre": "Trouvées dans une pièce fermée du domaine Tsuren",
+    "parent": "domaine-tsuren",
+    "alias": [
+      "fioles ambrées",
+      "fioles jaunes"
+    ],
+    "resume": "Trois petites fioles d'un liquide jaune ambré qui semble vivant, emportées par Jane.",
+    "connu": [
+      "Dans une pièce fermée du domaine Tsuren, Jane fait sauter le verrou et découvre trois petites fioles.",
+      "Le liquide qu'elles contiennent est jaune, ambré, et paraît vivant et mouvant à l'intérieur de la fiole.",
+      "Jane les emporte, sans savoir ce que c'est.",
+      "Rysei a les yeux jaunes, peut-être du même jaune que ce liquide."
+    ],
+    "relations": [
+      {
+        "cible": "jane-merigold",
+        "type": "Détenues par",
+        "ton": "neutre"
+      },
+      {
+        "cible": "rysei-tsuren",
+        "type": "Même jaune que ses yeux ?",
+        "ton": "neutre"
+      }
     ]
   }
 ]

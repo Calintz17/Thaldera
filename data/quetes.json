@@ -34,15 +34,15 @@
   },
   {
    "titre": "Le portail de Minauros",
-   "texte": "Ankou Urameï nous a donné le passage contre un contrat et un service, à condition de suivre ses instructions à la perfection : gagner Azuren Kai, traverser via le Balam Kaal jusqu'à Uruzal, remonter le Nahur jusqu'à Tzakar, puis ouvrir le temple du Visage de l'Aigle, trou de souris vers Minauros."
+   "texte": "Ankou Urameï nous a donné le passage contre un contrat et un service, à condition de suivre ses instructions à la perfection : gagner Azuren Kai, traverser via le Balam Kaal jusqu'à Uruzal, remonter le Nahur jusqu'à Tzakar, puis ouvrir le temple du Visage de l'Aigle, trou de souris vers Minauros. Le Balam Kaal part d'Azuren Kai dans trois jours."
   },
   {
    "titre": "Le PSA-84",
-   "texte": "Le « Rituel du Tenraku » était en fait un blueprint appelé « PSA-84 ». Qu'est-ce que ça signifie ? Pourquoi Gran Brijit tenait-elle tant à le récupérer ? La Gardienne dit que son peuple l'étudie depuis des centaines d'années et nous renvoie vers Gran Brijit."
+   "texte": "Le « Rituel du Tenraku » était en fait un blueprint appelé « PSA-84 ». Qu'est-ce que ça signifie ? Pourquoi Gran Brijit tenait-elle tant à le récupérer ? La Gardienne dit que son peuple l'étudie depuis des centaines d'années et nous renvoie vers Gran Brijit. Gran Brijit nous en a raconté une partie : c'est un fragment d'un rituel des architectes visant à élever les hommes au rang de dieux, tombé entre les mains de Vassago. Jane en a une copie de mémoire."
   },
   {
-   "titre": "La sœur de Harfang",
-   "texte": "Le registre des Mirenaï indique un Miren Hikari pour Rysei Tsuren, alors que la légende des Tsuren la dit Tenrai. Harfang s'apprête à la rencontrer."
+   "titre": "Le Miren de Rysei",
+   "texte": "Rysei a invoqué devant nous un immense léviathan aux yeux jaunes, un Tenrai, alors que le registre des Mirenaï dit Hikari. Erreur du registre, ou a-t-elle fait évoluer son Miren, ce qui est censé être impossible ? Elle a les yeux jaunes, comme le liquide des trois fioles trouvées dans le domaine. Kynn nous invite à dîner."
   },
   {
    "titre": "Des services à rendre",
@@ -95,6 +95,30 @@
   {
    "titre": "Le secret de Sycomore",
    "texte": "Tout Havre Noir croit que Sycomore Brise-Pavois est un homme. Elle est en réalité une jeune femme d'environ seize ans, balafrée. Qu'est-ce qui lui confère son immense pouvoir ?"
+  },
+  {
+   "titre": "Le secret des architectes",
+   "texte": "Gran Brijit nous a parlé des architectes, une civilisation d'avant les dieux qui bâtissait des cités volantes et a tenté d'élever les hommes au rang de dieux. Qui étaient-ils ? Les dieux en faisaient-ils partie ? Gran Brijit refuse de dire si elle en était une."
+  },
+  {
+   "titre": "La descente aux Enfers",
+   "texte": "Gran Brijit nous charge de descendre, de tuer Argonath, Naberoth et Absalom, puis de remonter en nous faisant le moins remarquer possible."
+  },
+  {
+   "titre": "Le marais de Minauros",
+   "texte": "Le marais de Minauros s'est empoisonné. Il faut nous y préparer avant la descente."
+  },
+  {
+   "titre": "Changer d'apparence",
+   "texte": "Aux Enfers, les humains sont traqués, chassés et capturés aussitôt pour être réduits en esclavage. Il nous faut trouver un moyen de changer d'apparence pour ne pas nous faire repérer."
+  },
+  {
+   "titre": "Le chapeau de Philippa",
+   "texte": "Sumeren Daïko transfère l'enchantement du chapeau de Philippa vers le masque d'Oni. Elle doit le renvoyer dans une semaine par le petit parchemin magique remis à Philippa, qui n'a plus son chapeau en attendant."
+  },
+  {
+   "titre": "Un contact à Uruzal",
+   "texte": "Les rapports du pavillon des Diplomates désignent Onaya, aubergiste d'Uruzal, comme point de contact sympathique, prête à parler aux étrangers. Les rapports parlent surtout de contrebande de sel Yaxal et de bois-fer Xalan."
   }
  ]
 }
