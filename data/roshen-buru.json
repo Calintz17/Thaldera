@@ -1851,7 +1851,7 @@
       "Philippa rédige un acte de vente de la garçonnière pour 500 pièces d'or : elle appartient désormais au groupe, qui s'en sert de point de chute.",
       "Quand le groupe en prend possession, deux corps s'y trouvent encore : celui d'une prostituée morte et celui de Darrek Kovacz.",
       "Ina et son équipe refont entièrement la garçonnière, qui est nettoyée, réparée et redécorée au goût du groupe.",
-      "Le groupe y prépare un festin, y passe la soirée et y débriefe ses révélations. Aucune rune de craie n'y est posée."
+      "Le groupe y prépare un festin, y passe la soirée et y débriefe ses révélations."
     ],
     "histoire": [],
     "relations": [
@@ -4509,32 +4509,25 @@
     "id": "bhamir",
     "type": "pnj",
     "nom": "Bhamir",
-    "titre": "Marchand cornu d'encens et de baumes",
+    "titre": "Marchand cornu de vin et de nourriture",
     "parent": "roshen-buru",
     "lieu": "roshen-buru",
     "statut": "vivant",
-    "resume": "Marchand cornu d'encens et de baumes, posé et observateur. Il connaît les odeurs.",
-    "citation": {
-      "texte": "Une odeur. Voilà ce dont je me souviens. Une odeur âcre, chimique, qui flottait autour de sa maison depuis une semaine.",
-      "qui": "Bhamir, marchand d'encens"
-    },
+    "resume": "Marchand cornu qui vend du vin, du saké, de la viande et du poisson.",
     "img": "img/pnj/bhamir.webp",
-    "relations": [
-      {
-        "cible": "tobiya",
-        "type": "voisin de",
-        "ton": "neutre",
-        "note": "Témoin de la maison de Tobiya.",
-        "inverse": "voisin de"
-      }
-    ],
+    "relations": [],
     "attitude": "neutre",
     "connu": [
-      "Interrogé pendant l'enquête sur la disparition de Tobiya, il se souvient d'une odeur âcre et chimique, qu'aucune senteur ne couvrait, qui flottait depuis une semaine autour de la maison de Tobiya et remontait des égouts.",
-      "En faisant les courses, le groupe le retrouve sur un marché : il vend du vin, du saké, de la viande, du poisson et de la viande en croûte, de quoi préparer le festin de la garçonnière."
+      "En faisant les courses, le groupe le rencontre sur un marché : il vend du vin, du saké, de la viande, du poisson et de la viande en croûte. Le groupe lui achète de quoi préparer le festin de la garçonnière."
     ],
     "teinte": "#753c19",
-    "histoire": []
+    "histoire": [],
+    "galerie": [
+      {
+        "img": "img/paysages/roshen-buru/rue.webp",
+        "legende": "Une rue de Roshen Buru"
+      }
+    ]
   },
   {
     "id": "poki",
