@@ -2059,7 +2059,8 @@
     "connu": [
       "Cheffe de gang surnommée Red, transportée dans une cage sur la charrette. Elle observe en silence, dos droit, avec une patience calme.",
       "Pendant le trajet, elle flatte les deux femmes, insinue que Doëlan veut l'éliminer, lance Charm Person et propose 2 000 po.",
-      "Philippa et Jane l'aident à s'échapper. Elle reste dans la nature et sa dette n'a jamais été payée."
+      "Philippa et Jane l'aident à s'échapper. Elle reste dans la nature et sa dette n'a jamais été payée.",
+      "Jane la signale à Vespera : sa dette envers le groupe peut servir à obtenir son aide et celle de sa bande. Si Vespera l'utilise, la dette envers les joueurs est effacée."
     ],
     "histoire": [],
     "alias": [
@@ -3788,7 +3789,8 @@
       "Le pacte avec l'Aile d'Argent a apporté des capitaux, mais très loin de ce qu'il faudrait. Un ambassadeur de Rivegard presse Sycomore de lâcher Port Doëlan.",
       "Elle reçoit les joueurs sur le chantier, cordiale mais occupée, assise sur un bloc de maçonnerie comme sur un trône de fortune. Autour d'elle veillent Tina et Nina en armures bricolées, Kralik et Nesk, deux hommes-rats aux aguets.",
       "Elle pèse l'idée d'envoyer des émissaires sur le nouveau continent, mais préfère la discrétion pour l'instant.",
-      "Elle appelle le groupe au chantier de Port Doëlan et propose un roadtrip vers Leyenmil."
+      "Elle appelle le groupe au chantier de Port Doëlan et propose un roadtrip vers Leyenmil.",
+      "Jane la contacte pour l'informer que Mara « Red » Callahan, qui se trouve dans la région, a une dette envers le groupe, et l'encourage à utiliser cette dette au nom des joueurs pour obtenir l'aide de Mara et de sa bande. Cela devrait aider Vespera de manière significative."
     ],
     "histoire": [],
     "img": "img/thaldera/pnj/vespera-merigold.webp",
@@ -5787,7 +5789,8 @@
     ],
     "img": "img/pnj/port-blanc-banditos.webp",
     "connu": [
-      "Ils tendent une embuscade au gué pendant l'escorte de Philippa et Jane : un arbre fraîchement abattu en travers du passage, une rivière anormalement haute pour la saison, des reflets métalliques dans les rochers."
+      "Ils tendent une embuscade au gué pendant l'escorte de Philippa et Jane : un arbre fraîchement abattu en travers du passage, une rivière anormalement haute pour la saison, des reflets métalliques dans les rochers.",
+      "Mara et sa bande se trouvent dans la région de Vespera. Jane propose à Vespera de leur demander leur aide au nom des joueurs."
     ],
     "histoire": []
   },
@@ -7727,7 +7730,8 @@
       "Il désigne la mer d'Émeraude sur une carte : là où personne ne va.",
       "Il pilote le sous-marin pendant le voyage et remonte à la surface devant Brakka, après des jours de navigation. Il diagnostique des dégâts de coque et de propulsion dus aux courants et aux tempêtes.",
       "Il annonce trois jours minimum, peut-être cinq, et sept si le groupe le regarde travailler. Le sous-marin ne peut pas naviguer en rivière, et les nains ne descendent pas à terre.",
-      "Il conseille au groupe d'aller voir au village s'il y a du matériel ou de la main d'œuvre."
+      "Il conseille au groupe d'aller voir au village s'il y a du matériel ou de la main d'œuvre.",
+      "Le groupe le contacte par la pierre de message. Il répond calmement que les nains passent leur meilleure vie sur la plage à Brakka. Ils ont débarqué du sous-marin et se reposent, après des mois passés à le construire. Le groupe est rassuré sur leur sort."
     ],
     "teinte": "#753c19",
     "histoire": []
@@ -7765,7 +7769,8 @@
     "connu": [
       "Le groupe embarque dans la crique du château de Spezza avec les nains de Borim Brise-Montagne.",
       "Il traverse deux tempêtes de courants, puis plonge dans la faille. Les bandits l'attaquent pendant la descente et le groupe repousse l'attaque.",
-      "Après Agran, il remonte à la surface devant Brakka. Il a besoin de réparations et replonge lentement quand le groupe gagne le rivage."
+      "Après Agran, il remonte à la surface devant Brakka. Il a besoin de réparations et replonge lentement quand le groupe gagne le rivage.",
+      "Les nains ont quitté le sous-marin et se reposent sur la plage de Brakka."
     ],
     "chapeau": "Le sous-marin sent le métal chaud, l'huile de machine et le bois compressé. Les cloisons de pyrracier gémissent à intervalles irréguliers, une respiration mécanique qui rappelle que quelque chose retient le poids de l'océan à quelques centimètres. Par les hublots, l'eau passe du vert au bleu, puis à un noir absolu.",
     "galerie": [

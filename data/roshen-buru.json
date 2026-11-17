@@ -2095,8 +2095,8 @@
     },
     "galerie": [
       {
-        "img": "img/paysages/roshen-buru/academie-du-tenraku.webp",
-        "legende": "L'académie du Tenraku"
+        "img": "img/paysages/roshen-buru/terrain-d-entrainement-tsuren.webp",
+        "legende": "Le terrain d'entraînement des Tsuren"
       }
     ],
     "img": "img/pnj/rysei-tsuren.webp",
@@ -2112,14 +2112,17 @@
         "label": "Avec son Miren",
         "lieux": [
           "temple-du-tenraku",
-          "domaine-tsuren"
+          "terrain-d-entrainement-tsuren"
         ],
         "teinte": "#196975"
       }
     ],
     "attitude": "negatif",
     "teinte": "#752519",
-    "question": "Le registre s'est-il trompé sur le Miren de Rysei, ou a-t-elle fait évoluer son Miren, ce qui est censé être impossible ? Les trois fioles ambrées y sont-elles pour quelque chose ?"
+    "question": "Le registre s'est-il trompé sur le Miren de Rysei, ou a-t-elle fait évoluer son Miren, ce qui est censé être impossible ? Les trois fioles ambrées y sont-elles pour quelque chose ?",
+    "lieux": [
+      "terrain-d-entrainement-tsuren"
+    ]
   },
   {
     "id": "kynn-tsuren",
@@ -5604,6 +5607,25 @@
       {
         "img": "img/paysages/roshen-buru/garconniere-darrek.webp",
         "legende": "La garçonnière de Darrek Kovacz"
+      }
+    ],
+    "histoire": []
+  },
+  {
+    "id": "terrain-d-entrainement-tsuren",
+    "type": "lieu",
+    "nom": "Le terrain d'entraînement des Tsuren",
+    "titre": "Cour d'entraînement du domaine",
+    "parent": "domaine-tsuren",
+    "resume": "Cour d'entraînement du domaine Tsuren, où Rysei s'exerce avec ses gardes.",
+    "connu": [
+      "Rysei s'y entraîne avec ses gardes. Elle y affronte le groupe, et Harfang regarde le combat un verre de vin à la main.",
+      "Kynn y arrête le combat."
+    ],
+    "galerie": [
+      {
+        "img": "img/paysages/roshen-buru/terrain-d-entrainement-tsuren.webp",
+        "legende": "Le terrain d'entraînement des Tsuren"
       }
     ],
     "histoire": []
