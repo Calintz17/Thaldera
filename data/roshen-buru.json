@@ -5606,6 +5606,14 @@
         "type": "Même jaune que ses yeux ?",
         "ton": "neutre"
       }
+    ],
+    "img": "img/pnj/fioles-ambrees.webp",
+    "teinte": "#754f18",
+    "galerie": [
+      {
+        "img": "img/paysages/roshen-buru/terrain-d-entrainement-tsuren.webp",
+        "legende": "Le terrain d'entraînement du domaine Tsuren"
+      }
     ]
   },
   {

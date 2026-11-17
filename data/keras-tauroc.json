@@ -10595,6 +10595,14 @@
         "type": "Contrebande jumelle",
         "ton": "neutre"
       }
+    ],
+    "img": "img/pnj/sel-yaxal.webp",
+    "teinte": "#754618",
+    "galerie": [
+      {
+        "img": "img/placeholder/paysage.svg",
+        "legende": ""
+      }
     ]
   },
   {
@@ -10620,6 +10628,14 @@
         "cible": "sel-yaxal",
         "type": "Contrebande jumelle",
         "ton": "neutre"
+      }
+    ],
+    "img": "img/pnj/bois-fer-xalan.webp",
+    "teinte": "#754318",
+    "galerie": [
+      {
+        "img": "img/placeholder/paysage.svg",
+        "legende": ""
       }
     ]
   },
