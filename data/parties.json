@@ -747,6 +747,112 @@
         "Rysei porte un Miren Tenrai, un léviathan aux yeux jaunes, alors que le registre dit Hikari. Ses yeux sont jaunes, comme le liquide des trois fioles.",
         "Le rêve de Philippa montre l'équilibre du monde menacé, et la mort d'Ink et d'Olyssane en présage."
       ]
+    },
+    {
+      "titre": "Uruzal : La Mère de la Toile",
+      "date": "Philippa + Jane + Harfang",
+      "resume": "• Le Balam Kaal arrive dans la brume, sans personne sur le pont. Le Passeur, masqué, encaisse trois mille pièces et le groupe monte à la marée. Pendant vingt et un jours, des runes gravées dans les côtes de baleine pilotent le navire. Le soir du quinzième jour, le Passeur sort un plateau de Bulak.\n• En pleine mer, Ahalkun attaque avec six bras. Le groupe réduit sa prise à deux bras et elle sombre.\n• À Uruzal, ville de pontons sur mangrove, Onaya accueille le groupe dans son auberge et lui fait visiter la ville : Umtar le boucher aveugle, Sennek le myconide qui se dit Sennek depuis toujours, Ahkun le graveur d'os.\n• Sur les quais, des caisses de vésine et de sel Yaxal tamponnées par la Maison Tzobal contiennent des araignées. Un homme au manteau trop large les garde.\n• Au temple du Serpent, Yaxune fend la langue de chaque membre du groupe et remet le sceau. Ozhal loue ses Manaru contre cent pièces d'or par personne.\n• Sur le Nahur, des guerriers-crocodiles tendent une embuscade avec un mur de lames. Les Manaru meurent.\n• Dans la jungle, une biche pend dans une toile, des araignées attaquent, puis des hommes-araignées défendent un temple en ruine aux six statues. Le groupe résout l'énigme des statues.\n• Dans l'antre, la Mère de la Toile hurle qu'elle recouvrira le monde et ressuscitera l'Araignée maudite par Ajaw Tzobal. Ses enfants sont déjà sur le continent.",
+      "liens": [
+        {
+          "id": "balam-kaal"
+        },
+        {
+          "id": "le-passeur"
+        },
+        {
+          "id": "le-bulak"
+        },
+        {
+          "id": "ahalkun"
+        },
+        {
+          "id": "uruzal"
+        },
+        {
+          "id": "auberge-d-onaya"
+        },
+        {
+          "id": "onaya"
+        },
+        {
+          "id": "quais-d-uruzal"
+        },
+        {
+          "id": "hote-des-quais"
+        },
+        {
+          "id": "boucherie-d-umtar"
+        },
+        {
+          "id": "umtar"
+        },
+        {
+          "id": "champignonniere-de-sennek"
+        },
+        {
+          "id": "sennek"
+        },
+        {
+          "id": "atelier-d-ahkun"
+        },
+        {
+          "id": "ahkun"
+        },
+        {
+          "id": "temple-du-serpent"
+        },
+        {
+          "id": "yaxune"
+        },
+        {
+          "id": "dock-d-ozhal"
+        },
+        {
+          "id": "ozhal"
+        },
+        {
+          "id": "chevaucheurs-d-ozhal"
+        },
+        {
+          "id": "embuscade-du-nahur"
+        },
+        {
+          "id": "guerriers-crocodiles"
+        },
+        {
+          "id": "sentier-de-la-jungle"
+        },
+        {
+          "id": "araignees-de-balamor"
+        },
+        {
+          "id": "temple-de-balam-araignee"
+        },
+        {
+          "id": "hommes-araignees"
+        },
+        {
+          "id": "antre-de-la-mere"
+        },
+        {
+          "id": "mere-de-la-toile"
+        },
+        {
+          "id": "ajaw-tzobal"
+        },
+        {
+          "id": "sel-yaxal"
+        },
+        {
+          "id": "tzakar"
+        }
+      ],
+      "secrets": [
+        "Les caisses d'araignées partent tous les quinze jours pour Cap Cornes et Roshen Buru, avec le même tampon Tzobal que le lot d'Azuren Kai.",
+        "Le cadavre et le myconide Sennek portent la même aura : ce n'est pas une possession, c'est une continuité.",
+        "Le Serpent est la pièce d'Ajaw Tzobal. Il reste dans l'étui et personne ne le joue.",
+        "À Tzakar, la langue fendue sera lue par le Visage du Jaguar comme une allégeance au Serpent."
+      ]
     }
   ]
 }

@@ -6316,12 +6316,27 @@
     "connu": [
       "Le seul passage connu vers l'intérieur de la jungle de Balamor.",
       "Le Balam Kaal y dépose les passagers. De là, on remonte le fleuve Nahur vers Tzakar.",
-      "D'après les rapports du pavillon des Diplomates de Roshen Buru, Onaya, l'aubergiste, est un point de contact sympathique, prête à parler aux étrangers."
+      "D'après les rapports du pavillon des Diplomates de Roshen Buru, Onaya, l'aubergiste, est un point de contact sympathique, prête à parler aux étrangers.",
+      "Le Balam Kaal ralentit sans qu'on voie la côte. La mer devient brune, l'horizon se referme sur des racines. La ville flotte, des pontons de bois noir courent d'un tronc de mangrove à l'autre et les maisons sont sur pilotis.",
+      "Il fait sombre en plein midi. Des lanternes brûlent partout et leur huile fume noir. Ce sont des offrandes, chacune posée devant un petit os gravé.",
+      "L'odeur de graisse brûlée et de soufre est présente partout. Une colonne de fumée visible de partout s'élève en amont, ce sont les cuves de dépeçage, où personne n'entre. Un raclement de lames sur l'os s'arrête chaque soir à la nuit tombée.",
+      "Personne n'est hostile, tout le monde est un peu à côté. Les habitants répondent rarement à la question posée.",
+      "Pour remonter le fleuve, il faut Ozhal, et Ozhal veut le sceau de Yaxune."
     ],
     "pos": {
       "x": 0.399,
       "y": 0.273
-    }
+    },
+    "galerie": [
+      {
+        "img": "img/paysages/uruzal/arrivee.webp",
+        "legende": "L'arrivée à Uruzal"
+      },
+      {
+        "img": "img/paysages/uruzal/rue.webp",
+        "legende": "Les pontons d'Uruzal"
+      }
+    ]
   },
   {
     "id": "tzakar",
@@ -10550,13 +10565,17 @@
     "type": "pnj",
     "nom": "Onaya",
     "titre": "Aubergiste d'Uruzal",
-    "parent": "uruzal",
-    "lieu": "uruzal",
+    "parent": "auberge-d-onaya",
+    "lieu": "auberge-d-onaya",
     "statut": "vivant",
-    "resume": "Aubergiste d'Uruzal, point de contact de Roshen Buru, plutôt sympathique d'après les rapports.",
+    "resume": "Aubergiste d'Uruzal, chaleureuse et curieuse, seul visage normal de la ville.",
     "connu": [
       "Les rapports du pavillon des Diplomates de Roshen Buru la désignent comme point de contact à Uruzal.",
-      "D'après ces rapports, elle est plutôt sympathique et prête à parler aux étrangers."
+      "D'après ces rapports, elle est plutôt sympathique et prête à parler aux étrangers.",
+      "Elle accueille le groupe à la porte, ravie d'avoir trois clients après onze mois. Elle pose six questions sur ce qu'ils font ici.",
+      "Elle demande deux pièces pour la chambre et dix pièces d'or pour faire visiter la ville. Elle donne gratuitement quelques conseils : Yaxune est incontournable pour remonter, Umtar est le meilleur boucher qu'elle ait connu, et il ne faut jamais aller sur la berge la nuit.",
+      "Elle dit que Sennek a changé et que personne n'en parle.",
+      "Le soir, quand le raclement s'arrête, elle prévient le groupe qu'il dormira mal, comme tout le monde la première nuit."
     ],
     "relations": [
       {
@@ -10566,7 +10585,13 @@
       }
     ],
     "attitude": "neutre",
-    "histoire": []
+    "histoire": [],
+    "img": "img/pnj/onaya.webp",
+    "citation": {
+      "texte": "Trois. Vous êtes trois. Ça fait onze mois que je n'ai pas eu trois. Asseyez-vous, la soupe est chaude et je meurs d'envie de savoir ce que vous faites ici.",
+      "qui": "Onaya"
+    },
+    "teinte": "#a8742a"
   },
   {
     "id": "sel-yaxal",
@@ -10678,5 +10703,593 @@
     "attitude": "neutre",
     "teinte": "#3b3b3b",
     "histoire": []
+  },
+  {
+    "id": "le-passeur",
+    "type": "pnj",
+    "nom": "Le Passeur",
+    "titre": "Seul homme à bord du Balam Kaal",
+    "parent": "balam-kaal",
+    "lieu": "balam-kaal",
+    "statut": "vivant",
+    "resume": "Seul homme visible à bord du Balam Kaal, il barre le navire et encaisse les passagers.",
+    "connu": [
+      "Il descend seul sur le quai d'Azuren Kai. Robe sombre et lourde, plaques de jade aux épaules, masque de cuir lacé qui lui couvre toute la tête, sans ouverture pour la bouche. Sa voix reste parfaitement audible.",
+      "Il demande trois mille pièces pour le groupe et accepte l'or, les gemmes et le jade brut. Il ne demande ni nom, ni raison, ni destination.",
+      "Pendant les vingt et un jours de traversée, il reste à la barre, une main à plat sur le bois. On ne le voit jamais dormir.",
+      "Il dit tenir la barre et écouter ce qui est gravé dans les os, plus gardien que capitaine.",
+      "Il avertit le groupe de rester à l'avant et de ne pas descendre sous le pont.",
+      "Il laisse le groupe jouer au Bulak avec lui le soir du quinzième jour.",
+      "Quand Ahalkun attaque, il ne quitte pas la barre et ne combat pas. Il indique de frapper ce qui tient, pas ce qui bouge.",
+      "À Uruzal, il amarre, indique le ponton, ne redescend pas et ne dit pas au revoir."
+    ],
+    "alias": [
+      "Passeur",
+      "passeur de Balam"
+    ],
+    "relations": [
+      {
+        "cible": "balam-kaal",
+        "type": "Barre le",
+        "ton": "neutre"
+      }
+    ],
+    "img": "img/pnj/le-passeur-de-balam.webp",
+    "attitude": "neutre",
+    "teinte": "#3d4a3a",
+    "citation": {
+      "texte": "Je tiens la barre et j'écoute ce qui est gravé dans les os. Je suis plus un gardien qu'un capitaine.",
+      "qui": "Le Passeur"
+    },
+    "histoire": []
+  },
+  {
+    "id": "ahalkun",
+    "type": "pnj",
+    "nom": "Ahalkun",
+    "titre": "La Preneuse",
+    "parent": "balam-kaal",
+    "lieu": "balam-kaal",
+    "statut": "vivant",
+    "resume": "Créature marine aux six bras gigantesques, qui attaque le Balam Kaal en pleine traversée.",
+    "connu": [
+      "Le navire s'arrête net au milieu de l'eau. Six bras plus gros qu'un homme ne peut en faire le tour sortent de l'eau noire et cherchent une prise sur le Balam Kaal.",
+      "Un bras serre le mât, trois tirent le navire vers le bas sur tribord, un tire dans l'autre sens sur bâbord, et un dernier reste posé en travers de la proue sans bouger.",
+      "Son corps reste sous la coque et on ne peut pas la tuer. Le groupe réduit la prise à deux bras, elle lâche et sombre.",
+      "Le Passeur dit qu'elle croit ce navire mort, et qu'elle n'a pas complètement tort."
+    ],
+    "alias": [
+      "la Preneuse"
+    ],
+    "img": "img/pnj/ahalkun.webp",
+    "attitude": "hostile",
+    "teinte": "#2f4a5a",
+    "citation": {
+      "texte": "Elle croit que ce navire est mort. Elle n'a pas complètement tort, et c'est bien le problème.",
+      "qui": "Le Passeur"
+    },
+    "histoire": []
+  },
+  {
+    "id": "le-bulak",
+    "type": "sujet",
+    "nom": "Le Bulak",
+    "titre": "Jeu de plateau de Balamor",
+    "parent": "balamor",
+    "resume": "Jeu de plateau à trois pièces, sorti par le Passeur le soir du quinzième jour.",
+    "connu": [
+      "Le Passeur sort un plateau de bois noirci, usé lisse par des générations de mains. Un escalier de trois marches y est gravé en relief, jusqu'à une plateforme incrustée d'os de baleine marquée d'un serpent enroulé.",
+      "Chaque joueur reçoit trois jetons d'os : le jaguar, l'aigle et le crocodile. Le jaguar bat le crocodile, le crocodile bat l'aigle, l'aigle bat le jaguar.",
+      "Un septième jeton, le serpent, reste dans l'étui. Personne ne le joue. C'est la pièce d'Ajaw Tzobal et son glyphe est gravé au sommet.",
+      "Le premier arrivé sur la plateforme gagne."
+    ],
+    "histoire": [],
+    "galerie": [
+      {
+        "img": "img/paysages/tzakar/balamor-jeu-bulak.webp",
+        "legende": "Le plateau du Bulak"
+      }
+    ],
+    "alias": [
+      "Bulak",
+      "jeu du Bulak"
+    ]
+  },
+  {
+    "id": "auberge-d-onaya",
+    "type": "lieu",
+    "nom": "L'auberge d'Onaya",
+    "titre": "Auberge d'Uruzal",
+    "parent": "uruzal",
+    "resume": "Seule bâtisse propre d'Uruzal, tenue par Onaya.",
+    "alias": [
+      "auberge d'Uruzal"
+    ],
+    "connu": [
+      "Une seule pièce à l'étage, quatre paillasses sur le plancher, un volet qui ne ferme plus. Tout est humide. Deux pièces la nuit pour la chambre entière.",
+      "Pour dix pièces d'or, Onaya fait visiter la ville. Elle présente Umtar, Sennek, Ahkun et Ozhal."
+    ],
+    "chapeau": "C'est la seule bâtisse où quelqu'un a récemment passé un balai. Au rez-de-chaussée, un comptoir trop grand pour le nombre de clients que la ville voit passer, astiqué quand même.",
+    "histoire": [],
+    "galerie": [
+      {
+        "img": "img/paysages/uruzal/auberge.webp",
+        "legende": "L'auberge d'Onaya"
+      }
+    ]
+  },
+  {
+    "id": "quais-d-uruzal",
+    "type": "lieu",
+    "nom": "Les quais d'Uruzal",
+    "titre": "Pontons du fleuve",
+    "parent": "uruzal",
+    "resume": "Pontons où dort le sel Yaxal, sous la garde d'une silhouette en manteau.",
+    "connu": [
+      "Le fleuve roule brun sous les pontons. Le sel Yaxal dort en sacs sous des bâches goudronnées.",
+      "Les caisses portent le tampon de la Maison Tzobal, le même que le lot déchargé à Azuren Kai. Elles viennent de Balamor par la rivière haute et partent tous les quinze jours pour Cap Cornes et Roshen Buru.",
+      "Du fil de toile fine dépasse des joints, le fond est percé de trous d'aiguille, et une minuscule araignée de jungle est dans la paille. Le groupe en conclut que les caisses de vésine et de sel Yaxal contiennent des araignées.",
+      "Un homme en grand manteau déchiré garde les caisses, immobile et trop droit. Il a au moins quatre coudes sous le tissu."
+    ],
+    "chapeau": "Le fleuve d'Uruzal est large et brun, et il roule sous les pontons avec un bruit de bête qui digère. Des cordes grincent, des poulies crient, un chien aboie une fois puis renonce. Au bout du ponton, contre une pile de caisses scellées, un homme se tient immobile, les épaules étrangement larges sous son manteau.",
+    "histoire": [],
+    "galerie": [
+      {
+        "img": "img/paysages/uruzal/arrivee.webp",
+        "legende": "Les quais d'Uruzal"
+      }
+    ]
+  },
+  {
+    "id": "hote-des-quais",
+    "type": "pnj",
+    "nom": "L'hôte des quais",
+    "titre": "Silhouette en manteau déchiré",
+    "parent": "quais-d-uruzal",
+    "lieu": "quais-d-uruzal",
+    "statut": "vivant",
+    "resume": "Gardien des caisses d'araignées sur les quais d'Uruzal.",
+    "connu": [
+      "Il se tient immobile au bout du ponton, contre une pile de caisses scellées, sous un manteau trop ample qui cache plus de bras qu'il n'en faut.",
+      "Il parle par phrases courtes, d'une voix cassée, et protège les caisses.",
+      "Les dockers savent que ça remue dans les caisses et ont peur de perdre leur place. Le chef de quai affirme que le manifeste est en règle : quatorze caisses tous les quinze jours."
+    ],
+    "alias": [
+      "hôte",
+      "silhouette des quais"
+    ],
+    "img": "img/pnj/hote-des-quais.webp",
+    "attitude": "hostile",
+    "teinte": "#5a4a3a",
+    "citation": {
+      "texte": "Pas ouvrir. Mère veut les petites au chaud.",
+      "qui": "L'hôte des quais"
+    },
+    "histoire": []
+  },
+  {
+    "id": "boucherie-d-umtar",
+    "type": "lieu",
+    "nom": "La boucherie d'Umtar",
+    "titre": "Cabane de dépeçage",
+    "parent": "uruzal",
+    "resume": "Grande cabane ouverte sur pilotis, où Umtar découpe la baleine des cuves et le gibier de jungle.",
+    "connu": [
+      "On y accède par un escalier de bois flotté dont chaque marche craque d'une note différente.",
+      "Des carcasses de jungle sont accrochées au fond, et il en manque des morceaux prélevés proprement."
+    ],
+    "chapeau": "Une grande cabane ouverte sur trois côtés, avec des crochets suspendus à la charpente et un billot large comme une table de banquet. Le sol est en pente et ce qui s'écoule dans les rigoles tombe directement dans la mangrove.",
+    "histoire": [],
+    "galerie": [
+      {
+        "img": "img/paysages/uruzal/boucherie.webp",
+        "legende": "La boucherie d'Umtar"
+      }
+    ]
+  },
+  {
+    "id": "umtar",
+    "type": "pnj",
+    "nom": "Umtar",
+    "titre": "Boucher d'Uruzal",
+    "parent": "boucherie-d-umtar",
+    "lieu": "boucherie-d-umtar",
+    "statut": "vivant",
+    "resume": "Orc aveugle, boucher d'Uruzal, qui vend viande, graisse et moelle à qui veut.",
+    "connu": [
+      "Un orc immense à la peau violette, torse nu sous un tablier de cuir noirci. Ses défenses ont poussé vers le haut et sont entrées dans ses orbites, deux pointes d'ivoire à la place des yeux.",
+      "Il ne s'arrête pas quand on entre et découpe une côte de baleine avec une précision que personne de voyant n'obtiendrait. Il reconnaît les gens à leur pas.",
+      "Il ne répond jamais sur ses yeux et enchaîne sur autre chose.",
+      "Il utilise des lames différentes pour la baleine et pour le gibier de jungle, mais n'explique pas pourquoi.",
+      "Il porte le jaguar sans masque, ce qui n'est pas la règle. Il ne s'en explique pas non plus."
+    ],
+    "img": "img/pnj/umtar.webp",
+    "attitude": "neutre",
+    "teinte": "#5b3a6b",
+    "citation": {
+      "texte": "Le dos, c'est du gras. Le ventre, c'est de la corde. Prenez la joue. Personne ne prend jamais la joue et c'est la seule bonne pièce.",
+      "qui": "Umtar"
+    },
+    "histoire": []
+  },
+  {
+    "id": "champignonniere-de-sennek",
+    "type": "lieu",
+    "nom": "La champignonnière de Sennek",
+    "titre": "Comptoir de champignons",
+    "parent": "uruzal",
+    "resume": "Minuscule comptoir adossé à une racine, où un myconide vend des champignons en bocaux.",
+    "connu": [
+      "Des bocaux de champignons dont certains respirent contre le verre sont alignés sur trois étagères.",
+      "Un cadavre d'homme d'une cinquantaine d'années est assis contre l'étagère, à moitié disparu sous une croûte de mycélium blanc. Il est en évidence, à deux pas du comptoir."
+    ],
+    "chapeau": "Le comptoir est minuscule, adossé à une racine si large qu'elle fait mur. Des bocaux s'alignent sur trois étagères, chacun rempli d'un champignon différent. Par terre, contre le pied de l'étagère, un homme est assis, la tête tombée en avant.",
+    "histoire": [],
+    "galerie": [
+      {
+        "img": "img/paysages/uruzal/champignonniere.webp",
+        "legende": "La champignonnière de Sennek"
+      }
+    ]
+  },
+  {
+    "id": "sennek",
+    "type": "pnj",
+    "nom": "Sennek",
+    "titre": "Marchand de champignons",
+    "parent": "champignonniere-de-sennek",
+    "lieu": "champignonniere-de-sennek",
+    "statut": "vivant",
+    "resume": "Myconide aimable qui tient une champignonnière, et se dit Sennek depuis toujours.",
+    "connu": [
+      "Un myconide de taille humaine, chapeau bleu pâle, sans visage, mais qui donne l'impression de sourire. Il parle par télépathie, sans jamais bouger, d'une voix cordiale.",
+      "Il affirme être Sennek et avoir toujours vendu des champignons. Il se souvient de son enfance, de sa mère et du jour où il a ouvert la boutique.",
+      "Aucun mensonge dans ce qu'il dit. Il décrit exactement l'effet de chaque champignon et ne survend rien.",
+      "Quand on désigne le cadavre, il regarde puis revient au client. Il dit qu'il y en a beaucoup à Uruzal. Si on insiste, il devient triste.",
+      "Le cadavre et lui portent la même aura magique.",
+      "Onaya dit qu'il n'est pas méchant, mais très sûr de lui pour quelqu'un qui a tué l'ancien propriétaire."
+    ],
+    "img": "img/pnj/sennek.webp",
+    "attitude": "neutre",
+    "teinte": "#4a6a9a",
+    "citation": {
+      "texte": "J'ai ouvert cette boutique. J'ai porté ces planches sur mon dos. Vous pouvez demander à Onaya.",
+      "qui": "Sennek"
+    },
+    "histoire": []
+  },
+  {
+    "id": "atelier-d-ahkun",
+    "type": "lieu",
+    "nom": "L'atelier d'Ahkun",
+    "titre": "Arbre creux sur un ponton",
+    "parent": "uruzal",
+    "resume": "Arbre mort et creux aménagé en atelier, où Ahkun grave des talismans d'os.",
+    "connu": [
+      "Un ponton étroit s'écarte du chemin principal et finit contre un arbre mort, énorme et creux. De larges toiles tendues entre les branches détournent la pluie. C'est le seul endroit sec de la ville.",
+      "Des dizaines de talismans achevés pendent à des fils et tournent lentement tous dans le même sens, sans un souffle d'air.",
+      "Ahkun grave à la commande, une nuit par pièce, et prend de l'os en paiement : une dent, une phalange, de l'ivoire, une écaille. À défaut, de l'or à un prix élevé."
+    ],
+    "chapeau": "Un ponton étroit va mourir contre un arbre mort, énorme, creux, dont l'intérieur sert d'atelier et de logement. L'eau court sur les toiles avec un bruit de tambour permanent.",
+    "histoire": [],
+    "galerie": [
+      {
+        "img": "img/paysages/uruzal/graveur-ahkun.webp",
+        "legende": "L'atelier d'Ahkun"
+      }
+    ]
+  },
+  {
+    "id": "ahkun",
+    "type": "pnj",
+    "nom": "Ahkun",
+    "titre": "Graveur d'os",
+    "parent": "atelier-d-ahkun",
+    "lieu": "atelier-d-ahkun",
+    "statut": "vivant",
+    "resume": "Graveur d'os qui vend de vrais talismans magiques, payés en os plutôt qu'en or.",
+    "connu": [
+      "Un homme noir aux longues dreads nouées haut, le visage couvert de larges traits de peinture blanche. Il grave un fragment de côte de baleine, souffle la poussière, passe l'encre.",
+      "Il annonce l'effet de ses talismans platement, comme un artisan qui décrit une pièce. Contrairement aux charmes de Kanabé à Azuren Kai, les siens fonctionnent.",
+      "Il répond souvent à côté, puis dix minutes plus tard à la question exacte.",
+      "Les glyphes qu'il grave ne sont pas des glyphes tzobal courants. Ils appartiennent à un répertoire plus ancien. Il dit qu'on ne les invente pas, qu'on les retrouve, et qu'il y en a un qu'il n'a jamais fini.",
+      "Il porte le crocodile, sans le cacher ni le revendiquer."
+    ],
+    "alias": [
+      "Akhun"
+    ],
+    "img": "img/pnj/ahkun.webp",
+    "attitude": "neutre",
+    "teinte": "#2a2a2a",
+    "citation": {
+      "texte": "Pas d'or. De l'os. Une dent fait l'affaire, la vôtre ou une autre, l'os ne fait pas la différence, c'est moi qui la fais.",
+      "qui": "Ahkun"
+    },
+    "histoire": []
+  },
+  {
+    "id": "temple-du-serpent",
+    "type": "lieu",
+    "nom": "Le temple du Serpent",
+    "titre": "Temple d'Uruzal",
+    "parent": "uruzal",
+    "resume": "Seul bâtiment d'Uruzal sur de la pierre, où Yaxune garde le fleuve.",
+    "connu": [
+      "Un socle bas, verdi, à moitié pris dans les racines, surmonté d'une salle sans porte où l'air est plus froid qu'ailleurs.",
+      "Yaxune y demande un prix : chaque personne tire la langue et elle la fend sur la longueur d'un éclat d'os. La langue reste fendue. Le groupe passe le rite.",
+      "En échange, Yaxune remet un jeton d'os gravé, le sceau, à présenter à Ozhal. Il vaut pour tout le groupe.",
+      "Les premiers jours, parler est difficile avec la langue fendue. À Tzakar, le Visage du Jaguar y verra une allégeance au Serpent."
+    ],
+    "chapeau": "Le temple est le seul bâtiment d'Uruzal qui repose sur de la pierre. L'air y est plus froid, et Yaxune attend au centre avant même qu'on ait décidé de venir.",
+    "histoire": [],
+    "galerie": [
+      {
+        "img": "img/paysages/uruzal/temple-du-serpent.webp",
+        "legende": "Le temple du Serpent"
+      }
+    ]
+  },
+  {
+    "id": "yaxune",
+    "type": "pnj",
+    "nom": "Yaxune",
+    "titre": "Gardienne du temple et du fleuve",
+    "parent": "temple-du-serpent",
+    "lieu": "temple-du-serpent",
+    "statut": "vivant",
+    "resume": "Prêtresse du Serpent à Uruzal, qui décide qui peut remonter le fleuve.",
+    "connu": [
+      "Elle a les yeux jaunes et lumineux. Tous les porteurs du Serpent naissent ainsi : on ne rejoint pas le Visage du Serpent, on y naît, et le temple vient chercher l'enfant.",
+      "Ses joues ont été ouvertes jusqu'à la moitié des mâchoires puis refermées. Elle s'est fait ces cicatrices elle-même, adulte. Le gros fil de pêche noir qui les traverse a été posé des années après.",
+      "Elle est la première personne de la ville à répondre exactement à ce qu'on lui demande.",
+      "Rien ne monte et rien ne descend le fleuve sans son accord. Elle dit clairement que le groupe n'est pas obligé de passer par elle, et ne l'en empêchera pas.",
+      "Elle fend la langue de chaque membre du groupe et remet le sceau pour Ozhal."
+    ],
+    "img": "img/pnj/yaxune.webp",
+    "attitude": "neutre",
+    "teinte": "#c9a82a",
+    "citation": {
+      "texte": "Vous n'êtes pas obligés. Vous pouvez repartir, prendre une pirogue, tenter votre chance. Je ne vous en empêcherai pas.",
+      "qui": "Yaxune"
+    },
+    "histoire": []
+  },
+  {
+    "id": "dock-d-ozhal",
+    "type": "lieu",
+    "nom": "Le dock d'Ozhal",
+    "titre": "Avancée de planches dans la mangrove",
+    "parent": "uruzal",
+    "resume": "Dock à l'écart où Ozhal loue les Manaru pour remonter le Nahur.",
+    "connu": [
+      "Une avancée de planches sombres s'enfonce dans la mangrove, là où l'eau s'élargit.",
+      "Ozhal loue la remontée du Nahur jusqu'à Tzakar : cent pièces d'or par personne, prix fixe, trois à quatre jours, sur des Manaru qui glissent à un mètre au-dessus de l'eau.",
+      "Il exige le sceau de Yaxune. L'autre option est la pirogue, bon marché, dont il se contente de dire ce qui arrive à ceux qui la prennent."
+    ],
+    "chapeau": "Le dock est à l'écart, une avancée de planches sombres qui s'enfonce dans la mangrove là où l'eau s'élargit. Derrière Ozhal, sous la surface, quelque chose de large passe et repasse sans jamais crever l'eau.",
+    "histoire": [],
+    "galerie": [
+      {
+        "img": "img/paysages/uruzal/chevaucheur-ozhal.webp",
+        "legende": "Le dock d'Ozhal"
+      }
+    ]
+  },
+  {
+    "id": "ozhal",
+    "type": "pnj",
+    "nom": "Ozhal",
+    "titre": "Maître des Manaru",
+    "parent": "dock-d-ozhal",
+    "lieu": "dock-d-ozhal",
+    "statut": "vivant",
+    "resume": "Loueur de Manaru à Uruzal, seul moyen rapide de remonter le Nahur.",
+    "connu": [
+      "Un homme grand et sec, tunique trempée jusqu'aux cuisses, yeux jaunes du Serpent qui ne se détournent jamais de la conversation. Il parle d'une voix douce et très lente, avec des pauses.",
+      "Il ne loue rien sans le sceau de Yaxune. Il ne négocie pas et ne s'explique pas.",
+      "Le groupe présente le sceau et paie cent pièces d'or par personne.",
+      "Il met les chevaucheurs à disposition. Il prévient de ne pas leur offrir à manger."
+    ],
+    "img": "img/pnj/ozhal.webp",
+    "attitude": "neutre",
+    "teinte": "#c9b23a",
+    "citation": {
+      "texte": "Vous avez le jeton. Bien. Sinon je vous aurais laissés parler quand même, mais plus longtemps.",
+      "qui": "Ozhal"
+    },
+    "histoire": []
+  },
+  {
+    "id": "chevaucheurs-d-ozhal",
+    "type": "pnj",
+    "nom": "Les chevaucheurs d'Ozhal",
+    "titre": "Bokrun, Tzemek et Ulzar",
+    "parent": "dock-d-ozhal",
+    "lieu": "dock-d-ozhal",
+    "statut": "vivant",
+    "resume": "Trois demi-trolls cannibales qui guident les Manaru d'Ozhal.",
+    "connu": [
+      "Trois demi-trolls épais aux visages peints de blanc et d'ocre, vêtements rustiques, dents limées. Ils s'appellent Bokrun, Tzemek et Ulzar.",
+      "Ils portent le crocodile. Ils sont cannibales et ne le cachent pas, sans en faire un sujet.",
+      "Ils sont silencieux et fiables. L'un d'eux aide le groupe à monter et le prévient de tenir bon aux ailerons : en cas de chute, on ne redescend pas.",
+      "Leurs Manaru meurent tous dans l'embuscade, projetés contre le mur de lames."
+    ],
+    "alias": [
+      "Bokrun",
+      "Tzemek",
+      "Ulzar",
+      "chevaucheurs"
+    ],
+    "attitude": "neutre",
+    "teinte": "#7a5a3a",
+    "histoire": []
+  },
+  {
+    "id": "embuscade-du-nahur",
+    "type": "lieu",
+    "nom": "L'embuscade du Nahur",
+    "titre": "Rivière en amont d'Uruzal",
+    "parent": "balamor",
+    "pos": {
+      "x": 0.36,
+      "y": 0.3
+    },
+    "resume": "Passage de la rivière où cinq guerriers-crocodiles attendent le groupe.",
+    "connu": [
+      "La rivière s'enfonce dans la jungle, étroite et brune. Les arbres se referment en voûte et pas un oiseau ne chante.",
+      "Un mur de lames surgit le long de la berge, hérissé d'épées, de fers de hallebarde et de pointes rougeoyantes. Les Manaru n'ont pas le temps de ralentir et meurent tous contre le mur.",
+      "Le groupe est jeté à l'eau, certains blessés par les lames. Cinq guerriers-crocodiles émergent des roseaux et se jettent sur lui."
+    ],
+    "chapeau": "La rivière s'enfonce dans la jungle, étroite et brune, et les Manaru avancent d'un pas lourd dans le courant tiède, leurs flancs fumant sous la chaleur. Les arbres se referment au-dessus en une voûte suffocante où pas un oiseau ne chante. Trop de silence.",
+    "histoire": []
+  },
+  {
+    "id": "guerriers-crocodiles",
+    "type": "pnj",
+    "nom": "Les guerriers-crocodiles",
+    "titre": "Embusqués du Nahur",
+    "parent": "embuscade-du-nahur",
+    "lieu": "embuscade-du-nahur",
+    "statut": "vivant",
+    "resume": "Cinq guerriers à gueule de crocodile qui tendent une embuscade sur la rivière.",
+    "connu": [
+      "Ils émergent des roseaux et de l'eau, longues gueules, écailles luisantes, armes levées. L'un d'eux dresse le mur de lames sur toute la longueur de la rivière.",
+      "Ils sont cinq. L'embuscade était préparée à l'avance, avant l'arrivée du groupe."
+    ],
+    "alias": [
+      "guerrier crocodile"
+    ],
+    "img": "img/pnj/guerrier-crocodile.webp",
+    "attitude": "hostile",
+    "teinte": "#3a5a3a",
+    "histoire": []
+  },
+  {
+    "id": "sentier-de-la-jungle",
+    "type": "lieu",
+    "nom": "Le sentier de la jungle",
+    "titre": "Chemin sous la canopée",
+    "parent": "balamor",
+    "pos": {
+      "x": 0.37,
+      "y": 0.345
+    },
+    "resume": "Sentier de terre noire où une biche pend dans une toile d'araignée.",
+    "connu": [
+      "Passé le dernier hameau, la jungle se referme. Les oiseaux se taisent d'un coup, on n'entend plus que l'eau qui goutte.",
+      "Une biche pend dans un hamac de soie sur une grosse branche couverte de mousse, prise comme une mouche. Quelque chose de noir attend très haut au-dessus.",
+      "Dans les hauteurs, au moins douze cocons pâles pendent à hauteur d'homme. Dans l'un d'eux, un homme remue encore.",
+      "La biche a été prise il y a quelques heures et n'a pas été mangée. Ces araignées chassent en meute coordonnée, ce qui n'existe pas dans la nature.",
+      "Un glyphe d'araignée à huit pattes est gravé sous la mousse d'un tronc. Il pointe vers le nord-est, direction du temple.",
+      "Les araignées tombent sur le groupe, qui les combat."
+    ],
+    "chapeau": "Passé le dernier hameau, la jungle referme le ciel comme une main qui se ferme. Le sentier n'est plus qu'une rumeur de terre noire entre des troncs gras, ruisselants, couverts de mousse spongieuse. La chaleur est verte, épaisse. La canopée s'entrouvre et la lumière tombe en colonnes pâles. Cela sent la fleur sucrée et la viande oubliée.",
+    "histoire": [],
+    "galerie": [
+      {
+        "img": "img/paysages/balamor/sentier-jungle.webp",
+        "legende": "Le sentier"
+      },
+      {
+        "img": "img/paysages/balamor/decouverte-jungle.webp",
+        "legende": "La biche dans sa toile"
+      }
+    ]
+  },
+  {
+    "id": "araignees-de-balamor",
+    "type": "pnj",
+    "nom": "Les araignées de Balamor",
+    "titre": "Meute de la jungle",
+    "parent": "sentier-de-la-jungle",
+    "lieu": "sentier-de-la-jungle",
+    "statut": "vivant",
+    "resume": "Grandes araignées qui chassent en meute sur le sentier de la jungle.",
+    "connu": [
+      "Trois araignées noires tombent des hauteurs sur le groupe, en même temps, et l'attaquent sur le sentier.",
+      "Elles chassent en coordination, ce qui n'est pas naturel."
+    ],
+    "alias": [
+      "araignée de Balamor",
+      "araignées"
+    ],
+    "img": "img/pnj/araigne-e-de-balamor.webp",
+    "attitude": "hostile",
+    "teinte": "#2a2a2a",
+    "histoire": []
+  },
+  {
+    "id": "temple-de-balam-araignee",
+    "type": "lieu",
+    "nom": "Le temple de Balam Araignée",
+    "titre": "Temple en ruine au pied de Kar-Balam",
+    "parent": "balamor",
+    "pos": {
+      "x": 0.345,
+      "y": 0.385
+    },
+    "resume": "Temple envahi par la jungle, gardé par six statues et par les hommes-araignées.",
+    "alias": [
+      "temple en ruine",
+      "temple des six statues"
+    ],
+    "connu": [
+      "Le temple apparaît d'un coup, comme un os déterré : dalles envahies de lierre, murs vaincus par les racines, escalier brisé.",
+      "Au centre, un grand disque de pierre gravé d'une étoile à six branches, et six statues rangées autour, les yeux couverts de mousse, sur des socles de crânes polis. Chacune a un bouton de jade au front, usé par ceux qui l'ont pressé jadis. De la soie pend des corniches.",
+      "Les statues : un crocodile aux muscles saillants, un serpent mince et souple enroulé sur son socle, un gorille blessé couvert de cicatrices qui semble avoir survécu à un combat, un aigle aux ailes dépliées entouré de parchemins gravés dans la pierre, une prêtresse au visage calme qui semble écouter quelque chose, un jaguar fier et noble qui regarde le groupe de haut.",
+      "Des silhouettes trop maigres aux bras nombreux descendent des murs la tête la première. Elles ont des visages d'hommes qui sourient tous de la même façon. Le groupe les combat avant de résoudre l'énigme des statues.",
+      "Un escalier descend vers l'antre de la Mère de la Toile."
+    ],
+    "chapeau": "Le temple apparaît d'un coup, comme un os déterré : dalles envahies de lierre, murs vaincus par les racines, escalier brisé qui monte vers rien. L'air crépite d'un bruit de petites pattes.",
+    "histoire": [],
+    "galerie": [
+      {
+        "img": "img/paysages/balamor/temple-enigme.webp",
+        "legende": "Le temple et les six statues"
+      }
+    ]
+  },
+  {
+    "id": "hommes-araignees",
+    "type": "pnj",
+    "nom": "Les hommes-araignées",
+    "titre": "Enfants de la Mère",
+    "parent": "temple-de-balam-araignee",
+    "lieu": "temple-de-balam-araignee",
+    "statut": "vivant",
+    "resume": "Aberrations à corps d'homme et pattes d'araignée, qui descendent des murs du temple.",
+    "connu": [
+      "Corps trop maigres, bras nombreux, visages d'hommes qui sourient tous de la même façon. Elles descendent des murs la tête la première.",
+      "Elles prennent plusieurs formes : un penseur au crâne énorme, un grand maigre aux bras de squelette, et une rampante à longs cheveux.",
+      "Ce sont les enfants de la Mère de la Toile."
+    ],
+    "alias": [
+      "homme-araignée",
+      "hommes araignées"
+    ],
+    "img": "img/pnj/hommes-araignees.webp",
+    "attitude": "hostile",
+    "teinte": "#6a3a3a",
+    "histoire": []
+  },
+  {
+    "id": "antre-de-la-mere",
+    "type": "lieu",
+    "nom": "L'antre de la Mère",
+    "titre": "Salle tapissée de toile",
+    "parent": "temple-de-balam-araignee",
+    "resume": "Salle immense sous le temple, tapissée de toiles blanches comme des voiles de navire.",
+    "connu": [
+      "L'escalier débouche sur une salle immense. Des urnes de terre alignées contre les murs grésillent de milliers de pattes, une source tombe dans un bassin noir.",
+      "L'air est tiède et sucré, il sent le lait tourné et la poussière d'os. Sur l'estrade du fond, au milieu d'un tas de crânes, la Mère de la Toile se redresse."
+    ],
+    "chapeau": "L'escalier débouche sur une salle immense, tapissée de toiles blanches comme des voiles de navire. L'air est tiède et sucré, il sent le lait tourné et la poussière d'os.",
+    "histoire": [],
+    "galerie": [
+      {
+        "img": "img/paysages/balamor/antre-de-la-mere.webp",
+        "legende": "L'antre de la Mère"
+      }
+    ]
   }
 ]
