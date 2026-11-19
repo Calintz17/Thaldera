@@ -6336,6 +6336,13 @@
         "img": "img/paysages/uruzal/rue.webp",
         "legende": "Les pontons d'Uruzal"
       }
+    ],
+    "cartes": [
+      {
+        "id": "plan",
+        "img": "img/cartes/uruzal.webp",
+        "legende": "Plan d'Uruzal"
+      }
     ]
   },
   {
@@ -10816,7 +10823,11 @@
         "img": "img/paysages/uruzal/auberge.webp",
         "legende": "L'auberge d'Onaya"
       }
-    ]
+    ],
+    "pos": {
+      "x": 0.505,
+      "y": 0.49
+    }
   },
   {
     "id": "quais-d-uruzal",
@@ -10838,7 +10849,11 @@
         "img": "img/paysages/uruzal/arrivee.webp",
         "legende": "Les quais d'Uruzal"
       }
-    ]
+    ],
+    "pos": {
+      "x": 0.64,
+      "y": 0.68
+    }
   },
   {
     "id": "hote-des-quais",
@@ -10885,7 +10900,11 @@
         "img": "img/paysages/uruzal/boucherie.webp",
         "legende": "La boucherie d'Umtar"
       }
-    ]
+    ],
+    "pos": {
+      "x": 0.82,
+      "y": 0.45
+    }
   },
   {
     "id": "umtar",
@@ -10930,7 +10949,11 @@
         "img": "img/paysages/uruzal/champignonniere.webp",
         "legende": "La champignonnière de Sennek"
       }
-    ]
+    ],
+    "pos": {
+      "x": 0.625,
+      "y": 0.515
+    }
   },
   {
     "id": "sennek",
@@ -10977,7 +11000,11 @@
         "img": "img/paysages/uruzal/graveur-ahkun.webp",
         "legende": "L'atelier d'Ahkun"
       }
-    ]
+    ],
+    "pos": {
+      "x": 0.72,
+      "y": 0.4
+    }
   },
   {
     "id": "ahkun",
@@ -11027,7 +11054,11 @@
         "img": "img/paysages/uruzal/temple-du-serpent.webp",
         "legende": "Le temple du Serpent"
       }
-    ]
+    ],
+    "pos": {
+      "x": 0.326,
+      "y": 0.81
+    }
   },
   {
     "id": "yaxune",
@@ -11073,7 +11104,11 @@
         "img": "img/paysages/uruzal/chevaucheur-ozhal.webp",
         "legende": "Le dock d'Ozhal"
       }
-    ]
+    ],
+    "pos": {
+      "x": 0.52,
+      "y": 0.82
+    }
   },
   {
     "id": "ozhal",
@@ -11088,7 +11123,7 @@
       "Un homme grand et sec, tunique trempée jusqu'aux cuisses, yeux jaunes du Serpent qui ne se détournent jamais de la conversation. Il parle d'une voix douce et très lente, avec des pauses.",
       "Il ne loue rien sans le sceau de Yaxune. Il ne négocie pas et ne s'explique pas.",
       "Le groupe présente le sceau et paie cent pièces d'or par personne.",
-      "Il met les chevaucheurs à disposition. Il prévient de ne pas leur offrir à manger."
+      "Il met à disposition les Manaru, qui remontent le fleuve à un mètre au-dessus de l'eau."
     ],
     "img": "img/pnj/ozhal.webp",
     "attitude": "neutre",
@@ -11097,31 +11132,6 @@
       "texte": "Vous avez le jeton. Bien. Sinon je vous aurais laissés parler quand même, mais plus longtemps.",
       "qui": "Ozhal"
     },
-    "histoire": []
-  },
-  {
-    "id": "chevaucheurs-d-ozhal",
-    "type": "pnj",
-    "nom": "Les chevaucheurs d'Ozhal",
-    "titre": "Bokrun, Tzemek et Ulzar",
-    "parent": "dock-d-ozhal",
-    "lieu": "dock-d-ozhal",
-    "statut": "vivant",
-    "resume": "Trois demi-trolls cannibales qui guident les Manaru d'Ozhal.",
-    "connu": [
-      "Trois demi-trolls épais aux visages peints de blanc et d'ocre, vêtements rustiques, dents limées. Ils s'appellent Bokrun, Tzemek et Ulzar.",
-      "Ils portent le crocodile. Ils sont cannibales et ne le cachent pas, sans en faire un sujet.",
-      "Ils sont silencieux et fiables. L'un d'eux aide le groupe à monter et le prévient de tenir bon aux ailerons : en cas de chute, on ne redescend pas.",
-      "Leurs Manaru meurent tous dans l'embuscade, projetés contre le mur de lames."
-    ],
-    "alias": [
-      "Bokrun",
-      "Tzemek",
-      "Ulzar",
-      "chevaucheurs"
-    ],
-    "attitude": "neutre",
-    "teinte": "#7a5a3a",
     "histoire": []
   },
   {
@@ -11141,7 +11151,8 @@
       "Le groupe est jeté à l'eau, certains blessés par les lames. Cinq guerriers-crocodiles émergent des roseaux et se jettent sur lui."
     ],
     "chapeau": "La rivière s'enfonce dans la jungle, étroite et brune, et les Manaru avancent d'un pas lourd dans le courant tiède, leurs flancs fumant sous la chaleur. Les arbres se referment au-dessus en une voûte suffocante où pas un oiseau ne chante. Trop de silence.",
-    "histoire": []
+    "histoire": [],
+    "voyage": "x"
   },
   {
     "id": "guerriers-crocodiles",
@@ -11194,7 +11205,8 @@
         "img": "img/paysages/balamor/decouverte-jungle.webp",
         "legende": "La biche dans sa toile"
       }
-    ]
+    ],
+    "voyage": "x"
   },
   {
     "id": "araignees-de-balamor",
@@ -11247,7 +11259,8 @@
         "img": "img/paysages/balamor/temple-enigme.webp",
         "legende": "Le temple et les six statues"
       }
-    ]
+    ],
+    "voyage": "x"
   },
   {
     "id": "hommes-araignees",
@@ -11291,5 +11304,31 @@
         "legende": "L'antre de la Mère"
       }
     ]
+  },
+  {
+    "id": "manaru",
+    "type": "pnj",
+    "nom": "Les Manaru",
+    "titre": "Montures volantes d'Ozhal",
+    "parent": "dock-d-ozhal",
+    "lieu": "dock-d-ozhal",
+    "statut": "vivant",
+    "resume": "Créatures marines qu'Ozhal loue pour remonter le Nahur, en glissant au-dessus de l'eau.",
+    "connu": [
+      "Ozhal les loue cent pièces d'or par personne pour remonter le Nahur jusqu'à Tzakar en trois à quatre jours, rapidement et sans bruit.",
+      "Elles sont de deux espèces : une raie manta large comme une charrette, et une forme plus étroite et plus rapide, proche du requin.",
+      "Quand elles montent du fond, elles ne nagent pas. Elles glissent à un mètre au-dessus de l'eau noire, sans bruit ni ride, et l'air ondule sous leur ventre.",
+      "Elles ne touchent jamais l'eau, et la jungle n'atteint pas ce qui ne touche pas l'eau.",
+      "Dans l'embuscade du Nahur, elles meurent toutes, projetées contre le mur de lames."
+    ],
+    "img": "img/pnj/manaru.webp",
+    "attitude": "neutre",
+    "teinte": "#c9b23a",
+    "alias": [
+      "Manaru",
+      "manaru",
+      "raies d'Ozhal"
+    ],
+    "histoire": []
   }
 ]
