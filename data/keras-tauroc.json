@@ -11152,7 +11152,13 @@
     ],
     "chapeau": "La rivière s'enfonce dans la jungle, étroite et brune, et les Manaru avancent d'un pas lourd dans le courant tiède, leurs flancs fumant sous la chaleur. Les arbres se referment au-dessus en une voûte suffocante où pas un oiseau ne chante. Trop de silence.",
     "histoire": [],
-    "voyage": "x"
+    "voyage": "x",
+    "galerie": [
+      {
+        "img": "img/paysages/balamor/remontee-riviere.webp",
+        "legende": "La remontée de la rivière"
+      }
+    ]
   },
   {
     "id": "guerriers-crocodiles",
