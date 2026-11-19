@@ -6316,34 +6316,12 @@
     "connu": [
       "Le seul passage connu vers l'intérieur de la jungle de Balamor.",
       "Le Balam Kaal y dépose les passagers. De là, on remonte le fleuve Nahur vers Tzakar.",
-      "D'après les rapports du pavillon des Diplomates de Roshen Buru, Onaya, l'aubergiste, est un point de contact sympathique, prête à parler aux étrangers.",
-      "Le Balam Kaal ralentit sans qu'on voie la côte. La mer devient brune, l'horizon se referme sur des racines. La ville flotte, des pontons de bois noir courent d'un tronc de mangrove à l'autre et les maisons sont sur pilotis.",
-      "Il fait sombre en plein midi. Des lanternes brûlent partout et leur huile fume noir. Ce sont des offrandes, chacune posée devant un petit os gravé.",
-      "L'odeur de graisse brûlée et de soufre est présente partout. Une colonne de fumée visible de partout s'élève en amont, ce sont les cuves de dépeçage, où personne n'entre. Un raclement de lames sur l'os s'arrête chaque soir à la nuit tombée.",
-      "Personne n'est hostile, tout le monde est un peu à côté. Les habitants répondent rarement à la question posée.",
-      "Pour remonter le fleuve, il faut Ozhal, et Ozhal veut le sceau de Yaxune."
+      "D'après les rapports du pavillon des Diplomates de Roshen Buru, Onaya, l'aubergiste, est un point de contact sympathique, prête à parler aux étrangers."
     ],
     "pos": {
       "x": 0.399,
       "y": 0.273
-    },
-    "galerie": [
-      {
-        "img": "img/paysages/uruzal/arrivee.webp",
-        "legende": "L'arrivée à Uruzal"
-      },
-      {
-        "img": "img/paysages/uruzal/rue.webp",
-        "legende": "Les pontons d'Uruzal"
-      }
-    ],
-    "cartes": [
-      {
-        "id": "plan",
-        "img": "img/cartes/uruzal.webp",
-        "legende": "Plan d'Uruzal"
-      }
-    ]
+    }
   },
   {
     "id": "tzakar",
@@ -10572,17 +10550,13 @@
     "type": "pnj",
     "nom": "Onaya",
     "titre": "Aubergiste d'Uruzal",
-    "parent": "auberge-d-onaya",
-    "lieu": "auberge-d-onaya",
+    "parent": "uruzal",
+    "lieu": "uruzal",
     "statut": "vivant",
-    "resume": "Aubergiste d'Uruzal, chaleureuse et curieuse, seul visage normal de la ville.",
+    "resume": "Aubergiste d'Uruzal, point de contact de Roshen Buru, plutôt sympathique d'après les rapports.",
     "connu": [
       "Les rapports du pavillon des Diplomates de Roshen Buru la désignent comme point de contact à Uruzal.",
-      "D'après ces rapports, elle est plutôt sympathique et prête à parler aux étrangers.",
-      "Elle accueille le groupe à la porte, ravie d'avoir trois clients après onze mois. Elle pose six questions sur ce qu'ils font ici.",
-      "Elle demande deux pièces pour la chambre et dix pièces d'or pour faire visiter la ville. Elle donne gratuitement quelques conseils : Yaxune est incontournable pour remonter, Umtar est le meilleur boucher qu'elle ait connu, et il ne faut jamais aller sur la berge la nuit.",
-      "Elle dit que Sennek a changé et que personne n'en parle.",
-      "Le soir, quand le raclement s'arrête, elle prévient le groupe qu'il dormira mal, comme tout le monde la première nuit."
+      "D'après ces rapports, elle est plutôt sympathique et prête à parler aux étrangers."
     ],
     "relations": [
       {
@@ -10592,13 +10566,7 @@
       }
     ],
     "attitude": "neutre",
-    "histoire": [],
-    "img": "img/pnj/onaya.webp",
-    "citation": {
-      "texte": "Trois. Vous êtes trois. Ça fait onze mois que je n'ai pas eu trois. Asseyez-vous, la soupe est chaude et je meurs d'envie de savoir ce que vous faites ici.",
-      "qui": "Onaya"
-    },
-    "teinte": "#a8742a"
+    "histoire": []
   },
   {
     "id": "sel-yaxal",
@@ -10748,7 +10716,8 @@
       "texte": "Je tiens la barre et j'écoute ce qui est gravé dans les os. Je suis plus un gardien qu'un capitaine.",
       "qui": "Le Passeur"
     },
-    "histoire": []
+    "histoire": [],
+    "locked": true
   },
   {
     "id": "ahalkun",
@@ -10768,14 +10737,14 @@
     "alias": [
       "la Preneuse"
     ],
-    "img": "img/pnj/ahalkun.webp",
     "attitude": "hostile",
     "teinte": "#2f4a5a",
     "citation": {
       "texte": "Elle croit que ce navire est mort. Elle n'a pas complètement tort, et c'est bien le problème.",
       "qui": "Le Passeur"
     },
-    "histoire": []
+    "histoire": [],
+    "locked": true
   },
   {
     "id": "le-bulak",
@@ -10800,7 +10769,8 @@
     "alias": [
       "Bulak",
       "jeu du Bulak"
-    ]
+    ],
+    "locked": true
   },
   {
     "id": "auberge-d-onaya",
@@ -10827,7 +10797,8 @@
     "pos": {
       "x": 0.505,
       "y": 0.49
-    }
+    },
+    "locked": true
   },
   {
     "id": "quais-d-uruzal",
@@ -10853,7 +10824,8 @@
     "pos": {
       "x": 0.64,
       "y": 0.68
-    }
+    },
+    "locked": true
   },
   {
     "id": "hote-des-quais",
@@ -10880,7 +10852,8 @@
       "texte": "Pas ouvrir. Mère veut les petites au chaud.",
       "qui": "L'hôte des quais"
     },
-    "histoire": []
+    "histoire": [],
+    "locked": true
   },
   {
     "id": "boucherie-d-umtar",
@@ -10904,7 +10877,8 @@
     "pos": {
       "x": 0.82,
       "y": 0.45
-    }
+    },
+    "locked": true
   },
   {
     "id": "umtar",
@@ -10929,7 +10903,8 @@
       "texte": "Le dos, c'est du gras. Le ventre, c'est de la corde. Prenez la joue. Personne ne prend jamais la joue et c'est la seule bonne pièce.",
       "qui": "Umtar"
     },
-    "histoire": []
+    "histoire": [],
+    "locked": true
   },
   {
     "id": "champignonniere-de-sennek",
@@ -10953,7 +10928,8 @@
     "pos": {
       "x": 0.625,
       "y": 0.515
-    }
+    },
+    "locked": true
   },
   {
     "id": "sennek",
@@ -10979,7 +10955,8 @@
       "texte": "J'ai ouvert cette boutique. J'ai porté ces planches sur mon dos. Vous pouvez demander à Onaya.",
       "qui": "Sennek"
     },
-    "histoire": []
+    "histoire": [],
+    "locked": true
   },
   {
     "id": "atelier-d-ahkun",
@@ -11004,7 +10981,8 @@
     "pos": {
       "x": 0.72,
       "y": 0.4
-    }
+    },
+    "locked": true
   },
   {
     "id": "ahkun",
@@ -11032,7 +11010,8 @@
       "texte": "Pas d'or. De l'os. Une dent fait l'affaire, la vôtre ou une autre, l'os ne fait pas la différence, c'est moi qui la fais.",
       "qui": "Ahkun"
     },
-    "histoire": []
+    "histoire": [],
+    "locked": true
   },
   {
     "id": "temple-du-serpent",
@@ -11058,7 +11037,8 @@
     "pos": {
       "x": 0.326,
       "y": 0.81
-    }
+    },
+    "locked": true
   },
   {
     "id": "yaxune",
@@ -11083,7 +11063,8 @@
       "texte": "Vous n'êtes pas obligés. Vous pouvez repartir, prendre une pirogue, tenter votre chance. Je ne vous en empêcherai pas.",
       "qui": "Yaxune"
     },
-    "histoire": []
+    "histoire": [],
+    "locked": true
   },
   {
     "id": "dock-d-ozhal",
@@ -11108,7 +11089,8 @@
     "pos": {
       "x": 0.52,
       "y": 0.82
-    }
+    },
+    "locked": true
   },
   {
     "id": "ozhal",
@@ -11132,7 +11114,8 @@
       "texte": "Vous avez le jeton. Bien. Sinon je vous aurais laissés parler quand même, mais plus longtemps.",
       "qui": "Ozhal"
     },
-    "histoire": []
+    "histoire": [],
+    "locked": true
   },
   {
     "id": "embuscade-du-nahur",
@@ -11158,7 +11141,8 @@
         "img": "img/paysages/balamor/remontee-riviere.webp",
         "legende": "La remontée de la rivière"
       }
-    ]
+    ],
+    "locked": true
   },
   {
     "id": "guerriers-crocodiles",
@@ -11179,7 +11163,8 @@
     "img": "img/pnj/guerrier-crocodile.webp",
     "attitude": "hostile",
     "teinte": "#3a5a3a",
-    "histoire": []
+    "histoire": [],
+    "locked": true
   },
   {
     "id": "sentier-de-la-jungle",
@@ -11212,7 +11197,8 @@
         "legende": "La biche dans sa toile"
       }
     ],
-    "voyage": "x"
+    "voyage": "x",
+    "locked": true
   },
   {
     "id": "araignees-de-balamor",
@@ -11234,7 +11220,8 @@
     "img": "img/pnj/araigne-e-de-balamor.webp",
     "attitude": "hostile",
     "teinte": "#2a2a2a",
-    "histoire": []
+    "histoire": [],
+    "locked": true
   },
   {
     "id": "temple-de-balam-araignee",
@@ -11266,7 +11253,8 @@
         "legende": "Le temple et les six statues"
       }
     ],
-    "voyage": "x"
+    "voyage": "x",
+    "locked": true
   },
   {
     "id": "hommes-araignees",
@@ -11289,7 +11277,8 @@
     "img": "img/pnj/hommes-araignees.webp",
     "attitude": "hostile",
     "teinte": "#6a3a3a",
-    "histoire": []
+    "histoire": [],
+    "locked": true
   },
   {
     "id": "antre-de-la-mere",
@@ -11309,7 +11298,8 @@
         "img": "img/paysages/balamor/antre-de-la-mere.webp",
         "legende": "L'antre de la Mère"
       }
-    ]
+    ],
+    "locked": true
   },
   {
     "id": "manaru",
@@ -11335,7 +11325,8 @@
       "manaru",
       "raies d'Ozhal"
     ],
-    "histoire": []
+    "histoire": [],
+    "locked": true
   },
   {
     "id": "combat-contre-ahalkun",
@@ -11368,6 +11359,7 @@
         "img": "img/paysages/tzakar/balamor-ahalkun.webp",
         "legende": "Ahalkun attaque le Balam Kaal"
       }
-    ]
+    ],
+    "locked": true
   }
 ]

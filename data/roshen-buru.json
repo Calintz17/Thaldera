@@ -5168,43 +5168,17 @@
   },
   {
     "id": "mere-de-la-toile",
-    "type": "pnj",
+    "type": "sujet",
     "nom": "La Mère de la Toile",
     "titre": "Maîtresse des araignées de Balamor",
-    "parent": "antre-de-la-mere",
-    "resume": "Aberration mi-araignée mi-femme qui veut recouvrir le monde de sa toile et ressusciter le Visage de l'Araignée.",
+    "parent": "balamor",
+    "resume": "Entité de Balamor, maître de Tobiya.",
     "connu": [
       "Le groupe apprend son nom par Tobiya, corrompu au fond des égouts de Roshen Buru, qui avoue travailler pour elle.",
       "Son plan : faire apparaître des araignées dans chaque ville, prendre le contrôle mental de gens insoupçonnés et lever une armée pour conquérir toutes les villes d'Istra.",
-      "Le groupe pense que Balamor sera l'occasion d'y mettre un terme.",
-      "Dans l'antre sous le temple, elle se redresse sur une estrade au milieu d'un tas de crânes : un abdomen blême énorme sous huit pattes à griffes noires aussi longues que des mâts, et à la place de la tête de l'araignée un buste de femme aux cornes recourbées, avec trop de bras fins.",
-      "Elle parle à plusieurs voix, un peu après le mouvement de ses lèvres, et ses yeux ne regardent jamais tout à fait le groupe.",
-      "Elle hurle qu'elle va coudre le groupe dans ses murs et recouvrir de sa toile chaque ville, chaque toit, chaque bouche.",
-      "Elle dit vouloir ramener l'Araignée, maudite et enchaînée par Ajaw Tzobal, et prendre son trône. Selon elle, Ajaw a tué ses prêtres en une nuit.",
-      "Elle affirme que ses enfants sont déjà sur le continent et tissent sans elle."
+      "Le groupe pense que Balamor sera l'occasion d'y mettre un terme."
     ],
-    "histoire": [],
-    "lieu": "antre-de-la-mere",
-    "statut": "vivant",
-    "relations": [
-      {
-        "cible": "ajaw-tzobal",
-        "type": "Ennemie de",
-        "ton": "negatif"
-      },
-      {
-        "cible": "hommes-araignees",
-        "type": "Mère des",
-        "ton": "negatif"
-      }
-    ],
-    "img": "img/pnj/mere-de-la-toile.webp",
-    "attitude": "hostile",
-    "teinte": "#7a6a7a",
-    "citation": {
-      "texte": "Vous êtes entrés chez moi ! Je vais vous coudre dans mes murs !",
-      "qui": "La Mère de la Toile"
-    }
+    "histoire": []
   },
   {
     "id": "capitainerie-azuren-kai",
@@ -5549,11 +5523,7 @@
       "On ignore l'identité de son capitaine. Les marins en font des légendes et le surnomment la baleine morte.",
       "Harfang en a entendu parler, mais ne l'a jamais vu. Le groupe ignore pourquoi on l'appelle ainsi.",
       "Ankou Urameï indique au groupe de traverser via le Balam Kaal jusqu'à Uruzal, première étape vers Tzakar et les Enfers.",
-      "Après la visite chez les Tsuren, il reste trois jours avant son départ d'Azuren Kai.",
-      "À l'arrivée du Balam Kaal, la brume le précède et il se range seul le long du quai, sans personne sur le pont. Un seul homme en descend, masque de cuir lacé sur toute la tête, et annonce trois mille pièces pour le groupe, prix qu'il ne discute pas.",
-      "Le groupe paie et monte à la marée. La traversée dure vingt et un jours. Personne ne touche une corde, des runes gravées dans les côtes de baleine de la coque animent le navire.",
-      "Le soir du quinzième jour, le Passeur sort un plateau de Bulak et joue avec le groupe.",
-      "En pleine mer, six bras gigantesques sortent de l'eau et s'agrippent au navire. Le groupe les repousse et le navire est sauvé."
+      "Après la visite chez les Tsuren, il reste trois jours avant son départ d'Azuren Kai."
     ]
   },
   {

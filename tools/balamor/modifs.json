@@ -1,0 +1,286 @@
+{
+  "entites": {
+    "mere-de-la-toile": {
+      "id": "mere-de-la-toile",
+      "type": "pnj",
+      "nom": "La Mère de la Toile",
+      "titre": "Maîtresse des araignées de Balamor",
+      "parent": "antre-de-la-mere",
+      "resume": "Aberration mi-araignée mi-femme qui veut recouvrir le monde de sa toile et ressusciter le Visage de l'Araignée.",
+      "connu": [
+        "Le groupe apprend son nom par Tobiya, corrompu au fond des égouts de Roshen Buru, qui avoue travailler pour elle.",
+        "Son plan : faire apparaître des araignées dans chaque ville, prendre le contrôle mental de gens insoupçonnés et lever une armée pour conquérir toutes les villes d'Istra.",
+        "Le groupe pense que Balamor sera l'occasion d'y mettre un terme.",
+        "Dans l'antre sous le temple, elle se redresse sur une estrade au milieu d'un tas de crânes : un abdomen blême énorme sous huit pattes à griffes noires aussi longues que des mâts, et à la place de la tête de l'araignée un buste de femme aux cornes recourbées, avec trop de bras fins.",
+        "Elle parle à plusieurs voix, un peu après le mouvement de ses lèvres, et ses yeux ne regardent jamais tout à fait le groupe.",
+        "Elle hurle qu'elle va coudre le groupe dans ses murs et recouvrir de sa toile chaque ville, chaque toit, chaque bouche.",
+        "Elle dit vouloir ramener l'Araignée, maudite et enchaînée par Ajaw Tzobal, et prendre son trône. Selon elle, Ajaw a tué ses prêtres en une nuit.",
+        "Elle affirme que ses enfants sont déjà sur le continent et tissent sans elle."
+      ],
+      "histoire": [],
+      "lieu": "antre-de-la-mere",
+      "statut": "vivant",
+      "relations": [
+        {
+          "cible": "ajaw-tzobal",
+          "type": "Ennemie de",
+          "ton": "negatif"
+        },
+        {
+          "cible": "hommes-araignees",
+          "type": "Mère des",
+          "ton": "negatif"
+        }
+      ],
+      "img": "img/pnj/mere-de-la-toile.webp",
+      "attitude": "hostile",
+      "teinte": "#7a6a7a",
+      "citation": {
+        "texte": "Vous êtes entrés chez moi ! Je vais vous coudre dans mes murs !",
+        "qui": "La Mère de la Toile"
+      }
+    },
+    "balam-kaal": {
+      "id": "balam-kaal",
+      "type": "lieu",
+      "nom": "Le Balam Kaal",
+      "titre": "La baleine morte",
+      "parent": "azuren-kai",
+      "pos": {
+        "x": 0.505,
+        "y": 0.66
+      },
+      "resume": "Navire rare qui relie Balamor à Azuren Kai, dont personne ne connaît le capitaine.",
+      "alias": [
+        "Balam Kaal",
+        "Balamkal",
+        "La baleine morte",
+        "baleine morte"
+      ],
+      "connu": [
+        "Chez Rokka, au Cuir et l'Écaille, le groupe apprend qu'un navire nommé le Balam Kaal est attendu sous peu à Azuren Kai, sans plus de détails.",
+        "Il vient à Azuren Kai tous les deux mois et fait l'aller-retour entre Balamor et Azuren Kai, ce que très peu de navires peuvent faire.",
+        "On ignore l'identité de son capitaine. Les marins en font des légendes et le surnomment la baleine morte.",
+        "Harfang en a entendu parler, mais ne l'a jamais vu. Le groupe ignore pourquoi on l'appelle ainsi.",
+        "Ankou Urameï indique au groupe de traverser via le Balam Kaal jusqu'à Uruzal, première étape vers Tzakar et les Enfers.",
+        "Après la visite chez les Tsuren, il reste trois jours avant son départ d'Azuren Kai.",
+        "À l'arrivée du Balam Kaal, la brume le précède et il se range seul le long du quai, sans personne sur le pont. Un seul homme en descend, masque de cuir lacé sur toute la tête, et annonce trois mille pièces pour le groupe, prix qu'il ne discute pas.",
+        "Le groupe paie et monte à la marée. La traversée dure vingt et un jours. Personne ne touche une corde, des runes gravées dans les côtes de baleine de la coque animent le navire.",
+        "Le soir du quinzième jour, le Passeur sort un plateau de Bulak et joue avec le groupe.",
+        "En pleine mer, six bras gigantesques sortent de l'eau et s'agrippent au navire. Le groupe les repousse et le navire est sauvé."
+      ]
+    },
+    "uruzal": {
+      "id": "uruzal",
+      "type": "ville",
+      "nom": "Uruzal",
+      "titre": "Porte de la jungle de Balamor",
+      "parent": "balamor",
+      "resume": "Port de la côte de Balamor, premier point d'accostage sur l'archipel.",
+      "connu": [
+        "Le seul passage connu vers l'intérieur de la jungle de Balamor.",
+        "Le Balam Kaal y dépose les passagers. De là, on remonte le fleuve Nahur vers Tzakar.",
+        "D'après les rapports du pavillon des Diplomates de Roshen Buru, Onaya, l'aubergiste, est un point de contact sympathique, prête à parler aux étrangers.",
+        "Le Balam Kaal ralentit sans qu'on voie la côte. La mer devient brune, l'horizon se referme sur des racines. La ville flotte, des pontons de bois noir courent d'un tronc de mangrove à l'autre et les maisons sont sur pilotis.",
+        "Il fait sombre en plein midi. Des lanternes brûlent partout et leur huile fume noir. Ce sont des offrandes, chacune posée devant un petit os gravé.",
+        "L'odeur de graisse brûlée et de soufre est présente partout. Une colonne de fumée visible de partout s'élève en amont, ce sont les cuves de dépeçage, où personne n'entre. Un raclement de lames sur l'os s'arrête chaque soir à la nuit tombée.",
+        "Personne n'est hostile, tout le monde est un peu à côté. Les habitants répondent rarement à la question posée.",
+        "Pour remonter le fleuve, il faut Ozhal, et Ozhal veut le sceau de Yaxune."
+      ],
+      "pos": {
+        "x": 0.399,
+        "y": 0.273
+      },
+      "galerie": [
+        {
+          "img": "img/paysages/uruzal/arrivee.webp",
+          "legende": "L'arrivée à Uruzal"
+        },
+        {
+          "img": "img/paysages/uruzal/rue.webp",
+          "legende": "Les pontons d'Uruzal"
+        }
+      ],
+      "cartes": [
+        {
+          "id": "plan",
+          "img": "img/cartes/uruzal.webp",
+          "legende": "Plan d'Uruzal"
+        }
+      ]
+    },
+    "onaya": {
+      "id": "onaya",
+      "type": "pnj",
+      "nom": "Onaya",
+      "titre": "Aubergiste d'Uruzal",
+      "parent": "auberge-d-onaya",
+      "lieu": "auberge-d-onaya",
+      "statut": "vivant",
+      "resume": "Aubergiste d'Uruzal, chaleureuse et curieuse, seul visage normal de la ville.",
+      "connu": [
+        "Les rapports du pavillon des Diplomates de Roshen Buru la désignent comme point de contact à Uruzal.",
+        "D'après ces rapports, elle est plutôt sympathique et prête à parler aux étrangers.",
+        "Elle accueille le groupe à la porte, ravie d'avoir trois clients après onze mois. Elle pose six questions sur ce qu'ils font ici.",
+        "Elle demande deux pièces pour la chambre et dix pièces d'or pour faire visiter la ville. Elle donne gratuitement quelques conseils : Yaxune est incontournable pour remonter, Umtar est le meilleur boucher qu'elle ait connu, et il ne faut jamais aller sur la berge la nuit.",
+        "Elle dit que Sennek a changé et que personne n'en parle.",
+        "Le soir, quand le raclement s'arrête, elle prévient le groupe qu'il dormira mal, comme tout le monde la première nuit."
+      ],
+      "relations": [
+        {
+          "cible": "uruzal",
+          "type": "Aubergiste à",
+          "ton": "neutre"
+        }
+      ],
+      "attitude": "neutre",
+      "histoire": [],
+      "img": "img/pnj/onaya.webp",
+      "citation": {
+        "texte": "Trois. Vous êtes trois. Ça fait onze mois que je n'ai pas eu trois. Asseyez-vous, la soupe est chaude et je meurs d'envie de savoir ce que vous faites ici.",
+        "qui": "Onaya"
+      },
+      "teinte": "#a8742a"
+    }
+  },
+  "quete": {
+    "titre": "La Mère de la Toile",
+    "texte": "Un étrange « zombie-araignée » nous a attaqués à Keras Tauroc, et Tobiya, corrompu dans les égouts de Roshen Buru, servait la Mère de la Toile. Elle veut des araignées dans toutes les villes d'Istra pour lever une armée. À Uruzal, des caisses de vésine et de sel Yaxal contenaient des araignées, gardées par une silhouette aux bras en trop. La piste mène à un temple en ruine dans la jungle de Balamor, au pied de Kar-Balam, où la Mère de la Toile prétend recouvrir le monde de sa toile et ressusciter le Visage de l'Araignée. Elle affirme que ses enfants sont déjà sur le continent."
+  },
+  "partie": {
+    "titre": "Uruzal : La Mère de la Toile",
+    "date": "Philippa + Jane + Harfang",
+    "resume": "• Le Balam Kaal arrive dans la brume, sans personne sur le pont. Le Passeur, masqué, encaisse trois mille pièces et le groupe monte à la marée. Pendant vingt et un jours, des runes gravées dans les côtes de baleine pilotent le navire. Le soir du quinzième jour, le Passeur sort un plateau de Bulak.\n• En pleine mer, Ahalkun attaque avec six bras. Le groupe réduit sa prise à deux bras et elle sombre.\n• À Uruzal, ville de pontons sur mangrove, Onaya accueille le groupe dans son auberge et lui fait visiter la ville : Umtar le boucher aveugle, Sennek le myconide qui se dit Sennek depuis toujours, Ahkun le graveur d'os.\n• Sur les quais, des caisses de vésine et de sel Yaxal tamponnées par la Maison Tzobal contiennent des araignées. Un homme au manteau trop large les garde.\n• Au temple du Serpent, Yaxune fend la langue de chaque membre du groupe et remet le sceau. Ozhal loue ses Manaru contre cent pièces d'or par personne.\n• Sur le Nahur, des guerriers-crocodiles tendent une embuscade avec un mur de lames. Les Manaru meurent.\n• Dans la jungle, une biche pend dans une toile, des araignées attaquent, puis des hommes-araignées défendent un temple en ruine aux six statues. Le groupe résout l'énigme des statues.\n• Dans l'antre, la Mère de la Toile hurle qu'elle recouvrira le monde et ressuscitera l'Araignée maudite par Ajaw Tzobal. Ses enfants sont déjà sur le continent.",
+    "liens": [
+      {
+        "id": "balam-kaal"
+      },
+      {
+        "id": "le-passeur"
+      },
+      {
+        "id": "le-bulak"
+      },
+      {
+        "id": "ahalkun"
+      },
+      {
+        "id": "combat-contre-ahalkun"
+      },
+      {
+        "id": "uruzal"
+      },
+      {
+        "id": "auberge-d-onaya"
+      },
+      {
+        "id": "onaya"
+      },
+      {
+        "id": "quais-d-uruzal"
+      },
+      {
+        "id": "hote-des-quais"
+      },
+      {
+        "id": "boucherie-d-umtar"
+      },
+      {
+        "id": "umtar"
+      },
+      {
+        "id": "champignonniere-de-sennek"
+      },
+      {
+        "id": "sennek"
+      },
+      {
+        "id": "atelier-d-ahkun"
+      },
+      {
+        "id": "ahkun"
+      },
+      {
+        "id": "temple-du-serpent"
+      },
+      {
+        "id": "yaxune"
+      },
+      {
+        "id": "dock-d-ozhal"
+      },
+      {
+        "id": "ozhal"
+      },
+      {
+        "id": "manaru"
+      },
+      {
+        "id": "embuscade-du-nahur"
+      },
+      {
+        "id": "guerriers-crocodiles"
+      },
+      {
+        "id": "sentier-de-la-jungle"
+      },
+      {
+        "id": "araignees-de-balamor"
+      },
+      {
+        "id": "temple-de-balam-araignee"
+      },
+      {
+        "id": "hommes-araignees"
+      },
+      {
+        "id": "antre-de-la-mere"
+      },
+      {
+        "id": "mere-de-la-toile"
+      },
+      {
+        "id": "ajaw-tzobal"
+      },
+      {
+        "id": "sel-yaxal"
+      },
+      {
+        "id": "tzakar"
+      }
+    ],
+    "secrets": [
+      "Les caisses d'araignées partent tous les quinze jours pour Cap Cornes et Roshen Buru, avec le même tampon Tzobal que le lot d'Azuren Kai.",
+      "Le cadavre et le myconide Sennek portent la même aura : ce n'est pas une possession, c'est une continuité.",
+      "Le Serpent est la pièce d'Ajaw Tzobal. Il reste dans l'étui et personne ne le joue.",
+      "À Tzakar, la langue fendue sera lue par le Visage du Jaguar comme une allégeance au Serpent."
+    ]
+  },
+  "locked": [
+    "le-passeur",
+    "ahalkun",
+    "le-bulak",
+    "auberge-d-onaya",
+    "quais-d-uruzal",
+    "hote-des-quais",
+    "boucherie-d-umtar",
+    "umtar",
+    "champignonniere-de-sennek",
+    "sennek",
+    "atelier-d-ahkun",
+    "ahkun",
+    "temple-du-serpent",
+    "yaxune",
+    "dock-d-ozhal",
+    "ozhal",
+    "embuscade-du-nahur",
+    "guerriers-crocodiles",
+    "sentier-de-la-jungle",
+    "araignees-de-balamor",
+    "temple-de-balam-araignee",
+    "hommes-araignees",
+    "antre-de-la-mere",
+    "manaru",
+    "combat-contre-ahalkun"
+  ]
+}
