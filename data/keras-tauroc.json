@@ -11141,8 +11141,8 @@
     "titre": "Rivière en amont d'Uruzal",
     "parent": "balamor",
     "pos": {
-      "x": 0.36,
-      "y": 0.3
+      "x": 0.364,
+      "y": 0.274
     },
     "resume": "Passage de la rivière où cinq guerriers-crocodiles attendent le groupe.",
     "connu": [
@@ -11182,8 +11182,8 @@
     "titre": "Chemin sous la canopée",
     "parent": "balamor",
     "pos": {
-      "x": 0.37,
-      "y": 0.345
+      "x": 0.374,
+      "y": 0.288
     },
     "resume": "Sentier de terre noire où une biche pend dans une toile d'araignée.",
     "connu": [
@@ -11237,8 +11237,8 @@
     "titre": "Temple en ruine au pied de Kar-Balam",
     "parent": "balamor",
     "pos": {
-      "x": 0.345,
-      "y": 0.385
+      "x": 0.362,
+      "y": 0.306
     },
     "resume": "Temple envahi par la jungle, gardé par six statues et par les hommes-araignées.",
     "alias": [
