@@ -10755,8 +10755,8 @@
     "type": "pnj",
     "nom": "Ahalkun",
     "titre": "La Preneuse",
-    "parent": "balam-kaal",
-    "lieu": "balam-kaal",
+    "parent": "combat-contre-ahalkun",
+    "lieu": "combat-contre-ahalkun",
     "statut": "vivant",
     "resume": "Créature marine aux six bras gigantesques, qui attaque le Balam Kaal en pleine traversée.",
     "connu": [
@@ -11336,5 +11336,38 @@
       "raies d'Ozhal"
     ],
     "histoire": []
+  },
+  {
+    "id": "combat-contre-ahalkun",
+    "type": "lieu",
+    "nom": "Le combat contre Ahalkun",
+    "titre": "En pleine mer, entre Azuren Kai et Uruzal",
+    "parent": "balamor",
+    "pos": {
+      "x": 0.456,
+      "y": 0.341
+    },
+    "voyage": "x",
+    "resume": "Passage de la traversée où Ahalkun s'abat sur le Balam Kaal.",
+    "alias": [
+      "attaque d'Ahalkun"
+    ],
+    "connu": [
+      "Le navire s'arrête net au milieu de l'eau, comme s'il avait heurté quelque chose de mou. Un premier bras franchit le bastingage tribord et s'abat sur le pont, puis cinq autres sortent de l'eau noire.",
+      "Le groupe repousse Ahalkun en réduisant sa prise à deux bras. Elle lâche et sombre, le pont se remet à plat.",
+      "Le Passeur remonte le groupe à l'avant et lui fait apporter de l'eau."
+    ],
+    "chapeau": "Le navire s'arrête au milieu de l'eau, d'un coup, comme s'il avait heurté quelque chose de mou. Puis le premier bras franchit le bastingage tribord et s'abat sur le pont avec le bruit d'un sac de sable de deux tonnes. Cinq autres suivent en quelques secondes, sortant de l'eau noire par des couronnes d'écume. Le bois gémit sur toute la hauteur du mât et le pont s'incline.",
+    "histoire": [],
+    "galerie": [
+      {
+        "img": "img/paysages/tzakar/balamor-balam-kaal.webp",
+        "legende": "Le Balam Kaal"
+      },
+      {
+        "img": "img/paysages/tzakar/balamor-ahalkun.webp",
+        "legende": "Ahalkun attaque le Balam Kaal"
+      }
+    ]
   }
 ]
