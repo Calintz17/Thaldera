@@ -690,9 +690,9 @@
      "en": "Prestidigitation",
      "lv": 0,
      "t": "Action",
-     "p": "",
+     "p": "10 ft",
      "c": false,
-     "d": "Description complète à ajouter. Sort officiel, voir le livre de règles.",
+     "d": "Tours mineurs : étincelles, nettoyer ou salir, chauffer ou refroidir, marque, petit objet illusoire. Jusqu'à 1 heure.",
      "lst": "barde",
      "pre": true
     },
@@ -701,9 +701,9 @@
      "en": "Dancing Lights",
      "lv": 0,
      "t": "Action",
-     "p": "",
-     "c": false,
-     "d": "Description complète à ajouter. Sort officiel, voir le livre de règles.",
+     "p": "120 ft",
+     "c": true,
+     "d": "Jusqu'à 4 lumières de torche flottantes. Action bonus : les déplacer de 60 ft. 1 minute.",
      "lst": "barde"
     },
     {
@@ -711,9 +711,9 @@
      "en": "Light",
      "lv": 0,
      "t": "Action",
-     "p": "",
+     "p": "Contact",
      "c": false,
-     "d": "Description complète à ajouter. Sort officiel, voir le livre de règles.",
+     "d": "Un objet de 10 ft max émet une lumière vive sur 20 ft et faible sur 20 ft de plus pendant 1 heure. Jet de DEX si l'objet est porté par une créature hostile.",
      "lst": "barde"
     },
     {
@@ -731,10 +731,10 @@
      "n": "Réparation",
      "en": "Mending",
      "lv": 0,
-     "t": "Action",
-     "p": "",
+     "t": "Hors combat",
+     "p": "Contact",
      "c": false,
-     "d": "Description complète à ajouter. Sort officiel, voir le livre de règles.",
+     "d": "Répare une cassure ou une déchirure d'un pied maximum dans un objet. Incantation : 1 minute.",
      "lst": "barde"
     },
     {
@@ -752,9 +752,9 @@
      "en": "Minor Illusion",
      "lv": 0,
      "t": "Action",
-     "p": "",
+     "p": "30 ft",
      "c": false,
-     "d": "Description complète à ajouter. Sort officiel, voir le livre de règles.",
+     "d": "Un son ou une image dans un cube de 5 ft pendant 1 minute. Investigation (DD de sort) pour la percer.",
      "lst": "barde"
     },
     {
@@ -806,9 +806,9 @@
      "en": "Color Spray",
      "lv": 1,
      "t": "Action",
-     "p": "",
+     "p": "Soi (cône 15 ft)",
      "c": false,
-     "d": "Description complète à ajouter. Sort officiel, voir le livre de règles.",
+     "d": "Cône de 15 ft : jet de CON, les créatures sont aveuglées jusqu'à la fin de ton prochain tour.",
      "lst": "barde"
     },
     {
@@ -816,20 +816,21 @@
      "en": "Command",
      "lv": 1,
      "t": "Action",
-     "p": "",
+     "p": "60 ft",
      "c": false,
-     "d": "Description complète à ajouter. Sort officiel, voir le livre de règles.",
+     "d": "Ordre d'un mot (approche, lâche, fuis, à terre, immobile). Jet de SAG. +1 cible par niveau.",
      "lst": "barde"
     },
     {
      "n": "Compréhension des langues",
      "en": "Comprehend Languages",
      "lv": 1,
-     "t": "Action",
-     "p": "",
+     "t": "Hors combat",
+     "p": "Soi",
      "c": false,
-     "d": "Description complète à ajouter. Sort officiel, voir le livre de règles.",
-     "lst": "barde"
+     "d": "Tu comprends toute langue parlée et lis toute écriture touchée. 1 heure. Rituel.",
+     "lst": "barde",
+     "ritual": true
     },
     {
      "n": "Soins",
@@ -875,9 +876,9 @@
      "en": "Earth Tremor",
      "lv": 1,
      "t": "Action",
-     "p": "",
+     "p": "Soi (10 ft)",
      "c": false,
-     "d": "Description complète à ajouter. Sort officiel, voir le livre de règles.",
+     "d": "Jet de DEX : 1d6 contondant et à terre. Terrain difficile. +1d6 par niveau.",
      "lst": "barde"
     },
     {
@@ -896,30 +897,32 @@
      "en": "Heroism",
      "lv": 1,
      "t": "Action",
-     "p": "",
-     "c": false,
-     "d": "Description complète à ajouter. Sort officiel, voir le livre de règles.",
+     "p": "Contact",
+     "c": true,
+     "d": "Immunité à la peur et PV temporaires égaux à ton mod. d'incantation à chaque début de tour. 1 minute. +1 cible par niveau.",
      "lst": "barde"
     },
     {
      "n": "Identification",
      "en": "Identify",
      "lv": 1,
-     "t": "Action",
-     "p": "",
+     "t": "Hors combat",
+     "p": "Contact",
      "c": false,
-     "d": "Description complète à ajouter. Sort officiel, voir le livre de règles.",
-     "lst": "barde"
+     "d": "Révèle les propriétés d'un objet magique ou les sorts qui affectent une créature. Rituel, incantation : 1 minute.",
+     "lst": "barde",
+     "ritual": true
     },
     {
      "n": "Écriture illusoire",
      "en": "Illusory Script",
      "lv": 1,
-     "t": "Action",
-     "p": "",
+     "t": "Hors combat",
+     "p": "Contact",
      "c": false,
-     "d": "Description complète à ajouter. Sort officiel, voir le livre de règles.",
-     "lst": "barde"
+     "d": "Écriture secrète, lisible seulement par les personnes désignées. 10 jours. Rituel.",
+     "lst": "barde",
+     "ritual": true
     },
     {
      "n": "Grande foulée",
@@ -947,9 +950,9 @@
      "en": "Sleep",
      "lv": 1,
      "t": "Action",
-     "p": "",
-     "c": false,
-     "d": "Description complète à ajouter. Sort officiel, voir le livre de règles.",
+     "p": "90 ft",
+     "c": true,
+     "d": "Sphère de 5 ft, jet de SAG : la créature est neutralisée puis s'endort. 1 minute.",
      "lst": "barde"
     },
     {
@@ -965,12 +968,12 @@
     },
     {
      "n": "Fou rire de Tasha",
-     "en": "Tasha'S Hideous Laughter",
+     "en": "Tasha's Hideous Laughter",
      "lv": 1,
      "t": "Action",
-     "p": "",
-     "c": false,
-     "d": "Description complète à ajouter. Sort officiel, voir le livre de règles.",
+     "p": "30 ft",
+     "c": true,
+     "d": "Jet de SAG : la cible tombe à terre, incapable, secouée de rire. Nouveau jet à chaque tour et après un dégât. 1 minute.",
      "lst": "barde"
     },
     {
@@ -989,10 +992,11 @@
      "en": "Unseen Servant",
      "lv": 1,
      "t": "Action",
-     "p": "",
+     "p": "60 ft",
      "c": false,
-     "d": "Description complète à ajouter. Sort officiel, voir le livre de règles.",
-     "lst": "barde"
+     "d": "Serviteur invisible pour des tâches simples. 1 heure. Rituel.",
+     "lst": "barde",
+     "ritual": true
     },
     {
      "n": "Aide",
@@ -1020,9 +1024,9 @@
      "en": "Blindness/Deafness",
      "lv": 2,
      "t": "Action",
-     "p": "",
+     "p": "120 ft",
      "c": false,
-     "d": "Description complète à ajouter. Sort officiel, voir le livre de règles.",
+     "d": "Jet de CON : la cible est aveuglée ou assourdie. 1 minute. +1 cible par niveau.",
      "lst": "barde"
     },
     {
@@ -1030,9 +1034,9 @@
      "en": "Detect Thoughts",
      "lv": 2,
      "t": "Action",
-     "p": "",
-     "c": false,
-     "d": "Description complète à ajouter. Sort officiel, voir le livre de règles.",
+     "p": "Soi",
+     "c": true,
+     "d": "Tu lis les pensées de surface à 30 ft, ou tu sondes un esprit (jet de SAG). 1 minute.",
      "lst": "barde"
     },
     {
@@ -1061,9 +1065,9 @@
      "en": "Enthrall",
      "lv": 2,
      "t": "Action",
-     "p": "",
-     "c": false,
-     "d": "Description complète à ajouter. Sort officiel, voir le livre de règles.",
+     "p": "60 ft",
+     "c": true,
+     "d": "Jet de SAG : les créatures fascinées ont désavantage en Perception contre tout autre que toi. 1 minute.",
      "lst": "barde"
     },
     {
@@ -1082,9 +1086,9 @@
      "en": "Knock",
      "lv": 2,
      "t": "Action",
-     "p": "",
+     "p": "60 ft",
      "c": false,
-     "d": "Description complète à ajouter. Sort officiel, voir le livre de règles.",
+     "d": "Ouvre un objet verrouillé, coincé ou barré. Bruit audible à 300 ft.",
      "lst": "barde"
     },
     {
@@ -1112,20 +1116,21 @@
      "n": "Bouche magique",
      "en": "Magic Mouth",
      "lv": 2,
-     "t": "Action",
-     "p": "",
+     "t": "Hors combat",
+     "p": "30 ft",
      "c": false,
-     "d": "Description complète à ajouter. Sort officiel, voir le livre de règles.",
-     "lst": "barde"
+     "d": "Message dans un objet, déclenché par un événement. Jusqu'à dissipation. Rituel, incantation : 1 minute.",
+     "lst": "barde",
+     "ritual": true
     },
     {
      "n": "Image miroir",
      "en": "Mirror Image",
      "lv": 2,
      "t": "Action",
-     "p": "",
+     "p": "Soi",
      "c": false,
-     "d": "Description complète à ajouter. Sort officiel, voir le livre de règles.",
+     "d": "Trois doubles illusoires : les attaques contre toi peuvent les toucher à la place. 1 minute.",
      "lst": "barde"
     },
     {
@@ -1133,9 +1138,9 @@
      "en": "Pyrotechnics",
      "lv": 2,
      "t": "Action",
-     "p": "",
+     "p": "60 ft",
      "c": false,
-     "d": "Description complète à ajouter. Sort officiel, voir le livre de règles.",
+     "d": "Sur un feu existant : fumée épaisse (obscurcit) ou éclats aveuglants (jet de CON).",
      "lst": "barde"
     },
     {
@@ -1143,9 +1148,9 @@
      "en": "Shatter",
      "lv": 2,
      "t": "Action",
-     "p": "",
+     "p": "60 ft",
      "c": false,
-     "d": "Description complète à ajouter. Sort officiel, voir le livre de règles.",
+     "d": "Sphère de 10 ft, jet de CON : 3d8 tonnerre (moitié si réussi). +1d8 par niveau.",
      "lst": "barde"
     },
     {
@@ -1153,10 +1158,11 @@
      "en": "Skywrite",
      "lv": 2,
      "t": "Action",
-     "p": "",
-     "c": false,
-     "d": "Description complète à ajouter. Sort officiel, voir le livre de règles.",
-     "lst": "barde"
+     "p": "Vue",
+     "c": true,
+     "d": "Écrit jusqu'à 10 mots dans le ciel. Rituel. 1 heure.",
+     "lst": "barde",
+     "ritual": true
     },
     {
      "n": "Suggestion",
@@ -1174,19 +1180,19 @@
      "en": "Warding Wind",
      "lv": 2,
      "t": "Action",
-     "p": "",
-     "c": false,
-     "d": "Description complète à ajouter. Sort officiel, voir le livre de règles.",
+     "p": "Soi",
+     "c": true,
+     "d": "Vent de 10 ft : désavantage aux attaques à distance contre toi, dissipe gaz et vapeurs. 10 minutes.",
      "lst": "barde"
     },
     {
      "n": "Zone de vérité",
-     "en": "Zone Of Truth",
+     "en": "Zone of Truth",
      "lv": 2,
      "t": "Action",
-     "p": "",
+     "p": "60 ft",
      "c": false,
-     "d": "Description complète à ajouter. Sort officiel, voir le livre de règles.",
+     "d": "Sphère de 15 ft, jet de CHA : on ne peut pas mentir sciemment à l'intérieur. 10 minutes.",
      "lst": "barde"
     },
     {
@@ -1194,9 +1200,9 @@
      "en": "Chill Touch",
      "lv": 0,
      "t": "Action",
-     "p": "",
+     "p": "120 ft",
      "c": false,
-     "d": "Description complète à ajouter. Sort officiel, voir le livre de règles.",
+     "d": "Attaque de sort à distance : 3d8 nécrotique. La cible ne peut pas récupérer de PV avant ton prochain tour. Mort-vivant : désavantage à ses attaques contre toi.",
      "lst": "occultiste"
     },
     {
@@ -1204,9 +1210,9 @@
      "en": "Create Bonfire",
      "lv": 0,
      "t": "Action",
-     "p": "",
-     "c": false,
-     "d": "Description complète à ajouter. Sort officiel, voir le livre de règles.",
+     "p": "60 ft",
+     "c": true,
+     "d": "Feu de camp de 5 ft. Jet de DEX à l'apparition, à l'entrée ou en finissant son tour dedans : 3d8 feu. 1 minute.",
      "lst": "occultiste"
     },
     {
@@ -1224,10 +1230,10 @@
      "n": "Pierre magique",
      "en": "Magic Stone",
      "lv": 0,
-     "t": "Action",
-     "p": "",
+     "t": "Action bonus",
+     "p": "Contact",
      "c": false,
-     "d": "Description complète à ajouter. Sort officiel, voir le livre de règles.",
+     "d": "Jusqu'à 3 cailloux enchantés, lancés à 60 ft : attaque de sort, 1d6 + mod. d'incantation contondant. 1 minute.",
      "lst": "occultiste"
     },
     {
@@ -1246,19 +1252,19 @@
      "en": "Thunderclap",
      "lv": 0,
      "t": "Action",
-     "p": "",
+     "p": "5 ft",
      "c": false,
-     "d": "Description complète à ajouter. Sort officiel, voir le livre de règles.",
+     "d": "Fracas audible à 100 ft. Créatures à 5 ft, jet de CON : 3d6 tonnerre.",
      "lst": "occultiste"
     },
     {
      "n": "Retraite expéditive",
      "en": "Expeditious Retreat",
      "lv": 1,
-     "t": "Action",
-     "p": "",
-     "c": false,
-     "d": "Description complète à ajouter. Sort officiel, voir le livre de règles.",
+     "t": "Action bonus",
+     "p": "Soi",
+     "c": true,
+     "d": "Tu peux Foncer en action bonus à chaque tour. 10 minutes.",
      "lst": "occultiste"
     },
     {
@@ -1276,19 +1282,19 @@
      "en": "Blur",
      "lv": 2,
      "t": "Action",
-     "p": "",
-     "c": false,
-     "d": "Description complète à ajouter. Sort officiel, voir le livre de règles.",
+     "p": "Soi",
+     "c": true,
+     "d": "Les attaques contre toi ont désavantage, sauf contre les créatures à vision aveugle. 1 minute.",
      "lst": "occultiste"
     },
     {
      "n": "Châtiment lumineux",
      "en": "Branding Smite",
      "lv": 2,
-     "t": "Action",
-     "p": "",
-     "c": false,
-     "d": "Description complète à ajouter. Sort officiel, voir le livre de règles.",
+     "t": "Action bonus",
+     "p": "Soi",
+     "c": true,
+     "d": "Ta prochaine touche inflige +2d6 radiant, la cible brille et ne peut plus être invisible. +1d6 par niveau.",
      "lst": "occultiste"
     },
     {
@@ -1296,19 +1302,19 @@
      "en": "Earthbind",
      "lv": 2,
      "t": "Action",
-     "p": "",
-     "c": false,
-     "d": "Description complète à ajouter. Sort officiel, voir le livre de règles.",
+     "p": "300 ft",
+     "c": true,
+     "d": "Jet de FOR : la vitesse de vol de la cible tombe à 0 et elle descend. 1 minute.",
      "lst": "occultiste"
     },
     {
      "n": "Rayon d'affaiblissement",
-     "en": "Ray Of Enfeeblement",
+     "en": "Ray of Enfeeblement",
      "lv": 2,
      "t": "Action",
-     "p": "",
-     "c": false,
-     "d": "Description complète à ajouter. Sort officiel, voir le livre de règles.",
+     "p": "60 ft",
+     "c": true,
+     "d": "Attaque de sort à distance : la cible inflige la moitié des dégâts de ses attaques en FOR. 1 minute.",
      "lst": "occultiste"
     },
     {
@@ -1316,9 +1322,9 @@
      "en": "Spider Climb",
      "lv": 2,
      "t": "Action",
-     "p": "",
-     "c": false,
-     "d": "Description complète à ajouter. Sort officiel, voir le livre de règles.",
+     "p": "Contact",
+     "c": true,
+     "d": "Escalade murs et plafonds à ta vitesse normale. 1 heure.",
      "lst": "occultiste"
     },
     {
@@ -1326,9 +1332,9 @@
      "en": "Blink",
      "lv": 3,
      "t": "Action",
-     "p": "",
+     "p": "Soi",
      "c": false,
-     "d": "Description complète à ajouter. Sort officiel, voir le livre de règles.",
+     "d": "À la fin de chaque tour, d20 : 11 ou plus, tu passes dans le Plan éthéré jusqu'à ton prochain tour. 1 minute.",
      "lst": "occultiste"
     },
     {
@@ -1346,9 +1352,9 @@
      "en": "Fear",
      "lv": 3,
      "t": "Action",
-     "p": "",
-     "c": false,
-     "d": "Description complète à ajouter. Sort officiel, voir le livre de règles.",
+     "p": "Soi (cône 30 ft)",
+     "c": true,
+     "d": "Jet de SAG : les créatures lâchent ce qu'elles tiennent et fuient. 1 minute.",
      "lst": "occultiste"
     },
     {
@@ -1356,9 +1362,9 @@
      "en": "Fly",
      "lv": 3,
      "t": "Action",
-     "p": "",
-     "c": false,
-     "d": "Description complète à ajouter. Sort officiel, voir le livre de règles.",
+     "p": "Contact",
+     "c": true,
+     "d": "Une créature gagne un vol de 60 ft. 10 minutes.",
      "lst": "occultiste"
     },
     {
@@ -1366,9 +1372,9 @@
      "en": "Gaseous Form",
      "lv": 3,
      "t": "Action",
-     "p": "",
-     "c": false,
-     "d": "Description complète à ajouter. Sort officiel, voir le livre de règles.",
+     "p": "Contact",
+     "c": true,
+     "d": "Une créature devient un nuage de gaz : vol 10 ft, résistances, traverse les fissures. 1 heure.",
      "lst": "occultiste"
     },
     {
@@ -1376,19 +1382,19 @@
      "en": "Hypnotic Pattern",
      "lv": 3,
      "t": "Action",
-     "p": "",
-     "c": false,
-     "d": "Description complète à ajouter. Sort officiel, voir le livre de règles.",
+     "p": "120 ft",
+     "c": true,
+     "d": "Cube de 30 ft, jet de SAG : charmé et incapable. 1 minute.",
      "lst": "occultiste"
     },
     {
      "n": "Cercle magique",
      "en": "Magic Circle",
      "lv": 3,
-     "t": "Action",
-     "p": "",
+     "t": "Hors combat",
+     "p": "10 ft",
      "c": false,
-     "d": "Description complète à ajouter. Sort officiel, voir le livre de règles.",
+     "d": "Cylindre de 10 ft de rayon qui protège des célestes, élémentaires, fées, fiélons et morts-vivants. 1 heure. Incantation : 1 minute.",
      "lst": "occultiste"
     },
     {
@@ -1396,9 +1402,9 @@
      "en": "Major Image",
      "lv": 3,
      "t": "Action",
-     "p": "",
-     "c": false,
-     "d": "Description complète à ajouter. Sort officiel, voir le livre de règles.",
+     "p": "120 ft",
+     "c": true,
+     "d": "Image illusoire de 20 ft de côté avec sons et odeurs. 10 minutes.",
      "lst": "occultiste"
     },
     {
@@ -1406,9 +1412,9 @@
      "en": "Remove Curse",
      "lv": 3,
      "t": "Action",
-     "p": "",
+     "p": "Contact",
      "c": false,
-     "d": "Description complète à ajouter. Sort officiel, voir le livre de règles.",
+     "d": "Met fin à toutes les malédictions qui pèsent sur une créature ou un objet.",
      "lst": "occultiste"
     },
     {
@@ -1416,9 +1422,9 @@
      "en": "Tongues",
      "lv": 3,
      "t": "Action",
-     "p": "",
+     "p": "Contact",
      "c": false,
-     "d": "Description complète à ajouter. Sort officiel, voir le livre de règles.",
+     "d": "Une créature comprend et parle toute langue. 1 heure.",
      "lst": "occultiste"
     },
     {
@@ -1426,9 +1432,9 @@
      "en": "Banishment",
      "lv": 4,
      "t": "Action",
-     "p": "",
-     "c": false,
-     "d": "Description complète à ajouter. Sort officiel, voir le livre de règles.",
+     "p": "60 ft",
+     "c": true,
+     "d": "Jet de CHA : la cible est bannie dans un demi-plan ou son plan natal. 1 minute.",
      "lst": "occultiste"
     },
     {
@@ -1447,9 +1453,9 @@
      "en": "Dimension Door",
      "lv": 4,
      "t": "Action",
-     "p": "",
+     "p": "500 ft",
      "c": false,
-     "d": "Description complète à ajouter. Sort officiel, voir le livre de règles.",
+     "d": "Tu te téléportes jusqu'à 500 ft, avec une créature consentante.",
      "lst": "occultiste"
     },
     {
@@ -1457,9 +1463,9 @@
      "en": "Elemental Bane",
      "lv": 4,
      "t": "Action",
-     "p": "",
-     "c": false,
-     "d": "Description complète à ajouter. Sort officiel, voir le livre de règles.",
+     "p": "90 ft",
+     "c": true,
+     "d": "Jet de CON : 2d6 du type choisi, puis vulnérabilité à ce type. 1 minute.",
      "lst": "occultiste"
     },
     {
@@ -1477,9 +1483,9 @@
      "en": "Phantasmal Killer",
      "lv": 4,
      "t": "Action",
-     "p": "",
-     "c": false,
-     "d": "Description complète à ajouter. Sort officiel, voir le livre de règles.",
+     "p": "120 ft",
+     "c": true,
+     "d": "Jet de SAG : effrayé, 4d10 psychique à chaque tour. Nouveau jet à chaque fin de tour. 1 minute.",
      "lst": "occultiste"
     }
    ],
@@ -1493,9 +1499,24 @@
      "dmg": "1d12+7 tranchant",
      "note": "Hache à deux mains, arme de pacte. Heavy, Two-Handed, Cleave.",
      "pw": [
-      "Couronnement du Repos Noir, emplacement niveau 2",
-      "Procession de la Tombe, emplacement niveau 3",
-      "Déni par la Garde, emplacement niveau 1 (réaction)"
+      {
+       "n": "Couronnement du Repos Noir",
+       "a": "A",
+       "d": "Emplacement de niveau 2. Colonne de 10 ft de rayon, jet de DEX DD 17 : 4d6 nécrotique (moitié si réussi).",
+       "r": "4d6"
+      },
+      {
+       "n": "Procession de la Tombe",
+       "a": "A",
+       "d": "Emplacement de niveau 3. Ligne de 60 ft, jet de DEX DD 17 : 5d8 nécrotique (moitié si réussi).",
+       "r": "5d8"
+      },
+      {
+       "n": "Déni par la Garde",
+       "a": "R",
+       "d": "Emplacement de niveau 1. Réduit de 2d10 les dégâts d'un sort ciblé ou d'un projectile.",
+       "r": "2d10"
+      }
      ]
     },
     {
@@ -1505,7 +1526,18 @@
      "dmg": "1d6+7 (2 attaques)",
      "note": "Gantelet de pacte, harmonisation requise. Reliquary Rend : 2 attaques. Traverse la matière non magique, résistance nécrotique. Équipée en permanence (arme de pacte attunée).",
      "pw": [
-      "Blight, emplacement de pacte niveau 4 ou plus, 30 ft"
+      {
+       "n": "Reliquary Rend",
+       "a": "A",
+       "d": "Deux attaques, chacune 1d6+7. Traverse la matière non magique.",
+       "r": "1d6+7"
+      },
+      {
+       "n": "Blight",
+       "a": "A",
+       "d": "Emplacement de pacte de niveau 4 ou plus. Portée 30 ft, jet de CON DD 17 : 8d8 nécrotique.",
+       "r": "8d8"
+      }
      ],
      "perma": 1
     },
@@ -1516,9 +1548,24 @@
      "dmg": "1d8+7 tranchant + 1d12 foudre",
      "note": "Épée longue, Versatile. Sans harmonisation. 3 charges, recharge à l'aube.",
      "pw": [
-      "Forme 1 (1 charge), ruée de 30 ft",
-      "Forme 2 (2 charges), ligne 6d8 foudre, DD 17",
-      "Forme 3 (3 charges), combo avec Ruin"
+      {
+       "n": "Forme 1",
+       "a": "A",
+       "d": "1 charge. Ruée de 30 ft sans attaque d'opportunité, attaque chaque créature traversée, +2d8 foudre.",
+       "r": "2d8"
+      },
+      {
+       "n": "Forme 2",
+       "a": "A",
+       "d": "2 charges. Ligne de 30 ft sur 5 ft, jet de DEX DD 17 : 6d8 foudre (moitié si réussi).",
+       "r": "6d8"
+      },
+      {
+       "n": "Forme 3",
+       "a": "A",
+       "d": "3 charges. Combo avec Ruin : les deux porteurs se téléportent au contact de la cible, l'autre porteur ajoute 1d12 + 1d12 par charge restante. Les deux armes tombent à 0 charge.",
+       "r": "1d12"
+      }
      ]
     },
     {
@@ -1528,8 +1575,12 @@
      "dmg": "1d10+7 perçant",
      "note": "Arbalète lourde, focus d'incantation et arme de pacte. Eldritch Blast via l'arme : 3 rayons, 1d10+5 force chacun, DEX DD 17.",
      "pw": [
-      "Arc-Beam Discharge (tour de magie), ligne 120 ft, DEX DD 17",
-      "Solar Ricochet (passif), 3 ricochets de 30 ft, DEX DD 17"
+      {
+       "n": "Décharge occulte",
+       "a": "A",
+       "d": "Chaque rayon devient une ligne de 5 ft sur 120 ft : jet de DEX DD 17, 1d10 + CHA force (moitié si réussi). Traverse les créatures et ricoche 3 fois sur pierre, métal ou cristal (nouveaux jets). 3 rayons.",
+       "r": "1d10+5"
+      }
      ]
     },
     {
@@ -1539,8 +1590,17 @@
      "dmg": "2d6+7 contondant",
      "note": "Maul. Heavy, Two-Handed, Topple. Vitesse +10 ft.",
      "pw": [
-      "Charge (15 ft en ligne) : +2d6 et FOR DD 15, la cible est renversée",
-      "Ruée du Chariot, 1 par jour, recharge au repos long"
+      {
+       "n": "Charge",
+       "a": "A",
+       "d": "Déplacement de 15 ft en ligne droite avant la touche : +2d6 et jet de FOR DD 15, la cible est renversée.",
+       "r": "2d6"
+      },
+      {
+       "n": "Ruée du Chariot",
+       "a": "A",
+       "d": "1 fois par jour (repos long). Ligne de 15 ft."
+      }
      ]
     },
     {
@@ -1550,9 +1610,39 @@
      "dmg": "1d4+7 perçant",
      "note": "Dague de pacte. Finesse, Light, Thrown (20/60), Nick. Orgueil : 2 attaques. Entropie : 1 attaque en action bonus. Sneak Attack 3d6 une fois par tour (avantage ou allié au contact).",
      "pw": [
-      "Invisibility, emplacement niveau 2",
-      "See Invisibility, emplacement niveau 2",
-      "Alter Self, emplacement niveau 2"
+      {
+       "n": "Orgueil",
+       "a": "A",
+       "d": "Deux attaques de 1d4+5.",
+       "r": "1d4+5"
+      },
+      {
+       "n": "Entropie",
+       "a": "B",
+       "d": "Une attaque de 1d4+5 en action bonus.",
+       "r": "1d4+5"
+      },
+      {
+       "n": "Attaque sournoise",
+       "a": "A",
+       "d": "3d6 une fois par tour, si tu as l'avantage.",
+       "r": "3d6"
+      },
+      {
+       "n": "Invisibility",
+       "a": "A",
+       "d": "Emplacement de niveau 2. Action, 1 heure, concentration. Peut cibler un allié."
+      },
+      {
+       "n": "See Invisibility",
+       "a": "A",
+       "d": "Emplacement de niveau 2. Action, 1 heure, toi seul vois, vision sur le Plan éthéré."
+      },
+      {
+       "n": "Alter Self",
+       "a": "A",
+       "d": "Emplacement de niveau 2. Action, 1 heure, concentration, sans contact."
+      }
      ]
     },
     {
@@ -1562,7 +1652,12 @@
      "dmg": "2d6+7",
      "note": "Faux à deux mains.",
      "pw": [
-      "Veil Shield, Quiet Passing, emplacement niveau 4"
+      {
+       "n": "Veil Shield, Quiet Passing",
+       "a": "A",
+       "d": "Emplacement de niveau 4. Fire Shield sans concentration, 10 minutes, résistance radiant, 2d8 nécrotique aux attaquants au corps à corps.",
+       "r": "2d8"
+      }
      ]
     },
     {
@@ -1572,9 +1667,24 @@
      "dmg": "1d6+7",
      "note": "Cimeterre. +1 CA en tenue.",
      "pw": [
-      "Gravité Funèbre, emplacement niveau 1 (réaction)",
-      "Orbite Brisée, emplacement niveau 4",
-      "Effondrement du Monde, emplacement niveau 4"
+      {
+       "n": "Gravité Funèbre",
+       "a": "R",
+       "d": "Emplacement de niveau 1. Réduit de 2d8 les dégâts, désavantage à l'attaquant.",
+       "r": "2d8"
+      },
+      {
+       "n": "Orbite Brisée",
+       "a": "A",
+       "d": "Emplacement de niveau 4. Jet de CON DD 17 : 3d8 nécrotique et étourdi.",
+       "r": "3d8"
+      },
+      {
+       "n": "Effondrement du Monde",
+       "a": "A",
+       "d": "Emplacement de niveau 4. Rayon de 20 ft, jet de FOR DD 17 : 4d10 contondant et entravé.",
+       "r": "4d10"
+      }
      ]
     },
     {
@@ -1584,7 +1694,12 @@
      "dmg": "1d8+6",
      "note": "Rapière. Vex. +1 CA. 2 dés de supériorité d8, repos court.",
      "pw": [
-      "Manoeuvres de supériorité, DD 13"
+      {
+       "n": "Dés de supériorité d8",
+       "a": "B",
+       "d": "2 dés par repos court, DD 13 : Menacing, Distracting, Disarming, Riposte.",
+       "r": "1d8"
+      }
      ]
     }
    ],
@@ -1808,10 +1923,6 @@
      "+3"
     ],
     [
-     "Vitesse",
-     "40 ft"
-    ],
-    [
      "Perc. passive",
      "18"
     ]
@@ -1819,7 +1930,7 @@
    "gear": [
     {
      "n": "Cuirasse Aurée",
-     "note": "Armure intermédiaire, cotte de mailles. CA 14."
+     "note": "Armure intermédiaire (cotte de mailles). CA 15 + DEX (max +2). Ardeur du Taureau : +1 CA tant que tes PV sont à la moitié du maximum ou moins."
     },
     {
      "n": "Hat of Refuge",
@@ -2359,7 +2470,7 @@
    "eqExcl": 1,
    "init": {
     "res": {
-     "hat": 1
+     "hat": 0
     }
    },
    "items": [
@@ -2368,14 +2479,16 @@
      "qty": 1,
      "max": 1,
      "used": 0,
-     "note": "Soins"
+     "note": "Soins",
+     "roll": "2d4+2"
     },
     {
      "n": "Potion of Regeneration",
      "qty": 1,
      "max": 1,
      "used": 0,
-     "note": ""
+     "note": "",
+     "roll": "4d6"
     },
     {
      "n": "Potion de l'Avant-Poste",
@@ -2650,7 +2763,45 @@
      "used": 0,
      "note": ""
     }
-   ]
+   ],
+   "acfx": {
+    "un": 13,
+    "base": [
+     [
+      "Cuirasse Aurée",
+      17
+     ]
+    ],
+    "add": [
+     [
+      "Pyrrite Bracers",
+      1
+     ],
+     [
+      "Satellite du Monde Enseveli",
+      1
+     ],
+     [
+      "Rapier of the Drowned Corsair",
+      1
+     ]
+    ],
+    "bloody": [
+     [
+      "Cuirasse Aurée",
+      1
+     ]
+    ]
+   },
+   "spd": {
+    "base": 30,
+    "add": [
+     [
+      "Caput Tauri",
+      10
+     ]
+    ]
+   }
   },
   {
    "id": "jane",
@@ -2881,9 +3032,9 @@
      "en": "Acid Splash",
      "lv": 0,
      "t": "Action",
-     "p": "",
+     "p": "60 ft",
      "c": false,
-     "d": "Description complète à ajouter. Sort officiel, voir le livre de règles.",
+     "d": "Une ou deux créatures à 5 ft l'une de l'autre, jet de DEX : 3d6 acide.",
      "lst": "roublard"
     },
     {
@@ -2891,9 +3042,9 @@
      "en": "Chill Touch",
      "lv": 0,
      "t": "Action",
-     "p": "",
+     "p": "120 ft",
      "c": false,
-     "d": "Description complète à ajouter. Sort officiel, voir le livre de règles.",
+     "d": "Attaque de sort à distance : 3d8 nécrotique. La cible ne peut pas récupérer de PV avant ton prochain tour. Mort-vivant : désavantage à ses attaques contre toi.",
      "lst": "roublard"
     },
     {
@@ -2901,9 +3052,9 @@
      "en": "Control Flames",
      "lv": 0,
      "t": "Action",
-     "p": "",
+     "p": "60 ft",
      "c": false,
-     "d": "Description complète à ajouter. Sort officiel, voir le livre de règles.",
+     "d": "Tu manipules une flamme de 5 ft de côté : l'attiser, l'éteindre, la déplacer ou changer son aspect pendant 1 heure.",
      "lst": "roublard"
     },
     {
@@ -2911,9 +3062,9 @@
      "en": "Create Bonfire",
      "lv": 0,
      "t": "Action",
-     "p": "",
-     "c": false,
-     "d": "Description complète à ajouter. Sort officiel, voir le livre de règles.",
+     "p": "60 ft",
+     "c": true,
+     "d": "Feu de camp de 5 ft. Jet de DEX à l'apparition, à l'entrée ou en finissant son tour dedans : 3d8 feu. 1 minute.",
      "lst": "roublard"
     },
     {
@@ -2921,9 +3072,9 @@
      "en": "Dancing Lights",
      "lv": 0,
      "t": "Action",
-     "p": "",
-     "c": false,
-     "d": "Description complète à ajouter. Sort officiel, voir le livre de règles.",
+     "p": "120 ft",
+     "c": true,
+     "d": "Jusqu'à 4 lumières de torche flottantes. Action bonus : les déplacer de 60 ft. 1 minute.",
      "lst": "roublard"
     },
     {
@@ -2931,9 +3082,9 @@
      "en": "Elementalism",
      "lv": 0,
      "t": "Action",
-     "p": "",
+     "p": "30 ft",
      "c": false,
-     "d": "Description complète à ajouter. Sort officiel, voir le livre de règles.",
+     "d": "Effet élémentaire mineur : souffle d'air, étincelle, terre façonnée, eau jetée, changement de couleur ou de température d'un objet de 5 ft de côté.",
      "lst": "roublard"
     },
     {
@@ -2963,19 +3114,19 @@
      "en": "Light",
      "lv": 0,
      "t": "Action",
-     "p": "",
+     "p": "Contact",
      "c": false,
-     "d": "Description complète à ajouter. Sort officiel, voir le livre de règles.",
+     "d": "Un objet de 10 ft max émet une lumière vive sur 20 ft et faible sur 20 ft de plus pendant 1 heure. Jet de DEX si l'objet est porté par une créature hostile.",
      "lst": "roublard"
     },
     {
      "n": "Réparation",
      "en": "Mending",
      "lv": 0,
-     "t": "Action",
-     "p": "",
+     "t": "Hors combat",
+     "p": "Contact",
      "c": false,
-     "d": "Description complète à ajouter. Sort officiel, voir le livre de règles.",
+     "d": "Répare une cassure ou une déchirure d'un pied maximum dans un objet. Incantation : 1 minute.",
      "lst": "roublard"
     },
     {
@@ -2993,9 +3144,9 @@
      "en": "Minor Illusion",
      "lv": 0,
      "t": "Action",
-     "p": "",
+     "p": "30 ft",
      "c": false,
-     "d": "Description complète à ajouter. Sort officiel, voir le livre de règles.",
+     "d": "Un son ou une image dans un cube de 5 ft pendant 1 minute. Investigation (DD de sort) pour la percer.",
      "lst": "roublard"
     },
     {
@@ -3003,9 +3154,9 @@
      "en": "Mold Earth",
      "lv": 0,
      "t": "Action",
-     "p": "",
+     "p": "30 ft",
      "c": false,
-     "d": "Description complète à ajouter. Sort officiel, voir le livre de règles.",
+     "d": "Terre sur un cube de 5 ft : la creuser, la déplacer, la modeler ou la rendre difficile à traverser.",
      "lst": "roublard"
     },
     {
@@ -3024,19 +3175,19 @@
      "en": "Prestidigitation",
      "lv": 0,
      "t": "Action",
-     "p": "",
+     "p": "10 ft",
      "c": false,
-     "d": "Description complète à ajouter. Sort officiel, voir le livre de règles.",
+     "d": "Tours mineurs : étincelles, nettoyer ou salir, chauffer ou refroidir, marque, petit objet illusoire. Jusqu'à 1 heure.",
      "lst": "roublard"
     },
     {
      "n": "Rayon de givre",
-     "en": "Ray Of Frost",
+     "en": "Ray of Frost",
      "lv": 0,
      "t": "Action",
-     "p": "",
+     "p": "60 ft",
      "c": false,
-     "d": "Description complète à ajouter. Sort officiel, voir le livre de règles.",
+     "d": "Attaque de sort à distance : 3d8 froid, vitesse de la cible réduite de 10 ft jusqu'à ton prochain tour.",
      "lst": "roublard"
     },
     {
@@ -3044,9 +3195,9 @@
      "en": "Shape Water",
      "lv": 0,
      "t": "Action",
-     "p": "",
+     "p": "30 ft",
      "c": false,
-     "d": "Description complète à ajouter. Sort officiel, voir le livre de règles.",
+     "d": "Eau sur un cube de 5 ft : la déplacer, la geler, la façonner ou la colorer.",
      "lst": "roublard"
     },
     {
@@ -3054,9 +3205,9 @@
      "en": "Shocking Grasp",
      "lv": 0,
      "t": "Action",
-     "p": "",
+     "p": "Contact",
      "c": false,
-     "d": "Description complète à ajouter. Sort officiel, voir le livre de règles.",
+     "d": "Attaque de sort au contact (avantage contre une armure métallique) : 3d8 foudre, la cible ne peut pas faire de réaction avant son prochain tour.",
      "lst": "roublard"
     },
     {
@@ -3064,30 +3215,31 @@
      "en": "Thunderclap",
      "lv": 0,
      "t": "Action",
-     "p": "",
+     "p": "5 ft",
      "c": false,
-     "d": "Description complète à ajouter. Sort officiel, voir le livre de règles.",
+     "d": "Fracas audible à 100 ft. Créatures à 5 ft, jet de CON : 3d6 tonnerre.",
      "lst": "roublard"
     },
     {
      "n": "Absorption des éléments",
      "en": "Absorb Elements",
      "lv": 1,
-     "t": "Action",
-     "p": "",
+     "t": "Réaction",
+     "p": "Soi",
      "c": false,
-     "d": "Description complète à ajouter. Sort officiel, voir le livre de règles.",
+     "d": "Réaction à un dégât d'acide, de froid, de feu, de foudre ou de tonnerre : résistance à ce type, et +1d6 de ce type à ta prochaine attaque au contact. +1d6 par niveau.",
      "lst": "roublard"
     },
     {
      "n": "Alarme",
      "en": "Alarm",
      "lv": 1,
-     "t": "Action",
-     "p": "",
+     "t": "Hors combat",
+     "p": "30 ft",
      "c": false,
-     "d": "Description complète à ajouter. Sort officiel, voir le livre de règles.",
-     "lst": "roublard"
+     "d": "Alarme mentale ou sonore sur une zone jusqu'à 20 ft de côté, 8 heures. Rituel, incantation : 1 minute.",
+     "lst": "roublard",
+     "ritual": true
     },
     {
      "n": "Mains brûlantes",
@@ -3105,9 +3257,9 @@
      "en": "Catapult",
      "lv": 1,
      "t": "Action",
-     "p": "",
+     "p": "60 ft",
      "c": false,
-     "d": "Description complète à ajouter. Sort officiel, voir le livre de règles.",
+     "d": "Un objet de 1 à 5 lb part en ligne droite sur 90 ft, jet de DEX : 3d8 contondant. +1d8 par niveau.",
      "lst": "roublard"
     },
     {
@@ -3126,9 +3278,9 @@
      "en": "Chromatic Orb",
      "lv": 1,
      "t": "Action",
-     "p": "",
+     "p": "90 ft",
      "c": false,
-     "d": "Description complète à ajouter. Sort officiel, voir le livre de règles.",
+     "d": "Attaque de sort à distance : 3d8 au choix acide, froid, feu, foudre, poison ou tonnerre. +1d8 par niveau.",
      "lst": "roublard"
     },
     {
@@ -3136,20 +3288,21 @@
      "en": "Color Spray",
      "lv": 1,
      "t": "Action",
-     "p": "",
+     "p": "Soi (cône 15 ft)",
      "c": false,
-     "d": "Description complète à ajouter. Sort officiel, voir le livre de règles.",
+     "d": "Cône de 15 ft : jet de CON, les créatures sont aveuglées jusqu'à la fin de ton prochain tour.",
      "lst": "roublard"
     },
     {
      "n": "Compréhension des langues",
      "en": "Comprehend Languages",
      "lv": 1,
-     "t": "Action",
-     "p": "",
+     "t": "Hors combat",
+     "p": "Soi",
      "c": false,
-     "d": "Description complète à ajouter. Sort officiel, voir le livre de règles.",
-     "lst": "roublard"
+     "d": "Tu comprends toute langue parlée et lis toute écriture touchée. 1 heure. Rituel.",
+     "lst": "roublard",
+     "ritual": true
     },
     {
      "n": "Détection de la magie",
@@ -3167,19 +3320,19 @@
      "en": "Earth Tremor",
      "lv": 1,
      "t": "Action",
-     "p": "",
+     "p": "Soi (10 ft)",
      "c": false,
-     "d": "Description complète à ajouter. Sort officiel, voir le livre de règles.",
+     "d": "Jet de DEX : 1d6 contondant et à terre. Terrain difficile. +1d6 par niveau.",
      "lst": "roublard"
     },
     {
      "n": "Retraite expéditive",
      "en": "Expeditious Retreat",
      "lv": 1,
-     "t": "Action",
-     "p": "",
-     "c": false,
-     "d": "Description complète à ajouter. Sort officiel, voir le livre de règles.",
+     "t": "Action bonus",
+     "p": "Soi",
+     "c": true,
+     "d": "Tu peux Foncer en action bonus à chaque tour. 10 minutes.",
      "lst": "roublard"
     },
     {
@@ -3187,9 +3340,9 @@
      "en": "False Life",
      "lv": 1,
      "t": "Action",
-     "p": "",
+     "p": "Soi",
      "c": false,
-     "d": "Description complète à ajouter. Sort officiel, voir le livre de règles.",
+     "d": "2d4+4 PV temporaires pendant 1 heure. +5 par niveau.",
      "lst": "roublard"
     },
     {
@@ -3217,9 +3370,9 @@
      "en": "Grease",
      "lv": 1,
      "t": "Action",
-     "p": "",
+     "p": "60 ft",
      "c": false,
-     "d": "Description complète à ajouter. Sort officiel, voir le livre de règles.",
+     "d": "Carré de 10 ft de terrain glissant : jet de DEX ou à terre. 1 minute.",
      "lst": "roublard"
     },
     {
@@ -3238,21 +3391,23 @@
      "n": "Identification",
      "en": "Identify",
      "lv": 1,
-     "t": "Action",
-     "p": "",
+     "t": "Hors combat",
+     "p": "Contact",
      "c": false,
-     "d": "Description complète à ajouter. Sort officiel, voir le livre de règles.",
-     "lst": "roublard"
+     "d": "Révèle les propriétés d'un objet magique ou les sorts qui affectent une créature. Rituel, incantation : 1 minute.",
+     "lst": "roublard",
+     "ritual": true
     },
     {
      "n": "Écriture illusoire",
      "en": "Illusory Script",
      "lv": 1,
-     "t": "Action",
-     "p": "",
+     "t": "Hors combat",
+     "p": "Contact",
      "c": false,
-     "d": "Description complète à ajouter. Sort officiel, voir le livre de règles.",
-     "lst": "roublard"
+     "d": "Écriture secrète, lisible seulement par les personnes désignées. 10 jours. Rituel.",
+     "lst": "roublard",
+     "ritual": true
     },
     {
      "n": "Saut",
@@ -3279,9 +3434,9 @@
      "en": "Mage Armor",
      "lv": 1,
      "t": "Action",
-     "p": "",
+     "p": "Contact",
      "c": false,
-     "d": "Description complète à ajouter. Sort officiel, voir le livre de règles.",
+     "d": "Une créature non armurée a une CA de 13 + DEX pendant 8 heures.",
      "lst": "roublard"
     },
     {
@@ -3296,12 +3451,12 @@
     },
     {
      "n": "Rayon empoisonné",
-     "en": "Ray Of Sickness",
+     "en": "Ray of Sickness",
      "lv": 1,
      "t": "Action",
-     "p": "",
+     "p": "60 ft",
      "c": false,
-     "d": "Description complète à ajouter. Sort officiel, voir le livre de règles.",
+     "d": "Attaque de sort à distance : 2d8 poison et empoisonné jusqu'à la fin de ton prochain tour. +1d8 par niveau.",
      "lst": "roublard"
     },
     {
@@ -3309,49 +3464,51 @@
      "en": "Sleep",
      "lv": 1,
      "t": "Action",
-     "p": "",
-     "c": false,
-     "d": "Description complète à ajouter. Sort officiel, voir le livre de règles.",
+     "p": "90 ft",
+     "c": true,
+     "d": "Sphère de 5 ft, jet de SAG : la créature est neutralisée puis s'endort. 1 minute.",
      "lst": "roublard"
     },
     {
      "n": "Fou rire de Tasha",
-     "en": "Tasha'S Hideous Laughter",
+     "en": "Tasha's Hideous Laughter",
      "lv": 1,
      "t": "Action",
-     "p": "",
-     "c": false,
-     "d": "Description complète à ajouter. Sort officiel, voir le livre de règles.",
+     "p": "30 ft",
+     "c": true,
+     "d": "Jet de SAG : la cible tombe à terre, incapable, secouée de rire. Nouveau jet à chaque tour et après un dégât. 1 minute.",
      "lst": "roublard"
     },
     {
      "n": "Disque flottant de Tenser",
-     "en": "Tenser'S Floating Disk",
+     "en": "Tenser's Floating Disk",
      "lv": 1,
      "t": "Action",
-     "p": "",
+     "p": "30 ft",
      "c": false,
-     "d": "Description complète à ajouter. Sort officiel, voir le livre de règles.",
-     "lst": "roublard"
+     "d": "Disque flottant de 3 ft qui porte 500 lb et te suit. 1 heure. Rituel.",
+     "lst": "roublard",
+     "ritual": true
     },
     {
      "n": "Serviteur invisible",
      "en": "Unseen Servant",
      "lv": 1,
      "t": "Action",
-     "p": "",
+     "p": "60 ft",
      "c": false,
-     "d": "Description complète à ajouter. Sort officiel, voir le livre de règles.",
-     "lst": "roublard"
+     "d": "Serviteur invisible pour des tâches simples. 1 heure. Rituel.",
+     "lst": "roublard",
+     "ritual": true
     },
     {
      "n": "Brûlure d'Aganazzar",
-     "en": "Aganazzar'S Scorcher",
+     "en": "Aganazzar's Scorcher",
      "lv": 2,
      "t": "Action",
-     "p": "",
+     "p": "30 ft",
      "c": false,
-     "d": "Description complète à ajouter. Sort officiel, voir le livre de règles.",
+     "d": "Ligne de 30 ft sur 5 ft, jet de DEX : 3d8 feu. +1d8 par niveau.",
      "lst": "roublard"
     },
     {
@@ -3370,9 +3527,9 @@
      "en": "Arcane Lock",
      "lv": 2,
      "t": "Action",
-     "p": "",
+     "p": "Contact",
      "c": false,
-     "d": "Description complète à ajouter. Sort officiel, voir le livre de règles.",
+     "d": "Verrouille une porte, une fenêtre ou un coffre. Les personnes désignées passent, les autres doivent réussir un test à +10 au DD.",
      "lst": "roublard"
     },
     {
@@ -3391,9 +3548,9 @@
      "en": "Blindness/Deafness",
      "lv": 2,
      "t": "Action",
-     "p": "",
+     "p": "120 ft",
      "c": false,
-     "d": "Description complète à ajouter. Sort officiel, voir le livre de règles.",
+     "d": "Jet de CON : la cible est aveuglée ou assourdie. 1 minute. +1 cible par niveau.",
      "lst": "roublard"
     },
     {
@@ -3401,9 +3558,9 @@
      "en": "Blur",
      "lv": 2,
      "t": "Action",
-     "p": "",
-     "c": false,
-     "d": "Description complète à ajouter. Sort officiel, voir le livre de règles.",
+     "p": "Soi",
+     "c": true,
+     "d": "Les attaques contre toi ont désavantage, sauf contre les créatures à vision aveugle. 1 minute.",
      "lst": "roublard"
     },
     {
@@ -3442,19 +3599,19 @@
      "en": "Detect Thoughts",
      "lv": 2,
      "t": "Action",
-     "p": "",
-     "c": false,
-     "d": "Description complète à ajouter. Sort officiel, voir le livre de règles.",
+     "p": "Soi",
+     "c": true,
+     "d": "Tu lis les pensées de surface à 30 ft, ou tu sondes un esprit (jet de SAG). 1 minute.",
      "lst": "roublard"
     },
     {
      "n": "Souffle du dragon",
-     "en": "Dragon'S Breath",
+     "en": "Dragon's Breath",
      "lv": 2,
-     "t": "Action",
-     "p": "",
-     "c": false,
-     "d": "Description complète à ajouter. Sort officiel, voir le livre de règles.",
+     "t": "Action bonus",
+     "p": "Contact",
+     "c": true,
+     "d": "Une créature gagne un souffle (cône de 15 ft, jet de DEX : 3d6 au choix de type). +1d6 par niveau. 1 minute.",
      "lst": "roublard"
     },
     {
@@ -3473,9 +3630,9 @@
      "en": "Earthbind",
      "lv": 2,
      "t": "Action",
-     "p": "",
-     "c": false,
-     "d": "Description complète à ajouter. Sort officiel, voir le livre de règles.",
+     "p": "300 ft",
+     "c": true,
+     "d": "Jet de FOR : la vitesse de vol de la cible tombe à 0 et elle descend. 1 minute.",
      "lst": "roublard"
     },
     {
@@ -3515,10 +3672,11 @@
      "en": "Gentle Repose",
      "lv": 2,
      "t": "Action",
-     "p": "",
+     "p": "Contact",
      "c": false,
-     "d": "Description complète à ajouter. Sort officiel, voir le livre de règles.",
-     "lst": "roublard"
+     "d": "Un cadavre ne se décompose plus et ne devient pas mort-vivant. 10 jours. Rituel.",
+     "lst": "roublard",
+     "ritual": true
     },
     {
      "n": "Bourrasque",
@@ -3547,9 +3705,9 @@
      "en": "Knock",
      "lv": 2,
      "t": "Action",
-     "p": "",
+     "p": "60 ft",
      "c": false,
-     "d": "Description complète à ajouter. Sort officiel, voir le livre de règles.",
+     "d": "Ouvre un objet verrouillé, coincé ou barré. Bruit audible à 300 ft.",
      "lst": "roublard"
     },
     {
@@ -3557,9 +3715,9 @@
      "en": "Levitate",
      "lv": 2,
      "t": "Action",
-     "p": "",
-     "c": false,
-     "d": "Description complète à ajouter. Sort officiel, voir le livre de règles.",
+     "p": "60 ft",
+     "c": true,
+     "d": "Une créature ou un objet monte jusqu'à 20 ft et y reste 10 minutes. Jet de CON si non consentante.",
      "lst": "roublard"
     },
     {
@@ -3577,40 +3735,41 @@
      "n": "Bouche magique",
      "en": "Magic Mouth",
      "lv": 2,
-     "t": "Action",
-     "p": "",
+     "t": "Hors combat",
+     "p": "30 ft",
      "c": false,
-     "d": "Description complète à ajouter. Sort officiel, voir le livre de règles.",
-     "lst": "roublard"
+     "d": "Message dans un objet, déclenché par un événement. Jusqu'à dissipation. Rituel, incantation : 1 minute.",
+     "lst": "roublard",
+     "ritual": true
     },
     {
      "n": "Arme magique",
      "en": "Magic Weapon",
      "lv": 2,
-     "t": "Action",
-     "p": "",
-     "c": false,
-     "d": "Description complète à ajouter. Sort officiel, voir le livre de règles.",
+     "t": "Action bonus",
+     "p": "Contact",
+     "c": true,
+     "d": "Une arme gagne +1 à l'attaque et aux dégâts (+2 niveau 4, +3 niveau 6). 1 heure.",
      "lst": "roublard"
     },
     {
      "n": "Poigne de terre de Maximilien",
-     "en": "Maximilian'S Earthen Grasp",
+     "en": "Maximilian's Earthen Grasp",
      "lv": 2,
      "t": "Action",
-     "p": "",
-     "c": false,
-     "d": "Description complète à ajouter. Sort officiel, voir le livre de règles.",
+     "p": "30 ft",
+     "c": true,
+     "d": "Main de terre : jet de FOR, la cible est entravée ; action pour 2d6 contondant. 1 minute.",
      "lst": "roublard"
     },
     {
      "n": "Flèche acide de Melf",
-     "en": "Melf'S Acid Arrow",
+     "en": "Melf's Acid Arrow",
      "lv": 2,
      "t": "Action",
-     "p": "",
+     "p": "90 ft",
      "c": false,
-     "d": "Description complète à ajouter. Sort officiel, voir le livre de règles.",
+     "d": "Attaque de sort à distance : 4d4 acide, puis 2d4 à la fin de son prochain tour. +1d4 par niveau.",
      "lst": "roublard"
     },
     {
@@ -3629,19 +3788,19 @@
      "en": "Mirror Image",
      "lv": 2,
      "t": "Action",
-     "p": "",
+     "p": "Soi",
      "c": false,
-     "d": "Description complète à ajouter. Sort officiel, voir le livre de règles.",
+     "d": "Trois doubles illusoires : les attaques contre toi peuvent les toucher à la place. 1 minute.",
      "lst": "roublard"
     },
     {
      "n": "Aura magique de Nystul",
-     "en": "Nystul'S Magic Aura",
+     "en": "Nystul's Magic Aura",
      "lv": 2,
      "t": "Action",
-     "p": "",
+     "p": "Contact",
      "c": false,
-     "d": "Description complète à ajouter. Sort officiel, voir le livre de règles.",
+     "d": "Masque ou falsifie l'aura magique d'un objet ou d'une créature. 24 heures.",
      "lst": "roublard"
     },
     {
@@ -3660,19 +3819,19 @@
      "en": "Pyrotechnics",
      "lv": 2,
      "t": "Action",
-     "p": "",
+     "p": "60 ft",
      "c": false,
-     "d": "Description complète à ajouter. Sort officiel, voir le livre de règles.",
+     "d": "Sur un feu existant : fumée épaisse (obscurcit) ou éclats aveuglants (jet de CON).",
      "lst": "roublard"
     },
     {
      "n": "Rayon d'affaiblissement",
-     "en": "Ray Of Enfeeblement",
+     "en": "Ray of Enfeeblement",
      "lv": 2,
      "t": "Action",
-     "p": "",
-     "c": false,
-     "d": "Description complète à ajouter. Sort officiel, voir le livre de règles.",
+     "p": "60 ft",
+     "c": true,
+     "d": "Attaque de sort à distance : la cible inflige la moitié des dégâts de ses attaques en FOR. 1 minute.",
      "lst": "roublard"
     },
     {
@@ -3680,9 +3839,9 @@
      "en": "Rope Trick",
      "lv": 2,
      "t": "Action",
-     "p": "",
-     "c": false,
-     "d": "Description complète à ajouter. Sort officiel, voir le livre de règles.",
+     "p": "Contact",
+     "c": true,
+     "d": "Corde enchantée : espace extradimensionnel pour 8 créatures. 1 heure.",
      "lst": "roublard"
     },
     {
@@ -3712,9 +3871,9 @@
      "en": "Shatter",
      "lv": 2,
      "t": "Action",
-     "p": "",
+     "p": "60 ft",
      "c": false,
-     "d": "Description complète à ajouter. Sort officiel, voir le livre de règles.",
+     "d": "Sphère de 10 ft, jet de CON : 3d8 tonnerre (moitié si réussi). +1d8 par niveau.",
      "lst": "roublard"
     },
     {
@@ -3722,19 +3881,20 @@
      "en": "Skywrite",
      "lv": 2,
      "t": "Action",
-     "p": "",
-     "c": false,
-     "d": "Description complète à ajouter. Sort officiel, voir le livre de règles.",
-     "lst": "roublard"
+     "p": "Vue",
+     "c": true,
+     "d": "Écrit jusqu'à 10 mots dans le ciel. Rituel. 1 heure.",
+     "lst": "roublard",
+     "ritual": true
     },
     {
      "n": "Nuée de boules de neige de Snilloc",
-     "en": "Snilloc'S Snowball Swarm",
+     "en": "Snilloc's Snowball Swarm",
      "lv": 2,
      "t": "Action",
-     "p": "",
+     "p": "90 ft",
      "c": false,
-     "d": "Description complète à ajouter. Sort officiel, voir le livre de règles.",
+     "d": "Sphère de 5 ft, jet de DEX : 3d6 froid (moitié si réussi). +1d6 par niveau.",
      "lst": "roublard"
     },
     {
@@ -3742,9 +3902,9 @@
      "en": "Spider Climb",
      "lv": 2,
      "t": "Action",
-     "p": "",
-     "c": false,
-     "d": "Description complète à ajouter. Sort officiel, voir le livre de règles.",
+     "p": "Contact",
+     "c": true,
+     "d": "Escalade murs et plafonds à ta vitesse normale. 1 heure.",
      "lst": "roublard"
     },
     {
@@ -3752,9 +3912,9 @@
      "en": "Warding Wind",
      "lv": 2,
      "t": "Action",
-     "p": "",
-     "c": false,
-     "d": "Description complète à ajouter. Sort officiel, voir le livre de règles.",
+     "p": "Soi",
+     "c": true,
+     "d": "Vent de 10 ft : désavantage aux attaques à distance contre toi, dissipe gaz et vapeurs. 10 minutes.",
      "lst": "roublard"
     },
     {
@@ -3762,9 +3922,9 @@
      "en": "Web",
      "lv": 2,
      "t": "Action",
-     "p": "",
-     "c": false,
-     "d": "Description complète à ajouter. Sort officiel, voir le livre de règles.",
+     "p": "60 ft",
+     "c": true,
+     "d": "Cube de 20 ft de toile : jet de DEX, entravé. Inflammable. 1 heure.",
      "lst": "roublard"
     }
    ],
@@ -3775,22 +3935,55 @@
      "n": "Arc des Scories",
      "hit": "+9",
      "dmg": "1d6+5 perforant",
-     "note": "Arc court, Ammunition, Two-Handed, portée 80/320. Maîtrise : Vex (avantage à la prochaine attaque contre la cible si touche).",
-     "pw": []
+     "note": "Arc court (simple). Munitions, Deux mains, Vex, portée 80/320 ft. Vex : avantage à ton prochain jet d'attaque contre la créature touchée, jusqu'à la fin de ton prochain tour.",
+     "pw": [
+      {
+       "n": "True Strike",
+       "a": "A",
+       "d": "Action Magie : attaque avec l'arme en INT, dégâts radiants ou du type de l'arme, +2d6+4 radiant au niveau 11.",
+       "r": "2d6+4"
+      }
+     ]
     },
     {
      "n": "Croc du Gentleman",
      "hit": "+9",
      "dmg": "1d6+5 perforant",
-     "note": "Arme de guerre, Finesse, Light. Maîtrise : Vex. True Strike : 2d6+4 radiant.",
-     "pw": []
+     "note": "Épée courte (martiale). Finesse, Light, Vex. Vex : avantage à ta prochaine attaque contre la créature touchée.",
+     "pw": [
+      {
+       "n": "True Strike",
+       "a": "A",
+       "d": "2d6+4 radiant ou du type de l'arme, au choix.",
+       "r": "2d6+4"
+      }
+     ]
     },
     {
      "n": "Ruin, Hollow Reign",
      "hit": "+11",
      "dmg": "1d6+7 perforant + 1d6 tonnerre",
-     "note": "Arme de guerre, Finesse, Light. 3 charges, recharge à l'aube. Maîtrise : Vex. True Strike : 2d6+4 radiant. Combo avec Omen, Broken Sky.",
-     "pw": [],
+     "note": "[EMPRESS] Épée courte, très rare, attunement (Night). Finesse, Light, Vex. 3 charges, toutes récupérées à l'aube.",
+     "pw": [
+      {
+       "n": "Ichi No Kata, Raimei Senkoku : Sentence",
+       "a": "A",
+       "d": "1 charge. Charge la lame d'un orage : +2d8 tonnerre aux dégâts. Action : une attaque avec l'arme. Sur une touche, la cible a désavantage sur sa prochaine attaque avant la fin de ton prochain tour.",
+       "r": "2d8"
+      },
+      {
+       "n": "Ni No Kata, Raimei Kirameki : Fallen Star",
+       "a": "A",
+       "d": "2 charges. Saute de 30 ft et atterris dans un fracas de tonnerre. Chaque créature dans 15 ft : jet de CON DD 16, 6d8 tonnerre et repoussée de 10 ft (moitié, sans recul, si réussi).",
+       "r": "6d8"
+      },
+      {
+       "n": "San No Kata, Arashi Soten Ryodan Tachi : Splitting Heaven",
+       "a": "A",
+       "d": "3 charges. Attaque combinée avec Omen, Broken Sky, déclenchée par l'un ou l'autre porteur sans consommer l'action ni le tour de l'autre. Les deux porteurs se téléportent au corps à corps de la cible (30 ft max chacun). Le lanceur fait une attaque normale, l'autre ajoute 1d12 + 1d12 par charge restante sur son arme. Les deux armes tombent à 0 charge.",
+       "r": "1d12"
+      }
+     ],
      "arc": "Impératrice"
     },
     {
@@ -4030,10 +4223,6 @@
     [
      "Initiative",
      "+9"
-    ],
-    [
-     "Vitesse",
-     "30 ft"
     ],
     [
      "Perc. passive",
@@ -4819,7 +5008,22 @@
      "used": 0,
      "note": ""
     }
-   ]
+   ],
+   "acfx": {
+    "un": 15,
+    "base": [
+     [
+      "Shadow-Cat Armor",
+      17
+     ]
+    ],
+    "add": [],
+    "bloody": []
+   },
+   "spd": {
+    "base": 30,
+    "add": []
+   }
   },
   {
    "id": "harfang",
@@ -6285,9 +6489,9 @@
      "en": "Control Flames",
      "lv": 0,
      "t": "Action",
-     "p": "",
+     "p": "60 ft",
      "c": false,
-     "d": "Description complète à ajouter. Sort officiel, voir le livre de règles.",
+     "d": "Tu manipules une flamme de 5 ft de côté : l'attiser, l'éteindre, la déplacer ou changer son aspect pendant 1 heure.",
      "lst": "druide"
     },
     {
@@ -6295,9 +6499,9 @@
      "en": "Create Bonfire",
      "lv": 0,
      "t": "Action",
-     "p": "",
-     "c": false,
-     "d": "Description complète à ajouter. Sort officiel, voir le livre de règles.",
+     "p": "60 ft",
+     "c": true,
+     "d": "Feu de camp de 5 ft. Jet de DEX à l'apparition, à l'entrée ou en finissant son tour dedans : 3d8 feu. 1 minute.",
      "lst": "druide"
     },
     {
@@ -6305,9 +6509,9 @@
      "en": "Elementalism",
      "lv": 0,
      "t": "Action",
-     "p": "",
+     "p": "30 ft",
      "c": false,
-     "d": "Description complète à ajouter. Sort officiel, voir le livre de règles.",
+     "d": "Effet élémentaire mineur : souffle d'air, étincelle, terre façonnée, eau jetée, changement de couleur ou de température d'un objet de 5 ft de côté.",
      "lst": "druide"
     },
     {
@@ -6325,20 +6529,20 @@
      "n": "Pierre magique",
      "en": "Magic Stone",
      "lv": 0,
-     "t": "Action",
-     "p": "",
+     "t": "Action bonus",
+     "p": "Contact",
      "c": false,
-     "d": "Description complète à ajouter. Sort officiel, voir le livre de règles.",
+     "d": "Jusqu'à 3 cailloux enchantés, lancés à 60 ft : attaque de sort, 1d6 + mod. d'incantation contondant. 1 minute.",
      "lst": "druide"
     },
     {
      "n": "Réparation",
      "en": "Mending",
      "lv": 0,
-     "t": "Action",
-     "p": "",
+     "t": "Hors combat",
+     "p": "Contact",
      "c": false,
-     "d": "Description complète à ajouter. Sort officiel, voir le livre de règles.",
+     "d": "Répare une cassure ou une déchirure d'un pied maximum dans un objet. Incantation : 1 minute.",
      "lst": "druide"
     },
     {
@@ -6346,19 +6550,19 @@
      "en": "Mold Earth",
      "lv": 0,
      "t": "Action",
-     "p": "",
+     "p": "30 ft",
      "c": false,
-     "d": "Description complète à ajouter. Sort officiel, voir le livre de règles.",
+     "d": "Terre sur un cube de 5 ft : la creuser, la déplacer, la modeler ou la rendre difficile à traverser.",
      "lst": "druide"
     },
     {
      "n": "Création de flammes",
      "en": "Produce Flame",
      "lv": 0,
-     "t": "Action",
-     "p": "",
+     "t": "Action bonus",
+     "p": "Soi",
      "c": false,
-     "d": "Description complète à ajouter. Sort officiel, voir le livre de règles.",
+     "d": "Flamme dans la main (lumière 20 ft, 10 minutes). Attaque de sort à distance à 60 ft : 3d8 feu.",
      "lst": "druide"
     },
     {
@@ -6366,9 +6570,9 @@
      "en": "Resistance",
      "lv": 0,
      "t": "Action",
-     "p": "",
-     "c": false,
-     "d": "Description complète à ajouter. Sort officiel, voir le livre de règles.",
+     "p": "Contact",
+     "c": true,
+     "d": "Une créature ajoute 1d4 à un jet de sauvegarde de son choix avant la fin du sort. 1 minute.",
      "lst": "druide"
     },
     {
@@ -6376,29 +6580,29 @@
      "en": "Shape Water",
      "lv": 0,
      "t": "Action",
-     "p": "",
+     "p": "30 ft",
      "c": false,
-     "d": "Description complète à ajouter. Sort officiel, voir le livre de règles.",
+     "d": "Eau sur un cube de 5 ft : la déplacer, la geler, la façonner ou la colorer.",
      "lst": "druide"
     },
     {
      "n": "Gourdin magique",
      "en": "Shillelagh",
      "lv": 0,
-     "t": "Action",
-     "p": "",
+     "t": "Action bonus",
+     "p": "Contact",
      "c": false,
-     "d": "Description complète à ajouter. Sort officiel, voir le livre de règles.",
+     "d": "Un bâton ou gourdin devient magique : attaque avec ton mod. d'incantation, d12 de dégâts au niveau 11, dégâts de force possibles. 1 minute.",
      "lst": "druide"
     },
     {
      "n": "Stabilisation",
-     "en": "Spare The Dying",
+     "en": "Spare the Dying",
      "lv": 0,
      "t": "Action",
-     "p": "",
+     "p": "15 ft",
      "c": false,
-     "d": "Description complète à ajouter. Sort officiel, voir le livre de règles.",
+     "d": "Une créature à 0 PV est stabilisée.",
      "lst": "druide"
     },
     {
@@ -6406,19 +6610,19 @@
      "en": "Thunderclap",
      "lv": 0,
      "t": "Action",
-     "p": "",
+     "p": "5 ft",
      "c": false,
-     "d": "Description complète à ajouter. Sort officiel, voir le livre de règles.",
+     "d": "Fracas audible à 100 ft. Créatures à 5 ft, jet de CON : 3d6 tonnerre.",
      "lst": "druide"
     },
     {
      "n": "Absorption des éléments",
      "en": "Absorb Elements",
      "lv": 1,
-     "t": "Action",
-     "p": "",
+     "t": "Réaction",
+     "p": "Soi",
      "c": false,
-     "d": "Description complète à ajouter. Sort officiel, voir le livre de règles.",
+     "d": "Réaction à un dégât d'acide, de froid, de feu, de foudre ou de tonnerre : résistance à ce type, et +1d6 de ce type à ta prochaine attaque au contact. +1d6 par niveau.",
      "lst": "druide"
     },
     {
@@ -6426,19 +6630,19 @@
      "en": "Beast Bond",
      "lv": 1,
      "t": "Action",
-     "p": "",
-     "c": false,
-     "d": "Description complète à ajouter. Sort officiel, voir le livre de règles.",
+     "p": "Contact",
+     "c": true,
+     "d": "Lien avec un animal consentant : avantage à tes attaques contre la cible de l'animal, vision partagée. 10 minutes.",
      "lst": "druide"
     },
     {
      "n": "Cérémonie",
      "en": "Ceremony",
      "lv": 1,
-     "t": "Action",
-     "p": "",
+     "t": "Hors combat",
+     "p": "Contact",
      "c": false,
-     "d": "Description complète à ajouter. Sort officiel, voir le livre de règles.",
+     "d": "Rite d'une heure : bénédiction, expiation, funérailles, mariage ou autre, avec un effet mineur de bonus.",
      "lst": "druide"
     },
     {
@@ -6446,9 +6650,9 @@
      "en": "Earth Tremor",
      "lv": 1,
      "t": "Action",
-     "p": "",
+     "p": "Soi (10 ft)",
      "c": false,
-     "d": "Description complète à ajouter. Sort officiel, voir le livre de règles.",
+     "d": "Jet de DEX : 1d6 contondant et à terre. Terrain difficile. +1d6 par niveau.",
      "lst": "druide"
     },
     {
@@ -6456,9 +6660,9 @@
      "en": "Earthbind",
      "lv": 2,
      "t": "Action",
-     "p": "",
-     "c": false,
-     "d": "Description complète à ajouter. Sort officiel, voir le livre de règles.",
+     "p": "300 ft",
+     "c": true,
+     "d": "Jet de FOR : la vitesse de vol de la cible tombe à 0 et elle descend. 1 minute.",
      "lst": "druide"
     },
     {
@@ -6466,29 +6670,30 @@
      "en": "Skywrite",
      "lv": 2,
      "t": "Action",
-     "p": "",
-     "c": false,
-     "d": "Description complète à ajouter. Sort officiel, voir le livre de règles.",
-     "lst": "druide"
+     "p": "Vue",
+     "c": true,
+     "d": "Écrit jusqu'à 10 mots dans le ciel. Rituel. 1 heure.",
+     "lst": "druide",
+     "ritual": true
     },
     {
      "n": "Vent protecteur",
      "en": "Warding Wind",
      "lv": 2,
      "t": "Action",
-     "p": "",
-     "c": false,
-     "d": "Description complète à ajouter. Sort officiel, voir le livre de règles.",
+     "p": "Soi",
+     "c": true,
+     "d": "Vent de 10 ft : désavantage aux attaques à distance contre toi, dissipe gaz et vapeurs. 10 minutes.",
      "lst": "druide"
     },
     {
      "n": "Boule de neige d'Aria",
-     "en": "Aria'S Snowball",
+     "en": "Aria's Snowball",
      "lv": 3,
      "t": "Action",
-     "p": "",
+     "p": "120 ft",
      "c": false,
-     "d": "Description complète à ajouter. Sort officiel, voir le livre de règles.",
+     "d": "Sort de neige à texte non retrouvé. À confirmer avec le MJ.",
      "lst": "druide"
     },
     {
@@ -6496,29 +6701,29 @@
      "en": "Erupting Earth",
      "lv": 3,
      "t": "Action",
-     "p": "",
+     "p": "120 ft",
      "c": false,
-     "d": "Description complète à ajouter. Sort officiel, voir le livre de règles.",
+     "d": "Cube de 20 ft, jet de DEX : 3d12 contondant, terrain difficile. +1d12 par niveau.",
      "lst": "druide"
     },
     {
      "n": "Flèches enflammées",
      "en": "Flame Arrows",
      "lv": 3,
-     "t": "Action",
-     "p": "",
-     "c": false,
-     "d": "Description complète à ajouter. Sort officiel, voir le livre de règles.",
+     "t": "Action bonus",
+     "p": "Contact",
+     "c": true,
+     "d": "Jusqu'à 12 munitions infligent +1d6 feu. 1 heure.",
      "lst": "druide"
     },
     {
      "n": "Liberté des flots",
-     "en": "Freedom Of The Waves",
+     "en": "Freedom of the Waves",
      "lv": 3,
      "t": "Action",
-     "p": "",
-     "c": false,
-     "d": "Description complète à ajouter. Sort officiel, voir le livre de règles.",
+     "p": "120 ft",
+     "c": true,
+     "d": "Sort de Tal'Dorei Reborn (déluge, téléportation dans la zone, réaction pour se téléporter à 60 ft quand tu es ciblé). Texte complet à confirmer.",
      "lst": "druide"
     },
     {
@@ -6526,19 +6731,19 @@
      "en": "Tidal Wave",
      "lv": 3,
      "t": "Action",
-     "p": "",
+     "p": "120 ft",
      "c": false,
-     "d": "Description complète à ajouter. Sort officiel, voir le livre de règles.",
+     "d": "Vague de 30 x 10 ft, jet de DEX : 4d8 contondant et à terre (moitié, debout, si réussi).",
      "lst": "druide"
     },
     {
      "n": "Mur d'eau",
-     "en": "Wall Of Water",
+     "en": "Wall of Water",
      "lv": 3,
      "t": "Action",
-     "p": "",
-     "c": false,
-     "d": "Description complète à ajouter. Sort officiel, voir le livre de règles.",
+     "p": "60 ft",
+     "c": true,
+     "d": "Mur d'eau de 30 x 10 ft : désavantage aux attaques à distance, feu atténué. 10 minutes.",
      "lst": "druide"
     },
     {
@@ -6546,9 +6751,9 @@
      "en": "Elemental Bane",
      "lv": 4,
      "t": "Action",
-     "p": "",
-     "c": false,
-     "d": "Description complète à ajouter. Sort officiel, voir le livre de règles.",
+     "p": "90 ft",
+     "c": true,
+     "d": "Jet de CON : 2d6 du type choisi, puis vulnérabilité à ce type. 1 minute.",
      "lst": "druide"
     },
     {
@@ -6556,9 +6761,9 @@
      "en": "Watery Sphere",
      "lv": 4,
      "t": "Action",
-     "p": "",
-     "c": false,
-     "d": "Description complète à ajouter. Sort officiel, voir le livre de règles.",
+     "p": "90 ft",
+     "c": true,
+     "d": "Sphère d'eau de 5 ft : jet de FOR ou DEX, entravé. 1 minute.",
      "lst": "druide"
     },
     {
@@ -6566,19 +6771,19 @@
      "en": "Control Winds",
      "lv": 5,
      "t": "Action",
-     "p": "",
-     "c": false,
-     "d": "Description complète à ajouter. Sort officiel, voir le livre de règles.",
+     "p": "300 ft",
+     "c": true,
+     "d": "Cube de 100 ft : tu règles direction et force du vent. 1 heure.",
      "lst": "druide"
     },
     {
      "n": "Liberté des vents",
-     "en": "Freedom Of The Winds",
+     "en": "Freedom of the Winds",
      "lv": 5,
      "t": "Action",
-     "p": "",
-     "c": false,
-     "d": "Description complète à ajouter. Sort officiel, voir le livre de règles.",
+     "p": "Soi",
+     "c": true,
+     "d": "Sort de Tal'Dorei Reborn lié au vent. Texte complet à confirmer.",
      "lst": "druide"
     },
     {
@@ -6586,9 +6791,9 @@
      "en": "Maelstrom",
      "lv": 5,
      "t": "Action",
-     "p": "",
-     "c": false,
-     "d": "Description complète à ajouter. Sort officiel, voir le livre de règles.",
+     "p": "120 ft",
+     "c": true,
+     "d": "Tourbillon de 30 ft, jet de FOR : 6d6 contondant, entraîné vers le centre. 1 minute.",
      "lst": "druide"
     },
     {
@@ -6596,59 +6801,59 @@
      "en": "Transmute Rock",
      "lv": 5,
      "t": "Action",
-     "p": "",
+     "p": "120 ft",
      "c": false,
-     "d": "Description complète à ajouter. Sort officiel, voir le livre de règles.",
+     "d": "Roche en boue ou boue en roche sur un cube de 40 ft.",
      "lst": "druide"
     },
     {
      "n": "Os de la terre",
-     "en": "Bones Of The Earth",
+     "en": "Bones of the Earth",
      "lv": 6,
      "t": "Action",
-     "p": "",
+     "p": "120 ft",
      "c": false,
-     "d": "Description complète à ajouter. Sort officiel, voir le livre de règles.",
+     "d": "Colonnes de pierre, jet de DEX : 6d6 contondant et soulevé. Les colonnes bloquent le passage.",
      "lst": "druide"
     },
     {
      "n": "Investiture de flammes",
-     "en": "Investiture Of Flame",
+     "en": "Investiture of Flame",
      "lv": 6,
      "t": "Action",
-     "p": "",
-     "c": false,
-     "d": "Description complète à ajouter. Sort officiel, voir le livre de règles.",
+     "p": "Soi",
+     "c": true,
+     "d": "Feu autour de toi : immunité au feu, résistance au froid, 1d10 feu aux créatures proches, ligne de feu en action. 10 minutes.",
      "lst": "druide"
     },
     {
      "n": "Investiture de glace",
-     "en": "Investiture Of Ice",
+     "en": "Investiture of Ice",
      "lv": 6,
      "t": "Action",
-     "p": "",
-     "c": false,
-     "d": "Description complète à ajouter. Sort officiel, voir le livre de règles.",
+     "p": "Soi",
+     "c": true,
+     "d": "Glace autour de toi : immunité au froid, résistance au feu, terrain gelé, cône de froid en action. 10 minutes.",
      "lst": "druide"
     },
     {
      "n": "Investiture de pierre",
-     "en": "Investiture Of Stone",
+     "en": "Investiture of Stone",
      "lv": 6,
      "t": "Action",
-     "p": "",
-     "c": false,
-     "d": "Description complète à ajouter. Sort officiel, voir le livre de règles.",
+     "p": "Soi",
+     "c": true,
+     "d": "Pierre autour de toi : résistance aux dégâts contondants, perçants et tranchants non magiques, secousse. 10 minutes.",
      "lst": "druide"
     },
     {
      "n": "Investiture de vent",
-     "en": "Investiture Of Wind",
+     "en": "Investiture of Wind",
      "lv": 6,
      "t": "Action",
-     "p": "",
-     "c": false,
-     "d": "Description complète à ajouter. Sort officiel, voir le livre de règles.",
+     "p": "Soi",
+     "c": true,
+     "d": "Vent autour de toi : vol de 60 ft, désavantage aux attaques à distance contre toi, nuage de vent. 10 minutes.",
      "lst": "druide"
     },
     {
@@ -6656,9 +6861,9 @@
      "en": "Primordial Ward",
      "lv": 6,
      "t": "Action",
-     "p": "",
-     "c": false,
-     "d": "Description complète à ajouter. Sort officiel, voir le livre de règles.",
+     "p": "Soi",
+     "c": true,
+     "d": "Résistance à l'acide, au froid, au feu, à la foudre et au tonnerre. Réaction : immunité à un type, 1 fois. 1 minute.",
      "lst": "druide"
     }
    ],
@@ -6871,10 +7076,6 @@
     [
      "Initiative",
      "+5"
-    ],
-    [
-     "Vitesse",
-     "35 ft"
     ],
     [
      "Perc. passive",
@@ -7488,14 +7689,16 @@
      "qty": 2,
      "max": 1,
      "used": 0,
-     "note": ""
+     "note": "",
+     "roll": "2d4+2"
     },
     {
      "n": "Potion of Healing (Greater)",
      "qty": 1,
      "max": 1,
      "used": 0,
-     "note": ""
+     "note": "",
+     "roll": "4d4+4"
     },
     {
      "n": "Potion de l'Avant-Poste",
@@ -7581,7 +7784,27 @@
      "used": 0,
      "note": ""
     }
-   ]
+   ],
+   "acfx": {
+    "un": 11,
+    "base": [
+     [
+      "Delegate's Plumage",
+      15
+     ]
+    ],
+    "add": [
+     [
+      "Shield, +1",
+      3
+     ]
+    ],
+    "bloody": []
+   },
+   "spd": {
+    "base": 35,
+    "add": []
+   }
   }
  ]
 }
