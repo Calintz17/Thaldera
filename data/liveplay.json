@@ -27,14 +27,16 @@
      "nom": "Inspiration bardique (d6)",
      "max": 5,
      "reset": "long",
-     "sub": "Réaction ou bonus, d6"
+     "sub": "Réaction ou bonus, d6",
+     "a": "B"
     },
     {
      "id": "curse",
      "nom": "Malédiction d'Hexblade",
      "max": 1,
      "reset": "court",
-     "sub": "Bonus : +4 dégâts, critique 19-20"
+     "sub": "Bonus : +4 dégâts, critique 19-20",
+     "a": "B"
     },
     {
      "id": "omen",
@@ -69,7 +71,8 @@
      "nom": "Spectre maudit",
      "max": 1,
      "reset": "long",
-     "sub": "Accursed Specter"
+     "sub": "Accursed Specter",
+     "a": "R"
     },
     {
      "id": "omencharge",
@@ -101,7 +104,8 @@
      "sub": "Réaction : disparaître, 1 par repos",
      "max": 1,
      "reset": "court",
-     "src": "Hat of Refuge"
+     "src": "Hat of Refuge",
+     "a": "R"
     }
    ],
    "spells": [
@@ -1503,19 +1507,22 @@
        "n": "Couronnement du Repos Noir",
        "a": "A",
        "d": "Emplacement de niveau 2. Colonne de 10 ft de rayon, jet de DEX DD 17 : 4d6 nécrotique (moitié si réussi).",
-       "r": "4d6"
+       "r": "4d6",
+       "sp": "Couronnement du Repos Noir"
       },
       {
        "n": "Procession de la Tombe",
        "a": "A",
        "d": "Emplacement de niveau 3. Ligne de 60 ft, jet de DEX DD 17 : 5d8 nécrotique (moitié si réussi).",
-       "r": "5d8"
+       "r": "5d8",
+       "sp": "Procession de la Tombe"
       },
       {
        "n": "Déni par la Garde",
        "a": "R",
        "d": "Emplacement de niveau 1. Réduit de 2d10 les dégâts d'un sort ciblé ou d'un projectile.",
-       "r": "2d10"
+       "r": "2d10",
+       "sp": "Déni par la Garde"
       }
      ]
     },
@@ -1536,7 +1543,8 @@
        "n": "Blight",
        "a": "A",
        "d": "Emplacement de pacte de niveau 4 ou plus. Portée 30 ft, jet de CON DD 17 : 8d8 nécrotique.",
-       "r": "8d8"
+       "r": "8d8",
+       "sp": "Flétrissement"
       }
      ],
      "perma": 1
@@ -1552,19 +1560,22 @@
        "n": "Forme 1",
        "a": "A",
        "d": "1 charge. Ruée de 30 ft sans attaque d'opportunité, attaque chaque créature traversée, +2d8 foudre.",
-       "r": "2d8"
+       "r": "2d8",
+       "sp": "Omen, Forme 1 : ruée"
       },
       {
        "n": "Forme 2",
        "a": "A",
        "d": "2 charges. Ligne de 30 ft sur 5 ft, jet de DEX DD 17 : 6d8 foudre (moitié si réussi).",
-       "r": "6d8"
+       "r": "6d8",
+       "sp": "Omen, Forme 2 : ligne"
       },
       {
        "n": "Forme 3",
        "a": "A",
        "d": "3 charges. Combo avec Ruin : les deux porteurs se téléportent au contact de la cible, l'autre porteur ajoute 1d12 + 1d12 par charge restante. Les deux armes tombent à 0 charge.",
-       "r": "1d12"
+       "r": "1d12",
+       "sp": "Omen, Forme 3 : combo"
       }
      ]
     },
@@ -1599,7 +1610,8 @@
       {
        "n": "Ruée du Chariot",
        "a": "A",
-       "d": "1 fois par jour (repos long). Ligne de 15 ft."
+       "d": "1 fois par jour (repos long). Ligne de 15 ft.",
+       "sp": "Ruée du Chariot"
       }
      ]
     },
@@ -1631,17 +1643,20 @@
       {
        "n": "Invisibility",
        "a": "A",
-       "d": "Emplacement de niveau 2. Action, 1 heure, concentration. Peut cibler un allié."
+       "d": "Emplacement de niveau 2. Action, 1 heure, concentration. Peut cibler un allié.",
+       "sp": "Invisibilité"
       },
       {
        "n": "See Invisibility",
        "a": "A",
-       "d": "Emplacement de niveau 2. Action, 1 heure, toi seul vois, vision sur le Plan éthéré."
+       "d": "Emplacement de niveau 2. Action, 1 heure, toi seul vois, vision sur le Plan éthéré.",
+       "sp": "Détection de l'invisibilité"
       },
       {
        "n": "Alter Self",
        "a": "A",
-       "d": "Emplacement de niveau 2. Action, 1 heure, concentration, sans contact."
+       "d": "Emplacement de niveau 2. Action, 1 heure, concentration, sans contact.",
+       "sp": "Modification d'apparence"
       }
      ]
     },
@@ -1656,7 +1671,8 @@
        "n": "Veil Shield, Quiet Passing",
        "a": "A",
        "d": "Emplacement de niveau 4. Fire Shield sans concentration, 10 minutes, résistance radiant, 2d8 nécrotique aux attaquants au corps à corps.",
-       "r": "2d8"
+       "r": "2d8",
+       "sp": "Veil Shield, Quiet Passing"
       }
      ]
     },
@@ -1671,19 +1687,22 @@
        "n": "Gravité Funèbre",
        "a": "R",
        "d": "Emplacement de niveau 1. Réduit de 2d8 les dégâts, désavantage à l'attaquant.",
-       "r": "2d8"
+       "r": "2d8",
+       "sp": "Gravité Funèbre"
       },
       {
        "n": "Orbite Brisée",
        "a": "A",
        "d": "Emplacement de niveau 4. Jet de CON DD 17 : 3d8 nécrotique et étourdi.",
-       "r": "3d8"
+       "r": "3d8",
+       "sp": "Orbite Brisée"
       },
       {
        "n": "Effondrement du Monde",
        "a": "A",
        "d": "Emplacement de niveau 4. Rayon de 20 ft, jet de FOR DD 17 : 4d10 contondant et entravé.",
-       "r": "4d10"
+       "r": "4d10",
+       "sp": "Effondrement du Monde"
       }
      ]
     },
@@ -1698,7 +1717,8 @@
        "n": "Dés de supériorité d8",
        "a": "B",
        "d": "2 dés par repos court, DD 13 : Menacing, Distracting, Disarming, Riposte.",
-       "r": "1d8"
+       "r": "1d8",
+       "sp": "Manoeuvre de supériorité"
       }
      ]
     }
@@ -1714,7 +1734,8 @@
      "n": "Malédiction du Hexblade",
      "en": "Hexblade's Curse",
      "grp": "Sorcier (Hexblade) 8",
-     "d": "1 fois par repos court, en action bonus, maudis une créature visible à 30 ft pendant 1 minute : +4 aux dégâts contre elle, critique sur 19 ou 20, et tu regagnes 13 PV si elle meurt."
+     "d": "1 fois par repos court, en action bonus, maudis une créature visible à 30 ft pendant 1 minute : +4 aux dégâts contre elle, critique sur 19 ou 20, et tu regagnes 13 PV si elle meurt.",
+     "res": "curse"
     },
     {
      "n": "Guerrier maudit",
@@ -1756,13 +1777,15 @@
      "n": "Spectre maudit",
      "en": "Accursed Specter",
      "grp": "Sorcier (Hexblade) 8",
-     "d": "1 fois par repos long : quand tu tues un humanoïde, son esprit devient un spectre allié avec 4 PV temporaires, +5 à ses attaques, qui reste jusqu'à ton prochain repos long."
+     "d": "1 fois par repos long : quand tu tues un humanoïde, son esprit devient un spectre allié avec 4 PV temporaires, +5 à ses attaques, qui reste jusqu'à ton prochain repos long.",
+     "res": "specter"
     },
     {
      "n": "Inspiration bardique",
      "en": "Bardic Inspiration",
      "grp": "Barde (Éloquence) 3",
-     "d": "5 fois par repos long, en action bonus : une créature à 60 ft qui te voit ou t'entend reçoit un d6. Pendant 1 heure, elle peut l'ajouter à un test de d20 raté."
+     "d": "5 fois par repos long, en action bonus : une créature à 60 ft qui te voit ou t'entend reçoit un d6. Pendant 1 heure, elle peut l'ajouter à un test de d20 raté.",
+     "res": "bardic"
     },
     {
      "n": "Touche-à-tout",
@@ -2854,7 +2877,8 @@
      "sub": "1 par repos long",
      "max": 1,
      "reset": "long",
-     "src": "La Mâchoire"
+     "src": "La Mâchoire",
+     "a": "A"
     },
     {
      "id": "dechirure",
@@ -2862,7 +2886,8 @@
      "sub": "Réaction, 1 par repos long",
      "max": 1,
      "reset": "long",
-     "src": "La Mâchoire"
+     "src": "La Mâchoire",
+     "a": "R"
     }
    ],
    "spells": [
@@ -3969,19 +3994,25 @@
        "n": "Ichi No Kata, Raimei Senkoku : Sentence",
        "a": "A",
        "d": "1 charge. Charge la lame d'un orage : +2d8 tonnerre aux dégâts. Action : une attaque avec l'arme. Sur une touche, la cible a désavantage sur sa prochaine attaque avant la fin de ton prochain tour.",
-       "r": "2d8"
+       "r": "2d8",
+       "res": "ruin",
+       "cost": 1
       },
       {
        "n": "Ni No Kata, Raimei Kirameki : Fallen Star",
        "a": "A",
        "d": "2 charges. Saute de 30 ft et atterris dans un fracas de tonnerre. Chaque créature dans 15 ft : jet de CON DD 16, 6d8 tonnerre et repoussée de 10 ft (moitié, sans recul, si réussi).",
-       "r": "6d8"
+       "r": "6d8",
+       "res": "ruin",
+       "cost": 2
       },
       {
        "n": "San No Kata, Arashi Soten Ryodan Tachi : Splitting Heaven",
        "a": "A",
        "d": "3 charges. Attaque combinée avec Omen, Broken Sky, déclenchée par l'un ou l'autre porteur sans consommer l'action ni le tour de l'autre. Les deux porteurs se téléportent au corps à corps de la cible (30 ft max chacun). Le lanceur fait une attaque normale, l'autre ajoute 1d12 + 1d12 par charge restante sur son arme. Les deux armes tombent à 0 charge.",
-       "r": "1d12"
+       "r": "1d12",
+       "res": "ruin",
+       "cost": 3
       }
      ],
      "arc": "Impératrice"
@@ -5049,7 +5080,8 @@
      "nom": "Forme sauvage",
      "sub": "Bonus. Une charge récupérée au repos court",
      "max": 3,
-     "reset": "ws"
+     "reset": "ws",
+     "a": "B"
     },
     {
      "id": "seiran",
@@ -5063,7 +5095,8 @@
      "nom": "Yeux de chouette",
      "sub": "Bonus : révèle une résistance, immunité ou vulnérabilité",
      "max": 5,
-     "reset": "long"
+     "reset": "long",
+     "a": "A"
     },
     {
      "id": "whisp",
@@ -5077,14 +5110,16 @@
      "nom": "Jauge d'âme (Hikari)",
      "sub": "1 minute d'observation",
      "max": 5,
-     "reset": "long"
+     "reset": "long",
+     "a": "A"
     },
     {
      "id": "wr",
      "nom": "Résurgence : emplacement niveau 1",
      "sub": "Dépense 1 Forme sauvage",
      "max": 1,
-     "reset": "long"
+     "reset": "long",
+     "a": "B"
     },
     {
      "id": "fukuro",
@@ -5110,7 +5145,8 @@
      "sub": "Bâton : question oui/non à Melora",
      "max": 1,
      "reset": "long",
-     "src": "Bâton de l'Assistant"
+     "src": "Bâton de l'Assistant",
+     "a": "A"
     },
     {
      "id": "truth",
@@ -6899,7 +6935,8 @@
      "n": "Forme sauvage",
      "en": "Wild Shape",
      "grp": "Druide 11",
-     "d": "Action bonus : tu prends une forme de bête apprise, pendant 5 heures. 3 utilisations par repos long, une récupérée par repos court. Formes de Facteur 1 maximum, vol autorisé."
+     "d": "Action bonus : tu prends une forme de bête apprise, pendant 5 heures. 3 utilisations par repos long, une récupérée par repos court. Formes de Facteur 1 maximum, vol autorisé.",
+     "res": "ws"
     },
     {
      "n": "Compagnon sauvage",
@@ -6911,7 +6948,8 @@
      "n": "Résurgence sauvage",
      "en": "Wild Resurgence",
      "grp": "Druide 11",
-     "d": "Une fois par tour, sans Forme sauvage, tu peux en regagner une avec un emplacement. Inversement, 1 fois par repos long, une Forme sauvage donne un emplacement de niveau 1."
+     "d": "Une fois par tour, sans Forme sauvage, tu peux en regagner une avec un emplacement. Inversement, 1 fois par repos long, une Forme sauvage donne un emplacement de niveau 1.",
+     "res": "wr"
     },
     {
      "n": "Fureur élémentaire",
@@ -6941,7 +6979,8 @@
      "n": "Yeux de chouette",
      "en": "Owl's Eyes",
      "grp": "Cercle de la Chouette",
-     "d": "Tes yeux deviennent ceux d'une chouette, un don de ton Miren lié. Action bonus : étudie une créature visible à 60 ft. Tu apprends l'une de ses résistances, immunités ou vulnérabilités aux dégâts (au choix du MJ s'il y en a plusieurs). Le Miren ne se manifeste pas. Un nombre de fois égal à ton modificateur de SAG (5), récupérées au repos long."
+     "d": "Tes yeux deviennent ceux d'une chouette, un don de ton Miren lié. Action bonus : étudie une créature visible à 60 ft. Tu apprends l'une de ses résistances, immunités ou vulnérabilités aux dégâts (au choix du MJ s'il y en a plusieurs). Le Miren ne se manifeste pas. Un nombre de fois égal à ton modificateur de SAG (5), récupérées au repos long.",
+     "res": "eyes"
     },
     {
      "n": "Murmures du lien",
@@ -6953,7 +6992,8 @@
      "n": "Hikari, l'Esprit éveillé",
      "en": "Hikari, the Waking Spirit",
      "grp": "Cercle de la Chouette",
-     "d": "Ton Miren s'éveille pour la première fois, encore lié à toi. En observant une créature pendant 1 minute, tu lis la vérité de ce qu'elle est : tu apprends son niveau ou son facteur de puissance, sa classe ou son type de créature, sa classe d'armure ou ses points de vie. Jauge d'âme : un nombre de fois égal à ton modificateur de SAG (5), récupérées au repos long."
+     "d": "Ton Miren s'éveille pour la première fois, encore lié à toi. En observant une créature pendant 1 minute, tu lis la vérité de ce qu'elle est : tu apprends son niveau ou son facteur de puissance, sa classe ou son type de créature, sa classe d'armure ou ses points de vie. Jauge d'âme : un nombre de fois égal à ton modificateur de SAG (5), récupérées au repos long.",
+     "res": "gauge"
     },
     {
      "n": "Seiran, l'Esprit enveloppant",
