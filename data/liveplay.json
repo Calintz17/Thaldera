@@ -76,21 +76,24 @@
      "nom": "Omen, Broken Sky (charges)",
      "max": 3,
      "reset": "aube",
-     "sub": "Forme 1, 2 ou 3 de l'épée, recharge à l'aube"
+     "sub": "Forme 1, 2 ou 3 de l'épée, recharge à l'aube",
+     "src": "Omen, Broken Sky"
     },
     {
      "id": "ruee",
      "nom": "Caput Tauri, Ruée du Chariot",
      "max": 1,
      "reset": "long",
-     "sub": "Caput Tauri, ligne de 4,5 m"
+     "sub": "Caput Tauri, ligne de 4,5 m",
+     "src": "Caput Tauri"
     },
     {
      "id": "sup",
      "nom": "Dés de supériorité d8 (Hanged Man)",
      "sub": "Menacing, Distracting, Disarming, Riposte, DD 13",
      "max": 2,
-     "reset": "court"
+     "reset": "court",
+     "src": "Rapier of the Drowned Corsair"
     }
    ],
    "spells": [
@@ -191,7 +194,12 @@
      "d": "5 PV temporaires. Un attaquant au corps à corps subit 5 dégâts de froid tant qu'ils durent. +5 par niveau supérieur. 1 heure.",
      "cls": false,
      "en": "Armor of Agathys",
-     "gid": "s-armor-of-agathys"
+     "gid": "s-armor-of-agathys",
+     "thp": {
+      "b": 5,
+      "per": 5,
+      "base": 1
+     }
     },
     {
      "n": "Maléfice",
@@ -226,7 +234,14 @@
      "res": "cart",
      "cls": false,
      "en": "Healing Word",
-     "gid": "s-healing-word"
+     "gid": "s-healing-word",
+     "heal": {
+      "n": 2,
+      "d": 4,
+      "b": 5,
+      "pn": 2,
+      "base": 1
+     }
     },
     {
      "n": "Chauffer le métal",
@@ -397,7 +412,8 @@
      "grp": "Loi de l'Équilibre",
      "cls": false,
      "en": "Acceptance",
-     "gid": "s-acceptance"
+     "gid": "s-acceptance",
+     "lim": "long"
     },
     {
      "n": "Clémence du Seuil",
@@ -410,7 +426,8 @@
      "grp": "Loi de l'Équilibre",
      "cls": false,
      "en": "Threshold's Mercy",
-     "gid": "s-thresholds-mercy"
+     "gid": "s-thresholds-mercy",
+     "lim": "long"
     },
     {
      "n": "Mémoire de la Chair",
@@ -423,7 +440,8 @@
      "grp": "Loi de l'Équilibre",
      "cls": false,
      "en": "Memory of the Flesh",
-     "gid": "s-memory-of-the-flesh"
+     "gid": "s-memory-of-the-flesh",
+     "lim": "long"
     },
     {
      "n": "Poids de l'Éternité",
@@ -436,7 +454,8 @@
      "grp": "Loi de l'Équilibre",
      "cls": false,
      "en": "Weight of Eternity",
-     "gid": "s-weight-of-eternity"
+     "gid": "s-weight-of-eternity",
+     "lim": "long"
     },
     {
      "n": "Équilibre Forcé",
@@ -449,7 +468,8 @@
      "grp": "Loi de l'Équilibre",
      "cls": false,
      "en": "Forced Balance",
-     "gid": "s-forced-balance"
+     "gid": "s-forced-balance",
+     "lim": "long"
     },
     {
      "n": "Mandat des Dunes Ardentes",
@@ -462,7 +482,8 @@
      "grp": "Loi de l'Équilibre",
      "cls": false,
      "en": "Mandate of the Blazing Dunes",
-     "gid": "s-mandate-of-the-blazing-dunes"
+     "gid": "s-mandate-of-the-blazing-dunes",
+     "lim": "long"
     },
     {
      "n": "Couronnement du Repos Noir",
@@ -890,7 +911,7 @@
      "n": "Musicienne formée au Lumenlid",
      "en": "Lumenlid-Trained Musician",
      "grp": "Capacités spéciales",
-     "d": "Capacité personnalisée. Texte à fournir par le MJ."
+     "d": "Tu as suivi une formation intensive de barde et d'artiste à l'Académie Lumenlid. CHA +1 (maximum 20). Tu gagnes la maîtrise de Représentation, ou l'expertise si tu l'as déjà. Quand tu te produis devant un public pendant au moins 10 minutes, choisis une option : avantage à ton prochain test de Persuasion ou de Tromperie dans l'heure, ou jusqu'à 3 alliés ajoutent chacun 1d4 à un test de caractéristique dans l'heure (une seule fois par créature)."
     },
     {
      "n": "Loi de l'Équilibre",
@@ -901,9 +922,107 @@
     {
      "n": "Cartographe (niveau 1)",
      "en": "Cartographer (level 1)",
-     "grp": "Capacités spéciales",
-     "d": "Capacité personnalisée. Texte à fournir par le MJ."
+     "grp": "Cartographe",
+     "d": "Outils du métier : tu maîtrises le matériel de calligraphe et les outils de cartographe. Tu peux copier des parchemins de sort en deux fois moins de temps. Sorts de cartographe, 1 fois par repos long chacun : Lueurs féeriques, Mot de guérison, Localisation d'objet."
+    },
+    {
+     "n": "Cartographe (niveau 2) : Magie cartographique",
+     "en": "Mapping Magic",
+     "grp": "Cartographe, niveaux suivants",
+     "d": "Pas acquis. Lueurs féeriques gratuit un nombre de fois égal au modificateur d'INT. Saut de portail : dépense la moitié de ta vitesse pour te téléporter à 3 m, ou à 1,5 m d'une créature à 9 m qui tient une de tes cartes."
+    },
+    {
+     "n": "Cartographe (niveau 3) : Atlas supérieur",
+     "en": "Superior Atlas",
+     "grp": "Cartographe, niveaux suivants",
+     "d": "Pas acquis. Après un repos long, crée des cartes magiques pour 1 + modificateur d'INT créatures : +1d4 à l'initiative, position de tous les porteurs, ciblage sans ligne de vue, et Refuge sûr (à 0 PV, détruit la carte pour revenir à 2 fois ton niveau d'Artificier PV et se téléporter près d'un porteur). Orientation gratuite 1 fois par repos long."
     }
+   ],
+   "abil": [
+    [
+     "FOR",
+     17,
+     "+3"
+    ],
+    [
+     "DEX",
+     16,
+     "+3"
+    ],
+    [
+     "CON",
+     17,
+     "+3"
+    ],
+    [
+     "INT",
+     12,
+     "+1"
+    ],
+    [
+     "SAG",
+     10,
+     "+0"
+    ],
+    [
+     "CHA",
+     20,
+     "+5"
+    ]
+   ],
+   "saves": [
+    [
+     "FOR",
+     "+3",
+     0
+    ],
+    [
+     "DEX",
+     "+3",
+     0
+    ],
+    [
+     "CON",
+     "+3",
+     0
+    ],
+    [
+     "INT",
+     "+1",
+     0
+    ],
+    [
+     "SAG",
+     "+4",
+     1
+    ],
+    [
+     "CHA",
+     "+9",
+     1
+    ]
+   ],
+   "bonus": [
+    [
+     "Maîtrise",
+     "+4"
+    ],
+    [
+     "Initiative",
+     "+3"
+    ],
+    [
+     "Vitesse",
+     "12 m"
+    ],
+    [
+     "Perc. passive",
+     "18"
+    ]
+   ],
+   "gear": [],
+   "eqDefault": [
+    "La main du Reliquaire"
    ]
   },
   {
@@ -926,14 +1045,16 @@
      "nom": "Shadow Double",
      "sub": "Shadow-Cat Armor",
      "max": 1,
-     "reset": "long"
+     "reset": "long",
+     "src": "Shadow-Cat Armor"
     },
     {
      "id": "ruin",
      "nom": "Ruin, Hollow Reign",
      "sub": "Charges, recharge à l'aube",
      "max": 3,
-     "reset": "aube"
+     "reset": "aube",
+     "src": "Ruin, Hollow Reign"
     },
     {
      "id": "shsilent",
@@ -1113,25 +1234,28 @@
      "pw": []
     },
     {
-     "n": "[Impératrice] Ruin, Hollow Reign",
+     "n": "Ruin, Hollow Reign",
      "hit": "+11",
      "dmg": "1d6+7 perforant + 1d6 tonnerre",
      "note": "Arme de guerre, Finesse, Light. 3 charges, recharge à l'aube. Maîtrise : Vex. True Strike : 2d6+4 radiant. Combo avec Omen, Broken Sky.",
-     "pw": []
+     "pw": [],
+     "arc": "Impératrice"
     },
     {
      "n": "Attaque à mains nues",
      "hit": "+4",
      "dmg": "1 contondant",
      "note": "",
-     "pw": []
+     "pw": [],
+     "fixed": 1
     },
     {
      "n": "Attaque sournoise",
      "hit": "",
      "dmg": "6d6",
      "note": "Une fois par tour, avec avantage ou un allié non neutralisé à 1,5 m de la cible (sans désavantage). Frappe sournoise : Poison (1d6, CON DD 17), Trip (1d6, DEX DD 17), Withdraw (1d6). Deux effets maximum.",
-     "pw": []
+     "pw": [],
+     "fixed": 1
     }
    ],
    "init": "+9",
@@ -1244,6 +1368,98 @@
      "grp": "Espèce : Demi-elfe",
      "d": "Maîtrise de deux compétences au choix."
     }
+   ],
+   "abil": [
+    [
+     "FOR",
+     10,
+     "+0"
+    ],
+    [
+     "DEX",
+     20,
+     "+5"
+    ],
+    [
+     "CON",
+     15,
+     "+2"
+    ],
+    [
+     "INT",
+     18,
+     "+4"
+    ],
+    [
+     "SAG",
+     12,
+     "+1"
+    ],
+    [
+     "CHA",
+     14,
+     "+2"
+    ]
+   ],
+   "saves": [
+    [
+     "FOR",
+     "+0",
+     0
+    ],
+    [
+     "DEX",
+     "+9",
+     1
+    ],
+    [
+     "CON",
+     "+2",
+     0
+    ],
+    [
+     "INT",
+     "+8",
+     1
+    ],
+    [
+     "SAG",
+     "+1",
+     0
+    ],
+    [
+     "CHA",
+     "+2",
+     0
+    ]
+   ],
+   "bonus": [
+    [
+     "Maîtrise",
+     "+4"
+    ],
+    [
+     "Initiative",
+     "+9"
+    ],
+    [
+     "Vitesse",
+     "9 m"
+    ],
+    [
+     "Perc. passive",
+     "19"
+    ]
+   ],
+   "gear": [
+    {
+     "n": "Shadow-Cat Armor",
+     "note": "Armure légère. Shadow Double : 1 attaque supplémentaire, 1 fois par repos long, la moitié des attaques frappent le double."
+    }
+   ],
+   "eqDefault": [
+    "Croc du Gentleman",
+    "Shadow-Cat Armor"
    ]
   },
   {
@@ -1275,21 +1491,21 @@
     {
      "id": "seiran",
      "nom": "Seiran, l'Esprit Enveloppant",
-     "sub": "Bonus : CA +2, vol 10,5 m, 1 minute",
+     "sub": "Bonus : CA +2, vol, 1 minute. 1 par repos court ou long",
      "max": 1,
      "reset": "court"
     },
     {
      "id": "eyes",
      "nom": "Yeux de chouette",
-     "sub": "Bonus : révèle une résistance ou une immunité",
+     "sub": "Bonus : révèle une résistance, immunité ou vulnérabilité",
      "max": 5,
      "reset": "long"
     },
     {
      "id": "whisp",
      "nom": "Murmures du lien",
-     "sub": "+1d4 à un test de SAG, INT ou CHA",
+     "sub": "+1d4 à un test de SAG, INT ou CHA, après le jet",
      "max": 5,
      "reset": "long"
     },
@@ -1313,7 +1529,8 @@
      "sub": "Charges, récupère 1d6+4 à l'aube",
      "max": 10,
      "reset": "aube",
-     "regen": "1d6+4"
+     "regen": "1d6+4",
+     "src": "Fukuro Kaen"
     },
     {
      "id": "assist",
@@ -1321,28 +1538,32 @@
      "sub": "Charges, récupère 1d6+1 à l'aube",
      "max": 7,
      "reset": "aube",
-     "regen": "1d6+1"
+     "regen": "1d6+1",
+     "src": "Bâton de l'Assistant"
     },
     {
      "id": "gard",
      "nom": "Murmure de la Gardienne",
      "sub": "Bâton : question oui/non à Melora",
      "max": 1,
-     "reset": "long"
+     "reset": "long",
+     "src": "Bâton de l'Assistant"
     },
     {
      "id": "truth",
      "nom": "Tranche-vérité",
      "sub": "Dague : SAG DD 13 ou ne peut mentir",
      "max": 1,
-     "reset": "long"
+     "reset": "long",
+     "src": "Dague d'Honnêteté"
     },
     {
      "id": "stones",
      "nom": "Pierres de communication",
      "sub": "Sending, recharge à l'aube",
      "max": 1,
-     "reset": "long"
+     "reset": "long",
+     "src": "Pierres de communication"
     },
     {
      "id": "lstride",
@@ -1443,7 +1664,14 @@
      "cls": true,
      "pre": true,
      "en": "Healing Word",
-     "gid": "s-healing-word"
+     "gid": "s-healing-word",
+     "heal": {
+      "n": 2,
+      "d": 4,
+      "b": 5,
+      "pn": 2,
+      "base": 1
+     }
     },
     {
      "n": "Grande foulée",
@@ -1538,7 +1766,14 @@
      "c": false,
      "d": "Une créature touchée récupère 2d8+5 PV (+2d8 par niveau au-dessus de 1).",
      "cls": true,
-     "en": "Cure Wounds"
+     "en": "Cure Wounds",
+     "heal": {
+      "n": 2,
+      "d": 8,
+      "b": 5,
+      "pn": 2,
+      "base": 1
+     }
     },
     {
      "n": "Détection de la magie",
@@ -2584,7 +2819,14 @@
      "d": "Rend 70 PV et met fin à aveuglé, assourdi et empoisonné. Ton plus gros soin.",
      "cls": true,
      "pre": true,
-     "en": "Heal"
+     "en": "Heal",
+     "heal": {
+      "n": 0,
+      "d": 0,
+      "b": 70,
+      "pn": 0,
+      "base": 6
+     }
     },
     {
      "n": "Invocation de fée",
@@ -2686,10 +2928,10 @@
    "atk": 9,
    "weapons": [
     {
-     "n": "Fukuro Kaen (bâton +2)",
+     "n": "Fukuro Kaen",
      "hit": "+6",
      "dmg": "1d6+2 (1d8+2 à deux mains)",
-     "note": "Contondant. Charges pour lancer des sorts, voir Grimoire.",
+     "note": "Bâton +2, contondant. Charges pour lancer des sorts, voir Sorts et pouvoirs. Contondant. Charges pour lancer des sorts, voir Grimoire.",
      "pw": []
     },
     {
@@ -2748,16 +2990,22 @@
      "d": "Tu connais le druidique et as toujours Communication avec les animaux préparé. Tu peux laisser des messages cachés (Investigation DD 15 pour les repérer)."
     },
     {
+     "n": "Cercle de la Chouette",
+     "en": "Circle of Owl",
+     "grp": "Druide 11",
+     "d": "Tu as été choisi par un esprit de la Chouette lors du rituel de Tenraku."
+    },
+    {
      "n": "Yeux de chouette",
      "en": "Owl's Eyes",
      "grp": "Cercle de la Chouette",
-     "d": "Capacité de sous-classe : action bonus pour révéler une résistance ou une immunité d'une créature. Voir l'onglet Ressources."
+     "d": "Tes yeux deviennent ceux d'une chouette, un don de ton Miren lié. Action bonus : étudie une créature visible à 18 m. Tu apprends l'une de ses résistances, immunités ou vulnérabilités aux dégâts (au choix du MJ s'il y en a plusieurs). Le Miren ne se manifeste pas. Un nombre de fois égal à ton modificateur de SAG (5), récupérées au repos long."
     },
     {
      "n": "Murmures du lien",
      "en": "Whispers of the Bond",
      "grp": "Cercle de la Chouette",
-     "d": "Capacité de sous-classe : ajoute 1d4 à un test de SAG, INT ou CHA."
+     "d": "Ton esprit te souffle des éclairs d'intuition. Un nombre de fois égal à ton modificateur de SAG (5), tu peux ajouter 1d4 à un test de SAG, d'INT ou de CHA après avoir vu le jet, avant que le MJ n'annonce le résultat. Utilisations récupérées au repos long."
     },
     {
      "n": "Hikari, l'Esprit éveillé",
@@ -2769,7 +3017,7 @@
      "n": "Seiran, l'Esprit enveloppant",
      "en": "Seiran, the Enfolding Spirit",
      "grp": "Cercle de la Chouette",
-     "d": "Capacité de sous-classe : action bonus, CA +2 et vol de 10,5 m pendant 1 minute (6 par repos court selon la fiche D&D Beyond)."
+     "d": "Action bonus : tu appelles le Miren autour de toi pendant 1 minute. Tant qu'il t'enveloppe, tu gagnes +2 à la CA et deux grandes ailes de chouette te donnent une vitesse de vol égale à ta vitesse de marche, sans bruit. 1 fois par repos court ou long."
     },
     {
      "n": "Lignée des elfes des bois",
@@ -2805,7 +3053,7 @@
      "n": "Observateur",
      "en": "Observant",
      "grp": "Dons",
-     "d": "Capacité de don personnalisée. Voir la fiche D&D Beyond."
+     "d": "Tu augmentes d'1 ton INT ou ta SAG (maximum 20). Si tu vois la bouche d'une créature qui parle une langue que tu comprends, tu peux lire sur ses lèvres. Tu as un bonus de +5 à ta Perception passive (SAG) et à ton Investigation passive (INT)."
     },
     {
      "n": "Alerte",
@@ -2813,6 +3061,98 @@
      "grp": "Dons",
      "d": "+4 à l'initiative. Après le jet, tu peux échanger ton initiative avec celle d'un allié consentant non neutralisé."
     }
+   ],
+   "abil": [
+    [
+     "FOR",
+     10,
+     "+0"
+    ],
+    [
+     "DEX",
+     12,
+     "+1"
+    ],
+    [
+     "CON",
+     19,
+     "+4"
+    ],
+    [
+     "INT",
+     18,
+     "+4"
+    ],
+    [
+     "SAG",
+     20,
+     "+5"
+    ],
+    [
+     "CHA",
+     14,
+     "+2"
+    ]
+   ],
+   "saves": [
+    [
+     "FOR",
+     "+0",
+     0
+    ],
+    [
+     "DEX",
+     "+1",
+     0
+    ],
+    [
+     "CON",
+     "+4",
+     0
+    ],
+    [
+     "INT",
+     "+8",
+     1
+    ],
+    [
+     "SAG",
+     "+9",
+     1
+    ],
+    [
+     "CHA",
+     "+2",
+     0
+    ]
+   ],
+   "bonus": [
+    [
+     "Maîtrise",
+     "+4"
+    ],
+    [
+     "Initiative",
+     "+5"
+    ],
+    [
+     "Vitesse",
+     "10,5 m"
+    ],
+    [
+     "Perc. passive",
+     "19"
+    ]
+   ],
+   "gear": [
+    {
+     "n": "Pierres de communication",
+     "note": "Sending (25 mots), recharge à l'aube."
+    }
+   ],
+   "eqDefault": [
+    "Fukuro Kaen",
+    "Pierres de communication"
    ]
   }
  ]
