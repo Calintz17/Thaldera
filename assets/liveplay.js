@@ -9,6 +9,37 @@
   let ST = {}, EV = [];
   const view = { mode: 'pick', char: null, tab: null, q: '', act: 'all', showAll: false, open: null, cast: null, confirm: null, filterChar: 'all', fromDM: false };
 
+  let GL = null, GX = null;
+  const nrm0 = t => String(t).normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
+  function buildGlossary(g) {
+    GL = {}; const parts = [];
+    g.terms.forEach(t => { GL[t.id] = t; parts.push({ id: t.id, rx: t.rx, i: true }); });
+    g.spells.forEach(t => { GL[t.id] = t; parts.push({ id: t.id, rx: [t.fr, t.en].filter((x, k, a) => a.indexOf(x) === k).map(x => x.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('|'), i: false }); });
+    const ci = parts.filter(x => x.i), cs = parts.filter(x => !x.i);
+    const mk = (arr, f) => new RegExp('(?<![\\p{L}\\p{N}])(?:' + arr.map((x, k) => '(?<g' + k + '>' + x.rx + ')').join('|') + ')(?![\\p{L}\\p{N}])', f);
+    GX = [{ re: mk(ci, 'giu'), arr: ci }, { re: mk(cs, 'gu'), arr: cs }];
+  }
+  function rich(text, selfId) {
+    text = String(text == null ? '' : text);
+    if (!GX) return esc(text);
+    const hits = [];
+    GX.forEach(({ re, arr }) => { re.lastIndex = 0; let m; while ((m = re.exec(text))) { const k = arr.findIndex((x, j) => m.groups['g' + j] != null); if (k < 0) continue; hits.push({ a: m.index, b: m.index + m[0].length, id: arr[k].id }); if (m[0].length === 0) re.lastIndex++; } });
+    hits.sort((x, y) => x.a - y.a || (y.b - y.a) - (x.b - x.a));
+    let out = '', pos = 0;
+    for (const h of hits) {
+      if (h.a < pos || h.id === selfId) continue;
+      out += esc(text.slice(pos, h.a)) + `<button type="button" class="lp-kw ${GL[h.id].kind}" data-act="kw" data-id="${esc(h.id)}">${esc(text.slice(h.a, h.b))}</button>`;
+      pos = h.b;
+    }
+    return out + esc(text.slice(pos));
+  }
+  function popup() {
+    const g = view.pop && GL && GL[view.pop]; if (!g) return '';
+    const paras = t => String(t).split('\n').map(l => /^[•]/.test(l) ? `<p class="b">${rich(l, g.id)}</p>` : `<p>${rich(l, g.id)}</p>`).join('');
+    const meta = g.kind === 'sort' ? `<p class="lp-pm">${g.lvl ? 'Niveau ' + g.lvl : 'Sort mineur'} · ${esc(g.school)} · ${esc(g.cast)} · Portée ${esc(g.range)} · ${esc(g.comp)} · ${esc(g.dur)}</p>` : '<p class="lp-pm">État</p>';
+    return `<div class="lp-ov" data-act="kwx"><div class="lp-pop" role="dialog" aria-modal="true"><button type="button" class="lp-px" data-act="kwx" aria-label="Fermer">×</button>
+      <h3>${esc(g.fr)}</h3><span class="lp-en">${esc(g.en)}</span>${meta}${paras(g.text)}${g.hl ? `<p class="lp-hl">${esc(g.hl)}</p>` : ''}<p class="lp-src">${esc(g.src || '')}</p></div></div>`;
+  }
   const cfgOf = id => CFG.chars.find(c => c.id === id);
   const localKey = id => 'lp_state_' + id;
   const total = (c, lv) => c.slots[lv] || 0;
@@ -216,9 +247,9 @@
     const tags = [sp.c ? '<span class="lp-tag c">Concentration</span>' : '', sp.ritual ? '<span class="lp-tag">Rituel</span>' : '', sp.save ? `<span class="lp-tag">Jet de ${esc(sp.save)}</span>` : '', sp.atk ? '<span class="lp-tag">Attaque de sort</span>' : '', sp.src ? `<span class="lp-tag src">${esc(sp.src)}</span>` : '', sp.res && sp.lv ? `<span class="lp-tag free">Gratuit 1 / jour</span>` : ''].join('');
     const star = c.prepMax && sp.cls && !sp.always && sp.lv > 0 ? `<button type="button" class="lp-prep ${prep ? 'on' : ''}" data-act="prep" data-key="${esc(key)}" title="Préparer" aria-pressed="${prep}">${prep ? '★' : '☆'}</button>` : '';
     let h = `<article class="lp-spell ${open ? 'open' : ''} ${conc ? 'conc' : ''} ${c.prepMax && sp.cls && sp.lv > 0 && !prep && !sp.always ? 'unprep' : ''}">
-      <div class="lp-sh"><button type="button" class="lp-sname" data-act="open" data-key="${esc(key)}"><b>${esc(sp.n)}</b><span class="lp-meta">${esc(sp.t)} · ${esc(sp.p)}</span></button>${costBadge(c, sp)}${star}<button type="button" class="lp-cast" data-act="cast" data-key="${esc(key)}">Lancer</button></div>
+      <div class="lp-sh"><button type="button" class="lp-sname" data-act="open" data-key="${esc(key)}"><b>${esc(sp.n)}</b>${sp.en ? `<small class="lp-en">${esc(sp.en)}</small>` : ''}<span class="lp-meta">${esc(sp.t)} · ${esc(sp.p)}</span></button>${costBadge(c, sp)}${star}<button type="button" class="lp-cast" data-act="cast" data-key="${esc(key)}">Lancer</button></div>
       ${tags ? `<div class="lp-tags">${tags}</div>` : ''}`;
-    if (open) h += `<p class="lp-desc">${esc(sp.d)}</p>`;
+    if (open) h += `<p class="lp-desc">${rich(sp.d, sp.gid)}</p>${sp.gid ? `<button type="button" class="lp-full" data-act="kw" data-id="${esc(sp.gid)}">Texte officiel complet</button>` : ''}`;
     if (pools) h += `<div class="lp-pools">${pools.length ? pools.map(p => `<button type="button" data-act="castgo" data-key="${esc(key)}" data-pool="${esc(p.k)}">${esc(p.label)}</button>`).join('') : '<em>Aucune ressource disponible</em>'}<button type="button" class="ghost" data-act="castno">Annuler</button></div>`;
     return h + '</article>';
   }
@@ -229,7 +260,7 @@
     const list = c.spells.filter(s => {
       if (c.prepMax && s.cls && s.lv > 0 && !s.always && !view.showAll && !prepared(s.n)) return false;
       if (view.act !== 'all' && s.t !== view.act) return false;
-      return !nq || nrm(s.n + ' ' + s.d + ' ' + (s.src || '')).includes(nq);
+      return !nq || nrm(s.n + ' ' + (s.en || '') + ' ' + s.d + ' ' + (s.src || '')).includes(nq);
     });
     const groupOf = s => s.grp || (s.lv === 0 ? 'Sorts mineurs' : 'Niveau ' + s.lv);
     const order = [];
@@ -242,11 +273,15 @@
       ${order.map(g => { const ls = list.filter(s => groupOf(s) === g); return ls.length ? `<h4 class="lp-lvh">${esc(g)}<small>${ls.length}</small></h4><div class="lp-grid">${ls.map(s => spellCard(c, st, s)).join('')}</div>` : ''; }).join('') || '<p class="lp-empty">Aucun résultat.</p>'}`;
   }
 
+  function featsPanel(c) {
+    const fs = c.feats || [], gs = []; fs.forEach(f => { if (!gs.includes(f.grp)) gs.push(f.grp); });
+    return gs.map(g => `<h4 class="lp-lvh">${esc(g)}<small>${fs.filter(f => f.grp === g).length}</small></h4><div class="lp-grid">${fs.filter(f => f.grp === g).map(f => `<article class="lp-spell lp-feat"><div class="lp-sh"><span class="lp-sname"><b>${esc(f.n)}</b>${f.en ? `<small class="lp-en">${esc(f.en)}</small>` : ''}</span></div><p class="lp-desc">${rich(f.d)}</p></article>`).join('')}</div>`).join('') || '<p class="lp-empty">Aucune capacité.</p>';
+  }
   function weaponsPanel(c) {
     return `<div class="lp-wgrid">${c.weapons.map(w => `<article class="lp-weapon">
       <header><h4>${esc(w.n)}</h4>${w.arc ? `<span class="lp-arc">${esc(w.arc)}</span>` : ''}</header>
       ${w.hit || w.dmg ? `<div class="lp-wstat">${w.hit ? `<div><span>Toucher</span><b>${esc(w.hit)}</b></div>` : ''}${w.dmg ? `<div><span>Dégâts</span><b>${esc(w.dmg)}</b></div>` : ''}</div>` : ''}
-      <p>${esc(w.note)}</p>${w.pw && w.pw.length ? `<ul>${w.pw.map(p => `<li>${esc(p)}</li>`).join('')}</ul>` : ''}</article>`).join('')}</div>`;
+      <p>${rich(w.note)}</p>${w.pw && w.pw.length ? `<ul>${w.pw.map(p => `<li>${esc(p)}</li>`).join('')}</ul>` : ''}</article>`).join('')}</div>`;
   }
 
   function restBlock() {
@@ -269,8 +304,8 @@
       <section class="lp-block"><h3>Ressources</h3>${resRows(c, st, false)}</section>
       <section class="lp-block"><h3>Or</h3><div class="lp-gold"><b>${st.gold}</b><span>po</span></div><div class="lp-hpctl g"><button type="button" data-act="gold" data-sign="-1">Dépenser</button><input type="number" min="0" inputmode="numeric" id="lp-gold-amt" placeholder="0" aria-label="Montant en or"><button type="button" data-act="gold" data-sign="1">Gagner</button></div></section>
       ${restBlock()}
-    </aside><main class="lp-main"><div class="lp-tabs" role="tablist"><button type="button" role="tab" class="${tab === 'armes' ? 'on' : ''}" data-act="tab" data-v="armes">Armes</button><button type="button" role="tab" class="${tab === 'sorts' ? 'on' : ''}" data-act="tab" data-v="sorts">Sorts et pouvoirs</button></div>
-      ${tab === 'armes' ? weaponsPanel(c) : spellsPanel(c, st)}</main></div>`;
+    </aside><main class="lp-main"><div class="lp-tabs" role="tablist"><button type="button" role="tab" class="${tab === 'armes' ? 'on' : ''}" data-act="tab" data-v="armes">Armes</button><button type="button" role="tab" class="${tab === 'sorts' ? 'on' : ''}" data-act="tab" data-v="sorts">Sorts et pouvoirs</button><button type="button" role="tab" class="${tab === 'capa' ? 'on' : ''}" data-act="tab" data-v="capa">Capacités</button></div>
+      ${tab === 'armes' ? weaponsPanel(c) : tab === 'capa' ? featsPanel(c) : spellsPanel(c, st)}</main></div>`;
   }
 
   const ago = iso => { const s = Math.max(0, (Date.now() - new Date(iso)) / 1000); return s < 60 ? 'à l\'instant' : s < 3600 ? Math.floor(s / 60) + ' min' : s < 86400 ? Math.floor(s / 3600) + ' h' : Math.floor(s / 86400) + ' j'; };
@@ -301,7 +336,7 @@
     const ae = document.activeElement, keep = ae && root.contains(ae) && ae.id ? { id: ae.id, v: ae.value, s: ae.selectionStart } : null;
     const vals = {}; ['lp-hp-amt', 'lp-gold-amt'].forEach(i => { const e = root.querySelector('#' + i); if (e) vals[i] = e.value; });
     const body = view.mode === 'dm' ? dmView() : view.mode === 'player' ? playerView() : pickView();
-    root.innerHTML = `<a class="pn-back lp-back" href="#/">‹ Retour au Codex</a><span class="lp-state ${online ? 'on' : ''}">${online ? 'En direct' : 'Hors ligne'}</span>${body}<div class="lp-toast" role="status"></div>`;
+    root.innerHTML = `<a class="pn-back lp-back" href="#/">‹ Retour au Codex</a><span class="lp-state ${online ? 'on' : ''}">${online ? 'En direct' : 'Hors ligne'}</span>${body}${popup()}<div class="lp-toast" role="status"></div>`;
     Object.keys(vals).forEach(i => { const e = root.querySelector('#' + i); if (e) e.value = vals[i]; });
     if (page) page.scrollTop = top;
     if (keep) { const e = root.querySelector('#' + keep.id); if (e) { e.focus(); if (keep.s != null && e.setSelectionRange && e.type !== 'number') { try { e.setSelectionRange(keep.s, keep.s); } catch (x) { /* ignore */ } } } }
@@ -324,6 +359,8 @@
     const b = e.target.closest('[data-act]'); if (!b || !root.contains(b)) return;
     const a = b.dataset.act, c = view.char;
     if (a === 'opench') { view._dmOpen = true; return; }
+    if (a === 'kw') { view.pop = b.dataset.id; return render(); }
+    if (a === 'kwx') { if (e.target.closest('.lp-pop') && !e.target.closest('.lp-px')) return; view.pop = null; return render(); }
     if (!c) return;
     if (a === 'pip') return togglePip(c, b.dataset.kind, b.dataset.key, +b.dataset.idx);
     if (a === 'resd') return resDelta(c, b.dataset.key, +b.dataset.d);
@@ -360,6 +397,7 @@
   async function mount(el, sub) {
     root = el;
     if (!CFG) CFG = await fetch('data/liveplay.json?v=' + (window.__VER || '')).then(r => r.json());
+    if (!GL) { try { buildGlossary(await fetch('data/glossary.json?v=' + (window.__VER || '')).then(r => r.json())); } catch (err) { GL = {}; } }
     root.addEventListener('click', onClick); root.addEventListener('input', onInput); root.addEventListener('change', onInput);
     go(sub);
     await connect();

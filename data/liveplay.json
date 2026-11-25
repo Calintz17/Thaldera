@@ -95,132 +95,160 @@
    ],
    "spells": [
     {
-     "n": "Eldritch Blast",
+     "n": "Décharge occulte",
      "lv": 0,
      "t": "Action",
      "p": "36 m",
      "c": false,
      "d": "3 rayons d'énergie (attaque de sort), 1d10 force chacun. Les rayons peuvent viser des cibles différentes.",
-     "cls": false
+     "cls": false,
+     "en": "Eldritch Blast",
+     "gid": "s-eldritch-blast"
     },
     {
-     "n": "Vicious Mockery",
+     "n": "Moquerie cruelle",
      "lv": 0,
      "t": "Action",
      "p": "18 m",
      "c": false,
      "d": "Jet de SAG : 2d6 psychique et désavantage au prochain jet d'attaque de la cible.",
-     "cls": false
+     "cls": false,
+     "en": "Vicious Mockery",
+     "gid": "s-vicious-mockery"
     },
     {
-     "n": "Mind Sliver",
+     "n": "Éclat mental",
      "lv": 0,
      "t": "Action",
      "p": "18 m",
      "c": false,
      "d": "Jet d'INT : 2d6 psychique et la cible retranche 1d4 à son prochain jet de sauvegarde.",
-     "cls": false
+     "cls": false,
+     "en": "Mind Sliver",
+     "gid": "s-mind-sliver"
     },
     {
-     "n": "Toll the Dead",
+     "n": "Glas des morts",
      "lv": 0,
      "t": "Action",
      "p": "18 m",
      "c": false,
      "d": "Jet de SAG : 3d8 nécrotique (3d12 si la cible est blessée).",
-     "cls": false
+     "cls": false,
+     "en": "Toll the Dead",
+     "gid": "s-toll-the-dead"
     },
     {
-     "n": "Bane",
+     "n": "Fléau",
      "lv": 1,
      "t": "Action",
      "p": "9 m",
      "c": true,
      "d": "Jusqu'à 3 créatures, jet de CHA : elles retranchent 1d4 à leurs attaques et jets de sauvegarde. 1 minute.",
-     "cls": false
+     "cls": false,
+     "en": "Bane",
+     "gid": "s-bane"
     },
     {
-     "n": "Dissonant Whispers",
+     "n": "Murmures dissonants",
      "lv": 1,
      "t": "Action",
      "p": "18 m",
      "c": false,
      "d": "Jet de SAG : 3d6 psychique et la cible fuit (réaction). Moitié des dégâts sans fuite si réussite.",
-     "cls": false
+     "cls": false,
+     "en": "Dissonant Whispers",
+     "gid": "s-dissonant-whispers"
     },
     {
-     "n": "Hellish Rebuke",
+     "n": "Représailles infernales",
      "lv": 1,
      "t": "Réaction",
      "p": "18 m",
      "c": false,
      "d": "En réponse à un dégât : jet de DEX, 2d10 feu (moitié si réussi).",
-     "cls": false
+     "cls": false,
+     "en": "Hellish Rebuke",
+     "gid": "s-hellish-rebuke"
     },
     {
-     "n": "Shield",
+     "n": "Bouclier",
      "lv": 1,
      "t": "Réaction",
      "p": "Soi",
      "c": false,
      "d": "+5 CA jusqu'à ton prochain tour et annule Magic Missile.",
-     "cls": false
+     "cls": false,
+     "en": "Shield",
+     "gid": "s-shield"
     },
     {
-     "n": "Armor of Agathys",
+     "n": "Armure d'Agathys",
      "lv": 1,
      "t": "Action",
      "p": "Soi",
      "c": false,
      "d": "5 PV temporaires. Un attaquant au corps à corps subit 5 dégâts de froid tant qu'ils durent. +5 par niveau supérieur. 1 heure.",
-     "cls": false
+     "cls": false,
+     "en": "Armor of Agathys",
+     "gid": "s-armor-of-agathys"
     },
     {
-     "n": "Hex",
+     "n": "Maléfice",
      "lv": 1,
      "t": "Action bonus",
      "p": "27 m",
      "c": true,
      "d": "Malédiction : +1d6 nécrotique sur chaque touche, désavantage aux tests d'une caractéristique choisie. 1 heure.",
-     "cls": false
+     "cls": false,
+     "en": "Hex",
+     "gid": "s-hex"
     },
     {
-     "n": "Faerie Fire",
+     "n": "Lueurs féeriques",
      "lv": 1,
      "t": "Action",
      "p": "18 m",
      "c": true,
      "d": "Cube de 6 m, jet de DEX : les cibles sont éclairées, avantage contre elles. 1 minute.",
      "res": "drow",
-     "cls": false
+     "cls": false,
+     "en": "Faerie Fire",
+     "gid": "s-faerie-fire"
     },
     {
-     "n": "Healing Word",
+     "n": "Mot de guérison",
      "lv": 1,
      "t": "Action bonus",
      "p": "18 m",
      "c": false,
      "d": "Une créature récupère 1d4 + CHA PV.",
      "res": "cart",
-     "cls": false
+     "cls": false,
+     "en": "Healing Word",
+     "gid": "s-healing-word"
     },
     {
-     "n": "Heat Metal",
+     "n": "Chauffer le métal",
      "lv": 2,
      "t": "Action",
      "p": "18 m",
      "c": true,
      "d": "Objet en métal rougi : 2d8 feu par tour, désavantage si tenu. 1 minute.",
-     "cls": false
+     "cls": false,
+     "en": "Heat Metal",
+     "gid": "s-heat-metal"
     },
     {
-     "n": "Phantasmal Force",
+     "n": "Force fantasmagorique",
      "lv": 2,
      "t": "Action",
      "p": "18 m",
      "c": true,
      "d": "Illusion dans l'esprit d'une créature (INT) : 1d6 psychique par tour. 1 minute.",
-     "cls": false
+     "cls": false,
+     "en": "Phantasmal Force",
+     "gid": "s-phantasmal-force"
     },
     {
      "n": "Silence",
@@ -229,176 +257,212 @@
      "p": "36 m",
      "c": true,
      "d": "Sphère de 6 m sans son, aucun sort à composante verbale. 10 minutes (rituel).",
-     "cls": false
+     "cls": false,
+     "en": "Silence",
+     "gid": "s-silence"
     },
     {
-     "n": "Calm Emotions",
+     "n": "Apaisement des émotions",
      "lv": 2,
      "t": "Action",
      "p": "18 m",
      "c": true,
      "d": "Zone de 6 m, jet de CHA : calme les émotions fortes. 1 minute.",
-     "cls": false
+     "cls": false,
+     "en": "Calm Emotions",
+     "gid": "s-calm-emotions"
     },
     {
-     "n": "Mind Spike",
+     "n": "Pointe mentale",
      "lv": 2,
      "t": "Action",
      "p": "18 m",
      "c": true,
      "d": "Jet de SAG : 3d8 psychique, tu connais sa position. 1 heure.",
-     "cls": false
+     "cls": false,
+     "en": "Mind Spike",
+     "gid": "s-mind-spike"
     },
     {
-     "n": "Misty Step",
+     "n": "Pas brumeux",
      "lv": 2,
      "t": "Action bonus",
      "p": "Soi",
      "c": false,
      "d": "Téléportation de 9 m vers un lieu visible.",
      "res": "misty",
-     "cls": false
+     "cls": false,
+     "en": "Misty Step",
+     "gid": "s-misty-step"
     },
     {
-     "n": "Darkness",
+     "n": "Ténèbres",
      "lv": 2,
      "t": "Action",
      "p": "18 m",
      "c": true,
      "d": "Sphère de ténèbres de 4,5 m, la vision dans le noir ne la traverse pas. 10 minutes.",
      "res": "drow",
-     "cls": false
+     "cls": false,
+     "en": "Darkness",
+     "gid": "s-darkness"
     },
     {
-     "n": "Locate Object",
+     "n": "Localisation d'objet",
      "lv": 2,
      "t": "Action",
      "p": "Soi",
      "c": true,
      "d": "Sens un objet connu à moins de 300 m. 10 minutes.",
      "res": "cart",
-     "cls": false
+     "cls": false,
+     "en": "Locate Object",
+     "gid": "s-locate-object"
     },
     {
-     "n": "Counterspell",
+     "n": "Contresort",
      "lv": 3,
      "t": "Réaction",
      "p": "18 m",
      "c": false,
      "d": "Interrompt un sort de niveau 3 ou moins. Au-dessus : test de caractéristique DD 10 + niveau du sort.",
-     "cls": false
+     "cls": false,
+     "en": "Counterspell",
+     "gid": "s-counterspell"
     },
     {
-     "n": "Bestow Curse",
+     "n": "Malédiction",
      "lv": 3,
      "t": "Action",
      "p": "Contact",
      "c": true,
      "d": "Jet de SAG : au choix désavantage sur un test, désavantage contre toi, perte d'action ou +1d8 nécrotique. 1 minute en niv. 3, 8 heures au niv. 5 sans concentration.",
      "res": "omen",
-     "cls": false
+     "cls": false,
+     "en": "Bestow Curse",
+     "gid": "s-bestow-curse"
     },
     {
-     "n": "Summon Shadowspawn",
+     "n": "Convocation de rejeton de l'ombre",
      "lv": 3,
      "t": "Action",
      "p": "27 m",
      "c": true,
      "d": "Invoque un esprit d'ombre (Fureur, Peur ou Mélancolie). 1 heure.",
-     "cls": false
+     "cls": false,
+     "en": "Summon Shadowspawn",
+     "gid": "s-summon-shadowspawn"
     },
     {
-     "n": "Vampiric Touch",
+     "n": "Toucher du vampire",
      "lv": 3,
      "t": "Action",
      "p": "Soi",
      "c": true,
      "d": "Attaque de sort au contact : 3d6 nécrotique et tu récupères la moitié. Renouvelable en action. 1 minute.",
-     "cls": false
+     "cls": false,
+     "en": "Vampiric Touch",
+     "gid": "s-vampiric-touch"
     },
     {
-     "n": "Staggering Smite",
+     "n": "Châtiment étourdissant",
      "lv": 4,
      "t": "Action bonus",
      "p": "Soi",
      "c": true,
      "d": "Prochaine touche : +4d6 psychique, jet de SAG sinon désavantage et plus de réactions. 1 minute.",
-     "cls": false
+     "cls": false,
+     "en": "Staggering Smite",
+     "gid": "s-staggering-smite"
     },
     {
-     "n": "Shadow of Moil",
+     "n": "Ombre de Moil",
      "lv": 4,
      "t": "Action",
      "p": "Soi",
      "c": true,
      "d": "Ombre autour de toi : désavantage aux attaques contre toi, 2d8 nécrotique aux attaquants. 1 minute.",
-     "cls": false
+     "cls": false,
+     "en": "Shadow of Moil",
+     "gid": "s-shadow-of-moil"
     },
     {
      "n": "Acceptation",
      "lv": 1,
-     "t": "Selon la fiche",
-     "p": "Selon la fiche",
+     "t": "Action",
+     "p": "Contact",
      "c": false,
-     "d": "Sort de Thanaturgie de la Loi de l'Équilibre (1 fois par repos long, coûte un emplacement). Texte exact à compléter.",
+     "d": "Vous touchez une créature consentante. La créature meurt immédiatement, sans douleur ni peur. Cette mort laisse l'âme parfaitement stable. La créature ne peut pas être ramenée à la vie par des sorts de niveau 3 ou inférieur.",
      "src": "Loi de l'Équilibre",
      "grp": "Loi de l'Équilibre",
-     "cls": false
+     "cls": false,
+     "en": "Acceptance",
+     "gid": "s-acceptance"
     },
     {
      "n": "Clémence du Seuil",
      "lv": 1,
-     "t": "Selon la fiche",
-     "p": "Selon la fiche",
+     "t": "Action",
+     "p": "18 m",
      "c": false,
-     "d": "Sort de Thanaturgie de la Loi de l'Équilibre (1 fois par repos long, coûte un emplacement). Texte exact à compléter.",
+     "d": "Choisissez une créature vivante que vous voyez à portée. Pendant la durée, la cible ne peut pas être réduite à 0 point de vie. Si des dégâts devaient la réduire à 0 point de vie, elle est réduite à 1 point de vie à la place.",
      "src": "Loi de l'Équilibre",
      "grp": "Loi de l'Équilibre",
-     "cls": false
+     "cls": false,
+     "en": "Threshold's Mercy",
+     "gid": "s-thresholds-mercy"
     },
     {
      "n": "Mémoire de la Chair",
      "lv": 1,
-     "t": "Selon la fiche",
-     "p": "Selon la fiche",
+     "t": "Hors combat",
+     "p": "Contact",
      "c": false,
-     "d": "Sort de Thanaturgie de la Loi de l'Équilibre (1 fois par repos long, coûte un emplacement). Texte exact à compléter.",
+     "d": "Vous posez la main sur une dépouille et interrogez ce qu'il reste de son âme pendant 1 minute. La cible doit être un cadavre ou des restes ayant appartenu à une créature morte depuis 30 jours au maximum. Le sort échoue si la créature est un mort-vivant, un fiélon, un céleste, ou si elle a été privée de son âme.",
      "src": "Loi de l'Équilibre",
      "grp": "Loi de l'Équilibre",
-     "cls": false
+     "cls": false,
+     "en": "Memory of the Flesh",
+     "gid": "s-memory-of-the-flesh"
     },
     {
      "n": "Poids de l'Éternité",
      "lv": 3,
-     "t": "Selon la fiche",
-     "p": "Selon la fiche",
+     "t": "Action",
+     "p": "18 m",
      "c": false,
-     "d": "Sort de Thanaturgie de la Loi de l'Équilibre (1 fois par repos long, coûte un emplacement). Texte exact à compléter.",
+     "d": "Vous imposez la conscience de l'équilibre éternel aux esprits mortels. Choisissez jusqu'à trois créatures que vous voyez à portée. Chaque cible doit faire un jet de sauvegarde de Sagesse.",
      "src": "Loi de l'Équilibre",
      "grp": "Loi de l'Équilibre",
-     "cls": false
+     "cls": false,
+     "en": "Weight of Eternity",
+     "gid": "s-weight-of-eternity"
     },
     {
      "n": "Équilibre Forcé",
      "lv": 3,
-     "t": "Selon la fiche",
-     "p": "Selon la fiche",
+     "t": "Action",
+     "p": "18 m",
      "c": false,
-     "d": "Sort de Thanaturgie de la Loi de l'Équilibre (1 fois par repos long, coûte un emplacement). Texte exact à compléter.",
+     "d": "Choisissez deux créatures que vous voyez à portée. Chacune doit faire un jet de sauvegarde de Sagesse, sauf si elle choisit de le rater.",
      "src": "Loi de l'Équilibre",
      "grp": "Loi de l'Équilibre",
-     "cls": false
+     "cls": false,
+     "en": "Forced Balance",
+     "gid": "s-forced-balance"
     },
     {
      "n": "Mandat des Dunes Ardentes",
      "lv": 4,
-     "t": "Selon la fiche",
-     "p": "Selon la fiche",
+     "t": "Action",
+     "p": "45 m (cylindre de 6 m de rayon, 9 m de haut)",
      "c": false,
-     "d": "Sort de Thanaturgie de la Loi de l'Équilibre (1 fois par repos long, coûte un emplacement). Texte exact à compléter.",
+     "d": "Une colonne de sable surchauffé jaillit en un point de votre choix à portée et forme une tempête tourbillonnante de feu et de poussière dans un cylindre de 6 m de rayon et 9 m de haut.",
      "src": "Loi de l'Équilibre",
      "grp": "Loi de l'Équilibre",
-     "cls": false
+     "cls": false,
+     "en": "Mandate of the Blazing Dunes",
+     "gid": "s-mandate-of-the-blazing-dunes"
     },
     {
      "n": "Couronnement du Repos Noir",
@@ -434,7 +498,7 @@
      "cls": false
     },
     {
-     "n": "Blight",
+     "n": "Flétrissement",
      "lv": 4,
      "t": "Action",
      "p": "9 m",
@@ -443,7 +507,9 @@
      "src": "La main du Reliquaire",
      "pactonly": true,
      "grp": "Pouvoirs d'armes Tarot",
-     "cls": false
+     "cls": false,
+     "en": "Blight",
+     "gid": "s-blight"
     },
     {
      "n": "Veil Shield, Quiet Passing",
@@ -490,7 +556,7 @@
      "cls": false
     },
     {
-     "n": "Invisibility",
+     "n": "Invisibilité",
      "lv": 2,
      "t": "Action",
      "p": "Contact",
@@ -498,10 +564,12 @@
      "d": "Une créature devient invisible (1 heure) jusqu'à ce qu'elle attaque ou lance un sort.",
      "src": "Balance et Entropie",
      "grp": "Pouvoirs d'armes Tarot",
-     "cls": false
+     "cls": false,
+     "en": "Invisibility",
+     "gid": "s-invisibility"
     },
     {
-     "n": "See Invisibility",
+     "n": "Détection de l'invisibilité",
      "lv": 2,
      "t": "Action",
      "p": "Soi",
@@ -509,10 +577,12 @@
      "d": "1 heure : tu vois les créatures invisibles et le Plan Éthéré.",
      "src": "Balance et Entropie",
      "grp": "Pouvoirs d'armes Tarot",
-     "cls": false
+     "cls": false,
+     "en": "See Invisibility",
+     "gid": "s-see-invisibility"
     },
     {
-     "n": "Alter Self",
+     "n": "Modification d'apparence",
      "lv": 2,
      "t": "Action",
      "p": "Soi",
@@ -520,7 +590,9 @@
      "d": "1 heure : changement d'apparence.",
      "src": "Balance et Entropie",
      "grp": "Pouvoirs d'armes Tarot",
-     "cls": false
+     "cls": false,
+     "en": "Alter Self",
+     "gid": "s-alter-self"
     },
     {
      "n": "Omen, Forme 1 : ruée",
@@ -534,7 +606,8 @@
       "res": "omencharge",
       "n": 1
      },
-     "grp": "Pouvoirs d'armes Tarot"
+     "grp": "Pouvoirs d'armes Tarot",
+     "cls": false
     },
     {
      "n": "Omen, Forme 2 : ligne",
@@ -548,7 +621,8 @@
       "res": "omencharge",
       "n": 2
      },
-     "grp": "Pouvoirs d'armes Tarot"
+     "grp": "Pouvoirs d'armes Tarot",
+     "cls": false
     },
     {
      "n": "Omen, Forme 3 : combo",
@@ -562,7 +636,8 @@
       "res": "omencharge",
       "n": 3
      },
-     "grp": "Pouvoirs d'armes Tarot"
+     "grp": "Pouvoirs d'armes Tarot",
+     "cls": false
     },
     {
      "n": "Ruée du Chariot",
@@ -573,7 +648,8 @@
      "d": "Ligne de 15 ft. 1 fois par jour, recharge au repos long. En complément de la Charge (+2d6 et jet de FOR DD 15, la cible est renversée).",
      "src": "Caput Tauri",
      "res": "ruee",
-     "grp": "Pouvoirs d'armes Tarot"
+     "grp": "Pouvoirs d'armes Tarot",
+     "cls": false
     },
     {
      "n": "Manoeuvre de supériorité",
@@ -587,7 +663,8 @@
       "res": "sup",
       "n": 1
      },
-     "grp": "Pouvoirs d'armes Tarot"
+     "grp": "Pouvoirs d'armes Tarot",
+     "cls": false
     }
    ],
    "dc": 17,
@@ -693,6 +770,140 @@
       "Manoeuvres de supériorité, DD 13"
      ]
     }
+   ],
+   "feats": [
+    {
+     "n": "Sorcier : Pacte de la Lame",
+     "en": "Pact of the Blade",
+     "grp": "Sorcier (Hexblade) 8",
+     "d": "Action : crée une arme de pacte dans ta main. Tu en as la maîtrise et elle est magique. Tu peux aussi lier une arme magique à ton pacte par un rituel."
+    },
+    {
+     "n": "Malédiction du Hexblade",
+     "en": "Hexblade's Curse",
+     "grp": "Sorcier (Hexblade) 8",
+     "d": "1 fois par repos court, en action bonus, maudis une créature visible à 9 m pendant 1 minute : +4 aux dégâts contre elle, critique sur 19 ou 20, et tu regagnes 13 PV si elle meurt."
+    },
+    {
+     "n": "Guerrier maudit",
+     "en": "Hex Warrior",
+     "grp": "Sorcier (Hexblade) 8",
+     "d": "Maîtrise des armures intermédiaires, boucliers et armes de guerre. Après un repos long, une arme sans propriété à deux mains utilise ton modificateur de CHA pour l'attaque et les dégâts. C'est automatique pour tes armes de pacte."
+    },
+    {
+     "n": "Magie de pacte",
+     "en": "Pact Magic",
+     "grp": "Sorcier (Hexblade) 8",
+     "d": "Incantation en CHA (DD 17, attaque +9). Tu peux utiliser un focaliseur arcanique. Emplacements de pacte de niveau 4, récupérés au repos court."
+    },
+    {
+     "n": "Vision du diable",
+     "en": "Devil's Sight",
+     "grp": "Invocations occultes",
+     "d": "Tu vois normalement dans les ténèbres, magiques ou non, jusqu'à 36 m."
+    },
+    {
+     "n": "Arme de pacte améliorée",
+     "en": "Improved Pact Weapon",
+     "grp": "Invocations occultes",
+     "d": "Ton arme de pacte peut servir de focaliseur, gagne +1 à l'attaque et aux dégâts (sauf si elle a déjà un bonus magique), et peut être un arc ou une arbalète."
+    },
+    {
+     "n": "Signe de mauvais augure",
+     "en": "Sign of Ill Omen",
+     "grp": "Invocations occultes",
+     "d": "1 fois par repos long, lance Malédiction avec un emplacement de pacte."
+    },
+    {
+     "n": "Lame assoiffée",
+     "en": "Thirsting Blade",
+     "grp": "Invocations occultes",
+     "d": "Tu attaques deux fois avec ton arme de pacte quand tu fais l'action Attaque."
+    },
+    {
+     "n": "Spectre maudit",
+     "en": "Accursed Specter",
+     "grp": "Sorcier (Hexblade) 8",
+     "d": "1 fois par repos long : quand tu tues un humanoïde, son esprit devient un spectre allié avec 4 PV temporaires, +5 à ses attaques, qui reste jusqu'à ton prochain repos long."
+    },
+    {
+     "n": "Inspiration bardique",
+     "en": "Bardic Inspiration",
+     "grp": "Barde (Éloquence) 3",
+     "d": "5 fois par repos long, en action bonus : une créature à 18 m qui te voit ou t'entend reçoit un d6. Pendant 1 heure, elle peut l'ajouter à un test de d20 raté."
+    },
+    {
+     "n": "Touche-à-tout",
+     "en": "Jack of All Trades",
+     "grp": "Barde (Éloquence) 3",
+     "d": "Ajoute la moitié de ton bonus de maîtrise (+2) aux tests de caractéristique où tu n'as pas la maîtrise."
+    },
+    {
+     "n": "Langue d'argent",
+     "en": "Silver Tongue",
+     "grp": "Barde (Éloquence) 3",
+     "d": "Aux tests de Persuasion et de Tromperie, un 9 ou moins sur le d20 compte pour 10."
+    },
+    {
+     "n": "Paroles déstabilisantes",
+     "en": "Unsettling Words",
+     "grp": "Barde (Éloquence) 3",
+     "d": "Action bonus : dépense une Inspiration bardique. Une créature visible à 18 m soustrait le d6 à son prochain jet de sauvegarde avant ton prochain tour."
+    },
+    {
+     "n": "Magie drow",
+     "en": "Drow Magic",
+     "grp": "Espèce : Demi-elfe drow",
+     "d": "Tu connais Lumières dansantes. 1 fois par repos long : Lueurs féeriques (3e niveau) et Ténèbres (5e niveau). Incantation en CHA."
+    },
+    {
+     "n": "Vision dans le noir",
+     "en": "Darkvision",
+     "grp": "Espèce : Demi-elfe drow",
+     "d": "Tu vois dans le noir jusqu'à 18 m (nuances de gris)."
+    },
+    {
+     "n": "Ascendance féerique",
+     "en": "Fey Ancestry",
+     "grp": "Espèce : Demi-elfe drow",
+     "d": "Avantage aux jets de sauvegarde contre le charme, et la magie ne peut pas t'endormir."
+    },
+    {
+     "n": "Lanceur de sorts aguerri",
+     "en": "War Caster",
+     "grp": "Dons",
+     "d": "Avantage aux jets de CON pour maintenir la concentration. Composantes somatiques avec des armes ou un bouclier en main. Réaction : lance un sort d'une action sur une créature qui provoque une attaque d'opportunité."
+    },
+    {
+     "n": "Télékinésiste",
+     "en": "Telekinetic",
+     "grp": "Dons",
+     "d": "Main du mage sans composantes, main invisible, portée +9 m. Action bonus : pousse une créature visible à 9 m de 1,5 m vers toi ou loin de toi (FOR DD 12 + CHA, peut échouer volontairement)."
+    },
+    {
+     "n": "Touché par les fées",
+     "en": "Fey Touched",
+     "grp": "Dons",
+     "d": "Tu connais Pas brumeux et un sort de niveau 1 de divination ou d'enchantement. 1 fois par repos long chacun sans emplacement. CHA +1."
+    },
+    {
+     "n": "Musicienne formée au Lumenlid",
+     "en": "Lumenlid-Trained Musician",
+     "grp": "Capacités spéciales",
+     "d": "Capacité personnalisée. Texte à fournir par le MJ."
+    },
+    {
+     "n": "Loi de l'Équilibre",
+     "en": "Law of Equilibrium",
+     "grp": "Capacités spéciales",
+     "d": "Capacité personnalisée qui donne accès aux sorts de Thanaturgie (1 fois par repos long chacun, avec emplacement). Voir l'onglet Sorts et pouvoirs."
+    },
+    {
+     "n": "Cartographe (niveau 1)",
+     "en": "Cartographer (level 1)",
+     "grp": "Capacités spéciales",
+     "d": "Capacité personnalisée. Texte à fournir par le MJ."
+    }
    ]
   },
   {
@@ -714,20 +925,6 @@
      "id": "double",
      "nom": "Shadow Double",
      "sub": "Shadow-Cat Armor",
-     "max": 1,
-     "reset": "long"
-    },
-    {
-     "id": "bisection",
-     "nom": "La Mâchoire : Bisection",
-     "sub": "1 par repos long",
-     "max": 1,
-     "reset": "long"
-    },
-    {
-     "id": "dechirure",
-     "nom": "La Mâchoire : Déchirure",
-     "sub": "Réaction, 1 par repos long",
      "max": 1,
      "reset": "long"
     },
@@ -755,85 +952,105 @@
    ],
    "spells": [
     {
-     "n": "Booming Blade",
+     "n": "Lame retentissante",
      "lv": 0,
      "t": "Action",
      "p": "Contact",
      "c": false,
-     "d": "Attaque d'arme au corps à corps : 2d8 tonnerre en plus sur la touche. Si la cible se déplace avant ton prochain tour, 4d8 tonnerre en plus."
+     "d": "Action Magie : attaque d'arme au corps à corps. Sur une touche, la cible est enveloppée de tonnerre. Si elle se déplace volontairement de 1,5 m ou plus avant ton prochain tour, 1d8 tonnerre et le sort prend fin. Niveau 5 : +1d8 sur la touche, 2d8 au déplacement. Niveau 11 : 2d8 et 3d8.",
+     "en": "Booming Blade",
+     "gid": "s-booming-blade"
     },
     {
-     "n": "Gust",
+     "n": "Rafale",
      "lv": 0,
      "t": "Action",
      "p": "9 m",
      "c": false,
-     "d": "Jet de FOR : une créature de taille M ou moins est repoussée de 1,5 m. Peut aussi déplacer un objet léger."
+     "d": "Jet de FOR : une créature de taille M ou moins est repoussée de 1,5 m. Peut aussi déplacer un objet léger.",
+     "en": "Gust",
+     "gid": "s-gust"
     },
     {
-     "n": "True Strike",
+     "n": "Frappe infaillible",
      "lv": 0,
      "t": "Action",
      "p": "9 m",
      "c": true,
-     "d": "Avantage au prochain jet d'attaque contre la cible, avant la fin de ton prochain tour."
+     "d": "Action Magie : attaque avec l'arme utilisée, en INT. Dégâts radiants ou du type de l'arme, +2d6 radiant supplémentaires au niveau 11.",
+     "en": "True Strike",
+     "gid": "s-true-strike"
     },
     {
-     "n": "Mage Hand",
+     "n": "Main du mage",
      "lv": 0,
      "t": "Action",
      "p": "9 m",
      "c": false,
-     "d": "Main spectrale : manipule un objet de 5 kg maximum, vole ou déplace un objet. Invisible aux yeux de la Roublarde (Mage Hand Legerdemain)."
+     "d": "Main spectrale : manipule un objet de 5 kg maximum, vole ou déplace un objet. Invisible aux yeux de la Roublarde (Mage Hand Legerdemain).",
+     "en": "Mage Hand",
+     "gid": "s-mage-hand"
     },
     {
-     "n": "Feather Fall",
+     "n": "Chute amortie",
      "lv": 1,
      "t": "Réaction",
      "p": "18 m",
      "c": false,
-     "d": "Jusqu'à 5 créatures tombent à 18 m par tour et ne subissent aucun dégât de chute. 1 minute."
+     "d": "Jusqu'à 5 créatures tombent à 18 m par tour et ne subissent aucun dégât de chute. 1 minute.",
+     "en": "Feather Fall",
+     "gid": "s-feather-fall"
     },
     {
-     "n": "Magic Missile",
+     "n": "Projectile magique",
      "lv": 1,
      "t": "Action",
      "p": "36 m",
      "c": false,
-     "d": "3 fléchettes de 1d4+1 force, touche automatique. Une fléchette de plus par niveau d'emplacement au-dessus de 1."
+     "d": "3 fléchettes de 1d4+1 force, touche automatique. Une fléchette de plus par niveau d'emplacement au-dessus de 1.",
+     "en": "Magic Missile",
+     "gid": "s-magic-missile"
     },
     {
-     "n": "Shield",
+     "n": "Bouclier",
      "lv": 1,
      "t": "Réaction",
      "p": "Soi",
      "c": false,
-     "d": "+5 CA jusqu'à ton prochain tour et annule Magic Missile."
+     "d": "+5 CA jusqu'à ton prochain tour et annule Magic Missile.",
+     "en": "Shield",
+     "gid": "s-shield"
     },
     {
-     "n": "Silent Image",
+     "n": "Image silencieuse",
      "lv": 1,
      "t": "Action",
      "p": "18 m",
      "c": true,
      "d": "Image illusoire d'un objet ou d'une créature dans un cube de 4,5 m, sans son. Jusqu'à 10 minutes.",
-     "res": "shsilent"
+     "res": "shsilent",
+     "en": "Silent Image",
+     "gid": "s-silent-image"
     },
     {
-     "n": "Thunderwave",
+     "n": "Vague tonnante",
      "lv": 1,
      "t": "Action",
      "p": "Cube de 4,5 m",
      "c": false,
-     "d": "Jet de CON : 2d8 tonnerre et repoussée de 3 m (moitié des dégâts, sans recul, si réussi). Audible à 90 m."
+     "d": "Jet de CON : 2d8 tonnerre et repoussée de 3 m (moitié des dégâts, sans recul, si réussi). Audible à 90 m.",
+     "en": "Thunderwave",
+     "gid": "s-thunderwave"
     },
     {
-     "n": "Disguise Self",
+     "n": "Déguisement",
      "lv": 1,
      "t": "Action",
      "p": "Soi",
      "c": false,
-     "d": "Change ton apparence pendant 1 heure. Un test d'Investigation révèle l'illusion."
+     "d": "Change ton apparence pendant 1 heure. Un test d'Investigation révèle l'illusion.",
+     "en": "Disguise Self",
+     "gid": "s-disguise-self"
     },
     {
      "n": "Suggestion",
@@ -841,24 +1058,30 @@
      "t": "Action",
      "p": "9 m",
      "c": true,
-     "d": "Jet de SAG : la cible suit une suggestion raisonnable. Jusqu'à 8 heures."
+     "d": "Jet de SAG : la cible suit une suggestion raisonnable. Jusqu'à 8 heures.",
+     "en": "Suggestion",
+     "gid": "s-suggestion"
     },
     {
-     "n": "Misty Step",
+     "n": "Pas brumeux",
      "lv": 2,
      "t": "Action bonus",
      "p": "Soi",
      "c": false,
-     "d": "Téléportation de 9 m vers un lieu visible."
+     "d": "Téléportation de 9 m vers un lieu visible.",
+     "en": "Misty Step",
+     "gid": "s-misty-step"
     },
     {
-     "n": "Invisibility",
+     "n": "Invisibilité",
      "lv": 2,
      "t": "Action",
      "p": "Contact",
      "c": true,
      "d": "Une créature devient invisible jusqu'à ce qu'elle attaque ou lance un sort. 1 heure.",
-     "res": "shinvis"
+     "res": "shinvis",
+     "en": "Invisibility",
+     "gid": "s-invisibility"
     },
     {
      "n": "Shadow Double",
@@ -870,77 +1093,156 @@
      "src": "Shadow-Cat Armor",
      "res": "double",
      "grp": "Pouvoirs d'objets"
-    },
-    {
-     "n": "La Mâchoire : Bisection",
-     "lv": 0,
-     "t": "Action",
-     "p": "Contact",
-     "c": false,
-     "d": "Pouvoir de La Mâchoire. 1 par repos long.",
-     "src": "La Mâchoire",
-     "res": "bisection",
-     "grp": "Pouvoirs d'objets"
-    },
-    {
-     "n": "La Mâchoire : Déchirure",
-     "lv": 0,
-     "t": "Réaction",
-     "p": "Contact",
-     "c": false,
-     "d": "Pouvoir de La Mâchoire en réaction. 1 par repos long.",
-     "src": "La Mâchoire",
-     "res": "dechirure",
-     "grp": "Pouvoirs d'objets"
     }
    ],
    "dc": 16,
    "atk": 8,
    "weapons": [
     {
-     "n": "Croc du Gentleman",
-     "hit": "+10",
-     "dmg": "1d6+6",
-     "note": "Finesse. Booming Blade ne s'applique plus automatiquement à cette arme.",
-     "pw": []
-    },
-    {
-     "n": "La Mâchoire",
-     "hit": "+11",
-     "dmg": "1d6+7",
-     "note": "Bisection et Déchirure, 1 par repos long chacun.",
-     "pw": [
-      "Bisection",
-      "Déchirure (réaction)"
-     ]
-    },
-    {
      "n": "Arc des Scories",
-     "hit": "+10",
-     "dmg": "1d6+6",
-     "note": "Arc.",
+     "hit": "+9",
+     "dmg": "1d6+5 perforant",
+     "note": "Arc court, Ammunition, Two-Handed, portée 80/320. Maîtrise : Vex (avantage à la prochaine attaque contre la cible si touche).",
      "pw": []
     },
     {
-     "n": "Ruin, Hollow Reign",
-     "hit": "",
-     "dmg": "",
-     "note": "3 charges, recharge à l'aube. Combo avec Omen, Broken Sky.",
+     "n": "Croc du Gentleman",
+     "hit": "+9",
+     "dmg": "1d6+5 perforant",
+     "note": "Arme de guerre, Finesse, Light. Maîtrise : Vex. True Strike : 2d6+4 radiant.",
      "pw": []
     },
     {
-     "n": "Dagger of Absorption",
+     "n": "[Impératrice] Ruin, Hollow Reign",
      "hit": "+11",
-     "dmg": "1d4+7",
-     "note": "Dague, finesse, lancer.",
+     "dmg": "1d6+7 perforant + 1d6 tonnerre",
+     "note": "Arme de guerre, Finesse, Light. 3 charges, recharge à l'aube. Maîtrise : Vex. True Strike : 2d6+4 radiant. Combo avec Omen, Broken Sky.",
      "pw": []
     },
     {
-     "n": "Sneak Attack",
+     "n": "Attaque à mains nues",
+     "hit": "+4",
+     "dmg": "1 contondant",
+     "note": "",
+     "pw": []
+    },
+    {
+     "n": "Attaque sournoise",
      "hit": "",
      "dmg": "6d6",
-     "note": "Une fois par tour, avec avantage ou un allié au contact de la cible.",
+     "note": "Une fois par tour, avec avantage ou un allié non neutralisé à 1,5 m de la cible (sans désavantage). Frappe sournoise : Poison (1d6, CON DD 17), Trip (1d6, DEX DD 17), Withdraw (1d6). Deux effets maximum.",
      "pw": []
+    }
+   ],
+   "init": "+9",
+   "feats": [
+    {
+     "n": "Attaque sournoise",
+     "en": "Sneak Attack",
+     "grp": "Roublard 11",
+     "d": "1 fois par tour : +6d6 dégâts à une créature touchée si tu as l'avantage avec une arme à Finesse ou à distance. Sans avantage, il suffit qu'un allié non neutralisé soit à 1,5 m de la cible, sans désavantage pour toi."
+    },
+    {
+     "n": "Frappe sournoise",
+     "en": "Cunning Strike",
+     "grp": "Roublard 11",
+     "d": "Quand tu infliges une attaque sournoise, tu peux renoncer à des dés pour ajouter un effet : Poison (1d6, CON DD 17, Empoisonné), Trip (1d6, DEX DD 17, À terre si Grande taille ou moins), Withdraw (1d6, déplacement de la moitié de ta vitesse sans attaque d'opportunité). Deux effets maximum."
+    },
+    {
+     "n": "Action rusée",
+     "en": "Cunning Action",
+     "grp": "Roublard 11",
+     "d": "Action bonus : Foncer, Se désengager ou Se cacher."
+    },
+    {
+     "n": "Visée stable",
+     "en": "Steady Aim",
+     "grp": "Roublard (Escroc arcanique)",
+     "d": "Action bonus : avantage à ta prochaine attaque ce tour si tu ne t'es pas déplacé. Ta vitesse tombe à 0 jusqu'à la fin du tour."
+    },
+    {
+     "n": "Esquive instinctive",
+     "en": "Uncanny Dodge",
+     "grp": "Roublard 11",
+     "d": "Réaction : divise par deux les dégâts d'une attaque qui te touche et que tu vois."
+    },
+    {
+     "n": "Dérobade",
+     "en": "Evasion",
+     "grp": "Roublard 11",
+     "d": "Sur un jet de DEX pour moitié de dégâts : aucun dégât en cas de réussite, moitié en cas d'échec. Inactif si tu es neutralisé."
+    },
+    {
+     "n": "Talent fiable",
+     "en": "Reliable Talent",
+     "grp": "Roublard 11",
+     "d": "Aux tests avec une compétence ou un outil maîtrisé, un 9 ou moins sur le d20 compte pour 10."
+    },
+    {
+     "n": "Expertise",
+     "en": "Expertise",
+     "grp": "Roublard 11",
+     "d": "Expertise dans quatre compétences (double bonus de maîtrise)."
+    },
+    {
+     "n": "Frappe sournoise améliorée",
+     "en": "Improved Cunning Strike",
+     "grp": "Roublard 11",
+     "d": "Tu peux appliquer deux effets de Frappe sournoise à la fois."
+    },
+    {
+     "n": "Maîtrise des armes",
+     "en": "Weapon Mastery",
+     "grp": "Roublard 11",
+     "d": "Vex avec l'arc court et l'épée courte : sur une touche qui inflige des dégâts, avantage à ta prochaine attaque contre la même cible avant la fin de ton prochain tour."
+    },
+    {
+     "n": "Magie de la Main du mage",
+     "en": "Mage Hand Legerdemain",
+     "grp": "Roublard (Escroc arcanique)",
+     "d": "Main du mage lancée en action bonus, invisible, contrôlée en action bonus, avec tests de Escamotage possibles à travers elle."
+    },
+    {
+     "n": "Embuscade magique",
+     "en": "Magical Ambush",
+     "grp": "Roublard (Escroc arcanique)",
+     "d": "Si tu es invisible quand tu lances un sort sur une créature, elle a le désavantage à son jet de sauvegarde ce tour-là."
+    },
+    {
+     "n": "Argot des voleurs",
+     "en": "Thieves' Cant",
+     "grp": "Roublard 11",
+     "d": "Tu connais l'argot des voleurs et une autre langue."
+    },
+    {
+     "n": "Touché par l'ombre",
+     "en": "Shadow Touched",
+     "grp": "Dons",
+     "d": "Tu connais Image silencieuse et as toujours Invisibilité préparé. Chacun 1 fois par repos long sans emplacement. Caractéristique d'incantation : INT."
+    },
+    {
+     "n": "Alerte",
+     "en": "Alert",
+     "grp": "Dons",
+     "d": "+4 à l'initiative. Après le jet, tu peux échanger ton initiative avec celle d'un allié consentant non neutralisé."
+    },
+    {
+     "n": "Vision dans le noir",
+     "en": "Darkvision",
+     "grp": "Espèce : Demi-elfe",
+     "d": "Tu vois dans le noir jusqu'à 18 m."
+    },
+    {
+     "n": "Ascendance féerique",
+     "en": "Fey Ancestry",
+     "grp": "Espèce : Demi-elfe",
+     "d": "Avantage aux jets de sauvegarde contre le charme, et la magie ne peut pas t'endormir."
+    },
+    {
+     "n": "Polyvalence",
+     "en": "Skill Versatility",
+     "grp": "Espèce : Demi-elfe",
+     "d": "Maîtrise de deux compétences au choix."
     }
    ]
   },
@@ -1065,7 +1367,8 @@
      "p": "18 m",
      "c": false,
      "d": "Jet de CON : 3d6+5 froid et désavantage à la prochaine attaque d'arme de la cible. Le +5 vient de Furie élémentaire.",
-     "save": "CON"
+     "save": "CON",
+     "en": "Frostbite"
     },
     {
      "n": "Aspersion de poison",
@@ -1074,7 +1377,8 @@
      "p": "9 m",
      "c": false,
      "d": "Attaque de sort à distance : 3d12+5 poison. Souvent résisté, pense à Yeux de chouette avant.",
-     "atk": true
+     "atk": true,
+     "en": "Poison Spray"
     },
     {
      "n": "Feu follet stellaire",
@@ -1083,7 +1387,8 @@
      "p": "18 m",
      "c": false,
      "d": "Attaque de sort à distance : 3d8+5 radiant. La cible émet de la lumière et perd l'invisibilité jusqu'à la fin de ton prochain tour.",
-     "atk": true
+     "atk": true,
+     "en": "Starry Wisp"
     },
     {
      "n": "Assistance",
@@ -1091,7 +1396,8 @@
      "t": "Action",
      "p": "Contact",
      "c": true,
-     "d": "Une créature consentante ajoute 1d4 aux tests d'une compétence choisie. 1 minute."
+     "d": "Une créature consentante ajoute 1d4 aux tests d'une compétence choisie. 1 minute.",
+     "en": "Guidance"
     },
     {
      "n": "Trait de feu",
@@ -1106,7 +1412,8 @@
       "n": 1
      },
      "src": "Fukuro Kaen",
-     "grp": "Pouvoirs d'objets"
+     "grp": "Pouvoirs d'objets",
+     "en": "Fire Bolt"
     },
     {
      "n": "Message",
@@ -1114,7 +1421,8 @@
      "t": "Action",
      "p": "36 m",
      "c": false,
-     "d": "Murmure un message à une créature, qui peut répondre. Traverse les obstacles fins."
+     "d": "Murmure un message à une créature, qui peut répondre. Traverse les obstacles fins.",
+     "en": "Message"
     },
     {
      "n": "Druidisme",
@@ -1122,7 +1430,8 @@
      "t": "Action",
      "p": "9 m",
      "c": false,
-     "d": "Petits effets naturels : prévision météo, fleur qui éclot, effet sensoriel, flamme allumée ou éteinte."
+     "d": "Petits effets naturels : prévision météo, fleur qui éclot, effet sensoriel, flamme allumée ou éteinte.",
+     "en": "Druidcraft"
     },
     {
      "n": "Mot de guérison",
@@ -1132,7 +1441,9 @@
      "c": false,
      "d": "Soin à distance : 2d4+5 PV (+2d4 par niveau au-dessus de 1). Relève un allié à 0 PV en gardant ton action.",
      "cls": true,
-     "pre": true
+     "pre": true,
+     "en": "Healing Word",
+     "gid": "s-healing-word"
     },
     {
      "n": "Grande foulée",
@@ -1143,7 +1454,8 @@
      "d": "+3 m de vitesse pendant 1 heure, sans concentration. Une cible de plus par niveau au-dessus de 1.",
      "cls": true,
      "always": true,
-     "res": "lstride"
+     "res": "lstride",
+     "en": "Longstrider"
     },
     {
      "n": "Mains brûlantes",
@@ -1158,7 +1470,8 @@
       "n": 2
      },
      "src": "Fukuro Kaen",
-     "grp": "Pouvoirs d'objets"
+     "grp": "Pouvoirs d'objets",
+     "en": "Burning Hands"
     },
     {
      "n": "Communication avec les animaux",
@@ -1169,7 +1482,8 @@
      "d": "Comprendre et parler aux bêtes pendant 10 minutes. Rituel.",
      "cls": true,
      "always": true,
-     "ritual": true
+     "ritual": true,
+     "en": "Speak with Animals"
     },
     {
      "n": "Appel de familier",
@@ -1181,7 +1495,8 @@
      "alt": {
       "res": "ws",
       "n": 1
-     }
+     },
+     "en": "Find Familiar"
     },
     {
      "n": "Amitié avec les animaux",
@@ -1191,7 +1506,8 @@
      "c": false,
      "d": "Une bête qui rate son jet de SAG est charmée 24 heures. Une cible de plus par niveau au-dessus de 1.",
      "cls": true,
-     "save": "SAG"
+     "save": "SAG",
+     "en": "Animal Friendship"
     },
     {
      "n": "Charme-personne",
@@ -1201,7 +1517,8 @@
      "c": false,
      "d": "Un humanoïde est charmé 1 heure (avantage au jet si vous le combattez). Il sait ensuite qu'il a été charmé. Une cible de plus par niveau.",
      "cls": true,
-     "save": "SAG"
+     "save": "SAG",
+     "en": "Charm Person"
     },
     {
      "n": "Création ou destruction d'eau",
@@ -1210,7 +1527,8 @@
      "p": "9 m",
      "c": false,
      "d": "Crée ou détruit environ 40 litres d'eau, ou éteint les flammes nues d'un cube de 9 m.",
-     "cls": true
+     "cls": true,
+     "en": "Create or Destroy Water"
     },
     {
      "n": "Soins",
@@ -1219,7 +1537,8 @@
      "p": "Contact",
      "c": false,
      "d": "Une créature touchée récupère 2d8+5 PV (+2d8 par niveau au-dessus de 1).",
-     "cls": true
+     "cls": true,
+     "en": "Cure Wounds"
     },
     {
      "n": "Détection de la magie",
@@ -1229,7 +1548,8 @@
      "c": true,
      "d": "Tu perçois la magie à 9 m et vois l'école de magie d'une aura. Rituel.",
      "cls": true,
-     "ritual": true
+     "ritual": true,
+     "en": "Detect Magic"
     },
     {
      "n": "Détection du poison et des maladies",
@@ -1239,7 +1559,8 @@
      "c": true,
      "d": "Tu perçois poisons, créatures venimeuses et maladies à 9 m. Rituel.",
      "cls": true,
-     "ritual": true
+     "ritual": true,
+     "en": "Detect Poison and Disease"
     },
     {
      "n": "Enchevêtrement",
@@ -1249,7 +1570,8 @@
      "c": true,
      "d": "Carré de 6 m : terrain difficile, créatures entravées si elles ratent leur jet de FOR (action et test de FOR DD 17 pour se libérer).",
      "cls": true,
-     "save": "FOR"
+     "save": "FOR",
+     "en": "Entangle"
     },
     {
      "n": "Lueurs féeriques",
@@ -1259,7 +1581,9 @@
      "c": true,
      "d": "Cube de 6 m : les créatures qui ratent leur jet de DEX brillent. Avantage contre elles, plus d'invisibilité.",
      "cls": true,
-     "save": "DEX"
+     "save": "DEX",
+     "en": "Faerie Fire",
+     "gid": "s-faerie-fire"
     },
     {
      "n": "Nappe de brouillard",
@@ -1268,7 +1592,8 @@
      "p": "36 m",
      "c": true,
      "d": "Sphère de brouillard, zone fortement obscurcie. Rayon de 6 m, +6 m par niveau au-dessus de 1.",
-     "cls": true
+     "cls": true,
+     "en": "Fog Cloud"
     },
     {
      "n": "Baies nourricières",
@@ -1277,7 +1602,8 @@
      "p": "Soi",
      "c": false,
      "d": "Dix baies pendant 24 heures. Une baie (action bonus) rend 1 PV et nourrit pour la journée.",
-     "cls": true
+     "cls": true,
+     "en": "Goodberry"
     },
     {
      "n": "Couteau de glace",
@@ -1288,7 +1614,8 @@
      "d": "Attaque à distance : 1d10 perçant. Le couteau explose ensuite, DEX pour la cible et les créatures à 1,5 m : 2d6 froid.",
      "cls": true,
      "atk": true,
-     "save": "DEX"
+     "save": "DEX",
+     "en": "Ice Knife"
     },
     {
      "n": "Saut",
@@ -1297,7 +1624,8 @@
      "p": "Contact",
      "c": false,
      "d": "Pendant 1 minute, la cible saute jusqu'à 9 m en dépensant 3 m de mouvement. Une cible de plus par niveau.",
-     "cls": true
+     "cls": true,
+     "en": "Jump"
     },
     {
      "n": "Protection contre le mal et le bien",
@@ -1306,7 +1634,8 @@
      "p": "Contact",
      "c": true,
      "d": "Désavantage aux attaques de certains types de créatures contre la cible, qui ne peut être charmée, effrayée ou possédée par elles.",
-     "cls": true
+     "cls": true,
+     "en": "Protection from Evil and Good"
     },
     {
      "n": "Purification de nourriture et d'eau",
@@ -1316,7 +1645,8 @@
      "c": false,
      "d": "Rend sains la nourriture et la boisson d'une sphère de 1,5 m. Rituel.",
      "cls": true,
-     "ritual": true
+     "ritual": true,
+     "en": "Purify Food and Drink"
     },
     {
      "n": "Vague tonnante",
@@ -1326,7 +1656,9 @@
      "c": false,
      "d": "Jet de CON : 2d8 tonnerre et repoussée de 3 m, moitié sans recul si réussi. Audible à 90 m.",
      "cls": true,
-     "save": "CON"
+     "save": "CON",
+     "en": "Thunderwave",
+     "gid": "s-thunderwave"
     },
     {
      "n": "Immobilisation de personne",
@@ -1337,7 +1669,8 @@
      "d": "Un humanoïde est paralysé, les attaques au contact sont des critiques. Jet de SAG à la fin de chaque tour de la cible. Une cible de plus par niveau au-dessus de 2.",
      "cls": true,
      "pre": true,
-     "save": "SAG"
+     "save": "SAG",
+     "en": "Hold Person"
     },
     {
      "n": "Diable de poussière",
@@ -1348,7 +1681,8 @@
      "d": "Tourbillon de 1,5 m : 1d8 contondant et repoussée de 3 m pour qui finit son tour à côté (FOR DD 17). Bonus : déplace le tourbillon de 9 m.",
      "cls": true,
      "pre": true,
-     "save": "FOR"
+     "save": "FOR",
+     "en": "Dust Devil"
     },
     {
      "n": "Passage sans trace",
@@ -1359,7 +1693,8 @@
      "d": "+10 en Discrétion pour toi et les créatures choisies, aucune trace. 1 heure.",
      "cls": true,
      "always": true,
-     "res": "pwt"
+     "res": "pwt",
+     "en": "Pass without Trace"
     },
     {
      "n": "Augure",
@@ -1370,7 +1705,8 @@
      "d": "Présage (bon, mauvais, les deux, rien) sur une action prévue dans les 30 prochaines minutes. Rituel.",
      "cls": true,
      "pre": true,
-     "ritual": true
+     "ritual": true,
+     "en": "Augury"
     },
     {
      "n": "Rayon ardent",
@@ -1385,7 +1721,8 @@
       "n": 3
      },
      "src": "Fukuro Kaen",
-     "grp": "Pouvoirs d'objets"
+     "grp": "Pouvoirs d'objets",
+     "en": "Scorching Ray"
     },
     {
      "n": "Restauration partielle",
@@ -1399,7 +1736,8 @@
       "n": 2
      },
      "src": "Bâton de l'Assistant",
-     "grp": "Pouvoirs d'objets"
+     "grp": "Pouvoirs d'objets",
+     "en": "Lesser Restoration"
     },
     {
      "n": "Aide",
@@ -1408,7 +1746,8 @@
      "p": "9 m",
      "c": false,
      "d": "Jusqu'à trois créatures gagnent 5 PV max et autant de PV actuels pendant 8 heures. +5 par niveau au-dessus de 2.",
-     "cls": true
+     "cls": true,
+     "en": "Aid"
     },
     {
      "n": "Messager animal",
@@ -1418,7 +1757,8 @@
      "c": false,
      "d": "Une bête de taille TP porte un message de 25 mots vers un lieu décrit, 24 heures. Rituel.",
      "cls": true,
-     "ritual": true
+     "ritual": true,
+     "en": "Animal Messenger"
     },
     {
      "n": "Peau d'écorce",
@@ -1427,7 +1767,8 @@
      "p": "Contact",
      "c": false,
      "d": "Pendant 1 heure, sans concentration, la CA de la cible ne peut pas être inférieure à 17.",
-     "cls": true
+     "cls": true,
+     "en": "Barkskin"
     },
     {
      "n": "Sens animal",
@@ -1437,7 +1778,8 @@
      "c": true,
      "d": "Tu perçois à travers les sens d'une bête consentante. Rituel.",
      "cls": true,
-     "ritual": true
+     "ritual": true,
+     "en": "Beast Sense"
     },
     {
      "n": "Flamme éternelle",
@@ -1446,7 +1788,8 @@
      "p": "Contact",
      "c": false,
      "d": "Flamme sans chaleur, aussi lumineuse qu'une torche, jusqu'à dissipation. Rubis de 50 po consommé.",
-     "cls": true
+     "cls": true,
+     "en": "Continual Flame"
     },
     {
      "n": "Vision dans le noir",
@@ -1455,7 +1798,8 @@
      "p": "Contact",
      "c": false,
      "d": "Vision dans le noir à 45 m pendant 8 heures.",
-     "cls": true
+     "cls": true,
+     "en": "Darkvision"
     },
     {
      "n": "Amélioration de caractéristique",
@@ -1464,7 +1808,8 @@
      "p": "Contact",
      "c": true,
      "d": "Avantage aux tests d'une caractéristique choisie pendant 1 heure. Une cible de plus par niveau au-dessus de 2.",
-     "cls": true
+     "cls": true,
+     "en": "Enhance Ability"
     },
     {
      "n": "Agrandir/Rétrécir",
@@ -1474,7 +1819,8 @@
      "c": true,
      "d": "Agrandi : taille +1, avantage FOR, +1d4 aux dégâts d'arme. Rétréci : l'inverse.",
      "cls": true,
-     "save": "CON"
+     "save": "CON",
+     "en": "Enlarge/Reduce"
     },
     {
      "n": "Détection des pièges",
@@ -1483,7 +1829,8 @@
      "p": "36 m",
      "c": false,
      "d": "Tu sens la présence de pièges dans ta ligne de vue, sans savoir où.",
-     "cls": true
+     "cls": true,
+     "en": "Find Traps"
     },
     {
      "n": "Lame de feu",
@@ -1493,7 +1840,8 @@
      "c": true,
      "d": "Lame de feu dans ta main libre. Action Magie : attaque de sort au contact, 3d6+5 feu. Il faut une main libre.",
      "cls": true,
-     "atk": true
+     "atk": true,
+     "en": "Flame Blade"
     },
     {
      "n": "Sphère de feu",
@@ -1503,7 +1851,8 @@
      "c": true,
      "d": "Sphère de 1,5 m : 2d6 feu pour qui finit son tour à côté ou est percuté (DEX DD 17). Bonus : déplace-la de 9 m.",
      "cls": true,
-     "save": "DEX"
+     "save": "DEX",
+     "en": "Flaming Sphere"
     },
     {
      "n": "Bourrasque",
@@ -1513,7 +1862,8 @@
      "c": true,
      "d": "Ligne de vent : FOR DD 17 ou repoussée de 4,5 m, avancer contre le vent coûte double. Bonus : change la direction.",
      "cls": true,
-     "save": "FOR"
+     "save": "FOR",
+     "en": "Gust of Wind"
     },
     {
      "n": "Chauffer le métal",
@@ -1523,7 +1873,9 @@
      "c": true,
      "d": "Objet métallique brûlant : 2d8 feu par tour, le porteur lâche l'objet (CON DD 17) ou subit un désavantage. Bonus : dégâts à nouveau.",
      "cls": true,
-     "save": "CON"
+     "save": "CON",
+     "en": "Heat Metal",
+     "gid": "s-heat-metal"
     },
     {
      "n": "Localisation d'animaux ou de plantes",
@@ -1533,7 +1885,8 @@
      "c": false,
      "d": "Direction et distance de la bête ou de la plante cherchée la plus proche. Rituel.",
      "cls": true,
-     "ritual": true
+     "ritual": true,
+     "en": "Locate Animals or Plants"
     },
     {
      "n": "Localisation d'objet",
@@ -1542,7 +1895,9 @@
      "p": "Soi, 300 m",
      "c": true,
      "d": "Direction d'un objet connu ou du plus proche d'un type donné. Le plomb bloque le sort.",
-     "cls": true
+     "cls": true,
+     "en": "Locate Object",
+     "gid": "s-locate-object"
     },
     {
      "n": "Rayon de lune",
@@ -1552,7 +1907,8 @@
      "c": true,
      "d": "Rayon de 1,5 m : 2d10 radiant pour qui entre ou finit son tour dedans (CON DD 17). Action Magie : le déplacer de 18 m.",
      "cls": true,
-     "save": "CON"
+     "save": "CON",
+     "en": "Moonbeam"
     },
     {
      "n": "Protection contre le poison",
@@ -1561,7 +1917,8 @@
      "p": "Contact",
      "c": false,
      "d": "Neutralise un poison. 1 heure : avantage contre l'empoisonnement, résistance au poison.",
-     "cls": true
+     "cls": true,
+     "en": "Protection from Poison"
     },
     {
      "n": "Croissance d'épines",
@@ -1570,7 +1927,8 @@
      "p": "45 m",
      "c": true,
      "d": "Rayon de 6 m : terrain difficile, 2d4 perçant par 1,5 m parcourus. Très efficace avec Diable de poussière et Bourrasque.",
-     "cls": true
+     "cls": true,
+     "en": "Spike Growth"
     },
     {
      "n": "Convocation de bête",
@@ -1579,7 +1937,8 @@
      "p": "27 m",
      "c": true,
      "d": "Esprit bestial (terre, mer ou air) qui combat à tes côtés. Puissance selon le niveau de l'emplacement.",
-     "cls": true
+     "cls": true,
+     "en": "Summon Beast"
     },
     {
      "n": "Appel de la foudre",
@@ -1590,7 +1949,8 @@
      "d": "Nuage d'orage : éclair sur un point, DEX DD 17, 3d10 foudre, moitié si réussi. Action Magie à chaque tour, +1d10 par temps d'orage.",
      "cls": true,
      "pre": true,
-     "save": "DEX"
+     "save": "DEX",
+     "en": "Call Lightning"
     },
     {
      "n": "Invocation d'animaux",
@@ -1601,7 +1961,8 @@
      "d": "Meute spectrale qui te suit : 3d10 tranchant pour les ennemis qui s'en approchent (DEX DD 17). Avantage aux jets de FOR à 1,5 m d'elle.",
      "cls": true,
      "pre": true,
-     "save": "DEX"
+     "save": "DEX",
+     "en": "Conjure Animals"
     },
     {
      "n": "Dissipation de la magie",
@@ -1611,7 +1972,8 @@
      "c": false,
      "d": "Met fin aux sorts de niveau inférieur ou égal à l'emplacement. Au-delà : test de SAG (+5) contre DD 10 + niveau du sort.",
      "cls": true,
-     "pre": true
+     "pre": true,
+     "en": "Dispel Magic"
     },
     {
      "n": "Retour à la vie",
@@ -1621,7 +1983,8 @@
      "c": false,
      "d": "Ramène une créature morte depuis moins d'une minute, à 1 PV. Diamant de 300 po consommé.",
      "cls": true,
-     "pre": true
+     "pre": true,
+     "en": "Revivify"
     },
     {
      "n": "Boule de feu",
@@ -1636,7 +1999,8 @@
       "n": 4
      },
      "src": "Fukuro Kaen",
-     "grp": "Pouvoirs d'objets"
+     "grp": "Pouvoirs d'objets",
+     "en": "Fireball"
     },
     {
      "n": "Mot de guérison de groupe",
@@ -1650,7 +2014,8 @@
       "n": 3
      },
      "src": "Bâton de l'Assistant",
-     "grp": "Pouvoirs d'objets"
+     "grp": "Pouvoirs d'objets",
+     "en": "Mass Healing Word"
     },
     {
      "n": "Communication à distance",
@@ -1664,7 +2029,8 @@
       "n": 1
      },
      "src": "Pierres de communication",
-     "grp": "Pouvoirs d'objets"
+     "grp": "Pouvoirs d'objets",
+     "en": "Sending"
     },
     {
      "n": "Aura de vitalité",
@@ -1673,7 +2039,8 @@
      "p": "Émanation de 9 m",
      "c": true,
      "d": "Bonus à chaque tour : une créature de l'aura récupère 2d6 PV. 1 minute.",
-     "cls": true
+     "cls": true,
+     "en": "Aura of Vitality"
     },
     {
      "n": "Lumière du jour",
@@ -1682,7 +2049,8 @@
      "p": "18 m",
      "c": false,
      "d": "Sphère de lumière vive de 18 m pendant 1 heure. Dissipe les ténèbres magiques de niveau 3 ou moins.",
-     "cls": true
+     "cls": true,
+     "en": "Daylight"
     },
     {
      "n": "Arme élémentaire",
@@ -1691,7 +2059,8 @@
      "p": "Contact",
      "c": true,
      "d": "Arme non magique : +2 à l'attaque et dégâts élémentaires en plus. 1 heure.",
-     "cls": true
+     "cls": true,
+     "en": "Elemental Weapon"
     },
     {
      "n": "Mort simulée",
@@ -1701,7 +2070,8 @@
      "c": false,
      "d": "Une créature consentante paraît morte 1 heure, résistance à tous les dégâts sauf psychiques. Rituel.",
      "cls": true,
-     "ritual": true
+     "ritual": true,
+     "en": "Feign Death"
     },
     {
      "n": "Fusion dans la pierre",
@@ -1711,7 +2081,8 @@
      "c": false,
      "d": "Tu te fonds dans une surface de pierre pendant 8 heures. Rituel.",
      "cls": true,
-     "ritual": true
+     "ritual": true,
+     "en": "Meld into Stone"
     },
     {
      "n": "Croissance végétale",
@@ -1720,7 +2091,8 @@
      "p": "45 m",
      "c": false,
      "d": "Plantes d'un rayon de 30 m si denses que chaque pied parcouru en coûte 4. Ou récoltes doublées pendant 8 heures.",
-     "cls": true
+     "cls": true,
+     "en": "Plant Growth"
     },
     {
      "n": "Protection contre l'énergie",
@@ -1729,7 +2101,8 @@
      "p": "Contact",
      "c": true,
      "d": "Résistance à un type de dégâts : acide, froid, feu, foudre ou tonnerre. 1 heure.",
-     "cls": true
+     "cls": true,
+     "en": "Protection from Energy"
     },
     {
      "n": "Tempête de neige",
@@ -1739,7 +2112,8 @@
      "c": true,
      "d": "Zone fortement obscurcie, terrain difficile, créatures à terre (DEX DD 17). Casse la concentration des lanceurs.",
      "cls": true,
-     "save": "DEX"
+     "save": "DEX",
+     "en": "Sleet Storm"
     },
     {
      "n": "Communication avec les plantes",
@@ -1748,7 +2122,8 @@
      "p": "Soi, 9 m",
      "c": false,
      "d": "10 minutes : parle aux plantes, rend praticable ou infranchissable un terrain végétal.",
-     "cls": true
+     "cls": true,
+     "en": "Speak with Plants"
     },
     {
      "n": "Convocation de fée",
@@ -1757,7 +2132,8 @@
      "p": "27 m",
      "c": true,
      "d": "Esprit fée (furieux, joyeux ou rusé) qui combat à tes côtés. À ne pas confondre avec Invocation de fée (niveau 6).",
-     "cls": true
+     "cls": true,
+     "en": "Summon Fey"
     },
     {
      "n": "Respiration aquatique",
@@ -1767,7 +2143,8 @@
      "c": false,
      "d": "Jusqu'à dix créatures respirent sous l'eau 24 heures. Rituel.",
      "cls": true,
-     "ritual": true
+     "ritual": true,
+     "en": "Water Breathing"
     },
     {
      "n": "Marche sur l'onde",
@@ -1777,7 +2154,8 @@
      "c": false,
      "d": "Jusqu'à dix créatures marchent sur les liquides 1 heure. Rituel.",
      "cls": true,
-     "ritual": true
+     "ritual": true,
+     "en": "Water Walk"
     },
     {
      "n": "Mur de vent",
@@ -1787,7 +2165,8 @@
      "c": true,
      "d": "Mur de vent de 15 m de long : 4d8 contondant (FOR DD 17, moitié si réussi). Dévie flèches et projectiles, bloque gaz et petits volants.",
      "cls": true,
-     "save": "FOR"
+     "save": "FOR",
+     "en": "Wind Wall"
     },
     {
      "n": "Métamorphose",
@@ -1798,7 +2177,8 @@
      "d": "Transforme une créature en bête. Sur un ennemi : neutralise un boss. Sur un allié : réservoir de PV et bête puissante.",
      "cls": true,
      "pre": true,
-     "save": "SAG"
+     "save": "SAG",
+     "en": "Polymorph"
     },
     {
      "n": "Confusion",
@@ -1809,7 +2189,8 @@
      "d": "Sphère de 3 m : plus d'action bonus ni de réaction, comportement tiré au 1d10 au début du tour. Nouveau jet à chaque fin de tour.",
      "cls": true,
      "pre": true,
-     "save": "SAG"
+     "save": "SAG",
+     "en": "Confusion"
     },
     {
      "n": "Flétrissement",
@@ -1820,7 +2201,9 @@
      "d": "8d8 nécrotique, moitié si réussi. Une plante échoue automatiquement.",
      "cls": true,
      "pre": true,
-     "save": "CON"
+     "save": "CON",
+     "en": "Blight",
+     "gid": "s-blight"
     },
     {
      "n": "Charme-monstre",
@@ -1830,7 +2213,8 @@
      "c": false,
      "d": "Comme Charme-personne, sur n'importe quelle créature, 1 heure. Une cible de plus par niveau au-dessus de 4.",
      "cls": true,
-     "save": "SAG"
+     "save": "SAG",
+     "en": "Charm Monster"
     },
     {
      "n": "Invocation d'élémentaires mineurs",
@@ -1839,7 +2223,8 @@
      "p": "Émanation de 4,5 m",
      "c": true,
      "d": "Tes attaques contre une créature de l'émanation infligent 2d8 dégâts élémentaires en plus. Terrain difficile pour tes ennemis.",
-     "cls": true
+     "cls": true,
+     "en": "Conjure Minor Elementals"
     },
     {
      "n": "Invocation d'êtres sylvestres",
@@ -1849,7 +2234,8 @@
      "c": true,
      "d": "Esprits fées qui frappent les ennemis proches : 5d8 force (SAG DD 17, moitié si réussi). Bonus : Se désengager.",
      "cls": true,
-     "save": "SAG"
+     "save": "SAG",
+     "en": "Conjure Woodland Beings"
     },
     {
      "n": "Contrôle de l'eau",
@@ -1858,7 +2244,8 @@
      "p": "90 m",
      "c": true,
      "d": "Inondation, séparation des eaux, détournement du courant ou tourbillon.",
-     "cls": true
+     "cls": true,
+     "en": "Control Water"
     },
     {
      "n": "Divination",
@@ -1868,7 +2255,8 @@
      "c": false,
      "d": "Une question à une entité divine sur un objectif ou un événement dans les 7 prochains jours. Rituel.",
      "cls": true,
-     "ritual": true
+     "ritual": true,
+     "en": "Divination"
     },
     {
      "n": "Domination de bête",
@@ -1878,7 +2266,8 @@
      "c": true,
      "d": "Une bête qui rate son jet de SAG est charmée et obéit à tes ordres télépathiques.",
      "cls": true,
-     "save": "SAG"
+     "save": "SAG",
+     "en": "Dominate Beast"
     },
     {
      "n": "Bouclier de feu",
@@ -1887,7 +2276,8 @@
      "p": "Soi",
      "c": false,
      "d": "10 minutes, sans concentration : résistance au froid ou au feu, riposte de 2d8 contre qui te frappe au contact.",
-     "cls": true
+     "cls": true,
+     "en": "Fire Shield"
     },
     {
      "n": "Fontaine de clair de lune",
@@ -1896,7 +2286,8 @@
      "p": "Soi",
      "c": true,
      "d": "Résistance radiant, +2d6 radiant au corps à corps, réaction aveuglante (CON DD 17).",
-     "cls": true
+     "cls": true,
+     "en": "Fount of Moonlight"
     },
     {
      "n": "Liberté de mouvement",
@@ -1905,7 +2296,8 @@
      "p": "Contact",
      "c": false,
      "d": "1 heure : le terrain difficile ne ralentit pas, pas de paralysie ni d'entrave magique.",
-     "cls": true
+     "cls": true,
+     "en": "Freedom of Movement"
     },
     {
      "n": "Insecte géant",
@@ -1914,7 +2306,8 @@
      "p": "18 m",
      "c": true,
      "d": "Esprit insecte géant (mille-pattes, araignée ou guêpe) qui combat à tes côtés.",
-     "cls": true
+     "cls": true,
+     "en": "Giant Insect"
     },
     {
      "n": "Liane avide",
@@ -1924,7 +2317,8 @@
      "c": true,
      "d": "Attaque de sort au contact : 4d8 contondant, cible tirée de 9 m et agrippée. Action bonus : laisse ton action libre.",
      "cls": true,
-     "atk": true
+     "atk": true,
+     "en": "Grasping Vine"
     },
     {
      "n": "Terrain hallucinatoire",
@@ -1933,7 +2327,8 @@
      "p": "90 m",
      "c": false,
      "d": "Un terrain naturel ressemble à un autre pendant 24 heures. Incantation : 10 minutes.",
-     "cls": true
+     "cls": true,
+     "en": "Hallucinatory Terrain"
     },
     {
      "n": "Tempête de grêle",
@@ -1943,7 +2338,8 @@
      "c": false,
      "d": "Cylindre de 6 m : 2d10 contondant + 4d6 froid (DEX DD 17), terrain difficile.",
      "cls": true,
-     "save": "DEX"
+     "save": "DEX",
+     "en": "Ice Storm"
     },
     {
      "n": "Localisation de créature",
@@ -1952,7 +2348,8 @@
      "p": "Soi, 300 m",
      "c": true,
      "d": "Direction d'une créature connue ou de la plus proche d'un type donné. L'eau courante bloque le sort.",
-     "cls": true
+     "cls": true,
+     "en": "Locate Creature"
     },
     {
      "n": "Façonnage de la pierre",
@@ -1961,7 +2358,8 @@
      "p": "Contact",
      "c": false,
      "d": "Façonne un objet ou une surface de pierre de taille M ou inférieure.",
-     "cls": true
+     "cls": true,
+     "en": "Stone Shape"
     },
     {
      "n": "Peau de pierre",
@@ -1970,7 +2368,8 @@
      "p": "Contact",
      "c": true,
      "d": "Résistance aux dégâts contondants, perforants et tranchants. Poussière de diamant de 100 po consommée.",
-     "cls": true
+     "cls": true,
+     "en": "Stoneskin"
     },
     {
      "n": "Convocation d'élémentaire",
@@ -1979,7 +2378,8 @@
      "p": "27 m",
      "c": true,
      "d": "Esprit élémentaire (air, terre, feu ou eau) qui combat à tes côtés.",
-     "cls": true
+     "cls": true,
+     "en": "Summon Elemental"
     },
     {
      "n": "Mur de feu",
@@ -1989,7 +2389,8 @@
      "c": true,
      "d": "Mur de 18 m ou anneau : 5d8 feu à l'apparition (DEX DD 17), puis à chaque passage ou fin de tour à 3 m.",
      "cls": true,
-     "save": "DEX"
+     "save": "DEX",
+     "en": "Wall of Fire"
     },
     {
      "n": "Voyage par les arbres",
@@ -1999,7 +2400,8 @@
      "c": true,
      "d": "Entre dans un arbre et ressors d'un arbre de même espèce à 150 m. Excellent pour se replacer.",
      "cls": true,
-     "pre": true
+     "pre": true,
+     "en": "Tree Stride"
     },
     {
      "n": "Colonne de flamme",
@@ -2014,7 +2416,8 @@
       "n": 6
      },
      "src": "Fukuro Kaen",
-     "grp": "Pouvoirs d'objets"
+     "grp": "Pouvoirs d'objets",
+     "en": "Flame Strike"
     },
     {
      "n": "Restauration supérieure",
@@ -2028,7 +2431,8 @@
       "n": 4
      },
      "src": "Bâton de l'Assistant",
-     "grp": "Pouvoirs d'objets"
+     "grp": "Pouvoirs d'objets",
+     "en": "Greater Restoration"
     },
     {
      "n": "Quête",
@@ -2039,7 +2443,8 @@
      "d": "Ordre imposé pendant 30 jours. Agir contre l'ordre inflige 5d10 psychiques. Incantation : 1 minute.",
      "cls": true,
      "pre": true,
-     "save": "SAG"
+     "save": "SAG",
+     "en": "Geas"
     },
     {
      "n": "Scrutation",
@@ -2050,7 +2455,8 @@
      "d": "Observer à distance une créature du même plan. Incantation : 10 minutes.",
      "cls": true,
      "pre": true,
-     "save": "SAG"
+     "save": "SAG",
+     "en": "Scrying"
     },
     {
      "n": "Barrière antivie",
@@ -2059,7 +2465,8 @@
      "p": "Émanation de 3 m",
      "c": true,
      "d": "Les créatures hors morts-vivants et artificielles ne peuvent entrer dans l'aura ni t'atteindre au contact.",
-     "cls": true
+     "cls": true,
+     "en": "Antilife Shell"
     },
     {
      "n": "Éveil",
@@ -2068,7 +2475,8 @@
      "p": "Contact",
      "c": false,
      "d": "Une bête ou une plante gagne INT 10 et la parole. Incantation : 8 heures. Agate de 1 000 po.",
-     "cls": true
+     "cls": true,
+     "en": "Awaken"
     },
     {
      "n": "Communion avec la nature",
@@ -2078,7 +2486,8 @@
      "c": false,
      "d": "Trois faits sur le terrain dans un rayon de 5 km. Rituel.",
      "cls": true,
-     "ritual": true
+     "ritual": true,
+     "en": "Commune with Nature"
     },
     {
      "n": "Cône de froid",
@@ -2088,7 +2497,8 @@
      "c": false,
      "d": "8d8 froid, moitié si réussi. Une créature tuée devient une statue gelée.",
      "cls": true,
-     "save": "CON"
+     "save": "CON",
+     "en": "Cone of Cold"
     },
     {
      "n": "Invocation d'élémentaire",
@@ -2098,7 +2508,8 @@
      "c": true,
      "d": "Esprit élémentaire dans un cube de 3 m : DEX et dégâts selon l'élément pour qui entre ou approche.",
      "cls": true,
-     "save": "DEX"
+     "save": "DEX",
+     "en": "Conjure Elemental"
     },
     {
      "n": "Contagion",
@@ -2108,7 +2519,8 @@
      "c": false,
      "d": "11d8 nécrotique et empoisonné. Trois échecs aux jets suivants : la cible est malade 7 jours.",
      "cls": true,
-     "save": "CON"
+     "save": "CON",
+     "en": "Contagion"
     },
     {
      "n": "Fléau d'insectes",
@@ -2118,7 +2530,8 @@
      "c": true,
      "d": "Nuée de criquets sur 6 m de rayon : 4d10 perçant (CON DD 17). Zone obscurcie, terrain difficile.",
      "cls": true,
-     "save": "CON"
+     "save": "CON",
+     "en": "Insect Plague"
     },
     {
      "n": "Soins de groupe",
@@ -2127,7 +2540,8 @@
      "p": "18 m",
      "c": false,
      "d": "Jusqu'à six créatures d'une sphère de 9 m récupèrent 5d8+5 PV.",
-     "cls": true
+     "cls": true,
+     "en": "Mass Cure Wounds"
     },
     {
      "n": "Contrat planaire",
@@ -2137,7 +2551,8 @@
      "c": false,
      "d": "Lie un céleste, élémentaire, fée ou fiélon à ton service 24 heures. Incantation : 1 heure.",
      "cls": true,
-     "save": "CHA"
+     "save": "CHA",
+     "en": "Planar Binding"
     },
     {
      "n": "Réincarnation",
@@ -2146,7 +2561,8 @@
      "p": "Contact",
      "c": false,
      "d": "Ramène à la vie une créature morte depuis moins de 10 jours, dans un nouveau corps. Incantation : 1 heure.",
-     "cls": true
+     "cls": true,
+     "en": "Reincarnate"
     },
     {
      "n": "Mur de pierre",
@@ -2156,7 +2572,8 @@
      "c": true,
      "d": "Mur de dix panneaux de 3 m. Devient permanent si tu maintiens la concentration toute la durée.",
      "cls": true,
-     "save": "DEX"
+     "save": "DEX",
+     "en": "Wall of Stone"
     },
     {
      "n": "Guérison",
@@ -2166,7 +2583,8 @@
      "c": false,
      "d": "Rend 70 PV et met fin à aveuglé, assourdi et empoisonné. Ton plus gros soin.",
      "cls": true,
-     "pre": true
+     "pre": true,
+     "en": "Heal"
     },
     {
      "n": "Invocation de fée",
@@ -2177,7 +2595,8 @@
      "d": "Esprit fée qui attaque aussitôt au contact : 3d12+5 psychique et cible effrayée. Bonus : téléporte l'esprit de 9 m et refait l'attaque.",
      "cls": true,
      "pre": true,
-     "atk": true
+     "atk": true,
+     "en": "Conjure Fey"
     },
     {
      "n": "Orientation",
@@ -2186,7 +2605,8 @@
      "p": "Soi",
      "c": true,
      "d": "Chemin le plus direct vers un lieu fixe du même plan pendant 1 jour. Incantation : 1 minute.",
-     "cls": true
+     "cls": true,
+     "en": "Find the Path"
     },
     {
      "n": "Pétrification",
@@ -2196,7 +2616,8 @@
      "c": true,
      "d": "Cible entravée, jet de CON à chaque tour. Trois échecs : pétrifiée. Trois réussites : fin du sort.",
      "cls": true,
-     "save": "CON"
+     "save": "CON",
+     "en": "Flesh to Stone"
     },
     {
      "n": "Festin des héros",
@@ -2205,7 +2626,8 @@
      "p": "Soi",
      "c": false,
      "d": "Banquet pour 12 : +2d10 PV max, immunité à la peur et au poison pendant 24 heures. Incantation : 10 minutes, coupe de 1 000 po.",
-     "cls": true
+     "cls": true,
+     "en": "Heroes' Feast"
     },
     {
      "n": "Glissement de terrain",
@@ -2214,7 +2636,8 @@
      "p": "36 m",
      "c": true,
      "d": "Remodèle la terre d'une zone de 12 m de côté toutes les 10 minutes, pendant 2 heures.",
-     "cls": true
+     "cls": true,
+     "en": "Move Earth"
     },
     {
      "n": "Rayon de soleil",
@@ -2224,7 +2647,8 @@
      "c": true,
      "d": "6d8 radiant et aveuglé (CON DD 17, moitié sans cécité si réussi). Action Magie : nouvelle ligne à chaque tour.",
      "cls": true,
-     "save": "CON"
+     "save": "CON",
+     "en": "Sunbeam"
     },
     {
      "n": "Voyage par les plantes",
@@ -2233,7 +2657,8 @@
      "p": "3 m",
      "c": false,
      "d": "Relie une plante de taille G ou plus à une autre du même plan. Toute créature peut passer de l'une à l'autre.",
-     "cls": true
+     "cls": true,
+     "en": "Transport via Plants"
     },
     {
      "n": "Mur d'épines",
@@ -2243,7 +2668,8 @@
      "c": true,
      "d": "Mur de 18 m : 7d8 perçant à l'apparition (DEX DD 17), traverser coûte du mouvement et inflige 7d8 tranchants.",
      "cls": true,
-     "save": "DEX"
+     "save": "DEX",
+     "en": "Wall of Thorns"
     },
     {
      "n": "Marche sur le vent",
@@ -2252,7 +2678,8 @@
      "p": "9 m",
      "c": false,
      "d": "Toi et jusqu'à dix créatures prenez une forme de brume, vol 90 m, 8 heures. Incantation : 1 minute.",
-     "cls": true
+     "cls": true,
+     "en": "Wind Walk"
     }
    ],
    "dc": 17,
@@ -2282,7 +2709,111 @@
      "pw": []
     }
    ],
-   "prepMax": 16
+   "prepMax": 16,
+   "feats": [
+    {
+     "n": "Forme sauvage",
+     "en": "Wild Shape",
+     "grp": "Druide 11",
+     "d": "Action bonus : tu prends une forme de bête apprise, pendant 5 heures. 3 utilisations par repos long, une récupérée par repos court. Formes de Facteur 1 maximum, vol autorisé."
+    },
+    {
+     "n": "Compagnon sauvage",
+     "en": "Wild Companion",
+     "grp": "Druide 11",
+     "d": "Action Magie : dépense un emplacement ou une Forme sauvage pour lancer Appel de familier sans composante matérielle. Le familier est une fée."
+    },
+    {
+     "n": "Résurgence sauvage",
+     "en": "Wild Resurgence",
+     "grp": "Druide 11",
+     "d": "Une fois par tour, sans Forme sauvage, tu peux en regagner une avec un emplacement. Inversement, 1 fois par repos long, une Forme sauvage donne un emplacement de niveau 1."
+    },
+    {
+     "n": "Fureur élémentaire",
+     "en": "Elemental Fury",
+     "grp": "Druide 11",
+     "d": "Incantation puissante : ajoute ton modificateur de SAG (+5) aux dégâts de tes sorts mineurs de druide."
+    },
+    {
+     "n": "Ordre primordial : Magicien",
+     "en": "Primal Order: Magician",
+     "grp": "Druide 11",
+     "d": "Un sort mineur de druide en plus, et +5 aux tests d'Arcanes ou de Nature."
+    },
+    {
+     "n": "Druidique",
+     "en": "Druidic",
+     "grp": "Druide 11",
+     "d": "Tu connais le druidique et as toujours Communication avec les animaux préparé. Tu peux laisser des messages cachés (Investigation DD 15 pour les repérer)."
+    },
+    {
+     "n": "Yeux de chouette",
+     "en": "Owl's Eyes",
+     "grp": "Cercle de la Chouette",
+     "d": "Capacité de sous-classe : action bonus pour révéler une résistance ou une immunité d'une créature. Voir l'onglet Ressources."
+    },
+    {
+     "n": "Murmures du lien",
+     "en": "Whispers of the Bond",
+     "grp": "Cercle de la Chouette",
+     "d": "Capacité de sous-classe : ajoute 1d4 à un test de SAG, INT ou CHA."
+    },
+    {
+     "n": "Hikari, l'Esprit éveillé",
+     "en": "Hikari, the Waking Spirit",
+     "grp": "Cercle de la Chouette",
+     "d": "Capacité de sous-classe : jauge d'âme après 1 minute d'observation."
+    },
+    {
+     "n": "Seiran, l'Esprit enveloppant",
+     "en": "Seiran, the Enfolding Spirit",
+     "grp": "Cercle de la Chouette",
+     "d": "Capacité de sous-classe : action bonus, CA +2 et vol de 10,5 m pendant 1 minute (6 par repos court selon la fiche D&D Beyond)."
+    },
+    {
+     "n": "Lignée des elfes des bois",
+     "en": "Wood Elf Lineage",
+     "grp": "Espèce : Elfe",
+     "d": "Vitesse 10,5 m. Grande foulée et Passage sans trace gratuits (1 fois par repos long chacun)."
+    },
+    {
+     "n": "Sens aiguisés",
+     "en": "Keen Senses",
+     "grp": "Espèce : Elfe",
+     "d": "Maîtrise de Perspicacité, Perception ou Survie."
+    },
+    {
+     "n": "Transe",
+     "en": "Trance",
+     "grp": "Espèce : Elfe",
+     "d": "Pas besoin de dormir, la magie ne peut pas t'endormir. Repos long en 4 heures de méditation consciente."
+    },
+    {
+     "n": "Ascendance féerique",
+     "en": "Fey Ancestry",
+     "grp": "Espèce : Elfe",
+     "d": "Avantage aux jets de sauvegarde pour éviter ou mettre fin à l'état Charmé."
+    },
+    {
+     "n": "Vision dans le noir",
+     "en": "Darkvision",
+     "grp": "Espèce : Elfe",
+     "d": "Tu vois dans le noir jusqu'à 18 m."
+    },
+    {
+     "n": "Observateur",
+     "en": "Observant",
+     "grp": "Dons",
+     "d": "Capacité de don personnalisée. Voir la fiche D&D Beyond."
+    },
+    {
+     "n": "Alerte",
+     "en": "Alert",
+     "grp": "Dons",
+     "d": "+4 à l'initiative. Après le jet, tu peux échanger ton initiative avec celle d'un allié consentant non neutralisé."
+    }
+   ]
   }
  ]
 }
