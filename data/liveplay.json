@@ -1,0 +1,523 @@
+{
+ "supabase": {
+  "url": "https://ebfcnmdcdtapgylbgslz.supabase.co",
+  "key": "sb_publishable_N3cKdZ0Gl7yJKLD73x9xpQ_Tim5DYBH"
+ },
+ "chars": [
+  {
+   "id": "philippa",
+   "nom": "Philippa Rougetoison",
+   "court": "Philippa",
+   "classe": "Occultiste 8 / Barde 3",
+   "portrait": "img/groupe/philippa-rougetoison.webp",
+   "chibi": "img/patch/chibi-philippa.webp",
+   "hp": 91,
+   "ca": 18,
+   "slots": {
+    "1": 4,
+    "2": 2
+   },
+   "pact": {
+    "n": 2,
+    "lvl": 4
+   },
+   "resources": [
+    {
+     "id": "bardic",
+     "nom": "Inspiration bardique (d6)",
+     "max": 5,
+     "reset": "long"
+    },
+    {
+     "id": "curse",
+     "nom": "Malédiction d'Hexblade",
+     "max": 1,
+     "reset": "court"
+    },
+    {
+     "id": "omen",
+     "nom": "Signe de Mauvais Augure (Bestow Curse)",
+     "max": 1,
+     "reset": "long"
+    },
+    {
+     "id": "misty",
+     "nom": "Misty Step (Fey Touched)",
+     "max": 1,
+     "reset": "long"
+    },
+    {
+     "id": "drow",
+     "nom": "Magie Drow",
+     "max": 1,
+     "reset": "long"
+    },
+    {
+     "id": "cart",
+     "nom": "Cartographe",
+     "max": 1,
+     "reset": "long"
+    },
+    {
+     "id": "specter",
+     "nom": "Spectre maudit",
+     "max": 1,
+     "reset": "long"
+    },
+    {
+     "id": "omencharge",
+     "nom": "Omen, Broken Sky (charges)",
+     "max": 3,
+     "reset": "aube"
+    },
+    {
+     "id": "ruee",
+     "nom": "Caput Tauri, Ruée du Chariot",
+     "max": 1,
+     "reset": "long"
+    }
+   ],
+   "spells": [
+    {
+     "n": "Eldritch Blast",
+     "lv": 0,
+     "t": "Action",
+     "p": "36 m",
+     "c": false,
+     "d": "3 rayons d'énergie (attaque de sort), 1d10 force chacun. Les rayons peuvent viser des cibles différentes."
+    },
+    {
+     "n": "Vicious Mockery",
+     "lv": 0,
+     "t": "Action",
+     "p": "18 m",
+     "c": false,
+     "d": "Jet de SAG : 2d6 psychique et désavantage au prochain jet d'attaque de la cible."
+    },
+    {
+     "n": "Mind Sliver",
+     "lv": 0,
+     "t": "Action",
+     "p": "18 m",
+     "c": false,
+     "d": "Jet d'INT : 2d6 psychique et la cible retranche 1d4 à son prochain jet de sauvegarde."
+    },
+    {
+     "n": "Toll the Dead",
+     "lv": 0,
+     "t": "Action",
+     "p": "18 m",
+     "c": false,
+     "d": "Jet de SAG : 3d8 nécrotique (3d12 si la cible est blessée)."
+    },
+    {
+     "n": "Bane",
+     "lv": 1,
+     "t": "Action",
+     "p": "9 m",
+     "c": true,
+     "d": "Jusqu'à 3 créatures, jet de CHA : elles retranchent 1d4 à leurs attaques et jets de sauvegarde. 1 minute."
+    },
+    {
+     "n": "Dissonant Whispers",
+     "lv": 1,
+     "t": "Action",
+     "p": "18 m",
+     "c": false,
+     "d": "Jet de SAG : 3d6 psychique et la cible fuit (réaction). Moitié des dégâts sans fuite si réussite."
+    },
+    {
+     "n": "Hellish Rebuke",
+     "lv": 1,
+     "t": "Réaction",
+     "p": "18 m",
+     "c": false,
+     "d": "En réponse à un dégât : jet de DEX, 2d10 feu (moitié si réussi)."
+    },
+    {
+     "n": "Shield",
+     "lv": 1,
+     "t": "Réaction",
+     "p": "Soi",
+     "c": false,
+     "d": "+5 CA jusqu'à ton prochain tour et annule Magic Missile."
+    },
+    {
+     "n": "Armor of Agathys",
+     "lv": 1,
+     "t": "Action",
+     "p": "Soi",
+     "c": false,
+     "d": "5 PV temporaires. Un attaquant au corps à corps subit 5 dégâts de froid tant qu'ils durent. +5 par niveau supérieur. 1 heure."
+    },
+    {
+     "n": "Hex",
+     "lv": 1,
+     "t": "Action bonus",
+     "p": "27 m",
+     "c": true,
+     "d": "Malédiction : +1d6 nécrotique sur chaque touche, désavantage aux tests d'une caractéristique choisie. 1 heure."
+    },
+    {
+     "n": "Faerie Fire",
+     "lv": 1,
+     "t": "Action",
+     "p": "18 m",
+     "c": true,
+     "d": "Cube de 6 m, jet de DEX : les cibles sont éclairées, avantage contre elles. 1 minute.",
+     "res": "drow"
+    },
+    {
+     "n": "Healing Word",
+     "lv": 1,
+     "t": "Action bonus",
+     "p": "18 m",
+     "c": false,
+     "d": "Une créature récupère 1d4 + CHA PV.",
+     "res": "cart"
+    },
+    {
+     "n": "Heat Metal",
+     "lv": 2,
+     "t": "Action",
+     "p": "18 m",
+     "c": true,
+     "d": "Objet en métal rougi : 2d8 feu par tour, désavantage si tenu. 1 minute."
+    },
+    {
+     "n": "Phantasmal Force",
+     "lv": 2,
+     "t": "Action",
+     "p": "18 m",
+     "c": true,
+     "d": "Illusion dans l'esprit d'une créature (INT) : 1d6 psychique par tour. 1 minute."
+    },
+    {
+     "n": "Silence",
+     "lv": 2,
+     "t": "Action",
+     "p": "36 m",
+     "c": true,
+     "d": "Sphère de 6 m sans son, aucun sort à composante verbale. 10 minutes (rituel)."
+    },
+    {
+     "n": "Calm Emotions",
+     "lv": 2,
+     "t": "Action",
+     "p": "18 m",
+     "c": true,
+     "d": "Zone de 6 m, jet de CHA : calme les émotions fortes. 1 minute."
+    },
+    {
+     "n": "Mind Spike",
+     "lv": 2,
+     "t": "Action",
+     "p": "18 m",
+     "c": true,
+     "d": "Jet de SAG : 3d8 psychique, tu connais sa position. 1 heure."
+    },
+    {
+     "n": "Misty Step",
+     "lv": 2,
+     "t": "Action bonus",
+     "p": "Soi",
+     "c": false,
+     "d": "Téléportation de 9 m vers un lieu visible.",
+     "res": "misty"
+    },
+    {
+     "n": "Darkness",
+     "lv": 2,
+     "t": "Action",
+     "p": "18 m",
+     "c": true,
+     "d": "Sphère de ténèbres de 4,5 m, la vision dans le noir ne la traverse pas. 10 minutes.",
+     "res": "drow"
+    },
+    {
+     "n": "Locate Object",
+     "lv": 2,
+     "t": "Action",
+     "p": "Soi",
+     "c": true,
+     "d": "Sens un objet connu à moins de 300 m. 10 minutes.",
+     "res": "cart"
+    },
+    {
+     "n": "Counterspell",
+     "lv": 3,
+     "t": "Réaction",
+     "p": "18 m",
+     "c": false,
+     "d": "Interrompt un sort de niveau 3 ou moins. Au-dessus : test de caractéristique DD 10 + niveau du sort."
+    },
+    {
+     "n": "Bestow Curse",
+     "lv": 3,
+     "t": "Action",
+     "p": "Contact",
+     "c": true,
+     "d": "Jet de SAG : au choix désavantage sur un test, désavantage contre toi, perte d'action ou +1d8 nécrotique. 1 minute en niv. 3, 8 heures au niv. 5 sans concentration.",
+     "res": "omen"
+    },
+    {
+     "n": "Summon Shadowspawn",
+     "lv": 3,
+     "t": "Action",
+     "p": "27 m",
+     "c": true,
+     "d": "Invoque un esprit d'ombre (Fureur, Peur ou Mélancolie). 1 heure."
+    },
+    {
+     "n": "Vampiric Touch",
+     "lv": 3,
+     "t": "Action",
+     "p": "Soi",
+     "c": true,
+     "d": "Attaque de sort au contact : 3d6 nécrotique et tu récupères la moitié. Renouvelable en action. 1 minute."
+    },
+    {
+     "n": "Staggering Smite",
+     "lv": 4,
+     "t": "Action bonus",
+     "p": "Soi",
+     "c": true,
+     "d": "Prochaine touche : +4d6 psychique, jet de SAG sinon désavantage et plus de réactions. 1 minute."
+    },
+    {
+     "n": "Shadow of Moil",
+     "lv": 4,
+     "t": "Action",
+     "p": "Soi",
+     "c": true,
+     "d": "Ombre autour de toi : désavantage aux attaques contre toi, 2d8 nécrotique aux attaquants. 1 minute."
+    },
+    {
+     "n": "Acceptation",
+     "lv": 1,
+     "t": "Selon la fiche",
+     "p": "Selon la fiche",
+     "c": false,
+     "d": "Sort de Thanaturgie (Loi de l'Équilibre). 1/repos long, coûte un emplacement.",
+     "src": "Loi de l'Équilibre"
+    },
+    {
+     "n": "Clémence du Seuil",
+     "lv": 1,
+     "t": "Selon la fiche",
+     "p": "Selon la fiche",
+     "c": false,
+     "d": "Sort de Thanaturgie (Loi de l'Équilibre). 1/repos long, coûte un emplacement.",
+     "src": "Loi de l'Équilibre"
+    },
+    {
+     "n": "Mémoire de la Chair",
+     "lv": 1,
+     "t": "Selon la fiche",
+     "p": "Selon la fiche",
+     "c": false,
+     "d": "Sort de Thanaturgie (Loi de l'Équilibre). 1/repos long, coûte un emplacement.",
+     "src": "Loi de l'Équilibre"
+    },
+    {
+     "n": "Poids de l'Éternité",
+     "lv": 3,
+     "t": "Selon la fiche",
+     "p": "Selon la fiche",
+     "c": false,
+     "d": "Sort de Thanaturgie (Loi de l'Équilibre). 1/repos long, coûte un emplacement.",
+     "src": "Loi de l'Équilibre"
+    },
+    {
+     "n": "Équilibre Forcé",
+     "lv": 3,
+     "t": "Selon la fiche",
+     "p": "Selon la fiche",
+     "c": false,
+     "d": "Sort de Thanaturgie (Loi de l'Équilibre). 1/repos long, coûte un emplacement.",
+     "src": "Loi de l'Équilibre"
+    },
+    {
+     "n": "Mandat des Dunes Ardentes",
+     "lv": 4,
+     "t": "Selon la fiche",
+     "p": "Selon la fiche",
+     "c": false,
+     "d": "Sort de Thanaturgie (Loi de l'Équilibre). 1/repos long, coûte un emplacement.",
+     "src": "Loi de l'Équilibre"
+    },
+    {
+     "n": "Couronnement du Repos Noir",
+     "lv": 2,
+     "t": "Action",
+     "p": "Selon l'arme",
+     "c": false,
+     "d": "Colonne de 3 m de rayon, jet de DEX DD 17 : 4d6 nécrotique.",
+     "src": "Requiem de la Reine-Morte"
+    },
+    {
+     "n": "Procession de la Tombe",
+     "lv": 3,
+     "t": "Action",
+     "p": "18 m",
+     "c": false,
+     "d": "Ligne de 18 m, jet de DEX DD 17 : 5d8 nécrotique.",
+     "src": "Requiem de la Reine-Morte"
+    },
+    {
+     "n": "Déni par la Garde",
+     "lv": 1,
+     "t": "Réaction",
+     "p": "Soi",
+     "c": false,
+     "d": "Réduit de 2d10 les dégâts d'un sort ou d'un projectile.",
+     "src": "Requiem de la Reine-Morte"
+    },
+    {
+     "n": "Blight",
+     "lv": 4,
+     "t": "Action",
+     "p": "9 m",
+     "c": false,
+     "d": "Jet de CON : 8d8 nécrotique. Emplacement de pacte de niveau 4 ou supérieur.",
+     "src": "La main du Reliquaire",
+     "pactonly": true
+    },
+    {
+     "n": "Veil Shield, Quiet Passing",
+     "lv": 4,
+     "t": "Action",
+     "p": "Soi",
+     "c": false,
+     "d": "Fire Shield sans concentration, 10 minutes, résistance radiant, 2d8 nécrotique aux attaquants au corps à corps.",
+     "src": "Scythe de la Lithurgie des Cendres"
+    },
+    {
+     "n": "Gravité Funèbre",
+     "lv": 1,
+     "t": "Réaction",
+     "p": "Selon l'arme",
+     "c": false,
+     "d": "Réduit de 2d8 les dégâts, désavantage à l'attaquant.",
+     "src": "Satellite du Monde Enseveli"
+    },
+    {
+     "n": "Orbite Brisée",
+     "lv": 4,
+     "t": "Action",
+     "p": "Selon l'arme",
+     "c": false,
+     "d": "Jet de CON DD 17 : 3d8 nécrotique et étourdi.",
+     "src": "Satellite du Monde Enseveli"
+    },
+    {
+     "n": "Effondrement du Monde",
+     "lv": 4,
+     "t": "Action",
+     "p": "Selon l'arme",
+     "c": false,
+     "d": "Rayon de 6 m, jet de FOR DD 17 : 4d10 et entravé.",
+     "src": "Satellite du Monde Enseveli"
+    },
+    {
+     "n": "Invisibility",
+     "lv": 2,
+     "t": "Action",
+     "p": "Contact",
+     "c": true,
+     "d": "Une créature devient invisible (1 heure) jusqu'à ce qu'elle attaque ou lance un sort.",
+     "src": "Balance et Entropie"
+    },
+    {
+     "n": "See Invisibility",
+     "lv": 2,
+     "t": "Action",
+     "p": "Soi",
+     "c": false,
+     "d": "1 heure : tu vois les créatures invisibles et le Plan Éthéré.",
+     "src": "Balance et Entropie"
+    },
+    {
+     "n": "Alter Self",
+     "lv": 2,
+     "t": "Action",
+     "p": "Soi",
+     "c": true,
+     "d": "1 heure : changement d'apparence.",
+     "src": "Balance et Entropie"
+    }
+   ]
+  },
+  {
+   "id": "jane",
+   "nom": "Jane Merigold",
+   "court": "Jane",
+   "classe": "Roublarde 11 (Arcane Trickster)",
+   "portrait": "img/groupe/jane-merigold.webp",
+   "chibi": "img/patch/chibi-jane.webp",
+   "hp": 80,
+   "ca": 17,
+   "slots": {
+    "1": 4,
+    "2": 3,
+    "3": 2
+   },
+   "pact": null,
+   "resources": [
+    {
+     "id": "double",
+     "nom": "Shadow Double (Shadow-Cat Armor)",
+     "max": 1,
+     "reset": "long"
+    },
+    {
+     "id": "bisection",
+     "nom": "La Mâchoire, Bisection",
+     "max": 1,
+     "reset": "long"
+    },
+    {
+     "id": "dechirure",
+     "nom": "La Mâchoire, Déchirure (réaction)",
+     "max": 1,
+     "reset": "long"
+    },
+    {
+     "id": "ruin",
+     "nom": "Ruin, Hollow Reign (charges)",
+     "max": 3,
+     "reset": "aube"
+    }
+   ],
+   "spells": []
+  },
+  {
+   "id": "harfang",
+   "nom": "Harfang Tsuren",
+   "court": "Harfang",
+   "classe": "Druide 11 (Cercle de la Lune)",
+   "portrait": "img/groupe/harfang-tsuren.webp",
+   "chibi": "img/patch/chibi-harfang.webp",
+   "hp": 102,
+   "ca": 18,
+   "slots": {
+    "1": 4,
+    "2": 3,
+    "3": 3,
+    "4": 3,
+    "5": 2,
+    "6": 1
+   },
+   "pact": null,
+   "resources": [
+    {
+     "id": "wild",
+     "nom": "Forme sauvage",
+     "max": 3,
+     "reset": "long"
+    }
+   ],
+   "spells": []
+  }
+ ]
+}

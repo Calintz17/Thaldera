@@ -4,7 +4,7 @@
 (() => {
 'use strict';
 
-const VER = '145';
+const VER = '146';
 const LEGACY_IDS = { 'bourre-piff':'bourpif', 'seravine':'solkah-barrow', 'tilda':'irna', 'cleff':'irna' };
 const EDIT = new URLSearchParams(location.search).has('edit');
 const $ = (s, r = document) => r.querySelector(s);
@@ -1174,6 +1174,8 @@ async function route() {
   const [path, qs] = raw.split('?');
   const id = decodeURIComponent(path || '');
   leavePatchNote();
+  leaveLive();
+  if (id === 'live') { renderLive(my); return; }
   if (id === 'patch' || id.startsWith('patch/')) {
     renderPatchNote(id === 'patch' ? '' : id.slice('patch/'.length), my);
     return;
@@ -1619,6 +1621,45 @@ async function renderPatchNote(slug, my) {
   if (b) b.classList.add('on');
   document.title = n.titre + ' - Thaldera Codex';
 }
+
+/* ---------- liveplay : tableau de bord joueurs et tour de controle ---------- */
+let LP_JS = null;
+function leaveLive() {
+  const page = $('.livepage', stageEl);
+  if (page) { if (window.Liveplay) window.Liveplay.unmount(); page.remove(); }
+  document.body.classList.remove('live-reading');
+  const b = $('#lpbtn');
+  if (b) b.classList.remove('on');
+}
+async function renderLive(my) {
+  window.__VER = VER;
+  if (!window.Liveplay) {
+    LP_JS = LP_JS || new Promise((res, rej) => { const s = document.createElement('script'); s.src = 'assets/liveplay.js?v=' + VER; s.onload = res; s.onerror = rej; document.head.appendChild(s); });
+    try { await LP_JS; } catch (e) { location.replace('#/'); return; }
+  }
+  if (my !== TOKEN) return;
+  leaveDocumentReader();
+  leavePatchNote();
+  journalMode(null, false);
+  sceneEl.classList.remove('is-world');
+  S.entry = null;
+  document.body.classList.add('live-reading');
+  const page = document.createElement('div');
+  page.className = 'livepage';
+  page.setAttribute('role', 'region');
+  page.setAttribute('aria-label', 'Liveplay');
+  page.innerHTML = '<div class="lp"></div>';
+  stageEl.appendChild(page);
+  page.scrollTop = 0;
+  const b = $('#lpbtn');
+  if (b) b.classList.add('on');
+  document.title = 'Liveplay - Thaldera Codex';
+  window.Liveplay.mount(page.firstChild);
+}
+function initLive() {
+  const btn = $('#lpbtn');
+  if (btn) btn.addEventListener('click', () => { location.hash = '#/live'; });
+}
 function initPatchNotes() {
   const btn = $('#pnbtn'), menu = $('#pnmenu');
   if (!btn || !menu) return;
@@ -1665,6 +1706,7 @@ function initPatchNotes() {
   initSessions();
   initDocuments();
   initPatchNotes();
+  initLive();
   window.addEventListener('hashchange', route);
   route();
 })();
