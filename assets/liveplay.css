@@ -510,3 +510,90 @@ body.live-reading.journal-open #scene { width: 60%; }
 .lp-srow h3 { white-space: nowrap; }
 .lp-pwi { gap: 8px; } .lp-pwi > :first-child { flex: 1 1 auto; min-width: 0; } .lp-pwi .lp-chip, .lp-pwi .chip { margin-left: auto; flex: none; white-space: nowrap; }
 .lp-pwi a, .lp-pwi .lp-gl { margin-right: 6px; }
+
+/* ===== v153 : grille unique pour cartes, armes, bandeau et monnaies ===== */
+.lp-sheet input[type=number] { -moz-appearance: textfield; appearance: textfield; }
+.lp-sheet input[type=number]::-webkit-inner-spin-button, .lp-sheet input[type=number]::-webkit-outer-spin-button { -webkit-appearance: none; margin: 0; }
+
+/* bandeau de stats */
+.lp-stats { container-type: inline-size; }
+.lp-srow { grid-template-columns: 128px minmax(0, 1fr); }
+.lp-srow h3 { white-space: normal; line-height: 1.3; letter-spacing: .12em; font-size: 10px; }
+.lp-stats .lp-tile { flex-wrap: wrap; white-space: normal; row-gap: 0; }
+@container (max-width: 900px) {
+  .lp-srow { grid-template-columns: minmax(0, 1fr); gap: 5px; }
+  .lp-srow h3 { border: 0; padding: 0; }
+  .lp-stats .lp-r6 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .lp-stats .lp-r7 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  .lp-stats .lp-tile { flex-direction: column; align-items: center; gap: 0; padding: 4px 2px; }
+}
+
+/* monnaies */
+.lp-coinbar { gap: 6px 8px; }
+.lp-coinbar .lp-coin { gap: 6px; padding: 2px 4px 2px 8px; border-radius: 99px; background: rgba(255,255,255,.04); border: 1px solid rgba(255,255,255,.1); }
+.lp-coinbar .lp-coin span { display: inline-flex; align-items: center; gap: 5px; }
+.lp-coinbar .lp-coin span::before { content: ''; width: 9px; height: 9px; border-radius: 50%; background: var(--cc, #d6b676); box-shadow: 0 0 0 1px rgba(0,0,0,.4) inset; }
+.lp-coin[data-k=pp] { --cc: #cfd8e3; } .lp-coin[data-k=gp] { --cc: #e0b84c; } .lp-coin[data-k=ist] { --cc: #7fc4b5; } .lp-coin[data-k=sp] { --cc: #aab2bb; } .lp-coin[data-k=cp] { --cc: #c0794a; }
+.lp-coinbar .lp-coin input { width: 54px; border: 0; background: transparent; text-align: right; padding: 2px 6px; font-size: 13px; }
+.lp-coinbar .lp-coin input:focus { outline: 1px solid var(--lp-gold); border-radius: 6px; }
+
+/* ressources du haut */
+.lp-rgrid .lp-row.res { min-height: 44px; }
+.lp-rgrid .lp-nm { display: flex; flex-wrap: wrap; align-items: center; column-gap: 7px; min-width: 0; }
+.lp-rgrid .lp-nm > b { font: 600 13.5px/1.25 var(--body); color: #f3f5f9; }
+.lp-rgrid .lp-nm > small { flex-basis: 100%; font-size: 11.5px; line-height: 1.3; color: var(--lp-mut); letter-spacing: 0; text-transform: none; margin-top: 1px; }
+.lp-rgrid .lp-nm .ico { margin: 0; }
+.lp-ipw { display: inline-flex; align-items: center; gap: 6px; flex: none; }
+
+/* cartes d'actions et de sorts : titre, ligne meta, ligne de commandes */
+.lp-sheet .lp-spell { display: flex; flex-direction: column; gap: 5px; padding: 10px 12px; }
+.lp-sheet .lp-sname { display: flex; flex-direction: column; gap: 1px; flex: none; width: 100%; text-align: left; padding: 0; background: none; border: 0; color: inherit; cursor: pointer; }
+.lp-sheet .lp-sname .lp-tt { display: flex; align-items: center; }
+.lp-sheet .lp-sname .lp-tt b { font: 700 16px/1.25 var(--body); color: #fff; }
+.lp-sheet .lp-sname .lp-en { display: block; margin: 0 0 0 19px; }
+.lp-sheet .lp-mrow { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 12px; margin: 0 0 0 19px; min-height: 18px; }
+.lp-sheet .lp-mrow .lp-meta { display: flex; gap: 14px; margin: 0; font-size: 12.5px; color: var(--lp-mut); }
+.lp-sheet .lp-mrow .lp-tag { font-size: 11px; padding: 1px 7px; }
+.lp-ctl { display: grid; grid-template-columns: minmax(0, 1fr) 78px 64px; gap: 6px; align-items: center; margin-top: 3px; }
+.lp-ctl > div { min-width: 0; display: flex; }
+.lp-ctl button, .lp-ctl select, .lp-ctl .lp-slotchip { box-sizing: border-box; width: 100%; height: 30px; margin: 0; padding: 0 8px; display: inline-flex; align-items: center; justify-content: center; font: 700 12.5px var(--body); line-height: 1; min-width: 0; max-width: none; }
+.lp-ctl .lp-slotchip { justify-content: center; overflow: hidden; text-overflow: ellipsis; border-radius: 8px; }
+.lp-ctl select { justify-content: flex-start; padding: 0 6px; }
+.lp-ctl.sm { grid-template-columns: minmax(0, 1fr) 72px 52px; gap: 5px; }
+.lp-ctl.sm button, .lp-ctl.sm select, .lp-ctl.sm .lp-slotchip { height: 26px; font-size: 12px; }
+.lp-acol .lp-agrid { gap: 8px; }
+.lp-act .lp-mrow:empty { display: none; }
+
+/* armes */
+.lp-weapon { display: flex; flex-direction: column; gap: 8px; padding: 12px 14px; }
+.lp-weapon header { display: flex; flex-direction: column; gap: 3px; margin: 0; }
+.lp-weapon .lp-eqhead { display: flex; align-items: center; justify-content: space-between; gap: 10px; width: 100%; }
+.lp-weapon .lp-eqhead h4 { flex: 1; min-width: 0; margin: 0; font: 700 16px/1.25 var(--body); }
+.lp-weapon .lp-eqb { margin-left: 0; flex: none; }
+.lp-weapon .lp-arc { align-self: flex-start; text-align: left; }
+.lp-wstat { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin: 0; }
+.lp-wstat > span { display: block; }
+.lp-sheet .lp-roll { display: grid; grid-template-columns: 17px minmax(0, 1fr); grid-template-rows: none; column-gap: 8px; align-items: start; min-height: 52px; padding: 8px 10px; text-align: left; }
+.lp-sheet .lp-roll .uic { grid-row: auto; grid-column: 1; margin: 2px 0 0; }
+.lp-sheet .lp-roll > .tx { grid-column: 2; grid-row: auto; display: flex; flex-direction: column; gap: 2px; min-width: 0; font: inherit; letter-spacing: 0; text-transform: none; color: inherit; }
+.lp-sheet .lp-roll > .tx > span { display: block; font: 700 10px var(--body); letter-spacing: .12em; text-transform: uppercase; color: var(--lp-gold); }
+.lp-sheet .lp-roll > .tx > b { display: block; font: 700 15px/1.25 var(--body); color: #fff; white-space: normal; overflow-wrap: anywhere; }
+.lp-sheet .lp-weapon p.lp-wnote { margin: 0; font-size: 13.5px; line-height: 1.45; }
+.lp-pwl { list-style: none; margin: 2px 0 0; padding: 0; display: flex; flex-direction: column; gap: 8px; }
+.lp-pwi { display: flex; flex-direction: column; align-items: stretch; gap: 5px; padding: 8px 0 0; border-top: 1px solid rgba(255,255,255,.07); }
+.lp-pwi.plain { font-size: 13px; color: #cdd5e2; }
+.lp-sheet .lp-pwi .lp-pw { display: flex; align-items: center; gap: 0; width: 100%; flex: none; padding: 0; text-align: left; }
+.lp-sheet .lp-pwi .lp-pw span { text-decoration: underline dotted; text-underline-offset: 3px; font: 600 14px/1.25 var(--body); }
+.lp-pwi .lp-btns, .lp-pwi .lp-pst { display: none; }
+.lp-rgrid .lp-row.res.ipw { flex-direction: column; align-items: stretch; gap: 6px; }
+.lp-rgrid .lp-row.res.ipw .lp-nm { flex-wrap: nowrap; display: grid; grid-template-columns: 14px minmax(0, 1fr); column-gap: 7px; align-items: center; }
+.lp-rgrid .lp-row.res.ipw .lp-nm small { grid-column: 2; }
+.lp-rgrid .lp-row.res.ipw .lp-ipw { display: grid; grid-template-columns: minmax(0, 1fr) 72px; gap: 6px; }
+.lp-ipw .lp-slotchip.sm, .lp-ipw .lp-cast.sm { height: 26px; display: inline-flex; align-items: center; justify-content: center; box-sizing: border-box; padding: 0 8px; font-size: 12px; border-radius: 8px; }
+.lp-sheet .lp-weapon ul.lp-pwl { padding-left: 0; margin-left: 0; }
+.lp-weapon .lp-eqb { display: inline-flex; align-items: center; justify-content: center; height: 28px; padding: 0 12px; line-height: 1; box-sizing: border-box; }
+.lp-stats .lp-r7 .lp-tile { gap: 5px; padding: 3px 2px; flex-wrap: nowrap; }
+.lp-stats .lp-r7 .lp-tile span { font-size: 9.5px; letter-spacing: .08em; white-space: nowrap; }
+.lp-stats .lp-r7 .lp-tile b { font-size: 18px; }
+@container (max-width: 900px) { .lp-stats .lp-r7 .lp-tile { flex-direction: column; flex-wrap: wrap; gap: 0; } }
+.lp-rgrid .lp-row.res.ipw .lp-pips { width: 100%; flex: none; }

@@ -61,6 +61,8 @@
   };
   const ico = t => ICO[t] || '';
   const im = (n, cl) => `<img class="uic ${cl || ''}" src="img/ui/${n}.png" alt="" width="20" height="20" decoding="async">`;
+  const RESET_NAME = { court: 'Repos court', long: 'Repos long', aube: 'À l\'aube', ws: 'Forme sauvage' };
+  const ctl = (a, b, d, cl) => `<div class="lp-ctl ${cl || ''}"><div class="c1">${a || ''}</div><div class="c2">${b || ''}</div><div class="c3">${d || ''}</div></div>`;
   const RIC = { bardic: 'bardic', sup: 'superiority', ws: 'wildshape' };
   const SV = {
     ca: '<svg class="si" viewBox="0 0 16 16"><path d="M8 1.5l5.5 2v4.2c0 3.3-2.3 5.6-5.5 6.8C4.8 13.3 2.5 11 2.5 7.7V3.5z"/></svg>',
@@ -88,7 +90,7 @@
     const m = /(\d+)d(\d+)(?:\s*\+\s*(\d+)(?!\d|d))?/.exec(sp.d || ''); if (!m) return null;
     let n = +m[1], f = +m[2], flat = +(m[3] || 0), mult = 1;
     const ray = /(\d+) rayons/.exec(sp.d), dart = /(\d+) fléchettes/.exec(sp.d);
-    if (ray) mult = +ray[1]; if (dart) mult = +dart[1] + Math.max(0, lvl - sp.lv);
+    if (ray) mult = +ray[1] + (sp.lv > 0 ? Math.max(0, lvl - sp.lv) : 0); if (dart) mult = +dart[1] + Math.max(0, lvl - sp.lv);
     if (sp.lv > 0 && lvl > sp.lv) {
       const u = /\+\s*(\d+)d(\d+)\s*par niveau/.exec(sp.d), t = UP[(sp.en || '').toLowerCase()];
       const x = u ? { n: +u[1], f: +u[2] } : t ? { n: +t.split('d')[0], f: +t.split('d')[1] } : null;
@@ -157,6 +159,7 @@
     if (k === 'k' && GL && GL[a]) { const g = GL[a]; h = `<h3>${esc(g.fr)}</h3>${g.en ? `<span class="lp-en">${esc(g.en)}</span>` : ''}${String(g.text).split('\n').map(l => `<p>${nl(l)}</p>`).join('')}`; }
     else if (c && k === 's') { const sp = c.spells.find(x => x.n === a); if (sp) h = spellBody(c, sp, S(c.id)); }
     else if (c && k === 'p') { const w = c.weapons.find(x => x.n === a), o = w && w.pw[+b]; if (o) h = `<h3>${esc(o.n)}</h3><p class="lp-pm">${ico(typeOfPw(o.a))} ${esc(typeOfPw(o.a))}<i class="gap"></i>${esc(w.n)}</p><p>${nl(dcify(c, o.d))}</p>`; }
+    else if (c && k === 'r') { const r = resOf(c, a); if (r) { const f = (c.feats || []).find(x => x.res === a), it = r.src && [].concat(c.weapons || [], c.gear || []).find(x => x.n === r.src); h = `<h3>${esc(r.nom)}</h3>${f && f.en ? `<span class="lp-en">${esc(f.en)}</span>` : ''}<p class="lp-pm">${r.a ? ico(typeOfPw(r.a)) + ' ' + esc(typeOfPw(r.a)) + '<i class="gap"></i>' : ''}${r.max} utilisation${r.max > 1 ? 's' : ''}<i class="gap"></i>${esc(REST_LABEL[r.reset] || r.reset)}${r.src ? '<i class="gap"></i>' + esc(r.src) : ''}</p><p>${nl(dcify(c, r.d || (f && f.d) || (it && it.note) || r.sub || ''))}</p>`; } }
     else if (c && k === 'f') { const f = (c.feats || [])[+a]; if (f) h = `<h3>${esc(f.n)}</h3>${f.en ? `<span class="lp-en">${esc(f.en)}</span>` : ''}<p>${nl(dcify(c, f.d))}</p>`; }
     return h;
   }
@@ -323,7 +326,8 @@
       if (l >= sp.cost.n) out.push({ k: 'cost', s: `${sp.cost.n} charge${sp.cost.n > 1 ? 's' : ''}`, label: `${sp.cost.n} charge${sp.cost.n > 1 ? 's' : ''} : ${r.nom} (reste ${l})` });
       return out;
     }
-    if (sp.res && left(c, st, sp.res) > 0) out.push({ k: 'free', s: 'Usage gratuit', label: 'Usage gratuit : ' + resOf(c, sp.res).nom });
+    const rids = [].concat(sp.res || []);
+    rids.forEach(id => { const r = resOf(c, id); if (r && left(c, st, id) > 0) out.push({ k: 'free:' + id, s: rids.length > 1 ? 'Gratuit : ' + (r.nom.match(/\(([^)]+)\)/) || [0, r.nom])[1] : 'Usage gratuit', label: 'Usage gratuit : ' + r.nom }); });
     if (sp.alt && left(c, st, sp.alt.res) >= sp.alt.n) out.push({ k: 'alt', s: 'Ressource', label: 'Dépenser : ' + resOf(c, sp.alt.res).nom });
     if (sp.lv === 0) { if (!sp.res) out.push({ k: 'cantrip', s: 'Gratuit', label: 'Sort mineur (gratuit)' }); return out; }
     if (!sp.pactonly) Object.keys(c.slots).map(Number).sort((a, b) => a - b).forEach(lv => {
@@ -339,7 +343,7 @@
   }
   function cast(id, sp, pool) {
     const c = cfgOf(id), st = S(id); let cost = '', lvl = sp.lv;
-    if (pool === 'free') { st.res[sp.res] = (st.res[sp.res] || 0) + 1; cost = resOf(c, sp.res).nom; }
+    if (/^free/.test(pool)) { const id = pool.split(':')[1] || [].concat(sp.res)[0]; st.res[id] = (st.res[id] || 0) + 1; cost = resOf(c, id).nom; }
     else if (pool === 'alt') { st.res[sp.alt.res] = (st.res[sp.alt.res] || 0) + sp.alt.n; cost = resOf(c, sp.alt.res).nom; }
     else if (pool === 'cost') { st.res[sp.cost.res] = (st.res[sp.cost.res] || 0) + sp.cost.n; cost = `${sp.cost.n} charge${sp.cost.n > 1 ? 's' : ''} ${resOf(c, sp.cost.res).nom}`; }
     else if (pool === 'pact') { st.pact += 1; lvl = c.pact.lvl; cost = `pacte niveau ${lvl}`; }
@@ -400,15 +404,25 @@
     if (c.pact) h += `<div class="lp-row"><span class="lp-lv pact">${im('pact')}Pacte ${c.pact.lvl}</span><span class="lp-pips">${ro ? rpips(c.pact.n, st.pact, 'pact') : pips(c.pact.n, st.pact, 'pact', 'pact', 'pact')}</span></div>`;
     return h;
   }
-  function resRows(c, st, ro) {
-    const rows = visRes(c, st).map(r => {
+  function resRows(c, st, ro, list) {
+    const rows = (list || visRes(c, st)).map(r => {
       const u = st.res[r.id] || 0, l = r.max - u;
       let ctl;
       if (r.max <= 5) ctl = ro ? rpips(r.max, u, 'res') : pips(r.max, u, 'res', r.id, 'res');
       else ctl = ro ? `<b class="lp-cnt">${l}/${r.max}</b>` : `<button type="button" class="lp-stp" data-act="resd" data-key="${esc(r.id)}" data-d="1" aria-label="Dépenser">−</button><b class="lp-cnt">${l}/${r.max}</b><button type="button" class="lp-stp" data-act="resd" data-key="${esc(r.id)}" data-d="-1" aria-label="Récupérer">+</button>`;
-      return `<div class="lp-row res"><span class="lp-nm">${RIC[r.id] ? im(RIC[r.id]) : ''}${esc(r.nom)}${!ro && r.sub ? `<small>${esc(r.sub)}</small>` : ''}</span><span class="lp-pips">${ctl}</span></div>`;
+      return `<div class="lp-row res"><span class="lp-nm" ${ro ? '' : `data-tip="r|${esc(r.id)}"`}>${RIC[r.id] ? im(RIC[r.id]) : ''}<b>${esc(r.nom)}</b>${!ro && r.sub ? `<small>${rich(r.sub)}</small>` : ''}</span><span class="lp-pips">${ctl}</span></div>`;
     });
     return rows.join('');
+  }
+  /* pouvoirs d'objets equipes qui consomment des emplacements (pas de ressource propre) */
+  function itemPowerRows(c, st) {
+    const out = [];
+    eqNames(c, st).forEach(n => c.spells.filter(sp => sp.src === n && !sp.res && !sp.cost).forEach(sp => {
+      const pk = pickPool(c, st, sp), spent = pk.ps.length === 0, t = sp.t;
+      const chip = `<span class="lp-slotchip sm ${spent ? 'off' : ''}">${spent ? (sp.lim && st.used[sp.n] ? 'Utilisé' : 'Aucune ressource') : esc(pk.cur.s)}</span>`;
+      out.push(`<div class="lp-row res ipw"><span class="lp-nm" data-tip="s|${esc(sp.n)}">${ico(t)}<b>${esc(sp.n)}</b><small>${esc(n)}</small></span><span class="lp-pips lp-ipw">${chip}<button type="button" class="lp-cast sm" data-act="cast" data-key="${esc(sp.n)}" ${spent ? 'disabled' : ''}>Lancer</button></span></div>`);
+    }));
+    return out.join('');
   }
 
   function costBadge(c, sp) {
@@ -423,13 +437,14 @@
     const tags = [sp.c ? '<span class="lp-tag c">Concentration</span>' : '', sp.ritual ? '<span class="lp-tag">Rituel</span>' : '', (sp.lim || (sp.res && sp.lv)) ? '<span class="lp-tag day">1 / jour</span>' : '', sp.src ? `<span class="lp-tag src">${esc(sp.src)}</span>` : ''].join('');
     let src;
     if (spent) src = `<span class="lp-slotchip off">${limUsed ? 'Utilisé' : 'Aucune ressource'}</span>`;
-    else if (ps.length > 1) src = `<label class="lp-slotsel"><span>Lancer avec</span><select class="lp-pool" data-sp="${esc(key)}" aria-label="Source du sort">${ps.map(p => `<option value="${esc(p.k)}" ${cur.k === p.k ? 'selected' : ''}>${esc(p.s)}</option>`).join('')}</select></label>`;
+    else if (ps.length > 1) src = `<select class="lp-pool" data-sp="${esc(key)}" aria-label="Source du sort" title="Lancer avec">${ps.map(p => `<option value="${esc(p.k)}" ${cur.k === p.k ? 'selected' : ''}>${esc(p.s)}</option>`).join('')}</select>`;
     else src = `<span class="lp-slotchip">${esc(cur.s)}</span>`;
     const btn = spent ? '<button type="button" class="lp-cast off" disabled>Lancer</button>' : `<button type="button" class="lp-cast" data-act="cast" data-key="${esc(key)}">Lancer</button>`;
     const jet = canJet(c, sp) ? `<button type="button" class="lp-jet" data-act="jetsp" data-key="${esc(key)}" title="Jet automatique" ${spent ? 'disabled' : ''}>Jet</button>` : '';
     let h = `<article class="lp-spell ${conc ? 'conc' : ''} ${spent ? 'spent' : ''}">
-      <div class="lp-sh"><button type="button" class="lp-sname" data-act="gopen" data-key="${esc(key)}" data-tip="s|${esc(key)}"><span class="lp-tt">${ico(sp.t)}<b>${esc(sp.n)}</b></span>${sp.en ? `<small class="lp-en">${esc(sp.en)}</small>` : ''}<span class="lp-meta"><span>${esc(sp.t)}</span>${sp.p ? `<span>${esc(sp.p)}</span>` : ''}</span></button><span class="lp-spr">${src}<span class="lp-btns">${btn}${jet}</span></span></div>
-      ${tags ? `<div class="lp-tags">${tags}</div>` : ''}`;
+      <button type="button" class="lp-sname" data-act="gopen" data-key="${esc(key)}" data-tip="s|${esc(key)}"><span class="lp-tt">${ico(sp.t)}<b>${esc(sp.n)}</b></span>${sp.en ? `<small class="lp-en">${esc(sp.en)}</small>` : ''}</button>
+      <div class="lp-mrow"><span class="lp-meta"><span>${esc(sp.t)}</span>${sp.p ? `<span>${esc(sp.p)}</span>` : ''}</span>${tags}</div>
+      ${ctl(src, btn, jet)}`;
     if (limUsed) h += `<button type="button" class="lp-full" data-act="unspend" data-key="${esc(key)}">Restaurer ce sort</button>`;
     return h + '</article>';
   }
@@ -484,14 +499,20 @@
     const card = w => {
       const fx = w.fixed || w.perma, on = fx || st.eq.includes(w.n), eqb = fx ? (w.perma ? '<span class="lp-eqb perma">Permanent</span>' : '') : `<span class="lp-eqb ${on ? 'on' : ''}">${on ? 'Équipé' : 'Équiper'}</span>`;
       const head = fx ? `<header><div class="lp-eqhead"><h4>${esc(w.n)}</h4>${eqb}</div>${w.arc ? `<span class="lp-arc">${esc(w.arc)}</span>` : ''}</header>` : `<header><button type="button" class="lp-eqhead" data-act="eq" data-key="${esc(w.n)}" aria-pressed="${on}"><h4>${esc(w.n)}</h4>${eqb}</button>${w.arc ? `<span class="lp-arc">${esc(w.arc)}</span>` : ''}</header>`;
-      const stat = w.hit || w.dmg ? `<div class="lp-wstat">${w.hit ? `<button type="button" class="lp-roll" data-act="rhit" data-key="${esc(w.n)}" title="Lancer le jet d'attaque">${im('damage', 'sm')}<span>Toucher</span><b>${esc(w.hit)}</b></button>` : ''}${w.dmg ? `<button type="button" class="lp-roll" data-act="rdmg" data-key="${esc(w.n)}" title="Lancer les dégâts">${im('damage', 'sm')}<span>Dégâts</span><b>${esc(w.dmg)}</b></button>` : ''}</div>` : '';
+      const tl = (kind, lab, val, tt) => `<button type="button" class="lp-roll" data-act="${kind}" data-key="${esc(w.n)}" title="${tt}">${im('damage', 'sm')}<span class="tx"><span>${lab}</span><b>${esc(val)}</b></span></button>`;
+      const stat = w.hit || w.dmg ? `<div class="lp-wstat">${w.hit ? tl('rhit', 'Toucher', w.hit, "Lancer le jet d'attaque") : '<span></span>'}${w.dmg ? tl('rdmg', 'Dégâts', w.dmg, 'Lancer les dégâts') : '<span></span>'}</div>` : '';
       const pws = (w.pw || []).map((o, i) => {
-        if (typeof o === 'string') return `<li>${esc(o)}</li>`;
+        if (typeof o === 'string') return `<li class="lp-pwi plain">${esc(o)}</li>`;
         const ps = pwState(c, st, o), spent = ps && ps.spent;
-        const btns = on && ps ? (ps.kind === 'sp' ? `<button type="button" class="lp-cast sm" data-act="cast" data-key="${esc(ps.sp.n)}" ${spent ? 'disabled' : ''}>Lancer</button>${canJet(c, ps.sp) ? `<button type="button" class="lp-jet sm" data-act="jetsp" data-key="${esc(ps.sp.n)}" ${spent ? 'disabled' : ''}>Jet</button>` : ''}` : `<button type="button" class="lp-cast sm" data-act="pwuse" data-key="${esc(w.n)}" data-i="${i}" ${spent ? 'disabled' : ''}>Utiliser</button>${o.r ? `<button type="button" class="lp-jet sm" data-act="rpw" data-key="${esc(w.n)}" data-i="${i}" ${spent ? 'disabled' : ''}>Jet</button>` : ''}`) : (o.r ? `<button type="button" class="lp-jet sm" data-act="rpw" data-key="${esc(w.n)}" data-i="${i}">Jet</button>` : '');
-        return `<li class="lp-pwi ${spent ? 'spent' : ''}"><button type="button" class="lp-pw" data-act="pwx" data-key="${esc(w.n)}" data-i="${i}" data-tip="p|${esc(w.n)}|${i}">${ico(typeOfPw(o.a))}<span>${esc(o.n)}</span></button>${ps ? `<span class="lp-pst ${spent ? 'off' : ''}">${esc(ps.txt)}</span>` : ''}<span class="lp-btns">${btns}</span></li>`;
+        let main = '', jet = '';
+        if (on && ps) {
+          if (ps.kind === 'sp') { main = `<button type="button" class="lp-cast sm" data-act="cast" data-key="${esc(ps.sp.n)}" ${spent ? 'disabled' : ''}>Lancer</button>`; if (canJet(c, ps.sp)) jet = `<button type="button" class="lp-jet sm" data-act="jetsp" data-key="${esc(ps.sp.n)}" ${spent ? 'disabled' : ''}>Jet</button>`; }
+          else { main = `<button type="button" class="lp-cast sm" data-act="pwuse" data-key="${esc(w.n)}" data-i="${i}" ${spent ? 'disabled' : ''}>Utiliser</button>`; if (o.r) jet = `<button type="button" class="lp-jet sm" data-act="rpw" data-key="${esc(w.n)}" data-i="${i}" ${spent ? 'disabled' : ''}>Jet</button>`; }
+        } else if (o.r) jet = `<button type="button" class="lp-jet sm" data-act="rpw" data-key="${esc(w.n)}" data-i="${i}">Jet</button>`;
+        const chip = ps ? `<span class="lp-slotchip sm ${spent ? 'off' : ''}">${esc(ps.txt)}</span>` : '';
+        return `<li class="lp-pwi ${spent ? 'spent' : ''}"><button type="button" class="lp-pw" data-act="pwx" data-key="${esc(w.n)}" data-i="${i}" data-tip="p|${esc(w.n)}|${i}">${ico(typeOfPw(o.a))}<span>${esc(o.n)}</span></button>${ctl(chip, main, jet, 'sm')}</li>`;
       }).join('');
-      return `<article class="lp-weapon ${on ? 'on' : 'off'}">${head}${stat}<p>${rich(dcify(c, w.note))}</p>${pws ? `<ul class="lp-pwl">${pws}</ul>` : ''}</article>`;
+      return `<article class="lp-weapon ${on ? 'on' : 'off'}">${head}${stat}<p class="lp-wnote">${rich(dcify(c, w.note))}</p>${pws ? `<ul class="lp-pwl">${pws}</ul>` : ''}</article>`;
     };
     const wl = c.weapons.slice().sort((a, b) => (b.perma ? 1 : 0) - (a.perma ? 1 : 0)), ne = eqNames(c, st).filter(n => c.weapons.some(w => w.n === n)).length;
     return `<h4 class="lp-lvh">Armes<small>${ne} équipée${ne > 1 ? 's' : ''}</small></h4><div class="lp-wgrid">${wl.map(card).join('')}</div>
@@ -515,18 +536,30 @@
 
   function actionsPanel(c, st) {
     const cols = { 'Action': [], 'Action bonus': [], 'Réaction': [] };
+    const head = (t, name, en, attrs) => `<button type="button" class="lp-sname" ${attrs || ''}><span class="lp-tt">${ico(t)}<b>${esc(name)}</b></span>${en ? `<small class="lp-en">${esc(en)}</small>` : ''}</button>`;
+    const card = (t, name, en, attrs, meta, ctrl, cls) => `<article class="lp-spell lp-act ${cls || ''}">${head(t, name, en, attrs)}<div class="lp-mrow">${meta}</div>${ctrl}</article>`;
     const eqw = c.weapons.filter(w => (w.hit || w.dmg) && (w.perma || st.eq.includes(w.n)));
-    eqw.forEach(w => cols['Action'].push(`<article class="lp-spell lp-act"><div class="lp-sh"><span class="lp-sname"><span class="lp-tt">${ico('Action')}<b>Attaque : ${esc(w.n)}</b></span><span class="lp-meta">${esc(w.hit)}<i class="gap"></i>${esc(w.dmg)}</span></span><span class="lp-btns">${w.hit ? `<button type="button" class="lp-cast" data-act="rhit" data-key="${esc(w.n)}">Toucher</button>` : ''}${w.dmg ? `<button type="button" class="lp-jet" data-act="rdmg" data-key="${esc(w.n)}">Dégâts</button>` : ''}</span></div></article>`));
+    eqw.forEach(w => cols['Action'].push(card('Action', 'Attaque : ' + w.n, '', '', `<span class="lp-meta"><span>${esc(w.hit)}</span><span>${esc(w.dmg)}</span></span>`, ctl('', w.hit ? `<button type="button" class="lp-cast" data-act="rhit" data-key="${esc(w.n)}">Toucher</button>` : '', w.dmg ? `<button type="button" class="lp-jet" data-act="rdmg" data-key="${esc(w.n)}">Dégâts</button>` : ''))));
     eqw.forEach(w => {
       if (c.spells.some(x => x.src === w.n)) return;
-      (w.pw || []).forEach((o, i) => { if (typeof o === 'string') return; cols[typeOfPw(o.a)].push(`<article class="lp-spell lp-act"><div class="lp-sh"><button type="button" class="lp-sname" data-act="pwx" data-key="${esc(w.n)}" data-i="${i}" data-tip="p|${esc(w.n)}|${i}"><span class="lp-tt">${ico(typeOfPw(o.a))}<b>${esc(o.n)}</b></span><span class="lp-meta">${esc(w.n)}</span></button>${o.r ? `<span class="lp-btns"><button type="button" class="lp-jet" data-act="rpw" data-key="${esc(w.n)}" data-i="${i}">Jet</button></span>` : ''}</div></article>`); });
+      (w.pw || []).forEach((o, i) => {
+        if (typeof o === 'string') return;
+        const ps = pwState(c, st, o), spent = ps && ps.spent;
+        const main = ps && ps.kind === 'res' ? `<button type="button" class="lp-cast" data-act="pwuse" data-key="${esc(w.n)}" data-i="${i}" ${spent ? 'disabled' : ''}>Utiliser</button>` : '';
+        const jet = o.r ? `<button type="button" class="lp-jet" data-act="rpw" data-key="${esc(w.n)}" data-i="${i}" ${spent ? 'disabled' : ''}>Jet</button>` : '';
+        const chip = ps ? `<span class="lp-slotchip ${spent ? 'off' : ''}">${esc(ps.txt)}</span>` : '';
+        cols[typeOfPw(o.a)].push(card(typeOfPw(o.a), o.n, '', `data-act="pwx" data-key="${esc(w.n)}" data-i="${i}" data-tip="p|${esc(w.n)}|${i}"`, `<span class="lp-meta"><span>${esc(w.n)}</span></span>`, (chip || main || jet) ? ctl(chip, main, jet) : '', spent ? 'spent' : ''));
+      });
     });
     c.spells.forEach(s => {
       if (!isEq(c, st, s.src) || (s.lst && !(st.prep || []).includes(s.n))) return;
       if (cols[s.t]) cols[s.t].push(spellCard(c, st, s));
     });
-    visRes(c, st).filter(r => r.a).forEach(r => { const l = r.max - (st.res[r.id] || 0), t = typeOfPw(r.a); cols[t].push(`<article class="lp-spell lp-act ${l <= 0 ? 'spent' : ''}"><div class="lp-sh"><span class="lp-sname"><span class="lp-tt">${ico(t)}<b>${esc(r.nom)}</b></span><span class="lp-meta"><span>${esc(r.sub || '')}</span></span></span><span class="lp-spr"><span class="lp-slotchip ${l <= 0 ? 'off' : ''}">${l}/${r.max}</span><span class="lp-btns"><button type="button" class="lp-cast" data-act="resd" data-key="${esc(r.id)}" data-d="1" ${l <= 0 ? 'disabled' : ''}>Utiliser</button></span></span></div></article>`); });
-    (c.feats || []).forEach((f, i) => { const t = f.res ? '' : featType(f); if (t) cols[t].push(`<article class="lp-spell lp-act"><div class="lp-sh"><span class="lp-sname" data-tip="f|${i}"><span class="lp-tt">${ico(t)}<b>${esc(f.n)}</b></span><span class="lp-meta">${esc(f.grp || '')}</span></span></div></article>`); });
+    visRes(c, st).filter(r => r.a).forEach(r => {
+      const l = r.max - (st.res[r.id] || 0), t = typeOfPw(r.a);
+      cols[t].push(card(t, r.nom, '', `data-tip="r|${esc(r.id)}"`, `<span class="lp-meta"><span>${esc(r.src || RESET_NAME[r.reset] || '')}</span></span>`, ctl(`<span class="lp-slotchip ${l <= 0 ? 'off' : ''}">${l}/${r.max}</span>`, `<button type="button" class="lp-cast" data-act="resd" data-key="${esc(r.id)}" data-d="1" ${l <= 0 ? 'disabled' : ''}>Utiliser</button>`, ''), l <= 0 ? 'spent' : ''));
+    });
+    (c.feats || []).forEach((f, i) => { const t = f.res ? '' : (f.act != null ? f.act : featType(f)); if (t) cols[t].push(card(t, f.n, '', `data-tip="f|${i}"`, `<span class="lp-meta"><span>${esc(f.grp || '')}</span></span>`, '')); });
     return `<div class="lp-acols">${Object.keys(cols).map(k => `<section class="lp-acol"><h4 class="lp-lvh">${ico(k)}${esc(k)}<small>${cols[k].length}</small></h4><div class="lp-agrid">${cols[k].join('') || '<p class="lp-empty">Rien de disponible.</p>'}</div></section>`).join('')}</div>`;
   }
   function restBlock() {
@@ -560,8 +593,8 @@
         <div class="lp-srow"><h3>Jets de sauvegarde</h3><div class="lp-r6">${(c.saves || []).map(a => `<div class="lp-tile sv ${a[2] ? 'p' : ''}"><span>${esc(a[0])}</span><b>${esc(a[1])}</b></div>`).join('')}</div></div>
         <div class="lp-srow"><h3>Bonus</h3><div class="lp-r7">${tile(ac.v, 'CA', 'ca', ac.parts.join(', '))}${tile(sp.v + ' ft', 'Vitesse', 'vit', sp.parts.join(', '))}${(c.bonus || []).map(b => tile(b[1], b[0], icOf[b[0]])).join('')}${tile(c.dc, 'DD sorts', 'dd')}${tile('+' + c.atk, 'Att. sort', 'att')}</div></div>
       </section>
-      <div class="lp-coinbar"><span class="lp-cbt">Monnaies</span>${coinsDef.map(([k, n, ab]) => `<label class="lp-coin" title="${esc(n)}"><span>${ab}</span><input type="number" min="0" inputmode="numeric" data-coin="${k}" value="${(st.coins || {})[k] || 0}" aria-label="${esc(n)}"></label>`).join('')}</div>
-      <section class="lp-block lp-resb"><h3>Emplacements</h3><div class="lp-slots">${slotRows(c, st, false)}</div><h3>Capacités</h3><div class="lp-rgrid">${resRows(c, st, false)}</div></section>
+      <div class="lp-coinbar"><span class="lp-cbt">Monnaies</span>${coinsDef.map(([k, n, ab]) => `<label class="lp-coin" data-k="${k}" title="${esc(n)}"><span>${ab}</span><input type="number" min="0" inputmode="numeric" data-coin="${k}" value="${(st.coins || {})[k] || 0}" aria-label="${esc(n)}"></label>`).join('')}</div>
+      <section class="lp-block lp-resb"><h3>Emplacements</h3><div class="lp-slots">${slotRows(c, st, false)}</div><h3>Capacités</h3><div class="lp-rgrid">${resRows(c, st, false, visRes(c, st).filter(r => !r.src))}</div>${(() => { const it = visRes(c, st).filter(r => r.src), ip = itemPowerRows(c, st); return it.length || ip ? `<h3>Objets équipés</h3><div class="lp-rgrid">${resRows(c, st, false, it)}${ip}</div>` : ''; })()}</section>
       <div class="lp-main"><div class="lp-tabs" role="tablist">${tabs.map(([k, n]) => `<button type="button" role="tab" class="${tab === k ? 'on' : ''}" data-act="tab" data-v="${k}">${n}</button>`).join('')}</div>
       ${tab === 'armes' ? equipPanel(c, st) : tab === 'capa' ? featsPanel(c) : tab === 'grim' ? grimPanel(c, st) : tab === 'objets' ? itemsPanel(c, st) : tab === 'actions' ? actionsPanel(c, st) : spellsPanel(c, st)}</div></div></div>`;
   }

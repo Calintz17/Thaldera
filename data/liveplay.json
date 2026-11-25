@@ -43,36 +43,71 @@
      "nom": "Signe de Mauvais Augure (Bestow Curse)",
      "max": 1,
      "reset": "long",
-     "sub": "Bestow Curse gratuit"
+     "sub": "Bestow Curse gratuit, avec un emplacement de pacte",
+     "d": "Signe de mauvais augure : tu lances Malédiction (Bestow Curse) gratuitement, 1 fois par repos long."
     },
     {
      "id": "misty",
-     "nom": "Misty Step (Fey Touched)",
+     "nom": "Pas brumeux (Touché par les fées)",
      "max": 1,
      "reset": "long",
-     "sub": "Don féerique"
+     "sub": "Misty Step gratuit",
+     "d": "Touché par les fées : tu lances Pas brumeux sans emplacement, 1 fois par repos long."
     },
     {
-     "id": "drow",
-     "nom": "Magie Drow",
+     "id": "feyhex",
+     "nom": "Maléfice (Touché par les fées)",
      "max": 1,
      "reset": "long",
-     "sub": "Faerie Fire ou Darkness"
+     "sub": "Hex gratuit",
+     "d": "Touché par les fées : tu lances Maléfice sans emplacement, 1 fois par repos long."
     },
     {
-     "id": "cart",
-     "nom": "Cartographe",
+     "id": "drowff",
+     "nom": "Lueurs féeriques (Magie drow)",
      "max": 1,
      "reset": "long",
-     "sub": "Faerie Fire, Healing Word ou Locate Object"
+     "sub": "Faerie Fire gratuit, caractéristique CHA",
+     "d": "Magie drow : tu lances Faerie Fire (Lueurs féeriques) sans emplacement, 1 fois par repos long. Incantation en CHA."
+    },
+    {
+     "id": "drowdk",
+     "nom": "Ténèbres (Magie drow)",
+     "max": 1,
+     "reset": "long",
+     "sub": "Darkness gratuit, caractéristique CHA",
+     "d": "Magie drow : tu lances Darkness (Ténèbres) sans emplacement, 1 fois par repos long. Incantation en CHA."
+    },
+    {
+     "id": "cartff",
+     "nom": "Lueurs féeriques (Cartographe)",
+     "max": 1,
+     "reset": "long",
+     "sub": "Faerie Fire offert par le Cartographe",
+     "d": "Cartographe niveau 1 : tu lances Lueurs féeriques sans emplacement, 1 fois par repos long."
+    },
+    {
+     "id": "carthw",
+     "nom": "Mot de guérison (Cartographe)",
+     "max": 1,
+     "reset": "long",
+     "sub": "Healing Word offert par le Cartographe",
+     "d": "Cartographe niveau 1 : tu lances Mot de guérison sans emplacement, 1 fois par repos long."
+    },
+    {
+     "id": "cartlo",
+     "nom": "Localisation d'objet (Cartographe)",
+     "max": 1,
+     "reset": "long",
+     "sub": "Locate Object offert par le Cartographe",
+     "d": "Cartographe niveau 1 : tu lances Localisation d'objet sans emplacement, 1 fois par repos long."
     },
     {
      "id": "specter",
      "nom": "Spectre maudit",
      "max": 1,
      "reset": "long",
-     "sub": "Accursed Specter",
-     "a": "R"
+     "sub": "Spectre allié quand tu tues un humanoïde"
     },
     {
      "id": "omencharge",
@@ -105,7 +140,8 @@
      "max": 1,
      "reset": "court",
      "src": "Hat of Refuge",
-     "a": "R"
+     "a": "R",
+     "d": "Réaction : tu disparais et évites une attaque ou un effet qui demande un jet de DEX. 1 fois par repos court ou long."
     }
    ],
    "spells": [
@@ -115,7 +151,7 @@
      "t": "Action",
      "p": "120 ft",
      "c": false,
-     "d": "3 rayons d'énergie (attaque de sort), 1d10 force chacun. Les rayons peuvent viser des cibles différentes.",
+     "d": "3 rayons (niveau 11). Chacun demande une attaque de sort à distance : 1d10 force par rayon touché. Tu peux viser des cibles différentes.",
      "en": "Eldritch Blast",
      "gid": "s-eldritch-blast",
      "lst": "occultiste",
@@ -127,7 +163,7 @@
      "t": "Action",
      "p": "60 ft",
      "c": false,
-     "d": "Jet de SAG : 2d6 psychique et désavantage au prochain jet d'attaque de la cible.",
+     "d": "Jet de SAG de la cible qui t'entend : 3d6 psychique si raté, et désavantage à sa prochaine attaque avant la fin de son prochain tour. Niveau 11 : 3d6.",
      "en": "Vicious Mockery",
      "gid": "s-vicious-mockery",
      "lst": "barde",
@@ -139,7 +175,7 @@
      "t": "Action",
      "p": "60 ft",
      "c": false,
-     "d": "Jet d'INT : 2d6 psychique et la cible retranche 1d4 à son prochain jet de sauvegarde.",
+     "d": "Jet d'INT de la cible : 3d6 psychique si raté, et elle soustrait 1d4 à son prochain jet de sauvegarde avant la fin de ton prochain tour. Niveau 11 : 3d6.",
      "en": "Mind Sliver",
      "gid": "s-mind-sliver",
      "lst": "occultiste",
@@ -151,7 +187,7 @@
      "t": "Action",
      "p": "60 ft",
      "c": false,
-     "d": "Jet de SAG : 3d8 nécrotique (3d12 si la cible est blessée).",
+     "d": "Jet de SAG de la cible : 3d8 nécrotique, 3d12 si elle a déjà perdu des PV. Niveau 11 : 3 dés.",
      "en": "Toll the Dead",
      "gid": "s-toll-the-dead",
      "lst": "occultiste",
@@ -163,7 +199,7 @@
      "t": "Action",
      "p": "30 ft",
      "c": true,
-     "d": "Jusqu'à 3 créatures, jet de CHA : elles retranchent 1d4 à leurs attaques et jets de sauvegarde. 1 minute.",
+     "d": "Jusqu'à trois créatures à 30 ft, jet de CHA : si raté, chaque cible soustrait 1d4 à ses jets d'attaque et de sauvegarde. Concentration, 1 minute. +1 cible par niveau.",
      "en": "Bane",
      "gid": "s-bane",
      "lst": "barde",
@@ -175,7 +211,7 @@
      "t": "Action",
      "p": "60 ft",
      "c": false,
-     "d": "Jet de SAG : 3d6 psychique et la cible fuit (réaction). Moitié des dégâts sans fuite si réussite.",
+     "d": "Jet de SAG de la cible à 60 ft : 3d6 psychique si raté, moitié si réussi. Si raté, elle utilise sa réaction pour s'éloigner de toi au maximum. +1d6 par niveau.",
      "en": "Dissonant Whispers",
      "gid": "s-dissonant-whispers",
      "lst": "barde",
@@ -187,7 +223,7 @@
      "t": "Réaction",
      "p": "60 ft",
      "c": false,
-     "d": "En réponse à un dégât : jet de DEX, 2d10 feu (moitié si réussi).",
+     "d": "Réaction quand tu subis des dégâts d'une créature visible à 60 ft : jet de DEX, 2d10 feu si raté, moitié si réussi. +1d10 par niveau.",
      "en": "Hellish Rebuke",
      "gid": "s-hellish-rebuke",
      "lst": "occultiste",
@@ -199,7 +235,7 @@
      "t": "Réaction",
      "p": "Soi",
      "c": false,
-     "d": "+5 CA jusqu'à ton prochain tour et annule Magic Missile.",
+     "d": "Réaction quand tu es touché ou visé par Projectile magique : +5 à la CA jusqu'au début de ton prochain tour, et pas de dégâts de Projectile magique.",
      "en": "Shield",
      "gid": "s-shield",
      "lst": "occultiste",
@@ -208,10 +244,10 @@
     {
      "n": "Armure d'Agathys",
      "lv": 1,
-     "t": "Action",
+     "t": "Action bonus",
      "p": "Soi",
      "c": false,
-     "d": "5 PV temporaires. Un attaquant au corps à corps subit 5 dégâts de froid tant qu'ils durent. +5 par niveau supérieur. 1 heure.",
+     "d": "Action bonus. Tu gagnes 5 PV temporaires et un froid givrant t'enveloppe pendant 1 heure. Quand une créature te touche au corps à corps tant que tu as ces PV, elle subit 5 froid. +5 PV temporaires et +5 froid par niveau.",
      "en": "Armor of Agathys",
      "gid": "s-armor-of-agathys",
      "thp": {
@@ -228,9 +264,10 @@
      "t": "Action bonus",
      "p": "90 ft",
      "c": true,
-     "d": "Malédiction : +1d6 nécrotique sur chaque touche, désavantage aux tests d'une caractéristique choisie. 1 heure.",
+     "d": "Action bonus, concentration jusqu'à 1 heure. Tu maudis une créature visible à 90 ft : +1d6 nécrotique à chacune de tes attaques contre elle, et désavantage à ses tests de la caractéristique choisie. Si elle tombe à 0 PV, tu peux déplacer la malédiction. Durée plus longue avec niveau.",
      "en": "Hex",
-     "gid": "s-hex"
+     "gid": "s-hex",
+     "res": "feyhex"
     },
     {
      "n": "Lueurs féeriques",
@@ -238,8 +275,11 @@
      "t": "Action",
      "p": "60 ft",
      "c": true,
-     "d": "Cube de 20 ft, jet de DEX : les cibles sont éclairées, avantage contre elles. 1 minute.",
-     "res": "drow",
+     "d": "Cube de 20 ft, portée 60 ft : jet de DEX des créatures et objets dedans, ceux qui ratent brillent. Les attaques contre eux ont l'avantage, et ils ne peuvent plus être invisibles. Concentration, 1 minute.",
+     "res": [
+      "drowff",
+      "cartff"
+     ],
      "en": "Faerie Fire",
      "gid": "s-faerie-fire"
     },
@@ -249,8 +289,8 @@
      "t": "Action bonus",
      "p": "60 ft",
      "c": false,
-     "d": "Une créature récupère 1d4 + CHA PV.",
-     "res": "cart",
+     "d": "Action bonus : une créature visible à 60 ft regagne 2d4 + modificateur d'incantation PV. +2d4 par niveau.",
+     "res": "carthw",
      "en": "Healing Word",
      "gid": "s-healing-word",
      "heal": {
@@ -267,7 +307,7 @@
      "t": "Action",
      "p": "60 ft",
      "c": true,
-     "d": "Objet en métal rougi : 2d8 feu par tour, désavantage si tenu. 1 minute.",
+     "d": "Concentration, 1 minute. Un objet métallique visible à 60 ft devient brûlant : 2d8 feu au lancement à qui le touche, puis à chaque tour en action bonus. Jet de CON si tenu ou porté : lâche l'objet si raté, sinon désavantage aux attaques et tests. +1d8 par niveau.",
      "en": "Heat Metal",
      "gid": "s-heat-metal",
      "lst": "barde",
@@ -279,7 +319,7 @@
      "t": "Action",
      "p": "60 ft",
      "c": true,
-     "d": "Illusion dans l'esprit d'une créature (INT) : 1d6 psychique par tour. 1 minute.",
+     "d": "Concentration, 1 minute. Jet d'INT d'une créature visible à 60 ft : si raté, elle perçoit seule un fantasme (cube de 10 ft) qu'elle croit réel. Elle subit 2d8 psychique par tour tant qu'elle y interagit. Test d'Investigation pour le percer.",
      "en": "Phantasmal Force",
      "gid": "s-phantasmal-force",
      "lst": "barde",
@@ -291,11 +331,12 @@
      "t": "Action",
      "p": "120 ft",
      "c": true,
-     "d": "Sphère de 20 ft sans son, aucun sort à composante verbale. 10 minutes (rituel).",
+     "d": "Concentration, 10 minutes. Sphère de 20 ft de rayon, à 120 ft : aucun son ne traverse ni ne naît dedans. Immunité au tonnerre, les créatures sont assourdies, impossible de lancer un sort verbal.",
      "en": "Silence",
      "gid": "s-silence",
      "lst": "barde",
-     "pre": true
+     "pre": true,
+     "ritual": true
     },
     {
      "n": "Apaisement des émotions",
@@ -303,7 +344,7 @@
      "t": "Action",
      "p": "60 ft",
      "c": true,
-     "d": "Zone de 20 ft, jet de CHA : calme les émotions fortes. 1 minute.",
+     "d": "Sphère de 20 ft de rayon, portée 60 ft : jet de CHA des humanoïdes dedans (de ton choix). Si raté, ils sont soit calmés (charme et peur supprimés) soit rendus indifférents. Concentration, 1 minute.",
      "en": "Calm Emotions",
      "gid": "s-calm-emotions",
      "lst": "barde",
@@ -313,9 +354,9 @@
      "n": "Pointe mentale",
      "lv": 2,
      "t": "Action",
-     "p": "60 ft",
+     "p": "120 ft",
      "c": true,
-     "d": "Jet de SAG : 3d8 psychique, tu connais sa position. 1 heure.",
+     "d": "Concentration, 1 heure. Jet de SAG d'une créature visible à 120 ft : 3d8 psychique si raté, moitié si réussi. Si raté, tu connais sa position tant que le sort dure, et elle ne tire aucun bénéfice d'être invisible contre toi. +1d8 par niveau.",
      "en": "Mind Spike",
      "gid": "s-mind-spike",
      "lst": "occultiste",
@@ -327,7 +368,7 @@
      "t": "Action bonus",
      "p": "Soi",
      "c": false,
-     "d": "Téléportation de 30 ft vers un lieu visible.",
+     "d": "Action bonus : tu te téléportes jusqu'à 30 ft vers un espace libre que tu vois.",
      "res": "misty",
      "en": "Misty Step",
      "gid": "s-misty-step"
@@ -338,8 +379,8 @@
      "t": "Action",
      "p": "60 ft",
      "c": true,
-     "d": "Sphère de ténèbres de 15 ft, la vision dans le noir ne la traverse pas. 10 minutes.",
-     "res": "drow",
+     "d": "Sphère de ténèbres magiques de 15 ft de rayon, portée 60 ft, que la vision dans le noir ne traverse pas, sauf la vision du diable. Les lumières de niveau 2 ou moins y sont dissipées. Concentration, 10 minutes.",
+     "res": "drowdk",
      "en": "Darkness",
      "gid": "s-darkness"
     },
@@ -347,10 +388,10 @@
      "n": "Localisation d'objet",
      "lv": 2,
      "t": "Action",
-     "p": "Soi",
+     "p": "Soi, 1000 ft",
      "c": true,
-     "d": "Sens un objet connu à moins de 1000 ft. 10 minutes.",
-     "res": "cart",
+     "d": "Concentration, 10 minutes. Tu sens la direction d'un objet connu ou d'un type d'objet à 1 000 ft, s'il n'est pas bloqué par du plomb ou de la pierre épaisse. Portée de 1 000 ft.",
+     "res": "cartlo",
      "en": "Locate Object",
      "gid": "s-locate-object"
     },
@@ -360,7 +401,7 @@
      "t": "Réaction",
      "p": "60 ft",
      "c": false,
-     "d": "Interrompt un sort de niveau 3 ou moins. Au-dessus : test de caractéristique DD 10 + niveau du sort.",
+     "d": "Réaction quand une créature à 60 ft lance un sort : jet de CON de cette créature contre ton DD. Si raté, le sort se dissipe sans effet et son action, action bonus ou réaction est gaspillée.",
      "en": "Counterspell",
      "gid": "s-counterspell",
      "lst": "occultiste",
@@ -372,7 +413,7 @@
      "t": "Action",
      "p": "Contact",
      "c": true,
-     "d": "Jet de SAG : au choix désavantage sur un test, désavantage contre toi, perte d'action ou +1d8 nécrotique. 1 minute en niv. 3, 8 heures au niv. 5 sans concentration.",
+     "d": "Concentration, 1 minute. Attaque de sort au corps à corps ou jet de SAG de la cible au contact : au choix, désavantage aux tests d'une caractéristique, désavantage à ses attaques contre toi, ou jet de SAG au début de chaque tour pour perdre son action, ou +1d8 nécrotique à tes attaques contre elle. Durée allongée à plus haut niveau.",
      "res": "omen",
      "en": "Bestow Curse",
      "gid": "s-bestow-curse"
@@ -383,7 +424,7 @@
      "t": "Action",
      "p": "90 ft",
      "c": true,
-     "d": "Invoque un esprit d'ombre (Fureur, Peur ou Mélancolie). 1 heure.",
+     "d": "Concentration, 1 heure. Un esprit d'ombre allié apparaît à 90 ft sous la forme de Fureur, Désespoir ou Peur et agit à ton initiative. Le niveau d'emplacement fixe ses PV, sa CA et ses dégâts.",
      "en": "Summon Shadowspawn",
      "gid": "s-summon-shadowspawn",
      "lst": "occultiste",
@@ -395,7 +436,7 @@
      "t": "Action",
      "p": "Soi",
      "c": true,
-     "d": "Attaque de sort au contact : 3d6 nécrotique et tu récupères la moitié. Renouvelable en action. 1 minute.",
+     "d": "Concentration, 1 minute. Attaque de sort au corps à corps : 3d6 nécrotique et tu regagnes la moitié en PV. En action, tu peux refrapper. +1d6 par niveau.",
      "en": "Vampiric Touch",
      "gid": "s-vampiric-touch",
      "lst": "occultiste",
@@ -406,8 +447,8 @@
      "lv": 4,
      "t": "Action bonus",
      "p": "Soi",
-     "c": true,
-     "d": "Prochaine touche : +4d6 psychique, jet de SAG sinon désavantage et plus de réactions. 1 minute.",
+     "c": false,
+     "d": "Action bonus, immédiatement après une touche avec une arme de corps à corps ou une attaque à mains nues. +4d6 psychique, jet de SAG de la cible : si raté, étourdie jusqu'à la fin de ton prochain tour. +1d6 par niveau.",
      "en": "Staggering Smite",
      "gid": "s-staggering-smite",
      "lst": "occultiste",
@@ -419,7 +460,7 @@
      "t": "Action",
      "p": "Soi",
      "c": true,
-     "d": "Ombre autour de toi : désavantage aux attaques contre toi, 2d8 nécrotique aux attaquants. 1 minute.",
+     "d": "Concentration, 1 minute. Tu es entouré d'ombre : visibilité faible, désavantage aux attaquants, 2d8 nécrotique aux attaquants qui te touchent au corps à corps.",
      "en": "Shadow of Moil",
      "gid": "s-shadow-of-moil",
      "lst": "occultiste",
@@ -696,7 +737,7 @@
      "t": "Action",
      "p": "10 ft",
      "c": false,
-     "d": "Tours mineurs : étincelles, nettoyer ou salir, chauffer ou refroidir, marque, petit objet illusoire. Jusqu'à 1 heure.",
+     "d": "Tours de magie mineurs à 10 ft : effet sensoriel, allumer ou éteindre une flamme, nettoyer, salir, colorer, assaisonner, ou marque ou illusion éphémère. Jusqu'à trois effets actifs.",
      "lst": "barde",
      "pre": true
     },
@@ -707,7 +748,7 @@
      "t": "Action",
      "p": "120 ft",
      "c": true,
-     "d": "Jusqu'à 4 lumières de torche flottantes. Action bonus : les déplacer de 60 ft. 1 minute.",
+     "d": "Jusqu'à quatre lueurs de torche mobiles dans 120 ft. En action bonus, tu les déplaces de 60 ft. Elles restent à 20 ft les unes des autres.",
      "lst": "barde"
     },
     {
@@ -717,7 +758,7 @@
      "t": "Action",
      "p": "Contact",
      "c": false,
-     "d": "Un objet de 10 ft max émet une lumière vive sur 20 ft et faible sur 20 ft de plus pendant 1 heure. Jet de DEX si l'objet est porté par une créature hostile.",
+     "d": "Un objet de taille Grande ou moins (non porté par autrui) émet une lumière vive sur 20 ft et faible sur 20 ft de plus pendant 1 heure. La lumière peut être colorée.",
      "lst": "barde"
     },
     {
@@ -726,7 +767,7 @@
      "t": "Action",
      "p": "30 ft",
      "c": false,
-     "d": "Main spectrale : manipule un objet de 10 lb maximum, vole ou déplace un objet. Invisible aux yeux de la Roublarde (Mage Hand Legerdemain).",
+     "d": "Une main spectrale apparaît dans 30 ft pendant 1 minute. En action, tu la déplaces de 30 ft pour manipuler un objet de 10 lb maximum, ouvrir une porte ou un contenant, ranger ou sortir un objet.",
      "en": "Mage Hand",
      "gid": "s-mage-hand",
      "lst": "barde"
@@ -738,7 +779,7 @@
      "t": "Hors combat",
      "p": "Contact",
      "c": false,
-     "d": "Répare une cassure ou une déchirure d'un pied maximum dans un objet. Incantation : 1 minute.",
+     "d": "Tu répares une cassure ou une déchirure d'un objet touché, pourvu que le défaut mesure 1 ft au plus. Incantation de 1 minute.",
      "lst": "barde"
     },
     {
@@ -747,7 +788,7 @@
      "t": "Action",
      "p": "120 ft",
      "c": false,
-     "d": "Murmure un message à une créature, qui peut répondre. Traverse les obstacles fins.",
+     "d": "Un murmure à une créature dans 120 ft, qu'elle seule entend, avec réponse possible. Traverse les obstacles mais pas la pierre épaisse ni les métaux.",
      "en": "Message",
      "lst": "barde"
     },
@@ -758,7 +799,7 @@
      "t": "Action",
      "p": "30 ft",
      "c": false,
-     "d": "Un son ou une image dans un cube de 5 ft pendant 1 minute. Investigation (DD de sort) pour la percer.",
+     "d": "Un son ou une image immobile dans un cube de 5 ft, pendant 1 minute. Un test d'Investigation contre ton DD révèle l'illusion.",
      "lst": "barde"
     },
     {
@@ -767,7 +808,7 @@
      "t": "Action",
      "p": "60 ft",
      "c": false,
-     "d": "Attaque de sort à distance : 3d8+5 radiant. La cible émet de la lumière et perd l'invisibilité jusqu'à la fin de ton prochain tour.",
+     "d": "Attaque de sort à distance : 3d8 radiant (niveau 11). La cible émet une lueur faible et ne peut plus être invisible jusqu'à la fin de ton prochain tour.",
      "atk": true,
      "en": "Starry Wisp",
      "lst": "barde"
@@ -776,9 +817,9 @@
      "n": "Frappe infaillible",
      "lv": 0,
      "t": "Action",
-     "p": "30 ft",
-     "c": true,
-     "d": "Action Magie : attaque avec l'arme utilisée, en INT. Dégâts radiants ou du type de l'arme, +2d6 radiant supplémentaires au niveau 11.",
+     "p": "Soi",
+     "c": false,
+     "d": "Action Magie : une attaque avec une arme que tu manies, en utilisant ton modificateur d'incantation pour l'attaque et les dégâts. Dégâts radiants ou du type de l'arme, plus 2d6 radiant supplémentaires au niveau 11.",
      "en": "True Strike",
      "gid": "s-true-strike",
      "lst": "barde"
@@ -789,7 +830,7 @@
      "t": "Action",
      "p": "30 ft",
      "c": false,
-     "d": "Une bête qui rate son jet de SAG est charmée 24 heures. Une cible de plus par niveau au-dessus de 1.",
+     "d": "Jet de SAG d'une Bête visible à 30 ft (Int 3 ou moins) : si raté, elle est charmée pendant 24 heures. Elle est libérée si tu ou un allié lui fait du mal. +1 Bête par niveau.",
      "save": "SAG",
      "en": "Animal Friendship",
      "lst": "barde"
@@ -800,7 +841,7 @@
      "t": "Action",
      "p": "30 ft",
      "c": false,
-     "d": "Un humanoïde est charmé 1 heure (avantage au jet si vous le combattez). Il sait ensuite qu'il a été charmé. Une cible de plus par niveau.",
+     "d": "Jet de SAG d'un Humanoïde visible à 30 ft (avantage s'il est en combat contre toi) : si raté, il est charmé pendant 1 heure et te considère comme un ami. Il sait ensuite qu'il a été charmé. +1 cible par niveau.",
      "save": "SAG",
      "en": "Charm Person",
      "lst": "barde"
@@ -812,7 +853,7 @@
      "t": "Action",
      "p": "Soi (cône 15 ft)",
      "c": false,
-     "d": "Cône de 15 ft : jet de CON, les créatures sont aveuglées jusqu'à la fin de ton prochain tour.",
+     "d": "Cône de 15 ft : les créatures jusqu'à 6d10 PV en tout (les plus faibles d'abord) font un jet de CON ou sont aveuglées jusqu'à la fin de ton prochain tour.",
      "lst": "barde"
     },
     {
@@ -822,17 +863,17 @@
      "t": "Action",
      "p": "60 ft",
      "c": false,
-     "d": "Ordre d'un mot (approche, lâche, fuis, à terre, immobile). Jet de SAG. +1 cible par niveau.",
+     "d": "Un mot d'ordre à une créature visible à 60 ft : jet de SAG. Si raté, elle suit : Approche, Lâche, Fuis, À terre ou Halte, pendant son prochain tour. +1 créature par niveau.",
      "lst": "barde"
     },
     {
      "n": "Compréhension des langues",
      "en": "Comprehend Languages",
      "lv": 1,
-     "t": "Hors combat",
+     "t": "Action",
      "p": "Soi",
      "c": false,
-     "d": "Tu comprends toute langue parlée et lis toute écriture touchée. 1 heure. Rituel.",
+     "d": "Pendant 1 heure, tu comprends le sens littéral de n'importe quel langage parlé ou écrit (au contact du texte). Rituel.",
      "lst": "barde",
      "ritual": true
     },
@@ -842,7 +883,7 @@
      "t": "Action",
      "p": "Contact",
      "c": false,
-     "d": "Une créature touchée récupère 2d8+5 PV (+2d8 par niveau au-dessus de 1).",
+     "d": "Une créature au contact regagne 2d8 + modificateur d'incantation PV. Sans effet sur les Artificiels et les Morts-vivants. +2d8 par niveau.",
      "en": "Cure Wounds",
      "heal": {
       "n": 2,
@@ -859,7 +900,7 @@
      "t": "Action",
      "p": "Soi, 30 ft",
      "c": true,
-     "d": "Tu perçois la magie à 30 ft et vois l'école de magie d'une aura. Rituel.",
+     "d": "Pendant 10 minutes, tu perçois la présence de magie à 30 ft et peux, en action, voir une aura autour d'une créature ou d'un objet pour en connaître l'école. Concentration. Rituel.",
      "ritual": true,
      "en": "Detect Magic",
      "lst": "barde"
@@ -870,7 +911,7 @@
      "t": "Action",
      "p": "Soi",
      "c": false,
-     "d": "Change ton apparence pendant 1 heure. Un test d'Investigation révèle l'illusion.",
+     "d": "Pendant 1 heure, tu changes ton apparence (taille, silhouette, vêtements). Un test d'Investigation contre ton DD révèle l'illusion à qui l'examine de près.",
      "en": "Disguise Self",
      "gid": "s-disguise-self",
      "lst": "barde"
@@ -882,7 +923,7 @@
      "t": "Action",
      "p": "Soi (10 ft)",
      "c": false,
-     "d": "Jet de DEX : 1d6 contondant et à terre. Terrain difficile. +1d6 par niveau.",
+     "d": "Le sol tremble dans un rayon de 10 ft : jet de DEX de chaque créature, 1d6 contondant et à terre si raté. Le terrain meuble devient difficile. +1d6 par niveau.",
      "lst": "barde"
     },
     {
@@ -891,7 +932,7 @@
      "t": "Réaction",
      "p": "60 ft",
      "c": false,
-     "d": "Jusqu'à 5 créatures tombent à 60 ft par tour et ne subissent aucun dégât de chute. 1 minute.",
+     "d": "Réaction quand toi ou une créature à 60 ft tombez : jusqu'à cinq créatures tombent à 60 ft par tour, sans dégâts de chute, pendant 1 minute.",
      "en": "Feather Fall",
      "gid": "s-feather-fall",
      "lst": "barde"
@@ -903,7 +944,7 @@
      "t": "Action",
      "p": "Contact",
      "c": true,
-     "d": "Immunité à la peur et PV temporaires égaux à ton mod. d'incantation à chaque début de tour. 1 minute. +1 cible par niveau.",
+     "d": "Une créature au contact est immunisée contre la peur et gagne ton modificateur d'incantation en PV temporaires au début de chacun de ses tours, 1 minute. Concentration. +1 cible par niveau.",
      "lst": "barde"
     },
     {
@@ -913,7 +954,7 @@
      "t": "Hors combat",
      "p": "Contact",
      "c": false,
-     "d": "Révèle les propriétés d'un objet magique ou les sorts qui affectent une créature. Rituel, incantation : 1 minute.",
+     "d": "Incantation d'une minute : tu apprends les propriétés d'un objet magique, ou les sorts qui affectent une créature ou un objet, au contact. Rituel.",
      "lst": "barde",
      "ritual": true
     },
@@ -924,7 +965,7 @@
      "t": "Hors combat",
      "p": "Contact",
      "c": false,
-     "d": "Écriture secrète, lisible seulement par les personnes désignées. 10 jours. Rituel.",
+     "d": "Tu écris un message codé illisible pour tous sauf pour les lecteurs désignés, pendant 10 jours. Rituel, incantation de 1 minute.",
      "lst": "barde",
      "ritual": true
     },
@@ -934,7 +975,7 @@
      "t": "Action",
      "p": "Contact",
      "c": false,
-     "d": "+10 ft de vitesse pendant 1 heure, sans concentration. Une cible de plus par niveau au-dessus de 1.",
+     "d": "Une créature au contact gagne +10 ft de vitesse pendant 1 heure. +1 cible par niveau.",
      "en": "Longstrider",
      "lst": "barde"
     },
@@ -944,7 +985,7 @@
      "t": "Action",
      "p": "60 ft",
      "c": true,
-     "d": "Image illusoire d'un objet ou d'une créature dans un cube de 15 ft, sans son. Jusqu'à 10 minutes.",
+     "d": "Une image de 15 ft de côté (cube), sans son ni odeur, à 60 ft. En action de Magie, tu la déplaces. Concentration, 10 minutes. Investigation contre ton DD pour la percer.",
      "en": "Silent Image",
      "gid": "s-silent-image",
      "lst": "barde"
@@ -954,9 +995,9 @@
      "en": "Sleep",
      "lv": 1,
      "t": "Action",
-     "p": "90 ft",
+     "p": "60 ft",
      "c": true,
-     "d": "Sphère de 5 ft, jet de SAG : la créature est neutralisée puis s'endort. 1 minute.",
+     "d": "Sphère de 5 ft de rayon, portée 60 ft : jet de SAG, neutralisées si raté, puis endormies au deuxième jet raté à la fin de leur prochain tour. Les elfes et les créatures qui ne dorment pas réussissent d'office. Concentration, 1 minute.",
      "lst": "barde"
     },
     {
@@ -965,7 +1006,7 @@
      "t": "Action",
      "p": "Soi",
      "c": false,
-     "d": "Comprendre et parler aux bêtes pendant 10 minutes. Rituel.",
+     "d": "Pendant 10 minutes, tu comprends les bêtes et leur parles, et elles peuvent être amicales avec toi selon leur humeur. Rituel.",
      "ritual": true,
      "en": "Speak with Animals",
      "lst": "barde"
@@ -977,7 +1018,7 @@
      "t": "Action",
      "p": "30 ft",
      "c": true,
-     "d": "Jet de SAG : la cible tombe à terre, incapable, secouée de rire. Nouveau jet à chaque tour et après un dégât. 1 minute.",
+     "d": "Jet de SAG d'une créature visible à 30 ft (Int 5 ou moins ignore) : à terre et neutralisée, riant sans pouvoir se contrôler, 1 minute. Nouveau jet à la fin de chacun de ses tours et quand elle subit des dégâts. Concentration. +1 cible par niveau.",
      "lst": "barde"
     },
     {
@@ -986,7 +1027,7 @@
      "t": "Action",
      "p": "Cube de 15 ft",
      "c": false,
-     "d": "Jet de CON : 2d8 tonnerre et repoussée de 10 ft (moitié des dégâts, sans recul, si réussi). Audible à 300 ft.",
+     "d": "Cube de 15 ft partant de toi : jet de CON, 2d8 tonnerre et repoussé de 10 ft si raté (moitié sans recul si réussi). Le bruit s'entend à 300 ft. +1d8 par niveau.",
      "en": "Thunderwave",
      "gid": "s-thunderwave",
      "lst": "barde"
@@ -998,7 +1039,7 @@
      "t": "Action",
      "p": "60 ft",
      "c": false,
-     "d": "Serviteur invisible pour des tâches simples. 1 heure. Rituel.",
+     "d": "Une force invisible sans esprit, à 60 ft, exécute des tâches simples pendant 1 heure (portée de 60 ft de toi). Rituel.",
      "lst": "barde",
      "ritual": true
     },
@@ -1008,7 +1049,7 @@
      "t": "Action",
      "p": "30 ft",
      "c": false,
-     "d": "Jusqu'à trois créatures gagnent 5 PV max et autant de PV actuels pendant 8 heures. +5 par niveau au-dessus de 2.",
+     "d": "Jusqu'à trois créatures à 30 ft : leurs PV maximum et actuels augmentent de 5 pendant 8 heures. +5 PV par niveau.",
      "en": "Aid",
      "lst": "barde"
     },
@@ -1018,7 +1059,7 @@
      "t": "Action",
      "p": "30 ft",
      "c": false,
-     "d": "Une bête de taille TP porte un message de 25 mots vers un lieu décrit, 24 heures. Rituel.",
+     "d": "Une Bête Minuscule à 30 ft porte un message de 25 mots en 24 heures vers un lieu que tu as vu. Jet de CHA de la bête si elle est hostile. Rituel. +48 heures par niveau.",
      "ritual": true,
      "en": "Animal Messenger",
      "lst": "barde"
@@ -1030,7 +1071,7 @@
      "t": "Action",
      "p": "120 ft",
      "c": false,
-     "d": "Jet de CON : la cible est aveuglée ou assourdie. 1 minute. +1 cible par niveau.",
+     "d": "Jet de CON d'une créature visible à 120 ft : aveuglée ou assourdie pendant 1 minute si raté, nouveau jet à la fin de chaque tour. +1 cible par niveau.",
      "lst": "barde"
     },
     {
@@ -1040,7 +1081,7 @@
      "t": "Action",
      "p": "Soi",
      "c": true,
-     "d": "Tu lis les pensées de surface à 30 ft, ou tu sondes un esprit (jet de SAG). 1 minute.",
+     "d": "Concentration, 1 minute. Tu lis les pensées de surface d'une créature à 30 ft. Pour sonder plus profond, jet de SAG de la cible : si raté, tu lis ses pensées profondes ; si réussi, le sort s'arrête sur elle.",
      "lst": "barde"
     },
     {
@@ -1049,7 +1090,7 @@
      "t": "Action",
      "p": "Contact",
      "c": true,
-     "d": "Avantage aux tests d'une caractéristique choisie pendant 1 heure. Une cible de plus par niveau au-dessus de 2.",
+     "d": "Concentration, 1 heure. Une créature au contact reçoit avantage à une caractéristique au choix (Force, Dextérité, Constitution, Intelligence, Sagesse ou Charisme) pour un effet précis. +1 cible par niveau.",
      "en": "Enhance Ability",
      "lst": "barde"
     },
@@ -1059,7 +1100,7 @@
      "t": "Action",
      "p": "30 ft",
      "c": true,
-     "d": "Agrandi : taille +1, avantage FOR, +1d4 aux dégâts d'arme. Rétréci : l'inverse.",
+     "d": "Concentration, 1 minute. Jet de CON d'une créature visible à 30 ft si elle n'est pas consentante : sa taille augmente ou diminue d'une catégorie (avantage aux tests et jets de FOR si agrandie, +1d4 dégâts d'armes, ou désavantage et −1d4 si réduite).",
      "save": "CON",
      "en": "Enlarge/Reduce",
      "lst": "barde"
@@ -1071,7 +1112,7 @@
      "t": "Action",
      "p": "60 ft",
      "c": true,
-     "d": "Jet de SAG : les créatures fascinées ont désavantage en Perception contre tout autre que toi. 1 minute.",
+     "d": "Concentration, 1 minute. Jet de SAG des créatures de ton choix à 60 ft qui t'entendent : si raté, elles ne perçoivent que toi, avec désavantage aux tests de Perception sur les autres.",
      "lst": "barde"
     },
     {
@@ -1080,7 +1121,7 @@
      "t": "Action",
      "p": "60 ft",
      "c": true,
-     "d": "Un humanoïde est paralysé, les attaques au contact sont des critiques. Jet de SAG à la fin de chaque tour de la cible. Une cible de plus par niveau au-dessus de 2.",
+     "d": "Concentration, 1 minute. Jet de SAG d'un Humanoïde visible à 60 ft : paralysé si raté, nouveau jet à la fin de chaque tour. +1 Humanoïde par niveau.",
      "save": "SAG",
      "en": "Hold Person",
      "lst": "barde"
@@ -1092,7 +1133,7 @@
      "t": "Action",
      "p": "60 ft",
      "c": false,
-     "d": "Ouvre un objet verrouillé, coincé ou barré. Bruit audible à 300 ft.",
+     "d": "Tu ouvres un verrou, une barre ou une serrure magique à 60 ft. Le bruit s'entend à 300 ft. Un verrou magique est suspendu 10 minutes.",
      "lst": "barde"
     },
     {
@@ -1101,7 +1142,7 @@
      "t": "Action bonus",
      "p": "Contact",
      "c": false,
-     "d": "Depuis le Bâton de l'Assistant (2 charges). Met fin à aveuglé, assourdi, paralysé ou empoisonné.",
+     "d": "Action bonus. Au contact, tu mets fin à une condition parmi Aveuglé, Assourdi, Paralysé ou Empoisonné.",
      "en": "Lesser Restoration",
      "lst": "barde"
     },
@@ -1109,9 +1150,9 @@
      "n": "Localisation d'animaux ou de plantes",
      "lv": 2,
      "t": "Action",
-     "p": "1 mile",
+     "p": "Soi, 5 miles",
      "c": false,
-     "d": "Direction et distance de la bête ou de la plante cherchée la plus proche. Rituel.",
+     "d": "Tu apprends la direction et la distance de la bête, créature végétale ou plante non magique la plus proche d'un type nommé, dans 5 miles. Rituel.",
      "ritual": true,
      "en": "Locate Animals or Plants",
      "lst": "barde"
@@ -1123,7 +1164,7 @@
      "t": "Hors combat",
      "p": "30 ft",
      "c": false,
-     "d": "Message dans un objet, déclenché par un événement. Jusqu'à dissipation. Rituel, incantation : 1 minute.",
+     "d": "Un message de 25 mots maximum se déclenche sur un objet au contact quand une condition que tu fixes est remplie. Rituel, incantation de 1 minute.",
      "lst": "barde",
      "ritual": true
     },
@@ -1134,7 +1175,7 @@
      "t": "Action",
      "p": "Soi",
      "c": false,
-     "d": "Trois doubles illusoires : les attaques contre toi peuvent les toucher à la place. 1 minute.",
+     "d": "Trois images illusoires te remplacent pendant 1 minute. Une attaque contre toi peut viser une image à la place : jet d'attaque contre une CA 10 + DEX, l'image se brise si touchée.",
      "lst": "barde"
     },
     {
@@ -1144,7 +1185,7 @@
      "t": "Action",
      "p": "60 ft",
      "c": false,
-     "d": "Sur un feu existant : fumée épaisse (obscurcit) ou éclats aveuglants (jet de CON).",
+     "d": "Un feu de 5 ft à 60 ft éclate en feu d'artifice (cube de 10 ft) ou en fumée. Jet de CON si feux d'artifice : aveuglé jusqu'à la fin de ton prochain tour si raté. Ou fumée épaisse de 20 ft de rayon.",
      "lst": "barde"
     },
     {
@@ -1154,7 +1195,7 @@
      "t": "Action",
      "p": "60 ft",
      "c": false,
-     "d": "Sphère de 10 ft, jet de CON : 3d8 tonnerre (moitié si réussi). +1d8 par niveau.",
+     "d": "Sphère de 10 ft de rayon, portée 60 ft : jet de CON, 3d8 tonnerre si raté, moitié si réussi (Artificiels : désavantage). Le bruit s'entend à 300 ft. +1d8 par niveau.",
      "lst": "barde"
     },
     {
@@ -1164,7 +1205,7 @@
      "t": "Action",
      "p": "Vue",
      "c": true,
-     "d": "Écrit jusqu'à 10 mots dans le ciel. Rituel. 1 heure.",
+     "d": "Concentration, 1 heure. Jusqu'à dix mots apparaissent dans le ciel à portée visible. Rituel.",
      "lst": "barde",
      "ritual": true
     },
@@ -1174,7 +1215,7 @@
      "t": "Action",
      "p": "30 ft",
      "c": true,
-     "d": "Jet de SAG : la cible suit une suggestion raisonnable. Jusqu'à 8 heures.",
+     "d": "Concentration, 8 heures. Jet de SAG d'une créature visible à 30 ft : si raté, elle suit une suggestion raisonnable de 25 mots maximum. Les ordres dangereux mettent fin au sort.",
      "en": "Suggestion",
      "gid": "s-suggestion",
      "lst": "barde"
@@ -1186,7 +1227,7 @@
      "t": "Action",
      "p": "Soi",
      "c": true,
-     "d": "Vent de 10 ft : désavantage aux attaques à distance contre toi, dissipe gaz et vapeurs. 10 minutes.",
+     "d": "Concentration, 10 minutes. Un vent fort t'entoure (rayon de 10 ft) : désavantage aux attaques à distance contre toi, gaz dispersés, flammes éteintes, la zone te protège du brouillard.",
      "lst": "barde"
     },
     {
@@ -1196,7 +1237,7 @@
      "t": "Action",
      "p": "60 ft",
      "c": false,
-     "d": "Sphère de 15 ft, jet de CHA : on ne peut pas mentir sciemment à l'intérieur. 10 minutes.",
+     "d": "10 minutes. Sphère de 15 ft de rayon, à 60 ft. Jet de CHA des créatures qui entrent ou y commencent leur tour : si raté, elle ne peut pas mentir. Tu sais qui a réussi.",
      "lst": "barde"
     },
     {
@@ -1204,9 +1245,9 @@
      "en": "Chill Touch",
      "lv": 0,
      "t": "Action",
-     "p": "120 ft",
+     "p": "Contact",
      "c": false,
-     "d": "Attaque de sort à distance : 3d8 nécrotique. La cible ne peut pas récupérer de PV avant ton prochain tour. Mort-vivant : désavantage à ses attaques contre toi.",
+     "d": "Attaque de sort au corps à corps : 3d10 nécrotique et la cible ne peut pas regagner de PV avant la fin de ton prochain tour. Mort-vivant : désavantage à ses attaques contre toi jusqu'à la fin de ton prochain tour. Niveau 11 : 3d10.",
      "lst": "occultiste"
     },
     {
@@ -1216,7 +1257,7 @@
      "t": "Action",
      "p": "60 ft",
      "c": true,
-     "d": "Feu de camp de 5 ft. Jet de DEX à l'apparition, à l'entrée ou en finissant son tour dedans : 3d8 feu. 1 minute.",
+     "d": "Un feu de camp surgit dans un espace de 5 ft. Jet de DEX à l'apparition, à l'entrée ou en fin de tour dedans : 3d8 feu si raté. Niveau 11 : 3d8.",
      "lst": "occultiste"
     },
     {
@@ -1225,7 +1266,7 @@
      "t": "Action",
      "p": "60 ft",
      "c": false,
-     "d": "Jet de CON : 3d6+5 froid et désavantage à la prochaine attaque d'arme de la cible. Le +5 vient de Furie élémentaire.",
+     "d": "Jet de CON de la cible : 3d6 froid si raté, et désavantage à sa prochaine attaque avec arme avant la fin de son prochain tour.",
      "save": "CON",
      "en": "Frostbite",
      "lst": "occultiste"
@@ -1237,7 +1278,7 @@
      "t": "Action bonus",
      "p": "Contact",
      "c": false,
-     "d": "Jusqu'à 3 cailloux enchantés, lancés à 60 ft : attaque de sort, 1d6 + mod. d'incantation contondant. 1 minute.",
+     "d": "Tu infuses jusqu'à trois cailloux. Une attaque de sort à distance (portée 60 ft) ou à la main : 1d6 + modificateur d'incantation contondant. Le sort dure 1 minute.",
      "lst": "occultiste"
     },
     {
@@ -1246,7 +1287,7 @@
      "t": "Action",
      "p": "30 ft",
      "c": false,
-     "d": "Attaque de sort à distance : 3d12+5 poison. Souvent résisté, pense à Yeux de chouette avant.",
+     "d": "Jet de CON de la cible : 3d12 poison si raté. Niveau 11 : 3d12. Portée 30 ft.",
      "atk": true,
      "en": "Poison Spray",
      "lst": "occultiste"
@@ -1258,7 +1299,7 @@
      "t": "Action",
      "p": "5 ft",
      "c": false,
-     "d": "Fracas audible à 100 ft. Créatures à 5 ft, jet de CON : 3d6 tonnerre.",
+     "d": "Jet de CON de chaque créature dans 5 ft : 3d6 tonnerre si raté. Le bruit s'entend à 100 ft. Niveau 11 : 3d6.",
      "lst": "occultiste"
     },
     {
@@ -1268,7 +1309,7 @@
      "t": "Action bonus",
      "p": "Soi",
      "c": true,
-     "d": "Tu peux Foncer en action bonus à chaque tour. 10 minutes.",
+     "d": "Action bonus : tu peux Foncer en action bonus à chaque tour pendant 10 minutes. Concentration.",
      "lst": "occultiste"
     },
     {
@@ -1277,7 +1318,7 @@
      "t": "Action",
      "p": "Contact",
      "c": true,
-     "d": "Désavantage aux attaques de certains types de créatures contre la cible, qui ne peut être charmée, effrayée ou possédée par elles.",
+     "d": "Une créature au contact est protégée contre les Aberrations, Célestes, Élémentaires, Fées, Fiélons et Morts-vivants : désavantage à leurs attaques, pas de charme, de peur ou de possession. Concentration, 10 minutes.",
      "en": "Protection from Evil and Good",
      "lst": "occultiste"
     },
@@ -1288,7 +1329,7 @@
      "t": "Action",
      "p": "Soi",
      "c": true,
-     "d": "Les attaques contre toi ont désavantage, sauf contre les créatures à vision aveugle. 1 minute.",
+     "d": "Concentration, 1 minute : ta silhouette devient floue, les attaquants ont le désavantage contre toi, sauf contre la vision aveugle et la clairvoyance.",
      "lst": "occultiste"
     },
     {
@@ -1298,7 +1339,7 @@
      "t": "Action bonus",
      "p": "Soi",
      "c": true,
-     "d": "Ta prochaine touche inflige +2d6 radiant, la cible brille et ne peut plus être invisible. +1d6 par niveau.",
+     "d": "Action bonus. Ta prochaine touche avec une arme avant la fin du sort inflige +2d6 radiant, la cible brille (lumière faible sur 5 ft) et ne peut plus être invisible. Concentration, 1 minute. +1d6 par niveau.",
      "lst": "occultiste"
     },
     {
@@ -1308,7 +1349,7 @@
      "t": "Action",
      "p": "300 ft",
      "c": true,
-     "d": "Jet de FOR : la vitesse de vol de la cible tombe à 0 et elle descend. 1 minute.",
+     "d": "Concentration, 1 minute. Jet de FOR d'une créature volante visible à 300 ft : si raté, sa vitesse de vol tombe à 0 et elle descend de 60 ft par tour. Réussite : sans effet.",
      "lst": "occultiste"
     },
     {
@@ -1318,7 +1359,7 @@
      "t": "Action",
      "p": "60 ft",
      "c": true,
-     "d": "Attaque de sort à distance : la cible inflige la moitié des dégâts de ses attaques en FOR. 1 minute.",
+     "d": "Concentration, 1 minute. Jet de CON d'une créature visible à 60 ft : si raté, désavantage aux tests basés sur la Force et soustrait 1d8 à ses dégâts, nouveau jet à la fin de chaque tour. Si réussi, désavantage à sa prochaine attaque.",
      "lst": "occultiste"
     },
     {
@@ -1328,7 +1369,7 @@
      "t": "Action",
      "p": "Contact",
      "c": true,
-     "d": "Escalade murs et plafonds à ta vitesse normale. 1 heure.",
+     "d": "Concentration, 1 heure. Une créature au contact peut escalader les surfaces, plafonds compris, sans les mains. +1 cible par niveau.",
      "lst": "occultiste"
     },
     {
@@ -1338,7 +1379,7 @@
      "t": "Action",
      "p": "Soi",
      "c": false,
-     "d": "À la fin de chaque tour, d20 : 11 ou plus, tu passes dans le Plan éthéré jusqu'à ton prochain tour. 1 minute.",
+     "d": "Pendant 1 minute, jette 1d6 à la fin de chacun de tes tours : 4 à 6, tu disparais dans le plan Éthéré puis réapparais à 10 ft de là au début de ton prochain tour.",
      "lst": "occultiste"
     },
     {
@@ -1347,7 +1388,7 @@
      "t": "Action",
      "p": "120 ft",
      "c": false,
-     "d": "Met fin aux sorts de niveau inférieur ou égal à l'emplacement. Au-delà : test de SAG (+5) contre DD 10 + niveau du sort.",
+     "d": "Un sort en cours de niveau 3 ou moins sur la cible (créature, objet ou effet à 120 ft) prend fin. Pour un sort de niveau plus élevé, test d'incantation contre DD 10 + niveau du sort. Fin automatique si l'emplacement est de niveau suffisant.",
      "en": "Dispel Magic",
      "lst": "occultiste"
     },
@@ -1358,7 +1399,7 @@
      "t": "Action",
      "p": "Soi (cône 30 ft)",
      "c": true,
-     "d": "Jet de SAG : les créatures lâchent ce qu'elles tiennent et fuient. 1 minute.",
+     "d": "Concentration, 1 minute. Cône de 30 ft : jet de SAG, les créatures lâchent ce qu'elles tiennent, sont effrayées et doivent Foncer pour s'éloigner. Nouveau jet à la fin de chaque tour.",
      "lst": "occultiste"
     },
     {
@@ -1368,7 +1409,7 @@
      "t": "Action",
      "p": "Contact",
      "c": true,
-     "d": "Une créature gagne un vol de 60 ft. 10 minutes.",
+     "d": "Concentration, 10 minutes. Une créature consentante au contact gagne une vitesse de vol de 60 ft. +1 cible par niveau.",
      "lst": "occultiste"
     },
     {
@@ -1378,7 +1419,7 @@
      "t": "Action",
      "p": "Contact",
      "c": true,
-     "d": "Une créature devient un nuage de gaz : vol 10 ft, résistances, traverse les fissures. 1 heure.",
+     "d": "Concentration, 1 heure. Une créature consentante au contact devient un nuage de brume : résistance aux dégâts non magiques, vol 10 ft, passe par les fentes, ne peut ni parler ni attaquer. +1 cible par niveau.",
      "lst": "occultiste"
     },
     {
@@ -1388,7 +1429,7 @@
      "t": "Action",
      "p": "120 ft",
      "c": true,
-     "d": "Cube de 30 ft, jet de SAG : charmé et incapable. 1 minute.",
+     "d": "Concentration, 1 minute. Cube de 30 ft, portée 120 ft : jet de SAG des créatures qui voient, charmées et neutralisées, vitesse 0. Le sort s'achève sur celles qui subissent des dégâts ou qu'on réveille.",
      "lst": "occultiste"
     },
     {
@@ -1398,7 +1439,7 @@
      "t": "Hors combat",
      "p": "10 ft",
      "c": false,
-     "d": "Cylindre de 10 ft de rayon qui protège des célestes, élémentaires, fées, fiélons et morts-vivants. 1 heure. Incantation : 1 minute.",
+     "d": "Cercle de 10 ft de rayon et 20 ft de haut, incantation de 1 minute, 1 heure. Contre un type de créature (Aberration, Céleste, Élémentaire, Fée, Fiélon ou Mort-vivant), ces créatures ne peuvent entrer, ou désavantage et jet de CHA pour les attaquer de l'intérieur. +1 heure par niveau.",
      "lst": "occultiste"
     },
     {
@@ -1408,7 +1449,7 @@
      "t": "Action",
      "p": "120 ft",
      "c": true,
-     "d": "Image illusoire de 20 ft de côté avec sons et odeurs. 10 minutes.",
+     "d": "Concentration, 10 minutes. Image de 20 ft de côté avec son, odeur et température, à 120 ft. En action, tu la déplaces. Sans concentration jusqu'à dissipation avec un emplacement de niveau 4 ou plus.",
      "lst": "occultiste"
     },
     {
@@ -1418,7 +1459,7 @@
      "t": "Action",
      "p": "Contact",
      "c": false,
-     "d": "Met fin à toutes les malédictions qui pèsent sur une créature ou un objet.",
+     "d": "Au contact, tu mets fin à toutes les malédictions sur une créature ou un objet. L'objet maudit reste inutilisable par sa victime.",
      "lst": "occultiste"
     },
     {
@@ -1428,7 +1469,7 @@
      "t": "Action",
      "p": "Contact",
      "c": false,
-     "d": "Une créature comprend et parle toute langue. 1 heure.",
+     "d": "Une créature au contact comprend tout langage parlé et peut être comprise de toutes les créatures qui ont un langage, pendant 1 heure.",
      "lst": "occultiste"
     },
     {
@@ -1436,9 +1477,9 @@
      "en": "Banishment",
      "lv": 4,
      "t": "Action",
-     "p": "60 ft",
+     "p": "30 ft",
      "c": true,
-     "d": "Jet de CHA : la cible est bannie dans un demi-plan ou son plan natal. 1 minute.",
+     "d": "Concentration, 1 minute. Jet de CHA d'une créature visible à 30 ft : si raté, bannie dans un demi-plan inoffensif et neutralisée. Aberration, Céleste, Élémentaire, Fée ou Fiélon : bannie définitivement si le sort dure 1 minute. +1 cible par niveau.",
      "lst": "occultiste"
     },
     {
@@ -1447,7 +1488,7 @@
      "t": "Action",
      "p": "30 ft",
      "c": false,
-     "d": "Comme Charme-personne, sur n'importe quelle créature, 1 heure. Une cible de plus par niveau au-dessus de 4.",
+     "d": "Jet de SAG d'une créature visible à 30 ft (avantage si elle est en combat contre toi) : charmée pendant 1 heure si raté. +1 cible par niveau.",
      "save": "SAG",
      "en": "Charm Monster",
      "lst": "occultiste"
@@ -1459,7 +1500,7 @@
      "t": "Action",
      "p": "500 ft",
      "c": false,
-     "d": "Tu te téléportes jusqu'à 500 ft, avec une créature consentante.",
+     "d": "Tu te téléportes jusqu'à 500 ft vers un point visible ou décrit, avec une créature consentante à 5 ft. Si la destination est occupée, vous subissez 4d6 force et la téléportation échoue.",
      "lst": "occultiste"
     },
     {
@@ -1469,7 +1510,7 @@
      "t": "Action",
      "p": "90 ft",
      "c": true,
-     "d": "Jet de CON : 2d6 du type choisi, puis vulnérabilité à ce type. 1 minute.",
+     "d": "Concentration, 1 minute. Jet de CON d'une créature visible à 90 ft : si raté, vulnérabilité à acide, froid, feu, foudre ou tonnerre (choix), et +2d6 de ce type par touche. +1 cible par niveau.",
      "lst": "occultiste"
     },
     {
@@ -1478,7 +1519,7 @@
      "t": "Hors combat",
      "p": "300 ft",
      "c": false,
-     "d": "Un terrain naturel ressemble à un autre pendant 24 heures. Incantation : 10 minutes.",
+     "d": "Un terrain naturel dans un cube de 150 ft prend l'apparence d'un autre terrain, pendant 24 heures. Un examen physique le trahit, Investigation contre ton DD. Incantation de 10 minutes.",
      "en": "Hallucinatory Terrain",
      "lst": "occultiste"
     },
@@ -1489,7 +1530,7 @@
      "t": "Action",
      "p": "120 ft",
      "c": true,
-     "d": "Jet de SAG : effrayé, 4d10 psychique à chaque tour. Nouveau jet à chaque fin de tour. 1 minute.",
+     "d": "Concentration, 1 minute. Jet de SAG d'une créature visible à 120 ft : si raté, effrayée, elle subit 4d10 psychique à la fin de chacun de ses tours, avec nouveau jet. +1d10 par niveau.",
      "lst": "occultiste"
     }
    ],
@@ -1765,7 +1806,8 @@
      "n": "Signe de mauvais augure",
      "en": "Sign of Ill Omen",
      "grp": "Invocations occultes",
-     "d": "1 fois par repos long, lance Malédiction avec un emplacement de pacte."
+     "d": "1 fois par repos long, lance Malédiction avec un emplacement de pacte.",
+     "res": "omen"
     },
     {
      "n": "Lame assoiffée",
@@ -1809,7 +1851,8 @@
      "n": "Magie drow",
      "en": "Drow Magic",
      "grp": "Espèce : Demi-elfe drow",
-     "d": "Tu connais Lumières dansantes. 1 fois par repos long : Lueurs féeriques (3e niveau) et Ténèbres (5e niveau). Incantation en CHA."
+     "d": "Tu connais Lumières dansantes. 1 fois par repos long : Lueurs féeriques (3e niveau) et Ténèbres (5e niveau). Incantation en CHA.",
+     "res": "drowff"
     },
     {
      "n": "Vision dans le noir",
@@ -1827,19 +1870,21 @@
      "n": "Lanceur de sorts aguerri",
      "en": "War Caster",
      "grp": "Dons",
-     "d": "Avantage aux jets de CON pour maintenir la concentration. Composantes somatiques avec des armes ou un bouclier en main. Réaction : lance un sort d'une action sur une créature qui provoque une attaque d'opportunité."
+     "d": "Avantage aux jets de CON pour maintenir la concentration. Composantes somatiques possibles avec des armes ou un bouclier en main. Quand une créature provoque une attaque d'opportunité en quittant ta portée, tu peux utiliser ta réaction pour lancer sur elle un sort d'une action qui ne cible qu'elle.",
+     "act": ""
     },
     {
      "n": "Télékinésiste",
      "en": "Telekinetic",
      "grp": "Dons",
-     "d": "Main du mage sans composantes, main invisible, portée +30 ft. Action bonus : pousse une créature visible à 30 ft de 5 ft vers toi ou loin de toi (FOR DD 12 + CHA, peut échouer volontairement)."
+     "d": "Tu connais Main du mage, lancée sans composantes, avec une main invisible et une portée de +30 ft (incantation en CHA). Action bonus : pousse ou attire une créature visible à 30 ft de 5 ft (jet de FOR DD 17, elle peut échouer volontairement)."
     },
     {
      "n": "Touché par les fées",
      "en": "Fey Touched",
      "grp": "Dons",
-     "d": "Tu connais Pas brumeux et un sort de niveau 1 de divination ou d'enchantement. 1 fois par repos long chacun sans emplacement. CHA +1."
+     "d": "Tu connais Pas brumeux et Maléfice. Tu lances chacun sans emplacement 1 fois par repos long, ou avec tes emplacements. Incantation en CHA, CHA +1.",
+     "res": "misty"
     },
     {
      "n": "Musicienne formée au Lumenlid",
@@ -2847,7 +2892,8 @@
      "sub": "Shadow-Cat Armor",
      "max": 1,
      "reset": "long",
-     "src": "Shadow-Cat Armor"
+     "src": "Shadow-Cat Armor",
+     "d": "Double d'ombre de la Shadow-Cat Armor, 1 fois par repos long."
     },
     {
      "id": "ruin",
@@ -2862,32 +2908,16 @@
      "nom": "Silent Image (Shadow Touched)",
      "sub": "Gratuit, 1 par repos long",
      "max": 1,
-     "reset": "long"
+     "reset": "long",
+     "d": "Touché par l'ombre : tu lances Image silencieuse sans emplacement, 1 fois par repos long. Incantation en INT."
     },
     {
      "id": "shinvis",
      "nom": "Invisibility (Shadow Touched)",
      "sub": "Gratuit, 1 par repos long",
      "max": 1,
-     "reset": "long"
-    },
-    {
-     "id": "bisection",
-     "nom": "La Mâchoire : Bisection",
-     "sub": "1 par repos long",
-     "max": 1,
      "reset": "long",
-     "src": "La Mâchoire",
-     "a": "A"
-    },
-    {
-     "id": "dechirure",
-     "nom": "La Mâchoire : Déchirure",
-     "sub": "Réaction, 1 par repos long",
-     "max": 1,
-     "reset": "long",
-     "src": "La Mâchoire",
-     "a": "R"
+     "d": "Touché par l'ombre : tu lances Invisibilité sans emplacement, 1 fois par repos long. Incantation en INT."
     }
    ],
    "spells": [
@@ -2897,7 +2927,7 @@
      "t": "Action",
      "p": "Contact",
      "c": false,
-     "d": "Action Magie : attaque d'arme au corps à corps. Sur une touche, la cible est enveloppée de tonnerre. Si elle se déplace volontairement de 5 ft ou plus avant ton prochain tour, 1d8 tonnerre et le sort prend fin. Niveau 5 : +1d8 sur la touche, 2d8 au déplacement. Niveau 11 : 2d8 et 3d8.",
+     "d": "Attaque avec une arme de corps à corps sur une créature à 5 ft. Sur une touche : dégâts de l'arme +2d8 tonnerre (niveau 11) et la cible est enveloppée d'énergie. Si elle se déplace volontairement de 5 ft ou plus avant ton prochain tour, elle subit 3d8 tonnerre et le sort s'achève.",
      "en": "Booming Blade",
      "gid": "s-booming-blade",
      "lst": "roublard",
@@ -2909,7 +2939,7 @@
      "t": "Action",
      "p": "30 ft",
      "c": false,
-     "d": "Jet de FOR : une créature de taille M ou moins est repoussée de 5 ft. Peut aussi déplacer un objet léger.",
+     "d": "Une créature de taille Moyenne ou moins subit un jet de FOR ou est repoussée de 5 ft. Ou un objet léger bouge de 10 ft, ou un souffle d'air produit un effet sensoriel.",
      "en": "Gust",
      "gid": "s-gust",
      "lst": "roublard",
@@ -2919,9 +2949,9 @@
      "n": "Frappe infaillible",
      "lv": 0,
      "t": "Action",
-     "p": "30 ft",
-     "c": true,
-     "d": "Action Magie : attaque avec l'arme utilisée, en INT. Dégâts radiants ou du type de l'arme, +2d6 radiant supplémentaires au niveau 11.",
+     "p": "Soi",
+     "c": false,
+     "d": "Action Magie : une attaque avec une arme que tu manies, en utilisant ton modificateur d'incantation pour l'attaque et les dégâts. Dégâts radiants ou du type de l'arme, plus 2d6 radiant supplémentaires au niveau 11.",
      "en": "True Strike",
      "gid": "s-true-strike",
      "lst": "roublard",
@@ -2933,7 +2963,7 @@
      "t": "Action",
      "p": "30 ft",
      "c": false,
-     "d": "Main spectrale : manipule un objet de 10 lb maximum, vole ou déplace un objet. Invisible aux yeux de la Roublarde (Mage Hand Legerdemain).",
+     "d": "Une main spectrale apparaît dans 30 ft pendant 1 minute. En action, tu la déplaces de 30 ft pour manipuler un objet de 10 lb maximum, ouvrir une porte ou un contenant, ranger ou sortir un objet.",
      "en": "Mage Hand",
      "gid": "s-mage-hand"
     },
@@ -2943,7 +2973,7 @@
      "t": "Réaction",
      "p": "60 ft",
      "c": false,
-     "d": "Jusqu'à 5 créatures tombent à 60 ft par tour et ne subissent aucun dégât de chute. 1 minute.",
+     "d": "Réaction quand toi ou une créature à 60 ft tombez : jusqu'à cinq créatures tombent à 60 ft par tour, sans dégâts de chute, pendant 1 minute.",
      "en": "Feather Fall",
      "gid": "s-feather-fall",
      "lst": "roublard",
@@ -2955,7 +2985,7 @@
      "t": "Action",
      "p": "120 ft",
      "c": false,
-     "d": "3 fléchettes de 1d4+1 force, touche automatique. Une fléchette de plus par niveau d'emplacement au-dessus de 1.",
+     "d": "3 fléchettes (portée 120 ft) frappent automatiquement : 1d4+1 force chacune, sur une ou plusieurs cibles. +1 fléchette par niveau.",
      "en": "Magic Missile",
      "gid": "s-magic-missile",
      "lst": "roublard",
@@ -2967,7 +2997,7 @@
      "t": "Réaction",
      "p": "Soi",
      "c": false,
-     "d": "+5 CA jusqu'à ton prochain tour et annule Magic Missile.",
+     "d": "Réaction quand tu es touché ou visé par Projectile magique : +5 à la CA jusqu'au début de ton prochain tour, et pas de dégâts de Projectile magique.",
      "en": "Shield",
      "gid": "s-shield",
      "lst": "roublard",
@@ -2979,7 +3009,7 @@
      "t": "Action",
      "p": "60 ft",
      "c": true,
-     "d": "Image illusoire d'un objet ou d'une créature dans un cube de 15 ft, sans son. Jusqu'à 10 minutes.",
+     "d": "Une image de 15 ft de côté (cube), sans son ni odeur, à 60 ft. En action de Magie, tu la déplaces. Concentration, 10 minutes. Investigation contre ton DD pour la percer.",
      "res": "shsilent",
      "en": "Silent Image",
      "gid": "s-silent-image"
@@ -2990,7 +3020,7 @@
      "t": "Action",
      "p": "Cube de 15 ft",
      "c": false,
-     "d": "Jet de CON : 2d8 tonnerre et repoussée de 10 ft (moitié des dégâts, sans recul, si réussi). Audible à 300 ft.",
+     "d": "Cube de 15 ft partant de toi : jet de CON, 2d8 tonnerre et repoussé de 10 ft si raté (moitié sans recul si réussi). Le bruit s'entend à 300 ft. +1d8 par niveau.",
      "en": "Thunderwave",
      "gid": "s-thunderwave",
      "lst": "roublard",
@@ -3002,7 +3032,7 @@
      "t": "Action",
      "p": "Soi",
      "c": false,
-     "d": "Change ton apparence pendant 1 heure. Un test d'Investigation révèle l'illusion.",
+     "d": "Pendant 1 heure, tu changes ton apparence (taille, silhouette, vêtements). Un test d'Investigation contre ton DD révèle l'illusion à qui l'examine de près.",
      "en": "Disguise Self",
      "gid": "s-disguise-self",
      "lst": "roublard",
@@ -3014,7 +3044,7 @@
      "t": "Action",
      "p": "30 ft",
      "c": true,
-     "d": "Jet de SAG : la cible suit une suggestion raisonnable. Jusqu'à 8 heures.",
+     "d": "Concentration, 8 heures. Jet de SAG d'une créature visible à 30 ft : si raté, elle suit une suggestion raisonnable de 25 mots maximum. Les ordres dangereux mettent fin au sort.",
      "en": "Suggestion",
      "gid": "s-suggestion",
      "lst": "roublard",
@@ -3026,7 +3056,7 @@
      "t": "Action bonus",
      "p": "Soi",
      "c": false,
-     "d": "Téléportation de 30 ft vers un lieu visible.",
+     "d": "Action bonus : tu te téléportes jusqu'à 30 ft vers un espace libre que tu vois.",
      "en": "Misty Step",
      "gid": "s-misty-step"
     },
@@ -3036,7 +3066,7 @@
      "t": "Action",
      "p": "Contact",
      "c": true,
-     "d": "Une créature devient invisible jusqu'à ce qu'elle attaque ou lance un sort. 1 heure.",
+     "d": "Concentration, 1 heure. Une créature au contact devient invisible. Le sort s'achève après une attaque, un lancer de sort ou une action offensive. +1 cible par niveau.",
      "res": "shinvis",
      "en": "Invisibility",
      "gid": "s-invisibility"
@@ -3059,7 +3089,7 @@
      "t": "Action",
      "p": "60 ft",
      "c": false,
-     "d": "Une ou deux créatures à 5 ft l'une de l'autre, jet de DEX : 3d6 acide.",
+     "d": "Une bulle d'acide sur une créature visible, ou sur deux créatures à 5 ft l'une de l'autre : jet de DEX, 3d6 acide si raté. Niveau 11 : 3d6.",
      "lst": "roublard"
     },
     {
@@ -3067,9 +3097,9 @@
      "en": "Chill Touch",
      "lv": 0,
      "t": "Action",
-     "p": "120 ft",
+     "p": "Contact",
      "c": false,
-     "d": "Attaque de sort à distance : 3d8 nécrotique. La cible ne peut pas récupérer de PV avant ton prochain tour. Mort-vivant : désavantage à ses attaques contre toi.",
+     "d": "Attaque de sort au corps à corps : 3d10 nécrotique et la cible ne peut pas regagner de PV avant la fin de ton prochain tour. Mort-vivant : désavantage à ses attaques contre toi jusqu'à la fin de ton prochain tour. Niveau 11 : 3d10.",
      "lst": "roublard"
     },
     {
@@ -3079,7 +3109,7 @@
      "t": "Action",
      "p": "60 ft",
      "c": false,
-     "d": "Tu manipules une flamme de 5 ft de côté : l'attiser, l'éteindre, la déplacer ou changer son aspect pendant 1 heure.",
+     "d": "Une flamme non magique dans un cube de 5 ft : tu l'élargis, l'éteins, la fais changer de couleur ou lui donnes une forme animée pendant 1 heure.",
      "lst": "roublard"
     },
     {
@@ -3089,7 +3119,7 @@
      "t": "Action",
      "p": "60 ft",
      "c": true,
-     "d": "Feu de camp de 5 ft. Jet de DEX à l'apparition, à l'entrée ou en finissant son tour dedans : 3d8 feu. 1 minute.",
+     "d": "Un feu de camp surgit dans un espace de 5 ft. Jet de DEX à l'apparition, à l'entrée ou en fin de tour dedans : 3d8 feu si raté. Niveau 11 : 3d8.",
      "lst": "roublard"
     },
     {
@@ -3099,7 +3129,7 @@
      "t": "Action",
      "p": "120 ft",
      "c": true,
-     "d": "Jusqu'à 4 lumières de torche flottantes. Action bonus : les déplacer de 60 ft. 1 minute.",
+     "d": "Jusqu'à quatre lueurs de torche mobiles dans 120 ft. En action bonus, tu les déplaces de 60 ft. Elles restent à 20 ft les unes des autres.",
      "lst": "roublard"
     },
     {
@@ -3109,7 +3139,7 @@
      "t": "Action",
      "p": "30 ft",
      "c": false,
-     "d": "Effet élémentaire mineur : souffle d'air, étincelle, terre façonnée, eau jetée, changement de couleur ou de température d'un objet de 5 ft de côté.",
+     "d": "Effets élémentaires mineurs : souffle d'air, étincelles, jet d'eau ou mouvement de terre sur un cube de 5 ft, ou un effet sensoriel. Dure 1 heure pour les effets d'ambiance.",
      "lst": "roublard"
     },
     {
@@ -3118,7 +3148,7 @@
      "t": "Action",
      "p": "120 ft",
      "c": false,
-     "d": "Depuis Fukuro Kaen (1 charge). Attaque de sort à distance : 3d10 feu. Enflamme les objets non portés.",
+     "d": "Attaque de sort à distance : 3d10 feu (niveau 11). Un objet inflammable non porté s'enflamme.",
      "atk": true,
      "en": "Fire Bolt",
      "lst": "roublard"
@@ -3129,7 +3159,7 @@
      "t": "Action",
      "p": "60 ft",
      "c": false,
-     "d": "Jet de CON : 3d6+5 froid et désavantage à la prochaine attaque d'arme de la cible. Le +5 vient de Furie élémentaire.",
+     "d": "Jet de CON de la cible : 3d6 froid si raté, et désavantage à sa prochaine attaque avec arme avant la fin de son prochain tour.",
      "save": "CON",
      "en": "Frostbite",
      "lst": "roublard"
@@ -3141,7 +3171,7 @@
      "t": "Action",
      "p": "Contact",
      "c": false,
-     "d": "Un objet de 10 ft max émet une lumière vive sur 20 ft et faible sur 20 ft de plus pendant 1 heure. Jet de DEX si l'objet est porté par une créature hostile.",
+     "d": "Un objet de taille Grande ou moins (non porté par autrui) émet une lumière vive sur 20 ft et faible sur 20 ft de plus pendant 1 heure. La lumière peut être colorée.",
      "lst": "roublard"
     },
     {
@@ -3151,7 +3181,7 @@
      "t": "Hors combat",
      "p": "Contact",
      "c": false,
-     "d": "Répare une cassure ou une déchirure d'un pied maximum dans un objet. Incantation : 1 minute.",
+     "d": "Tu répares une cassure ou une déchirure d'un objet touché, pourvu que le défaut mesure 1 ft au plus. Incantation de 1 minute.",
      "lst": "roublard"
     },
     {
@@ -3160,7 +3190,7 @@
      "t": "Action",
      "p": "120 ft",
      "c": false,
-     "d": "Murmure un message à une créature, qui peut répondre. Traverse les obstacles fins.",
+     "d": "Un murmure à une créature dans 120 ft, qu'elle seule entend, avec réponse possible. Traverse les obstacles mais pas la pierre épaisse ni les métaux.",
      "en": "Message",
      "lst": "roublard"
     },
@@ -3171,7 +3201,7 @@
      "t": "Action",
      "p": "30 ft",
      "c": false,
-     "d": "Un son ou une image dans un cube de 5 ft pendant 1 minute. Investigation (DD de sort) pour la percer.",
+     "d": "Un son ou une image immobile dans un cube de 5 ft, pendant 1 minute. Un test d'Investigation contre ton DD révèle l'illusion.",
      "lst": "roublard"
     },
     {
@@ -3181,7 +3211,7 @@
      "t": "Action",
      "p": "30 ft",
      "c": false,
-     "d": "Terre sur un cube de 5 ft : la creuser, la déplacer, la modeler ou la rendre difficile à traverser.",
+     "d": "Tu déplaces ou façonnes de la terre non occupée dans un cube de 5 ft, creuses une tranchée ou colores le sol, à 30 ft.",
      "lst": "roublard"
     },
     {
@@ -3190,7 +3220,7 @@
      "t": "Action",
      "p": "30 ft",
      "c": false,
-     "d": "Attaque de sort à distance : 3d12+5 poison. Souvent résisté, pense à Yeux de chouette avant.",
+     "d": "Jet de CON de la cible : 3d12 poison si raté. Niveau 11 : 3d12. Portée 30 ft.",
      "atk": true,
      "en": "Poison Spray",
      "lst": "roublard"
@@ -3202,7 +3232,7 @@
      "t": "Action",
      "p": "10 ft",
      "c": false,
-     "d": "Tours mineurs : étincelles, nettoyer ou salir, chauffer ou refroidir, marque, petit objet illusoire. Jusqu'à 1 heure.",
+     "d": "Tours de magie mineurs à 10 ft : effet sensoriel, allumer ou éteindre une flamme, nettoyer, salir, colorer, assaisonner, ou marque ou illusion éphémère. Jusqu'à trois effets actifs.",
      "lst": "roublard"
     },
     {
@@ -3212,7 +3242,7 @@
      "t": "Action",
      "p": "60 ft",
      "c": false,
-     "d": "Attaque de sort à distance : 3d8 froid, vitesse de la cible réduite de 10 ft jusqu'à ton prochain tour.",
+     "d": "Attaque de sort à distance : 3d8 froid et la vitesse de la cible est réduite de 10 ft jusqu'au début de ton prochain tour. Niveau 11 : 3d8.",
      "lst": "roublard"
     },
     {
@@ -3222,7 +3252,7 @@
      "t": "Action",
      "p": "30 ft",
      "c": false,
-     "d": "Eau sur un cube de 5 ft : la déplacer, la geler, la façonner ou la colorer.",
+     "d": "Tu déplaces, figes ou colore de l'eau dans un cube de 5 ft, ou la fais changer de forme, à 30 ft.",
      "lst": "roublard"
     },
     {
@@ -3232,7 +3262,7 @@
      "t": "Action",
      "p": "Contact",
      "c": false,
-     "d": "Attaque de sort au contact (avantage contre une armure métallique) : 3d8 foudre, la cible ne peut pas faire de réaction avant son prochain tour.",
+     "d": "Attaque de sort au corps à corps (avantage contre une cible en armure métallique) : 3d8 foudre, la cible ne peut plus faire de réactions jusqu'au début de son prochain tour. Niveau 11 : 3d8.",
      "lst": "roublard"
     },
     {
@@ -3242,7 +3272,7 @@
      "t": "Action",
      "p": "5 ft",
      "c": false,
-     "d": "Fracas audible à 100 ft. Créatures à 5 ft, jet de CON : 3d6 tonnerre.",
+     "d": "Jet de CON de chaque créature dans 5 ft : 3d6 tonnerre si raté. Le bruit s'entend à 100 ft. Niveau 11 : 3d6.",
      "lst": "roublard"
     },
     {
@@ -3252,7 +3282,7 @@
      "t": "Réaction",
      "p": "Soi",
      "c": false,
-     "d": "Réaction à un dégât d'acide, de froid, de feu, de foudre ou de tonnerre : résistance à ce type, et +1d6 de ce type à ta prochaine attaque au contact. +1d6 par niveau.",
+     "d": "Réaction quand tu subis un dégât d'acide, de froid, de feu, de foudre ou de tonnerre : résistance à ce type jusqu'au début de ton prochain tour. Ta prochaine attaque au corps à corps avant la fin de ton prochain tour inflige +1d6 de ce type. +1d6 par niveau.",
      "lst": "roublard"
     },
     {
@@ -3262,7 +3292,7 @@
      "t": "Hors combat",
      "p": "30 ft",
      "c": false,
-     "d": "Alarme mentale ou sonore sur une zone jusqu'à 20 ft de côté, 8 heures. Rituel, incantation : 1 minute.",
+     "d": "Une alerte mentale (ou sonore) se déclenche quand une créature Minuscule ou plus grande touche ou entre dans une porte, une fenêtre ou une zone de cube de 20 ft, à 30 ft. Dure 8 heures. Rituel, incantation de 1 minute.",
      "lst": "roublard",
      "ritual": true
     },
@@ -3272,7 +3302,7 @@
      "t": "Action",
      "p": "Cône de 15 ft",
      "c": false,
-     "d": "Depuis Fukuro Kaen (2 charges). Cône de flammes, jet de DEX : 3d6 feu, moitié si réussi.",
+     "d": "Cône de 15 ft : jet de DEX, 3d6 feu si raté, moitié si réussi. Les objets inflammables non portés s'enflamment. +1d6 par niveau.",
      "save": "DEX",
      "en": "Burning Hands",
      "lst": "roublard"
@@ -3284,7 +3314,7 @@
      "t": "Action",
      "p": "60 ft",
      "c": false,
-     "d": "Un objet de 1 à 5 lb part en ligne droite sur 90 ft, jet de DEX : 3d8 contondant. +1d8 par niveau.",
+     "d": "Un objet de 1 à 5 lb, jeté en ligne droite jusqu'à 90 ft : tu le lances sur une créature à 60 ft sur sa trajectoire. Jet de DEX, 3d8 contondant si raté. +1 lb par niveau et +1d8 par niveau.",
      "lst": "roublard"
     },
     {
@@ -3293,7 +3323,7 @@
      "t": "Action",
      "p": "30 ft",
      "c": false,
-     "d": "Un humanoïde est charmé 1 heure (avantage au jet si vous le combattez). Il sait ensuite qu'il a été charmé. Une cible de plus par niveau.",
+     "d": "Jet de SAG d'un Humanoïde visible à 30 ft (avantage s'il est en combat contre toi) : si raté, il est charmé pendant 1 heure et te considère comme un ami. Il sait ensuite qu'il a été charmé. +1 cible par niveau.",
      "save": "SAG",
      "en": "Charm Person",
      "lst": "roublard"
@@ -3305,7 +3335,7 @@
      "t": "Action",
      "p": "90 ft",
      "c": false,
-     "d": "Attaque de sort à distance : 3d8 au choix acide, froid, feu, foudre, poison ou tonnerre. +1d8 par niveau.",
+     "d": "Attaque de sort à distance : 3d8 d'un type au choix parmi acide, froid, feu, foudre, poison ou tonnerre. Si deux dés de dégâts indiquent le même nombre, l'orbe bondit sur une cible à 30 ft (nouvelle attaque). +1d8 par niveau.",
      "lst": "roublard"
     },
     {
@@ -3315,17 +3345,17 @@
      "t": "Action",
      "p": "Soi (cône 15 ft)",
      "c": false,
-     "d": "Cône de 15 ft : jet de CON, les créatures sont aveuglées jusqu'à la fin de ton prochain tour.",
+     "d": "Cône de 15 ft : les créatures jusqu'à 6d10 PV en tout (les plus faibles d'abord) font un jet de CON ou sont aveuglées jusqu'à la fin de ton prochain tour.",
      "lst": "roublard"
     },
     {
      "n": "Compréhension des langues",
      "en": "Comprehend Languages",
      "lv": 1,
-     "t": "Hors combat",
+     "t": "Action",
      "p": "Soi",
      "c": false,
-     "d": "Tu comprends toute langue parlée et lis toute écriture touchée. 1 heure. Rituel.",
+     "d": "Pendant 1 heure, tu comprends le sens littéral de n'importe quel langage parlé ou écrit (au contact du texte). Rituel.",
      "lst": "roublard",
      "ritual": true
     },
@@ -3335,7 +3365,7 @@
      "t": "Action",
      "p": "Soi, 30 ft",
      "c": true,
-     "d": "Tu perçois la magie à 30 ft et vois l'école de magie d'une aura. Rituel.",
+     "d": "Pendant 10 minutes, tu perçois la présence de magie à 30 ft et peux, en action, voir une aura autour d'une créature ou d'un objet pour en connaître l'école. Concentration. Rituel.",
      "ritual": true,
      "en": "Detect Magic",
      "lst": "roublard"
@@ -3347,7 +3377,7 @@
      "t": "Action",
      "p": "Soi (10 ft)",
      "c": false,
-     "d": "Jet de DEX : 1d6 contondant et à terre. Terrain difficile. +1d6 par niveau.",
+     "d": "Le sol tremble dans un rayon de 10 ft : jet de DEX de chaque créature, 1d6 contondant et à terre si raté. Le terrain meuble devient difficile. +1d6 par niveau.",
      "lst": "roublard"
     },
     {
@@ -3357,7 +3387,7 @@
      "t": "Action bonus",
      "p": "Soi",
      "c": true,
-     "d": "Tu peux Foncer en action bonus à chaque tour. 10 minutes.",
+     "d": "Action bonus : tu peux Foncer en action bonus à chaque tour pendant 10 minutes. Concentration.",
      "lst": "roublard"
     },
     {
@@ -3367,7 +3397,7 @@
      "t": "Action",
      "p": "Soi",
      "c": false,
-     "d": "2d4+4 PV temporaires pendant 1 heure. +5 par niveau.",
+     "d": "Tu gagnes 2d4+4 PV temporaires pendant 1 heure. +5 PV temporaires par niveau.",
      "lst": "roublard"
     },
     {
@@ -3376,9 +3406,10 @@
      "t": "Hors combat",
      "p": "10 ft",
      "c": false,
-     "d": "Via Compagnon sauvage : dépense un emplacement ou une Forme sauvage. Familier fée qui disparaît au repos long.",
+     "d": "Incantation d'une heure : tu invoques un esprit sous forme de bête qui te sert de familier, avec ses traits (relié par télépathie, il peut délivrer des sorts de contact). Rituel.",
      "en": "Find Familiar",
-     "lst": "roublard"
+     "lst": "roublard",
+     "ritual": true
     },
     {
      "n": "Nappe de brouillard",
@@ -3386,7 +3417,7 @@
      "t": "Action",
      "p": "120 ft",
      "c": true,
-     "d": "Sphère de brouillard, zone fortement obscurcie. Rayon de 20 ft, +20 ft par niveau au-dessus de 1.",
+     "d": "Une sphère de brouillard de 20 ft de rayon à 120 ft, qui obscurcit fortement la zone. Concentration, 1 heure. Le vent la disperse. +20 ft de rayon par niveau.",
      "en": "Fog Cloud",
      "lst": "roublard"
     },
@@ -3397,7 +3428,7 @@
      "t": "Action",
      "p": "60 ft",
      "c": false,
-     "d": "Carré de 10 ft de terrain glissant : jet de DEX ou à terre. 1 minute.",
+     "d": "Un carré de 10 ft de graisse, à 60 ft, pendant 1 minute : terrain difficile. Jet de DEX des créatures dedans : à terre si raté. Même jet quand elles entrent ou finissent leur tour dedans.",
      "lst": "roublard"
     },
     {
@@ -3406,7 +3437,7 @@
      "t": "Action",
      "p": "60 ft",
      "c": false,
-     "d": "Attaque à distance : 1d10 perçant. Le couteau explose ensuite, DEX pour la cible et les créatures à 5 ft : 2d6 froid.",
+     "d": "Attaque de sort à distance : 1d10 perçant. Éclat de glace dans un rayon de 5 ft de la cible : jet de DEX, 2d6 froid si raté. +1d6 froid par niveau.",
      "atk": true,
      "save": "DEX",
      "en": "Ice Knife",
@@ -3419,7 +3450,7 @@
      "t": "Hors combat",
      "p": "Contact",
      "c": false,
-     "d": "Révèle les propriétés d'un objet magique ou les sorts qui affectent une créature. Rituel, incantation : 1 minute.",
+     "d": "Incantation d'une minute : tu apprends les propriétés d'un objet magique, ou les sorts qui affectent une créature ou un objet, au contact. Rituel.",
      "lst": "roublard",
      "ritual": true
     },
@@ -3430,7 +3461,7 @@
      "t": "Hors combat",
      "p": "Contact",
      "c": false,
-     "d": "Écriture secrète, lisible seulement par les personnes désignées. 10 jours. Rituel.",
+     "d": "Tu écris un message codé illisible pour tous sauf pour les lecteurs désignés, pendant 10 jours. Rituel, incantation de 1 minute.",
      "lst": "roublard",
      "ritual": true
     },
@@ -3440,7 +3471,7 @@
      "t": "Action bonus",
      "p": "Contact",
      "c": false,
-     "d": "Pendant 1 minute, la cible saute jusqu'à 30 ft en dépensant 10 ft de mouvement. Une cible de plus par niveau.",
+     "d": "Une créature au contact triple sa distance de saut pendant 1 minute. Action bonus. +1 cible par niveau.",
      "en": "Jump",
      "lst": "roublard"
     },
@@ -3450,7 +3481,7 @@
      "t": "Action",
      "p": "Contact",
      "c": false,
-     "d": "+10 ft de vitesse pendant 1 heure, sans concentration. Une cible de plus par niveau au-dessus de 1.",
+     "d": "Une créature au contact gagne +10 ft de vitesse pendant 1 heure. +1 cible par niveau.",
      "en": "Longstrider",
      "lst": "roublard"
     },
@@ -3461,7 +3492,7 @@
      "t": "Action",
      "p": "Contact",
      "c": false,
-     "d": "Une créature non armurée a une CA de 13 + DEX pendant 8 heures.",
+     "d": "Une créature consentante sans armure : sa CA de base devient 13 + modificateur de DEX pendant 8 heures. Le sort s'achève si elle enfile une armure.",
      "lst": "roublard"
     },
     {
@@ -3470,7 +3501,7 @@
      "t": "Action",
      "p": "Contact",
      "c": true,
-     "d": "Désavantage aux attaques de certains types de créatures contre la cible, qui ne peut être charmée, effrayée ou possédée par elles.",
+     "d": "Une créature au contact est protégée contre les Aberrations, Célestes, Élémentaires, Fées, Fiélons et Morts-vivants : désavantage à leurs attaques, pas de charme, de peur ou de possession. Concentration, 10 minutes.",
      "en": "Protection from Evil and Good",
      "lst": "roublard"
     },
@@ -3481,7 +3512,7 @@
      "t": "Action",
      "p": "60 ft",
      "c": false,
-     "d": "Attaque de sort à distance : 2d8 poison et empoisonné jusqu'à la fin de ton prochain tour. +1d8 par niveau.",
+     "d": "Attaque de sort à distance : 2d8 poison et jet de CON de la cible, empoisonnée jusqu'à la fin de ton prochain tour si raté. +1d8 par niveau.",
      "lst": "roublard"
     },
     {
@@ -3489,9 +3520,9 @@
      "en": "Sleep",
      "lv": 1,
      "t": "Action",
-     "p": "90 ft",
+     "p": "60 ft",
      "c": true,
-     "d": "Sphère de 5 ft, jet de SAG : la créature est neutralisée puis s'endort. 1 minute.",
+     "d": "Sphère de 5 ft de rayon, portée 60 ft : jet de SAG, neutralisées si raté, puis endormies au deuxième jet raté à la fin de leur prochain tour. Les elfes et les créatures qui ne dorment pas réussissent d'office. Concentration, 1 minute.",
      "lst": "roublard"
     },
     {
@@ -3501,7 +3532,7 @@
      "t": "Action",
      "p": "30 ft",
      "c": true,
-     "d": "Jet de SAG : la cible tombe à terre, incapable, secouée de rire. Nouveau jet à chaque tour et après un dégât. 1 minute.",
+     "d": "Jet de SAG d'une créature visible à 30 ft (Int 5 ou moins ignore) : à terre et neutralisée, riant sans pouvoir se contrôler, 1 minute. Nouveau jet à la fin de chacun de ses tours et quand elle subit des dégâts. Concentration. +1 cible par niveau.",
      "lst": "roublard"
     },
     {
@@ -3511,7 +3542,7 @@
      "t": "Action",
      "p": "30 ft",
      "c": false,
-     "d": "Disque flottant de 3 ft qui porte 500 lb et te suit. 1 heure. Rituel.",
+     "d": "Un disque de force de 3 ft de diamètre, à 30 ft, porte 500 lb et te suit à 20 ft de distance, pendant 1 heure. Rituel.",
      "lst": "roublard",
      "ritual": true
     },
@@ -3522,7 +3553,7 @@
      "t": "Action",
      "p": "60 ft",
      "c": false,
-     "d": "Serviteur invisible pour des tâches simples. 1 heure. Rituel.",
+     "d": "Une force invisible sans esprit, à 60 ft, exécute des tâches simples pendant 1 heure (portée de 60 ft de toi). Rituel.",
      "lst": "roublard",
      "ritual": true
     },
@@ -3533,7 +3564,7 @@
      "t": "Action",
      "p": "30 ft",
      "c": false,
-     "d": "Ligne de 30 ft sur 5 ft, jet de DEX : 3d8 feu. +1d8 par niveau.",
+     "d": "Ligne de 30 ft sur 5 ft de large : jet de DEX, 3d8 feu si raté, moitié si réussi. +1d8 par niveau.",
      "lst": "roublard"
     },
     {
@@ -3542,7 +3573,7 @@
      "t": "Action",
      "p": "Soi",
      "c": true,
-     "d": "1 heure : changement d'apparence.",
+     "d": "Concentration, 1 heure. Tu te transformes : Adaptation aquatique (nage 30 ft, respire sous l'eau), Changement d'apparence, ou Armes naturelles (attaque de sort au corps à corps ou attaque non armée : 1d6 contondant, perçant ou tranchant).",
      "en": "Alter Self",
      "gid": "s-alter-self",
      "lst": "roublard"
@@ -3554,16 +3585,16 @@
      "t": "Action",
      "p": "Contact",
      "c": false,
-     "d": "Verrouille une porte, une fenêtre ou un coffre. Les personnes désignées passent, les autres doivent réussir un test à +10 au DD.",
+     "d": "Une porte ou un coffre au contact reste fermé, hormis pour toi et les créatures désignées. Un mot de passe l'ouvre. Permanent jusqu'à dissipation.",
      "lst": "roublard"
     },
     {
      "n": "Augure",
      "lv": 2,
-     "t": "Action",
+     "t": "Hors combat",
      "p": "Soi",
      "c": false,
-     "d": "Présage (bon, mauvais, les deux, rien) sur une action prévue dans les 30 prochaines minutes. Rituel.",
+     "d": "Incantation d'une minute : un présage (faste, néfaste, les deux ou aucun) sur le résultat d'une action dans les 30 prochaines minutes. Rituel.",
      "ritual": true,
      "en": "Augury",
      "lst": "roublard"
@@ -3575,7 +3606,7 @@
      "t": "Action",
      "p": "120 ft",
      "c": false,
-     "d": "Jet de CON : la cible est aveuglée ou assourdie. 1 minute. +1 cible par niveau.",
+     "d": "Jet de CON d'une créature visible à 120 ft : aveuglée ou assourdie pendant 1 minute si raté, nouveau jet à la fin de chaque tour. +1 cible par niveau.",
      "lst": "roublard"
     },
     {
@@ -3585,7 +3616,7 @@
      "t": "Action",
      "p": "Soi",
      "c": true,
-     "d": "Les attaques contre toi ont désavantage, sauf contre les créatures à vision aveugle. 1 minute.",
+     "d": "Concentration, 1 minute : ta silhouette devient floue, les attaquants ont le désavantage contre toi, sauf contre la vision aveugle et la clairvoyance.",
      "lst": "roublard"
     },
     {
@@ -3594,7 +3625,7 @@
      "t": "Action",
      "p": "Contact",
      "c": false,
-     "d": "Flamme sans chaleur, aussi lumineuse qu'une torche, jusqu'à dissipation. Rubis de 50 po consommé.",
+     "d": "Une flamme sans chaleur ni combustible, comme une torche, sur un objet au contact. Dure jusqu'à dissipation.",
      "en": "Continual Flame",
      "lst": "roublard"
     },
@@ -3604,7 +3635,7 @@
      "t": "Action",
      "p": "60 ft",
      "c": true,
-     "d": "Sphère de ténèbres de 15 ft, la vision dans le noir ne la traverse pas. 10 minutes.",
+     "d": "Sphère de ténèbres magiques de 15 ft de rayon, portée 60 ft, que la vision dans le noir ne traverse pas, sauf la vision du diable. Les lumières de niveau 2 ou moins y sont dissipées. Concentration, 10 minutes.",
      "en": "Darkness",
      "gid": "s-darkness",
      "lst": "roublard"
@@ -3615,7 +3646,7 @@
      "t": "Action",
      "p": "Contact",
      "c": false,
-     "d": "Vision dans le noir à 150 ft pendant 8 heures.",
+     "d": "Une créature consentante au contact voit dans le noir jusqu'à 150 ft pendant 8 heures.",
      "en": "Darkvision",
      "lst": "roublard"
     },
@@ -3626,7 +3657,7 @@
      "t": "Action",
      "p": "Soi",
      "c": true,
-     "d": "Tu lis les pensées de surface à 30 ft, ou tu sondes un esprit (jet de SAG). 1 minute.",
+     "d": "Concentration, 1 minute. Tu lis les pensées de surface d'une créature à 30 ft. Pour sonder plus profond, jet de SAG de la cible : si raté, tu lis ses pensées profondes ; si réussi, le sort s'arrête sur elle.",
      "lst": "roublard"
     },
     {
@@ -3636,7 +3667,7 @@
      "t": "Action bonus",
      "p": "Contact",
      "c": true,
-     "d": "Une créature gagne un souffle (cône de 15 ft, jet de DEX : 3d6 au choix de type). +1d6 par niveau. 1 minute.",
+     "d": "Action bonus. Une créature au contact reçoit un souffle de 15 ft de cône (action de Magie) : jet de DEX, 3d6 de l'élément choisi (acide, froid, feu, foudre ou poison) si raté, moitié si réussi. Concentration, 1 minute. +1d6 par niveau.",
      "lst": "roublard"
     },
     {
@@ -3645,7 +3676,7 @@
      "t": "Action",
      "p": "60 ft",
      "c": true,
-     "d": "Tourbillon de 5 ft : 1d8 contondant et repoussée de 10 ft pour qui finit son tour à côté (FOR DD 17). Bonus : déplace le tourbillon de 30 ft.",
+     "d": "Concentration, 1 minute. Un tourbillon de 5 ft de côté, à 60 ft. Jet de FOR en fin de tour de créatures à 5 ft : 1d8 contondant et repoussé de 10 ft si raté. En action bonus, tu le déplaces de 30 ft. +1d8 par niveau.",
      "save": "FOR",
      "en": "Dust Devil",
      "lst": "roublard"
@@ -3657,7 +3688,7 @@
      "t": "Action",
      "p": "300 ft",
      "c": true,
-     "d": "Jet de FOR : la vitesse de vol de la cible tombe à 0 et elle descend. 1 minute.",
+     "d": "Concentration, 1 minute. Jet de FOR d'une créature volante visible à 300 ft : si raté, sa vitesse de vol tombe à 0 et elle descend de 60 ft par tour. Réussite : sans effet.",
      "lst": "roublard"
     },
     {
@@ -3666,7 +3697,7 @@
      "t": "Action",
      "p": "Contact",
      "c": true,
-     "d": "Avantage aux tests d'une caractéristique choisie pendant 1 heure. Une cible de plus par niveau au-dessus de 2.",
+     "d": "Concentration, 1 heure. Une créature au contact reçoit avantage à une caractéristique au choix (Force, Dextérité, Constitution, Intelligence, Sagesse ou Charisme) pour un effet précis. +1 cible par niveau.",
      "en": "Enhance Ability",
      "lst": "roublard"
     },
@@ -3676,7 +3707,7 @@
      "t": "Action",
      "p": "30 ft",
      "c": true,
-     "d": "Agrandi : taille +1, avantage FOR, +1d4 aux dégâts d'arme. Rétréci : l'inverse.",
+     "d": "Concentration, 1 minute. Jet de CON d'une créature visible à 30 ft si elle n'est pas consentante : sa taille augmente ou diminue d'une catégorie (avantage aux tests et jets de FOR si agrandie, +1d4 dégâts d'armes, ou désavantage et −1d4 si réduite).",
      "save": "CON",
      "en": "Enlarge/Reduce",
      "lst": "roublard"
@@ -3687,7 +3718,7 @@
      "t": "Action",
      "p": "60 ft",
      "c": true,
-     "d": "Sphère de 5 ft : 2d6 feu pour qui finit son tour à côté ou est percuté (DEX DD 17). Bonus : déplace-la de 30 ft.",
+     "d": "Concentration, 1 minute. Une sphère de feu de 5 ft de diamètre, à 60 ft. Jet de DEX des créatures qui finissent leur tour à 5 ft ou sont percutées : 2d6 feu si raté, moitié si réussi. En action bonus, tu la déplaces de 30 ft. +1d6 par niveau.",
      "save": "DEX",
      "en": "Flaming Sphere",
      "lst": "roublard"
@@ -3699,7 +3730,7 @@
      "t": "Action",
      "p": "Contact",
      "c": false,
-     "d": "Un cadavre ne se décompose plus et ne devient pas mort-vivant. 10 jours. Rituel.",
+     "d": "Un cadavre au contact ne peut ni pourrir ni se relever en mort-vivant pendant 10 jours. Rituel.",
      "lst": "roublard",
      "ritual": true
     },
@@ -3709,7 +3740,7 @@
      "t": "Action",
      "p": "Ligne de 60 ft",
      "c": true,
-     "d": "Ligne de vent : FOR DD 17 ou repoussée de 15 ft, avancer contre le vent coûte double. Bonus : change la direction.",
+     "d": "Concentration, 1 minute. Ligne de vent de 60 ft sur 10 ft. Jet de FOR des créatures sur la ligne au lancement et à chaque tour : repoussées de 15 ft si raté. Chaque pied de mouvement vers toi coûte 1 ft de plus. Flammes éteintes, gaz dispersé.",
      "save": "FOR",
      "en": "Gust of Wind",
      "lst": "roublard"
@@ -3720,7 +3751,7 @@
      "t": "Action",
      "p": "60 ft",
      "c": true,
-     "d": "Un humanoïde est paralysé, les attaques au contact sont des critiques. Jet de SAG à la fin de chaque tour de la cible. Une cible de plus par niveau au-dessus de 2.",
+     "d": "Concentration, 1 minute. Jet de SAG d'un Humanoïde visible à 60 ft : paralysé si raté, nouveau jet à la fin de chaque tour. +1 Humanoïde par niveau.",
      "save": "SAG",
      "en": "Hold Person",
      "lst": "roublard"
@@ -3732,7 +3763,7 @@
      "t": "Action",
      "p": "60 ft",
      "c": false,
-     "d": "Ouvre un objet verrouillé, coincé ou barré. Bruit audible à 300 ft.",
+     "d": "Tu ouvres un verrou, une barre ou une serrure magique à 60 ft. Le bruit s'entend à 300 ft. Un verrou magique est suspendu 10 minutes.",
      "lst": "roublard"
     },
     {
@@ -3742,16 +3773,16 @@
      "t": "Action",
      "p": "60 ft",
      "c": true,
-     "d": "Une créature ou un objet monte jusqu'à 20 ft et y reste 10 minutes. Jet de CON si non consentante.",
+     "d": "Concentration, 10 minutes. Jet de CON d'une créature ou d'un objet à 60 ft (Grand ou moins, max 500 lb) : si raté, flotte jusqu'à 20 ft de haut. Tu peux la déplacer de 20 ft par tour en action.",
      "lst": "roublard"
     },
     {
      "n": "Localisation d'objet",
      "lv": 2,
      "t": "Action",
-     "p": "Soi",
+     "p": "Soi, 1000 ft",
      "c": true,
-     "d": "Sens un objet connu à moins de 1000 ft. 10 minutes.",
+     "d": "Concentration, 10 minutes. Tu sens la direction d'un objet connu ou d'un type d'objet à 1 000 ft, s'il n'est pas bloqué par du plomb ou de la pierre épaisse. Portée de 1 000 ft.",
      "en": "Locate Object",
      "gid": "s-locate-object",
      "lst": "roublard"
@@ -3763,7 +3794,7 @@
      "t": "Hors combat",
      "p": "30 ft",
      "c": false,
-     "d": "Message dans un objet, déclenché par un événement. Jusqu'à dissipation. Rituel, incantation : 1 minute.",
+     "d": "Un message de 25 mots maximum se déclenche sur un objet au contact quand une condition que tu fixes est remplie. Rituel, incantation de 1 minute.",
      "lst": "roublard",
      "ritual": true
     },
@@ -3773,8 +3804,8 @@
      "lv": 2,
      "t": "Action bonus",
      "p": "Contact",
-     "c": true,
-     "d": "Une arme gagne +1 à l'attaque et aux dégâts (+2 niveau 4, +3 niveau 6). 1 heure.",
+     "c": false,
+     "d": "Action bonus. Une arme non magique au contact devient magique, avec un bonus de +1 à l'attaque et aux dégâts pendant 1 heure. +2 avec un emplacement de niveau 3 à 5, +3 avec le niveau 6 ou plus.",
      "lst": "roublard"
     },
     {
@@ -3784,7 +3815,7 @@
      "t": "Action",
      "p": "30 ft",
      "c": true,
-     "d": "Main de terre : jet de FOR, la cible est entravée ; action pour 2d6 contondant. 1 minute.",
+     "d": "Concentration, 1 minute. Une main de terre de 5 ft, à 30 ft. Jet de FOR de la créature visée : 2d6 contondant et entravée si raté. En action, tu l'écrases : 2d6 contondant de nouveau.",
      "lst": "roublard"
     },
     {
@@ -3794,16 +3825,16 @@
      "t": "Action",
      "p": "90 ft",
      "c": false,
-     "d": "Attaque de sort à distance : 4d4 acide, puis 2d4 à la fin de son prochain tour. +1d4 par niveau.",
+     "d": "Attaque de sort à distance : 4d4 acide, puis 2d4 acide à la fin du prochain tour de la cible. Si l'attaque rate, moitié des dégâts initiaux et aucun dégât ensuite. +1d4 par niveau (initial et différé).",
      "lst": "roublard"
     },
     {
      "n": "Pointe mentale",
      "lv": 2,
      "t": "Action",
-     "p": "60 ft",
+     "p": "120 ft",
      "c": true,
-     "d": "Jet de SAG : 3d8 psychique, tu connais sa position. 1 heure.",
+     "d": "Concentration, 1 heure. Jet de SAG d'une créature visible à 120 ft : 3d8 psychique si raté, moitié si réussi. Si raté, tu connais sa position tant que le sort dure, et elle ne tire aucun bénéfice d'être invisible contre toi. +1d8 par niveau.",
      "en": "Mind Spike",
      "gid": "s-mind-spike",
      "lst": "roublard"
@@ -3815,7 +3846,7 @@
      "t": "Action",
      "p": "Soi",
      "c": false,
-     "d": "Trois doubles illusoires : les attaques contre toi peuvent les toucher à la place. 1 minute.",
+     "d": "Trois images illusoires te remplacent pendant 1 minute. Une attaque contre toi peut viser une image à la place : jet d'attaque contre une CA 10 + DEX, l'image se brise si touchée.",
      "lst": "roublard"
     },
     {
@@ -3825,7 +3856,7 @@
      "t": "Action",
      "p": "Contact",
      "c": false,
-     "d": "Masque ou falsifie l'aura magique d'un objet ou d'une créature. 24 heures.",
+     "d": "Pendant 24 heures, tu masques l'aura magique d'un objet ou lui donnes l'aura d'une autre école, ou tu masques une créature aux détections.",
      "lst": "roublard"
     },
     {
@@ -3834,7 +3865,7 @@
      "t": "Action",
      "p": "60 ft",
      "c": true,
-     "d": "Illusion dans l'esprit d'une créature (INT) : 1d6 psychique par tour. 1 minute.",
+     "d": "Concentration, 1 minute. Jet d'INT d'une créature visible à 60 ft : si raté, elle perçoit seule un fantasme (cube de 10 ft) qu'elle croit réel. Elle subit 2d8 psychique par tour tant qu'elle y interagit. Test d'Investigation pour le percer.",
      "en": "Phantasmal Force",
      "gid": "s-phantasmal-force",
      "lst": "roublard"
@@ -3846,7 +3877,7 @@
      "t": "Action",
      "p": "60 ft",
      "c": false,
-     "d": "Sur un feu existant : fumée épaisse (obscurcit) ou éclats aveuglants (jet de CON).",
+     "d": "Un feu de 5 ft à 60 ft éclate en feu d'artifice (cube de 10 ft) ou en fumée. Jet de CON si feux d'artifice : aveuglé jusqu'à la fin de ton prochain tour si raté. Ou fumée épaisse de 20 ft de rayon.",
      "lst": "roublard"
     },
     {
@@ -3856,7 +3887,7 @@
      "t": "Action",
      "p": "60 ft",
      "c": true,
-     "d": "Attaque de sort à distance : la cible inflige la moitié des dégâts de ses attaques en FOR. 1 minute.",
+     "d": "Concentration, 1 minute. Jet de CON d'une créature visible à 60 ft : si raté, désavantage aux tests basés sur la Force et soustrait 1d8 à ses dégâts, nouveau jet à la fin de chaque tour. Si réussi, désavantage à sa prochaine attaque.",
      "lst": "roublard"
     },
     {
@@ -3865,8 +3896,8 @@
      "lv": 2,
      "t": "Action",
      "p": "Contact",
-     "c": true,
-     "d": "Corde enchantée : espace extradimensionnel pour 8 créatures. 1 heure.",
+     "c": false,
+     "d": "Une corde au contact monte en l'air et ouvre un espace extradimensionnel de 3 ft sur 5 ft où huit créatures peuvent se cacher, pendant 1 heure.",
      "lst": "roublard"
     },
     {
@@ -3875,7 +3906,7 @@
      "t": "Action",
      "p": "120 ft",
      "c": false,
-     "d": "Depuis Fukuro Kaen (3 charges). Trois rayons, une attaque de sort chacun : 2d6 feu par rayon.",
+     "d": "3 rayons, portée 120 ft. Attaque de sort à distance par rayon : 2d6 feu chacun, sur une ou plusieurs cibles. +1 rayon par niveau.",
      "atk": true,
      "en": "Scorching Ray",
      "lst": "roublard"
@@ -3886,7 +3917,7 @@
      "t": "Action",
      "p": "Soi",
      "c": false,
-     "d": "1 heure : tu vois les créatures invisibles et le Plan Éthéré.",
+     "d": "Pendant 1 heure, tu vois les créatures et objets invisibles comme s'ils étaient visibles, et tu vois dans le plan Éthéré.",
      "en": "See Invisibility",
      "gid": "s-see-invisibility",
      "lst": "roublard"
@@ -3898,7 +3929,7 @@
      "t": "Action",
      "p": "60 ft",
      "c": false,
-     "d": "Sphère de 10 ft, jet de CON : 3d8 tonnerre (moitié si réussi). +1d8 par niveau.",
+     "d": "Sphère de 10 ft de rayon, portée 60 ft : jet de CON, 3d8 tonnerre si raté, moitié si réussi (Artificiels : désavantage). Le bruit s'entend à 300 ft. +1d8 par niveau.",
      "lst": "roublard"
     },
     {
@@ -3908,7 +3939,7 @@
      "t": "Action",
      "p": "Vue",
      "c": true,
-     "d": "Écrit jusqu'à 10 mots dans le ciel. Rituel. 1 heure.",
+     "d": "Concentration, 1 heure. Jusqu'à dix mots apparaissent dans le ciel à portée visible. Rituel.",
      "lst": "roublard",
      "ritual": true
     },
@@ -3919,7 +3950,7 @@
      "t": "Action",
      "p": "90 ft",
      "c": false,
-     "d": "Sphère de 5 ft, jet de DEX : 3d6 froid (moitié si réussi). +1d6 par niveau.",
+     "d": "Sphère de 5 ft de rayon, portée 90 ft : jet de DEX, 3d6 froid si raté, moitié si réussi. +1d6 par niveau.",
      "lst": "roublard"
     },
     {
@@ -3929,7 +3960,7 @@
      "t": "Action",
      "p": "Contact",
      "c": true,
-     "d": "Escalade murs et plafonds à ta vitesse normale. 1 heure.",
+     "d": "Concentration, 1 heure. Une créature au contact peut escalader les surfaces, plafonds compris, sans les mains. +1 cible par niveau.",
      "lst": "roublard"
     },
     {
@@ -3939,7 +3970,7 @@
      "t": "Action",
      "p": "Soi",
      "c": true,
-     "d": "Vent de 10 ft : désavantage aux attaques à distance contre toi, dissipe gaz et vapeurs. 10 minutes.",
+     "d": "Concentration, 10 minutes. Un vent fort t'entoure (rayon de 10 ft) : désavantage aux attaques à distance contre toi, gaz dispersés, flammes éteintes, la zone te protège du brouillard.",
      "lst": "roublard"
     },
     {
@@ -3949,7 +3980,7 @@
      "t": "Action",
      "p": "60 ft",
      "c": true,
-     "d": "Cube de 20 ft de toile : jet de DEX, entravé. Inflammable. 1 heure.",
+     "d": "Concentration, 1 heure. Cube de 20 ft de toiles, à 60 ft, terrain difficile et inflammable (2d4 feu si enflammé). Jet de DEX des créatures dedans au lancement, à l'entrée et en fin de tour : entravées si raté. Test de FOR contre ton DD pour se libérer.",
      "lst": "roublard"
     }
    ],
@@ -4016,13 +4047,6 @@
       }
      ],
      "arc": "Impératrice"
-    },
-    {
-     "n": "La Mâchoire",
-     "hit": "",
-     "dmg": "",
-     "note": "Épée courte martiale, Finesse, Light, Vex. True Strike 2d6+4 radiant. Stats non affichées sur la fiche (arme non équipée). Bisection 1 par repos long, Déchirure en réaction 1 par repos long.",
-     "pw": []
     },
     {
      "n": "Flame Tongue Dagger",
@@ -4155,7 +4179,7 @@
      "n": "Touché par l'ombre",
      "en": "Shadow Touched",
      "grp": "Dons",
-     "d": "Tu connais Image silencieuse et as toujours Invisibilité préparé. Chacun 1 fois par repos long sans emplacement. Caractéristique d'incantation : INT."
+     "d": "Tu connais Invisibilité et Image silencieuse. Tu lances chacun sans emplacement 1 fois par repos long, ou avec tes emplacements. Incantation en INT."
     },
     {
      "n": "Alerte",
@@ -5088,7 +5112,8 @@
      "nom": "Seiran, l'Esprit Enveloppant",
      "sub": "Bonus : CA +2, vol, 1 minute. 1 par repos court ou long",
      "max": 1,
-     "reset": "court"
+     "reset": "court",
+     "a": "B"
     },
     {
      "id": "eyes",
@@ -5096,7 +5121,7 @@
      "sub": "Bonus : révèle une résistance, immunité ou vulnérabilité",
      "max": 5,
      "reset": "long",
-     "a": "A"
+     "a": "B"
     },
     {
      "id": "whisp",
@@ -5118,8 +5143,7 @@
      "nom": "Résurgence : emplacement niveau 1",
      "sub": "Dépense 1 Forme sauvage",
      "max": 1,
-     "reset": "long",
-     "a": "B"
+     "reset": "long"
     },
     {
      "id": "fukuro",
@@ -5169,14 +5193,16 @@
      "nom": "Grande foulée gratuite",
      "sub": "Lignée elfique",
      "max": 1,
-     "reset": "long"
+     "reset": "long",
+     "d": "Lignée des elfes des bois : Grande foulée (Longstrider) sans emplacement, 1 fois par repos long. Incantation en SAG."
     },
     {
      "id": "pwt",
      "nom": "Passage sans trace gratuit",
      "sub": "Lignée elfique",
      "max": 1,
-     "reset": "long"
+     "reset": "long",
+     "d": "Lignée des elfes des bois : Passage sans trace (Pass without Trace) sans emplacement, 1 fois par repos long. Incantation en SAG."
     }
    ],
    "spells": [
@@ -5186,7 +5212,7 @@
      "t": "Action",
      "p": "60 ft",
      "c": false,
-     "d": "Jet de CON : 3d6+5 froid et désavantage à la prochaine attaque d'arme de la cible. Le +5 vient de Furie élémentaire.",
+     "d": "Jet de CON de la cible : 3d6 froid si raté, et désavantage à sa prochaine attaque avec arme avant la fin de son prochain tour.",
      "save": "CON",
      "en": "Frostbite",
      "lst": "druide",
@@ -5198,7 +5224,7 @@
      "t": "Action",
      "p": "30 ft",
      "c": false,
-     "d": "Attaque de sort à distance : 3d12+5 poison. Souvent résisté, pense à Yeux de chouette avant.",
+     "d": "Jet de CON de la cible : 3d12 poison si raté. Niveau 11 : 3d12. Portée 30 ft.",
      "atk": true,
      "en": "Poison Spray",
      "lst": "druide",
@@ -5210,7 +5236,7 @@
      "t": "Action",
      "p": "60 ft",
      "c": false,
-     "d": "Attaque de sort à distance : 3d8+5 radiant. La cible émet de la lumière et perd l'invisibilité jusqu'à la fin de ton prochain tour.",
+     "d": "Attaque de sort à distance : 3d8 radiant (niveau 11). La cible émet une lueur faible et ne peut plus être invisible jusqu'à la fin de ton prochain tour.",
      "atk": true,
      "en": "Starry Wisp",
      "lst": "druide",
@@ -5222,7 +5248,7 @@
      "t": "Action",
      "p": "Contact",
      "c": true,
-     "d": "Une créature consentante ajoute 1d4 aux tests d'une compétence choisie. 1 minute.",
+     "d": "Une créature consentante au contact ajoute 1d4 à un test de caractéristique de son choix avant la fin du sort. Concentration, 1 minute.",
      "en": "Guidance",
      "lst": "druide",
      "pre": true
@@ -5249,7 +5275,7 @@
      "t": "Action",
      "p": "120 ft",
      "c": false,
-     "d": "Murmure un message à une créature, qui peut répondre. Traverse les obstacles fins.",
+     "d": "Un murmure à une créature dans 120 ft, qu'elle seule entend, avec réponse possible. Traverse les obstacles mais pas la pierre épaisse ni les métaux.",
      "en": "Message",
      "lst": "druide"
     },
@@ -5259,7 +5285,7 @@
      "t": "Action",
      "p": "30 ft",
      "c": false,
-     "d": "Petits effets naturels : prévision météo, fleur qui éclot, effet sensoriel, flamme allumée ou éteinte.",
+     "d": "Effets mineurs de la nature : prédire la météo du jour, faire fleurir une plante, créer un effet sensoriel inoffensif ou allumer ou éteindre une petite flamme.",
      "en": "Druidcraft",
      "lst": "druide"
     },
@@ -5269,7 +5295,7 @@
      "t": "Action bonus",
      "p": "60 ft",
      "c": false,
-     "d": "Soin à distance : 2d4+5 PV (+2d4 par niveau au-dessus de 1). Relève un allié à 0 PV en gardant ton action.",
+     "d": "Action bonus : une créature visible à 60 ft regagne 2d4 + modificateur d'incantation PV. +2d4 par niveau.",
      "pre": true,
      "en": "Healing Word",
      "gid": "s-healing-word",
@@ -5288,7 +5314,7 @@
      "t": "Action",
      "p": "Contact",
      "c": false,
-     "d": "+10 ft de vitesse pendant 1 heure, sans concentration. Une cible de plus par niveau au-dessus de 1.",
+     "d": "Une créature au contact gagne +10 ft de vitesse pendant 1 heure. +1 cible par niveau.",
      "always": true,
      "res": "lstride",
      "en": "Longstrider"
@@ -5315,7 +5341,7 @@
      "t": "Action",
      "p": "Soi",
      "c": false,
-     "d": "Comprendre et parler aux bêtes pendant 10 minutes. Rituel.",
+     "d": "Pendant 10 minutes, tu comprends les bêtes et leur parles, et elles peuvent être amicales avec toi selon leur humeur. Rituel.",
      "always": true,
      "ritual": true,
      "en": "Speak with Animals"
@@ -5326,12 +5352,13 @@
      "t": "Hors combat",
      "p": "10 ft",
      "c": false,
-     "d": "Via Compagnon sauvage : dépense un emplacement ou une Forme sauvage. Familier fée qui disparaît au repos long.",
+     "d": "Incantation d'une heure : tu invoques un esprit sous forme de bête qui te sert de familier, avec ses traits (relié par télépathie, il peut délivrer des sorts de contact). Rituel.",
      "alt": {
       "res": "ws",
       "n": 1
      },
-     "en": "Find Familiar"
+     "en": "Find Familiar",
+     "ritual": true
     },
     {
      "n": "Amitié avec les animaux",
@@ -5339,7 +5366,7 @@
      "t": "Action",
      "p": "30 ft",
      "c": false,
-     "d": "Une bête qui rate son jet de SAG est charmée 24 heures. Une cible de plus par niveau au-dessus de 1.",
+     "d": "Jet de SAG d'une Bête visible à 30 ft (Int 3 ou moins) : si raté, elle est charmée pendant 24 heures. Elle est libérée si tu ou un allié lui fait du mal. +1 Bête par niveau.",
      "save": "SAG",
      "en": "Animal Friendship",
      "lst": "druide"
@@ -5350,7 +5377,7 @@
      "t": "Action",
      "p": "30 ft",
      "c": false,
-     "d": "Un humanoïde est charmé 1 heure (avantage au jet si vous le combattez). Il sait ensuite qu'il a été charmé. Une cible de plus par niveau.",
+     "d": "Jet de SAG d'un Humanoïde visible à 30 ft (avantage s'il est en combat contre toi) : si raté, il est charmé pendant 1 heure et te considère comme un ami. Il sait ensuite qu'il a été charmé. +1 cible par niveau.",
      "save": "SAG",
      "en": "Charm Person",
      "lst": "druide"
@@ -5361,7 +5388,7 @@
      "t": "Action",
      "p": "30 ft",
      "c": false,
-     "d": "Crée ou détruit environ 10 gallons d'eau, ou éteint les flammes nues d'un cube de 30 ft.",
+     "d": "Tu crées 10 gallons d'eau propre dans un contenant à 30 ft, ou tu détruis l'eau ou le brouillard dans un cube de 30 ft. +10 gallons ou +5 ft par niveau.",
      "en": "Create or Destroy Water",
      "lst": "druide"
     },
@@ -5371,7 +5398,7 @@
      "t": "Action",
      "p": "Contact",
      "c": false,
-     "d": "Une créature touchée récupère 2d8+5 PV (+2d8 par niveau au-dessus de 1).",
+     "d": "Une créature au contact regagne 2d8 + modificateur d'incantation PV. Sans effet sur les Artificiels et les Morts-vivants. +2d8 par niveau.",
      "en": "Cure Wounds",
      "heal": {
       "n": 2,
@@ -5388,7 +5415,7 @@
      "t": "Action",
      "p": "Soi, 30 ft",
      "c": true,
-     "d": "Tu perçois la magie à 30 ft et vois l'école de magie d'une aura. Rituel.",
+     "d": "Pendant 10 minutes, tu perçois la présence de magie à 30 ft et peux, en action, voir une aura autour d'une créature ou d'un objet pour en connaître l'école. Concentration. Rituel.",
      "ritual": true,
      "en": "Detect Magic",
      "lst": "druide"
@@ -5399,7 +5426,7 @@
      "t": "Action",
      "p": "Soi, 30 ft",
      "c": true,
-     "d": "Tu perçois poisons, créatures venimeuses et maladies à 30 ft. Rituel.",
+     "d": "Pendant 10 minutes, tu perçois poisons, créatures venimeuses et maladies à 30 ft, et leur type. Concentration. Rituel.",
      "ritual": true,
      "en": "Detect Poison and Disease",
      "lst": "druide"
@@ -5410,7 +5437,7 @@
      "t": "Action",
      "p": "90 ft",
      "c": true,
-     "d": "Carré de 20 ft : terrain difficile, créatures entravées si elles ratent leur jet de FOR (action et test de FOR DD 17 pour se libérer).",
+     "d": "Un carré de 20 ft d'herbes et de lianes devient un terrain difficile. Jet de FOR des créatures dedans : entravées si raté (jet de FOR en action pour se libérer). Concentration, 1 minute.",
      "save": "FOR",
      "en": "Entangle",
      "lst": "druide"
@@ -5421,7 +5448,7 @@
      "t": "Action",
      "p": "60 ft",
      "c": true,
-     "d": "Cube de 20 ft : les créatures qui ratent leur jet de DEX brillent. Avantage contre elles, plus d'invisibilité.",
+     "d": "Cube de 20 ft, portée 60 ft : jet de DEX des créatures et objets dedans, ceux qui ratent brillent. Les attaques contre eux ont l'avantage, et ils ne peuvent plus être invisibles. Concentration, 1 minute.",
      "save": "DEX",
      "en": "Faerie Fire",
      "gid": "s-faerie-fire",
@@ -5433,7 +5460,7 @@
      "t": "Action",
      "p": "120 ft",
      "c": true,
-     "d": "Sphère de brouillard, zone fortement obscurcie. Rayon de 20 ft, +20 ft par niveau au-dessus de 1.",
+     "d": "Une sphère de brouillard de 20 ft de rayon à 120 ft, qui obscurcit fortement la zone. Concentration, 1 heure. Le vent la disperse. +20 ft de rayon par niveau.",
      "en": "Fog Cloud",
      "lst": "druide"
     },
@@ -5441,9 +5468,9 @@
      "n": "Baies nourricières",
      "lv": 1,
      "t": "Action",
-     "p": "Soi",
+     "p": "Contact",
      "c": false,
-     "d": "Dix baies pendant 24 heures. Une baie (action bonus) rend 1 PV et nourrit pour la journée.",
+     "d": "Jusqu'à dix baies, chacune redonne 1 PV et nourrit une journée, pendant 24 heures. Elles perdent leur magie après ce délai.",
      "en": "Goodberry",
      "lst": "druide"
     },
@@ -5453,7 +5480,7 @@
      "t": "Action",
      "p": "60 ft",
      "c": false,
-     "d": "Attaque à distance : 1d10 perçant. Le couteau explose ensuite, DEX pour la cible et les créatures à 5 ft : 2d6 froid.",
+     "d": "Attaque de sort à distance : 1d10 perçant. Éclat de glace dans un rayon de 5 ft de la cible : jet de DEX, 2d6 froid si raté. +1d6 froid par niveau.",
      "atk": true,
      "save": "DEX",
      "en": "Ice Knife",
@@ -5465,7 +5492,7 @@
      "t": "Action bonus",
      "p": "Contact",
      "c": false,
-     "d": "Pendant 1 minute, la cible saute jusqu'à 30 ft en dépensant 10 ft de mouvement. Une cible de plus par niveau.",
+     "d": "Une créature au contact triple sa distance de saut pendant 1 minute. Action bonus. +1 cible par niveau.",
      "en": "Jump",
      "lst": "druide"
     },
@@ -5475,7 +5502,7 @@
      "t": "Action",
      "p": "Contact",
      "c": true,
-     "d": "Désavantage aux attaques de certains types de créatures contre la cible, qui ne peut être charmée, effrayée ou possédée par elles.",
+     "d": "Une créature au contact est protégée contre les Aberrations, Célestes, Élémentaires, Fées, Fiélons et Morts-vivants : désavantage à leurs attaques, pas de charme, de peur ou de possession. Concentration, 10 minutes.",
      "en": "Protection from Evil and Good",
      "lst": "druide"
     },
@@ -5485,7 +5512,7 @@
      "t": "Action",
      "p": "10 ft",
      "c": false,
-     "d": "Rend sains la nourriture et la boisson d'une sphère de 5 ft. Rituel.",
+     "d": "Tu purifies la nourriture et la boisson non magiques dans une sphère de 5 ft, à 10 ft : poisons et maladies disparaissent. Rituel.",
      "ritual": true,
      "en": "Purify Food and Drink",
      "lst": "druide"
@@ -5496,7 +5523,7 @@
      "t": "Action",
      "p": "Cube de 15 ft",
      "c": false,
-     "d": "Jet de CON : 2d8 tonnerre et repoussée de 10 ft, moitié sans recul si réussi. Audible à 300 ft.",
+     "d": "Cube de 15 ft partant de toi : jet de CON, 2d8 tonnerre et repoussé de 10 ft si raté (moitié sans recul si réussi). Le bruit s'entend à 300 ft. +1d8 par niveau.",
      "save": "CON",
      "en": "Thunderwave",
      "gid": "s-thunderwave",
@@ -5508,7 +5535,7 @@
      "t": "Action",
      "p": "60 ft",
      "c": true,
-     "d": "Un humanoïde est paralysé, les attaques au contact sont des critiques. Jet de SAG à la fin de chaque tour de la cible. Une cible de plus par niveau au-dessus de 2.",
+     "d": "Concentration, 1 minute. Jet de SAG d'un Humanoïde visible à 60 ft : paralysé si raté, nouveau jet à la fin de chaque tour. +1 Humanoïde par niveau.",
      "save": "SAG",
      "en": "Hold Person",
      "lst": "druide"
@@ -5519,7 +5546,7 @@
      "t": "Action",
      "p": "60 ft",
      "c": true,
-     "d": "Tourbillon de 5 ft : 1d8 contondant et repoussée de 10 ft pour qui finit son tour à côté (FOR DD 17). Bonus : déplace le tourbillon de 30 ft.",
+     "d": "Concentration, 1 minute. Un tourbillon de 5 ft de côté, à 60 ft. Jet de FOR en fin de tour de créatures à 5 ft : 1d8 contondant et repoussé de 10 ft si raté. En action bonus, tu le déplaces de 30 ft. +1d8 par niveau.",
      "pre": true,
      "save": "FOR",
      "en": "Dust Devil",
@@ -5531,7 +5558,7 @@
      "t": "Action",
      "p": "Émanation de 30 ft",
      "c": true,
-     "d": "+10 en Discrétion pour toi et les créatures choisies, aucune trace. 1 heure.",
+     "d": "Concentration, 1 heure. Aura de 30 ft autour de toi : tes alliés dans la zone gagnent +10 aux tests de Discrétion et ne laissent aucune trace.",
      "always": true,
      "res": "pwt",
      "en": "Pass without Trace"
@@ -5539,10 +5566,10 @@
     {
      "n": "Augure",
      "lv": 2,
-     "t": "Action",
+     "t": "Hors combat",
      "p": "Soi",
      "c": false,
-     "d": "Présage (bon, mauvais, les deux, rien) sur une action prévue dans les 30 prochaines minutes. Rituel.",
+     "d": "Incantation d'une minute : un présage (faste, néfaste, les deux ou aucun) sur le résultat d'une action dans les 30 prochaines minutes. Rituel.",
      "pre": true,
      "ritual": true,
      "en": "Augury",
@@ -5585,7 +5612,7 @@
      "t": "Action",
      "p": "30 ft",
      "c": false,
-     "d": "Jusqu'à trois créatures gagnent 5 PV max et autant de PV actuels pendant 8 heures. +5 par niveau au-dessus de 2.",
+     "d": "Jusqu'à trois créatures à 30 ft : leurs PV maximum et actuels augmentent de 5 pendant 8 heures. +5 PV par niveau.",
      "en": "Aid",
      "lst": "druide",
      "pre": true
@@ -5596,7 +5623,7 @@
      "t": "Action",
      "p": "30 ft",
      "c": false,
-     "d": "Une bête de taille TP porte un message de 25 mots vers un lieu décrit, 24 heures. Rituel.",
+     "d": "Une Bête Minuscule à 30 ft porte un message de 25 mots en 24 heures vers un lieu que tu as vu. Jet de CHA de la bête si elle est hostile. Rituel. +48 heures par niveau.",
      "ritual": true,
      "en": "Animal Messenger",
      "lst": "druide"
@@ -5607,7 +5634,7 @@
      "t": "Action bonus",
      "p": "Contact",
      "c": false,
-     "d": "Pendant 1 heure, sans concentration, la CA de la cible ne peut pas être inférieure à 17.",
+     "d": "Action bonus : la peau d'une créature consentante devient dure comme l'écorce, sa CA ne peut pas être inférieure à 17 pendant 1 heure. Concentration.",
      "en": "Barkskin",
      "lst": "druide"
     },
@@ -5617,7 +5644,7 @@
      "t": "Action",
      "p": "Contact",
      "c": true,
-     "d": "Tu perçois à travers les sens d'une bête consentante. Rituel.",
+     "d": "Concentration, 1 heure : tu perçois par les sens d'une Bête consentante au contact, tant qu'elle est sur le même plan. Rituel.",
      "ritual": true,
      "en": "Beast Sense"
     },
@@ -5627,7 +5654,7 @@
      "t": "Action",
      "p": "Contact",
      "c": false,
-     "d": "Flamme sans chaleur, aussi lumineuse qu'une torche, jusqu'à dissipation. Rubis de 50 po consommé.",
+     "d": "Une flamme sans chaleur ni combustible, comme une torche, sur un objet au contact. Dure jusqu'à dissipation.",
      "en": "Continual Flame",
      "lst": "druide"
     },
@@ -5637,7 +5664,7 @@
      "t": "Action",
      "p": "Contact",
      "c": false,
-     "d": "Vision dans le noir à 150 ft pendant 8 heures.",
+     "d": "Une créature consentante au contact voit dans le noir jusqu'à 150 ft pendant 8 heures.",
      "en": "Darkvision",
      "lst": "druide"
     },
@@ -5647,7 +5674,7 @@
      "t": "Action",
      "p": "Contact",
      "c": true,
-     "d": "Avantage aux tests d'une caractéristique choisie pendant 1 heure. Une cible de plus par niveau au-dessus de 2.",
+     "d": "Concentration, 1 heure. Une créature au contact reçoit avantage à une caractéristique au choix (Force, Dextérité, Constitution, Intelligence, Sagesse ou Charisme) pour un effet précis. +1 cible par niveau.",
      "en": "Enhance Ability",
      "lst": "druide"
     },
@@ -5657,7 +5684,7 @@
      "t": "Action",
      "p": "30 ft",
      "c": true,
-     "d": "Agrandi : taille +1, avantage FOR, +1d4 aux dégâts d'arme. Rétréci : l'inverse.",
+     "d": "Concentration, 1 minute. Jet de CON d'une créature visible à 30 ft si elle n'est pas consentante : sa taille augmente ou diminue d'une catégorie (avantage aux tests et jets de FOR si agrandie, +1d4 dégâts d'armes, ou désavantage et −1d4 si réduite).",
      "save": "CON",
      "en": "Enlarge/Reduce",
      "lst": "druide"
@@ -5668,7 +5695,7 @@
      "t": "Action",
      "p": "120 ft",
      "c": false,
-     "d": "Tu sens la présence de pièges dans ta ligne de vue, sans savoir où.",
+     "d": "Tu sens la présence de pièges à 120 ft dans ta ligne de vue, mais pas leur nature exacte ni leur emplacement précis.",
      "en": "Find Traps",
      "lst": "druide"
     },
@@ -5678,7 +5705,7 @@
      "t": "Action bonus",
      "p": "Soi",
      "c": true,
-     "d": "Lame de feu dans ta main libre. Action Magie : attaque de sort au contact, 3d6+5 feu. Il faut une main libre.",
+     "d": "Action bonus. Une lame de feu apparaît dans ta main pendant 10 minutes (concentration, lumière vive sur 10 ft). Attaque de sort au corps à corps : 3d6 feu. En action bonus, tu la recrées. +1d6 par niveau.",
      "atk": true,
      "en": "Flame Blade",
      "lst": "druide"
@@ -5689,7 +5716,7 @@
      "t": "Action",
      "p": "60 ft",
      "c": true,
-     "d": "Sphère de 5 ft : 2d6 feu pour qui finit son tour à côté ou est percuté (DEX DD 17). Bonus : déplace-la de 30 ft.",
+     "d": "Concentration, 1 minute. Une sphère de feu de 5 ft de diamètre, à 60 ft. Jet de DEX des créatures qui finissent leur tour à 5 ft ou sont percutées : 2d6 feu si raté, moitié si réussi. En action bonus, tu la déplaces de 30 ft. +1d6 par niveau.",
      "save": "DEX",
      "en": "Flaming Sphere",
      "lst": "druide"
@@ -5700,7 +5727,7 @@
      "t": "Action",
      "p": "Ligne de 60 ft",
      "c": true,
-     "d": "Ligne de vent : FOR DD 17 ou repoussée de 15 ft, avancer contre le vent coûte double. Bonus : change la direction.",
+     "d": "Concentration, 1 minute. Ligne de vent de 60 ft sur 10 ft. Jet de FOR des créatures sur la ligne au lancement et à chaque tour : repoussées de 15 ft si raté. Chaque pied de mouvement vers toi coûte 1 ft de plus. Flammes éteintes, gaz dispersé.",
      "save": "FOR",
      "en": "Gust of Wind",
      "lst": "druide"
@@ -5711,7 +5738,7 @@
      "t": "Action",
      "p": "60 ft",
      "c": true,
-     "d": "Objet métallique brûlant : 2d8 feu par tour, le porteur lâche l'objet (CON DD 17) ou subit un désavantage. Bonus : dégâts à nouveau.",
+     "d": "Concentration, 1 minute. Un objet métallique visible à 60 ft devient brûlant : 2d8 feu au lancement à qui le touche, puis à chaque tour en action bonus. Jet de CON si tenu ou porté : lâche l'objet si raté, sinon désavantage aux attaques et tests. +1d8 par niveau.",
      "save": "CON",
      "en": "Heat Metal",
      "gid": "s-heat-metal",
@@ -5721,9 +5748,9 @@
      "n": "Localisation d'animaux ou de plantes",
      "lv": 2,
      "t": "Action",
-     "p": "1 mile",
+     "p": "Soi, 5 miles",
      "c": false,
-     "d": "Direction et distance de la bête ou de la plante cherchée la plus proche. Rituel.",
+     "d": "Tu apprends la direction et la distance de la bête, créature végétale ou plante non magique la plus proche d'un type nommé, dans 5 miles. Rituel.",
      "ritual": true,
      "en": "Locate Animals or Plants",
      "lst": "druide"
@@ -5734,7 +5761,7 @@
      "t": "Action",
      "p": "Soi, 1000 ft",
      "c": true,
-     "d": "Direction d'un objet connu ou du plus proche d'un type donné. Le plomb bloque le sort.",
+     "d": "Concentration, 10 minutes. Tu sens la direction d'un objet connu ou d'un type d'objet à 1 000 ft, s'il n'est pas bloqué par du plomb ou de la pierre épaisse. Portée de 1 000 ft.",
      "en": "Locate Object",
      "gid": "s-locate-object",
      "lst": "druide"
@@ -5745,7 +5772,7 @@
      "t": "Action",
      "p": "120 ft",
      "c": true,
-     "d": "Rayon de 5 ft : 2d10 radiant pour qui entre ou finit son tour dedans (CON DD 17). Action Magie : le déplacer de 60 ft.",
+     "d": "Concentration, 1 minute. Colonne de lumière de 5 ft de rayon et 40 ft de haut, à 120 ft. Jet de CON à l'entrée et en fin de tour : 2d10 radiant si raté, moitié si réussi. Les métamorphes ont désavantage et reprennent leur forme. +1d10 par niveau.",
      "save": "CON",
      "en": "Moonbeam",
      "lst": "druide"
@@ -5756,7 +5783,7 @@
      "t": "Action",
      "p": "Contact",
      "c": false,
-     "d": "Neutralise un poison. 1 heure : avantage contre l'empoisonnement, résistance au poison.",
+     "d": "Une créature au contact perd un effet de poison en cours et gagne l'avantage aux jets contre le poison et la résistance aux dégâts de poison pendant 1 heure.",
      "en": "Protection from Poison",
      "lst": "druide"
     },
@@ -5766,7 +5793,7 @@
      "t": "Action",
      "p": "150 ft",
      "c": true,
-     "d": "Rayon de 20 ft : terrain difficile, 2d4 perçant par 5 ft parcourus. Très efficace avec Diable de poussière et Bourrasque.",
+     "d": "Concentration, 10 minutes. Un rayon de 20 ft à 150 ft, terrain difficile hérissé de piques : 2d4 perçant par 5 ft parcourus. Difficile à repérer.",
      "en": "Spike Growth",
      "lst": "druide"
     },
@@ -5776,7 +5803,7 @@
      "t": "Action",
      "p": "90 ft",
      "c": true,
-     "d": "Esprit bestial (terre, mer ou air) qui combat à tes côtés. Puissance selon le niveau de l'emplacement.",
+     "d": "Concentration, 1 heure. Un esprit de bête allié apparaît à 90 ft (Terre, Air ou Eau), agit à ton initiative avec le niveau d'emplacement pour seuil de PV, CA et dégâts.",
      "en": "Summon Beast"
     },
     {
@@ -5785,7 +5812,7 @@
      "t": "Action",
      "p": "120 ft",
      "c": true,
-     "d": "Nuage d'orage : éclair sur un point, DEX DD 17, 3d10 foudre, moitié si réussi. Action Magie à chaque tour, +1d10 par temps d'orage.",
+     "d": "Concentration, 10 minutes. Un nuage d'orage de 60 ft de rayon, à 120 ft. En action, un éclair frappe un point sous le nuage : jet de DEX dans 5 ft, 3d10 foudre si raté, moitié si réussi. +1d10 par niveau.",
      "pre": true,
      "save": "DEX",
      "en": "Call Lightning",
@@ -5797,7 +5824,7 @@
      "t": "Action",
      "p": "60 ft",
      "c": true,
-     "d": "Meute spectrale qui te suit : 3d10 tranchant pour les ennemis qui s'en approchent (DEX DD 17). Avantage aux jets de FOR à 5 ft d'elle.",
+     "d": "Concentration, 10 minutes. Un esprit de bête allié apparaît (nuée de 30 ft). Jet de DEX des créatures qui entrent ou commencent leur tour dedans : 3d10 tranchant si raté, moitié si réussi. +1d10 par niveau.",
      "pre": true,
      "save": "DEX",
      "en": "Conjure Animals",
@@ -5809,7 +5836,7 @@
      "t": "Action",
      "p": "120 ft",
      "c": false,
-     "d": "Met fin aux sorts de niveau inférieur ou égal à l'emplacement. Au-delà : test de SAG (+5) contre DD 10 + niveau du sort.",
+     "d": "Un sort en cours de niveau 3 ou moins sur la cible (créature, objet ou effet à 120 ft) prend fin. Pour un sort de niveau plus élevé, test d'incantation contre DD 10 + niveau du sort. Fin automatique si l'emplacement est de niveau suffisant.",
      "pre": true,
      "en": "Dispel Magic",
      "lst": "druide"
@@ -5820,7 +5847,7 @@
      "t": "Action",
      "p": "Contact",
      "c": false,
-     "d": "Ramène une créature morte depuis moins d'une minute, à 1 PV. Diamant de 300 po consommé.",
+     "d": "Une créature morte depuis 1 minute ou moins est ramenée à 1 PV. Sans effet sur les créatures mortes de vieillesse ou sans corps. Coût en diamants de 300 po.",
      "pre": true,
      "en": "Revivify",
      "lst": "druide"
@@ -5877,7 +5904,7 @@
      "t": "Action",
      "p": "Émanation de 30 ft",
      "c": true,
-     "d": "Bonus à chaque tour : une créature de l'aura récupère 2d6 PV. 1 minute.",
+     "d": "Concentration, 1 minute. Aura de 30 ft autour de toi. En action bonus, une créature de ton choix dans l'aura regagne 2d6 PV.",
      "en": "Aura of Vitality"
     },
     {
@@ -5886,7 +5913,7 @@
      "t": "Action",
      "p": "60 ft",
      "c": false,
-     "d": "Sphère de lumière vive de 60 ft pendant 1 heure. Dissipe les ténèbres magiques de niveau 3 ou moins.",
+     "d": "Sphère de 60 ft de rayon de lumière vive, 60 ft de plus en faible, pendant 1 heure, sur un point à 60 ft. Dissipe les ténèbres magiques de niveau 3 ou moins.",
      "en": "Daylight",
      "lst": "druide"
     },
@@ -5896,7 +5923,7 @@
      "t": "Action",
      "p": "Contact",
      "c": true,
-     "d": "Arme non magique : +2 à l'attaque et dégâts élémentaires en plus. 1 heure.",
+     "d": "Concentration, 1 heure. Une arme non magique au contact devient magique : +1 à l'attaque et +1d4 d'un type au choix (acide, froid, feu, foudre ou tonnerre). +2 et +2d4 avec le niveau 5 ou 6, +3 et +3d4 avec le niveau 7 ou plus.",
      "en": "Elemental Weapon"
     },
     {
@@ -5905,7 +5932,7 @@
      "t": "Action",
      "p": "Contact",
      "c": false,
-     "d": "Une créature consentante paraît morte 1 heure, résistance à tous les dégâts sauf psychiques. Rituel.",
+     "d": "Une créature consentante au contact semble morte pendant 1 heure : aveuglée et neutralisée, vitesse 0, résistance à tous les dégâts sauf psychique. Rituel.",
      "ritual": true,
      "en": "Feign Death"
     },
@@ -5915,7 +5942,7 @@
      "t": "Action",
      "p": "Contact",
      "c": false,
-     "d": "Tu te fonds dans une surface de pierre pendant 8 heures. Rituel.",
+     "d": "Tu fusionnes avec une pierre assez grande au contact pendant 8 heures. Tes alliés ne te voient pas, tu perçois à l'extérieur. Si la pierre est détruite, 6d6 force et à terre. Rituel.",
      "ritual": true,
      "en": "Meld into Stone",
      "lst": "druide"
@@ -5926,7 +5953,7 @@
      "t": "Action",
      "p": "150 ft",
      "c": false,
-     "d": "Plantes d'un rayon de 100 ft si denses que chaque pied parcouru en coûte 4. Ou récoltes doublées pendant 8 heures.",
+     "d": "Les plantes dans un rayon de 100 ft à 150 ft deviennent un terrain très difficile (4 ft de mouvement par pied), ou tu enrichis la terre pendant un an. Incantation d'une action ou 8 heures.",
      "en": "Plant Growth",
      "lst": "druide"
     },
@@ -5936,7 +5963,7 @@
      "t": "Action",
      "p": "Contact",
      "c": true,
-     "d": "Résistance à un type de dégâts : acide, froid, feu, foudre ou tonnerre. 1 heure.",
+     "d": "Concentration, 1 heure. Une créature consentante au contact gagne la résistance à un type de dégâts : acide, froid, feu, foudre ou tonnerre.",
      "en": "Protection from Energy",
      "lst": "druide"
     },
@@ -5946,7 +5973,7 @@
      "t": "Action",
      "p": "150 ft",
      "c": true,
-     "d": "Zone fortement obscurcie, terrain difficile, créatures à terre (DEX DD 17). Casse la concentration des lanceurs.",
+     "d": "Concentration, 1 minute. Cylindre de 40 ft de rayon et 20 ft de haut, à 150 ft : terrain difficile, flammes éteintes, jet de DEX pour ne pas tomber à terre, test de concentration (CON) pour rester concentré.",
      "save": "DEX",
      "en": "Sleet Storm",
      "lst": "druide"
@@ -5957,7 +5984,7 @@
      "t": "Action",
      "p": "Soi, 30 ft",
      "c": false,
-     "d": "10 minutes : parle aux plantes, rend praticable ou infranchissable un terrain végétal.",
+     "d": "Pendant 10 minutes, tu interroges les plantes à 30 ft et elles peuvent te répondre, déplacer leurs branches, et rendre le terrain facile ou difficile.",
      "en": "Speak with Plants",
      "lst": "druide"
     },
@@ -5967,7 +5994,7 @@
      "t": "Action",
      "p": "90 ft",
      "c": true,
-     "d": "Esprit fée (furieux, joyeux ou rusé) qui combat à tes côtés. À ne pas confondre avec Invocation de fée (niveau 6).",
+     "d": "Concentration, 1 heure. Un esprit fée allié (Furieux, Joyeux ou Rusé) apparaît à 90 ft. Il agit à ton initiative, avec le niveau d'emplacement pour seuil de PV, CA et dégâts.",
      "en": "Summon Fey"
     },
     {
@@ -5976,7 +6003,7 @@
      "t": "Action",
      "p": "30 ft",
      "c": false,
-     "d": "Jusqu'à dix créatures respirent sous l'eau 24 heures. Rituel.",
+     "d": "Jusqu'à dix créatures consentantes à 30 ft respirent sous l'eau pendant 24 heures. Rituel.",
      "ritual": true,
      "en": "Water Breathing",
      "lst": "druide"
@@ -5987,7 +6014,7 @@
      "t": "Action",
      "p": "30 ft",
      "c": false,
-     "d": "Jusqu'à dix créatures marchent sur les liquides 1 heure. Rituel.",
+     "d": "Jusqu'à dix créatures consentantes à 30 ft marchent sur les liquides pendant 1 heure. Rituel.",
      "ritual": true,
      "en": "Water Walk",
      "lst": "druide"
@@ -5998,7 +6025,7 @@
      "t": "Action",
      "p": "120 ft",
      "c": true,
-     "d": "Mur de vent de 50 ft de long : 4d8 contondant (FOR DD 17, moitié si réussi). Dévie flèches et projectiles, bloque gaz et petits volants.",
+     "d": "Concentration, 1 minute. Mur de vent de 50 ft de long sur 15 ft de haut, à 120 ft. Jet de FOR des créatures qui y sont : 4d8 contondant et repoussées de 5 ft si raté, moitié si réussi. Dévie projectiles non lourds.",
      "save": "FOR",
      "en": "Wind Wall",
      "lst": "druide"
@@ -6009,7 +6036,7 @@
      "t": "Action",
      "p": "60 ft",
      "c": true,
-     "d": "Transforme une créature en bête. Sur un ennemi : neutralise un boss. Sur un allié : réservoir de PV et bête puissante.",
+     "d": "Concentration, 1 heure. Jet de SAG d'une créature visible à 60 ft (réussite automatique si métamorphe ou si elle a 0 PV) : si raté, elle devient une bête de facteur 4 maximum. Elle retrouve sa forme à 0 PV de bête.",
      "pre": true,
      "save": "SAG",
      "en": "Polymorph",
@@ -6021,7 +6048,7 @@
      "t": "Action",
      "p": "90 ft",
      "c": true,
-     "d": "Sphère de 10 ft : plus d'action bonus ni de réaction, comportement tiré au 1d10 au début du tour. Nouveau jet à chaque fin de tour.",
+     "d": "Concentration, 1 minute. Sphère de 10 ft de rayon, à 90 ft : jet de SAG des créatures dedans. Si raté, elles se comportent de façon aléatoire (jet de d10 à chaque tour). +5 ft de rayon par niveau.",
      "pre": true,
      "save": "SAG",
      "en": "Confusion",
@@ -6033,7 +6060,7 @@
      "t": "Action",
      "p": "30 ft",
      "c": false,
-     "d": "8d8 nécrotique, moitié si réussi. Une plante échoue automatiquement.",
+     "d": "Jet de CON d'une créature visible à 30 ft : 8d8 nécrotique si raté, moitié si réussi. Plantes et créatures végétales : désavantage et dégâts maximum. +1d8 par niveau.",
      "pre": true,
      "save": "CON",
      "en": "Blight",
@@ -6046,7 +6073,7 @@
      "t": "Action",
      "p": "30 ft",
      "c": false,
-     "d": "Comme Charme-personne, sur n'importe quelle créature, 1 heure. Une cible de plus par niveau au-dessus de 4.",
+     "d": "Jet de SAG d'une créature visible à 30 ft (avantage si elle est en combat contre toi) : charmée pendant 1 heure si raté. +1 cible par niveau.",
      "save": "SAG",
      "en": "Charm Monster",
      "lst": "druide"
@@ -6057,7 +6084,7 @@
      "t": "Action",
      "p": "Émanation de 15 ft",
      "c": true,
-     "d": "Tes attaques contre une créature de l'émanation infligent 2d8 dégâts élémentaires en plus. Terrain difficile pour tes ennemis.",
+     "d": "Concentration, 10 minutes. Une aura de 15 ft de rayon d'acide, de froid, de feu ou de foudre : toute créature qui y finit son tour subit 2d8 de ce type. +1d8 par niveau.",
      "en": "Conjure Minor Elementals",
      "lst": "druide"
     },
@@ -6067,7 +6094,7 @@
      "t": "Action",
      "p": "Émanation de 10 ft",
      "c": true,
-     "d": "Esprits fées qui frappent les ennemis proches : 5d8 force (SAG DD 17, moitié si réussi). Bonus : Se désengager.",
+     "d": "Concentration, 10 minutes. Un esprit sylvestre allié et une aura de 10 ft : jet de SAG des créatures qui entrent ou commencent leur tour dedans, 5d8 force si raté, moitié si réussi. +1d8 par niveau.",
      "save": "SAG",
      "en": "Conjure Woodland Beings",
      "lst": "druide"
@@ -6078,7 +6105,7 @@
      "t": "Action",
      "p": "300 ft",
      "c": true,
-     "d": "Inondation, séparation des eaux, détournement du courant ou tourbillon.",
+     "d": "Concentration, 10 minutes. Cube de 100 ft : tu soulèves, fends, redirige ou fais tourbillonner l'eau. Tourbillon : jet de FOR, 2d8 contondant si raté. Jet de FOR des créatures prises dans la vague.",
      "en": "Control Water",
      "lst": "druide"
     },
@@ -6088,7 +6115,7 @@
      "t": "Action",
      "p": "Soi",
      "c": false,
-     "d": "Une question à une entité divine sur un objectif ou un événement dans les 7 prochains jours. Rituel.",
+     "d": "Incantation de 1 minute : tu poses une question à une puissance divine sur un événement dans les 7 prochains jours et reçois une réponse brève. Rituel.",
      "ritual": true,
      "en": "Divination",
      "lst": "druide"
@@ -6099,7 +6126,7 @@
      "t": "Action",
      "p": "60 ft",
      "c": true,
-     "d": "Une bête qui rate son jet de SAG est charmée et obéit à tes ordres télépathiques.",
+     "d": "Concentration, 1 minute. Jet de SAG d'une Bête visible à 60 ft : si raté, elle est charmée et tu lui donnes des ordres en action. Avantage au jet si elle est en combat. Durée plus longue avec le niveau.",
      "save": "SAG",
      "en": "Dominate Beast",
      "lst": "druide"
@@ -6107,10 +6134,10 @@
     {
      "n": "Bouclier de feu",
      "lv": 4,
-     "t": "Action bonus",
+     "t": "Action",
      "p": "Soi",
      "c": false,
-     "d": "10 minutes, sans concentration : résistance au froid ou au feu, riposte de 2d8 contre qui te frappe au contact.",
+     "d": "Pendant 10 minutes, des flammes froides ou chaudes t'entourent : lumière faible sur 10 ft, résistance au feu ou au froid, et un attaquant au corps à corps subit 2d8 de l'autre type.",
      "en": "Fire Shield",
      "lst": "druide"
     },
@@ -6120,7 +6147,7 @@
      "t": "Action",
      "p": "Soi",
      "c": true,
-     "d": "Résistance radiant, +2d6 radiant au corps à corps, réaction aveuglante (CON DD 17).",
+     "d": "Concentration, 10 minutes. Tu rayonnes : lumière vive 20 ft, ton arme ajoute 2d6 radiant. Réaction quand une créature te touche : jet de CON, aveuglée jusqu'à la fin de son tour si raté.",
      "en": "Fount of Moonlight"
     },
     {
@@ -6129,7 +6156,7 @@
      "t": "Action",
      "p": "Contact",
      "c": false,
-     "d": "1 heure : le terrain difficile ne ralentit pas, pas de paralysie ni d'entrave magique.",
+     "d": "Une créature au contact ignore les terrains difficiles, les sorts et attaques qui réduisent sa vitesse ou l'entravent, ne peut être entravée ni agrippée, et passe sous l'eau sans pénalité, pendant 1 heure. +1 cible par niveau.",
      "en": "Freedom of Movement",
      "lst": "druide"
     },
@@ -6139,7 +6166,7 @@
      "t": "Action",
      "p": "60 ft",
      "c": true,
-     "d": "Esprit insecte géant (mille-pattes, araignée ou guêpe) qui combat à tes côtés.",
+     "d": "Concentration, 10 minutes. Un esprit d'insecte allié (Fourmi, Araignée ou Guêpe) apparaît à 60 ft, agit à ton initiative, et le niveau d'emplacement fixe ses PV, sa CA et ses dégâts.",
      "en": "Giant Insect",
      "lst": "druide"
     },
@@ -6149,7 +6176,7 @@
      "t": "Action bonus",
      "p": "60 ft",
      "c": true,
-     "d": "Attaque de sort au contact : 4d8 contondant, cible tirée de 30 ft et agrippée. Action bonus : laisse ton action libre.",
+     "d": "Action bonus pendant la concentration (1 minute). Une liane jaillit à 30 ft : jet de FOR, la créature est agrippée et tirée vers elle et subit 4d8 contondant si raté. +1 cible agrippée par niveau.",
      "atk": true,
      "en": "Grasping Vine"
     },
@@ -6159,7 +6186,7 @@
      "t": "Hors combat",
      "p": "300 ft",
      "c": false,
-     "d": "Un terrain naturel ressemble à un autre pendant 24 heures. Incantation : 10 minutes.",
+     "d": "Un terrain naturel dans un cube de 150 ft prend l'apparence d'un autre terrain, pendant 24 heures. Un examen physique le trahit, Investigation contre ton DD. Incantation de 10 minutes.",
      "en": "Hallucinatory Terrain",
      "lst": "druide"
     },
@@ -6169,7 +6196,7 @@
      "t": "Action",
      "p": "300 ft",
      "c": false,
-     "d": "Cylindre de 20 ft : 2d10 contondant + 4d6 froid (DEX DD 17), terrain difficile.",
+     "d": "Cylindre de 20 ft de rayon et 40 ft de haut, à 300 ft : jet de DEX, 2d10 contondant et 4d6 froid si raté, moitié si réussi. Terrain difficile jusqu'à la fin du tour suivant. +1d10 contondant par niveau.",
      "save": "DEX",
      "en": "Ice Storm",
      "lst": "druide"
@@ -6180,7 +6207,7 @@
      "t": "Action",
      "p": "Soi, 1000 ft",
      "c": true,
-     "d": "Direction d'une créature connue ou de la plus proche d'un type donné. L'eau courante bloque le sort.",
+     "d": "Concentration, 1 heure. Tu sens la direction d'une créature connue à 1 000 ft, ou d'un type de créature. Bloqué par un cours d'eau courante.",
      "en": "Locate Creature",
      "lst": "druide"
     },
@@ -6190,7 +6217,7 @@
      "t": "Action",
      "p": "Contact",
      "c": false,
-     "d": "Façonne un objet ou une surface de pierre de taille M ou inférieure.",
+     "d": "Une pierre de taille Moyenne ou moins, au contact, prend la forme de ton choix : porte, arme, coffre. Les détails fins sont limités.",
      "en": "Stone Shape",
      "lst": "druide"
     },
@@ -6200,7 +6227,7 @@
      "t": "Action",
      "p": "Contact",
      "c": true,
-     "d": "Résistance aux dégâts contondants, perforants et tranchants. Poussière de diamant de 100 po consommée.",
+     "d": "Concentration, 1 heure. Une créature au contact, avec 100 po de poudre de diamant, gagne la résistance aux dégâts contondants, perçants et tranchants non magiques.",
      "en": "Stoneskin",
      "lst": "druide"
     },
@@ -6210,7 +6237,7 @@
      "t": "Action",
      "p": "90 ft",
      "c": true,
-     "d": "Esprit élémentaire (air, terre, feu ou eau) qui combat à tes côtés.",
+     "d": "Concentration, 1 heure. Un esprit élémentaire allié (Air, Terre, Feu ou Eau) apparaît à 90 ft, agit à ton initiative, et le niveau d'emplacement fixe ses PV, sa CA et ses dégâts.",
      "en": "Summon Elemental"
     },
     {
@@ -6219,7 +6246,7 @@
      "t": "Action",
      "p": "120 ft",
      "c": true,
-     "d": "Mur de 60 ft ou anneau : 5d8 feu à l'apparition (DEX DD 17), puis à chaque passage ou fin de tour à 10 ft.",
+     "d": "Concentration, 1 minute. Mur de flammes de 60 ft de long, 20 ft de haut, 1 ft d'épaisseur, à 120 ft. Jet de DEX des créatures à 10 ft de la face : 5d8 feu si raté, moitié si réussi. Même jet à l'entrée et en fin de tour dans le mur. +1d8 par niveau.",
      "save": "DEX",
      "en": "Wall of Fire",
      "lst": "druide"
@@ -6230,7 +6257,7 @@
      "t": "Action",
      "p": "Soi, 500 ft",
      "c": true,
-     "d": "Entre dans un arbre et ressors d'un arbre de même espèce à 500 ft. Excellent pour se replacer.",
+     "d": "Concentration, 1 minute. Tu entres dans un arbre et sors par un arbre de même type à 500 ft, une fois par tour.",
      "pre": true,
      "en": "Tree Stride",
      "lst": "druide"
@@ -6272,7 +6299,7 @@
      "t": "Hors combat",
      "p": "60 ft",
      "c": false,
-     "d": "Ordre imposé pendant 30 jours. Agir contre l'ordre inflige 5d10 psychiques. Incantation : 1 minute.",
+     "d": "Incantation de 1 minute. Jet de SAG d'une créature visible à 60 ft qui te comprend : charmée 30 jours, elle suit un ordre. Si elle désobéit, 5d10 psychique par jour. Durée plus longue avec le niveau.",
      "pre": true,
      "save": "SAG",
      "en": "Geas",
@@ -6284,7 +6311,7 @@
      "t": "Hors combat",
      "p": "Soi",
      "c": true,
-     "d": "Observer à distance une créature du même plan. Incantation : 10 minutes.",
+     "d": "Concentration, 10 minutes. Jet de SAG d'une créature connue sur le même plan : si raté, tu perçois sa position, ou tu vois et entends autour d'elle. Incantation de 10 minutes.",
      "pre": true,
      "save": "SAG",
      "en": "Scrying",
@@ -6296,7 +6323,7 @@
      "t": "Action",
      "p": "Émanation de 10 ft",
      "c": true,
-     "d": "Les créatures hors morts-vivants et artificielles ne peuvent entrer dans l'aura ni t'atteindre au contact.",
+     "d": "Concentration, 1 heure. Barrière de 10 ft de rayon : les créatures vivantes (hors Artificiels et Morts-vivants) ne la traversent pas, et ne peuvent pas attaquer à travers au corps à corps.",
      "en": "Antilife Shell",
      "lst": "druide"
     },
@@ -6306,17 +6333,17 @@
      "t": "Hors combat",
      "p": "Contact",
      "c": false,
-     "d": "Une bête ou une plante gagne INT 10 et la parole. Incantation : 8 heures. Agate de 1 000 po.",
+     "d": "Incantation de 8 heures, au contact : une bête ou une plante gagne Int 10 et un langage, charmée envers toi 30 jours. Coût en agates de 1 000 po.",
      "en": "Awaken",
      "lst": "druide"
     },
     {
      "n": "Communion avec la nature",
      "lv": 5,
-     "t": "Action",
+     "t": "Hors combat",
      "p": "Soi",
      "c": false,
-     "d": "Trois faits sur le terrain dans un rayon de 3 miles. Rituel.",
+     "d": "Incantation de 1 minute : tu obtiens trois informations sur le terrain dans un rayon de 3 miles (5 miles à l'extérieur). Rituel.",
      "ritual": true,
      "en": "Commune with Nature",
      "lst": "druide"
@@ -6327,7 +6354,7 @@
      "t": "Action",
      "p": "Cône de 60 ft",
      "c": false,
-     "d": "8d8 froid, moitié si réussi. Une créature tuée devient une statue gelée.",
+     "d": "Cône de 60 ft : jet de CON, 8d8 froid si raté, moitié si réussi. Une créature morte devient une statue gelée. +1d8 par niveau.",
      "save": "CON",
      "en": "Cone of Cold",
      "lst": "druide"
@@ -6338,7 +6365,7 @@
      "t": "Action",
      "p": "60 ft",
      "c": true,
-     "d": "Esprit élémentaire dans un cube de 10 ft : DEX et dégâts selon l'élément pour qui entre ou approche.",
+     "d": "Concentration, 10 minutes. Cube de 5 ft à 60 ft : jet de DEX des créatures à 5 ft de lui, 8d8 de foudre, tonnerre, feu ou froid si raté, moitié si réussi. Les créatures dedans sont entravées. +1d8 par niveau.",
      "save": "DEX",
      "en": "Conjure Elemental",
      "lst": "druide"
@@ -6349,7 +6376,7 @@
      "t": "Action",
      "p": "Contact",
      "c": false,
-     "d": "11d8 nécrotique et empoisonné. Trois échecs aux jets suivants : la cible est malade 7 jours.",
+     "d": "Concentration non. Attaque de sort au corps à corps : empoisonnée, la cible subit 11d8 nécrotique si trois échecs consécutifs aux jets de CON, ou la maladie se déclare. Durée 7 jours.",
      "save": "CON",
      "en": "Contagion",
      "lst": "druide"
@@ -6360,7 +6387,7 @@
      "t": "Action",
      "p": "300 ft",
      "c": true,
-     "d": "Nuée de criquets sur 20 ft de rayon : 4d10 perçant (CON DD 17). Zone obscurcie, terrain difficile.",
+     "d": "Concentration, 10 minutes. Sphère de 20 ft de rayon, à 300 ft : terrain difficile, visibilité faible. Jet de CON à l'entrée et en fin de tour : 4d10 perçant si raté, moitié si réussi. +1d10 par niveau.",
      "save": "CON",
      "en": "Insect Plague",
      "lst": "druide"
@@ -6371,7 +6398,7 @@
      "t": "Action",
      "p": "60 ft",
      "c": false,
-     "d": "Jusqu'à six créatures d'une sphère de 30 ft récupèrent 5d8+5 PV.",
+     "d": "Jusqu'à six créatures dans une sphère de 30 ft, à 60 ft : chacune regagne 5d8 + modificateur d'incantation PV. +1d8 par niveau.",
      "en": "Mass Cure Wounds",
      "lst": "druide"
     },
@@ -6381,7 +6408,7 @@
      "t": "Hors combat",
      "p": "60 ft",
      "c": false,
-     "d": "Lie un céleste, élémentaire, fée ou fiélon à ton service 24 heures. Incantation : 1 heure.",
+     "d": "Incantation d'une heure : jet de CHA d'une créature extérieure, un objet de ton choix (1 000 po) la lie à ton service pendant 24 heures. Durée plus longue avec le niveau.",
      "save": "CHA",
      "en": "Planar Binding",
      "lst": "druide"
@@ -6392,7 +6419,7 @@
      "t": "Hors combat",
      "p": "Contact",
      "c": false,
-     "d": "Ramène à la vie une créature morte depuis moins de 10 jours, dans un nouveau corps. Incantation : 1 heure.",
+     "d": "Un humanoïde mort depuis 10 jours ou moins revient à la vie dans un nouveau corps au contact. Incantation d'une heure. Coût en huiles de 1 000 po.",
      "en": "Reincarnate",
      "lst": "druide"
     },
@@ -6402,7 +6429,7 @@
      "t": "Action",
      "p": "120 ft",
      "c": true,
-     "d": "Mur de dix panneaux de 10 ft. Devient permanent si tu maintiens la concentration toute la durée.",
+     "d": "Concentration, 10 minutes. Mur de pierre de 10 panneaux de 10 ft sur 10 ft et 6 pouces d'épaisseur, à 120 ft. Jet de DEX des créatures écrasées.",
      "save": "DEX",
      "en": "Wall of Stone",
      "lst": "druide"
@@ -6413,7 +6440,7 @@
      "t": "Action",
      "p": "60 ft",
      "c": false,
-     "d": "Rend 70 PV et met fin à aveuglé, assourdi et empoisonné. Ton plus gros soin.",
+     "d": "Une créature visible à 60 ft regagne 70 PV et est libérée des maladies et des états Aveuglé, Assourdi et Empoisonné. +10 PV par niveau.",
      "pre": true,
      "en": "Heal",
      "heal": {
@@ -6429,9 +6456,9 @@
      "n": "Invocation de fée",
      "lv": 6,
      "t": "Action",
-     "p": "90 ft",
+     "p": "60 ft",
      "c": true,
-     "d": "Esprit fée qui attaque aussitôt au contact : 3d12+5 psychique et cible effrayée. Bonus : téléporte l'esprit de 30 ft et refait l'attaque.",
+     "d": "Concentration, 10 minutes. Un esprit fée à 60 ft : ses attaques infligent 3d12 psychique et la cible est effrayée. +1d12 par niveau.",
      "pre": true,
      "atk": true,
      "en": "Conjure Fey",
@@ -6443,7 +6470,7 @@
      "t": "Hors combat",
      "p": "Soi",
      "c": true,
-     "d": "Chemin le plus direct vers un lieu fixe du même plan pendant 1 jour. Incantation : 1 minute.",
+     "d": "Concentration, 1 jour. Tu connais la distance et la direction de la route la plus directe jusqu'à un lieu fixe que tu as vu, sur ce plan. Pas de limite de portée. Incantation de 1 minute.",
      "en": "Find the Path",
      "lst": "druide"
     },
@@ -6453,7 +6480,7 @@
      "t": "Action",
      "p": "60 ft",
      "c": true,
-     "d": "Cible entravée, jet de CON à chaque tour. Trois échecs : pétrifiée. Trois réussites : fin du sort.",
+     "d": "Concentration, 1 minute. Jet de CON d'une créature visible à 60 ft : entravée si raté, avec nouveau jet en fin de chaque tour. Trois échecs la pétrifient. Dure tant que tu te concentres.",
      "save": "CON",
      "en": "Flesh to Stone",
      "lst": "druide"
@@ -6464,7 +6491,7 @@
      "t": "Hors combat",
      "p": "Soi",
      "c": false,
-     "d": "Banquet pour 12 : +2d10 PV max, immunité à la peur et au poison pendant 24 heures. Incantation : 10 minutes, coupe de 1 000 po.",
+     "d": "Incantation de 10 minutes. Un banquet pour douze créatures à 10 ft : résistance au poison, immunité à la peur et au poison, et +2d10 PV maximum pendant 24 heures. Coût en gemmes de 1 000 po.",
      "en": "Heroes' Feast",
      "lst": "druide"
     },
@@ -6474,7 +6501,7 @@
      "t": "Action",
      "p": "120 ft",
      "c": true,
-     "d": "Remodèle la terre d'une zone de 40 ft de côté toutes les 10 minutes, pendant 2 heures.",
+     "d": "Concentration, 2 heures. Tu remodèles le terrain dans une zone jusqu'à 40 ft de côté, à 120 ft. La zone change lentement, sans écrasement des créatures.",
      "en": "Move Earth",
      "lst": "druide"
     },
@@ -6484,7 +6511,7 @@
      "t": "Action",
      "p": "Ligne de 60 ft",
      "c": true,
-     "d": "6d8 radiant et aveuglé (CON DD 17, moitié sans cécité si réussi). Action Magie : nouvelle ligne à chaque tour.",
+     "d": "Concentration, 1 minute. Ligne de 60 ft sur 5 ft : jet de CON, 6d8 radiant et aveuglé jusqu'à ton prochain tour si raté, moitié si réussi. En action de Magie, tu la relances.",
      "save": "CON",
      "en": "Sunbeam",
      "lst": "druide"
@@ -6495,7 +6522,7 @@
      "t": "Action",
      "p": "10 ft",
      "c": false,
-     "d": "Relie une plante de taille G ou plus à une autre du même plan. Toute créature peut passer de l'une à l'autre.",
+     "d": "Une plante assez grande à 10 ft devient un portail vers une plante de même taille que tu connais sur le même plan. Dure 1 minute.",
      "en": "Transport via Plants",
      "lst": "druide"
     },
@@ -6505,7 +6532,7 @@
      "t": "Action",
      "p": "120 ft",
      "c": true,
-     "d": "Mur de 60 ft : 7d8 perçant à l'apparition (DEX DD 17), traverser coûte du mouvement et inflige 7d8 tranchants.",
+     "d": "Concentration, 10 minutes. Mur d'épines de 60 ft de long, 10 ft de haut, 5 ft d'épaisseur, à 120 ft. Jet de DEX des créatures entrant : 7d8 perçant si raté, moitié si réussi. +1d8 par niveau.",
      "save": "DEX",
      "en": "Wall of Thorns",
      "lst": "druide"
@@ -6516,7 +6543,7 @@
      "t": "Hors combat",
      "p": "30 ft",
      "c": false,
-     "d": "Toi et jusqu'à dix créatures prenez une forme de brume, vol 300 ft, 8 heures. Incantation : 1 minute.",
+     "d": "Incantation de 1 minute. Toi et jusqu'à dix créatures consentantes à 30 ft devenez des nuages de vapeur (vol de 300 ft), pendant 8 heures.",
      "en": "Wind Walk",
      "lst": "druide"
     },
@@ -6527,7 +6554,7 @@
      "t": "Action",
      "p": "60 ft",
      "c": false,
-     "d": "Tu manipules une flamme de 5 ft de côté : l'attiser, l'éteindre, la déplacer ou changer son aspect pendant 1 heure.",
+     "d": "Une flamme non magique dans un cube de 5 ft : tu l'élargis, l'éteins, la fais changer de couleur ou lui donnes une forme animée pendant 1 heure.",
      "lst": "druide"
     },
     {
@@ -6537,7 +6564,7 @@
      "t": "Action",
      "p": "60 ft",
      "c": true,
-     "d": "Feu de camp de 5 ft. Jet de DEX à l'apparition, à l'entrée ou en finissant son tour dedans : 3d8 feu. 1 minute.",
+     "d": "Un feu de camp surgit dans un espace de 5 ft. Jet de DEX à l'apparition, à l'entrée ou en fin de tour dedans : 3d8 feu si raté. Niveau 11 : 3d8.",
      "lst": "druide"
     },
     {
@@ -6547,7 +6574,7 @@
      "t": "Action",
      "p": "30 ft",
      "c": false,
-     "d": "Effet élémentaire mineur : souffle d'air, étincelle, terre façonnée, eau jetée, changement de couleur ou de température d'un objet de 5 ft de côté.",
+     "d": "Effets élémentaires mineurs : souffle d'air, étincelles, jet d'eau ou mouvement de terre sur un cube de 5 ft, ou un effet sensoriel. Dure 1 heure pour les effets d'ambiance.",
      "lst": "druide"
     },
     {
@@ -6556,7 +6583,7 @@
      "t": "Action",
      "p": "30 ft",
      "c": false,
-     "d": "Jet de FOR : une créature de taille M ou moins est repoussée de 5 ft. Peut aussi déplacer un objet léger.",
+     "d": "Une créature de taille Moyenne ou moins subit un jet de FOR ou est repoussée de 5 ft. Ou un objet léger bouge de 10 ft, ou un souffle d'air produit un effet sensoriel.",
      "en": "Gust",
      "gid": "s-gust",
      "lst": "druide"
@@ -6568,7 +6595,7 @@
      "t": "Action bonus",
      "p": "Contact",
      "c": false,
-     "d": "Jusqu'à 3 cailloux enchantés, lancés à 60 ft : attaque de sort, 1d6 + mod. d'incantation contondant. 1 minute.",
+     "d": "Tu infuses jusqu'à trois cailloux. Une attaque de sort à distance (portée 60 ft) ou à la main : 1d6 + modificateur d'incantation contondant. Le sort dure 1 minute.",
      "lst": "druide"
     },
     {
@@ -6578,7 +6605,7 @@
      "t": "Hors combat",
      "p": "Contact",
      "c": false,
-     "d": "Répare une cassure ou une déchirure d'un pied maximum dans un objet. Incantation : 1 minute.",
+     "d": "Tu répares une cassure ou une déchirure d'un objet touché, pourvu que le défaut mesure 1 ft au plus. Incantation de 1 minute.",
      "lst": "druide"
     },
     {
@@ -6588,7 +6615,7 @@
      "t": "Action",
      "p": "30 ft",
      "c": false,
-     "d": "Terre sur un cube de 5 ft : la creuser, la déplacer, la modeler ou la rendre difficile à traverser.",
+     "d": "Tu déplaces ou façonnes de la terre non occupée dans un cube de 5 ft, creuses une tranchée ou colores le sol, à 30 ft.",
      "lst": "druide"
     },
     {
@@ -6598,7 +6625,7 @@
      "t": "Action bonus",
      "p": "Soi",
      "c": false,
-     "d": "Flamme dans la main (lumière 20 ft, 10 minutes). Attaque de sort à distance à 60 ft : 3d8 feu.",
+     "d": "Une flamme apparaît dans ta main pendant 10 minutes, qui éclaire sur 20 ft. En action de Magie, attaque de sort à distance (portée 60 ft) : 3d8 feu (niveau 11).",
      "lst": "druide"
     },
     {
@@ -6608,7 +6635,7 @@
      "t": "Action",
      "p": "Contact",
      "c": true,
-     "d": "Une créature ajoute 1d4 à un jet de sauvegarde de son choix avant la fin du sort. 1 minute.",
+     "d": "Une créature consentante au contact ajoute 1d4 à un jet de sauvegarde de son choix avant la fin du sort. Concentration, 1 minute.",
      "lst": "druide"
     },
     {
@@ -6618,7 +6645,7 @@
      "t": "Action",
      "p": "30 ft",
      "c": false,
-     "d": "Eau sur un cube de 5 ft : la déplacer, la geler, la façonner ou la colorer.",
+     "d": "Tu déplaces, figes ou colore de l'eau dans un cube de 5 ft, ou la fais changer de forme, à 30 ft.",
      "lst": "druide"
     },
     {
@@ -6626,9 +6653,9 @@
      "en": "Shillelagh",
      "lv": 0,
      "t": "Action bonus",
-     "p": "Contact",
+     "p": "Soi",
      "c": false,
-     "d": "Un bâton ou gourdin devient magique : attaque avec ton mod. d'incantation, d12 de dégâts au niveau 11, dégâts de force possibles. 1 minute.",
+     "d": "Un bâton ou gourdin devient magique pendant 1 minute : attaque avec ton modificateur d'incantation, dégâts d12 au niveau 11 (force ou type de l'arme), jusqu'à 2 fois si autorisé. Action bonus.",
      "lst": "druide"
     },
     {
@@ -6638,7 +6665,7 @@
      "t": "Action",
      "p": "15 ft",
      "c": false,
-     "d": "Une créature à 0 PV est stabilisée.",
+     "d": "Une créature à 0 PV et vivante à 60 ft (niveau 11) devient stable.",
      "lst": "druide"
     },
     {
@@ -6648,7 +6675,7 @@
      "t": "Action",
      "p": "5 ft",
      "c": false,
-     "d": "Fracas audible à 100 ft. Créatures à 5 ft, jet de CON : 3d6 tonnerre.",
+     "d": "Jet de CON de chaque créature dans 5 ft : 3d6 tonnerre si raté. Le bruit s'entend à 100 ft. Niveau 11 : 3d6.",
      "lst": "druide"
     },
     {
@@ -6658,7 +6685,7 @@
      "t": "Réaction",
      "p": "Soi",
      "c": false,
-     "d": "Réaction à un dégât d'acide, de froid, de feu, de foudre ou de tonnerre : résistance à ce type, et +1d6 de ce type à ta prochaine attaque au contact. +1d6 par niveau.",
+     "d": "Réaction quand tu subis un dégât d'acide, de froid, de feu, de foudre ou de tonnerre : résistance à ce type jusqu'au début de ton prochain tour. Ta prochaine attaque au corps à corps avant la fin de ton prochain tour inflige +1d6 de ce type. +1d6 par niveau.",
      "lst": "druide"
     },
     {
@@ -6668,7 +6695,7 @@
      "t": "Action",
      "p": "Contact",
      "c": true,
-     "d": "Lien avec un animal consentant : avantage à tes attaques contre la cible de l'animal, vision partagée. 10 minutes.",
+     "d": "Une Bête consentante au contact, liée à toi pendant 10 minutes : avantage à tes attaques contre une créature à 5 ft de toi qu'elle voit. Concentration.",
      "lst": "druide"
     },
     {
@@ -6678,8 +6705,9 @@
      "t": "Hors combat",
      "p": "Contact",
      "c": false,
-     "d": "Rite d'une heure : bénédiction, expiation, funérailles, mariage ou autre, avec un effet mineur de bonus.",
-     "lst": "druide"
+     "d": "Rituel d'une heure sur une créature au contact : Expiation, Éveil de l'esprit, Bénédiction nuptiale, Veillée funèbre ou Rite de passage, avec ses bénéfices propres.",
+     "lst": "druide",
+     "ritual": true
     },
     {
      "n": "Secousse sismique",
@@ -6688,7 +6716,7 @@
      "t": "Action",
      "p": "Soi (10 ft)",
      "c": false,
-     "d": "Jet de DEX : 1d6 contondant et à terre. Terrain difficile. +1d6 par niveau.",
+     "d": "Le sol tremble dans un rayon de 10 ft : jet de DEX de chaque créature, 1d6 contondant et à terre si raté. Le terrain meuble devient difficile. +1d6 par niveau.",
      "lst": "druide"
     },
     {
@@ -6698,7 +6726,7 @@
      "t": "Action",
      "p": "300 ft",
      "c": true,
-     "d": "Jet de FOR : la vitesse de vol de la cible tombe à 0 et elle descend. 1 minute.",
+     "d": "Concentration, 1 minute. Jet de FOR d'une créature volante visible à 300 ft : si raté, sa vitesse de vol tombe à 0 et elle descend de 60 ft par tour. Réussite : sans effet.",
      "lst": "druide"
     },
     {
@@ -6708,7 +6736,7 @@
      "t": "Action",
      "p": "Vue",
      "c": true,
-     "d": "Écrit jusqu'à 10 mots dans le ciel. Rituel. 1 heure.",
+     "d": "Concentration, 1 heure. Jusqu'à dix mots apparaissent dans le ciel à portée visible. Rituel.",
      "lst": "druide",
      "ritual": true
     },
@@ -6719,7 +6747,7 @@
      "t": "Action",
      "p": "Soi",
      "c": true,
-     "d": "Vent de 10 ft : désavantage aux attaques à distance contre toi, dissipe gaz et vapeurs. 10 minutes.",
+     "d": "Concentration, 10 minutes. Un vent fort t'entoure (rayon de 10 ft) : désavantage aux attaques à distance contre toi, gaz dispersés, flammes éteintes, la zone te protège du brouillard.",
      "lst": "druide"
     },
     {
@@ -6739,17 +6767,17 @@
      "t": "Action",
      "p": "120 ft",
      "c": false,
-     "d": "Cube de 20 ft, jet de DEX : 3d12 contondant, terrain difficile. +1d12 par niveau.",
+     "d": "Cube de 20 ft, portée 120 ft : jet de DEX, 3d12 contondant si raté, moitié si réussi. Le terrain devient difficile jusqu'à dégagement. +1d12 par niveau.",
      "lst": "druide"
     },
     {
      "n": "Flèches enflammées",
      "en": "Flame Arrows",
      "lv": 3,
-     "t": "Action bonus",
+     "t": "Action",
      "p": "Contact",
      "c": true,
-     "d": "Jusqu'à 12 munitions infligent +1d6 feu. 1 heure.",
+     "d": "Concentration, 1 heure. Jusqu'à douze munitions au contact : chaque projectile inflige +1d6 feu. Le sort s'achève après 12 munitions. +2 munitions par niveau.",
      "lst": "druide"
     },
     {
@@ -6769,7 +6797,7 @@
      "t": "Action",
      "p": "120 ft",
      "c": false,
-     "d": "Vague de 30 x 10 ft, jet de DEX : 4d8 contondant et à terre (moitié, debout, si réussi).",
+     "d": "Une vague de 30 ft de long, 10 ft de large, 10 ft de haut, à 120 ft. Jet de DEX : 4d8 contondant et à terre si raté, moitié sans chute si réussi. L'eau non magique s'écoule ensuite.",
      "lst": "druide"
     },
     {
@@ -6779,7 +6807,7 @@
      "t": "Action",
      "p": "60 ft",
      "c": true,
-     "d": "Mur d'eau de 30 x 10 ft : désavantage aux attaques à distance, feu atténué. 10 minutes.",
+     "d": "Concentration, 10 minutes. Mur d'eau de 30 ft de long, 10 ft de haut, 1 ft d'épaisseur (ou anneau de 20 ft de diamètre). Bloque la ligne de vue, les projectiles d'ordre inférieur, et l'eau y gèle le feu. Mur plus étroit contre les flammes.",
      "lst": "druide"
     },
     {
@@ -6789,7 +6817,7 @@
      "t": "Action",
      "p": "90 ft",
      "c": true,
-     "d": "Jet de CON : 2d6 du type choisi, puis vulnérabilité à ce type. 1 minute.",
+     "d": "Concentration, 1 minute. Jet de CON d'une créature visible à 90 ft : si raté, vulnérabilité à acide, froid, feu, foudre ou tonnerre (choix), et +2d6 de ce type par touche. +1 cible par niveau.",
      "lst": "druide"
     },
     {
@@ -6799,7 +6827,7 @@
      "t": "Action",
      "p": "90 ft",
      "c": true,
-     "d": "Sphère d'eau de 5 ft : jet de FOR ou DEX, entravé. 1 minute.",
+     "d": "Concentration, 1 minute. Sphère d'eau de 5 ft de rayon, à 90 ft. Jet de FOR des créatures dedans : restreintes et immergées si raté. En action bonus, tu la déplaces de 30 ft.",
      "lst": "druide"
     },
     {
@@ -6809,7 +6837,7 @@
      "t": "Action",
      "p": "300 ft",
      "c": true,
-     "d": "Cube de 100 ft : tu règles direction et force du vent. 1 heure.",
+     "d": "Concentration, 1 heure. Cube de 100 ft, portée 300 ft : tu choisis Rafale, Courant descendant ou Courant ascendant. Jet de FOR du vol : à terre si raté.",
      "lst": "druide"
     },
     {
@@ -6829,7 +6857,7 @@
      "t": "Action",
      "p": "120 ft",
      "c": true,
-     "d": "Tourbillon de 30 ft, jet de FOR : 6d6 contondant, entraîné vers le centre. 1 minute.",
+     "d": "Concentration, 1 minute. Un tourbillon de 30 ft de rayon, 5 ft de profondeur, à 120 ft. Jet de FOR des créatures dedans : 6d6 contondant et attirées vers le centre si raté, moitié si réussi.",
      "lst": "druide"
     },
     {
@@ -6839,7 +6867,7 @@
      "t": "Action",
      "p": "120 ft",
      "c": false,
-     "d": "Roche en boue ou boue en roche sur un cube de 40 ft.",
+     "d": "Concentration. Un cube de 40 ft de pierre à 120 ft devient de la boue ou la boue devient de la pierre. Jet de DEX ou FOR, entravés et 4d8 contondant si la roche est tombée.",
      "lst": "druide"
     },
     {
@@ -6849,7 +6877,7 @@
      "t": "Action",
      "p": "120 ft",
      "c": false,
-     "d": "Colonnes de pierre, jet de DEX : 6d6 contondant et soulevé. Les colonnes bloquent le passage.",
+     "d": "Six piliers de pierre de 5 ft de large et 30 ft de haut sortent d'un point à 120 ft : jet de DEX des créatures touchées, 6d6 contondant et soulevées si raté, moitié si réussi. Jusqu'à 1 minute (instantané, dure tant que les piliers restent).",
      "lst": "druide"
     },
     {
@@ -6859,7 +6887,7 @@
      "t": "Action",
      "p": "Soi",
      "c": true,
-     "d": "Feu autour de toi : immunité au feu, résistance au froid, 1d10 feu aux créatures proches, ligne de feu en action. 10 minutes.",
+     "d": "Concentration, 10 minutes. Tu es entouré de flammes : immunité au feu, résistance au froid, lumière sur 30 ft. Ligne de 15 ft sur 5 ft en action : jet de DEX, 4d8 feu si raté. Les créatures qui te touchent au corps à corps subissent 1d10 feu.",
      "lst": "druide"
     },
     {
@@ -6869,7 +6897,7 @@
      "t": "Action",
      "p": "Soi",
      "c": true,
-     "d": "Glace autour de toi : immunité au froid, résistance au feu, terrain gelé, cône de froid en action. 10 minutes.",
+     "d": "Concentration, 10 minutes. Immunité au froid, résistance au feu, terrain glacé sous toi. Cône de 15 ft en action : jet de CON, 4d6 froid si raté, moitié si réussi, vitesse réduite de 10 ft pendant 1 round si raté.",
      "lst": "druide"
     },
     {
@@ -6879,7 +6907,7 @@
      "t": "Action",
      "p": "Soi",
      "c": true,
-     "d": "Pierre autour de toi : résistance aux dégâts contondants, perçants et tranchants non magiques, secousse. 10 minutes.",
+     "d": "Concentration, 10 minutes. Résistance aux dégâts contondants, perçants et tranchants non magiques. Séisme de 15 ft de rayon en action : jet de DEX, à terre si raté. Tu marches dans la pierre.",
      "lst": "druide"
     },
     {
@@ -6889,7 +6917,7 @@
      "t": "Action",
      "p": "Soi",
      "c": true,
-     "d": "Vent autour de toi : vol de 60 ft, désavantage aux attaques à distance contre toi, nuage de vent. 10 minutes.",
+     "d": "Concentration, 10 minutes. Résistance aux projectiles, vol de 60 ft, tourbillon de 15 ft de rayon en action : jet de CON, 2d10 contondant et repoussé de 10 ft si raté.",
      "lst": "druide"
     },
     {
@@ -6899,7 +6927,7 @@
      "t": "Action",
      "p": "Soi",
      "c": true,
-     "d": "Résistance à l'acide, au froid, au feu, à la foudre et au tonnerre. Réaction : immunité à un type, 1 fois. 1 minute.",
+     "d": "Concentration, 1 minute. Résistance à acide, froid, feu, foudre et tonnerre, et réaction pour obtenir l'immunité à un type pendant ce tour.",
      "lst": "druide"
     }
    ],
@@ -6986,7 +7014,8 @@
      "n": "Murmures du lien",
      "en": "Whispers of the Bond",
      "grp": "Cercle de la Chouette",
-     "d": "Ton esprit te souffle des éclairs d'intuition. Un nombre de fois égal à ton modificateur de SAG (5), tu peux ajouter 1d4 à un test de SAG, d'INT ou de CHA après avoir vu le jet, avant que le MJ n'annonce le résultat. Utilisations récupérées au repos long."
+     "d": "Ton esprit te souffle des éclairs d'intuition. Un nombre de fois égal à ton modificateur de SAG (5), tu peux ajouter 1d4 à un test de SAG, d'INT ou de CHA après avoir vu le jet, avant que le MJ n'annonce le résultat. Utilisations récupérées au repos long.",
+     "res": "whisp"
     },
     {
      "n": "Hikari, l'Esprit éveillé",
@@ -6999,7 +7028,8 @@
      "n": "Seiran, l'Esprit enveloppant",
      "en": "Seiran, the Enfolding Spirit",
      "grp": "Cercle de la Chouette",
-     "d": "Action bonus : tu appelles le Miren autour de toi pendant 1 minute. Tant qu'il t'enveloppe, tu gagnes +2 à la CA et deux grandes ailes de chouette te donnent une vitesse de vol égale à ta vitesse de marche, sans bruit. 1 fois par repos court ou long."
+     "d": "Action bonus : tu appelles le Miren autour de toi pendant 1 minute. Tant qu'il t'enveloppe, tu gagnes +2 à la CA et deux grandes ailes de chouette te donnent une vitesse de vol égale à ta vitesse de marche, sans bruit. 1 fois par repos court ou long.",
+     "res": "seiran"
     },
     {
      "n": "Lignée des elfes des bois",
