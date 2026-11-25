@@ -220,6 +220,7 @@
     else if (c && k === 's') { const sp = c.spells.find(x => x.n === a); if (sp) h = spellBody(c, sp, S(c.id)); }
     else if (c && k === 'p') { const w = c.weapons.find(x => x.n === a), o = w && w.pw[+b]; if (o) h = `<h3>${esc(o.n)}</h3><p class="lp-pm">${ico(typeOfPw(o.a))} ${esc(typeOfPw(o.a))}<i class="gap"></i>${esc(w.n)}</p><p>${nl(dcify(c, o.d))}</p>`; }
     else if (c && k === 'r') { const r = resOf(c, a); if (r) { const f = (c.feats || []).find(x => x.res === a), it = r.src && [].concat(c.weapons || [], c.gear || []).find(x => x.n === r.src); h = `<h3>${esc(r.nom)}</h3>${f && f.en ? `<span class="lp-en">${esc(f.en)}</span>` : ''}<p class="lp-pm">${r.a ? ico(typeOfPw(r.a)) + ' ' + esc(typeOfPw(r.a)) + '<i class="gap"></i>' : ''}${r.max} utilisation${r.max > 1 ? 's' : ''}<i class="gap"></i>${esc(REST_LABEL[r.reset] || r.reset)}${r.src ? '<i class="gap"></i>' + esc(r.src) : ''}</p><p>${nl(dcify(c, r.d || (f && f.d) || (it && it.note) || r.sub || ''))}</p>`; } }
+    else if (c && k === 'w') { const w = c.weapons.find(x => x.n === a); if (w) h = `<h3>${esc(w.n)}</h3>${w.arc ? `<span class="lp-en">${esc(w.arc)}</span>` : ''}<p class="lp-pm">${w.hit ? 'Toucher '+esc(w.hit) : ''}${w.dmg ? ' / '+damageText(w.dmg) : ''}</p><p>${nl(dcify(c,w.note))}</p>`; }
     else if (c && k === 'f') { const f = (c.feats || [])[+a]; if (f) h = `<h3>${esc(f.n)}</h3>${f.en ? `<span class="lp-en">${esc(f.en)}</span>` : ''}<p>${nl(dcify(c, f.d))}</p>`; }
     return h;
   }
@@ -648,7 +649,7 @@
     const eqw=c.weapons.filter(w=>(w.hit||w.dmg)&&(w.fixed||w.perma||st.eq.includes(w.n)));
     eqw.forEach(w=>{
       const m=damageRx().exec(w.dmg||''), k=m?damageKind(m[3]):'slashing';
-      add('Action',card('Action',w.n,'Attaque','',`<span class="lp-meta">${w.hit?`<span title="Bonus au toucher">${hud('target')} ${esc(w.hit)}</span>`:''}<span>${damageText(w.dmg)}</span></span>`,ctl('',w.hit?`<button type="button" class="lp-cast" data-act="rhit" data-key="${esc(w.n)}">Toucher</button>`:'',w.dmg?`<button type="button" class="lp-jet" data-act="rdmg" data-key="${esc(w.n)}">Dégâts</button>`:''),'',k),w.n+' attaque '+w.dmg);
+      add('Action',card('Action',w.n,'Attaque',`data-act="detail" data-spec="w|${esc(w.n)}" data-tip="w|${esc(w.n)}"`,`<span class="lp-meta">${w.hit?`<span title="Bonus au toucher">${hud('target')} ${esc(w.hit)}</span>`:''}<span>${damageText(w.dmg)}</span></span>`,ctl('',w.hit?`<button type="button" class="lp-cast" data-act="rhit" data-key="${esc(w.n)}">Toucher</button>`:'',w.dmg?`<button type="button" class="lp-jet" data-act="rdmg" data-key="${esc(w.n)}">Dégâts</button>`:''),'',k),w.n+' attaque '+w.dmg);
     });
     const linked=new Set();
     eqw.forEach(w=>(w.pw||[]).forEach((o,i)=>{
@@ -663,7 +664,7 @@
     c.spells.forEach(s=>{
       if(!isEq(c,st,s.src)||(s.lst&&!(st.prep||[]).includes(s.n)))return;
       if(cols[s.t]) {
-        [].concat(s.res||[]).forEach(r=>linked.add(r)); if(s.cost)linked.add(s.cost.res); if(s.alt)linked.add(s.alt.res);
+        [].concat(s.res||[]).forEach(r=>linked.add(r)); /* Les pools alternatifs restent aussi des actions autonomes (ex. Forme sauvage). */
         add(s.t,spellCard(c,st,s),s.n+' '+(s.en||'')+' '+s.d);
       }
     });
@@ -786,7 +787,7 @@
     if (a === 'endconc') { const st = S(c), n = st.conc; st.conc = null; return say(c, `Termine la concentration sur ${n}`, 'spell'); }
     if (a === 'tab') { view.tab = b.dataset.v; view.cast = null; view.q = ''; view.act = 'all'; return render(); }
     if (a === 'actf') { view.act = b.dataset.v; return render(); }
-    if (a === 'detail') { hideTip(); view.popdetail = b.dataset.spec; return render(); }
+    if (a === 'detail') { hideTip(); view.popsp = null; view.poppw = null; view.popdetail = b.dataset.spec; return render(); }
     if (a === 'gopen') { hideTip(); view.popsp = b.dataset.key; return render(); }
     if (a === 'pwx') { hideTip(); view.poppw = [b.dataset.key, +b.dataset.i]; return render(); }
     if (a === 'rollx') { view.roll = null; return render(); }
