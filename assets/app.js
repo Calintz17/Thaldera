@@ -4,7 +4,7 @@
 (() => {
 'use strict';
 
-const VER = '135';
+const VER = '136';
 const LEGACY_IDS = { 'bourre-piff':'bourpif', 'seravine':'solkah-barrow', 'tilda':'irna', 'cleff':'irna' };
 const EDIT = new URLSearchParams(location.search).has('edit');
 const $ = (s, r = document) => r.querySelector(s);
@@ -1173,6 +1173,11 @@ async function route() {
   const raw = location.hash.replace(/^#\/?/, '');
   const [path, qs] = raw.split('?');
   const id = decodeURIComponent(path || '');
+  leavePatchNote();
+  if (id === 'patch' || id.startsWith('patch/')) {
+    renderPatchNote(id === 'patch' ? '' : id.slice('patch/'.length), my);
+    return;
+  }
   if (id === 'documents' || id.startsWith('documents/')) {
     const docId = id === 'documents' ? '' : id.slice('documents/'.length);
     if (docId && !DOC_BY[docId]) {
@@ -1570,6 +1575,71 @@ function initRelations() {
   document.addEventListener('keydown', ev => { if (ev.key === 'Escape' && !box.hidden) toggle(false); });
 }
 
+/* ---------- patch notes : onglet déroulant et page dédiée ---------- */
+let PN_P = null;
+const loadPN = () => PN_P || (PN_P = fetch('data/patchnotes.json?v=' + VER).then(r => r.json()).then(j => j.notes || []).catch(() => []));
+function leavePatchNote() {
+  const page = $('.patchpage', stageEl);
+  if (page) page.remove();
+  document.body.classList.remove('patch-reading');
+  const b = $('#pnbtn');
+  if (b) b.classList.remove('on');
+}
+function patchLine(x) {
+  const g = x.s === 'up' ? '▲' : '▼';
+  const sr = x.s === 'up' ? 'hausse' : 'baisse';
+  return `<li class="${x.s === 'up' ? 'up' : 'down'}"><span class="pn-g" aria-hidden="true">${g}</span><span><b>${esc(x.l)}</b> : <span class="pn-old">${esc(x.de)}</span><em class="pn-ar" aria-hidden="true">⇒</em><strong>${esc(x.vers)}</strong><span class="sr-only"> (${sr})</span></span></li>`;
+}
+function patchWeapon(w) {
+  return `<div class="pn-weapon"><div class="pn-wh"><span class="pn-arc" aria-hidden="true">${esc(w.num || '')}</span><div><h4>${esc(w.nom)}</h4><small>${esc(w.arcane || '')}</small></div></div><ul class="pn-list">${w.lignes.map(patchLine).join('')}</ul></div>`;
+}
+function patchChar(c) {
+  return `<section class="pn-char" id="pn-${esc(c.id)}"><div class="pn-ch"><img class="pn-ico" src="${esc(c.icone)}" alt="" decoding="async"><h3>${esc(c.nom)}</h3></div>${c.armes.map(patchWeapon).join('')}</section>`;
+}
+async function renderPatchNote(slug, my) {
+  const notes = await loadPN();
+  if (my !== TOKEN) return;
+  const n = notes.find(x => x.id === slug) || notes[0];
+  if (!n) { location.replace('#/'); return; }
+  leaveDocumentReader();
+  leavePatchNote();
+  journalMode(null, false);
+  sceneEl.classList.remove('is-world');
+  S.entry = null;
+  document.body.classList.add('patch-reading');
+  const page = document.createElement('div');
+  page.className = 'patchpage';
+  page.setAttribute('role', 'region');
+  page.setAttribute('aria-label', n.titre);
+  page.innerHTML = `<article><header class="pn-hero"><img class="pn-bg" src="${esc(n.header)}" alt="" decoding="async"><a class="pn-back" href="#/">‹ Retour au Codex</a><div class="pn-hero-in"><span class="pn-kicker">Thaldera Codex</span><h1>${esc(n.titre)}</h1><time class="pn-date">${esc(n.date)}</time></div></header><div class="pn-body"><h2 class="pn-sec">Personnages</h2>${n.persos.map(patchChar).join('')}</div></article>`;
+  stageEl.appendChild(page);
+  page.scrollTop = 0;
+  const b = $('#pnbtn');
+  if (b) b.classList.add('on');
+  document.title = n.titre + ' - Thaldera Codex';
+}
+function initPatchNotes() {
+  const btn = $('#pnbtn'), menu = $('#pnmenu');
+  if (!btn || !menu) return;
+  loadPN().then(notes => {
+    menu.innerHTML = notes.map(n => `<a role="menuitem" href="#/patch/${esc(n.id)}">${esc(n.menu || n.titre)}</a>`).join('') || '<span class="pn-empty">Aucun patch note</span>';
+  });
+  const close = () => { menu.hidden = true; btn.setAttribute('aria-expanded', 'false'); };
+  const open = () => {
+    menu.hidden = false;
+    const r = btn.getBoundingClientRect();
+    menu.style.top = Math.round(r.bottom + 4) + 'px';
+    menu.style.left = Math.max(8, Math.min(Math.round(r.left), innerWidth - menu.offsetWidth - 8)) + 'px';
+    btn.setAttribute('aria-expanded', 'true');
+  };
+  btn.addEventListener('click', ev => { ev.stopPropagation(); menu.hidden ? open() : close(); });
+  menu.addEventListener('click', ev => { if (ev.target.closest('a')) close(); });
+  document.addEventListener('click', ev => { if (!menu.hidden && !menu.contains(ev.target)) close(); });
+  document.addEventListener('keydown', ev => { if (ev.key === 'Escape' && !menu.hidden) { close(); btn.focus(); } });
+  window.addEventListener('resize', close);
+  window.addEventListener('hashchange', close);
+}
+
 (async function init() {
   try {
     await load();
@@ -1593,6 +1663,7 @@ function initRelations() {
   initRelations();
   initSessions();
   initDocuments();
+  initPatchNotes();
   window.addEventListener('hashchange', route);
   route();
 })();

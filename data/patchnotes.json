@@ -1,0 +1,114 @@
+{
+ "notes": [
+  {
+   "id": "2026-11-25",
+   "menu": "Patch note du 25/11",
+   "titre": "Patch note du 25/11",
+   "date": "25 novembre 2026",
+   "header": "img/patch/ascenseur.webp",
+   "persos": [
+    {
+     "id": "philippa",
+     "nom": "Philippa",
+     "icone": "img/patch/chibi-philippa.webp",
+     "armes": [
+      {
+       "nom": "Requiem de la Reine-Morte",
+       "arcane": "DEATH",
+       "num": "XIII",
+       "lignes": [
+        { "l": "Rareté", "de": "Rare", "vers": "Very Rare", "s": "up" },
+        { "l": "Toucher", "de": "+12", "vers": "+11", "s": "down" },
+        { "l": "Dégâts", "de": "1d12+8", "vers": "1d12+7", "s": "down" },
+        { "l": "Couronnement du Repos Noir", "de": "1/jour", "vers": "Spell Slot level 2", "s": "down" },
+        { "l": "Procession de la Tombe", "de": "1/jour", "vers": "Spell Slot level 3", "s": "down" },
+        { "l": "Déni par la Garde", "de": "2/repos", "vers": "Spell Slot level 1", "s": "down" },
+        { "l": "DD (Couronnement, Procession)", "de": "15", "vers": "17", "s": "up" }
+       ]
+      },
+      {
+       "nom": "La main du Reliquaire",
+       "arcane": "JUSTICE",
+       "num": "XI",
+       "lignes": [
+        { "l": "Rareté", "de": "Artefact", "vers": "Very Rare", "s": "up" },
+        { "l": "Toucher", "de": "+13", "vers": "+11", "s": "down" },
+        { "l": "Dégâts", "de": "1d6+15", "vers": "1d6+7", "s": "down" },
+        { "l": "Reliquary Rend", "de": "(1d6+12) x2", "vers": "(1d6+7) x2", "s": "down" },
+        { "l": "Blight", "de": "1/jour", "vers": "Pact Spell Slot level 4", "s": "down" },
+        { "l": "Blight, portée", "de": "Contact", "vers": "30 ft", "s": "up" },
+        { "l": "Unseen Servant", "de": "À volonté", "vers": "Supprimé", "s": "down" }
+       ]
+      },
+      {
+       "nom": "Scythe de la Lithurgie des Cendres",
+       "arcane": "THE SUN",
+       "num": "XIX",
+       "lignes": [
+        { "l": "Rareté", "de": "Rare", "vers": "Very Rare", "s": "up" },
+        { "l": "Toucher", "de": "+12", "vers": "+11", "s": "down" },
+        { "l": "Veil Shield, Quiet Passing", "de": "1/jour", "vers": "Spell Slot level 4", "s": "down" },
+        { "l": "Extra 3d8 nécrotique", "de": "1/repos court", "vers": "Supprimé", "s": "down" }
+       ]
+      },
+      {
+       "nom": "Satellite du Monde Enseveli",
+       "arcane": "THE WORLD",
+       "num": "XXI",
+       "lignes": [
+        { "l": "Rareté", "de": "Rare", "vers": "Very Rare", "s": "up" },
+        { "l": "Toucher", "de": "+12", "vers": "+11", "s": "down" },
+        { "l": "Gravité Funèbre", "de": "1 charge", "vers": "Spell Slot level 1", "s": "down" },
+        { "l": "Orbite Brisée", "de": "2 charges", "vers": "Spell Slot level 4", "s": "down" },
+        { "l": "Effondrement du Monde", "de": "3 charges", "vers": "Spell Slot level 4", "s": "down" },
+        { "l": "DD (Orbite Brisée, Effondrement)", "de": "15", "vers": "17", "s": "up" }
+       ]
+      },
+      {
+       "nom": "Balance et Entropie",
+       "arcane": "THE LOVERS",
+       "num": "VI",
+       "lignes": [
+        { "l": "Rareté", "de": "Rare", "vers": "Very Rare", "s": "up" },
+        { "l": "Disguise Self", "de": "À volonté", "vers": "Supprimé", "s": "down" },
+        { "l": "Invisibility", "de": "À volonté", "vers": "Spell Slot level 2", "s": "down" },
+        { "l": "Disappearance (devient Invisibility)", "de": "1/jour, 1 minute", "vers": "Spell Slot level 2, 1 heure", "s": "up" },
+        { "l": "Revelation (devient See Invisibility)", "de": "1/jour, 1 minute", "vers": "Spell Slot level 2, 1 heure", "s": "up" },
+        { "l": "Mask of Flesh (devient Alter Self)", "de": "1/jour", "vers": "Spell Slot level 2", "s": "up" }
+       ]
+      },
+      {
+       "nom": "Horizon Brûlée",
+       "arcane": "THE STAR",
+       "num": "XVII",
+       "lignes": [
+        { "l": "Rareté", "de": "Rare", "vers": "Very Rare", "s": "up" },
+        { "l": "Toucher", "de": "+12", "vers": "+11", "s": "down" },
+        { "l": "Dégâts", "de": "1d10+8", "vers": "1d10+7", "s": "down" },
+        { "l": "Primeval Awareness", "de": "1/repos long", "vers": "Supprimé", "s": "down" },
+        { "l": "Arc-Beam Discharge, DD", "de": "15", "vers": "17", "s": "up" }
+       ]
+      },
+      {
+       "nom": "Caput Tauri",
+       "arcane": "THE CHARIOT",
+       "num": "VII",
+       "lignes": [
+        { "l": "Rareté", "de": "Rare", "vers": "Very Rare", "s": "up" },
+        { "l": "Ruée du Chariot, reset", "de": "Aube", "vers": "Repos long", "s": "down" }
+       ]
+      },
+      {
+       "nom": "Omen, Broken Sky",
+       "arcane": "THE EMPRESS",
+       "num": "III",
+       "lignes": [
+        { "l": "Attunement", "de": "Requise", "vers": "Supprimée", "s": "up" }
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}
