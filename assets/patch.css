@@ -77,13 +77,9 @@ body.patch-reading.journal-open #scene { width: 60%; }
 .pn-weapon { padding: 11px 0 3px; border-top: 1px solid rgba(255,255,255,.14); margin-top: 8px; }
 .pn-weapon:first-of-type { margin-top: 10px; }
 .pn-wh { display: flex; align-items: center; gap: 10px; margin-bottom: 5px; }
-.pn-arc {
-  flex: none; width: 34px; height: 34px; display: grid; place-items: center;
-  border: 1.5px solid var(--pn-gold); border-radius: 50%; background: #0e1626;
-  color: #efd9a4; font: 600 10px/1 var(--display); letter-spacing: .02em;
-}
+
 .pn-wh h4 { margin: 0; font: 700 clamp(14px, 1.4vw, 16px)/1.2 var(--body); color: #fff; letter-spacing: .03em; text-transform: uppercase; }
-.pn-wh small { display: block; margin-top: 2px; color: var(--pn-gold); font: 700 10px/1 var(--body); letter-spacing: .18em; text-transform: uppercase; }
+
 
 .pn-list { list-style: none; margin: 0; padding: 0 0 0 4px; }
 .pn-list li {
@@ -111,6 +107,5 @@ body.patch-reading.journal-open #scene { width: 60%; }
   body.patch-reading #scene .stage > .patchpage { position: relative; inset: auto; height: auto; overflow: visible; padding-bottom: max(60px, env(safe-area-inset-bottom)); }
   .pn-hero { min-height: 180px; }
   .pn-ico { width: 54px; height: 61px; }
-  .pn-arc { width: 32px; height: 32px; font-size: 9px; }
 }
 .sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
