@@ -195,10 +195,16 @@
     permas(c).forEach(n => { if (!o.eq.includes(n)) o.eq.push(n); });
     return o;
   }
-  const S = id => (ST[id] = norm(cfgOf(id), ST[id]));
+  const PREV = {}, HIST = {};
+  const S = id => { ST[id] = norm(cfgOf(id), ST[id]); if (PREV[id] == null) PREV[id] = JSON.stringify(ST[id]); return ST[id]; };
 
-  async function save(id, ev) {
+  async function save(id, ev, noHist) {
     const st = S(id);
+    if (!noHist && !(ev && (ev.kind === 'roll' || ev.kind === 'undo'))) {
+      const cur = JSON.stringify(st);
+      if (PREV[id] != null && PREV[id] !== cur) { (HIST[id] = HIST[id] || []).push({ snap: PREV[id], label: ev ? ev.label : 'Modification' }); if (HIST[id].length > 40) HIST[id].shift(); }
+    }
+    PREV[id] = JSON.stringify(st);
     const actor = view.fromDM ? 'dm' : 'player';
     try { localStorage.setItem(localKey(id), JSON.stringify(st)); } catch (e) { /* ignore */ }
     if (ev) { EV.unshift({ at: new Date().toISOString(), char_id: id, actor, kind: ev.kind || 'action', label: ev.label, payload: {} }); EV = EV.slice(0, 80); }
@@ -211,6 +217,12 @@
     } catch (e) { toast('Sauvegarde impossible : ' + (e.message || e)); }
   }
   const say = (id, label, kind) => save(id, { label, kind });
+  function undo(id) {
+    const h = HIST[id]; if (!h || !h.length) return toast('Rien à annuler');
+    const last = h.pop(), rev = (ST[id] || {}).rev;
+    ST[id] = norm(cfgOf(id), Object.assign(JSON.parse(last.snap), { rev }));
+    return save(id, { label: 'Annulé : ' + last.label, kind: 'undo' }, true);
+  }
 
   function toast(msg) {
     const t = root && root.querySelector('.lp-toast');
@@ -236,14 +248,14 @@
       sb = window.supabase.createClient(CFG.supabase.url, CFG.supabase.key, { auth: { persistSession: false } });
       const { data, error } = await sb.from('characters').select('*');
       if (error) throw error;
-      data.forEach(r => { if (cfgOf(r.id)) ST[r.id] = norm(cfgOf(r.id), Object.assign({}, r.state, { rev: r.rev })); });
+      data.forEach(r => { if (cfgOf(r.id)) { ST[r.id] = norm(cfgOf(r.id), Object.assign({}, r.state, { rev: r.rev })); delete PREV[r.id]; } });
       const ev = await sb.from('events').select('*').order('at', { ascending: false }).limit(80);
       EV = ev.data || [];
       chan = sb.channel('lp-live')
         .on('postgres_changes', { event: '*', schema: 'public', table: 'characters' }, p => {
           const r = p.new; if (!r || !cfgOf(r.id)) return;
           if (ST[r.id] && ST[r.id].rev >= r.rev) return;
-          ST[r.id] = norm(cfgOf(r.id), Object.assign({}, r.state, { rev: r.rev })); render();
+          ST[r.id] = norm(cfgOf(r.id), Object.assign({}, r.state, { rev: r.rev })); delete PREV[r.id]; render();
         })
         .on('postgres_changes', { event: 'INSERT', schema: 'public', table: 'events' }, p => {
           const e = p.new; if (!e || EV.some(x => x.id && x.id === e.id)) return;
@@ -546,7 +558,7 @@
         : `<button type="button" class="lp-stp" data-act="itqty" data-id="${esc(it.id)}" data-d="-1" aria-label="Retirer un">−</button><b class="lp-cnt">x${it.qty}</b><button type="button" class="lp-stp" data-act="itqty" data-id="${esc(it.id)}" data-d="1" aria-label="Ajouter un">+</button>`;
       const use = `<button type="button" class="lp-cast sm" data-act="ituse" data-id="${esc(it.id)}" ${(it.max ? l <= 0 : it.qty <= 0) ? 'disabled' : ''}>Utiliser</button>`;
       const jet = cat && cat.roll ? `<button type="button" class="lp-jet sm" data-act="itjet" data-id="${esc(it.id)}" title="Jet automatique">Jet</button>` : '';
-      return `<li class="lp-item ${(it.max ? l <= 0 : it.qty <= 0) ? 'spent' : ''}"><span class="lp-nm">${esc(it.n)}${it.note ? `<small class="nt">${esc(it.note)}</small>` : ''}</span><span class="lp-iq">${ctl}${use}${jet}<button type="button" class="lp-del" data-act="itdel" data-id="${esc(it.id)}" aria-label="Supprimer">×</button></span></li>`;
+      return `<li class="lp-item ${(it.max ? l <= 0 : it.qty <= 0) ? 'spent' : ''}"><span class="lp-nm">${esc(it.n)}${(cat && cat.d) || it.note ? `<small class="nt">${esc((cat && cat.d) || it.note)}</small>` : ''}</span><span class="lp-iq">${ctl}${use}${jet}<button type="button" class="lp-del" data-act="itdel" data-id="${esc(it.id)}" aria-label="Supprimer">×</button></span></li>`;
     }).join('');
     return `<div class="lp-tools"><input type="search" id="lp-q" value="${esc(view.q)}" placeholder="Chercher un objet" aria-label="Chercher"></div>
       <h4 class="lp-lvh">Objets et consommables<small>${st.items.length}</small></h4>
@@ -597,6 +609,8 @@
     const tabs = [['actions', 'Actions'], ['armes', 'Équipement'], ['sorts', 'Sorts et pouvoirs']].concat((c.lists || []).length ? [['grim', 'Grimoire']] : []).concat([['objets', 'Objets'], ['capa', 'Capacités']]);
     const cf = view.confirm;
     const rests = cf ? `<div class="lp-restc cf"><p>${cf === 'long' ? 'Repos long : PV, emplacements, ressources.' : 'Repos court : pacte et ressources de repos court.'}</p><div><button type="button" class="go" data-act="restgo" data-type="${cf}">Confirmer</button><button type="button" class="ghost" data-act="restno">Annuler</button></div></div>` : `<div class="lp-restc"><button type="button" data-act="rest" data-type="court">${im('rest-short')}Repos court</button><button type="button" data-act="rest" data-type="long">${im('rest-long')}Repos long</button></div>`;
+    const hl = HIST[c.id] || [], lastH = hl[hl.length - 1];
+    const undoBtn = `<button type="button" class="lp-undo" data-act="undo" ${lastH ? '' : 'disabled'} title="${lastH ? 'Annuler : ' + esc(lastH.label) : 'Rien à annuler'}"><span class="u">↶ Annuler</span><small>${lastH ? esc(lastH.label) : 'aucune action'}</small></button>`;
     const pct = Math.max(0, Math.min(100, st.hp / c.hp * 100));
     return `<div class="lp-sheet"><aside class="lp-artcol"><img class="lp-portrait" src="${esc(c.portrait)}" alt="${esc(c.nom)}" decoding="async"></aside>
     <div class="lp-body">
@@ -605,13 +619,14 @@
           <div class="lp-hpbar ${pct > 50 ? 'ok' : pct > 25 ? 'mid' : 'low'}"><i style="width:${pct}%"></i></div>
           <div class="lp-tline"><span class="l">Temp</span><b>${st.tmp}</b>${tmpBar(c, st)}</div>
           <div class="lp-hpctl"><button type="button" class="dmg" data-act="hp" data-type="dmg">${im('damage')}Dégâts</button><input type="number" min="0" inputmode="numeric" id="lp-hp-amt" placeholder="0" aria-label="Montant"><button type="button" class="heal" data-act="hp" data-type="heal">${im('heal')}Soins</button><button type="button" class="tmp" data-act="hp" data-type="tmp">Temp</button></div></div>
-        ${rests}</header>
+        ${rests}${undoBtn}</header>
       ${rollBanner()}${hb}
       <section class="lp-stats">
         <div class="lp-srow"><h3>Caractéristiques</h3><div class="lp-r6">${(c.abil || []).map(a => `<div class="lp-tile ab"><span>${esc(a[0])}</span><b>${esc(a[1])}</b><em>${esc(a[2])}</em></div>`).join('')}</div></div>
         <div class="lp-srow"><h3>Jets de sauvegarde</h3><div class="lp-r6">${(c.saves || []).map(a => `<div class="lp-tile sv ${a[2] ? 'p' : ''}"><span>${esc(a[0])}</span><b>${esc(a[1])}</b></div>`).join('')}</div></div>
         <div class="lp-srow"><h3>Bonus</h3><div class="lp-r7">${tile(ac.v, 'CA', 'ca', ac.parts.join(', '))}${tile(sp.v + ' ft', 'Vitesse', 'vit', sp.parts.join(', '))}${(c.bonus || []).map(b => tile(b[1], b[0], icOf[b[0]])).join('')}${tile(c.dc, 'DD sorts', 'dd')}${tile('+' + c.atk, 'Att. sort', 'att')}</div></div>
       </section>
+      <section class="lp-block lp-skills"><h3>Compétences<small>Clique pour lancer un d20${c.reliable ? ' (Talent fiable : 10 minimum sur les maîtrisées)' : ''}</small></h3><div class="lp-sk6">${(c.skills || []).map((k, i) => `<button type="button" class="lp-sk ${k[3] || 'n'}" data-act="rsk" data-i="${i}" title="${esc(k[0])} (${k[1]})${k[3] === 'E' ? ', expertise' : k[3] === 'P' ? ', maîtrise' : k[3] === 'H' ? ', demi-maîtrise' : ''}"><i class="pm"></i><span>${esc(k[0])}<em>${k[1]}</em></span><b>${signed(k[2])}</b></button>`).join('')}</div></section>
       <div class="lp-coinbar"><span class="lp-cbt">Monnaies</span>${coinsDef.map(([k, n, ab]) => `<label class="lp-coin" data-k="${k}" title="${esc(n)}"><span>${ab}</span><input type="number" min="0" inputmode="numeric" data-coin="${k}" value="${(st.coins || {})[k] || 0}" aria-label="${esc(n)}"></label>`).join('')}</div>
       <section class="lp-block lp-resb"><h3>Emplacements</h3><div class="lp-slots">${slotRows(c, st, false)}</div><h3>Capacités</h3><div class="lp-rgrid">${resRows(c, st, false, visRes(c, st).filter(r => !r.src))}</div>${(() => { const viaSp = c.spells.filter(q => q.res && isEq(c, st, q.src)).reduce((a, q) => a.concat(q.res), []), it = visRes(c, st).filter(r => r.src && !viaSp.includes(r.id)), ip = itemPowerRows(c, st); return it.length || ip ? `<h3>Objets équipés</h3><div class="lp-rgrid">${resRows(c, st, false, it)}${ip}</div>` : ''; })()}</section>
       <div class="lp-main"><div class="lp-tabs" role="tablist">${tabs.map(([k, n]) => `<button type="button" role="tab" class="${tab === k ? 'on' : ''}" data-act="tab" data-v="${k}">${n}</button>`).join('')}</div>
@@ -686,6 +701,8 @@
     if (a === 'pwx') { hideTip(); view.poppw = [b.dataset.key, +b.dataset.i]; return render(); }
     if (a === 'rollx') { view.roll = null; return render(); }
     if (a === 'jetsp') return jetSpell(c, cfgOf(c).spells.find(x => x.n === b.dataset.key));
+    if (a === 'undo') return undo(c);
+    if (a === 'rsk') { const cf = cfgOf(c), k = cf.skills[+b.dataset.i], r = rd(20), eff = cf.reliable && /[PE]/.test(k[3]) && r < 10 ? 10 : r, tot = eff + k[2]; return showRoll(c, k[0] + ' (' + k[1] + ')', [`d20 ${r}${eff !== r ? ' → 10 (Talent fiable)' : ''} ${signed(k[2])}`], `${k[0]} : ${tot}`, tot); }
     if (a === 'rhit') return jetWeapon(c, b.dataset.key, 'hit');
     if (a === 'rdmg') return jetWeapon(c, b.dataset.key, 'dmg');
     if (a === 'rpw') return jetPw(c, b.dataset.key, +b.dataset.i);

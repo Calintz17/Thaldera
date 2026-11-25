@@ -2548,7 +2548,8 @@
      "max": 1,
      "used": 0,
      "note": "Soins",
-     "roll": "2d4+2"
+     "roll": "2d4+2",
+     "d": "Rend 2d4+2 PV."
     },
     {
      "n": "Potion of Regeneration",
@@ -2556,7 +2557,8 @@
      "max": 1,
      "used": 0,
      "note": "",
-     "roll": "4d6"
+     "roll": "4d6",
+     "d": "Rend 4d6 PV, puis 1 PV au début de chacun de tes tours pendant 1 heure. Fait repousser les membres sectionnés."
     },
     {
      "n": "Potion de l'Avant-Poste",
@@ -2591,7 +2593,8 @@
      "qty": 1,
      "max": 0,
      "used": 0,
-     "note": "Stabilise un personnage à 0 PV, une action. Achetée chez Peraalys à Agran."
+     "note": "Stabilise un personnage à 0 PV, une action. Achetée chez Peraalys à Agran.",
+     "d": "Stabilise une créature mourante, une action, usage unique."
     },
     {
      "n": "Bourse à Confettis Dramatiques",
@@ -2605,7 +2608,8 @@
      "qty": 1,
      "max": 15,
      "used": 9,
-     "note": "Craie légendaire, porte entre deux surfaces."
+     "note": "Craie légendaire, porte entre deux surfaces.",
+     "d": "15 craies. Trace un cercle sur une porte pour ouvrir un passage interdimensionnel pendant 1 minute."
     },
     {
      "n": "Bandle Scout Mushroom",
@@ -2633,14 +2637,16 @@
      "qty": 1,
      "max": 0,
      "used": 0,
-     "note": "Espionne quelqu'un à distance (attunement)"
+     "note": "Espionne quelqu'un à distance (attunement)",
+     "d": "Sending (25 mots), 1 fois par aube. Refuse les mensonges."
     },
     {
      "n": "Scry Totem",
      "qty": 1,
      "max": 0,
      "used": 0,
-     "note": "Espionne quelqu'un à distance (attunement)"
+     "note": "Espionne quelqu'un à distance (attunement)",
+     "d": "Scrying 1 fois par jour (DD 15). Attunement."
     },
     {
      "n": "Magic Mustache",
@@ -2668,14 +2674,16 @@
      "qty": 1,
      "max": 0,
      "used": 0,
-     "note": ""
+     "note": "",
+     "d": "Invoque ou bannit un démon du même cercle."
     },
     {
      "n": "Sovereign Glue",
      "qty": 1,
      "max": 0,
      "used": 0,
-     "note": ""
+     "note": "",
+     "d": "Colle indéfiniment ce qu'elle touche (3 usages)."
     },
     {
      "n": "Botte d'aller faire un tour",
@@ -2745,14 +2753,16 @@
      "qty": 1,
      "max": 0,
      "used": 0,
-     "note": "Annule la chaleur passive"
+     "note": "Annule la chaleur passive",
+     "d": "Ignore totalement la chaleur passive."
     },
     {
      "n": "Boussole",
      "qty": 1,
      "max": 0,
      "used": 0,
-     "note": "Indique le nord"
+     "note": "Indique le nord",
+     "d": "Indique le nord."
     },
     {
      "n": "Pinceau du faussaire",
@@ -2780,56 +2790,64 @@
      "qty": 1,
      "max": 0,
      "used": 0,
-     "note": ""
+     "note": "",
+     "d": "Crochetage et désamorçage de pièges (maîtrise requise)."
     },
     {
      "n": "Rope, Hempen (50 feet)",
      "qty": 1,
      "max": 0,
      "used": 0,
-     "note": ""
+     "note": "",
+     "d": "50 ft de corde de chanvre, 2 PV, DD 17 pour la briser."
     },
     {
      "n": "Tent",
      "qty": 1,
      "max": 0,
      "used": 0,
-     "note": ""
+     "note": "",
+     "d": "Abri de campement pour deux personnes."
     },
     {
      "n": "Bedroll",
      "qty": 1,
      "max": 0,
      "used": 0,
-     "note": ""
+     "note": "",
+     "d": "Couchage de voyage."
     },
     {
      "n": "Mess Kit",
      "qty": 1,
      "max": 0,
      "used": 0,
-     "note": ""
+     "note": "",
+     "d": "Gamelle et couverts de voyage."
     },
     {
      "n": "Waterskin",
      "qty": 1,
      "max": 0,
      "used": 0,
-     "note": ""
+     "note": "",
+     "d": "Outre de 4 pintes d'eau."
     },
     {
      "n": "Soap",
      "qty": 1,
      "max": 0,
      "used": 0,
-     "note": ""
+     "note": "",
+     "d": "Savon."
     },
     {
      "n": "Perfume (vial)",
      "qty": 1,
      "max": 0,
      "used": 0,
-     "note": ""
+     "note": "",
+     "d": "Fiole de parfum."
     }
    ],
    "acfx": {
@@ -2878,7 +2896,117 @@
     "Scythe de la Lithurgie des Cendres": [
      "Résistance radiant avec Veil Shield"
     ]
-   }
+   },
+   "skills": [
+    [
+     "Acrobaties",
+     "DEX",
+     5,
+     "H"
+    ],
+    [
+     "Dressage",
+     "SAG",
+     2,
+     "H"
+    ],
+    [
+     "Arcanes",
+     "INT",
+     5,
+     "P"
+    ],
+    [
+     "Athlétisme",
+     "FOR",
+     5,
+     "H"
+    ],
+    [
+     "Tromperie",
+     "CHA",
+     7,
+     "H"
+    ],
+    [
+     "Histoire",
+     "INT",
+     3,
+     "H"
+    ],
+    [
+     "Intuition",
+     "SAG",
+     2,
+     "H"
+    ],
+    [
+     "Intimidation",
+     "CHA",
+     13,
+     "E"
+    ],
+    [
+     "Investigation",
+     "INT",
+     5,
+     "P"
+    ],
+    [
+     "Médecine",
+     "SAG",
+     2,
+     "H"
+    ],
+    [
+     "Nature",
+     "INT",
+     3,
+     "H"
+    ],
+    [
+     "Perception",
+     "SAG",
+     8,
+     "E"
+    ],
+    [
+     "Représentation",
+     "CHA",
+     7,
+     "H"
+    ],
+    [
+     "Persuasion",
+     "CHA",
+     7,
+     "H"
+    ],
+    [
+     "Religion",
+     "INT",
+     3,
+     "H"
+    ],
+    [
+     "Escamotage",
+     "DEX",
+     5,
+     "H"
+    ],
+    [
+     "Discrétion",
+     "DEX",
+     5,
+     "H"
+    ],
+    [
+     "Survie",
+     "SAG",
+     4,
+     "P"
+    ]
+   ]
   },
   {
    "id": "jane",
@@ -4806,7 +4934,8 @@
      "qty": 1,
      "max": 1,
      "used": 0,
-     "note": ""
+     "note": "",
+     "d": "Vol à ta vitesse de marche pendant 1 heure, vol stationnaire possible."
     },
     {
      "n": "Potion de Reptation",
@@ -4820,14 +4949,16 @@
      "qty": 1,
      "max": 1,
      "used": 0,
-     "note": ""
+     "note": "",
+     "d": "Lance Invisibilité supérieure (niveau 4, concentration, 1 minute)."
     },
     {
      "n": "Parchemin de dissipation de la magie",
      "qty": 1,
      "max": 1,
      "used": 0,
-     "note": ""
+     "note": "",
+     "d": "Lance Dissipation de la magie (niveau 3)."
     },
     {
      "n": "Parchemin de restauration mineur",
@@ -4841,7 +4972,8 @@
      "qty": 1,
      "max": 1,
      "used": 0,
-     "note": ""
+     "note": "",
+     "d": "Contient le sort Glyphe de garde."
     },
     {
      "n": "Sceau de silence portatif",
@@ -4855,42 +4987,48 @@
      "qty": 1,
      "max": 0,
      "used": 0,
-     "note": "Anneau"
+     "note": "Anneau",
+     "d": "Anneau. Échange un objet magique contre un autre de même rareté, puis est détruit."
     },
     {
      "n": "Chaîne du Serpent de Fer",
      "qty": 1,
      "max": 0,
      "used": 0,
-     "note": ""
+     "note": "",
+     "d": "Chaîne cristallisée aux reflets incandescents. Incassable hors magie, entrave une créature de taille TG."
     },
     {
      "n": "L'Étreinte de la Veuve",
      "qty": 1,
      "max": 0,
      "used": 0,
-     "note": "Filet, lancer 5/15"
+     "note": "Filet, lancer 5/15",
+     "d": "Filet, portée 5/15 ft : entrave une créature de taille G ou moins."
     },
     {
      "n": "Sending Stones",
      "qty": 1,
      "max": 1,
      "used": 0,
-     "note": ""
+     "note": "",
+     "d": "Sending (25 mots), 1 charge, recharge à l'aube."
     },
     {
      "n": "Flèches Brasier",
      "qty": 1,
      "max": 5,
      "used": 0,
-     "note": ""
+     "note": "",
+     "d": "Lot de 5. Chaque flèche inflige 2d6 feu de zone en plus de ses dégâts."
     },
     {
      "n": "Arrows",
      "qty": 43,
      "max": 0,
      "used": 0,
-     "note": ""
+     "note": "",
+     "d": "Munitions pour arc."
     },
     {
      "n": "Charge de Brèche Alchimique",
@@ -4925,49 +5063,56 @@
      "qty": 1,
      "max": 1,
      "used": 0,
-     "note": ""
+     "note": "",
+     "d": "+1d6 foudre sur une arme pendant 1 combat. Toute créature à 5 ft de la cible touchée subit 1d4 foudre."
     },
     {
      "n": "Huile de Scorpion Noir",
      "qty": 1,
      "max": 0,
      "used": 0,
-     "note": ""
+     "note": "",
+     "d": "Enduit une arme : +1d6 poison pendant 10 minutes."
     },
     {
      "n": "Bag of Holding",
      "qty": 1,
      "max": 0,
      "used": 0,
-     "note": ""
+     "note": "",
+     "d": "Espace extradimensionnel de 500 lb et 64 pieds cubes."
     },
     {
      "n": "Fragment of Avarice's True Name (Blasphemy)",
      "qty": 1,
      "max": 0,
      "used": 0,
-     "note": ""
+     "note": "",
+     "d": "Invoque ou bannit un démon du même cercle."
     },
     {
      "n": "Boussole des Écumes",
      "qty": 1,
      "max": 0,
      "used": 0,
-     "note": ""
+     "note": "",
+     "d": "Indique toujours la terre la plus proche."
     },
     {
      "n": "Herbe de faille séchée",
      "qty": 1,
      "max": 0,
      "used": 0,
-     "note": ""
+     "note": "",
+     "d": "Mâchée : avantage aux tests de Perception sous l'eau pendant 30 minutes."
     },
     {
      "n": "Lanterne des Profondeurs",
      "qty": 1,
      "max": 0,
      "used": 0,
-     "note": ""
+     "note": "",
+     "d": "Éclaire à 65 ft sous l'eau et révèle l'invisible aquatique."
     },
     {
      "n": "Poudre de Diamant",
@@ -5086,7 +5231,8 @@
      "qty": 1,
      "max": 0,
      "used": 0,
-     "note": ""
+     "note": "",
+     "d": "Ignore totalement la chaleur passive."
     },
     {
      "n": "Masque coupe-sable",
@@ -5128,28 +5274,32 @@
      "qty": 1,
      "max": 0,
      "used": 0,
-     "note": ""
+     "note": "",
+     "d": "Grappin à lancer au bout d'une corde pour escalader."
     },
     {
      "n": "Rope, Hempen (50 feet)",
      "qty": 1,
      "max": 0,
      "used": 0,
-     "note": ""
+     "note": "",
+     "d": "50 ft de corde de chanvre, 2 PV, DD 17 pour la briser."
     },
     {
      "n": "Torch",
      "qty": 1,
      "max": 0,
      "used": 0,
-     "note": ""
+     "note": "",
+     "d": "Lumière vive 20 ft et faible 20 ft de plus, 1 heure."
     },
     {
      "n": "Tente 2 places",
      "qty": 1,
      "max": 0,
      "used": 0,
-     "note": ""
+     "note": "",
+     "d": "Abri de campement pour deux personnes."
     }
    ],
    "acfx": {
@@ -5166,7 +5316,118 @@
    "spd": {
     "base": 30,
     "add": []
-   }
+   },
+   "skills": [
+    [
+     "Acrobaties",
+     "DEX",
+     13,
+     "E"
+    ],
+    [
+     "Dressage",
+     "SAG",
+     1,
+     ""
+    ],
+    [
+     "Arcanes",
+     "INT",
+     8,
+     "P"
+    ],
+    [
+     "Athlétisme",
+     "FOR",
+     0,
+     ""
+    ],
+    [
+     "Tromperie",
+     "CHA",
+     6,
+     "P"
+    ],
+    [
+     "Histoire",
+     "INT",
+     8,
+     "P"
+    ],
+    [
+     "Intuition",
+     "SAG",
+     1,
+     ""
+    ],
+    [
+     "Intimidation",
+     "CHA",
+     2,
+     ""
+    ],
+    [
+     "Investigation",
+     "INT",
+     4,
+     ""
+    ],
+    [
+     "Médecine",
+     "SAG",
+     1,
+     ""
+    ],
+    [
+     "Nature",
+     "INT",
+     4,
+     ""
+    ],
+    [
+     "Perception",
+     "SAG",
+     9,
+     "E"
+    ],
+    [
+     "Représentation",
+     "CHA",
+     2,
+     ""
+    ],
+    [
+     "Persuasion",
+     "CHA",
+     2,
+     ""
+    ],
+    [
+     "Religion",
+     "INT",
+     4,
+     ""
+    ],
+    [
+     "Escamotage",
+     "DEX",
+     13,
+     "E"
+    ],
+    [
+     "Discrétion",
+     "DEX",
+     13,
+     "E"
+    ],
+    [
+     "Survie",
+     "SAG",
+     5,
+     "P"
+    ]
+   ],
+   "reliable": 1
   },
   {
    "id": "harfang",
@@ -7848,7 +8109,8 @@
      "max": 1,
      "used": 0,
      "note": "",
-     "roll": "2d4+2"
+     "roll": "2d4+2",
+     "d": "Rend 2d4+2 PV."
     },
     {
      "n": "Potion of Healing (Greater)",
@@ -7856,7 +8118,8 @@
      "max": 1,
      "used": 0,
      "note": "",
-     "roll": "4d4+4"
+     "roll": "4d4+4",
+     "d": "Rend 4d4+4 PV."
     },
     {
      "n": "Potion de l'Avant-Poste",
@@ -7905,42 +8168,48 @@
      "qty": 1,
      "max": 0,
      "used": 0,
-     "note": ""
+     "note": "",
+     "d": "Lumière vive 30 ft et faible 30 ft de plus. Capuche baissée : faible 5 ft."
     },
     {
      "n": "Rations",
      "qty": 2,
      "max": 0,
      "used": 0,
-     "note": ""
+     "note": "",
+     "d": "Nourriture pour une journée."
     },
     {
      "n": "Disguise Kit",
      "qty": 1,
      "max": 0,
      "used": 0,
-     "note": ""
+     "note": "",
+     "d": "Permet de se grimer et d'imiter une apparence (maîtrise requise)."
     },
     {
      "n": "Fine Clothes",
      "qty": 1,
      "max": 0,
      "used": 0,
-     "note": ""
+     "note": "",
+     "d": "Vêtements de qualité, de noble."
     },
     {
      "n": "Spyglass",
      "qty": 1,
      "max": 0,
      "used": 0,
-     "note": ""
+     "note": "",
+     "d": "Grossit les objets distants d'un facteur 10."
     },
     {
      "n": "Bag of Holding",
      "qty": 1,
      "max": 0,
      "used": 0,
-     "note": ""
+     "note": "",
+     "d": "Espace extradimensionnel de 500 lb et 64 pieds cubes."
     }
    ],
    "acfx": {
@@ -7962,7 +8231,117 @@
    "spd": {
     "base": 35,
     "add": []
-   }
+   },
+   "skills": [
+    [
+     "Acrobaties",
+     "DEX",
+     1,
+     ""
+    ],
+    [
+     "Dressage",
+     "SAG",
+     5,
+     ""
+    ],
+    [
+     "Arcanes",
+     "INT",
+     9,
+     ""
+    ],
+    [
+     "Athlétisme",
+     "FOR",
+     0,
+     ""
+    ],
+    [
+     "Tromperie",
+     "CHA",
+     2,
+     ""
+    ],
+    [
+     "Histoire",
+     "INT",
+     8,
+     "P"
+    ],
+    [
+     "Intuition",
+     "SAG",
+     9,
+     "P"
+    ],
+    [
+     "Intimidation",
+     "CHA",
+     2,
+     ""
+    ],
+    [
+     "Investigation",
+     "INT",
+     4,
+     ""
+    ],
+    [
+     "Médecine",
+     "SAG",
+     5,
+     ""
+    ],
+    [
+     "Nature",
+     "INT",
+     9,
+     ""
+    ],
+    [
+     "Perception",
+     "SAG",
+     9,
+     "P"
+    ],
+    [
+     "Représentation",
+     "CHA",
+     2,
+     ""
+    ],
+    [
+     "Persuasion",
+     "CHA",
+     6,
+     "P"
+    ],
+    [
+     "Religion",
+     "INT",
+     4,
+     ""
+    ],
+    [
+     "Escamotage",
+     "DEX",
+     1,
+     ""
+    ],
+    [
+     "Discrétion",
+     "DEX",
+     1,
+     ""
+    ],
+    [
+     "Survie",
+     "SAG",
+     9,
+     "P"
+    ]
+   ]
   }
  ]
 }
