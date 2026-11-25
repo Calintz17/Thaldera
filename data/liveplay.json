@@ -244,10 +244,10 @@
     {
      "n": "Armure d'Agathys",
      "lv": 1,
-     "t": "Action bonus",
+     "t": "Action",
      "p": "Soi",
      "c": false,
-     "d": "Action bonus. Tu gagnes 5 PV temporaires et un froid givrant t'enveloppe pendant 1 heure. Quand une créature te touche au corps à corps tant que tu as ces PV, elle subit 5 froid. +5 PV temporaires et +5 froid par niveau.",
+     "d": "Action. Tu gagnes 5 PV temporaires et un froid givrant t'enveloppe pendant 1 heure. Quand une créature te touche au corps à corps tant que tu as ces PV, elle subit 5 froid. +5 PV temporaires et +5 froid par niveau.",
      "en": "Armor of Agathys",
      "gid": "s-armor-of-agathys",
      "thp": {
@@ -2869,6 +2869,15 @@
       10
      ]
     ]
+   },
+   "eqbon": {
+    "La main du Reliquaire": [
+     "Résistance nécrotique",
+     "Traverse la matière non magique"
+    ],
+    "Scythe de la Lithurgie des Cendres": [
+     "Résistance radiant avec Veil Shield"
+    ]
    }
   },
   {
@@ -2918,6 +2927,26 @@
      "max": 1,
      "reset": "long",
      "d": "Touché par l'ombre : tu lances Invisibilité sans emplacement, 1 fois par repos long. Incantation en INT."
+    },
+    {
+     "id": "bisection",
+     "nom": "La Mâchoire : Bisection",
+     "sub": "1 par repos long",
+     "max": 1,
+     "reset": "long",
+     "src": "La Mâchoire",
+     "a": "A",
+     "d": "Pouvoir de La Mâchoire, 1 fois par repos long."
+    },
+    {
+     "id": "dechirure",
+     "nom": "La Mâchoire : Déchirure",
+     "sub": "Réaction, 1 par repos long",
+     "max": 1,
+     "reset": "long",
+     "src": "La Mâchoire",
+     "a": "R",
+     "d": "Réaction, pouvoir de La Mâchoire, 1 fois par repos long."
     }
    ],
    "spells": [
@@ -4050,31 +4079,90 @@
     },
     {
      "n": "Flame Tongue Dagger",
-     "hit": "",
-     "dmg": "",
+     "hit": "+9",
+     "dmg": "1d4+5 perforant",
      "note": "Dague, Finesse, Light, Thrown 20/60, Nick. +2d6 feu. True Strike 2d6+4 radiant.",
-     "pw": []
+     "pw": [
+      {
+       "n": "Lame ardente",
+       "a": "B",
+       "d": "La lame s'embrase : +2d6 feu aux dégâts de chaque attaque tant qu'elle brûle.",
+       "r": "2d6"
+      },
+      {
+       "n": "True Strike",
+       "a": "A",
+       "d": "2d6+4 radiant ou du type de l'arme, au choix.",
+       "r": "2d6+4"
+      }
+     ]
+    },
+    {
+     "n": "La Mâchoire",
+     "hit": "+9",
+     "dmg": "1d6+5 perforant",
+     "note": "Épée courte martiale, Finesse, Light, Vex. Vex : avantage à ta prochaine attaque contre la créature touchée.",
+     "pw": [
+      {
+       "n": "True Strike",
+       "a": "A",
+       "d": "2d6+4 radiant ou du type de l'arme, au choix.",
+       "r": "2d6+4"
+      }
+     ]
     },
     {
      "n": "Dagger of Venom",
-     "hit": "",
-     "dmg": "",
+     "hit": "+9",
+     "dmg": "1d4+5 perforant",
      "note": "Dague, Finesse, Light, Thrown 20/60, Nick. +2d10 poison, 1 charge. True Strike 2d6+4 radiant.",
-     "pw": []
+     "pw": [
+      {
+       "n": "Poison",
+       "a": "A",
+       "d": "1 charge : +2d10 poison aux dégâts de l'attaque.",
+       "r": "2d10"
+      },
+      {
+       "n": "True Strike",
+       "a": "A",
+       "d": "2d6+4 radiant ou du type de l'arme, au choix.",
+       "r": "2d6+4"
+      }
+     ]
     },
     {
      "n": "Dagger of Absorption",
-     "hit": "",
-     "dmg": "",
+     "hit": "+9",
+     "dmg": "1d4+5 perforant",
      "note": "Dague, Finesse, Light, Thrown 20/60, Nick. True Strike 2d6+4 radiant.",
-     "pw": []
+     "pw": [
+      {
+       "n": "Absorption",
+       "a": "A",
+       "d": "Si une créature est tuée par cette dague, son porteur vole une de ses caractéristiques mineures pendant 24 h."
+      },
+      {
+       "n": "True Strike",
+       "a": "A",
+       "d": "2d6+4 radiant ou du type de l'arme, au choix.",
+       "r": "2d6+4"
+      }
+     ]
     },
     {
      "n": "Vial of Eternal Hunger",
-     "hit": "",
-     "dmg": "",
+     "hit": "+9",
+     "dmg": "1d6+5 perforant",
      "note": "Épée courte martiale, Finesse, Light, Vex. True Strike 2d6+4 radiant.",
-     "pw": []
+     "pw": [
+      {
+       "n": "True Strike",
+       "a": "A",
+       "d": "2d6+4 radiant ou du type de l'arme, au choix.",
+       "r": "2d6+4"
+      }
+     ]
     },
     {
      "n": "Attaque à mains nues",

@@ -414,15 +414,35 @@
     });
     return rows.join('');
   }
-  /* pouvoirs d'objets equipes qui consomment des emplacements (pas de ressource propre) */
+  /* pouvoirs et bonus d'objets equipes : tout ce que donne un objet porte */
   function itemPowerRows(c, st) {
-    const out = [];
-    eqNames(c, st).forEach(n => c.spells.filter(sp => sp.src === n && !sp.res && !sp.cost).forEach(sp => {
-      const pk = pickPool(c, st, sp), spent = pk.ps.length === 0, t = sp.t;
-      const chip = `<span class="lp-slotchip sm ${spent ? 'off' : ''}">${spent ? (sp.lim && st.used[sp.n] ? 'Utilisé' : 'Aucune ressource') : esc(pk.cur.s)}</span>`;
-      out.push(`<div class="lp-row res ipw"><span class="lp-nm" data-tip="s|${esc(sp.n)}">${ico(t)}<b>${esc(sp.n)}</b><small>${esc(n)}</small></span><span class="lp-pips lp-ipw">${chip}<button type="button" class="lp-cast sm" data-act="cast" data-key="${esc(sp.n)}" ${spent ? 'disabled' : ''}>Lancer</button></span></div>`);
-    }));
-    return out.join('');
+    const out = [], names = eqNames(c, st), head = [];
+    const f = c.acfx || {}, sp = c.spd || {};
+    names.forEach(n => {
+      const b = [];
+      (f.base || []).filter(x => x[0] === n).forEach(x => b.push(`CA ${x[1]}`));
+      (f.add || []).filter(x => x[0] === n).forEach(x => b.push(`+${x[1]} CA`));
+      (f.bloody || []).filter(x => x[0] === n).forEach(x => b.push(`+${x[1]} CA si PV ≤ moitié`));
+      (sp.add || []).filter(x => x[0] === n).forEach(x => b.push(`+${x[1]} ft de vitesse`));
+      ((c.eqbon || {})[n] || []).forEach(t => b.push(t));
+      if (b.length) head.push(`<div class="lp-row res ipw bon"><b>${esc(n)}</b><span>${b.map(esc).join(' · ')}</span></div>`);
+      c.spells.filter(q => q.src === n).forEach(q => {
+        const pk = pickPool(c, st, q), spent = pk.ps.length === 0;
+        const lab = q.cost ? `${q.cost.n} charge${q.cost.n > 1 ? 's' : ''}` : (q.res ? '1 / jour' : pk.cur.s);
+        const chip = `<span class="lp-slotchip sm ${spent ? 'off' : ''}">${spent ? (q.lim && st.used[q.n] ? 'Utilisé' : 'Aucune ressource') : esc(lab)}</span>`;
+        out.push(`<div class="lp-row res ipw"><span class="lp-nm" data-tip="s|${esc(q.n)}">${ico(q.t)}<b>${esc(q.n)}</b><small>${esc(n)}</small></span><span class="lp-pips lp-ipw">${chip}<button type="button" class="lp-cast sm" data-act="cast" data-key="${esc(q.n)}" ${spent ? 'disabled' : ''}>Lancer</button></span></div>`);
+      });
+      const w = c.weapons.find(x => x.n === n);
+      (w && w.pw || []).forEach((o, i) => {
+        if (typeof o === 'string' || o.sp) return;
+        const ps = pwState(c, st, o), spent = ps && ps.spent;
+        const chip = ps ? `<span class="lp-slotchip sm ${spent ? 'off' : ''}">${esc(ps.txt)}</span>` : '';
+        const use = ps && ps.kind === 'res' ? `<button type="button" class="lp-cast sm" data-act="pwuse" data-key="${esc(n)}" data-i="${i}" ${spent ? 'disabled' : ''}>Utiliser</button>` : '';
+        const jet = o.r ? `<button type="button" class="lp-jet sm" data-act="rpw" data-key="${esc(n)}" data-i="${i}" ${spent ? 'disabled' : ''}>Jet</button>` : '';
+        out.push(`<div class="lp-row res ipw"><span class="lp-nm" data-tip="p|${esc(n)}|${i}">${ico(typeOfPw(o.a))}<b>${esc(o.n)}</b><small>${esc(n)}</small></span>${chip || use || jet ? `<span class="lp-pips lp-ipw">${chip}${use}${jet}</span>` : ''}</div>`);
+      });
+    });
+    return head.concat(out).join('');
   }
 
   function costBadge(c, sp) {
@@ -492,7 +512,7 @@
   }
   function pwState(c, st, o) {
     if (o.sp) { const sp = c.spells.find(x => x.n === o.sp); if (sp) { const pk = pickPool(c, st, sp); return { kind: 'sp', sp, pk, spent: pk.ps.length === 0, txt: pk.ps.length ? (sp.lim || sp.res ? '1 / jour' : pk.cur.s) : (sp.lim && st.used[sp.n] ? 'Utilisé' : 'Aucune ressource') }; } }
-    if (o.res) { const l = left(c, st, o.res), r = resOf(c, o.res); return { kind: 'res', spent: l < o.cost, txt: `${l}/${r.max} charges` }; }
+    if (o.res) { const l = left(c, st, o.res), r = resOf(c, o.res); return { kind: 'res', spent: l < o.cost, txt: r.max > 1 ? `${l}/${r.max} charges` : (l ? 'Disponible' : 'Utilisé') }; }
     return null;
   }
   function equipPanel(c, st) {
@@ -541,9 +561,8 @@
     const eqw = c.weapons.filter(w => (w.hit || w.dmg) && (w.perma || st.eq.includes(w.n)));
     eqw.forEach(w => cols['Action'].push(card('Action', 'Attaque : ' + w.n, '', '', `<span class="lp-meta"><span>${esc(w.hit)}</span><span>${esc(w.dmg)}</span></span>`, ctl('', w.hit ? `<button type="button" class="lp-cast" data-act="rhit" data-key="${esc(w.n)}">Toucher</button>` : '', w.dmg ? `<button type="button" class="lp-jet" data-act="rdmg" data-key="${esc(w.n)}">Dégâts</button>` : ''))));
     eqw.forEach(w => {
-      if (c.spells.some(x => x.src === w.n)) return;
       (w.pw || []).forEach((o, i) => {
-        if (typeof o === 'string') return;
+        if (typeof o === 'string' || o.sp) return;
         const ps = pwState(c, st, o), spent = ps && ps.spent;
         const main = ps && ps.kind === 'res' ? `<button type="button" class="lp-cast" data-act="pwuse" data-key="${esc(w.n)}" data-i="${i}" ${spent ? 'disabled' : ''}>Utiliser</button>` : '';
         const jet = o.r ? `<button type="button" class="lp-jet" data-act="rpw" data-key="${esc(w.n)}" data-i="${i}" ${spent ? 'disabled' : ''}>Jet</button>` : '';
@@ -594,7 +613,7 @@
         <div class="lp-srow"><h3>Bonus</h3><div class="lp-r7">${tile(ac.v, 'CA', 'ca', ac.parts.join(', '))}${tile(sp.v + ' ft', 'Vitesse', 'vit', sp.parts.join(', '))}${(c.bonus || []).map(b => tile(b[1], b[0], icOf[b[0]])).join('')}${tile(c.dc, 'DD sorts', 'dd')}${tile('+' + c.atk, 'Att. sort', 'att')}</div></div>
       </section>
       <div class="lp-coinbar"><span class="lp-cbt">Monnaies</span>${coinsDef.map(([k, n, ab]) => `<label class="lp-coin" data-k="${k}" title="${esc(n)}"><span>${ab}</span><input type="number" min="0" inputmode="numeric" data-coin="${k}" value="${(st.coins || {})[k] || 0}" aria-label="${esc(n)}"></label>`).join('')}</div>
-      <section class="lp-block lp-resb"><h3>Emplacements</h3><div class="lp-slots">${slotRows(c, st, false)}</div><h3>Capacités</h3><div class="lp-rgrid">${resRows(c, st, false, visRes(c, st).filter(r => !r.src))}</div>${(() => { const it = visRes(c, st).filter(r => r.src), ip = itemPowerRows(c, st); return it.length || ip ? `<h3>Objets équipés</h3><div class="lp-rgrid">${resRows(c, st, false, it)}${ip}</div>` : ''; })()}</section>
+      <section class="lp-block lp-resb"><h3>Emplacements</h3><div class="lp-slots">${slotRows(c, st, false)}</div><h3>Capacités</h3><div class="lp-rgrid">${resRows(c, st, false, visRes(c, st).filter(r => !r.src))}</div>${(() => { const viaSp = c.spells.filter(q => q.res && isEq(c, st, q.src)).reduce((a, q) => a.concat(q.res), []), it = visRes(c, st).filter(r => r.src && !viaSp.includes(r.id)), ip = itemPowerRows(c, st); return it.length || ip ? `<h3>Objets équipés</h3><div class="lp-rgrid">${resRows(c, st, false, it)}${ip}</div>` : ''; })()}</section>
       <div class="lp-main"><div class="lp-tabs" role="tablist">${tabs.map(([k, n]) => `<button type="button" role="tab" class="${tab === k ? 'on' : ''}" data-act="tab" data-v="${k}">${n}</button>`).join('')}</div>
       ${tab === 'armes' ? equipPanel(c, st) : tab === 'capa' ? featsPanel(c) : tab === 'grim' ? grimPanel(c, st) : tab === 'objets' ? itemsPanel(c, st) : tab === 'actions' ? actionsPanel(c, st) : spellsPanel(c, st)}</div></div></div>`;
   }

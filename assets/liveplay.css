@@ -597,3 +597,11 @@ body.live-reading.journal-open #scene { width: 60%; }
 .lp-stats .lp-r7 .lp-tile b { font-size: 18px; }
 @container (max-width: 900px) { .lp-stats .lp-r7 .lp-tile { flex-direction: column; flex-wrap: wrap; gap: 0; } }
 .lp-rgrid .lp-row.res.ipw .lp-pips { width: 100%; flex: none; }
+/* v154 objets equipes : pouvoirs d'arme, bonus, boutons multiples */
+.lp-rgrid .lp-row.res.ipw .lp-ipw { grid-template-columns: minmax(0, 1fr); grid-auto-flow: column; grid-auto-columns: auto; }
+.lp-rgrid .lp-row.res.ipw .lp-ipw > :first-child { min-width: 0; }
+.lp-rgrid .lp-row.res.ipw.bon { grid-column: 1 / -1; flex-direction: row; align-items: baseline; gap: 10px; padding-top: 5px; padding-bottom: 5px; }
+.lp-rgrid .lp-row.res.ipw.bon b { color: var(--gold, #e0b95a); white-space: nowrap; font-size: 13px; }
+.lp-rgrid .lp-row.res.ipw.bon span { font-size: 13px; color: var(--ink2, #c9ccd6); }
+.lp-rgrid .lp-row.res.ipw.bon { justify-content: flex-start; align-items: center; min-height: 0; height: auto; padding: 7px 10px; }
+.lp-rgrid .lp-row.res.ipw.bon span { text-align: left; }
