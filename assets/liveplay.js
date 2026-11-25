@@ -7,7 +7,7 @@
   const ACTS = ['Action', 'Action bonus', 'Réaction', 'Hors combat'];
   let CFG = null, root = null, sb = null, online = false, chan = null, tick = null;
   let ST = {}, EV = [];
-  const view = { mode: 'pick', char: null, tab: null, q: '', act: 'all', showAll: false, open: null, cast: null, confirm: null, filterChar: 'all', fromDM: false, pool: {}, heal: null };
+  const view = { mode: 'pick', char: null, tab: null, q: '', act: 'all', gopen: null, open: null, cast: null, confirm: null, filterChar: 'all', fromDM: false, pool: {}, heal: null };
 
   let GL = null, GX = null;
   const nrm0 = t => String(t).normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
@@ -47,9 +47,10 @@
   const resOf = (c, id) => c.resources.find(r => r.id === id);
   const left = (c, st, id) => resOf(c, id).max - (st.res[id] || 0);
   const equipables = c => (c.weapons || []).filter(w => !w.fixed).map(w => w.n).concat((c.gear || []).map(g => g.n));
-  const isEq = (c, st, name) => !name || !equipables(c).includes(name) || (st.eq || []).includes(name);
+  const permas = c => (c.weapons || []).filter(w => w.perma).map(w => w.n);
+  const isEq = (c, st, name) => !name || !equipables(c).includes(name) || permas(c).includes(name) || (st.eq || []).includes(name);
   const visRes = (c, st) => c.resources.filter(r => isEq(c, st, r.src));
-  const eqNames = (c, st) => (st.eq || []).filter(n => equipables(c).includes(n));
+  const eqNames = (c, st) => permas(c).concat((st.eq || []).filter(n => equipables(c).includes(n) && !permas(c).includes(n)));
 
   /* ---------- etat ---------- */
   function fresh(c) { return { hp: c.hp, tmp: 0, slots: {}, pact: 0, res: {}, gold: 0, conc: null, prep: null, eq: null, items: [], used: {}, rev: 0 }; }
@@ -57,8 +58,11 @@
     const o = Object.assign(fresh(c), s || {});
     o.slots = o.slots || {}; o.res = o.res || {}; o.used = o.used || {}; if (!Array.isArray(o.items)) o.items = [];
     if (!Array.isArray(o.eq)) o.eq = (c.eqDefault || []).slice();
-    if (c.prepMax && !Array.isArray(o.prep)) o.prep = c.spells.filter(x => x.pre).map(x => x.n);
+    const lsn = c.spells.filter(x => x.lst).map(x => x.n);
+    if (!o.gv) { const old = Array.isArray(s && s.prep) ? s.prep : []; o.prep = c.spells.filter(x => x.lst && x.pre).map(x => x.n).concat(old.filter(n => lsn.includes(n))); o.prep = o.prep.filter((n, i, a) => a.indexOf(n) === i); o.gv = 150; }
     if (!Array.isArray(o.prep)) o.prep = [];
+    if (!o.seeded) { const seed = (c.items || []).map((it, i) => ({ id: 's' + i, n: it.n, qty: it.qty || 1, max: it.max || 0, used: it.used || 0, note: it.note || '' })); o.items = seed.concat(o.items); o.res = Object.assign({}, (c.init || {}).res || {}, o.res); o.seeded = 1; }
+    permas(c).forEach(n => { if (!o.eq.includes(n)) o.eq.push(n); });
     return o;
   }
   const S = id => (ST[id] = norm(cfgOf(id), ST[id]));
@@ -226,6 +230,8 @@
   }
   function toggleEq(id, name) {
     const st = S(id), c = cfgOf(id), on = st.eq.includes(name);
+    if (permas(c).includes(name)) return toast('Équipée en permanence');
+    if (!on && c.eqExcl && (c.weapons || []).some(w => w.n === name)) { const ws = (c.weapons || []).map(w => w.n); st.eq = st.eq.filter(x => !ws.includes(x) || permas(c).includes(x)); }
     st.eq = on ? st.eq.filter(x => x !== name) : st.eq.concat(name);
     return say(id, `${on ? 'Range' : 'Équipe'} ${name}`, 'eq');
   }
@@ -292,11 +298,11 @@
     const key = sp.n, open = view.open === key, conc = st.conc === key, prep = (st.prep || []).includes(key);
     const { ps, cur } = pickPool(c, st, sp), spent = ps.length === 0, limUsed = sp.lim && st.used[sp.n];
     const tags = [sp.c ? '<span class="lp-tag c">Concentration</span>' : '', sp.ritual ? '<span class="lp-tag">Rituel</span>' : '', sp.save ? `<span class="lp-tag">Jet de ${esc(sp.save)}</span>` : '', sp.atk ? '<span class="lp-tag">Attaque de sort</span>' : '', sp.lim ? '<span class="lp-tag free">1 / repos long</span>' : '', sp.src ? `<span class="lp-tag src">${esc(sp.src)}</span>` : '', sp.res && sp.lv ? `<span class="lp-tag free">Gratuit 1 / jour</span>` : ''].join('');
-    const star = c.prepMax && sp.cls && !sp.always && sp.lv > 0 ? `<button type="button" class="lp-prep ${prep ? 'on' : ''}" data-act="prep" data-key="${esc(key)}" title="Préparer" aria-pressed="${prep}">${prep ? '★' : '☆'}</button>` : '';
+    const star = '';
     const sel = ps.length > 1 ? `<select class="lp-pool" data-sp="${esc(key)}" aria-label="Source du sort">${ps.map(p => `<option value="${esc(p.k)}" ${cur.k === p.k ? 'selected' : ''}>${esc(p.s)}</option>`).join('')}</select>` : '';
     const btn = spent ? `<button type="button" class="lp-cast off" disabled>${limUsed ? 'Lancé' : 'Épuisé'}</button>` : `<button type="button" class="lp-cast" data-act="cast" data-key="${esc(key)}">Lancer</button>`;
-    let h = `<article class="lp-spell ${open ? 'open' : ''} ${conc ? 'conc' : ''} ${spent ? 'spent' : ''} ${c.prepMax && sp.cls && sp.lv > 0 && !prep && !sp.always ? 'unprep' : ''}">
-      <div class="lp-sh"><button type="button" class="lp-sname" data-act="open" data-key="${esc(key)}"><b>${esc(sp.n)}</b>${sp.en ? `<small class="lp-en">${esc(sp.en)}</small>` : ''}<span class="lp-meta">${esc(sp.t)} · ${esc(sp.p)}</span></button>${costBadge(c, sp)}${star}${sel}${btn}</div>
+    let h = `<article class="lp-spell ${open ? 'open' : ''} ${conc ? 'conc' : ''} ${spent ? 'spent' : ''}">
+      <div class="lp-sh"><button type="button" class="lp-sname" data-act="open" data-key="${esc(key)}"><b>${esc(sp.n)}</b>${sp.en ? `<small class="lp-en">${esc(sp.en)}</small>` : ''}<span class="lp-meta">${esc(sp.t)}${sp.p ? ' · ' + esc(sp.p) : ''}</span></button>${costBadge(c, sp)}${star}${sel}${btn}</div>
       ${tags ? `<div class="lp-tags">${tags}</div>` : ''}`;
     if (open) h += `<p class="lp-desc">${rich(sp.d, sp.gid)}</p>${sp.gid ? `<button type="button" class="lp-full" data-act="kw" data-id="${esc(sp.gid)}">Texte officiel complet</button>` : ''}`;
     if (limUsed) h += `<button type="button" class="lp-full" data-act="unspend" data-key="${esc(key)}">Restaurer ce sort</button>`;
@@ -309,7 +315,7 @@
     let hidden = 0;
     const list = c.spells.filter(s => {
       if (!isEq(c, st, s.src)) { hidden++; return false; }
-      if (c.prepMax && s.cls && s.lv > 0 && !s.always && !view.showAll && !prepared(s.n)) return false;
+      if (s.lst && !prepared(s.n)) return false;
       if (view.act !== 'all' && s.t !== view.act) return false;
       return !nq || nrm(s.n + ' ' + (s.en || '') + ' ' + s.d + ' ' + (s.src || '')).includes(nq);
     });
@@ -317,28 +323,44 @@
     const order = [];
     c.spells.forEach(s => { const g = groupOf(s); if (!order.includes(g)) order.push(g); });
     order.sort((a, b) => { const k = g => /^Niveau (\d)/.test(g) ? +g.slice(7) : g === 'Sorts mineurs' ? 0 : 50 + order.indexOf(g); return k(a) - k(b); });
-    const nPrep = (st.prep || []).filter(n => { const s = c.spells.find(x => x.n === n); return s && !s.always; }).length;
     const chips = ['all'].concat(ACTS).map(a => `<button type="button" class="lp-chip ${view.act === a ? 'on' : ''}" data-act="actf" data-v="${esc(a)}">${a === 'all' ? 'Tout' : esc(a)}</button>`).join('');
     return `<div class="lp-tools"><input type="search" id="lp-q" value="${esc(view.q)}" placeholder="Chercher un sort ou un pouvoir" aria-label="Chercher"><div class="lp-chips">${chips}</div>
       ${hidden ? `<p class="lp-note">${hidden} pouvoir${hidden > 1 ? 's' : ''} d'objet masqué${hidden > 1 ? 's' : ''} : objet non équipé (onglet Équipement).</p>` : ''}
-      ${c.prepMax ? `<div class="lp-prepbar"><span>Préparés : <b>${nPrep}</b> / ${c.prepMax}</span><button type="button" class="lp-chip ${view.showAll ? 'on' : ''}" data-act="showall">Voir toute la liste de classe</button></div>` : ''}</div>
+      </div>
       ${order.map(g => { const ls = list.filter(s => groupOf(s) === g); return ls.length ? `<h4 class="lp-lvh">${esc(g)}<small>${ls.length}</small></h4><div class="lp-grid">${ls.map(s => spellCard(c, st, s)).join('')}</div>` : ''; }).join('') || '<p class="lp-empty">Aucun résultat.</p>'}`;
   }
 
+
+  function grimPanel(c, st) {
+    const nrm = t => String(t).normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase(), nq = nrm(view.q.trim());
+    const on = n => (st.prep || []).includes(n);
+    const out = (c.lists || []).map(L => {
+      const all = c.spells.filter(s => s.lst === L.id);
+      const nC = all.filter(s => s.lv === 0 && on(s.n)).length, nL = all.filter(s => s.lv > 0 && on(s.n)).length;
+      const cnt = (a, m) => `<b class="${m && a > m ? 'over' : a === m ? 'full' : ''}">${a}${m ? ' / ' + m : ''}</b>`;
+      const lvls = []; all.forEach(s => { if (!lvls.includes(s.lv)) lvls.push(s.lv); }); lvls.sort((a, b) => a - b);
+      const body = lvls.map(lv => {
+        const ls = all.filter(s => s.lv === lv && (!nq || nrm(s.n + ' ' + (s.en || '')).includes(nq))).sort((a, b) => (on(b.n) ? 1 : 0) - (on(a.n) ? 1 : 0));
+        return ls.length ? `<h5 class="lp-gl">${lv === 0 ? 'Sorts mineurs' : 'Niveau ' + lv}<small>${ls.filter(s => on(s.n)).length} / ${ls.length}</small></h5><div class="lp-glist">${ls.map(s => `<div class="lp-grow ${on(s.n) ? 'on' : ''}"><button type="button" class="lp-gt" data-act="prep" data-key="${esc(s.n)}" aria-pressed="${on(s.n)}" aria-label="${on(s.n) ? 'Retirer' : 'Ajouter'} ${esc(s.n)}">${on(s.n) ? '★' : '☆'}</button><button type="button" class="lp-gn" data-act="gopen" data-key="${esc(s.n)}"><b>${esc(s.n)}</b>${s.en ? `<small class="lp-en">${esc(s.en)}</small>` : ''}</button></div>${view.gopen === s.n ? `<p class="lp-desc g">${rich(s.d, s.gid)}</p>` : ''}`).join('')}</div>` : '';
+      }).join('');
+      return `<section class="lp-block lp-gsec"><div class="lp-bar"><h3>${esc(L.nom)}</h3><div class="lp-caps"><span>Mineurs ${cnt(nC, L.cant)}</span><span>${L.mode === 'known' ? 'Connus' : 'Préparés'} ${cnt(nL, L.max)}</span></div></div>${body || '<p class="lp-empty">Aucun résultat.</p>'}</section>`;
+    }).join('');
+    return `<div class="lp-tools"><input type="search" id="lp-q" value="${esc(view.q)}" placeholder="Chercher dans le grimoire" aria-label="Chercher"><p class="lp-note">Coche les sorts à préparer. Seuls les sorts cochés apparaissent dans l'onglet Sorts et pouvoirs. Les sorts donnés par un objet ou une capacité y sont toujours.</p></div>${out || '<p class="lp-empty">Pas de liste de sorts.</p>'}`;
+  }
   function featsPanel(c) {
     const fs = c.feats || [], gs = []; fs.forEach(f => { if (!gs.includes(f.grp)) gs.push(f.grp); });
     return gs.map(g => `<h4 class="lp-lvh">${esc(g)}<small>${fs.filter(f => f.grp === g).length}</small></h4><div class="lp-grid">${fs.filter(f => f.grp === g).map(f => `<article class="lp-spell lp-feat"><div class="lp-sh"><span class="lp-sname"><b>${esc(f.n)}</b>${f.en ? `<small class="lp-en">${esc(f.en)}</small>` : ''}</span></div><p class="lp-desc">${rich(f.d)}</p></article>`).join('')}</div>`).join('') || '<p class="lp-empty">Aucune capacité.</p>';
   }
   function equipPanel(c, st) {
     const card = (w, isGear) => {
-      const fx = w.fixed, on = fx || st.eq.includes(w.n);
+      const fx = w.fixed || w.perma, on = fx || st.eq.includes(w.n);
       return `<article class="lp-weapon ${on ? 'on' : 'off'}">
-      <header><h4>${esc(w.n)}</h4>${w.arc ? `<span class="lp-arc">${esc(w.arc)}</span>` : ''}${fx ? '' : `<button type="button" class="lp-eqb ${on ? 'on' : ''}" data-act="eq" data-key="${esc(w.n)}" aria-pressed="${on}">${on ? 'Équipé' : 'Équiper'}</button>`}</header>
+      <header><h4>${esc(w.n)}</h4>${w.arc ? `<span class="lp-arc">${esc(w.arc)}</span>` : ''}${w.perma ? '<span class="lp-arc perma">Permanent</span>' : ''}${fx ? '' : `<button type="button" class="lp-eqb ${on ? 'on' : ''}" data-act="eq" data-key="${esc(w.n)}" aria-pressed="${on}">${on ? 'Équipé' : 'Équiper'}</button>`}</header>
       ${w.hit || w.dmg ? `<div class="lp-wstat">${w.hit ? `<div><span>Toucher</span><b>${esc(w.hit)}</b></div>` : ''}${w.dmg ? `<div><span>Dégâts</span><b>${esc(w.dmg)}</b></div>` : ''}</div>` : ''}
       <p>${rich(w.note)}</p>${w.pw && w.pw.length ? `<ul>${w.pw.map(p => `<li>${esc(p)}</li>`).join('')}</ul>` : ''}</article>`;
     };
     const wl = c.weapons.slice().sort((a, b) => (b.fixed || st.eq.includes(b.n) ? 1 : 0) - (a.fixed || st.eq.includes(a.n) ? 1 : 0));
-    const items = st.items.map(it => `<li class="lp-item"><span class="lp-nm">${esc(it.n)}${it.max ? `<small>${it.max - it.used}/${it.max} charges</small>` : ''}</span>
+    const items = st.items.map(it => `<li class="lp-item"><span class="lp-nm">${esc(it.n)}${it.max ? `<small>${it.max - it.used}/${it.max} charges</small>` : ''}${it.note ? `<small class="nt">${esc(it.note)}</small>` : ''}</span>
       <span class="lp-iq">${it.max ? `<button type="button" class="lp-stp" data-act="itchg" data-id="${esc(it.id)}" data-d="1" aria-label="Dépenser une charge">−</button><b class="lp-cnt">${it.max - it.used}/${it.max}</b><button type="button" class="lp-stp" data-act="itchg" data-id="${esc(it.id)}" data-d="-1" aria-label="Récupérer une charge">+</button>`
         : `<button type="button" class="lp-stp" data-act="itqty" data-id="${esc(it.id)}" data-d="-1" aria-label="Retirer un">−</button><b class="lp-cnt">x${it.qty}</b><button type="button" class="lp-stp" data-act="itqty" data-id="${esc(it.id)}" data-d="1" aria-label="Ajouter un">+</button>`}
       <button type="button" class="lp-del" data-act="itdel" data-id="${esc(it.id)}" aria-label="Supprimer">×</button></span></li>`).join('');
@@ -377,8 +399,8 @@
         <section class="lp-block"><h3>Ressources</h3>${slotRows(c, st, false)}${resRows(c, st, false)}</section>
         <section class="lp-block"><h3>Or</h3><div class="lp-gold"><b>${st.gold}</b><span>po</span></div><div class="lp-hpctl g"><button type="button" data-act="gold" data-sign="-1">Dépenser</button><input type="number" min="0" inputmode="numeric" id="lp-gold-amt" placeholder="0" aria-label="Montant en or"><button type="button" data-act="gold" data-sign="1">Gagner</button></div></section>
       </div></div>
-      <div class="lp-main"><div class="lp-tabs" role="tablist"><button type="button" role="tab" class="${tab === 'armes' ? 'on' : ''}" data-act="tab" data-v="armes">Équipement</button><button type="button" role="tab" class="${tab === 'sorts' ? 'on' : ''}" data-act="tab" data-v="sorts">Sorts et pouvoirs</button><button type="button" role="tab" class="${tab === 'capa' ? 'on' : ''}" data-act="tab" data-v="capa">Capacités</button></div>
-      ${tab === 'armes' ? equipPanel(c, st) : tab === 'capa' ? featsPanel(c) : spellsPanel(c, st)}</div></div></div>`;
+      <div class="lp-main"><div class="lp-tabs" role="tablist"><button type="button" role="tab" class="${tab === 'armes' ? 'on' : ''}" data-act="tab" data-v="armes">Équipement</button><button type="button" role="tab" class="${tab === 'sorts' ? 'on' : ''}" data-act="tab" data-v="sorts">Sorts et pouvoirs</button>${(c.lists || []).length ? `<button type="button" role="tab" class="${tab === 'grim' ? 'on' : ''}" data-act="tab" data-v="grim">Grimoire</button>` : ''}<button type="button" role="tab" class="${tab === 'capa' ? 'on' : ''}" data-act="tab" data-v="capa">Capacités</button></div>
+      ${tab === 'armes' ? equipPanel(c, st) : tab === 'capa' ? featsPanel(c) : tab === 'grim' ? grimPanel(c, st) : spellsPanel(c, st)}</div></div></div>`;
   }
 
   const ago = iso => { const s = Math.max(0, (Date.now() - new Date(iso)) / 1000); return s < 60 ? 'à l\'instant' : s < 3600 ? Math.floor(s / 60) + ' min' : s < 86400 ? Math.floor(s / 3600) + ' h' : Math.floor(s / 86400) + ' j'; };
@@ -425,7 +447,7 @@
     view.fromDM = !!keepDM && sub !== 'dm' && sub !== '';
     view.cast = null; view.heal = null; view.confirm = null; view.open = null; view.q = ''; view.act = 'all';
     if (sub === 'dm') view.mode = 'dm';
-    else if (cfgOf(sub)) { if (view.char !== sub) { view.tab = null; view.showAll = false; } view.mode = 'player'; view.char = sub; }
+    else if (cfgOf(sub)) { if (view.char !== sub) { view.tab = null; view.gopen = null; } view.mode = 'player'; view.char = sub; }
     else view.mode = 'pick';
     render();
     const page = root && root.closest('.livepage'); if (page) page.scrollTop = 0;
@@ -447,14 +469,14 @@
     if (a === 'endconc') { const st = S(c), n = st.conc; st.conc = null; return say(c, `Termine la concentration sur ${n}`, 'spell'); }
     if (a === 'tab') { view.tab = b.dataset.v; view.cast = null; return render(); }
     if (a === 'actf') { view.act = b.dataset.v; return render(); }
-    if (a === 'showall') { view.showAll = !view.showAll; return render(); }
     if (a === 'open') { view.open = view.open === b.dataset.key ? null : b.dataset.key; return render(); }
+    if (a === 'gopen') { view.gopen = view.gopen === b.dataset.key ? null : b.dataset.key; return render(); }
     if (a === 'prep') {
-      const st = S(c), k = b.dataset.key, cf = cfgOf(c);
+      const st = S(c), k = b.dataset.key, cf = cfgOf(c), sp = cf.spells.find(y => y.n === k);
       if (st.prep.includes(k)) st.prep = st.prep.filter(x => x !== k);
       else {
-        const n = st.prep.filter(x => { const s = cf.spells.find(y => y.n === x); return s && !s.always; }).length;
-        if (n >= cf.prepMax) return toast(`Maximum de ${cf.prepMax} sorts préparés atteint`);
+        const L = (cf.lists || []).find(l => l.id === sp.lst), same = cf.spells.filter(y => y.lst === sp.lst && st.prep.includes(y.n) && (y.lv === 0) === (sp.lv === 0)).length, cap = sp.lv === 0 ? L.cant : L.max;
+        if (cap && same >= cap) return toast(sp.lv === 0 ? `Maximum de ${cap} sorts mineurs atteint` : `Maximum de ${cap} sorts atteint pour cette liste`);
         st.prep = st.prep.concat(k);
       }
       return save(c, null);
