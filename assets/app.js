@@ -4,7 +4,7 @@
 (() => {
 'use strict';
 
-const VER = '146';
+const VER = '147';
 const LEGACY_IDS = { 'bourre-piff':'bourpif', 'seravine':'solkah-barrow', 'tilda':'irna', 'cleff':'irna' };
 const EDIT = new URLSearchParams(location.search).has('edit');
 const $ = (s, r = document) => r.querySelector(s);
@@ -1174,8 +1174,12 @@ async function route() {
   const [path, qs] = raw.split('?');
   const id = decodeURIComponent(path || '');
   leavePatchNote();
+  if (id === 'live' || id.startsWith('live/')) {
+    const sub = id === 'live' ? '' : id.slice(5);
+    if ($('.livepage', stageEl) && window.Liveplay) { window.Liveplay.go(sub); lpMark(sub); return; }
+    renderLive(my, sub); return;
+  }
   leaveLive();
-  if (id === 'live') { renderLive(my); return; }
   if (id === 'patch' || id.startsWith('patch/')) {
     renderPatchNote(id === 'patch' ? '' : id.slice('patch/'.length), my);
     return;
@@ -1631,7 +1635,7 @@ function leaveLive() {
   const b = $('#lpbtn');
   if (b) b.classList.remove('on');
 }
-async function renderLive(my) {
+async function renderLive(my, sub) {
   window.__VER = VER;
   if (!window.Liveplay) {
     LP_JS = LP_JS || new Promise((res, rej) => { const s = document.createElement('script'); s.src = 'assets/liveplay.js?v=' + VER; s.onload = res; s.onerror = rej; document.head.appendChild(s); });
@@ -1654,11 +1658,37 @@ async function renderLive(my) {
   const b = $('#lpbtn');
   if (b) b.classList.add('on');
   document.title = 'Liveplay - Thaldera Codex';
-  window.Liveplay.mount(page.firstChild);
+  lpMark(sub);
+  window.Liveplay.mount(page.firstChild, sub);
+}
+const LP_WHO = [
+  { id: 'philippa', nom: 'Philippa', ico: 'img/patch/chibi-philippa.webp' },
+  { id: 'jane', nom: 'Jane', ico: 'img/patch/chibi-jane.webp' },
+  { id: 'harfang', nom: 'Harfang', ico: 'img/patch/chibi-harfang.webp' },
+  { id: 'dm', nom: 'MJ', ico: '' },
+];
+function lpMark(sub) {
+  const menu = $('#lpmenu');
+  if (menu) menu.querySelectorAll('a').forEach(a => a.classList.toggle('cur', a.dataset.who === sub));
 }
 function initLive() {
-  const btn = $('#lpbtn');
-  if (btn) btn.addEventListener('click', () => { location.hash = '#/live'; });
+  const btn = $('#lpbtn'), menu = $('#lpmenu');
+  if (!btn || !menu) return;
+  menu.innerHTML = LP_WHO.map(w => `<a role="menuitem" data-who="${w.id}" href="#/live/${w.id}">${w.ico ? `<img src="${w.ico}" alt="" width="26" height="26">` : '<span class="lp-mj" aria-hidden="true"></span>'}<span>${w.nom}</span></a>`).join('');
+  const close = () => { menu.hidden = true; btn.setAttribute('aria-expanded', 'false'); };
+  const open = () => {
+    menu.hidden = false;
+    const r = btn.getBoundingClientRect();
+    menu.style.top = Math.round(r.bottom + 4) + 'px';
+    menu.style.left = Math.max(8, Math.min(Math.round(r.left), innerWidth - menu.offsetWidth - 8)) + 'px';
+    btn.setAttribute('aria-expanded', 'true');
+  };
+  btn.addEventListener('click', ev => { ev.stopPropagation(); menu.hidden ? open() : close(); });
+  menu.addEventListener('click', ev => { if (ev.target.closest('a')) close(); });
+  document.addEventListener('click', ev => { if (!menu.hidden && !menu.contains(ev.target)) close(); });
+  document.addEventListener('keydown', ev => { if (ev.key === 'Escape' && !menu.hidden) { close(); btn.focus(); } });
+  window.addEventListener('resize', close);
+  window.addEventListener('hashchange', close);
 }
 function initPatchNotes() {
   const btn = $('#pnbtn'), menu = $('#pnmenu');
