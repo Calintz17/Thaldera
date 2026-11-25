@@ -3,6 +3,66 @@
 (function () {
   'use strict';
   const esc = s => String(s == null ? '' : s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+  /* v158 : langage visuel HUD, indépendant des mécaniques. */
+  const HUD = {
+    fire:'<path d="M12 2c1 5-4 6-3 10 2-1 3-3 3-5 4 3 7 6 7 10a7 7 0 0 1-14 0c0-4 3-7 7-15Z"/><path d="M12 15c3 3 2 6 0 7-3-1-3-4 0-7Z"/>',
+    cold:'<path d="M12 2v20M3.3 7l17.4 10M3.3 17 20.7 7M9 4l3 3 3-3M9 20l3-3 3 3M4 10l4-1-1-4M20 14l-4 1 1 4M4 14l4 1-1 4M20 10l-4-1 1-4"/>',
+    lightning:'<path d="m14 2-9 12h7l-2 8 9-12h-7z"/>',
+    necrotic:'<path d="M5 10a7 7 0 1 1 14 0c0 4-2 5-4 6v4H9v-4c-2-1-4-2-4-6Z"/><circle cx="9" cy="10" r="1.6"/><circle cx="15" cy="10" r="1.6"/><path d="M12 14v1m-1 5v-3m2 3v-3"/>',
+    poison:'<path d="M12 2C9 7 5 11 5 15a7 7 0 0 0 14 0c0-4-4-8-7-13Z"/><path d="m9 13 6 5m0-5-6 5"/>',
+    radiant:'<circle cx="12" cy="12" r="4"/><path d="M12 2v4m0 12v4M2 12h4m12 0h4M5 5l3 3m8 8 3 3M19 5l-3 3m-8 8-3 3"/>',
+    thunder:'<path d="M8 7a7 7 0 0 0 0 10m8-10a7 7 0 0 1 0 10M5 4a11 11 0 0 0 0 16M19 4a11 11 0 0 1 0 16"/><circle cx="12" cy="12" r="2"/>',
+    acid:'<path d="M12 2c-3 6-7 10-7 14a7 7 0 0 0 14 0c0-4-4-8-7-14Z"/><path d="M8 17h3m2-4h2m-3 6h2"/>',
+    force:'<path d="m12 2 2.7 7.3L22 12l-7.3 2.7L12 22l-2.7-7.3L2 12l7.3-2.7Z"/><circle cx="12" cy="12" r="2"/>',
+    psychic:'<path d="M4 12a8 8 0 1 1 8 8v-5h4v-3h-4V8H9v4z"/><path d="M2 5l3 2m15-4-2 3m4 5-3 1"/>',
+    slashing:'<path d="m5 19 3-7L20 3l-9 12-6 4Zm-2 2 5-5m-3-3 6 6"/>',
+    piercing:'<path d="m12 2 4 8-4 4-4-4 4-8Zm0 12v8M8 18h8"/>',
+    bludgeoning:'<path d="m4 5 5-3 5 5-3 5-5-1Zm7 7 9 8-2 2-9-9"/>',
+    magic:'<path d="m12 2 2.5 7.5L22 12l-7.5 2.5L12 22l-2.5-7.5L2 12l7.5-2.5Z"/><path d="M4 4v4m-2-2h4m12 12v4m-2-2h4"/>',
+    heal:'<path d="M12 21 3 12C-1 7 6 2 12 8c6-6 13-1 9 4Z"/><path d="M12 10v7m-3-3.5h6"/>',
+    shield:'<path d="m12 2 8 3v7c0 5-5 8-8 10-3-2-8-5-8-10V5z"/><path d="M12 6v12M7 11h10"/>',
+    nature:'<path d="M4 20C4 5 15 3 21 3c0 8-4 15-12 14m-5 3L17 7"/>',
+    move:'<path d="M3 7h13l-4-4m4 4-4 4M2 13h19l-4 4m4-4-4-4M4 19h8"/>',
+    target:'<circle cx="12" cy="12" r="7"/><circle cx="12" cy="12" r="2"/><path d="M12 1v5m0 12v5M1 12h5m12 0h5"/>',
+    die:'<path d="m12 2 9 6v9l-9 5-9-5V8zM12 2l-5 14h10L12 2ZM3 8l4 8 5 6 5-6 4-8M3 8h18"/>',
+    use:'<path d="M8 13V5a2 2 0 0 1 4 0v5-2a2 2 0 0 1 4 0v3a2 2 0 0 1 4 0v5c0 4-3 6-7 6-3 0-5-2-7-5l-3-4c-1-2 1-4 3-2z"/>',
+    book:'<path d="M3 4c4-1 7 0 9 3 2-3 5-4 9-3v15c-4-1-7 0-9 3-2-3-5-4-9-3zM12 7v15"/>',
+    bag:'<path d="m8 7-2-5h12l-2 5c4 3 5 6 5 10 0 4-4 5-9 5s-9-1-9-5c0-4 1-7 5-10zM8 7h8"/>',
+    person:'<circle cx="12" cy="6" r="4"/><path d="M3 22v-3a9 9 0 0 1 18 0v3z"/>',
+    concentration:'<circle cx="12" cy="12" r="9"/><path d="M16 7a6 6 0 1 0 0 10"/>',
+    ritual:'<circle cx="12" cy="12" r="9"/><path d="m12 5 6 11H6z"/>'
+  };
+  const hud = k => `<svg class="lp-hudsvg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${HUD[k] || HUD.magic}</svg>`;
+  const DMG = {feu:'fire',fire:'fire',froid:'cold',cold:'cold',foudre:'lightning',lightning:'lightning',necrotique:'necrotic',necrotic:'necrotic',poison:'poison',radiant:'radiant',radiants:'radiant',radiante:'radiant',radiantes:'radiant',tonnerre:'thunder',thunder:'thunder',acide:'acid',acid:'acid',force:'force',psychique:'psychic',psychic:'psychic',tranchant:'slashing',tranchants:'slashing',slashing:'slashing',percant:'piercing',percants:'piercing',perforant:'piercing',perforants:'piercing',piercing:'piercing',contondant:'bludgeoning',contondants:'bludgeoning',bludgeoning:'bludgeoning',arme:'slashing',weapon:'slashing'};
+  const damageRx = () => /(\b\d+d\d+(?:\s*[+-]\s*\d+(?![\dd]))?|\b\d+)(\s+(?:(?:points?\s+de\s+)?dégâts?\s+(?:de\s+|d['’])?|damage\s+of\s+)?)(feu|fire|froid|cold|foudre|lightning|nécrotiques?|necrotic|poison|radiants?|radiantes?|tonnerre|thunder|acide|acid|force|psychiques?|psychic|tranchants?|slashing|perçants?|perforants?|piercing|contondants?|bludgeoning|arme|weapon)\b/giu;
+  const damageKind = word => DMG[nrm0(word)] || DMG[nrm0(word).replace(/s$/, '')];
+  function damageText(t) {
+    const s = String(t == null ? '' : t); let h = '', p = 0;
+    for (const m of s.matchAll(damageRx())) {
+      const k = damageKind(m[3]); if (!k) continue;
+      h += esc(s.slice(p,m.index)) + `<span class="lp-damage dmg-${k}">${esc(m[1]+m[2])}${hud(k)}${esc(m[3])}</span>`;
+      p = m.index + m[0].length;
+    }
+    return h + esc(s.slice(p));
+  }
+  function damagePreview(t) {
+    return [...String(t || '').matchAll(damageRx())].slice(0,2).map(m => damageText(m[0])).join(' <span class="lp-sep">/</span> ');
+  }
+  function spellGlyph(sp) {
+    if (sp.heal) return 'heal';
+    const e = nrm0((sp.en || '') + ' ' + sp.n);
+    if (/misty step|dimension door|teleport|longstrider|jump|pas brumeux/.test(e)) return 'move';
+    if (/shield|armor|armour|protection|ward|armure|bouclier/.test(e)) return 'shield';
+    const m = damageRx().exec(sp.d || ''); if (m) return damageKind(m[3]) || 'magic';
+    if (/heal|cure wounds|soin|healing/.test(e)) return 'heal';
+    if (/plant|thorn|entangle|animal|nature|barkskin|growth|vine/.test(e)) return 'nature';
+    return 'magic';
+  }
+  const tileIcon = k => `<span class="lp-tileico dmg-${k}">${hud(k)}</span>`;
+  const cmdIcon = {Lancer:'magic',Utiliser:'use',Jet:'die',Toucher:'target',Dégâts:'slashing'};
+  function iconCommand(html) {
+    return String(html || '').replace(/<button\b([^>]*)>(Lancer|Utiliser|Jet|Toucher|Dégâts)<\/button>/g, (_, attrs, label) => `<button${attrs.replace(/\s+title="[^"]*"/g,'')} title="${label}" aria-label="${label}">${hud(cmdIcon[label])}<span class="lp-cmdlabel">${label}</span></button>`);
+  }
   const REST_LABEL = { court: 'repos court', long: 'repos long', aube: 'aube', ws: 'repos court (1), long (tout)' };
   const ACTS = ['Action', 'Action bonus', 'Réaction', 'Hors combat'];
   let CFG = null, root = null, sb = null, online = false, chan = null, tick = null;
@@ -21,17 +81,17 @@
   }
   function rich(text, selfId) {
     text = String(text == null ? '' : text);
-    if (!GX) return esc(text);
+    if (!GX) return damageText(text);
     const hits = [];
     GX.forEach(({ re, arr }) => { re.lastIndex = 0; let m; while ((m = re.exec(text))) { const k = arr.findIndex((x, j) => m.groups['g' + j] != null); if (k < 0) continue; hits.push({ a: m.index, b: m.index + m[0].length, id: arr[k].id }); if (m[0].length === 0) re.lastIndex++; } });
     hits.sort((x, y) => x.a - y.a || (y.b - y.a) - (x.b - x.a));
     let out = '', pos = 0;
     for (const h of hits) {
       if (h.a < pos || h.id === selfId) continue;
-      out += esc(text.slice(pos, h.a)) + `<button type="button" class="lp-kw ${GL[h.id].kind}" data-act="kw" data-id="${esc(h.id)}" data-tip="k|${esc(h.id)}">${esc(text.slice(h.a, h.b))}</button>`;
+      out += damageText(text.slice(pos, h.a)) + `<button type="button" class="lp-kw ${GL[h.id].kind}" data-act="kw" data-id="${esc(h.id)}" data-tip="k|${esc(h.id)}">${esc(text.slice(h.a, h.b))}</button>`;
       pos = h.b;
     }
-    return out + esc(text.slice(pos));
+    return out + damageText(text.slice(pos));
   }
   function popup() {
     const g = view.pop && GL && GL[view.pop]; if (!g) return '';
@@ -62,7 +122,7 @@
   const ico = t => ICO[t] || '';
   const im = (n, cl) => `<img class="uic ${cl || ''}" src="img/ui/${n}.png" alt="" width="20" height="20" decoding="async">`;
   const RESET_NAME = { court: 'Repos court', long: 'Repos long', aube: 'À l\'aube', ws: 'Forme sauvage' };
-  const ctl = (a, b, d, cl) => `<div class="lp-ctl ${cl || ''}"><div class="c1">${a || ''}</div><div class="c2">${b || ''}</div><div class="c3">${d || ''}</div></div>`;
+  const ctl = (a, b, d, cl) => `<div class="lp-ctl ${cl || ''}"><div class="c1">${a || ''}</div><div class="c2">${iconCommand(b)}</div><div class="c3">${iconCommand(d)}</div></div>`;
   const RIC = { bardic: 'bardic', sup: 'superiority', ws: 'wildshape' };
   const SV = {
     ca: '<svg class="si" viewBox="0 0 16 16"><path d="M8 1.5l5.5 2v4.2c0 3.3-2.3 5.6-5.5 6.8C4.8 13.3 2.5 11 2.5 7.7V3.5z"/></svg>',
@@ -146,7 +206,7 @@
   const featType = f => /action bonus/i.test(f.d) ? 'Action bonus' : /réaction/i.test(f.d) ? 'Réaction' : /^action\b|en action\b/i.test(f.d) ? 'Action' : '';
 
   /* infobulles et fenetres */
-  const nl = t => esc(t).replace(/\n/g, '<br>');
+  const nl = t => damageText(t).replace(/\n/g, '<br>');
   function spellBody(c, sp, st) {
     const g = sp.gid && GL && GL[sp.gid];
     let h = `<h3>${esc(sp.n)}</h3>${sp.en ? `<span class="lp-en">${esc(sp.en)}</span>` : ''}<p class="lp-pm">${sp.lv ? 'Niveau ' + sp.lv : 'Sort mineur'}<i class="gap"></i>${esc(sp.t)}${sp.p ? '<i class="gap"></i>' + esc(sp.p) : ''}${sp.c ? '<i class="gap"></i>Concentration' : ''}</p>`;
@@ -175,6 +235,7 @@
     const c = view.char && cfgOf(view.char); if (!c) return '';
     let body = '';
     if (view.popsp) { const sp = c.spells.find(x => x.n === view.popsp); if (sp) body = spellBody(c, sp, S(c.id)); }
+    else if (view.popdetail) body = tipHtml(view.popdetail);
     else if (view.poppw) { const w = c.weapons.find(x => x.n === view.poppw[0]), o = w && w.pw[view.poppw[1]]; if (o) body = `<h3>${esc(o.n)}</h3><p class="lp-pm">${ico(typeOfPw(o.a))} ${esc(typeOfPw(o.a))}<i class="gap"></i>${esc(w.n)}</p><p>${nl(dcify(c, o.d))}</p>`; }
     if (!body) return '';
     return `<div class="lp-ov" data-act="kwx"><div class="lp-pop" role="dialog" aria-modal="true"><button type="button" class="lp-px" data-act="kwx" aria-label="Fermer">×</button>${body}</div></div>`;
@@ -286,7 +347,7 @@
       if (st.pact === before) return;
       return say(id, `${spend ? 'Dépense' : 'Récupère'} un emplacement de pacte (reste ${n - st.pact}/${n})`, 'slot');
     }
-    return resDelta(id, key, idx >= resOf(c, key).max - (st.res[key] || 0) ? 1 : -1);
+    return resDelta(id, key, idx >= resOf(c, key).max - (st.res[key] || 0) ? -1 : 1);
   }
   function resDelta(id, key, d) {
     const c = cfgOf(id), st = S(id), r = resOf(c, key), u = st.res[key] || 0;
@@ -413,8 +474,8 @@
   const RGL = { bardic: 'note', sup: 'die', ws: 'paw' };
   const glyphOf = (c, r) => RGL[r.id] || (r.reset === 'aube' ? 'bolt' : (c.spells || []).some(q => [].concat(q.res || []).includes(r.id)) ? 'spark' : 'gem');
   const gpips = (c, r, u, ro) => {
-    const g = glyphOf(c, r); let h = '';
-    for (let i = 0; i < r.max; i++) { const us = i >= r.max - u; h += ro ? `<span class="lp-gp g-${g} ro ${us ? 'used' : ''}">${GLY[g]}</span>` : `<button type="button" class="lp-gp g-${g} ${us ? 'used' : ''}" data-act="pip" data-kind="res" data-key="${esc(r.id)}" data-idx="${i}" aria-label="${esc(r.nom)} ${us ? 'utilisé' : 'disponible'}">${GLY[g]}</button>`; }
+    const g = glyphOf(c, r); let h = ''; const artwork = RIC[r.id] ? im(RIC[r.id], 'lp-resource-art') : GLY[g];
+    for (let i = 0; i < r.max; i++) { const us = i >= r.max - u; h += ro ? `<span class="lp-gp g-${g} ro ${us ? 'used' : ''}">${artwork}</span>` : `<button type="button" class="lp-gp g-${g} ${us ? 'used' : ''}" data-act="pip" data-kind="res" data-key="${esc(r.id)}" data-idx="${i}" aria-label="${esc(r.nom)} ${us ? 'utilisé' : 'disponible'}">${artwork}</button>`; }
     return h;
   };
 
@@ -427,15 +488,14 @@
     return `<div class="lp-tbar ${st.tmp ? 'on' : ''}"><i style="width:${t}%"></i></div>`;
   }
   function slotRows(c, st, ro) {
-    if (ro) {
-      let h = Object.keys(c.slots).sort((a, b) => a - b).map(l => `<div class="lp-row"><span class="lp-lv">Niv. ${l}</span><span class="lp-pips">${rpips(total(c, l), used(st, l))}</span></div>`).join('');
-      if (c.pact) h += `<div class="lp-row"><span class="lp-lv pact">Pacte ${c.pact.lvl}</span><span class="lp-pips">${rpips(c.pact.n, st.pact, 'pact')}</span></div>`;
-      return h;
-    }
-    let h = '';
-    Object.keys(c.slots).sort((a, b) => a - b).forEach(l => { let g = ''; for (let i = 0; i < total(c, l) - used(st, l); i++) g += `<button type="button" class="lp-gem" data-act="pip" data-kind="slot" data-key="${l}" data-idx="99" title="Emplacement de niveau ${l}" aria-label="Dépenser un emplacement de niveau ${l}">${l}</button>`; if (g) h += `<span class="lp-sg">${g}</span>`; });
-    if (c.pact && c.pact.n - st.pact > 0) { let g = ''; for (let i = 0; i < c.pact.n - st.pact; i++) g += `<button type="button" class="lp-gem pact" data-act="pip" data-kind="pact" data-key="pact" data-idx="99" title="Emplacement de pacte, niveau ${c.pact.lvl}" aria-label="Dépenser un emplacement de pacte">${c.pact.lvl}</button>`; h += `<span class="lp-sg">${g}</span>`; }
-    return h || '<span class="lp-none">Plus d\'emplacement</span>';
+    const groups = Object.keys(c.slots).sort((a,b)=>a-b).map(l=>({l,n:total(c,l),u:used(st,l),pact:false}));
+    if (c.pact) groups.push({l:c.pact.lvl,n:c.pact.n,u:st.pact,pact:true});
+    return groups.map(({l,n,u,pact})=>{
+      const title = pact ? 'Pacte niveau '+l : 'Emplacements niveau '+l;
+      let gems = '';
+      for(let x=0;x<n-u;x++) gems += ro ? `<span class="lp-gem ${pact?'pact':''} ro" aria-hidden="true">${l}</span>` : `<button type="button" class="lp-gem ${pact?'pact':''}" data-act="pip" data-kind="${pact?'pact':'slot'}" data-key="${pact?'pact':l}" data-idx="99" title="Dépenser : ${title}" aria-label="Dépenser : ${title}">${l}</button>`;
+      return `<div class="lp-sg ${pact?'pactgroup':''}" title="${title} : ${n-u}/${n}"><span class="lp-slotlevel">${pact?'Pacte '+l:'Niv. '+l}</span><span class="lp-slotgems">${gems || '<span class="lp-slotzero">0</span>'}</span><small>${n-u}/${n}</small></div>`;
+    }).join('') || '<span class="lp-none">Aucun emplacement</span>';
   }
   function resRows(c, st, ro, list) {
     return (list || visRes(c, st)).map(r => {
@@ -448,7 +508,7 @@
   function equippedStrip(c, st) {
     const f = c.acfx || {}, sp = c.spd || {};
     const viaSp = c.spells.filter(q => q.res).reduce((a, q) => a.concat(q.res), []), viaCost = c.spells.filter(q => q.cost).map(q => q.cost.res);
-    const chip = (tip, ico_, name, tag, attrs, off) => `<button type="button" class="lp-ic ${off ? 'off' : ''}" ${attrs} data-tip="${esc(tip)}" ${off ? 'disabled' : ''}>${ico_}<span>${esc(name)}</span>${tag ? `<small>${esc(tag)}</small>` : ''}</button>`;
+    const chip = (tip, ico_, name, tag, attrs, off) => `<button type="button" class="lp-ic ${off ? 'off' : ''}" ${attrs} data-tip="${esc(tip)}" title="${esc(name)}" aria-label="${esc(name)}" ${off ? 'disabled' : ''}>${ico_}<span>${esc(name)}</span>${tag ? `<small>${esc(tag)}</small>` : ''}</button>`;
     const rows = eqNames(c, st).map(n => {
       const b = [];
       (f.add || []).filter(x => x[0] === n).forEach(x => b.push(`+${x[1]} CA`));
@@ -464,7 +524,7 @@
       });
       c.spells.filter(q => q.src === n).forEach(q => {
         const pk = pickPool(c, st, q), spent = pk.ps.length === 0;
-        ch.push(chip('s|' + q.n, gi('spark'), short(q.n), q.cost ? q.cost.n + (q.cost.n > 1 ? ' ch.' : ' ch.') : (q.res ? '1/j' : (q.lv ? 'Niv. ' + q.lv : '')), `data-act="cast" data-key="${esc(q.n)}"`, spent));
+        ch.push(chip('s|' + q.n, tileIcon(spellGlyph(q)), short(q.n), q.cost ? q.cost.n + (q.cost.n > 1 ? ' ch.' : ' ch.') : (q.res ? '1/j' : (q.lv ? 'Niv. ' + q.lv : '')), `data-act="cast" data-key="${esc(q.n)}"`, spent));
       });
       const w = c.weapons.find(x => x.n === n);
       (w && w.pw || []).forEach((o, i) => {
@@ -474,7 +534,7 @@
         ch.push(chip(`p|${n}|${i}`, gi('bolt'), short(o.n), ps && ps.kind === 'res' ? ps.txt : '', act, spent));
       });
       if (!b.length && !ch.length) return '';
-      return `<div class="lp-eqrow"><div class="lp-eqh"><b>${esc(n)}</b>${b.length ? `<span>${b.map(esc).join(' · ')}</span>` : ''}</div>${ch.length ? `<div class="lp-ics">${ch.join('')}</div>` : ''}</div>`;
+      return `<div class="lp-eqrow"><div class="lp-eqh"><b>${esc(n)}</b>${b.length ? `<span>${b.map(damageText).join(' <span class="lp-sep">/</span> ')}</span>` : ''}</div>${ch.length ? `<div class="lp-ics">${ch.join('')}</div>` : ''}</div>`;
     }).join('');
     return rows;
   }
@@ -486,22 +546,25 @@
     return `<span class="lp-cb">Niv. ${sp.lv}</span>`;
   }
   function spellCard(c, st, sp) {
-    const key = sp.n, conc = st.conc === key;
-    const { ps, cur } = pickPool(c, st, sp), spent = ps.length === 0, limUsed = sp.lim && st.used[sp.n];
-    const tags = [sp.c ? '<span class="lp-tag c">Concentration</span>' : '', sp.ritual ? '<span class="lp-tag">Rituel</span>' : '', (sp.lim || (sp.res && sp.lv)) ? '<span class="lp-tag day">1 / jour</span>' : '', sp.src ? `<span class="lp-tag src">${esc(sp.src)}</span>` : ''].join('');
-    let src;
-    if (spent) src = `<span class="lp-slotchip off">${limUsed ? 'Utilisé' : 'Aucune ressource'}</span>`;
-    else if (ps.length > 1) src = `<select class="lp-pool" data-sp="${esc(key)}" aria-label="Source du sort" title="Lancer avec">${ps.map(p => `<option value="${esc(p.k)}" ${cur.k === p.k ? 'selected' : ''}>${esc(p.s)}</option>`).join('')}</select>`;
-    else src = `<span class="lp-slotchip">${esc(cur.s)}</span>`;
-    const btn = spent ? '<button type="button" class="lp-cast off" disabled>Lancer</button>' : `<button type="button" class="lp-cast" data-act="cast" data-key="${esc(key)}">Lancer</button>`;
-    const jet = canJet(c, sp) ? `<button type="button" class="lp-jet" data-act="jetsp" data-key="${esc(key)}" title="Jet automatique" ${spent ? 'disabled' : ''}>Jet</button>` : '';
-    let h = `<article class="lp-spell ${conc ? 'conc' : ''} ${spent ? 'spent' : ''}">
-      <button type="button" class="lp-sname" data-act="gopen" data-key="${esc(key)}" data-tip="s|${esc(key)}"><span class="lp-tt">${ico(sp.t)}<b>${esc(sp.n)}</b></span>${sp.en ? `<small class="lp-en">${esc(sp.en)}</small>` : ''}</button>
-      <div class="lp-mrow"><span class="lp-meta"><span>${esc(sp.t)}</span>${sp.p ? `<span>${esc(sp.p)}</span>` : ''}</span>${tags}</div>
-      ${ctl(src, btn, jet)}`;
-    if (limUsed) h += `<button type="button" class="lp-full" data-act="unspend" data-key="${esc(key)}">Restaurer ce sort</button>`;
-    return h + '</article>';
+    const key=sp.n, conc=st.conc===key;
+    const {ps,cur}=pickPool(c,st,sp), spent=!ps.length, limUsed=sp.lim && st.used[sp.n];
+    const tags=(sp.c?`<span class="lp-minitag" title="Concentration">${hud('concentration')}</span>`:'')+(sp.ritual?`<span class="lp-minitag" title="Rituel">${hud('ritual')}</span>`:'');
+    const src=spent?'<span class="lp-slotchip off">Épuisé</span>':ps.length>1?`<select class="lp-pool" data-sp="${esc(key)}" aria-label="Source du sort" title="Choisir la ressource">${ps.map(p=>`<option value="${esc(p.k)}" ${cur.k===p.k?'selected':''}>${esc(p.s)}</option>`).join('')}</select>`:`<span class="lp-slotchip" title="${esc(cur.label || cur.s)}">${esc(cur.s)}</span>`;
+    const btn=`<button type="button" class="lp-cast" data-act="cast" data-key="${esc(key)}" ${spent?'disabled':''}>Lancer</button>`;
+    const jet=canJet(c,sp)?`<button type="button" class="lp-jet" data-act="jetsp" data-key="${esc(key)}" ${spent?'disabled':''}>Jet</button>`:'';
+    const dmg=damagePreview(sp.d);
+    return `<article class="lp-spell lp-hudcard ${conc?'conc':''} ${spent?'spent':''}">
+      <button type="button" class="lp-sname" data-act="gopen" data-key="${esc(key)}" data-tip="s|${esc(key)}" aria-label="Détails : ${esc(key)}">
+        ${tileIcon(spellGlyph(sp))}<span class="lp-cardtitle"><b>${esc(sp.n)}</b>${sp.en?`<small class="lp-en">${esc(sp.en)}</small>`:''}</span>
+        <span class="lp-cardtype" title="${esc(sp.t)}">${ico(sp.t)}</span></button>
+      <div class="lp-mrow"><span class="lp-meta">${sp.p?`<span>${esc(sp.p)}</span>`:''}${sp.src?`<span class="lp-origin" title="${esc(sp.src)}">${esc(sp.src)}</span>`:''}</span>${tags}</div>
+      ${dmg?`<div class="lp-dmgpreview" title="Dés mentionnés dans la description, voir le détail pour les conditions">${dmg}</div>`:''}
+      ${ctl(src,btn,jet)}${limUsed?`<button type="button" class="lp-full" data-act="unspend" data-key="${esc(key)}">Restaurer ce sort</button>`:''}</article>`;
   }
+  function actionFilters(q, act, includeOut) {
+    return `<div class="lp-hudfilters"><input type="search" id="lp-q" value="${esc(q)}" placeholder="Rechercher" aria-label="Rechercher"><div class="lp-chips" aria-label="Filtrer par type d'action">${['all'].concat(includeOut?ACTS:ACTS.slice(0,3)).map(a=>`<button type="button" class="lp-chip ${act===a?'on':''}" data-act="actf" data-v="${esc(a)}" aria-pressed="${act===a}">${ico(a)}${a==='all'?'Tout':esc(a)}</button>`).join('')}</div></div>`;
+  }
+  const hudLegend = () => `<div class="lp-hudlegend"><span>${hud('magic')} Lancer</span><span>${hud('use')} Utiliser</span><span>${hud('target')} Toucher</span><span>${hud('slashing')} Dégâts</span><span>${hud('die')} Jet</span></div>`;
   function spellsPanel(c, st) {
     const q = view.q.trim().toLowerCase(), nrm = t => String(t).normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase(), nq = nrm(q);
     const prepared = n => (st.prep || []).includes(n);
@@ -516,11 +579,8 @@
     const order = [];
     c.spells.forEach(s => { const g = groupOf(s); if (!order.includes(g)) order.push(g); });
     order.sort((a, b) => { const k = g => /^Niveau (\d)/.test(g) ? +g.slice(7) : g === 'Sorts mineurs' ? 0 : 50 + order.indexOf(g); return k(a) - k(b); });
-    const chips = ['all'].concat(ACTS).map(a => `<button type="button" class="lp-chip ${view.act === a ? 'on' : ''}" data-act="actf" data-v="${esc(a)}">${a === 'all' ? 'Tout' : esc(a)}</button>`).join('');
-    return `<div class="lp-tools"><input type="search" id="lp-q" value="${esc(view.q)}" placeholder="Chercher un sort ou un pouvoir" aria-label="Chercher"><div class="lp-chips">${chips}</div>
-      ${hidden ? `<p class="lp-note">${hidden} pouvoir${hidden > 1 ? 's' : ''} d'objet masqué${hidden > 1 ? 's' : ''} : objet non équipé (onglet Équipement).</p>` : ''}
-      </div>
-      ${order.map(g => { const ls = list.filter(s => groupOf(s) === g); return ls.length ? `<h4 class="lp-lvh">${esc(g)}<small>${ls.length}</small></h4><div class="lp-grid">${ls.map(s => spellCard(c, st, s)).join('')}</div>` : ''; }).join('') || '<p class="lp-empty">Aucun résultat.</p>'}`;
+    return `${actionFilters(view.q,view.act,true)}${hudLegend()}${hidden ? `<p class="lp-note">${hidden} pouvoir${hidden>1?'s':''} masqué${hidden>1?'s':''} : objet non équipé.</p>` : ''}
+      ${order.map(g => { const ls = list.filter(s => groupOf(s) === g); return ls.length ? `<h4 class="lp-lvh">${esc(g)}<small>${ls.length}</small></h4><div class="lp-grid lp-hotgrid">${ls.map(s => spellCard(c, st, s)).join('')}</div>` : ''; }).join('') || '<p class="lp-empty">Aucun résultat.</p>'}`;
   }
 
 
@@ -553,7 +613,7 @@
     const card = w => {
       const fx = w.fixed || w.perma, on = fx || st.eq.includes(w.n);
       const hd = `<span class="lp-eqname"><h4>${esc(w.n)}</h4>${w.arc ? `<em>${esc(w.arc)}</em>` : ''}</span><span class="lp-eqst">${w.perma ? 'Permanent' : on ? '✓ Équipé' : ''}</span>`;
-      const stat = w.hit || w.dmg ? `<p class="lp-wst">${w.hit ? `<b>${esc(w.hit)}</b>` : ''}${w.hit && w.dmg ? '<i></i>' : ''}${w.dmg ? `<b>${esc(w.dmg)}</b>` : ''}</p>` : '';
+      const stat = w.hit || w.dmg ? `<p class="lp-wst">${w.hit ? `<b>${esc(w.hit)}</b>` : ''}${w.hit && w.dmg ? '<i></i>' : ''}${w.dmg ? `<b>${damageText(w.dmg)}</b>` : ''}</p>` : '';
       const sps = c.spells.filter(q => q.src === w.n).map(q => `<span class="lp-pwc" data-tip="s|${esc(q.n)}">${GLY.spark}${esc(q.n.replace(w.n.split(',')[0] + ', ', ''))}</span>`);
       const pws = (w.pw || []).map((o, i) => typeof o === 'string' ? '' : o.sp ? '' : `<span class="lp-pwc b" data-tip="p|${esc(w.n)}|${i}">${GLY.bolt}${esc(o.n)}</span>`).filter(Boolean);
       const body = `${hd.replace(/^/, '')}`;
@@ -581,31 +641,41 @@
   }
 
   function actionsPanel(c, st) {
-    const cols = { 'Action': [], 'Action bonus': [], 'Réaction': [] };
-    const head = (t, name, en, attrs) => `<button type="button" class="lp-sname" ${attrs || ''}><span class="lp-tt">${ico(t)}<b>${esc(name)}</b></span>${en ? `<small class="lp-en">${esc(en)}</small>` : ''}</button>`;
-    const card = (t, name, en, attrs, meta, ctrl, cls) => `<article class="lp-spell lp-act ${cls || ''}">${head(t, name, en, attrs)}<div class="lp-mrow">${meta}</div>${ctrl}</article>`;
-    const eqw = c.weapons.filter(w => (w.hit || w.dmg) && (w.perma || st.eq.includes(w.n)));
-    eqw.forEach(w => cols['Action'].push(card('Action', 'Attaque : ' + w.n, '', '', `<span class="lp-meta"><span>${esc(w.hit)}</span><span>${esc(w.dmg)}</span></span>`, ctl('', w.hit ? `<button type="button" class="lp-cast" data-act="rhit" data-key="${esc(w.n)}">Toucher</button>` : '', w.dmg ? `<button type="button" class="lp-jet" data-act="rdmg" data-key="${esc(w.n)}">Dégâts</button>` : ''))));
-    eqw.forEach(w => {
-      (w.pw || []).forEach((o, i) => {
-        if (typeof o === 'string' || o.sp) return;
-        const ps = pwState(c, st, o), spent = ps && ps.spent;
-        const main = ps && ps.kind === 'res' ? `<button type="button" class="lp-cast" data-act="pwuse" data-key="${esc(w.n)}" data-i="${i}" ${spent ? 'disabled' : ''}>Utiliser</button>` : '';
-        const jet = o.r ? `<button type="button" class="lp-jet" data-act="rpw" data-key="${esc(w.n)}" data-i="${i}" ${spent ? 'disabled' : ''}>Jet</button>` : '';
-        const chip = ps ? `<span class="lp-slotchip ${spent ? 'off' : ''}">${esc(ps.txt)}</span>` : '';
-        cols[typeOfPw(o.a)].push(card(typeOfPw(o.a), o.n, '', `data-act="pwx" data-key="${esc(w.n)}" data-i="${i}" data-tip="p|${esc(w.n)}|${i}"`, `<span class="lp-meta"><span>${esc(w.n)}</span></span>`, (chip || main || jet) ? ctl(chip, main, jet) : '', spent ? 'spent' : ''));
-      });
+    const cols={'Action':[],'Action bonus':[],'Réaction':[]}, q=nrm0(view.q.trim()), filter=view.act==='Hors combat'?'all':view.act;
+    const add=(t,html,search)=>{if(cols[t] && (filter==='all'||filter===t) && (!q||nrm0(search).includes(q))) cols[t].push(html);};
+    const head=(t,name,en,attrs,k)=>`<button type="button" class="lp-sname" ${attrs||''}>${tileIcon(k)}<span class="lp-cardtitle"><b>${esc(name)}</b>${en?`<small class="lp-en">${esc(en)}</small>`:''}</span><span class="lp-cardtype" title="${esc(t)}">${ico(t)}</span></button>`;
+    const card=(t,name,en,attrs,meta,ctrl,cls,k)=>`<article class="lp-spell lp-act lp-hudcard ${cls||''}">${head(t,name,en,attrs,k||'magic')}<div class="lp-mrow">${meta}</div>${ctrl}</article>`;
+    const eqw=c.weapons.filter(w=>(w.hit||w.dmg)&&(w.fixed||w.perma||st.eq.includes(w.n)));
+    eqw.forEach(w=>{
+      const m=damageRx().exec(w.dmg||''), k=m?damageKind(m[3]):'slashing';
+      add('Action',card('Action',w.n,'Attaque','',`<span class="lp-meta">${w.hit?`<span title="Bonus au toucher">${hud('target')} ${esc(w.hit)}</span>`:''}<span>${damageText(w.dmg)}</span></span>`,ctl('',w.hit?`<button type="button" class="lp-cast" data-act="rhit" data-key="${esc(w.n)}">Toucher</button>`:'',w.dmg?`<button type="button" class="lp-jet" data-act="rdmg" data-key="${esc(w.n)}">Dégâts</button>`:''),'',k),w.n+' attaque '+w.dmg);
     });
-    c.spells.forEach(s => {
-      if (!isEq(c, st, s.src) || (s.lst && !(st.prep || []).includes(s.n))) return;
-      if (cols[s.t]) cols[s.t].push(spellCard(c, st, s));
+    const linked=new Set();
+    eqw.forEach(w=>(w.pw||[]).forEach((o,i)=>{
+      if(typeof o==='string'||o.sp)return;
+      if(o.res) linked.add(o.res);
+      const ps=pwState(c,st,o),spent=ps&&ps.spent,t=typeOfPw(o.a),m=damageRx().exec(o.d||'');
+      const main=ps&&ps.kind==='res'?`<button type="button" class="lp-cast" data-act="pwuse" data-key="${esc(w.n)}" data-i="${i}" ${spent?'disabled':''}>Utiliser</button>`:'';
+      const jet=o.r?`<button type="button" class="lp-jet" data-act="rpw" data-key="${esc(w.n)}" data-i="${i}" ${spent?'disabled':''}>Jet</button>`:'';
+      const chip=ps?`<span class="lp-slotchip ${spent?'off':''}">${esc(ps.txt)}</span>`:'';
+      add(t,card(t,o.n,'',`data-act="pwx" data-key="${esc(w.n)}" data-i="${i}" data-tip="p|${esc(w.n)}|${i}"`,`<span class="lp-meta">${esc(w.n)} ${damagePreview(o.d)}</span>`,(chip||main||jet)?ctl(chip,main,jet):'',spent?'spent':'',m?damageKind(m[3]):'magic'),o.n+' '+w.n+' '+o.d);
+    }));
+    c.spells.forEach(s=>{
+      if(!isEq(c,st,s.src)||(s.lst&&!(st.prep||[]).includes(s.n)))return;
+      if(cols[s.t]) {
+        [].concat(s.res||[]).forEach(r=>linked.add(r)); if(s.cost)linked.add(s.cost.res); if(s.alt)linked.add(s.alt.res);
+        add(s.t,spellCard(c,st,s),s.n+' '+(s.en||'')+' '+s.d);
+      }
     });
-    visRes(c, st).filter(r => r.a).forEach(r => {
-      const l = r.max - (st.res[r.id] || 0), t = typeOfPw(r.a);
-      cols[t].push(card(t, r.nom, '', `data-tip="r|${esc(r.id)}"`, `<span class="lp-meta"><span>${esc(r.src || RESET_NAME[r.reset] || '')}</span></span>`, ctl(`<span class="lp-slotchip ${l <= 0 ? 'off' : ''}">${l}/${r.max}</span>`, `<button type="button" class="lp-cast" data-act="resd" data-key="${esc(r.id)}" data-d="1" ${l <= 0 ? 'disabled' : ''}>Utiliser</button>`, ''), l <= 0 ? 'spent' : ''));
+    visRes(c,st).filter(r=>r.a&&!linked.has(r.id)).forEach(r=>{
+      const l=r.max-(st.res[r.id]||0),t=typeOfPw(r.a),spec='r|'+r.id;
+      add(t,card(t,r.nom,'',`data-act="detail" data-spec="${esc(spec)}" data-tip="${esc(spec)}"`,`<span class="lp-meta">${esc(r.src||RESET_NAME[r.reset]||'')}</span>`,ctl(`<span class="lp-slotchip ${l<=0?'off':''}">${l}/${r.max}</span>`,`<button type="button" class="lp-cast" data-act="resd" data-key="${esc(r.id)}" data-d="1" ${l<=0?'disabled':''}>Utiliser</button>`,''),l<=0?'spent':'','magic'),r.nom+' '+(r.sub||''));
     });
-    (c.feats || []).forEach((f, i) => { const t = f.res ? '' : (f.act != null ? f.act : featType(f)); if (t) cols[t].push(card(t, f.n, '', `data-tip="f|${i}"`, `<span class="lp-meta"><span>${esc(f.grp || '')}</span></span>`, '')); });
-    return `<div class="lp-acols">${Object.keys(cols).map(k => `<section class="lp-acol"><h4 class="lp-lvh">${ico(k)}${esc(k)}<small>${cols[k].length}</small></h4><div class="lp-agrid">${cols[k].join('') || '<p class="lp-empty">Rien de disponible.</p>'}</div></section>`).join('')}</div>`;
+    (c.feats||[]).forEach((f,i)=>{
+      const t=f.res?'':(f.act!=null?f.act:featType(f)), spec='f|'+i;
+      if(t) add(t,card(t,f.n,f.en,`data-act="detail" data-spec="${spec}" data-tip="${spec}"`,`<span class="lp-meta">${esc(f.grp||'')}</span>`,'','','book'),f.n+' '+(f.en||'')+' '+f.d);
+    });
+    return `${actionFilters(view.q,filter,false)}${hudLegend()}<div class="lp-acols">${Object.keys(cols).filter(k=>filter==='all'||filter===k).map(k=>`<section class="lp-acol"><h4 class="lp-lvh">${ico(k)}${esc(k)}<small>${cols[k].length}</small></h4><div class="lp-agrid lp-hotgrid">${cols[k].join('')||'<p class="lp-empty">Aucun résultat.</p>'}</div></section>`).join('')}</div>`;
   }
   function restBlock() {
     const cf = view.confirm;
@@ -620,7 +690,8 @@
     const hb = view.heal && view.heal.char === c.id ? `<div class="lp-healb"><span>${im('heal')}${esc(view.heal.name)} : <b>${view.heal.amt}</b> PV de soin</span><button type="button" data-act="healapply">Me soigner</button><button type="button" class="ghost" data-act="healno">Autre cible</button></div>` : '';
     const tile = (v, l, ic, t) => `<div class="lp-tile" ${t ? `title="${esc(t)}"` : ''}><span>${SV[ic] || ''}${esc(l)}</span><b>${esc(v)}</b></div>`;
     const icOf = { 'Maîtrise': 'mai', 'Initiative': 'ini', 'Perc. passive': 'per' };
-    const tabs = [['actions', 'Actions'], ['armes', 'Équipement'], ['sorts', 'Sorts et pouvoirs']].concat((c.lists || []).length ? [['grim', 'Grimoire']] : []).concat([['objets', 'Objets'], ['capa', 'Capacités']]);
+    const tabs = [['actions', 'Actions'], ['sorts', 'Sorts'], ['armes', 'Équipement']].concat((c.lists || []).length ? [['grim', 'Grimoire']] : []).concat([['objets', 'Objets'], ['capa', 'Capacités'], ['fiche', 'Fiche']]);
+    const tabIcons = {actions:'slashing',sorts:'magic',armes:'shield',grim:'book',objets:'bag',capa:'force',fiche:'person'};
     const cf = view.confirm;
     const rests = cf ? `<div class="lp-restc cf"><p>${cf === 'long' ? 'Repos long : PV, emplacements, ressources.' : 'Repos court : pacte et ressources de repos court.'}</p><div><button type="button" class="go" data-act="restgo" data-type="${cf}">Confirmer</button><button type="button" class="ghost" data-act="restno">Annuler</button></div></div>` : `<div class="lp-restc"><button type="button" data-act="rest" data-type="court">${im('rest-short')}Repos court</button><button type="button" data-act="rest" data-type="long">${im('rest-long')}Repos long</button></div>`;
     const hl = HIST[c.id] || [], lastH = hl[hl.length - 1];
@@ -635,16 +706,19 @@
           <div class="lp-hpctl"><button type="button" class="dmg" data-act="hp" data-type="dmg">${im('damage')}Dégâts</button><input type="number" min="0" inputmode="numeric" id="lp-hp-amt" placeholder="0" aria-label="Montant"><button type="button" class="heal" data-act="hp" data-type="heal">${im('heal')}Soins</button><button type="button" class="tmp" data-act="hp" data-type="tmp">Temp</button></div></div>
         ${rests}${undoBtn}</header>
       ${rollBanner()}${hb}
-      <section class="lp-stats">
-        <div class="lp-srow"><h3>Caractéristiques</h3><div class="lp-r6">${(c.abil || []).map(a => `<div class="lp-tile ab"><span>${esc(a[0])}</span><b>${esc(a[1])}</b><em>${esc(a[2])}</em></div>`).join('')}</div></div>
-        <div class="lp-srow"><h3>Jets de sauvegarde</h3><div class="lp-r6">${(c.saves || []).map(a => `<div class="lp-tile sv ${a[2] ? 'p' : ''}"><span>${esc(a[0])}</span><b>${esc(a[1])}</b></div>`).join('')}</div></div>
+      <section class="lp-stats lp-primary">
         <div class="lp-srow"><h3>Bonus</h3><div class="lp-r7">${tile(ac.v, 'CA', 'ca', ac.parts.join(', '))}${tile(sp.v + ' ft', 'Vitesse', 'vit', sp.parts.join(', '))}${(c.bonus || []).map(b => tile(b[1], b[0], icOf[b[0]])).join('')}${tile(c.dc, 'DD sorts', 'dd')}${tile('+' + c.atk, 'Att. sort', 'att')}</div></div>
       </section>
+      <section class="lp-block lp-resb"><div class="lp-resourcehead"><h3>Ressources de combat</h3><button type="button" class="lp-goldquick" data-act="tab" data-v="fiche" title="Modifier les monnaies">${gpOf(st)} po</button></div><div class="lp-slots">${slotRows(c, st, false)}</div><div class="lp-rgrid">${resRows(c, st, false, visRes(c, st).filter(r => !r.src))}</div>${(() => { const e = equippedStrip(c, st); return e ? `<h3>Objets équipés</h3><div class="lp-eqrows">${e}</div>` : ''; })()}</section>
+      <div class="lp-main"><div class="lp-tabs" role="tablist">${tabs.map(([k, n]) => `<button type="button" role="tab" class="${tab === k ? 'on' : ''}" data-act="tab" data-v="${k}" aria-selected="${tab === k}">${hud(tabIcons[k])}<span>${n}</span></button>`).join('')}</div>
+      ${tab === 'fiche' ? `      <section class="lp-stats">
+        <div class="lp-srow"><h3>Caractéristiques</h3><div class="lp-r6">${(c.abil || []).map(a => `<div class="lp-tile ab"><span>${esc(a[0])}</span><b>${esc(a[1])}</b><em>${esc(a[2])}</em></div>`).join('')}</div></div>
+        <div class="lp-srow"><h3>Jets de sauvegarde</h3><div class="lp-r6">${(c.saves || []).map(a => `<div class="lp-tile sv ${a[2] ? 'p' : ''}"><span>${esc(a[0])}</span><b>${esc(a[1])}</b></div>`).join('')}</div></div>
+      </section>
+
       <section class="lp-block lp-skills"><h3>Compétences<small>Clique pour lancer un d20${c.reliable ? ' (Talent fiable : 10 minimum sur les maîtrisées)' : ''}</small></h3><div class="lp-sk6">${(c.skills || []).map((k, i) => `<button type="button" class="lp-sk ${k[3] || 'n'}" data-act="rsk" data-i="${i}" title="${esc(k[0])} (${k[1]})${k[3] === 'E' ? ', expertise' : k[3] === 'P' ? ', maîtrise' : k[3] === 'H' ? ', demi-maîtrise' : ''}"><i class="pm"></i><span>${esc(k[0])}<em>${k[1]}</em></span><b>${signed(k[2])}</b></button>`).join('')}</div></section>
       <div class="lp-coinbar"><span class="lp-cbt">Monnaies</span>${coinsDef.map(([k, n, ab]) => `<label class="lp-coin" data-k="${k}" title="${esc(n)}"><span>${ab}</span><input type="number" min="0" inputmode="numeric" data-coin="${k}" value="${(st.coins || {})[k] || 0}" aria-label="${esc(n)}"></label>`).join('')}</div>
-      <section class="lp-block lp-resb"><div class="lp-slots">${slotRows(c, st, false)}</div><div class="lp-rgrid">${resRows(c, st, false, visRes(c, st).filter(r => !r.src))}</div>${(() => { const e = equippedStrip(c, st); return e ? `<h3>Objets équipés</h3><div class="lp-eqrows">${e}</div>` : ''; })()}</section>
-      <div class="lp-main"><div class="lp-tabs" role="tablist">${tabs.map(([k, n]) => `<button type="button" role="tab" class="${tab === k ? 'on' : ''}" data-act="tab" data-v="${k}">${n}</button>`).join('')}</div>
-      ${tab === 'armes' ? equipPanel(c, st) : tab === 'capa' ? featsPanel(c) : tab === 'grim' ? grimPanel(c, st) : tab === 'objets' ? itemsPanel(c, st) : tab === 'actions' ? actionsPanel(c, st) : spellsPanel(c, st)}</div></div></div>`;
+` : tab === 'armes' ? equipPanel(c, st) : tab === 'capa' ? featsPanel(c) : tab === 'grim' ? grimPanel(c, st) : tab === 'objets' ? itemsPanel(c, st) : tab === 'actions' ? actionsPanel(c, st) : spellsPanel(c, st)}</div></div></div>`;
   }
   const ago = iso => { const s = Math.max(0, (Date.now() - new Date(iso)) / 1000); return s < 60 ? 'à l\'instant' : s < 3600 ? Math.floor(s / 60) + ' min' : s < 86400 ? Math.floor(s / 3600) + ' h' : Math.floor(s / 86400) + ' j'; };
 
@@ -688,6 +762,7 @@
     sub = (sub || '').split('?')[0];
     const keepDM = view._dmOpen; view._dmOpen = false;
     view.fromDM = !!keepDM && sub !== 'dm' && sub !== '';
+    view.pop = null; view.popsp = null; view.poppw = null; view.popdetail = null;
     view.cast = null; view.heal = null; view.confirm = null; view.open = null; view.q = ''; view.act = 'all';
     if (sub === 'dm') view.mode = 'dm';
     else if (cfgOf(sub)) { if (view.char !== sub) { view.tab = null; view.gopen = null; } view.mode = 'player'; view.char = sub; }
@@ -700,7 +775,7 @@
     const a = b.dataset.act, c = view.char;
     if (a === 'opench') { view._dmOpen = true; return; }
     if (a === 'kw') { view.pop = b.dataset.id; return render(); }
-    if (a === 'kwx') { if (e.target.closest('.lp-pop') && !e.target.closest('.lp-px')) return; view.pop = null; view.popsp = null; view.poppw = null; return render(); }
+    if (a === 'kwx') { if (e.target.closest('.lp-pop') && !e.target.closest('.lp-px')) return; view.pop = null; view.popsp = null; view.poppw = null; view.popdetail = null; return render(); }
     if (!c) return;
     if (a === 'pip') return togglePip(c, b.dataset.kind, b.dataset.key, +b.dataset.idx);
     if (a === 'resd') return resDelta(c, b.dataset.key, +b.dataset.d);
@@ -709,8 +784,9 @@
     if (a === 'restno') { view.confirm = null; return render(); }
     if (a === 'restgo') return rest(c, b.dataset.type);
     if (a === 'endconc') { const st = S(c), n = st.conc; st.conc = null; return say(c, `Termine la concentration sur ${n}`, 'spell'); }
-    if (a === 'tab') { view.tab = b.dataset.v; view.cast = null; return render(); }
+    if (a === 'tab') { view.tab = b.dataset.v; view.cast = null; view.q = ''; view.act = 'all'; return render(); }
     if (a === 'actf') { view.act = b.dataset.v; return render(); }
+    if (a === 'detail') { hideTip(); view.popdetail = b.dataset.spec; return render(); }
     if (a === 'gopen') { hideTip(); view.popsp = b.dataset.key; return render(); }
     if (a === 'pwx') { hideTip(); view.poppw = [b.dataset.key, +b.dataset.i]; return render(); }
     if (a === 'rollx') { view.roll = null; return render(); }
