@@ -349,6 +349,118 @@
               }
             }
           ]
+        },
+        {
+          "id": "jane",
+          "nom": "Jane",
+          "icone": "img/patch/chibi-jane.webp",
+          "armes": [
+            {
+              "nom": "La Mâchoire",
+              "lignes": [
+                {
+                  "l": "Toucher",
+                  "de": "+12",
+                  "vers": "+11",
+                  "s": "down"
+                },
+                {
+                  "l": "Dégâts",
+                  "de": "1d6+8",
+                  "vers": "1d6+7",
+                  "s": "down"
+                }
+              ],
+              "moy": {
+                "de": "33",
+                "vers": "30",
+                "s": "down"
+              }
+            },
+            {
+              "nom": "Croc du Gentleman",
+              "lignes": [
+                {
+                  "l": "Toucher",
+                  "de": "+11",
+                  "vers": "+10",
+                  "s": "down"
+                },
+                {
+                  "l": "Dégâts",
+                  "de": "1d6+7",
+                  "vers": "1d6+6",
+                  "s": "down"
+                },
+                {
+                  "l": "Booming Blade (effet sur touche)",
+                  "de": "Actif",
+                  "vers": "Supprimé",
+                  "s": "down"
+                }
+              ],
+              "moy": {
+                "de": "32",
+                "vers": "29",
+                "s": "down"
+              }
+            },
+            {
+              "nom": "Dagger of Absorption",
+              "lignes": [
+                {
+                  "l": "Toucher",
+                  "de": "+9",
+                  "vers": "+11",
+                  "s": "up"
+                },
+                {
+                  "l": "Dégâts",
+                  "de": "1d4+2",
+                  "vers": "1d4+7",
+                  "s": "up"
+                }
+              ],
+              "moy": {
+                "de": "22",
+                "vers": "29",
+                "s": "up"
+              }
+            },
+            {
+              "nom": "Arc des Scories",
+              "lignes": [
+                {
+                  "l": "Toucher",
+                  "de": "+11",
+                  "vers": "+10",
+                  "s": "down"
+                },
+                {
+                  "l": "Dégâts",
+                  "de": "1d6+7",
+                  "vers": "1d6+6",
+                  "s": "down"
+                }
+              ],
+              "moy": {
+                "de": "23",
+                "vers": "21",
+                "s": "down"
+              }
+            },
+            {
+              "nom": "Shadow-Cat Armor",
+              "lignes": [
+                {
+                  "l": "Classe d'armure",
+                  "de": "18",
+                  "vers": "17",
+                  "s": "down"
+                }
+              ]
+            }
+          ]
         }
       ]
     }
