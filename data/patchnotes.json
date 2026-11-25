@@ -461,60 +461,6 @@
               ]
             }
           ]
-        },
-        {
-          "id": "harfang",
-          "nom": "Harfang",
-          "icone": "img/patch/chibi-harfang.webp",
-          "armes": [
-            {
-              "nom": "Fukuro Kaen, la Fureur du Bûcher",
-              "lignes": [
-                {
-                  "l": "Charges",
-                  "de": "10 (1d6+4 par aube)",
-                  "vers": "Supprimées",
-                  "s": "down"
-                },
-                {
-                  "l": "Fire Bolt",
-                  "de": "1 charge",
-                  "vers": "À volonté",
-                  "s": "up"
-                },
-                {
-                  "l": "Burning Hands",
-                  "de": "2 charges",
-                  "vers": "Spell Slot level 1",
-                  "s": "down"
-                },
-                {
-                  "l": "Scorching Ray",
-                  "de": "3 charges",
-                  "vers": "Spell Slot level 2",
-                  "s": "down"
-                },
-                {
-                  "l": "Fireball",
-                  "de": "4 charges",
-                  "vers": "Spell Slot level 3",
-                  "s": "down"
-                },
-                {
-                  "l": "Flame Strike",
-                  "de": "6 charges",
-                  "vers": "Spell Slot level 5",
-                  "s": "down"
-                },
-                {
-                  "l": "Retributive Strike",
-                  "de": "Actif",
-                  "vers": "Supprimé",
-                  "s": "down"
-                }
-              ]
-            }
-          ]
         }
       ]
     }
