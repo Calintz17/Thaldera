@@ -4,7 +4,7 @@
 (() => {
 'use strict';
 
-const VER = '136';
+const VER = '137';
 const LEGACY_IDS = { 'bourre-piff':'bourpif', 'seravine':'solkah-barrow', 'tilda':'irna', 'cleff':'irna' };
 const EDIT = new URLSearchParams(location.search).has('edit');
 const $ = (s, r = document) => r.querySelector(s);
@@ -1588,7 +1588,7 @@ function leavePatchNote() {
 function patchLine(x) {
   const g = x.s === 'up' ? '▲' : '▼';
   const sr = x.s === 'up' ? 'hausse' : 'baisse';
-  return `<li class="${x.s === 'up' ? 'up' : 'down'}"><span class="pn-g" aria-hidden="true">${g}</span><span><b>${esc(x.l)}</b> : <span class="pn-old">${esc(x.de)}</span><em class="pn-ar" aria-hidden="true">⇒</em><strong>${esc(x.vers)}</strong><span class="sr-only"> (${sr})</span></span></li>`;
+  return `<li class="${x.s === 'up' ? 'up' : 'down'}"><span class="pn-g" aria-hidden="true">${g}</span><span><b>${esc(x.l)}</b> : ${x.de ? `<span class="pn-old">${esc(x.de)}</span><em class="pn-ar" aria-hidden="true">⇒</em>` : ''}<strong>${esc(x.vers)}</strong><span class="sr-only"> (${sr})</span></span></li>`;
 }
 function patchWeapon(w) {
   return `<div class="pn-weapon"><div class="pn-wh"><span class="pn-arc" aria-hidden="true">${esc(w.num || '')}</span><div><h4>${esc(w.nom)}</h4><small>${esc(w.arcane || '')}</small></div></div><ul class="pn-list">${w.lignes.map(patchLine).join('')}</ul></div>`;
