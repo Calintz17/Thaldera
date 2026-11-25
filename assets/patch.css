@@ -109,3 +109,11 @@ body.patch-reading.journal-open #scene { width: 60%; }
   .pn-ico { width: 54px; height: 61px; }
 }
 .sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+
+.pn-avg { margin: 2px 0 6px; font-size: clamp(14px,1.25vw,16px); }
+.pn-avg .pn-old { color: #98a3b6; }
+.pn-avg .pn-ar { margin: 0 .4em; font-style: normal; color: #98a3b6; }
+.pn-avg.up strong { color: var(--pn-up); }
+.pn-avg.down strong { color: var(--pn-down); }
+.pn-avg.iso strong { color: #cfd6e4; }
+.pn-avg .pn-iso { color: #98a3b6; }
