@@ -842,3 +842,9 @@ i.lp-gp { cursor: inherit; font-style: normal; width: 18px; height: 18px; }
 @media(max-width:1050px) {.lp-sheet {grid-template-columns:minmax(140px,18vw) minmax(0,1fr);} .lp-top {grid-template-columns:1fr 1fr;} .lp-top .lp-restc {flex-direction:row;} .lp-top .lp-undo {justify-self:end;}}
 @media(max-width:860px) {.lp-sheet {grid-template-columns:1fr;gap:0;} .lp-artcol {height:210px;padding-top:0;overflow:hidden;} .lp-artcol .lp-portrait {height:100%;max-height:100%;object-position:center 20%;} .lp-body {padding:8px 12px 40px;} .lp-top {grid-template-columns:1fr;} .lp-top .lp-undo {justify-self:stretch;} .lp-dmwrap {grid-template-columns:1fr;} .lp-hudcard .lp-ctl button {width:38px;height:36px;} .lp-gem {width:30px;height:30px;} .lp-resb .lp-rgrid {grid-template-columns:1fr;} }
 @media(prefers-reduced-motion:reduce) {.lp-gem,.lp-gp,.lp-hudcard {transition:none;}}
+
+/* v159 : alignement HUD et détails d'armes. */
+.lp-main .lp-acols {align-items:stretch;}
+.lp-main .lp-acol {width:100%;}
+.lp-wgrid {grid-template-columns:repeat(auto-fill,minmax(min(100%,285px),1fr));}
+.lp-hudcard .lp-ctl button:focus-visible,.lp-hudcard .lp-sname:focus-visible {outline:2px solid #eacb8a;outline-offset:2px;}
