@@ -141,7 +141,7 @@
      "reset": "court",
      "src": "Hat of Refuge",
      "a": "R",
-     "d": "Réaction : tu disparais et évites une attaque ou un effet qui demande un jet de DEX. 1 fois par repos court ou long."
+     "d": "Immunité à Bannissement. Réaction quand une attaque te touche ou que tu dois faire un jet de DEX : tu disparais dans le chapeau, évites l'effet, et réapparais à la fin de ton prochain tour. 1 par repos court ou long."
     }
    ],
    "spells": [
@@ -2002,15 +2002,15 @@
     },
     {
      "n": "Hat of Refuge",
-     "note": "Objet merveilleux, attunement. 1 charge : réaction pour disparaître et éviter une attaque ou un effet de DEX, 1 par repos."
+     "note": "Objet merveilleux rare, attunement. Immunité à Bannissement. Évasion arcanique (1 par repos) : quand une attaque te touche ou que tu dois faire un jet de DEX, réaction pour disparaître dans le chapeau. Tu réapparais à la fin de ton prochain tour à la place du chapeau (ou à côté)."
     },
     {
      "n": "Pyrrite Bracers",
-     "note": "Objet merveilleux, attunement. +1 CA."
+     "note": "Objet merveilleux rare, attunement. +1 CA, cumulable avec l'armure."
     },
     {
      "n": "Collier Anti-Magie",
-     "note": "Objet merveilleux."
+     "note": "Objet merveilleux rare. Verrouillé au cou, la créature ne peut ni lancer de sorts ni utiliser d'objet ou capacité explicitement magique (les actions non magiques restent libres). Le poser sur une cible consciente demande un jet de DEX, difficulté selon la situation. Il se ferme par Verrou arcanique ou un verrou manuel. Dissipation de la magie (niveau 4+) supprime l'effet sans l'ouvrir, Déblocage l'ouvre."
     }
    ],
    "eqDefault": [
@@ -2549,7 +2549,7 @@
      "used": 0,
      "note": "Soins",
      "roll": "2d4+2",
-     "d": "Rend 2d4+2 PV."
+     "d": "Action bonus, boire ou donner à une créature à 5 ft : rend 2d4+2 PV."
     },
     {
      "n": "Potion of Regeneration",
@@ -2558,35 +2558,39 @@
      "used": 0,
      "note": "",
      "roll": "4d6",
-     "d": "Rend 4d6 PV, puis 1 PV au début de chacun de tes tours pendant 1 heure. Fait repousser les membres sectionnés."
+     "d": "Rend 5 PV au début de chacun de tes tours pendant 1 minute."
     },
     {
      "n": "Potion de l'Avant-Poste",
      "qty": 1,
      "max": 0,
      "used": 0,
-     "note": ""
+     "note": "",
+     "d": "Verse-la en cercle au sol (action) : barrière que tes alliés franchissent librement. Aucune créature hostile ne la traverse ni n'agit à travers. Dure jusqu'à la fin de ton prochain repos long ou jusqu'à ce que le cercle soit brisé."
     },
     {
      "n": "Potion d'Entrées Dramatiques",
      "qty": 1,
      "max": 0,
      "used": 0,
-     "note": ""
+     "note": "",
+     "d": "Pendant 1 heure, chaque porte que tu ouvres déclenche une fanfare et un éclat de lumière inoffensifs."
     },
     {
      "n": "Soft-Skin Potion",
      "qty": 1,
      "max": 1,
      "used": 0,
-     "note": ""
+     "note": "",
+     "d": "1 heure : saleté, sang, boue et cendres glissent sur ta peau, qui ne peut être tachée. Aucun effet sur les dégâts. Prend fin avec Dissipation de la magie (niveau 3+)."
     },
     {
      "n": "Potion de résistance à la chaleur",
      "qty": 1,
      "max": 0,
      "used": 0,
-     "note": ""
+     "note": "",
+     "d": "Résistance à la chaleur extrême (pas aux dégâts de feu des sorts)."
     },
     {
      "n": "Poudre de Corail Anesthésiante",
@@ -2594,14 +2598,15 @@
      "max": 0,
      "used": 0,
      "note": "Stabilise un personnage à 0 PV, une action. Achetée chez Peraalys à Agran.",
-     "d": "Stabilise une créature mourante, une action, usage unique."
+     "d": "Stabilise une créature mourante, usage unique."
     },
     {
      "n": "Bourse à Confettis Dramatiques",
      "qty": 1,
      "max": 3,
      "used": 0,
-     "note": ""
+     "note": "",
+     "d": "3 charges, retour à l'aube. Sur un test de Représentation, dépense 1 charge après le d20 : +1d4 au test."
     },
     {
      "n": "Interdimensional Chalk",
@@ -2616,21 +2621,24 @@
      "qty": 1,
      "max": 6,
      "used": 2,
-     "note": ""
+     "note": "",
+     "d": "Se pose au sol (action), très dur à repérer (Perception DD 16, 18 camouflé, 20 en pénombre). Explose au contact : CON DD 14 dans 10 ft, 1d6 poison et Empoisonné jusqu'au début de son prochain tour (moitié des dégâts et pas d'état si réussi)."
     },
     {
      "n": "Glove of Appreciation",
      "qty": 1,
      "max": 3,
      "used": 0,
-     "note": ""
+     "note": "",
+     "d": "Gagne 1 charge (max 3) à chaque compliment sincère, 1 fois par heure par créature. 1 charge en réaction ou action bonus à 30 ft : un high-five, poing ou poignée de main secrète. Une créature réticente réussit SAG DD 15 ou rend le geste."
     },
     {
      "n": "Water-Breathing Orb",
      "qty": 1,
      "max": 2,
      "used": 2,
-     "note": ""
+     "note": "",
+     "d": "2 charges, retour à l'aube. 1 charge (action) : toi ou une créature touchée respire sous l'eau 12 heures."
     },
     {
      "n": "Echo de Guédé Nibo",
@@ -2638,7 +2646,7 @@
      "max": 0,
      "used": 0,
      "note": "Espionne quelqu'un à distance (attunement)",
-     "d": "Sending (25 mots), 1 fois par aube. Refuse les mensonges."
+     "d": "Attunement. Sending (25 mots) vers la pierre jumelle, 1 fois par aube. Refuse les mensonges : la pierre reste inerte 24 h."
     },
     {
      "n": "Scry Totem",
@@ -2646,28 +2654,30 @@
      "max": 0,
      "used": 0,
      "note": "Espionne quelqu'un à distance (attunement)",
-     "d": "Scrying 1 fois par jour (DD 15). Attunement."
+     "d": "Statue liée à un cristal vert. 1 fois par jour, action : Scrying (DD 15) sur le même plan."
     },
     {
      "n": "Magic Mustache",
      "qty": 1,
      "max": 0,
      "used": 0,
-     "note": "Passer inaperçu (attunement)"
+     "note": "Passer inaperçu (attunement)",
+     "d": "Action : se colle au visage, retrait par un autre que toi par Athlétisme DD 17. Les tests d'Intuition contre toi sont à désavantage, et seuls ceux qui t'ont vu la mettre te reconnaissent."
     },
     {
      "n": "Masque Voile-Peste",
      "qty": 1,
      "max": 0,
      "used": 0,
-     "note": "Respirer en milieu toxique (attunement)"
+     "note": "Respirer en milieu toxique (attunement)",
+     "d": "Respire normalement dans les environnements toxiques (Terres Désolées d'Aven, vapeurs, miasme nécrotique, cendres). Inefficace sous l'eau et dans le vide. À nettoyer toutes les 24 h : au-delà, désavantage aux JS de CON contre le poison, puis hors d'usage à 48 h."
     },
     {
      "n": "Pendentif du petit ronron",
      "qty": 1,
      "max": 0,
      "used": 0,
-     "note": "Avantage aux tests d'Acrobaties (attunement)"
+     "d": "Attunement. 1 fois par repos long, relance un test d'Acrobaties raté pour garder l'équilibre. Les chats te trouvent apaisant."
     },
     {
      "n": "Fragment of Avarice's True Name (Flesh)",
@@ -2675,7 +2685,7 @@
      "max": 0,
      "used": 0,
      "note": "",
-     "d": "Invoque ou bannit un démon du même cercle."
+     "d": "Sert dans un rituel pour invoquer ou bannir une entité démoniaque du même Cercle (Avarice). Se brise ensuite en cendres."
     },
     {
      "n": "Sovereign Glue",
@@ -2683,28 +2693,31 @@
      "max": 0,
      "used": 0,
      "note": "",
-     "d": "Colle indéfiniment ce qu'elle touche (3 usages)."
+     "d": "Colle de façon permanente deux objets (1 once par pied carré, Utilisation, 1 minute pour prendre). Ne se dissout qu'avec du Solvant universel, de l'Huile d'éthérité ou un Souhait."
     },
     {
      "n": "Botte d'aller faire un tour",
      "qty": 1,
      "max": 0,
      "used": 0,
-     "note": ""
+     "note": "",
+     "d": "Posées au sol, pointées dans une direction, elles marchent 30 ft par tour en laissant des empreintes. Elles s'arrêtent devant un obstacle ou un vide de plus d'1 ft. Portent 1 kg, ne sautent ni n'attaquent. Inspecter les traces : Intelligence DD 14 pour comprendre que quelque chose se trame."
     },
     {
      "n": "Cuvée Lathandre",
      "qty": 35,
      "max": 0,
      "used": 0,
-     "note": ""
+     "note": "",
+     "d": "Objet de lore, sans effet mécanique."
     },
     {
      "n": "Bocaux hermétiques de rations",
      "qty": 4,
      "max": 0,
      "used": 0,
-     "note": ""
+     "note": "",
+     "d": "Objet de lore, sans effet mécanique."
     },
     {
      "n": "Carte annotée de la Mer d'Émeraude",
@@ -2718,35 +2731,40 @@
      "qty": 1,
      "max": 0,
      "used": 0,
-     "note": ""
+     "note": "",
+     "d": "Objet de lore, sans effet mécanique."
     },
     {
      "n": "Médaille de Guerre de la Veyra",
      "qty": 1,
      "max": 0,
      "used": 0,
-     "note": ""
+     "note": "",
+     "d": "Objet de lore, sans effet mécanique."
     },
     {
      "n": "Masque en papier mâché de Jane",
      "qty": 1,
      "max": 0,
      "used": 0,
-     "note": ""
+     "note": "",
+     "d": "Objet de lore, sans effet mécanique."
     },
     {
      "n": "Masque d'Oni Gris du Tribunal",
      "qty": 1,
      "max": 0,
      "used": 0,
-     "note": ""
+     "note": "",
+     "d": "Objet de lore, sans effet mécanique."
     },
     {
      "n": "Masque d'apparat Noir & Or",
      "qty": 1,
      "max": 0,
      "used": 0,
-     "note": ""
+     "note": "",
+     "d": "Objet de lore, sans effet mécanique."
     },
     {
      "n": "Harnais de salamandre",
@@ -2769,21 +2787,24 @@
      "qty": 1,
      "max": 0,
      "used": 0,
-     "note": ""
+     "note": "",
+     "d": "Objet de lore, sans effet mécanique."
     },
     {
      "n": "Bracelet de Cuivre",
      "qty": 1,
      "max": 0,
      "used": 0,
-     "note": ""
+     "note": "",
+     "d": "Objet de lore, sans effet mécanique."
     },
     {
      "n": "Miroir en acier poli",
      "qty": 1,
      "max": 0,
      "used": 0,
-     "note": ""
+     "note": "",
+     "d": "Objet de lore, sans effet mécanique."
     },
     {
      "n": "Thieves' Tools",
@@ -3075,6 +3096,26 @@
      "src": "La Mâchoire",
      "a": "R",
      "d": "Réaction, pouvoir de La Mâchoire, 1 fois par repos long."
+    },
+    {
+     "id": "venom",
+     "nom": "Dagger of Venom : poison",
+     "sub": "Action bonus, 1 par aube",
+     "max": 1,
+     "reset": "aube",
+     "src": "Dagger of Venom",
+     "a": "B",
+     "d": "Action bonus : enduit la lame de poison pour 1 minute ou jusqu'au prochain coup. La cible réussit CON DD 15 ou subit 2d10 poison et Empoisonné 1 minute."
+    },
+    {
+     "id": "hunger",
+     "nom": "Vial of Eternal Hunger : brume",
+     "sub": "Action, 1 par repos long",
+     "max": 1,
+     "reset": "long",
+     "src": "Vial of Eternal Hunger",
+     "a": "A",
+     "d": "Action : brume en sphère de 20 ft de rayon, à 60 ft, concentration 1 minute. Terrain difficile. Début de tour de chaque créature dedans : 2d6 froid. Fin de tour : DEX DD 14 ou 2d6 nécrotique. Tu ne peux pas utiliser l'épée pendant ce temps."
     }
    ],
    "spells": [
@@ -4241,16 +4282,10 @@
     },
     {
      "n": "Dagger of Venom",
-     "hit": "+9",
-     "dmg": "1d4+5 perforant",
-     "note": "Dague, Finesse, Light, Thrown 20/60, Nick. +2d10 poison, 1 charge. True Strike 2d6+4 radiant.",
+     "hit": "+10",
+     "dmg": "1d4+6 perforant",
+     "note": "Dague +1 (Finesse, Light, Thrown 20/60, Nick), attunement. Action bonus : enduit la lame, 1 minute ou jusqu'au prochain coup. La cible réussit CON DD 15 ou subit 2d10 poison et Empoisonné 1 minute. 1 fois par aube.",
      "pw": [
-      {
-       "n": "Poison",
-       "a": "A",
-       "d": "1 charge : +2d10 poison aux dégâts de l'attaque.",
-       "r": "2d10"
-      },
       {
        "n": "True Strike",
        "a": "A",
@@ -4263,7 +4298,7 @@
      "n": "Dagger of Absorption",
      "hit": "+9",
      "dmg": "1d4+5 perforant",
-     "note": "Dague, Finesse, Light, Thrown 20/60, Nick. True Strike 2d6+4 radiant.",
+     "note": "Dague (Finesse, Light, Thrown 20/60, Nick), attunement. Quand tu tues une créature, absorbe un trait mineur (vision dans le noir, résistance au poison, vitesse de nage...) pendant 24 h, un seul à la fois.",
      "pw": [
       {
        "n": "Absorption",
@@ -4280,9 +4315,9 @@
     },
     {
      "n": "Vial of Eternal Hunger",
-     "hit": "+9",
-     "dmg": "1d6+5 perforant",
-     "note": "Épée courte martiale, Finesse, Light, Vex. True Strike 2d6+4 radiant.",
+     "hit": "+11",
+     "dmg": "1d6+7 perforant",
+     "note": "Épée courte +2 (Finesse, Light, Vex), attunement. Libérer la fiole est une action libre. Faim éternelle (1 par repos long) : voir Objets équipés.",
      "pw": [
       {
        "n": "True Strike",
@@ -4935,14 +4970,15 @@
      "max": 1,
      "used": 0,
      "note": "",
-     "d": "Vol à ta vitesse de marche pendant 1 heure, vol stationnaire possible."
+     "d": "Vol à ta vitesse de marche pendant 1 heure, vol stationnaire possible. Tu tombes à la fin si tu es en l'air."
     },
     {
      "n": "Potion de Reptation",
      "qty": 1,
      "max": 0,
      "used": 0,
-     "note": ""
+     "note": "",
+     "d": "3 heures : déplacement sur murs et plafonds, mains libres, vitesse d'escalade égale à ta vitesse de marche."
     },
     {
      "n": "Parchemin d'Invisibilité Supérieure",
@@ -4950,7 +4986,7 @@
      "max": 1,
      "used": 0,
      "note": "",
-     "d": "Lance Invisibilité supérieure (niveau 4, concentration, 1 minute)."
+     "d": "Lance Invisibilité supérieure (niveau 4, sans composantes) : une créature touchée est invisible 1 minute même si elle attaque. Concentration, usage unique."
     },
     {
      "n": "Parchemin de dissipation de la magie",
@@ -4965,7 +5001,8 @@
      "qty": 1,
      "max": 1,
      "used": 0,
-     "note": "Met fin à Aveuglé, Assourdi, Paralysé, Empoisonné"
+     "note": "Met fin à Aveuglé, Assourdi, Paralysé, Empoisonné",
+     "d": "Met fin à Aveuglé, Assourdi, Paralysé ou Empoisonné."
     },
     {
      "n": "Grimoire de Glyphe de Garde",
@@ -4973,14 +5010,15 @@
      "max": 1,
      "used": 0,
      "note": "",
-     "d": "Contient le sort Glyphe de garde."
+     "d": "Glyphe de garde (niveau 3, 1 charge) : incantation 10 min, glyphe de 10 ft max. Rune explosive : sphère de 20 ft, DEX, 5d8 acide, froid, feu, foudre ou tonnerre (moitié si réussi)."
     },
     {
      "n": "Sceau de silence portatif",
      "qty": 1,
      "max": 1,
      "used": 0,
-     "note": ""
+     "note": "",
+     "d": "Silence (niveau 2, 1 charge) : sphère de 20 ft à 120 ft, concentration 10 minutes. Aucun son, immunité tonnerre, sorts à composante verbale impossibles."
     },
     {
      "n": "Pickpocket l'Impératrice",
@@ -4988,7 +5026,7 @@
      "max": 0,
      "used": 0,
      "note": "Anneau",
-     "d": "Anneau. Échange un objet magique contre un autre de même rareté, puis est détruit."
+     "d": "Anneau légendaire. Action bonus, une fois : échange un objet magique que tu possèdes avec un objet d'une créature visible à 30 ft, de rareté égale ou inférieure. Puis l'anneau part en cendres."
     },
     {
      "n": "Chaîne du Serpent de Fer",
@@ -4996,7 +5034,7 @@
      "max": 0,
      "used": 0,
      "note": "",
-     "d": "Chaîne cristallisée aux reflets incandescents. Incassable hors magie, entrave une créature de taille TG."
+     "d": "Action : lance-la sur une créature G ou moins à 20 ft (attaque Athlétisme ou Acrobaties contre son Acrobaties) : entravée. Indestructible. S'échapper : Acrobaties DD 16. Action : tire la cible de 5 ft (DEX DD 16 pour résister)."
     },
     {
      "n": "L'Étreinte de la Veuve",
@@ -5004,7 +5042,7 @@
      "max": 0,
      "used": 0,
      "note": "Filet, lancer 5/15",
-     "d": "Filet, portée 5/15 ft : entrave une créature de taille G ou moins."
+     "d": "Filet, attunement, portée 5/15 ft. Créature G ou moins touchée : entravée, et paralysée jusqu'à ton prochain tour si elle rate SAG DD 10. 2 perforants au début de ses tours. Se libérer : Athlétisme DD 14. Filet CA 10, 15 PV, se répare en 1 h."
     },
     {
      "n": "Sending Stones",
@@ -5012,7 +5050,7 @@
      "max": 1,
      "used": 0,
      "note": "",
-     "d": "Sending (25 mots), 1 charge, recharge à l'aube."
+     "d": "Sending (25 mots) vers la pierre jumelle, 1 charge, retour à l'aube."
     },
     {
      "n": "Flèches Brasier",
@@ -5020,7 +5058,7 @@
      "max": 5,
      "used": 0,
      "note": "",
-     "d": "Lot de 5. Chaque flèche inflige 2d6 feu de zone en plus de ses dégâts."
+     "d": "Lot de 5. À l'impact : dégâts normaux, puis 2d8 feu dans 15 ft (DEX DD 15 pour moitié). La flèche est détruite."
     },
     {
      "n": "Arrows",
@@ -5035,28 +5073,32 @@
      "qty": 1,
      "max": 1,
      "used": 0,
-     "note": ""
+     "note": "",
+     "d": "Action : pose-la contre une structure. Elle explose au début de ton prochain tour : 10d6 feu aux structures, 4d6 feu aux créatures à 10 ft (DEX DD 14 pour moitié). Usage unique."
     },
     {
      "n": "Lathander's Relic",
      "qty": 1,
      "max": 1,
      "used": 0,
-     "note": ""
+     "note": "",
+     "d": "Attunement (culte de Lathandre). 1 fois par jour : quand tu lances un sort de niveau 1 à 5 qui soigne ou inflige du radiant, relance-le gratuitement au même niveau en réaction."
     },
     {
      "n": "Orbe de Vision Distante",
      "qty": 1,
      "max": 3,
      "used": 0,
-     "note": ""
+     "note": "",
+     "d": "3 charges, 1d4 regagnées à l'aube. Action : vois par les yeux d'un familier ou d'une créature consentante touchée, 1 heure, concentration. Tu es aveugle à ton environnement."
     },
     {
      "n": "Water-Breathing Orb",
      "qty": 1,
      "max": 2,
      "used": 0,
-     "note": ""
+     "note": "",
+     "d": "2 charges, retour à l'aube. 1 charge (action) : toi ou une créature touchée respire sous l'eau 12 heures."
     },
     {
      "n": "Huile d'anguille électrique",
@@ -5064,7 +5106,7 @@
      "max": 1,
      "used": 0,
      "note": "",
-     "d": "+1d6 foudre sur une arme pendant 1 combat. Toute créature à 5 ft de la cible touchée subit 1d4 foudre."
+     "d": "Action : arme de mêlée ou 5 munitions, 1 minute. +1d6 foudre sur un coup, et chaque autre créature de ton choix à 5 ft de la cible subit 1d4 foudre."
     },
     {
      "n": "Huile de Scorpion Noir",
@@ -5072,7 +5114,7 @@
      "max": 0,
      "used": 0,
      "note": "",
-     "d": "Enduit une arme : +1d6 poison pendant 10 minutes."
+     "d": "Action : enduit une arme ou 3 munitions pendant 10 minutes. +1d6 poison sur un coup."
     },
     {
      "n": "Bag of Holding",
@@ -5088,7 +5130,7 @@
      "max": 0,
      "used": 0,
      "note": "",
-     "d": "Invoque ou bannit un démon du même cercle."
+     "d": "Sert dans un rituel pour invoquer ou bannir une entité démoniaque du même Cercle (Avarice). Se brise ensuite en cendres."
     },
     {
      "n": "Boussole des Écumes",
@@ -5096,7 +5138,7 @@
      "max": 0,
      "used": 0,
      "note": "",
-     "d": "Indique toujours la terre la plus proche."
+     "d": "Action : pendant 10 minutes, l'aiguille indique la plus proche masse de terre notable sur le même plan. 1 fois par aube."
     },
     {
      "n": "Herbe de faille séchée",
@@ -5104,7 +5146,7 @@
      "max": 0,
      "used": 0,
      "note": "",
-     "d": "Mâchée : avantage aux tests de Perception sous l'eau pendant 30 minutes."
+     "d": "Mâchée (action) : avantage aux tests de Perception (vue ou ouïe) sous l'eau pendant 30 minutes."
     },
     {
      "n": "Lanterne des Profondeurs",
@@ -5112,7 +5154,7 @@
      "max": 0,
      "used": 0,
      "note": "",
-     "d": "Éclaire à 65 ft sous l'eau et révèle l'invisible aquatique."
+     "d": "Action : lumière bleue vive 20 ft et faible 20 ft de plus, fonctionne sous l'eau. Les créatures et objets invisibles immergés dans la lumière vive sont cernés de bleu."
     },
     {
      "n": "Poudre de Diamant",
@@ -5126,7 +5168,8 @@
      "qty": 3,
      "max": 0,
      "used": 0,
-     "note": ""
+     "note": "",
+     "d": "Contenu inconnu. À faire identifier."
     },
     {
      "n": "Deuil-de-Mai",
@@ -5154,42 +5197,48 @@
      "qty": 1,
      "max": 0,
      "used": 0,
-     "note": ""
+     "note": "",
+     "d": "Objet de lore, sans effet mécanique."
     },
     {
      "n": "Jeu de 54 cartes usé",
      "qty": 1,
      "max": 0,
      "used": 0,
-     "note": ""
+     "note": "",
+     "d": "Objet de lore, sans effet mécanique."
     },
     {
      "n": "Gemme rouge grenat",
      "qty": 1,
      "max": 0,
      "used": 0,
-     "note": ""
+     "note": "",
+     "d": "Objet de lore, sans effet mécanique."
     },
     {
      "n": "Statuette en jade",
      "qty": 1,
      "max": 0,
      "used": 0,
-     "note": ""
+     "note": "",
+     "d": "Objet de lore, sans effet mécanique."
     },
     {
      "n": "Plume de Roc",
      "qty": 1,
      "max": 0,
      "used": 0,
-     "note": ""
+     "note": "",
+     "d": "Objet de lore, sans effet mécanique."
     },
     {
      "n": "Broche en or clan Anadori",
      "qty": 1,
      "max": 0,
      "used": 0,
-     "note": ""
+     "note": "",
+     "d": "Objet de lore, sans effet mécanique."
     },
     {
      "n": "Clochette de seuil",
@@ -5203,28 +5252,32 @@
      "qty": 1,
      "max": 0,
      "used": 0,
-     "note": ""
+     "note": "",
+     "d": "Objet de lore, sans effet mécanique."
     },
     {
      "n": "Bandes de cuir de réparation",
      "qty": 5,
      "max": 0,
      "used": 0,
-     "note": ""
+     "note": "",
+     "d": "Objet de lore, sans effet mécanique."
     },
     {
      "n": "Hache étrange",
      "qty": 1,
      "max": 0,
      "used": 0,
-     "note": ""
+     "note": "",
+     "d": "Fonction inconnue. À faire identifier."
     },
     {
      "n": "Veste Peau de Soleil",
      "qty": 1,
      "max": 0,
      "used": 0,
-     "note": ""
+     "note": "",
+     "d": "Objet de lore, sans effet mécanique."
     },
     {
      "n": "Harnais de salamandre",
@@ -5239,35 +5292,40 @@
      "qty": 1,
      "max": 0,
      "used": 0,
-     "note": ""
+     "note": "",
+     "d": "Objet de lore, sans effet mécanique."
     },
     {
      "n": "Masque pourri de Philippa",
      "qty": 1,
      "max": 0,
      "used": 0,
-     "note": ""
+     "note": "",
+     "d": "Objet de lore, sans effet mécanique."
     },
     {
      "n": "Uniforme de cérémonie Ordre de la Racine",
      "qty": 1,
      "max": 0,
      "used": 0,
-     "note": ""
+     "note": "",
+     "d": "Objet de lore, sans effet mécanique."
     },
     {
      "n": "Armure légère de cérémonie à motifs d'écorce",
      "qty": 1,
      "max": 0,
      "used": 0,
-     "note": ""
+     "note": "",
+     "d": "Objet de lore, sans effet mécanique."
     },
     {
      "n": "Symbole de culte en pierre gravée",
      "qty": 1,
      "max": 0,
      "used": 0,
-     "note": ""
+     "note": "",
+     "d": "Objet de lore, sans effet mécanique."
     },
     {
      "n": "Grappling Hook",
@@ -7504,7 +7562,7 @@
    "gear": [
     {
      "n": "Delegate's Plumage",
-     "note": "Armure légère, cuir clouté. CA 14, attunement."
+     "note": "Armure de cuir clouté, CA 14, attunement. Banal : avantage aux tests de Tromperie pour passer pour inoffensif ou d'un autre rang. Tissage silencieux : pas de désavantage en Discrétion, aucun bruit d'armure."
     },
     {
      "n": "Shield, +1",
@@ -7512,7 +7570,7 @@
     },
     {
      "n": "Pierres de communication",
-     "note": "Sending (25 mots), 1 charge, recharge à l'aube."
+     "note": "Sending (25 mots) vers la pierre jumelle, 1 charge, retour à l'aube."
     }
    ],
    "eqDefault": [
@@ -8110,7 +8168,7 @@
      "used": 0,
      "note": "",
      "roll": "2d4+2",
-     "d": "Rend 2d4+2 PV."
+     "d": "Action bonus, boire ou donner à une créature à 5 ft : rend 2d4+2 PV."
     },
     {
      "n": "Potion of Healing (Greater)",
@@ -8126,14 +8184,16 @@
      "qty": 1,
      "max": 0,
      "used": 0,
-     "note": ""
+     "note": "",
+     "d": "Verse-la en cercle au sol (action) : barrière que tes alliés franchissent librement. Aucune créature hostile ne la traverse ni n'agit à travers. Dure jusqu'à la fin de ton prochain repos long ou jusqu'à ce que le cercle soit brisé."
     },
     {
      "n": "Potion of Poison",
      "qty": 3,
      "max": 0,
      "used": 0,
-     "note": "Maudite, à ne pas boire"
+     "note": "Maudite, à ne pas boire",
+     "d": "Maudite. Ressemble à une potion de soins. Boire : 3d6 poison et CON DD 13 ou Empoisonné (3d6 poison au début de chaque tour, JS en fin de tour, les dégâts baissent de 1d6 par réussite)."
     },
     {
      "n": "Carte au trésor de Fennick",
