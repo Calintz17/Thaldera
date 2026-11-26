@@ -1340,3 +1340,19 @@ body>.lp-tip p {margin:5px 0;}
 .lp-effect-active {border-color:#51765c!important;color:#a6dcb1!important;background:#203129!important;}
 .lp-endspell {font-size:11px!important;}
 @media(max-width:600px){.lp-summaryfooter>.lp-defensechips {flex:1 1 100%;justify-content:flex-end;}}
+
+/* v168 : bouclier unifié, fin, au format des glyphes de ressources */
+.lp-summaryfooter>.lp-defensechips{gap:7px;align-items:center}
+.lp-defensechip{gap:3px!important}
+.lp-defenseicon{position:relative;display:inline-block;width:16px;height:18px;flex:0 0 16px}
+.lp-defenseicon .lp-defshield,.lp-defenseicon .lp-defmark{position:absolute;inset:0;pointer-events:none}
+.lp-defenseicon .lp-defshield{z-index:0}
+.lp-defenseicon .lp-defshield svg,.lp-defenseicon .lp-defmark svg{display:block;width:100%;height:100%;overflow:hidden}
+.lp-defenseicon .lp-defglyph,.lp-defenseicon.immune .lp-defglyph{position:absolute;inset:5px 0 2px;display:grid;place-items:center;z-index:1}
+.lp-defenseicon .lp-defglyph>svg{width:9px;height:9px;display:block}
+.lp-defenseicon .lp-defglyph .lp-bg3{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%) scale(.48);transform-origin:center}
+.lp-defenseicon .lp-defmark,.lp-defenseicon.immune .lp-defmark{z-index:2}
+.lp-defenseicon.immune .lp-defglyph{inset:2px 0 2px;filter:saturate(.6)}
+.lp-deftext{gap:0}
+.lp-deftext b{font:600 10px/1.1 var(--body)}
+.lp-deftext small{font:400 9px/1.1 var(--body)}
