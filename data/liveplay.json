@@ -5130,28 +5130,14 @@
           "hit": "+9",
           "dmg": "1d6+5 perforant",
           "note": "Arc court (simple). Munitions, Deux mains, Vex, portée 80/320 ft. Vex : avantage à ton prochain jet d'attaque contre la créature touchée, jusqu'à la fin de ton prochain tour.",
-          "pw": [
-            {
-              "n": "True Strike",
-              "a": "A",
-              "d": "Action Magie : attaque avec l'arme en INT, dégâts radiants ou du type de l'arme, +2d6+4 radiant au niveau 11.",
-              "r": "2d6+4"
-            }
-          ]
+          "pw": []
         },
         {
           "n": "Croc du Gentleman",
           "hit": "+9",
           "dmg": "1d6+5 perforant",
           "note": "Épée courte (martiale). Finesse, Light, Vex. Vex : avantage à ta prochaine attaque contre la créature touchée.",
-          "pw": [
-            {
-              "n": "True Strike",
-              "a": "A",
-              "d": "2d6+4 radiant ou du type de l'arme, au choix.",
-              "r": "2d6+4"
-            }
-          ]
+          "pw": []
         },
         {
           "n": "Ruin, Hollow Reign",
@@ -5197,12 +5183,6 @@
               "a": "B",
               "d": "La lame s'embrase : +2d6 feu aux dégâts de chaque attaque tant qu'elle brûle.",
               "r": "2d6"
-            },
-            {
-              "n": "True Strike",
-              "a": "A",
-              "d": "2d6+4 radiant ou du type de l'arme, au choix.",
-              "r": "2d6+4"
             }
           ]
         },
@@ -5211,28 +5191,14 @@
           "hit": "+9",
           "dmg": "1d6+5 perforant",
           "note": "Épée courte martiale, Finesse, Light, Vex. Vex : avantage à ta prochaine attaque contre la créature touchée.",
-          "pw": [
-            {
-              "n": "True Strike",
-              "a": "A",
-              "d": "2d6+4 radiant ou du type de l'arme, au choix.",
-              "r": "2d6+4"
-            }
-          ]
+          "pw": []
         },
         {
           "n": "Dagger of Venom",
           "hit": "+10",
           "dmg": "1d4+6 perforant",
           "note": "Dague +1 (Finesse, Light, Thrown 20/60, Nick), attunement. Action bonus : enduit la lame, 1 minute ou jusqu'au prochain coup. La cible réussit CON DD 15 ou subit 2d10 poison et Empoisonné 1 minute. 1 fois par aube.",
-          "pw": [
-            {
-              "n": "True Strike",
-              "a": "A",
-              "d": "2d6+4 radiant ou du type de l'arme, au choix.",
-              "r": "2d6+4"
-            }
-          ]
+          "pw": []
         },
         {
           "n": "Dagger of Absorption",
@@ -5244,12 +5210,6 @@
               "n": "Absorption",
               "a": "A",
               "d": "Si une créature est tuée par cette dague, son porteur vole une de ses caractéristiques mineures pendant 24 h."
-            },
-            {
-              "n": "True Strike",
-              "a": "A",
-              "d": "2d6+4 radiant ou du type de l'arme, au choix.",
-              "r": "2d6+4"
             }
           ]
         },
@@ -5258,14 +5218,7 @@
           "hit": "+11",
           "dmg": "1d6+7 perforant",
           "note": "Épée courte +2 (Finesse, Light, Vex), attunement. Libérer la fiole est une action libre. Faim éternelle (1 par repos long) : voir Objets équipés.",
-          "pw": [
-            {
-              "n": "True Strike",
-              "a": "A",
-              "d": "2d6+4 radiant ou du type de l'arme, au choix.",
-              "r": "2d6+4"
-            }
-          ]
+          "pw": []
         },
         {
           "n": "Attaque à mains nues",
@@ -5483,6 +5436,30 @@
         {
           "n": "Masque Voile-Peste",
           "note": "Objet merveilleux."
+        },
+        {
+          "n": "Lathander's Relic",
+          "note": "Attunement (culte de Lathandre). 1 fois par jour : quand tu lances un sort de niveau 1 à 5 qui soigne ou inflige du radiant, relance-le gratuitement au même niveau en réaction.",
+          "inventory": true,
+          "recharge": "long",
+          "act": "R"
+        },
+        {
+          "n": "Chaîne du Serpent de Fer",
+          "note": "Action : lance-la sur une créature G ou moins à 20 ft (attaque Athlétisme ou Acrobaties contre son Acrobaties) : entravée. Indestructible. S'échapper : Acrobaties DD 16. Action : tire la cible de 5 ft (DEX DD 16 pour résister).",
+          "inventory": true,
+          "act": "A"
+        },
+        {
+          "n": "Flèches Brasier",
+          "note": "Lot de 5. À l'impact : dégâts normaux, puis 2d8 feu dans 15 ft (DEX DD 15 pour moitié). La flèche est détruite. Usage unique, non rechargeable.",
+          "inventory": true
+        },
+        {
+          "n": "Pickpocket l'Impératrice",
+          "note": "Anneau légendaire. Action bonus, une fois : échange un objet magique que tu possèdes avec un objet d'une créature visible à 30 ft, de rareté égale ou inférieure. Puis l'anneau part en cendres. Usage unique, non rechargeable.",
+          "inventory": true,
+          "act": "B"
         }
       ],
       "eqDefault": [
@@ -5950,7 +5927,8 @@
           "max": 1,
           "used": 0,
           "note": "",
-          "d": "Glyphe de garde (niveau 3, 1 charge) : incantation 10 min, glyphe de 10 ft max. Rune explosive : sphère de 20 ft, DEX, 5d8 acide, froid, feu, foudre ou tonnerre (moitié si réussi)."
+          "d": "Glyphe de garde (niveau 3, 1 charge) : incantation 10 min, glyphe de 10 ft max. Rune explosive : sphère de 20 ft, DEX, 5d8 acide, froid, feu, foudre ou tonnerre (moitié si réussi). Usage unique, non rechargeable.",
+          "consumable": true
         },
         {
           "n": "Sceau de silence portatif",
@@ -5958,7 +5936,8 @@
           "max": 1,
           "used": 0,
           "note": "",
-          "d": "Silence (niveau 2, 1 charge) : sphère de 20 ft à 120 ft, concentration 10 minutes. Aucun son, immunité tonnerre, sorts à composante verbale impossibles."
+          "d": "Silence (niveau 2, 1 charge) : sphère de 20 ft à 120 ft, concentration 10 minutes. Aucun son, immunité tonnerre, sorts à composante verbale impossibles. Usage unique, non rechargeable.",
+          "consumable": true
         },
         {
           "n": "Pickpocket l'Impératrice",
@@ -5966,7 +5945,9 @@
           "max": 0,
           "used": 0,
           "note": "Anneau",
-          "d": "Anneau légendaire. Action bonus, une fois : échange un objet magique que tu possèdes avec un objet d'une créature visible à 30 ft, de rareté égale ou inférieure. Puis l'anneau part en cendres."
+          "d": "Anneau légendaire. Action bonus, une fois : échange un objet magique que tu possèdes avec un objet d'une créature visible à 30 ft, de rareté égale ou inférieure. Puis l'anneau part en cendres. Usage unique, non rechargeable.",
+          "consumable": true,
+          "equipable": true
         },
         {
           "n": "Chaîne du Serpent de Fer",
@@ -5974,7 +5955,8 @@
           "max": 0,
           "used": 0,
           "note": "",
-          "d": "Action : lance-la sur une créature G ou moins à 20 ft (attaque Athlétisme ou Acrobaties contre son Acrobaties) : entravée. Indestructible. S'échapper : Acrobaties DD 16. Action : tire la cible de 5 ft (DEX DD 16 pour résister)."
+          "d": "Action : lance-la sur une créature G ou moins à 20 ft (attaque Athlétisme ou Acrobaties contre son Acrobaties) : entravée. Indestructible. S'échapper : Acrobaties DD 16. Action : tire la cible de 5 ft (DEX DD 16 pour résister).",
+          "equipable": true
         },
         {
           "n": "L'Étreinte de la Veuve",
@@ -5998,7 +5980,9 @@
           "max": 5,
           "used": 0,
           "note": "",
-          "d": "Lot de 5. À l'impact : dégâts normaux, puis 2d8 feu dans 15 ft (DEX DD 15 pour moitié). La flèche est détruite."
+          "d": "Lot de 5. À l'impact : dégâts normaux, puis 2d8 feu dans 15 ft (DEX DD 15 pour moitié). La flèche est détruite. Usage unique, non rechargeable.",
+          "consumable": true,
+          "equipable": true
         },
         {
           "n": "Arrows",
@@ -6022,7 +6006,8 @@
           "max": 1,
           "used": 0,
           "note": "",
-          "d": "Attunement (culte de Lathandre). 1 fois par jour : quand tu lances un sort de niveau 1 à 5 qui soigne ou inflige du radiant, relance-le gratuitement au même niveau en réaction."
+          "d": "Attunement (culte de Lathandre). 1 fois par jour : quand tu lances un sort de niveau 1 à 5 qui soigne ou inflige du radiant, relance-le gratuitement au même niveau en réaction.",
+          "equipable": true
         },
         {
           "n": "Orbe de Vision Distante",
