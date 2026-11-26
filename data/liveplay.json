@@ -142,6 +142,14 @@
           "src": "Hat of Refuge",
           "a": "R",
           "d": "Immunité à Bannissement. Réaction quand une attaque te touche ou que tu dois faire un jet de DEX : tu disparais dans le chapeau, évites l'effet, et réapparais à la fin de ton prochain tour. 1 par repos court ou long."
+        },
+        {
+          "id": "echo",
+          "nom": "Écho de Guédé Nibo",
+          "max": 1,
+          "reset": "aube",
+          "sub": "Sending, une fois par aube",
+          "d": "Envoie un message de 25 mots à la pierre jumelle. Elle refuse les mensonges."
         }
       ],
       "spells": [
@@ -501,7 +509,9 @@
           "ruleSource": "PHB 2024",
           "duration": "1 min",
           "castTime": "1 action",
-          "save": "SAG"
+          "save": "SAG",
+          "pactonly": true,
+          "pactlimit": "omen"
         },
         {
           "n": "Convocation de rejeton de l'ombre",
@@ -559,7 +569,7 @@
           "t": "Action",
           "p": "Soi",
           "c": true,
-          "d": "Concentration, 1 minute. Tu es entouré d'ombre : visibilité faible, désavantage aux attaquants, 2d8 nécrotique aux attaquants qui te touchent au corps à corps.",
+          "d": "Concentration, 1 minute. Tu es entouré d'ombre : visibilité faible, désavantage aux attaquants, 2d8 nécrotique aux attaquants qui te touchent au corps à corps. Tu résistes aux dégâts radiants pendant la durée du sort.",
           "en": "Shadow of Moil",
           "gid": "s-shadow-of-moil",
           "lst": "occultiste",
@@ -1998,6 +2008,23 @@
           "save": "SAG",
           "pre": false,
           "pactonly": true
+        },
+        {
+          "n": "Communication à distance",
+          "en": "Sending",
+          "lv": 3,
+          "t": "Action",
+          "p": "Illimitée",
+          "d": "Envoie un message de 25 mots à la pierre jumelle. Le destinataire peut répondre. La pierre refuse les mensonges et reste alors inerte 24 heures.",
+          "c": false,
+          "cost": {
+            "res": "echo",
+            "n": 1
+          },
+          "origin": "Écho de Guédé Nibo",
+          "inventorySource": "Echo de Guédé Nibo",
+          "castTime": "1 action",
+          "duration": "Instantanée"
         }
       ],
       "dc": 17,
