@@ -4,7 +4,7 @@
 (() => {
 'use strict';
 
-const VER = '167';
+const VER = '168';
 const LEGACY_IDS = { 'bourre-piff':'bourpif', 'seravine':'solkah-barrow', 'tilda':'irna', 'cleff':'irna' };
 const EDIT = new URLSearchParams(location.search).has('edit');
 const $ = (s, r = document) => r.querySelector(s);
