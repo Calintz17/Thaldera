@@ -472,7 +472,7 @@
   const RGL = { bardic: 'note', sup: 'die', ws: 'paw' };
   const glyphOf = (c, r) => RGL[r.id] || (r.reset === 'aube' ? 'bolt' : (c.spells || []).some(q => [].concat(q.res || []).includes(r.id)) ? 'spark' : 'gem');
   const gpips = (c, r, u, ro) => {
-    const g = glyphOf(c, r); let h = ''; const artwork = r.id==='bardic' ? bg3('bardic') : RIC[r.id] ? im(RIC[r.id], 'lp-resource-art') : GLY[g];
+    const g = glyphOf(c, r); let h = ''; const artwork = r.id==='bardic' ? bg3('bardic') : RIC[r.id] ? im(RIC[r.id], 'lp-resource-art') : '<span class="lp-neutralpip" aria-hidden="true"></span>';
     for (let i = 0; i < r.max; i++) { const us = i >= r.max - u; h += ro ? `<span class="lp-gp g-${g} ro ${us ? 'used' : ''}">${artwork}</span>` : `<button type="button" class="lp-gp g-${g} ${us ? 'used' : ''}" data-act="pip" data-kind="res" data-key="${esc(r.id)}" data-idx="${i}" aria-label="${esc(r.nom)} ${us ? 'utilisé' : 'disponible'}">${artwork}</button>`; }
     return h;
   };
@@ -547,17 +547,17 @@
     const key=sp.n,conc=st.conc===key,notEquipped=!isEq(c,st,sp.src),unprepared=sp.lst&&!(st.prep||[]).includes(key);
     const inactive=notEquipped||unprepared, {ps,cur}=pickPool(c,st,sp), spent=inactive||!ps.length,limUsed=sp.lim&&st.used[key];
     const tags=(sp.c?`<span class="lp-minitag" title="Concentration">${bg3('concentration')}</span>`:'')+(sp.ritual?`<span class="lp-minitag" title="Rituel">${bg3('ritual')}</span>`:'');
-    const poolLabel=p=>p.k==='pact'?'Pacte '+c.pact.lvl:/^\d+$/.test(p.k)?'Niv. '+p.k:p.k.startsWith('free:')?'Gratuit':p.s;
+    const poolLabel=p=>p.k==='pact'?'Pacte '+c.pact.lvl:/^\d+$/.test(p.k)?'Niv. '+p.k:p.k.startsWith('free:')?p.s:p.s;
     const reason=notEquipped?'Non équipé':unprepared?'Non préparé':!ps.length?'Épuisé':'';
     const src=spent?`<span class="lp-slotchip off">${reason}</span>`:ps.length>1?`<select class="lp-pool" data-sp="${esc(key)}" aria-label="Source du sort" title="${esc(cur.label||cur.s)}">${ps.map(p=>`<option value="${esc(p.k)}" ${cur.k===p.k?'selected':''}>${esc(poolLabel(p))}</option>`).join('')}</select>`:`<span class="lp-slotchip" title="${esc(cur.label||cur.s)}">${esc(poolLabel(cur))}</span>`;
-    const btn=`<button type="button" class="lp-cast" data-act="cast" data-key="${esc(key)}" ${spent?'disabled':''}>Lancer</button>`;
+    const btn=limUsed&&!inactive?`<button type="button" class="lp-cast lp-reset" data-act="unspend" data-key="${esc(key)}" title="Restaurer ce sort">Restaurer</button>`:`<button type="button" class="lp-cast" data-act="cast" data-key="${esc(key)}" ${spent?'disabled':''}>Lancer</button>`;
     const jet=canJet(c,sp)?`<button type="button" class="lp-jet" data-act="jetsp" data-key="${esc(key)}" ${spent?'disabled':''}>Jet</button>`:'';
     const dmg=damagePreview(sp.d);
     return `<article class="lp-spell lp-hudcard lp-spellplain ${conc?'conc':''} ${spent?'spent':''} ${inactive?'lp-inactive':''}" data-level="${sp.lv}">
       <button type="button" class="lp-sname" data-act="gopen" data-key="${esc(key)}" data-tip="s|${esc(key)}" aria-label="Détails : ${esc(key)}">
         <span class="lp-cardtitle"><b title="${esc(sp.n)}">${esc(sp.n)}</b>${sp.en?`<small class="lp-en" title="${esc(sp.en)}">${esc(sp.en)}</small>`:''}</span>${inAction?'':`<span class="lp-cardtype" title="${esc(sp.t)}">${ico(sp.t)}</span>`}</button>
       <div class="lp-combatmeta"><span class="lp-range" title="${esc(sp.p||'')}">${esc(sp.p||'')}</span>${tags}${dmg?`<span class="lp-dmgpreview" title="Dés mentionnés dans la description : consulter le détail">${dmg}</span>`:''}</div>
-      ${ctl(src,btn,jet)}${limUsed&&!inactive?`<button type="button" class="lp-full lp-restore" data-act="unspend" data-key="${esc(key)}" title="Restaurer ce sort" aria-label="Restaurer ce sort">↶</button>`:''}</article>`;
+      ${ctl(src,btn,jet)}</article>`;
   }
   function actionFilters(q, act, includeOut) {
     return `<div class="lp-hudfilters"><input type="search" id="lp-q" value="${esc(q)}" placeholder="Rechercher" aria-label="Rechercher"><div class="lp-chips" aria-label="Filtrer par type d'action">${['all'].concat(includeOut?ACTS:ACTS.slice(0,3)).map(a=>`<button type="button" class="lp-chip ${act===a?'on':''}" data-act="actf" data-v="${esc(a)}" aria-pressed="${act===a}">${ico(a)}${a==='all'?'Tout':esc(a)}</button>`).join('')}</div></div>`;
