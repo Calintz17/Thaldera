@@ -255,7 +255,8 @@
           "ruleSource": "PHB 2024",
           "duration": "Instantanée",
           "castTime": "1 réaction",
-          "save": "DEX"
+          "save": "DEX",
+          "pactonly": true
         },
         {
           "n": "Bouclier",
@@ -270,7 +271,8 @@
           "pre": true,
           "ruleSource": "PHB 2024",
           "duration": "1 tour",
-          "castTime": "1 réaction"
+          "castTime": "1 réaction",
+          "pactonly": true
         },
         {
           "n": "Armure d'Agathys",
@@ -290,7 +292,8 @@
           "pre": true,
           "ruleSource": "PHB 2024 (action : exception MJ)",
           "duration": "1 h",
-          "castTime": "1 action bonus"
+          "castTime": "1 action bonus",
+          "pactonly": true
         },
         {
           "n": "Maléfice",
@@ -423,7 +426,8 @@
           "ruleSource": "PHB 2024",
           "duration": "1 h",
           "castTime": "1 action",
-          "save": "SAG"
+          "save": "SAG",
+          "pactonly": true
         },
         {
           "n": "Pas brumeux",
@@ -481,7 +485,8 @@
           "ruleSource": "PHB 2024",
           "duration": "Instantanée",
           "castTime": "1 réaction",
-          "save": "CON"
+          "save": "CON",
+          "pactonly": true
         },
         {
           "n": "Malédiction",
@@ -511,7 +516,8 @@
           "pre": true,
           "ruleSource": "TCE (Legacy)",
           "duration": "1 h",
-          "castTime": "1 action"
+          "castTime": "1 action",
+          "pactonly": true
         },
         {
           "n": "Toucher du vampire",
@@ -527,7 +533,8 @@
           "ruleSource": "PHB 2024",
           "duration": "1 min",
           "castTime": "1 action",
-          "atk": true
+          "atk": true,
+          "pactonly": true
         },
         {
           "n": "Châtiment étourdissant",
@@ -543,7 +550,8 @@
           "ruleSource": "PHB 2024",
           "duration": "Instantanée",
           "castTime": "1 action bonus",
-          "save": "SAG"
+          "save": "SAG",
+          "pactonly": true
         },
         {
           "n": "Ombre de Moil",
@@ -558,7 +566,8 @@
           "pre": true,
           "ruleSource": "XGE (Legacy)",
           "duration": "1 min",
-          "castTime": "1 action"
+          "castTime": "1 action",
+          "pactonly": true
         },
         {
           "n": "Acceptation",
@@ -850,10 +859,10 @@
           "p": "120 ft",
           "c": true,
           "d": "Jusqu'à quatre lueurs de torche mobiles dans 120 ft. En action bonus, tu les déplaces de 60 ft. Elles restent à 20 ft les unes des autres.",
-          "lst": "barde",
           "ruleSource": "PHB 2024",
           "duration": "1 min",
-          "castTime": "1 action"
+          "castTime": "1 action",
+          "origin": "Magie drow"
         },
         {
           "n": "Lumière",
@@ -866,7 +875,8 @@
           "lst": "barde",
           "ruleSource": "PHB 2024",
           "duration": "1 h",
-          "castTime": "1 action"
+          "castTime": "1 action",
+          "pre": false
         },
         {
           "n": "Main du mage",
@@ -877,10 +887,10 @@
           "d": "Une main spectrale apparaît dans 30 ft pendant 1 minute. En action, tu la déplaces de 30 ft pour manipuler un objet de 10 lb maximum, ouvrir une porte ou un contenant, ranger ou sortir un objet.",
           "en": "Mage Hand",
           "gid": "s-mage-hand",
-          "lst": "barde",
           "ruleSource": "PHB 2024",
           "duration": "1 min",
-          "castTime": "1 action"
+          "castTime": "1 action",
+          "origin": "Télékinésiste"
         },
         {
           "n": "Réparation",
@@ -893,7 +903,8 @@
           "lst": "barde",
           "ruleSource": "PHB 2024",
           "duration": "Instantanée",
-          "castTime": "1 min"
+          "castTime": "1 min",
+          "pre": false
         },
         {
           "n": "Message",
@@ -906,7 +917,8 @@
           "lst": "barde",
           "ruleSource": "PHB 2024",
           "duration": "1 tour",
-          "castTime": "1 action"
+          "castTime": "1 action",
+          "pre": false
         },
         {
           "n": "Illusion mineure",
@@ -919,7 +931,8 @@
           "lst": "barde",
           "ruleSource": "PHB 2024",
           "duration": "1 min",
-          "castTime": "1 action"
+          "castTime": "1 action",
+          "pre": false
         },
         {
           "n": "Feu follet stellaire",
@@ -933,7 +946,8 @@
           "lst": "barde",
           "ruleSource": "PHB 2024",
           "duration": "Instantanée",
-          "castTime": "1 action"
+          "castTime": "1 action",
+          "pre": false
         },
         {
           "n": "Frappe infaillible",
@@ -947,7 +961,8 @@
           "lst": "barde",
           "ruleSource": "PHB 2024",
           "duration": "Instantanée",
-          "castTime": "1 action"
+          "castTime": "1 action",
+          "pre": false
         },
         {
           "n": "Amitié avec les animaux",
@@ -961,7 +976,8 @@
           "lst": "barde",
           "ruleSource": "PHB 2024",
           "duration": "24 h",
-          "castTime": "1 action"
+          "castTime": "1 action",
+          "pre": false
         },
         {
           "n": "Charme-personne",
@@ -975,7 +991,8 @@
           "lst": "barde",
           "ruleSource": "PHB 2024",
           "duration": "1 h",
-          "castTime": "1 action"
+          "castTime": "1 action",
+          "pre": false
         },
         {
           "n": "Couleurs dansantes",
@@ -990,7 +1007,8 @@
           "duration": "Instantanée",
           "castTime": "1 action",
           "area": "Cône 15 ft",
-          "save": "CON"
+          "save": "CON",
+          "pre": false
         },
         {
           "n": "Injonction",
@@ -1004,7 +1022,8 @@
           "ruleSource": "PHB 2024",
           "duration": "Instantanée",
           "castTime": "1 action",
-          "save": "SAG"
+          "save": "SAG",
+          "pre": false
         },
         {
           "n": "Compréhension des langues",
@@ -1018,7 +1037,8 @@
           "ritual": true,
           "ruleSource": "PHB 2024",
           "duration": "1 h",
-          "castTime": "1 action"
+          "castTime": "1 action",
+          "pre": false
         },
         {
           "n": "Soins",
@@ -1038,7 +1058,8 @@
           "lst": "barde",
           "ruleSource": "PHB 2024",
           "duration": "Instantanée",
-          "castTime": "1 action"
+          "castTime": "1 action",
+          "pre": false
         },
         {
           "n": "Détection de la magie",
@@ -1053,7 +1074,8 @@
           "ruleSource": "PHB 2024",
           "duration": "10 min",
           "castTime": "1 action",
-          "area": "Sphère 30 ft"
+          "area": "Sphère 30 ft",
+          "pre": false
         },
         {
           "n": "Déguisement",
@@ -1067,7 +1089,8 @@
           "lst": "barde",
           "ruleSource": "PHB 2024",
           "duration": "1 h",
-          "castTime": "1 action"
+          "castTime": "1 action",
+          "pre": false
         },
         {
           "n": "Secousse sismique",
@@ -1081,7 +1104,8 @@
           "ruleSource": "XGE (Legacy)",
           "duration": "Instantanée",
           "castTime": "1 action",
-          "save": "DEX"
+          "save": "DEX",
+          "pre": false
         },
         {
           "n": "Chute amortie",
@@ -1095,7 +1119,8 @@
           "lst": "barde",
           "ruleSource": "PHB 2024",
           "duration": "1 min",
-          "castTime": "1 réaction"
+          "castTime": "1 réaction",
+          "pre": false
         },
         {
           "n": "Héroïsme",
@@ -1108,7 +1133,8 @@
           "lst": "barde",
           "ruleSource": "PHB 2024",
           "duration": "1 min",
-          "castTime": "1 action"
+          "castTime": "1 action",
+          "pre": false
         },
         {
           "n": "Identification",
@@ -1122,7 +1148,8 @@
           "ritual": true,
           "ruleSource": "PHB 2024",
           "duration": "Instantanée",
-          "castTime": "1 min"
+          "castTime": "1 min",
+          "pre": false
         },
         {
           "n": "Écriture illusoire",
@@ -1136,7 +1163,8 @@
           "ritual": true,
           "ruleSource": "PHB 2024",
           "duration": "10 j",
-          "castTime": "1 min"
+          "castTime": "1 min",
+          "pre": false
         },
         {
           "n": "Grande foulée",
@@ -1149,7 +1177,8 @@
           "lst": "barde",
           "ruleSource": "PHB 2024",
           "duration": "1 h",
-          "castTime": "1 action"
+          "castTime": "1 action",
+          "pre": false
         },
         {
           "n": "Image silencieuse",
@@ -1163,7 +1192,8 @@
           "lst": "barde",
           "ruleSource": "PHB 2024",
           "duration": "10 min",
-          "castTime": "1 action"
+          "castTime": "1 action",
+          "pre": false
         },
         {
           "n": "Sommeil",
@@ -1177,7 +1207,8 @@
           "ruleSource": "PHB 2024",
           "duration": "1 min",
           "castTime": "1 action",
-          "save": "SAG"
+          "save": "SAG",
+          "pre": false
         },
         {
           "n": "Communication avec les animaux",
@@ -1191,7 +1222,8 @@
           "lst": "barde",
           "ruleSource": "PHB 2024",
           "duration": "10 min",
-          "castTime": "1 action"
+          "castTime": "1 action",
+          "pre": false
         },
         {
           "n": "Fou rire de Tasha",
@@ -1205,7 +1237,8 @@
           "ruleSource": "PHB 2024",
           "duration": "1 min",
           "castTime": "1 action",
-          "save": "SAG"
+          "save": "SAG",
+          "pre": false
         },
         {
           "n": "Vague tonnante",
@@ -1221,7 +1254,8 @@
           "duration": "Instantanée",
           "castTime": "1 action",
           "area": "Cube 15 ft",
-          "save": "CON"
+          "save": "CON",
+          "pre": false
         },
         {
           "n": "Serviteur invisible",
@@ -1235,7 +1269,8 @@
           "ritual": true,
           "ruleSource": "PHB 2024",
           "duration": "1 h",
-          "castTime": "1 action"
+          "castTime": "1 action",
+          "pre": false
         },
         {
           "n": "Aide",
@@ -1248,7 +1283,8 @@
           "lst": "barde",
           "ruleSource": "PHB 2024",
           "duration": "8 h",
-          "castTime": "1 action"
+          "castTime": "1 action",
+          "pre": false
         },
         {
           "n": "Messager animal",
@@ -1263,7 +1299,8 @@
           "ruleSource": "PHB 2024",
           "duration": "24 h",
           "castTime": "1 action",
-          "save": "CHA"
+          "save": "CHA",
+          "pre": false
         },
         {
           "n": "Cécité/Surdité",
@@ -1277,7 +1314,8 @@
           "ruleSource": "PHB 2024",
           "duration": "1 min",
           "castTime": "1 action",
-          "save": "CON"
+          "save": "CON",
+          "pre": false
         },
         {
           "n": "Détection des pensées",
@@ -1291,7 +1329,8 @@
           "ruleSource": "PHB 2024",
           "duration": "1 min",
           "castTime": "1 action",
-          "save": "SAG"
+          "save": "SAG",
+          "pre": false
         },
         {
           "n": "Amélioration de caractéristique",
@@ -1304,7 +1343,8 @@
           "lst": "barde",
           "ruleSource": "PHB 2024",
           "duration": "1 h",
-          "castTime": "1 action"
+          "castTime": "1 action",
+          "pre": false
         },
         {
           "n": "Agrandir/Rétrécir",
@@ -1318,7 +1358,8 @@
           "lst": "barde",
           "ruleSource": "PHB 2024",
           "duration": "1 min",
-          "castTime": "1 action"
+          "castTime": "1 action",
+          "pre": false
         },
         {
           "n": "Fascination",
@@ -1332,7 +1373,8 @@
           "ruleSource": "PHB 2024",
           "duration": "1 min",
           "castTime": "1 action",
-          "save": "SAG"
+          "save": "SAG",
+          "pre": false
         },
         {
           "n": "Immobilisation de personne",
@@ -1346,7 +1388,8 @@
           "lst": "barde",
           "ruleSource": "PHB 2024",
           "duration": "1 min",
-          "castTime": "1 action"
+          "castTime": "1 action",
+          "pre": false
         },
         {
           "n": "Ouverture",
@@ -1359,7 +1402,8 @@
           "lst": "barde",
           "ruleSource": "PHB 2024",
           "duration": "Instantanée",
-          "castTime": "1 action"
+          "castTime": "1 action",
+          "pre": false
         },
         {
           "n": "Restauration partielle",
@@ -1372,7 +1416,8 @@
           "lst": "barde",
           "ruleSource": "PHB 2024",
           "duration": "Instantanée",
-          "castTime": "1 action bonus"
+          "castTime": "1 action bonus",
+          "pre": false
         },
         {
           "n": "Localisation d'animaux ou de plantes",
@@ -1386,7 +1431,8 @@
           "lst": "barde",
           "ruleSource": "PHB 2024",
           "duration": "Instantanée",
-          "castTime": "1 action"
+          "castTime": "1 action",
+          "pre": false
         },
         {
           "n": "Bouche magique",
@@ -1400,7 +1446,8 @@
           "ritual": true,
           "ruleSource": "PHB 2024",
           "duration": "Jusqu'à dissipation",
-          "castTime": "1 min"
+          "castTime": "1 min",
+          "pre": false
         },
         {
           "n": "Image miroir",
@@ -1413,7 +1460,8 @@
           "lst": "barde",
           "ruleSource": "PHB 2024",
           "duration": "1 min",
-          "castTime": "1 action"
+          "castTime": "1 action",
+          "pre": false
         },
         {
           "n": "Pyrotechnie",
@@ -1427,7 +1475,8 @@
           "ruleSource": "XGE (Legacy)",
           "duration": "Instantanée",
           "castTime": "1 action",
-          "save": "CON"
+          "save": "CON",
+          "pre": false
         },
         {
           "n": "Fracassement",
@@ -1441,7 +1490,8 @@
           "ruleSource": "PHB 2024",
           "duration": "Instantanée",
           "castTime": "1 action",
-          "save": "CON"
+          "save": "CON",
+          "pre": false
         },
         {
           "n": "Écriture céleste",
@@ -1455,7 +1505,8 @@
           "ritual": true,
           "ruleSource": "XGE (Legacy)",
           "duration": "1 h",
-          "castTime": "1 action"
+          "castTime": "1 action",
+          "pre": false
         },
         {
           "n": "Suggestion",
@@ -1470,7 +1521,8 @@
           "ruleSource": "PHB 2024",
           "duration": "8 h",
           "castTime": "1 action",
-          "save": "SAG"
+          "save": "SAG",
+          "pre": false
         },
         {
           "n": "Vent protecteur",
@@ -1483,7 +1535,8 @@
           "lst": "barde",
           "ruleSource": "XGE (Legacy)",
           "duration": "10 min",
-          "castTime": "1 action"
+          "castTime": "1 action",
+          "pre": false
         },
         {
           "n": "Zone de vérité",
@@ -1497,7 +1550,8 @@
           "ruleSource": "PHB 2024",
           "duration": "10 min",
           "castTime": "1 action",
-          "save": "CHA"
+          "save": "CHA",
+          "pre": false
         },
         {
           "n": "Contact glacial",
@@ -1511,7 +1565,8 @@
           "ruleSource": "PHB 2024",
           "duration": "Instantanée",
           "castTime": "1 action",
-          "atk": true
+          "atk": true,
+          "pre": false
         },
         {
           "n": "Création de feu de camp",
@@ -1525,7 +1580,8 @@
           "ruleSource": "XGE (Legacy)",
           "duration": "1 min",
           "castTime": "1 action",
-          "save": "DEX"
+          "save": "DEX",
+          "pre": false
         },
         {
           "n": "Gelure",
@@ -1539,7 +1595,8 @@
           "lst": "occultiste",
           "ruleSource": "XGE (Legacy)",
           "duration": "Instantanée",
-          "castTime": "1 action"
+          "castTime": "1 action",
+          "pre": false
         },
         {
           "n": "Pierre magique",
@@ -1553,7 +1610,8 @@
           "ruleSource": "XGE (Legacy)",
           "duration": "1 min",
           "castTime": "1 action bonus",
-          "atk": true
+          "atk": true,
+          "pre": false
         },
         {
           "n": "Aspersion de poison",
@@ -1567,7 +1625,8 @@
           "lst": "occultiste",
           "ruleSource": "PHB 2024",
           "duration": "Instantanée",
-          "castTime": "1 action"
+          "castTime": "1 action",
+          "pre": false
         },
         {
           "n": "Coup de tonnerre",
@@ -1582,7 +1641,8 @@
           "duration": "Instantanée",
           "castTime": "1 action",
           "area": "Émanation 5 ft",
-          "save": "CON"
+          "save": "CON",
+          "pre": false
         },
         {
           "n": "Retraite expéditive",
@@ -1595,7 +1655,9 @@
           "lst": "occultiste",
           "ruleSource": "PHB 2024",
           "duration": "10 min",
-          "castTime": "1 action bonus"
+          "castTime": "1 action bonus",
+          "pre": false,
+          "pactonly": true
         },
         {
           "n": "Protection contre le mal et le bien",
@@ -1608,7 +1670,9 @@
           "lst": "occultiste",
           "ruleSource": "PHB 2024",
           "duration": "10 min",
-          "castTime": "1 action"
+          "castTime": "1 action",
+          "pre": false,
+          "pactonly": true
         },
         {
           "n": "Flou",
@@ -1621,7 +1685,9 @@
           "lst": "occultiste",
           "ruleSource": "PHB 2024",
           "duration": "1 min",
-          "castTime": "1 action"
+          "castTime": "1 action",
+          "pre": false,
+          "pactonly": true
         },
         {
           "n": "Châtiment lumineux",
@@ -1634,7 +1700,9 @@
           "lst": "occultiste",
           "ruleSource": "PHB (Legacy)",
           "duration": "1 min",
-          "castTime": "1 action bonus"
+          "castTime": "1 action bonus",
+          "pre": false,
+          "pactonly": true
         },
         {
           "n": "Entrave terrestre",
@@ -1648,7 +1716,9 @@
           "ruleSource": "XGE (Legacy)",
           "duration": "1 min",
           "castTime": "1 action",
-          "save": "FOR"
+          "save": "FOR",
+          "pre": false,
+          "pactonly": true
         },
         {
           "n": "Rayon d'affaiblissement",
@@ -1662,7 +1732,9 @@
           "ruleSource": "PHB 2024",
           "duration": "1 min",
           "castTime": "1 action",
-          "save": "CON"
+          "save": "CON",
+          "pre": false,
+          "pactonly": true
         },
         {
           "n": "Pattes d'araignée",
@@ -1675,7 +1747,9 @@
           "lst": "occultiste",
           "ruleSource": "PHB 2024",
           "duration": "1 h",
-          "castTime": "1 action"
+          "castTime": "1 action",
+          "pre": false,
+          "pactonly": true
         },
         {
           "n": "Clignotement",
@@ -1688,7 +1762,9 @@
           "lst": "occultiste",
           "ruleSource": "PHB 2024",
           "duration": "1 min",
-          "castTime": "1 action"
+          "castTime": "1 action",
+          "pre": false,
+          "pactonly": true
         },
         {
           "n": "Dissipation de la magie",
@@ -1701,7 +1777,9 @@
           "lst": "occultiste",
           "ruleSource": "PHB 2024",
           "duration": "Instantanée",
-          "castTime": "1 action"
+          "castTime": "1 action",
+          "pre": false,
+          "pactonly": true
         },
         {
           "n": "Terreur",
@@ -1716,7 +1794,9 @@
           "duration": "1 min",
           "castTime": "1 action",
           "area": "Cône 30 ft",
-          "save": "SAG"
+          "save": "SAG",
+          "pre": false,
+          "pactonly": true
         },
         {
           "n": "Vol",
@@ -1729,7 +1809,9 @@
           "lst": "occultiste",
           "ruleSource": "PHB 2024",
           "duration": "10 min",
-          "castTime": "1 action"
+          "castTime": "1 action",
+          "pre": false,
+          "pactonly": true
         },
         {
           "n": "Forme gazeuse",
@@ -1742,7 +1824,9 @@
           "lst": "occultiste",
           "ruleSource": "PHB 2024",
           "duration": "1 h",
-          "castTime": "1 action"
+          "castTime": "1 action",
+          "pre": false,
+          "pactonly": true
         },
         {
           "n": "Motif hypnotique",
@@ -1756,7 +1840,9 @@
           "ruleSource": "PHB 2024",
           "duration": "1 min",
           "castTime": "1 action",
-          "save": "SAG"
+          "save": "SAG",
+          "pre": false,
+          "pactonly": true
         },
         {
           "n": "Cercle magique",
@@ -1770,7 +1856,9 @@
           "ruleSource": "PHB 2024",
           "duration": "1 h",
           "castTime": "1 min",
-          "save": "CHA"
+          "save": "CHA",
+          "pre": false,
+          "pactonly": true
         },
         {
           "n": "Image majeure",
@@ -1783,7 +1871,9 @@
           "lst": "occultiste",
           "ruleSource": "PHB 2024",
           "duration": "10 min",
-          "castTime": "1 action"
+          "castTime": "1 action",
+          "pre": false,
+          "pactonly": true
         },
         {
           "n": "Délivrance des malédictions",
@@ -1796,7 +1886,9 @@
           "lst": "occultiste",
           "ruleSource": "PHB 2024",
           "duration": "Instantanée",
-          "castTime": "1 action"
+          "castTime": "1 action",
+          "pre": false,
+          "pactonly": true
         },
         {
           "n": "Don des langues",
@@ -1809,7 +1901,9 @@
           "lst": "occultiste",
           "ruleSource": "PHB 2024",
           "duration": "1 h",
-          "castTime": "1 action"
+          "castTime": "1 action",
+          "pre": false,
+          "pactonly": true
         },
         {
           "n": "Bannissement",
@@ -1823,7 +1917,9 @@
           "ruleSource": "PHB 2024",
           "duration": "1 min",
           "castTime": "1 action",
-          "save": "CHA"
+          "save": "CHA",
+          "pre": false,
+          "pactonly": true
         },
         {
           "n": "Charme-monstre",
@@ -1837,7 +1933,9 @@
           "lst": "occultiste",
           "ruleSource": "PHB 2024",
           "duration": "1 h",
-          "castTime": "1 action"
+          "castTime": "1 action",
+          "pre": false,
+          "pactonly": true
         },
         {
           "n": "Porte dimensionnelle",
@@ -1850,7 +1948,9 @@
           "lst": "occultiste",
           "ruleSource": "PHB 2024",
           "duration": "Instantanée",
-          "castTime": "1 action"
+          "castTime": "1 action",
+          "pre": false,
+          "pactonly": true
         },
         {
           "n": "Fléau élémentaire",
@@ -1864,7 +1964,9 @@
           "ruleSource": "XGE (Legacy)",
           "duration": "1 min",
           "castTime": "1 action",
-          "save": "CON"
+          "save": "CON",
+          "pre": false,
+          "pactonly": true
         },
         {
           "n": "Terrain hallucinatoire",
@@ -1877,7 +1979,9 @@
           "lst": "occultiste",
           "ruleSource": "PHB 2024",
           "duration": "24 h",
-          "castTime": "10 min"
+          "castTime": "10 min",
+          "pre": false,
+          "pactonly": true
         },
         {
           "n": "Tueur fantasmagorique",
@@ -1891,7 +1995,9 @@
           "ruleSource": "PHB 2024",
           "duration": "1 min",
           "castTime": "1 action",
-          "save": "SAG"
+          "save": "SAG",
+          "pre": false,
+          "pactonly": true
         }
       ],
       "dc": 17,
@@ -3387,6 +3493,16 @@
           4,
           "P"
         ]
+      ],
+      "defenses": [
+        [
+          "immune",
+          "Sommeil magique"
+        ],
+        [
+          "resist",
+          "Nécrotique"
+        ]
       ]
     },
     {
@@ -3530,7 +3646,7 @@
         {
           "n": "Main du mage",
           "lv": 0,
-          "t": "Action",
+          "t": "Action bonus",
           "p": "30 ft",
           "c": false,
           "d": "Une main spectrale apparaît dans 30 ft pendant 1 minute. En action, tu la déplaces de 30 ft pour manipuler un objet de 10 lb maximum, ouvrir une porte ou un contenant, ranger ou sortir un objet.",
@@ -3538,7 +3654,8 @@
           "gid": "s-mage-hand",
           "ruleSource": "PHB 2024",
           "duration": "1 min",
-          "castTime": "1 action"
+          "castTime": "1 action",
+          "origin": "Main du mage améliorée"
         },
         {
           "n": "Chute amortie",
@@ -3658,7 +3775,8 @@
           "gid": "s-misty-step",
           "ruleSource": "PHB 2024",
           "duration": "Instantanée",
-          "castTime": "1 action bonus"
+          "castTime": "1 action bonus",
+          "origin": "Escroc arcanique"
         },
         {
           "n": "Invisibilité",
@@ -3697,7 +3815,8 @@
           "ruleSource": "PHB 2024",
           "duration": "Instantanée",
           "castTime": "1 action",
-          "save": "DEX"
+          "save": "DEX",
+          "pre": false
         },
         {
           "n": "Contact glacial",
@@ -3711,7 +3830,8 @@
           "ruleSource": "PHB 2024",
           "duration": "Instantanée",
           "castTime": "1 action",
-          "atk": true
+          "atk": true,
+          "pre": false
         },
         {
           "n": "Contrôle des flammes",
@@ -3724,7 +3844,8 @@
           "lst": "roublard",
           "ruleSource": "XGE (Legacy)",
           "duration": "Instantanée / 1 h",
-          "castTime": "1 action"
+          "castTime": "1 action",
+          "pre": false
         },
         {
           "n": "Création de feu de camp",
@@ -3738,7 +3859,8 @@
           "ruleSource": "XGE (Legacy)",
           "duration": "1 min",
           "castTime": "1 action",
-          "save": "DEX"
+          "save": "DEX",
+          "pre": false
         },
         {
           "n": "Lumières dansantes",
@@ -3751,7 +3873,8 @@
           "lst": "roublard",
           "ruleSource": "PHB 2024",
           "duration": "1 min",
-          "castTime": "1 action"
+          "castTime": "1 action",
+          "pre": false
         },
         {
           "n": "Élémentalisme",
@@ -3764,7 +3887,8 @@
           "lst": "roublard",
           "ruleSource": "PHB 2024",
           "duration": "Instantanée",
-          "castTime": "1 action"
+          "castTime": "1 action",
+          "pre": false
         },
         {
           "n": "Trait de feu",
@@ -3778,7 +3902,8 @@
           "lst": "roublard",
           "ruleSource": "PHB 2024",
           "duration": "Instantanée",
-          "castTime": "1 action"
+          "castTime": "1 action",
+          "pre": false
         },
         {
           "n": "Gelure",
@@ -3792,7 +3917,8 @@
           "lst": "roublard",
           "ruleSource": "XGE (Legacy)",
           "duration": "Instantanée",
-          "castTime": "1 action"
+          "castTime": "1 action",
+          "pre": false
         },
         {
           "n": "Lumière",
@@ -3805,7 +3931,8 @@
           "lst": "roublard",
           "ruleSource": "PHB 2024",
           "duration": "1 h",
-          "castTime": "1 action"
+          "castTime": "1 action",
+          "pre": false
         },
         {
           "n": "Réparation",
@@ -3818,7 +3945,8 @@
           "lst": "roublard",
           "ruleSource": "PHB 2024",
           "duration": "Instantanée",
-          "castTime": "1 min"
+          "castTime": "1 min",
+          "pre": false
         },
         {
           "n": "Message",
@@ -3831,7 +3959,8 @@
           "lst": "roublard",
           "ruleSource": "PHB 2024",
           "duration": "1 tour",
-          "castTime": "1 action"
+          "castTime": "1 action",
+          "pre": false
         },
         {
           "n": "Illusion mineure",
@@ -3844,7 +3973,8 @@
           "lst": "roublard",
           "ruleSource": "PHB 2024",
           "duration": "1 min",
-          "castTime": "1 action"
+          "castTime": "1 action",
+          "pre": false
         },
         {
           "n": "Façonnage de la terre",
@@ -3857,7 +3987,8 @@
           "lst": "roublard",
           "ruleSource": "XGE (Legacy)",
           "duration": "Instantanée / 1 h",
-          "castTime": "1 action"
+          "castTime": "1 action",
+          "pre": false
         },
         {
           "n": "Aspersion de poison",
@@ -3871,7 +4002,8 @@
           "lst": "roublard",
           "ruleSource": "PHB 2024",
           "duration": "Instantanée",
-          "castTime": "1 action"
+          "castTime": "1 action",
+          "pre": false
         },
         {
           "n": "Prestidigitation",
@@ -3884,7 +4016,8 @@
           "lst": "roublard",
           "ruleSource": "PHB 2024",
           "duration": "1 h",
-          "castTime": "1 action"
+          "castTime": "1 action",
+          "pre": false
         },
         {
           "n": "Rayon de givre",
@@ -3898,7 +4031,8 @@
           "ruleSource": "PHB 2024",
           "duration": "Instantanée",
           "castTime": "1 action",
-          "atk": true
+          "atk": true,
+          "pre": false
         },
         {
           "n": "Façonnage de l'eau",
@@ -3911,7 +4045,8 @@
           "lst": "roublard",
           "ruleSource": "XGE (Legacy)",
           "duration": "Instantanée / 1 h",
-          "castTime": "1 action"
+          "castTime": "1 action",
+          "pre": false
         },
         {
           "n": "Poigne électrique",
@@ -3925,7 +4060,8 @@
           "ruleSource": "PHB 2024",
           "duration": "Instantanée",
           "castTime": "1 action",
-          "atk": true
+          "atk": true,
+          "pre": false
         },
         {
           "n": "Coup de tonnerre",
@@ -3940,7 +4076,8 @@
           "duration": "Instantanée",
           "castTime": "1 action",
           "area": "Émanation 5 ft",
-          "save": "CON"
+          "save": "CON",
+          "pre": false
         },
         {
           "n": "Absorption des éléments",
@@ -3953,7 +4090,8 @@
           "lst": "roublard",
           "ruleSource": "XGE (Legacy)",
           "duration": "1 tour",
-          "castTime": "1 réaction"
+          "castTime": "1 réaction",
+          "pre": false
         },
         {
           "n": "Alarme",
@@ -3967,7 +4105,8 @@
           "ritual": true,
           "ruleSource": "PHB 2024",
           "duration": "8 h",
-          "castTime": "1 min"
+          "castTime": "1 min",
+          "pre": false
         },
         {
           "n": "Mains brûlantes",
@@ -3982,7 +4121,8 @@
           "ruleSource": "PHB 2024",
           "duration": "Instantanée",
           "castTime": "1 action",
-          "area": "Cône 15 ft"
+          "area": "Cône 15 ft",
+          "pre": false
         },
         {
           "n": "Catapulte",
@@ -3996,7 +4136,8 @@
           "ruleSource": "XGE (Legacy)",
           "duration": "Instantanée",
           "castTime": "1 action",
-          "save": "DEX"
+          "save": "DEX",
+          "pre": false
         },
         {
           "n": "Charme-personne",
@@ -4010,7 +4151,8 @@
           "lst": "roublard",
           "ruleSource": "PHB 2024",
           "duration": "1 h",
-          "castTime": "1 action"
+          "castTime": "1 action",
+          "pre": false
         },
         {
           "n": "Orbe chromatique",
@@ -4024,7 +4166,8 @@
           "ruleSource": "PHB 2024",
           "duration": "Instantanée",
           "castTime": "1 action",
-          "atk": true
+          "atk": true,
+          "pre": false
         },
         {
           "n": "Couleurs dansantes",
@@ -4039,7 +4182,8 @@
           "duration": "Instantanée",
           "castTime": "1 action",
           "area": "Cône 15 ft",
-          "save": "CON"
+          "save": "CON",
+          "pre": false
         },
         {
           "n": "Compréhension des langues",
@@ -4053,7 +4197,8 @@
           "ritual": true,
           "ruleSource": "PHB 2024",
           "duration": "1 h",
-          "castTime": "1 action"
+          "castTime": "1 action",
+          "pre": false
         },
         {
           "n": "Détection de la magie",
@@ -4068,7 +4213,8 @@
           "ruleSource": "PHB 2024",
           "duration": "10 min",
           "castTime": "1 action",
-          "area": "Sphère 30 ft"
+          "area": "Sphère 30 ft",
+          "pre": false
         },
         {
           "n": "Secousse sismique",
@@ -4082,7 +4228,8 @@
           "ruleSource": "XGE (Legacy)",
           "duration": "Instantanée",
           "castTime": "1 action",
-          "save": "DEX"
+          "save": "DEX",
+          "pre": false
         },
         {
           "n": "Retraite expéditive",
@@ -4095,7 +4242,8 @@
           "lst": "roublard",
           "ruleSource": "PHB 2024",
           "duration": "10 min",
-          "castTime": "1 action bonus"
+          "castTime": "1 action bonus",
+          "pre": false
         },
         {
           "n": "Simulacre de vie",
@@ -4108,7 +4256,8 @@
           "lst": "roublard",
           "ruleSource": "PHB 2024",
           "duration": "Instantanée",
-          "castTime": "1 action"
+          "castTime": "1 action",
+          "pre": false
         },
         {
           "n": "Appel de familier",
@@ -4122,7 +4271,8 @@
           "ritual": true,
           "ruleSource": "PHB 2024",
           "duration": "Instantanée",
-          "castTime": "1 h"
+          "castTime": "1 h",
+          "pre": false
         },
         {
           "n": "Nappe de brouillard",
@@ -4135,7 +4285,8 @@
           "lst": "roublard",
           "ruleSource": "PHB 2024",
           "duration": "1 h",
-          "castTime": "1 action"
+          "castTime": "1 action",
+          "pre": false
         },
         {
           "n": "Graisse",
@@ -4149,7 +4300,8 @@
           "ruleSource": "PHB 2024",
           "duration": "1 min",
           "castTime": "1 action",
-          "save": "DEX"
+          "save": "DEX",
+          "pre": false
         },
         {
           "n": "Couteau de glace",
@@ -4164,7 +4316,8 @@
           "lst": "roublard",
           "ruleSource": "PHB 2024",
           "duration": "Instantanée",
-          "castTime": "1 action"
+          "castTime": "1 action",
+          "pre": false
         },
         {
           "n": "Identification",
@@ -4178,7 +4331,8 @@
           "ritual": true,
           "ruleSource": "PHB 2024",
           "duration": "Instantanée",
-          "castTime": "1 min"
+          "castTime": "1 min",
+          "pre": false
         },
         {
           "n": "Écriture illusoire",
@@ -4192,7 +4346,8 @@
           "ritual": true,
           "ruleSource": "PHB 2024",
           "duration": "10 j",
-          "castTime": "1 min"
+          "castTime": "1 min",
+          "pre": false
         },
         {
           "n": "Saut",
@@ -4205,7 +4360,8 @@
           "lst": "roublard",
           "ruleSource": "PHB 2024",
           "duration": "1 min",
-          "castTime": "1 action bonus"
+          "castTime": "1 action bonus",
+          "pre": false
         },
         {
           "n": "Grande foulée",
@@ -4218,7 +4374,8 @@
           "lst": "roublard",
           "ruleSource": "PHB 2024",
           "duration": "1 h",
-          "castTime": "1 action"
+          "castTime": "1 action",
+          "pre": false
         },
         {
           "n": "Armure du mage",
@@ -4231,7 +4388,8 @@
           "lst": "roublard",
           "ruleSource": "PHB 2024",
           "duration": "8 h",
-          "castTime": "1 action"
+          "castTime": "1 action",
+          "pre": false
         },
         {
           "n": "Protection contre le mal et le bien",
@@ -4244,7 +4402,8 @@
           "lst": "roublard",
           "ruleSource": "PHB 2024",
           "duration": "10 min",
-          "castTime": "1 action"
+          "castTime": "1 action",
+          "pre": false
         },
         {
           "n": "Rayon empoisonné",
@@ -4258,7 +4417,8 @@
           "ruleSource": "PHB 2024",
           "duration": "Instantanée",
           "castTime": "1 action",
-          "atk": true
+          "atk": true,
+          "pre": false
         },
         {
           "n": "Sommeil",
@@ -4272,7 +4432,8 @@
           "ruleSource": "PHB 2024",
           "duration": "1 min",
           "castTime": "1 action",
-          "save": "SAG"
+          "save": "SAG",
+          "pre": false
         },
         {
           "n": "Fou rire de Tasha",
@@ -4286,7 +4447,8 @@
           "ruleSource": "PHB 2024",
           "duration": "1 min",
           "castTime": "1 action",
-          "save": "SAG"
+          "save": "SAG",
+          "pre": false
         },
         {
           "n": "Disque flottant de Tenser",
@@ -4300,7 +4462,8 @@
           "ritual": true,
           "ruleSource": "PHB 2024",
           "duration": "1 h",
-          "castTime": "1 action"
+          "castTime": "1 action",
+          "pre": false
         },
         {
           "n": "Serviteur invisible",
@@ -4314,7 +4477,8 @@
           "ritual": true,
           "ruleSource": "PHB 2024",
           "duration": "1 h",
-          "castTime": "1 action"
+          "castTime": "1 action",
+          "pre": false
         },
         {
           "n": "Brûlure d'Aganazzar",
@@ -4328,7 +4492,8 @@
           "ruleSource": "XGE (Legacy)",
           "duration": "Instantanée",
           "castTime": "1 action",
-          "save": "DEX"
+          "save": "DEX",
+          "pre": false
         },
         {
           "n": "Modification d'apparence",
@@ -4342,7 +4507,8 @@
           "lst": "roublard",
           "ruleSource": "PHB 2024",
           "duration": "1 h",
-          "castTime": "1 action"
+          "castTime": "1 action",
+          "pre": false
         },
         {
           "n": "Verrou magique",
@@ -4355,7 +4521,8 @@
           "lst": "roublard",
           "ruleSource": "PHB 2024",
           "duration": "Jusqu'à dissipation",
-          "castTime": "1 action"
+          "castTime": "1 action",
+          "pre": false
         },
         {
           "n": "Augure",
@@ -4369,7 +4536,8 @@
           "lst": "roublard",
           "ruleSource": "PHB 2024",
           "duration": "Instantanée",
-          "castTime": "1 min"
+          "castTime": "1 min",
+          "pre": false
         },
         {
           "n": "Cécité/Surdité",
@@ -4383,7 +4551,8 @@
           "ruleSource": "PHB 2024",
           "duration": "1 min",
           "castTime": "1 action",
-          "save": "CON"
+          "save": "CON",
+          "pre": false
         },
         {
           "n": "Flou",
@@ -4396,7 +4565,8 @@
           "lst": "roublard",
           "ruleSource": "PHB 2024",
           "duration": "1 min",
-          "castTime": "1 action"
+          "castTime": "1 action",
+          "pre": false
         },
         {
           "n": "Flamme éternelle",
@@ -4409,7 +4579,8 @@
           "lst": "roublard",
           "ruleSource": "PHB 2024",
           "duration": "Jusqu'à dissipation",
-          "castTime": "1 action"
+          "castTime": "1 action",
+          "pre": false
         },
         {
           "n": "Ténèbres",
@@ -4423,7 +4594,8 @@
           "lst": "roublard",
           "ruleSource": "PHB 2024",
           "duration": "10 min",
-          "castTime": "1 action"
+          "castTime": "1 action",
+          "pre": false
         },
         {
           "n": "Vision dans le noir",
@@ -4436,7 +4608,8 @@
           "lst": "roublard",
           "ruleSource": "PHB 2024",
           "duration": "8 h",
-          "castTime": "1 action"
+          "castTime": "1 action",
+          "pre": false
         },
         {
           "n": "Détection des pensées",
@@ -4450,7 +4623,8 @@
           "ruleSource": "PHB 2024",
           "duration": "1 min",
           "castTime": "1 action",
-          "save": "SAG"
+          "save": "SAG",
+          "pre": false
         },
         {
           "n": "Souffle du dragon",
@@ -4464,7 +4638,8 @@
           "ruleSource": "PHB 2024",
           "duration": "1 min",
           "castTime": "1 action bonus",
-          "save": "DEX"
+          "save": "DEX",
+          "pre": false
         },
         {
           "n": "Diable de poussière",
@@ -4478,7 +4653,8 @@
           "lst": "roublard",
           "ruleSource": "XGE (Legacy)",
           "duration": "1 min",
-          "castTime": "1 action"
+          "castTime": "1 action",
+          "pre": false
         },
         {
           "n": "Entrave terrestre",
@@ -4492,7 +4668,8 @@
           "ruleSource": "XGE (Legacy)",
           "duration": "1 min",
           "castTime": "1 action",
-          "save": "FOR"
+          "save": "FOR",
+          "pre": false
         },
         {
           "n": "Amélioration de caractéristique",
@@ -4505,7 +4682,8 @@
           "lst": "roublard",
           "ruleSource": "PHB 2024",
           "duration": "1 h",
-          "castTime": "1 action"
+          "castTime": "1 action",
+          "pre": false
         },
         {
           "n": "Agrandir/Rétrécir",
@@ -4519,7 +4697,8 @@
           "lst": "roublard",
           "ruleSource": "PHB 2024",
           "duration": "1 min",
-          "castTime": "1 action"
+          "castTime": "1 action",
+          "pre": false
         },
         {
           "n": "Sphère de feu",
@@ -4533,7 +4712,8 @@
           "lst": "roublard",
           "ruleSource": "PHB 2024",
           "duration": "1 min",
-          "castTime": "1 action"
+          "castTime": "1 action",
+          "pre": false
         },
         {
           "n": "Repos paisible",
@@ -4547,7 +4727,8 @@
           "ritual": true,
           "ruleSource": "PHB 2024",
           "duration": "10 j",
-          "castTime": "1 action"
+          "castTime": "1 action",
+          "pre": false
         },
         {
           "n": "Bourrasque",
@@ -4562,7 +4743,8 @@
           "ruleSource": "PHB 2024",
           "duration": "1 min",
           "castTime": "1 action",
-          "area": "Ligne 60 ft"
+          "area": "Ligne 60 ft",
+          "pre": false
         },
         {
           "n": "Immobilisation de personne",
@@ -4576,7 +4758,8 @@
           "lst": "roublard",
           "ruleSource": "PHB 2024",
           "duration": "1 min",
-          "castTime": "1 action"
+          "castTime": "1 action",
+          "pre": false
         },
         {
           "n": "Ouverture",
@@ -4589,7 +4772,8 @@
           "lst": "roublard",
           "ruleSource": "PHB 2024",
           "duration": "Instantanée",
-          "castTime": "1 action"
+          "castTime": "1 action",
+          "pre": false
         },
         {
           "n": "Lévitation",
@@ -4603,7 +4787,8 @@
           "ruleSource": "PHB 2024",
           "duration": "10 min",
           "castTime": "1 action",
-          "save": "CON"
+          "save": "CON",
+          "pre": false
         },
         {
           "n": "Localisation d'objet",
@@ -4617,7 +4802,8 @@
           "lst": "roublard",
           "ruleSource": "PHB 2024",
           "duration": "10 min",
-          "castTime": "1 action"
+          "castTime": "1 action",
+          "pre": false
         },
         {
           "n": "Bouche magique",
@@ -4631,7 +4817,8 @@
           "ritual": true,
           "ruleSource": "PHB 2024",
           "duration": "Jusqu'à dissipation",
-          "castTime": "1 min"
+          "castTime": "1 min",
+          "pre": false
         },
         {
           "n": "Arme magique",
@@ -4644,7 +4831,8 @@
           "lst": "roublard",
           "ruleSource": "PHB 2024",
           "duration": "1 h",
-          "castTime": "1 action bonus"
+          "castTime": "1 action bonus",
+          "pre": false
         },
         {
           "n": "Poigne de terre de Maximilien",
@@ -4658,7 +4846,8 @@
           "ruleSource": "XGE (Legacy)",
           "duration": "1 min",
           "castTime": "1 action",
-          "save": "FOR"
+          "save": "FOR",
+          "pre": false
         },
         {
           "n": "Flèche acide de Melf",
@@ -4672,7 +4861,8 @@
           "ruleSource": "PHB 2024",
           "duration": "Instantanée",
           "castTime": "1 action",
-          "atk": true
+          "atk": true,
+          "pre": false
         },
         {
           "n": "Pointe mentale",
@@ -4687,7 +4877,8 @@
           "ruleSource": "PHB 2024",
           "duration": "1 h",
           "castTime": "1 action",
-          "save": "SAG"
+          "save": "SAG",
+          "pre": false
         },
         {
           "n": "Image miroir",
@@ -4700,7 +4891,8 @@
           "lst": "roublard",
           "ruleSource": "PHB 2024",
           "duration": "1 min",
-          "castTime": "1 action"
+          "castTime": "1 action",
+          "pre": false
         },
         {
           "n": "Aura magique de Nystul",
@@ -4713,7 +4905,8 @@
           "lst": "roublard",
           "ruleSource": "PHB 2024",
           "duration": "24 h",
-          "castTime": "1 action"
+          "castTime": "1 action",
+          "pre": false
         },
         {
           "n": "Force fantasmagorique",
@@ -4728,7 +4921,8 @@
           "ruleSource": "PHB 2024",
           "duration": "1 min",
           "castTime": "1 action",
-          "save": "INT"
+          "save": "INT",
+          "pre": false
         },
         {
           "n": "Pyrotechnie",
@@ -4742,7 +4936,8 @@
           "ruleSource": "XGE (Legacy)",
           "duration": "Instantanée",
           "castTime": "1 action",
-          "save": "CON"
+          "save": "CON",
+          "pre": false
         },
         {
           "n": "Rayon d'affaiblissement",
@@ -4756,7 +4951,8 @@
           "ruleSource": "PHB 2024",
           "duration": "1 min",
           "castTime": "1 action",
-          "save": "CON"
+          "save": "CON",
+          "pre": false
         },
         {
           "n": "Corde enchantée",
@@ -4769,7 +4965,8 @@
           "lst": "roublard",
           "ruleSource": "PHB 2024",
           "duration": "1 h",
-          "castTime": "1 action"
+          "castTime": "1 action",
+          "pre": false
         },
         {
           "n": "Rayon ardent",
@@ -4783,7 +4980,8 @@
           "lst": "roublard",
           "ruleSource": "PHB 2024",
           "duration": "Instantanée",
-          "castTime": "1 action"
+          "castTime": "1 action",
+          "pre": false
         },
         {
           "n": "Détection de l'invisibilité",
@@ -4797,7 +4995,8 @@
           "lst": "roublard",
           "ruleSource": "PHB 2024",
           "duration": "1 h",
-          "castTime": "1 action"
+          "castTime": "1 action",
+          "pre": false
         },
         {
           "n": "Fracassement",
@@ -4811,7 +5010,8 @@
           "ruleSource": "PHB 2024",
           "duration": "Instantanée",
           "castTime": "1 action",
-          "save": "CON"
+          "save": "CON",
+          "pre": false
         },
         {
           "n": "Écriture céleste",
@@ -4825,7 +5025,8 @@
           "ritual": true,
           "ruleSource": "XGE (Legacy)",
           "duration": "1 h",
-          "castTime": "1 action"
+          "castTime": "1 action",
+          "pre": false
         },
         {
           "n": "Nuée de boules de neige de Snilloc",
@@ -4839,7 +5040,8 @@
           "ruleSource": "XGE (Legacy)",
           "duration": "Instantanée",
           "castTime": "1 action",
-          "save": "DEX"
+          "save": "DEX",
+          "pre": false
         },
         {
           "n": "Pattes d'araignée",
@@ -4852,7 +5054,8 @@
           "lst": "roublard",
           "ruleSource": "PHB 2024",
           "duration": "1 h",
-          "castTime": "1 action"
+          "castTime": "1 action",
+          "pre": false
         },
         {
           "n": "Vent protecteur",
@@ -4865,7 +5068,8 @@
           "lst": "roublard",
           "ruleSource": "XGE (Legacy)",
           "duration": "10 min",
-          "castTime": "1 action"
+          "castTime": "1 action",
+          "pre": false
         },
         {
           "n": "Toile d'araignée",
@@ -4879,7 +5083,8 @@
           "ruleSource": "PHB 2024",
           "duration": "1 h",
           "castTime": "1 action",
-          "save": "DEX"
+          "save": "DEX",
+          "pre": false
         }
       ],
       "dc": 16,
@@ -6185,7 +6390,13 @@
           "P"
         ]
       ],
-      "reliable": 1
+      "reliable": 1,
+      "defenses": [
+        [
+          "immune",
+          "Sommeil magique"
+        ]
+      ]
     },
     {
       "id": "harfang",
@@ -6397,10 +6608,10 @@
           "c": false,
           "d": "Un murmure à une créature dans 120 ft, qu'elle seule entend, avec réponse possible. Traverse les obstacles mais pas la pierre épaisse ni les métaux.",
           "en": "Message",
-          "lst": "druide",
           "ruleSource": "PHB 2024",
           "duration": "1 tour",
-          "castTime": "1 action"
+          "castTime": "1 action",
+          "origin": "Ordre primordial"
         },
         {
           "n": "Druidisme",
@@ -6410,10 +6621,10 @@
           "c": false,
           "d": "Effets mineurs de la nature : prédire la météo du jour, faire fleurir une plante, créer un effet sensoriel inoffensif ou allumer ou éteindre une petite flamme.",
           "en": "Druidcraft",
-          "lst": "druide",
           "ruleSource": "PHB 2024",
           "duration": "Instantanée",
-          "castTime": "1 action"
+          "castTime": "1 action",
+          "origin": "Lignée elfique"
         },
         {
           "n": "Mot de guérison",
@@ -6485,7 +6696,7 @@
         {
           "n": "Appel de familier",
           "lv": 1,
-          "t": "Hors combat",
+          "t": "Action",
           "p": "10 ft",
           "c": false,
           "d": "Incantation d'une heure : tu invoques un esprit sous forme de bête qui te sert de familier, avec ses traits (relié par télépathie, il peut délivrer des sorts de contact). Rituel.",
@@ -6494,10 +6705,11 @@
             "n": 1
           },
           "en": "Find Familiar",
-          "ritual": true,
+          "ritual": false,
           "ruleSource": "PHB 2024",
           "duration": "Instantanée",
-          "castTime": "1 h"
+          "castTime": "1 action",
+          "origin": "Compagnon sauvage"
         },
         {
           "n": "Amitié avec les animaux",
@@ -6511,7 +6723,8 @@
           "lst": "druide",
           "ruleSource": "PHB 2024",
           "duration": "24 h",
-          "castTime": "1 action"
+          "castTime": "1 action",
+          "pre": false
         },
         {
           "n": "Charme-personne",
@@ -6525,7 +6738,8 @@
           "lst": "druide",
           "ruleSource": "PHB 2024",
           "duration": "1 h",
-          "castTime": "1 action"
+          "castTime": "1 action",
+          "pre": false
         },
         {
           "n": "Création ou destruction d'eau",
@@ -6538,7 +6752,8 @@
           "lst": "druide",
           "ruleSource": "PHB 2024",
           "duration": "Instantanée",
-          "castTime": "1 action"
+          "castTime": "1 action",
+          "pre": false
         },
         {
           "n": "Soins",
@@ -6558,7 +6773,8 @@
           "lst": "druide",
           "ruleSource": "PHB 2024",
           "duration": "Instantanée",
-          "castTime": "1 action"
+          "castTime": "1 action",
+          "pre": false
         },
         {
           "n": "Détection de la magie",
@@ -6573,7 +6789,8 @@
           "ruleSource": "PHB 2024",
           "duration": "10 min",
           "castTime": "1 action",
-          "area": "Sphère 30 ft"
+          "area": "Sphère 30 ft",
+          "pre": false
         },
         {
           "n": "Détection du poison et des maladies",
@@ -6588,7 +6805,8 @@
           "ruleSource": "PHB 2024",
           "duration": "10 min",
           "castTime": "1 action",
-          "area": "Sphère 30 ft"
+          "area": "Sphère 30 ft",
+          "pre": false
         },
         {
           "n": "Enchevêtrement",
@@ -6602,7 +6820,8 @@
           "lst": "druide",
           "ruleSource": "PHB 2024",
           "duration": "1 min",
-          "castTime": "1 action"
+          "castTime": "1 action",
+          "pre": false
         },
         {
           "n": "Lueurs féeriques",
@@ -6617,7 +6836,8 @@
           "lst": "druide",
           "ruleSource": "PHB 2024",
           "duration": "1 min",
-          "castTime": "1 action"
+          "castTime": "1 action",
+          "pre": false
         },
         {
           "n": "Nappe de brouillard",
@@ -6630,7 +6850,8 @@
           "lst": "druide",
           "ruleSource": "PHB 2024",
           "duration": "1 h",
-          "castTime": "1 action"
+          "castTime": "1 action",
+          "pre": false
         },
         {
           "n": "Baies nourricières",
@@ -6643,7 +6864,8 @@
           "lst": "druide",
           "ruleSource": "PHB 2024",
           "duration": "24 h",
-          "castTime": "1 action"
+          "castTime": "1 action",
+          "pre": false
         },
         {
           "n": "Couteau de glace",
@@ -6658,7 +6880,8 @@
           "lst": "druide",
           "ruleSource": "PHB 2024",
           "duration": "Instantanée",
-          "castTime": "1 action"
+          "castTime": "1 action",
+          "pre": false
         },
         {
           "n": "Saut",
@@ -6671,7 +6894,8 @@
           "lst": "druide",
           "ruleSource": "PHB 2024",
           "duration": "1 min",
-          "castTime": "1 action bonus"
+          "castTime": "1 action bonus",
+          "pre": false
         },
         {
           "n": "Protection contre le mal et le bien",
@@ -6684,7 +6908,8 @@
           "lst": "druide",
           "ruleSource": "PHB 2024",
           "duration": "10 min",
-          "castTime": "1 action"
+          "castTime": "1 action",
+          "pre": false
         },
         {
           "n": "Purification de nourriture et d'eau",
@@ -6698,7 +6923,8 @@
           "lst": "druide",
           "ruleSource": "PHB 2024",
           "duration": "Instantanée",
-          "castTime": "1 action"
+          "castTime": "1 action",
+          "pre": false
         },
         {
           "n": "Vague tonnante",
@@ -6714,7 +6940,8 @@
           "ruleSource": "PHB 2024",
           "duration": "Instantanée",
           "castTime": "1 action",
-          "area": "Cube 15 ft"
+          "area": "Cube 15 ft",
+          "pre": false
         },
         {
           "n": "Immobilisation de personne",
@@ -6728,7 +6955,8 @@
           "lst": "druide",
           "ruleSource": "PHB 2024",
           "duration": "1 min",
-          "castTime": "1 action"
+          "castTime": "1 action",
+          "pre": false
         },
         {
           "n": "Diable de poussière",
@@ -6835,7 +7063,8 @@
           "ruleSource": "PHB 2024",
           "duration": "24 h",
           "castTime": "1 action",
-          "save": "CHA"
+          "save": "CHA",
+          "pre": false
         },
         {
           "n": "Peau d'écorce",
@@ -6848,7 +7077,8 @@
           "lst": "druide",
           "ruleSource": "PHB 2024",
           "duration": "1 h",
-          "castTime": "1 action bonus"
+          "castTime": "1 action bonus",
+          "pre": false
         },
         {
           "n": "Sens animal",
@@ -6861,7 +7091,8 @@
           "en": "Beast Sense",
           "ruleSource": "PHB 2024",
           "duration": "1 h",
-          "castTime": "1 action"
+          "castTime": "1 action",
+          "loadoutHidden": true
         },
         {
           "n": "Flamme éternelle",
@@ -6874,7 +7105,8 @@
           "lst": "druide",
           "ruleSource": "PHB 2024",
           "duration": "Jusqu'à dissipation",
-          "castTime": "1 action"
+          "castTime": "1 action",
+          "pre": false
         },
         {
           "n": "Vision dans le noir",
@@ -6887,7 +7119,8 @@
           "lst": "druide",
           "ruleSource": "PHB 2024",
           "duration": "8 h",
-          "castTime": "1 action"
+          "castTime": "1 action",
+          "pre": false
         },
         {
           "n": "Amélioration de caractéristique",
@@ -6900,7 +7133,8 @@
           "lst": "druide",
           "ruleSource": "PHB 2024",
           "duration": "1 h",
-          "castTime": "1 action"
+          "castTime": "1 action",
+          "pre": false
         },
         {
           "n": "Agrandir/Rétrécir",
@@ -6914,7 +7148,8 @@
           "lst": "druide",
           "ruleSource": "PHB 2024",
           "duration": "1 min",
-          "castTime": "1 action"
+          "castTime": "1 action",
+          "pre": false
         },
         {
           "n": "Détection des pièges",
@@ -6927,7 +7162,8 @@
           "lst": "druide",
           "ruleSource": "PHB 2024",
           "duration": "Instantanée",
-          "castTime": "1 action"
+          "castTime": "1 action",
+          "pre": false
         },
         {
           "n": "Lame de feu",
@@ -6941,7 +7177,8 @@
           "lst": "druide",
           "ruleSource": "PHB 2024",
           "duration": "10 min",
-          "castTime": "1 action bonus"
+          "castTime": "1 action bonus",
+          "pre": false
         },
         {
           "n": "Sphère de feu",
@@ -6955,7 +7192,8 @@
           "lst": "druide",
           "ruleSource": "PHB 2024",
           "duration": "1 min",
-          "castTime": "1 action"
+          "castTime": "1 action",
+          "pre": false
         },
         {
           "n": "Bourrasque",
@@ -6970,7 +7208,8 @@
           "ruleSource": "PHB 2024",
           "duration": "1 min",
           "castTime": "1 action",
-          "area": "Ligne 60 ft"
+          "area": "Ligne 60 ft",
+          "pre": false
         },
         {
           "n": "Chauffer le métal",
@@ -6985,7 +7224,8 @@
           "lst": "druide",
           "ruleSource": "PHB 2024",
           "duration": "1 min",
-          "castTime": "1 action"
+          "castTime": "1 action",
+          "pre": false
         },
         {
           "n": "Localisation d'animaux ou de plantes",
@@ -6999,7 +7239,8 @@
           "lst": "druide",
           "ruleSource": "PHB 2024",
           "duration": "Instantanée",
-          "castTime": "1 action"
+          "castTime": "1 action",
+          "pre": false
         },
         {
           "n": "Localisation d'objet",
@@ -7013,7 +7254,8 @@
           "lst": "druide",
           "ruleSource": "PHB 2024",
           "duration": "10 min",
-          "castTime": "1 action"
+          "castTime": "1 action",
+          "pre": false
         },
         {
           "n": "Rayon de lune",
@@ -7027,7 +7269,8 @@
           "lst": "druide",
           "ruleSource": "PHB 2024",
           "duration": "1 min",
-          "castTime": "1 action"
+          "castTime": "1 action",
+          "pre": false
         },
         {
           "n": "Protection contre le poison",
@@ -7040,7 +7283,8 @@
           "lst": "druide",
           "ruleSource": "PHB 2024",
           "duration": "1 h",
-          "castTime": "1 action"
+          "castTime": "1 action",
+          "pre": false
         },
         {
           "n": "Croissance d'épines",
@@ -7053,7 +7297,8 @@
           "lst": "druide",
           "ruleSource": "PHB 2024",
           "duration": "10 min",
-          "castTime": "1 action"
+          "castTime": "1 action",
+          "pre": false
         },
         {
           "n": "Convocation de bête",
@@ -7065,7 +7310,8 @@
           "en": "Summon Beast",
           "ruleSource": "PHB 2024",
           "duration": "1 h",
-          "castTime": "1 action"
+          "castTime": "1 action",
+          "loadoutHidden": true
         },
         {
           "n": "Appel de la foudre",
@@ -7184,7 +7430,8 @@
           "ruleSource": "PHB 2024",
           "duration": "1 min",
           "castTime": "1 action",
-          "area": "Émanation 30 ft"
+          "area": "Émanation 30 ft",
+          "loadoutHidden": true
         },
         {
           "n": "Lumière du jour",
@@ -7197,7 +7444,8 @@
           "lst": "druide",
           "ruleSource": "PHB 2024",
           "duration": "1 h",
-          "castTime": "1 action"
+          "castTime": "1 action",
+          "pre": false
         },
         {
           "n": "Arme élémentaire",
@@ -7209,7 +7457,8 @@
           "en": "Elemental Weapon",
           "ruleSource": "PHB 2024",
           "duration": "1 h",
-          "castTime": "1 action"
+          "castTime": "1 action",
+          "loadoutHidden": true
         },
         {
           "n": "Mort simulée",
@@ -7222,7 +7471,8 @@
           "en": "Feign Death",
           "ruleSource": "PHB 2024",
           "duration": "1 h",
-          "castTime": "1 action"
+          "castTime": "1 action",
+          "loadoutHidden": true
         },
         {
           "n": "Fusion dans la pierre",
@@ -7236,7 +7486,8 @@
           "lst": "druide",
           "ruleSource": "PHB 2024",
           "duration": "8 h",
-          "castTime": "1 action"
+          "castTime": "1 action",
+          "pre": false
         },
         {
           "n": "Croissance végétale",
@@ -7249,7 +7500,8 @@
           "lst": "druide",
           "ruleSource": "PHB 2024",
           "duration": "Instantanée",
-          "castTime": "1 action / 8 h"
+          "castTime": "1 action / 8 h",
+          "pre": false
         },
         {
           "n": "Protection contre l'énergie",
@@ -7262,7 +7514,8 @@
           "lst": "druide",
           "ruleSource": "PHB 2024",
           "duration": "1 h",
-          "castTime": "1 action"
+          "castTime": "1 action",
+          "pre": false
         },
         {
           "n": "Tempête de neige",
@@ -7276,7 +7529,8 @@
           "lst": "druide",
           "ruleSource": "PHB 2024",
           "duration": "1 min",
-          "castTime": "1 action"
+          "castTime": "1 action",
+          "pre": false
         },
         {
           "n": "Communication avec les plantes",
@@ -7290,7 +7544,8 @@
           "ruleSource": "PHB 2024",
           "duration": "10 min",
           "castTime": "1 action",
-          "area": "Émanation 30 ft"
+          "area": "Émanation 30 ft",
+          "pre": false
         },
         {
           "n": "Convocation de fée",
@@ -7302,7 +7557,8 @@
           "en": "Summon Fey",
           "ruleSource": "PHB 2024",
           "duration": "1 h",
-          "castTime": "1 action"
+          "castTime": "1 action",
+          "loadoutHidden": true
         },
         {
           "n": "Respiration aquatique",
@@ -7316,7 +7572,8 @@
           "lst": "druide",
           "ruleSource": "PHB 2024",
           "duration": "24 h",
-          "castTime": "1 action"
+          "castTime": "1 action",
+          "pre": false
         },
         {
           "n": "Marche sur l'onde",
@@ -7330,7 +7587,8 @@
           "lst": "druide",
           "ruleSource": "PHB 2024",
           "duration": "1 h",
-          "castTime": "1 action"
+          "castTime": "1 action",
+          "pre": false
         },
         {
           "n": "Mur de vent",
@@ -7344,7 +7602,8 @@
           "lst": "druide",
           "ruleSource": "PHB 2024",
           "duration": "1 min",
-          "castTime": "1 action"
+          "castTime": "1 action",
+          "pre": false
         },
         {
           "n": "Métamorphose",
@@ -7404,7 +7663,8 @@
           "lst": "druide",
           "ruleSource": "PHB 2024",
           "duration": "1 h",
-          "castTime": "1 action"
+          "castTime": "1 action",
+          "pre": false
         },
         {
           "n": "Invocation d'élémentaires mineurs",
@@ -7418,7 +7678,8 @@
           "ruleSource": "PHB 2024",
           "duration": "10 min",
           "castTime": "1 action",
-          "area": "Émanation 15 ft"
+          "area": "Émanation 15 ft",
+          "pre": false
         },
         {
           "n": "Invocation d'êtres sylvestres",
@@ -7433,7 +7694,8 @@
           "ruleSource": "PHB 2024",
           "duration": "10 min",
           "castTime": "1 action",
-          "area": "Émanation 10 ft"
+          "area": "Émanation 10 ft",
+          "pre": false
         },
         {
           "n": "Contrôle de l'eau",
@@ -7447,7 +7709,8 @@
           "ruleSource": "PHB 2024",
           "duration": "10 min",
           "castTime": "1 action",
-          "save": "FOR"
+          "save": "FOR",
+          "pre": false
         },
         {
           "n": "Divination",
@@ -7461,7 +7724,8 @@
           "lst": "druide",
           "ruleSource": "PHB 2024",
           "duration": "Instantanée",
-          "castTime": "1 action"
+          "castTime": "1 action",
+          "pre": false
         },
         {
           "n": "Domination de bête",
@@ -7475,7 +7739,8 @@
           "lst": "druide",
           "ruleSource": "PHB 2024",
           "duration": "1 min",
-          "castTime": "1 action"
+          "castTime": "1 action",
+          "pre": false
         },
         {
           "n": "Bouclier de feu",
@@ -7488,7 +7753,8 @@
           "lst": "druide",
           "ruleSource": "PHB 2024",
           "duration": "10 min",
-          "castTime": "1 action"
+          "castTime": "1 action",
+          "pre": false
         },
         {
           "n": "Fontaine de clair de lune",
@@ -7501,7 +7767,8 @@
           "ruleSource": "PHB 2024",
           "duration": "10 min",
           "castTime": "1 action",
-          "save": "CON"
+          "save": "CON",
+          "loadoutHidden": true
         },
         {
           "n": "Liberté de mouvement",
@@ -7514,7 +7781,8 @@
           "lst": "druide",
           "ruleSource": "PHB 2024",
           "duration": "1 h",
-          "castTime": "1 action"
+          "castTime": "1 action",
+          "pre": false
         },
         {
           "n": "Insecte géant",
@@ -7527,7 +7795,8 @@
           "lst": "druide",
           "ruleSource": "PHB 2024",
           "duration": "10 min",
-          "castTime": "1 action"
+          "castTime": "1 action",
+          "pre": false
         },
         {
           "n": "Liane avide",
@@ -7540,7 +7809,8 @@
           "en": "Grasping Vine",
           "ruleSource": "PHB 2024",
           "duration": "1 min",
-          "castTime": "1 action bonus"
+          "castTime": "1 action bonus",
+          "loadoutHidden": true
         },
         {
           "n": "Terrain hallucinatoire",
@@ -7553,7 +7823,8 @@
           "lst": "druide",
           "ruleSource": "PHB 2024",
           "duration": "24 h",
-          "castTime": "10 min"
+          "castTime": "10 min",
+          "pre": false
         },
         {
           "n": "Tempête de grêle",
@@ -7567,7 +7838,8 @@
           "lst": "druide",
           "ruleSource": "PHB 2024",
           "duration": "Instantanée",
-          "castTime": "1 action"
+          "castTime": "1 action",
+          "pre": false
         },
         {
           "n": "Localisation de créature",
@@ -7580,7 +7852,8 @@
           "lst": "druide",
           "ruleSource": "PHB 2024",
           "duration": "1 h",
-          "castTime": "1 action"
+          "castTime": "1 action",
+          "pre": false
         },
         {
           "n": "Façonnage de la pierre",
@@ -7593,7 +7866,8 @@
           "lst": "druide",
           "ruleSource": "PHB 2024",
           "duration": "Instantanée",
-          "castTime": "1 action"
+          "castTime": "1 action",
+          "pre": false
         },
         {
           "n": "Peau de pierre",
@@ -7606,7 +7880,8 @@
           "lst": "druide",
           "ruleSource": "PHB 2024",
           "duration": "1 h",
-          "castTime": "1 action"
+          "castTime": "1 action",
+          "pre": false
         },
         {
           "n": "Convocation d'élémentaire",
@@ -7618,7 +7893,8 @@
           "en": "Summon Elemental",
           "ruleSource": "PHB 2024",
           "duration": "1 h",
-          "castTime": "1 action"
+          "castTime": "1 action",
+          "loadoutHidden": true
         },
         {
           "n": "Mur de feu",
@@ -7632,7 +7908,8 @@
           "lst": "druide",
           "ruleSource": "PHB 2024",
           "duration": "1 min",
-          "castTime": "1 action"
+          "castTime": "1 action",
+          "pre": false
         },
         {
           "n": "Voyage par les arbres",
@@ -7723,7 +8000,8 @@
           "ruleSource": "PHB 2024",
           "duration": "1 h",
           "castTime": "1 action",
-          "area": "Émanation 10 ft"
+          "area": "Émanation 10 ft",
+          "pre": false
         },
         {
           "n": "Éveil",
@@ -7736,7 +8014,8 @@
           "lst": "druide",
           "ruleSource": "PHB 2024",
           "duration": "Instantanée",
-          "castTime": "8 h"
+          "castTime": "8 h",
+          "pre": false
         },
         {
           "n": "Communion avec la nature",
@@ -7750,7 +8029,8 @@
           "lst": "druide",
           "ruleSource": "PHB 2024",
           "duration": "1 min",
-          "castTime": "1 min"
+          "castTime": "1 min",
+          "pre": false
         },
         {
           "n": "Cône de froid",
@@ -7765,7 +8045,8 @@
           "ruleSource": "PHB 2024",
           "duration": "Instantanée",
           "castTime": "1 action",
-          "area": "Cône 60 ft"
+          "area": "Cône 60 ft",
+          "pre": false
         },
         {
           "n": "Invocation d'élémentaire",
@@ -7779,7 +8060,8 @@
           "lst": "druide",
           "ruleSource": "PHB 2024",
           "duration": "10 min",
-          "castTime": "1 action"
+          "castTime": "1 action",
+          "pre": false
         },
         {
           "n": "Contagion",
@@ -7793,7 +8075,8 @@
           "lst": "druide",
           "ruleSource": "PHB 2024",
           "duration": "7 j",
-          "castTime": "1 action"
+          "castTime": "1 action",
+          "pre": false
         },
         {
           "n": "Fléau d'insectes",
@@ -7807,7 +8090,8 @@
           "lst": "druide",
           "ruleSource": "PHB 2024",
           "duration": "10 min",
-          "castTime": "1 action"
+          "castTime": "1 action",
+          "pre": false
         },
         {
           "n": "Soins de groupe",
@@ -7820,7 +8104,8 @@
           "lst": "druide",
           "ruleSource": "PHB 2024",
           "duration": "Instantanée",
-          "castTime": "1 action"
+          "castTime": "1 action",
+          "pre": false
         },
         {
           "n": "Contrat planaire",
@@ -7834,7 +8119,8 @@
           "lst": "druide",
           "ruleSource": "PHB 2024",
           "duration": "24 h",
-          "castTime": "1 h"
+          "castTime": "1 h",
+          "pre": false
         },
         {
           "n": "Réincarnation",
@@ -7847,7 +8133,8 @@
           "lst": "druide",
           "ruleSource": "PHB 2024",
           "duration": "Instantanée",
-          "castTime": "1 h"
+          "castTime": "1 h",
+          "pre": false
         },
         {
           "n": "Mur de pierre",
@@ -7861,7 +8148,8 @@
           "lst": "druide",
           "ruleSource": "PHB 2024",
           "duration": "10 min",
-          "castTime": "1 action"
+          "castTime": "1 action",
+          "pre": false
         },
         {
           "n": "Guérison",
@@ -7909,7 +8197,8 @@
           "lst": "druide",
           "ruleSource": "PHB 2024",
           "duration": "1 j",
-          "castTime": "1 min"
+          "castTime": "1 min",
+          "pre": false
         },
         {
           "n": "Pétrification",
@@ -7923,7 +8212,8 @@
           "lst": "druide",
           "ruleSource": "PHB 2024",
           "duration": "1 min",
-          "castTime": "1 action"
+          "castTime": "1 action",
+          "pre": false
         },
         {
           "n": "Festin des héros",
@@ -7937,7 +8227,8 @@
           "ruleSource": "PHB 2024",
           "duration": "Instantanée",
           "castTime": "10 min",
-          "area": "Cube 10 ft"
+          "area": "Cube 10 ft",
+          "pre": false
         },
         {
           "n": "Glissement de terrain",
@@ -7950,7 +8241,8 @@
           "lst": "druide",
           "ruleSource": "PHB 2024",
           "duration": "2 h",
-          "castTime": "1 action"
+          "castTime": "1 action",
+          "pre": false
         },
         {
           "n": "Rayon de soleil",
@@ -7965,7 +8257,8 @@
           "ruleSource": "PHB 2024",
           "duration": "1 min",
           "castTime": "1 action",
-          "area": "Ligne 60 ft"
+          "area": "Ligne 60 ft",
+          "pre": false
         },
         {
           "n": "Voyage par les plantes",
@@ -7978,7 +8271,8 @@
           "lst": "druide",
           "ruleSource": "PHB 2024",
           "duration": "1 min",
-          "castTime": "1 action"
+          "castTime": "1 action",
+          "pre": false
         },
         {
           "n": "Mur d'épines",
@@ -7992,7 +8286,8 @@
           "lst": "druide",
           "ruleSource": "PHB 2024",
           "duration": "10 min",
-          "castTime": "1 action"
+          "castTime": "1 action",
+          "pre": false
         },
         {
           "n": "Marche sur le vent",
@@ -8005,7 +8300,8 @@
           "lst": "druide",
           "ruleSource": "PHB 2024",
           "duration": "8 h",
-          "castTime": "1 min"
+          "castTime": "1 min",
+          "pre": false
         },
         {
           "n": "Contrôle des flammes",
@@ -8018,7 +8314,8 @@
           "lst": "druide",
           "ruleSource": "XGE (Legacy)",
           "duration": "Instantanée / 1 h",
-          "castTime": "1 action"
+          "castTime": "1 action",
+          "pre": false
         },
         {
           "n": "Création de feu de camp",
@@ -8032,7 +8329,8 @@
           "ruleSource": "XGE (Legacy)",
           "duration": "1 min",
           "castTime": "1 action",
-          "save": "DEX"
+          "save": "DEX",
+          "pre": false
         },
         {
           "n": "Élémentalisme",
@@ -8045,7 +8343,8 @@
           "lst": "druide",
           "ruleSource": "PHB 2024",
           "duration": "Instantanée",
-          "castTime": "1 action"
+          "castTime": "1 action",
+          "pre": false
         },
         {
           "n": "Rafale",
@@ -8060,7 +8359,8 @@
           "ruleSource": "XGE (Legacy)",
           "duration": "Instantanée",
           "castTime": "1 action",
-          "save": "FOR"
+          "save": "FOR",
+          "pre": false
         },
         {
           "n": "Pierre magique",
@@ -8074,7 +8374,8 @@
           "ruleSource": "XGE (Legacy)",
           "duration": "1 min",
           "castTime": "1 action bonus",
-          "atk": true
+          "atk": true,
+          "pre": false
         },
         {
           "n": "Réparation",
@@ -8087,7 +8388,8 @@
           "lst": "druide",
           "ruleSource": "PHB 2024",
           "duration": "Instantanée",
-          "castTime": "1 min"
+          "castTime": "1 min",
+          "pre": false
         },
         {
           "n": "Façonnage de la terre",
@@ -8100,7 +8402,8 @@
           "lst": "druide",
           "ruleSource": "XGE (Legacy)",
           "duration": "Instantanée / 1 h",
-          "castTime": "1 action"
+          "castTime": "1 action",
+          "pre": false
         },
         {
           "n": "Création de flammes",
@@ -8114,7 +8417,8 @@
           "ruleSource": "PHB 2024",
           "duration": "10 min",
           "castTime": "1 action bonus",
-          "atk": true
+          "atk": true,
+          "pre": false
         },
         {
           "n": "Résistance",
@@ -8127,7 +8431,8 @@
           "lst": "druide",
           "ruleSource": "PHB 2024",
           "duration": "1 min",
-          "castTime": "1 action"
+          "castTime": "1 action",
+          "pre": false
         },
         {
           "n": "Façonnage de l'eau",
@@ -8140,7 +8445,8 @@
           "lst": "druide",
           "ruleSource": "XGE (Legacy)",
           "duration": "Instantanée / 1 h",
-          "castTime": "1 action"
+          "castTime": "1 action",
+          "pre": false
         },
         {
           "n": "Gourdin magique",
@@ -8153,7 +8459,8 @@
           "lst": "druide",
           "ruleSource": "PHB 2024",
           "duration": "1 min",
-          "castTime": "1 action bonus"
+          "castTime": "1 action bonus",
+          "pre": false
         },
         {
           "n": "Stabilisation",
@@ -8166,7 +8473,8 @@
           "lst": "druide",
           "ruleSource": "PHB 2024",
           "duration": "Instantanée",
-          "castTime": "1 action"
+          "castTime": "1 action",
+          "pre": false
         },
         {
           "n": "Coup de tonnerre",
@@ -8181,7 +8489,8 @@
           "duration": "Instantanée",
           "castTime": "1 action",
           "area": "Émanation 5 ft",
-          "save": "CON"
+          "save": "CON",
+          "pre": false
         },
         {
           "n": "Absorption des éléments",
@@ -8194,7 +8503,8 @@
           "lst": "druide",
           "ruleSource": "XGE (Legacy)",
           "duration": "1 tour",
-          "castTime": "1 réaction"
+          "castTime": "1 réaction",
+          "pre": false
         },
         {
           "n": "Lien bestial",
@@ -8207,7 +8517,8 @@
           "lst": "druide",
           "ruleSource": "XGE (Legacy)",
           "duration": "10 min",
-          "castTime": "1 action"
+          "castTime": "1 action",
+          "pre": false
         },
         {
           "n": "Cérémonie",
@@ -8221,7 +8532,8 @@
           "ritual": true,
           "ruleSource": "XGE (Legacy)",
           "duration": "Instantanée",
-          "castTime": "1 h"
+          "castTime": "1 h",
+          "pre": false
         },
         {
           "n": "Secousse sismique",
@@ -8235,7 +8547,8 @@
           "ruleSource": "XGE (Legacy)",
           "duration": "Instantanée",
           "castTime": "1 action",
-          "save": "DEX"
+          "save": "DEX",
+          "pre": false
         },
         {
           "n": "Entrave terrestre",
@@ -8249,7 +8562,8 @@
           "ruleSource": "XGE (Legacy)",
           "duration": "1 min",
           "castTime": "1 action",
-          "save": "FOR"
+          "save": "FOR",
+          "pre": false
         },
         {
           "n": "Écriture céleste",
@@ -8263,7 +8577,8 @@
           "ritual": true,
           "ruleSource": "XGE (Legacy)",
           "duration": "1 h",
-          "castTime": "1 action"
+          "castTime": "1 action",
+          "pre": false
         },
         {
           "n": "Vent protecteur",
@@ -8276,7 +8591,8 @@
           "lst": "druide",
           "ruleSource": "XGE (Legacy)",
           "duration": "10 min",
-          "castTime": "1 action"
+          "castTime": "1 action",
+          "pre": false
         },
         {
           "n": "Boule de neige d'Aria",
@@ -8286,7 +8602,8 @@
           "p": "120 ft",
           "c": false,
           "d": "Sort de neige à texte non retrouvé. À confirmer avec le MJ.",
-          "lst": "druide"
+          "lst": "druide",
+          "pre": false
         },
         {
           "n": "Éruption de terre",
@@ -8300,7 +8617,8 @@
           "ruleSource": "XGE (Legacy)",
           "duration": "Instantanée",
           "castTime": "1 action",
-          "save": "DEX"
+          "save": "DEX",
+          "pre": false
         },
         {
           "n": "Flèches enflammées",
@@ -8313,7 +8631,8 @@
           "lst": "druide",
           "ruleSource": "XGE (Legacy)",
           "duration": "1 h",
-          "castTime": "1 action"
+          "castTime": "1 action",
+          "pre": false
         },
         {
           "n": "Liberté des flots",
@@ -8323,7 +8642,8 @@
           "p": "120 ft",
           "c": true,
           "d": "Sort de Tal'Dorei Reborn (déluge, téléportation dans la zone, réaction pour se téléporter à 60 ft quand tu es ciblé). Texte complet à confirmer.",
-          "lst": "druide"
+          "lst": "druide",
+          "pre": false
         },
         {
           "n": "Raz-de-marée",
@@ -8337,7 +8657,8 @@
           "ruleSource": "XGE (Legacy)",
           "duration": "Instantanée",
           "castTime": "1 action",
-          "save": "DEX"
+          "save": "DEX",
+          "pre": false
         },
         {
           "n": "Mur d'eau",
@@ -8350,7 +8671,8 @@
           "lst": "druide",
           "ruleSource": "XGE (Legacy)",
           "duration": "10 min",
-          "castTime": "1 action"
+          "castTime": "1 action",
+          "pre": false
         },
         {
           "n": "Fléau élémentaire",
@@ -8364,7 +8686,8 @@
           "ruleSource": "XGE (Legacy)",
           "duration": "1 min",
           "castTime": "1 action",
-          "save": "CON"
+          "save": "CON",
+          "pre": false
         },
         {
           "n": "Sphère aqueuse",
@@ -8378,7 +8701,8 @@
           "ruleSource": "XGE (Legacy)",
           "duration": "1 min",
           "castTime": "1 action",
-          "save": "FOR"
+          "save": "FOR",
+          "pre": false
         },
         {
           "n": "Contrôle des vents",
@@ -8392,7 +8716,8 @@
           "ruleSource": "XGE (Legacy)",
           "duration": "1 h",
           "castTime": "1 action",
-          "save": "FOR"
+          "save": "FOR",
+          "pre": false
         },
         {
           "n": "Liberté des vents",
@@ -8402,7 +8727,8 @@
           "p": "Soi",
           "c": true,
           "d": "Sort de Tal'Dorei Reborn lié au vent. Texte complet à confirmer.",
-          "lst": "druide"
+          "lst": "druide",
+          "pre": false
         },
         {
           "n": "Maelström",
@@ -8416,7 +8742,8 @@
           "ruleSource": "XGE (Legacy)",
           "duration": "1 min",
           "castTime": "1 action",
-          "save": "FOR"
+          "save": "FOR",
+          "pre": false
         },
         {
           "n": "Transmutation de la roche",
@@ -8429,7 +8756,8 @@
           "lst": "druide",
           "ruleSource": "XGE (Legacy)",
           "duration": "Jusqu'à dissipation",
-          "castTime": "1 action"
+          "castTime": "1 action",
+          "pre": false
         },
         {
           "n": "Os de la terre",
@@ -8443,7 +8771,8 @@
           "ruleSource": "XGE (Legacy)",
           "duration": "Instantanée",
           "castTime": "1 action",
-          "save": "DEX"
+          "save": "DEX",
+          "pre": false
         },
         {
           "n": "Investiture de flammes",
@@ -8457,7 +8786,8 @@
           "ruleSource": "XGE (Legacy)",
           "duration": "10 min",
           "castTime": "1 action",
-          "save": "DEX"
+          "save": "DEX",
+          "pre": false
         },
         {
           "n": "Investiture de glace",
@@ -8471,7 +8801,8 @@
           "ruleSource": "XGE (Legacy)",
           "duration": "10 min",
           "castTime": "1 action",
-          "save": "CON"
+          "save": "CON",
+          "pre": false
         },
         {
           "n": "Investiture de pierre",
@@ -8485,7 +8816,8 @@
           "ruleSource": "XGE (Legacy)",
           "duration": "10 min",
           "castTime": "1 action",
-          "save": "DEX"
+          "save": "DEX",
+          "pre": false
         },
         {
           "n": "Investiture de vent",
@@ -8499,7 +8831,8 @@
           "ruleSource": "XGE (Legacy)",
           "duration": "10 min",
           "castTime": "1 action",
-          "save": "CON"
+          "save": "CON",
+          "pre": false
         },
         {
           "n": "Protection primordiale",
@@ -8512,7 +8845,8 @@
           "lst": "druide",
           "ruleSource": "XGE (Legacy)",
           "duration": "1 min",
-          "castTime": "1 action"
+          "castTime": "1 action",
+          "pre": false
         }
       ],
       "dc": 17,
@@ -9577,6 +9911,12 @@
           "SAG",
           9,
           "P"
+        ]
+      ],
+      "defenses": [
+        [
+          "immune",
+          "Sommeil magique"
         ]
       ]
     }
