@@ -113,6 +113,9 @@
   const permas = c => (c.weapons || []).filter(w => w.perma).map(w => w.n);
   const isEq = (c, st, name) => !name || !equipables(c).includes(name) || permas(c).includes(name) || (st.eq || []).includes(name);
   const visRes = (c, st) => c.resources.filter(r => isEq(c, st, r.src));
+  const inventoryGear=(c,n)=>(c.gear||[]).find(g=>g.n===n&&g.inventory);
+  const ownedGear=(c,st,n)=>!inventoryGear(c,n)||(st.items||[]).some(it=>it.n===n&&it.qty>0&&(!isConsumable(c,it)||!it.max||it.used<it.max));
+  const isConsumable=(c,it)=>!!(c.items||[]).find(x=>x.n===it.n)?.consumable;
   const eqNames = (c, st) => permas(c).concat((st.eq || []).filter(n => equipables(c).includes(n) && !permas(c).includes(n)));
 
 
@@ -255,6 +258,7 @@
     if (!o.seeded) { const seed = (c.items || []).map((it, i) => ({ id: 's' + i, n: it.n, qty: it.qty || 1, max: it.max || 0, used: it.used || 0, note: it.note || '' })); o.items = seed.concat(o.items); o.res = Object.assign({}, (c.init || {}).res || {}, o.res); o.seeded = 1; }
     if (!o.coins) o.coins = { pp: 0, gp: o.gold || 0, ist: 0, sp: 0, cp: 0 };
     permas(c).forEach(n => { if (!o.eq.includes(n)) o.eq.push(n); });
+    o.eq=o.eq.filter(n=>ownedGear(c,o,n));
     pruneDefenses(c,o);
     return o;
   }
@@ -389,7 +393,7 @@
     });
     if (c.pact) st.pact = 0;
     st.defenseEffects=[];
-    st.items.forEach(it => { if (it.max && type === 'long') it.used = 0; });
+    st.items.forEach(it => { if (it.max && type === 'long' && !isConsumable(c,it)) it.used = 0; });
     if (type === 'long') { st.defenseEffects=[]; st.slots = {}; st.hp = c.hp; st.tmp = 0; st.conc = null; st.used = {}; }
     view.confirm = null;
     return say(id, type === 'long' ? 'Repos long' + (notes.length ? ' (' + notes.join(', ') + ')' : '') : 'Repos court', 'rest');
@@ -443,13 +447,14 @@
   function toggleEq(id, name) {
     const st = S(id), c = cfgOf(id), on = st.eq.includes(name);
     if (permas(c).includes(name)) return toast('Équipée en permanence');
+    if(!on&&!ownedGear(c,st,name))return toast('Objet indisponible');
     if (!on && c.eqExcl && (c.weapons || []).some(w => w.n === name)) { const ws = (c.weapons || []).map(w => w.n); st.eq = st.eq.filter(x => !ws.includes(x) || permas(c).includes(x)); }
     st.eq = on ? st.eq.filter(x => x !== name) : st.eq.concat(name);
     pruneDefenses(c,st);
     return say(id, `${on ? 'Range' : 'Équipe'} ${name}`, 'eq');
   }
   function itemAct(id, a, d) {
-    const st = S(id);
+    const st = S(id), c=cfgOf(id);
     if (a === 'add') {
       const q = x => (root.querySelector(x) || {}).value || '';
       const n = q('#lp-in-n').trim(); if (!n) return toast('Donne un nom à l\'objet');
@@ -461,7 +466,7 @@
     const it = st.items.find(x => x.id === d.id); if (!it) return;
     if (a === 'use') { if (it.max) { if (it.used >= it.max) return; it.used++; return say(id, `Utilise ${it.n} (${it.max - it.used}/${it.max})`, 'item'); } if (it.qty <= 0) return; it.qty--; return say(id, `Utilise ${it.n} (reste ${it.qty})`, 'item'); }
     if (a === 'qty') { it.qty = Math.max(0, it.qty + d.d); return say(id, `${it.n} : ${it.qty}`, 'item'); }
-    if (a === 'chg') { it.used = Math.max(0, Math.min(it.max, it.used + d.d)); return say(id, `${it.n} : ${it.max - it.used}/${it.max} charges`, 'item'); }
+    if (a === 'chg') { if(isConsumable(c,it)&&d.d<0)return; it.used = Math.max(0, Math.min(it.max, it.used + d.d)); return say(id, `${it.n} : ${it.max - it.used}/${it.max} charges`, 'item'); }
     if (a === 'del') { st.items = st.items.filter(x => x.id !== d.id); return say(id, `Retire l'objet ${it.n}`, 'item'); }
   }
 
@@ -509,7 +514,9 @@
     return [r.nom,resourceSource(c,r),r.max+' utilisation'+(r.max>1?'s':'')+' / '+(REST_LABEL[r.reset]||r.reset||'recharge'),r.d||r.sub||''].filter(Boolean).join(' | ');
   }
   const chargeIcon=`<img class="lp-chargeart" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAMAAADXqc3KAAAAkFBMVEWlHADtz6+6TQLcZBDboGntzqrFZxzYlV9/KgDHZx/YklmxLwCjaAC8TwS9UwPGZBfkt4r25tEA/wDx17LEOgDjsYSyOACqqgDNf0jOhD3nuJAAAAC1VwH9+va2SgF/fwC9PQHHZA+6SQD//wC9UgTHVgP26NayNgC7RwLITADCWgrBVgqwKQD/AAC4RgC+VAjziAybAAAAMHRSTlMh5Jod26HMYQNXmWkGX8+q1ukBcw2TggMuwmwADvoRAgYSLgE1D/JSdwsvTkkB11CztkaqAAABaklEQVR42nWSZ5PjIAyGMe5xTbK7VyxEM7jG+f//bik3c/flNDDYepAsvxKZ/trj8c8LmaaX5pwDVMJZJYDz6hXAi0tEQLclAAKYFirtgW5hC76ZqBRRyo9N8gDwQyLZ51mVtZpTQqQL8yAFEM/fTdctyW15n3X+UxjhATeSlCyv6cCSr/XGciK3CMDs5JMxmoV9X+YdWx1Tze/mPhaMsbHw6RSgB8KBY6VFwjK3KK0PZSJAUCfNLEuuwjJ7W08FBiaihcQyd2myq7/6xD3kKcrWgw3rT+dIiutycTYpU7O5iKlCVGczJMz2rq6MNqcywGNV+3sd+pEld1YMtDtcVQGgK3e1tr+7+wW7LUcaAd9gJ+7rwy9m6cjsMiuQj/DnQZJupWxsoiQQJWkNPkvSHUteLsd5PFMRgTZoSJC9npXaFQEUQXYtfN/8ck105vvJY2tJcMBmwgEohf4zDLrifh5+APiT6zgM/7FvtLs5rzHpdHgAAAAASUVORK5CYII=">`;
-  function resourceIsCharge(r){return !!r.src&&(/charg/i.test((r.nom||'')+' '+(r.sub||'')+' '+(r.d||''))||['fukuro','assist','omencharge','ruin','stones'].includes(r.id));}
+  function resourceIsCharge(r){return ['fukuro','assist','omencharge','ruin'].includes(r.id);}
+  const combatPool=r=>!['echo','stones','gard','truth','cartlo','gauge'].includes(r.id)&&['court','long','aube','ws'].includes(r.reset)&&r.max>0;
+  const restText=r=>r.reset==='court'?'Short rest':r.reset==='ws'?'Short / long':'Long rest';
   function chargePips(c,st,r,ro){
     let h='';const u=st.res[r.id]||0;
     for(let i=0;i<r.max;i++){const off=i>=r.max-u;const cls='lp-chargepip '+(off?'used':'');h+=ro?`<span class="${cls}" title="${esc(r.nom)}">${chargeIcon}</span>`:`<button type="button" class="${cls}" data-act="pip" data-kind="res" data-key="${esc(r.id)}" data-idx="${i}" aria-label="${esc(r.nom)} : ${off?'récupérer':'dépenser'} une charge">${chargeIcon}</button>`;}
@@ -526,29 +533,27 @@
     return `<span class="lp-headerpips" aria-label="Emplacements disponibles">${Array.from({length:Math.max(0,n-u)},()=>`<span class="lp-headpip" title="Emplacement niveau ${l}">${bg3('slot')}</span>`).join('')}${Array.from({length:p},()=>`<span class="lp-headpip" title="Pacte niveau ${c.pact.lvl}">${bg3('pact')}</span>`).join('')}</span>`;
   }
   function headerBardic(c,st){const r=resOf(c,'bardic');return r?`<span class="lp-headerpips">${Array.from({length:Math.max(0,left(c,st,r.id))},()=>`<span class="lp-headpip" title="Inspiration bardique">${bg3('bardic')}</span>`).join('')}</span>`:'';}
+  function combatResourceRow(label,n,u,icons,reset='',tip='',cl=''){
+    return `<div class="lp-sg lp-combatrow ${cl}" title="${esc(tip||label)}"><span class="lp-slotlevel">${esc(label)}</span><span class="lp-slotgems">${icons}</span><small class="lp-resourcecount">${Math.max(0,n-u)}/${n}</small><span class="lp-recharge">${esc(reset)}</span></div>`;
+  }
   function slotRows(c,st,ro){
-    const max=Math.max(0,...CFG.chars.flatMap(ch=>Object.keys(ch.slots).map(Number)));
-    const levels=Object.keys(c.slots).map(Number).filter(l=>total(c,l)>0).sort((a,b)=>a-b);
-    const row=(label,n,u,icons,cl='',tip='')=>`<div class="lp-sg ${cl}" title="${esc(tip||label)}"><span class="lp-slotlevel">${esc(label)}</span><span class="lp-slotgems">${icons||'<span class="lp-slotempty">–</span>'}</span><small>${n?n-u+'/'+n:'–'}</small><span class="lp-recharge">${esc(cl==='pactgroup'?'Repos court / long':cl==='lp-wsgroup'?'Repos court (1), long':cl==='lp-otherpool'?'': 'Repos long')}</span></div>`;
+    const row=combatResourceRow;
     const gems=(n,u,pact,l)=>Array.from({length:n},(_,i)=>{const off=i>=n-u,cl='lp-gem '+(pact?'pact ':'')+(off?'used ':'')+(ro?'ro':'');return ro?`<span class="${cl}">${bg3(pact?'pact':'slot')}</span>`:`<button type="button" class="${cl}" data-act="pip" data-kind="${pact?'pact':'slot'}" data-key="${pact?'pact':l}" data-idx="${i}" aria-label="${off?'Récupérer':'Dépenser'} : ${pact?'Pacte':'Niveau '+l}">${bg3(pact?'pact':'slot')}</button>`;}).join('');
-    let h=levels.map(l=>{const n=total(c,l)||0,u=used(st,l);return row('Niveau '+l,n,u,gems(n,u,false,l));}).join('');
-    if(c.pact){const p=c.pact;h+=row('Pacte'+(p?' '+p.lvl:''),p?.n||0,st.pact||0,p?gems(p.n,st.pact,true,p.lvl):'','pactgroup');}
-    for(const [id,label,cl] of [['bardic','Bardic','lp-bardgroup'],['ws','Forme sauvage','lp-wsgroup']]){const r=resOf(c,id),u=st.res[id]||0;if(r)h+=row(label,r?.max||0,u,r?gpips(c,r,u,ro):'',cl,r?resourceTitle(c,r):'');}
-    if(!ro){
-      const linked=new Set();
-      c.spells.filter(sp=>isEq(c,st,sp.src)&&(!sp.lst||(st.prep||[]).includes(sp.n))).forEach(sp=>[].concat(sp.res||[],sp.cost?.res||[],sp.alt?.res||[]).forEach(id=>linked.add(id)));
-      c.weapons.filter(w=>w.fixed||w.perma||st.eq.includes(w.n)).forEach(w=>(w.pw||[]).forEach(o=>{if(o?.res)linked.add(o.res);}));
-      for(const r of visRes(c,st).filter(r=>!['bardic','ws'].includes(r.id)&&!r.a&&!resourceIsCharge(r)&&!linked.has(r.id))){
-        const u=st.res[r.id]||0;h+=row(r.nom,r.max,u,gpips(c,r,u,false),'lp-otherpool',resourceTitle(c,r));
-      }
+    let h=Object.keys(c.slots).map(Number).filter(l=>total(c,l)>0).sort((a,b)=>a-b).map(l=>row('Niveau '+l,total(c,l),used(st,l),gems(total(c,l),used(st,l),false,l))).join('');
+    if(c.pact)h+=row('Pacte '+c.pact.lvl,c.pact.n,st.pact,gems(c.pact.n,st.pact,true,c.pact.lvl),'','Emplacements de pacte','pactgroup');
+    for(const id of ['bardic','ws']){const r=resOf(c,id);if(r)h+=row(id==='bardic'?'Bardic':'Forme sauvage',r.max,st.res[id]||0,gpips(c,r,st.res[id]||0,ro),restText(r),resourceTitle(c,r),id==='bardic'?'lp-bardgroup':'lp-wsgroup');}
+    for(const r of visRes(c,st).filter(r=>combatPool(r)&&!['bardic','ws'].includes(r.id))){
+      const u=st.res[r.id]||0,charge=resourceIsCharge(r);
+      h+=row(charge?r.src:r.nom,r.max,u,charge?chargePips(c,st,r,ro):gpips(c,r,u,ro),restText(r),resourceTitle(c,r),charge?'lp-chargegroup':'lp-otherpool');
     }
-    return h||'<span class="lp-none">Aucun emplacement</span>';
+    for(const g of (c.gear||[]).filter(g=>g.inventory&&g.recharge&&st.eq.includes(g.n)&&ownedGear(c,st,g.n))){
+      const it=st.items.find(it=>it.n===g.n&&it.qty>0);if(!it||!it.max)continue;
+      const u=it.used||0,icons=Array.from({length:it.max},(_,i)=>{const off=i>=it.max-u,cl='lp-gp '+(off?'used':'');return ro?`<span class="${cl}"><span class="lp-neutralpip"></span></span>`:`<button type="button" class="${cl}" data-act="itchg" data-id="${esc(it.id)}" data-d="${off?-1:1}" aria-label="${esc(it.n)}"><span class="lp-neutralpip"></span></button>`;}).join('');
+      h+=row(g.n,it.max,u,icons,'Long rest',g.note,'lp-otherpool');
+    }
+    return h||'<span class="lp-none">Aucune ressource de combat</span>';
   }
-  function chargeRows(c,st,ro){
-    const rows=visRes(c,st).filter(r=>resourceIsCharge(r)&&[...c.weapons,...(c.gear||[])].some(o=>o.n===r.src)).map(r=>`<div class="lp-sg lp-chargegroup" title="${esc(resourceTitle(c,r))}"><span class="lp-slotlevel">${esc(r.src||r.nom)}</span><span class="lp-slotgems">${chargePips(c,st,r,ro)}</span><small>${left(c,st,r.id)}/${r.max}</small><span class="lp-recharge">${esc(REST_LABEL[r.reset]||r.reset||'')}</span></div>`);
-    if(ro)for(const it of inventoryCharges(c,st))rows.push(`<div class="lp-sg lp-chargegroup" title="${esc(it.n)}"><span class="lp-slotlevel">${esc(it.n)}</span><span class="lp-slotgems">${Array.from({length:it.max},(_,i)=>`<span class="lp-neutralpip ${i>=it.max-(it.used||0)?'used':''}"></span>`).join('')}</span><small>${it.max-(it.used||0)}/${it.max}</small><span class="lp-recharge">${esc((c.items.find(x=>x.n===it.n)?.d||'').match(/(?:retour|recharge|regagnées) à l.aube/i)?'Aube':'Selon objet')}</span></div>`);
-    return rows.join('');
-  }
+  function chargeRows(){return '';}
   function equippedLinks(c,st,ro){
     return eqNames(c,st).map(n=>{const spec=(ro?'dm|'+c.id+'|':'')+'w|'+n;return `<button type="button" class="lp-eqlink" data-act="detail" data-spec="${esc(spec)}" data-tip="${esc(spec)}">${esc(n)}</button>`;}).join('')||'<span>Aucun objet</span>';
   }
@@ -735,32 +740,33 @@
   const rarityLabel = r => ({common:'Commun',uncommon:'Peu commun',rare:'Rare',veryrare:'Très rare',legendary:'Légendaire',artifact:'Artefact',unknown:'Rareté non renseignée'})[r]||'Rareté non renseignée';
   function equipPanel(c, st) {
     const card = w => {
-      const fx = w.fixed || w.perma, on = fx || st.eq.includes(w.n);
+      const fx = w.fixed || w.perma, on = fx || st.eq.includes(w.n), inv=w.inventory?st.items.find(it=>it.n===w.n&&it.qty>0):null;
       const hd = `<span class="lp-eqname"><h4>${esc(w.n)}</h4>${w.arc?`<em>${esc(w.arc)}</em>`:''}<small class="lp-rarityname">${rarityLabel(rarityOf(w,c))}</small></span><span class="lp-eqst">${w.perma?'Permanent':on?'Équipé':'Non équipé'}</span>`;
       const stat = w.hit || w.dmg ? `<p class="lp-wst">${w.hit ? `<b>${esc(w.hit)}</b>` : ''}${w.hit && w.dmg ? '<i></i>' : ''}${w.dmg ? `<b>${damageText(w.dmg)}</b>` : ''}</p>` : '';
-      const sps = c.spells.filter(q => q.src === w.n).map(q => `<span class="lp-pwc" data-tip="s|${esc(q.n)}">${esc(q.n.replace(w.n.split(',')[0] + ', ', ''))}</span>`);
-      const pws = (w.pw || []).map((o, i) => typeof o === 'string' ? '' : o.sp ? '' : `<span class="lp-pwc b" data-tip="p|${esc(w.n)}|${i}">${GLY.bolt}${esc(o.n)}</span>`).filter(Boolean);
+      const sps = c.spells.filter(q => q.src === w.n).map(q => `<span class="lp-pwc" data-tip="s|${esc(q.n)}">${q.cost&&resourceIsCharge(resOf(c,q.cost.res)||{})?chargeIcon:''}${esc(q.n.replace(w.n.split(',')[0] + ', ', ''))}</span>`);
+      const pws = (w.pw || []).map((o, i) => typeof o === 'string' ? '' : o.sp ? '' : `<span class="lp-pwc b" data-tip="p|${esc(w.n)}|${i}">${o.res&&resourceIsCharge(resOf(c,o.res)||{})?(o.res==='ruin'?GLY.bolt:chargeIcon):''}${esc(o.n)}</span>`).filter(Boolean);
       const body = `${hd.replace(/^/, '')}`;
-      const inner = `<div class="lp-eqtop">${hd}</div>${stat}<p class="lp-wnote" title="${esc(w.note||'')}">${rich(dcify(c, w.note))}</p>${sps.length || pws.length ? `<div class="lp-pwcs">${sps.concat(pws).join('')}</div>` : ''}`;
+      const inventoryCtl=w.inventory&&inv?`<div class="lp-eqinventory"><span>${inv.max?Math.max(0,inv.max-inv.used)+'/'+inv.max:'x'+inv.qty}</span>${on&&(inv.max||isConsumable(c,inv))?`<button type="button" class="lp-cast sm" data-act="ituse" data-id="${esc(inv.id)}" ${inv.max&&inv.used>=inv.max?'disabled':''}>Utiliser</button>`:''}</div>`:'';
+      const inner=`<div class="lp-eqtop">${hd}</div>${stat}<p class="lp-wnote" title="${esc(w.note||'')}">${rich(dcify(c,w.note))}</p>${sps.length||pws.length?`<div class="lp-pwcs">${sps.concat(pws).join('')}</div>`:''}${inventoryCtl}`;
       return fx ? `<article class="lp-weapon on fx rarity-${rarityOf(w,c)}">${inner}</article>` : `<div role="button" tabindex="0" class="lp-weapon ${on ? 'on' : 'off'} rarity-${rarityOf(w,c)}" data-act="eq" data-key="${esc(w.n)}" aria-pressed="${on}">${inner}</div>`;
     };
     const q=nrm0(view.q.trim()), matches=w=>!q||nrm0(w.n+' '+(w.note||'')+' '+(w.arc||'')).includes(q);
-    const wl = c.weapons.filter(matches).sort((a,b)=>rarityRank(b,c)-rarityRank(a,c)), ne = eqNames(c, st).filter(n => c.weapons.some(w => w.n === n)).length;
+    const wl = c.weapons.filter(w=>!w.fixed&&!/attaque à mains nues|attaque sournoise/i.test(w.n)).filter(matches).sort((a,b)=>rarityRank(b,c)-rarityRank(a,c)), ne = eqNames(c, st).filter(n => c.weapons.some(w => w.n === n)).length;
     return `${searchBar(view.q)}<h4 class="lp-lvh">Armes<small>${ne} équipée${ne > 1 ? 's' : ''}</small></h4><div class="lp-wgrid">${wl.map(card).join('')}</div>
-      ${(c.gear || []).length ? `<h4 class="lp-lvh">Objets équipables</h4><div class="lp-wgrid">${c.gear.filter(matches).sort((a,b)=>rarityRank(b,c)-rarityRank(a,c)).map(card).join('')}</div>` : ''}`;
+      ${(c.gear || []).length ? `<h4 class="lp-lvh">Objets équipables</h4><div class="lp-wgrid">${c.gear.filter(w=>!w.inventory||st.items.some(it=>it.n===w.n&&it.qty>0)).filter(matches).sort((a,b)=>rarityRank(b,c)-rarityRank(a,c)).map(card).join('')}</div>` : ''}`;
   }
   function itemsPanel(c, st) {
     const nrm = t => String(t).normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase(), nq = nrm(view.q.trim());
-    const items = st.items.filter(it => !nq || nrm(it.n + ' ' + (it.note || '')).includes(nq)).sort((a,b)=>rarityRank(b,c)-rarityRank(a,c)).map(it => {
+    const items = st.items.filter(it=>!inventoryGear(c,it.n)).filter(it => !nq || nrm(it.n + ' ' + (it.note || '')).includes(nq)).sort((a,b)=>rarityRank(b,c)-rarityRank(a,c)).map(it => {
       const cat = (c.items || []).find(x => x.n === it.n), l = it.max - it.used;
-      const ctl = it.max ? `<button type="button" class="lp-stp" data-act="itchg" data-id="${esc(it.id)}" data-d="1" aria-label="Dépenser une charge">−</button><b class="lp-cnt">${l}/${it.max}</b><button type="button" class="lp-stp" data-act="itchg" data-id="${esc(it.id)}" data-d="-1" aria-label="Récupérer une charge">+</button>`
+      const ctl = it.max ? `<button type="button" class="lp-stp" data-act="itchg" data-id="${esc(it.id)}" data-d="1" aria-label="Dépenser une charge">−</button><b class="lp-cnt">${l}/${it.max}</b><button type="button" class="lp-stp" data-act="itchg" data-id="${esc(it.id)}" data-d="-1" aria-label="Récupérer une charge" ${isConsumable(c,it)?'disabled':''}>+</button>`
         : `<button type="button" class="lp-stp" data-act="itqty" data-id="${esc(it.id)}" data-d="-1" aria-label="Retirer un">−</button><b class="lp-cnt">x${it.qty}</b><button type="button" class="lp-stp" data-act="itqty" data-id="${esc(it.id)}" data-d="1" aria-label="Ajouter un">+</button>`;
       const use = `<button type="button" class="lp-cast sm" data-act="ituse" data-id="${esc(it.id)}" ${(it.max ? l <= 0 : it.qty <= 0) ? 'disabled' : ''}>Utiliser</button>`;
       const jet = '';
       return `<li class="lp-item rarity-${rarityOf(cat||it,c)} ${(it.max ? l <= 0 : it.qty <= 0) ? 'spent' : ''}"><span class="lp-nm">${esc(it.n)}<small class="lp-rarityname">${rarityLabel(rarityOf(cat||it,c))}</small>${(cat && cat.d) || it.note ? `<small class="nt">${esc((cat && cat.d) || it.note)}</small>` : ''}</span><span class="lp-iq">${ctl}${use}${jet}<button type="button" class="lp-del" data-act="itdel" data-id="${esc(it.id)}" aria-label="Supprimer">×</button></span></li>`;
     }).join('');
     return `${searchBar(view.q)}
-      <h4 class="lp-lvh">Objets et consommables<small>${st.items.length}</small></h4>
+      <h4 class="lp-lvh">Objets et consommables<small>${st.items.filter(it=>!inventoryGear(c,it.n)).length}</small></h4>
       <ul class="lp-items">${items || '<li class="lp-empty">Aucun objet.</li>'}</ul>
       <div class="lp-add"><input id="lp-in-n" type="text" placeholder="Nom de l'objet" aria-label="Nom"><input id="lp-in-q" type="number" min="1" inputmode="numeric" placeholder="Qté" aria-label="Quantité"><input id="lp-in-c" type="number" min="0" inputmode="numeric" placeholder="Charges" aria-label="Charges"><button type="button" data-act="itadd">Ajouter</button></div>`;
   }
@@ -796,6 +802,11 @@
       const l=r.max-(st.res[r.id]||0),t=typeOfPw(r.a),spec='r|'+r.id;
       add(t,card(t,r.nom,'',`data-act="detail" data-spec="${esc(spec)}" data-tip="${esc(spec)}"`,`<span class="lp-meta">${esc(r.src||RESET_NAME[r.reset]||'')}</span>`,ctl(['ws','bardic'].includes(r.id)?`<span class="lp-wsinline">${gpips(c,r,st.res[r.id]||0,false)}</span>`:`<span class="lp-slotchip ${l<=0?'off':''}">${l}/${r.max}</span>`,`<button type="button" class="lp-cast" data-act="resd" data-key="${esc(r.id)}" data-d="1" ${l<=0?'disabled':''}>Utiliser</button>`,''),l<=0?'spent':'','magic'),r.nom+' '+(r.sub||''));
     });
+    for(const g of (c.gear||[]).filter(g=>g.inventory&&g.act&&st.eq.includes(g.n)&&ownedGear(c,st,g.n))){
+      const it=st.items.find(it=>it.n===g.n&&it.qty>0),t=typeOfPw(g.act),spec='w|'+g.n,spent=it.max&&it.used>=it.max;
+      const control=it.max||isConsumable(c,it)?ctl(`<span class="lp-slotchip">${it.max?it.max-it.used+'/'+it.max:'Usage unique'}</span>`,`<button type="button" class="lp-cast" data-act="ituse" data-id="${esc(it.id)}" ${spent?'disabled':''}>Utiliser</button>`,''):'';
+      add(t,card(t,g.n,'',`data-act="detail" data-spec="${esc(spec)}" data-tip="${esc(spec)}"`,'',control,spent?'spent':'','magic','Équipement'),g.n+' '+g.note);
+    }
     (c.feats||[]).forEach((f,i)=>{
       const t=f.res||/pacte de la lame|pact of the blade/i.test(f.n+' '+(f.en||''))?'':(f.act!=null?f.act:featType(f)), spec='f|'+i;
       if(t&&!/^Pas acquis\b/i.test(f.d||'')&&!/attaque sournoise|sneak attack/i.test(f.n)){
@@ -863,7 +874,7 @@
         <div class="lp-hp sm"><b class="n">${st.hp}</b><span>/ ${c.hp}</span><span class="gold">${gpOf(st)} po</span></div>${hpBar(c, st)}
         <div class="lp-tmph sm"><span>PV temporaires</span><b>${st.tmp}</b></div>${tmpBar(c, st)}
         <div class="lp-eqline"><span>Équipé</span><div class="lp-equippedlinks">${equippedLinks(c,st,true)}</div></div>
-        <div class="lp-dmslots">${slotRows(c, st, true)}</div><div class="lp-dmcharges">${chargeRows(c,st,true)}</div><div class="lp-dmrows">${resRows(c, st, true)}</div>
+        <div class="lp-dmslots">${slotRows(c, st, true)}</div>
         <a class="lp-open" href="#/live/${esc(c.id)}" data-act="opench" data-char="${esc(c.id)}">Ouvrir la fiche</a></article>`;
     }).join('');
     const evs = EV.filter(e => view.filterChar === 'all' || e.char_id === view.filterChar);
