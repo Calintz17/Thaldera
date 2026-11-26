@@ -405,7 +405,7 @@
     if (!isEq(c,st,sp.src) || (sp.lim && st.used[sp.n])) return out;
     if (sp.cost) {
       const r = resOf(c, sp.cost.res), l = left(c, st, sp.cost.res);
-      if (l >= sp.cost.n) out.push({ k: 'cost', s: `${sp.cost.n} charge${sp.cost.n > 1 ? 's' : ''}`, label: `${sp.cost.n} charge${sp.cost.n > 1 ? 's' : ''} : ${r.nom} (reste ${l})` });
+      if (l >= sp.cost.n) {const day=['stones','echo'].includes(r.id),label=day?'1/day':`${sp.cost.n} charge${sp.cost.n > 1 ? 's' : ''}`;out.push({ k:'cost',s:label,label:`${label} : ${r.nom} (reste ${l})` });}
       return out;
     }
     const rids = sp.pactlimit?[]:[].concat(sp.res || []);
@@ -428,7 +428,7 @@
     const c = cfgOf(id), st = S(id); let cost = '', lvl = sp.lv;
     if (/^free/.test(pool)) { const id = pool.split(':')[1] || [].concat(sp.res)[0]; st.res[id] = (st.res[id] || 0) + 1; cost = resOf(c, id).nom; }
     else if (pool === 'alt') { st.res[sp.alt.res] = (st.res[sp.alt.res] || 0) + sp.alt.n; cost = resOf(c, sp.alt.res).nom; }
-    else if (pool === 'cost') { st.res[sp.cost.res] = (st.res[sp.cost.res] || 0) + sp.cost.n; cost = `${sp.cost.n} charge${sp.cost.n > 1 ? 's' : ''} ${resOf(c, sp.cost.res).nom}`; }
+    else if (pool === 'cost') { st.res[sp.cost.res] = (st.res[sp.cost.res] || 0) + sp.cost.n; cost = ['stones','echo'].includes(sp.cost.res)?`1 utilisation quotidienne : ${resOf(c,sp.cost.res).nom}`:`${sp.cost.n} charge${sp.cost.n > 1 ? 's' : ''} ${resOf(c, sp.cost.res).nom}`; }
     else if (pool === 'pact') { if(sp.pactlimit)st.res[sp.pactlimit]=(st.res[sp.pactlimit]||0)+1; st.pact += 1; lvl = c.pact.lvl; cost = `pacte niveau ${lvl}`; }
     else if (pool === 'ritual') cost = 'rituel, sans emplacement';
     else if (pool !== 'cantrip') { st.slots[pool] = used(st, pool) + 1; lvl = +pool; cost = `emplacement niveau ${pool}`; }
@@ -553,7 +553,6 @@
     }
     return h||'<span class="lp-none">Aucune ressource de combat</span>';
   }
-  function chargeRows(){return '';}
   function equippedLinks(c,st,ro){
     return eqNames(c,st).map(n=>{const spec=(ro?'dm|'+c.id+'|':'')+'w|'+n;return `<button type="button" class="lp-eqlink" data-act="detail" data-spec="${esc(spec)}" data-tip="${esc(spec)}">${esc(n)}</button>`;}).join('')||'<span>Aucun objet</span>';
   }
@@ -594,8 +593,7 @@
   function combatSummary(c,st){
     const chars=(c.abil||[]).map(a=>`<div class="lp-tile ab"><span>${esc(a[0])}</span><b>${esc(a[1])}</b><em>${esc(a[2])}</em></div>`).join('');
     const skills=(c.skills||[]).map(k=>`<div class="lp-sk ${k[3]||'n'}"><i class="pm"></i><span>${esc(k[0])}</span><b>${signed(k[2])}</b></div>`).join('');
-    const charges=chargeRows(c,st,false);
-    return `<section class="lp-block lp-resb lp-combatsummary"><div class="lp-combatlayout"><div class="lp-combatleft"><h3>Ressources de combat</h3><div class="lp-slots">${slotRows(c,st,false)}</div>${charges?`<div class="lp-chargegrid">${charges}</div>`:''}</div><div class="lp-combatright"><h3>Caractéristiques</h3><div class="lp-quickabilities">${chars}</div><h3>Compétences</h3><div class="lp-quickskills">${skills}</div></div></div><div class="lp-summaryfooter"><b>Équipé</b><div class="lp-equippedlinks">${equippedLinks(c,st,false)}</div>${defensePanel(c,st)}</div></section>`;
+    return `<section class="lp-block lp-resb lp-combatsummary"><div class="lp-combatlayout"><div class="lp-combatleft"><h3>Ressources de combat</h3><div class="lp-slots">${slotRows(c,st,false)}</div></div><div class="lp-combatright"><h3>Caractéristiques</h3><div class="lp-quickabilities">${chars}</div><h3>Compétences</h3><div class="lp-quickskills">${skills}</div></div></div><div class="lp-summaryfooter"><b>Équipé</b><div class="lp-equippedlinks">${equippedLinks(c,st,false)}</div>${defensePanel(c,st)}</div></section>`;
   }
   /* bandeau des objets equipes : une ligne par objet, bonus en texte, pouvoirs en pastilles */
   function equippedStrip(c, st) {
@@ -633,7 +631,7 @@
   }
 
   function costBadge(c, sp) {
-    if (sp.cost) return `<span class="lp-cb ch">${sp.cost.n} charge${sp.cost.n > 1 ? 's' : ''}</span>`;
+    if (sp.cost) return ['stones','echo'].includes(sp.cost.res)?'<span class="lp-cb">1/day</span>':`<span class="lp-cb ch">${sp.cost.n} charge${sp.cost.n > 1 ? 's' : ''}</span>`;
     if (sp.lv === 0 && !sp.res) return '<span class="lp-cb">Gratuit</span>';
     if (sp.lv === 0) return '<span class="lp-cb free">1 / jour</span>';
     return `<span class="lp-cb">Niv. ${sp.lv}</span>`;
@@ -664,7 +662,7 @@
       src=`<select class="lp-pool" data-sp="${esc(key)}" aria-label="Emplacement ou source" title="${esc(cur.label||cur.s)}">${ps.map(p=>`<option value="${esc(p.k)}" ${p.k===cur.k?'selected':''}>${esc(poolLabel(p))}${p.k.startsWith('free:')?' / '+esc(resourceSource(c,resOf(c,p.k.slice(5)))):''}</option>`).join('')}</select>`;
     }else if(sp.cost){
       const r=resOf(c,sp.cost.res);
-      src=`<span class="lp-slotchip" title="${esc(resetCaption(r))}">${sp.cost.n} ch. / ${left(c,st,r.id)}</span>`;
+      src=`<span class="lp-slotchip" title="${esc(resetCaption(r))}">${['stones','echo'].includes(r.id)?'1/day':sp.cost.n+' ch. / '+left(c,st,r.id)}</span>`;
       extra=resetCaption(r);
     }else if(ps.length>1){
       src=`<div class="lp-poolchoices">${ps.map(p=>`<button type="button" class="lp-poolpick ${p.k===cur.k?'on':''}" data-act="poolpick" data-key="${esc(key)}" data-pool="${esc(p.k)}" title="${esc(p.label||p.s)}" aria-pressed="${p.k===cur.k}">${esc(poolLabel(p))}</button>`).join('')}</div>`;
