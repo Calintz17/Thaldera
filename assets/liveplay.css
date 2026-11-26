@@ -993,3 +993,89 @@ i.lp-gp { cursor: inherit; font-style: normal; width: 18px; height: 18px; }
 .lp-gp.used .lp-neutralpip {border-color:#747987;background:#303541;}
 .lp-hpc .lp-hpctl button .lp-bg3 {width:20px;height:20px;}
 @media(max-width:520px){.lp-hpc .lp-hpctl button {font-size:12px;}}
+
+/* v162 : loadout, grille de combat stable et tour de controle */
+.dmg-force {color:#e95c60!important;}
+.lp-top {grid-template-columns:minmax(0,1fr) minmax(0,420px) minmax(135px,170px);}
+.lp-hpc .lp-hpctl {grid-template-columns:repeat(3,minmax(0,1fr)) minmax(0,1fr)!important;gap:5px;}
+.lp-hpc .lp-hpctl input {grid-column:4!important;grid-row:1!important;height:38px;}
+.lp-hpc .lp-hpctl button,.lp-hpc .lp-hpctl button.tmp {grid-row:1!important;height:38px;justify-content:flex-start;padding:4px 5px!important;}
+.lp-hpc .lp-hpctl .dmg {grid-column:1!important;}.lp-hpc .lp-hpctl .heal {grid-column:2!important;}.lp-hpc .lp-hpctl .tmp {grid-column:3!important;}
+.lp-top .lp-undo {height:auto;min-height:52px;overflow:visible;justify-content:center;}
+.lp-top .lp-undo small {white-space:normal;overflow:visible;overflow-wrap:anywhere;font-size:11px;line-height:1.25;}
+.lp-resb .lp-slots,.lp-dmslots {display:flex;flex-wrap:wrap;align-items:flex-start;gap:10px 12px;}
+.lp-sg {display:grid;grid-template-columns:minmax(0,1fr) auto;grid-template-rows:16px 30px;gap:3px 6px;min-width:0;align-items:center;padding-right:9px;}
+.lp-sg .lp-slotlevel {grid-column:1;grid-row:1;}
+.lp-sg .lp-slotgems {grid-column:1/-1;grid-row:2;flex-wrap:nowrap;gap:4px;}
+.lp-sg small {grid-column:2;grid-row:1;}
+.lp-sg .lp-gem,.lp-sg .lp-gp {width:26px;height:26px;flex:none;display:inline-grid;place-items:center;margin:0;}
+.lp-gem.used {filter:grayscale(1);opacity:.44;border-color:#626773;background:#191d25;}
+.lp-gem.used .lp-bg3 {filter:grayscale(1);}
+.lp-bardgroup .lp-slotlevel {color:#e2bf60;}
+.lp-sg .lp-gp.used {filter:grayscale(1);}
+.lp-resb .lp-rgrid .lp-row.res .lp-nm {cursor:pointer;min-width:0;display:flex;flex-direction:column;align-items:flex-start;gap:2px;}
+.lp-resourceorigin {font:400 11px/1.3 var(--body);color:#aeb3c0;white-space:normal;overflow-wrap:anywhere;}
+.lp-resb .lp-rgrid .lp-row.res {min-height:52px;}
+.lp-tabs {grid-template-columns:repeat(6,minmax(0,1fr));}
+.lp-loadoutsummary {display:flex;flex-wrap:wrap;gap:8px 16px;margin:0 0 10px;color:#bfc5d1;font:500 13px var(--body);}
+.lp-loadoutsummary b {color:#e0c68c;}
+.lp-main .lp-acols {grid-template-columns:minmax(0,2fr) minmax(0,1fr) minmax(0,1fr);gap:12px;}
+.lp-main .lp-acol.lp-acol-main .lp-agrid {grid-template-columns:repeat(2,minmax(0,1fr))!important;}
+.lp-sheet .lp-hudcard.lp-spellplain {grid-template-rows:48px 24px 17px 32px;height:151px;gap:3px;align-content:start;}
+.lp-sheet .lp-spellplain .lp-sname {grid-row:1;gap:4px;}
+.lp-sheet .lp-spellplain .lp-cardtype {display:flex;flex:none;align-items:center;gap:2px;margin:0;}
+.lp-sheet .lp-spellplain .lp-cardtype .lp-minitag {display:inline-flex;align-items:center;}
+.lp-sheet .lp-spellplain .lp-cardtype .lp-bg3 {vertical-align:middle;}
+.lp-sheet .lp-spellplain .lp-combatmeta,.lp-sheet .lp-spellplain .lp-mrow {grid-row:2;align-items:center;display:flex;gap:6px;}
+.lp-sheet .lp-spellplain .lp-dmgpreview {display:flex;align-items:center;min-width:0;overflow:hidden;}
+.lp-sheet .lp-spellplain .lp-damage {display:inline-flex;align-items:center;gap:2px;white-space:nowrap;line-height:20px;}
+.lp-damage .lp-bg3 {flex:none;align-self:center;margin:0;}
+.lp-spellorigin {grid-row:3;font:500 11px/16px var(--body);color:#aeb3c0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.lp-sheet .lp-spellplain .lp-ctl {grid-row:4;display:grid;grid-template-columns:minmax(0,1fr) minmax(66px,76px);gap:6px;justify-content:space-between;}
+.lp-sheet .lp-spellplain .lp-ctl .c1 {max-width:100%;overflow:hidden;}
+.lp-sheet .lp-spellplain .lp-ctl .c1 select {width:auto;max-width:100%;min-width:0;font-size:11px;padding-right:2px;}
+.lp-sheet .lp-spellplain .lp-ctl .c2 {justify-self:end;width:100%;}
+.lp-sheet .lp-spellplain .lp-ctl .c2 button {width:100%;}
+.lp-prepstate {display:flex;align-items:center;justify-content:flex-end;font-size:11px;color:#aeb3c0;white-space:nowrap;}
+.lp-sheet .lp-spellplain.lp-inactive:has(.lp-prepbtn) {opacity:1;filter:none;}
+.lp-sheet .lp-spellplain.lp-inactive:has(.lp-prepbtn) .lp-cardtitle,.lp-sheet .lp-spellplain.lp-inactive:has(.lp-prepbtn) .lp-combatmeta,.lp-sheet .lp-spellplain.lp-inactive:has(.lp-prepbtn) .lp-spellorigin {opacity:.6;filter:grayscale(1);}
+.lp-prepbtn.selected {color:#a9dcb5!important;border-color:#52795c!important;background:#20342b!important;}
+.lp-jet,[data-act="rhit"],[data-act="rdmg"],[data-act="rpw"],[data-act="itjet"],[data-act="jetsp"] {display:none!important;}
+.lp-sk {cursor:default;}
+.lp-sk:hover {background:rgba(255,255,255,.03);border-color:var(--lp-line);}
+.lp-wgrid {grid-template-columns:repeat(auto-fill,minmax(min(100%,260px),1fr));align-items:stretch;}
+.lp-wgrid .lp-weapon {height:230px;min-width:0;box-sizing:border-box;overflow:auto;}
+.lp-wgrid .lp-eqtop {min-height:45px;flex:none;}
+.lp-wgrid .lp-wnote {flex:none;line-height:1.4;}
+.lp-wgrid .lp-pwcs {flex:none;}
+.lp-item,.lp-weapon {--rarity:#525969;}
+.lp-item.rarity-common,.lp-weapon.rarity-common {--rarity:#b8bdc7;}
+.lp-item.rarity-uncommon,.lp-weapon.rarity-uncommon {--rarity:#53a96d;}
+.lp-item.rarity-rare,.lp-weapon.rarity-rare {--rarity:#548de6;}
+.lp-item.rarity-veryrare,.lp-weapon.rarity-veryrare {--rarity:#a979e4;}
+.lp-item.rarity-legendary,.lp-weapon.rarity-legendary {--rarity:#e3a84b;}
+.lp-items .lp-item,.lp-wgrid .lp-weapon {border:1px solid var(--rarity)!important;}
+.lp-wgrid .lp-weapon.on {box-shadow:inset 3px 0 #d7b775;}
+.lp-wgrid .lp-weapon.off {filter:none;opacity:.7;background:#11151d;}
+.lp-wgrid .lp-weapon.off .lp-eqname,.lp-wgrid .lp-weapon.off .lp-wst,.lp-wgrid .lp-weapon.off .lp-wnote,.lp-wgrid .lp-weapon.off .lp-pwcs {filter:grayscale(1);}
+.lp-dmwrap {max-width:1660px;grid-template-columns:minmax(0,1fr) minmax(220px,280px);}
+.lp-dmgrid {grid-template-columns:repeat(3,minmax(0,1fr));align-items:stretch;}
+.lp-dmcard {display:flex;flex-direction:column;min-width:0;box-sizing:border-box;}
+.lp-dmcard .lp-dmh {min-height:60px;}
+.lp-dmcard .lp-eqline {min-height:76px;max-height:76px;overflow:auto;line-height:1.35;}
+.lp-dmcard .lp-dmslots {min-height:174px;align-content:flex-start;gap:8px;}
+.lp-dmcard .lp-dmrows {align-content:flex-start;flex:1;min-width:0;}
+.lp-dmcard .lp-open {margin-top:12px;}
+.lp-dmrows .lp-row.res .lp-nm {display:flex;flex-direction:column;gap:2px;min-width:0;}
+.lp-dmrows .lp-pips {max-width:54%;flex-wrap:wrap;}
+body>.lp-tip {position:fixed!important;z-index:2147483000!important;max-width:min(420px,calc(100vw - 16px));max-height:60vh;overflow:hidden;background:#141a25;color:#eee;border:1px solid #b69a65;border-radius:7px;padding:12px 14px;font:400 14px/1.45 system-ui,sans-serif;box-sizing:border-box;pointer-events:none;display:none;}
+body>.lp-tip.on {display:block;}
+body>.lp-tip h3 {margin:0 0 5px;color:#f3daa1;}
+body>.lp-tip p {margin:5px 0;}
+@container(max-width:1050px){.lp-main .lp-acols{grid-template-columns:minmax(0,2fr) minmax(0,1fr) minmax(0,1fr);gap:7px;}.lp-sheet .lp-spellplain .lp-ctl{grid-template-columns:minmax(0,1fr) 66px;}}
+@container(max-width:850px){.lp-main .lp-acols{grid-template-columns:repeat(2,minmax(0,1fr));}.lp-main .lp-acol.lp-acol-main{grid-column:1/-1;}}
+@container(max-width:480px){.lp-main .lp-acols{grid-template-columns:1fr;}.lp-main .lp-acol.lp-acol-main .lp-agrid{grid-template-columns:1fr!important;}.lp-tabs{grid-template-columns:repeat(3,minmax(0,1fr));}}
+@media(max-width:1250px){.lp-dmwrap{grid-template-columns:1fr;}.lp-dmgrid{grid-template-columns:repeat(3,minmax(0,1fr));}}
+@media(max-width:1150px){.lp-top{grid-template-columns:minmax(0,1fr) minmax(0,165px);}}
+@media(max-width:750px){.lp-dmgrid{grid-template-columns:1fr;}.lp-dmcard .lp-dmslots,.lp-dmcard .lp-eqline{min-height:0;max-height:none;}}
+@media(max-width:520px){.lp-top{grid-template-columns:1fr;}.lp-hpc .lp-hpctl{grid-template-columns:repeat(3,minmax(0,1fr))!important;}.lp-hpc .lp-hpctl input{grid-column:1/-1!important;grid-row:1!important;}.lp-hpc .lp-hpctl button,.lp-hpc .lp-hpctl button.tmp{grid-row:2!important;}}
