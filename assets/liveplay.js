@@ -514,14 +514,23 @@
     }).join('');
     const bard=resOf(c,'bardic');
     if(bard)html+=`<div class="lp-sg lp-bardgroup" title="${esc(resourceTitle(c,bard))}"><span class="lp-slotlevel">Bardic</span><span class="lp-slotgems">${gpips(c,bard,st.res.bardic||0,ro)}</span><small>${bard.max-(st.res.bardic||0)}/${bard.max}</small></div>`;
+    const ws=resOf(c,'ws');if(ws)html+=`<div class="lp-sg lp-wsgroup" title="${esc(resourceTitle(c,ws))}"><span class="lp-slotlevel">Forme sauvage</span><span class="lp-slotgems">${gpips(c,ws,st.res.ws||0,ro)}</span><small>${ws.max-(st.res.ws||0)}/${ws.max}</small></div>`;
     return html||'<span class="lp-none">Aucun emplacement</span>';
   }
   function resRows(c, st, ro, list) {
-    return (list || visRes(c, st)).filter(r=>r.id!=='bardic').map(r => {
+    return (list || visRes(c, st)).filter(r=>r.id!=='bardic'&&r.id!=='ws').map(r => {
       const u = st.res[r.id] || 0, l = r.max - u;
       const ctl = r.id==='ws' ? gpips(c, r, u, ro) : ro ? `<b class="lp-cnt">${l}/${r.max}</b>` : `<button type="button" class="lp-stp" data-act="resd" data-key="${esc(r.id)}" data-d="1" aria-label="Dépenser">−</button><b class="lp-cnt">${l}/${r.max}</b><button type="button" class="lp-stp" data-act="resd" data-key="${esc(r.id)}" data-d="-1" aria-label="Récupérer">+</button>`;
       return `<div class="lp-row res ${l <= 0 ? 'spent' : ''}"><span class="lp-nm" title="${esc(resourceTitle(c,r))}" ${ro ? '' : `data-tip="r|${esc(r.id)}" data-act="detail" data-spec="r|${esc(r.id)}" role="button" tabindex="0"`}><b>${esc(r.nom)}</b><small class="lp-resourceorigin">${esc(resourceSource(c,r))} / ${r.max} par ${esc(REST_LABEL[r.reset]||r.reset||'recharge')}</small></span><span class="lp-pips">${ctl}</span></div>`;
     }).join('');
+  }
+  function combatSummary(c,st){
+    const shared=visRes(c,st).filter(r=>r.src&&r.max>1);
+    const eq=eqNames(c,st);
+    return `<section class="lp-block lp-resb lp-combatsummary"><div class="lp-resourcehead"><h3>Ressources de combat</h3><button type="button" class="lp-goldquick" data-act="tab" data-v="fiche" title="Modifier les monnaies">${gpOf(st)} po</button></div>
+    <div class="lp-slots">${slotRows(c,st,false)}</div>
+    ${shared.length?`<div class="lp-sharedpools">${shared.map(r=>`<span class="lp-sharedpool" title="${esc(resourceTitle(c,r))}"><span>${esc(r.nom)}</span><b>${left(c,st,r.id)}/${r.max}</b></span>`).join('')}</div>`:''}
+    <div class="lp-summaryfooter"><span class="lp-equippedsummary" title="${esc(eq.join(', '))}"><b>Équipé :</b> ${eq.length?esc(eq.join(', ')):'Aucun objet'}</span><button type="button" class="lp-summarylink" data-act="tab" data-v="fiche">Gérer les ressources</button></div></section>`;
   }
   /* bandeau des objets equipes : une ligne par objet, bonus en texte, pouvoirs en pastilles */
   function equippedStrip(c, st) {
@@ -637,9 +646,19 @@
     }).join('');
     return `<div class="lp-tools"><input type="search" id="lp-q" value="${esc(view.q)}" placeholder="Chercher dans le grimoire" aria-label="Chercher"><p class="lp-note">Clique sur l'étoile pour préparer un sort, sur son nom pour lire le texte. Seuls les sorts cochés apparaissent dans Sorts et pouvoirs.</p></div>${out || '<p class="lp-empty">Pas de liste de sorts.</p>'}`;
   }
-  function featsPanel(c) {
-    const fs = c.feats || [], gs = []; fs.forEach(f => { if (!gs.includes(f.grp)) gs.push(f.grp); });
-    return gs.map(g => `<h4 class="lp-lvh">${esc(g)}<small>${fs.filter(f => f.grp === g).length}</small></h4><div class="lp-grid">${fs.map((f, i) => f.grp === g ? `<article class="lp-spell lp-feat"><div class="lp-sh"><span class="lp-sname" data-tip="f|${i}"><span class="lp-tt">${ico(featType(f))}<b>${esc(f.n)}</b></span>${f.en ? `<small class="lp-en">${esc(f.en)}</small>` : ''}</span></div><p class="lp-desc">${rich(dcify(c, f.d))}</p></article>` : '').join('')}</div>`).join('') || '<p class="lp-empty">Aucune capacité.</p>';
+  function featsPanel(c,st) {
+    const fs=c.feats||[],q=nrm0(view.q.trim()),gs=[...new Set(fs.map(f=>f.grp))];
+    const matches=(f)=>!q||nrm0(f.n+' '+(f.en||'')+' '+f.d).includes(q);
+    const card=(f,i)=>{
+      const r=f.res&&resOf(c,f.res),unlearned=/^Pas acquis\b/i.test(f.d||''),t=f.act!=null?f.act:featType(f);
+      const l=r?left(c,st,r.id):null;
+      const status=unlearned?'Non acquis':r?`${l}/${r.max}`:t||'Passif';
+      const txt=unlearned?'Capacité future':r?REST_LABEL[r.reset]||r.reset:t?'Voir Actions':'Permanent';
+      return `<article class="lp-spell lp-hudcard lp-spellplain lp-featcard ${unlearned?'lp-inactive':''}">
+      <button type="button" class="lp-sname" data-act="detail" data-spec="f|${i}" data-tip="f|${i}" title="${esc(f.n+' | '+f.d)}"><span class="lp-cardtitle"><b>${esc(f.n)}</b>${f.en?`<small class="lp-en">${esc(f.en)}</small>`:''}</span>${cardTags(t,false,false,false)}</button>
+      <p class="lp-featsummary">${esc(f.d)}</p>${ctl(`<span class="lp-slotchip" title="${esc(txt)}">${esc(status)}</span>`,`<button type="button" class="lp-cast lp-detailbtn" data-act="detail" data-spec="f|${i}">Détails</button>`,'')}</article>`;
+    };
+    return `<div class="lp-hudfilters"><input type="search" id="lp-q" value="${esc(view.q)}" placeholder="Rechercher une capacité" aria-label="Rechercher une capacité"></div>${gs.map(g=>{const rows=fs.map((f,i)=>({f,i})).filter(({f})=>f.grp===g&&matches(f));return rows.length?`<h4 class="lp-lvh">${esc(g)}<small>${rows.length}</small></h4><div class="lp-grid lp-hotgrid lp-spellgrid">${rows.map(({f,i})=>card(f,i)).join('')}</div>`:'';}).join('')||'<p class="lp-empty">Aucune capacité.</p>'}`;
   }
   function pwState(c, st, o) {
     if (o.sp) { const sp = c.spells.find(x => x.n === o.sp); if (sp) { const pk = pickPool(c, st, sp); return { kind: 'sp', sp, pk, spent: pk.ps.length === 0, txt: pk.ps.length ? (sp.lim || sp.res ? '1 / jour' : pk.cur.s) : (sp.lim && st.used[sp.n] ? 'Utilisé' : 'Aucune ressource') }; } }
@@ -647,6 +666,8 @@
     return null;
   }
   function rarityOf(o) {
+    const canon={'requiem de la reine-morte':'veryrare','balance et entropie':'rare','cuirasse auree':'rare',"lathander's relic":'rare'};
+    const name=nrm0(o?.n||''); if(canon[name])return canon[name];
     const t=nrm0([o&&o.rarity,o&&o.rarete,o&&o.note,o&&o.d].filter(Boolean).join(' '));
     if(/\b(legendaire|legendary)\b/.test(t))return 'legendary';
     if(/\b(tres rare|very rare)\b/.test(t))return 'veryrare';
@@ -655,10 +676,11 @@
     if(/\b(commun|common|commune)\b/.test(t))return 'common';
     return 'unknown';
   }
+  const rarityLabel = r => ({common:'Commun',uncommon:'Peu commun',rare:'Rare',veryrare:'Très rare',legendary:'Légendaire',unknown:'Rareté non renseignée'})[r]||'Rareté non renseignée';
   function equipPanel(c, st) {
     const card = w => {
       const fx = w.fixed || w.perma, on = fx || st.eq.includes(w.n);
-      const hd = `<span class="lp-eqname"><h4>${esc(w.n)}</h4>${w.arc ? `<em>${esc(w.arc)}</em>` : ''}</span><span class="lp-eqst">${w.perma ? 'Permanent' : on ? 'Équipé' : 'Non équipé'}</span>`;
+      const hd = `<span class="lp-eqname"><h4>${esc(w.n)}</h4>${w.arc?`<em>${esc(w.arc)}</em>`:''}<small class="lp-rarityname">${rarityLabel(rarityOf(w))}</small></span><span class="lp-eqst">${w.perma?'Permanent':on?'Équipé':'Non équipé'}</span>`;
       const stat = w.hit || w.dmg ? `<p class="lp-wst">${w.hit ? `<b>${esc(w.hit)}</b>` : ''}${w.hit && w.dmg ? '<i></i>' : ''}${w.dmg ? `<b>${damageText(w.dmg)}</b>` : ''}</p>` : '';
       const sps = c.spells.filter(q => q.src === w.n).map(q => `<span class="lp-pwc" data-tip="s|${esc(q.n)}">${esc(q.n.replace(w.n.split(',')[0] + ', ', ''))}</span>`);
       const pws = (w.pw || []).map((o, i) => typeof o === 'string' ? '' : o.sp ? '' : `<span class="lp-pwc b" data-tip="p|${esc(w.n)}|${i}">${GLY.bolt}${esc(o.n)}</span>`).filter(Boolean);
@@ -678,7 +700,7 @@
         : `<button type="button" class="lp-stp" data-act="itqty" data-id="${esc(it.id)}" data-d="-1" aria-label="Retirer un">−</button><b class="lp-cnt">x${it.qty}</b><button type="button" class="lp-stp" data-act="itqty" data-id="${esc(it.id)}" data-d="1" aria-label="Ajouter un">+</button>`;
       const use = `<button type="button" class="lp-cast sm" data-act="ituse" data-id="${esc(it.id)}" ${(it.max ? l <= 0 : it.qty <= 0) ? 'disabled' : ''}>Utiliser</button>`;
       const jet = '';
-      return `<li class="lp-item rarity-${rarityOf(cat||it)} ${(it.max ? l <= 0 : it.qty <= 0) ? 'spent' : ''}"><span class="lp-nm">${esc(it.n)}${(cat && cat.d) || it.note ? `<small class="nt">${esc((cat && cat.d) || it.note)}</small>` : ''}</span><span class="lp-iq">${ctl}${use}${jet}<button type="button" class="lp-del" data-act="itdel" data-id="${esc(it.id)}" aria-label="Supprimer">×</button></span></li>`;
+      return `<li class="lp-item rarity-${rarityOf(cat||it)} ${(it.max ? l <= 0 : it.qty <= 0) ? 'spent' : ''}"><span class="lp-nm">${esc(it.n)}<small class="lp-rarityname">${rarityLabel(rarityOf(cat||it))}</small>${(cat && cat.d) || it.note ? `<small class="nt">${esc((cat && cat.d) || it.note)}</small>` : ''}</span><span class="lp-iq">${ctl}${use}${jet}<button type="button" class="lp-del" data-act="itdel" data-id="${esc(it.id)}" aria-label="Supprimer">×</button></span></li>`;
     }).join('');
     return `<div class="lp-tools"><input type="search" id="lp-q" value="${esc(view.q)}" placeholder="Chercher un objet" aria-label="Chercher"></div>
       <h4 class="lp-lvh">Objets et consommables<small>${st.items.length}</small></h4>
@@ -687,10 +709,10 @@
   }
 
   function actionsPanel(c, st) {
-    const cols={'Action':[],'Action bonus':[],'Réaction':[],'Hors combat':[]}, q=nrm0(view.q.trim()), filter=view.act==='Hors combat'?'all':view.act;
-    const add=(t,html,search,group=-1,off=false)=>{if(cols[t] && (!q||nrm0(search).includes(q))) cols[t].push({html,group,off});};
+    const cols={'Action':[],'Action bonus':[],'Réaction':[],'Hors combat':[]}, q=nrm0(view.q.trim()), filter=view.act;
+    const add=(t,html,search,group=-1,off=false)=>{if(cols[t] && (filter==='all'||filter===t) && (!q||nrm0(search).includes(q))) cols[t].push({html,group,off});};
     const head=(t,name,en,attrs,k)=>`<button type="button" class="lp-sname" ${attrs||''}><span class="lp-cardtitle"><b title="${esc(name)}">${esc(name)}</b>${en?`<small class="lp-en">${esc(en)}</small>`:''}</span>${cardTags(t,false,false,false)}</button>`;
-    const card=(t,name,en,attrs,meta,ctrl,cls,k)=>`<article class="lp-spell lp-act lp-hudcard lp-spellplain ${cls||''}">${head(t,name,en,attrs,k||'magic')}<div class="lp-mrow">${meta}</div>${ctrl}</article>`;
+    const card=(t,name,en,attrs,meta,ctrl,cls,k,origin='')=>`<article class="lp-spell lp-act lp-hudcard lp-spellplain ${cls||''}">${head(t,name,en,attrs,k||'magic')}<div class="lp-mrow">${meta}</div><div class="lp-spellorigin" title="${esc(origin)}">${esc(origin)}</div>${ctrl||ctl('<span class="lp-slotchip lp-status">À volonté</span>','<span class="lp-readmore">Détails</span>','')}</article>`;
     const eqw=c.weapons.filter(w=>w.fixed||w.perma||st.eq.includes(w.n));
     eqw.filter(w=>w.hit||w.dmg).forEach(w=>{
       const m=damageRx().exec(w.dmg||''), k=m?damageKind(m[3]):'slashing';
@@ -702,14 +724,14 @@
       if(o.res) linked.add(o.res);
       const ps=pwState(c,st,o),spent=ps&&ps.spent,t=typeOfPw(o.a),m=damageRx().exec(o.d||'');
       const main=ps&&ps.kind==='res'?`<button type="button" class="lp-cast" data-act="pwuse" data-key="${esc(w.n)}" data-i="${i}" ${spent?'disabled':''}>Utiliser</button>`:'';
-      const jet=o.r?`<button type="button" class="lp-jet" data-act="rpw" data-key="${esc(w.n)}" data-i="${i}" ${spent?'disabled':''}>Jet</button>`:'';
+      const jet='';
       const chip=ps?`<span class="lp-slotchip ${spent?'off':''}">${esc(ps.txt)}</span>`:'';
-      add(t,card(t,o.n,'',`data-act="pwx" data-key="${esc(w.n)}" data-i="${i}" data-tip="p|${esc(w.n)}|${i}"`,`<span class="lp-meta">${esc(w.n)} ${damagePreview(o.d)}</span>`,(chip||main||jet)?ctl(chip,main,jet):'',spent?'spent':'',m?damageKind(m[3]):'magic'),o.n+' '+w.n+' '+o.d);
+      add(t,card(t,o.n,'',`data-act="pwx" data-key="${esc(w.n)}" data-i="${i}" data-tip="p|${esc(w.n)}|${i}"`,`<span class="lp-meta">${esc(w.n)} ${damagePreview(o.d)}</span>`,(chip||main||jet)?ctl(chip,main,jet):'',spent?'spent':'',m?damageKind(m[3]):'magic',w.n),o.n+' '+w.n+' '+o.d);
     }));
     c.spells.forEach(s=>{
       if(!isEq(c,st,s.src)||(s.lst&&!(st.prep||[]).includes(s.n)))return;
       if(cols[s.t]) {
-        if(isEq(c,st,s.src)) [].concat(s.res||[]).forEach(r=>linked.add(r)); /* Les pools alternatifs restent aussi des actions autonomes (ex. Forme sauvage). */
+        if(isEq(c,st,s.src)) [].concat(s.res||[],s.cost?.res||[]).forEach(r=>linked.add(r)); /* Les pools alternatifs restent aussi des actions autonomes (ex. Forme sauvage). */
         add(s.t,spellCard(c,st,s,true),s.n+' '+(s.en||'')+' '+s.d,s.lv,!isEq(c,st,s.src));
       }
     });
@@ -719,13 +741,17 @@
     });
     (c.feats||[]).forEach((f,i)=>{
       const t=f.res||/pacte de la lame|pact of the blade/i.test(f.n+' '+(f.en||''))?'':(f.act!=null?f.act:featType(f)), spec='f|'+i;
-      if(t) add(t,card(t,f.n,f.en,`data-act="detail" data-spec="${spec}" data-tip="${spec}"`,`<span class="lp-meta">${esc(f.grp||'')}</span>`,'','','book'),f.n+' '+(f.en||'')+' '+f.d);
+      if(t&&!/^Pas acquis\b/i.test(f.d||'')){
+        const bard=/paroles déstabilisantes/i.test(f.n)?resOf(c,'bardic'):null;
+        const l=bard?left(c,st,bard.id):0;
+        const control=bard?ctl(`<span class="lp-slotchip">${l}/${bard.max}</span>`,`<button type="button" class="lp-cast" data-act="resd" data-key="bardic" data-d="1" ${l<=0?'disabled':''}>Utiliser</button>`,''):'';
+        add(t,card(t,f.n,f.en,`data-act="detail" data-spec="${spec}" data-tip="${spec}"`,`<span class="lp-meta">${esc(f.grp||'')}</span>`,control,bard&&l<=0?'spent':'','book',bard?'Inspiration bardique':''),f.n+' '+(f.en||'')+' '+f.d);
+      }
     });
-    const groups=rows=>[...new Set(rows.map(r=>r.group))].sort((a,b)=>a-b).map(g=>`<section class="lp-actiongroup"><h5>${g===-1?'Armes et capacités':g===0?'Cantrips':'Niveau '+g}</h5><div class="lp-agrid">${rows.filter(r=>r.group===g).map(r=>r.html).join('')}</div></section>`).join('');
-    return `<div class="lp-hudfilters lp-actionsearch"><input type="search" id="lp-q" value="${esc(view.q)}" placeholder="Rechercher une action" aria-label="Rechercher une action"></div><div class="lp-acols">${Object.keys(cols).filter(k=>k!=='Hors combat').map(k=>{
-      const rows=cols[k],on=rows.filter(r=>!r.off),off=rows.filter(r=>r.off);
-      return `<section class="lp-acol ${k==='Action'?'lp-acol-main':''}"><h4 class="lp-lvh">${ico(k)}${esc(k)}</h4>${groups(on)||'<p class="lp-empty">Aucune action.</p>'}${off.length?`<details class="lp-unavailable" ${q?'open':''}><summary>Non équipés (${off.length})</summary>${groups(off)}</details>`:''}</section>`;
-    }).join('')}</div>${cols['Hors combat'].length?`<details class="lp-ooc"><summary>Hors combat et rituels (${cols['Hors combat'].length})</summary>${groups(cols['Hors combat'])}</details>`:''}`;
+    const groups=rows=>[...new Set(rows.map(r=>r.group))].sort((a,b)=>a-b).map(g=>`<h4 class="lp-lvh lp-actionlevel">${g===-1?'Armes et capacités':g===0?'Cantrips':'Niveau '+g}</h4><div class="lp-grid lp-hotgrid lp-spellgrid">${rows.filter(r=>r.group===g).map(r=>r.html).join('')}</div>`).join('');
+    const selected=Object.keys(cols).filter(k=>filter==='all'||filter===k);
+    const content=selected.filter(k=>cols[k].length).map(k=>`<section class="lp-actionband"><h3 class="lp-actionheading">${ico(k)}${esc(k)} <small>${cols[k].length}</small></h3>${groups(cols[k])}</section>`).join('');
+    return `${actionFilters(view.q,view.act,true)}${content||'<p class="lp-empty">Aucune action disponible.</p>'}`;
   }
   function restBlock() {
     const cf = view.confirm;
@@ -759,7 +785,7 @@
       <section class="lp-stats lp-primary">
         <div class="lp-srow"><h3>Bonus</h3><div class="lp-r7">${tile(ac.v, 'CA', 'ca', ac.parts.join(', '))}${tile(sp.v + ' ft', 'Vitesse', 'vit', sp.parts.join(', '))}${(c.bonus || []).map(b => tile(b[1], b[0], icOf[b[0]])).join('')}${tile(c.dc, 'DD sorts', 'dd')}${tile('+' + c.atk, 'Att. sort', 'att')}</div></div>
       </section>
-      <section class="lp-block lp-resb"><div class="lp-resourcehead"><h3>Ressources de combat</h3><button type="button" class="lp-goldquick" data-act="tab" data-v="fiche" title="Modifier les monnaies">${gpOf(st)} po</button></div><div class="lp-slots">${slotRows(c, st, false)}</div><div class="lp-rgrid">${resRows(c, st, false, visRes(c, st).filter(r => !r.src))}</div>${(() => { const e = equippedStrip(c, st); return e ? `<button type="button" class="lp-eq-toggle" data-act="eqfold" aria-expanded="${!!view.eqOpen}">Objets équipés <span>${view.eqOpen?'−':'+'}</span></button>${view.eqOpen?`<div class="lp-eqrows">${e}</div>`:''}` : ''; })()}</section>
+      ${combatSummary(c,st)}
       <div class="lp-main"><div class="lp-tabs" role="tablist">${tabs.map(([k, n]) => `<button type="button" role="tab" class="${tab === k ? 'on' : ''}" data-act="tab" data-v="${k}" aria-selected="${tab === k}"><span>${n}</span></button>`).join('')}</div>
       ${tab === 'fiche' ? `      <section class="lp-stats">
         <div class="lp-srow"><h3>Caractéristiques</h3><div class="lp-r6">${(c.abil || []).map(a => `<div class="lp-tile ab"><span>${esc(a[0])}</span><b>${esc(a[1])}</b><em>${esc(a[2])}</em></div>`).join('')}</div></div>
@@ -767,8 +793,9 @@
       </section>
 
       <section class="lp-block lp-skills"><h3>Compétences<small>Modificateurs de compétence${c.reliable ? ' (Talent fiable : 10 minimum sur les maîtrisées)' : ''}</small></h3><div class="lp-sk6">${(c.skills || []).map((k, i) => `<div class="lp-sk ${k[3] || 'n'}" title="${esc(k[0])} (${k[1]})${k[3] === 'E' ? ', expertise' : k[3] === 'P' ? ', maîtrise' : k[3] === 'H' ? ', demi-maîtrise' : ''}"><i class="pm"></i><span>${esc(k[0])}<em>${k[1]}</em></span><b>${signed(k[2])}</b></div>`).join('')}</div></section>
+      <section class="lp-block lp-sheetresources"><h3>Gestion des ressources</h3><p class="lp-fichenote">Suivi des utilisations, charges et récupérations manuelles.</p><div class="lp-rgrid">${resRows(c,st,false)}</div></section>
       <div class="lp-coinbar"><span class="lp-cbt">Monnaies</span>${coinsDef.map(([k, n, ab]) => `<label class="lp-coin" data-k="${k}" title="${esc(n)}"><span>${ab}</span><input type="number" min="0" inputmode="numeric" data-coin="${k}" value="${(st.coins || {})[k] || 0}" aria-label="${esc(n)}"></label>`).join('')}</div>
-` : tab === 'armes' ? equipPanel(c, st) : tab === 'capa' ? featsPanel(c) : tab === 'objets' ? itemsPanel(c, st) : tab === 'actions' ? actionsPanel(c, st) : spellsPanel(c, st)}</div></div></div>`;
+` : tab === 'armes' ? equipPanel(c, st) : tab === 'capa' ? featsPanel(c,st) : tab === 'objets' ? itemsPanel(c, st) : tab === 'actions' ? actionsPanel(c, st) : spellsPanel(c, st)}</div></div></div>`;
   }
   const ago = iso => { const s = Math.max(0, (Date.now() - new Date(iso)) / 1000); return s < 60 ? 'à l\'instant' : s < 3600 ? Math.floor(s / 60) + ' min' : s < 86400 ? Math.floor(s / 3600) + ' h' : Math.floor(s / 86400) + ' j'; };
 
