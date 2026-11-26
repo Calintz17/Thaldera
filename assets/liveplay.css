@@ -1079,3 +1079,63 @@ body>.lp-tip p {margin:5px 0;}
 @media(max-width:1150px){.lp-top{grid-template-columns:minmax(0,1fr) minmax(0,165px);}}
 @media(max-width:750px){.lp-dmgrid{grid-template-columns:1fr;}.lp-dmcard .lp-dmslots,.lp-dmcard .lp-eqline{min-height:0;max-height:none;}}
 @media(max-width:520px){.lp-top{grid-template-columns:1fr;}.lp-hpc .lp-hpctl{grid-template-columns:repeat(3,minmax(0,1fr))!important;}.lp-hpc .lp-hpctl input{grid-column:1/-1!important;grid-row:1!important;}.lp-hpc .lp-hpctl button,.lp-hpc .lp-hpctl button.tmp{grid-row:2!important;}}
+
+/* v163 : grille stricte et interface de table responsive */
+.lp-sheet {grid-template-columns:minmax(180px,clamp(230px,25.5vw,425px)) minmax(0,1fr);gap:0 18px;max-width:1920px;}
+.lp-artcol {min-width:0;}
+.lp-artcol .lp-portrait {width:100%;height:auto;max-height:calc(var(--lp-vh,100vh) - 72px);object-fit:contain;object-position:right top;}
+.lp-body {max-width:none;padding-right:20px;}
+.lp-gem,.lp-gem.pact,.lp-gem.used {border:0!important;background:none!important;box-shadow:none!important;border-radius:0!important;}
+.lp-gem.used {opacity:.4;}
+.lp-sg {border:0!important;padding-right:4px;}
+.lp-resb .lp-rgrid .lp-row.res {min-height:58px;}
+.lp-resourceorigin {font-size:12px;}
+.lp-wsinline {display:flex;gap:2px;align-items:center;justify-content:flex-start;}
+.lp-wsinline .lp-gp {width:24px;height:24px;}
+.lp-main .lp-acols {grid-template-columns:minmax(0,2fr) minmax(0,1fr) minmax(0,1fr);}
+.lp-main .lp-acol.lp-acol-main .lp-agrid {grid-template-columns:repeat(2,minmax(0,1fr))!important;}
+.lp-sheet .lp-hudcard.lp-spellplain {position:relative;display:flex!important;flex-direction:column!important;align-items:stretch!important;justify-content:flex-start;box-sizing:border-box;height:164px!important;min-height:164px;max-height:164px;gap:4px!important;padding:10px!important;overflow:hidden;}
+.lp-sheet .lp-hudcard.lp-spellplain .lp-sname {position:relative!important;display:block!important;height:48px!important;min-height:48px!important;max-height:48px;flex:none!important;width:100%;padding:0 62px 0 0!important;box-sizing:border-box;overflow:hidden;align-self:stretch;}
+.lp-sheet .lp-spellplain .lp-cardtitle {display:flex;gap:3px;min-width:0;max-width:100%;}
+.lp-sheet .lp-spellplain .lp-cardtitle b {font:650 16px/1.13 var(--body);overflow-wrap:anywhere;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;overflow:hidden;}
+.lp-sheet .lp-spellplain .lp-sname .lp-en {font:italic 12px/1.1 var(--body)!important;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.lp-sheet .lp-spellplain .lp-cardtype {position:absolute;right:0;top:0;display:grid!important;grid-template-columns:repeat(3,18px);gap:1px;align-items:center;width:56px;height:20px;margin:0!important;}
+.lp-sheet .lp-spellplain .lp-cardtype>span {display:flex;align-items:center;justify-content:center;width:18px;height:20px;min-width:0;}
+.lp-sheet .lp-spellplain .lp-cardtype .lp-bg3 {flex:none;}
+.lp-sheet .lp-spellplain .lp-cardtype .lp-tagconc {opacity:.5;}
+.lp-sheet .lp-spellplain.conc .lp-cardtype .lp-tagconc {opacity:1;}
+.lp-sheet .lp-spellplain .lp-combatmeta,.lp-sheet .lp-spellplain .lp-mrow {display:flex!important;flex:none;align-items:center;min-width:0;min-height:24px;height:24px;max-height:24px;padding:0!important;margin:0!important;gap:5px;overflow:hidden;}
+.lp-sheet .lp-spellplain .lp-range {display:inline-flex;align-items:center;gap:3px;flex:none;max-width:49%;white-space:nowrap;font-size:12px;overflow:hidden;text-overflow:ellipsis;line-height:20px;}
+.lp-sheet .lp-spellplain .lp-range .lp-bg3 {flex:none;}
+.lp-sheet .lp-spellplain .lp-dmgpreview {display:flex;align-items:center;gap:2px;min-width:0;overflow:hidden;font:650 13px/20px var(--body);padding:0;}
+.lp-sheet .lp-spellplain .lp-damage {display:inline-flex;align-items:center;line-height:20px;gap:2px;}
+.lp-sheet .lp-spellplain .lp-spellorigin {flex:none;height:15px;min-height:15px;max-height:15px;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;font:500 11px/15px var(--body);}
+.lp-sheet .lp-spellplain .lp-ctl {position:absolute!important;bottom:10px!important;left:10px!important;right:10px!important;width:auto!important;display:grid!important;grid-template-columns:minmax(0,1fr) 78px!important;align-items:center;gap:6px!important;margin:0!important;padding:0!important;border:0!important;box-shadow:none!important;height:34px!important;min-height:34px;max-height:34px;}
+.lp-sheet .lp-spellplain .lp-ctl::before,.lp-sheet .lp-spellplain .lp-ctl::after {content:none!important;display:none!important;}
+.lp-sheet .lp-spellplain .lp-ctl .c1,.lp-sheet .lp-spellplain .lp-ctl .c2 {min-width:0;display:flex;align-items:center;height:34px;margin:0!important;padding:0!important;border:0!important;}
+.lp-sheet .lp-spellplain .lp-ctl .c1 {justify-content:flex-start;overflow:hidden;}
+.lp-sheet .lp-spellplain .lp-ctl .c2 {justify-content:flex-end;justify-self:end;width:78px;}
+.lp-sheet .lp-spellplain .lp-ctl .c2 button {width:78px!important;min-width:78px!important;height:34px!important;box-sizing:border-box;margin:0!important;padding:0 3px!important;font:600 13px var(--body);}
+.lp-sheet .lp-spellplain .lp-ctl .c1 select,.lp-sheet .lp-spellplain .lp-ctl .c1 .lp-slotchip {display:inline-flex;align-items:center;box-sizing:border-box;width:102px!important;max-width:100%;min-width:0;height:34px!important;padding:0 6px!important;font:600 12px var(--body);margin:0!important;border-radius:4px;overflow:hidden;text-overflow:ellipsis;}
+.lp-sheet .lp-spellplain .lp-ctl .c1 select {appearance:auto;-webkit-appearance:menulist;}
+.lp-sheet .lp-spellplain .lp-ctl .c1 .lp-poolchoices {display:flex;gap:3px;min-width:0;max-width:100%;overflow-x:auto;}
+.lp-sheet .lp-spellplain .lp-ctl .lp-poolpick {width:auto;min-width:35px;flex:none;padding:0 4px;font-size:11px;height:30px;}
+.lp-sheet .lp-spellplain .lp-ctl .lp-poolpick.on {border-color:#d7b775;color:#f4d997;background:#382f24;}
+.lp-sheet .lp-spellplain .lp-ctl .lp-reset {font-size:11px!important;}
+.lp-main .lp-spellgrid {grid-template-columns:repeat(auto-fill,minmax(min(100%,240px),1fr));gap:8px;}
+.lp-main .lp-acol .lp-agrid {gap:7px;}
+.lp-ooc {margin-top:14px;border-top:1px solid #3b3e4a;padding-top:10px;}
+.lp-ooc summary {cursor:pointer;font-size:14px;font-weight:650;color:#e0c68c;}
+.lp-ooc .lp-agrid {display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,240px),1fr));gap:8px;}
+.lp-wgrid {grid-template-columns:repeat(auto-fit,minmax(min(100%,345px),1fr));align-items:stretch;grid-auto-rows:1fr;}
+.lp-wgrid .lp-weapon {height:auto!important;min-height:230px;max-height:none!important;overflow:visible!important;box-sizing:border-box;padding:14px 16px;}
+.lp-wgrid .lp-eqtop {min-height:48px;}
+.lp-wgrid .lp-wnote {font-size:14px;line-height:1.45;overflow:visible;}
+.lp-wgrid .lp-pwcs {flex-wrap:wrap;}
+.lp-wgrid .lp-pwc {height:auto;min-height:26px;white-space:normal;max-width:100%;}
+.lp-wgrid .lp-wst {flex-wrap:wrap;overflow-wrap:anywhere;}
+.lp-dmcard .lp-dmslots {min-height:174px;}
+@container(max-width:1060px){.lp-main .lp-acols {grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;}.lp-main .lp-acol.lp-acol-main {grid-column:1/-1;}}
+@container(max-width:535px){.lp-main .lp-acols {grid-template-columns:1fr;}.lp-main .lp-acol.lp-acol-main .lp-agrid {grid-template-columns:1fr!important;}.lp-main .lp-spellgrid{grid-template-columns:1fr;}.lp-wgrid{grid-template-columns:1fr;}}
+@media(max-width:900px){.lp-sheet {grid-template-columns:minmax(0,1fr);gap:0;}.lp-artcol {display:none!important;}.lp-body{padding:12px 12px 48px;}.lp-top .lp-undo{min-height:44px;}.lp-dmgrid{grid-template-columns:1fr;}.lp-dmcard .lp-dmslots{min-height:0;}.lp-hudfilters input,.lp-hpctl input,.lp-pool {font-size:16px!important;}}
+@media(max-width:480px){.lp-sheet .lp-spellplain .lp-ctl .c2 button{font-size:14px;}.lp-hudfilters .lp-chips{flex-wrap:wrap;}.lp-primary .lp-r7{grid-template-columns:repeat(3,minmax(0,1fr));}.lp-hpc .lp-hpctl input{font-size:16px;}.lp-tabs button{min-height:44px;}.lp-wgrid .lp-weapon{min-height:0;}.lp-resb .lp-rgrid{grid-template-columns:1fr;}.lp-sg .lp-slotgems{flex-wrap:wrap;}.lp-sheet .lp-hudcard.lp-spellplain{height:170px!important;min-height:170px;max-height:170px;}}
