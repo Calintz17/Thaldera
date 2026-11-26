@@ -8599,17 +8599,6 @@
           "pre": false
         },
         {
-          "n": "Boule de neige d'Aria",
-          "en": "Aria's Snowball",
-          "lv": 3,
-          "t": "Action",
-          "p": "120 ft",
-          "c": false,
-          "d": "Sort de neige à texte non retrouvé. À confirmer avec le MJ.",
-          "lst": "druide",
-          "pre": false
-        },
-        {
           "n": "Éruption de terre",
           "en": "Erupting Earth",
           "lv": 3,
@@ -8636,17 +8625,6 @@
           "ruleSource": "XGE (Legacy)",
           "duration": "1 h",
           "castTime": "1 action",
-          "pre": false
-        },
-        {
-          "n": "Liberté des flots",
-          "en": "Freedom of the Waves",
-          "lv": 3,
-          "t": "Action",
-          "p": "120 ft",
-          "c": true,
-          "d": "Sort de Tal'Dorei Reborn (déluge, téléportation dans la zone, réaction pour se téléporter à 60 ft quand tu es ciblé). Texte complet à confirmer.",
-          "lst": "druide",
           "pre": false
         },
         {
@@ -8730,9 +8708,12 @@
           "t": "Action",
           "p": "Soi",
           "c": true,
-          "d": "Sort de Tal'Dorei Reborn lié au vent. Texte complet à confirmer.",
+          "d": "Concentration, 10 minutes. Matériel : un bout de toile de voile. Le vent t'enveloppe et te soulève : vitesse de vol 60 ft. Avantage aux tests de caractéristique pour éviter l'agrippement et aux jets de sauvegarde contre entravé ou paralysé. Quand tu es ciblé par un sort ou une attaque, réaction : tu te téléportes jusqu'à 60 ft dans un espace libre visible. Si cela te sort de la portée, tu n'es pas affecté. Le sort prend fin quand tu réapparais.",
           "lst": "druide",
-          "pre": false
+          "pre": false,
+          "duration": "10 min",
+          "castTime": "1 action",
+          "ruleSource": "Tal'Dorei Campaign Setting Reborn"
         },
         {
           "n": "Maelström",
