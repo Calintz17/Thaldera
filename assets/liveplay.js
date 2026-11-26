@@ -388,28 +388,29 @@
     });
     if (c.pact) st.pact = 0;
     st.items.forEach(it => { if (it.max && type === 'long') it.used = 0; });
-    if (type === 'long') { st.slots = {}; st.hp = c.hp; st.tmp = 0; st.conc = null; st.used = {}; }
+    if (type === 'long') { st.defenseEffects=[]; st.slots = {}; st.hp = c.hp; st.tmp = 0; st.conc = null; st.used = {}; }
     view.confirm = null;
     return say(id, type === 'long' ? 'Repos long' + (notes.length ? ' (' + notes.join(', ') + ')' : '') : 'Repos court', 'rest');
   }
 
   function poolsFor(c, st, sp) {
     const out = [];
+    if(sp.inventorySource&&!st.items.some(it=>it.n===sp.inventorySource&&it.qty>0))return out;
     if (sp.lim && st.used[sp.n]) return out;
     if (sp.cost) {
       const r = resOf(c, sp.cost.res), l = left(c, st, sp.cost.res);
       if (l >= sp.cost.n) out.push({ k: 'cost', s: `${sp.cost.n} charge${sp.cost.n > 1 ? 's' : ''}`, label: `${sp.cost.n} charge${sp.cost.n > 1 ? 's' : ''} : ${r.nom} (reste ${l})` });
       return out;
     }
-    const rids = [].concat(sp.res || []);
+    const rids = sp.pactlimit?[]:[].concat(sp.res || []);
     rids.forEach(id => { const r = resOf(c, id); if (r && left(c, st, id) > 0) out.push({ k: 'free:' + id, s: rids.length > 1 ? 'Gratuit : ' + (r.nom.match(/\(([^)]+)\)/) || [0, r.nom])[1] : 'Usage gratuit', label: 'Usage gratuit : ' + r.nom }); });
     if (sp.alt && left(c, st, sp.alt.res) >= sp.alt.n) out.push({ k: 'alt', s: 'Ressource', label: 'Dépenser : ' + resOf(c, sp.alt.res).nom });
     if (sp.lv === 0) { if (!sp.res) out.push({ k: 'cantrip', s: 'À volonté', label: 'Cantrip à volonté' }); return out; }
-    if (!sp.pactonly) Object.keys(c.slots).map(Number).sort((a, b) => a - b).forEach(lv => {
+    if (!sp.pactonly && !(c.id==='philippa'&&sp.lst==='occultiste')) Object.keys(c.slots).map(Number).sort((a, b) => a - b).forEach(lv => {
       const l = total(c, lv) - used(st, lv);
       if (lv >= sp.lv && l > 0) out.push({ k: String(lv), s: `Niveau ${lv} (${l} restant${l > 1 ? 's' : ''})`, label: `Emplacement niveau ${lv} (${l} restant${l > 1 ? 's' : ''})` });
     });
-    if (c.pact && c.pact.lvl >= sp.lv && c.pact.n - st.pact > 0) { const l = c.pact.n - st.pact; out.push({ k: 'pact', s: `Pacte niveau ${c.pact.lvl} (${l} restant${l > 1 ? 's' : ''})`, label: `Pacte niveau ${c.pact.lvl} (${l} restant${l > 1 ? 's' : ''})` }); }
+    if ((!sp.pactlimit||left(c,st,sp.pactlimit)>0)&&c.pact && c.pact.lvl >= sp.lv && c.pact.n - st.pact > 0) { const l = c.pact.n - st.pact; out.push({ k: 'pact', s: `Pacte niveau ${c.pact.lvl} (${l} restant${l > 1 ? 's' : ''})`, label: `Pacte niveau ${c.pact.lvl} (${l} restant${l > 1 ? 's' : ''})` }); }
     if (sp.ritual && !sp.src && !sp.lim && (!sp.lst || (st.prep||[]).includes(sp.n))) out.push({k:'ritual',s:'Rituel',label:'Rituel : +10 minutes, aucun emplacement'});
     return out;
   }
@@ -422,11 +423,12 @@
     if (/^free/.test(pool)) { const id = pool.split(':')[1] || [].concat(sp.res)[0]; st.res[id] = (st.res[id] || 0) + 1; cost = resOf(c, id).nom; }
     else if (pool === 'alt') { st.res[sp.alt.res] = (st.res[sp.alt.res] || 0) + sp.alt.n; cost = resOf(c, sp.alt.res).nom; }
     else if (pool === 'cost') { st.res[sp.cost.res] = (st.res[sp.cost.res] || 0) + sp.cost.n; cost = `${sp.cost.n} charge${sp.cost.n > 1 ? 's' : ''} ${resOf(c, sp.cost.res).nom}`; }
-    else if (pool === 'pact') { st.pact += 1; lvl = c.pact.lvl; cost = `pacte niveau ${lvl}`; }
+    else if (pool === 'pact') { if(sp.pactlimit)st.res[sp.pactlimit]=(st.res[sp.pactlimit]||0)+1; st.pact += 1; lvl = c.pact.lvl; cost = `pacte niveau ${lvl}`; }
     else if (pool === 'ritual') cost = 'rituel, sans emplacement';
     else if (pool !== 'cantrip') { st.slots[pool] = used(st, pool) + 1; lvl = +pool; cost = `emplacement niveau ${pool}`; }
     if (sp.lim) st.used[sp.n] = 1;
     let extra = '';
+    if(sp.n==='Veil Shield, Quiet Passing'){st.defenseEffects=st.defenseEffects||[];if(!st.defenseEffects.some(e=>e.source===sp.src&&e.n==='Radiant'))st.defenseEffects.push({k:'resist',n:'Radiant',source:sp.src});}
     if (sp.c) { if (st.conc && st.conc !== sp.n) extra = `, abandonne ${st.conc}`; st.conc = sp.n; }
     if (sp.thp) { const a = sp.thp.b + sp.thp.per * Math.max(0, lvl - sp.thp.base); if (a > st.tmp) st.tmp = a; extra += `, ${a} PV temporaires`; }
     if (sp.heal) {
@@ -498,7 +500,7 @@
   }
   function spellSource(c,sp) {
     const list=(c.lists||[]).find(l=>l.id===sp.lst);
-    return [...new Set([sp.src,list&&list.nom,...[].concat(sp.res||[]).map(id=>resOf(c,id)).filter(Boolean).map(r=>resourceSource(c,r)),sp.cost&&resOf(c,sp.cost.res)&&resourceSource(c,resOf(c,sp.cost.res))].filter(Boolean))].join(' / ')||'Sort connu';
+    return [...new Set([sp.origin,sp.src,list&&list.nom,...[].concat(sp.res||[]).map(id=>resOf(c,id)).filter(Boolean).map(r=>resourceSource(c,r)),sp.cost&&resOf(c,sp.cost.res)&&resourceSource(c,resOf(c,sp.cost.res))].filter(Boolean))].join(' / ')||'Sort connu';
   }
   function resourceTitle(c,r) {
     return [r.nom,resourceSource(c,r),r.max+' utilisation'+(r.max>1?'s':'')+' / '+(REST_LABEL[r.reset]||r.reset||'recharge'),r.d||r.sub||''].filter(Boolean).join(' | ');
@@ -523,12 +525,12 @@
   function headerBardic(c,st){const r=resOf(c,'bardic');return r?`<span class="lp-headerpips">${Array.from({length:Math.max(0,left(c,st,r.id))},()=>`<span class="lp-headpip" title="Inspiration bardique">${bg3('bardic')}</span>`).join('')}</span>`:'';}
   function slotRows(c,st,ro){
     const max=Math.max(0,...CFG.chars.flatMap(ch=>Object.keys(ch.slots).map(Number)));
-    const levels=ro?Array.from({length:max},(_,i)=>i+1):Object.keys(c.slots).map(Number).sort((a,b)=>a-b);
-    const row=(label,n,u,icons,cl='',tip='')=>`<div class="lp-sg ${cl}" title="${esc(tip||label)}"><span class="lp-slotlevel">${esc(label)}</span><span class="lp-slotgems">${icons||'<span class="lp-slotempty">–</span>'}</span><small>${n?n-u+'/'+n:'–'}</small></div>`;
+    const levels=Object.keys(c.slots).map(Number).filter(l=>total(c,l)>0).sort((a,b)=>a-b);
+    const row=(label,n,u,icons,cl='',tip='')=>`<div class="lp-sg ${cl}" title="${esc(tip||label)}"><span class="lp-slotlevel">${esc(label)}</span><span class="lp-slotgems">${icons||'<span class="lp-slotempty">–</span>'}</span><small>${n?n-u+'/'+n:'–'}</small><span class="lp-recharge">${esc(cl==='pactgroup'?'Repos court / long':cl==='lp-wsgroup'?'Repos court (1), long':cl==='lp-otherpool'?'': 'Repos long')}</span></div>`;
     const gems=(n,u,pact,l)=>Array.from({length:n},(_,i)=>{const off=i>=n-u,cl='lp-gem '+(pact?'pact ':'')+(off?'used ':'')+(ro?'ro':'');return ro?`<span class="${cl}">${bg3(pact?'pact':'slot')}</span>`:`<button type="button" class="${cl}" data-act="pip" data-kind="${pact?'pact':'slot'}" data-key="${pact?'pact':l}" data-idx="${i}" aria-label="${off?'Récupérer':'Dépenser'} : ${pact?'Pacte':'Niveau '+l}">${bg3(pact?'pact':'slot')}</button>`;}).join('');
     let h=levels.map(l=>{const n=total(c,l)||0,u=used(st,l);return row('Niveau '+l,n,u,gems(n,u,false,l));}).join('');
-    if(c.pact||ro){const p=c.pact;h+=row('Pacte'+(p?' '+p.lvl:''),p?.n||0,st.pact||0,p?gems(p.n,st.pact,true,p.lvl):'','pactgroup');}
-    for(const [id,label,cl] of [['bardic','Bardic','lp-bardgroup'],['ws','Forme sauvage','lp-wsgroup']]){const r=resOf(c,id),u=st.res[id]||0;if(r||ro)h+=row(label,r?.max||0,u,r?gpips(c,r,u,ro):'',cl,r?resourceTitle(c,r):'');}
+    if(c.pact){const p=c.pact;h+=row('Pacte'+(p?' '+p.lvl:''),p?.n||0,st.pact||0,p?gems(p.n,st.pact,true,p.lvl):'','pactgroup');}
+    for(const [id,label,cl] of [['bardic','Bardic','lp-bardgroup'],['ws','Forme sauvage','lp-wsgroup']]){const r=resOf(c,id),u=st.res[id]||0;if(r)h+=row(label,r?.max||0,u,r?gpips(c,r,u,ro):'',cl,r?resourceTitle(c,r):'');}
     if(!ro){
       const linked=new Set();
       c.spells.filter(sp=>isEq(c,st,sp.src)&&(!sp.lst||(st.prep||[]).includes(sp.n))).forEach(sp=>[].concat(sp.res||[],sp.cost?.res||[],sp.alt?.res||[]).forEach(id=>linked.add(id)));
@@ -540,8 +542,8 @@
     return h||'<span class="lp-none">Aucun emplacement</span>';
   }
   function chargeRows(c,st,ro){
-    const rows=visRes(c,st).filter(resourceIsCharge).map(r=>`<div class="lp-sg lp-chargegroup" title="${esc(resourceTitle(c,r))}"><span class="lp-slotlevel">${esc(r.src||r.nom)}</span><span class="lp-slotgems">${chargePips(c,st,r,ro)}</span><small>${left(c,st,r.id)}/${r.max}</small></div>`);
-    for(const it of inventoryCharges(c,st))rows.push(`<div class="lp-sg lp-chargegroup" title="${esc(it.n)}"><span class="lp-slotlevel">${esc(it.n)}</span><span class="lp-slotgems">${itemChargePips(it,ro)}</span><small>${it.max-(it.used||0)}/${it.max}</small></div>`);
+    const rows=visRes(c,st).filter(resourceIsCharge).map(r=>`<div class="lp-sg lp-chargegroup" title="${esc(resourceTitle(c,r))}"><span class="lp-slotlevel">${esc(r.src||r.nom)}</span><span class="lp-slotgems">${chargePips(c,st,r,ro)}</span><small>${left(c,st,r.id)}/${r.max}</small><span class="lp-recharge">${esc(REST_LABEL[r.reset]||r.reset||'')}</span></div>`);
+    if(ro)for(const it of inventoryCharges(c,st))rows.push(`<div class="lp-sg lp-chargegroup" title="${esc(it.n)}"><span class="lp-slotlevel">${esc(it.n)}</span><span class="lp-slotgems">${Array.from({length:it.max},(_,i)=>`<span class="lp-neutralpip ${i>=it.max-(it.used||0)?'used':''}"></span>`).join('')}</span><small>${it.max-(it.used||0)}/${it.max}</small><span class="lp-recharge">${esc((c.items.find(x=>x.n===it.n)?.d||'').match(/(?:retour|recharge|regagnées) à l.aube/i)?'Aube':'Selon objet')}</span></div>`);
     return rows.join('');
   }
   function equippedLinks(c,st,ro){
@@ -554,11 +556,21 @@
       return `<div class="lp-row res ${l <= 0 ? 'spent' : ''}"><span class="lp-nm" title="${esc(resourceTitle(c,r))}" ${ro ? '' : `data-tip="r|${esc(r.id)}" data-act="detail" data-spec="r|${esc(r.id)}" role="button" tabindex="0"`}><b>${esc(r.nom)}</b><small class="lp-resourceorigin">${esc(resourceSource(c,r))} / ${r.max} par ${esc(REST_LABEL[r.reset]||r.reset||'recharge')}</small></span><span class="lp-pips">${ctl}</span></div>`;
     }).join('');
   }
+  const DEF_OPTIONS=['Acide','Contondant','Froid','Feu','Foudre','Force','Nécrotique','Perforant','Poison','Psychique','Radiant','Tranchant','Tonnerre','Sommeil magique','Peur','Bannissement','Dégâts physiques non magiques','Projectiles'];
+  function defensePanel(c,st){
+    const base=(c.defenses||[]).map(([k,n])=>[k,n,'Permanent']);
+    if(eqNames(c,st).includes('Hat of Refuge'))base.push(['immune','Bannissement','Hat of Refuge']);
+    if(st.conc==='Ombre de Moil')base.push(['resist','Radiant','Ombre de Moil']);
+    const effects=(st.defenseEffects||[]).filter(e=>!e.source||isEq(c,st,e.source));
+    const label={immune:'Immunité',resist:'Résistance',vulnerable:'Vulnérabilité'},symbol={immune:'◆',resist:'◈',vulnerable:'▼'};
+    const chip=(k,n,src,i)=>`<span class="lp-defensechip ${k}" title="${esc(label[k]+' : '+src)}"><b>${symbol[k]}</b> ${esc(n)}${i!=null?`<button data-act="defremove" data-i="${i}" aria-label="Retirer">×</button>`:''}</span>`;
+    return `<div class="lp-defenses"><h3>Résistances et immunités</h3><div class="lp-defensechips">${base.map(x=>chip(...x)).join('')}${effects.map(e=>chip(e.k,e.n,e.source||'Effet temporaire',(st.defenseEffects||[]).indexOf(e))).join('')}</div><div class="lp-defenseform"><select id="lp-def-kind" aria-label="Type"><option value="resist">Résistance</option><option value="immune">Immunité</option><option value="vulnerable">Vulnérabilité</option></select><select id="lp-def-name" aria-label="Dégât ou effet">${DEF_OPTIONS.map(n=>`<option>${esc(n)}</option>`).join('')}</select><button data-act="defadd">Ajouter</button></div></div>`;
+  }
   function combatSummary(c,st){
     const chars=(c.abil||[]).map(a=>`<div class="lp-tile ab"><span>${esc(a[0])}</span><b>${esc(a[1])}</b><em>${esc(a[2])}</em></div>`).join('');
     const skills=(c.skills||[]).map(k=>`<div class="lp-sk ${k[3]||'n'}"><i class="pm"></i><span>${esc(k[0])}</span><b>${signed(k[2])}</b></div>`).join('');
     const charges=chargeRows(c,st,false);
-    return `<section class="lp-block lp-resb lp-combatsummary"><div class="lp-combatlayout"><div class="lp-combatleft"><h3>Ressources de combat</h3><div class="lp-slots">${slotRows(c,st,false)}</div>${charges?`<h3 class="lp-chargeheading">Charges d'objets</h3><div class="lp-chargegrid">${charges}</div>`:''}</div><div class="lp-combatright"><h3>Caractéristiques</h3><div class="lp-quickabilities">${chars}</div><h3>Compétences</h3><div class="lp-quickskills">${skills}</div></div></div><div class="lp-summaryfooter"><b>Équipé</b><div class="lp-equippedlinks">${equippedLinks(c,st,false)}</div></div></section>`;
+    return `<section class="lp-block lp-resb lp-combatsummary"><div class="lp-combatlayout"><div class="lp-combatleft"><h3>Ressources de combat</h3><div class="lp-slots">${slotRows(c,st,false)}</div>${charges?`<div class="lp-chargegrid">${charges}</div>`:''}</div><div class="lp-combatright"><h3>Caractéristiques</h3><div class="lp-quickabilities">${chars}</div><h3>Compétences</h3><div class="lp-quickskills">${skills}</div></div></div><div class="lp-summaryfooter"><b>Équipé</b><div class="lp-equippedlinks">${equippedLinks(c,st,false)}</div></div>${defensePanel(c,st)}</section>`;
   }
   /* bandeau des objets equipes : une ligne par objet, bonus en texte, pouvoirs en pastilles */
   function equippedStrip(c, st) {
@@ -695,6 +707,7 @@
     return null;
   }
   const RARITIES={"philippa":{"la main du reliquaire":"artifact","fragment of avarice's true name (flesh)":"artifact","sovereign glue":"legendary","interdimensional chalk":"legendary","requiem de la reine-morte":"veryrare","omen, broken sky":"veryrare","horizon brulee":"veryrare","satellite du monde enseveli":"veryrare","scythe de la lithurgie des cendres":"veryrare","balance et entropie":"veryrare","caput tauri":"veryrare","cuirasse auree":"veryrare","potion of regeneration":"veryrare","collier anti-magie":"rare","hat of refuge":"rare","pyrrite bracers":"rare","potion de l'avant-poste":"rare","bandle scout mushroom":"rare","echo de guede nibo":"rare","scry totem":"rare","rapier of the drowned corsair":"uncommon","botte d'aller faire un tour":"uncommon","bourse a confettis dramatiques":"uncommon","glove of appreciation":"uncommon","magic mustache":"uncommon","masque voile-peste":"uncommon","soft-skin potion":"uncommon","water-breathing orb":"uncommon"},"harfang":{"delegate's plumage":"veryrare","fukuro kaen":"veryrare","dague d'honnetete":"rare","potion de l'avant-poste":"rare","pierres de communication":"uncommon","shield, +1":"uncommon","potion of healing (greater)":"uncommon","potion of poison":"uncommon"},"jane":{"fragment of avarice's true name (blasphemy)":"artifact","pickpocket l'imperatrice":"legendary","chaine du serpent de fer":"veryrare","la machoire":"veryrare","parchemin d'invisibilite superieure":"veryrare","potion of flying":"veryrare","shadow-cat armor":"veryrare","ruin, hollow reign":"veryrare","dagger of absorption":"veryrare","flesh brazier":"veryrare","fleches brasier":"veryrare","empress rune of reign":"veryrare","vial of eternal anger":"rare","arc des scories":"rare","croc du gentleman":"rare","flame tongue dagger":"rare","potion de reputation":"rare","charge de breche alchimique":"rare","dagger of venom":"rare","lathander's relic":"rare","orbe de vision distante":"rare","vial of eternal hunger":"rare","l'etreinte de la veuve":"uncommon","sending stones":"uncommon","boussole des ecumes":"uncommon","grimoire de glyphe de garde":"uncommon","herbe de faille sechee":"uncommon","huile de scorpion noir":"uncommon","huile d'anguille electrique":"uncommon","lanterne des profondeurs":"uncommon","masque voile-peste":"uncommon","sceau de silence portatif":"uncommon","water-breathing orb":"uncommon"}};
+  const rarityRank=(o,c)=>['common','uncommon','rare','veryrare','legendary','artifact'].indexOf(rarityOf(o,c));
   function rarityOf(o,c){return RARITIES[c?.id||view.char]?.[nrm0(o?.n||'')]||'common';}
   const rarityLabel = r => ({common:'Commun',uncommon:'Peu commun',rare:'Rare',veryrare:'Très rare',legendary:'Légendaire',artifact:'Artefact',unknown:'Rareté non renseignée'})[r]||'Rareté non renseignée';
   function equipPanel(c, st) {
@@ -709,13 +722,13 @@
       return fx ? `<article class="lp-weapon on fx rarity-${rarityOf(w,c)}">${inner}</article>` : `<div role="button" tabindex="0" class="lp-weapon ${on ? 'on' : 'off'} rarity-${rarityOf(w,c)}" data-act="eq" data-key="${esc(w.n)}" aria-pressed="${on}">${inner}</div>`;
     };
     const q=nrm0(view.q.trim()), matches=w=>!q||nrm0(w.n+' '+(w.note||'')+' '+(w.arc||'')).includes(q);
-    const wl = c.weapons.filter(matches).sort((a, b) => (b.perma ? 1 : 0) - (a.perma ? 1 : 0)), ne = eqNames(c, st).filter(n => c.weapons.some(w => w.n === n)).length;
+    const wl = c.weapons.filter(matches).sort((a,b)=>rarityRank(b,c)-rarityRank(a,c)), ne = eqNames(c, st).filter(n => c.weapons.some(w => w.n === n)).length;
     return `${searchBar(view.q)}<h4 class="lp-lvh">Armes<small>${ne} équipée${ne > 1 ? 's' : ''}</small></h4><div class="lp-wgrid">${wl.map(card).join('')}</div>
-      ${(c.gear || []).length ? `<h4 class="lp-lvh">Objets équipables</h4><div class="lp-wgrid">${c.gear.filter(matches).map(card).join('')}</div>` : ''}`;
+      ${(c.gear || []).length ? `<h4 class="lp-lvh">Objets équipables</h4><div class="lp-wgrid">${c.gear.filter(matches).sort((a,b)=>rarityRank(b,c)-rarityRank(a,c)).map(card).join('')}</div>` : ''}`;
   }
   function itemsPanel(c, st) {
     const nrm = t => String(t).normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase(), nq = nrm(view.q.trim());
-    const items = st.items.filter(it => !nq || nrm(it.n + ' ' + (it.note || '')).includes(nq)).map(it => {
+    const items = st.items.filter(it => !nq || nrm(it.n + ' ' + (it.note || '')).includes(nq)).sort((a,b)=>rarityRank(b,c)-rarityRank(a,c)).map(it => {
       const cat = (c.items || []).find(x => x.n === it.n), l = it.max - it.used;
       const ctl = it.max ? `<button type="button" class="lp-stp" data-act="itchg" data-id="${esc(it.id)}" data-d="1" aria-label="Dépenser une charge">−</button><b class="lp-cnt">${l}/${it.max}</b><button type="button" class="lp-stp" data-act="itchg" data-id="${esc(it.id)}" data-d="-1" aria-label="Récupérer une charge">+</button>`
         : `<button type="button" class="lp-stp" data-act="itqty" data-id="${esc(it.id)}" data-d="-1" aria-label="Retirer un">−</button><b class="lp-cnt">x${it.qty}</b><button type="button" class="lp-stp" data-act="itqty" data-id="${esc(it.id)}" data-d="1" aria-label="Ajouter un">+</button>`;
@@ -750,7 +763,7 @@
       add(t,card(t,o.n,'',`data-act="pwx" data-key="${esc(w.n)}" data-i="${i}" data-tip="p|${esc(w.n)}|${i}"`,`<span class="lp-meta">${esc(w.n)} ${damagePreview(o.d)}</span>`,(chip||main||jet)?ctl(chip,main,jet):'',spent?'spent':'',m?damageKind(m[3]):'magic',w.n),o.n+' '+w.n+' '+o.d);
     }));
     c.spells.forEach(s=>{
-      if(!isEq(c,st,s.src)||(s.lst&&!(st.prep||[]).includes(s.n)))return;
+      if(s.loadoutHidden||!isEq(c,st,s.src)||(s.lst&&!(st.prep||[]).includes(s.n)))return;
       if(cols[displayAct(s)]) {
         if(isEq(c,st,s.src)) [].concat(s.res||[],s.cost?.res||[]).forEach(r=>linked.add(r)); /* Les pools alternatifs restent aussi des actions autonomes (ex. Forme sauvage). */
         add(displayAct(s),spellCard(c,st,s,true),s.n+' '+(s.en||'')+' '+s.d,s.lv,!isEq(c,st,s.src));
@@ -758,20 +771,20 @@
     });
     visRes(c,st).filter(r=>r.a&&!linked.has(r.id)).forEach(r=>{
       const l=r.max-(st.res[r.id]||0),t=typeOfPw(r.a),spec='r|'+r.id;
-      add(t,card(t,r.nom,'',`data-act="detail" data-spec="${esc(spec)}" data-tip="${esc(spec)}"`,`<span class="lp-meta">${esc(r.src||RESET_NAME[r.reset]||'')}</span>`,ctl(r.id==='ws'?`<span class="lp-wsinline">${gpips(c,r,st.res[r.id]||0,false)}</span>`:`<span class="lp-slotchip ${l<=0?'off':''}">${l}/${r.max}</span>`,`<button type="button" class="lp-cast" data-act="resd" data-key="${esc(r.id)}" data-d="1" ${l<=0?'disabled':''}>Utiliser</button>`,''),l<=0?'spent':'','magic'),r.nom+' '+(r.sub||''));
+      add(t,card(t,r.nom,'',`data-act="detail" data-spec="${esc(spec)}" data-tip="${esc(spec)}"`,`<span class="lp-meta">${esc(r.src||RESET_NAME[r.reset]||'')}</span>`,ctl(['ws','bardic'].includes(r.id)?`<span class="lp-wsinline">${gpips(c,r,st.res[r.id]||0,false)}</span>`:`<span class="lp-slotchip ${l<=0?'off':''}">${l}/${r.max}</span>`,`<button type="button" class="lp-cast" data-act="resd" data-key="${esc(r.id)}" data-d="1" ${l<=0?'disabled':''}>Utiliser</button>`,''),l<=0?'spent':'','magic'),r.nom+' '+(r.sub||''));
     });
     (c.feats||[]).forEach((f,i)=>{
       const t=f.res||/pacte de la lame|pact of the blade/i.test(f.n+' '+(f.en||''))?'':(f.act!=null?f.act:featType(f)), spec='f|'+i;
       if(t&&!/^Pas acquis\b/i.test(f.d||'')&&!/attaque sournoise|sneak attack/i.test(f.n)){
         const bard=/paroles déstabilisantes/i.test(f.n)?resOf(c,'bardic'):null;
         const l=bard?left(c,st,bard.id):0;
-        const control=bard?ctl(`<span class="lp-slotchip">${l}/${bard.max}</span>`,`<button type="button" class="lp-cast" data-act="resd" data-key="bardic" data-d="1" ${l<=0?'disabled':''}>Utiliser</button>`,''):'';
+        const control=bard?ctl(`<span class="lp-wsinline">${gpips(c,bard,st.res.bardic||0,false)}</span>`,`<button type="button" class="lp-cast" data-act="resd" data-key="bardic" data-d="1" ${l<=0?'disabled':''}>Utiliser</button>`,''):'';
         add(t,card(t,f.n,f.en,`data-act="detail" data-spec="${spec}" data-tip="${spec}"`,`<span class="lp-meta">${esc(f.grp||'')}</span>`,control,bard&&l<=0?'spent':'','book',bard?'Inspiration bardique':''),f.n+' '+(f.en||'')+' '+f.d);
       }
     });
     const groups=rows=>[...new Set(rows.map(r=>r.group))].sort((a,b)=>a-b).map(g=>`<h4 class="lp-lvh lp-actionlevel">${g===-1?'Armes et capacités':g===0?'Cantrips':'Niveau '+g}${g>0?headerSlots(c,st,g):''}</h4><div class="lp-grid lp-hotgrid lp-spellgrid">${rows.filter(r=>r.group===g).map(r=>r.html).join('')}</div>`).join('');
     const selected=Object.keys(cols).filter(k=>filter==='all'||filter===k);
-    const content=selected.filter(k=>cols[k].length).map(k=>`<section class="lp-actionband"><h3 class="lp-actionheading">${ico(k)}${esc(k)} ${k==='Action bonus'?headerBardic(c,st):''}<small>${cols[k].length}</small></h3>${groups(cols[k])}</section>`).join('');
+    const content=selected.filter(k=>cols[k].length).map(k=>`<section class="lp-actionband"><h3 class="lp-actionheading">${ico(k)}${esc(k)} <small>${cols[k].length}</small></h3>${groups(cols[k])}</section>`).join('');
     return `${actionFilters(view.q,view.act,true)}${content||'<p class="lp-empty">Aucune action disponible.</p>'}`;
   }
   function restBlock() {
@@ -794,7 +807,7 @@
     const hl = HIST[c.id] || [], lastH = hl[hl.length - 1];
     const undoBtn = `<button type="button" class="lp-undo" data-act="undo" ${lastH ? '' : 'disabled'} title="${lastH ? 'Annuler : ' + esc(lastH.label) : 'Rien à annuler'}"><span class="u">↶ Annuler</span><small>${lastH ? esc(lastH.label) : 'aucune action'}</small></button>`;
     const pct = Math.max(0, Math.min(100, st.hp / c.hp * 100));
-    return `<div class="lp-sheet"><aside class="lp-artcol"><img class="lp-portrait" src="${esc(c.portrait)}" alt="${esc(c.nom)}" decoding="async"></aside>
+    return `<div class="lp-sheet lp-char-${esc(c.id)}"><aside class="lp-artcol"><img class="lp-portrait" src="${esc(c.portrait)}" alt="${esc(c.nom)}" decoding="async"></aside>
     <div class="lp-body">
       <header class="lp-top"><div class="lp-ident"><span class="lp-kicker">${view.fromDM ? 'Fiche ouverte par le MJ' : 'Liveplay'}</span><h1>${esc(c.nom)}</h1><p>${esc(c.classe)}${st.conc ? `<span class="lp-concpill" title="Concentration">${bg3('concentration')}${esc(st.conc)}<button type="button" data-act="endconc" aria-label="Terminer la concentration">×</button></span>` : ''}</p></div>
         <div class="lp-hpc"><div class="lp-hpline"><span class="l">PV</span><b>${st.hp}</b><span>/ ${c.hp}</span></div>
@@ -815,7 +828,7 @@
 
       <section class="lp-block lp-skills"><h3>Compétences<small>Modificateurs de compétence${c.reliable ? ' (Talent fiable : 10 minimum sur les maîtrisées)' : ''}</small></h3><div class="lp-sk6">${(c.skills || []).map((k, i) => `<div class="lp-sk ${k[3] || 'n'}" title="${esc(k[0])} (${k[1]})${k[3] === 'E' ? ', expertise' : k[3] === 'P' ? ', maîtrise' : k[3] === 'H' ? ', demi-maîtrise' : ''}"><i class="pm"></i><span>${esc(k[0])}<em>${k[1]}</em></span><b>${signed(k[2])}</b></div>`).join('')}</div></section>
       
-      <div class="lp-coinbar"><span class="lp-cbt">Monnaies</span>${coinsDef.map(([k, n, ab]) => `<label class="lp-coin" data-k="${k}" title="${esc(n)}"><span>${ab}</span><input type="number" min="0" inputmode="numeric" data-coin="${k}" value="${(st.coins || {})[k] || 0}" aria-label="${esc(n)}"></label>`).join('')}</div><div class="lp-coindebit"><label for="lp-debit-key">Dépenser</label><select id="lp-debit-key" aria-label="Monnaie">${coinsDef.map(([k,n])=>`<option value="${k}">${esc(n)}</option>`).join('')}</select><input id="lp-debit-amt" type="number" min="1" step="1" inputmode="numeric" placeholder="Montant" aria-label="Montant à dépenser"><button type="button" data-act="coindebit">OK</button></div>
+      <div class="lp-coinbar"><span class="lp-cbt">Monnaies</span>${coinsDef.map(([k, n, ab]) => `<label class="lp-coin" data-k="${k}" title="${esc(n)}"><span>${ab}</span><input type="number" min="0" inputmode="numeric" data-coin="${k}" value="${(st.coins || {})[k] || 0}" aria-label="${esc(n)}"></label>`).join('')}</div><div class="lp-coindebit"><label for="lp-debit-key">Dépenser</label><select id="lp-debit-key" aria-label="Monnaie">${coinsDef.map(([k,n])=>`<option value="${k}">${esc(n)}</option>`).join('')}</select><input id="lp-debit-amt" type="number" min="1" step="1" inputmode="numeric" placeholder="Montant" aria-label="Montant à dépenser"><button type="button" data-act="coindebit">Dépenser</button><button type="button" data-act="coinadd">Ajouter</button></div>
 ` : tab === 'armes' ? equipPanel(c, st) : tab === 'capa' ? featsPanel(c,st) : tab === 'objets' ? itemsPanel(c, st) : tab === 'actions' ? actionsPanel(c, st) : spellsPanel(c, st)}</div></div></div>`;
   }
   const ago = iso => { const s = Math.max(0, (Date.now() - new Date(iso)) / 1000); return s < 60 ? 'à l\'instant' : s < 3600 ? Math.floor(s / 60) + ' min' : s < 86400 ? Math.floor(s / 3600) + ' h' : Math.floor(s / 86400) + ' j'; };
@@ -877,9 +890,11 @@
     if (a === 'kwx') { if (e.target.closest('.lp-pop') && !e.target.closest('.lp-px')) return; view.pop = null; view.popsp = null; view.poppw = null; view.popdetail = null; return render(); }
     if (a === 'detail') { hideTip(); view.popsp = null; view.poppw = null; view.popdetail = b.dataset.spec; return render(); }
     if (!c) return;
+    if(a==='defadd'){const st=S(c),k=root.querySelector('#lp-def-kind').value,n=root.querySelector('#lp-def-name').value;st.defenseEffects=st.defenseEffects||[];if(!st.defenseEffects.some(e=>e.k===k&&e.n===n))st.defenseEffects.push({k,n});return say(c,'Effet défensif : '+n,'effect');}
+    if(a==='defremove'){const st=S(c);(st.defenseEffects||[]).splice(+b.dataset.i,1);return say(c,'Retire un effet défensif','effect');}
     if (a === 'pip') return togglePip(c, b.dataset.kind, b.dataset.key, +b.dataset.idx);
     if (a === 'resd') return resDelta(c, b.dataset.key, +b.dataset.d);
-    if(a==='coindebit'){const k=root.querySelector('#lp-debit-key'),v=root.querySelector('#lp-debit-amt');if(k&&v){const amt=v.value;v.value='';return coinDebit(c,k.value,amt);}return;}
+    if(a==='coindebit'||a==='coinadd'){const k=root.querySelector('#lp-debit-key'),v=root.querySelector('#lp-debit-amt');if(k&&v){const amt=v.value;v.value='';if(a==='coinadd'){const n=Number(amt);if(!Number.isSafeInteger(n)||n<=0)return toast('Montant invalide');return coinAct(c,k.value,(S(c).coins[k.value]||0)+n);}return coinDebit(c,k.value,amt);}return;}
     if (a === 'hp') { const i = root.querySelector('#lp-hp-amt'); const v = i.value; i.value = ''; return hpAct(c, b.dataset.type, v); }
     if (a === 'rest') { view.confirm = b.dataset.type; return render(); }
     if (a === 'restno') { view.confirm = null; return render(); }
