@@ -255,6 +255,7 @@
     if (!o.seeded) { const seed = (c.items || []).map((it, i) => ({ id: 's' + i, n: it.n, qty: it.qty || 1, max: it.max || 0, used: it.used || 0, note: it.note || '' })); o.items = seed.concat(o.items); o.res = Object.assign({}, (c.init || {}).res || {}, o.res); o.seeded = 1; }
     if (!o.coins) o.coins = { pp: 0, gp: o.gold || 0, ist: 0, sp: 0, cp: 0 };
     permas(c).forEach(n => { if (!o.eq.includes(n)) o.eq.push(n); });
+    pruneDefenses(c,o);
     return o;
   }
   const PREV = {}, HIST = {};
@@ -387,6 +388,7 @@
       } else st.res[r.id] = 0;
     });
     if (c.pact) st.pact = 0;
+    st.defenseEffects=[];
     st.items.forEach(it => { if (it.max && type === 'long') it.used = 0; });
     if (type === 'long') { st.defenseEffects=[]; st.slots = {}; st.hp = c.hp; st.tmp = 0; st.conc = null; st.used = {}; }
     view.confirm = null;
@@ -396,7 +398,7 @@
   function poolsFor(c, st, sp) {
     const out = [];
     if(sp.inventorySource&&!st.items.some(it=>it.n===sp.inventorySource&&it.qty>0))return out;
-    if (sp.lim && st.used[sp.n]) return out;
+    if (!isEq(c,st,sp.src) || (sp.lim && st.used[sp.n])) return out;
     if (sp.cost) {
       const r = resOf(c, sp.cost.res), l = left(c, st, sp.cost.res);
       if (l >= sp.cost.n) out.push({ k: 'cost', s: `${sp.cost.n} charge${sp.cost.n > 1 ? 's' : ''}`, label: `${sp.cost.n} charge${sp.cost.n > 1 ? 's' : ''} : ${r.nom} (reste ${l})` });
@@ -428,7 +430,7 @@
     else if (pool !== 'cantrip') { st.slots[pool] = used(st, pool) + 1; lvl = +pool; cost = `emplacement niveau ${pool}`; }
     if (sp.lim) st.used[sp.n] = 1;
     let extra = '';
-    if(sp.n==='Veil Shield, Quiet Passing'){st.defenseEffects=st.defenseEffects||[];if(!st.defenseEffects.some(e=>e.source===sp.src&&e.n==='Radiant'))st.defenseEffects.push({k:'resist',n:'Radiant',source:sp.src});}
+    if(sp.defense){st.defenseEffects=(st.defenseEffects||[]).filter(e=>e.spell!==sp.n);st.defenseEffects.push({...sp.defense,source:sp.src,spell:sp.n});extra+=', '+DEF_LABEL[sp.defense.k]+' '+sp.defense.n;}
     if (sp.c) { if (st.conc && st.conc !== sp.n) extra = `, abandonne ${st.conc}`; st.conc = sp.n; }
     if (sp.thp) { const a = sp.thp.b + sp.thp.per * Math.max(0, lvl - sp.thp.base); if (a > st.tmp) st.tmp = a; extra += `, ${a} PV temporaires`; }
     if (sp.heal) {
@@ -443,6 +445,7 @@
     if (permas(c).includes(name)) return toast('Équipée en permanence');
     if (!on && c.eqExcl && (c.weapons || []).some(w => w.n === name)) { const ws = (c.weapons || []).map(w => w.n); st.eq = st.eq.filter(x => !ws.includes(x) || permas(c).includes(x)); }
     st.eq = on ? st.eq.filter(x => x !== name) : st.eq.concat(name);
+    pruneDefenses(c,st);
     return say(id, `${on ? 'Range' : 'Équipe'} ${name}`, 'eq');
   }
   function itemAct(id, a, d) {
@@ -556,21 +559,35 @@
       return `<div class="lp-row res ${l <= 0 ? 'spent' : ''}"><span class="lp-nm" title="${esc(resourceTitle(c,r))}" ${ro ? '' : `data-tip="r|${esc(r.id)}" data-act="detail" data-spec="r|${esc(r.id)}" role="button" tabindex="0"`}><b>${esc(r.nom)}</b><small class="lp-resourceorigin">${esc(resourceSource(c,r))} / ${r.max} par ${esc(REST_LABEL[r.reset]||r.reset||'recharge')}</small></span><span class="lp-pips">${ctl}</span></div>`;
     }).join('');
   }
-  const DEF_OPTIONS=['Acide','Contondant','Froid','Feu','Foudre','Force','Nécrotique','Perforant','Poison','Psychique','Radiant','Tranchant','Tonnerre','Sommeil magique','Peur','Bannissement','Dégâts physiques non magiques','Projectiles'];
-  function defensePanel(c,st){
-    const base=(c.defenses||[]).map(([k,n])=>[k,n,'Permanent']);
+  // Défenses dérivées des règles, jamais éditables directement.
+  const DEF_LABEL={immune:'Immunité',resist:'Résistance',vulnerable:'Vulnérabilité'};
+  function pruneDefenses(c,st){
+    st.defenseEffects=(Array.isArray(st.defenseEffects)?st.defenseEffects:[]).filter(e=>{
+      const sp=c.spells.find(s=>s.n===e.spell&&s.defense);
+      return !!sp&&e.k===sp.defense.k&&e.n===sp.defense.n&&e.source===sp.src&&isEq(c,st,sp.src);
+    });
+  }
+  function defenseEntries(c,st){
+    const base=(c.defenses||[]).map(([k,n])=>[k,n,n==='Sommeil magique'?'Ascendance féerique':n==='Nécrotique'&&c.id==='philippa'?'La main du Reliquaire':'Fiche du personnage']);
     if(eqNames(c,st).includes('Hat of Refuge'))base.push(['immune','Bannissement','Hat of Refuge']);
     if(st.conc==='Ombre de Moil')base.push(['resist','Radiant','Ombre de Moil']);
-    const effects=(st.defenseEffects||[]).filter(e=>(!e.source||isEq(c,st,e.source))&&(!e.conc||st.conc===e.conc));
-    const label={immune:'Immunité',resist:'Résistance',vulnerable:'Vulnérabilité'},symbol={immune:'◆',resist:'◈',vulnerable:'▼'};
-    const chip=(k,n,src,i)=>`<span class="lp-defensechip ${k}" title="${esc(label[k]+' : '+src)}"><b>${symbol[k]}</b> ${esc(n)}${i!=null?`<button data-act="defremove" data-i="${i}" aria-label="Retirer">×</button>`:''}</span>`;
-    return `<div class="lp-defenses"><h3>Résistances et immunités</h3><div class="lp-defensechips">${base.map(x=>chip(...x)).join('')}${effects.map(e=>chip(e.k,e.n,e.source||'Effet temporaire',(st.defenseEffects||[]).indexOf(e))).join('')}</div><div class="lp-defenseform"><select id="lp-def-kind" aria-label="Type"><option value="resist">Résistance</option><option value="immune">Immunité</option><option value="vulnerable">Vulnérabilité</option></select><select id="lp-def-name" aria-label="Dégât ou effet">${DEF_OPTIONS.map(n=>`<option>${esc(n)}</option>`).join('')}</select><button data-act="defadd">Ajouter</button></div></div>`;
+    pruneDefenses(c,st);
+    return base.concat(st.defenseEffects.map(e=>[e.k,e.n,e.spell]));
+  }
+  function defenseIcon(k,n){
+    const name=nrm0(n),d=DMG[name],fallback=name==='sommeil magique'?'<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a9 9 0 1 0 10 13A9 9 0 0 1 12 2Z" fill="#b5a6e3" stroke="#e9ddff" stroke-width=".6"/><path d="M15 3h6l-6 6h6" fill="none" stroke="#eee5ff" stroke-width="1.5" stroke-linejoin="round"/></svg>':name==='bannissement'?'<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 21V10a7 7 0 0 1 14 0v11" fill="#47385d" stroke="#cfb7f4" stroke-width="2"/><path d="m9 12 5 0-2-2m2 2-2 2" fill="none" stroke="#f4e3ff" stroke-width="1.7"/></svg>':bg3('magic');
+    const marker=k==='immune'?'<svg viewBox="0 0 30 40" aria-hidden="true"><path d="M15 3 27 9v12c0 8-7 13-12 16C10 34 3 29 3 21V9Z" fill="#6b4518" fill-opacity=".26" stroke="#713f12" stroke-width="5"/><path d="M15 3 27 9v12c0 8-7 13-12 16C10 34 3 29 3 21V9Z" fill="none" stroke="#ffda75" stroke-width="2.4"/><path d="M15 7 23 11" fill="none" stroke="#fff4c2" stroke-width="1.2"/></svg>':k==='resist'?'<svg viewBox="0 0 30 40" aria-hidden="true"><path d="m5 10 10-8 10 8v3H5Z" fill="#37d8ed" stroke="#087ca0" stroke-width="1"/><path d="m8 9 7-5 7 5" fill="none" stroke="#e0ffff" stroke-width="1.6"/></svg>':'<svg viewBox="0 0 30 40" aria-hidden="true"><path d="m6 3 5 1 4 5 4-5 5-1-2 6-7 5-7-5Z" fill="#ff6262" stroke="#a51f28" stroke-width="1.2"/><path d="m9 5 6 6 6-6" fill="none" stroke="#fff0d6" stroke-width="1.3"/></svg>';
+    return `<span class="lp-defenseicon ${k}" aria-hidden="true"><span class="lp-defglyph">${d?bg3(d):fallback}</span><span class="lp-defmark">${marker}</span></span>`;
+  }
+  function defensePanel(c,st){
+    const chip=(k,n,src)=>`<span class="lp-defensechip ${k}" title="${esc(DEF_LABEL[k]+' : '+n+' / '+src)}">${defenseIcon(k,n)}<span class="lp-deftext"><b>${esc(n)}</b><small>${esc(src)}</small></span><span class="lp-sr-only">${esc(DEF_LABEL[k])}</span></span>`;
+    return `<div class="lp-defensechips" aria-label="Résistances, immunités et vulnérabilités">${defenseEntries(c,st).map(x=>chip(...x)).join('')}</div>`;
   }
   function combatSummary(c,st){
     const chars=(c.abil||[]).map(a=>`<div class="lp-tile ab"><span>${esc(a[0])}</span><b>${esc(a[1])}</b><em>${esc(a[2])}</em></div>`).join('');
     const skills=(c.skills||[]).map(k=>`<div class="lp-sk ${k[3]||'n'}"><i class="pm"></i><span>${esc(k[0])}</span><b>${signed(k[2])}</b></div>`).join('');
     const charges=chargeRows(c,st,false);
-    return `<section class="lp-block lp-resb lp-combatsummary"><div class="lp-combatlayout"><div class="lp-combatleft"><h3>Ressources de combat</h3><div class="lp-slots">${slotRows(c,st,false)}</div>${charges?`<div class="lp-chargegrid">${charges}</div>`:''}</div><div class="lp-combatright"><h3>Caractéristiques</h3><div class="lp-quickabilities">${chars}</div><h3>Compétences</h3><div class="lp-quickskills">${skills}</div></div></div><div class="lp-summaryfooter"><b>Équipé</b><div class="lp-equippedlinks">${equippedLinks(c,st,false)}</div></div>${defensePanel(c,st)}</section>`;
+    return `<section class="lp-block lp-resb lp-combatsummary"><div class="lp-combatlayout"><div class="lp-combatleft"><h3>Ressources de combat</h3><div class="lp-slots">${slotRows(c,st,false)}</div>${charges?`<div class="lp-chargegrid">${charges}</div>`:''}</div><div class="lp-combatright"><h3>Caractéristiques</h3><div class="lp-quickabilities">${chars}</div><h3>Compétences</h3><div class="lp-quickskills">${skills}</div></div></div><div class="lp-summaryfooter"><b>Équipé</b><div class="lp-equippedlinks">${equippedLinks(c,st,false)}</div>${defensePanel(c,st)}</div></section>`;
   }
   /* bandeau des objets equipes : une ligne par objet, bonus en texte, pouvoirs en pastilles */
   function equippedStrip(c, st) {
@@ -619,7 +636,8 @@
   function resetCaption(r){return r?REST_LABEL[r.reset]||r.reset||'Recharge':'Recharge';}
   function spellCard(c,st,sp,inAction) {
     const key=sp.n,conc=st.conc===key,notEquipped=!isEq(c,st,sp.src),unprepared=sp.lst&&!(st.prep||[]).includes(key);
-    const inactive=notEquipped||unprepared,{ps,cur}=pickPool(c,st,sp),spent=inactive||!ps.length,limUsed=sp.lim&&st.used[key],origin=spellSource(c,sp);
+    const active=!!sp.defense&&(st.defenseEffects||[]).some(e=>e.spell===key&&isEq(c,st,e.source));
+    const inactive=notEquipped||unprepared,{ps,cur}=pickPool(c,st,sp),spent=inactive||(!ps.length&&!active),limUsed=sp.lim&&st.used[key],origin=spellSource(c,sp);
     const tags=cardTags(displayAct(sp),sp.ritual,sp.c,conc,sp.t==='Hors combat'?(sp.castTime||'Variable'):null);
     const poolLabel=p=>{
       if(p.k==='pact')return 'Pacte '+c.pact.lvl;
@@ -632,7 +650,8 @@
     const reason=notEquipped?'Non équipé':unprepared?'Non préparé':!ps.length?'Épuisé':'';
     const slotPools=ps.filter(p=>p.k==='pact'||/^\d+$/.test(p.k)),special=ps.filter(p=>p.k!=='pact'&&!/^\d+$/.test(p.k));
     let src='',extra='';
-    if(spent)src=`<span class="lp-slotchip off">${reason}</span>`;
+    if(active)src='<span class="lp-slotchip lp-effect-active">Actif</span>';
+    else if(spent)src=`<span class="lp-slotchip off">${reason}</span>`;
     else if(slotPools.length>1||slotPools.length&&special.length){
       src=`<select class="lp-pool" data-sp="${esc(key)}" aria-label="Emplacement ou source" title="${esc(cur.label||cur.s)}">${ps.map(p=>`<option value="${esc(p.k)}" ${p.k===cur.k?'selected':''}>${esc(poolLabel(p))}${p.k.startsWith('free:')?' / '+esc(resourceSource(c,resOf(c,p.k.slice(5)))):''}</option>`).join('')}</select>`;
     }else if(sp.cost){
@@ -646,8 +665,9 @@
     if(sp.cost&&!extra)extra=resetCaption(resOf(c,sp.cost.res));
     if(cur?.k==='ritual')extra='+10 min, hors combat';
     let btn=limUsed&&!inactive?`<button type="button" class="lp-cast lp-reset" data-act="unspend" data-key="${esc(key)}" title="Restaurer ce sort">Restaurer</button>`:`<button type="button" class="lp-cast" data-act="cast" data-key="${esc(key)}" ${spent?'disabled':''}>Lancer</button>`;
+    if(active)btn=`<button type="button" class="lp-cast lp-endspell" data-act="endspell" data-key="${esc(key)}" title="Terminer le sort (durée en jeu : ${esc(sp.duration||'')})">Terminer</button>`;
     if(!inAction){
-      src=`<span class="lp-slotchip ${inactive?'off':''}">${notEquipped?'Non équipé':unprepared?'Non préparé':sp.lst?'Préparé':'Permanent'}</span>`;
+      src=`<span class="lp-slotchip ${inactive?'off':''}">${notEquipped?'Non équipé':unprepared?'Non préparé':sp.lst?'Préparé':sp.src?'Via équipement':'Permanent'}</span>`;
       btn=sp.lst?`<button type="button" class="lp-cast lp-prepbtn ${unprepared?'':'selected'}" data-act="prep" data-key="${esc(key)}" aria-pressed="${!unprepared}">${unprepared?'Équiper':'Retirer'}</button>`:'';
       extra='';
     }
@@ -890,8 +910,7 @@
     if (a === 'kwx') { if (e.target.closest('.lp-pop') && !e.target.closest('.lp-px')) return; view.pop = null; view.popsp = null; view.poppw = null; view.popdetail = null; return render(); }
     if (a === 'detail') { hideTip(); view.popsp = null; view.poppw = null; view.popdetail = b.dataset.spec; return render(); }
     if (!c) return;
-    if(a==='defadd'){const st=S(c),k=root.querySelector('#lp-def-kind').value,n=root.querySelector('#lp-def-name').value;st.defenseEffects=st.defenseEffects||[];if(!st.defenseEffects.some(e=>e.k===k&&e.n===n))st.defenseEffects.push({k,n});return say(c,'Effet défensif : '+n,'effect');}
-    if(a==='defremove'){const st=S(c);(st.defenseEffects||[]).splice(+b.dataset.i,1);return say(c,'Retire un effet défensif','effect');}
+    if(a==='endspell'){const st=S(c),sp=cfgOf(c).spells.find(s=>s.n===b.dataset.key&&s.defense);if(!sp)return;st.defenseEffects=(st.defenseEffects||[]).filter(e=>e.spell!==sp.n);return say(c,'Termine '+sp.n,'effect');}
     if (a === 'pip') return togglePip(c, b.dataset.kind, b.dataset.key, +b.dataset.idx);
     if (a === 'resd') return resDelta(c, b.dataset.key, +b.dataset.d);
     if(a==='coindebit'||a==='coinadd'){const k=root.querySelector('#lp-debit-key'),v=root.querySelector('#lp-debit-amt');if(k&&v){const amt=v.value;v.value='';if(a==='coinadd'){const n=Number(amt);if(!Number.isSafeInteger(n)||n<=0)return toast('Montant invalide');return coinAct(c,k.value,(S(c).coins[k.value]||0)+n);}return coinDebit(c,k.value,amt);}return;}
