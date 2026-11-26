@@ -1356,3 +1356,26 @@ body>.lp-tip p {margin:5px 0;}
 .lp-deftext{gap:0}
 .lp-deftext b{font:600 10px/1.1 var(--body)}
 .lp-deftext small{font:400 9px/1.1 var(--body)}
+
+/* v170 : ressources joueur/MJ, mêmes colonnes et même rythme */
+.lp-combatsummary .lp-combatrow,.lp-dmcard .lp-combatrow{display:grid!important;grid-template-columns:minmax(0,1fr) minmax(0,140px) 36px 76px!important;grid-template-rows:auto!important;align-items:center;gap:4px!important;min-height:26px!important;height:auto!important;padding:2px 0!important;margin:0!important;border:0!important}
+.lp-combatrow .lp-slotlevel{grid-column:1!important;grid-row:1!important;text-transform:none!important;letter-spacing:0!important;white-space:nowrap!important;overflow:hidden;text-overflow:ellipsis;font:600 12px/1.2 var(--body)!important}
+.lp-combatrow .lp-slotgems{grid-column:2!important;grid-row:1!important;display:flex!important;justify-content:flex-start!important;align-items:center;flex-wrap:wrap!important;gap:1px!important;min-width:0}
+.lp-combatrow .lp-resourcecount{grid-column:3!important;grid-row:1!important;text-align:right;font:600 12px var(--body)!important;font-variant-numeric:tabular-nums;white-space:nowrap}
+.lp-combatrow .lp-recharge{grid-column:4!important;grid-row:1!important;text-align:left;white-space:nowrap;font:400 11px/1.1 var(--body);color:#a7adba}
+.lp-combatrow .lp-recharge:empty{display:block}
+.lp-combatsummary .lp-combatrow .lp-gem,.lp-combatsummary .lp-combatrow .lp-gp,.lp-dmcard .lp-combatrow .lp-gem,.lp-dmcard .lp-combatrow .lp-gp{width:18px!important;height:20px!important;margin:0!important;flex:none;display:inline-grid;place-items:center}
+.lp-combatrow .lp-gem .lp-bg3,.lp-combatrow .lp-gp .lp-bg3{transform:scale(.9)!important}
+.lp-combatrow .lp-neutralpip{width:12px!important;height:12px!important;margin:auto}
+.lp-combatrow .lp-chargepip{width:13px!important;height:20px!important}
+.lp-combatrow .lp-chargeart{width:16px!important;height:16px!important}
+.lp-combatrow .lp-gp .lp-resource-art{width:17px!important;height:17px!important}
+.lp-dmcard .lp-dmslots,.lp-combatsummary .lp-slots{gap:0!important}
+.lp-dmcard .lp-combatrow{border-bottom:1px solid #2e3440!important}
+.lp-dmcard .lp-open{margin-top:auto!important}
+.lp-pwc{display:inline-flex;align-items:center;gap:4px}
+.lp-pwc .lp-chargeart{width:15px!important;height:15px!important}
+.lp-eqinventory{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-top:8px;font-size:13px}
+.lp-eqinventory .lp-cast{min-height:30px}
+@media(min-width:1450px){.lp-combatsummary .lp-combatrow{grid-template-columns:minmax(0,1fr) minmax(0,200px) 36px 76px!important}}
+@media(max-width:550px){.lp-combatsummary .lp-combatrow,.lp-dmcard .lp-combatrow{grid-template-columns:minmax(0,1fr) minmax(0,92px) 30px 66px!important;gap:3px!important}.lp-combatrow .lp-recharge{font-size:10px}.lp-combatrow .lp-slotlevel{font-size:11px!important}}
