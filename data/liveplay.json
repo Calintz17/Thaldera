@@ -3561,7 +3561,7 @@
           "max": 1,
           "reset": "long",
           "src": "Shadow-Cat Armor",
-          "d": "Double d'ombre de la Shadow-Cat Armor, 1 fois par repos long."
+          "d": "En action bonus, invoque le double d'ombre de la Shadow-Cat Armor. 1 fois par repos long."
         },
         {
           "id": "ruin",
@@ -3829,13 +3829,14 @@
         {
           "n": "Shadow Double",
           "lv": 0,
-          "t": "Réaction",
+          "t": "Action bonus",
           "p": "Soi",
           "c": false,
-          "d": "Double d'ombre de la Shadow-Cat Armor. 1 par repos long.",
+          "d": "En action bonus, invoque un double d'ombre de toi-même. Fonctionne comme une version modifiée d'Image miroir (Mirror Image). 1 fois par repos long.",
           "src": "Shadow-Cat Armor",
           "res": "double",
-          "grp": "Pouvoirs d'objets"
+          "grp": "Pouvoirs d'objets",
+          "castTime": "1 action bonus"
         },
         {
           "n": "Aspersion acide",
@@ -5477,7 +5478,7 @@
       "gear": [
         {
           "n": "Shadow-Cat Armor",
-          "note": "Armure légère en cuir, CA 12 (11 + DEX selon la fiche), attunement. Shadow Double : 1 attaque supplémentaire, 1 fois par repos long."
+          "note": "Armure légère en cuir, CA 12 (11 + DEX selon la fiche), attunement. Shadow Double (action bonus) : 1 attaque supplémentaire, 1 fois par repos long."
         },
         {
           "n": "Masque Voile-Peste",
