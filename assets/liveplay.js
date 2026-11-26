@@ -208,7 +208,7 @@
     const g = sp.gid && GL && GL[sp.gid];
     let h = `<h3>${esc(sp.n)}</h3>${sp.en ? `<span class="lp-en">${esc(sp.en)}</span>` : ''}<p class="lp-pm">${sp.lv ? 'Niveau ' + sp.lv : 'Cantrip'}<i class="gap"></i>${esc(sp.t)}${sp.p ? '<i class="gap"></i>' + esc(sp.p) : ''}${sp.c ? '<i class="gap"></i>Concentration' : ''}</p>`;
     h += `<p class="lp-originline">${esc(spellSource(c,sp))}</p>`;
-    h += g ? String(g.text).split('\n').map(l => `<p>${nl(dcify(c, l))}</p>`).join('') : `<p>${nl(dcify(c, sp.d))}</p>`;
+    h += `<p>${nl(dcify(c, sp.d))}</p>`; if(sp.ruleSource||sp.duration)h+=`<p class="lp-pm">${esc([sp.ruleSource,sp.duration,sp.ritual?'Rituel (+10 min)':''].filter(Boolean).join(' / '))}</p>`;
     if (st && sp.lv >= 0) { const pk = pickPool(c, st, sp), lv = poolLvl(c, sp, pk.cur), x = spellDice(c, sp, lv); if (x && sp.lv > 0 && lv > sp.lv) h += `<p class="lp-hl">Au niveau ${lv} : ${diceStr(x)}</p>`; }
     return h;
   }
@@ -401,12 +401,13 @@
     const rids = [].concat(sp.res || []);
     rids.forEach(id => { const r = resOf(c, id); if (r && left(c, st, id) > 0) out.push({ k: 'free:' + id, s: rids.length > 1 ? 'Gratuit : ' + (r.nom.match(/\(([^)]+)\)/) || [0, r.nom])[1] : 'Usage gratuit', label: 'Usage gratuit : ' + r.nom }); });
     if (sp.alt && left(c, st, sp.alt.res) >= sp.alt.n) out.push({ k: 'alt', s: 'Ressource', label: 'Dépenser : ' + resOf(c, sp.alt.res).nom });
-    if (sp.lv === 0) { if (!sp.res) out.push({ k: 'cantrip', s: 'Gratuit', label: 'Cantrip (gratuit)' }); return out; }
+    if (sp.lv === 0) { if (!sp.res) out.push({ k: 'cantrip', s: 'À volonté', label: 'Cantrip à volonté' }); return out; }
     if (!sp.pactonly) Object.keys(c.slots).map(Number).sort((a, b) => a - b).forEach(lv => {
       const l = total(c, lv) - used(st, lv);
       if (lv >= sp.lv && l > 0) out.push({ k: String(lv), s: `Niveau ${lv} (${l} restant${l > 1 ? 's' : ''})`, label: `Emplacement niveau ${lv} (${l} restant${l > 1 ? 's' : ''})` });
     });
     if (c.pact && c.pact.lvl >= sp.lv && c.pact.n - st.pact > 0) { const l = c.pact.n - st.pact; out.push({ k: 'pact', s: `Pacte niveau ${c.pact.lvl} (${l} restant${l > 1 ? 's' : ''})`, label: `Pacte niveau ${c.pact.lvl} (${l} restant${l > 1 ? 's' : ''})` }); }
+    if (sp.ritual && !sp.src && !sp.lim && (!sp.lst || (st.prep||[]).includes(sp.n))) out.push({k:'ritual',s:'Rituel',label:'Rituel : +10 minutes, aucun emplacement'});
     return out;
   }
   function pickPool(c, st, sp) {
@@ -419,6 +420,7 @@
     else if (pool === 'alt') { st.res[sp.alt.res] = (st.res[sp.alt.res] || 0) + sp.alt.n; cost = resOf(c, sp.alt.res).nom; }
     else if (pool === 'cost') { st.res[sp.cost.res] = (st.res[sp.cost.res] || 0) + sp.cost.n; cost = `${sp.cost.n} charge${sp.cost.n > 1 ? 's' : ''} ${resOf(c, sp.cost.res).nom}`; }
     else if (pool === 'pact') { st.pact += 1; lvl = c.pact.lvl; cost = `pacte niveau ${lvl}`; }
+    else if (pool === 'ritual') cost = 'rituel, sans emplacement';
     else if (pool !== 'cantrip') { st.slots[pool] = used(st, pool) + 1; lvl = +pool; cost = `emplacement niveau ${pool}`; }
     if (sp.lim) st.used[sp.n] = 1;
     let extra = '';
@@ -517,7 +519,7 @@
   function resRows(c, st, ro, list) {
     return (list || visRes(c, st)).filter(r=>r.id!=='bardic').map(r => {
       const u = st.res[r.id] || 0, l = r.max - u;
-      const ctl = r.max <= 6 ? gpips(c, r, u, ro) : ro ? `<b class="lp-cnt">${l}/${r.max}</b>` : `<button type="button" class="lp-stp" data-act="resd" data-key="${esc(r.id)}" data-d="1" aria-label="Dépenser">−</button><b class="lp-cnt">${l}/${r.max}</b><button type="button" class="lp-stp" data-act="resd" data-key="${esc(r.id)}" data-d="-1" aria-label="Récupérer">+</button>`;
+      const ctl = r.id==='ws' ? gpips(c, r, u, ro) : ro ? `<b class="lp-cnt">${l}/${r.max}</b>` : `<button type="button" class="lp-stp" data-act="resd" data-key="${esc(r.id)}" data-d="1" aria-label="Dépenser">−</button><b class="lp-cnt">${l}/${r.max}</b><button type="button" class="lp-stp" data-act="resd" data-key="${esc(r.id)}" data-d="-1" aria-label="Récupérer">+</button>`;
       return `<div class="lp-row res ${l <= 0 ? 'spent' : ''}"><span class="lp-nm" title="${esc(resourceTitle(c,r))}" ${ro ? '' : `data-tip="r|${esc(r.id)}" data-act="detail" data-spec="r|${esc(r.id)}" role="button" tabindex="0"`}><b>${esc(r.nom)}</b><small class="lp-resourceorigin">${esc(resourceSource(c,r))} / ${r.max} par ${esc(REST_LABEL[r.reset]||r.reset||'recharge')}</small></span><span class="lp-pips">${ctl}</span></div>`;
     }).join('');
   }
@@ -562,22 +564,48 @@
     if (sp.lv === 0) return '<span class="lp-cb free">1 / jour</span>';
     return `<span class="lp-cb">Niv. ${sp.lv}</span>`;
   }
+  function cardTags(t,ritual,conc,active){
+    return `<span class="lp-cardtype" aria-label="${esc(t)}"><span class="lp-tagconc" title="${active?'Concentration active':'Concentration requise'}">${conc?bg3('concentration'):''}</span><span class="lp-tagrit" title="Rituel">${ritual?bg3('ritual'):''}</span><span class="lp-tagact" title="${esc(t)}">${ico(t)}</span></span>`;
+  }
+  function resetCaption(r){return r?REST_LABEL[r.reset]||r.reset||'Recharge':'Recharge';}
   function spellCard(c,st,sp,inAction) {
     const key=sp.n,conc=st.conc===key,notEquipped=!isEq(c,st,sp.src),unprepared=sp.lst&&!(st.prep||[]).includes(key);
-    const inactive=notEquipped||unprepared, {ps,cur}=pickPool(c,st,sp),spent=inactive||!ps.length,limUsed=sp.lim&&st.used[key],origin=spellSource(c,sp);
-    const tags=`<span class="lp-cardtype" title="${esc(sp.t)}">${ico(sp.t)}${sp.c?`<span class="lp-minitag" title="Concentration">${bg3('concentration')}</span>`:''}${sp.ritual?`<span class="lp-minitag" title="Rituel">${bg3('ritual')}</span>`:''}</span>`;
-    const poolLabel=p=>p.k==='pact'?'Pacte '+c.pact.lvl:/^\d+$/.test(p.k)?'Niv. '+p.k:p.s;
+    const inactive=notEquipped||unprepared,{ps,cur}=pickPool(c,st,sp),spent=inactive||!ps.length,limUsed=sp.lim&&st.used[key],origin=spellSource(c,sp);
+    const tags=cardTags(sp.t,sp.ritual,sp.c,conc);
+    const poolLabel=p=>{
+      if(p.k==='pact')return 'Pacte '+c.pact.lvl;
+      if(/^\d+$/.test(p.k))return 'Niv. '+p.k;
+      if(p.k==='cantrip')return 'À volonté';
+      if(p.k==='ritual')return 'Rituel';
+      if(p.k.startsWith('free:')){const r=resOf(c,p.k.slice(5));return r&&r.max===1&&r.reset==='long'?'1/day':r?`${left(c,st,r.id)}/${r.max}`:p.s;}
+      return p.s;
+    };
     const reason=notEquipped?'Non équipé':unprepared?'Non préparé':!ps.length?'Épuisé':'';
-    let src=spent?`<span class="lp-slotchip off">${reason}</span>`:ps.length>1?`<select class="lp-pool" data-sp="${esc(key)}" aria-label="Source du sort" title="${esc(cur.label||cur.s)}">${ps.map(p=>`<option value="${esc(p.k)}" ${cur.k===p.k?'selected':''}>${esc(poolLabel(p))}</option>`).join('')}</select>`:`<span class="lp-slotchip" title="${esc(cur.label||cur.s)}">${esc(poolLabel(cur))}</span>`;
+    const slotPools=ps.filter(p=>p.k==='pact'||/^\d+$/.test(p.k)),special=ps.filter(p=>p.k!=='pact'&&!/^\d+$/.test(p.k));
+    let src='',extra='';
+    if(spent)src=`<span class="lp-slotchip off">${reason}</span>`;
+    else if(slotPools.length>1||slotPools.length&&special.length){
+      src=`<select class="lp-pool" data-sp="${esc(key)}" aria-label="Emplacement ou source" title="${esc(cur.label||cur.s)}">${ps.map(p=>`<option value="${esc(p.k)}" ${p.k===cur.k?'selected':''}>${esc(poolLabel(p))}${p.k.startsWith('free:')?' / '+esc(resourceSource(c,resOf(c,p.k.slice(5)))):''}</option>`).join('')}</select>`;
+    }else if(sp.cost){
+      const r=resOf(c,sp.cost.res);
+      src=`<span class="lp-slotchip" title="${esc(resetCaption(r))}">${sp.cost.n} ch. / ${left(c,st,r.id)}</span>`;
+      extra=resetCaption(r);
+    }else if(ps.length>1){
+      src=`<div class="lp-poolchoices">${ps.map(p=>`<button type="button" class="lp-poolpick ${p.k===cur.k?'on':''}" data-act="poolpick" data-key="${esc(key)}" data-pool="${esc(p.k)}" title="${esc(p.label||p.s)}" aria-pressed="${p.k===cur.k}">${esc(poolLabel(p))}</button>`).join('')}</div>`;
+    }else src=`<span class="lp-slotchip" title="${esc(cur.label||cur.s)}">${esc(poolLabel(cur))}</span>`;
+    if(cur?.k?.startsWith('free:'))extra=resetCaption(resOf(c,cur.k.slice(5)));
+    if(sp.cost&&!extra)extra=resetCaption(resOf(c,sp.cost.res));
+    if(cur?.k==='ritual')extra='+10 min, hors combat';
     let btn=limUsed&&!inactive?`<button type="button" class="lp-cast lp-reset" data-act="unspend" data-key="${esc(key)}" title="Restaurer ce sort">Restaurer</button>`:`<button type="button" class="lp-cast" data-act="cast" data-key="${esc(key)}" ${spent?'disabled':''}>Lancer</button>`;
     if(!inAction){
-      src=`<span class="lp-slotchip ${inactive?'off':''}" title="${esc(origin)}">${esc(origin)}</span>`;
-      btn=sp.lst?`<button type="button" class="lp-cast lp-prepbtn ${unprepared?'':'selected'}" data-act="prep" data-key="${esc(key)}" aria-pressed="${!unprepared}">${unprepared?'Équiper':'Retirer'}</button>`:`<span class="lp-prepstate">${notEquipped?'Non équipé':'Permanent'}</span>`;
+      src=`<span class="lp-slotchip ${inactive?'off':''}">${notEquipped?'Non équipé':unprepared?'Non préparé':sp.lst?'Préparé':'Permanent'}</span>`;
+      btn=sp.lst?`<button type="button" class="lp-cast lp-prepbtn ${unprepared?'':'selected'}" data-act="prep" data-key="${esc(key)}" aria-pressed="${!unprepared}">${unprepared?'Équiper':'Retirer'}</button>`:'';
+      extra='';
     }
     return `<article class="lp-spell lp-hudcard lp-spellplain ${conc?'conc':''} ${inAction&&spent?'spent':''} ${inactive?'lp-inactive':''}" data-level="${sp.lv}">
       <button type="button" class="lp-sname" data-act="gopen" data-key="${esc(key)}" data-tip="s|${esc(key)}" aria-label="Détails : ${esc(key)}" title="${esc(origin+' | '+sp.d)}"><span class="lp-cardtitle"><b title="${esc(sp.n)}">${esc(sp.n)}</b>${sp.en?`<small class="lp-en">${esc(sp.en)}</small>`:''}</span>${tags}</button>
-      <div class="lp-combatmeta"><span class="lp-range" title="${esc(sp.p||'')}">${esc(sp.p||'')}</span><span class="lp-dmgpreview">${damagePreview(sp.d)}</span></div>
-      <div class="lp-spellorigin" title="${esc(origin)}">${esc(origin)}</div>${ctl(src,btn,'')}</article>`;
+      <div class="lp-combatmeta"><span class="lp-range" title="${esc(sp.p||'')}">${bg3('target')}${esc(sp.p||'')}</span><span class="lp-dmgpreview">${damagePreview(sp.d)}</span></div>
+      <div class="lp-spellorigin" title="${esc(origin+' / '+(sp.ruleSource||''))}">${esc(origin)}${extra?' / '+esc(extra):''}</div>${ctl(src,btn,'')}</article>`;
   }
   function actionFilters(q, act, includeOut) {
     return `<div class="lp-hudfilters"><input type="search" id="lp-q" value="${esc(q)}" placeholder="Rechercher" aria-label="Rechercher"><div class="lp-chips" aria-label="Filtrer par type d'action">${['all'].concat(includeOut?ACTS:ACTS.slice(0,3)).map(a=>`<button type="button" class="lp-chip ${act===a?'on':''}" data-act="actf" data-v="${esc(a)}" aria-pressed="${act===a}">${ico(a)}${a==='all'?'Tout':esc(a)}</button>`).join('')}</div></div>`;
@@ -659,9 +687,9 @@
   }
 
   function actionsPanel(c, st) {
-    const cols={'Action':[],'Action bonus':[],'Réaction':[]}, q=nrm0(view.q.trim()), filter=view.act==='Hors combat'?'all':view.act;
+    const cols={'Action':[],'Action bonus':[],'Réaction':[],'Hors combat':[]}, q=nrm0(view.q.trim()), filter=view.act==='Hors combat'?'all':view.act;
     const add=(t,html,search,group=-1,off=false)=>{if(cols[t] && (!q||nrm0(search).includes(q))) cols[t].push({html,group,off});};
-    const head=(t,name,en,attrs,k)=>`<button type="button" class="lp-sname" ${attrs||''}><span class="lp-cardtitle"><b title="${esc(name)}">${esc(name)}</b>${en?`<small class="lp-en">${esc(en)}</small>`:''}</span><span class="lp-cardtype" title="${esc(t)}">${ico(t)}</span></button>`;
+    const head=(t,name,en,attrs,k)=>`<button type="button" class="lp-sname" ${attrs||''}><span class="lp-cardtitle"><b title="${esc(name)}">${esc(name)}</b>${en?`<small class="lp-en">${esc(en)}</small>`:''}</span>${cardTags(t,false,false,false)}</button>`;
     const card=(t,name,en,attrs,meta,ctrl,cls,k)=>`<article class="lp-spell lp-act lp-hudcard lp-spellplain ${cls||''}">${head(t,name,en,attrs,k||'magic')}<div class="lp-mrow">${meta}</div>${ctrl}</article>`;
     const eqw=c.weapons.filter(w=>w.fixed||w.perma||st.eq.includes(w.n));
     eqw.filter(w=>w.hit||w.dmg).forEach(w=>{
@@ -687,17 +715,17 @@
     });
     visRes(c,st).filter(r=>r.a&&!linked.has(r.id)).forEach(r=>{
       const l=r.max-(st.res[r.id]||0),t=typeOfPw(r.a),spec='r|'+r.id;
-      add(t,card(t,r.nom,'',`data-act="detail" data-spec="${esc(spec)}" data-tip="${esc(spec)}"`,`<span class="lp-meta">${esc(r.src||RESET_NAME[r.reset]||'')}</span>`,ctl(`<span class="lp-slotchip ${l<=0?'off':''}">${l}/${r.max}</span>`,`<button type="button" class="lp-cast" data-act="resd" data-key="${esc(r.id)}" data-d="1" ${l<=0?'disabled':''}>Utiliser</button>`,''),l<=0?'spent':'','magic'),r.nom+' '+(r.sub||''));
+      add(t,card(t,r.nom,'',`data-act="detail" data-spec="${esc(spec)}" data-tip="${esc(spec)}"`,`<span class="lp-meta">${esc(r.src||RESET_NAME[r.reset]||'')}</span>`,ctl(r.id==='ws'?`<span class="lp-wsinline">${gpips(c,r,st.res[r.id]||0,false)}</span>`:`<span class="lp-slotchip ${l<=0?'off':''}">${l}/${r.max}</span>`,`<button type="button" class="lp-cast" data-act="resd" data-key="${esc(r.id)}" data-d="1" ${l<=0?'disabled':''}>Utiliser</button>`,''),l<=0?'spent':'','magic'),r.nom+' '+(r.sub||''));
     });
     (c.feats||[]).forEach((f,i)=>{
       const t=f.res||/pacte de la lame|pact of the blade/i.test(f.n+' '+(f.en||''))?'':(f.act!=null?f.act:featType(f)), spec='f|'+i;
       if(t) add(t,card(t,f.n,f.en,`data-act="detail" data-spec="${spec}" data-tip="${spec}"`,`<span class="lp-meta">${esc(f.grp||'')}</span>`,'','','book'),f.n+' '+(f.en||'')+' '+f.d);
     });
     const groups=rows=>[...new Set(rows.map(r=>r.group))].sort((a,b)=>a-b).map(g=>`<section class="lp-actiongroup"><h5>${g===-1?'Armes et capacités':g===0?'Cantrips':'Niveau '+g}</h5><div class="lp-agrid">${rows.filter(r=>r.group===g).map(r=>r.html).join('')}</div></section>`).join('');
-    return `<div class="lp-hudfilters lp-actionsearch"><input type="search" id="lp-q" value="${esc(view.q)}" placeholder="Rechercher une action" aria-label="Rechercher une action"></div><div class="lp-acols">${Object.keys(cols).map(k=>{
+    return `<div class="lp-hudfilters lp-actionsearch"><input type="search" id="lp-q" value="${esc(view.q)}" placeholder="Rechercher une action" aria-label="Rechercher une action"></div><div class="lp-acols">${Object.keys(cols).filter(k=>k!=='Hors combat').map(k=>{
       const rows=cols[k],on=rows.filter(r=>!r.off),off=rows.filter(r=>r.off);
       return `<section class="lp-acol ${k==='Action'?'lp-acol-main':''}"><h4 class="lp-lvh">${ico(k)}${esc(k)}</h4>${groups(on)||'<p class="lp-empty">Aucune action.</p>'}${off.length?`<details class="lp-unavailable" ${q?'open':''}><summary>Non équipés (${off.length})</summary>${groups(off)}</details>`:''}</section>`;
-    }).join('')}</div>`;
+    }).join('')}</div>${cols['Hors combat'].length?`<details class="lp-ooc"><summary>Hors combat et rituels (${cols['Hors combat'].length})</summary>${groups(cols['Hors combat'])}</details>`:''}`;
   }
   function restBlock() {
     const cf = view.confirm;
@@ -809,6 +837,7 @@
     if (a === 'endconc') { const st = S(c), n = st.conc; st.conc = null; return say(c, `Termine la concentration sur ${n}`, 'spell'); }
     if (a === 'eqfold') { view.eqOpen=!view.eqOpen; return render(); }
     if (a === 'tab') { view.tab = b.dataset.v; view.cast = null; view.q = ''; view.act = 'all'; return render(); }
+    if (a === 'poolpick') { view.pool[b.dataset.key]=b.dataset.pool; return render(); }
     if (a === 'actf') { view.act = b.dataset.v; return render(); }
     if (a === 'detail') { hideTip(); view.popsp = null; view.poppw = null; view.popdetail = b.dataset.spec; return render(); }
     if (a === 'gopen') { hideTip(); view.popsp = b.dataset.key; return render(); }
