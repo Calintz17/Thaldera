@@ -2402,19 +2402,19 @@
           "n": "Cartographe (niveau 1)",
           "en": "Cartographer (level 1)",
           "grp": "Cartographe",
-          "d": "Outils du métier : tu maîtrises le matériel de calligraphe et les outils de cartographe. Tu peux copier des parchemins de sort en deux fois moins de temps. Sorts de cartographe, 1 fois par repos long chacun : Lueurs féeriques, Mot de guérison, Localisation d'objet."
+          "d": "Outils du métier : maîtrise du matériel de calligraphe et des outils de cartographe. Tu peux écrire des parchemins de sort en deux fois moins de temps. Sorts de cartographe, 1 fois par repos long chacun : Lueurs féeriques, Mot de guérison, Localisation d'objet."
         },
         {
           "n": "Cartographe (niveau 2) : Magie cartographique",
           "en": "Mapping Magic",
           "grp": "Cartographe, niveaux suivants",
-          "d": "Pas acquis. Lueurs féeriques gratuit un nombre de fois égal au modificateur d'INT. Saut de portail : dépense la moitié de ta vitesse pour te téléporter à 10 ft, ou à 5 ft d'une créature à 30 ft qui tient une de tes cartes."
+          "d": "Pas acquis. Cartographie illuminée : Lueurs féeriques sans emplacement un nombre de fois égal au modificateur d'INT (minimum 1), récupérées au repos long. Saut de portail : dépense la moitié de ta vitesse pour te téléporter à 10 ft, ou à 5 ft d'une créature à 30 ft qui tient une de tes cartes de l'Atlas. Impossible si ta vitesse est 0. Sorts de cartographe niveau 2 : Clairvoyance, Bannissement, Localisation de créature."
         },
         {
           "n": "Cartographe (niveau 3) : Atlas supérieur",
           "en": "Superior Atlas",
           "grp": "Cartographe, niveaux suivants",
-          "d": "Pas acquis. Après un repos long, crée des cartes magiques pour 1 + modificateur d'INT créatures : +1d4 à l'initiative, position de tous les porteurs, ciblage sans ligne de vue, et Refuge sûr (à 0 PV, détruit la carte pour revenir à 2 fois ton niveau d'Artificier PV et se téléporter près d'un porteur). Orientation gratuite 1 fois par repos long."
+          "d": "Pas acquis. Après un repos long avec les outils de cartographe, crée des cartes magiques en touchant au moins 2 créatures (toi inclus), au plus 1 + modificateur d'INT (minimum 2). Porteur : +1d4 à l'initiative ; connaît la position des autres porteurs et peut les cibler sans ligne de vue ni abri dans la portée ; Refuge sûr : à 0 PV sans mort immédiate, détruit sa carte, passe à 2 fois ton niveau d'Artificier PV et se téléporte à 5 ft de toi ou d'un autre porteur. Chemin infaillible : Orientation sans emplacement, sans préparation ni composantes, 1 fois par repos long. Sorts de cartographe niveau 3 : Scrutation, Cercle de téléportation."
         }
       ],
       "abil": [
@@ -2498,7 +2498,7 @@
       "gear": [
         {
           "n": "Cuirasse Aurée",
-          "note": "Armure intermédiaire (cotte de mailles). CA 15 + DEX (max +2). Ardeur du Taureau : +1 CA tant que tes PV sont à la moitié du maximum ou moins."
+          "note": "Armure intermédiaire (armure d'écailles). CA 15 + DEX (max +2). Ardeur du Taureau : +1 CA tant que tes PV sont à la moitié du maximum ou moins."
         },
         {
           "n": "Hat of Refuge",
@@ -3616,16 +3616,6 @@
           "src": "Dagger of Venom",
           "a": "B",
           "d": "Action bonus : enduit la lame de poison pour 1 minute ou jusqu'au prochain coup. La cible réussit CON DD 15 ou subit 2d10 poison et Empoisonné 1 minute."
-        },
-        {
-          "id": "hunger",
-          "nom": "Vial of Eternal Hunger : brume",
-          "sub": "Action, 1 par repos long",
-          "max": 1,
-          "reset": "long",
-          "src": "Vial of Eternal Hunger",
-          "a": "A",
-          "d": "Action : brume en sphère de 20 ft de rayon, à 60 ft, concentration 1 minute. Terrain difficile. Début de tour de chaque créature dedans : 2d6 froid. Fin de tour : DEX DD 14 ou 2d6 nécrotique. Tu ne peux pas utiliser l'épée pendant ce temps."
         }
       ],
       "spells": [
@@ -5176,12 +5166,12 @@
           "n": "Flame Tongue Dagger",
           "hit": "+9",
           "dmg": "1d4+5 perforant",
-          "note": "Dague, Finesse, Light, Thrown 20/60, Nick. +2d6 feu. True Strike 2d6+4 radiant.",
+          "note": "Dague (Finesse, Light, Thrown 20/60, Nick), attunement. True Strike 2d6+4 radiant ou du type de l'arme. Action bonus et mot de commande : la lame s'embrase (lumière vive 40 ft, faible 40 ft de plus) jusqu'à nouvel ordre bonus, ou si tu la lâches, la ranges ou la rengaines.",
           "pw": [
             {
               "n": "Lame ardente",
               "a": "B",
-              "d": "La lame s'embrase : +2d6 feu aux dégâts de chaque attaque tant qu'elle brûle.",
+              "d": "Action bonus : la lame s'embrase et inflige 2d6 feu en plus à chaque touche tant qu'elle brûle. Lumière vive 40 ft, faible 40 ft de plus.",
               "r": "2d6"
             }
           ]
@@ -5204,21 +5194,14 @@
           "n": "Dagger of Absorption",
           "hit": "+9",
           "dmg": "1d4+5 perforant",
-          "note": "Dague (Finesse, Light, Thrown 20/60, Nick), attunement. Quand tu tues une créature, absorbe un trait mineur (vision dans le noir, résistance au poison, vitesse de nage...) pendant 24 h, un seul à la fois.",
+          "note": "Dague (Finesse, Light, Thrown 20/60, Nick), attunement. Quand tu tues une créature avec elle, tu peux absorber un trait mineur (aptitude passive, résistance aux dégâts, trait racial mineur : vision dans le noir, résistance au poison, vitesse de nage...) pendant 24 h. Un seul à la fois : un nouveau remplace l'ancien.",
           "pw": [
             {
               "n": "Absorption",
               "a": "A",
-              "d": "Si une créature est tuée par cette dague, son porteur vole une de ses caractéristiques mineures pendant 24 h."
+              "d": "Quand tu tues une créature avec cette dague, tu peux absorber un de ses traits mineurs pendant 24 h, un seul à la fois."
             }
           ]
-        },
-        {
-          "n": "Vial of Eternal Hunger",
-          "hit": "+11",
-          "dmg": "1d6+7 perforant",
-          "note": "Épée courte +2 (Finesse, Light, Vex), attunement. Libérer la fiole est une action libre. Faim éternelle (1 par repos long) : voir Objets équipés.",
-          "pw": []
         },
         {
           "n": "Attaque à mains nues",
@@ -5927,7 +5910,7 @@
           "max": 1,
           "used": 0,
           "note": "",
-          "d": "Glyphe de garde (niveau 3, 1 charge) : incantation 10 min, glyphe de 10 ft max. Rune explosive : sphère de 20 ft, DEX, 5d8 acide, froid, feu, foudre ou tonnerre (moitié si réussi). Usage unique, non rechargeable.",
+          "d": "Glyphe de garde (niveau 3, 1 charge) : rituel de 10 min, glyphe de 10 ft max. Rune explosive : sphère de 20 ft, DEX, 5d8 acide, froid, feu, foudre ou tonnerre (moitié si réussi). Usage unique, non rechargeable.",
           "consumable": true
         },
         {
@@ -6015,7 +5998,7 @@
           "max": 3,
           "used": 0,
           "note": "",
-          "d": "3 charges, 1d4 regagnées à l'aube. Action : vois par les yeux d'un familier ou d'une créature consentante touchée, 1 heure, concentration. Tu es aveugle à ton environnement."
+          "d": "3 charges, 1d4 regagnées à l'aube. Action : vois par les yeux d'un familier ou d'une créature consentante touchée, 1 heure, concentration. Tu es aveugle à ton environnement. La cible est consciente du lien et peut y mettre fin à tout moment."
         },
         {
           "n": "Water-Breathing Orb",
@@ -6521,9 +6504,9 @@
         {
           "id": "stones",
           "nom": "Pierres de communication",
-          "sub": "Sending, une fois par repos long",
+          "sub": "Sending, une fois par aube",
           "max": 1,
-          "reset": "long",
+          "reset": "aube",
           "src": "Pierres de communication"
         },
         {
@@ -7429,7 +7412,7 @@
           "t": "Action",
           "p": "Illimitée",
           "c": false,
-          "d": "Via les Pierres de communication : message de 25 mots au porteur de l'autre pierre, qui peut répondre. Une utilisation par repos long.",
+          "d": "Via les Pierres de communication : message de 25 mots au porteur de l'autre pierre, qui peut répondre. Une utilisation par aube.",
           "cost": {
             "res": "stones",
             "n": 1
@@ -9102,7 +9085,7 @@
         },
         {
           "n": "Pierres de communication",
-          "note": "Sending (25 mots) vers la pierre jumelle. Une utilisation par repos long."
+          "note": "Sending (25 mots) vers la pierre jumelle. Une utilisation par aube."
         }
       ],
       "eqDefault": [
