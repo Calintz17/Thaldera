@@ -1213,3 +1213,69 @@ body>.lp-tip p {margin:5px 0;}
 @container(max-width:850px){.lp-sheetresources .lp-rgrid{grid-template-columns:1fr;}.lp-sheet .lp-main>.lp-stats .lp-srow{grid-template-columns:1fr;}.lp-sheet .lp-main>.lp-stats .lp-r6{grid-template-columns:repeat(3,minmax(0,1fr));}.lp-sheet .lp-sk6{grid-template-columns:repeat(2,minmax(0,1fr));}}
 @container(max-width:535px){.lp-main .lp-spellgrid{grid-template-columns:minmax(0,1fr)!important;}.lp-summaryfooter{flex-wrap:wrap;}.lp-equippedsummary{width:100%;}.lp-sheet .lp-sk6{grid-template-columns:1fr;}}
 @media(max-width:480px){.lp-sheet .lp-hudcard.lp-spellplain{height:174px!important;min-height:174px!important;max-height:174px!important;grid-template-rows:48px 24px 16px 1fr 40px!important;}.lp-sheet .lp-spellplain .lp-ctl,.lp-sheet .lp-spellplain .lp-ctl .c1,.lp-sheet .lp-spellplain .lp-ctl .c2{height:40px!important;max-height:40px!important;}.lp-sheet .lp-spellplain .lp-ctl .c2 button,.lp-sheet .lp-spellplain .lp-ctl .c1 select,.lp-sheet .lp-spellplain .lp-ctl .c1 .lp-slotchip{height:40px!important;}.lp-sheet .lp-spellplain .lp-ctl .c1 select{font-size:16px!important;}.lp-sheetresources .lp-rgrid{grid-template-columns:1fr;}}
+
+/* v165 : ressources verticales, charges, raretes, overlays */
+.lp-combatlayout{display:grid;grid-template-columns:minmax(320px, .85fr) minmax(0,1.3fr);gap:22px;align-items:start}
+.lp-combatleft,.lp-combatright{min-width:0}
+.lp-combatright{border-left:1px solid #343946;padding-left:20px}
+.lp-combatsummary h3{margin:0 0 10px!important;font:700 13px var(--body);color:#e2c58a}
+.lp-combatsummary .lp-slots,.lp-chargegrid,.lp-dmslots,.lp-dmcharges{display:grid!important;grid-template-columns:minmax(0,1fr);gap:4px!important;align-content:start}
+.lp-combatsummary .lp-sg,.lp-dmcard .lp-sg{display:grid!important;grid-template-columns:minmax(90px,130px) minmax(0,1fr) 42px;grid-template-rows:auto!important;align-items:center;gap:6px;min-height:32px;padding:2px 0!important;margin:0!important}
+.lp-combatsummary .lp-slotlevel,.lp-dmcard .lp-slotlevel{grid-column:1!important;grid-row:1!important;font-size:12px;white-space:normal;overflow-wrap:anywhere;line-height:1.2}
+.lp-combatsummary .lp-slotgems,.lp-dmcard .lp-slotgems{grid-column:2!important;grid-row:1!important;display:flex;flex-wrap:wrap;gap:3px;align-items:center;min-width:0}
+.lp-combatsummary .lp-sg small,.lp-dmcard .lp-sg small{grid-column:3!important;grid-row:1!important;text-align:right;font-size:12px;white-space:nowrap;font-variant-numeric:tabular-nums}
+.lp-combatsummary .lp-sg .lp-gem,.lp-combatsummary .lp-sg .lp-gp,.lp-dmcard .lp-sg .lp-gem,.lp-dmcard .lp-sg .lp-gp{width:30px;height:30px;flex:none;display:inline-grid;place-items:center}
+.lp-sg .lp-gem .lp-bg3,.lp-sg .lp-gp .lp-bg3{transform:scale(1.25);transform-origin:center}
+.lp-sg .lp-gp .lp-resource-art{width:25px;height:25px}
+.lp-chargeheading{margin-top:14px!important}
+.lp-chargepip{display:inline-flex!important;align-items:center;justify-content:center;flex:none;box-sizing:border-box;width:24px;height:24px;padding:0!important;margin:0!important;border:0!important;background:none!important;box-shadow:none!important}
+.lp-chargeart{display:block;width:21px;height:21px;object-fit:contain}
+.lp-chargepip.used{filter:grayscale(1);opacity:.38}
+.lp-slotempty{color:#697282;font-size:13px}
+.lp-quickabilities{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:5px;margin-bottom:12px}
+.lp-quickabilities .lp-tile{min-width:0;min-height:47px;display:grid;grid-template-columns:1fr 1fr;grid-template-rows:14px 21px;gap:1px;padding:4px;text-align:center;align-items:center;justify-items:center;box-sizing:border-box}
+.lp-quickabilities .lp-tile span{grid-column:1/-1;font-size:10px}.lp-quickabilities .lp-tile b{font-size:16px}.lp-quickabilities .lp-tile em{font-size:12px}
+.lp-quickskills{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:5px}
+.lp-quickskills .lp-sk{display:flex;align-items:center;min-width:0;gap:5px;min-height:29px;padding:3px 6px;box-sizing:border-box;border:1px solid #343946;border-radius:4px}
+.lp-quickskills .lp-sk span{font-size:11px;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;flex:1}
+.lp-quickskills .lp-sk b{font-size:13px;flex:none;font-variant-numeric:tabular-nums}
+.lp-summaryfooter{justify-content:flex-start;align-items:flex-start}
+.lp-summaryfooter>b{color:#d9bf87;font-size:12px;padding-top:5px;flex:none}
+.lp-equippedlinks{display:flex;flex-wrap:wrap;align-items:center;gap:4px;min-width:0}
+.lp-eqlink{max-width:100%;border:1px solid #3c4351;border-radius:4px;background:#1a202b;color:#ded6c6;padding:4px 7px;font:500 12px/1.3 var(--body);white-space:normal;text-align:left;overflow-wrap:anywhere;cursor:pointer}
+.lp-eqlink:hover,.lp-eqlink:focus-visible{border-color:#b69a65;color:#f2d9a1}
+.lp-headerpips{display:inline-flex;align-items:center;flex-wrap:wrap;gap:2px;margin-left:10px;vertical-align:middle}
+.lp-headpip{display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px}
+.lp-headpip .lp-bg3{transform:scale(1.15)}
+.lp-main .lp-actionlevel{display:flex;align-items:center;gap:5px;min-height:25px}
+.lp-main .lp-actionheading .lp-headerpips{margin-left:7px}
+.lp-bg3.i-action{transform:scale(1.25)}
+.lp-sheet .lp-spellplain .lp-cardtype:has(.lp-casttime){width:85px;grid-template-columns:18px 18px 47px}
+.lp-sheet .lp-spellplain .lp-sname:has(.lp-casttime) .lp-cardtitle{right:90px}
+.lp-sheet .lp-spellplain .lp-cardtype .lp-tagact:has(.lp-casttime){width:47px}
+.lp-casttime{display:inline-block;font:600 10px/1.1 var(--body);color:#e0c58f;white-space:normal;text-align:right}
+.lp-weapon.rarity-artifact,.lp-item.rarity-artifact{--rarity:#a6987b}
+.lp-weapon.rarity-legendary,.lp-item.rarity-legendary{--rarity:#e2a04b}
+.lp-wgrid .lp-weapon,.lp-items .lp-item{border-width:3px!important}
+.lp-wgrid .lp-weapon.off .lp-rarityname{opacity:1}
+.lp-coindebit{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin:0 0 16px}
+.lp-coindebit label{font:600 13px var(--body);color:#d9bf87}
+.lp-coindebit select,.lp-coindebit input,.lp-coindebit button{height:40px;box-sizing:border-box;border:1px solid #414856;border-radius:4px;background:#151b26;color:#eee;font:500 14px var(--body);padding:6px 10px;min-width:0}
+.lp-coindebit input{width:110px}.lp-coindebit button{min-width:64px;color:#f4d99e;background:#342c22;border-color:#8f7951}
+.lp-dmcard .lp-dmslots{min-height:0!important;gap:4px!important}
+.lp-dmcard .lp-dmslots .lp-sg{height:34px;min-height:34px;grid-template-columns:minmax(78px,100px) minmax(0,1fr) 37px;gap:3px}
+.lp-dmcard .lp-dmslots .lp-slotgems{flex-wrap:nowrap;gap:1px}
+.lp-dmcard .lp-dmslots .lp-gem,.lp-dmcard .lp-dmslots .lp-gp{width:25px;height:25px}
+.lp-dmcard .lp-dmcharges{margin:8px 0;gap:4px!important}
+.lp-dmcard .lp-dmcharges .lp-sg{grid-template-columns:minmax(78px,100px) minmax(0,1fr) 37px;min-height:32px}
+.lp-dmcard .lp-dmcharges .lp-chargepip{width:21px;height:21px}
+.lp-dmcard .lp-dmcharges .lp-chargeart{width:19px;height:19px}
+.lp-dmcard .lp-eqline{min-height:104px;max-height:104px;overflow:auto;box-sizing:border-box}
+.lp-dmcard .lp-eqline>span{display:block;margin-bottom:5px}
+.lp-dmcard .lp-cbadge{display:flex;align-items:center;gap:3px;max-width:45%;overflow:hidden;overflow-wrap:anywhere;font-size:11px;cursor:pointer}
+.lp-hudfilters input,.lp-hudfilters.lp-searchbar input{height:38px;flex:1 1 220px;min-width:0;width:100%;box-sizing:border-box;font:500 14px var(--body);border:1px solid #414451;background:#10141f;color:#eee;border-radius:4px;padding:8px 10px}
+.lp-hudfilters{display:flex;align-items:center;gap:8px 12px;margin:0 0 12px!important}
+@container(max-width:850px){.lp-quickskills{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:1320px){.lp-combatlayout{grid-template-columns:minmax(270px,.95fr) minmax(0,1.05fr);gap:12px}.lp-combatright{padding-left:12px}.lp-quickabilities{grid-template-columns:repeat(3,minmax(0,1fr))}.lp-quickskills{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:750px){.lp-combatlayout{grid-template-columns:1fr;gap:14px}.lp-combatright{border-left:0;border-top:1px solid #343946;padding:12px 0 0}.lp-quickabilities{grid-template-columns:repeat(6,minmax(0,1fr))}.lp-quickskills{grid-template-columns:repeat(2,minmax(0,1fr))}.lp-dmcard .lp-eqline{min-height:0;max-height:none}.lp-coindebit select,.lp-coindebit input{font-size:16px}}
+@media(max-width:420px){.lp-combatsummary .lp-sg{grid-template-columns:95px minmax(0,1fr) 35px;gap:3px}.lp-combatsummary .lp-sg .lp-gem,.lp-combatsummary .lp-sg .lp-gp{width:26px;height:26px}.lp-quickabilities{grid-template-columns:repeat(3,minmax(0,1fr))}.lp-chargepip{width:21px;height:21px}}
