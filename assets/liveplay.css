@@ -980,3 +980,16 @@ i.lp-gp { cursor: inherit; font-style: normal; width: 18px; height: 18px; }
  .lp-main .lp-spellgrid {grid-template-columns:1fr;}
  .lp-hudfilters .lp-chips {flex-wrap:wrap;}
 }
+
+/* v161 : finition des dimensions et restauration sans superposition. */
+.lp-sheet .lp-hudcard.lp-spellplain {height:132px;grid-template-rows:48px 23px 30px;gap:5px;align-content:start;}
+.lp-sheet .lp-hudcard.lp-spellplain .lp-sname {grid-row:1;height:48px;min-height:0;}
+.lp-sheet .lp-hudcard.lp-spellplain .lp-mrow,.lp-sheet .lp-hudcard.lp-spellplain .lp-combatmeta {grid-row:2;}
+.lp-sheet .lp-hudcard.lp-spellplain .lp-ctl {grid-row:3;min-width:0;}
+.lp-sheet .lp-spellplain .lp-ctl button.lp-reset {font-size:10px;letter-spacing:-.025em;padding:0 2px;}
+.lp-sheet .lp-spellplain.spent:has(.lp-reset) {filter:none;}
+.lp-sheet .lp-spellplain .lp-ctl .lp-reset {opacity:1;color:#e8d4aa;}
+.lp-neutralpip {display:block;width:14px;height:14px;border:1px solid #d6b676;background:#9d8152;border-radius:3px;box-sizing:border-box;margin:auto;}
+.lp-gp.used .lp-neutralpip {border-color:#747987;background:#303541;}
+.lp-hpc .lp-hpctl button .lp-bg3 {width:20px;height:20px;}
+@media(max-width:520px){.lp-hpc .lp-hpctl button {font-size:12px;}}
