@@ -712,7 +712,7 @@
     const cols={'Action':[],'Action bonus':[],'Réaction':[],'Hors combat':[]}, q=nrm0(view.q.trim()), filter=view.act;
     const add=(t,html,search,group=-1,off=false)=>{if(cols[t] && (filter==='all'||filter===t) && (!q||nrm0(search).includes(q))) cols[t].push({html,group,off});};
     const head=(t,name,en,attrs,k)=>`<button type="button" class="lp-sname" ${attrs||''}><span class="lp-cardtitle"><b title="${esc(name)}">${esc(name)}</b>${en?`<small class="lp-en">${esc(en)}</small>`:''}</span>${cardTags(t,false,false,false)}</button>`;
-    const card=(t,name,en,attrs,meta,ctrl,cls,k,origin='')=>`<article class="lp-spell lp-act lp-hudcard lp-spellplain ${cls||''}">${head(t,name,en,attrs,k||'magic')}<div class="lp-mrow">${meta}</div><div class="lp-spellorigin" title="${esc(origin)}">${esc(origin)}</div>${ctrl||ctl('<span class="lp-slotchip lp-status">À volonté</span>','<span class="lp-readmore">Détails</span>','')}</article>`;
+    const card=(t,name,en,attrs,meta,ctrl,cls,k,origin='')=>`<article class="lp-spell lp-act lp-hudcard lp-spellplain ${cls||''}">${head(t,name,en,attrs,k||'magic')}<div class="lp-mrow">${meta}</div><div class="lp-spellorigin" title="${esc(origin)}">${esc(origin)}</div>${ctrl||ctl('<span class="lp-slotchip lp-status">À volonté</span>',`<button type="button" class="lp-cast lp-detailbtn" ${attrs||''}>Détails</button>`,'')}</article>`;
     const eqw=c.weapons.filter(w=>w.fixed||w.perma||st.eq.includes(w.n));
     eqw.filter(w=>w.hit||w.dmg).forEach(w=>{
       const m=damageRx().exec(w.dmg||''), k=m?damageKind(m[3]):'slashing';
