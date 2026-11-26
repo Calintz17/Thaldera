@@ -1279,3 +1279,10 @@ body>.lp-tip p {margin:5px 0;}
 @media(max-width:1320px){.lp-combatlayout{grid-template-columns:minmax(270px,.95fr) minmax(0,1.05fr);gap:12px}.lp-combatright{padding-left:12px}.lp-quickabilities{grid-template-columns:repeat(3,minmax(0,1fr))}.lp-quickskills{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:750px){.lp-combatlayout{grid-template-columns:1fr;gap:14px}.lp-combatright{border-left:0;border-top:1px solid #343946;padding:12px 0 0}.lp-quickabilities{grid-template-columns:repeat(6,minmax(0,1fr))}.lp-quickskills{grid-template-columns:repeat(2,minmax(0,1fr))}.lp-dmcard .lp-eqline{min-height:0;max-height:none}.lp-coindebit select,.lp-coindebit input{font-size:16px}}
 @media(max-width:420px){.lp-combatsummary .lp-sg{grid-template-columns:95px minmax(0,1fr) 35px;gap:3px}.lp-combatsummary .lp-sg .lp-gem,.lp-combatsummary .lp-sg .lp-gp{width:26px;height:26px}.lp-quickabilities{grid-template-columns:repeat(3,minmax(0,1fr))}.lp-chargepip{width:21px;height:21px}}
+
+/* v165 : finitions des ressources et alignements MJ */
+.lp-otherpool .lp-slotlevel{color:#c2c7d4;text-transform:none;letter-spacing:0;font-size:11px}
+.lp-dmcard .lp-dmh{min-height:75px;height:75px;box-sizing:border-box;overflow:hidden}
+.lp-dmcard .lp-dmh>div{min-width:0}
+.lp-dmcard .lp-dmh .lp-cbadge{max-height:62px}
+@media(max-width:1100px){.lp-dmgrid{grid-template-columns:1fr!important}.lp-dmcard .lp-dmh{height:auto;min-height:60px}.lp-dmcard .lp-dmslots .lp-slotgems{flex-wrap:wrap}}
