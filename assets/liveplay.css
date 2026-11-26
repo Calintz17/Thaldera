@@ -1379,3 +1379,10 @@ body>.lp-tip p {margin:5px 0;}
 .lp-eqinventory .lp-cast{min-height:30px}
 @media(min-width:1450px){.lp-combatsummary .lp-combatrow{grid-template-columns:minmax(0,1fr) minmax(0,200px) 36px 76px!important}}
 @media(max-width:550px){.lp-combatsummary .lp-combatrow,.lp-dmcard .lp-combatrow{grid-template-columns:minmax(0,1fr) minmax(0,92px) 30px 66px!important;gap:3px!important}.lp-combatrow .lp-recharge{font-size:10px}.lp-combatrow .lp-slotlevel{font-size:11px!important}}
+
+/* v171 : largeur de lecture, même alignement des ressources */
+.lp-combatrow .lp-slotlevel{cursor:default}
+.lp-combatsummary .lp-combatrow .lp-slotgems,.lp-dmcard .lp-combatrow .lp-slotgems{align-self:center}
+.lp-combatrow .lp-gp.used .lp-neutralpip{filter:grayscale(1);opacity:.4}
+.lp-combatrow .lp-chargepip{overflow:visible}
+.lp-combatrow .lp-chargeart{flex:none}
