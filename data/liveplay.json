@@ -707,9 +707,16 @@
           "t": "Action",
           "p": "Soi",
           "c": false,
-          "d": "Fire Shield sans concentration, 10 minutes, résistance radiant, 2d8 nécrotique aux attaquants au corps à corps.",
+          "d": "Une brume cendrée vous enveloppe comme un voile funéraire pendant 10 minutes, sans concentration. Résistance aux dégâts radiants. Toute créature qui vous touche avec une attaque de corps à corps subit 2d8 nécrotique.",
           "src": "Scythe de la Lithurgie des Cendres",
-          "grp": "Pouvoirs d'armes Tarot"
+          "grp": "Pouvoirs d'armes Tarot",
+          "duration": "10 min",
+          "castTime": "1 action",
+          "pactonly": true,
+          "defense": {
+            "k": "resist",
+            "n": "Radiant"
+          }
         },
         {
           "n": "Gravité Funèbre",
@@ -2204,7 +2211,7 @@
             {
               "n": "Veil Shield, Quiet Passing",
               "a": "A",
-              "d": "Emplacement de niveau 4. Fire Shield sans concentration, 10 minutes, résistance radiant, 2d8 nécrotique aux attaquants au corps à corps.",
+              "d": "Emplacement de niveau 4. Une brume cendrée vous enveloppe comme un voile funéraire pendant 10 minutes, sans concentration. Résistance aux dégâts radiants. Toute créature qui vous touche avec une attaque de corps à corps subit 2d8 nécrotique.",
               "r": "2d8",
               "sp": "Veil Shield, Quiet Passing"
             }
