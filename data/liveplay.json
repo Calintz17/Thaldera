@@ -6521,7 +6521,7 @@
         {
           "id": "stones",
           "nom": "Pierres de communication",
-          "sub": "Sending, recharge à l'aube",
+          "sub": "Sending, une fois par repos long",
           "max": 1,
           "reset": "long",
           "src": "Pierres de communication"
@@ -7426,10 +7426,10 @@
         {
           "n": "Communication à distance",
           "lv": 3,
-          "t": "Hors combat",
+          "t": "Action",
           "p": "Illimitée",
           "c": false,
-          "d": "Via les Pierres de communication : message de 25 mots au porteur de l'autre pierre, qui peut répondre.",
+          "d": "Via les Pierres de communication : message de 25 mots au porteur de l'autre pierre, qui peut répondre. Une utilisation par repos long.",
           "cost": {
             "res": "stones",
             "n": 1
@@ -7437,7 +7437,8 @@
           "src": "Pierres de communication",
           "grp": "Pouvoirs d'objets",
           "en": "Sending",
-          "ruleSource": "Pouvoir d'objet / adaptation de campagne"
+          "ruleSource": "Pouvoir d'objet / adaptation de campagne",
+          "castTime": "1 action"
         },
         {
           "n": "Aura de vitalité",
@@ -9101,7 +9102,7 @@
         },
         {
           "n": "Pierres de communication",
-          "note": "Sending (25 mots) vers la pierre jumelle, 1 charge, retour à l'aube."
+          "note": "Sending (25 mots) vers la pierre jumelle. Une utilisation par repos long."
         }
       ],
       "eqDefault": [
