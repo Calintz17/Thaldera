@@ -1318,3 +1318,25 @@ body>.lp-tip p {margin:5px 0;}
 .lp-wsinline{display:flex;gap:2px;max-width:100%}.lp-wsinline .lp-gp{width:19px;height:24px}
 @media(min-width:1101px){.lp-dmgrid{grid-template-columns:repeat(3,minmax(0,1fr))!important}.lp-dmwrap{grid-template-columns:minmax(0,1fr)!important}.lp-dmcard{padding:10px!important}}
 @media(max-width:900px){.lp-char-jane .lp-artcol{display:none!important}.lp-defenseform select{font-size:16px}}
+
+/* v167 : défenses compactes, indicateurs dérivés des sorts et équipements */
+.lp-summaryfooter {align-items:center!important;flex-wrap:wrap;gap:8px!important;}
+.lp-summaryfooter>b {padding-top:0;}
+.lp-summaryfooter>.lp-equippedlinks {flex:1 1 200px;}
+.lp-summaryfooter>.lp-defensechips {margin-left:auto;justify-content:flex-end;align-items:center;gap:8px;flex:0 1 auto;}
+.lp-defensechip {display:inline-flex!important;align-items:center;gap:4px!important;border:0!important;padding:0!important;background:none!important;color:#d9dce4!important;min-width:0;}
+.lp-defenseicon {position:relative;display:inline-block;width:25px;height:33px;flex:none;}
+.lp-defenseicon .lp-defglyph {position:absolute;inset:9px 3px 4px;display:grid;place-items:center;}
+.lp-defenseicon .lp-defglyph>svg {width:19px;height:19px;display:block;}
+.lp-defenseicon .lp-defglyph .lp-bg3 {transform:scale(.88);}
+.lp-defenseicon .lp-defmark {position:absolute;inset:0;pointer-events:none;}
+.lp-defenseicon .lp-defmark svg {width:100%;height:100%;overflow:visible;}
+.lp-defenseicon.immune .lp-defmark {z-index:0;}
+.lp-defenseicon.immune .lp-defglyph {z-index:1;}
+.lp-deftext {display:flex;flex-direction:column;min-width:0;gap:1px;}
+.lp-deftext b {font:600 11px/1.2 var(--body);white-space:nowrap;}
+.lp-deftext small {font:400 9px/1.2 var(--body);color:#a7adba;max-width:125px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.lp-sr-only {position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;}
+.lp-effect-active {border-color:#51765c!important;color:#a6dcb1!important;background:#203129!important;}
+.lp-endspell {font-size:11px!important;}
+@media(max-width:600px){.lp-summaryfooter>.lp-defensechips {flex:1 1 100%;justify-content:flex-end;}}
