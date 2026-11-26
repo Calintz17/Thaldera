@@ -542,7 +542,7 @@
     return h||'<span class="lp-none">Aucun emplacement</span>';
   }
   function chargeRows(c,st,ro){
-    const rows=visRes(c,st).filter(resourceIsCharge).map(r=>`<div class="lp-sg lp-chargegroup" title="${esc(resourceTitle(c,r))}"><span class="lp-slotlevel">${esc(r.src||r.nom)}</span><span class="lp-slotgems">${chargePips(c,st,r,ro)}</span><small>${left(c,st,r.id)}/${r.max}</small><span class="lp-recharge">${esc(REST_LABEL[r.reset]||r.reset||'')}</span></div>`);
+    const rows=visRes(c,st).filter(r=>resourceIsCharge(r)&&[...c.weapons,...(c.gear||[])].some(o=>o.n===r.src)).map(r=>`<div class="lp-sg lp-chargegroup" title="${esc(resourceTitle(c,r))}"><span class="lp-slotlevel">${esc(r.src||r.nom)}</span><span class="lp-slotgems">${chargePips(c,st,r,ro)}</span><small>${left(c,st,r.id)}/${r.max}</small><span class="lp-recharge">${esc(REST_LABEL[r.reset]||r.reset||'')}</span></div>`);
     if(ro)for(const it of inventoryCharges(c,st))rows.push(`<div class="lp-sg lp-chargegroup" title="${esc(it.n)}"><span class="lp-slotlevel">${esc(it.n)}</span><span class="lp-slotgems">${Array.from({length:it.max},(_,i)=>`<span class="lp-neutralpip ${i>=it.max-(it.used||0)?'used':''}"></span>`).join('')}</span><small>${it.max-(it.used||0)}/${it.max}</small><span class="lp-recharge">${esc((c.items.find(x=>x.n===it.n)?.d||'').match(/(?:retour|recharge|regagnées) à l.aube/i)?'Aube':'Selon objet')}</span></div>`);
     return rows.join('');
   }
@@ -550,7 +550,7 @@
     return eqNames(c,st).map(n=>{const spec=(ro?'dm|'+c.id+'|':'')+'w|'+n;return `<button type="button" class="lp-eqlink" data-act="detail" data-spec="${esc(spec)}" data-tip="${esc(spec)}">${esc(n)}</button>`;}).join('')||'<span>Aucun objet</span>';
   }
   function resRows(c, st, ro, list) {
-    return (list || visRes(c, st)).filter(r=>r.id!=='bardic'&&r.id!=='ws'&&!resourceIsCharge(r)).map(r => {
+    return (list || visRes(c, st)).filter(r=>r.id!=='bardic'&&r.id!=='ws'&&!(resourceIsCharge(r)&&[...c.weapons,...(c.gear||[])].some(o=>o.n===r.src))).map(r => {
       const u = st.res[r.id] || 0, l = r.max - u;
       const ctl = r.id==='ws' ? gpips(c, r, u, ro) : ro ? `<b class="lp-cnt">${l}/${r.max}</b>` : `<button type="button" class="lp-stp" data-act="resd" data-key="${esc(r.id)}" data-d="1" aria-label="Dépenser">−</button><b class="lp-cnt">${l}/${r.max}</b><button type="button" class="lp-stp" data-act="resd" data-key="${esc(r.id)}" data-d="-1" aria-label="Récupérer">+</button>`;
       return `<div class="lp-row res ${l <= 0 ? 'spent' : ''}"><span class="lp-nm" title="${esc(resourceTitle(c,r))}" ${ro ? '' : `data-tip="r|${esc(r.id)}" data-act="detail" data-spec="r|${esc(r.id)}" role="button" tabindex="0"`}><b>${esc(r.nom)}</b><small class="lp-resourceorigin">${esc(resourceSource(c,r))} / ${r.max} par ${esc(REST_LABEL[r.reset]||r.reset||'recharge')}</small></span><span class="lp-pips">${ctl}</span></div>`;
@@ -561,7 +561,7 @@
     const base=(c.defenses||[]).map(([k,n])=>[k,n,'Permanent']);
     if(eqNames(c,st).includes('Hat of Refuge'))base.push(['immune','Bannissement','Hat of Refuge']);
     if(st.conc==='Ombre de Moil')base.push(['resist','Radiant','Ombre de Moil']);
-    const effects=(st.defenseEffects||[]).filter(e=>!e.source||isEq(c,st,e.source));
+    const effects=(st.defenseEffects||[]).filter(e=>(!e.source||isEq(c,st,e.source))&&(!e.conc||st.conc===e.conc));
     const label={immune:'Immunité',resist:'Résistance',vulnerable:'Vulnérabilité'},symbol={immune:'◆',resist:'◈',vulnerable:'▼'};
     const chip=(k,n,src,i)=>`<span class="lp-defensechip ${k}" title="${esc(label[k]+' : '+src)}"><b>${symbol[k]}</b> ${esc(n)}${i!=null?`<button data-act="defremove" data-i="${i}" aria-label="Retirer">×</button>`:''}</span>`;
     return `<div class="lp-defenses"><h3>Résistances et immunités</h3><div class="lp-defensechips">${base.map(x=>chip(...x)).join('')}${effects.map(e=>chip(e.k,e.n,e.source||'Effet temporaire',(st.defenseEffects||[]).indexOf(e))).join('')}</div><div class="lp-defenseform"><select id="lp-def-kind" aria-label="Type"><option value="resist">Résistance</option><option value="immune">Immunité</option><option value="vulnerable">Vulnérabilité</option></select><select id="lp-def-name" aria-label="Dégât ou effet">${DEF_OPTIONS.map(n=>`<option>${esc(n)}</option>`).join('')}</select><button data-act="defadd">Ajouter</button></div></div>`;
